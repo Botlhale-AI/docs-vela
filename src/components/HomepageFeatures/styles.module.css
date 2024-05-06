@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.border {
+  border: 1.89px solid #e96733;
+  border-radius: 16px;
+  margin-top: 29.97px;
+  margin-right: 94.79px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: auto;
+  height: 148.71px;
+  display: flex;
+}
+
+
+.text{
+  
+  font-size: 18.94px;
+  line-height: 25.8px;
+  text-align: justify;
+  font-weight: 400;
+  width: 1182.1px;
+  height: 78px;
+  margin-bottom: 110px;
+}
+
+.textheading{
+  font-size: 22.73px;
+  line-height: 30.96px;
+  text-align: justify;
+  font-weight: 700;
+  height: 31px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.feature {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.feature:hover .content {
+  opacity: 0.8;
+}
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 576px) {
+  .border {
+    border-width: 1px;
+    border-radius: 8px;
+    margin: 10px 0; /* Updated margin for better spacing */
+    padding: 8px; /* Adjusted padding for better spacing */
+    width: calc(100% - 20px); /* Adjusted width to fit smaller screens */
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 10px; /* Added margin bottom for better separation */
+  }
+
+  .textheading {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px; /* Added margin top for better separation */
+  }
+}
+
+
+.hover:hover {
+  color: #e96733; /* Orange text color */
+}
+
