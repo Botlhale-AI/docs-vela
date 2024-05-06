@@ -3,15 +3,15 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vela',
-  tagline: "The Botlhale NLP Toolkit",
-  url: 'https://madlalakhaya25.github.io', 
+  tagline: "Documentation",
+  url: 'https://botlhale-ai.github.io', 
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'favicon.ico',
-  organizationName: 'madlalakhaya25', 
-  projectName: 'madlalakhaya25.github.io', 
-  deploymentBranch: 'gh-pages', 
+  favicon: 'static/img/favicon.ico',
+  organizationName: 'Botlhale-AI', 
+  projectName: 'docs-vela', 
+  deploymentBranch: 'main', 
 
   presets: [
     [
@@ -19,11 +19,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/madlalakhaya25/madlalakhaya25.github.io/edit/main/docs/',
+          editUrl: '/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/madlalakhaya25/madlalakhaya25.github.io/edit/main/blog/',
+          editUrl: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
