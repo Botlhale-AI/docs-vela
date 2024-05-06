@@ -8,10 +8,11 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'static/img/favicon.ico',
+  favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-vela', 
   deploymentBranch: 'main', 
+  trailingSlash: false,
 
   presets: [
     [
