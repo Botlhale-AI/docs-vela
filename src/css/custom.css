@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --ifm-link-color-hover: #e96733;
+  --ifm-color-primary: #e96733;
+  --ifm-color-primary-dark: #e96733;
+
+  --docusaurus-highlighted-code-line-bg: #e96733;
+}
+
+[data-theme='dark'] {
+  --ifm-link-color-hover: #e96733;
+  --ifm-color-primary: #e96733;
+  --ifm-color-primary-dark: #e96733;
+
+  --docusaurus-highlighted-code-line-bg: #e96733;
+}
+
+.navbar__link:hover,
+.menu__link--sublist:hover,
+.menu__link--active:hover {
+  color: var(--ifm-link-color-hover);
+}
+
+.navbar__link--active,
+.menu__link--active {
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link:hover .menu__link {
+  background-color: #e96733; /* Change the color to your desired hover color */
+  color: white;
+}
+
+[data-theme='dark'].theme-doc-sidebar-item-link.menu__list-item.active .menu__link {
+background-color: #e96733; /* Change the color to your desired hover color */
+color: white;
+}
+
+.theme-edit-this-page {
+  color: #e96733;
+}
+
+.pagination-nav__label {
+  color: #e96733;
+}
+
+.pagination-nav__label {
+  color: #e96733;
+}
+
+.menu__link.menu__link--active {
+  color: #e96733; 
+}
+
+
+[data-theme='dark'] .navbar__link:hover,
+[data-theme='dark'] .menu__link--sublist:hover,
+[data-theme='dark'] .menu__link--active:hover,
+[data-theme='dark'] .navbar__link--active,
+[data-theme='dark'] .menu__link--active {
+  color: var(--ifm-color-primary);
+}
