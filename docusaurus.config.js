@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'Vela',
   tagline: "Documentation",
-  url: 'https://docs.botlhale.xyz', 
+  url: 'https://docs-vela.botlhale.xyz', 
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
