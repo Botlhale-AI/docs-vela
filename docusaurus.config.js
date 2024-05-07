@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'Vela',
   tagline: "Documentation",
-  url: 'https://botlhale-ai.github.io', 
+  url: 'https://docs.botlhale.xyz', 
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
