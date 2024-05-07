@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvela_documentation=self.webpackChunkvela_documentation||[]).push([[884],{182:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/docs-vela/blog/tags/hello","allTagsPath":"/docs-vela/blog/tags","count":2,"unlisted":false}')}}]);
