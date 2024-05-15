@@ -1,0 +1,27 @@
+{
+  "id": "Settings",
+  "title": "Settings",
+  "description": "The Settings Screen serves as a centralised hub for managing your account settings, preferences,",
+  "source": "@site/docs/Settings.md",
+  "sourceDirName": ".",
+  "slug": "/Settings",
+  "permalink": "/docs/Settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "/docs/Settings.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/docs/Notifications"
+  },
+  "next": {
+    "title": "Data Upload",
+    "permalink": "/docs/Data Upload"
+  }
+}

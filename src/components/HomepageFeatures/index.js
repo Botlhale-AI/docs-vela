@@ -36,7 +36,7 @@ const FeatureList = [
     link: '/docs/Agents',
     description: (
       <>
-      Learn how to review and export insights specific to agent performance
+        Learn how to review and export insights specific to agent performance.
       </>
     ),
   },
@@ -58,7 +58,6 @@ const FeatureList = [
       </>
     ),
   },
-
   {
     title: 'Settings',
     link: '/docs/Settings',
@@ -68,7 +67,6 @@ const FeatureList = [
       </>
     ),
   },
-
   {
     title: 'Data Upload',
     link: '/docs/Data Upload',
@@ -78,31 +76,28 @@ const FeatureList = [
       </>
     ),
   },
-  // {
-  //   title: 'Supported Languages',
-  //   link: '/docs/Supported Languages',
-  //   description: (
-  //     <>
-  //       Learn about all the languages our models can support.
-  //     </>
-  //   ),
-  // },
-  // Add other features with their respective links here
 ];
-
 
 const ytVideos = [
   {
-    title: '1. Getting started',
-    videoId: 'O8G7hpGfBmM',
+    title: '1. Introduction to Vela',
+    videoId: 'WJtiehO9TFg',
   },
   {
-    title: '2. Managing Organisations',
-    videoId: 'crwdqdA1oLw',
+    title: '2. Navigating the Dashboard',
+    videoId: 'vmt7ObY0raw',
   },
   {
-    title: '3. Create a bot & managing intents',
-    videoId: 'aqsn22rQETM',
+    title: '3. Understanding Call Insights',
+    videoId: 'JnAdtNkXYtc',
+  },
+  {
+    title: '4. Advanced Search Features',
+    videoId: 'kx__FITaBWw',
+  },
+  {
+    title: '5. Managing Alerts and Notifications',
+    videoId: 'xIpKvq829Ms',
   },
 ];
 
@@ -127,11 +122,10 @@ function Feature({ title, link, description }) {
   );
 }
 
-
 function YoutubeVideo({ title, videoId }) {
   return (
     <div className={clsx('col col--3', styles.yt)}>
-      <div className=" padding-horiz--md">
+      <div className="padding-horiz--md">
         <iframe title={title} width="284.16px" height="159.13px" src={`https://www.youtube.com/embed/${videoId}`} allowFullScreen></iframe>
         <Heading as="p">{title}</Heading>
       </div>
@@ -152,12 +146,12 @@ export default function HomepageFeatures() {
         </div>
       </section>
 
-      {/* <Heading as="h2" className={styles.textheading}>Vela Tutorial Videos</Heading>
+      <Heading as="h2" className={styles.textheading}>Vela Tutorial Videos</Heading>
       <div className="row">
         {ytVideos.map((props, idx) => (
           <YoutubeVideo key={idx} {...props} />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+{
+  "id": "Smart Search",
+  "title": "Smart Search",
+  "description": "The Smart Search section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.",
+  "source": "@site/docs/Smart Search.md",
+  "sourceDirName": ".",
+  "slug": "/Smart Search",
+  "permalink": "/docs/Smart Search",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "/docs/Smart Search.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Calls",
+    "permalink": "/docs/Calls"
+  },
+  "next": {
+    "title": "Agents",
+    "permalink": "/docs/Agents"
+  }
+}

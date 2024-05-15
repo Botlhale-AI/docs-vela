@@ -1,0 +1,23 @@
+{
+  "id": "Dashboard",
+  "title": "Dashboard",
+  "description": "The dashboard section of this documentation suite outlines processes related to navigating and customizing",
+  "source": "@site/docs/Dashboard.md",
+  "sourceDirName": ".",
+  "slug": "/Dashboard",
+  "permalink": "/docs/Dashboard",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "/docs/Dashboard.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Calls",
+    "permalink": "/docs/Calls"
+  }
+}

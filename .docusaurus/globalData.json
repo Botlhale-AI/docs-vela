@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "Dashboard",
+          "docs": [
+            {
+              "id": "Agents",
+              "path": "/docs/Agents",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Calls",
+              "path": "/docs/Calls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Dashboard",
+              "path": "/docs/Dashboard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Data Upload",
+              "path": "/docs/Data Upload",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Notifications",
+              "path": "/docs/Notifications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Reports",
+              "path": "/docs/Reports",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Settings",
+              "path": "/docs/Settings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Smart Search",
+              "path": "/docs/Smart Search",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/Dashboard",
+                "label": "Dashboard"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
