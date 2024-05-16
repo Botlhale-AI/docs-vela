@@ -1,0 +1,27 @@
+{
+  "id": "Agents",
+  "title": "Agents",
+  "description": "The Agent screen functions offers you a view of your agents' performance. The information from this screen is available in both a list view, and a board view, illustrated in the images that follow. You can toggle between both views using the View icon in the top right of the screen.",
+  "source": "@site/docs/Agents.md",
+  "sourceDirName": ".",
+  "slug": "/Agents",
+  "permalink": "/docs/Agents",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "/docs/Agents.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Smart Search",
+    "permalink": "/docs/Smart Search"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/docs/Reports"
+  }
+}
