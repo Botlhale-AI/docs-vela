@@ -84,26 +84,26 @@ const ytVideos = [
     videoId: 'WJtiehO9TFg',
   },
   {
-    title: '2. Navigating the Dashboard',
+    title: '2. Set up your Dashboard',
     videoId: 'vmt7ObY0raw',
   },
   {
-    title: '3. Understanding Call Insights',
+    title: '3. Set Up Smmart Search',
     videoId: 'JnAdtNkXYtc',
   },
   {
-    title: '4. Advanced Search Features',
+    title: '4. Set Up Agent Search',
     videoId: 'kx__FITaBWw',
   },
   {
-    title: '5. Managing Alerts and Notifications',
+    title: '5. Agent Checklist',
     videoId: 'xIpKvq829Ms',
   },
 ];
 
 function Feature({ title, link, description }) {
   const handleClick = () => {
-    window.open(link, '_blank');
+    window.open(link, '#');
   };
 
   return (
