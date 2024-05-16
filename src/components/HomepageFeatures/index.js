@@ -103,7 +103,7 @@ const ytVideos = [
 
 function Feature({ title, link, description }) {
   const handleClick = () => {
-    window.open(link, '#');
+    window.location.href = link;
   };
 
   return (
