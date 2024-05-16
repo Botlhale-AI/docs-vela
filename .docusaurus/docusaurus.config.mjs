@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Vela",
+  "title": "Vela - Docs",
   "tagline": "Documentation",
   "url": "https://docs-vela.botlhale.xyz",
   "baseUrl": "/",
@@ -36,7 +36,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "Vela",
+      "title": "Home",
       "logo": {
         "alt": "Botlhale AI Logo",
         "src": "/img/VELA.png"

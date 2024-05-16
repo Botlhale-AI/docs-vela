@@ -88,7 +88,7 @@ const ytVideos = [
     videoId: 'vmt7ObY0raw',
   },
   {
-    title: '3. Set Up Smmart Search',
+    title: '3. Set Up Smart Search',
     videoId: 'JnAdtNkXYtc',
   },
   {
@@ -103,7 +103,7 @@ const ytVideos = [
 
 function Feature({ title, link, description }) {
   const handleClick = () => {
-    window.open(link, '#');
+    window.location.href = link;
   };
 
   return (
@@ -124,7 +124,7 @@ function Feature({ title, link, description }) {
 
 function YoutubeVideo({ title, videoId }) {
   return (
-    <div className={clsx('col col--3', styles.yt)}>
+    <div className={clsx('col col--3', styles.yt, 'text--center', 'padding-horiz--md')}>
       <div className="padding-horiz--md">
         <iframe title={title} width="284.16px" height="159.13px" src={`https://www.youtube.com/embed/${videoId}`} allowFullScreen></iframe>
         <Heading as="p">{title}</Heading>
