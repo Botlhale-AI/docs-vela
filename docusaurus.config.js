@@ -2,7 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vela',
+  title: 'Vela - Docs',
   tagline: "Documentation",
   url: 'https://docs-vela.botlhale.xyz', 
   baseUrl: '/',
@@ -36,7 +36,7 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Vela',
+      title: 'Home',
       logo: {
         alt: 'Botlhale AI Logo',
         src: '/img/VELA.png',
