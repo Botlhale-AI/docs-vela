@@ -30,6 +30,18 @@ metrics and parameters and clicking `Create`.
 
 Once created, your report appears on the View tab of the page and is available to be viewed and downloaded by you and your team.
 
+
+## Customise Reports
+
+Vela reports can be customised to match your company's branding.
+
+### Customisation Options
+- **Onboarding:** During the onboarding process, you can submit a branded report template. This template will be used to generate all future Vela reports.
+- **Post-onboarding:** To customise your Vela report after onboarding, please contact your Vela Account Manager.
+
+**Note:** Specific customisation options may vary. Please consult with your Vela Account Manager for details.
+
+
 ## Contact us
 
 :::info
