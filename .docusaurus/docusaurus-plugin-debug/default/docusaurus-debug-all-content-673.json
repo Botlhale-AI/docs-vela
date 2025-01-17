@@ -99,7 +99,7 @@
             {
               "id": "Data Upload",
               "title": "Data Upload",
-              "description": "The Vela platform offers two methods for uploading your call data, depending on your current storage solution:",
+              "description": "Data Upload",
               "source": "@site/docs/Data Upload.md",
               "sourceDirName": ".",
               "slug": "/Data Upload",
