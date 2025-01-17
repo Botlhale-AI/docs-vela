@@ -67,6 +67,7 @@ body {
 }
 
 /* Modern Buttons */
+/* Modern Buttons */
 .cta-button {
   margin-top: 2rem;
   padding: 1rem 2rem;
@@ -74,21 +75,23 @@ body {
   font-weight: 600;
   color: #ffffff;
   background: #fc5f1e;
-  border: 2px;
+  border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px var(--box-shadow);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover Effect */
 .cta-button:hover {
-  background: var(--primary-hover-color);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px var(--box-shadow-hover);
+  background: #e54c1a;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
 }
+
 
 .cta-button:active {
   transform: translateY(1px);

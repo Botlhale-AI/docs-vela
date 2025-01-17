@@ -138,11 +138,11 @@ export default function HomepageFeatures() {
           <p className={styles.heroSubtitle}>
             Your multilingual call centre speech analytics platform for actionable insights.
           </p>
-          <div className={styles.heroButtons}>
-            <button onClick={scrollToFeatures} className={clsx(styles.ctaButton)}>
-              Get Started →
-            </button>
-          </div>
+          
+          <button onClick={scrollToFeatures} className={styles.ctaButton}>
+            Get Started →
+          </button>
+          
         </div>
       </section>
 
