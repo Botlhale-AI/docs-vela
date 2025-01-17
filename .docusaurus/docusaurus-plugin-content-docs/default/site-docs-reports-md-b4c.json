@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Agents",
-    "permalink": "/docs/Agents"
+    "title": "Data Upload",
+    "permalink": "/docs/Data Upload"
   },
   "next": {
-    "title": "Notifications",
-    "permalink": "/docs/Notifications"
+    "title": "Settings",
+    "permalink": "/docs/Settings"
   }
 }

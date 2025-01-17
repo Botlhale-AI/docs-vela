@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '52f'),
+    component: ComponentCreator('/docs', 'aab'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '0a1'),
+        component: ComponentCreator('/docs', 'ef8'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '6b2'),
+            component: ComponentCreator('/docs', '3af'),
             routes: [
               {
                 path: '/docs/Agents',
@@ -117,9 +117,8 @@ export default [
               },
               {
                 path: '/docs/Calls',
-                component: ComponentCreator('/docs/Calls', 'a01'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/Calls', '612'),
+                exact: true
               },
               {
                 path: '/docs/Dashboard',

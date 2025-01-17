@@ -17,8 +17,7 @@
             },
             {
               "id": "Calls",
-              "path": "/docs/Calls",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/Calls"
             },
             {
               "id": "Dashboard",

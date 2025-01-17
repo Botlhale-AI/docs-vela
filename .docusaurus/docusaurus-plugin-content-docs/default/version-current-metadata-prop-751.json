@@ -10,60 +10,101 @@
   "docsSidebars": {
     "tutorialSidebar": [
       {
-        "type": "link",
+        "type": "category",
         "label": "Dashboard",
-        "href": "/docs/Dashboard",
-        "docId": "Dashboard",
-        "unlisted": false
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Dashboard",
+            "href": "/docs/Dashboard",
+            "docId": "Dashboard",
+            "unlisted": false
+          }
+        ]
       },
       {
-        "type": "link",
-        "label": "Calls",
-        "href": "/docs/Calls",
-        "docId": "Calls",
-        "unlisted": false
-      },
-      {
-        "type": "link",
-        "label": "Smart Search",
-        "href": "/docs/Smart Search",
-        "docId": "Smart Search",
-        "unlisted": false
-      },
-      {
-        "type": "link",
+        "type": "category",
         "label": "Agents",
-        "href": "/docs/Agents",
-        "docId": "Agents",
-        "unlisted": false
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Agents",
+            "href": "/docs/Agents",
+            "docId": "Agents",
+            "unlisted": false
+          }
+        ]
       },
       {
-        "type": "link",
-        "label": "Reports",
-        "href": "/docs/Reports",
-        "docId": "Reports",
-        "unlisted": false
-      },
-      {
-        "type": "link",
+        "type": "category",
         "label": "Notifications",
-        "href": "/docs/Notifications",
-        "docId": "Notifications",
-        "unlisted": false
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Notifications",
+            "href": "/docs/Notifications",
+            "docId": "Notifications",
+            "unlisted": false
+          }
+        ]
       },
       {
-        "type": "link",
+        "type": "category",
+        "label": "Data Management",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Upload",
+            "href": "/docs/Data Upload",
+            "docId": "Data Upload",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Reports",
+            "href": "/docs/Reports",
+            "docId": "Reports",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
         "label": "Settings",
-        "href": "/docs/Settings",
-        "docId": "Settings",
-        "unlisted": false
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Settings",
+            "href": "/docs/Settings",
+            "docId": "Settings",
+            "unlisted": false
+          }
+        ]
       },
       {
-        "type": "link",
-        "label": "Data Upload",
-        "href": "/docs/Data Upload",
-        "docId": "Data Upload",
-        "unlisted": false
+        "type": "category",
+        "label": "Search Features",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Smart Search",
+            "href": "/docs/Smart Search",
+            "docId": "Smart Search",
+            "unlisted": false
+          }
+        ]
       }
     ]
   },
@@ -77,8 +118,7 @@
     "Calls": {
       "id": "Calls",
       "title": "Calls",
-      "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organised by metadata points that facilitate efficient navigation and exploration.",
-      "sidebar": "tutorialSidebar"
+      "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organised by metadata points that facilitate efficient navigation and exploration."
     },
     "Dashboard": {
       "id": "Dashboard",

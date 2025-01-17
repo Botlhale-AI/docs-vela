@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Notifications",
-    "permalink": "/docs/Notifications"
+    "title": "Reports",
+    "permalink": "/docs/Reports"
   },
   "next": {
-    "title": "Data Upload",
-    "permalink": "/docs/Data Upload"
+    "title": "Smart Search",
+    "permalink": "/docs/Smart Search"
   }
 }

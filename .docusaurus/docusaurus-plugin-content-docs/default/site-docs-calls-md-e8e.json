@@ -14,14 +14,5 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "sidebar_position": 2
-  },
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Dashboard",
-    "permalink": "/docs/Dashboard"
-  },
-  "next": {
-    "title": "Smart Search",
-    "permalink": "/docs/Smart Search"
   }
 }

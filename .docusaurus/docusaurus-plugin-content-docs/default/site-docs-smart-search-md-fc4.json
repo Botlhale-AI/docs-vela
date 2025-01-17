@@ -17,11 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Calls",
-    "permalink": "/docs/Calls"
-  },
-  "next": {
-    "title": "Agents",
-    "permalink": "/docs/Agents"
+    "title": "Settings",
+    "permalink": "/docs/Settings"
   }
 }

@@ -17,7 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Settings",
-    "permalink": "/docs/Settings"
+    "title": "Notifications",
+    "permalink": "/docs/Notifications"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/docs/Reports"
   }
 }

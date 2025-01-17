@@ -149,7 +149,7 @@ export default function HomepageFeatures() {
       {/* Features Section */}
       <section className={styles.featuresSection}>
         <Heading as="h2" className={styles.sectionHeading}>
-          Explore Features
+          Get Started: Explore Features
         </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
@@ -161,7 +161,7 @@ export default function HomepageFeatures() {
       {/* Video Tutorials Section */}
       <section className={styles.videosSection}>
         <Heading as="h2" className={styles.sectionHeading}>
-          Tutorial Videos
+        Get Started: Tutorial Videos
         </Heading>
         <div className="row">
           {ytVideos.map((props, idx) => (

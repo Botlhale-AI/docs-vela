@@ -38,12 +38,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Smart Search",
-                "permalink": "/docs/Smart Search"
+                "title": "Dashboard",
+                "permalink": "/docs/Dashboard"
               },
               "next": {
-                "title": "Reports",
-                "permalink": "/docs/Reports"
+                "title": "Notifications",
+                "permalink": "/docs/Notifications"
               }
             },
             {
@@ -62,15 +62,6 @@
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Dashboard",
-                "permalink": "/docs/Dashboard"
-              },
-              "next": {
-                "title": "Smart Search",
-                "permalink": "/docs/Smart Search"
               }
             },
             {
@@ -92,8 +83,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Calls",
-                "permalink": "/docs/Calls"
+                "title": "Agents",
+                "permalink": "/docs/Agents"
               }
             },
             {
@@ -115,8 +106,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Settings",
-                "permalink": "/docs/Settings"
+                "title": "Notifications",
+                "permalink": "/docs/Notifications"
+              },
+              "next": {
+                "title": "Reports",
+                "permalink": "/docs/Reports"
               }
             },
             {
@@ -138,12 +133,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Reports",
-                "permalink": "/docs/Reports"
+                "title": "Agents",
+                "permalink": "/docs/Agents"
               },
               "next": {
-                "title": "Settings",
-                "permalink": "/docs/Settings"
+                "title": "Data Upload",
+                "permalink": "/docs/Data Upload"
               }
             },
             {
@@ -165,12 +160,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Agents",
-                "permalink": "/docs/Agents"
+                "title": "Data Upload",
+                "permalink": "/docs/Data Upload"
               },
               "next": {
-                "title": "Notifications",
-                "permalink": "/docs/Notifications"
+                "title": "Settings",
+                "permalink": "/docs/Settings"
               }
             },
             {
@@ -192,12 +187,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Notifications",
-                "permalink": "/docs/Notifications"
+                "title": "Reports",
+                "permalink": "/docs/Reports"
               },
               "next": {
-                "title": "Data Upload",
-                "permalink": "/docs/Data Upload"
+                "title": "Smart Search",
+                "permalink": "/docs/Smart Search"
               }
             },
             {
@@ -219,12 +214,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Calls",
-                "permalink": "/docs/Calls"
-              },
-              "next": {
-                "title": "Agents",
-                "permalink": "/docs/Agents"
+                "title": "Settings",
+                "permalink": "/docs/Settings"
               }
             }
           ],
@@ -232,36 +223,80 @@
           "sidebars": {
             "tutorialSidebar": [
               {
-                "type": "doc",
-                "id": "Dashboard"
+                "type": "category",
+                "label": "Dashboard",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Dashboard"
+                  }
+                ]
               },
               {
-                "type": "doc",
-                "id": "Calls"
+                "type": "category",
+                "label": "Agents",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Agents"
+                  }
+                ]
               },
               {
-                "type": "doc",
-                "id": "Smart Search"
+                "type": "category",
+                "label": "Notifications",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Notifications"
+                  }
+                ]
               },
               {
-                "type": "doc",
-                "id": "Agents"
+                "type": "category",
+                "label": "Data Management",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Data Upload"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Reports"
+                  }
+                ]
               },
               {
-                "type": "doc",
-                "id": "Reports"
+                "type": "category",
+                "label": "Settings",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Settings"
+                  }
+                ]
               },
               {
-                "type": "doc",
-                "id": "Notifications"
-              },
-              {
-                "type": "doc",
-                "id": "Settings"
-              },
-              {
-                "type": "doc",
-                "id": "Data Upload"
+                "type": "category",
+                "label": "Search Features",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Smart Search"
+                  }
+                ]
               }
             ]
           }

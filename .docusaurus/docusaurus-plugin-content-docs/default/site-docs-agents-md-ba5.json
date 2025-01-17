@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Smart Search",
-    "permalink": "/docs/Smart Search"
+    "title": "Dashboard",
+    "permalink": "/docs/Dashboard"
   },
   "next": {
-    "title": "Reports",
-    "permalink": "/docs/Reports"
+    "title": "Notifications",
+    "permalink": "/docs/Notifications"
   }
 }
