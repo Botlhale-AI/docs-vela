@@ -8,7 +8,6 @@
   "permalink": "/docs/Data Upload",
   "draft": false,
   "unlisted": false,
-  "editUrl": "/docs/Data Upload.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 8,
@@ -17,11 +16,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Notifications",
-    "permalink": "/docs/Notifications"
-  },
-  "next": {
-    "title": "Reports",
-    "permalink": "/docs/Reports"
+    "title": "Smart Detector",
+    "permalink": "/docs/Smart Detector"
   }
 }

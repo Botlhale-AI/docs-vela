@@ -16,8 +16,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "back-up-Agents",
+              "path": "/docs/back-up-Agents"
+            },
+            {
               "id": "Calls",
-              "path": "/docs/Calls"
+              "path": "/docs/Calls",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Dashboard",
@@ -35,6 +40,10 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "release-notes",
+              "path": "/docs/release-notes"
+            },
+            {
               "id": "Reports",
               "path": "/docs/Reports",
               "sidebar": "tutorialSidebar"
@@ -45,8 +54,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Smart Search",
-              "path": "/docs/Smart Search",
+              "id": "Smart Detector",
+              "path": "/docs/Smart Detector",
               "sidebar": "tutorialSidebar"
             }
           ],

@@ -8,7 +8,6 @@
   "permalink": "/docs/Reports",
   "draft": false,
   "unlisted": false,
-  "editUrl": "/docs/Reports.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 5,
@@ -17,8 +16,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Data Upload",
-    "permalink": "/docs/Data Upload"
+    "title": "Notifications",
+    "permalink": "/docs/Notifications"
   },
   "next": {
     "title": "Settings",

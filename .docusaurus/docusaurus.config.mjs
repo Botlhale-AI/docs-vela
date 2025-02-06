@@ -20,12 +20,10 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/athi/Desktop/docs-vela/sidebars.js",
-          "editUrl": "/"
+          "sidebarPath": "/Users/athi/Desktop/docs-vela/sidebars.js"
         },
         "blog": {
-          "showReadingTime": true,
-          "editUrl": "/"
+          "showReadingTime": true
         },
         "theme": {
           "customCss": "/Users/athi/Desktop/docs-vela/src/css/custom.css"
@@ -36,18 +34,33 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "Home",
+      "title": "",
       "logo": {
         "alt": "Botlhale AI Logo",
         "src": "/img/VELA.png"
       },
-      "items": [],
+      "items": [
+        {
+          "to": "/",
+          "label": "Home",
+          "position": "right"
+        },
+        {
+          "to": "/docs/release-notes",
+          "label": "Release Notes",
+          "position": "right"
+        },
+        {
+          "type": "search",
+          "position": "right"
+        }
+      ],
       "hideOnScroll": false
     },
     "colorMode": {
       "defaultMode": "light",
       "disableSwitch": false,
-      "respectPrefersColorScheme": false
+      "respectPrefersColorScheme": true
     },
     "prism": {
       "theme": {
@@ -259,6 +272,13 @@ export default {
         "attributes": {
           "rel": "stylesheet",
           "href": "https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+        }
+      },
+      {
+        "tagName": "link",
+        "attributes": {
+          "rel": "stylesheet",
+          "href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         }
       }
     ],

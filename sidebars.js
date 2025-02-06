@@ -12,6 +12,13 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Calls',
+      collapsible: true,
+      collapsed: true,
+      items: ['Calls'],
+    },
+    {
+      type: 'category',
       label: 'Agents',
       collapsible: true,
       collapsed: true,
@@ -26,10 +33,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Data Management',
+      label: 'Reports',
       collapsible: true,
       collapsed: true,
-      items: ['Data Upload', 'Reports'],
+      items: ['Reports'],
     },
     {
       type: 'category',
@@ -40,11 +47,18 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Search Features',
+      label: 'Smart Detector',
       collapsible: true,
       collapsed: true,
-      items: ['Smart Search'],
+      items: ['Smart Detector'],
     },
+    {
+      type: 'category',
+      label: 'Data Management',
+      collapsible: true,
+      collapsed: true,
+      items: ['Data Upload'],
+    }
   ],
 };
 

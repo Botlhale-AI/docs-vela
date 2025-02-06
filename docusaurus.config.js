@@ -20,11 +20,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: '/',
+          // editUrl: '/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: '/',
+          // editUrl: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -36,17 +36,24 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Home',
+      title: '',
       logo: {
         alt: 'Botlhale AI Logo',
         src: '/img/VELA.png',
       },
-      items: [], 
+      items: [
+        { to: '/', label: 'Home', position: 'right' },
+        { to: '/docs/release-notes', label: 'Release Notes', position: 'right' }, // Add this line
+        {
+          type: 'search',
+          position: 'right',
+        },
+      ],
     },
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
     prism: {
       theme: prismThemes.github,
@@ -61,9 +68,16 @@ const config = {
           href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap',
         },
       },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+        },
+      },
     ],
-  },
-
+  }
+ 
 };
 
 export default config;

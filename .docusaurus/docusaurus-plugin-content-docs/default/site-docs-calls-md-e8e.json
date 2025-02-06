@@ -1,18 +1,26 @@
 {
   "id": "Calls",
   "title": "Calls",
-  "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organised by metadata points that facilitate efficient navigation and exploration.",
+  "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.",
   "source": "@site/docs/Calls.md",
   "sourceDirName": ".",
   "slug": "/Calls",
   "permalink": "/docs/Calls",
   "draft": false,
   "unlisted": false,
-  "editUrl": "/docs/Calls.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
     "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dashboard",
+    "permalink": "/docs/Dashboard"
+  },
+  "next": {
+    "title": "Agents",
+    "permalink": "/docs/Agents"
   }
 }

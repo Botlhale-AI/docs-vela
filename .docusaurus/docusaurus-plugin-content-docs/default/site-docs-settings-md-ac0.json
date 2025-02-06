@@ -8,7 +8,6 @@
   "permalink": "/docs/Settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "/docs/Settings.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 6,
@@ -21,7 +20,7 @@
     "permalink": "/docs/Reports"
   },
   "next": {
-    "title": "Smart Search",
-    "permalink": "/docs/Smart Search"
+    "title": "Smart Detector",
+    "permalink": "/docs/Smart Detector"
   }
 }

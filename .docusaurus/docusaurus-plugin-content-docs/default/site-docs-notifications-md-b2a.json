@@ -8,7 +8,6 @@
   "permalink": "/docs/Notifications",
   "draft": false,
   "unlisted": false,
-  "editUrl": "/docs/Notifications.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 6,
@@ -21,7 +20,7 @@
     "permalink": "/docs/Agents"
   },
   "next": {
-    "title": "Data Upload",
-    "permalink": "/docs/Data Upload"
+    "title": "Reports",
+    "permalink": "/docs/Reports"
   }
 }

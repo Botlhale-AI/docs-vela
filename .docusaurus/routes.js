@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', 'f86'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '959'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', '0cf'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', '3d6'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '2ed'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '24f'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '7ec'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', '535'),
     exact: true
@@ -99,15 +64,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'aab'),
+    component: ComponentCreator('/docs', '654'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'ef8'),
+        component: ComponentCreator('/docs', '860'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '3af'),
+            component: ComponentCreator('/docs', '2e4'),
             routes: [
               {
                 path: '/docs/Agents',
@@ -116,9 +81,15 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Calls',
-                component: ComponentCreator('/docs/Calls', '612'),
+                path: '/docs/back-up-Agents',
+                component: ComponentCreator('/docs/back-up-Agents', '626'),
                 exact: true
+              },
+              {
+                path: '/docs/Calls',
+                component: ComponentCreator('/docs/Calls', 'a01'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/Dashboard',
@@ -139,6 +110,11 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/release-notes',
+                component: ComponentCreator('/docs/release-notes', '7c0'),
+                exact: true
+              },
+              {
                 path: '/docs/Reports',
                 component: ComponentCreator('/docs/Reports', 'd6c'),
                 exact: true,
@@ -151,8 +127,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Smart Search',
-                component: ComponentCreator('/docs/Smart Search', '5ca'),
+                path: '/docs/Smart Detector',
+                component: ComponentCreator('/docs/Smart Detector', '57a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

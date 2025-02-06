@@ -22,7 +22,7 @@ On this tab, you can:
 - Organisation affiliation (primary and additional)
 - Team assignment (if applicable)
 
-![alt text](image-6.png)
+![alt text](settings-account-final.png)
 
 ## Organizations
 
@@ -33,7 +33,7 @@ On this tab, you can:
 - Create new organisations (admin privilege required).
 - Edit existing organisation details (admin privilege required).
 
-![alt text](image-7.png)
+![alt text](settings-myOrgs.png)
 
 ## Notifications
 
@@ -42,18 +42,8 @@ On this tab, you can:
 - Set your preferred frequency for receiving notifications within the platform.
 - Choose your desired notification delivery channels (platform, email, or both).
 
-![alt text](image-8.png)
+![alt text](settings-notifications.png)
 
-
-## Preferences
-
-On this tab, you can:
-
-- Customise your user interface display settings (e.g., theme, font size).
-- Select your preferred language for platform interactions.
-- Set your default time zone for accurate data and time representations.
-
-![alt text](image-9.png)
 
 ## Security
 
@@ -61,7 +51,7 @@ On this tab, you can:
 
 - Update your account password for enhanced security.
 
-![alt text](image-10.png)
+![alt text](settings-security.png)
 
 ## Users (Admin Privileges Required)
 
@@ -73,11 +63,19 @@ On this tab, you can:
 - Edit existing user information, including roles and permissions.
 
 
-![alt text](image-11.png)
+![alt text](settings-users.png)
 
+## Users - Organisation Table (Admin Privileges Required)
+On this tab, you can:
 
-## Contact us
+- View existing departments, teams and users respectively
+- Add new departments, teams 
+- Reassign teams
 
-:::info
-We are here to help! Please [contact us](mailto:support@botlhale.ai) with any questions.
-:::
+![alt text](settings-orgTable.png)
+
+## Manage Requests
+
+On this tab, admin can manage the incoming requests from the participants of the organisation.
+
+![alt text](settings-requests.png)

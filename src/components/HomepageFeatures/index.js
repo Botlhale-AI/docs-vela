@@ -9,41 +9,55 @@ const FeatureList = [
     title: 'Dashboard',
     link: '/docs/Dashboard',
     description: 'Learn how to view and customise your call insights.',
+    icon: 'fas fa-tachometer-alt',
   },
   {
     title: 'Calls',
     link: '/docs/Calls',
     description: 'Learn how to review call recordings and hone in on specific calls.',
+    icon: 'fas fa-phone',
   },
   {
-    title: 'Smart Search',
-    link: '/docs/Smart Search',
+    title: 'Smart Detector',
+    link: '/docs/Smart Detector',
     description: 'Learn how to build and manage complex search queries.',
+    icon: 'fas fa-search',
   },
   {
     title: 'Agents',
     link: '/docs/Agents',
     description: 'Learn how to review and export insights specific to agent performance.',
+    icon: 'fas fa-user-tie',
   },
   {
     title: 'Reports',
     link: '/docs/Reports',
     description: 'Learn how to create and view custom reports.',
+    icon: 'fas fa-chart-line',
   },
   {
     title: 'Notifications',
     link: '/docs/Notifications',
     description: 'Learn how to manage your platform and alert preferences.',
+    icon: 'fas fa-bell',
   },
   {
     title: 'Settings',
     link: '/docs/Settings',
     description: 'Learn how to manage your platform settings.',
+    icon: 'fas fa-cogs',
   },
   {
     title: 'Data Upload',
     link: '/docs/Data Upload',
     description: 'Learn how to upload call recordings.',
+    icon: 'fas fa-upload',
+  },
+  {
+    title: 'APIs',
+    link: '/docs/Data Upload',
+    description: 'Learn more about our APIS.',
+    icon: 'fas fa-code',
   },
 ];
 
@@ -70,7 +84,7 @@ const ytVideos = [
   },
 ];
 
-function Feature({ title, link, description }) {
+function Feature({ title, link, description, icon }) {
   return (
     <div className={clsx('col col--4')}>
       <div
@@ -83,14 +97,11 @@ function Feature({ title, link, description }) {
         onClick={() => (window.location.href = link)}
         style={{ cursor: 'pointer' }}
       >
-        <h3 className={clsx(styles.featureTitle)}>{title}</h3>
+        <div className={styles.featureHeader}>
+          <i className={`${icon} ${styles.featureIcon}`}></i>
+          <h3 className={clsx(styles.featureTitle)}>{title}</h3>
+        </div>
         <p className={clsx(styles.featureDescription)}>{description}</p>
-        <a
-          href={link}
-          className={clsx(styles.featureLink, 'button button--link')}
-        >
-          Learn more →
-        </a>
       </div>
     </div>
   );
@@ -133,24 +144,24 @@ export default function HomepageFeatures() {
       {/* Header Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <img src={logo} alt="Vela Logo" className={styles.heroLogo} />
-          <h1 className={styles.heroTitle}>Vela Documentation</h1>
-          <p className={styles.heroSubtitle}>
-            Your multilingual call centre speech analytics platform for actionable insights.
-          </p>
-          
-          <button onClick={scrollToFeatures} className={styles.ctaButton}>
-            Get Started →
-          </button>
-          
+          <div className={styles.heroText}>
+            <h1 className={styles.heroTitle}>Vela Documentation</h1>
+            <p className={styles.heroSubtitle}>
+              <b>Call Centre Analytics Tool</b>: Monitor 100% of your calls regardless of the languages spoken
+              <br />
+            </p>
+            <div className={styles.getStarted} onClick={scrollToFeatures}>
+              Get Started
+            </div>
+          </div>
+          <div className={styles.heroImageContainer}>
+            <img src={logo} alt="Vela Logo" className={styles.heroLogo} />
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className={styles.featuresSection}>
-        <Heading as="h2" className={styles.sectionHeading}>
-          Get Started: Explore Features
-        </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

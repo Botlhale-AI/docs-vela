@@ -11,8 +11,6 @@
           "className": "docs-version-current",
           "path": "/docs",
           "tagsPath": "/docs/tags",
-          "editUrl": "/docs",
-          "editUrlLocalized": "/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/athi/Desktop/docs-vela/sidebars.js",
@@ -22,14 +20,13 @@
             {
               "id": "Agents",
               "title": "Agents",
-              "description": "The Agent screen functions offers you a view of your agents' performance. The information from this screen is available in both a list view, and a board view, illustrated in the images that follow. You can toggle between both views using the View icon in the top right of the screen.",
+              "description": "The Agents screen in the Vela platform provides a comprehensive view of your agents' performance. This screen is designed to help you monitor, analyze, and improve the performance of your call center agents. The information on this screen is available in both a list view and a board view, allowing you to choose the format that best suits your needs. You can toggle between both views using the View icon in the top right corner of the screen.",
               "source": "@site/docs/Agents.md",
               "sourceDirName": ".",
               "slug": "/Agents",
               "permalink": "/docs/Agents",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Agents.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
@@ -38,8 +35,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Dashboard",
-                "permalink": "/docs/Dashboard"
+                "title": "Calls",
+                "permalink": "/docs/Calls"
               },
               "next": {
                 "title": "Notifications",
@@ -47,34 +44,58 @@
               }
             },
             {
+              "id": "back-up-Agents",
+              "title": "Agents",
+              "description": "The Agent screen functions offers you a view of your agents' performance. The information from this screen is available in both a list view, and a board view, illustrated in the images that follow. You can toggle between both views using the View icon in the top right of the screen.",
+              "source": "@site/docs/back-up-Agents.md",
+              "sourceDirName": ".",
+              "slug": "/back-up-Agents",
+              "permalink": "/docs/back-up-Agents",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              }
+            },
+            {
               "id": "Calls",
               "title": "Calls",
-              "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organised by metadata points that facilitate efficient navigation and exploration.",
+              "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.",
               "source": "@site/docs/Calls.md",
               "sourceDirName": ".",
               "slug": "/Calls",
               "permalink": "/docs/Calls",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Calls.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Dashboard",
+                "permalink": "/docs/Dashboard"
+              },
+              "next": {
+                "title": "Agents",
+                "permalink": "/docs/Agents"
               }
             },
             {
               "id": "Dashboard",
               "title": "Dashboard",
-              "description": "The dashboard section of this documentation suite outlines processes related to navigating and customizing",
+              "description": "The dashboard section of this documentation suite outlines processes related to navigating and customizing the Vela Dashboard for efficient exploration of call center analytics.",
               "source": "@site/docs/Dashboard.md",
               "sourceDirName": ".",
               "slug": "/Dashboard",
               "permalink": "/docs/Dashboard",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Dashboard.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -83,8 +104,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Agents",
-                "permalink": "/docs/Agents"
+                "title": "Calls",
+                "permalink": "/docs/Calls"
               }
             },
             {
@@ -97,7 +118,6 @@
               "permalink": "/docs/Data Upload",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Data Upload.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 8,
@@ -106,12 +126,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Notifications",
-                "permalink": "/docs/Notifications"
-              },
-              "next": {
-                "title": "Reports",
-                "permalink": "/docs/Reports"
+                "title": "Smart Detector",
+                "permalink": "/docs/Smart Detector"
               }
             },
             {
@@ -124,7 +140,6 @@
               "permalink": "/docs/Notifications",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Notifications.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 6,
@@ -137,8 +152,25 @@
                 "permalink": "/docs/Agents"
               },
               "next": {
-                "title": "Data Upload",
-                "permalink": "/docs/Data Upload"
+                "title": "Reports",
+                "permalink": "/docs/Reports"
+              }
+            },
+            {
+              "id": "release-notes",
+              "title": "Vela Release Notes – Version 1.2",
+              "description": "Dear Vela Users,",
+              "source": "@site/docs/release-notes.md",
+              "sourceDirName": ".",
+              "slug": "/release-notes",
+              "permalink": "/docs/release-notes",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
               }
             },
             {
@@ -151,7 +183,6 @@
               "permalink": "/docs/Reports",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Reports.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 5,
@@ -160,8 +191,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Data Upload",
-                "permalink": "/docs/Data Upload"
+                "title": "Notifications",
+                "permalink": "/docs/Notifications"
               },
               "next": {
                 "title": "Settings",
@@ -178,7 +209,6 @@
               "permalink": "/docs/Settings",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Settings.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 6,
@@ -191,21 +221,20 @@
                 "permalink": "/docs/Reports"
               },
               "next": {
-                "title": "Smart Search",
-                "permalink": "/docs/Smart Search"
+                "title": "Smart Detector",
+                "permalink": "/docs/Smart Detector"
               }
             },
             {
-              "id": "Smart Search",
-              "title": "Smart Search",
-              "description": "The Smart Search section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.",
-              "source": "@site/docs/Smart Search.md",
+              "id": "Smart Detector",
+              "title": "Smart Detector",
+              "description": "alt text",
+              "source": "@site/docs/Smart Detector.md",
               "sourceDirName": ".",
-              "slug": "/Smart Search",
-              "permalink": "/docs/Smart Search",
+              "slug": "/Smart Detector",
+              "permalink": "/docs/Smart Detector",
               "draft": false,
               "unlisted": false,
-              "editUrl": "/docs/Smart Search.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -216,6 +245,10 @@
               "previous": {
                 "title": "Settings",
                 "permalink": "/docs/Settings"
+              },
+              "next": {
+                "title": "Data Upload",
+                "permalink": "/docs/Data Upload"
               }
             }
           ],
@@ -231,6 +264,18 @@
                   {
                     "type": "doc",
                     "id": "Dashboard"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Calls",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Calls"
                   }
                 ]
               },
@@ -260,14 +305,10 @@
               },
               {
                 "type": "category",
-                "label": "Data Management",
+                "label": "Reports",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
-                  {
-                    "type": "doc",
-                    "id": "Data Upload"
-                  },
                   {
                     "type": "doc",
                     "id": "Reports"
@@ -288,13 +329,25 @@
               },
               {
                 "type": "category",
-                "label": "Search Features",
+                "label": "Smart Detector",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Smart Search"
+                    "id": "Smart Detector"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Data Management",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Data Upload"
                   }
                 ]
               }
@@ -312,7 +365,6 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "/blog/2021-08-26-welcome/index.md",
             "source": "@site/blog/2021-08-26-welcome/index.md",
             "title": "Welcome",
             "description": "Docusaurus blogging features are powered by the blog plugin.",
@@ -375,7 +427,6 @@
           "id": "mdx-blog-post",
           "metadata": {
             "permalink": "/blog/mdx-blog-post",
-            "editUrl": "/blog/2021-08-01-mdx-blog-post.mdx",
             "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
             "title": "MDX Blog Post",
             "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
@@ -424,7 +475,6 @@
           "id": "long-blog-post",
           "metadata": {
             "permalink": "/blog/long-blog-post",
-            "editUrl": "/blog/2019-05-29-long-blog-post.md",
             "source": "@site/blog/2019-05-29-long-blog-post.md",
             "title": "Long Blog Post",
             "description": "This is the summary of a very long blog post,",
@@ -476,7 +526,6 @@
           "id": "first-blog-post",
           "metadata": {
             "permalink": "/blog/first-blog-post",
-            "editUrl": "/blog/2019-05-28-first-blog-post.md",
             "source": "@site/blog/2019-05-28-first-blog-post.md",
             "title": "First Blog Post",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
