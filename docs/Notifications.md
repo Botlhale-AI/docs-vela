@@ -17,14 +17,14 @@ section of this documentation for additional information.
 
 Full details of the issue are not directly accessible from the notification card. Clicking the **View** icon on a specific issue notification card directs users to the corresponding detailed screen from which the issue stems. This allows for closer examination and contextual understanding of the issue.  It is important to note that closing or dismissing the issue notification card within the Notifications screen does not  mark the issue as resolved. To address the issue directly, users must navigate to the associated detailed screen and  utilise the designated resolution functions provided there.
 
-![alt text](notifications-alerts.png)
+![alt text](../img/screenshots/notifications-alerts.png)
 
 
 ## Comments
 
 This tab presents notifications informing users about comments left by other team members on various elements, such as call transcripts.
 
-![alt text](notifications-comments.png)
+![alt text](../img/screenshots/notifications-comments.png)
 
 Full details of the comment, including its complete text and context, are not directly accessible from the notification card. 
  
@@ -37,7 +37,7 @@ This allows for closer examination and contextual understanding of the comment. 
 
 This tab provides notifications regarding newly generated reports becoming available.
 
-![alt text](notifications-reports.png)
+![alt text](../img/screenshots/notifications-reports.png)
 
 Users can interact with report notifications through dedicated icons:
 

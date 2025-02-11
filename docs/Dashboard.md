@@ -25,7 +25,7 @@ Upon first log-in, your dashboard will appear blank. This is because you first n
 3. Select the data points and their corresponding view. Note that data points may be specific to a view type.
 
 
-![alt text](customise-dashboard.png)
+![alt text](../img/screenshots/customise-dashboard.png)
 
 5. Click **Save**. Your dashboard is updated and displays your selected datapoints.
     a. Note that if your organisation has not uploaded any call data to the platform, your dashboard will display empty data cards. See the [Data Upload](/docs/Data%20Upload) section for more information on this.

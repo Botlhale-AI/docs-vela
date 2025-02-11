@@ -6,7 +6,7 @@ sidebar_position: 2
 
 The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.
 
-![alt text](calls.png)
+![alt text](../img/screenshots/calls.png)
 
 Each entry within the log table includes: 
 - **Call ID**: Unique identifier for the call occurrence. 
@@ -28,7 +28,7 @@ Users can:
 
 ## Call Tags
 
-![alt text](call-tags.png)
+![alt text](../img/screenshots/call-tags.png)
 
 ## Detailed Call View 
 
@@ -39,7 +39,7 @@ This screen integrates several key elements:
 - **Audio Playback**: An audio box allowing you to replay the call recording. 
 - **Smart Search**: This customizable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorize key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Search](/docs/Smart%20Search) section of this documentation.
 
-![alt text](detailed-calls.png)
+![alt text](../img/screenshots/detailed-calls.png)
 
 ### Transcript 
 

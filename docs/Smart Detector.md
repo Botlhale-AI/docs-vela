@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Smart Detector
 
-![alt text](smart-detector.png)
+![alt text](../img/screenshots/smart-detector.png)
 
 The Smart Search section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.
 
@@ -18,7 +18,7 @@ This tab allows users to view and create general searches applicable to the enti
 
 The View tab of Vela's **Smart Search > General** screen offers a tabular view of the auto search queries created within your organization.
 
-![alt text](smart-detector-searches-view.png)
+![alt text](../img/screenshots/smart-detector-searches-view.png)
 
 The View tab facilitates efficient navigation of the created search queries. Users can:
 
@@ -33,7 +33,7 @@ Clicking on a specific search query gives you a view of the specific details of 
 
 The Create tab of this screen allows you to create new auto search queries within your organization.
 
-![alt text](smart-detector-searches-create-2.png)
+![alt text](../img/screenshots/smart-detector-searches-create-2.png)
 
 **To create a new auto search query:**
 
@@ -75,7 +75,7 @@ This tab allows users to create and monitor searches specifically focused on ind
 ### View
 Agent-specific searches are presented on the View tab in a tabular format.
 
-![alt text](smart-detector-searches-agents-view.png)
+![alt text](../img/screenshots/smart-detector-searches-agents-view.png)
 
 The View tab facilitates efficient navigation of the created search queries. Users can:
 
@@ -87,7 +87,7 @@ The View tab facilitates efficient navigation of the created search queries. Use
 
 The Create tab of this screen allows you to create new agent search queries within your organization.
 
-![alt text](smart-detector-searchew-agents-create.png)
+![alt text](../img/screenshots/smart-detector-searchew-agents-create.png)
 
 To create a new agent search query:
 
@@ -117,18 +117,18 @@ To create a new topic search:
 2. In the pop-up window that appears, enter a unique name adequately representing the topic you wish to create.
 3. Click **Create Topic**.
 
-![alt text](addNewTopic.png)
+![alt text](../img/screenshots/addNewTopic.png)
 
 4. Your topic is created and displayed on the screen.
 5. You can edit or delete existing topic searches using the Edit or Delete icons.
 
-![alt text](topics.png)
+![alt text](../img/screenshots/topics.png)
 
 ## Intent Search
 
 This tab allows you to create and monitor searches which identify calls associated with particular intents within their dialogue flow.
 
-![alt text](intents.png)
+![alt text](../img/screenshots/intents.png)
 
 To create a new intents search:
 
@@ -142,7 +142,7 @@ To create a new intents search:
 
 This tab allows you to create and monitor searches which track specific keywords or phrases across the call data.
 
-![alt text](keywords.png)
+![alt text](../img/screenshots/keywords.png)
 
 To create a new keyword search:
 

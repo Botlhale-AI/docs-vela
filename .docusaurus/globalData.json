@@ -16,10 +16,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "back-up-Agents",
-              "path": "/docs/back-up-Agents"
-            },
-            {
               "id": "Calls",
               "path": "/docs/Calls",
               "sidebar": "tutorialSidebar"

@@ -22,7 +22,7 @@ On this tab, you can:
 - Organisation affiliation (primary and additional)
 - Team assignment (if applicable)
 
-![alt text](settings-account-final.png)
+![alt text](../img/screenshots/settings-account-final.png)
 
 ## Organizations
 
@@ -33,7 +33,7 @@ On this tab, you can:
 - Create new organisations (admin privilege required).
 - Edit existing organisation details (admin privilege required).
 
-![alt text](settings-myOrgs.png)
+![alt text](../img/screenshots/settings-myOrgs.png)
 
 ## Notifications
 
@@ -42,7 +42,7 @@ On this tab, you can:
 - Set your preferred frequency for receiving notifications within the platform.
 - Choose your desired notification delivery channels (platform, email, or both).
 
-![alt text](settings-notifications.png)
+![alt text](../img/screenshots/settings-notifications.png)
 
 
 ## Security
@@ -51,7 +51,7 @@ On this tab, you can:
 
 - Update your account password for enhanced security.
 
-![alt text](settings-security.png)
+![alt text](../img/screenshots/settings-security.png)
 
 ## Users (Admin Privileges Required)
 
@@ -63,7 +63,7 @@ On this tab, you can:
 - Edit existing user information, including roles and permissions.
 
 
-![alt text](settings-users.png)
+![alt text](../img/screenshots/settings-users.png)
 
 ## Users - Organisation Table (Admin Privileges Required)
 On this tab, you can:
@@ -72,10 +72,10 @@ On this tab, you can:
 - Add new departments, teams 
 - Reassign teams
 
-![alt text](settings-orgTable.png)
+![alt text](../img/screenshots/settings-orgTable.png)
 
 ## Manage Requests
 
 On this tab, admin can manage the incoming requests from the participants of the organisation.
 
-![alt text](settings-requests.png)
+![alt text](../img/screenshots/settings-requests.png)

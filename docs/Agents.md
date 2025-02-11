@@ -202,9 +202,9 @@ The Agents screen includes the following key elements:
 - **Rank**: The relative position of the agent within the team based on overall performance metrics.
 - **Detailed View**: Clicking on an agent's entry opens a dedicated page for granular analysis. This view will be discussed in the next subsection.
 
-![Agents Screen](image-2.png)
+![Agents Screen](../img/screenshots/image-1.png)
 
-![Agents Board View](image-3.png)
+![Agents Board View](../img/screenshots/image-3.png)
 
 ## Detailed Agent View
 

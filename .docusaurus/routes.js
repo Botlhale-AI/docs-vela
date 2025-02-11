@@ -99,26 +99,21 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '654'),
+    component: ComponentCreator('/docs', 'c32'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '860'),
+        component: ComponentCreator('/docs', 'daa'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '2e4'),
+            component: ComponentCreator('/docs', '1f3'),
             routes: [
               {
                 path: '/docs/Agents',
                 component: ComponentCreator('/docs/Agents', '4df'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/back-up-Agents',
-                component: ComponentCreator('/docs/back-up-Agents', '626'),
-                exact: true
               },
               {
                 path: '/docs/Calls',

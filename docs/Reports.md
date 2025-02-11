@@ -7,7 +7,7 @@ sidebar_position: 5
 The Vela Reports Screen serves as a central hub for generating and reviewing reports on your 
 contact centre's performance.
 
-![alt text](image-8t.png)
+![alt text](../img/screenshots/image-8t.png)
 
 ## View Report
 
@@ -26,7 +26,7 @@ manipulation. Users can:
 The Create tab of this screen allows you to create and generate a report by selecting the desired
 metrics and parameters and clicking **Create**.
 
-![alt text](reports-view.png)
+![alt text](../img/screenshots/reports-view.png)
 
 Once created, your report appears on the View tab of the page and is available to be viewed and downloaded by you and your team.
 
@@ -46,9 +46,9 @@ Vela reports can be customised to match your company's branding.
 
 We have also added the ability for your organisation to set recurring reports with the option of viewing the status of the last run and the next run of your scheduled reports.
 
-![alt text](reports-view-scheduled.png)
+![alt text](../img/screenshots/reports-view-scheduled.png)
 
 **Create** a recurring report by clicing on the **Create** tab on the far right of the screen and you will be presented with two tabs. The first tab *Create One-Time Report* which enables you to create one-time reports, and then the second option enables you to set recurring reports.
 
-![alt text](report-create-recurring.png)
+![alt text](../img/screenshots/report-create-recurring.png)
 

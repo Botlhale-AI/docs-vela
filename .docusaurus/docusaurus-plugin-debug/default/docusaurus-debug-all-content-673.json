@@ -44,23 +44,6 @@
               }
             },
             {
-              "id": "back-up-Agents",
-              "title": "Agents",
-              "description": "The Agent screen functions offers you a view of your agents' performance. The information from this screen is available in both a list view, and a board view, illustrated in the images that follow. You can toggle between both views using the View icon in the top right of the screen.",
-              "source": "@site/docs/back-up-Agents.md",
-              "sourceDirName": ".",
-              "slug": "/back-up-Agents",
-              "permalink": "/docs/back-up-Agents",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              }
-            },
-            {
               "id": "Calls",
               "title": "Calls",
               "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.",
