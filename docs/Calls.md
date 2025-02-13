@@ -6,29 +6,59 @@ sidebar_position: 2
 
 The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.
 
+## How To Get Started - Guide
+
+ **1. Accessing the Calls Screen**
+
 ![alt text](../img/screenshots/calls.png)
 
+**2. Understanding the Call Log**
+
 Each entry within the log table includes: 
-- **Call ID**: Unique identifier for the call occurrence. 
-- **Date**: Precise timestamp of the call occurrence. 
-- **Agent ID**: Unique identifiers for the agent involved in the call occurrence. 
-- **Duration**: Total length of the call occurrence. 
-- **Silent Time**: Total length of time during which both parties (agent or customer) are silent in the call occurrence. 
-- **Issues**: Number of issues detected by the Smart Search in the call occurrence. For more information, see the [Smart Detector](/docs/Smart%20Detector) section of this documentation. 
-- **Team**: Name of the team to which the call was originally routed.
-- **Call Tags**: These are the tags associated with a call. You can customise these as you like.
-- **Detailed View**: Clicking on a call entry opens a dedicated page presenting a comprehensive view of the call occurrence. This view will be discussed in the next subsection.
+
+-  **Call ID** – Unique identifier for each call.
+-  **Date** – The exact timestamp when the call occurred.
+-  **Agent** – The agent who handled the call.
+-  **Handle Time** – The total duration of the call.
+-  **Silent Time** – The percentage of time where neither the agent nor the customer spoke.
+-  **Topic** – The main subject of the call, automatically categorized based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
+-  **Alerts** – The number of detected issues based on Smart Search analysis.
+-  **Agent Score** – The system-generated performance score for the agent.
+-  **Team** – The team to which the agent belongs.
+-  **Tags** – Custom labels assigned to calls for better categorization.
+
+**3. Using Call Management Tools**
 
 The Vela call screen facilitates efficient navigation and manipulation of your contact center data. 
 
 Users can:  
+- **Batch Upload** – Click the Batch Upload button to upload multiple call logs at once.
+- **Upload** – Manually upload a single call log.
 - **Sort**: Order entries by any table column, except the Detailed View column, for streamlined identification of specific call segments. 
 - **Filter**: Apply targeted criteria based on various parameters like duration, silent time, issues, date, agent ID, and team, enabling focused analysis on relevant interactions. 
 - **Export**: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools. 
 
 ## Call Tags
 
+## How To Get Started - Guide
+1.Click on the `Select Tag` button.
+
+2.Choose an existing `tag` from the dropdown list.
+
+3.Click `Add Tag` to apply the selected tag to the call.
+
 ![alt text](../img/screenshots/call-tags.png)
+
+## Creating a New Tag
+1.Click on the `New Tag` button.
+
+2.Enter a `tag` name in the text field.
+
+3.Select a color for the tag to visually differentiate it from others.
+
+4.Click `Add Tag` to save the new tag.
+
+![alt text](../img/screenshots/new-tag.png)
 
 ## Detailed Call View 
 
@@ -67,12 +97,13 @@ The audio playback section provides the following convenient controls for review
 The **Smart Search** section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.
 
 This automated analysis generates valuable insights, presented right on the screen: 
-- **Summary:** Provides a concise overview of the call's key points, highlighting the main topics discussed and potential outcomes. 
-- **Keywords**: Identifies prominent terms and phrases used throughout the conversation, revealing recurring themes and areas of customer focus.  
-- **Issues**: Presents the results of automated issue detection within the call.
-- **Intents**: Classifies the customer's overall goals and desired outcomes within the call, based on their expressed needs and the conversation flow. 
-- **Sentiment**: Gauges the emotional tone of the agent and the customer throughout the interaction, measuring the prevalence of positive, negative, or neutral sentiment. 
-- **Agent Score**: Evaluates the agent's performance based on pre-defined criteria like adherence to scripts.
+- **Summary** – Generates a concise overview of the call’s key points, summarizing the agent’s and customer’s interactions.
+- **Keywords** – Highlights important words and phrases that frequently appear in the conversation, helping to identify recurring topics.
+- **Alerts** – Detects potential issues or flagged moments in the call that may require further review, such as compliance risks, customer complaints, or unresolved concerns.
+- **Intents** – Identifies the customer's purpose in the conversation, such as inquiring about a service, requesting assistance, or escalating an issue.
+- **Sentiment** – Analyzes the emotional tone of the conversation, categorizing interactions as positive, neutral, or negative.
+- **Checklist** – Ensures that agents follow a structured approach, checking if they have met the required conversation guidelines.
+- **Pain Points** – Detects potential customer frustrations or issues raised during the call.
 
 ## Contact us
 

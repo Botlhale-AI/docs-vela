@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Dashboard
+# Dashboard 
 
 The dashboard section of this documentation suite outlines processes related to navigating and customizing the Vela Dashboard for efficient exploration of call center analytics.
 
@@ -20,8 +20,12 @@ The Vela Dashboard transforms raw call centre data into a compelling narrative, 
 
 Upon first log-in, your dashboard will appear blank. This is because you first need to customise your dashboard to select the specific data points you would like a view of. Use the following steps to customise your dashboard.
 
+##  How To Get Started - Guide
 1. Ensure you are on the Dashboard screen of the Vela platform.
 2. Click the **Customise Dashboard** icon found on the top right corner of the screen. A pop-up window appears, prompting you to select the datapoints you'd like displayed on your dashboard.
+
+![alt text](../img/screenshots/Customise-button.png)
+
 3. Select the data points and their corresponding view. Note that data points may be specific to a view type.
 
 
@@ -29,14 +33,6 @@ Upon first log-in, your dashboard will appear blank. This is because you first n
 
 5. Click **Save**. Your dashboard is updated and displays your selected datapoints.
     a. Note that if your organisation has not uploaded any call data to the platform, your dashboard will display empty data cards. See the [Data Upload](/docs/Data%20Upload) section for more information on this.
-6. Note that by default, the dashboard is:
-    - Not exportable.
-    - Set to an organisational view. For individual agent or team metrics, navigate to the Agent screen.
-    - Set to a week view. To switch to a month or day view, see the following three steps. To filter calls, click on the **FILTER** icon that corresponds to the data point you would like to customise.
-7. To filter calls, click on the **FILTER** icon that corresponds to the data point you would like to customise.
-8. A pop-up window appears, prompting you to select your desired view and timeframe.
-
-9. Select your desired view and timeframe, and click **Save**. If you should, at any point, wish to change the datapoints you have a view of, perform steps 1-5 again.
 
 
 ---

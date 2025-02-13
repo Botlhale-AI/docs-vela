@@ -1,6 +1,6 @@
 export default [
-  require("/Users/athi/Desktop/docs-vela/node_modules/infima/dist/css/default/default.css"),
-  require("/Users/athi/Desktop/docs-vela/node_modules/@docusaurus/theme-classic/lib/prism-include-languages"),
-  require("/Users/athi/Desktop/docs-vela/node_modules/@docusaurus/theme-classic/lib/nprogress"),
-  require("/Users/athi/Desktop/docs-vela/src/css/custom.css"),
+  require("C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\node_modules\\infima\\dist\\css\\default\\default.css"),
+  require("C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\node_modules\\@docusaurus\\theme-classic\\lib\\prism-include-languages"),
+  require("C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\node_modules\\@docusaurus\\theme-classic\\lib\\nprogress"),
+  require("C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\src\\css\\custom.css"),
 ];
