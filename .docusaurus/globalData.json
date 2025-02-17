@@ -27,8 +27,7 @@
             },
             {
               "id": "Data Upload",
-              "path": "/docs/Data Upload",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/Data Upload"
             },
             {
               "id": "Notifications",

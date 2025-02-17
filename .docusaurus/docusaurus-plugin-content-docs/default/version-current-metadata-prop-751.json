@@ -113,21 +113,6 @@
             "unlisted": false
           }
         ]
-      },
-      {
-        "type": "category",
-        "label": "Data Management",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Data Upload",
-            "href": "/docs/Data Upload",
-            "docId": "Data Upload",
-            "unlisted": false
-          }
-        ]
       }
     ]
   },
@@ -153,8 +138,7 @@
     "Data Upload": {
       "id": "Data Upload",
       "title": "Data Upload",
-      "description": "Data Upload",
-      "sidebar": "tutorialSidebar"
+      "description": "Data Upload"
     },
     "Notifications": {
       "id": "Notifications",

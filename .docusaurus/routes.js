@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', 'f86'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '959'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', '0cf'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', '3d6'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '2ed'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '24f'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '7ec'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', '535'),
     exact: true
@@ -99,15 +64,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'c32'),
+    component: ComponentCreator('/docs', '6b0'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'daa'),
+        component: ComponentCreator('/docs', 'a07'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '1f3'),
+            component: ComponentCreator('/docs', 'c69'),
             routes: [
               {
                 path: '/docs/Agents',
@@ -129,9 +94,8 @@ export default [
               },
               {
                 path: '/docs/Data Upload',
-                component: ComponentCreator('/docs/Data Upload', '61b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/Data Upload', 'a9a'),
+                exact: true
               },
               {
                 path: '/docs/Notifications',
