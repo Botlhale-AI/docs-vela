@@ -26,7 +26,7 @@ export default {
           "showReadingTime": true
         },
         "theme": {
-          "customCss": "/Users/athi/Desktop/docs-vela/src/css/custom.css"
+          "customCss": "/Users/athi/Desktop/docs-vela/src/css/custom.module.css"
         }
       }
     ]
@@ -295,6 +295,12 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "scripts": [
+    {
+      "src": "/js/themeToggle.js",
+      "async": true
+    }
+  ],
   "baseUrlIssueBanner": true,
   "i18n": {
     "defaultLocale": "en",
@@ -312,7 +318,6 @@ export default {
   "customFields": {},
   "plugins": [],
   "themes": [],
-  "scripts": [],
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],

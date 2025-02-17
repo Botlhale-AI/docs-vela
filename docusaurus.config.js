@@ -27,7 +27,7 @@ const config = {
           // editUrl: '/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.module.css'),
         },
       },
     ],
@@ -76,8 +76,14 @@ const config = {
         },
       },
     ],
-  }
- 
+  },
+
+  scripts: [
+    {
+      src: '/js/themeToggle.js',
+      async: true,
+    },
+  ],
 };
 
 export default config;

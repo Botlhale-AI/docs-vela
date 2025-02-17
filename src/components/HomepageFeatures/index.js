@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import styles from '../../css/custom.module.css';
 import logo from '/static/img/VELA.png';
 
 const FeatureList = [
@@ -47,18 +47,12 @@ const FeatureList = [
     description: 'Learn how to manage your platform settings.',
     icon: 'fas fa-cogs',
   },
-  {
-    title: 'Data Upload',
-    link: '/docs/Data Upload',
-    description: 'Learn how to upload call recordings.',
-    icon: 'fas fa-upload',
-  },
-  {
-    title: 'APIs',
-    link: '/docs/Data Upload',
-    description: 'Learn more about our APIS.',
-    icon: 'fas fa-code',
-  },
+  // {
+  //   title: 'Data Upload',
+  //   link: '/docs/Data Upload',
+  //   description: 'Learn how to upload call recordings.',
+  //   icon: 'fas fa-upload',
+  // }
 ];
 
 const ytVideos = [
