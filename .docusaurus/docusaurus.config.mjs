@@ -20,13 +20,13 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\sidebars.js"
+          "sidebarPath": "/Users/athi/Desktop/docs-vela/sidebars.js"
         },
         "blog": {
           "showReadingTime": true
         },
         "theme": {
-          "customCss": "C:\\Users\\lawre\\OneDrive\\Desktop\\docs-vela\\src\\css\\custom.css"
+          "customCss": "/Users/athi/Desktop/docs-vela/src/css/custom.css"
         }
       }
     ]
