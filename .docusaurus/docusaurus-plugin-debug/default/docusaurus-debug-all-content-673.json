@@ -106,11 +106,6 @@
               "sidebarPosition": 8,
               "frontMatter": {
                 "sidebar_position": 8
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Smart Detector",
-                "permalink": "/docs/Smart Detector"
               }
             },
             {
@@ -228,10 +223,6 @@
               "previous": {
                 "title": "Settings",
                 "permalink": "/docs/Settings"
-              },
-              "next": {
-                "title": "Data Upload",
-                "permalink": "/docs/Data Upload"
               }
             }
           ],
@@ -319,18 +310,6 @@
                   {
                     "type": "doc",
                     "id": "Smart Detector"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Data Management",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Data Upload"
                   }
                 ]
               }
