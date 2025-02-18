@@ -47,12 +47,12 @@ const FeatureList = [
     description: 'Learn how to manage your platform settings.',
     icon: 'fas fa-cogs',
   },
-  // {
-  //   title: 'Data Upload',
-  //   link: '/docs/Data Upload',
-  //   description: 'Learn how to upload call recordings.',
-  //   icon: 'fas fa-upload',
-  // }
+  {
+    title: 'Data Upload',
+    link: '/docs/Data Upload',
+    description: 'Learn how to upload call recordings.',
+    icon: 'fas fa-upload',
+  }
 ];
 
 const ytVideos = [

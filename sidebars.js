@@ -52,13 +52,13 @@ const sidebars = {
       collapsed: true,
       items: ['Smart Detector'],
     },
-    // {
-    //   type: 'category',
-    //   label: 'Data Management',
-    //   collapsible: true,
-    //   collapsed: true,
-    //   items: ['Data Upload'],
-    // }
+    {
+      type: 'category',
+      label: 'Data Management',
+      collapsible: true,
+      collapsed: true,
+      items: ['Data Upload'],
+    }
   ],
 };
 
