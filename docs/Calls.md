@@ -58,7 +58,7 @@ Users can:
 
 4.Click `Add Tag` to save the new tag.
 
-![alt text](../img/screenshots/new-tag.png)
+![alt text](../img/screenshots/call-T.png)
 
 ## Detailed Call View 
 

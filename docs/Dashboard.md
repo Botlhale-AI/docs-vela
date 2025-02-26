@@ -24,7 +24,7 @@ Upon first log-in, your dashboard will appear blank. This is because you first n
 1. Ensure you are on the Dashboard screen of the Vela platform.
 2. Click the **Customise Dashboard** icon found on the top right corner of the screen. A pop-up window appears, prompting you to select the datapoints you'd like displayed on your dashboard.
 
-![alt text](../img/screenshots/Customise-button.png)
+![alt text](../img/screenshots/dh-board.png)
 
 3. Select the data points and their corresponding view. Note that data points may be specific to a view type.
 

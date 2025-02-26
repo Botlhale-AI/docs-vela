@@ -12,7 +12,7 @@ The Agents screen in the Vela platform provides a comprehensive view of your age
 
 ### Understanding the Agent Performance Table
 
-![alt text](../img/screenshots/Agent-Performance-Table.png)
+![alt text](../img/screenshots/agents-p.png)
 
 The Agents screen includes the following key elements:
 
@@ -91,7 +91,7 @@ Next, you have the option to filter.
 
 The Agent Details section enables users with admin privilleges to view, edit and update the details of the agents in their respective teams or department.s You have the option to activate the **VOice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another. See below.
 
-![alt text](../img/screenshots/Agent-Details.png)
+![alt text](../img/screenshots/agents-d.png)
 
 ### 11. Proceed by selecting Debt Collection (Department A).
 
@@ -109,7 +109,7 @@ The Agent Details section enables users with admin privilleges to view, edit and
 
 Click the button titled **+ Add Agent** and follow the flow below.
 
-![alt text](../img/screenshots/agent-details-25.png)
+![alt text](../img/screenshots/d-25.png)
 
 ### 15. Click to enter characters.
 

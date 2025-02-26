@@ -33,7 +33,7 @@ Clicking on a specific search query gives you a view of the specific details of 
 
 The Create tab of this screen allows you to create new auto search queries within your organization.
 
-![alt text](../img/screenshots/smart-search-create.png)
+![alt text](../img/screenshots/s-s-c.png)
 
 **How To create a new auto search query:**
 
@@ -228,7 +228,7 @@ Pain points are categorized issues that customers frequently encounter during ca
 2. Enter a title and a brief description of the issue.
 3. Save the pain point, and it will appear in the list.
 
-![alt text](../img/screenshots/Pain-Points.png)
+![alt text](../img/screenshots/pain-p.png)
 
 **2.Editing a Pain Point**
 1. Click the pencil icon next to an existing pain point.
