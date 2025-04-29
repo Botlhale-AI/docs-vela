@@ -983,13 +983,16 @@ The Document Library table allows you to manage uploaded documents:
 1. View Documents:
 - In the **Actions column**, click the view icon (eye) to preview the document.
   - Example: Click the view icon for "Ticket.pdf" to open a preview of the PDF.
+
 2. **Download Documents:**
  - In the Actions column, click the download icon (down arrow) to download the document to your computer.
  - Example: Download "Phara_Payment Notification.pdf" to save it locally.
+
 3. **Delete Documents:**
 - In the Actions column, click the delete icon (trash bin) to remove the document.
 -A confirmation prompt may appear to ensure you want to proceed.
   - Example: Delete "Erms-of-Use.pdf" if it’s no longer needed.
+  
 4. **Filter by Scope:**
 - Use the VIEW BY dropdown to filter documents by scope.
 - Example: Change from "Entire Organisation" to "Departments" to see only documents scoped to departments, like "Phara_Payment Notification.pdf."
