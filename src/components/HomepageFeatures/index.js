@@ -141,7 +141,7 @@ export default function HomepageFeatures() {
           <div className={styles.heroText}>
             <h1 className={styles.heroTitle}>Vela Documentation</h1>
             <p className={styles.heroSubtitle}>
-              <b>Call Centre Analytics Tool</b>: Monitor 100% of your calls regardless of the languages spoken
+              <b>Call Centre Analytics Tool</b>: Monitor 100% of your calls regardless of the languages spoken.
               <br />
             </p>
             <div className={styles.getStarted} onClick={scrollToFeatures}>
