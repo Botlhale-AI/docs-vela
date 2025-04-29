@@ -211,7 +211,7 @@
             {
               "id": "Smart Detector",
               "title": "Smart Detector",
-              "description": "alt text",
+              "description": "Introduction",
               "source": "@site/docs/Smart Detector.md",
               "sourceDirName": ".",
               "slug": "/Smart Detector",
