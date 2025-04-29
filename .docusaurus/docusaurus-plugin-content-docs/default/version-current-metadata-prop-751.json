@@ -26,7 +26,7 @@
       },
       {
         "type": "category",
-        "label": "Calls",
+        "label": "Interactions - Calls",
         "collapsible": true,
         "collapsed": true,
         "items": [
@@ -35,6 +35,21 @@
             "label": "Calls",
             "href": "/docs/Calls",
             "docId": "Calls",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Interactions - Chats",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Chats",
+            "href": "/docs/Chats",
+            "docId": "Chats",
             "unlisted": false
           }
         ]
@@ -141,13 +156,19 @@
     "Calls": {
       "id": "Calls",
       "title": "Calls",
-      "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.",
+      "description": "The Interactions section is the primary interface for detailed analysis of individual customer engagements. It includes both Calls and Chats, providing access to transcripts, metadata, and other insights. This section enables users to review and evaluate customer conversations, helping teams identify trends, assess quality, and improve overall customer experience.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Chats": {
+      "id": "Chats",
+      "title": "Chats",
+      "description": "The Chats screen displays a detailed table of all processed chat interactions, organized by key metadata to support easy navigation and in-depth exploration.",
       "sidebar": "tutorialSidebar"
     },
     "Dashboard": {
       "id": "Dashboard",
       "title": "Dashboard",
-      "description": "The dashboard section of this documentation suite outlines processes related to navigating and customizing the Vela Dashboard for efficient exploration of call center analytics.",
+      "description": "The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.",
       "sidebar": "tutorialSidebar"
     },
     "Data Upload": {
@@ -170,7 +191,7 @@
     "Reports": {
       "id": "Reports",
       "title": "Reports",
-      "description": "The Vela Reports Screen serves as a central hub for generating and reviewing reports on your",
+      "description": "The Vela Reports Screen serves as a central hub for generating and reviewing",
       "sidebar": "tutorialSidebar"
     },
     "Settings": {

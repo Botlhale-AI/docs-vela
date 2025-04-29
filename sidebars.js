@@ -12,10 +12,17 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Calls',
+      label: 'Interactions - Calls',
       collapsible: true,
       collapsed: true,
       items: ['Calls'],
+    },
+    {
+      type: 'category',
+      label: 'Interactions - Chats',
+      collapsible: true,
+      collapsed: true,
+      items: ['Chats'],
     },
     {
       type: 'category',

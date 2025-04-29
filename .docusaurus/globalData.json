@@ -21,6 +21,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Chats",
+              "path": "/docs/Chats",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Dashboard",
               "path": "/docs/Dashboard",
               "sidebar": "tutorialSidebar"
