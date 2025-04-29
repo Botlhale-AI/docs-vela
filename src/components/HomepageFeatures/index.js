@@ -12,9 +12,15 @@ const FeatureList = [
     icon: 'fas fa-tachometer-alt',
   },
   {
-    title: 'Calls',
+    title: 'Interactions - Calls',
     link: '/docs/Calls',
     description: 'Learn how to review call recordings and hone in on specific calls.',
+    icon: 'fas fa-phone',
+  },
+  {
+    title: 'Interactions - Chats',
+    link: '/docs/Chats',
+    description: 'Learn how to review chats and hone in on specific chats.',
     icon: 'fas fa-phone',
   },
   {

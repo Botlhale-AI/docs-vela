@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-62a": {
+  "/docs-333": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docse-66-453"
     }
   },
-  "/docs-daa": {
+  "/docs-bf6": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-1f3": {
+  "/docs-fd6": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Agents-4df": {
@@ -206,6 +206,10 @@
   "/docs/Calls-a01": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-callse-8-e-ab2"
+  },
+  "/docs/Chats-4bc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-chats-999-9ba"
   },
   "/docs/Dashboard-379": {
     "__comp": "__comp---theme-doc-item-178-a40",

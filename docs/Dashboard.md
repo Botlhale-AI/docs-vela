@@ -4,45 +4,89 @@ sidebar_position: 1
 
 # Dashboard 
 
-The dashboard section of this documentation suite outlines processes related to navigating and customizing the Vela Dashboard for efficient exploration of call center analytics.
+The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.
 
-The Vela Dashboard serves as the primary interface for exploring the comprehensive analytics generated from your call centre data. It consolidates key performance indicators, emerging trends, and actionable insights into a visually intuitive and customisable interface. This centralised hub empowers diverse users, from contact centre managers monitoring overall performance to quality assurance analysts investigating specific interactions, to make data-driven decisions with swiftness and precision.
+What the Dashboard Does
 
-The dashboard functionalities include:
+* **Quick Overview**: See key data like silent time, customer feelings, agent
+performance, and call summaries at a glance
+* **Deep Dive**: Look closer at specific calls with charts and graphs to understand
+customer feelings, topics, and agent interactions.
 
-* **Comprehensive Overview**: Aggregate metrics like silent time, sentiment and intent classification, agent performance, and call summarisation are readily available for at-a-glance comprehension.
-* **Granular Exploration**: Drill down into specific call segments using interactive charts and graphs, enabling detailed analysis of customer sentiment, topic prevalence, and agent-customer interactions.
-* **Customisation**: Tailor the dashboard layout and data presentation to align with your specific needs.
+* **Make It Your Own**: Change the dashboard to show the data you care about most.
 
-The Vela Dashboard transforms raw call centre data into a compelling narrative, guiding you towards informed decision-making, operational optimisation, and ultimately, superior customer experiences.
+The Vela Dashboard turns call center data into clear insights, helping you improve
+operations and give better customer experiences.
+
 
 ## Customise your dashboard
 
-Upon first log-in, your dashboard will appear blank. This is because you first need to customise your dashboard to select the specific data points you would like a view of. Use the following steps to customise your dashboard.
+When you first log in, your dashboard will be empty. You need to set it up to show the data
+you want. Follow these steps to customize your dashboard.
+
 
 ##  How To Get Started - Guide
-1. Ensure you are on the Dashboard screen of the Vela platform.
-2. Click the **Customise Dashboard** icon found on the top right corner of the screen. A pop-up window appears, prompting you to select the datapoints you'd like displayed on your dashboard.
+1.  **Go to the Dashboard Screen**: Make sure you are on the "Dashboard" section of the
+Vela platform.
 
-![alt text](../img/screenshots/dh-board.png)
+2.  **Choose a Team**: Use the "View By" dropdown to select a team, like "Interns Team."
 
-3. Select the data points and their corresponding view. Note that data points may be specific to a view type.
+![alt text](../img/screenshots/dashboard01.png)
 
-
-![alt text](../img/screenshots/customise-dashboard.png)
-
-5. Click **Save**. Your dashboard is updated and displays your selected datapoints.
-    a. Note that if your organisation has not uploaded any call data to the platform, your dashboard will display empty data cards. See the [Data Upload](/docs/Data%20Upload) section for more information on this.
+3. **Set Interactions Type**: Pick the type of interactions to view—choose from "All,"
+"Calls," or "Chats."
 
 
----
+![alt text](../img/screenshots/dh-interaction.png)
 
-## [How To Get Started - Guide](https://app.supademo.com/demo/cm6kn9w1s11xy19tn34942w73)
+4. **Set Date Range**:
+![alt text](../img/screenshots/date-range.png)
 
-### 1. Customise the date range and click on "Save".
+- Click the orange pencil on "Date range" (example: "20/04/2025 –
+28/04/2025") to open the date picker.
 
-![2 Click on "Save".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/ObF9oHTQ17HyQ8VGvT4sz.jpg&x=1994&y=1192&fill=2ca5e0&color=2ca5e0)
+- In the "Select Date Range" pop-up, choose a preset option like "Today,"
+"Yesterday," "This Week," "Last Week," "This Month," or "Last Month," or pick
+custom dates from the calendar (e.g., April 20 to April 26, 2025).
 
-### 2. Data in the selected range.
+![alt text](../img/screenshots/date-range%202.0.png)
 
-![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/wn_kFOBJmpc95RolDFvG0.jpg&x=1990&y=318&fill=2ca5e0&color=2ca5e0)
+- Click "Save" in the date range pop-up.
+### **Save Your Changes**: Click the orange "Save" button in the metrics pop-up. 
+Your dashboard will now show the data you selected.
+
+5. **Open Customization**:
+![alt text](../img/screenshots/costomize.png)
+
+- Click the "Customize" button on the top right corner of the screen. A pop-up window
+will appear.
+
+6. **Select Metrics**:
+
+![alt text](../img/screenshots/Add%20metric.png)
+
+**In the pop-up, click "Add New Metric" to choose the data you want to see, like**:
+- Agent Distribution
+- Agents Scores Distribution
+- Ave Call Duration
+- Ave Response Time
+- Average Agent Score
+- Average Silent Time
+- Bottom 10 Pain Points (Detected) Note: Each metric will show data for the
+whole organization and the team you choose. You can also filter data for a
+specific time period using the filter icon next to the metric.
+
+**Save Your Changes: Click the orange "Save" button**
+
+**Notes**
+- If your organization hasn’t uploaded any call data, your dashboard will show empty
+cards. Check the "Data Upload" section for more details on how to add data.
+- You can always go back to the "Customize" button to change the metrics, team,
+interaction type, or date range.
+
+
+
+
+
+
+<!-- ![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/wn_kFOBJmpc95RolDFvG0.jpg&x=1990&y=318&fill=2ca5e0&color=2ca5e0) -->

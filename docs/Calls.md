@@ -4,13 +4,19 @@ sidebar_position: 2
 
 # Calls
 
-The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.
+
+The Interactions section is the primary interface for detailed analysis of individual customer engagements. It includes both Calls and Chats, providing access to transcripts, metadata, and other insights. This section enables users to review and evaluate customer conversations, helping teams identify trends, assess quality, and improve overall customer experience.
 
 ## How To Get Started - Guide
 
+## Calls
+
+The Calls screen presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.
+
+
  **1. Accessing the Calls Screen**
 
-![alt text](../img/screenshots/calls.png)
+![alt text](../img/screenshots/callz.png)
 
 **2. Understanding the Call Log**
 
@@ -28,6 +34,8 @@ Each entry within the log table includes:
 -  **Tags** – Custom labels assigned to calls for better categorization.
 
 **3. Using Call Management Tools**
+
+![alt text](../img/screenshots/Uploadz.png)
 
 The Vela call screen facilitates efficient navigation and manipulation of your contact center data. 
 
@@ -58,7 +66,7 @@ Users can:
 
 4.Click `Add Tag` to save the new tag.
 
-![alt text](../img/screenshots/call-T.png)
+![alt text](../img/screenshots/Callz-%20Tages.png)
 
 ## Detailed Call View 
 
@@ -69,7 +77,7 @@ This screen integrates several key elements:
 - **Audio Playback**: An audio box allowing you to replay the call recording. 
 - **Smart Search**: This customizable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorize key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Search](/docs/Smart%20Search) section of this documentation.
 
-![alt text](../img/screenshots/detailed-calls.png)
+![alt text](../img/screenshots/Detailz-V.png)
 
 ### Transcript 
 

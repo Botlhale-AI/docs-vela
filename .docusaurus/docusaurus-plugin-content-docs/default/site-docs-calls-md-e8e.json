@@ -1,7 +1,7 @@
 {
   "id": "Calls",
   "title": "Calls",
-  "description": "The Vela call screen serves as the primary interface for in-depth analysis of individual customer interactions. It presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.",
+  "description": "The Interactions section is the primary interface for detailed analysis of individual customer engagements. It includes both Calls and Chats, providing access to transcripts, metadata, and other insights. This section enables users to review and evaluate customer conversations, helping teams identify trends, assess quality, and improve overall customer experience.",
   "source": "@site/docs/Calls.md",
   "sourceDirName": ".",
   "slug": "/Calls",
@@ -20,7 +20,7 @@
     "permalink": "/docs/Dashboard"
   },
   "next": {
-    "title": "Agents",
-    "permalink": "/docs/Agents"
+    "title": "Chats",
+    "permalink": "/docs/Chats"
   }
 }

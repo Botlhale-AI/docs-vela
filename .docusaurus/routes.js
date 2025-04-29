@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '62a'),
+    component: ComponentCreator('/docs', '333'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'daa'),
+        component: ComponentCreator('/docs', 'bf6'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '1f3'),
+            component: ComponentCreator('/docs', 'fd6'),
             routes: [
               {
                 path: '/docs/Agents',
@@ -118,6 +118,12 @@ export default [
               {
                 path: '/docs/Calls',
                 component: ComponentCreator('/docs/Calls', 'a01'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Chats',
+                component: ComponentCreator('/docs/Chats', '4bc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

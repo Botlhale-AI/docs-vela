@@ -1,7 +1,7 @@
 {
   "id": "Dashboard",
   "title": "Dashboard",
-  "description": "The dashboard section of this documentation suite outlines processes related to navigating and customizing the Vela Dashboard for efficient exploration of call center analytics.",
+  "description": "The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.",
   "source": "@site/docs/Dashboard.md",
   "sourceDirName": ".",
   "slug": "/Dashboard",
