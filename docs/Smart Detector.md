@@ -12,7 +12,7 @@ Welcome to Smart Detector on the Vela platform! Smart Detector empowers you to m
 
 - **Agent Scorecard:** Evaluate and improve agent performance by setting up checklists and tracking key behaviors across interactions.
 
-- **Knowledge Base:** Build and maintain a repository of resources to assist agents, providing quick access to information on common topics, intents, **keywords**, or **pain points** identified in customer interactions.
+- **Knowledge Base:** A powerful AI-powered tool integrated into your call center analytics dashboard. This system enables you to build a searchable, smart knowledge base using your own documents and URLs, delivering relevant insights to your organisation.
 
 Navigate through these features using the cards on the main **Smart Detector page**, or dive deeper into specific categories like **Topics**,**Intents**, **Keywords**, and **Pain Points** using the labels below the cards. These tools help you analyze calls, uncover trends, and optimize your team’s performance with ease.
 
@@ -24,7 +24,7 @@ Once you click the **Smart Search** card on the Smart Detector homepage, you’l
 
 ![alt text](../img/screenshots/SDS.png)
 
-After landing on the Smart Search section, you’ll start in the **Smart Searches tab**, specifically on the **View sub-tab**. This screen displays a table of all the automated search queries created within your organization. Here’s a breakdown of what you see and how to interact with this page:
+After landing on the Smart Search section, you'll start in the **Smart Searches tab**, specifically on the **View sub-tab**. This screen displays a table of all the automated search queries created within your organization. Here's a breakdown of what you see and how to interact with this page:
 
 ### Understanding the View Sub-Tab Layout
 - **Header:** The title "Smart Detector - Searches" confirms you’re in the Smart Search section.
@@ -35,7 +35,7 @@ After landing on the Smart Search section, you’ll start in the **Smart Searche
     - **Description:** A brief explanation of what the search looks for (e.g., "The client indicates they have an inquiry about an online order").
     - **Scope:** The range of calls the search applies to (e.g., "Organisation").
     - **Date Created:** When the search was created (e.g., "20/01/2026").
-    - **Status: Whether** the search is active or inactive (e.g., "Active" or "Inactive").
+    - **Status:** Whether the search is active or inactive (e.g., "Active" or "Inactive").
     - **Notify:** Indicates if notifications are enabled for this search (e.g., "Yes" or "No").
 - **Navigation:** At the bottom, you’ll see pagination controls ("Previous", "Page 1 of 1", "Next") to navigate through multiple pages of search queries if there are more than can fit on one page.
 - **Sort and Filter:** Icons labeled Sort and Filter (next to a search bar) allow you to organize and narrow down the list of searches.
@@ -44,7 +44,7 @@ After landing on the Smart Search section, you’ll start in the **Smart Searche
 
 The "View By" dropdown in the **Smart Searches** tab (under the **View sub-tab**) lets you change the scope of the search queries displayed in the table. By default, it’s set to **Entire Organisation**, showing all queries across your organization. Here’s how to change it to Specific **Department** or **Specific Team** to focus on searches for a particular department (e.g., Customer Support or Sales) or team (e.g., Billing Team).
 
-# How to get started Guid:
+# How to Get Started Guide:
 ### Step 1: Locate and Open the "View By" Dropdown
 In the Smart Searches tab, under the View sub-tab, find the dropdown labeled **View By: Entire Organisation.**
 
@@ -139,14 +139,14 @@ The detailed view is organized into several sections, each providing specific in
 ## Create
 To create a new automated search query in the Smart Searches tab, you’ll use the Create sub-tab. This allows you to define a search that monitors call transcripts for specific patterns, keywords, or behaviors. Here’s a step-by-step guide to setting up your new search query:
 
-# How to get stared guid 
+# How to get started guide 
 ### Step 1: Navigate to the Create Sub-Tab
   - In the Smart Searches tab, click the **Create** sub-tab at the top (next to **View**, **Examples**, and **Results**).
   - This opens a form with fields to configure your new search query.
 
 ![alt text](../img/screenshots/SSD3.png)
 
-## Step 2: Fill Out the Form
+## Step 2: Fill out the form
 The form includes several sections to define your search query. Fill them out as follows:
 1. **Name:**
   - Enter a unique name for the search query in the Name field.
@@ -197,7 +197,7 @@ The form includes several sections to define your search query. Fill them out as
 #### Examples
 The Examples sub-tab in the Smart Searches tab provides a library of predefined search query templates that you can use as inspiration or enable for your own call monitoring. These templates are designed to help you quickly set up common searches without starting from scratch. Here’s what you’ll see and how to use this sub-tab:
 
-# HOW TO START GUID:
+# HOW TO START GUIDE:
 
 ## Step 1: Navigate to the Examples Sub-Tab
 
@@ -689,6 +689,7 @@ The Create tab in the Agent Scorecard section of the Smart Detector feature allo
 - Apply To:
    - Checkboxes for Inbound Calls, Outbound Calls, and All Calls to determine which types of calls the question applies to.
       - In the screenshot, All Calls is checked, meaning the question will apply to both inbound and outbound calls.
+   - Alternatively, check Inbound Calls or Outbound Calls to limit the scope.
 - Auto-Fail:
    - A toggle switch to determine whether failing this question automatically fails the agent’s entire scorecard.
      - In the screenshot, Auto-Fail is disabled (set to "Off").
@@ -763,7 +764,7 @@ The Examples tab in the Agent Scorecard section of the Smart Detector feature pr
 The Examples tab displays a table of predefined questions with the following elements:
 
 - **Header:**
-  - The title "Smart Detector – Agent Scorecard" confirms you’re in the Agent Scorecard section.
+  - The title "Agent Scorecard" confirms you’re in the Agent Scorecard section.
   - A Back button (a left arrow) at the top-left lets you return to the main Smart Detector page.
 - **Tabs:**
   - **View:** Shows the list of active questions used for scoring (covered previously).
@@ -904,8 +905,7 @@ The table lists the questions and their evaluation outcomes, with the following 
     - Use the Previous and Next buttons to navigate between pages if there are more questions than can fit on one page.
 
 
-   # Navigating to the Knowledge Base Section
-The **Smart Detector page** provides an overview of the Smart Detector features, including Smart Search, Agent Scorecard, and Knowledge Base. Clicking on the **Knowledge Base card** takes you to a dedicated section where you can manage and access a centralized repository of information to support agents during customer interactions. This section explains what happens when you click on the **Knowledge Base card** and provides an overview of the Knowledge Base feature.
+## Knowledge Base Section
 
 ![alt text](../img/screenshots/AS8.png)
 
@@ -920,322 +920,74 @@ The **Smart Detector page** provides an overview of the Smart Detector features,
 
 ## Step 2: Understand the Knowledge Base Section Interface
 The Knowledge Base section provides tools to upload and manage documents, with the following elements:
-- **Header:**
+
+**Header:**
   - The title "Knowledge Base" confirms your location.
   - The left sidebar highlights Smart Detector as the active section.
-- **Search Bar:**
-  - A search bar at the top-right to find documents by name or keyword.
-  - Example: Search for "terms" to find documents like "TERMS OF USE."
-- **PDF Upload Area:**
+
+**Search Bar:**
+  - A search bar at the top-right to find documents by file name.
+
+**PDF Upload Area:**
   - A rectangular area at the top with the text: "Drag & drop PDF files here, or click to select."
   - This area allows you to upload PDF documents to the Knowledge Base.
-- **View By Dropdown:**
-  - A dropdown labeled "VIEW BY" set to "Entire Organisation," which likely filters the Document Library table based on the scope of the documents.
-  - Possible options might include "Entire Organisation," "Departments," or "Teams," reflecting the scopes shown in the table.
-- **Document Library Table:**
-  - A table labeled "Document Library" listing all uploaded documents.
-  - The table includes the following columns:
-- **File Name:**
-  - The name of the uploaded document, with a checkbox for selecting multiple documents (if batch actions are supported).
-  - Example: "Ticket.pdf," "Erms-of-Use.pdf," "TERMS OF USE."
-- **Description:**
-  - A brief description of the document, often indicating its purpose or content.
-  - Example: "a ticket" for "Ticket.pdf," or "No description available" for "Erms-of-Use.pdf."
-- **Uploaded:**
-  - The date the document was uploaded.
-  - Example: "4/29/2025" for "Ticket.pdf," "4/17/2025" for "Phara_Payment Notification.pdf."
-- **Scope:**
-  - The scope of the document, indicating who can access it (e.g., "Organisation," "Departments," "Teams").
-  - Example: "Organisation" for "Ticket.pdf," "Teams" for "Home_Bothale AI."
-- **Actions:**
-  - Options to interact with the document, such as viewing, downloading, or deleting.
-  - Example: Icons include a view icon (eye), a download icon (down arrow), and a delete icon (trash bin).
-- **The table lists several documents, such as:**
-  - "Ticket.pdf" with description "a ticket," uploaded on "4/29/2025," scope "Organisation."
-  - "Home_Bothale AI" with a description about breaking language barriers, uploaded on "4/23/2025," scope "Teams."
-  - "Phara_Payment Notification.pdf" with description "A payment notification," uploaded on "4/17/2025," scope "Departments."
+
+**View By Dropdown:**
+  - A dropdown labeled "View By" set to "Entire Organisation," which likely filters the Document Library table based on the scope of the documents.
+  - Possible options might include "Entire Organisation," "Specific Department" or "Specific Team" reflecting the scopes shown in the table.
+
+**Document Library Table:**
+  A table labeled "Document Library" listing all uploaded documents.
+  The table includes the following columns:
+
+      **File Name:**
+         The name of the uploaded document, with a checkbox for selecting multiple documents (if batch actions are supported). 
+
+      **Description:**
+        A brief description of the document, often indicating its purpose or content.
+
+      **Uploaded:**
+        The date the document was uploaded.
+        
+      **Scope:**
+        The scope of the document, indicating who can access it (e.g., "Organisation," "Departments," "Teams").
+
+      **Actions:** Options to interact with the document, such as viewing, downloading, or deleting.
 
 ## Step 3: Upload a Document to the Knowledge Base
 
 To add a new document to the Knowledge Base:
 1. **Access the PDF Upload Area:**
-- Locate the PDF Upload area at the top of the page, which says: "Drag & drop PDF files here, or click to select."
+Locate the PDF Upload area at the top of the page, which says: "Drag & drop PDF files here, or click to select."
 2. **Upload a PDF:**
-- Drag and Drop: Drag a PDF file from your computer and drop it into the upload area.
-- Click to Select: Click the area to open a file explorer, then select a PDF file from your computer.
-- Example: Upload a file named "Refund Policy.pdf."
-3. **Define Document Details (If Prompted):**
-- After uploading, you may be prompted to provide additional details:
-- **File Name:** The name of the document (auto-filled but editable).
-  - **Example:** "Refund Policy.pdf."
-- Description: Add a brief description of the document.
-  - Example: "Guidelines for processing customer refunds."
-- Scope: Select the scope of the document (e.g., "Organisation," "Departments," "Teams").
-- Example: Set to "Customer Support" under "Departments."
-4. **Save the Document:**
-- Click a Save or Upload button (if prompted) to add the document to the Document Library.
-- The new document will appear in the Document Library table with its upload date and scope.
-   - Example: "Refund Policy.pdf" will show with the description "Guidelines for processing customer refunds," uploaded on "4/29/2025," scope "Departments."
+
+    2.1 Drag and Drop: Drag a PDF file from your computer and drop it into the upload area.
+  Click to Select: Click the area to open a file explorer, then select a PDF file from your computer.
+
+    2.2  **Provide Document Description (Optional):**
+    After uploading, you will be provided with an option to provide additional details:
+
+    2.3 Scope: Select the scope of the document (Options: "Entire Organisation", "Specific Department" and "Specific Teams").
+
+4. **Upload Files**
+
+    Click Upload button to add the document to the Document Library.
+    The new document will appear in the Document Library table with the information provided.
 
 ## Step 4: Manage Documents in the Document Library
 
 The Document Library table allows you to manage uploaded documents:
 1. View Documents:
-- In the **Actions column**, click the view icon (eye) to preview the document.
-  - Example: Click the view icon for "Ticket.pdf" to open a preview of the PDF.
+    Click the view icon (eye) to preview the document.
 
 2. **Download Documents:**
- - In the Actions column, click the download icon (down arrow) to download the document to your computer.
- - Example: Download "Phara_Payment Notification.pdf" to save it locally.
+    Click the download icon (down arrow) to download the document to your computer.
 
 3. **Delete Documents:**
-- In the Actions column, click the delete icon (trash bin) to remove the document.
--A confirmation prompt may appear to ensure you want to proceed.
-  - Example: Delete "Erms-of-Use.pdf" if it’s no longer needed.
+    Click the delete icon (trash bin) to remove the document.
   
 4. **Filter by Scope:**
-- Use the VIEW BY dropdown to filter documents by scope.
-- Example: Change from "Entire Organisation" to "Departments" to see only documents scoped to departments, like "Phara_Payment Notification.pdf."
+  Use the **View By** dropdown to filter documents by scope.
+
 5. **Search for Documents:**
-- Use the search bar to find specific documents by name or keyword.
--Example: Search for "terms" to find "TERMS OF USE" and "174484192809568-TERMS OF USE BOT (1).pdf."
-
-## Step 5: Use Documents in Customer Interactions
-Uploaded documents in the Knowledge Base can be used by agents to assist with customer interactions:
-1. **Access During Calls:**
-- Agents can access the Knowledge Base during customer interactions to reference documents.
-- Example: An agent handling a billing query can view "Phara_Payment Notification.pdf" to provide accurate information.
-2. **Link to Smart Detector Insights:**
-- Use insights from the Topics, Intents, Keywords, and Pain Points sections to upload relevant documents.
-- Example: If the Pain Points section identifies "Billing and payment issues," ensure documents like "Phara_Payment Notification.pdf" are available for agents.
-3. **Update Documents:**
-- If a document becomes outdated, upload a new version and delete the old one.
-  - Example: Replace "TERMS OF USE" with an updated version if policies change.
-
-<!-- ## Smart Searches
-
-This tab allows users to view and create general searches applicable to the entire corpus of call transcripts. It also offers a library of pre-built search templates for common use cases.
-
-### View
-
-The View tab of Vela's **Smart Search > General** screen offers a tabular view of the auto search queries created within your organization.
-
-![alt text](../img/screenshots/smart-detector-searches-view.png)
-
-The View tab facilitates efficient navigation of the created search queries. Users can:
-
-- **Sort:** Order entries by any table column.
-- **Filter:** Apply targeted criteria based on various parameters like the query's name, description, date, and status.
-
-:::info
-Clicking on a specific search query gives you a view of the specific details of a search as seen in the following image.
-:::
-
-### Create
-
-The Create tab of this screen allows you to create new auto search queries within your organization.
-
-![alt text](../img/screenshots/s-s-c.png)
-
-**How To create a new auto search query:**
-
-1. Ensure you are on the Create tab of the Smart Search screen.
-2. Enter the requested information outlined and exemplified below.
-
-**2.1 Enter a Name & Description**
-
-- Provide a unique name for the Smart Search to help identify its purpose.
-- Add a description that explains what this search will analyze.
-  Define the Search Scope
-
-**2.2 Select where this search should be applied:**
-- Entire `Organization (default)` – Search all calls within the system.
-- Specific `Teams or Departments` – Restrict the search to certain groups.
-
-**2.3Apply Filters**
-
-- Click `Add Filter` to narrow down the search.
-- Use filters like:
-- Call Duration – Find calls shorter or longer than a specific time.
-- Agent ID – Focus on calls handled by certain agents.
-- Topics or Keywords – Search for specific customer queries or complaints.
-
-**2.4 Enable Search Status**
-
-- Enabled (checked) – Activates the search immediately.
-- Disabled – Saves the search without running it.
-
-**2.5  Advanced Options**
-
-- Inference – Runs the search on historical call data if enabled.
-- Notifications – Sends alerts when matches are found in ongoing calls.
-
-**2.6 Create the Search**
-
-- Click "Create" to finalize and activate the Smart Search.
-
-3. Your newly created auto search query appears on the View tab of the Smart Search screen.
-
-### Templates
-
-The Templates tab of this screen allows you to review and enable predefined auto search queries within your organization.
-
-<!-- :::info
-Insert image of the template tab once templates have been created
-::: -->
-
-:::info
-Clicking on the name of a specific template brings you to a detailed view of the predefined auto search query and allows you to enable or disable the query.
-:::
-
-<!-- The Templates tab facilitates efficient navigation of the predefined search queries. Users can:
-
-- **Sort:** Order entries by any table column.
-- **Filter:** Apply targeted criteria based on various parameters like the query's name, description, and status.
-
-## Agent Checklists
-
-This tab allows users to create and monitor searches specifically focused on individual agents' performance, identifying trends and areas for improvement based on flagged issues.
-
-### View
-Agent-specific searches are presented on the View tab in a tabular format.
-
-## How To Get Started - Guide
-
-**1. Understanding the Agent Checklist Table**
-![alt text](../img/screenshots/smart-detector-searches-agents-view.png)
-
-Each row represents an evaluation criterion that is automatically checked for every call. The columns include:
-
-- **Question** – The specific behavior or action being evaluated (e.g., "Did the agent greet the customer?").
-- **Category** – Indicates that the evaluation **applies to Agents**.
-- **Scope** – The evaluation applies to the **entire organization or a specific team**.
-- **Automatic** – Shows that the system automatically evaluates the checklist item.
-- **Direction** – Determines whether the rule applies to **all calls, inbound, or outbound calls**.
-- **Weight** – The importance of the question in the overall agent performance score.
-- **Auto-Fail** – If marked Yes, failing this item results in an automatic fail on the checklist.
-- **Date Created** – The date the rule was added.
-- **Status** – Indicates whether the checklist item is **Active or Inactive**.
-
-
-**2. Sort & Filter**
-
-- Use the search bar to find specific checklist items.
-- Apply filters to analyze checklist data based on teams, date ranges, or specific agent behaviors.
-
-
-### Create
-
-The Create tab of this screen allows you to create new agent search queries within your organization.
-
-## Step-by-Step Guide to Creating a Checklist
-
-![alt text](../img/screenshots/smart-detector-searchew-agents-create.png)
-
-To create a new agent search query:
-
-**Step 1: Define the Checklist Scop**
-
-- Select Entire Organization to apply the checklist across all teams.
-- Choose a specific department or team if needed.
-
-**Step 2: Add a New Checklist Question**
-
-- **Question:** Enter the specific evaluation criteria (e.g., "Did the agent greet the customer?").
-- **Category:** Assign a category such as Customer Service, Compliance, Sales, or Support.
-- **Expected Outcome:** Define the ideal response (Yes or No) to indicate compliance.
-- **Weight:** Assign a numerical weight to determine the importance of the question in the overall evaluation.
-
-**Step 3: Configure Checklist Settings**
-- Search Status:
-
- ✅ **Enabled**– Activates the checklist immediately.
-
- ⬜ **Disabled** – Saves the checklist but does not apply it yet.
-
-- Apply To
-
- ⬜ **Inbound Calls** – Apply this checklist only to customer-initiated calls.
-
- ⬜ **Outbound Calls** – Apply this checklist only to agent-initiated calls.
-
- ✅ **All Calls** – Apply the checklist to all interactions.
-
-- Auto-Fail Option:
-
- - If enabled, failing this question will automatically mark the agent as failing the checklist.
-
-
-**Step 4: Save & Apply the Checklist**
-
- - Click "Create" to finalize and activate the checklist.
- - The new rule will be applied to all relevant calls based on the selected criteria.
-
-
-## Topic Search
-
-This tab allows you to create and monitor user-defined topics for grouping calls based on specific themes or categories.
-
-
-To create a new topic search:
-
-1. Click on the **New Topic** button.
-2. In the pop-up window that appears, enter a unique name adequately representing the topic you wish to create.
-3. Click **Create Topic**.
-
-![alt text](../img/screenshots/addNewTopic.png)
-
-4. Your topic is created and displayed on the screen.
-5. You can edit or delete existing topic searches using the Edit or Delete icons.
-
-![alt text](../img/screenshots/topics.png)
-
-## Intent Search
-
-This tab allows you to create and monitor searches which identify calls associated with particular intents within their dialogue flow.
-
-![alt text](../img/screenshots/intents.png)
-
-To create a new intents search:
-
-1. Click on the **New Intent** button.
-2. In the pop-up window that appears, enter a unique name adequately representing the intent you wish to create.
-3. Click **Create Intent**.
-4. Your intent is created and displayed on the screen.
-5. You can edit or delete existing intent searches using the Edit or Delete icons.
-
-## Keyword Search
-
-This tab allows you to create and monitor searches which track specific keywords or phrases across the call data.
-
-![alt text](../img/screenshots/keywords.png)
-
-To create a new keyword search:
-
-1. Click on the **New Keyword** button.
-2. In the pop-up window that appears, enter a keyword for the search you wish to create.
-3. Click **Create Keyword**.
-4. Your keyword search is created and displayed on the screen.
-5. You can edit or delete existing keyword searches using the Edit or Delete icons.
-
-## Pain Points
-
-**Understanding Pain Points**
-
-Pain points are categorized issues that customers frequently encounter during calls. These insights help supervisors identify and address recurring challenges.
-
-## How To Get Started - Guide
-**1.Adding a New Pain Point**
-1. Click the "+ New Pain Point" button.
-2. Enter a title and a brief description of the issue.
-3. Save the pain point, and it will appear in the list.
-
-![alt text](../img/screenshots/pain-p.png)
-
-**2.Editing a Pain Point**
-1. Click the pencil icon next to an existing pain point.
-2. Update the description or rename the pain point.
-3. Save changes to apply updates.
-
-**3.Deleting a Pain Point**
-- Click the trash bin icon to remove a pain point from the list. --> -->
+  Use the search bar to find specific documents by name or keyword.
