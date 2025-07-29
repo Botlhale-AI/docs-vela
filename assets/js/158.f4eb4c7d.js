@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvela_documentation=self.webpackChunkvela_documentation||[]).push([[158],{8158:(a,e,c)=>{c.r(e),c.d(e,{DocSearchModal:()=>n.a1});var n=c(3219)}}]);
