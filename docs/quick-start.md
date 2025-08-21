@@ -10,7 +10,7 @@ Welcome to Vela! We've put together this quick guide to help you get your call c
 
 Vela is an AI-powered call centre analytics platform that helps you:
 - Monitor all your customer interactions (calls and chats)
-- Analyze agent performance automatically
+- Analyse agent performance automatically
 - Identify trends and insights across all languages
 - Generate custom reports and dashboards
 

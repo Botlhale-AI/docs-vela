@@ -26,7 +26,7 @@ Navigate through these features using the cards on the main **Smart Detector pag
 - Create automated searches for specific phrases or topics
 - Monitor calls in real-time for compliance issues
 - Generate alerts when specific conditions are met
-- Analyze historical data for patterns and trends
+- Analyse historical data for patterns and trends
 
 ### Agent Scorecard
 - Set up performance evaluation criteria

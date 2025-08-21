@@ -46,7 +46,7 @@ Monitor your organisation's platform usage:
 - Organisation status
 - Monthly allocated duration
 - Current usage statistics
-- Usage gauge visualization
+- Usage gauge visualisation
 
 ![alt text](../img/screenshots/My%20Org%200.1.png)
 
