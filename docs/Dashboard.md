@@ -8,20 +8,16 @@ The Dashboard section helps you understand how to use the Vela Dashboard to expl
 
 ## What the Dashboard Does
 
-* **Quick Overview**: See key data like silent time, customer sentiment, agent
-performance, and call summaries at a glance
-* **Deep Dive**: Look closer at specific calls with charts and graphs to understand
-customer sentiment, topics, and agent interactions
-* **Make It Your Own**: Customise the dashboard to show the data you care about most
+The Vela Dashboard turns call centre data into clear insights, helping you improve operations and deliver better customer experiences. Here's what you can do:
 
-The Vela Dashboard turns call centre data into clear insights, helping you improve
-operations and deliver better customer experiences.
+- **Quick Overview**: See key data like silent time, customer sentiment, agent performance, and call summaries at a glance
+- **Deep Dive**: Look closer at specific calls with charts and graphs to understand customer sentiment, topics, and agent interactions  
+- **Make It Your Own**: Customise the dashboard to show the data you care about most
 
 
 ## Customise Your Dashboard
 
-When you first log in, your dashboard will be empty. You'll need to set it up to show the data
-you want. Follow these steps to customise your dashboard.
+When you first log in, your dashboard will be empty. You'll need to set it up to show the data you want. Follow these steps to customise your dashboard.
 
 
 ## Getting Started

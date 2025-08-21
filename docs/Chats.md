@@ -30,11 +30,12 @@ Each entry within the log table includes:
 
 The Vela chat screen facilitates efficient navigation and manipulation of your contact centre data.
 
-**Users can:**
-- Upload – Manually upload a single chat log.
-- Sort: Order entries by any table column, except the Detailed View column, for streamlined identification of specific call segments.
-- Filter: Apply targeted criteria based on various parameters like duration, response time, issues, date, agent ID, and team, enabling focused analysis on relevant interactions.
-- Export: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools.
+Here's what you can do:
+
+- **Upload** – Manually upload a single chat log
+- **Sort** – Order entries by any table column (except the Detailed View column) to quickly find specific chat segments
+- **Filter** – Apply specific criteria based on various parameters like duration, response time, issues, date, agent ID, and team to focus your analysis
+- **Export** – Download the entire table as a CSV file for further analysis in your preferred data visualisation or statistical tools
 
 ## Chat Tags
 

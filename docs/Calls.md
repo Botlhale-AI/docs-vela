@@ -34,14 +34,13 @@ Each entry within the log table includes:
 
 ![alt text](../img/screenshots/Uploadz.png)
 
-The Vela call screen facilitates efficient navigation and manipulation of your contact centre data. 
+The Vela call screen makes it easy to navigate and work with your contact centre data. Here's what you can do:
 
-Users can:  
-- **Batch Upload** – Click the Batch Upload button to upload multiple call logs at once.
-- **Upload** – Manually upload a single call log.
-- **Sort**: Order entries by any table column, except the Detailed View column, for streamlined identification of specific call segments. 
-- **Filter**: Apply targeted criteria based on various parameters like duration, silent time, issues, date, agent ID, and team, enabling focused analysis on relevant interactions. 
-- **Export**: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools. 
+- **Batch Upload** – Click the Batch Upload button to upload multiple call logs at once
+- **Upload** – Manually upload a single call log
+- **Sort** – Order entries by any table column (except the Detailed View column) to quickly find specific call segments
+- **Filter** – Apply specific criteria based on various parameters like duration, silent time, issues, date, agent ID, and team to focus your analysis
+- **Export** – Download the entire table as a CSV file for further analysis in your preferred data visualisation or statistical tools 
 
 ## Call Tags
 
@@ -93,11 +92,11 @@ The Vela transcript facilitates deeper analysis and collaboration through severa
 
 ### Audio Playback 
 
-The audio playback section provides the following convenient controls for reviewing individual customer interactions:
+The audio playback section provides convenient controls for reviewing individual customer interactions:
 
-- **Play/Pause**: Initiate or halt playback of the call recording using the designated button. 
-- **Playback Speed Modulation**: Adjust the playback speed of the call recording. This functionality is accessible through the vertical menu adjacent to the volume control. 
-- **Download Capability**: Download the call recording to your local device. Click the **download** button, also located in the vertical menu. Select your preferred file format and download location when prompted.
+- **Play/Pause** – Start or stop playback of the call recording using the designated button
+- **Playback Speed** – Adjust the playback speed of the call recording through the vertical menu next to the volume control
+- **Download** – Download the call recording to your local device by clicking the download button in the vertical menu
 
 ### Smart Detector Analysis
 

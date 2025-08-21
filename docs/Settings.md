@@ -4,10 +4,7 @@ sidebar_position: 6
 
 # Settings
 
-The Settings Screen serves as a centralized hub for managing your account settings, preferences,
-and organisational affiliations within the platform. It allows you to customise your user
-experience, manage notifications, and access user administration functionalities (for users with
-appropriate permissions).
+The Settings Screen serves as a centralised hub for managing your account settings, preferences, and organisational affiliations within the platform. It allows you to customise your user experience, manage notifications, and access user administration functionalities (for users with appropriate permissions).
 
 ## Key Functionalities
 
@@ -83,8 +80,8 @@ Remember to apply all updates by clicking the "Save" button after making any cha
 
 On this tab, you can:
 
-- Set your preferred frequency for receiving notifications within the platform.
-- Choose your desired notification delivery channels (platform, email, or both).
+- Set your preferred frequency for receiving notifications within the platform
+- Choose your desired notification delivery channels (platform, email, or both)
 
 ![alt text](../img/screenshots/Notifie.png)
 
@@ -92,7 +89,7 @@ On this tab, you can:
 
 On this tab, you can:
 
-- Update your account password for enhanced security.
+- Update your account password for enhanced security
 
 ![alt text](../img/screenshots/Securitys.png)
 
@@ -100,10 +97,10 @@ On this tab, you can:
 
 On this tab, you can:
 
-- View a comprehensive list of users within your organisation(s). 
-- Apply filters to refine the displayed user list based on specific criteria.
-- Add new users to your organisation(s). 
-- Edit existing user information, including roles and permissions.
+- View a comprehensive list of users within your organisation(s)
+- Apply filters to refine the displayed user list based on specific criteria
+- Add new users to your organisation(s)
+- Edit existing user information, including roles and permissions
 
 
 ![alt text](../img/screenshots/userss.png)
