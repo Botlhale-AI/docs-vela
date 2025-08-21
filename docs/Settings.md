@@ -4,83 +4,82 @@ sidebar_position: 6
 
 # Settings
 
-The Settings Screen serves as a centralised hub for managing your account settings, preferences,
+The Settings Screen serves as a centralized hub for managing your account settings, preferences,
 and organisational affiliations within the platform. It allows you to customise your user
 experience, manage notifications, and access user administration functionalities (for users with
 appropriate permissions).
 
-#### Key Functionalities
+## Key Functionalities
 
-
-## Account
+### Account
 
 On this tab, you can:
 
 - View and update your general profile information, including:
-- Name
-- Email address
-- Organisation affiliation (primary and additional)
-- Team assignment (if applicable)
+  - Name
+  - Email address
+  - Organisation affiliation (primary and additional)
+  - Team assignment (if applicable)
 
 ![alt text](../img/screenshots/Settings1.png)
 
-## Organizations
+### Organisations
 
-On this tab This org, you can:
+The Organisations tab allows you to manage your organisational settings and monitor usage. This section includes:
 
-<!-- - View a list of organisations you belong to.
-- Switch between your primary and secondary organisations using the dedicated icon.
-- Create new organisations (admin privilege required).
-- Edit existing organisation details (admin privilege required). -->
+#### Organisation Management
 
+- View a list of organisations you belong to
+- Switch between your primary and secondary organisations using the dedicated icon
+- Create new organisations (admin privilege required)
+- Edit existing organisation details (admin privilege required)
 
+![alt text](../img/screenshots/This%20Org.png)
 
-## Organisation Info
+#### Organisation Info
 
+Upload and manage your organisation's branding and information:
+- Organisation logo
+- Organisation name
+- Short organisation description/bio
 
-Upload/view logo, name, and a short bio.
+#### Usage Overview
 
-
-## Usage Overview
-
-
-View org status, monthly allocated duration, current usage, and a usage gauge.
+Monitor your organisation's platform usage:
+- Organisation status
+- Monthly allocated duration
+- Current usage statistics
+- Usage gauge visualization
 
 ![alt text](../img/screenshots/My%20Org%200.1.png)
 
+#### Usage Notifications
 
-## Usage Notifications
+Configure email alerts for usage monitoring:
+- Set notification thresholds (50%–100% of allocated usage)
+- Receive proactive alerts before reaching limits
 
+#### Exceeding Duration Options
 
-Enable email alerts at specific usage thresholds (50%–100%).
+Control what happens when usage limits are reached:
+- **Halt analysis**: Stop processing when limits are reached
+- **Continue analysis**: Keep processing (additional charges may apply)
 
+#### Redactable Entities
 
-## Exceeding Duration Options
-
-
-Choose between halting or continuing call analysis (extra charges may apply).
-
-
-## Redactable Entities
-
-
-Select sensitive data types (e.g., email, ID number, phone number) to be automatically redacted from transcripts.
+Configure data privacy and compliance settings:
+- Select sensitive data types for automatic redaction from transcripts
+- Options include: email addresses, ID numbers, phone numbers, and other PII
 
 ![alt text](../img/screenshots/My%20Org%201.png)
 
+#### Save Changes
 
-## Save Changes: 
-Apply all updates by clicking the Save button.
-
-# On this tab My org, you can:
-- View a list of organisations you belong to.
-- Switch between your primary and secondary organisations using the dedicated icon.
-- Edit existing organisation details (admin privilege required).
-![alt text](../img/screenshots/This%20Org.png)
+Remember to apply all updates by clicking the "Save" button after making any changes to your organisation settings.
 
 
 
-## Notifications
+### Notifications
 
 On this tab, you can:
 
@@ -89,8 +88,7 @@ On this tab, you can:
 
 ![alt text](../img/screenshots/Notifie.png)
 
-
-## Security
+### Security
 
 On this tab, you can:
 
@@ -98,7 +96,7 @@ On this tab, you can:
 
 ![alt text](../img/screenshots/Securitys.png)
 
-## Users (Admin Privileges Required)
+### Users (Admin Privileges Required)
 
 On this tab, you can:
 
@@ -111,6 +109,7 @@ On this tab, you can:
 ![alt text](../img/screenshots/userss.png)
 
 ## Users - Organisation Table (Admin Privileges Required)
+
 On this tab, you can:
 
 - View existing departments, teams and users respectively

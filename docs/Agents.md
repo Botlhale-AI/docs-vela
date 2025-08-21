@@ -6,7 +6,7 @@ sidebar_position: 4
 # Agents
 
 
-The Agents screen in the Vela platform provides a comprehensive view of your agents' performance. This screen is designed to help you monitor, analyze, and improve the performance of your call center agents. The information on this screen is available in both a list view and a board view, allowing you to choose the format that best suits your needs. You can toggle between both views using the **View** icon in the top right corner of the screen.
+The Agents screen gives you a complete view of how your agents are performing. It's designed to help you monitor, analyse, and improve your call centre team's performance. You can view the information in either a list or board format - whatever works best for you. Just click the **View** icon in the top right corner to switch between the two.
 
 ## Overview
 
@@ -38,101 +38,150 @@ The Detailed Agent View provides an in-depth analysis of individual agent metric
 
 ## Sorting, Filtering, and Exporting Data
 
-The Agents screen facilitates efficient navigation and manipulation of your contact center data. Users can:
+The Agents screen makes it easy to navigate and work with your contact centre data. You can:
 
-- **Sort**: Order entries by any table column, except the Detailed View column, for streamlined identification of specific agent performance metrics.
-- **Filter**: Apply targeted criteria based on various parameters, enabling focused analysis on relevant interactions.
-- **Export**: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools.
-
-
-## How To Sort and Filter - Guide
-
-Below is a step-by-step guide to navigating and using the Agents screen:
-
-### 1. Let's start with the Sort functionality.
-
-![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/t_WQbjJuTMFrEHytdEgMe.jpg&x=2246&y=325&fill=2ca5e0&color=2ca5e0)
-
-### 2. Sort By 
-
-You have the ability to sort the agent performance table by a range of attributes, in ascending order or descending order.
-
-![2 After, click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/zRBalwTWxlUleCHRX3RHD.jpg&x=1797&y=584&fill=2ca5e0&color=2ca5e0)
+- **Sort**: Order entries by any table column (except the Detailed View column) to quickly find specific agent performance metrics.
+- **Filter**: Apply specific criteria based on various parameters to focus your analysis on what matters.
+- **Export**: Download the entire table as a CSV file for further analysis in your preferred data visualization or statistical tools.
 
 
-### 4. Then, confirm by clicking Apply.
+## Getting Started Guide
 
+Here's a step-by-step guide to navigating and using the Agents screen:
+
+### Sorting Agents
+
+#### Step 1: Access Sort Options
+
+Click on the sort button to access sorting options.
+
+#### Step 1: Access Sort Options
+
+#### Step 2: Choose Sort Criteriaort button to access sorting options.
+
+You can sort the agent performance table by various attributes, in ascending or descending order.
+
+#### Step 2: Choose Sort Criteriaort button to access sorting options.
+
+#### Step 3: Apply Sort Settings
+You can sort the agent performance table by various attributes, in ascending or descending order.
+Confirm your selection by clicking "Apply".
+#### Step 2: Choose Sort Criteriaort button to access sorting options.
 ![4 Afterwards, click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/6hU7lZPs08qpIsaWbOpO0.jpg&x=1846&y=1033&fill=2ca5e0&color=2ca5e0)
+#### Step 3: Apply Sort Settings
+### Filtering Agentsthe agent performance table by various attributes, in ascending or descending order.
+Confirm your selection by clicking "Apply".
+#### Step 4: Access Filter Options
 
-### 5. Filter
+Click on the filter button to access filtering options.
 
-Next, you have the option to filter.
+#### Step 3: Apply Sort Settings
+### Filtering Agents
+#### Step 5: Select Filter Criteria
 
-![5 Once that's done, click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/F70fLsZXXKFuUC6TrGHYy.jpg&x=2452&y=322&fill=2ca5e0&color=2ca5e0)
+Choose the attributes you'd like to filter by.
+#### Step 4: Access Filter Optionsthe agent performance table by various attributes, in ascending or descending order.
+Confirm your selection by clicking "Apply".udfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/zp5UevkI4CXD5p95bZ_aP.jpg&x=1673&y=672&fill=2ca5e0&color=2ca5e0)
+Click on the filter button to access filtering options.
+#### Step 6: Apply Filters
 
-### 6. Check the attributes you'd like to filter by.
+Click "Apply" to activate your filters.
+#### Step 3: Apply Sort Settings
+### Filtering Agents"Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/VljC9pZfFyr8x0ZpseFKD.jpg&x=2062&y=1233&fill=2ca5e0&color=2ca5e0)
+#### Step 5: Select Filter Criteria
+#### Step 7: Filter by Date Range
 
-![6 Click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/zp5UevkI4CXD5p95bZ_aP.jpg&x=1673&y=672&fill=2ca5e0&color=2ca5e0)
+You can also filter agent performance by a specific date range.
+#### Step 4: Access Filter Options
 
-### 7. Again, click Apply to proceed.
+Click on the filter button to access filtering options.
+## Agent Management
 
-![7 After, click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/VljC9pZfFyr8x0ZpseFKD.jpg&x=2062&y=1233&fill=2ca5e0&color=2ca5e0)
+### Accessing Agent Details
 
+Navigate to the Agent Details section to manage individual agent information.
 
-### 8. Filter Agent Performance by a date range.
+Click "Apply" to activate your filters./d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/pn-PWu6EIQ0OHt8Nzv57f.jpg&x=230&y=690&fill=2ca5e0&color=2ca5e0)
 
-![18 Click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/j7uRkUSkUBuKV2cWRUaDM.jpg&x=2007&y=1244&fill=2ca5e0&color=2ca5e0)
-
-### 9. Now, let's navigate to the Agent Details section.
-
-![19 Click on "Agent Details".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/pn-PWu6EIQ0OHt8Nzv57f.jpg&x=230&y=690&fill=2ca5e0&color=2ca5e0)
-
-### 10. Agent Details
-
-The Agent Details section enables users with admin privilleges to view, edit and update the details of the agents in their respective teams or department.s You have the option to activate the **VOice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another. See below.
+The Agent Details section enables users with admin privileges to view, edit and update the details of the agents in their respective teams or departments. You have the option to activate the **Voice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another.
 
 ![alt text](../img/screenshots/agents-d.png)
+#### Step 5: Select Filter Criteria
+### Reassigning Agents
 
-### 11. Proceed by selecting Debt Collection (Department A).
+#### Step 1: Select Agent Departmentpecific date range.
+#### Step 4: Access Filter Options
+Choose the department you want to reassign an agent to (e.g., "Debt Collection (Department A)").
+Click on the filter button to access filtering options.
+## Agent Management
 
-![22 Now, click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/5MCg0b6wok_JQaSoLULa0.jpg&x=1125&y=797&fill=2ca5e0&color=2ca5e0)
+#### Step 2: Initiate Reassignment
 
-### 12. Click Reassign for the next operation.
+Click "Reassign" to begin the reassignment process.
 
-![23 After that, click on "Debt Collection (Department A)".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/RyRoIHLKvU1wdzHrZKgMW.jpg&x=1034&y=941&fill=2ca5e0&color=2ca5e0)
+Navigate to the Agent Details section to manage individual agent information.
 
-### 13. Confirm by clicking on Add Agent.
+#### Step 3: Confirm Reassignment
 
-![24 Next, click on "Reassign".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/kKvnz5Av33Iuk0EcqS6ed.jpg&x=1800&y=933&fill=2ca5e0&color=2ca5e0)
+Complete the reassignment by clicking "Reassign".
 
-### 14. Now, how do you add an Agent?
+The Agent Details section enables users with admin privileges to view, edit and update the details of the agents in their respective teams or departments. You have the option to activate the **Voice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another.
 
-Click the button titled **+ Add Agent** and follow the flow below.
+### Adding New Agents by a specific date range.
 
-![alt text](../img/screenshots/d-25.png)
+To add a new agent, click the **+ Add Agent** button and follow these steps:
 
-### 15. Click to enter characters.
+#### Step 1: Select Agent Department
 
-![26 Click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/9t1Oi4Za7aaRj8sioQyJ6.jpg&x=921&y=797&fill=2ca5e0&color=2ca5e0)
+#### Step 1: Enter Agent Information
 
+Fill in the required agent details. reassign an agent to (e.g., "Debt Collection (Department A)").
 
-![27 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/_W2lDOfOAuH4vsR04bqIU.jpg&x=1080&y=809&fill=2ca5e0&color=2ca5e0)
-
-
-![28 Once that's done, click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/LFxyWHDozlzBmOvb8grej.jpg&x=1011&y=1108&fill=2ca5e0&color=2ca5e0)
-
-![29 Click on "Customer Success (Department A)".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/S9akeseiZSyuAt1YZ_vNw.jpg&x=1012&y=1198&fill=2ca5e0&color=2ca5e0)
+## Agent Management
 
 
+Click "Reassign" to begin the reassignment process.
+#### Step 2: Select Department and Team
+
+Choose the appropriate department and team for the new agent.
+
+Navigate to the Agent Details section to manage individual agent information.
+
+#### Step 3: Confirm Reassignment
+
+#### Step 3: Save Agent Details
+
+Confirm the agent details by clicking the save button.
+Complete the reassignment by clicking "Reassign".
 ![30 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/ruwu600T5ACpmfQOfrU9A.jpg&x=2051&y=1057&fill=2ca5e0&color=2ca5e0)
-
-If you choose to create a team on the go, you also have that option as demonstrated below.
-
+The Agent Details section enables users with admin privileges to view, edit and update the details of the agents in their respective teams or departments. You have the option to activate the **Voice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another.
+**Optional**: If you need to create a new team, you can do so during the agent creation process.
+### Adding New Agents-d.png)
 ![31 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/MX-pubjRpab7lzOFYHXFJ.jpg&x=1067&y=1041&fill=2ca5e0&color=2ca5e0)
+To add a new agent, click the **+ Add Agent** button and follow these steps:
+Finally, click "Save" to finalize the new agent setup.
+#### Step 1: Select Agent Departmentpecific date range.
 
-### Then, click Save once more to finalize.
+#### Step 1: Enter Agent Information
 
+Fill in the required agent details. reassign an agent to (e.g., "Debt Collection (Department A)").lto:support@botlhale.ai).
 
-## Contact Us
+### 9. Now, let's navigate to the Agent Details section that option as demonstrated below.### Then, click Save once more to finalize.### 12. Click Reassign for the next operation### 13. Confirm by clicking on Add Agent### 14. Now, how do you add an Agent?Click the button titled **+ Add Agent** and follow the flow below### 15. Click to enter characters
+If you choose to create a team on the go, you also have that option as demonstrated below.### Then, click Save once more to finalize.The Agent Details section enables users with admin privilleges to view, edit and update the details of the agents in their respective teams or department.s You have the option to activate the **VOice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another. See below.### 11. Proceed by selecting Debt Collection (Department A).### 12. Click Reassign for the next operation.### 13. Confirm by clicking on Add Agent.Click the button titled **+ Add Agent** and follow the flow below.### 15. Click to enter characters.The Agent Details section enables users with admin privileges to view, edit and update the details of the agents in their respective teams or departments. You have the option to activate the **Voice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another. See below.### 11. Proceed by selecting Debt Collection (Department A)### 12. Click Reassign for the next operation### 13. Confirm by clicking on Add AgentClick the button titled **+ Add Agent** and follow the flow below### 15. Click to enter characters#### Step 2: Initiate Reassignment
+Click "Reassign" to begin the reassignment process.#### Step 3: Confirm Reassignment
 
-We are here to help! If you have any questions or need further assistance, please [contact us](mailto:support@botlhale.ai).
+#### Step 2: Select Department and Team
+
+Choose the appropriate department and team for the new agent.
+Complete the reassignment by clicking "Reassign".### Adding New AgentsTo add a new agent, click the **+ Add Agent** button and follow these steps:#### Step 1: Enter Agent Information
+
+Fill in the required agent details.#### Step 2: Select Department and Team
+
+Choose the appropriate department and team for the new agent.
+#### Step 3: Save Agent Details
+
+Confirm the agent details by clicking the save button.
+#### Step 3: Save Agent Details
+
+Confirm the agent details by clicking the save button.
+**Optional**: If you need to create a new team, you can do so during the agent creation process.ocess.Finally, click "Save" to finalize the new agent setup.Finally, click "Save" to finalize the new agent setup.

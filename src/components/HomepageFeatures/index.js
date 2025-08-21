@@ -54,8 +54,8 @@ const FeatureList = [
     icon: 'fas fa-cogs',
   },
   {
-    title: 'Data Upload',
-    link: '/docs/Data Upload',
+    title: 'Data Management',
+    link: '/docs/data-upload',
     description: 'Learn how to upload call recordings.',
     icon: 'fas fa-upload',
   }

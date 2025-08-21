@@ -5,39 +5,36 @@ sidebar_position: 2
 # Calls
 
 
-The Interactions section is the primary interface for detailed analysis of individual customer engagements. It includes both Calls and Chats, providing access to transcripts, metadata, and other insights. This section enables users to review and evaluate customer conversations, helping teams identify trends, assess quality, and improve overall customer experience.
+The Interactions section is where you'll dive deep into individual customer conversations. It covers both Calls and Chats, giving you access to transcripts, metadata, and valuable insights. Here you can review and evaluate customer conversations, helping your team spot trends, assess quality, and improve the overall customer experience.
 
-## How To Get Started - Guide
+## Getting Started
 
-## Calls
+The Calls screen shows you a complete table of all your processed calls, organized in a way that makes it easy to navigate and explore.
 
-The Calls screen presents a comprehensive table log of all processed calls, organized by metadata points that facilitate efficient navigation and exploration.
-
-
- **1. Accessing the Calls Screen**
+### 1. Accessing the Calls Screen
 
 ![alt text](../img/screenshots/callz.png)
 
-**2. Understanding the Call Log**
+### 2. Understanding the Call Log
 
 Each entry within the log table includes: 
 
--  **Call ID** – Unique identifier for each call.
--  **Date** – The exact timestamp when the call occurred.
--  **Agent** – The agent who handled the call.
--  **Handle Time** – The total duration of the call.
--  **Silent Time** – The percentage of time where neither the agent nor the customer spoke.
--  **Topic** – The main subject of the call, automatically categorized based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
--  **Alerts** – The number of detected issues based on Smart Search analysis.
--  **Agent Score** – The system-generated performance score for the agent.
--  **Team** – The team to which the agent belongs.
--  **Tags** – Custom labels assigned to calls for better categorization.
+- **Call ID** – Unique identifier for each call.
+- **Date** – The exact timestamp when the call occurred.
+- **Agent** – The agent who handled the call.
+- **Handle Time** – The total duration of the call.
+- **Silent Time** – The percentage of time where neither the agent nor the customer spoke.
+- **Topic** – The main subject of the call, automatically categorised based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
+- **Alerts** – The number of detected issues based on Smart Detector analysis.
+- **Agent Score** – The system-generated performance score for the agent.
+- **Team** – The team to which the agent belongs.
+- **Tags** – Custom labels assigned to calls for better categorisation.
 
-**3. Using Call Management Tools**
+### 3. Using Call Management Tools
 
 ![alt text](../img/screenshots/Uploadz.png)
 
-The Vela call screen facilitates efficient navigation and manipulation of your contact center data. 
+The Vela call screen facilitates efficient navigation and manipulation of your contact centre data. 
 
 Users can:  
 - **Batch Upload** – Click the Batch Upload button to upload multiple call logs at once.
@@ -48,23 +45,25 @@ Users can:
 
 ## Call Tags
 
-## How To Get Started - Guide
-1.Click on the `Select Tag` button.
+### Managing Call Tags
 
-2.Choose an existing `tag` from the dropdown list.
+1. Click on the `Select Tag` button.
 
-3.Click `Add Tag` to apply the selected tag to the call.
+2. Choose an existing `tag` from the dropdown list.
+
+3. Click `Add Tag` to apply the selected tag to the call.
 
 ![alt text](../img/screenshots/call-tags.png)
 
 ## Creating a New Tag
-1.Click on the `New Tag` button.
 
-2.Enter a `tag` name in the text field.
+1. Click on the `New Tag` button.
 
-3.Select a color for the tag to visually differentiate it from others.
+2. Enter a `tag` name in the text field.
 
-4.Click `Add Tag` to save the new tag.
+3. Select a colour for the tag to visually differentiate it from others.
+
+4. Click `Add Tag` to save the new tag.
 
 ![alt text](../img/screenshots/Callz-%20Tages.png)
 
@@ -75,7 +74,7 @@ The Vela detailed call screen provides a comprehensive interface for in-depth an
 This screen integrates several key elements: 
 - **Full Transcript**: A textual representation of the entire conversation. 
 - **Audio Playback**: An audio box allowing you to replay the call recording. 
-- **Smart Search**: This customizable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorize key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Search](/docs/Smart%20Search) section of this documentation.
+- **Smart Detector**: This customisable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorise key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Detector](/docs/smart-detector-overview) section of this documentation.
 
 ![alt text](../img/screenshots/Detailz-V.png)
 
@@ -94,22 +93,22 @@ The Vela transcript facilitates deeper analysis and collaboration through severa
 
 ### Audio Playback 
 
-The audio playback section provides the following convenient controls for reviewing individual customer interactions.
+The audio playback section provides the following convenient controls for reviewing individual customer interactions:
 
 - **Play/Pause**: Initiate or halt playback of the call recording using the designated button. 
-- **Playback Speed Modulation**: Adjusting the playback speed of the call recording. This functionality is accessible through the vertical menu adjacent to the volume control. 
+- **Playback Speed Modulation**: Adjust the playback speed of the call recording. This functionality is accessible through the vertical menu adjacent to the volume control. 
 - **Download Capability**: Download the call recording to your local device. Click the **download** button, also located in the vertical menu. Select your preferred file format and download location when prompted.
 
-### Smart Search 
+### Smart Detector Analysis
 
-The **Smart Search** section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.
+The **Smart Detector** section uses advanced natural language processing (NLP) and machine learning algorithms to analyse individual calls.
 
-This automated analysis generates valuable insights, presented right on the screen: 
-- **Summary** – Generates a concise overview of the call’s key points, summarizing the agent’s and customer’s interactions.
+This automated analysis provides valuable insights, presented right on the screen: 
+- **Summary** – Generates a concise overview of the call's key points, summarizing the agent's and customer's interactions.
 - **Keywords** – Highlights important words and phrases that frequently appear in the conversation, helping to identify recurring topics.
 - **Alerts** – Detects potential issues or flagged moments in the call that may require further review, such as compliance risks, customer complaints, or unresolved concerns.
 - **Intents** – Identifies the customer's purpose in the conversation, such as inquiring about a service, requesting assistance, or escalating an issue.
-- **Sentiment** – Analyzes the emotional tone of the conversation, categorizing interactions as positive, neutral, or negative.
+- **Sentiment** – Analyses the emotional tone of the conversation, categorising interactions as positive, neutral, or negative.
 - **Checklist** – Ensures that agents follow a structured approach, checking if they have met the required conversation guidelines.
 - **Pain Points** – Detects potential customer frustrations or issues raised during the call.
 
