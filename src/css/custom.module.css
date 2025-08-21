@@ -404,7 +404,14 @@ body {
 .feature:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px var(--box-shadow-hover);
-  border-color: var(--primary-color);
+  border-color: #fc5f1e;
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
+}
+
+.featureCard:hover {
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
 }
 
 .feature h3 {
