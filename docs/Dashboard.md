@@ -40,7 +40,7 @@ With your dashboard, you can:
 ### Step 4: Add Key Metrics
 1. **Click "Customise"** in the top-right corner
 2. **Click "Add New Metric"** for each metric you want to track
-3. **Add these essential metrics**:
+3. **Add these essential metrics** (see [Agent Performance](./agents.md) for detailed metrics):
 
 #### Performance Metrics
 - **Agent Distribution** - See who's handling the most calls
@@ -148,9 +148,13 @@ Configure notifications to alert you when:
 - **[Improve Agent Performance](./agents.md)** - Learn how to use agent insights for coaching
 - **[Generate Reports](./reports.md)** - Create detailed performance summaries
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+- **[Analyze Individual Calls](./calls.md)** - Deep dive into specific interactions
+- **[Configure Notifications](./notifications.md)** - Set up alerts for important events
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Check Data Upload**: Ensure your call data is properly uploaded
 - **Review Settings**: Verify your team and date selections
+- **Dashboard Training**: Get help with effective dashboard configuration
+- **Performance Analysis**: Assistance with interpreting dashboard metrics

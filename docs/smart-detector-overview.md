@@ -18,7 +18,7 @@ With Smart Detector, you can:
 ## Three Powerful Tools for Your Team
 
 ### Smart Search: Catch Issues Early
-Automatically detect important events in your customer interactions:
+Automatically detect important events in your customer interactions (see [Smart Search Guide](./smart-search-guide.md) for detailed setup):
 
 - **Customer complaints** - Get alerts when customers express dissatisfaction
 - **Compliance violations** - Monitor for regulatory or policy breaches
@@ -26,7 +26,7 @@ Automatically detect important events in your customer interactions:
 - **Training opportunities** - Spot areas where agents need support
 
 ### Agent Scorecard: Improve Performance Systematically
-Evaluate and improve agent performance with AI-powered assessments:
+Evaluate and improve agent performance with AI-powered assessments (see [Agent Scorecard Guide](./agent-scorecard-guide.md) for detailed setup):
 
 - **Automated evaluations** - Score every interaction consistently
 - **Performance tracking** - Monitor improvement over time
@@ -34,7 +34,7 @@ Evaluate and improve agent performance with AI-powered assessments:
 - **Best practice recognition** - Learn from top performers
 
 ### Knowledge Base: Empower Your Team
-Build a smart, searchable repository of company information:
+Build a smart, searchable repository of company information (see [Knowledge Base Guide](./knowledge-base-guide.md) for detailed setup):
 
 - **Document upload** - Add policies, procedures, and training materials
 - **Smart search** - Find relevant information quickly
@@ -219,9 +219,14 @@ Build a smart, searchable repository of company information:
 - **[Monitor Performance](./dashboard.md)** - Use dashboard to track Smart Detector insights
 - **[Improve Agent Performance](./agents.md)** - Apply Smart Detector findings to coaching
 - **[Generate Reports](./reports.md)** - Create reports on Smart Detector effectiveness
+- **[Create Smart Searches](./smart-search-guide.md)** - Set up automated issue detection
+- **[Build Agent Scorecards](./agent-scorecard-guide.md)** - Create evaluation systems
+- **[Build Knowledge Base](./knowledge-base-guide.md)** - Organize company information
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Smart Detector Training**: Ask about advanced configuration options
 - **Best Practice Sharing**: Get help with effective monitoring strategies
+- **Integration Support**: Get help connecting Smart Detector tools
+- **Configuration Assistance**: Help with setting up effective monitoring

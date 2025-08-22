@@ -226,10 +226,15 @@ With Vela reports, you can:
 - **[Monitor Performance](./dashboard.md)** - Use dashboard for real-time insights
 - **[Improve Agent Performance](./agents.md)** - Use reports to guide coaching
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+- **[Analyze Call Data](./calls.md)** - Deep dive into interaction details
+- **[Configure Notifications](./notifications.md)** - Set up automated report delivery
+- **[Integrate with Systems](./api.md)** - Connect reports to other business tools
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Report Templates**: Ask about pre-built report templates
 - **Custom Reports**: Get help creating specialized reports for your needs
+- **Report Training**: Get help with effective reporting techniques
+- **Data Analysis**: Assistance with interpreting report metrics
 

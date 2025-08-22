@@ -51,7 +51,7 @@ Your agent performance table shows essential information:
 ### Step 1: Access Agent Details
 1. **Go to "Agents"** in the left sidebar
 2. **Click "View"** next to any agent's name
-3. **Review their detailed performance breakdown**
+3. **Review their detailed performance breakdown** (see [Dashboard](./dashboard.md) for team overview)
 
 ### Step 2: Analyze Performance Patterns
 Look for these key indicators:
@@ -215,9 +215,14 @@ Look for patterns that affect multiple agents:
 - **[Generate Performance Reports](./reports.md)** - Create detailed agent summaries
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Get alerts for performance issues
 - **[Configure Notifications](./notifications.md)** - Stay informed about agent performance
+- **[Monitor Team Performance](./dashboard.md)** - Track overall team metrics
+- **[Analyze Call Interactions](./calls.md)** - Review specific agent conversations
+- **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Training Resources**: Ask about additional coaching materials
-- **Performance Consulting**: Get help with team improvement strategies 
+- **Performance Consulting**: Get help with team improvement strategies
+- **Agent Coaching**: Get help with effective coaching techniques
+- **Performance Analysis**: Assistance with interpreting agent metrics 

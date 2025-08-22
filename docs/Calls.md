@@ -103,7 +103,7 @@ Listen to the actual conversation for deeper insights:
 ## Smart Detector Insights
 
 ### Automated Analysis Features
-Smart Detector provides instant insights for every call:
+Smart Detector provides instant insights for every call (see [Smart Detector Overview](./smart-detector-overview.md) for detailed setup):
 
 #### Call Summary
 - **Key points** - Main topics and outcomes
@@ -221,9 +221,14 @@ Smart Detector provides instant insights for every call:
 - **[Improve Agent Performance](./agents.md)** - Apply call analysis to coaching
 - **[Generate Reports](./reports.md)** - Create reports based on call data
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+- **[Analyze Chat Conversations](./chats.md)** - Review digital customer interactions
+- **[Configure Notifications](./notifications.md)** - Set up alerts for important calls
+- **[Upload More Data](./data-upload.md)** - Add additional call recordings for analysis
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Call Analysis Training**: Get help with effective analysis techniques
 - **Smart Detector Setup**: Assistance with automated analysis configuration
+- **Data Upload**: Help with uploading call recordings
+- **Performance Analysis**: Assistance with interpreting call metrics

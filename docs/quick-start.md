@@ -78,16 +78,18 @@ Contact your Vela Account Manager to set up automated uploads.
 
 ## What's Next?
 
-- **Monitor daily**: Check your dashboard for performance trends
-- **Review alerts**: Address issues flagged by Smart Detector
-- **Generate reports**: Create weekly/monthly performance summaries
-- **Train agents**: Use insights to improve team performance
+- **[Monitor daily](./dashboard.md)**: Check your dashboard for performance trends
+- **[Review alerts](./notifications.md)**: Address issues flagged by Smart Detector
+- **[Generate reports](./reports.md)**: Create weekly/monthly performance summaries
+- **[Train agents](./agents.md)**: Use insights to improve team performance
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Video Tutorials**: Available on the homepage
 - **Detailed Guides**: Explore the sections in the left sidebar
+- **Upload Assistance**: Get help with data preparation and upload
+- **Integration Support**: Technical help for API and FTP setup
 
 ---
 

@@ -319,9 +319,14 @@ def update_customer_profile(call_data):
 - **[Get Your Data into Vela](./data-upload.md)** - Learn about manual and automated data upload
 - **[Monitor Performance](./dashboard.md)** - Use API data to build custom dashboards
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate with automated alerting
+- **[Generate Reports](./reports.md)** - Create custom reports using API data
+- **[Configure Notifications](./notifications.md)** - Set up webhook-based alerts
+- **[Analyze Interactions](./calls.md)** - Use API to retrieve detailed call data
 
 ## Need Help?
 
 - **Contact Support**: api-support@botlhale.ai
 - **Integration Consulting**: Get help with complex integration scenarios
 - **Developer Resources**: Access SDKs, code samples, and technical documentation
+- **API Documentation**: Access detailed technical API reference
+- **Integration Support**: Technical assistance with API implementation

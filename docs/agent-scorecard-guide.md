@@ -186,9 +186,14 @@ The Results tab shows comprehensive performance data:
 - **[Improve Agent Performance](./agents.md)** - Use scorecard insights for coaching
 - **[Generate Reports](./reports.md)** - Create performance reports based on scorecards
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate scorecards with automated alerts
+- **[Build Knowledge Base](./knowledge-base-guide.md)** - Create training materials based on scorecard findings
+- **[Set Up Smart Searches](./smart-search-guide.md)** - Monitor for specific performance issues
+- **[Monitor Performance](./dashboard.md)** - Track scorecard trends and improvements
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Scorecard Training**: Get help with effective evaluation design
 - **Performance Coaching**: Assistance with using scorecard data for improvement
+- **Evaluation Design**: Help with creating effective scorecard questions
+- **Data Analysis**: Assistance with interpreting scorecard results
