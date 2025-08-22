@@ -21,7 +21,7 @@ Smart Detector is like having a super-powered assistant that never sleeps. Here'
 ## 🛠️ Three Powerful Tools for Your Team
 
 ### 🔍 **Smart Search: Catch Issues Early**
-Automatically detect important events in your customer interactions (get the full setup guide in [Smart Search](./smart-search-guide.md)):
+Automatically detect important events in your customer interactions:
 
 #### What It Monitors:
 - 🚨 **Customer complaints** - Get alerts when customers express dissatisfaction
@@ -36,7 +36,7 @@ Automatically detect important events in your customer interactions (get the ful
 4. **Take immediate action** to resolve problems
 
 ### 📊 **Agent Scorecard: Improve Performance Systematically**
-Evaluate and improve agent performance with AI-powered assessments (learn the ropes in [Agent Scorecard](./agent-scorecard-guide.md)):
+Evaluate and improve agent performance with AI-powered assessments:
 
 #### What It Evaluates:
 - 🎯 **Automated evaluations** - Score every interaction consistently
@@ -51,7 +51,7 @@ Evaluate and improve agent performance with AI-powered assessments (learn the ro
 4. **Generate coaching insights** for improvement
 
 ### 📚 **Knowledge Base: Empower Your Team**
-Build a smart, searchable repository of company information (master it in [Knowledge Base](./knowledge-base-guide.md)):
+Build a smart, searchable repository of company information:
 
 #### What It Contains:
 - 📄 **Document upload** - Add policies, procedures, and training materials

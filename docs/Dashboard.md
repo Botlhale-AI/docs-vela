@@ -43,7 +43,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 ### Step 4: Add Key Metrics
 1. **Click "Customise"** in the top-right corner
 2. **Click "Add New Metric"** for each metric you want to track
-3. **Add these essential metrics** (we'll dive deeper into agent metrics in the [Agent Performance guide](./agents.md)):
+3. **Add these essential metrics**:
 
 #### 📈 Performance Metrics
 - **Agent Distribution** - See who's handling the most calls

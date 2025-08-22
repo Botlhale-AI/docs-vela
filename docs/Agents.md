@@ -56,7 +56,7 @@ Your agent performance table shows essential information:
 ### Step 1: Access Agent Details
 1. **Go to "Agents"** in the left sidebar
 2. **Click "View"** next to any agent's name
-3. **Review their detailed performance breakdown** (for the big picture, check out the [Dashboard guide](./dashboard.md))
+3. **Review their detailed performance breakdown**
 
 ### Step 2: Analyze Performance Patterns
 Look for these key indicators:
