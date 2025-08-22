@@ -4,16 +4,17 @@ sidebar_position: 5
 
 # Generate Meaningful Reports
 
-Create powerful reports that help you make data-driven decisions, track progress, and share insights with stakeholders. This guide shows you how to build reports that drive real business value.
+Numbers tell stories, but only if you know how to read them. Vela's reporting tools help you turn raw data into compelling narratives that drive decisions, track progress, and convince stakeholders to take action. Let's build reports that actually matter.
 
 ## What You Can Achieve
 
-With Vela reports, you can:
-- **Track performance trends** over time
-- **Share insights** with executives and stakeholders
-- **Identify improvement opportunities** across your team
-- **Document progress** for performance reviews
-- **Make data-driven decisions** about training and processes
+Reports are your secret weapon for driving change. Here's what you'll accomplish:
+
+**Tell the story behind the numbers** - Track trends and spot patterns that others miss
+**Get buy-in from leadership** - Share insights that executives actually care about
+**Unlock hidden opportunities** - Find improvement areas across your entire team
+**Prove your impact** - Document progress for reviews and planning
+**Make decisions that stick** - Use data to guide training and process improvements
 
 ## Understanding Report Types
 
@@ -231,6 +232,8 @@ With Vela reports, you can:
 - **[Integrate with Systems](./api.md)** - Connect reports to other business tools
 
 ## Need Help?
+
+**Need help with reports? We've got you covered:**
 
 - **Contact Support**: support@botlhale.ai
 - **Report Templates**: Ask about pre-built report templates

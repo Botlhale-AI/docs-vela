@@ -25,7 +25,7 @@ By uploading your data to Vela, you can:
 **Time to set up**: 5 minutes
 **Data processed**: Within hours
 
-**Related**: See [API Integration](./api.md) for automated uploads
+**Want to automate this?** Check out [API Integration](./api.md) for automated uploads
 
 #### Step-by-Step Process
 1. **Go to "Calls"** in the left sidebar
@@ -142,18 +142,18 @@ Upload chat conversations for analysis:
 **Example Request**:
 ```json
 {
-  "org_id": "your_org_id",
-  "chat_data": {
-    "session_id": "chat_12345",
-    "agent_id": "agent_001",
-    "messages": [
-      {
-        "timestamp": "2024-01-15T10:30:00Z",
-        "sender": "customer",
-        "content": "Hello, I need help with my account"
-      }
-    ]
-  }
+    "org_id": "your_org_id",
+    "chat_data": {
+        "session_id": "chat_12345",
+        "agent_id": "agent_001",
+        "messages": [
+            {
+                "timestamp": "2024-01-15T10:30:00Z",
+                "sender": "customer",
+                "content": "Hello, I need help with my account"
+            }
+        ]
+    }
 }
 ```
 

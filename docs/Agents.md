@@ -4,16 +4,17 @@ sidebar_position: 4
 
 # Improve Agent Performance
 
-Use Vela's agent insights to identify coaching opportunities, track improvement, and build a high-performing team. This guide shows you how to use agent data to drive better customer experiences.
+Your agents are the heart of your customer experience. But how do you know who's struggling and who's ready for the next level? Vela's agent insights give you the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
 
 ## What You Can Achieve
 
-With agent analytics, you can:
-- **Identify coaching opportunities** for struggling agents
-- **Recognize top performers** and learn from their success
-- **Track improvement over time** with detailed metrics
-- **Spot training gaps** across your team
-- **Make data-driven decisions** about promotions and development
+Agent analytics turn gut feelings into actionable insights. Here's what you'll unlock:
+
+**Coach with precision** - Spot exactly who needs help and what they're struggling with
+**Celebrate success** - Recognize your rock stars and learn from their winning strategies
+**Track real progress** - See improvement over time with concrete metrics
+**Fill knowledge gaps** - Identify training needs across your entire team
+**Make smart decisions** - Use data to guide promotions, development, and team structure
 
 ## Understanding Agent Performance
 
@@ -51,7 +52,7 @@ Your agent performance table shows essential information:
 ### Step 1: Access Agent Details
 1. **Go to "Agents"** in the left sidebar
 2. **Click "View"** next to any agent's name
-3. **Review their detailed performance breakdown** (see [Dashboard](./dashboard.md) for team overview)
+3. **Review their detailed performance breakdown** (for the big picture, check out the [Dashboard guide](./dashboard.md))
 
 ### Step 2: Analyze Performance Patterns
 Look for these key indicators:
@@ -220,6 +221,8 @@ Look for patterns that affect multiple agents:
 - **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems
 
 ## Need Help?
+
+**Questions about agent performance? We're here to help:**
 
 - **Contact Support**: support@botlhale.ai
 - **Training Resources**: Ask about additional coaching materials

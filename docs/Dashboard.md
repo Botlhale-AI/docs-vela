@@ -4,16 +4,17 @@ sidebar_position: 1
 
 # Monitor Your Team's Performance
 
-Your Vela dashboard is your command center for understanding how your team is performing and where you can improve customer experience. This guide shows you how to set up and use your dashboard to make data-driven decisions.
+Think of your Vela dashboard as mission control for your call center. It's where you'll spot trends before they become problems, identify coaching opportunities, and track how your team is really performing. Let's get you set up to make smarter, data-driven decisions.
 
 ## What You Can Achieve
 
-With your dashboard, you can:
-- **Spot performance trends** before they become problems
-- **Identify top and struggling agents** for coaching opportunities
-- **Track customer satisfaction** across your team
-- **Monitor call efficiency** and identify bottlenecks
-- **Get alerts** when important events occur
+Your dashboard transforms raw data into actionable insights. Here's what you'll be able to do:
+
+**Spot problems before they escalate** - See performance trends and catch issues early
+**Coach with confidence** - Identify which agents need help and which are crushing it
+**Keep customers happy** - Track satisfaction across your entire team
+**Optimize efficiency** - Find bottlenecks and streamline your processes
+**Stay ahead of the game** - Get notified when important events happen
 
 ## Set Up Your Dashboard
 
@@ -40,7 +41,7 @@ With your dashboard, you can:
 ### Step 4: Add Key Metrics
 1. **Click "Customise"** in the top-right corner
 2. **Click "Add New Metric"** for each metric you want to track
-3. **Add these essential metrics** (see [Agent Performance](./agents.md) for detailed metrics):
+3. **Add these essential metrics** (we'll dive deeper into agent metrics in the [Agent Performance guide](./agents.md)):
 
 #### Performance Metrics
 - **Agent Distribution** - See who's handling the most calls
@@ -152,6 +153,8 @@ Configure notifications to alert you when:
 - **[Configure Notifications](./notifications.md)** - Set up alerts for important events
 
 ## Need Help?
+
+**Stuck? We've got your back:**
 
 - **Contact Support**: support@botlhale.ai
 - **Check Data Upload**: Ensure your call data is properly uploaded

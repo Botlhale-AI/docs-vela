@@ -4,21 +4,22 @@ sidebar_position: 6
 
 # Stay Informed and Take Action
 
-Use Vela's notification system to stay on top of important events, team discussions, and performance insights. This guide shows you how to monitor alerts, respond to issues, and keep your team informed about critical developments.
+In a busy call center, important things happen fast. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues quickly, and keep your team connected when it matters most.
 
 ## What You Can Achieve
 
-With Vela notifications, you can:
-- **Respond quickly** to customer issues and complaints
-- **Stay informed** about team performance and trends
-- **Collaborate effectively** through comments and discussions
-- **Track progress** with automated reports and summaries
-- **Never miss important events** that affect your business
+Notifications are your early warning system. Here's what you'll accomplish:
+
+**Jump on problems fast** - Respond to customer issues before they become bigger problems
+**Keep your finger on the pulse** - Stay informed about team performance and trends
+**Work together better** - Collaborate through comments and discussions
+**Track what matters** - Get automated reports and summaries that actually help
+**Never miss a beat** - Stay on top of important events that affect your business
 
 ## Three Types of Notifications
 
 ### Alerts: Respond to Issues Immediately
-Get notified about important events that require your attention (see [Smart Detector Overview](./smart-detector-overview.md) for setup):
+Get notified about important events that require your attention (set up your alerts in [Smart Detector Overview](./smart-detector-overview.md)):
 
 - **Smart Search matches** - Customer complaints or compliance issues detected
 - **Performance alerts** - Agent scores below thresholds
@@ -212,6 +213,8 @@ When reports are generated, you'll receive notifications with:
 - **[Configure Settings](./settings.md)** - Customize notification preferences
 
 ## Need Help?
+
+**Notification issues? We can help:**
 
 - **Contact Support**: support@botlhale.ai
 - **Notification Setup**: Get help configuring your preferences

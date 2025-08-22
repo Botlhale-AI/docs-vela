@@ -93,7 +93,7 @@ The transcript provides rich insights into each conversation:
 ## Smart Detector Insights for Chats
 
 ### Automated Analysis Features
-Smart Detector provides instant insights for every chat (see [Smart Detector Overview](./smart-detector-overview.md) for detailed setup):
+Smart Detector provides instant insights for every chat (learn more in [Smart Detector Overview](./smart-detector-overview.md)):
 
 #### Chat Summary
 - **Key points** - Main topics and outcomes

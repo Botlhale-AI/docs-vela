@@ -103,7 +103,7 @@ Listen to the actual conversation for deeper insights:
 ## Smart Detector Insights
 
 ### Automated Analysis Features
-Smart Detector provides instant insights for every call (see [Smart Detector Overview](./smart-detector-overview.md) for detailed setup):
+Smart Detector provides instant insights for every call (get the full scoop in [Smart Detector Overview](./smart-detector-overview.md)):
 
 #### Call Summary
 - **Key points** - Main topics and outcomes

@@ -4,21 +4,22 @@ sidebar_position: 1
 
 # Automate Issue Detection and Agent Evaluation
 
-Use Smart Detector to automatically monitor your customer interactions, evaluate agent performance, and build a knowledge base that improves your team's effectiveness. This guide shows you how to set up intelligent monitoring that catches issues before they become problems.
+What if you could catch customer complaints before they become escalations? Or spot training gaps before they impact your team's performance? Smart Detector does the heavy lifting for you, automatically monitoring interactions, evaluating agents, and building a knowledge base that makes your team unstoppable.
 
 ## What You Can Achieve
 
-With Smart Detector, you can:
-- **Automatically detect customer complaints** and respond proactively
-- **Evaluate agent performance** with AI-powered scorecards
-- **Build a searchable knowledge base** for your team
-- **Monitor compliance** and quality standards automatically
-- **Identify training opportunities** before they impact customer satisfaction
+Smart Detector is like having a super-powered assistant that never sleeps. Here's what it does for you:
+
+**Catch complaints before they explode** - Automatically detect customer dissatisfaction and respond proactively
+**Score agents objectively** - Use AI-powered evaluations that are fair and consistent
+**Build your team's brain** - Create a searchable knowledge base that grows smarter over time
+**Stay compliant effortlessly** - Monitor quality standards without manual oversight
+**Spot training needs early** - Identify opportunities before they hurt customer satisfaction
 
 ## Three Powerful Tools for Your Team
 
 ### Smart Search: Catch Issues Early
-Automatically detect important events in your customer interactions (see [Smart Search Guide](./smart-search-guide.md) for detailed setup):
+Automatically detect important events in your customer interactions (get the full setup guide in [Smart Search](./smart-search-guide.md)):
 
 - **Customer complaints** - Get alerts when customers express dissatisfaction
 - **Compliance violations** - Monitor for regulatory or policy breaches
@@ -26,7 +27,7 @@ Automatically detect important events in your customer interactions (see [Smart 
 - **Training opportunities** - Spot areas where agents need support
 
 ### Agent Scorecard: Improve Performance Systematically
-Evaluate and improve agent performance with AI-powered assessments (see [Agent Scorecard Guide](./agent-scorecard-guide.md) for detailed setup):
+Evaluate and improve agent performance with AI-powered assessments (learn the ropes in [Agent Scorecard](./agent-scorecard-guide.md)):
 
 - **Automated evaluations** - Score every interaction consistently
 - **Performance tracking** - Monitor improvement over time
@@ -34,7 +35,7 @@ Evaluate and improve agent performance with AI-powered assessments (see [Agent S
 - **Best practice recognition** - Learn from top performers
 
 ### Knowledge Base: Empower Your Team
-Build a smart, searchable repository of company information (see [Knowledge Base Guide](./knowledge-base-guide.md) for detailed setup):
+Build a smart, searchable repository of company information (master it in [Knowledge Base](./knowledge-base-guide.md)):
 
 - **Document upload** - Add policies, procedures, and training materials
 - **Smart search** - Find relevant information quickly
@@ -224,6 +225,8 @@ Build a smart, searchable repository of company information (see [Knowledge Base
 - **[Build Knowledge Base](./knowledge-base-guide.md)** - Organize company information
 
 ## Need Help?
+
+**Smart Detector giving you trouble? Let's fix that:**
 
 - **Contact Support**: support@botlhale.ai
 - **Smart Detector Training**: Ask about advanced configuration options
