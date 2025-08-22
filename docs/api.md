@@ -2,21 +2,22 @@
 sidebar_position: 9
 ---
 
-# Integrate Vela with Your Systems
+# 🔧 Integrate Vela with Your Systems
 
-Your call center doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs. Whether you're a developer or just want to automate some workflows, we'll show you how to make Vela work with your tech stack.
+Your call center doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs.
 
-## What You Can Achieve
+## 🎯 What You Can Achieve
 
 APIs are the secret sauce that makes everything work together. Here's what you'll unlock:
 
-**Stop manual uploads forever** - Automate data flow from your existing call recording systems
-**Build your dream dashboard** - Create custom dashboards that integrate with your business tools
-**Work smarter, not harder** - Create automated workflows that trigger actions based on call insights
-**Know your customers better** - Integrate with your CRM to enhance customer profiles with call data
-**Build the future** - Develop custom applications that leverage Vela's analytics
+| **Automation** | **Integration** | **Customization** |
+|----------------|-----------------|-------------------|
+| 🔄 **Stop manual uploads forever** | 🔗 **Build your dream dashboard** | ⚙️ **Work smarter, not harder** |
+| 📊 **Know your customers better** | 🚀 **Build the future** | 🔧 **Create automated workflows** |
 
-## Common Integration Scenarios
+---
+
+## 🏗️ Common Integration Scenarios
 
 ### Scenario 1: Automated Call Recording Upload
 **Business Goal**: Eliminate manual data upload and ensure all calls are analyzed
@@ -46,7 +47,9 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 
 **Solution**: Use webhooks to receive call completion events and update your CRM system.
 
-## Getting Started with API Integration
+---
+
+## 🚀 Getting Started with API Integration
 
 ### Step 1: Set Up Authentication
 1. **Log in** to your Vela platform
@@ -54,42 +57,23 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 3. **Generate a new API key** for your integration
 4. **Copy the token** for use in your API requests
 
-**Security Best Practice**: Store your API token securely and never expose it in client-side code.
+> 🔒 **Security Best Practice**: Store your API token securely and never expose it in client-side code.
 
 ### Step 2: Choose Your Integration Approach
 
-#### Option A: Direct API Integration
-**Best for**: Custom applications, automated workflows, real-time data access
+| **Approach** | **Best For** | **When to Use** |
+|--------------|--------------|-----------------|
+| **Direct API Integration** | Custom applications, automated workflows, real-time data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, real-time data processing |
+| **Webhook Integration** | Event-driven workflows, real-time notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, real-time notification systems, automated ticket creation |
+| **Batch Processing** | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
 
-**When to use**:
-- Building custom dashboards
-- Creating automated workflows
-- Integrating with existing business systems
-- Real-time data processing
+---
 
-#### Option B: Webhook Integration
-**Best for**: Event-driven workflows, real-time notifications, automated responses
-
-**When to use**:
-- Receiving alerts for important events
-- Triggering actions based on call insights
-- Real-time notification systems
-- Automated ticket creation
-
-#### Option C: Batch Processing
-**Best for**: Large data uploads, historical data migration, scheduled updates
-
-**When to use**:
-- Migrating existing call data
-- Scheduled data synchronization
-- Bulk data processing
-- Offline data upload
-
-## API Fundamentals
+## 📚 API Fundamentals
 
 ### Base URL
 All API endpoints use this base URL:
-```
+```bash
 https://api.botlhale.xyz/v1
 ```
 
@@ -104,104 +88,98 @@ Authorization: Bearer YOUR_API_TOKEN_HERE
 - **Professional Plan**: 500 requests per minute
 - **Enterprise Plan**: 1000 requests per minute
 
-**Pro Tip**: Implement exponential backoff for rate limit handling to ensure reliable integration.
+---
 
-## Core API Use Cases
+## 🔌 Core API Endpoints
 
-### Uploading Call Data Automatically
-
-#### Use Case: Call Recording System Integration
-**Business Need**: Automatically analyze all calls from your existing recording system
-
-**Implementation**:
-1. **Monitor your recording system** for new files
-2. **Upload via API** when new recordings are available
-3. **Track processing status** to ensure successful analysis
-4. **Handle errors** gracefully for failed uploads
-
-**Example Code**:
-```python
-import requests
-import os
-from datetime import datetime
-
-def upload_call_recording(file_path, agent_email, call_date):
-    url = "https://api.botlhale.xyz/v1/calls/upload"
-    headers = {
-        "Authorization": "Bearer YOUR_API_TOKEN",
-        "Content-Type": "application/json"
-    }
-    
-    data = {
-        "org_id": "your_org_id",
-        "agent_email": agent_email,
-        "call_date": call_date.isoformat(),
-        "file_url": file_path
-    }
-    
-    response = requests.post(url, headers=headers, json=data)
-    return response.json()
+### Upload Call Recordings
+```bash
+POST /asr/async/upload/vela
 ```
 
-### Retrieving Analytics Data
+**Required Parameters**:
+- `org_id` - Your organization identifier
+- `file` - Audio file (WAV, MP3, M4A, FLAC)
+- `metadata` - Call information (optional)
 
-#### Use Case: Custom Dashboard Integration
-**Business Need**: Build a custom dashboard that combines Vela analytics with other business data
-
-**Implementation**:
-1. **Retrieve agent performance** data via API
-2. **Get call analytics** for specific time periods
-3. **Combine with other data sources** (CRM, sales, etc.)
-4. **Display in custom dashboard**
-
-**Example Code**:
+**Example Request**:
 ```python
-def get_agent_performance(agent_id, start_date, end_date):
-    url = f"https://api.botlhale.xyz/v1/agents/{agent_id}/performance"
-    headers = {"Authorization": "Bearer YOUR_API_TOKEN"}
-    
-    params = {
-        "start_date": start_date.isoformat(),
-        "end_date": end_date.isoformat()
-    }
-    
-    response = requests.get(url, headers=headers, params=params)
-    return response.json()
+import requests
+
+url = "https://api.botlhale.xyz/v1/asr/async/upload/vela"
+headers = {
+    "Authorization": "Bearer YOUR_API_TOKEN"
+}
+
+files = {
+    'file': open('call_recording.wav', 'rb')
+}
+
+data = {
+    'org_id': 'your_org_id',
+    'metadata': '{"agent_id": "123", "customer_id": "456"}'
+}
+
+response = requests.post(url, headers=headers, files=files, data=data)
+print(response.json())
+```
+
+### Retrieve Call Analytics
+```bash
+GET /analytics/calls
+```
+
+**Query Parameters**:
+- `start_date` - Start date for analysis
+- `end_date` - End date for analysis
+- `agent_id` - Filter by specific agent
+- `team_id` - Filter by team
+
+**Example Request**:
+```python
+import requests
+from datetime import datetime
+
+url = "https://api.botlhale.xyz/v1/analytics/calls"
+headers = {
+    "Authorization": "Bearer YOUR_API_TOKEN"
+}
+
+params = {
+    'start_date': '2024-01-01',
+    'end_date': '2024-01-31',
+    'team_id': 'your_team_id'
+}
+
+response = requests.get(url, headers=headers, params=params)
+analytics_data = response.json()
 ```
 
 ### Real-Time Event Processing
-
-#### Use Case: Automated Alert System
-**Business Need**: Receive immediate notifications when important events occur
-
-**Implementation**:
-1. **Set up webhook endpoint** in your system
-2. **Configure Vela webhooks** for specific events
-3. **Process incoming events** in real-time
-4. **Trigger appropriate actions** (create tickets, send alerts, etc.)
-
-**Example Webhook Handler**:
 ```python
 from flask import Flask, request
+import json
 
 app = Flask(__name__)
 
 @app.route('/webhook/vela', methods=['POST'])
 def handle_vela_webhook():
-    event = request.json
+    # Verify webhook signature (recommended)
+    webhook_data = request.json
     
-    if event['event'] == 'call.completed':
-        # Process completed call
-        call_data = event['data']
-        
-        # Check for customer complaints
-        if call_data['sentiment'] == 'negative':
-            create_support_ticket(call_data)
-            
-        # Update CRM with call insights
-        update_customer_profile(call_data)
+    # Process different event types
+    event_type = webhook_data.get('event_type')
+    
+    if event_type == 'call_completed':
+        handle_call_completed(webhook_data)
+    elif event_type == 'alert_triggered':
+        handle_alert_triggered(webhook_data)
     
     return {'status': 'success'}
+
+def handle_call_completed(call_data):
+    # Update CRM with call insights
+    update_customer_profile(call_data)
 
 def create_support_ticket(call_data):
     # Integrate with your help desk system
@@ -212,15 +190,19 @@ def update_customer_profile(call_data):
     pass
 ```
 
-## Advanced Integration Patterns
+---
 
-**Data Synchronization**: Keep Vela data in sync with your existing systems using scheduled sync jobs and incremental updates
+## 🔄 Advanced Integration Patterns
 
-**Event-Driven Architecture**: React to Vela events in real-time with webhook endpoints and event processing pipelines
+| **Pattern** | **Description** | **Implementation** |
+|-------------|-----------------|-------------------|
+| **Data Synchronization** | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
+| **Event-Driven Architecture** | React to Vela events in real-time | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
+| **Custom Analytics Pipeline** | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualization |
 
-**Custom Analytics Pipeline**: Build advanced analytics using Vela data through extraction, transformation, and custom processing
+---
 
-## Best Practices for API Integration
+## 🛡️ Best Practices for API Integration
 
 ### Security and Authentication
 - **Secure token storage** - Never hardcode API tokens
@@ -246,54 +228,39 @@ def update_customer_profile(call_data):
 - **Data transformation** - Clean and format data appropriately
 - **Backup strategies** - Maintain data backups for reliability
 
-## Troubleshooting Common Integration Issues
+---
 
-### Authentication Problems
-**Problem**: API requests returning 401 Unauthorized errors
-**Solutions**:
-- Verify API token is correct and not expired
-- Check token permissions and scope
-- Ensure token is included in request headers
-- Contact support if token issues persist
+## 🔧 Troubleshooting Common Integration Issues
 
-### Rate Limiting Issues
-**Problem**: Receiving 429 Rate Limit Exceeded errors
-**Solutions**:
-- Implement exponential backoff retry logic
-- Reduce request frequency
-- Use batch operations to reduce API calls
-- Consider upgrading to higher rate limit plan
+| **Problem** | **Solution** |
+|-------------|--------------|
+| **Authentication Problems** | Verify API token is correct and not expired, check token permissions and scope, ensure token is included in request headers |
+| **Rate Limiting Issues** | Implement exponential backoff retry logic, reduce request frequency, use batch operations to reduce API calls |
+| **Data Upload Failures** | Verify file format and size requirements, check network connectivity and timeouts, validate request payload structure |
+| **Webhook Delivery Issues** | Verify webhook endpoint is accessible, check webhook URL and authentication, monitor webhook delivery logs |
 
-### Data Upload Failures
-**Problem**: Call recordings not uploading successfully
-**Solutions**:
-- Verify file format and size requirements
-- Check network connectivity and timeouts
-- Validate request payload structure
-- Monitor upload status and retry failed uploads
+---
 
-### Webhook Delivery Issues
-**Problem**: Webhooks not being received
-**Solutions**:
-- Verify webhook endpoint is accessible
-- Check webhook URL and authentication
-- Monitor webhook delivery logs
-- Implement webhook retry logic
+## 📊 Measuring Success
 
-## Measuring Success
+| **Key Metrics** | **Success Indicators** |
+|-----------------|------------------------|
+| **Data synchronization accuracy** | Reduced manual work |
+| **API response times** | Improved data accuracy |
+| **Error rates** | Faster response times |
+| **Data quality** | Enhanced insights |
 
-**Key Metrics**: Data synchronization accuracy, API response times, error rates, and data quality
+---
 
-**Success Indicators**: Reduced manual work, improved data accuracy, faster response times, and enhanced insights
+## 🔗 Next Steps
 
-## Next Steps
+| **For Data Management** | **For Automation** | **For Analytics** |
+|------------------------|-------------------|------------------|
+| [📤 Get Your Data into Vela](./data-upload.md) | [🔔 Configure Notifications](./notifications.md) | [📊 Analyze Interactions](./calls.md) |
 
-- **[Get Your Data into Vela](./data-upload.md)** - Learn about manual and automated data upload
-- **[Configure Notifications](./notifications.md)** - Set up webhook-based alerts
-- **[Analyze Interactions](./calls.md)** - Use API to retrieve detailed call data
+## 🆘 Need Help?
 
-## Need Help?
-
-- **Contact Support**: api-support@botlhale.ai
-- **Integration Consulting**: Get help with complex integration scenarios
-- **Developer Resources**: Access SDKs, code samples, and technical documentation
+- 📧 **Contact Support**: api-support@botlhale.ai
+- 🔧 **Integration Consulting**: Get help with complex integration scenarios
+- 📚 **Developer Resources**: Access SDKs, code samples, and technical documentation
+- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

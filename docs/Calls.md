@@ -1,228 +1,212 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 
-# Analyze Customer Interactions
+# 📞 Analyze Customer Interactions
 
-Dive deep into your customer conversations to understand what's working, identify issues, and improve your team's performance. This guide shows you how to use call analysis to drive better customer experiences and team development.
+Every call tells a story. Vela's call analysis tools help you understand what's really happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
 
-## What You Can Achieve
+## 🎯 What You Can Achieve
 
-With call analysis, you can:
-- **Identify customer pain points** and address them proactively
-- **Evaluate agent performance** with detailed conversation insights
-- **Spot training opportunities** for your team
-- **Track conversation trends** and patterns over time
-- **Improve customer satisfaction** through data-driven insights
+Call analysis transforms conversations into actionable insights. Here's what you'll accomplish:
 
-## Understanding Your Call Data
+| **Customer Understanding** | **Performance Improvement** | **Quality Assurance** |
+|---------------------------|----------------------------|---------------------|
+| 🎯 **Understand customer needs** | 📊 **Improve agent performance** | ✅ **Ensure consistent quality** |
+| 🔍 **Spot pain points** | 📈 **Track improvement over time** | 🛡️ **Maintain compliance** |
+| 💡 **Identify opportunities** | 🎓 **Guide training programs** | 📋 **Monitor standards** |
 
-### Key Metrics to Monitor
-Your call log shows essential information for every interaction:
+---
 
-- **Call Duration** - How long each conversation lasted
-- **Silent Time** - Awkward pauses or processing delays
-- **Topic Classification** - What the conversation was about
-- **Agent Score** - Performance rating for each interaction
-- **Alerts** - Issues detected by Smart Detector
-- **Tags** - Custom categories for better organization
+## 📊 Understanding Call Data
 
-![Call Overview](../img/screenshots/callz.png)
+### Key Metrics Explained
+Your call analysis provides comprehensive insights into every interaction:
 
-### What These Metrics Tell You
-- **Long calls** might indicate complex issues or agent uncertainty
-- **High silent time** could signal agent confusion or system delays
-- **Low agent scores** suggest coaching opportunities
-- **Frequent alerts** indicate recurring problems to address
-- **Topic patterns** reveal common customer needs
+| **Metric Category** | **What It Shows** | **Business Impact** |
+|-------------------|-------------------|-------------------|
+| **Call Duration** | Time efficiency and complexity | Resource allocation, capacity planning |
+| **Customer Sentiment** | Satisfaction and emotional state | Customer experience, retention |
+| **Agent Score** | Performance and skill assessment | Training needs, coaching opportunities |
+| **Resolution Rate** | Problem-solving effectiveness | Service quality, customer satisfaction |
+| **Silent Time** | Communication gaps and delays | Process efficiency, training opportunities |
 
-## Getting Started with Call Analysis
+### Call Quality Indicators
+| **Indicator** | **What It Means** | **Action Required** |
+|---------------|-------------------|-------------------|
+| **High sentiment + High score** | Excellent service delivery | Recognize and replicate |
+| **Low sentiment + Low score** | Service quality issues | Immediate coaching needed |
+| **High sentiment + Low score** | Good outcome despite challenges | Identify what worked |
+| **Low sentiment + High score** | Technical issues or external factors | Investigate root causes |
 
-### Step 1: Access Your Call Data
-1. **Go to "Calls"** in the left sidebar
-2. **Review the call log** to see all processed interactions
-3. **Use filters** to focus on specific time periods, agents, or teams
-4. **Sort by different metrics** to identify patterns
+---
 
-### Step 2: Upload New Data
-Add more calls to your analysis:
+## 🔍 How to Analyze Individual Calls
 
-1. **Click "Batch Upload"** for multiple files
-2. **Select your call recordings** (we support most audio formats)
-3. **Review the upload summary**
-4. **Click "Upload"** to start processing
+### Step 1: Access Call Details
+- [ ] **Go to "Calls"** in the left sidebar
+- [ ] **Click on any call** to view detailed analysis
+- [ ] **Review the comprehensive breakdown** of the interaction
 
-![Upload Interface](../img/screenshots/Uploadz.png)
+### Step 2: Review Call Transcript
+- [ ] **Read the full conversation** with timestamps
+- [ ] **Look for key moments** that affected the outcome
+- [ ] **Identify customer pain points** and agent responses
+- [ ] **Note successful resolution strategies**
 
-### Step 3: Organize with Tags
-Create custom categories to group similar calls:
+### Step 3: Analyze Performance Metrics
+- [ ] **Review agent score** and breakdown
+- [ ] **Check customer sentiment** throughout the call
+- [ ] **Examine call duration** and efficiency
+- [ ] **Assess resolution effectiveness**
 
-1. **Click "Select Tag"** on any call
-2. **Choose existing tags** or create new ones
-3. **Add descriptive names** like "Complaints," "Sales," or "Training"
-4. **Use consistent naming** for better organization
+### Step 4: Take Action
+- [ ] **Add comments** for coaching purposes
+- [ ] **Share insights** with the team
+- [ ] **Update training materials** based on learnings
+- [ ] **Follow up** with customers if needed
 
-![Call Tagging](../img/screenshots/call-tags.png)
+---
 
-## Deep Dive: Analyzing Individual Calls
+## 📈 Identifying Patterns Across Calls
 
-### Accessing Detailed Call View
-1. **Click on any call** in the call log
-2. **Review the comprehensive analysis** including:
-   - Full conversation transcript
-   - Audio playback controls
-   - Smart Detector insights
-   - Performance metrics
+### Customer Pain Point Analysis
+Look for recurring issues that affect multiple customers:
 
-![Detailed Call View](../img/screenshots/Detailz-V.png)
+| **Pattern Type** | **What to Look For** | **Business Impact** |
+|------------------|---------------------|-------------------|
+| **Product Issues** | Repeated complaints about features or functionality | Product development priorities |
+| **Process Problems** | Confusion about procedures or policies | Process improvement opportunities |
+| **Service Gaps** | Unmet customer expectations | Service enhancement needs |
+| **Training Needs** | Agents struggling with specific topics | Training program development |
 
-### Understanding the Transcript
-The transcript provides rich insights into each conversation:
+### Agent Performance Patterns
+Identify trends that affect team performance:
 
-#### Key Features
-- **Full conversation text** - See exactly what was said
-- **Speaker identification** - Agent vs. customer clearly marked
-- **Sentiment analysis** - Emotional tone for each utterance
-- **Intent detection** - What the speaker was trying to achieve
-- **Language detection** - Automatic language identification
+| **Pattern** | **Indicators** | **Intervention** |
+|-------------|----------------|-----------------|
+| **Consistent High Performance** | High scores across multiple calls | Use as mentor, share best practices |
+| **Declining Performance** | Decreasing scores over time | Immediate coaching, identify root causes |
+| **Inconsistent Performance** | High variance in scores | Focus on specific skill areas |
+| **Specific Weaknesses** | Low scores in particular areas | Targeted training programs |
 
-#### Using Comments for Collaboration
-- **Add comments** to specific parts of conversations
-- **Tag team members** for their attention
-- **Share insights** and observations
-- **Track follow-up actions** needed
+---
 
-### Audio Playback Analysis
-Listen to the actual conversation for deeper insights:
+## 🎯 Using Call Analysis for Coaching
 
-- **Play/pause controls** - Review at your own pace
-- **Speed adjustment** - Listen faster or slower as needed
-- **Download option** - Save for offline review or training
-- **Quality assessment** - Evaluate audio clarity and issues
+### For Individual Agents
+- [ ] **Review recent calls** with the agent
+- [ ] **Identify specific improvement areas** from the data
+- [ ] **Create targeted coaching plans** based on patterns
+- [ ] **Track progress** over time
 
-## Smart Detector Insights
+### For Team Development
+- [ ] **Share successful strategies** from high-performing calls
+- [ ] **Address common challenges** identified in analysis
+- [ ] **Update training materials** based on real examples
+- [ ] **Celebrate improvements** and successes
 
-### Automated Analysis Features
-Smart Detector provides instant insights for every call (get the full scoop in [Smart Detector Overview](./smart-detector-overview.md)):
+### For Process Improvement
+- [ ] **Identify bottlenecks** in call handling
+- [ ] **Spot opportunities** for automation or streamlining
+- [ ] **Update procedures** based on customer feedback
+- [ ] **Optimize resource allocation** based on call patterns
 
-#### Call Summary
-- **Key points** - Main topics and outcomes
-- **Conversation flow** - How the interaction progressed
-- **Resolution status** - Whether issues were resolved
+---
 
-#### Keyword Analysis
-- **Important phrases** - Frequently mentioned terms
-- **Topic identification** - What customers are talking about
-- **Trend spotting** - Recurring themes across calls
+## 🔍 Advanced Call Analysis Features
 
-#### Alert Detection
-- **Compliance issues** - Regulatory or policy violations
-- **Customer complaints** - Dissatisfaction indicators
-- **Quality problems** - Service delivery issues
-- **Training opportunities** - Areas needing improvement
+### Sentiment Analysis
+Track customer emotions throughout the conversation:
 
-#### Intent Recognition
-- **Customer goals** - What they wanted to achieve
-- **Service requests** - Specific needs or questions
-- **Escalation indicators** - When customers need more help
+| **Sentiment Level** | **What It Indicates** | **Action Required** |
+|-------------------|---------------------|-------------------|
+| **Positive** | Customer satisfaction, successful resolution | Maintain current approach |
+| **Neutral** | Standard interaction, no major issues | Monitor for improvement opportunities |
+| **Negative** | Customer dissatisfaction, potential escalation | Immediate attention needed |
 
-#### Sentiment Analysis
-- **Emotional tone** - Positive, neutral, or negative
-- **Satisfaction levels** - Customer happiness indicators
-- **Stress indicators** - When customers are frustrated
+### Keyword Analysis
+Identify important topics and themes:
 
-#### Performance Checklist
-- **Script adherence** - Following required procedures
-- **Resolution effectiveness** - Problem-solving success
-- **Professional standards** - Meeting quality expectations
+- [ ] **Review keyword frequency** to spot trends
+- [ ] **Analyze context** around important terms
+- [ ] **Track topic evolution** over time
+- [ ] **Identify emerging issues** early
 
-#### Pain Point Detection
-- **Customer frustrations** - What's causing problems
-- **Service gaps** - Areas needing improvement
-- **Process issues** - Inefficiencies or bottlenecks
+### Performance Scoring
+Understand how agents are evaluated:
 
-## Using Call Analysis for Improvement
+| **Score Component** | **What It Measures** | **Improvement Focus** |
+|-------------------|-------------------|-------------------|
+| **Communication** | Clarity, professionalism, empathy | Soft skills training |
+| **Problem Solving** | Issue resolution effectiveness | Technical training |
+| **Efficiency** | Time management and process adherence | Process optimization |
+| **Customer Focus** | Understanding and meeting customer needs | Customer service training |
 
-### For Team Managers
-- **Review low-scoring calls** to identify coaching needs
-- **Analyze high-scoring calls** to learn best practices
-- **Track performance trends** over time
-- **Identify training priorities** based on common issues
+---
 
-### For Quality Assurance
-- **Monitor compliance** with policies and procedures
-- **Assess service quality** across all interactions
-- **Track customer satisfaction** trends
-- **Identify process improvements** needed
+## 📊 Call Analytics Dashboard
 
-### For Training Teams
-- **Find examples** of good and poor performance
-- **Create training materials** based on real scenarios
-- **Track improvement** after training interventions
-- **Identify skill gaps** across the team
+### Key Performance Indicators
+Monitor these metrics to track team performance:
 
-## Best Practices for Call Analysis
+| **KPI** | **Target** | **Action Threshold** |
+|---------|------------|-------------------|
+| **Average Call Duration** | 5-8 minutes | Above 10 minutes = efficiency review needed |
+| **Customer Satisfaction** | 85%+ positive | Below 75% = immediate intervention |
+| **First Call Resolution** | 80%+ | Below 70% = training or process review |
+| **Agent Performance Score** | 85%+ | Below 70% = coaching required |
 
-### Regular Review Routine
-- **Daily check** - Review any alerts or low-scoring calls
-- **Weekly analysis** - Look for patterns and trends
-- **Monthly deep dive** - Comprehensive team performance review
-- **Quarterly planning** - Strategic improvements based on data
+### Trend Analysis
+- [ ] **Track performance over time** to identify trends
+- [ ] **Compare team performance** across different periods
+- [ ] **Monitor improvement** after training interventions
+- [ ] **Identify seasonal patterns** in call volume and complexity
 
-### Effective Tagging Strategy
-- **Use consistent naming** - Standardize tag categories
-- **Create meaningful groups** - Tags that drive action
-- **Review and update** - Keep tags relevant and useful
-- **Train your team** - Ensure everyone uses tags consistently
+---
 
-### Collaboration Through Comments
-- **Be specific** - Reference exact moments in calls
-- **Be constructive** - Focus on improvement opportunities
-- **Tag relevant people** - Ensure the right person sees feedback
-- **Follow up** - Check that actions were taken
+## 🔧 Troubleshooting Common Issues
 
-## Troubleshooting Common Issues
+| **Problem** | **Possible Cause** | **Solution** |
+|-------------|-------------------|--------------|
+| **Low call quality scores** | Training gaps, unclear expectations, process issues | Review training materials, clarify expectations, optimize processes |
+| **High call duration** | Complex issues, agent uncertainty, inefficient processes | Provide better training, improve knowledge base, streamline procedures |
+| **Poor customer sentiment** | Service quality issues, agent attitude, product problems | Address root causes, provide coaching, improve products |
+| **Inconsistent performance** | Varying call complexity, agent experience, external factors | Standardize processes, provide consistent training, account for variables |
 
-### Missing Call Data
-**Problem**: Expected calls don't appear in the log
-**Solutions**:
-- Check upload status and processing completion
-- Verify file formats are supported
-- Review upload error logs
-- Contact support for processing issues
+---
 
-### Poor Audio Quality
-**Problem**: Audio is unclear or difficult to understand
-**Solutions**:
-- Check original recording quality
-- Verify file format and compression
-- Consider re-uploading with better quality
-- Review recording equipment and settings
+## 💡 Best Practices for Call Analysis
 
-### Inaccurate Transcripts
-**Problem**: Transcript doesn't match what was said
-**Solutions**:
-- Check audio quality and clarity
-- Verify language detection is correct
-- Review for technical terms or accents
-- Consider manual corrections for important calls
+### Regular Review Schedule
+- [ ] **Daily**: Review high-priority calls and alerts
+- [ ] **Weekly**: Analyze patterns and trends
+- [ ] **Monthly**: Comprehensive team performance review
+- [ ] **Quarterly**: Strategic analysis and planning
 
-### Smart Detector Issues
-**Problem**: Analysis seems incorrect or missing
-**Solutions**:
-- Verify Smart Detector is properly configured
-- Check that search criteria are appropriate
-- Review alert thresholds and settings
-- Contact support for configuration help
+### Effective Coaching
+- [ ] **Use specific examples** from actual calls
+- [ ] **Focus on behaviors** that can be changed
+- [ ] **Provide constructive feedback** with actionable steps
+- [ ] **Celebrate improvements** and successes
 
-## Next Steps
+### Continuous Improvement
+- [ ] **Update training materials** based on call analysis
+- [ ] **Refine processes** based on customer feedback
+- [ ] **Share best practices** across the team
+- [ ] **Monitor the impact** of improvements
 
-- **[Improve Agent Performance](./agents.md)** - Apply call analysis to coaching
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
-- **[Analyze Chat Conversations](./chats.md)** - Review digital customer interactions
+---
 
-## Need Help?
+## 🔗 Next Steps
 
-- **Contact Support**: support@botlhale.ai
-- **Call Analysis Training**: Get help with effective analysis techniques
-- **Smart Detector Setup**: Assistance with automated analysis configuration
+| **For Smart Monitoring** | **For Team Management** | **For Quality Assurance** |
+|-------------------------|------------------------|-------------------------|
+| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [👥 Improve Agent Performance](./agents.md) | [📋 Create Agent Scorecards](./agent-scorecard-guide.md) |
+
+## 🆘 Need Help?
+
+- 📧 **Contact Support**: support@botlhale.ai
+- 📞 **Call Analysis Training**: Get help with effective analysis techniques
+- 🎯 **Coaching Support**: Assistance with using call data for team development
+- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

@@ -2,210 +2,193 @@
 sidebar_position: 2
 ---
 
-# Create Automated Searches That Catch Issues
+# 🔍 Create Automated Searches
 
-Set up intelligent monitoring to automatically detect customer complaints, compliance violations, and other important events in your customer interactions. This guide shows you how to create effective searches that help you respond proactively to issues.
+Stop manually reviewing every call. Smart Search automatically detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
 
-## What You Can Achieve
+## 🎯 What You Can Achieve
 
-With Smart Search, you can:
-- **Detect customer complaints** before they escalate
-- **Monitor compliance violations** automatically
-- **Identify training opportunities** for your team
-- **Spot service quality issues** in real-time
-- **Track important trends** across all interactions
+Smart Search is your automated monitoring system. Here's what you'll accomplish:
 
-## Getting Started with Smart Search
+| **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
+|-------------------|----------------------|------------------------------|
+| 🚨 **Catch problems early** | ✅ **Monitor compliance** | 💡 **Spot improvement opportunities** |
+| ⚡ **Respond proactively** | 📊 **Track quality trends** | 🎯 **Identify training needs** |
+| 🔍 **Never miss important events** | 🛡️ **Maintain standards** | 📈 **Drive continuous improvement** |
+
+---
+
+## 🚀 Getting Started with Smart Search
 
 ### Step 1: Access Smart Search
-1. **Go to "Smart Detector"** in the left sidebar
-2. **Click "Smart Search"** card
-3. **Review the four main tabs**:
-   - **View** - See existing searches
-   - **Create** - Build new searches
-   - **Examples** - Use predefined templates
-   - **Results** - Review search outcomes
+- [ ] **Go to "Smart Detector" → "Smart Search"**
+- [ ] **Click "Create"** to start building your first search
+- [ ] **Choose your search type** based on your monitoring goals
 
-![Smart Search Interface](../img/screenshots/SDS.png)
+### Step 2: Define Your Search Criteria
+- [ ] **Name your search** (e.g., "Customer Complaints")
+- [ ] **Add example phrases** that indicate the issue
+- [ ] **Set the scope** (organization, department, or team)
+- [ ] **Configure notification preferences**
 
-### Step 2: Plan Your Search Strategy
-Before creating searches, identify what you want to monitor:
+### Step 3: Test and Refine
+- [ ] **Review initial results** to ensure accuracy
+- [ ] **Adjust search criteria** based on findings
+- [ ] **Fine-tune sensitivity** to reduce false positives
+- [ ] **Set up alerts** for immediate notification
 
-- **Customer satisfaction** - Complaints, dissatisfaction indicators
-- **Compliance issues** - Policy violations, regulatory concerns
-- **Service quality** - Problems with products or services
-- **Training needs** - Areas where agents struggle
-- **Business opportunities** - Upselling, cross-selling moments
+---
 
-## Creating Effective Searches
+## 📋 Common Search Types
 
-### Understanding Search Components
-Each search includes:
+### Customer Experience Monitoring
+| **Search Type** | **Example Phrases** | **Business Value** |
+|-----------------|-------------------|------------------|
+| **Customer Complaints** | "I'm not happy", "This is terrible", "I want to speak to a manager" | Early intervention, prevent escalations |
+| **Service Issues** | "This doesn't work", "I've been waiting", "Nobody helped me" | Identify service gaps, improve processes |
+| **Billing Problems** | "I was charged twice", "This bill is wrong", "I want a refund" | Financial impact, customer retention |
+| **Product Issues** | "This is broken", "It's not working", "Defective product" | Product quality, warranty management |
 
-- **Name** - Clear, descriptive identifier
-- **Description** - What the search looks for
-- **Scope** - Which calls to monitor (Organization, Department, Team)
-- **Example phrases** - Specific terms to detect
-- **Filters** - Additional criteria (duration, agent, keywords)
-- **Notifications** - Alert settings for matches
+### Compliance and Quality Assurance
+| **Search Type** | **Example Phrases** | **Compliance Focus** |
+|-----------------|-------------------|-------------------|
+| **Regulatory Violations** | "I didn't authorize this", "That's illegal", "You can't do that" | Legal compliance, risk management |
+| **Policy Breaches** | "That's against policy", "You're not following procedure" | Policy adherence, quality standards |
+| **Security Concerns** | "My information was shared", "Data breach", "Privacy violation" | Data protection, security compliance |
+| **Documentation Issues** | "That wasn't documented", "No record of this", "Missing information" | Audit readiness, record keeping |
 
-### Step-by-Step Search Creation
-1. **Go to "Create" tab** to build new searches
-2. **Name your search** - Use descriptive, memorable names
-3. **Write clear description** - Explain what you're looking for
-4. **Set the scope** - Choose which calls to monitor
-5. **Add example phrases** - Include specific terms to detect
-6. **Configure filters** - Add additional criteria if needed
-7. **Set up notifications** - Choose when to receive alerts
-8. **Save and activate** - Make your search live
+### Training and Development
+| **Search Type** | **Example Phrases** | **Training Value** |
+|-----------------|-------------------|------------------|
+| **Knowledge Gaps** | "I don't know", "Can you explain", "I'm not sure how" | Identify training needs, skill development |
+| **Process Confusion** | "What's the procedure", "How do I do this", "I'm confused" | Process improvement, documentation |
+| **Escalation Requests** | "I need a supervisor", "Can I speak to someone else", "This is too complex" | Skill assessment, escalation procedures |
+| **Positive Feedback** | "Great service", "Thank you so much", "You're amazing" | Recognize excellence, share best practices |
 
-## Building Effective Search Criteria
+---
 
-### Customer Complaint Detection
-Monitor for customer dissatisfaction:
+## 🎯 Creating Effective Searches
 
-- **Direct complaints**: "I'm not happy with", "This is terrible"
-- **Escalation requests**: "I want to speak to a manager"
-- **Cancellation threats**: "I'm going to cancel my account"
-- **Service issues**: "This doesn't work", "I've been waiting"
+### Best Practices for Search Design
+- [ ] **Start with specific phrases** - Be precise about what you're looking for
+- [ ] **Include variations** - Add synonyms and different ways to express the same thing
+- [ ] **Test with real data** - Review results to ensure accuracy
+- [ ] **Refine over time** - Adjust based on what you learn
 
-### Compliance Monitoring
-Track regulatory and policy adherence:
+### Search Sensitivity Settings
+| **Sensitivity Level** | **Use Case** | **Trade-offs** |
+|---------------------|--------------|---------------|
+| **High Sensitivity** | Critical issues, compliance violations | More false positives, immediate alerts |
+| **Medium Sensitivity** | General monitoring, quality assurance | Balanced accuracy and coverage |
+| **Low Sensitivity** | Trend analysis, long-term monitoring | Fewer false positives, may miss some issues |
 
-- **Data protection**: "Can you confirm my details", "Is this secure"
-- **Policy violations**: "That's against company policy"
-- **Required disclosures**: "You didn't tell me about"
-- **Regulatory concerns**: "Is this legal", "Are you following the rules"
+### Scope Configuration
+- [ ] **Organization-wide** - Monitor all interactions across your company
+- [ ] **Department-specific** - Focus on particular business areas
+- [ ] **Team-based** - Target specific teams or groups
+- [ ] **Agent-specific** - Monitor individual performance
 
-### Service Quality Issues
-Identify problems with products or services:
+---
 
-- **Technical problems**: "It's not working", "There's an error"
-- **Product defects**: "This is broken", "It's defective"
-- **Service delays**: "I've been waiting", "This is taking too long"
-- **Billing issues**: "I was charged incorrectly", "This bill is wrong"
+## 📊 Monitoring and Alerts
 
-### Training Opportunities
-Spot areas where agents need help:
+### Setting Up Notifications
+Configure how you want to be notified about search matches:
 
-- **Knowledge gaps**: "I don't know", "Let me check"
-- **Process confusion**: "I'm not sure how to", "What should I do"
-- **Escalation patterns**: "I need to transfer you", "Let me get my supervisor"
-- **Customer frustration**: "I've explained this before", "You're not listening"
+| **Notification Type** | **When to Use** | **Delivery Method** |
+|---------------------|-----------------|-------------------|
+| **Immediate Alerts** | Critical issues, compliance violations | Email, platform notifications |
+| **Daily Summaries** | General monitoring, trend analysis | Email digest, dashboard updates |
+| **Weekly Reports** | Long-term trends, strategic insights | Scheduled reports, analytics |
 
-## Managing Your Searches
+### Alert Management
+- [ ] **Review alerts promptly** - Don't let them pile up
+- [ ] **Investigate matches** - Understand the context and severity
+- [ ] **Take appropriate action** - Address issues or opportunities
+- [ ] **Document responses** - Track what actions were taken
 
-### Viewing Existing Searches
-The View tab shows all your active searches:
+### Escalation Procedures
+| **Alert Level** | **Response Time** | **Action Required** |
+|-----------------|------------------|-------------------|
+| **Critical** | Immediate (within 1 hour) | Direct intervention, management notification |
+| **High** | Same day (within 4 hours) | Investigation and action plan |
+| **Medium** | Within 24 hours | Review and follow-up |
+| **Low** | Within 48 hours | Monitor and trend analysis |
 
-- **Search name** - What you're monitoring
-- **Description** - Purpose and scope
-- **Status** - Active or inactive
-- **Notifications** - Alert settings
-- **Date created** - When the search was set up
+---
 
-![View By Dropdown](../img/screenshots/VB.png)
+## 📈 Analyzing Search Results
 
-### Organizing by Scope
-Filter searches to focus on specific areas:
+### Understanding Match Data
+When Smart Search finds matches, you'll see:
 
-- **Entire Organization** - Monitor all calls across your company
-- **Specific Department** - Focus on particular business areas
-- **Specific Team** - Target individual teams or groups
+| **Data Point** | **What It Shows** | **How to Use It** |
+|----------------|-------------------|------------------|
+| **Match Count** | How many times the search triggered | Identify frequency and patterns |
+| **Date Range** | When matches occurred | Spot trends and timing patterns |
+| **Agent Information** | Who was involved in matched calls | Identify training needs or excellence |
+| **Call Details** | Specific context of the match | Understand the full situation |
 
-### Editing and Updating Searches
-Keep your searches current and effective:
+### Trend Analysis
+- [ ] **Track match frequency** over time to identify trends
+- [ ] **Compare periods** to see if issues are improving or worsening
+- [ ] **Analyze patterns** by time of day, day of week, or agent
+- [ ] **Correlate with other metrics** like customer satisfaction or resolution rates
 
-- **Update phrases** - Add new terms as you learn
-- **Adjust scope** - Change which calls to monitor
-- **Modify filters** - Refine criteria based on results
-- **Enable/disable** - Turn searches on or off as needed
+### Action Planning
+Based on search results, you can:
 
-## Analyzing Search Results
+| **Result Type** | **Action Plan** | **Expected Outcome** |
+|-----------------|-----------------|-------------------|
+| **High frequency issues** | Process improvement, training programs | Reduced occurrence, improved service |
+| **Agent-specific patterns** | Individual coaching, skill development | Improved performance, reduced issues |
+| **Trending problems** | Strategic intervention, resource allocation | Proactive problem solving |
+| **Positive patterns** | Best practice sharing, recognition | Replication of success |
 
-### Understanding Your Results
-The Results tab shows what your searches found:
+---
 
-- **Search name** - Which search detected the issue
-- **Call details** - When and with whom the interaction occurred
-- **Matched phrases** - What triggered the detection
-- **Context** - Surrounding conversation for understanding
-- **Action taken** - How the issue was resolved
+## 🔧 Troubleshooting Common Issues
 
-### Interpreting the Data
-- **High match rates** - Indicate common issues to address
-- **Low match rates** - May need to refine search criteria
-- **Patterns over time** - Show trends and improvements
-- **Agent-specific results** - Identify individual training needs
+| **Problem** | **Cause** | **Solution** |
+|-------------|----------|--------------|
+| **Too many false positives** | Search criteria too broad, low specificity | Refine search phrases, add more specific criteria, adjust sensitivity |
+| **Missing important issues** | Search criteria too narrow, missing variations | Add more example phrases, expand search scope, review recent calls |
+| **Alerts not triggering** | Search not active, notification settings incorrect | Check search status, verify notification settings, test with sample data |
+| **Inconsistent results** | Varying data quality, changing patterns | Review data consistency, update search criteria, monitor for changes |
 
-## Best Practices for Effective Searches
+---
 
-### Phrase Selection Strategy
-- **Be specific** - Use exact phrases customers say
-- **Include variations** - Add different ways to express the same thing
-- **Test thoroughly** - Verify searches catch the right interactions
-- **Update regularly** - Add new phrases as you learn
+## 💡 Best Practices for Smart Search
 
-### Scope and Filtering
-- **Start broad** - Monitor organization-wide for major issues
-- **Add specificity** - Create targeted searches for specific teams
-- **Use filters wisely** - Don't over-filter and miss important matches
-- **Review regularly** - Adjust scope based on results and needs
+### Search Management
+- [ ] **Regular review** - Check search effectiveness monthly
+- [ ] **Update criteria** - Refine based on new patterns and insights
+- [ ] **Archive old searches** - Remove searches that are no longer relevant
+- [ ] **Document purpose** - Keep track of why each search was created
 
-### Notification Management
-- **Set appropriate alerts** - Don't overwhelm with too many notifications
-- **Escalate important issues** - Ensure critical problems get immediate attention
-- **Review notification effectiveness** - Adjust based on response times
-- **Balance automation** - Use notifications for important, not all, matches
+### Team Collaboration
+- [ ] **Share insights** - Use search results to inform team discussions
+- [ ] **Coordinate responses** - Ensure consistent handling of similar issues
+- [ ] **Learn from patterns** - Use findings to improve processes and training
+- [ ] **Celebrate improvements** - Recognize when search results show positive trends
 
-## Troubleshooting Common Issues
+### Continuous Improvement
+- [ ] **Monitor effectiveness** - Track how well searches are working
+- [ ] **Adjust strategies** - Modify approaches based on results
+- [ ] **Scale successful searches** - Apply working patterns to other areas
+- [ ] **Innovate new searches** - Create searches for emerging issues
 
-### Searches Not Finding Matches
-**Problem**: Searches aren't detecting expected issues
-**Solutions**:
-- Review and refine your search phrases
-- Check if the scope is too narrow
-- Verify that data is being processed correctly
-- Test with different example phrases
+---
 
-### Too Many False Positives
-**Problem**: Searches are flagging interactions that aren't actually issues
-**Solutions**:
-- Make phrases more specific and targeted
-- Add additional filters to narrow results
-- Review and adjust search criteria
-- Test searches with sample data
+## 🔗 Next Steps
 
-### Missing Important Issues
-**Problem**: Important problems aren't being detected
-**Solutions**:
-- Add more comprehensive phrase lists
-- Review customer feedback for common complaints
-- Expand search scope to include more interactions
-- Create additional searches for specific issue types
+| **For Performance Evaluation** | **For Knowledge Management** | **For Team Management** |
+|-------------------------------|----------------------------|------------------------|
+| [📊 Create Agent Scorecards](./agent-scorecard-guide.md) | [📚 Build Knowledge Base](./knowledge-base-guide.md) | [👥 Improve Agent Performance](./agents.md) |
 
-## Measuring Search Effectiveness
+## 🆘 Need Help?
 
-### Key Performance Indicators
-- **Detection accuracy** - How often searches find real issues
-- **Response time** - How quickly you address detected problems
-- **Issue resolution** - How often detected issues are resolved
-- **Customer satisfaction** - Impact on overall customer experience
-
-### Success Metrics
-- **Reduced complaints** - Fewer customer issues over time
-- **Faster response** - Quicker identification and resolution
-- **Improved training** - Better targeted coaching opportunities
-- **Enhanced compliance** - Fewer policy violations
-
-## Next Steps
-
-- **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems based on search patterns
-- **[Build Knowledge Base](./knowledge-base-guide.md)** - Address knowledge gaps identified by searches
-- **[Configure Notifications](./notifications.md)** - Set up alerts for search matches
-
-## Need Help?
-
-- **Contact Support**: support@botlhale.ai
-- **Search Strategy Training**: Get help with effective search design
-- **Phrase Optimization**: Assistance with improving search accuracy
+- 📧 **Contact Support**: support@botlhale.ai
+- 🔍 **Search Optimization**: Get help creating effective searches
+- 📊 **Alert Management**: Assistance with notification setup and management
+- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

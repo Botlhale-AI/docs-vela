@@ -2,52 +2,56 @@
 sidebar_position: 4
 ---
 
-# Improve Agent Performance
+# 👥 Improve Agent Performance
 
 Your agents are the heart of your customer experience. But how do you know who's struggling and who's ready for the next level? Vela's agent insights give you the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
 
-## What You Can Achieve
+## 🎯 What You Can Achieve
 
 Agent analytics turn gut feelings into actionable insights. Here's what you'll unlock:
 
-**Coach with precision** - Spot exactly who needs help and what they're struggling with
-**Celebrate success** - Recognize your rock stars and learn from their winning strategies
-**Track real progress** - See improvement over time with concrete metrics
-**Fill knowledge gaps** - Identify training needs across your entire team
-**Make smart decisions** - Use data to guide promotions, development, and team structure
+| **Coaching & Development** | **Performance Tracking** | **Team Optimization** |
+|---------------------------|-------------------------|---------------------|
+| 🎯 **Coach with precision** | 📊 **Track real progress** | 👥 **Fill knowledge gaps** |
+| 🌟 **Celebrate success** | 📈 **Monitor improvement** | 🎯 **Make smart decisions** |
+| 📋 **Identify training needs** | 🔍 **Spot patterns** | 🚀 **Build high-performing teams** |
 
-## Understanding Agent Performance
+---
+
+## 📊 Understanding Agent Performance
 
 ### Key Metrics Explained
 
 Your agent performance table shows essential information:
 
-- **Score** - Overall performance rating (0-100%)
-  - 90%+ = Excellent performance
-  - 70-89% = Good performance with room for improvement
-  - Below 70% = Needs immediate coaching
+| **Metric** | **What It Means** | **Action Thresholds** |
+|------------|-------------------|----------------------|
+| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs immediate coaching | 🟢 90%+ = Recognize and mentor others<br/>🟡 70-89% = Provide targeted coaching<br/>🔴 Below 70% = Immediate intervention needed |
+| **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
+| **Weaknesses** - Areas needing improvement | Specific skills or behaviors to focus on | Create targeted training plans |
+| **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
+| **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
-- **Strengths** - What the agent does well consistently
-- **Weaknesses** - Areas needing improvement
-- **Rank** - Performance compared to other agents
-- **Calls** - Number of interactions in the selected period
+![Agent Performance Overview - Screenshot showing the agent performance table with scores, strengths, weaknesses, and ranking metrics](../img/screenshots/agents-p.png)
 
-![Agent Performance Overview](../img/screenshots/agents-p.png)
+---
 
-## Daily Agent Management Routine
+## ⏰ Daily Agent Management Routine
 
-### Morning Review (10 minutes)
-1. **Check agent scores** - Identify anyone below 70%
-2. **Review strengths/weaknesses** - Plan coaching sessions
-3. **Look for trends** - Spot patterns across your team
+### 🌅 Morning Review (10 minutes)
+- [ ] **Check agent scores** - Identify anyone below 70%
+- [ ] **Review strengths/weaknesses** - Plan coaching sessions
+- [ ] **Look for trends** - Spot patterns across your team
 
-### Weekly Coaching Sessions (30 minutes per agent)
-1. **Review detailed metrics** with each agent
-2. **Discuss specific improvements** based on data
-3. **Set goals** for the following week
-4. **Track progress** over time
+### 📅 Weekly Coaching Sessions (30 minutes per agent)
+- [ ] **Review detailed metrics** with each agent
+- [ ] **Discuss specific improvements** based on data
+- [ ] **Set goals** for the following week
+- [ ] **Track progress** over time
 
-## How to Use Agent Data for Coaching
+---
+
+## 🎯 How to Use Agent Data for Coaching
 
 ### Step 1: Access Agent Details
 1. **Go to "Agents"** in the left sidebar
@@ -57,94 +61,90 @@ Your agent performance table shows essential information:
 ### Step 2: Analyze Performance Patterns
 Look for these key indicators:
 
-#### Call Duration Analysis
-- **Long calls** might indicate:
-  - Complex customer issues
-  - Agent uncertainty or lack of knowledge
-  - Inefficient processes
-- **Short calls** might indicate:
-  - Rushed interactions
-  - Missed opportunities to help customers
-  - Good efficiency (if satisfaction is high)
+#### 📞 Call Duration Analysis
+| **Pattern** | **Possible Causes** | **Coaching Actions** |
+|-------------|-------------------|---------------------|
+| **Long calls** | Complex customer issues, agent uncertainty, inefficient processes | Provide training on issue resolution, improve knowledge base access |
+| **Short calls** | Rushed interactions, missed opportunities, good efficiency | Review for completeness, ensure quality isn't sacrificed for speed |
 
-#### Customer Satisfaction
-- **Low satisfaction scores** require immediate attention
-- **Declining satisfaction** shows worsening performance
-- **High satisfaction** with good efficiency = excellent performance
+#### 😊 Customer Satisfaction
+| **Pattern** | **Indicators** | **Actions** |
+|-------------|----------------|-------------|
+| **Low satisfaction scores** | Customer complaints, negative feedback | Immediate coaching, review call recordings, provide specific training |
+| **Declining satisfaction** | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
+| **High satisfaction** | Positive feedback, good efficiency | Recognize success, use as mentor, share best practices |
 
-#### Resolution Rate
-- **Low resolution rates** suggest training needs
-- **High resolution rates** with good satisfaction = strong performance
+#### 🎯 Resolution Rate
+| **Pattern** | **Implications** | **Training Focus** |
+|-------------|------------------|-------------------|
+| **Low resolution rates** | Training needs, process gaps | Product knowledge, troubleshooting skills, escalation procedures |
+| **High resolution rates** | Strong performance, good knowledge | Advanced training, leadership development, mentoring opportunities |
 
 ### Step 3: Create Action Plans
 Based on your analysis, create specific improvement plans:
 
-#### For Struggling Agents (Score < 70%)
-1. **Identify specific weaknesses** from the data
-2. **Schedule one-on-one coaching** sessions
-3. **Provide targeted training** materials
-4. **Set weekly improvement goals**
-5. **Monitor progress** closely
+#### 🔴 For Struggling Agents (Score < 70%)
+**Immediate Actions**:
+- [ ] **Identify specific weaknesses** from the data
+- [ ] **Schedule one-on-one coaching** sessions
+- [ ] **Provide targeted training** materials
+- [ ] **Set weekly improvement goals**
+- [ ] **Monitor progress** closely
 
-#### For Average Agents (Score 70-89%)
-1. **Focus on strengths** to build confidence
-2. **Address specific weaknesses** systematically
-3. **Provide peer mentoring** opportunities
-4. **Set stretch goals** for improvement
+**Coaching Focus**:
+- Basic skills reinforcement
+- Confidence building
+- Clear expectations setting
+- Regular check-ins
 
-#### For Top Performers (Score 90%+)
-1. **Recognize their achievements**
-2. **Use them as mentors** for other agents
-3. **Provide advanced training** opportunities
-4. **Consider promotion** or leadership roles
+#### 🟡 For Average Agents (Score 70-89%)
+**Development Actions**:
+- [ ] **Focus on strengths** to build confidence
+- [ ] **Address specific weaknesses** systematically
+- [ ] **Provide peer mentoring** opportunities
+- [ ] **Set stretch goals** for improvement
 
-## Detailed Agent Analysis
+**Coaching Focus**:
+- Skill refinement
+- Advanced techniques
+- Leadership development
+- Career progression
 
-### Accessing Detailed Metrics
-1. **Click "View"** on any agent row
-2. **Review their comprehensive scorecard**
-3. **Download the scorecard** for detailed analysis
+#### 🟢 For Top Performers (Score 90%+)
+**Recognition & Growth**:
+- [ ] **Recognize their achievements**
+- [ ] **Use them as mentors** for other agents
+- [ ] **Provide advanced training** opportunities
+- [ ] **Consider promotion** or leadership roles
 
-The detailed view includes:
-- **Call-by-call breakdown** of performance
-- **Trend analysis** over time
-- **Specific improvement areas**
-- **Comparison to team averages**
+**Development Focus**:
+- Leadership skills
+- Training others
+- Process improvement
+- Strategic thinking
 
-### Key Metrics to Focus On
+---
 
-#### Call Quality Metrics
-- **Script adherence** - How well agents follow procedures
-- **Customer satisfaction** - Direct feedback scores
-- **Resolution rate** - Percentage of issues resolved
-- **First call resolution** - Issues resolved without escalation
-
-#### Efficiency Metrics
-- **Average call duration** - Time efficiency
-- **Response time** - Speed of initial response
-- **Silent time** - Awkward pauses or delays
-- **Transfer rate** - How often calls are escalated
-
-#### Behavioral Metrics
-- **Missed customer cues** - Opportunities to help customers
-- **Professionalism score** - Tone and approach
-- **Empathy indicators** - Understanding customer emotions
-
-## Team Performance Analysis
+## 📈 Team Performance Analysis
 
 ### Compare Agents Effectively
-1. **Use the sort function** to rank agents by different metrics
-2. **Filter by team or department** to focus on specific groups
-3. **Export data** for detailed analysis in spreadsheets
+- [ ] **Use the sort function** to rank agents by different metrics
+- [ ] **Filter by team or department** to focus on specific groups
+- [ ] **Export data** for detailed analysis in spreadsheets
 
 ### Identify Team Trends
 Look for patterns that affect multiple agents:
-- **Common weaknesses** across the team
-- **Training gaps** that need addressing
-- **Process issues** affecting performance
-- **Success patterns** to replicate
 
-## Agent Management Tools
+| **Pattern Type** | **What to Look For** | **Action** |
+|------------------|---------------------|------------|
+| **Common weaknesses** | Skills gaps across the team | Team-wide training programs |
+| **Training gaps** | Knowledge areas needing attention | Update training materials |
+| **Process issues** | Inefficiencies affecting performance | Process improvement initiatives |
+| **Success patterns** | What top performers do differently | Share best practices |
+
+---
+
+## 👥 Agent Management Tools
 
 ### Adding New Agents
 1. **Click "+ Add Agent"** in the top right
@@ -161,64 +161,55 @@ Look for patterns that affect multiple agents:
 4. **Confirm the change**
 
 ### Managing Agent Access
-- **Activate/deactivate** agents as needed
-- **Update contact information**
-- **Modify team assignments**
-- **Track voice ID status** for security
+- [ ] **Activate/deactivate** agents as needed
+- [ ] **Update contact information**
+- [ ] **Modify team assignments**
+- [ ] **Track voice ID status** for security
 
-## Best Practices for Agent Coaching
+---
+
+## 💡 Best Practices for Agent Coaching
 
 ### Regular Feedback Sessions
-- **Weekly one-on-ones** with struggling agents
-- **Monthly reviews** with all agents
-- **Quarterly performance discussions** with top performers
+| **Session Type** | **Frequency** | **Focus** |
+|------------------|---------------|-----------|
+| **Weekly one-on-ones** | Every week | Struggling agents, immediate issues |
+| **Monthly reviews** | Monthly | All agents, performance trends |
+| **Quarterly discussions** | Quarterly | Top performers, career development |
 
 ### Data-Driven Coaching
-- **Use specific examples** from call transcripts
-- **Show improvement trends** over time
-- **Set measurable goals** based on metrics
-- **Celebrate improvements** and achievements
+- [ ] **Use specific examples** from call transcripts
+- [ ] **Show improvement trends** over time
+- [ ] **Set measurable goals** based on metrics
+- [ ] **Celebrate improvements** and achievements
 
 ### Team Development
-- **Pair struggling agents** with top performers
-- **Create peer mentoring** programs
-- **Share best practices** across the team
-- **Recognize and reward** improvement
+- [ ] **Pair struggling agents** with top performers
+- [ ] **Create peer mentoring** programs
+- [ ] **Share best practices** across the team
+- [ ] **Recognize and reward** improvement
 
-## Troubleshooting Common Issues
+---
 
-### Low Agent Scores
-**Problem**: Agent consistently scores below 70%
-**Solutions**:
-- Review specific weaknesses in detail
-- Provide targeted training materials
-- Schedule additional coaching sessions
-- Consider role reassignment if needed
+## 🔧 Troubleshooting Common Issues
 
-### Inconsistent Performance
-**Problem**: Agent scores vary widely day-to-day
-**Solutions**:
-- Look for patterns in good vs. bad days
-- Check for external factors affecting performance
-- Provide more consistent training and support
-- Set daily goals to maintain focus
+| **Problem** | **Root Cause** | **Solutions** |
+|-------------|----------------|---------------|
+| **Low Agent Scores** | Training gaps, unclear expectations, lack of support | Review specific weaknesses, provide targeted training, schedule additional coaching, consider role reassignment |
+| **Inconsistent Performance** | External factors, inconsistent training, unclear goals | Look for patterns in good vs. bad days, check for external factors, provide consistent training, set daily goals |
+| **Team-Wide Issues** | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programs, review and improve processes, consider external training resources |
 
-### Team-Wide Issues
-**Problem**: Multiple agents showing similar weaknesses
-**Solutions**:
-- Identify common training gaps
-- Update team training programs
-- Review and improve processes
-- Consider external training resources
+---
 
-## Next Steps
+## 🔗 Next Steps
 
-- **[Generate Performance Reports](./reports.md)** - Create detailed agent summaries
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Get alerts for performance issues
-- **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems
+| **For Performance Reports** | **For Smart Monitoring** | **For Evaluation Systems** |
+|----------------------------|-------------------------|---------------------------|
+| [📊 Generate Performance Reports](./reports.md) | [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📋 Create Agent Scorecards](./agent-scorecard-guide.md) |
 
-## Need Help?
+## 🆘 Need Help?
 
-- **Contact Support**: support@botlhale.ai
-- **Training Resources**: Ask about additional coaching materials
-- **Performance Consulting**: Get help with team improvement strategies 
+- 📧 **Contact Support**: support@botlhale.ai
+- 📚 **Training Resources**: Ask about additional coaching materials
+- 💼 **Performance Consulting**: Get help with team improvement strategies
+- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs 

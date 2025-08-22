@@ -2,47 +2,72 @@
 sidebar_position: 1
 ---
 
-# Automate Issue Detection and Agent Evaluation
+# 🔍 Automate Issue Detection and Agent Evaluation
 
 What if you could catch customer complaints before they become escalations? Or spot training gaps before they impact your team's performance? Smart Detector does the heavy lifting for you, automatically monitoring interactions, evaluating agents, and building a knowledge base that makes your team unstoppable.
 
-## What You Can Achieve
+## 🎯 What You Can Achieve
 
 Smart Detector is like having a super-powered assistant that never sleeps. Here's what it does for you:
 
-**Catch complaints before they explode** - Automatically detect customer dissatisfaction and respond proactively
-**Score agents objectively** - Use AI-powered evaluations that are fair and consistent
-**Build your team's brain** - Create a searchable knowledge base that grows smarter over time
-**Stay compliant effortlessly** - Monitor quality standards without manual oversight
-**Spot training needs early** - Identify opportunities before they hurt customer satisfaction
+| **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
+|-------------------|---------------------------|------------------------|
+| 🚨 **Catch complaints before they explode** | 📊 **Score agents objectively** | 🧠 **Build your team's brain** |
+| ⚡ **Monitor compliance effortlessly** | 📈 **Track improvement over time** | 🔍 **Find information instantly** |
+| 🎯 **Spot training needs early** | 🎯 **Identify coaching opportunities** | 📚 **Centralize company knowledge** |
 
-## Three Powerful Tools for Your Team
+---
 
-### Smart Search: Catch Issues Early
+## 🛠️ Three Powerful Tools for Your Team
+
+### 🔍 **Smart Search: Catch Issues Early**
 Automatically detect important events in your customer interactions (get the full setup guide in [Smart Search](./smart-search-guide.md)):
 
-- **Customer complaints** - Get alerts when customers express dissatisfaction
-- **Compliance violations** - Monitor for regulatory or policy breaches
-- **Service quality issues** - Identify patterns that affect customer experience
-- **Training opportunities** - Spot areas where agents need support
+#### What It Monitors:
+- 🚨 **Customer complaints** - Get alerts when customers express dissatisfaction
+- ⚖️ **Compliance violations** - Monitor for regulatory or policy breaches
+- 🔧 **Service quality issues** - Identify patterns that affect customer experience
+- 📚 **Training opportunities** - Spot areas where agents need support
 
-### Agent Scorecard: Improve Performance Systematically
+#### How It Works:
+1. **Create search rules** with example phrases
+2. **Set monitoring scope** (organization, department, or team)
+3. **Receive real-time alerts** when issues are detected
+4. **Take immediate action** to resolve problems
+
+### 📊 **Agent Scorecard: Improve Performance Systematically**
 Evaluate and improve agent performance with AI-powered assessments (learn the ropes in [Agent Scorecard](./agent-scorecard-guide.md)):
 
-- **Automated evaluations** - Score every interaction consistently
-- **Performance tracking** - Monitor improvement over time
-- **Training identification** - Spot specific areas for coaching
-- **Best practice recognition** - Learn from top performers
+#### What It Evaluates:
+- 🎯 **Automated evaluations** - Score every interaction consistently
+- 📈 **Performance tracking** - Monitor improvement over time
+- 🎓 **Training identification** - Spot specific areas for coaching
+- 🌟 **Best practice recognition** - Learn from top performers
 
-### Knowledge Base: Empower Your Team
+#### How It Works:
+1. **Define evaluation criteria** for different scenarios
+2. **Set performance standards** and scoring weights
+3. **Automatically score** every interaction
+4. **Generate coaching insights** for improvement
+
+### 📚 **Knowledge Base: Empower Your Team**
 Build a smart, searchable repository of company information (master it in [Knowledge Base](./knowledge-base-guide.md)):
 
-- **Document upload** - Add policies, procedures, and training materials
-- **Smart search** - Find relevant information quickly
-- **Agent access** - Provide real-time support during calls
-- **Continuous improvement** - Update knowledge based on interactions
+#### What It Contains:
+- 📄 **Document upload** - Add policies, procedures, and training materials
+- 🔍 **Smart search** - Find relevant information quickly
+- 👥 **Agent access** - Provide real-time support during calls
+- 🔄 **Continuous improvement** - Update knowledge based on interactions
 
-## Getting Started with Smart Search
+#### How It Works:
+1. **Upload company documents** (PDFs, text files, URLs)
+2. **Organize with tags** and categories
+3. **Enable agent access** during calls
+4. **Update content** based on common questions
+
+---
+
+## 🚀 Getting Started with Smart Search
 
 ### Step 1: Create Your First Search
 1. **Go to "Smart Detector" → "Smart Search"**
@@ -57,12 +82,14 @@ Build a smart, searchable repository of company information (master it in [Knowl
 6. **Click "Create"** to start monitoring
 
 ### Step 2: Monitor Results
-- **Review matches** in the Smart Search results
-- **Investigate flagged calls** to understand the context
-- **Take action** based on the insights
-- **Refine your search** based on what you learn
+- [ ] **Review matches** in the Smart Search results
+- [ ] **Investigate flagged calls** to understand the context
+- [ ] **Take action** based on the insights
+- [ ] **Refine your search** based on what you learn
 
-## Setting Up Agent Scorecards
+---
+
+## 📊 Setting Up Agent Scorecards
 
 ### Step 1: Define Evaluation Criteria
 1. **Go to "Smart Detector" → "Agent Scorecard"**
@@ -71,12 +98,14 @@ Build a smart, searchable repository of company information (master it in [Knowl
 4. **Define scoring weights** based on importance
 
 ### Step 2: Monitor Performance
-- **Review automated scores** for each agent
-- **Identify improvement areas** from the data
-- **Plan coaching sessions** based on specific weaknesses
-- **Track progress** over time
+- [ ] **Review automated scores** for each agent
+- [ ] **Identify improvement areas** from the data
+- [ ] **Plan coaching sessions** based on specific weaknesses
+- [ ] **Track progress** over time
 
-## Building Your Knowledge Base
+---
+
+## 📚 Building Your Knowledge Base
 
 ### Step 1: Upload Company Documents
 1. **Go to "Smart Detector" → "Knowledge Base"**
@@ -89,140 +118,112 @@ Build a smart, searchable repository of company information (master it in [Knowl
 4. **Set access permissions** for different teams
 
 ### Step 2: Enable Agent Access
-- **Train agents** on how to use the knowledge base
-- **Integrate with call workflows** for easy access
-- **Monitor usage** to identify knowledge gaps
-- **Update content** based on common questions
+- [ ] **Train agents** on how to use the knowledge base
+- [ ] **Integrate with call workflows** for easy access
+- [ ] **Monitor usage** to identify knowledge gaps
+- [ ] **Update content** based on common questions
 
-## Real-World Use Cases
+---
+
+## 💼 Real-World Use Cases
 
 ### Customer Service Excellence
 **Goal**: Improve customer satisfaction and reduce complaints
 
 **Smart Search Setup**:
-- Monitor for complaint indicators
-- Track customer sentiment changes
+- Monitor for complaint phrases
+- Track escalation requests
 - Identify service quality issues
 
-**Agent Scorecard Focus**:
-- Empathy and understanding
-- Problem resolution skills
+**Scorecard Criteria**:
+- Problem resolution effectiveness
+- Customer empathy and understanding
 - Professional communication
+- Follow-up actions
 
 **Knowledge Base Content**:
-- Product troubleshooting guides
-- Customer service best practices
-- Escalation procedures
+- Product information and FAQs
+- Service policies and procedures
+- Escalation guidelines
+- Best practice scripts
 
 ### Compliance and Quality Assurance
 **Goal**: Ensure regulatory compliance and maintain quality standards
 
 **Smart Search Setup**:
 - Monitor for compliance violations
-- Track required disclosures
+- Track policy breaches
 - Identify quality issues
 
-**Agent Scorecard Focus**:
+**Scorecard Criteria**:
 - Policy adherence
 - Documentation accuracy
-- Regulatory compliance
+- Security protocol compliance
+- Escalation procedures
 
 **Knowledge Base Content**:
 - Compliance guidelines
+- Policy documents
 - Quality standards
-- Audit procedures
+- Training materials
 
-### Training and Development
-**Goal**: Improve team performance through targeted training
+### Sales Performance Optimization
+**Goal**: Improve sales effectiveness and conversion rates
 
 **Smart Search Setup**:
-- Identify knowledge gaps
-- Track training effectiveness
-- Monitor skill development
+- Monitor for sales opportunities
+- Track objection handling
+- Identify upselling moments
 
-**Agent Scorecard Focus**:
-- Specific skill assessments
-- Training completion tracking
-- Performance improvement
+**Scorecard Criteria**:
+- Sales technique effectiveness
+- Objection handling skills
+- Product knowledge demonstration
+- Closing techniques
 
 **Knowledge Base Content**:
-- Training materials
-- Skill development guides
-- Best practice examples
+- Product specifications
+- Sales scripts and templates
+- Pricing information
+- Competitive analysis
 
-## Best Practices for Smart Detector
+---
 
-### Smart Search Optimization
-- **Start with specific phrases** - Be precise about what you're looking for
-- **Test your searches** - Review results to ensure accuracy
-- **Refine over time** - Adjust based on what you learn
-- **Set appropriate scope** - Don't overwhelm with too many alerts
+## ⏰ Daily Smart Detector Routine
 
-### Agent Scorecard Effectiveness
-- **Focus on actionable criteria** - Measure what agents can improve
-- **Provide clear feedback** - Help agents understand their scores
-- **Track trends** - Look for patterns over time
-- **Celebrate improvements** - Recognize progress and achievements
+### 🌅 Morning Review (10 minutes)
+- [ ] **Check Smart Search alerts** - Review any issues detected overnight
+- [ ] **Review agent scores** - Identify anyone needing immediate attention
+- [ ] **Update knowledge base** - Add any new information from recent calls
 
-### Knowledge Base Management
-- **Keep content current** - Update information regularly
-- **Organize logically** - Make information easy to find
-- **Encourage usage** - Train agents on effective searching
-- **Monitor effectiveness** - Track which content is most useful
+### 📅 Weekly Analysis (30 minutes)
+- [ ] **Analyze search patterns** - Look for recurring issues
+- [ ] **Review scorecard trends** - Identify team-wide improvement areas
+- [ ] **Update search criteria** - Refine based on what you've learned
+- [ ] **Enhance knowledge base** - Add content for common questions
 
-## Daily Smart Detector Routine
+---
 
-### Morning Review (10 minutes)
-1. **Check Smart Search alerts** - Review any new matches
-2. **Review agent scores** - Identify anyone needing attention
-3. **Update knowledge base** - Add new information as needed
+## 🔧 Troubleshooting Common Issues
 
-### Weekly Analysis (30 minutes)
-1. **Analyze search patterns** - Look for trends in issues
-2. **Review scorecard trends** - Track team improvement
-3. **Update search criteria** - Refine based on learnings
-4. **Plan training sessions** - Based on identified needs
+| **Problem** | **Solution** |
+|-------------|--------------|
+| **Too many false positives** | Refine search phrases, add more specific criteria, adjust scope |
+| **Missing important issues** | Add more example phrases, expand search scope, review recent calls |
+| **Scorecard not reflecting reality** | Review evaluation criteria, adjust scoring weights, check data quality |
+| **Knowledge base not being used** | Train agents on access, improve search functionality, add relevant content |
 
-### Monthly Planning (1 hour)
-1. **Generate comprehensive reports** - Full team analysis
-2. **Update knowledge base** - Major content revisions
-3. **Plan strategic improvements** - Long-term development goals
-4. **Review and adjust** - Refine all Smart Detector settings
+---
 
-## Troubleshooting Common Issues
+## 🔗 Next Steps
 
-### Smart Search Not Finding Matches
-**Problem**: Searches aren't detecting expected issues
-**Solutions**:
-- Review and refine your search phrases
-- Check if the scope is too narrow
-- Verify that data is being processed correctly
-- Test with different example phrases
+| **For Issue Detection** | **For Performance Evaluation** | **For Knowledge Management** |
+|------------------------|--------------------------------|------------------------------|
+| [🔍 Create Smart Searches](./smart-search-guide.md) | [📊 Build Agent Scorecards](./agent-scorecard-guide.md) | [📚 Build Knowledge Base](./knowledge-base-guide.md) |
 
-### Agent Scorecard Inconsistencies
-**Problem**: Scores seem inconsistent or unfair
-**Solutions**:
-- Review evaluation criteria for clarity
-- Check if criteria are appropriate for all scenarios
-- Ensure scoring weights are balanced
-- Provide training on evaluation standards
+## 🆘 Need Help?
 
-### Knowledge Base Not Being Used
-**Problem**: Agents aren't accessing the knowledge base
-**Solutions**:
-- Train agents on how to use the system
-- Ensure content is relevant and current
-- Make access easier during calls
-- Provide incentives for knowledge base usage
-
-## Next Steps
-
-- **[Create Smart Searches](./smart-search-guide.md)** - Set up automated issue detection
-- **[Build Agent Scorecards](./agent-scorecard-guide.md)** - Create evaluation systems
-- **[Build Knowledge Base](./knowledge-base-guide.md)** - Organize company information
-
-## Need Help?
-
-- **Contact Support**: support@botlhale.ai
-- **Smart Detector Training**: Ask about advanced configuration options
-- **Best Practice Sharing**: Get help with effective monitoring strategies
+- 📧 **Contact Support**: support@botlhale.ai
+- 🔍 **Smart Detector Training**: Ask about advanced configuration options
+- 💡 **Best Practice Sharing**: Get help with effective monitoring strategies
+- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
