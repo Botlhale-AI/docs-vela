@@ -205,19 +205,12 @@ When reports are generated, you'll receive notifications with:
 
 ## Next Steps
 
-- **[Monitor Performance](./dashboard.md)** - Use dashboard to track trends from notifications
-- **[Improve Agent Performance](./agents.md)** - Apply notification insights to coaching
-- **[Generate Reports](./reports.md)** - Create custom reports based on notification patterns
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Configure automated alerts
 - **[Analyze Call Data](./calls.md)** - Review interactions that triggered notifications
 - **[Configure Settings](./settings.md)** - Customize notification preferences
 
 ## Need Help?
 
-**Notification issues? We can help:**
-
 - **Contact Support**: support@botlhale.ai
 - **Notification Setup**: Get help configuring your preferences
 - **Alert Management**: Learn best practices for handling different alert types
-- **Configuration Assistance**: Help with setting up effective notifications
-- **Troubleshooting**: Assistance with notification delivery issues

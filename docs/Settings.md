@@ -237,9 +237,6 @@ Manage your data allocation effectively:
 
 ## Next Steps
 
-- **[Monitor Performance](./dashboard.md)** - Use your configured settings to track performance
-- **[Manage Your Team](./agents.md)** - Apply user management settings to agent oversight
-- **[Generate Reports](./reports.md)** - Use organization settings for customized reporting
 - **[Configure Notifications](./notifications.md)** - Set up alert preferences
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Configure automated analysis
 - **[Integrate with Systems](./api.md)** - Set up API access and webhooks
@@ -249,7 +246,4 @@ Manage your data allocation effectively:
 - **Contact Support**: support@botlhale.ai
 - **Account Management**: Get help with profile and organization settings
 - **Security Support**: Assistance with security and access control
-- **Usage Optimization**: Help maximizing your Vela investment
-- **Configuration Assistance**: Help with setting up optimal settings
-- **User Management**: Assistance with team and permission setup
 

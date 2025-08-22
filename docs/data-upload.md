@@ -242,9 +242,6 @@ Upload chat conversations for analysis:
 ## Next Steps
 
 - **[Monitor Performance](./dashboard.md)** - Set up your dashboard to view uploaded data
-- **[Improve Agent Performance](./agents.md)** - Use uploaded data for coaching
-- **[Generate Reports](./reports.md)** - Create reports from your data
-- **[Analyze Call Interactions](./calls.md)** - Deep dive into uploaded call data
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate analysis of your data
 - **[Integrate with Systems](./api.md)** - Set up automated data uploads
 
@@ -253,5 +250,3 @@ Upload chat conversations for analysis:
 - **Contact Support**: support@botlhale.ai
 - **Upload Assistance**: Get help with file preparation and upload
 - **Integration Support**: Technical help for API and FTP setup
-- **Data Preparation**: Help with formatting and organizing your data
-- **Processing Issues**: Assistance with data processing problems

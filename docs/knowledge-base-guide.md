@@ -200,9 +200,6 @@ Your uploaded documents appear in a searchable table with:
 
 ## Next Steps
 
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate knowledge base with automated alerts
-- **[Improve Agent Performance](./agents.md)** - Use knowledge base insights for coaching
-- **[Generate Reports](./reports.md)** - Track knowledge base effectiveness
 - **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems using knowledge base
 - **[Set Up Smart Searches](./smart-search-guide.md)** - Monitor knowledge gaps and training needs
 - **[Monitor Performance](./dashboard.md)** - Track knowledge base usage and impact
@@ -212,5 +209,3 @@ Your uploaded documents appear in a searchable table with:
 - **Contact Support**: support@botlhale.ai
 - **Knowledge Base Training**: Get help with content strategy and organization
 - **Content Creation**: Assistance with writing effective agent documentation
-- **Content Strategy**: Help with planning and organizing your knowledge base
-- **Integration Support**: Assistance with connecting knowledge base to workflows

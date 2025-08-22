@@ -148,16 +148,10 @@ Configure notifications to alert you when:
 
 - **[Improve Agent Performance](./agents.md)** - Learn how to use agent insights for coaching
 - **[Generate Reports](./reports.md)** - Create detailed performance summaries
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
-- **[Analyze Individual Calls](./calls.md)** - Deep dive into specific interactions
 - **[Configure Notifications](./notifications.md)** - Set up alerts for important events
 
 ## Need Help?
 
-**Stuck? We've got your back:**
-
 - **Contact Support**: support@botlhale.ai
 - **Check Data Upload**: Ensure your call data is properly uploaded
 - **Review Settings**: Verify your team and date selections
-- **Dashboard Training**: Get help with effective dashboard configuration
-- **Performance Analysis**: Assistance with interpreting dashboard metrics

@@ -200,9 +200,6 @@ The Results tab shows what your searches found:
 
 ## Next Steps
 
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate searches with other Smart Detector features
-- **[Improve Agent Performance](./agents.md)** - Use search results for coaching
-- **[Generate Reports](./reports.md)** - Create reports based on search findings
 - **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems based on search patterns
 - **[Build Knowledge Base](./knowledge-base-guide.md)** - Address knowledge gaps identified by searches
 - **[Configure Notifications](./notifications.md)** - Set up alerts for search matches
@@ -212,5 +209,3 @@ The Results tab shows what your searches found:
 - **Contact Support**: support@botlhale.ai
 - **Search Strategy Training**: Get help with effective search design
 - **Phrase Optimization**: Assistance with improving search accuracy
-- **Search Configuration**: Help with setting up effective searches
-- **Results Analysis**: Assistance with interpreting search findings

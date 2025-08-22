@@ -214,32 +214,11 @@ def update_customer_profile(call_data):
 
 ## Advanced Integration Patterns
 
-### Pattern 1: Data Synchronization
-**Business Goal**: Keep Vela data in sync with your existing systems
+**Data Synchronization**: Keep Vela data in sync with your existing systems using scheduled sync jobs and incremental updates
 
-**Implementation**:
-- **Scheduled sync jobs** that run periodically
-- **Incremental updates** to minimize API calls
-- **Conflict resolution** for data discrepancies
-- **Error handling** for failed synchronizations
+**Event-Driven Architecture**: React to Vela events in real-time with webhook endpoints and event processing pipelines
 
-### Pattern 2: Event-Driven Architecture
-**Business Goal**: React to Vela events in real-time
-
-**Implementation**:
-- **Webhook endpoints** for receiving events
-- **Event processing pipeline** for handling different event types
-- **Action triggers** based on event content
-- **Monitoring and alerting** for webhook failures
-
-### Pattern 3: Custom Analytics Pipeline
-**Business Goal**: Build advanced analytics using Vela data
-
-**Implementation**:
-- **Data extraction** from Vela API
-- **Data transformation** and enrichment
-- **Custom analytics** and machine learning
-- **Results storage** and visualization
+**Custom Analytics Pipeline**: Build advanced analytics using Vela data through extraction, transformation, and custom processing
 
 ## Best Practices for API Integration
 
@@ -301,35 +280,20 @@ def update_customer_profile(call_data):
 - Monitor webhook delivery logs
 - Implement webhook retry logic
 
-## Measuring Integration Success
+## Measuring Success
 
-### Key Performance Indicators
-- **Data synchronization accuracy** - How well data stays in sync
-- **API response times** - Performance of API calls
-- **Error rates** - Frequency of API failures
-- **Data quality** - Accuracy and completeness of data
+**Key Metrics**: Data synchronization accuracy, API response times, error rates, and data quality
 
-### Success Metrics
-- **Reduced manual work** - Less time spent on data entry
-- **Improved data accuracy** - Better data quality through automation
-- **Faster response times** - Quicker reaction to important events
-- **Enhanced insights** - Better analytics through integrated data
+**Success Indicators**: Reduced manual work, improved data accuracy, faster response times, and enhanced insights
 
 ## Next Steps
 
 - **[Get Your Data into Vela](./data-upload.md)** - Learn about manual and automated data upload
-- **[Monitor Performance](./dashboard.md)** - Use API data to build custom dashboards
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate with automated alerting
-- **[Generate Reports](./reports.md)** - Create custom reports using API data
 - **[Configure Notifications](./notifications.md)** - Set up webhook-based alerts
 - **[Analyze Interactions](./calls.md)** - Use API to retrieve detailed call data
 
 ## Need Help?
 
-**API integration challenges? We're here to help:**
-
 - **Contact Support**: api-support@botlhale.ai
 - **Integration Consulting**: Get help with complex integration scenarios
 - **Developer Resources**: Access SDKs, code samples, and technical documentation
-- **API Documentation**: Access detailed technical API reference
-- **Integration Support**: Technical assistance with API implementation

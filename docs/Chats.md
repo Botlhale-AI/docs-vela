@@ -227,19 +227,13 @@ Smart Detector provides instant insights for every chat (learn more in [Smart De
 
 ## Next Steps
 
-- **[Monitor Performance](./dashboard.md)** - Use chat insights to track team performance
 - **[Improve Agent Performance](./agents.md)** - Apply chat analysis to coaching
-- **[Generate Reports](./reports.md)** - Create reports based on chat data
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
 - **[Analyze Call Interactions](./calls.md)** - Review voice customer interactions
-- **[Configure Notifications](./notifications.md)** - Set up alerts for important chats
-- **[Upload More Data](./data-upload.md)** - Add additional chat conversations for analysis
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
 - **Chat Analysis Training**: Get help with effective analysis techniques
 - **Smart Detector Setup**: Assistance with automated analysis configuration
-- **Data Upload**: Help with uploading chat conversations
-- **Performance Analysis**: Assistance with interpreting chat metrics
 

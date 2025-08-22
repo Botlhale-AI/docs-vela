@@ -215,17 +215,10 @@ Look for patterns that affect multiple agents:
 
 - **[Generate Performance Reports](./reports.md)** - Create detailed agent summaries
 - **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Get alerts for performance issues
-- **[Configure Notifications](./notifications.md)** - Stay informed about agent performance
-- **[Monitor Team Performance](./dashboard.md)** - Track overall team metrics
-- **[Analyze Call Interactions](./calls.md)** - Review specific agent conversations
 - **[Create Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation systems
 
 ## Need Help?
 
-**Questions about agent performance? We're here to help:**
-
 - **Contact Support**: support@botlhale.ai
 - **Training Resources**: Ask about additional coaching materials
-- **Performance Consulting**: Get help with team improvement strategies
-- **Agent Coaching**: Get help with effective coaching techniques
-- **Performance Analysis**: Assistance with interpreting agent metrics 
+- **Performance Consulting**: Get help with team improvement strategies 

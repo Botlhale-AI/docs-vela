@@ -217,19 +217,12 @@ Build a smart, searchable repository of company information (master it in [Knowl
 
 ## Next Steps
 
-- **[Monitor Performance](./dashboard.md)** - Use dashboard to track Smart Detector insights
-- **[Improve Agent Performance](./agents.md)** - Apply Smart Detector findings to coaching
-- **[Generate Reports](./reports.md)** - Create reports on Smart Detector effectiveness
 - **[Create Smart Searches](./smart-search-guide.md)** - Set up automated issue detection
 - **[Build Agent Scorecards](./agent-scorecard-guide.md)** - Create evaluation systems
 - **[Build Knowledge Base](./knowledge-base-guide.md)** - Organize company information
 
 ## Need Help?
 
-**Smart Detector giving you trouble? Let's fix that:**
-
 - **Contact Support**: support@botlhale.ai
 - **Smart Detector Training**: Ask about advanced configuration options
 - **Best Practice Sharing**: Get help with effective monitoring strategies
-- **Integration Support**: Get help connecting Smart Detector tools
-- **Configuration Assistance**: Help with setting up effective monitoring

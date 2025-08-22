@@ -176,25 +176,13 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 - **Include next steps** - What actions will be taken
 - **Follow up** - Track if recommendations were implemented
 
-## Advanced Reporting Features
+## Advanced Features
 
-### Custom Branding
-- **Add your company logo** to reports
-- **Use brand colors** and fonts
-- **Include company information** in headers/footers
-- **Create professional presentations** for stakeholders
+**Custom Branding**: Add your company logo and brand colors to reports
 
-### Data Export Options
-- **PDF format** - For sharing and archiving
-- **Excel format** - For further analysis
-- **CSV format** - For data processing
-- **API access** - For integration with other systems
+**Export Options**: Download as PDF, Excel, or CSV for further analysis
 
-### Automated Alerts
-- **Set up notifications** for important metrics
-- **Get alerts** when thresholds are exceeded
-- **Receive summaries** of key findings
-- **Stay informed** without manual checking
+**Automated Alerts**: Get notified when important metrics exceed thresholds
 
 ## Troubleshooting Common Issues
 
@@ -226,18 +214,11 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 - **[Monitor Performance](./dashboard.md)** - Use dashboard for real-time insights
 - **[Improve Agent Performance](./agents.md)** - Use reports to guide coaching
-- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
-- **[Analyze Call Data](./calls.md)** - Deep dive into interaction details
 - **[Configure Notifications](./notifications.md)** - Set up automated report delivery
-- **[Integrate with Systems](./api.md)** - Connect reports to other business tools
 
 ## Need Help?
-
-**Need help with reports? We've got you covered:**
 
 - **Contact Support**: support@botlhale.ai
 - **Report Templates**: Ask about pre-built report templates
 - **Custom Reports**: Get help creating specialized reports for your needs
-- **Report Training**: Get help with effective reporting techniques
-- **Data Analysis**: Assistance with interpreting report metrics
 
