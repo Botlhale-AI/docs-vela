@@ -225,7 +225,5 @@ Structure your organization for better management:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 👤 **Account Management**: Get help with profile and organization settings
-- 🔒 **Security Support**: Assistance with security and access control
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

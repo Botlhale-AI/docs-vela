@@ -208,7 +208,5 @@ Monitor these key indicators for digital success:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 💬 **Chat Analysis Training**: Get help with digital conversation analysis
-- 🚀 **Digital Optimization**: Assistance with improving digital customer service
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

@@ -189,6 +189,4 @@ Based on search results, you can:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 🔍 **Search Optimization**: Get help creating effective searches
-- 📊 **Alert Management**: Assistance with notification setup and management
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

@@ -207,6 +207,4 @@ Monitor these metrics to track team performance:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📞 **Call Analysis Training**: Get help with effective analysis techniques
-- 🎯 **Coaching Support**: Assistance with using call data for team development
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

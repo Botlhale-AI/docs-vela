@@ -231,6 +231,4 @@ Track the effectiveness of your knowledge base:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📚 **Content Strategy**: Get help organizing and structuring your knowledge base
-- 🎯 **Implementation Support**: Assistance with setting up and managing your knowledge base
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

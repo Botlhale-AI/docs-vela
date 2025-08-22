@@ -214,6 +214,4 @@ Use scorecard data to improve processes:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📊 **Scorecard Design**: Get help creating effective evaluation systems
-- 🎯 **Implementation Support**: Assistance with rolling out scorecard programs
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

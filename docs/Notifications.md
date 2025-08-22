@@ -203,6 +203,4 @@ Receive automated summaries of your team's performance:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 🔔 **Notification Setup**: Get help configuring your preferences
-- 📋 **Alert Management**: Learn best practices for handling different alert types
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

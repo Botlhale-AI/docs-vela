@@ -224,6 +224,4 @@ Build a smart, searchable repository of company information (master it in [Knowl
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 🔍 **Smart Detector Training**: Ask about advanced configuration options
-- 💡 **Best Practice Sharing**: Get help with effective monitoring strategies
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

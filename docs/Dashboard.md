@@ -154,6 +154,4 @@ Configure notifications for important events:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📊 **Check Data Upload**: Ensure your call data is properly uploaded
-- ⚙️ **Review Settings**: Verify your team and date selections
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

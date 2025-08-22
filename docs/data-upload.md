@@ -261,6 +261,4 @@ print(response.json())
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📤 **Upload Assistance**: Get help with file preparation and upload
-- 🔧 **Integration Support**: Technical help for API and FTP setup
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

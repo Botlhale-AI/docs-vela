@@ -168,7 +168,5 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📋 **Report Templates**: Ask about pre-built report templates
-- 📊 **Custom Reports**: Get help creating specialized reports for your needs
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

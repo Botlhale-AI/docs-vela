@@ -260,7 +260,5 @@ def update_customer_profile(call_data):
 
 ## 🆘 Need Help?
 
-- 📧 **Contact Support**: api-support@botlhale.ai
-- 🔧 **Integration Consulting**: Get help with complex integration scenarios
-- 📚 **Developer Resources**: Access SDKs, code samples, and technical documentation
+- 📧 **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

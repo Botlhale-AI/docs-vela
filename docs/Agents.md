@@ -210,6 +210,4 @@ Look for patterns that affect multiple agents:
 ## 🆘 Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📚 **Training Resources**: Ask about additional coaching materials
-- 💼 **Performance Consulting**: Get help with team improvement strategies
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs 
