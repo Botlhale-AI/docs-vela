@@ -2,81 +2,155 @@
 sidebar_position: 1
 ---
 
-# Dashboard 
+# Monitor Your Team's Performance
 
-The Dashboard section helps you understand how to use the Vela Dashboard to explore your call centre data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.
+Your Vela dashboard is your command center for understanding how your team is performing and where you can improve customer experience. This guide shows you how to set up and use your dashboard to make data-driven decisions.
 
-## What the Dashboard Does
+## What You Can Achieve
 
-The Vela Dashboard turns call centre data into clear insights, helping you improve operations and deliver better customer experiences. Here's what you can do:
+With your dashboard, you can:
+- **Spot performance trends** before they become problems
+- **Identify top and struggling agents** for coaching opportunities
+- **Track customer satisfaction** across your team
+- **Monitor call efficiency** and identify bottlenecks
+- **Get alerts** when important events occur
 
-- **Quick Overview**: See key data like silent time, customer sentiment, agent performance, and call summaries at a glance
-- **Deep Dive**: Look closer at specific calls with charts and graphs to understand customer sentiment, topics, and agent interactions  
-- **Make It Your Own**: Customise the dashboard to show the data you care about most
-
-
-## Customise Your Dashboard
-
-When you first log in, your dashboard will be empty. You'll need to set it up to show the data you want. Follow these steps to customise your dashboard.
-
-
-## Getting Started
-
-Here's how to set up your dashboard step by step:
+## Set Up Your Dashboard
 
 ### Step 1: Access Your Dashboard
-Make sure you're on the "Dashboard" section of the Vela platform.
+1. **Log in** to Vela
+2. **Click "Dashboard"** in the left sidebar
+3. You'll see an empty dashboard initially - this is normal
 
 ### Step 2: Choose Your Team
-Use the "View By" dropdown to select a team, like "Interns Team."
+1. **Click "View By"** dropdown
+2. **Select your team** (e.g., "Customer Support Team")
+3. This filters all data to show only your team's performance
 
-![alt text](../img/screenshots/dashboard01.png)
+![Team Selection](../img/screenshots/dashboard01.png)
 
-### Step 3: Set Interaction Type
-Pick the type of interactions to view—choose from "All," "Calls," or "Chats."
+### Step 3: Set Your Time Period
+1. **Click the date range** (e.g., "20/04/2025 – 28/04/2025")
+2. **Choose a preset** like "This Week" or "Last Month"
+3. **Or select custom dates** from the calendar
+4. **Click "Save"** to apply
 
-![alt text](../img/screenshots/dh-interaction.png)
+![Date Range Selection](../img/screenshots/date-range.png)
 
-### Step 4: Set Date Range
-![alt text](../img/screenshots/date-range.png)
+### Step 4: Add Key Metrics
+1. **Click "Customise"** in the top-right corner
+2. **Click "Add New Metric"** for each metric you want to track
+3. **Add these essential metrics**:
 
-1. Click the orange pencil on "Date range" (example: "20/04/2025 – 28/04/2025") to open the date picker.
+#### Performance Metrics
+- **Agent Distribution** - See who's handling the most calls
+- **Average Agent Score** - Track overall team performance
+- **Agent Scores Distribution** - Identify top performers and those needing help
 
-2. In the "Select Date Range" pop-up, choose a preset option like "Today," "Yesterday," "This Week," "Last Week," "This Month," or "Last Month," or pick custom dates from the calendar (e.g., April 20 to April 26, 2025).
+#### Efficiency Metrics
+- **Average Call Duration** - Spot efficiency issues
+- **Average Response Time** - Monitor responsiveness
+- **Average Silent Time** - Identify awkward pauses or delays
 
-![alt text](../img/screenshots/date-range%202.0.png)
+#### Customer Experience Metrics
+- **Bottom 10 Pain Points** - See what's frustrating customers
+- **Customer Sentiment** - Track satisfaction trends
 
-3. Click "Save" in the date range pop-up.
+4. **Click "Save"** to apply your dashboard
 
-### Step 5: Customise Your Dashboard
-![alt text](../img/screenshots/costomize.png)
+![Customize Dashboard](../img/screenshots/costomize.png)
 
-1. Click the "Customise" button on the top right corner of the screen. A pop-up window will appear.
+## Understanding Your Dashboard
 
-2. In the pop-up, click "Add New Metric" to choose the data you want to see, such as:
-   - Agent Distribution
-   - Agent Scores Distribution
-   - Average Call Duration
-   - Average Response Time
-   - Average Agent Score
-   - Average Silent Time
-   - Bottom 10 Pain Points (Detected)
+### Performance Overview
+Your dashboard shows real-time data for your selected team and time period. Each metric card displays:
+- **Current value** (e.g., average call duration)
+- **Trend indicator** (up/down arrows showing improvement or decline)
+- **Filter icon** for additional filtering options
 
-![alt text](../img/screenshots/Add%20metric.png)
+### Key Insights to Look For
 
-**Note**: Each metric will show data for the whole organisation and the team you choose. You can also filter data for a specific time period using the filter icon next to the metric.
+#### Agent Performance
+- **High scores** (90%+) indicate excellent performance
+- **Low scores** (below 70%) suggest training opportunities
+- **Score distribution** helps identify if issues are isolated or team-wide
 
-3. Click the orange "Save" button to apply your changes.
+#### Call Efficiency
+- **Long call durations** might indicate complex issues or inefficiency
+- **High silent time** could signal agent uncertainty or system delays
+- **Response times** show how quickly your team responds to customers
 
-**Notes**
-- If your organisation hasn’t uploaded any call data, your dashboard will show empty
-cards. Check the "Data Management" section for more details on how to add data.
-- You can always go back to the "Customise" button to change the metrics, team,
-interaction type, or date range.
+#### Customer Satisfaction
+- **Pain points** reveal what's frustrating customers
+- **Sentiment trends** show if satisfaction is improving or declining
 
+## Daily Dashboard Routine
 
+### Morning Check (5 minutes)
+1. **Review yesterday's performance** - Look for any significant changes
+2. **Check agent scores** - Identify anyone who might need support
+3. **Review pain points** - See what issues emerged yesterday
 
+### Weekly Review (15 minutes)
+1. **Analyze trends** - Look for patterns over the past week
+2. **Identify coaching opportunities** - Find agents who need help
+3. **Spot process improvements** - Look for recurring issues
 
+### Monthly Analysis (30 minutes)
+1. **Generate reports** - Create detailed performance summaries
+2. **Plan training sessions** - Based on identified needs
+3. **Update goals** - Set new targets based on trends
 
+## Troubleshooting Common Issues
 
-<!-- ![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/wn_kFOBJmpc95RolDFvG0.jpg&x=1990&y=318&fill=2ca5e0&color=2ca5e0) -->
+### Empty Dashboard
+**Problem**: Dashboard shows no data
+**Solution**: 
+- Check if you have uploaded call data
+- Verify your date range includes data
+- Ensure you've selected the correct team
+
+### Missing Metrics
+**Problem**: Can't see important metrics
+**Solution**:
+- Click "Customise" to add missing metrics
+- Check if the metric is available for your data
+- Contact support if metrics seem incorrect
+
+### Outdated Data
+**Problem**: Dashboard shows old information
+**Solution**:
+- Refresh your browser
+- Check if new data has been uploaded
+- Verify your date range is current
+
+## Pro Tips
+
+### Save Multiple Dashboards
+Create different dashboard views for different purposes:
+- **Daily Operations** - Focus on current performance
+- **Weekly Review** - Include trend analysis
+- **Monthly Planning** - Add forecasting metrics
+
+### Use Filters Effectively
+- **Filter by agent** to focus on specific team members
+- **Filter by call type** to analyze different interaction types
+- **Filter by sentiment** to focus on positive or negative interactions
+
+### Set Up Alerts
+Configure notifications to alert you when:
+- Agent scores drop below thresholds
+- Customer sentiment becomes negative
+- Call volumes spike unexpectedly
+
+## Next Steps
+
+- **[Improve Agent Performance](./agents.md)** - Learn how to use agent insights for coaching
+- **[Generate Reports](./reports.md)** - Create detailed performance summaries
+- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Check Data Upload**: Ensure your call data is properly uploaded
+- **Review Settings**: Verify your team and date selections

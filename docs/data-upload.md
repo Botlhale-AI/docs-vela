@@ -4,339 +4,247 @@ sidebar_position: 8
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Data Upload
+# Get Your Data into Vela Quickly
 
-## Overview
+Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you the fastest ways to get your data into Vela and start seeing insights.
 
-The Vela platform offers two methods for uploading your call data, depending on your current storage solution:
+## What You Can Achieve
 
-1. **Automatic Upload via FTP:**
-    - **Suitable for:** Users who store call data on an FTP server. 
-    - **Benefits:** Automated updates, no manual intervention required.
+By uploading your data to Vela, you can:
+- **Analyze every customer interaction** automatically
+- **Identify patterns and trends** across your team
+- **Spot training opportunities** for agents
+- **Track customer satisfaction** over time
+- **Generate insights** that improve your business
 
-    **Requirements:**
+## Choose Your Upload Method
 
-    - An FTP server where your call data resides. 
-    - Shared access credentials provided to Botlhale AI during onboarding.
+### Option 1: Manual Upload (Recommended for New Users)
+**Best for**: Getting started quickly with existing call files
 
-    **Process:**
-    1. During onboarding, share access credentials for your FTP server with Botlhale AI. 
-    2. Botlhale AI establishes a connection and synchronises your call data automatically. 
-    3. Call data appears in the `Calls` screen on the Vela platform.
+**Time to set up**: 5 minutes
+**Data processed**: Within hours
 
-2. **Manual Batch Upload**:
-    - **Suitable for**: Users who do not store call data on an FTP server. 
-    - **Benefits**: Flexible uploading for various data sources.
+#### Step-by-Step Process
+1. **Go to "Calls"** in the left sidebar
+2. **Click "Batch Upload"** button
+3. **Select your call files** - We support most audio formats
+4. **Click "Upload"** and wait for processing
 
-    **Process:**
-    1. Navigate to the `Calls` screen on the Vela platform.
-    2. Click the `Batch Upload` button. 
-    3. Select and upload a zip file containing your call data. 
-    4. Click `Upload` to initiate the process.
-    5. Upon successful upload, your call data appears in the `Calls` screen table.
+**Why this matters**: You can start analyzing your data immediately without any technical setup.
 
-:::note TECHNICAL NOTES:
-- Both methods support uploading various call data formats, including CSV, TSV, and JSON. 
-- The batch upload function accepts zip files with a maximum size of 3 GB. 
-- For larger datasets, consider contacting Botlhale AI support for alternative upload options. Ensure your call data adheres to the specified format and schema requirements for successful processing.
-:::
+### Option 2: FTP Integration (For Larger Organizations)
+**Best for**: Organizations with automated call recording systems
 
-## Vela Integration
+**Time to set up**: 1-2 business days
+**Data processed**: Automatically as calls are recorded
 
-### Vela APIs
+#### Setup Process
+1. **Contact your Vela Account Manager** to set up FTP integration
+2. **Provide FTP credentials** for your call recording server
+3. **Configure automatic sync** - Data flows automatically
+4. **Monitor upload status** through the Vela dashboard
 
-#### Calls
+**Why this matters**: Once set up, your data flows automatically without manual intervention.
 
-:::tip important
-> You need to include an `Authentication Token` in request headers. See the [Authentication](api.md#authentication) page of this documentation for information on how to generate authentication token codes.
-:::
+## Supported Data Formats
 
-**Endpoint URL:**
-```
-https://api.botlhale.xyz/asr/async/upload/vela
-```
+### Call Recordings
+- **Audio formats**: WAV, MP3, M4A, FLAC
+- **Video formats**: MP4, AVI (audio will be extracted)
+- **File size**: Up to 3 GB per upload
+- **Batch uploads**: Multiple files at once
 
-**Description:**
-This API endpoint generates a presigned URL and associated credentials that allow for the secure upload of a call recording. This feature is designed for integration with Vela, enabling organisations to seamlessly upload call data for processing.
+### Chat Data
+- **Text formats**: JSON, CSV, TXT
+- **Structured data**: Agent and customer messages with timestamps
+- **Metadata**: Session information, agent IDs, customer IDs
 
-**Parameters:**
+### Data Requirements
+- **Call recordings**: Clear audio quality for best transcription
+- **Chat data**: Properly formatted with sender, timestamp, and message content
+- **Metadata**: Agent information, call dates, customer IDs (if available)
 
-| Parameter      | Requirement | Description                                              |
-|----------------|-------------|----------------------------------------------------------|
-| org_id         | Required    | Identifier for the organisation submitting the call.     |
-| metadata       | Optional    | A JSON containing the information below.              |
+## Getting Started with Manual Upload
 
-- **email**: Email address of the agent who participated in the call.
-- **date_of_call**: The date when the call took place.                     
+### Step 1: Prepare Your Files
+1. **Organize your call recordings** in a folder
+2. **Ensure files are in supported formats** (WAV, MP3, etc.)
+3. **Check file sizes** (under 3 GB each)
+4. **Optional**: Create a zip file for easier upload
 
-:::info **Endpoint Behaviour**
+### Step 2: Upload Your Data
+1. **Navigate to "Calls"** in Vela
+2. **Click "Batch Upload"**
+3. **Select your files** or drag and drop
+4. **Review the upload summary**
+5. **Click "Upload"** to start processing
 
-Before generating the presigned URL and upload credentials, the endpoint forwards the provided `org_id`, `email`, and `date_of_call` to Vela for logging and processing. Vela responds with `minute_allocation` and `voice_id` statuses. The API performs the following checks:
+### Step 3: Monitor Processing
+- **Check upload status** in the Calls section
+- **Wait for processing** (typically 1-2 hours)
+- **Review results** once processing is complete
+- **Start analyzing** your data in the dashboard
 
-- **Minute Allocation Check:** The API verifies if the organisation (`org_id`) is within its `minute_allocation`. If the organisation has exceeded its allocation, an error is thrown.
-:::
+## Setting Up Automated Uploads
 
+### For Organizations with Existing Systems
+If you have an existing call recording system, we can integrate directly:
 
-**Response Format**: The response returns a JSON object containing a presigned URL and the necessary fields for secure data upload to an AWS S3 bucket.
+1. **Contact your Vela Account Manager**
+2. **Provide system details**:
+   - Call recording system type
+   - Data storage location
+   - Current data format
+3. **Set up integration** - We'll configure the connection
+4. **Test the connection** - Ensure data flows correctly
+5. **Go live** - Automated uploads begin
 
-**Sample Response:**
+### Integration Options
+- **FTP/SFTP servers** - Direct file transfer
+- **Cloud storage** - AWS S3, Google Cloud, Azure
+- **API integration** - Custom data feeds
+- **Database connections** - Direct database access
+
+## API Integration for Developers
+
+### Upload Call Recordings via API
+For organizations with custom systems, use our API to upload data programmatically:
+
+**Endpoint**: `https://api.botlhale.xyz/asr/async/upload/vela`
+
+**Required Parameters**:
+- `org_id` - Your organization identifier
+- `metadata` - Call information including agent email and call date
+
+**Example Request**:
 ```json
 {
-    "fields": {
-        "key": "<key>",
-        "policy": "<policy>",
-        "x-amz-algorithm": "<>",
-        "x-amz-credential": "<>",
-        "x-amz-date": "<>",
-        "x-amz-security-token": "<>",
-        "x-amz-signature": "<>"
-    },
-    "url": "upload_url"
+  "org_id": "your_org_id",
+  "metadata": {
+    "email": "agent@company.com",
+    "date_of_call": "2024-01-15T10:30:00Z"
+  }
 }
 ```
 
-Integrate this API into your application to request a presigned URL, which allows you to upload call recordings to the specified `upload_url` securely using the provided credentials and fields. Using the `upload_url` works the same as a normal upload.
+### Upload Chat Data via API
+Upload chat conversations for analysis:
 
+**Endpoint**: `https://api.botlhale.xyz/chat/upload/vela`
 
-**Upload via Presigned URL**
+**Required Parameters**:
+- `org_id` - Your organization identifier
+- `chat_data` - Structured chat conversation data
 
-The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent `HTTP POST` request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a `POST` request for file upload.
-
-**Request Example**
-
-<Tabs>
-<TabItem value="py" label="Python" default>
-
-```py
-import requests
-
-url = "{{uploadUrl}}"
-
-payload = {'AWSAccessKeyId': '{{fields-AWSAccessKeyId}}',
-'key': '{{fields-key}}',
-'policy': '{{fields-policy}}',
-'signature': '{{fields-signature}}',
-'x-amz-security-token': '{{fields-x-amz-security-token}}'}
-files=[
-  ('file',('tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav',open('KpALthHva/tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav','rb'),'audio/wav'))
-]
-headers = {}
-
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
-print(response.text)
-
-```
-
-</TabItem>
-<TabItem value="nodejs" label="NodeJs - Request" >
-
-```js 
-var request = require('request');
-var fs = require('fs');
-var options = {
-  'method': 'POST',
-  'url': '{{uploadUrl}}',
-  'headers': {
-  },
-  formData: {
-    'AWSAccessKeyId': '{{fields-AWSAccessKeyId}}',
-    'key': '{{fields-key}}',
-    'policy': '{{fields-policy}}',
-    'signature': '{{fields-signature}}',
-    'x-amz-security-token': '{{fields-x-amz-security-token}}',
-    'file': [
-      fs.createReadStream('KpALthHva/tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav')
+**Example Request**:
+```json
+{
+  "org_id": "your_org_id",
+  "chat_data": {
+    "session_id": "chat_12345",
+    "agent_id": "agent_001",
+    "messages": [
+      {
+        "timestamp": "2024-01-15T10:30:00Z",
+        "sender": "customer",
+        "content": "Hello, I need help with my account"
+      }
     ]
   }
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-
-
-```
-
-</TabItem>
-</Tabs>
-
-
-
-
-
-#### Chats
-
-:::tip important
-> You need to include an `Authentication Token` in request headers. See the [Authentication](api.md#authentication) page of this documentation for information on how to generate authentication token codes.
-:::
-
-**Endpoint URL:**
-```
-https://api.botlhale.xyz/chat/upload/vela
-```
-
-**Description:**
-This API endpoint allows you to upload chat conversation data to the Vela platform for analysis. The endpoint accepts chat transcripts and associated metadata for processing and integration into your analytics dashboard.
-
-**Parameters:**
-
-| Parameter      | Requirement | Description                                              |
-|----------------|-------------|----------------------------------------------------------|
-| org_id         | Required    | Identifier for the organisation submitting the chat.     |
-| chat_data      | Required    | JSON object containing the chat conversation data.       |
-| metadata       | Optional    | Additional information about the chat session.           |
-
-**Chat Data Format:**
-- **messages**: Array of message objects containing timestamp, sender, and content
-- **session_id**: Unique identifier for the chat session
-- **agent_id**: Identifier for the agent handling the chat
-- **customer_id**: Identifier for the customer (if available)
-- **start_time**: Chat session start timestamp
-- **end_time**: Chat session end timestamp
-
-**Sample Request:**
-```json
-{
-    "org_id": "your_org_id",
-    "chat_data": {
-        "session_id": "chat_12345",
-        "agent_id": "agent_001",
-        "customer_id": "customer_789",
-        "start_time": "2024-01-15T10:30:00Z",
-        "end_time": "2024-01-15T10:45:00Z",
-        "messages": [
-            {
-                "timestamp": "2024-01-15T10:30:00Z",
-                "sender": "customer",
-                "content": "Hello, I need help with my account"
-            },
-            {
-                "timestamp": "2024-01-15T10:30:15Z",
-                "sender": "agent",
-                "content": "Hi! I'd be happy to help you with your account. What specific issue are you experiencing?"
-            }
-        ]
-    },
-    "metadata": {
-        "channel": "website",
-        "department": "customer_support"
-    }
 }
 ```
 
-**Response Format:**
-```json
-{
-    "status": "success",
-    "message": "Chat data uploaded successfully",
-    "chat_id": "vela_chat_12345",
-    "processing_status": "queued"
-}
-```
+## Best Practices for Data Upload
 
-**Request Example**
+### File Organization
+- **Use consistent naming** - Include date and agent information
+- **Organize by date** - Group files by month or week
+- **Include metadata** - Agent names, call types, customer IDs
+- **Backup your data** - Keep copies of original files
 
-<Tabs>
-<TabItem value="py" label="Python" default>
+### Quality Assurance
+- **Check audio quality** - Ensure recordings are clear
+- **Verify file formats** - Use supported formats for best results
+- **Test with small batches** - Upload a few files first
+- **Monitor processing** - Check for any errors or issues
 
-```py
-import requests
-import json
+### Security and Privacy
+- **Secure file transfer** - Use encrypted connections
+- **Data retention** - Follow your organization's policies
+- **Access controls** - Limit who can upload data
+- **Compliance** - Ensure data handling meets regulations
 
-url = "https://api.botlhale.xyz/chat/upload/vela"
+## Troubleshooting Common Issues
 
-headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
-    "Content-Type": "application/json"
-}
+### Upload Failures
+**Problem**: Files won't upload or upload fails
+**Solutions**:
+- Check file size (must be under 3 GB)
+- Verify file format is supported
+- Ensure stable internet connection
+- Try uploading smaller batches
 
-payload = {
-    "org_id": "your_org_id",
-    "chat_data": {
-        "session_id": "chat_12345",
-        "agent_id": "agent_001",
-        "customer_id": "customer_789",
-        "start_time": "2024-01-15T10:30:00Z",
-        "end_time": "2024-01-15T10:45:00Z",
-        "messages": [
-            {
-                "timestamp": "2024-01-15T10:30:00Z",
-                "sender": "customer",
-                "content": "Hello, I need help with my account"
-            },
-            {
-                "timestamp": "2024-01-15T10:30:15Z",
-                "sender": "agent",
-                "content": "Hi! I'd be happy to help you with your account."
-            }
-        ]
-    },
-    "metadata": {
-        "channel": "website",
-        "department": "customer_support"
-    }
-}
+### Processing Delays
+**Problem**: Data takes too long to process
+**Solutions**:
+- Check file quality and format
+- Verify metadata is complete
+- Contact support if delays persist
+- Consider upgrading processing capacity
 
-response = requests.post(url, headers=headers, data=json.dumps(payload))
+### Missing Data
+**Problem**: Some calls or chats don't appear after upload
+**Solutions**:
+- Check upload status for each file
+- Verify file formats are supported
+- Review error logs for failed uploads
+- Contact support for assistance
 
-print(response.text)
-```
+### API Integration Issues
+**Problem**: API uploads aren't working
+**Solutions**:
+- Verify authentication credentials
+- Check API endpoint URLs
+- Review request format and parameters
+- Test with simple requests first
 
-</TabItem>
-<TabItem value="nodejs" label="Node.js" >
+## Data Processing Timeline
 
-```js
-const axios = require('axios');
+### Typical Processing Times
+- **Small files** (< 10 MB): 15-30 minutes
+- **Medium files** (10-100 MB): 30-60 minutes
+- **Large files** (100 MB - 3 GB): 1-3 hours
+- **Batch uploads**: Processed in parallel
 
-const url = 'https://api.botlhale.xyz/chat/upload/vela';
+### Factors Affecting Processing Time
+- **File size** - Larger files take longer
+- **Audio quality** - Clear audio processes faster
+- **System load** - Peak times may be slower
+- **File format** - Some formats process more efficiently
 
-const headers = {
-    'Authorization': 'Bearer YOUR_API_TOKEN',
-    'Content-Type': 'application/json'
-};
+## Next Steps After Upload
 
-const payload = {
-    org_id: 'your_org_id',
-    chat_data: {
-        session_id: 'chat_12345',
-        agent_id: 'agent_001',
-        customer_id: 'customer_789',
-        start_time: '2024-01-15T10:30:00Z',
-        end_time: '2024-01-15T10:45:00Z',
-        messages: [
-            {
-                timestamp: '2024-01-15T10:30:00Z',
-                sender: 'customer',
-                content: 'Hello, I need help with my account'
-            },
-            {
-                timestamp: '2024-01-15T10:30:15Z',
-                sender: 'agent',
-                content: 'Hi! I\'d be happy to help you with your account.'
-            }
-        ]
-    },
-    metadata: {
-        channel: 'website',
-        department: 'customer_support'
-    }
-};
+### Immediate Actions
+1. **Check processing status** - Monitor upload progress
+2. **Review sample data** - Verify quality and accuracy
+3. **Set up dashboard** - Configure your monitoring view
+4. **Start analyzing** - Look for initial insights
 
-axios.post(url, payload, { headers })
-    .then(response => {
-        console.log(response.data);
-    })
-    .catch(error => {
-        console.error('Error:', error.response.data);
-    });
-```
+### Ongoing Management
+1. **Schedule regular uploads** - Set up automated processes
+2. **Monitor data quality** - Check for issues regularly
+3. **Update as needed** - Add new data sources
+4. **Optimize processes** - Improve efficiency over time
 
-</TabItem>
-</Tabs>
+## Next Steps
 
-## Contact us
+- **[Monitor Performance](./dashboard.md)** - Set up your dashboard to view uploaded data
+- **[Improve Agent Performance](./agents.md)** - Use uploaded data for coaching
+- **[Generate Reports](./reports.md)** - Create reports from your data
 
-:::info
-We are here to help! Please [contact us](mailto:support@botlhale.ai) with any questions.
-:::
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Upload Assistance**: Get help with file preparation and upload
+- **Integration Support**: Technical help for API and FTP setup

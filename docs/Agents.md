@@ -2,113 +2,222 @@
 sidebar_position: 4
 ---
 
-# Agents
+# Improve Agent Performance
 
-The Agents screen gives you a complete view of how your agents are performing. It's designed to help you monitor, analyse, and improve your call centre team's performance. You can view the information in either a list or board format - whatever works best for you. Just click the **View** icon in the top right corner to switch between the two.
+Use Vela's agent insights to identify coaching opportunities, track improvement, and build a high-performing team. This guide shows you how to use agent data to drive better customer experiences.
 
-## Overview
+## What You Can Achieve
 
-### Understanding the Agent Performance Table
+With agent analytics, you can:
+- **Identify coaching opportunities** for struggling agents
+- **Recognize top performers** and learn from their success
+- **Track improvement over time** with detailed metrics
+- **Spot training gaps** across your team
+- **Make data-driven decisions** about promotions and development
 
-![alt text](../img/screenshots/agents-p.png)
+## Understanding Agent Performance
 
-The Agents screen includes the following key elements:
+### Key Metrics Explained
 
-- **Name** – The agent's name
-- **Team** – The team the agent belongs to
-- **Department** – The department associated with the agent
-- **Calls** – The number of calls handled by the agent within the selected date range
-- **Score** – The agent's overall performance score (percentage-based), with lower scores indicating a need for improvement
-- **Strengths** – The agent's top-performing skills, as identified by the system
-- **Weaknesses** – Areas where the agent needs improvement
-- **Rank** – The agent's ranking based on performance compared to other agents
-- **Detailed View** – Clicking "View" provides an in-depth breakdown of the agent's call history, analytics, and feedback
+Your agent performance table shows essential information:
 
-## Detailed Agent View
+- **Score** - Overall performance rating (0-100%)
+  - 90%+ = Excellent performance
+  - 70-89% = Good performance with room for improvement
+  - Below 70% = Needs immediate coaching
 
-The Detailed Agent View provides an in-depth analysis of individual agent metrics. This view includes a scorecard for each agent, which users can download for further analysis. The scorecard includes detailed metrics such as:
+- **Strengths** - What the agent does well consistently
+- **Weaknesses** - Areas needing improvement
+- **Rank** - Performance compared to other agents
+- **Calls** - Number of interactions in the selected period
 
-- **Call Duration**: The average duration of calls handled by the agent
-- **Customer Satisfaction**: The average customer satisfaction score for the agent
-- **Resolution Rate**: The percentage of calls resolved by the agent
-- **Adherence to Scripts**: The agent's adherence to predefined scripts during calls
-- **Missed Customer Cues**: The number of missed customer cues during calls
+![Agent Performance Overview](../img/screenshots/agents-p.png)
 
-## Sorting, Filtering, and Exporting Data
+## Daily Agent Management Routine
 
-The Agents screen makes it easy to navigate and work with your contact centre data. You can:
+### Morning Review (10 minutes)
+1. **Check agent scores** - Identify anyone below 70%
+2. **Review strengths/weaknesses** - Plan coaching sessions
+3. **Look for trends** - Spot patterns across your team
 
-- **Sort**: Order entries by any table column (except the Detailed View column) to quickly find specific agent performance metrics
-- **Filter**: Apply specific criteria based on various parameters to focus your analysis on what matters
-- **Export**: Download the entire table as a CSV file for further analysis in your preferred data visualisation or statistical tools
+### Weekly Coaching Sessions (30 minutes per agent)
+1. **Review detailed metrics** with each agent
+2. **Discuss specific improvements** based on data
+3. **Set goals** for the following week
+4. **Track progress** over time
 
-## Getting Started Guide
+## How to Use Agent Data for Coaching
 
-Here's a step-by-step guide to navigating and using the Agents screen:
+### Step 1: Access Agent Details
+1. **Go to "Agents"** in the left sidebar
+2. **Click "View"** next to any agent's name
+3. **Review their detailed performance breakdown**
 
-### Sorting Agents
+### Step 2: Analyze Performance Patterns
+Look for these key indicators:
 
-#### Step 1: Access Sort Options
-Click on the sort button to access sorting options.
+#### Call Duration Analysis
+- **Long calls** might indicate:
+  - Complex customer issues
+  - Agent uncertainty or lack of knowledge
+  - Inefficient processes
+- **Short calls** might indicate:
+  - Rushed interactions
+  - Missed opportunities to help customers
+  - Good efficiency (if satisfaction is high)
 
-#### Step 2: Choose Sort Criteria
-You can sort the agent performance table by various attributes, in ascending or descending order.
+#### Customer Satisfaction
+- **Low satisfaction scores** require immediate attention
+- **Declining satisfaction** shows worsening performance
+- **High satisfaction** with good efficiency = excellent performance
 
-#### Step 3: Apply Sort Settings
-Confirm your selection by clicking "Apply".
+#### Resolution Rate
+- **Low resolution rates** suggest training needs
+- **High resolution rates** with good satisfaction = strong performance
 
-### Filtering Agents
+### Step 3: Create Action Plans
+Based on your analysis, create specific improvement plans:
 
-#### Step 4: Access Filter Options
-Click on the filter button to access filtering options.
+#### For Struggling Agents (Score < 70%)
+1. **Identify specific weaknesses** from the data
+2. **Schedule one-on-one coaching** sessions
+3. **Provide targeted training** materials
+4. **Set weekly improvement goals**
+5. **Monitor progress** closely
 
-#### Step 5: Select Filter Criteria
-Choose the attributes you'd like to filter by.
+#### For Average Agents (Score 70-89%)
+1. **Focus on strengths** to build confidence
+2. **Address specific weaknesses** systematically
+3. **Provide peer mentoring** opportunities
+4. **Set stretch goals** for improvement
 
-#### Step 6: Apply Filters
-Click "Apply" to activate your filters.
+#### For Top Performers (Score 90%+)
+1. **Recognize their achievements**
+2. **Use them as mentors** for other agents
+3. **Provide advanced training** opportunities
+4. **Consider promotion** or leadership roles
 
-#### Step 7: Filter by Date Range
-You can also filter agent performance by a specific date range.
+## Detailed Agent Analysis
 
-## Agent Management
+### Accessing Detailed Metrics
+1. **Click "View"** on any agent row
+2. **Review their comprehensive scorecard**
+3. **Download the scorecard** for detailed analysis
 
-### Accessing Agent Details
+The detailed view includes:
+- **Call-by-call breakdown** of performance
+- **Trend analysis** over time
+- **Specific improvement areas**
+- **Comparison to team averages**
 
-Navigate to the Agent Details section to manage individual agent information.
+### Key Metrics to Focus On
 
-The Agent Details section enables users with admin privileges to view, edit and update the details of the agents in their respective teams or departments. You have the option to activate the **Voice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another.
+#### Call Quality Metrics
+- **Script adherence** - How well agents follow procedures
+- **Customer satisfaction** - Direct feedback scores
+- **Resolution rate** - Percentage of issues resolved
+- **First call resolution** - Issues resolved without escalation
 
-![alt text](../img/screenshots/agents-d.png)
+#### Efficiency Metrics
+- **Average call duration** - Time efficiency
+- **Response time** - Speed of initial response
+- **Silent time** - Awkward pauses or delays
+- **Transfer rate** - How often calls are escalated
 
-### Reassigning Agents
+#### Behavioral Metrics
+- **Missed customer cues** - Opportunities to help customers
+- **Professionalism score** - Tone and approach
+- **Empathy indicators** - Understanding customer emotions
 
-#### Step 1: Select Agent Department
-Choose the department you want to reassign an agent to (e.g., "Debt Collection (Department A)").
+## Team Performance Analysis
 
-#### Step 2: Initiate Reassignment
-Click "Reassign" to begin the reassignment process.
+### Compare Agents Effectively
+1. **Use the sort function** to rank agents by different metrics
+2. **Filter by team or department** to focus on specific groups
+3. **Export data** for detailed analysis in spreadsheets
 
-#### Step 3: Confirm Reassignment
-Complete the reassignment by clicking "Reassign".
+### Identify Team Trends
+Look for patterns that affect multiple agents:
+- **Common weaknesses** across the team
+- **Training gaps** that need addressing
+- **Process issues** affecting performance
+- **Success patterns** to replicate
+
+## Agent Management Tools
 
 ### Adding New Agents
+1. **Click "+ Add Agent"** in the top right
+2. **Enter agent information**:
+   - Name and email
+   - Department and team assignment
+   - Start date and role
+3. **Click "Save"** to add them to your system
 
-To add a new agent, click the **+ Add Agent** button and follow these steps:
+### Reassigning Agents
+1. **Select the agent** you want to reassign
+2. **Click "Reassign"** button
+3. **Choose new department/team**
+4. **Confirm the change**
 
-#### Step 1: Enter Agent Information
-Fill in the required agent details.
+### Managing Agent Access
+- **Activate/deactivate** agents as needed
+- **Update contact information**
+- **Modify team assignments**
+- **Track voice ID status** for security
 
-#### Step 2: Select Department and Team
-Choose the appropriate department and team for the new agent.
+## Best Practices for Agent Coaching
 
-#### Step 3: Save Agent Details
-Confirm the agent details by clicking the save button.
+### Regular Feedback Sessions
+- **Weekly one-on-ones** with struggling agents
+- **Monthly reviews** with all agents
+- **Quarterly performance discussions** with top performers
 
-**Optional**: If you need to create a new team, you can do so during the agent creation process.
+### Data-Driven Coaching
+- **Use specific examples** from call transcripts
+- **Show improvement trends** over time
+- **Set measurable goals** based on metrics
+- **Celebrate improvements** and achievements
 
-Finally, click "Save" to finalise the new agent setup.
+### Team Development
+- **Pair struggling agents** with top performers
+- **Create peer mentoring** programs
+- **Share best practices** across the team
+- **Recognize and reward** improvement
 
-## Contact Us
+## Troubleshooting Common Issues
 
-We are here to help! If you have any questions or need further assistance, please [contact us](mailto:support@botlhale.ai). 
+### Low Agent Scores
+**Problem**: Agent consistently scores below 70%
+**Solutions**:
+- Review specific weaknesses in detail
+- Provide targeted training materials
+- Schedule additional coaching sessions
+- Consider role reassignment if needed
+
+### Inconsistent Performance
+**Problem**: Agent scores vary widely day-to-day
+**Solutions**:
+- Look for patterns in good vs. bad days
+- Check for external factors affecting performance
+- Provide more consistent training and support
+- Set daily goals to maintain focus
+
+### Team-Wide Issues
+**Problem**: Multiple agents showing similar weaknesses
+**Solutions**:
+- Identify common training gaps
+- Update team training programs
+- Review and improve processes
+- Consider external training resources
+
+## Next Steps
+
+- **[Generate Performance Reports](./reports.md)** - Create detailed agent summaries
+- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Get alerts for performance issues
+- **[Configure Notifications](./notifications.md)** - Stay informed about agent performance
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Training Resources**: Ask about additional coaching materials
+- **Performance Consulting**: Get help with team improvement strategies 

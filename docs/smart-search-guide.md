@@ -2,189 +2,210 @@
 sidebar_position: 2
 ---
 
-# Smart Search Guide
+# Create Automated Searches That Catch Issues
 
-Smart Search is a powerful feature that allows you to create and manage automated searches to identify specific topics, intents, keywords, or pain points within call transcripts. This enables deeper insights and proactive issue resolution.
+Set up intelligent monitoring to automatically detect customer complaints, compliance violations, and other important events in your customer interactions. This guide shows you how to create effective searches that help you respond proactively to issues.
 
-## Overview
+## What You Can Achieve
 
-Smart Search uses advanced natural language processing (NLP) and machine learning algorithms to analyse your call transcripts and identify patterns, compliance issues, and business opportunities.
+With Smart Search, you can:
+- **Detect customer complaints** before they escalate
+- **Monitor compliance violations** automatically
+- **Identify training opportunities** for your team
+- **Spot service quality issues** in real-time
+- **Track important trends** across all interactions
+
+## Getting Started with Smart Search
+
+### Step 1: Access Smart Search
+1. **Go to "Smart Detector"** in the left sidebar
+2. **Click "Smart Search"** card
+3. **Review the four main tabs**:
+   - **View** - See existing searches
+   - **Create** - Build new searches
+   - **Examples** - Use predefined templates
+   - **Results** - Review search outcomes
 
 ![Smart Search Interface](../img/screenshots/SDS.png)
 
-## Getting Started
+### Step 2: Plan Your Search Strategy
+Before creating searches, identify what you want to monitor:
 
-### Accessing Smart Search
+- **Customer satisfaction** - Complaints, dissatisfaction indicators
+- **Compliance issues** - Policy violations, regulatory concerns
+- **Service quality** - Problems with products or services
+- **Training needs** - Areas where agents struggle
+- **Business opportunities** - Upselling, cross-selling moments
 
-1. Navigate to **Smart Detector** from the left sidebar
-2. Click on the **Smart Search** card
-3. You'll be taken to the Smart Search section with four main tabs:
-   - **View**: See all your existing searches
-   - **Create**: Build new searches
-   - **Examples**: Use predefined templates
-   - **Results**: Review search outcomes
+## Creating Effective Searches
 
-## View Tab - Managing Existing Searches
+### Understanding Search Components
+Each search includes:
 
-The View tab displays a table of all automated search queries created within your organisation.
+- **Name** - Clear, descriptive identifier
+- **Description** - What the search looks for
+- **Scope** - Which calls to monitor (Organization, Department, Team)
+- **Example phrases** - Specific terms to detect
+- **Filters** - Additional criteria (duration, agent, keywords)
+- **Notifications** - Alert settings for matches
 
-### Understanding the Table
+### Step-by-Step Search Creation
+1. **Go to "Create" tab** to build new searches
+2. **Name your search** - Use descriptive, memorable names
+3. **Write clear description** - Explain what you're looking for
+4. **Set the scope** - Choose which calls to monitor
+5. **Add example phrases** - Include specific terms to detect
+6. **Configure filters** - Add additional criteria if needed
+7. **Set up notifications** - Choose when to receive alerts
+8. **Save and activate** - Make your search live
 
-- **Name**: The name of the search query (e.g., "Customer Complaints")
-- **Description**: Brief explanation of what the search looks for
-- **Scope**: Range of calls the search applies to (Organisation, Department, or Team)
-- **Date Created**: When the search was created
-- **Status**: Whether the search is active or inactive
-- **Notify**: Indicates if notifications are enabled
+## Building Effective Search Criteria
 
-### Changing Search Scope
+### Customer Complaint Detection
+Monitor for customer dissatisfaction:
 
-You can filter searches by scope using the "View By" dropdown:
+- **Direct complaints**: "I'm not happy with", "This is terrible"
+- **Escalation requests**: "I want to speak to a manager"
+- **Cancellation threats**: "I'm going to cancel my account"
+- **Service issues**: "This doesn't work", "I've been waiting"
 
-1. **Entire Organisation**: Shows all searches across your organisation
-2. **Specific Department**: Focus on searches for a particular department
-3. **Specific Team**: Focus on searches for a specific team
+### Compliance Monitoring
+Track regulatory and policy adherence:
+
+- **Data protection**: "Can you confirm my details", "Is this secure"
+- **Policy violations**: "That's against company policy"
+- **Required disclosures**: "You didn't tell me about"
+- **Regulatory concerns**: "Is this legal", "Are you following the rules"
+
+### Service Quality Issues
+Identify problems with products or services:
+
+- **Technical problems**: "It's not working", "There's an error"
+- **Product defects**: "This is broken", "It's defective"
+- **Service delays**: "I've been waiting", "This is taking too long"
+- **Billing issues**: "I was charged incorrectly", "This bill is wrong"
+
+### Training Opportunities
+Spot areas where agents need help:
+
+- **Knowledge gaps**: "I don't know", "Let me check"
+- **Process confusion**: "I'm not sure how to", "What should I do"
+- **Escalation patterns**: "I need to transfer you", "Let me get my supervisor"
+- **Customer frustration**: "I've explained this before", "You're not listening"
+
+## Managing Your Searches
+
+### Viewing Existing Searches
+The View tab shows all your active searches:
+
+- **Search name** - What you're monitoring
+- **Description** - Purpose and scope
+- **Status** - Active or inactive
+- **Notifications** - Alert settings
+- **Date created** - When the search was set up
 
 ![View By Dropdown](../img/screenshots/VB.png)
 
-### Managing Individual Searches
+### Organizing by Scope
+Filter searches to focus on specific areas:
 
-Click on any search name to view and edit its details:
+- **Entire Organization** - Monitor all calls across your company
+- **Specific Department** - Focus on particular business areas
+- **Specific Team** - Target individual teams or groups
 
-- **Name and Description**: Update the search title and purpose
-- **Search Scope**: Change which calls the search applies to
-- **Example Phrases**: Add or remove phrases the search looks for
-- **Filters**: Set additional criteria like call duration or keywords
-- **Status**: Enable or disable the search
-- **Notifications**: Configure alert settings
+### Editing and Updating Searches
+Keep your searches current and effective:
 
-## Create Tab - Building New Searches
+- **Update phrases** - Add new terms as you learn
+- **Adjust scope** - Change which calls to monitor
+- **Modify filters** - Refine criteria based on results
+- **Enable/disable** - Turn searches on or off as needed
 
-### Step-by-Step Creation Process
+## Analyzing Search Results
 
-1. **Navigate to Create Tab**: Click the "Create" sub-tab
-2. **Fill Out the Form**:
+### Understanding Your Results
+The Results tab shows what your searches found:
 
-   **Name**: Enter a unique, descriptive name
-   - Example: "Customer Complaints"
-   - Choose a name that clearly indicates the purpose
+- **Search name** - Which search detected the issue
+- **Call details** - When and with whom the interaction occurred
+- **Matched phrases** - What triggered the detection
+- **Context** - Surrounding conversation for understanding
+- **Action taken** - How the issue was resolved
 
-   **Description**: Explain what the search will look for
-   - Example: "Searches for calls where customers express complaints about products or services"
+### Interpreting the Data
+- **High match rates** - Indicate common issues to address
+- **Low match rates** - May need to refine search criteria
+- **Patterns over time** - Show trends and improvements
+- **Agent-specific results** - Identify individual training needs
 
-   **Search Scope**: Set the range of calls to monitor
-   - Entire Organisation: Monitor all calls
-   - Specific Department: Focus on particular departments
-   - Specific Team: Focus on specific teams
+## Best Practices for Effective Searches
 
-   **Example Phrases**: Add phrases the search should detect
-   - Example: "I'm not happy with", "This product is defective", "I want to complain"
-   - Add multiple phrases for comprehensive coverage
+### Phrase Selection Strategy
+- **Be specific** - Use exact phrases customers say
+- **Include variations** - Add different ways to express the same thing
+- **Test thoroughly** - Verify searches catch the right interactions
+- **Update regularly** - Add new phrases as you learn
 
-   **Filters**: Set additional criteria (optional)
-   - Call Duration: Search for calls longer/shorter than specific times
-   - Agent ID: Focus on specific agents
-   - Keywords: Search for additional words or phrases
+### Scope and Filtering
+- **Start broad** - Monitor organization-wide for major issues
+- **Add specificity** - Create targeted searches for specific teams
+- **Use filters wisely** - Don't over-filter and miss important matches
+- **Review regularly** - Adjust scope based on results and needs
 
-   **Search Status**: Determine if the search starts immediately
-   - Enabled: Search starts monitoring right away
-   - Disabled: Search is saved but not active
+### Notification Management
+- **Set appropriate alerts** - Don't overwhelm with too many notifications
+- **Escalate important issues** - Ensure critical problems get immediate attention
+- **Review notification effectiveness** - Adjust based on response times
+- **Balance automation** - Use notifications for important, not all, matches
 
-   **Historical Search**: Apply to past calls
-   - Check this box to analyse historical data
-   - Useful for identifying patterns in existing calls
+## Troubleshooting Common Issues
 
-   **Notifications**: Set up alerts
-   - Receive notifications when matches are found
-   - Useful for real-time monitoring
+### Searches Not Finding Matches
+**Problem**: Searches aren't detecting expected issues
+**Solutions**:
+- Review and refine your search phrases
+- Check if the scope is too narrow
+- Verify that data is being processed correctly
+- Test with different example phrases
 
-3. **Create the Search**: Click the orange "Create" button
-
-![Create Search Form](../img/screenshots/SSD3.png)
-
-## Examples Tab - Using Templates
-
-The Examples tab provides predefined search templates to help you get started quickly.
-
-### Available Templates
-
-- **Competitor Mentions**: Detect when customers mention competitors
-- **Auto-QA: Identity Confirmation**: Check if agents properly verify customer identity
-- **Auto-QA: Greeting**: Ensure agents use proper greetings
-- **Auto-QA: Online Order**: Monitor online order inquiries
-
-### Using Templates
-
-1. **Browse Templates**: Review available templates in the table
-2. **Select Template**: Click on a template name to view details
-3. **Customise**: Modify the template settings as needed
-4. **Enable**: Activate the template for your organisation
-
-![Examples Table](../img/screenshots/SSD5.png)
-
-## Results Tab - Analysing Outcomes
-
-The Results tab shows a summary of matches found by your active search queries.
-
-### Understanding Results
-
-- **Single View**: Shows results for each search query individually
-- **Compound View**: Combines multiple searches to find calls matching multiple criteria
-
-### Interpreting Results
-
-- **Match Count**: Number of calls that matched the search criteria
-- **Date Range**: Time period covered by the results
-- **Summary**: Overview of findings and insights
-- **Returned Calls**: List of specific calls that matched
-
-### Working with Results
-
-1. **View Call Details**: Click on call IDs to see full transcripts
-2. **Sort and Filter**: Organize results by various criteria
-3. **Export Data**: Download results for further analysis
-4. **Navigate Pages**: Browse through multiple pages of results
-
-![Results Summary](../img/screenshots/SSD8.png)
-
-## Best Practices
-
-### Creating Effective Searches
-
-1. **Be Specific**: Use precise phrases that clearly indicate the topic
-2. **Test Thoroughly**: Run searches on historical data to verify accuracy
-3. **Start Small**: Begin with a few key searches and expand gradually
-4. **Monitor Results**: Regularly review search outcomes and adjust as needed
-
-### Common Use Cases
-
-- **Compliance Monitoring**: Detect regulatory violations or policy breaches
-- **Quality Assurance**: Identify training opportunities and performance issues
-- **Customer Experience**: Monitor satisfaction levels and pain points
-- **Business Intelligence**: Track product mentions and competitor references
-
-## Troubleshooting
-
-### Common Issues
-
-**No Matches Found**
-- Check if the search criteria are too specific
-- Verify the date range includes relevant calls
-- Ensure the search scope is appropriate
-
-**Too Many Matches**
-- Refine search phrases to be more specific
-- Add filters to narrow down results
+### Too Many False Positives
+**Problem**: Searches are flagging interactions that aren't actually issues
+**Solutions**:
+- Make phrases more specific and targeted
+- Add additional filters to narrow results
 - Review and adjust search criteria
+- Test searches with sample data
 
-**Search Not Working**
-- Verify the search is enabled
-- Check notification settings
-- Ensure proper permissions are set
+### Missing Important Issues
+**Problem**: Important problems aren't being detected
+**Solutions**:
+- Add more comprehensive phrase lists
+- Review customer feedback for common complaints
+- Expand search scope to include more interactions
+- Create additional searches for specific issue types
+
+## Measuring Search Effectiveness
+
+### Key Performance Indicators
+- **Detection accuracy** - How often searches find real issues
+- **Response time** - How quickly you address detected problems
+- **Issue resolution** - How often detected issues are resolved
+- **Customer satisfaction** - Impact on overall customer experience
+
+### Success Metrics
+- **Reduced complaints** - Fewer customer issues over time
+- **Faster response** - Quicker identification and resolution
+- **Improved training** - Better targeted coaching opportunities
+- **Enhanced compliance** - Fewer policy violations
+
+## Next Steps
+
+- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Integrate searches with other Smart Detector features
+- **[Improve Agent Performance](./agents.md)** - Use search results for coaching
+- **[Generate Reports](./reports.md)** - Create reports based on search findings
 
 ## Need Help?
 
-For additional support with Smart Search:
-- Contact support@botlhale.ai
-- Review the video tutorials on the homepage
-- Check the detailed Smart Detector documentation
+- **Contact Support**: support@botlhale.ai
+- **Search Strategy Training**: Get help with effective search design
+- **Phrase Optimization**: Assistance with improving search accuracy

@@ -2,102 +2,239 @@
 sidebar_position: 3
 ---
 
-# Chats
+# Analyze Chat Conversations
 
-The Chats screen displays a detailed table of all processed chat interactions, organized by key metadata to support easy navigation and in-depth exploration.
+Understand your customer chat interactions to improve response times, identify service gaps, and enhance the overall customer experience. This guide shows you how to use chat analysis to optimize your team's digital customer service performance.
 
-## Getting Started
+## What You Can Achieve
 
-### 1. Accessing the Chats Screen
-![alt text](../img/screenshots/callz.png)
+With chat analysis, you can:
+- **Improve response times** and customer satisfaction
+- **Identify service bottlenecks** in your chat support
+- **Evaluate agent performance** in written communication
+- **Spot training opportunities** for chat-specific skills
+- **Track conversation quality** and resolution rates
 
-### 2. Understanding the Chat Log
+## Understanding Your Chat Data
 
-Each entry within the log table includes:
+### Key Metrics to Monitor
+Your chat log shows essential information for every conversation:
 
-- **Chat ID** – Unique identifier for each chat.
-- **Date** – The exact timestamp when the chat occurred.
-- **Agent** – The agent who handled the chat.
-- **Handle Time** – The total duration of the chat.
-- **Response Time** – The average time it took the agent to respond to the customer.
-- **Topic** – The main subject of the chat, automatically categorised based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
-- **Alerts** – The number of detected issues based on Smart Detector analysis.
-- **Agent Score** – The system-generated performance score for the agent.
-- **Team** – The team to which the agent belongs.
-- **Tags** – Custom labels assigned to chats for better categorisation.
+- **Chat Duration** - How long each conversation lasted
+- **Response Time** - How quickly agents responded to customers
+- **Topic Classification** - What the conversation was about
+- **Agent Score** - Performance rating for each interaction
+- **Alerts** - Issues detected by Smart Detector
+- **Tags** - Custom categories for better organization
 
-### 3. Using Chat Management Tools
+![Chat Overview](../img/screenshots/callz.png)
 
-The Vela chat screen facilitates efficient navigation and manipulation of your contact centre data.
+### What These Metrics Tell You
+- **Long chats** might indicate complex issues or agent uncertainty
+- **Slow response times** could signal agent overload or knowledge gaps
+- **Low agent scores** suggest coaching opportunities
+- **Frequent alerts** indicate recurring problems to address
+- **Topic patterns** reveal common customer needs
 
-Here's what you can do:
+## Getting Started with Chat Analysis
 
-- **Upload** – Manually upload a single chat log
-- **Sort** – Order entries by any table column (except the Detailed View column) to quickly find specific chat segments
-- **Filter** – Apply specific criteria based on various parameters like duration, response time, issues, date, agent ID, and team to focus your analysis
-- **Export** – Download the entire table as a CSV file for further analysis in your preferred data visualisation or statistical tools
+### Step 1: Access Your Chat Data
+1. **Go to "Chats"** in the left sidebar
+2. **Review the chat log** to see all processed conversations
+3. **Use filters** to focus on specific time periods, agents, or teams
+4. **Sort by different metrics** to identify patterns
 
-## Chat Tags
+### Step 2: Upload New Data
+Add more chat conversations to your analysis:
 
-### Managing Chat Tags
+1. **Click "Upload"** for individual chat files
+2. **Select your chat data** (JSON, CSV, or TXT formats)
+3. **Review the upload summary**
+4. **Click "Upload"** to start processing
 
-1. Click on the Select Tag button.
-2. Choose an existing tag from the dropdown list.
-3. Click Add Tag to apply the selected tag to the chat.
+### Step 3: Organize with Tags
+Create custom categories to group similar chats:
 
-![alt text](../img/screenshots/Chat%20Tags.png)
+1. **Click "Select Tag"** on any chat
+2. **Choose existing tags** or create new ones
+3. **Add descriptive names** like "Technical Support," "Billing," or "Sales"
+4. **Use consistent naming** for better organization
 
-## Creating a New Tag
+![Chat Tagging](../img/screenshots/Chat%20Tags.png)
 
-1. Click on the New Tag button.
+## Deep Dive: Analyzing Individual Chats
 
-2. Enter a tag name in the text field.
+### Accessing Detailed Chat View
+1. **Click on any chat** in the chat log
+2. **Review the comprehensive analysis** including:
+   - Full conversation transcript
+   - Smart Detector insights
+   - Performance metrics
+   - Response time analysis
 
-3. Select a colour for the tag to visually differentiate it from others.
+![Detailed Chat View](../img/screenshots/Chats%20Detailes%20V.png)
 
-4. Click Add Tag to save the new tag.
+### Understanding the Transcript
+The transcript provides rich insights into each conversation:
 
-![alt text](../img/screenshots/New%20Chat%20Tag.png)
+#### Key Features
+- **Full conversation text** - See exactly what was written
+- **Speaker identification** - Agent vs. customer clearly marked
+- **Sentiment analysis** - Emotional tone for each message
+- **Intent detection** - What the speaker was trying to achieve
+- **Language detection** - Automatic language identification
 
-## Detailed Chat View
+#### Using Comments for Collaboration
+- **Add comments** to specific parts of conversations
+- **Tag team members** for their attention
+- **Share insights** and observations
+- **Track follow-up actions** needed
 
-The Vela detailed chat screen provides a comprehensive interface for in-depth analysis of individual customer interactions. It goes beyond a simple chat log by presenting a multi-faceted view of the conversation.
+## Smart Detector Insights for Chats
 
-**This screen integrates several key elements**:
-- **Full Transcript**: A textual representation of the entire conversation.
-- **Smart Detector**: This customisable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorise key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Detector](/docs/smart-detector-overview) section of this documentation.
+### Automated Analysis Features
+Smart Detector provides instant insights for every chat:
 
-![alt text](../img/screenshots/Chats%20Detailes%20V.png)
+#### Chat Summary
+- **Key points** - Main topics and outcomes
+- **Conversation flow** - How the interaction progressed
+- **Resolution status** - Whether issues were resolved
 
-## Transcript
+#### Keyword Analysis
+- **Important phrases** - Frequently mentioned terms
+- **Topic identification** - What customers are asking about
+- **Trend spotting** - Recurring themes across chats
 
-The Vela transcript facilitates deeper analysis and collaboration through several key features:
+#### Alert Detection
+- **Compliance issues** - Regulatory or policy violations
+- **Customer complaints** - Dissatisfaction indicators
+- **Quality problems** - Service delivery issues
+- **Training opportunities** - Areas needing improvement
 
-- **Commenting**: Team members can annotate specific sections of the transcript by leaving comments visible to others. Clicking the comment button allows you to add your annotation and tag relevant team members.
-- **Language Translation**: For non-English chat conversations, the transcript offers translation capabilities. Toggle between the original language and English with a dedicated button, allowing you to understand the conversation regardless of the language used.
-- **Utterance Details**: The vertical menu found in each message bubble in the transcript reveals additional information specific to the message, including:
-  - **Sentiment**: The perceived emotional tone of the speaker.
-  - **Intent**: The inferred underlying goal or purpose of the speaker's statement.
-  - **Confidence**: The level of certainty associated with the model's interpretation of the message, expressed as a percentage for transparency.
-  - **Language**: The specific language used in the message, identified by automatic language detection.
+#### Intent Recognition
+- **Customer goals** - What they wanted to achieve
+- **Service requests** - Specific needs or questions
+- **Escalation indicators** - When customers need more help
 
-## Smart Detector
+#### Sentiment Analysis
+- **Emotional tone** - Positive, neutral, or negative
+- **Satisfaction levels** - Customer happiness indicators
+- **Frustration indicators** - When customers are upset
 
-The **Smart Detector** section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual chat conversations.
+#### Performance Scorecard
+- **Script adherence** - Following required procedures
+- **Resolution effectiveness** - Problem-solving success
+- **Professional standards** - Meeting quality expectations
 
-This automated analysis generates valuable insights, presented right on the screen:
+#### Pain Point Detection
+- **Customer frustrations** - What's causing problems
+- **Service gaps** - Areas needing improvement
+- **Process issues** - Inefficiencies or bottlenecks
 
-- **Summary** – Generates a concise overview of the call’s key points, summarizing the agent’s and customer’s interactions.
-- **Keywords** – Highlights important words and phrases that frequently appear in the conversation, helping to identify recurring topics.
-- **Alerts** – Detects potential issues or flagged moments in the call that may require further review, such as compliance risks, customer complaints, or unresolved concerns.
-- **Intents** – Identifies the customer's purpose in the conversation, such as inquiring about a service, requesting assistance, or escalating an issue.
-- **Sentiment** – Analyses the emotional tone of the conversation, categorising interactions as positive, neutral, or negative.
-- **Scorecard**– Ensures that agents follow a structured approach, checking if they have met the required conversation guidelines.
-- **Pain Points** – Detects potential customer frustrations or issues raised during the chat.
+## Using Chat Analysis for Improvement
 
-## Contact us
+### For Team Managers
+- **Review slow response times** to identify capacity issues
+- **Analyze high-scoring chats** to learn best practices
+- **Track performance trends** over time
+- **Identify training priorities** based on common issues
 
-:::info
-We are here to help! Please [contact us](mailto:support@botlhale.ai) with any questions.
-:::
+### For Quality Assurance
+- **Monitor response quality** and professionalism
+- **Assess service consistency** across all agents
+- **Track customer satisfaction** trends
+- **Identify process improvements** needed
+
+### For Training Teams
+- **Find examples** of good and poor chat performance
+- **Create training materials** based on real scenarios
+- **Track improvement** after training interventions
+- **Identify chat-specific skill gaps**
+
+## Best Practices for Chat Analysis
+
+### Regular Review Routine
+- **Daily check** - Review any alerts or low-scoring chats
+- **Weekly analysis** - Look for patterns and trends
+- **Monthly deep dive** - Comprehensive team performance review
+- **Quarterly planning** - Strategic improvements based on data
+
+### Effective Tagging Strategy
+- **Use consistent naming** - Standardize tag categories
+- **Create meaningful groups** - Tags that drive action
+- **Review and update** - Keep tags relevant and useful
+- **Train your team** - Ensure everyone uses tags consistently
+
+### Collaboration Through Comments
+- **Be specific** - Reference exact messages in chats
+- **Be constructive** - Focus on improvement opportunities
+- **Tag relevant people** - Ensure the right person sees feedback
+- **Follow up** - Check that actions were taken
+
+## Chat-Specific Analysis Tips
+
+### Response Time Optimization
+- **Monitor average response times** by agent and team
+- **Identify peak hours** when response times slow down
+- **Set realistic targets** based on conversation complexity
+- **Provide training** on quick response techniques
+
+### Quality Assessment
+- **Review message tone** and professionalism
+- **Check for grammar and spelling** errors
+- **Evaluate problem-solving** approaches
+- **Assess customer satisfaction** indicators
+
+### Efficiency Improvements
+- **Identify common questions** that could be automated
+- **Spot repetitive issues** that need process changes
+- **Find knowledge gaps** requiring training
+- **Optimize chat workflows** for better efficiency
+
+## Troubleshooting Common Issues
+
+### Missing Chat Data
+**Problem**: Expected chats don't appear in the log
+**Solutions**:
+- Check upload status and processing completion
+- Verify file formats are supported
+- Review upload error logs
+- Contact support for processing issues
+
+### Poor Data Quality
+**Problem**: Chat data is incomplete or inaccurate
+**Solutions**:
+- Check original data format and structure
+- Verify all required fields are present
+- Review data validation rules
+- Consider re-uploading with corrected data
+
+### Inaccurate Analysis
+**Problem**: Smart Detector analysis seems incorrect
+**Solutions**:
+- Verify Smart Detector is properly configured
+- Check that search criteria are appropriate
+- Review alert thresholds and settings
+- Contact support for configuration help
+
+### Response Time Issues
+**Problem**: Response times seem inaccurate
+**Solutions**:
+- Check data timestamps and formatting
+- Verify agent identification is correct
+- Review system clock synchronization
+- Contact support for data validation
+
+## Next Steps
+
+- **[Monitor Performance](./dashboard.md)** - Use chat insights to track team performance
+- **[Improve Agent Performance](./agents.md)** - Apply chat analysis to coaching
+- **[Generate Reports](./reports.md)** - Create reports based on chat data
+- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Chat Analysis Training**: Get help with effective analysis techniques
+- **Smart Detector Setup**: Assistance with automated analysis configuration
 

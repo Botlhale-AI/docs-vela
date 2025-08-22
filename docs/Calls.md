@@ -2,117 +2,228 @@
 sidebar_position: 2
 ---
 
-# Calls
+# Analyze Customer Interactions
 
+Dive deep into your customer conversations to understand what's working, identify issues, and improve your team's performance. This guide shows you how to use call analysis to drive better customer experiences and team development.
 
-The Interactions section is where you'll dive deep into individual customer conversations. It covers both Calls and Chats, giving you access to transcripts, metadata, and valuable insights. Here you can review and evaluate customer conversations, helping your team spot trends, assess quality, and improve the overall customer experience.
+## What You Can Achieve
 
-## Getting Started
+With call analysis, you can:
+- **Identify customer pain points** and address them proactively
+- **Evaluate agent performance** with detailed conversation insights
+- **Spot training opportunities** for your team
+- **Track conversation trends** and patterns over time
+- **Improve customer satisfaction** through data-driven insights
 
-The Calls screen shows you a complete table of all your processed calls, organized in a way that makes it easy to navigate and explore.
+## Understanding Your Call Data
 
-### 1. Accessing the Calls Screen
+### Key Metrics to Monitor
+Your call log shows essential information for every interaction:
 
-![alt text](../img/screenshots/callz.png)
+- **Call Duration** - How long each conversation lasted
+- **Silent Time** - Awkward pauses or processing delays
+- **Topic Classification** - What the conversation was about
+- **Agent Score** - Performance rating for each interaction
+- **Alerts** - Issues detected by Smart Detector
+- **Tags** - Custom categories for better organization
 
-### 2. Understanding the Call Log
+![Call Overview](../img/screenshots/callz.png)
 
-Each entry within the log table includes: 
+### What These Metrics Tell You
+- **Long calls** might indicate complex issues or agent uncertainty
+- **High silent time** could signal agent confusion or system delays
+- **Low agent scores** suggest coaching opportunities
+- **Frequent alerts** indicate recurring problems to address
+- **Topic patterns** reveal common customer needs
 
-- **Call ID** – Unique identifier for each call.
-- **Date** – The exact timestamp when the call occurred.
-- **Agent** – The agent who handled the call.
-- **Handle Time** – The total duration of the call.
-- **Silent Time** – The percentage of time where neither the agent nor the customer spoke.
-- **Topic** – The main subject of the call, automatically categorised based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
-- **Alerts** – The number of detected issues based on Smart Detector analysis.
-- **Agent Score** – The system-generated performance score for the agent.
-- **Team** – The team to which the agent belongs.
-- **Tags** – Custom labels assigned to calls for better categorisation.
+## Getting Started with Call Analysis
 
-### 3. Using Call Management Tools
+### Step 1: Access Your Call Data
+1. **Go to "Calls"** in the left sidebar
+2. **Review the call log** to see all processed interactions
+3. **Use filters** to focus on specific time periods, agents, or teams
+4. **Sort by different metrics** to identify patterns
 
-![alt text](../img/screenshots/Uploadz.png)
+### Step 2: Upload New Data
+Add more calls to your analysis:
 
-The Vela call screen makes it easy to navigate and work with your contact centre data. Here's what you can do:
+1. **Click "Batch Upload"** for multiple files
+2. **Select your call recordings** (we support most audio formats)
+3. **Review the upload summary**
+4. **Click "Upload"** to start processing
 
-- **Batch Upload** – Click the Batch Upload button to upload multiple call logs at once
-- **Upload** – Manually upload a single call log
-- **Sort** – Order entries by any table column (except the Detailed View column) to quickly find specific call segments
-- **Filter** – Apply specific criteria based on various parameters like duration, silent time, issues, date, agent ID, and team to focus your analysis
-- **Export** – Download the entire table as a CSV file for further analysis in your preferred data visualisation or statistical tools 
+![Upload Interface](../img/screenshots/Uploadz.png)
 
-## Call Tags
+### Step 3: Organize with Tags
+Create custom categories to group similar calls:
 
-### Managing Call Tags
+1. **Click "Select Tag"** on any call
+2. **Choose existing tags** or create new ones
+3. **Add descriptive names** like "Complaints," "Sales," or "Training"
+4. **Use consistent naming** for better organization
 
-1. Click on the `Select Tag` button.
+![Call Tagging](../img/screenshots/call-tags.png)
 
-2. Choose an existing `tag` from the dropdown list.
+## Deep Dive: Analyzing Individual Calls
 
-3. Click `Add Tag` to apply the selected tag to the call.
+### Accessing Detailed Call View
+1. **Click on any call** in the call log
+2. **Review the comprehensive analysis** including:
+   - Full conversation transcript
+   - Audio playback controls
+   - Smart Detector insights
+   - Performance metrics
 
-![alt text](../img/screenshots/call-tags.png)
+![Detailed Call View](../img/screenshots/Detailz-V.png)
 
-## Creating a New Tag
+### Understanding the Transcript
+The transcript provides rich insights into each conversation:
 
-1. Click on the `New Tag` button.
+#### Key Features
+- **Full conversation text** - See exactly what was said
+- **Speaker identification** - Agent vs. customer clearly marked
+- **Sentiment analysis** - Emotional tone for each utterance
+- **Intent detection** - What the speaker was trying to achieve
+- **Language detection** - Automatic language identification
 
-2. Enter a `tag` name in the text field.
+#### Using Comments for Collaboration
+- **Add comments** to specific parts of conversations
+- **Tag team members** for their attention
+- **Share insights** and observations
+- **Track follow-up actions** needed
 
-3. Select a colour for the tag to visually differentiate it from others.
+### Audio Playback Analysis
+Listen to the actual conversation for deeper insights:
 
-4. Click `Add Tag` to save the new tag.
+- **Play/pause controls** - Review at your own pace
+- **Speed adjustment** - Listen faster or slower as needed
+- **Download option** - Save for offline review or training
+- **Quality assessment** - Evaluate audio clarity and issues
 
-![alt text](../img/screenshots/Callz-%20Tages.png)
+## Smart Detector Insights
 
-## Detailed Call View 
+### Automated Analysis Features
+Smart Detector provides instant insights for every call:
 
-The Vela detailed call screen provides a comprehensive interface for in-depth analysis of individual customer interactions. It goes beyond a simple call log by presenting a multi-faceted view of the conversation. 
+#### Call Summary
+- **Key points** - Main topics and outcomes
+- **Conversation flow** - How the interaction progressed
+- **Resolution status** - Whether issues were resolved
 
-This screen integrates several key elements: 
-- **Full Transcript**: A textual representation of the entire conversation. 
-- **Audio Playback**: An audio box allowing you to replay the call recording. 
-- **Smart Detector**: This customisable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorise key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the [Smart Detector](/docs/smart-detector-overview) section of this documentation.
+#### Keyword Analysis
+- **Important phrases** - Frequently mentioned terms
+- **Topic identification** - What customers are talking about
+- **Trend spotting** - Recurring themes across calls
 
-![alt text](../img/screenshots/Detailz-V.png)
+#### Alert Detection
+- **Compliance issues** - Regulatory or policy violations
+- **Customer complaints** - Dissatisfaction indicators
+- **Quality problems** - Service delivery issues
+- **Training opportunities** - Areas needing improvement
 
-### Transcript 
+#### Intent Recognition
+- **Customer goals** - What they wanted to achieve
+- **Service requests** - Specific needs or questions
+- **Escalation indicators** - When customers need more help
 
-The Vela transcript facilitates deeper analysis and collaboration through several key features:
+#### Sentiment Analysis
+- **Emotional tone** - Positive, neutral, or negative
+- **Satisfaction levels** - Customer happiness indicators
+- **Stress indicators** - When customers are frustrated
 
-- **Commenting**: Team members can annotate specific sections of the transcript by leaving comments visible to others. Clicking the **comment** button allows you to add your annotation and tag relevant team members.  
-- **Language Translation**: For non-English call recordings, the transcript offers translation capabilities. Toggle between the original language and English with a dedicated button, allowing you to understand the conversation regardless of the spoken language. 
-- **Utterance Details**: The vertical menu found in each speech bubble in the transcript reveals additional information specific to the utterance, including: 
+#### Performance Checklist
+- **Script adherence** - Following required procedures
+- **Resolution effectiveness** - Problem-solving success
+- **Professional standards** - Meeting quality expectations
 
-    - **Sentiment**: The perceived emotional tone of the speaker. 
-    - **Intent**: The inferred underlying goal or purpose of the speaker's statement. 
-    - **Confidence**: The level of certainty associated with the model's interpretation of the utterance, expressed as a percentage for transparency. 
-    - **Language**: The specific language used in the utterance, identified by automatic language detection.
+#### Pain Point Detection
+- **Customer frustrations** - What's causing problems
+- **Service gaps** - Areas needing improvement
+- **Process issues** - Inefficiencies or bottlenecks
 
-### Audio Playback 
+## Using Call Analysis for Improvement
 
-The audio playback section provides convenient controls for reviewing individual customer interactions:
+### For Team Managers
+- **Review low-scoring calls** to identify coaching needs
+- **Analyze high-scoring calls** to learn best practices
+- **Track performance trends** over time
+- **Identify training priorities** based on common issues
 
-- **Play/Pause** – Start or stop playback of the call recording using the designated button
-- **Playback Speed** – Adjust the playback speed of the call recording through the vertical menu next to the volume control
-- **Download** – Download the call recording to your local device by clicking the download button in the vertical menu
+### For Quality Assurance
+- **Monitor compliance** with policies and procedures
+- **Assess service quality** across all interactions
+- **Track customer satisfaction** trends
+- **Identify process improvements** needed
 
-### Smart Detector Analysis
+### For Training Teams
+- **Find examples** of good and poor performance
+- **Create training materials** based on real scenarios
+- **Track improvement** after training interventions
+- **Identify skill gaps** across the team
 
-The **Smart Detector** section uses advanced natural language processing (NLP) and machine learning algorithms to analyse individual calls.
+## Best Practices for Call Analysis
 
-This automated analysis provides valuable insights, presented right on the screen: 
-- **Summary** – Generates a concise overview of the call's key points, summarizing the agent's and customer's interactions.
-- **Keywords** – Highlights important words and phrases that frequently appear in the conversation, helping to identify recurring topics.
-- **Alerts** – Detects potential issues or flagged moments in the call that may require further review, such as compliance risks, customer complaints, or unresolved concerns.
-- **Intents** – Identifies the customer's purpose in the conversation, such as inquiring about a service, requesting assistance, or escalating an issue.
-- **Sentiment** – Analyses the emotional tone of the conversation, categorising interactions as positive, neutral, or negative.
-- **Checklist** – Ensures that agents follow a structured approach, checking if they have met the required conversation guidelines.
-- **Pain Points** – Detects potential customer frustrations or issues raised during the call.
+### Regular Review Routine
+- **Daily check** - Review any alerts or low-scoring calls
+- **Weekly analysis** - Look for patterns and trends
+- **Monthly deep dive** - Comprehensive team performance review
+- **Quarterly planning** - Strategic improvements based on data
 
-## Contact us
+### Effective Tagging Strategy
+- **Use consistent naming** - Standardize tag categories
+- **Create meaningful groups** - Tags that drive action
+- **Review and update** - Keep tags relevant and useful
+- **Train your team** - Ensure everyone uses tags consistently
 
-:::info
-We are here to help! Please [contact us](mailto:support@botlhale.ai) with any questions.
-:::
+### Collaboration Through Comments
+- **Be specific** - Reference exact moments in calls
+- **Be constructive** - Focus on improvement opportunities
+- **Tag relevant people** - Ensure the right person sees feedback
+- **Follow up** - Check that actions were taken
+
+## Troubleshooting Common Issues
+
+### Missing Call Data
+**Problem**: Expected calls don't appear in the log
+**Solutions**:
+- Check upload status and processing completion
+- Verify file formats are supported
+- Review upload error logs
+- Contact support for processing issues
+
+### Poor Audio Quality
+**Problem**: Audio is unclear or difficult to understand
+**Solutions**:
+- Check original recording quality
+- Verify file format and compression
+- Consider re-uploading with better quality
+- Review recording equipment and settings
+
+### Inaccurate Transcripts
+**Problem**: Transcript doesn't match what was said
+**Solutions**:
+- Check audio quality and clarity
+- Verify language detection is correct
+- Review for technical terms or accents
+- Consider manual corrections for important calls
+
+### Smart Detector Issues
+**Problem**: Analysis seems incorrect or missing
+**Solutions**:
+- Verify Smart Detector is properly configured
+- Check that search criteria are appropriate
+- Review alert thresholds and settings
+- Contact support for configuration help
+
+## Next Steps
+
+- **[Monitor Performance](./dashboard.md)** - Use call insights to track team performance
+- **[Improve Agent Performance](./agents.md)** - Apply call analysis to coaching
+- **[Generate Reports](./reports.md)** - Create reports based on call data
+- **[Set Up Smart Monitoring](./smart-detector-overview.md)** - Automate issue detection
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Call Analysis Training**: Get help with effective analysis techniques
+- **Smart Detector Setup**: Assistance with automated analysis configuration

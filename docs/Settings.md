@@ -2,116 +2,249 @@
 sidebar_position: 6
 ---
 
-# Settings
+# Configure Your Vela Experience
 
-The Settings Screen serves as a centralised hub for managing your account settings, preferences, and organisational affiliations within the platform. It allows you to customise your user experience, manage notifications, and access user administration functionalities (for users with appropriate permissions).
+Customize Vela to match your organization's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for optimal performance and user experience.
 
-## Key Functionalities
+## What You Can Achieve
 
-### Account
+With Vela settings, you can:
+- **Customize your profile** and organization information
+- **Manage team access** and permissions effectively
+- **Configure security** and privacy settings
+- **Set up notifications** to stay informed
+- **Monitor usage** and optimize your plan
 
-On this tab, you can:
+## Manage Your Account and Profile
 
-- View and update your general profile information, including:
-  - Name
-  - Email address
-  - Organisation affiliation (primary and additional)
-  - Team assignment (if applicable)
+### Update Your Personal Information
+Keep your profile current for better team collaboration:
 
-![alt text](../img/screenshots/Settings1.png)
+1. **Go to "Settings" → "Account"**
+2. **Update your information**:
+   - Name and email address
+   - Organization affiliations
+   - Team assignments
+   - Contact preferences
+3. **Click "Save"** to apply changes
 
-### Organisations
+![Account Settings](../img/screenshots/Settings1.png)
 
-The Organisations tab allows you to manage your organisational settings and monitor usage. This section includes:
+**Why this matters**: Accurate profile information helps with team communication and ensures you receive the right notifications.
 
-#### Organisation Management
+## Configure Your Organization
 
-- View a list of organisations you belong to
-- Switch between your primary and secondary organisations using the dedicated icon
-- Create new organisations (admin privilege required)
-- Edit existing organisation details (admin privilege required)
+### Manage Organization Settings
+Set up your organization's branding and information:
 
-![alt text](../img/screenshots/This%20Org.png)
+1. **Go to "Settings" → "Organizations"**
+2. **Update organization details**:
+   - Organization name and logo
+   - Description and contact information
+   - Branding preferences
+3. **Configure usage settings** as needed
 
-#### Organisation Info
+![Organization Management](../img/screenshots/This%20Org.png)
 
-Upload and manage your organisation's branding and information:
-- Organisation logo
-- Organisation name
-- Short organisation description/bio
+### Monitor Usage and Limits
+Track your organization's platform usage:
 
-#### Usage Overview
+- **Current usage** - See how much data you've processed
+- **Monthly allocation** - Check your plan limits
+- **Usage trends** - Monitor growth over time
+- **Upgrade options** - Explore plan improvements
 
-Monitor your organisation's platform usage:
-- Organisation status
-- Monthly allocated duration
-- Current usage statistics
-- Usage gauge visualisation
+![Usage Overview](../img/screenshots/My%20Org%200.1.png)
 
-![alt text](../img/screenshots/My%20Org%200.1.png)
+### Set Up Usage Notifications
+Configure alerts to stay within your limits:
 
-#### Usage Notifications
+1. **Set notification thresholds** (50% to 100% of allocation)
+2. **Choose delivery method** (email, platform, or both)
+3. **Configure escalation** for approaching limits
+4. **Set up overage handling** preferences
 
-Configure email alerts for usage monitoring:
-- Set notification thresholds (50%–100% of allocated usage)
-- Receive proactive alerts before reaching limits
+### Configure Data Privacy
+Protect sensitive information with automatic redaction:
 
-#### Exceeding Duration Options
+1. **Select sensitive data types** for redaction:
+   - Email addresses
+   - ID numbers
+   - Phone numbers
+   - Credit card information
+   - Other PII (Personally Identifiable Information)
+2. **Set redaction rules** for different data types
+3. **Test redaction** with sample data
 
-Control what happens when usage limits are reached:
-- **Halt analysis**: Stop processing when limits are reached
-- **Continue analysis**: Keep processing (additional charges may apply)
+![Privacy Settings](../img/screenshots/My%20Org%201.png)
 
-#### Redactable Entities
+## Manage Your Team
 
-Configure data privacy and compliance settings:
-- Select sensitive data types for automatic redaction from transcripts
-- Options include: email addresses, ID numbers, phone numbers, and other PII
+### User Management (Admin Access Required)
+Control who has access to your Vela platform:
 
-![alt text](../img/screenshots/My%20Org%201.png)
+1. **Go to "Settings" → "Users"**
+2. **View all users** in your organization
+3. **Add new users** as needed
+4. **Modify permissions** and roles
+5. **Deactivate users** who no longer need access
 
-#### Save Changes
+![User Management](../img/screenshots/userss.png)
 
-Remember to apply all updates by clicking the "Save" button after making any changes to your organisation settings.
+### Department and Team Organization
+Structure your organization for better management:
 
+1. **Go to "Settings" → "Users - Organization Table"**
+2. **Create departments** to group related teams
+3. **Set up teams** within departments
+4. **Assign users** to appropriate teams
+5. **Configure team hierarchies** and reporting relationships
 
+![Organization Structure](../img/screenshots/Org%20Table-.png)
 
-### Notifications
+### Permission Management
+Set appropriate access levels for different users:
 
-On this tab, you can:
+- **Admin users** - Full access to all features and settings
+- **Manager users** - Access to team data and reports
+- **Agent users** - Limited access to their own data
+- **Viewer users** - Read-only access to specified data
 
-- Set your preferred frequency for receiving notifications within the platform
-- Choose your desired notification delivery channels (platform, email, or both)
+## Configure Notifications
 
-![alt text](../img/screenshots/Notifie.png)
+### Set Up Your Notification Preferences
+Control how and when you receive notifications:
 
-### Security
+1. **Go to "Settings" → "Notifications"**
+2. **Choose delivery method**:
+   - Platform notifications (in-app)
+   - Email notifications
+   - Both for important alerts
+3. **Set frequency preferences**:
+   - Immediate for critical alerts
+   - Daily digest for general updates
+   - Weekly summary for reports
 
-On this tab, you can:
+![Notification Settings](../img/screenshots/Notifie.png)
 
-- Update your account password for enhanced security
+### Customize Alert Types
+Configure which notifications you want to receive:
 
-![alt text](../img/screenshots/Securitys.png)
+- **Performance alerts** - Agent scores and quality issues
+- **System notifications** - Data processing and technical updates
+- **Team communications** - Comments and feedback
+- **Report notifications** - Automated report delivery
 
-### Users (Admin Privileges Required)
+## Security and Access Control
 
-On this tab, you can:
+### Update Your Password
+Maintain strong security for your account:
 
-- View a comprehensive list of users within your organisation(s)
-- Apply filters to refine the displayed user list based on specific criteria
-- Add new users to your organisation(s)
-- Edit existing user information, including roles and permissions
+1. **Go to "Settings" → "Security"**
+2. **Enter your current password**
+3. **Create a new strong password**
+4. **Confirm the new password**
+5. **Click "Update Password"**
 
+![Security Settings](../img/screenshots/Securitys.png)
 
-![alt text](../img/screenshots/userss.png)
+### Best Practices for Security
+- **Use strong passwords** with letters, numbers, and symbols
+- **Change passwords regularly** (every 90 days)
+- **Never share credentials** with others
+- **Log out** when using shared computers
+- **Enable two-factor authentication** if available
 
-## Users - Organisation Table (Admin Privileges Required)
+## Usage Optimization
 
-On this tab, you can:
+### Monitor Your Data Usage
+Track how much data you're processing:
 
-- View existing departments, teams and users respectively
-- Add new departments, teams 
-- Reassign teams
+- **Daily usage** - Monitor current day's activity
+- **Weekly trends** - Spot usage patterns
+- **Monthly summaries** - Plan for future needs
+- **Cost analysis** - Understand your investment
 
-![alt text](../img/screenshots/Org%20Table-.png)
+### Optimize Your Usage
+Make the most of your Vela subscription:
+
+- **Review data quality** - Ensure clean, useful data
+- **Optimize uploads** - Use appropriate file formats
+- **Monitor processing** - Check for errors or issues
+- **Plan for growth** - Scale usage as your team grows
+
+### Handle Usage Limits
+Manage your data allocation effectively:
+
+- **Set up alerts** before reaching limits
+- **Monitor usage** regularly
+- **Plan upgrades** when approaching limits
+- **Optimize processes** to reduce unnecessary usage
+
+## Best Practices for Settings Management
+
+### Regular Maintenance
+- **Review settings monthly** - Ensure everything is current
+- **Update user permissions** - Remove access for departed employees
+- **Check notification preferences** - Adjust based on usage patterns
+- **Monitor usage trends** - Plan for future needs
+
+### Team Communication
+- **Document settings** - Keep records of configurations
+- **Train team members** - Ensure everyone understands settings
+- **Standardize processes** - Create consistent procedures
+- **Review regularly** - Update as team needs change
+
+### Security Awareness
+- **Regular password updates** - Maintain strong security
+- **Permission reviews** - Ensure appropriate access levels
+- **Security training** - Educate team on best practices
+- **Incident response** - Plan for security issues
+
+## Troubleshooting Common Issues
+
+### Access Problems
+**Problem**: Can't access certain features or settings
+**Solutions**:
+- Check your user permissions and role
+- Verify you're logged into the correct organization
+- Contact your administrator for access changes
+- Clear browser cache and cookies
+
+### Notification Issues
+**Problem**: Not receiving expected notifications
+**Solutions**:
+- Check notification settings and preferences
+- Verify email addresses are correct
+- Check spam filters and email settings
+- Test notification system with sample alerts
+
+### Usage Concerns
+**Problem**: Approaching or exceeding usage limits
+**Solutions**:
+- Review current usage and trends
+- Optimize data uploads and processing
+- Consider upgrading your plan
+- Contact support for usage optimization
+
+### Security Issues
+**Problem**: Suspected security breach or unauthorized access
+**Solutions**:
+- Change passwords immediately
+- Review recent account activity
+- Contact support for security assistance
+- Update security settings and permissions
+
+## Next Steps
+
+- **[Monitor Performance](./dashboard.md)** - Use your configured settings to track performance
+- **[Manage Your Team](./agents.md)** - Apply user management settings to agent oversight
+- **[Generate Reports](./reports.md)** - Use organization settings for customized reporting
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
+- **Account Management**: Get help with profile and organization settings
+- **Security Support**: Assistance with security and access control
+- **Usage Optimization**: Help maximizing your Vela investment
 
