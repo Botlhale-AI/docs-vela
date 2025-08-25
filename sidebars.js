@@ -78,13 +78,7 @@ const sidebars = {
       collapsed: true,
       items: ['data-upload'],
     },
-    {
-      type: 'category',
-      label: 'API Reference',
-      collapsible: true,
-      collapsed: true,
-      items: ['api'],
-    }
+
   ],
 };
 

@@ -24,16 +24,15 @@ By uploading your data to Vela, you can:
 ### Option 1: Manual Upload (Recommended for New Users)
 **Best for**: Getting started quickly with existing call files
 
-| **Setup Time** | **Processing Time** | **Best For** |
-|----------------|-------------------|--------------|
-| **5 minutes** | **Within hours** | Individual files, small batches, testing |
-
-**Want to automate this?** Check out [API Integration](./api.md) for automated uploads
-
 #### Step-by-Step Process
+
+![ Upload](../img/screenshots/data_upload/upload.png)
+![ Upload](../img/screenshots/data_upload/upload2.png)
+![ Upload](../img/screenshots/data_upload/upload3.png)
+
 - [ ] **Go to "Calls"** in the left sidebar
-- [ ] **Click "Batch Upload"** button
-- [ ] **Select your call files** - We support most audio formats
+- [ ] **Click "Upload"** button
+- [ ] **Select your call files** - We support mp3,wave & zip formats (bulk upload)
 - [ ] **Click "Upload"** and wait for processing
 
 > 💡 **Why this matters**: You can start analyzing your data immediately without any technical setup.
@@ -41,15 +40,11 @@ By uploading your data to Vela, you can:
 ### Option 2: FTP Integration (For Larger Organizations)
 **Best for**: Organizations with automated call recording systems
 
-| **Setup Time** | **Processing Time** | **Best For** |
-|----------------|-------------------|--------------|
-| **1-2 business days** | **Automatically as calls are recorded** | Large organizations, automated systems |
 
 #### Setup Process
 - [ ] **Contact your Vela Account Manager** to set up FTP integration
 - [ ] **Provide FTP credentials** for your call recording server
 - [ ] **Configure automatic sync** - Data flows automatically
-- [ ] **Monitor upload status** through the Vela dashboard
 
 > 💡 **Why this matters**: Once set up, your data flows automatically without manual intervention.
 
@@ -60,14 +55,13 @@ By uploading your data to Vela, you can:
 ### Call Recordings
 | **Format Type** | **Supported Formats** | **File Size Limit** |
 |-----------------|---------------------|-------------------|
-| **Audio formats** | WAV, MP3, M4A, FLAC | Up to 3 GB per upload |
-| **Video formats** | MP4, AVI (audio will be extracted) | Up to 3 GB per upload |
-| **Batch uploads** | Multiple files at once | No limit on number of files |
+| **Audio formats** | WAV, MP3 | Up to 1 GB per upload |
+| **Batch uploads** | Multiple files at once / zipped files | Up to 3 GB per upload |
 
 ### Chat Data
 | **Format Type** | **Supported Formats** | **Requirements** |
 |-----------------|---------------------|------------------|
-| **Text formats** | JSON, CSV, TXT | Structured data with timestamps |
+| **Text formats** | JSON | Structured data with timestamps |
 | **Structured data** | Agent and customer messages | Sender, timestamp, message content |
 | **Metadata** | Session information | Agent IDs, customer IDs |
 
@@ -80,31 +74,55 @@ By uploading your data to Vela, you can:
 
 ## 🛠️ Getting Started with Manual Upload
 
+Follow these simple steps to upload your call recordings and start analyzing customer interactions in Vela.
+
 ### Step 1: Prepare Your Files
-- [ ] **Organize your call recordings** in a folder
-- [ ] **Ensure files are in supported formats** (WAV, MP3, etc.)
-- [ ] **Check file sizes** (under 3 GB each)
-- [ ] **Optional**: Create a zip file for easier upload
+Before uploading, ensure your files are ready for optimal processing:
+
+- [ ] **Organize your call recordings** in a dedicated folder for easy access
+- [ ] **Verify file formats** - We support WAV, MP3, and ZIP files for bulk uploads
+- [ ] **Check file sizes** - Individual files should be under 1 GB for best performance
+- [ ] **Ensure audio quality** - Clear recordings provide better transcription results
+- [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
+
+> 💡 **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organization later.
 
 ### Step 2: Upload Your Data
-- [ ] **Navigate to "Calls"** in Vela
-- [ ] **Click "Batch Upload"**
-- [ ] **Select your files** or drag and drop
-- [ ] **Review the upload summary**
-- [ ] **Click "Upload"** to start processing
+Upload your files through Vela's interface:
+
+- [ ] **Navigate to "Calls"** in the left sidebar of your Vela dashboard
+- [ ] **Click the "Upload" button** in the top-right corner of the Calls page
+- [ ] **Choose your upload method**:
+  - **Single file**: Click "Choose File" and select individual recordings
+  - **Multiple files**: Use "Batch Upload" to select multiple files at once
+  - **Drag & Drop**: Simply drag files from your computer directly into the upload area
+- [ ] **Review the upload summary** showing file names, sizes, and formats
+- [ ] **Click "Upload"** to begin the upload process
+
+> 🎯 **What happens next**: Your files will be securely uploaded and queued for processing.
 
 ### Step 3: Monitor Processing
-- [ ] **Check upload status** in the Calls section
-- [ ] **Wait for processing** (typically 1-2 hours)
-- [ ] **Review results** once processing is complete
-- [ ] **Start analyzing** your data in the dashboard
+Track the progress of your uploads and processing:
+
+- [ ] **Watch the upload progress** - Real-time progress bars show upload status
+- [ ] **Check processing status** in the Calls section - Files will show "Processing" status
+- [ ] **Start analyzing** - Click on processed calls to view transcripts, insights, and analytics
+
+> ⏱️ **Processing times**: Small files (< 10 MB) process in 15-30 minutes, larger files may take 1-2 hours.
+
+### Step 4: Verify and Optimize
+Ensure your data is ready for analysis:
+
+- [ ] **Review transcriptions** for accuracy and completeness
+- [ ] **Check metadata** - Agent information, timestamps, and call details
+- [ ] **Explore insights** - View sentiment analysis, key topics, and performance metrics
+- [ ] **Set up notifications** - Configure alerts for new uploads and processing completion
 
 ---
 
 ## 🔧 Setting Up Automated Uploads
 
 ### For Organizations with Existing Systems
-If you have an existing call recording system, we can integrate directly:
 
 | **Step** | **Action** | **Details** |
 |----------|------------|-------------|
@@ -120,7 +138,7 @@ If you have an existing call recording system, we can integrate directly:
 | **FTP/SFTP servers** | Direct file transfer | Medium |
 | **Cloud storage** | AWS S3, Google Cloud, Azure | Low |
 | **API integration** | Custom data feeds | High |
-| **Database connections** | Direct database access | High |
+
 
 ---
 
@@ -211,21 +229,7 @@ print(response.json())
 
 ---
 
-## 🔍 Monitoring Your Data
 
-### Check Upload Status
-- [ ] **Go to "Calls"** or "Chats" section
-- [ ] **Look for processing indicators** (spinning icons, progress bars)
-- [ ] **Check the status column** for each file
-- [ ] **Review any error messages** if uploads fail
-
-### Understanding Status Messages
-| **Status** | **What It Means** | **Action** |
-|------------|-------------------|------------|
-| **Uploading** | File is being transferred | Wait for completion |
-| **Processing** | Analysis is in progress | Wait for completion |
-| **Complete** | Ready for analysis | Start using the data |
-| **Failed** | Upload or processing failed | Check error details and retry |
 
 ### Troubleshooting Upload Issues
 | **Problem** | **Common Cause** | **Solution** |
@@ -254,9 +258,9 @@ print(response.json())
 
 ## 🔗 Next Steps
 
-| **For Data Monitoring** | **For Automation** | **For Analysis** |
-|------------------------|-------------------|------------------|
-| [📊 Monitor Performance](./dashboard.md) | [🔧 API Integration](./api.md) | [📞 Analyze Calls](./calls.md) |
+| **For Data Monitoring** | **For Analysis** |
+|------------------------|------------------|
+| [📊 Monitor Performance](./dashboard.md) | [📞 Analyze Calls](./calls.md) |
 
 ## 🆘 Need Help?
 

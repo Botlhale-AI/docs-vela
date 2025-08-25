@@ -198,9 +198,9 @@ Structure your organization for better management:
 
 ## 🔗 Next Steps
 
-| **For Notifications** | **For Smart Monitoring** | **For Integration** |
-|----------------------|-------------------------|-------------------|
-| [🔔 Configure Notifications](./notifications.md) | [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [🔧 API Integration](./api.md) |
+| **For Notifications** | **For Smart Monitoring** |
+|----------------------|-------------------------|
+| [🔔 Configure Notifications](./notifications.md) | [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) |
 
 ## 🆘 Need Help?
 

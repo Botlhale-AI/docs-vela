@@ -484,16 +484,16 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
   background-color: var(--bg-color) !important;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .col--4 {
-  flex: 1 1 calc(33.333% - 2rem);
-  max-width: calc(33.333% - 2rem);
   background-color: var(--bg-color) !important;
 }
 

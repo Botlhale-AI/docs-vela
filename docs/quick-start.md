@@ -91,7 +91,7 @@ You've just unlocked the superpowers that will make your call center unstoppable
 | **For Daily Operations** | **For Team Management** | **For Advanced Users** |
 |--------------------------|-------------------------|------------------------|
 | [📊 Monitor daily](./dashboard.md) | [👥 Train agents](./agents.md) | [🔍 Set up Smart Monitoring](./smart-detector-overview.md) |
-| [🔔 Review alerts](./notifications.md) | [📈 Generate reports](./reports.md) | [🔧 API Integration](./api.md) |
+| [🔔 Review alerts](./notifications.md) | [📈 Generate reports](./reports.md) |
 
 > 💡 **Need help finding the right guide?** Check out our [Navigation Guide](./navigation-guide.md) to find documentation based on your role and goals.
 

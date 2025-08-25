@@ -21,7 +21,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 1. **[Data Upload](./data-upload.md)** - Get your data into Vela
 2. **[Settings](./settings.md)** - Configure your organization
 3. **[Dashboard](./dashboard.md)** - Monitor data processing
-4. **[API Integration](./api.md)** - Automate data flow (optional)
+
 
 ### 📊 **Performance Monitoring Workflow**
 1. **[Dashboard](./dashboard.md)** - Set up your monitoring view
@@ -36,11 +36,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 4. **[Call Analysis](./calls.md)** - Review specific interactions
 5. **[Knowledge Base](./knowledge-base-guide.md)** - Provide agent resources
 
-### 🔧 **Integration Workflow**
-1. **[API Guide](./api.md)** - Understand integration options
-2. **[Authentication](./api.md#authentication)** - Set up API access
-3. **[Data Upload](./data-upload.md)** - Configure automated uploads
-4. **[Webhooks](./api.md#real-time-event-processing)** - Set up real-time notifications
+
 
 ---
 
@@ -64,7 +60,6 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Notifications](./notifications.md)** - Alert management
 
 ### 🔧 **Technical Features**
-- **[API Integration](./api.md)** - System integration and automation
 - **[Data Upload](./data-upload.md)** - Data management and processing
 - **[Settings](./settings.md)** - User and organization management
 
@@ -100,7 +95,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 | **Monitor my team** | [Dashboard Guide](./dashboard.md) |
 | **Coach my agents** | [Agent Performance](./agents.md) |
 | **Generate reports** | [Reports Guide](./reports.md) |
-| **Set up automation** | [API Guide](./api.md) |
+
 | **Configure alerts** | [Notifications Guide](./notifications.md) |
 | **Analyze calls** | [Call Analysis](./calls.md) |
 | **Set up quality monitoring** | [Smart Detector](./smart-detector-overview.md) |

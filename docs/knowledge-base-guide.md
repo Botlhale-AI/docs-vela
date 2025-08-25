@@ -21,6 +21,9 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 ## 🚀 Getting Started with Knowledge Base
 
 ### Step 1: Access Knowledge Base
+
+![ Knowledge Base](../img/screenshots/smart_search/smart9.png)
+
 - [ ] **Go to "Smart Detector" → "Knowledge Base"**
 - [ ] **Click "Create"** to start building your knowledge base
 - [ ] **Choose your content focus** based on your team's needs
@@ -30,12 +33,6 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 - [ ] **Organize with tags** and categories
 - [ ] **Set access permissions** for different teams
 - [ ] **Configure search settings** for optimal discovery
-
-### Step 3: Enable Agent Access
-- [ ] **Train agents** on how to use the knowledge base
-- [ ] **Set up quick access** during calls and chats
-- [ ] **Monitor usage** and effectiveness
-- [ ] **Gather feedback** for continuous improvement
 
 ---
 
@@ -166,26 +163,6 @@ Enable agents to access information during calls:
 - [ ] **Use multiple search terms** to find relevant information
 - [ ] **Bookmark frequently used content** for quick access
 - [ ] **Provide feedback** on content usefulness and accuracy
-
----
-
-## 📈 Measuring Knowledge Base Success
-
-### Key Performance Indicators
-Track the effectiveness of your knowledge base:
-
-| **KPI** | **Target** | **Measurement** |
-|---------|------------|-----------------|
-| **Usage Rate** | 80%+ of agents use daily | Track logins and searches |
-| **Search Success** | 90%+ find what they need | Monitor search results and feedback |
-| **Content Accuracy** | 95%+ accurate information | Regular content reviews and validation |
-| **Agent Satisfaction** | 85%+ positive feedback | Surveys and feedback collection |
-
-### Impact on Business Metrics
-- [ ] **Reduced training time** - New agents get up to speed faster
-- [ ] **Improved accuracy** - Consistent information delivery
-- [ ] **Faster resolution** - Quick access to solutions
-- [ ] **Higher satisfaction** - Better informed agents provide better service
 
 ---
 

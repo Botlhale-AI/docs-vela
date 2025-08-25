@@ -70,8 +70,14 @@ Build a smart, searchable repository of company information:
 ## 🚀 Getting Started with Smart Search
 
 ### Step 1: Create Your First Search
+![ Smart Search](../img/screenshots/smart_search/smart1.png)
+
+![ Smart Search](../img/screenshots/smart_search/smart2.png)
+
+![ Smart Search](../img/screenshots/smart_search/smart3.png)
+
 1. **Go to "Smart Detector" → "Smart Search"**
-2. **Click "Create"** to start a new search
+2. **Click "New Smart Search"** to start a new search
 3. **Name your search** (e.g., "Customer Complaints")
 4. **Add example phrases** that indicate the issue:
    - "I'm not happy with this service"
@@ -82,20 +88,29 @@ Build a smart, searchable repository of company information:
 6. **Click "Create"** to start monitoring
 
 ### Step 2: Monitor Results
-- [ ] **Review matches** in the Smart Search results
-- [ ] **Investigate flagged calls** to understand the context
-- [ ] **Take action** based on the insights
-- [ ] **Refine your search** based on what you learn
+![ Smart Search](../img/screenshots/smart_search/smart6.png)
+![ Smart Search](../img/screenshots/smart_search/smart4.png)
+1. **Go to "Smart Detector" → "Smart Search"**
+2. **Click "View"**
+   - [ ] **Review matches** in the Smart Search results
+   - [ ] **Investigate flagged calls** to understand the context
+   - [ ] **Take action** based on the insights
+   - [ ] **Refine your search** based on what you learn
 
 ---
 
 ## 📊 Setting Up Agent Scorecards
 
 ### Step 1: Define Evaluation Criteria
+
+![ Smart Search](../img/screenshots/smart_search/smart5.png)
+![ Smart Search](../img/screenshots/smart_search/smart7.png)
+![ Smart Search](../img/screenshots/smart_search/smart8.png)
 1. **Go to "Smart Detector" → "Agent Scorecard"**
-2. **Create evaluation checklists** for different scenarios
-3. **Set performance standards** for each criterion
-4. **Define scoring weights** based on importance
+2. **Click "Create"** tab
+3. **Create evaluation checklists** for different scenarios
+4. **Set performance standards** for each criterion
+5. **Define scoring weights** based on importance
 
 ### Step 2: Monitor Performance
 - [ ] **Review automated scores** for each agent
@@ -107,6 +122,8 @@ Build a smart, searchable repository of company information:
 
 ## 📚 Building Your Knowledge Base
 
+![ Knowledge Base](../img/screenshots/smart_search/smart9.png)
+
 ### Step 1: Upload Company Documents
 1. **Go to "Smart Detector" → "Knowledge Base"**
 2. **Upload important documents**:
@@ -116,12 +133,6 @@ Build a smart, searchable repository of company information:
    - Compliance guidelines
 3. **Organize content** with tags and categories
 4. **Set access permissions** for different teams
-
-### Step 2: Enable Agent Access
-- [ ] **Train agents** on how to use the knowledge base
-- [ ] **Integrate with call workflows** for easy access
-- [ ] **Monitor usage** to identify knowledge gaps
-- [ ] **Update content** based on common questions
 
 ---
 

@@ -56,7 +56,7 @@ const FeatureList = [
   {
     title: 'Data Management',
     link: '/docs/data-upload',
-    description: 'Learn how to upload call recordings.',
+    description: 'Learn how to upload call and chat recordings.',
     icon: 'fas fa-upload',
   }
 ];

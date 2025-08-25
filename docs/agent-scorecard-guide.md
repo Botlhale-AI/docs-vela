@@ -21,11 +21,15 @@ Agent scorecards transform subjective evaluations into objective insights. Here'
 ## 🚀 Getting Started with Agent Scorecards
 
 ### Step 1: Access Scorecard Builder
+![ Smart Search](../img/screenshots/smart_search/smart5.png)
+
 - [ ] **Go to "Smart Detector" → "Agent Scorecard"**
 - [ ] **Click "Create"** to build your first scorecard
 - [ ] **Choose your evaluation focus** based on your team's needs
 
 ### Step 2: Define Evaluation Criteria
+![ Smart Search](../img/screenshots/smart_search/smart7.png)
+![ Smart Search](../img/screenshots/smart_search/smart8.png)
 - [ ] **Select evaluation categories** (communication, problem-solving, etc.)
 - [ ] **Set scoring weights** for each category
 - [ ] **Define performance standards** and expectations

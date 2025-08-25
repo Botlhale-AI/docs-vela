@@ -20,18 +20,26 @@ Smart Search is your automated monitoring system. Here's what you'll accomplish:
 
 ## 🚀 Getting Started with Smart Search
 
+![ Smart Search](../img/screenshots/smart_search/smart5.png)
+
+
 ### Step 1: Access Smart Search
 - [ ] **Go to "Smart Detector" → "Smart Search"**
 - [ ] **Click "Create"** to start building your first search
 - [ ] **Choose your search type** based on your monitoring goals
 
 ### Step 2: Define Your Search Criteria
+
+![ Smart Search](../img/screenshots/smart_search/smart7.png)
+![ Smart Search](../img/screenshots/smart_search/smart8.png)
 - [ ] **Name your search** (e.g., "Customer Complaints")
 - [ ] **Add example phrases** that indicate the issue
 - [ ] **Set the scope** (organization, department, or team)
 - [ ] **Configure notification preferences**
 
 ### Step 3: Test and Refine
+
+![ Smart Search](../img/screenshots/smart_search/smart4.png)
 - [ ] **Review initial results** to ensure accuracy
 - [ ] **Adjust search criteria** based on findings
 - [ ] **Fine-tune sensitivity** to reduce false positives
