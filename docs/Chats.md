@@ -44,23 +44,29 @@ Chat analysis provides unique insights into digital customer service:
 ## 🔍 How to Analyze Chat Conversations
 
 ### Step 1: Access Chat Data
+
+![Chats](../img/screenshots/chats/chats-1.png)
+
 - [ ] **Go to "Chats"** in the left sidebar
 - [ ] **Click on any conversation** to view detailed analysis
 - [ ] **Review the conversation flow** and timing
 
 ### Step 2: Review Conversation Flow
+![Chats](../img/screenshots/chats/chats-2.png)
 - [ ] **Read the full conversation** with timestamps
 - [ ] **Analyze response patterns** and timing
 - [ ] **Identify customer journey** and pain points
 - [ ] **Note successful resolution strategies**
 
 ### Step 3: Analyze Digital Metrics
+![Chats](../img/screenshots/chats/chats-3.png)
 - [ ] **Check response times** throughout the conversation
 - [ ] **Review message count** and complexity
 - [ ] **Assess customer sentiment** in digital context
 - [ ] **Evaluate resolution effectiveness**
 
 ### Step 4: Take Digital Action
+![Chats](../img/screenshots/chats/chats-4.png)
 - [ ] **Add comments** for team learning
 - [ ] **Update chat templates** based on insights
 - [ ] **Optimize response processes** for efficiency

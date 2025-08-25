@@ -45,16 +45,19 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 2. **Click "Create"** tab
 3. **Choose your report type** based on your goal
 
-![Create Report - Screenshot showing the report creation interface with data selection and customization options](../img/screenshots/Create%20Rep.png)
+![Create Report](../img/screenshots/reports/reports.png)
 
 ### Step 2: Select Your Data
+
+![Date range Report](../img/screenshots/reports/reports2.png)
+![Date range Report](../img/screenshots/reports/reports3.png)
 - [ ] **Choose date range** - Select the period you want to analyze
 - [ ] **Select teams/departments** - Focus on specific groups
 - [ ] **Pick metrics** - Choose the data points that matter most
 - [ ] **Set filters** - Narrow down to specific call types or agents
 
 ### Step 3: Customize Your Report
-- [ ] **Add your company branding** (if available)
+
 - [ ] **Include executive summary** - Key findings and recommendations
 - [ ] **Add visualizations** - Charts and graphs for better understanding
 - [ ] **Set up recurring reports** - Automate regular reporting

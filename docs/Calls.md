@@ -44,23 +44,32 @@ Your call analysis provides comprehensive insights into every interaction:
 ## 🔍 How to Analyze Individual Calls
 
 ### Step 1: Access Call Details
+
+![Calls](../img/screenshots/calls/calls-1.png)
+
 - [ ] **Go to "Calls"** in the left sidebar
 - [ ] **Click on any call** to view detailed analysis
 - [ ] **Review the comprehensive breakdown** of the interaction
 
 ### Step 2: Review Call Transcript
+
+![Calls](../img/screenshots/calls/calls-2.png)
 - [ ] **Read the full conversation** with timestamps
 - [ ] **Look for key moments** that affected the outcome
 - [ ] **Identify customer pain points** and agent responses
 - [ ] **Note successful resolution strategies**
 
 ### Step 3: Analyze Performance Metrics
+
+![Calls](../img/screenshots/calls/calls-3.png)
 - [ ] **Review agent score** and breakdown
 - [ ] **Check customer sentiment** throughout the call
 - [ ] **Examine call duration** and efficiency
 - [ ] **Assess resolution effectiveness**
 
 ### Step 4: Take Action
+
+![Calls](../img/screenshots/calls/calls-4.png)
 - [ ] **Add comments** for coaching purposes
 - [ ] **Share insights** with the team
 - [ ] **Update training materials** based on learnings

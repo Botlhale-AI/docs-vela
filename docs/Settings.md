@@ -30,7 +30,7 @@ Keep your profile current for better team collaboration:
   - [ ] Contact preferences
 - [ ] **Click "Save"** to apply your settings
 
-![Account Settings - Screenshot showing the account settings page with profile information and preferences](../img/screenshots/Settings1.png)
+![Account Settings](../img/screenshots/settings/settings.png)
 
 > 💡 **Why this matters**: Accurate profile information helps with team communication and ensures you receive the right notifications.
 
@@ -41,6 +41,8 @@ Keep your profile current for better team collaboration:
 ### Manage Organization Settings
 Set up your organization's branding and information:
 
+![Account Settings](../img/screenshots/settings/settings2.png)
+
 - [ ] **Go to "Settings" → "Organizations"**
 - [ ] **Update organization details**:
   - [ ] Organization name and logo
@@ -48,7 +50,7 @@ Set up your organization's branding and information:
   - [ ] Branding preferences
 - [ ] **Configure usage settings** as needed
 
-![Organization Management - Screenshot showing the organization settings page with company details and branding options](../img/screenshots/This%20Org.png)
+![Organization Management](../img/screenshots/settings/settings4.png)
 
 ### Monitor Usage and Limits
 Track your organization's platform usage:
@@ -60,11 +62,10 @@ Track your organization's platform usage:
 | **Usage trends** | Growth over time | Optimize usage patterns |
 | **Upgrade options** | Available plan improvements | Consider scaling up |
 
-![Usage Overview - Screenshot showing the usage monitoring dashboard with current usage, monthly allocation, and upgrade options](../img/screenshots/My%20Org%200.1.png)
+![Account Settings](../img/screenshots/settings/settings3.png)
 
 ### Set Up Usage Notifications
 Configure alerts to stay within your limits:
-
 - [ ] **Set notification thresholds** (50% to 100% of allocation)
 - [ ] **Choose delivery method** (email, platform, or both)
 - [ ] **Configure escalation** for approaching limits
@@ -82,7 +83,7 @@ Protect sensitive information with automatic redaction:
 - [ ] **Set redaction rules** for different data types
 - [ ] **Test redaction** with sample data
 
-![Privacy Settings - Screenshot showing the data privacy configuration page with redaction settings and PII protection options](../img/screenshots/My%20Org%201.png)
+![Privacy Settings](../img/screenshots/settings/settings5.png)
 
 ---
 
@@ -90,6 +91,7 @@ Protect sensitive information with automatic redaction:
 
 ### User Management (Admin Access Required)
 Control who has access to your Vela platform:
+![ Settings](../img/screenshots/settings/settings6.png)
 
 - [ ] **Go to "Settings" → "Users"**
 - [ ] **View all users** in your organization
@@ -97,11 +99,11 @@ Control who has access to your Vela platform:
 - [ ] **Modify permissions** and roles
 - [ ] **Deactivate users** who no longer need access
 
-![User Management - Screenshot showing the user management interface with user list, permissions, and team assignments](../img/screenshots/userss.png)
+
 
 ### Department and Team Organization
 Structure your organization for better management:
-
+![ Settings](../img/screenshots/settings/settings7.png)
 - [ ] **Go to "Settings" → "Users - Organization Table"**
 - [ ] **Create departments** to group related teams
 - [ ] **Set up teams** within departments
@@ -120,22 +122,11 @@ Structure your organization for better management:
 ## 🔒 Security and Access Control
 
 ### Password and Authentication
+![ Settings](../img/screenshots/settings/settings8.png)
 - [ ] **Set strong password requirements** for your organization
 - [ ] **Enable two-factor authentication** for enhanced security
 - [ ] **Configure session timeouts** for automatic logout
 - [ ] **Set up password reset** procedures
-
-### API Access Management
-- [ ] **Generate API keys** for system integrations
-- [ ] **Set API rate limits** to prevent abuse
-- [ ] **Monitor API usage** for security
-- [ ] **Rotate API keys** regularly
-
-### Data Access Controls
-- [ ] **Set up role-based access** to different features
-- [ ] **Configure data visibility** by team or department
-- [ ] **Enable audit logging** for security monitoring
-- [ ] **Set up data retention** policies
 
 ---
 
@@ -153,11 +144,6 @@ Structure your organization for better management:
 - [ ] **Set notification priorities** for different alert types
 - [ ] **Customize notification display** preferences
 
-### Alert Thresholds
-- [ ] **Set performance alert thresholds** for agent scores
-- [ ] **Configure quality alert triggers** for call issues
-- [ ] **Set up usage alerts** for data limits
-- [ ] **Define escalation procedures** for critical issues
 
 ---
 
@@ -184,12 +170,6 @@ Structure your organization for better management:
 ---
 
 ## 🔧 Advanced Configuration
-
-### Integration Settings
-- [ ] **Configure webhook endpoints** for external integrations
-- [ ] **Set up API authentication** for third-party tools
-- [ ] **Configure data export** settings
-- [ ] **Set up backup integrations** for data safety
 
 ### Custom Branding
 - [ ] **Upload company logo** for reports and dashboards

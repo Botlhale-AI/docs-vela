@@ -65,6 +65,7 @@ Receive automated summaries of your team's performance:
 ![Notifications Overview - Screenshot showing the notifications interface with alerts, comments, and reports tabs](../img/screenshots/notifications-alerts.png)
 
 ### Step 2: Configure Your Preferences
+![Agent Performance](../img/screenshots/notifications/notifications.png)
 - [ ] **Go to "Settings" → "Notifications"**
 - [ ] **Choose your delivery method**:
   - [ ] Platform notifications (in-app)

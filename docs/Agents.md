@@ -32,7 +32,7 @@ Your agent performance table shows essential information:
 | **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
 | **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
-![Agent Performance Overview - Screenshot showing the agent performance table with scores, strengths, weaknesses, and ranking metrics](../img/screenshots/agents-p.png)
+![Agent Performance](../img/screenshots/performance/performance-1.png)
 
 ---
 
@@ -146,6 +146,8 @@ Look for patterns that affect multiple agents:
 
 ## 👥 Agent Management Tools
 
+![Agent Performance](../img/screenshots/performance/performance-2.png)
+
 ### Adding New Agents
 1. **Click "+ Add Agent"** in the top right
 2. **Enter agent information**:
@@ -155,6 +157,9 @@ Look for patterns that affect multiple agents:
 3. **Click "Save"** to add them to your system
 
 ### Reassigning Agents
+
+![Agent Performance](../img/screenshots/performance/performance-3.png)
+![Agent Performance](../img/screenshots/performance/performance-4.png)
 1. **Select the agent** you want to reassign
 2. **Click "Reassign"** button
 3. **Choose new department/team**
@@ -164,7 +169,6 @@ Look for patterns that affect multiple agents:
 - [ ] **Activate/deactivate** agents as needed
 - [ ] **Update contact information**
 - [ ] **Modify team assignments**
-- [ ] **Track voice ID status** for security
 
 ---
 
