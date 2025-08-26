@@ -180,7 +180,9 @@ body {
 }
 
 .videosSection {
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
+  margin-top: 4rem;
+  padding-top: 2rem;
 }
 
 .row {
@@ -316,8 +318,15 @@ body {
   margin-right: auto;
 }
 
-.getStarted {
+.heroButtons {
+  display: flex;
+  gap: 1rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.getStarted {
   padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -331,12 +340,35 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 300px; /* Set a max width */
+  min-width: 200px;
+}
+
+.quickStart {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color) !important;
+  background-color: var(--primary-color) !important;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover Effect */
 .getStarted:hover {
+  background: #e54c1a;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.quickStart:hover {
   background: #e54c1a;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);

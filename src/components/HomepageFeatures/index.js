@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from '../../css/custom.module.css';
 import logo from '/static/img/VELA.png';
@@ -150,8 +151,13 @@ export default function HomepageFeatures() {
               <b>Call Centre Analytics Tool</b>: Monitor 100% of your calls regardless of the languages spoken.
               <br />
             </p>
-            <div className={styles.getStarted} onClick={scrollToFeatures}>
-              Get Started
+            <div className={styles.heroButtons}>
+              <div className={styles.getStarted} onClick={scrollToFeatures}>
+              Browse Documentation
+              </div>
+              <Link to="/docs/quick-start" className={styles.quickStart}>
+                Getting Started
+              </Link>
             </div>
           </div>
           <div className={styles.heroImageContainer}>
