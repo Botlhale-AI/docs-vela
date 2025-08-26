@@ -20,7 +20,7 @@ We've launched a complete coaching portal for agents that includes:
 - **Notifications**: Instant notifications for courses, awards, and warnings
 
 
-### Knowledge Base
+<!-- ### Knowledge Base
 We've added the ability to upload your knowledge base and a well-defined description for your documents into the system. This feature is available as an add-on and will allow Vela to analyse calls more effectively and assess agent performance based on your specific business context.
 
 ### Scorecard (Checklist) Results
@@ -39,11 +39,11 @@ Chats are now available in Vela! The Calls page has been moved into the new Inte
 The chats API allows clients to send their chat text data to Botlhale for processing on Vela. The call API allows clients to send their call voice data to Botlhale for processing on Vela.
 
 ### Interactions Metadata
-Include rich interaction metadata when sending and loading your interactions to Vela (manually via the platform's Upload functionality, or automatically via APIs).
+Include rich interaction metadata when sending and loading your interactions to Vela (manually via the platform's Upload functionality, or automatically via APIs). -->
 
 ## Improvements
 
-### Redaction
+<!-- ### Redaction
 We've improved the quality of the redaction model.
 
 ### User Segmentation
@@ -59,7 +59,7 @@ This improvement allows users to distinguish between smart search terms (topics,
 We've enhanced the accuracy of our multilingual ASR (transcription) models, resulting in greater precision and more dependable insights.
 
 ### Checklists are Scorecards
-We've renamed Agent Checklists to Agent Scorecards to better reflect their purpose. This new name more accurately represents their role in evaluating agent performance, making it clearer and more intuitive for users.
+We've renamed Agent Checklists to Agent Scorecards to better reflect their purpose. This new name more accurately represents their role in evaluating agent performance, making it clearer and more intuitive for users. -->
 
 ### UI/UX Improvements
 - **Redesigned Modals**: Updated modal components for better user experience
