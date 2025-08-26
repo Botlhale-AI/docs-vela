@@ -32,7 +32,7 @@ By uploading your data to Vela, you can:
 
 - [ ] **Go to "Calls"** in the left sidebar
 - [ ] **Click "Upload"** button
-- [ ] **Select your call files** - We support mp3,wave & zip formats (bulk upload)
+- [ ] **Select your call files** - We support WAV, MP3, video formats, and ZIP/RAR/7Z archives for bulk upload
 - [ ] **Click "Upload"** and wait for processing
 
 > **Why this matters**: You can start analysing your data immediately without any technical setup.
@@ -55,8 +55,9 @@ By uploading your data to Vela, you can:
 ### Call Recordings
 | **Format Type** | **Supported Formats** | **File Size Limit** |
 |-----------------|---------------------|-------------------|
-| **Audio formats** | WAV, MP3 | Up to 1 GB per upload |
-| **Batch uploads** | Multiple files at once / zipped files | Up to 3 GB per upload |
+| **Audio formats** | WAV, MP3, and other standard call recording formats | Up to 1 GB per upload |
+| **Video formats** | Various video formats with audio extraction | Up to 1 GB per upload |
+| **Batch uploads** | Multiple files at once / zipped files (ZIP, RAR, 7Z) | Up to 3 GB per upload |
 
 ### Chat Data
 | **Format Type** | **Supported Formats** | **Requirements** |
@@ -80,7 +81,7 @@ Follow these simple steps to upload your call recordings and start analysing cus
 Before uploading, ensure your files are ready for optimal processing:
 
 - [ ] **Organise your call recordings** in a dedicated folder for easy access
-- [ ] **Verify file formats** - We support WAV, MP3, and ZIP files for bulk uploads
+- [ ] **Verify file formats** - We support WAV, MP3, video formats, and ZIP/RAR/7Z archives for bulk uploads
 - [ ] **Check file sizes** - Ensure files are within your system's upload limits
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
 - [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload

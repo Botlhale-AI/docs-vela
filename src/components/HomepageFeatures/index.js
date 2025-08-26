@@ -59,6 +59,12 @@ const FeatureList = [
     link: '/docs/data-upload',
     description: 'Upload call and chat recordings to start analyzing your data.',
     icon: 'fas fa-upload',
+  },
+  {
+    title: 'FAQ',
+    link: '/docs/faq',
+    description: 'Find quick answers to common questions about Vela.',
+    icon: 'fas fa-question-circle',
   }
 ];
 

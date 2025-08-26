@@ -74,19 +74,21 @@ APIs enable seamless integration between systems. Here's what you'll unlock:
 ### Base URL
 All API endpoints use this base URL:
 ```bash
-https://api.botlhale.xyz/v1
+https://your-vela-domain.com/api
 ```
+
+> **Note**: Replace `your-vela-domain.com` with your actual Vela platform domain.
 
 ### Authentication
-Include your API token in all requests:
+Vela uses NextAuth.js for authentication. Include your session token in all requests:
 ```bash
-Authorization: Bearer YOUR_API_TOKEN_HERE
+Authorization: Bearer YOUR_SESSION_TOKEN_HERE
 ```
 
+> **Note**: Session tokens are obtained through the standard login process and managed by NextAuth.js.
+
 ### Rate Limits
-- **Standard Plan**: 100 requests per minute
-- **Professional Plan**: 500 requests per minute
-- **Enterprise Plan**: 1000 requests per minute
+Rate limits are configured based on your organisation's package and usage patterns. Contact your Account Manager for specific rate limit information.
 
 ---
 
@@ -94,7 +96,7 @@ Authorization: Bearer YOUR_API_TOKEN_HERE
 
 ### Upload Call Recordings
 ```bash
-POST /asr/async/upload/vela
+POST /interactions/calls
 ```
 
 **Required Parameters**:

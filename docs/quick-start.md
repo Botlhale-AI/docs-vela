@@ -29,20 +29,25 @@ Before we dive into the setup, let's quickly familiarise you with the Vela platf
 ### **Left Sidebar Navigation**
 The left sidebar is your main navigation hub in Vela. You can collapse it to maximise your workspace. Here's what you'll find:
 
-- **Dashboard** - Your main monitoring view with customisable metrics
+- **[Dashboard](./dashboard.md)** - Your main monitoring view with customisable metrics
 - **Interactions**
-  - **Calls** - Upload and analyse call recordings
-  - **Chats** - Review chat conversations and interactions
+  - **[Calls](./data-upload.md)** - Upload and analyse call recordings
+  - **[Chats](./chats.md)** - Review chat conversations and interactions
 - **Smart Detector**
-  - **Smart Search** - Set up automated monitoring and alerts
-  - **Knowledge Base** - Build and manage agent resources
-  - **Agent Scorecard** - Create performance evaluation criteria
+  - **[Smart Search](./smart-search-guide.md)** - AI-powered search across all your calls
+  - **[Knowledge Base](./knowledge-base-guide.md)** - Build and manage agent resources
+  - **[Topics](./smart-detector-overview.md)** - Identify and track conversation topics
+  - **[Pain Points](./smart-detector-overview.md)** - Automatically detect customer issues
+  - **[Keywords](./smart-detector-overview.md)** - Monitor specific terms and phrases
+  - **[Intents](./smart-detector-overview.md)** - Understand customer intentions
+  - **[Agent Search](./smart-detector-overview.md)** - Find calls by agent performance
+  - **[Agent Checklist](./agent-scorecard-guide.md)** - Create custom evaluation criteria
 - **Agents**
-  - **Agent Details** - View detailed agent profiles and information
-  - **Agent Performance** - Monitor individual agent performance metrics
-- **Reports** - Generate custom reports and insights
-- **Notifications** - Manage your alert preferences
-- **Settings** - Configure your organisation and platform settings
+  - **[Agent Details](./agents.md)** - View detailed agent profiles and information
+  - **[Agent Performance](./agents.md)** - Monitor individual agent performance metrics
+- **[Reports](./reports.md)** - Generate custom reports and insights
+- **[Notifications](./notifications.md)** - Manage your alert preferences
+- **[Settings](./settings.md)** - Configure your organisation and platform settings
 
 ![Sidebar ](../img/screenshots/settings/sidebar.png)
 
@@ -65,6 +70,8 @@ Perfect for getting started or testing the system.
 - [ ] **Select your call files**
 - [ ] **Click "Upload"** and wait for processing
 
+> **[📖 Detailed upload guide](./data-upload.md)** - Learn about supported formats, batch uploads, and troubleshooting
+
 #### Option B: FTP Integration (For larger organisations)
 Ideal for organisations handling hundreds of calls daily.
 
@@ -83,6 +90,9 @@ This is where you'll see the real value. You'll discover patterns and insights a
   - [ ] **Agent performance metrics** (AI-powered scoring)
   - [ ] **Customer satisfaction insights**
   - [ ] **Automated alerts** for important moments
+
+> **[📖 Understanding call analysis](./calls.md)** - Learn how to interpret transcripts, scores, and insights
+> **[📖 Agent performance metrics](./agents.md)** - Understand how agent scoring works
 
 > **Why this matters**: You'll immediately see patterns and issues that would take hours to identify manually.
 
@@ -106,6 +116,9 @@ Now that you have data, you can create a meaningful dashboard that shows actual 
 
 ![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
 
+> **[📖 Complete dashboard guide](./dashboard.md)** - Learn about all available metrics and customisation options
+> **[📖 Dashboard troubleshooting](./dashboard.md#troubleshooting-common-issues)** - Fix common dashboard issues
+
 > **Why this matters**: Your dashboard becomes your command centre for monitoring team performance and customer satisfaction at a glance.
 
 ### Step 4: Set Up Smart Monitoring (Optional)
@@ -119,6 +132,9 @@ This is an advanced feature that lets you set up automated monitoring for specif
 - [ ] **Add example phrases** like "I'm not happy" or "This is terrible"
 - [ ] **Set scope** to your organisation or specific team
 - [ ] **Click "Create"** to start monitoring
+
+> **[📖 Smart Search guide](./smart-search-guide.md)** - Learn advanced search techniques and best practices
+> **[📖 Setting up notifications](./notifications.md)** - Configure alerts for your searches
 
 > **Why this matters**: Vela can alert you when customers express dissatisfaction, helping you respond proactively.
 
@@ -136,21 +152,66 @@ You've just unlocked the capabilities that will make your call centre more effec
 
 ## What's Next?
 
-| **For Daily Operations** | **For Team Management** | **For Advanced Users** |
-|--------------------------|-------------------------|------------------------|
-| [Monitor daily](./dashboard.md) | [Train agents](./agents.md) | [Set up Smart Monitoring](./smart-detector-overview.md) |
-| [Review alerts](./notifications.md) | [Generate reports](./reports.md) |
+### **Daily Operations**
+- **[Monitor your dashboard](./dashboard.md)** - Track daily performance and trends
+- **[Review alerts](./notifications.md)** - Stay on top of important events
+- **[Check agent performance](./agents.md)** - Identify coaching opportunities
 
-### See also
-- [Data Upload Guide](./data-upload.md) - Upload more data for better insights
-- [Agent Performance](./agents.md) - Coach your team effectively
-- [Smart Search](./smart-search-guide.md) - Find specific patterns in your calls
-- [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
-- [Navigation Guide](./navigation-guide.md) - Learn how to navigate the platform and find the right documentation
+### **Team Management**
+- **[Generate reports](./reports.md)** - Create detailed performance summaries
+- **[Set up agent scorecards](./agent-scorecard-guide.md)** - Create custom evaluation criteria
+- **[Build knowledge base](./knowledge-base-guide.md)** - Help agents with resources
+
+### **Advanced Features**
+- **[Smart Search](./smart-search-guide.md)** - Find specific patterns in your calls
+- **[API integration](./api.md)** - Connect Vela with your existing systems
+- **[Custom dashboards](./dashboard.md)** - Create specialised views for different teams
+
 
 > **💡 Pro Tip**: Use the left sidebar in the Vela platform to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+
+
 
 ## Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
 - 🎥 **Video Tutorials**: Available on the homepage
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation based on your feedback. Let us know how this guide worked for you:
+
+**Did this guide help you get started with Vela?**
+- ✅ **Yes** - I was able to set up Vela successfully
+- ❌ **No** - I need more help
+
+**What could we improve?**
+- More detailed steps
+- Better screenshots
+- Additional examples
+- Different organisation
+
+Send your feedback to: **support@botlhale.ai**
+
+---
+
+## Still Need Help?
+
+If this guide didn't answer your question, we're here to help:
+
+### 📞 **Get Human Support**
+- **Email**: support@botlhale.ai
+- **Response Time**: Within 24 hours (usually much faster)
+- **Available**: Monday - Friday, 9 AM - 5 PM SAST
+
+### 🎥 **Video Tutorials**
+- **Complete walkthroughs** available on the homepage
+- **Step-by-step guides** for every major feature
+- **Best practices** and tips from our team
+
+### 📚 **Additional Resources**
+
+- [API Documentation](https://docs-apis.botlhale.xyz) - For technical integrations
+- [Release Notes](./release-notes.md) - Latest updates and features

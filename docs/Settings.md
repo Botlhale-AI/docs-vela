@@ -45,9 +45,10 @@ Set up your organisation's branding and information:
 
 - [ ] **Go to "Settings" → "Organisations"**
 - [ ] **Update organisation details**:
-- [ ] Organisation name and logo
+  - [ ] Organisation name and logo
   - [ ] Description and contact information
   - [ ] Branding preferences
+  - [ ] Package and subscription details
 - [ ] **Configure usage settings** as needed
 
 ![Organisation Management](../img/screenshots/settings/settings4.png)
@@ -98,6 +99,8 @@ Control who has access to your Vela platform:
 - [ ] **Add new users** as needed
 - [ ] **Modify permissions** and roles
 - [ ] **Deactivate users** who no longer need access
+- [ ] **Manage department assignments**
+- [ ] **Handle user requests** and approvals
 
 
 

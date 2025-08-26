@@ -25,6 +25,8 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 2. **Click "Dashboard"** in the left sidebar
 3. You'll see an empty dashboard initially - this is normal
 
+> **Tip**: If your dashboard is empty, you'll need to upload some call data first. See our [Data Upload Guide](./data-upload.md) to get started.
+
 ### Step 2: Choose Your Team
 1. **Click "View By"** dropdown
 2. **Select your team** (e.g., "Customer Support Team")
@@ -44,6 +46,8 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 1. **Click "Customise"** in the top-right corner
 2. **Click "Add New Metric"** for each metric you want to track
 3. **Add these essential metrics**:
+
+> **Important**: Start with these core metrics to get the most value from your dashboard. You can always add more later as you become familiar with the platform.
 
 #### Performance Metrics
 - **Agent Distribution** - See who's handling the most calls

@@ -2,13 +2,23 @@
 sidebar_position: 1
 ---
 
-# Vela Release Notes – Version 1.3
+# Vela Release Notes – Version 0.1.0
 
 Dear Vela Users,
 
 We're excited to announce the latest update to Vela! This release brings several new features, improvements, and bug fixes designed to enhance your experience and streamline your workflows. Here's what's new and improved:
 
 ## New Features
+
+### Agent Coaching Portal
+We've launched a comprehensive coaching portal for agents that includes:
+- **Courses Management**: Assign and track training courses with progress monitoring
+- **Awards System**: Recognise and reward high performers with digital awards
+- **Warnings Management**: Send and manage cautions and warnings to agents
+- **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
+- **Interactive Learning**: Course completion with quizzes and assessments
+- **Notifications**: Real-time notifications for courses, awards, and warnings
+
 
 ### Knowledge Base
 We've added the ability to upload your knowledge base and a well-defined description for your documents into the system. This feature is available as an add-on and will allow Vela to analyse calls more effectively and assess agent performance based on your specific business context.
@@ -51,6 +61,10 @@ We've enhanced the accuracy of our multilingual ASR (transcription) models, resu
 ### Checklists are Scorecards
 We've renamed Agent Checklists to Agent Scorecards to better reflect their purpose. This new name more accurately represents their role in evaluating agent performance, making it clearer and more intuitive for users.
 
+### UI/UX Improvements
+- **Redesigned Modals**: Updated modal components for better user experience
+- **Better Visual Design**: Updated styling and layout for improved usability
+
 ## Bug Fixes
 
 ### Dashboard Configuration
@@ -61,17 +75,30 @@ We've updated the users page for a better user experience! Now, only the table s
 
 ## What's Next?
 
-### Agent Coaching
-We're adding coaching to the platform to allow team leads to send courses, view progress, and send awards and warnings to agents. Agents can in turn view their performance against that of the team; as well as view, acknowledge and complete courses, awards, and warnings.
+### Enhanced Coaching Features
+We're expanding the coaching portal with:
+- Advanced course creation tools
+- Interactive assessments and quizzes
+- Performance tracking and analytics
+- Peer learning and collaboration features
+
+### Advanced Voice ID
+We're enhancing the voice ID system with:
+- Voice biometric authentication
+- Advanced voice analysis features
+- Integration with call analysis
+- Voice-based performance insights
 
 ### Vela Redesign
-We're redesigning Vela's UI for a better user experience.
+We're continuing to redesign Vela's UI for an even better user experience with:
+- Modern design system
+- Improved accessibility
+- Enhanced mobile experience
+- Better performance and loading times
 
-### Voice ID Notifications
-We'll automatically send emails to agents who have not submitted a sample for Voice ID.
 
-### Auto Agent Sharing for Agents
-This feature will automate the sharing of individual performance reports with their respective agents.
+### Advanced Analytics
+We're adding more sophisticated analytics and reporting features to help you better understand your team's performance and customer interactions.
 
 We're constantly working to make Vela better. Stay tuned for more updates, and as always, we'd love to hear your feedback at product@botlhale.ai.
 

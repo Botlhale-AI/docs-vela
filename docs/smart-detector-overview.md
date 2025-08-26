@@ -20,12 +20,17 @@ Smart Detector provides automated analysis and insights. Here's what it does for
 
 ---
 
-## Three Powerful Tools for Your Team
+## Advanced AI-Powered Analysis Tools
 
-### **Smart Search: Catch Issues Early**
-Detect important events in your customer interactions:
+### **Smart Search: Comprehensive Call Analysis**
+Detect important events and patterns in your customer interactions:
 
 #### What It Monitors:
+- **Topics** - Identify and track conversation themes across calls
+- **Pain Points** - Automatically detect customer issues and complaints
+- **Keywords** - Monitor specific terms and phrases
+- **Intents** - Understand customer intentions and goals
+- **Agent Performance** - Find calls based on agent scoring and behaviour
 - **Customer complaints** - Get alerts when customers express dissatisfaction
 - **Compliance violations** - Monitor for regulatory or policy breaches
 - **Service quality issues** - Identify patterns that affect customer experience
@@ -37,14 +42,16 @@ Detect important events in your customer interactions:
 3. **Receive automated alerts** when issues are detected in processed calls
 4. **Take action** to resolve problems and prevent future issues
 
-### **Agent Scorecard: Improve Performance Systematically**
-Evaluate and improve agent performance with AI-powered assessments:
+### **Agent Scorecard & Checklist: Comprehensive Performance Evaluation**
+Evaluate and improve agent performance with AI-powered assessments and custom criteria:
 
 #### What It Evaluates:
-- **AI-powered evaluations** - Score every interaction consistently
-- **Performance tracking** - Monitor improvement over time
-- **Training identification** - Spot specific areas for coaching
-- **Best practice recognition** - Learn from top performers
+- **AI-powered evaluations** - Score every interaction consistently using advanced models
+- **Custom checklists** - Create tailored evaluation criteria for your organisation
+- **Performance tracking** - Monitor improvement over time with detailed metrics
+- **Training identification** - Spot specific areas for coaching and development
+- **Best practice recognition** - Learn from top performers and share insights
+- **Multi-dimensional scoring** - Evaluate different aspects of agent performance
 
 #### How It Works:
 1. **Define evaluation criteria** for different scenarios
@@ -52,14 +59,16 @@ Evaluate and improve agent performance with AI-powered assessments:
 3. **Score** every interaction
 4. **Generate coaching insights** for improvement
 
-### **Knowledge Base: Empower Your Team**
-Build a smart, searchable repository of company information:
+### **Knowledge Base: Intelligent Resource Management**
+Build a smart, searchable repository of company information and resources:
 
 #### What It Contains:
-- **Document upload** - Add policies, procedures, and training materials
-- **Smart search** - Find relevant information efficiently
-- **Agent access** - Provide support based on call analysis insights
-- **Continuous improvement** - Update knowledge based on interactions
+- **Document upload** - Add policies, procedures, training materials, and resources
+- **Smart search** - Find relevant information efficiently using AI-powered search
+- **Agent access** - Provide support based on call analysis insights and patterns
+- **Continuous improvement** - Update knowledge based on interaction analysis
+- **Resource organisation** - Categorise and tag content for easy discovery
+- **Integration with coaching** - Connect knowledge base with training programmes
 
 #### How It Works:
 1. **Upload company documents** (PDFs, text files, URLs)
