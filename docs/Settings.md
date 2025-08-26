@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Customise Vela to match your organisation's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for effective performance and user experience.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 With Vela settings, you can:
 - [ ] **Customise your profile** and organisation information
@@ -147,7 +147,7 @@ Structure your organisation for better management:
 
 ---
 
-## 📊 Usage Optimization
+## Usage Optimization
 
 ### Data Management
 - [ ] **Review data retention** policies and settings
@@ -169,7 +169,7 @@ Structure your organisation for better management:
 
 ---
 
-## 🔧 Advanced Configuration
+## Advanced Configuration
 
 ### Custom Branding
 - [ ] **Upload company logo** for reports and dashboards
@@ -185,7 +185,7 @@ Structure your organisation for better management:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -196,14 +196,14 @@ Structure your organisation for better management:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Notifications** | **For Smart Monitoring** |
 |----------------------|-------------------------|
-| [🔔 Configure Notifications](./notifications.md) | [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) |
+| [Configure Notifications](./notifications.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

@@ -6,7 +6,7 @@ sidebar_position: 9
 
 Your call centre doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 APIs are the secret sauce that makes everything work together. Here's what you'll unlock:
 
@@ -230,7 +230,7 @@ def update_customer_profile(call_data):
 
 ---
 
-## 🔧 Troubleshooting Common Integration Issues
+## Troubleshooting Common Integration Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -241,7 +241,7 @@ def update_customer_profile(call_data):
 
 ---
 
-## 📊 Measuring Success
+## Measuring Success
 
 | **Key Metrics** | **Success Indicators** |
 |-----------------|------------------------|
@@ -252,13 +252,13 @@ def update_customer_profile(call_data):
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Data Management** | **For Automation** | **For Analytics** |
 |------------------------|-------------------|------------------|
-| [📤 Get Your Data into Vela](./data-upload.md) | [🔔 Configure Notifications](./notifications.md) | [📊 Analyse Interactions](./calls.md) |
+| [Get Your Data into Vela](./data-upload.md) | [Configure Notifications](./notifications.md) | [Analyse Interactions](./calls.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

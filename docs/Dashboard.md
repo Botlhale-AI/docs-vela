@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Think of your Vela dashboard as mission control for your call centre. It's where you'll spot trends before they become problems, identify coaching opportunities, and track how your team is really performing.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Your dashboard transforms raw data into actionable insights. Here's what you'll be able to do:
 
@@ -65,7 +65,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 
 ---
 
-## 📊 Understanding Your Dashboard
+## Understanding Your Dashboard
 
 ### Performance Overview
 Your dashboard shows comprehensive call analytics data for your selected team and time period. Each metric card displays:
@@ -73,7 +73,7 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 - **Trend indicator** (up/down arrows showing improvement or decline)
 - **Filter icon** for additional filtering options
 
-### 🔍 Key Insights to Look For
+### Key Insights to Look For
 
 #### Agent Performance
 - **High scores** (90%+) indicate excellent performance
@@ -103,14 +103,14 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 - [ ] **Identify coaching opportunities** - Find agents who need help
 - [ ] **Spot process improvements** - Look for recurring issues
 
-### 📊 Monthly Analysis (30 minutes)
+### Monthly Analysis (30 minutes)
 - [ ] **Generate reports** - Create detailed performance summaries
 - [ ] **Plan training sessions** - Based on identified needs
 - [ ] **Update goals** - Set new targets based on trends
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -120,7 +120,7 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 
 ---
 
-## 💡 Pro Tips
+## Pro Tips
 
 ### Save Multiple Dashboards
 Create different dashboard views for different purposes:
@@ -145,13 +145,13 @@ Configure notifications for important events:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Team Management** | **For Reporting** | **For Automation** |
 |------------------------|------------------|-------------------|
-| [👥 Improve Agent Performance](./agents.md) | [📈 Generate Reports](./reports.md) | [🔔 Configure Notifications](./notifications.md) |
+| [Improve Agent Performance](./agents.md) | [Generate Reports](./reports.md) | [Configure Notifications](./notifications.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

@@ -2,23 +2,23 @@
 sidebar_position: 3
 ---
 
-# 📊 Create Agent Scorecards
+# Create Agent Scorecards
 
 Build fair, consistent, and effective evaluation systems that help your agents improve and your team succeed. Agent scorecards provide objective assessments that drive coaching, training, and performance improvement.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Agent scorecards transform subjective evaluations into objective insights. Here's what you'll accomplish:
 
 | **Performance Evaluation** | **Coaching & Development** | **Quality Assurance** |
 |---------------------------|---------------------------|---------------------|
-| 📈 **Measure performance objectively** | 🎯 **Guide targeted coaching** | ✅ **Ensure consistent standards** |
-| 🎓 **Identify training needs** | 📊 **Track improvement over time** | 🛡️ **Maintain quality standards** |
-| 🌟 **Recognize excellence** | 🚀 **Drive continuous improvement** | 📋 **Support compliance requirements** |
+| **Measure performance objectively** | **Guide targeted coaching** | **Ensure consistent standards** |
+| **Identify training needs** | **Track improvement over time** | **Maintain quality standards** |
+| **Recognize excellence** | **Drive continuous improvement** | **Support compliance requirements** |
 
 ---
 
-## 🚀 Getting Started with Agent Scorecards
+## Getting Started with Agent Scorecards
 
 ### Step 1: Access Scorecard Builder
 ![ Smart Search](../img/screenshots/smart_search/smart5.png)
@@ -43,7 +43,7 @@ Agent scorecards transform subjective evaluations into objective insights. Here'
 
 ---
 
-## 📋 Scorecard Components
+## Scorecard Components
 
 ### Evaluation Categories
 Structure your scorecard with these key performance areas:
@@ -67,7 +67,7 @@ Structure your scorecard with these key performance areas:
 
 ---
 
-## 🎯 Building Effective Scorecards
+## Building Effective Scorecards
 
 ### Criteria Selection
 Choose evaluation criteria that align with your business goals:
@@ -122,7 +122,7 @@ Define clear expectations for each criterion:
 
 ---
 
-## 🔍 Using Scorecard Results
+## Using Scorecard Results
 
 ### Individual Development
 Use scorecard results to guide agent improvement:
@@ -154,7 +154,7 @@ Use scorecard data to improve processes:
 
 ---
 
-## 📈 Advanced Scorecard Features
+## Advanced Scorecard Features
 
 ### Automated Scoring
 - [ ] **Set up automatic evaluation** of all interactions
@@ -176,7 +176,7 @@ Use scorecard data to improve processes:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Cause** | **Solution** |
 |-------------|-----------|--------------|
@@ -187,7 +187,7 @@ Use scorecard data to improve processes:
 
 ---
 
-## 💡 Best Practices for Scorecards
+## Best Practices for Scorecards
 
 ### Design Principles
 - [ ] **Keep it simple** - Focus on the most important criteria
@@ -209,13 +209,13 @@ Use scorecard data to improve processes:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Smart Monitoring** | **For Knowledge Management** | **For Team Development** |
 |-------------------------|----------------------------|------------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📚 Build Knowledge Base](./knowledge-base-guide.md) | [👥 Improve Agent Performance](./agents.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

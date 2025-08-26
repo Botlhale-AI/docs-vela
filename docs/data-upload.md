@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 By uploading your data to Vela, you can:
 - [ ] **Analyse every customer interaction** with AI-powered insights
@@ -120,7 +120,7 @@ Ensure your data is ready for analysis:
 
 ---
 
-## 🔧 Setting Up Automated Uploads
+## Setting Up Automated Uploads
 
 ### For Organisations with Existing Systems
 
@@ -242,7 +242,7 @@ print(response.json())
 
 ---
 
-## 📊 Data Quality Best Practices
+## Data Quality Best Practices
 
 ### Before Upload
 - [ ] **Check audio quality** - Clear, audible recordings improve transcription accuracy
@@ -258,13 +258,13 @@ print(response.json())
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Data Monitoring** | **For Analysis** |
 |------------------------|------------------|
-| [📊 Monitor Performance](./dashboard.md) | [📞 Analyse Calls](./calls.md) |
+| [Monitor Performance](./dashboard.md) | [Analyse Calls](./calls.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

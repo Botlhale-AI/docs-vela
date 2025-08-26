@@ -2,23 +2,23 @@
 sidebar_position: 7
 ---
 
-# 📞 Analyse Customer Interactions
+# Analyse Customer Interactions
 
 Every call tells a story. Vela's call analysis tools help you understand what's really happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Call analysis transforms conversations into actionable insights. Here's what you'll accomplish:
 
 | **Customer Understanding** | **Performance Improvement** | **Quality Assurance** |
 |---------------------------|----------------------------|---------------------|
-| 🎯 **Understand customer needs** | 📊 **Improve agent performance** | ✅ **Ensure consistent quality** |
-| 🔍 **Spot pain points** | 📈 **Track improvement over time** | 🛡️ **Maintain compliance** |
-| 💡 **Identify opportunities** | 🎓 **Guide training programs** | 📋 **Monitor standards** |
+| **Understand customer needs** | **Improve agent performance** | **Ensure consistent quality** |
+| **Spot pain points** | **Track improvement over time** | **Maintain compliance** |
+| **Identify opportunities** | **Guide training programs** | **Monitor standards** |
 
 ---
 
-## 📊 Understanding Call Data
+## Understanding Call Data
 
 ### Key Metrics Explained
 Your call analysis provides comprehensive insights into every interaction:
@@ -41,7 +41,7 @@ Your call analysis provides comprehensive insights into every interaction:
 
 ---
 
-## 🔍 How to Analyse Individual Calls
+## How to Analyse Individual Calls
 
 ### Step 1: Access Call Details
 
@@ -77,7 +77,7 @@ Your call analysis provides comprehensive insights into every interaction:
 
 ---
 
-## 📈 Identifying Patterns Across Calls
+## Identifying Patterns Across Calls
 
 ### Customer Pain Point Analysis
 Look for recurring issues that affect multiple customers:
@@ -101,7 +101,7 @@ Identify trends that affect team performance:
 
 ---
 
-## 🎯 Using Call Analysis for Coaching
+## Using Call Analysis for Coaching
 
 ### For Individual Agents
 - [ ] **Review recent calls** with the agent
@@ -123,7 +123,7 @@ Identify trends that affect team performance:
 
 ---
 
-## 🔍 Advanced Call Analysis Features
+## Advanced Call Analysis Features
 
 ### Sentiment Analysis
 Track customer emotions throughout the conversation:
@@ -154,7 +154,7 @@ Understand how agents are evaluated:
 
 ---
 
-## 📊 Call Analytics Dashboard
+## Call Analytics Dashboard
 
 ### Key Performance Indicators
 Monitor these metrics to track team performance:
@@ -174,7 +174,7 @@ Monitor these metrics to track team performance:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Possible Cause** | **Solution** |
 |-------------|-------------------|--------------|
@@ -185,7 +185,7 @@ Monitor these metrics to track team performance:
 
 ---
 
-## 💡 Best Practices for Call Analysis
+## Best Practices for Call Analysis
 
 ### Regular Review Schedule
 - [ ] **Daily**: Review high-priority calls and alerts
@@ -207,13 +207,13 @@ Monitor these metrics to track team performance:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Smart Monitoring** | **For Team Management** | **For Quality Assurance** |
 |-------------------------|------------------------|-------------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [👥 Improve Agent Performance](./agents.md) | [📋 Create Agent Scorecards](./agent-scorecard-guide.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

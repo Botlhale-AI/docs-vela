@@ -6,7 +6,7 @@ sidebar_position: 6
 
 In a busy call centre, important things happen frequently. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues promptly, and keep your team connected when it matters most.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Notifications are your early warning system. Here's what you'll accomplish:
 
@@ -40,7 +40,7 @@ Stay updated on team discussions and feedback:
 | **Management notes** | Important observations and instructions | Team guidance |
 | **Training feedback** | Suggestions for improvement | Process enhancement |
 
-### 📊 Reports: Track Progress and Trends
+### Reports: Track Progress and Trends
 Receive automated summaries of your team's performance:
 
 | **Report Type** | **Frequency** | **Content** |
@@ -127,7 +127,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 📊 Managing Report Notifications
+## Managing Report Notifications
 
 ### Understanding Report Types
 | **Report Type** | **When Sent** | **What to Do** |
@@ -162,7 +162,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -173,7 +173,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 💡 Best Practices for Effective Notifications
+## Best Practices for Effective Notifications
 
 ### Alert Management
 - [ ] **Set appropriate thresholds** - Not too sensitive, not too lenient
@@ -195,13 +195,13 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Smart Monitoring** | **For Call Analysis** | **For Settings** |
 |-------------------------|---------------------|------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📞 Analyse Call Data](./calls.md) | [⚙️ Configure Settings](./settings.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Analyse Call Data](./calls.md) | [Configure Settings](./settings.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

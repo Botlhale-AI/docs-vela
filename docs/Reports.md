@@ -2,23 +2,23 @@
 sidebar_position: 5
 ---
 
-# 📊 Generate Meaningful Reports
+# Generate Meaningful Reports
 
 Numbers tell stories, but only if you know how to read them. Vela's reporting tools help you turn raw data into compelling narratives that drive decisions, track progress, and convince stakeholders to take action.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Reports are your secret weapon for driving change. Here's what you'll accomplish:
 
 | **Data Storytelling** | **Stakeholder Communication** | **Strategic Decision Making** |
 |---------------------|------------------------------|------------------------------|
-| 📈 **Tell the story behind the numbers** | 📋 **Get buy-in from leadership** | 🎯 **Unlock hidden opportunities** |
-| 📊 **Track trends and patterns** | 📈 **Share insights that matter** | 📈 **Prove your impact** |
-| 🔍 **Spot insights others miss** | 💼 **Convince stakeholders to act** | 🎯 **Make decisions that stick** |
+| **Tell the story behind the numbers** | **Get buy-in from leadership** | **Unlock hidden opportunities** |
+| **Track trends and patterns** | **Share insights that matter** | **Prove your impact** |
+| **Spot insights others miss** | **Convince stakeholders to act** | **Make decisions that stick** |
 
 ---
 
-## 📋 Understanding Report Types
+## Understanding Report Types
 
 ### Performance Reports
 | **Report Type** | **What It Shows** | **Best For** |
@@ -38,7 +38,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 🚀 Creating Your First Report
+## Creating Your First Report
 
 ### Step 1: Access the Reports Section
 1. **Click "Reports"** in the left sidebar
@@ -70,9 +70,9 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 📈 Essential Reports for Different Goals
+## Essential Reports for Different Goals
 
-### 📊 **For Team Managers: Daily Performance Report**
+### **For Team Managers: Daily Performance Report**
 **Goal**: Monitor daily team performance and identify issues
 
 **Include these metrics**:
@@ -86,7 +86,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 - Identify agents needing support
 - Spot trends that need attention
 
-### 📋 **For Executives: Monthly Executive Summary**
+### **For Executives: Monthly Executive Summary**
 **Goal**: Provide high-level insights for strategic decision-making
 
 **Include these metrics**:
@@ -100,7 +100,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 - Strategic planning sessions
 - Budget and resource allocation
 
-### 🎓 **For Training Teams: Coaching Effectiveness Report**
+### **For Training Teams: Coaching Effectiveness Report**
 **Goal**: Measure the impact of training and coaching programs
 
 **Include these metrics**:
@@ -117,7 +117,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 📊 Advanced Reporting Features
+## Advanced Reporting Features
 
 ### Custom Branding
 **Add your company logo and brand colors** to reports for professional presentations
@@ -130,7 +130,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 💡 Best Practices for Effective Reporting
+## Best Practices for Effective Reporting
 
 ### Choose the Right Metrics
 - [ ] **Focus on actionable data** - Metrics that drive decisions
@@ -152,7 +152,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -162,14 +162,14 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Real-Time Insights** | **For Team Management** | **For Automation** |
 |---------------------------|------------------------|-------------------|
-| [📊 Monitor Performance](./dashboard.md) | [👥 Improve Agent Performance](./agents.md) | [🔔 Configure Notifications](./notifications.md) |
+| [Monitor Performance](./dashboard.md) | [Improve Agent Performance](./agents.md) | [Configure Notifications](./notifications.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

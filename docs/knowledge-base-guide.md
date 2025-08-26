@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Create a smart, searchable repository of company information that empowers your agents to provide better service, answer questions confidently, and continuously improve their knowledge. Your knowledge base becomes your team's collective brain.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 A well-built knowledge base transforms your team's capabilities. Here's what you'll accomplish:
 
@@ -84,7 +84,7 @@ Structure your knowledge base for easy navigation:
 
 ---
 
-## 🔍 Optimizing Search and Discovery
+## Optimizing Search and Discovery
 
 ### Search Configuration
 Make information easy to find:
@@ -114,7 +114,7 @@ Monitor how agents use the knowledge base:
 
 ---
 
-## 📊 Knowledge Base Management
+## Knowledge Base Management
 
 ### Content Lifecycle
 Manage your knowledge base content effectively:
@@ -140,7 +140,7 @@ Manage your knowledge base content effectively:
 
 ---
 
-## 🎯 Using Knowledge Base During Interactions
+## Using Knowledge Base During Interactions
 
 ### Post-Call Access
 Enable agents to access information for future calls and training:
@@ -166,7 +166,7 @@ Enable agents to access information for future calls and training:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Cause** | **Solution** |
 |-------------|-----------|--------------|
@@ -177,7 +177,7 @@ Enable agents to access information for future calls and training:
 
 ---
 
-## 💡 Best Practices for Knowledge Base
+## Best Practices for Knowledge Base
 
 ### Content Strategy
 - [ ] **Start with essentials** - Focus on most-needed information first
@@ -199,13 +199,13 @@ Enable agents to access information for future calls and training:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Smart Monitoring** | **For Performance Evaluation** | **For Team Development** |
 |-------------------------|-------------------------------|------------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📊 Create Agent Scorecards](./agent-scorecard-guide.md) | [👥 Improve Agent Performance](./agents.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Improve Agent Performance](./agents.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

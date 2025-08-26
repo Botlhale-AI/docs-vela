@@ -2,19 +2,19 @@
 sidebar_position: 2
 ---
 
-# 🔍 Create Automated Searches
+# Create Automated Searches
 
 Stop manually reviewing every call. Smart Search detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Smart Search is your monitoring system. Here's what you'll accomplish:
 
 | **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
 |-------------------|----------------------|------------------------------|
-| 🚨 **Catch problems early** | ✅ **Monitor compliance** | 💡 **Spot improvement opportunities** |
-| ⚡ **Respond proactively** | 📊 **Track quality trends** | 🎯 **Identify training needs** |
-| 🔍 **Never miss important events** | 🛡️ **Maintain standards** | 📈 **Drive continuous improvement** |
+| **Catch problems early** | **Monitor compliance** | **Spot improvement opportunities** |
+| **Respond proactively** | **Track quality trends** | **Identify training needs** |
+| **Never miss important events** | **Maintain standards** | **Drive continuous improvement** |
 
 ---
 
@@ -75,7 +75,7 @@ Smart Search is your monitoring system. Here's what you'll accomplish:
 
 ---
 
-## 🎯 Creating Effective Searches
+## Creating Effective Searches
 
 ### Best Practices for Search Design
 - [ ] **Start with specific phrases** - Be precise about what you're looking for
@@ -98,7 +98,7 @@ Smart Search is your monitoring system. Here's what you'll accomplish:
 
 ---
 
-## 📊 Monitoring and Alerts
+## Monitoring and Alerts
 
 ### Setting Up Notifications
 Configure how you want to be notified about search matches:
@@ -155,7 +155,7 @@ Based on search results, you can:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Cause** | **Solution** |
 |-------------|----------|--------------|
@@ -166,7 +166,7 @@ Based on search results, you can:
 
 ---
 
-## 💡 Best Practices for Smart Search
+## Best Practices for Smart Search
 
 ### Search Management
 - [ ] **Regular review** - Check search effectiveness monthly
@@ -188,13 +188,13 @@ Based on search results, you can:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Performance Evaluation** | **For Knowledge Management** | **For Team Management** |
 |-------------------------------|----------------------------|------------------------|
-| [📊 Create Agent Scorecards](./agent-scorecard-guide.md) | [📚 Build Knowledge Base](./knowledge-base-guide.md) | [👥 Improve Agent Performance](./agents.md) |
+| [Create Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

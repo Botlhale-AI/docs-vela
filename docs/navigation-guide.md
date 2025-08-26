@@ -6,21 +6,21 @@ sidebar_position: 0
 
 Welcome to Vela! This guide helps you find the right documentation based on your role and what you want to accomplish.
 
-## 🎯 What is Vela?
+## What is Vela?
 
 **Vela is a call analysis tool** that helps you improve your call centre performance by analyzing customer interactions. Here's what you need to know:
 
 ### 📞 **How Vela Works**
 - Provides insights to improve future customer interactions
 
-### 🔍 **What Vela Does**
+### **What Vela Does**
 - **Analyzes call recordings** for sentiment, quality, and compliance
 - **Evaluates agent performance** with AI-powered scoring
 - **Identifies patterns** in customer complaints and satisfaction
 - **Generates insights** to guide training and process improvements
 - **Provides automated alerts** when issues are detected in analyzed calls
 
-### 🎯 **Best Use Cases**
+### **Best Use Cases**
 - **Quality assurance** and compliance monitoring
 - **Agent training** and performance improvement
 - **Customer experience** analysis and optimization
@@ -44,13 +44,13 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 3. **[Dashboard](./dashboard.md)** - Monitor data processing
 
 
-### 📊 **Performance Monitoring Workflow**
+### **Performance Monitoring Workflow**
 1. **[Dashboard](./dashboard.md)** - Set up your monitoring view
 2. **[Notifications](./notifications.md)** - Configure alerts
 3. **[Agent Performance](./agents.md)** - Review individual performance
 4. **[Reports](./reports.md)** - Generate insights for stakeholders
 
-### 🎯 **Quality Assurance Workflow**
+### **Quality Assurance Workflow**
 1. **[Smart Detector](./smart-detector-overview.md)** - Set up automated monitoring
 2. **[Smart Search](./smart-search-guide.md)** - Create issue detection rules
 3. **[Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation criteria
@@ -69,7 +69,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Reports](./reports.md)** - Data analysis and insights
 - **[Settings](./settings.md)** - Platform configuration
 
-### 🔍 **Smart Detector Tools**
+### **Smart Detector Tools**
 - **[Smart Detector Overview](./smart-detector-overview.md)** - Automated monitoring system
 - **[Smart Search](./smart-search-guide.md)** - Issue detection and alerts
 - **[Agent Scorecards](./agent-scorecard-guide.md)** - Performance evaluation
@@ -80,20 +80,20 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Chat Analysis](./chats.md)** - Digital conversation analysis
 - **[Notifications](./notifications.md)** - Alert management
 
-### 🔧 **Technical Features**
+### **Technical Features**
 - **[Data Upload](./data-upload.md)** - Data management and processing
 - **[Settings](./settings.md)** - User and organisation management
 
 ---
 
-## 🆘 **Need Help?**
+## **Need Help?**
 
 ### 📞 **Support Options**
 - **Email Support**: support@botlhale.ai
 - **API Support**: api-support@botlhale.ai
 - **Video Tutorials**: Available on the homepage
 
-### 🔍 **Finding Specific Information**
+### **Finding Specific Information**
 - **Use the search bar** at the top of the documentation
 - **Check the sidebar** for organized topic categories
 - **Follow the "Next Steps"** links in each guide
@@ -107,7 +107,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ---
 
-## 🎯 **Quick Reference**
+## **Quick Reference**
 
 | **I want to...** | **Start with...** |
 |------------------|-------------------|

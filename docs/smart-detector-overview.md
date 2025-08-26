@@ -8,7 +8,7 @@ What if you could catch customer complaints before they become escalations? Or s
 
 > 💡 **Note**: Smart Detector analyzes **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Smart Detector is like having a super-powered assistant that never sleeps. Here's what it does for you:
 
@@ -101,7 +101,7 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## 📊 Setting Up Agent Scorecards
+## Setting Up Agent Scorecards
 
 ### Step 1: Define Evaluation Criteria
 
@@ -217,7 +217,7 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |
 |-------------|--------------|
@@ -228,13 +228,13 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Issue Detection** | **For Performance Evaluation** | **For Knowledge Management** |
 |------------------------|--------------------------------|------------------------------|
-| [🔍 Create Smart Searches](./smart-search-guide.md) | [📊 Build Agent Scorecards](./agent-scorecard-guide.md) | [📚 Build Knowledge Base](./knowledge-base-guide.md) |
+| [Create Smart Searches](./smart-search-guide.md) | [Build Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

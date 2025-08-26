@@ -6,7 +6,7 @@ sidebar_position: 8
 
 Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behaviour patterns, optimise response times, and improve the quality of your digital customer service.
 
-## 🎯 What You Can Achieve
+## What You Can Achieve
 
 Chat analysis unlocks the hidden patterns in digital conversations. Here's what you'll accomplish:
 
@@ -18,7 +18,7 @@ Chat analysis unlocks the hidden patterns in digital conversations. Here's what 
 
 ---
 
-## 📊 Understanding Chat Data
+## Understanding Chat Data
 
 ### Key Metrics for Digital Interactions
 Chat analysis provides unique insights into digital customer service:
@@ -41,7 +41,7 @@ Chat analysis provides unique insights into digital customer service:
 
 ---
 
-## 🔍 How to Analyse Chat Conversations
+## How to Analyse Chat Conversations
 
 ### Step 1: Access Chat Data
 
@@ -152,7 +152,7 @@ Ensure seamless experience across channels:
 
 ---
 
-## 📊 Chat Analytics Dashboard
+## Chat Analytics Dashboard
 
 ### Digital Performance Metrics
 Monitor these key indicators for digital success:
@@ -172,7 +172,7 @@ Monitor these key indicators for digital success:
 
 ---
 
-## 🔧 Troubleshooting Digital Issues
+## Troubleshooting Digital Issues
 
 | **Problem** | **Digital Cause** | **Solution** |
 |-------------|------------------|--------------|
@@ -183,7 +183,7 @@ Monitor these key indicators for digital success:
 
 ---
 
-## 💡 Best Practices for Chat Analysis
+## Best Practices for Chat Analysis
 
 ### Digital-First Approach
 - [ ] **Optimise for mobile** and digital interfaces
@@ -205,14 +205,14 @@ Monitor these key indicators for digital success:
 
 ---
 
-## 🔗 Next Steps
+## Next Steps
 
 | **For Smart Monitoring** | **For Team Management** | **For Quality Assurance** |
 |-------------------------|------------------------|-------------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [👥 Improve Agent Performance](./agents.md) | [📋 Create Agent Scorecards](./agent-scorecard-guide.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
-## 🆘 Need Help?
+## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai
+- **Contact Support**: support@botlhale.ai
 - 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

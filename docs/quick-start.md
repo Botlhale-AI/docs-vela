@@ -8,7 +8,7 @@ Welcome to Vela! This guide will help you start analysing your call centre data 
 
 > 💡 **What is Vela?** Vela is a **call analysis tool** that provides comprehensive insights from your call data to help you improve customer interactions.
 
-## 🎯 What You'll Achieve
+## What You'll Achieve
 
 By the end of this guide, you'll be able to:
 - ✅ **Monitor your team's performance** with comprehensive call analytics
@@ -45,8 +45,8 @@ By the end of this guide, you'll be able to:
 
 #### Option A: Manual Upload (Recommended for new users)
 - [ ] **Go to "Calls"** in the left sidebar
-- [ ] **Click "Batch Upload"**
-- [ ] **Select your call files** (we support most audio formats)
+- [ ] **Click "Upload"**
+- [ ] **Select your call files**
 - [ ] **Click "Upload"** and wait for processing
 
 #### Option B: FTP Integration (For larger organisations)
@@ -88,7 +88,7 @@ You've just unlocked the superpowers that will make your call centre unstoppable
 
 ---
 
-## 🔗 What's Next?
+## What's Next?
 
 | **For Daily Operations** | **For Team Management** | **For Advanced Users** |
 |--------------------------|-------------------------|------------------------|
@@ -97,7 +97,7 @@ You've just unlocked the superpowers that will make your call centre unstoppable
 
 > 💡 **Need help finding the right guide?** Check out our [Navigation Guide](./navigation-guide.md) to find documentation based on your role and goals.
 
-## 🆘 Need Help?
+## Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
 - 🎥 **Video Tutorials**: Available on the homepage
