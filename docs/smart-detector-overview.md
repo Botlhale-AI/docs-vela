@@ -202,20 +202,7 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## Daily Smart Detector Routine
 
-### Morning Review (10 minutes)
-- [ ] **Check Smart Search alerts** - Review any issues detected overnight
-- [ ] **Review agent scores** - Identify anyone needing immediate attention
-- [ ] **Update knowledge base** - Add any new information from recent calls
-
-### Weekly Analysis (30 minutes)
-- [ ] **Analyse search patterns** - Look for recurring issues
-- [ ] **Review scorecard trends** - Identify team-wide improvement areas
-- [ ] **Update search criteria** - Refine based on what you've learned
-- [ ] **Enhance knowledge base** - Add content for common questions
-
----
 
 ## Troubleshooting Common Issues
 

@@ -146,21 +146,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## Daily Notification Routine
 
-### Morning Check (10 minutes)
-- [ ] **Review overnight alerts** - Check for any critical issues
-- [ ] **Read daily summary** - Understand yesterday's performance
-- [ ] **Check team comments** - See if anyone needs help
-- [ ] **Plan your day** based on notifications
-
-### End of Day Review (15 minutes)
-- [ ] **Review all alerts** from the day
-- [ ] **Add comments** to important calls
-- [ ] **Update team** on any issues
-- [ ] **Plan tomorrow's priorities**
-
----
 
 ## Troubleshooting Common Issues
 

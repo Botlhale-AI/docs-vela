@@ -40,22 +40,7 @@ Your agent performance table shows essential information:
 
 ---
 
-## Daily Agent Management Routine
 
-### Morning Review (10 minutes)
-- [ ] **Check agent scores** - Identify anyone needing support
-- [ ] **Review strengths/weaknesses** - Plan coaching sessions
-- [ ] **Look for trends** - Spot patterns across your team
-
-This quick review gives you immediate insights into your team's performance and helps you identify who needs support or recognition.
-
-### Weekly Coaching Sessions (30 minutes per agent)
-- [ ] **Review detailed metrics** with each agent
-- [ ] **Discuss specific improvements** based on data
-- [ ] **Set goals** for the following week
-- [ ] **Track progress** over time
-
----
 
 ## How to Use Agent Data for Coaching
 

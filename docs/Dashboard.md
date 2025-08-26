@@ -91,24 +91,7 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 
 ---
 
-## Daily Dashboard Routine
 
-### Morning Check (5 minutes)
-- [ ] **Review yesterday's performance** - Look for any significant changes
-- [ ] **Check agent scores** - Identify anyone who might need support
-- [ ] **Review pain points** - See what issues emerged yesterday
-
-### Weekly Review (15 minutes)
-- [ ] **Analyse trends** - Look for patterns over the past week
-- [ ] **Identify coaching opportunities** - Find agents who need help
-- [ ] **Spot process improvements** - Look for recurring issues
-
-### Monthly Analysis (30 minutes)
-- [ ] **Generate reports** - Create detailed performance summaries
-- [ ] **Plan training sessions** - Based on identified needs
-- [ ] **Update goals** - Set new targets based on trends
-
----
 
 ## Troubleshooting Common Issues
 

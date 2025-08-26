@@ -22,6 +22,34 @@ We've made this guide as straightforward as possible because we understand you h
 
 ---
 
+## Understanding the Vela Interface
+
+Before we dive into the setup, let's quickly familiarise you with the Vela platform interface:
+
+### **Left Sidebar Navigation**
+The left sidebar is your main navigation hub in Vela. You can collapse it to maximise your workspace. Here's what you'll find:
+
+- **Dashboard** - Your main monitoring view with customisable metrics
+- **Interactions**
+  - **Calls** - Upload and analyse call recordings
+  - **Chats** - Review chat conversations and interactions
+- **Smart Detector**
+  - **Smart Search** - Set up automated monitoring and alerts
+  - **Knowledge Base** - Build and manage agent resources
+  - **Agent Scorecard** - Create performance evaluation criteria
+- **Agents**
+  - **Agent Details** - View detailed agent profiles and information
+  - **Agent Performance** - Monitor individual agent performance metrics
+- **Reports** - Generate custom reports and insights
+- **Notifications** - Manage your alert preferences
+- **Settings** - Configure your organisation and platform settings
+
+![Sidebar ](../img/screenshots/settings/sidebar.png)
+
+> **💡 Tip**: The sidebar is collapsible - click the hamburger menu (☰) to expand or collapse it, giving you more workspace when needed.
+
+---
+
 ## Quick Setup Checklist
 
 ### Step 1: Upload Your First Data
@@ -32,7 +60,7 @@ Getting your call data into Vela is straightforward. We offer two approaches dep
 #### Option A: Manual Upload (Recommended for new users)
 Perfect for getting started or testing the system.
 
-- [ ] **Go to "Calls"** in the left sidebar
+- [ ] **Go to "Interactions" → "Calls"** in the left sidebar
 - [ ] **Click "Upload"**
 - [ ] **Select your call files**
 - [ ] **Click "Upload"** and wait for processing
@@ -49,7 +77,7 @@ Ideal for organisations handling hundreds of calls daily.
 
 This is where you'll see the real value. You'll discover patterns and insights about your calls that weren't visible before.
 
-- [ ] **Go to "Calls"** to see your uploaded interactions
+- [ ] **Go to "Interactions" → "Calls"** to see your uploaded interactions
 - [ ] **Click on any call** to view detailed analysis:
   - [ ] **Full transcript** with sentiment analysis
   - [ ] **Agent performance metrics** (AI-powered scoring)
@@ -118,8 +146,9 @@ You've just unlocked the capabilities that will make your call centre more effec
 - [Agent Performance](./agents.md) - Coach your team effectively
 - [Smart Search](./smart-search-guide.md) - Find specific patterns in your calls
 - [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
+- [Navigation Guide](./navigation-guide.md) - Learn how to navigate the platform and find the right documentation
 
-> **Need help finding the right guide?** Check out our [Navigation Guide](./navigation-guide.md) to find documentation based on your role and goals.
+> **💡 Pro Tip**: Use the left sidebar in the Vela platform to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
 
 ## Need Help?
 
