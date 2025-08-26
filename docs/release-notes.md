@@ -65,7 +65,7 @@ We've renamed Agent Checklists to Agent Scorecards to better reflect their purpo
 - **Redesigned Modals**: Updated modal components for better user experience
 - **Better Visual Design**: Updated styling and layout for improved usability
 
-## Bug Fixes
+<!-- ## Bug Fixes -->
 
 <!-- ### Dashboard Configuration
 We have resolved an issue that caused dashboard configurations to reset on reload.
@@ -78,6 +78,9 @@ We've updated the users page for a better user experience! Now, only the table s
 ### Enhanced Coaching Features
 We're improving the coaching portal.
 
+### Improving Smart Detector
+We're improving Smart Detector.
+
 ### Voice ID Notifications
 - We'll automatically send emails to agents who have not submitted a sample for Voice ID.
 
@@ -87,7 +90,7 @@ We're continuing to redesign Vela's UI for an even better user experience with:
 - Improved accessibility
 
 ### Advanced Analytics
-We're adding more sophisticated analytics and reporting features to help you better understand your team's performance and customer interactions.
+We're adding more analytics and reporting features to help you better understand your team's performance and customer interactions.
 
 We're constantly working to make Vela better. Stay tuned for more updates, and as always, we'd love to hear your feedback at product@botlhale.ai.
 
