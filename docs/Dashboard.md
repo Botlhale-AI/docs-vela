@@ -61,7 +61,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 
 4. **Click "Save"** to apply your dashboard
 
-![Customise Dashboard - Screenshot showing the dashboard customisation panel with metric selection and configuration options](../img/screenshots/customise.png)
+![Customise Dashboard - Screenshot showing the dashboard customisation panel with metric selection and configuration options](../img/screenshots/costomize.png)
 
 ---
 
