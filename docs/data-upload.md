@@ -11,7 +11,7 @@ Upload your call and chat data to start analyzing customer interactions and impr
 ## 🎯 What You Can Achieve
 
 By uploading your data to Vela, you can:
-- [ ] **Analyze every customer interaction** automatically
+- [ ] **Analyse every customer interaction** automatically
 - [ ] **Identify patterns and trends** across your team
 - [ ] **Spot training opportunities** for agents
 - [ ] **Track customer satisfaction** over time
@@ -37,8 +37,8 @@ By uploading your data to Vela, you can:
 
 > 💡 **Why this matters**: You can start analyzing your data immediately without any technical setup.
 
-### Option 2: FTP Integration (For Larger Organizations)
-**Best for**: Organizations with automated call recording systems
+### Option 2: FTP Integration (For Larger Organisations)
+**Best for**: Organisations with automated call recording systems
 
 
 #### Setup Process
@@ -85,7 +85,7 @@ Before uploading, ensure your files are ready for optimal processing:
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
 - [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
 
-> 💡 **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organization later.
+> 💡 **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organisation later.
 
 ### Step 2: Upload Your Data
 Upload your files through Vela's interface:
@@ -110,7 +110,7 @@ Track the progress of your uploads and processing:
 
 > ⏱️ **Processing times**: Small files (< 10 MB) process in 15-30 minutes, larger files may take 1-2 hours.
 
-### Step 4: Verify and Optimize
+### Step 4: Verify and Optimise
 Ensure your data is ready for analysis:
 
 - [ ] **Review transcriptions** for accuracy and completeness
@@ -122,7 +122,7 @@ Ensure your data is ready for analysis:
 
 ## 🔧 Setting Up Automated Uploads
 
-### For Organizations with Existing Systems
+### For Organisations with Existing Systems
 
 | **Step** | **Action** | **Details** |
 |----------|------------|-------------|
@@ -145,12 +145,12 @@ Ensure your data is ready for analysis:
 ## 🔌 API Integration for Developers
 
 ### Upload Call Recordings via API
-For organizations with custom systems, use our API to upload data programmatically:
+For organisations with custom systems, use our API to upload data programmatically:
 
 **Endpoint**: `https://api.botlhale.xyz/asr/async/upload/vela`
 
 **Required Parameters**:
-- `org_id` - Your organization identifier
+- `org_id` - Your organisation identifier
 - `file` - Audio file (WAV, MP3, M4A, FLAC)
 - `metadata` - Call information (optional)
 
@@ -252,7 +252,7 @@ print(response.json())
 - [ ] **Review processing results** - Check for any issues
 - [ ] **Verify data accuracy** - Ensure transcripts are correct
 - [ ] **Monitor insights** - Look for patterns and trends
-- [ ] **Optimize processes** - Improve efficiency over time
+- [ ] **Optimise processes** - Improve efficiency over time
 
 ---
 
@@ -260,7 +260,7 @@ print(response.json())
 
 | **For Data Monitoring** | **For Analysis** |
 |------------------------|------------------|
-| [📊 Monitor Performance](./dashboard.md) | [📞 Analyze Calls](./calls.md) |
+| [📊 Monitor Performance](./dashboard.md) | [📞 Analyse Calls](./calls.md) |
 
 ## 🆘 Need Help?
 

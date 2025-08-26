@@ -135,7 +135,7 @@ Use scorecard results to guide agent improvement:
 | **Consistently low scores** | Comprehensive development | Intensive coaching, skill assessment, role evaluation |
 
 ### Team Analysis
-Analyze patterns across your team:
+Analyse patterns across your team:
 
 | **Pattern** | **Team Impact** | **Management Action** |
 |-------------|-----------------|---------------------|
@@ -191,7 +191,7 @@ Use scorecard data to improve processes:
 
 ### Design Principles
 - [ ] **Keep it simple** - Focus on the most important criteria
-- [ ] **Be objective** - Use measurable, observable behaviors
+- [ ] **Be objective** - Use measurable, observable behaviours
 - [ ] **Stay relevant** - Align with business goals and customer needs
 - [ ] **Ensure fairness** - Apply consistent standards across all agents
 

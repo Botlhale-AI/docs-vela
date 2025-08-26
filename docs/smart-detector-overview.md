@@ -31,7 +31,7 @@ Automatically detect important events in your customer interactions:
 
 #### How It Works:
 1. **Create search rules** with example phrases
-2. **Set monitoring scope** (organization, department, or team)
+2. **Set monitoring scope** (organisation, department, or team)
 3. **Receive real-time alerts** when issues are detected
 4. **Take immediate action** to resolve problems
 
@@ -84,7 +84,7 @@ Build a smart, searchable repository of company information:
    - "This is terrible"
    - "I want to speak to a manager"
    - "I'm going to cancel my account"
-5. **Set the scope** - Choose organization-wide or specific teams
+5. **Set the scope** - Choose organisation-wide or specific teams
 6. **Click "Create"** to start monitoring
 
 ### Step 2: Monitor Results
@@ -208,7 +208,7 @@ Build a smart, searchable repository of company information:
 - [ ] **Update knowledge base** - Add any new information from recent calls
 
 ### 📅 Weekly Analysis (30 minutes)
-- [ ] **Analyze search patterns** - Look for recurring issues
+- [ ] **Analyse search patterns** - Look for recurring issues
 - [ ] **Review scorecard trends** - Identify team-wide improvement areas
 - [ ] **Update search criteria** - Refine based on what you've learned
 - [ ] **Enhance knowledge base** - Add content for common questions

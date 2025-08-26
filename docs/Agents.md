@@ -28,7 +28,7 @@ Your agent performance table shows essential information:
 |------------|-------------------|----------------------|
 | **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs immediate coaching | 🟢 90%+ = Recognize and mentor others<br/>🟡 70-89% = Provide targeted coaching<br/>🔴 Below 70% = Immediate intervention needed |
 | **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
-| **Weaknesses** - Areas needing improvement | Specific skills or behaviors to focus on | Create targeted training plans |
+| **Weaknesses** - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
 | **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
 | **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
@@ -58,7 +58,7 @@ Your agent performance table shows essential information:
 2. **Click "View"** next to any agent's name
 3. **Review their detailed performance breakdown**
 
-### Step 2: Analyze Performance Patterns
+### Step 2: Analyse Performance Patterns
 Look for these key indicators:
 
 #### 📞 Call Duration Analysis

@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # 🔧 Integrate Vela with Your Systems
 
-Your call center doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs.
+Your call centre doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs.
 
 ## 🎯 What You Can Achieve
 
@@ -20,9 +20,9 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 ## 🏗️ Common Integration Scenarios
 
 ### Scenario 1: Automated Call Recording Upload
-**Business Goal**: Eliminate manual data upload and ensure all calls are analyzed
+**Business Goal**: Eliminate manual data upload and ensure all calls are analysed
 
-**Use Case**: Your call center uses an existing recording system that stores calls in a database or file system. You want to automatically send all new recordings to Vela for analysis.
+**Use Case**: Your call centre uses an existing recording system that stores calls in a database or file system. You want to automatically send all new recordings to Vela for analysis.
 
 **Solution**: Build an integration that monitors your recording system and uploads new calls via API.
 
@@ -36,7 +36,7 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 ### Scenario 3: Custom Analytics Dashboard
 **Business Goal**: Combine Vela data with other business metrics
 
-**Use Case**: You want to create a custom dashboard that shows call center performance alongside sales data, customer satisfaction scores, and other KPIs.
+**Use Case**: You want to create a custom dashboard that shows call centre performance alongside sales data, customer satisfaction scores, and other KPIs.
 
 **Solution**: Use the API to retrieve Vela analytics and combine them with data from other systems.
 
@@ -98,7 +98,7 @@ POST /asr/async/upload/vela
 ```
 
 **Required Parameters**:
-- `org_id` - Your organization identifier
+- `org_id` - Your organisation identifier
 - `file` - Audio file (WAV, MP3, M4A, FLAC)
 - `metadata` - Call information (optional)
 
@@ -256,7 +256,7 @@ def update_customer_profile(call_data):
 
 | **For Data Management** | **For Automation** | **For Analytics** |
 |------------------------|-------------------|------------------|
-| [📤 Get Your Data into Vela](./data-upload.md) | [🔔 Configure Notifications](./notifications.md) | [📊 Analyze Interactions](./calls.md) |
+| [📤 Get Your Data into Vela](./data-upload.md) | [🔔 Configure Notifications](./notifications.md) | [📊 Analyse Interactions](./calls.md) |
 
 ## 🆘 Need Help?
 

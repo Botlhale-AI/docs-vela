@@ -4,16 +4,16 @@ sidebar_position: 6
 
 # ⚙️ Configure Your Vela Experience
 
-Customize Vela to match your organization's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for optimal performance and user experience.
+Customise Vela to match your organisation's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for optimal performance and user experience.
 
 ## 🎯 What You Can Achieve
 
 With Vela settings, you can:
-- [ ] **Customize your profile** and organization information
+- [ ] **Customise your profile** and organisation information
 - [ ] **Manage team access** and permissions effectively
 - [ ] **Configure security** and privacy settings
 - [ ] **Set up notifications** to stay informed
-- [ ] **Monitor usage** and optimize your plan
+- [ ] **Monitor usage** and optimise your plan
 
 ---
 
@@ -25,7 +25,7 @@ Keep your profile current for better team collaboration:
 - [ ] **Go to "Settings" → "Account"**
 - [ ] **Update your information**:
   - [ ] Name and email address
-  - [ ] Organization affiliations
+  - [ ] Organisation affiliations
   - [ ] Team assignments
   - [ ] Contact preferences
 - [ ] **Click "Save"** to apply your settings
@@ -36,30 +36,30 @@ Keep your profile current for better team collaboration:
 
 ---
 
-## 🏢 Configure Your Organization
+## 🏢 Configure Your Organisation
 
-### Manage Organization Settings
-Set up your organization's branding and information:
+### Manage Organisation Settings
+Set up your organisation's branding and information:
 
 ![Account Settings](../img/screenshots/settings/settings2.png)
 
-- [ ] **Go to "Settings" → "Organizations"**
-- [ ] **Update organization details**:
-  - [ ] Organization name and logo
+- [ ] **Go to "Settings" → "Organisations"**
+- [ ] **Update organisation details**:
+- [ ] Organisation name and logo
   - [ ] Description and contact information
   - [ ] Branding preferences
 - [ ] **Configure usage settings** as needed
 
-![Organization Management](../img/screenshots/settings/settings4.png)
+![Organisation Management](../img/screenshots/settings/settings4.png)
 
 ### Monitor Usage and Limits
-Track your organization's platform usage:
+Track your organisation's platform usage:
 
 | **Metric** | **What It Shows** | **Action** |
 |------------|-------------------|------------|
 | **Current usage** | How much data you've processed | Monitor growth trends |
 | **Monthly allocation** | Your plan limits | Plan for upgrades if needed |
-| **Usage trends** | Growth over time | Optimize usage patterns |
+| **Usage trends** | Growth over time | Optimise usage patterns |
 | **Upgrade options** | Available plan improvements | Consider scaling up |
 
 ![Account Settings](../img/screenshots/settings/settings3.png)
@@ -94,17 +94,17 @@ Control who has access to your Vela platform:
 ![ Settings](../img/screenshots/settings/settings6.png)
 
 - [ ] **Go to "Settings" → "Users"**
-- [ ] **View all users** in your organization
+- [ ] **View all users** in your organisation
 - [ ] **Add new users** as needed
 - [ ] **Modify permissions** and roles
 - [ ] **Deactivate users** who no longer need access
 
 
 
-### Department and Team Organization
-Structure your organization for better management:
+### Department and Team Organisation
+Structure your organisation for better management:
 ![ Settings](../img/screenshots/settings/settings7.png)
-- [ ] **Go to "Settings" → "Users - Organization Table"**
+- [ ] **Go to "Settings" → "Users - Organisation Table"**
 - [ ] **Create departments** to group related teams
 - [ ] **Set up teams** within departments
 - [ ] **Assign users** to appropriate teams
@@ -112,7 +112,7 @@ Structure your organization for better management:
 ### User Roles and Permissions
 | **Role** | **Permissions** | **Best For** |
 |----------|-----------------|--------------|
-| **Admin** | Full system access, user management, organization settings | IT managers, system administrators |
+| **Admin** | Full system access, user management, organisation settings | IT managers, system administrators |
 | **Manager** | Team management, reports, agent oversight | Team leaders, supervisors |
 | **Agent** | View own performance, access knowledge base | Customer service agents |
 | **Analyst** | Data analysis, reporting, insights | Business analysts, quality assurance |
@@ -123,7 +123,7 @@ Structure your organization for better management:
 
 ### Password and Authentication
 ![ Settings](../img/screenshots/settings/settings8.png)
-- [ ] **Set strong password requirements** for your organization
+- [ ] **Set strong password requirements** for your organisation
 - [ ] **Enable two-factor authentication** for enhanced security
 - [ ] **Configure session timeouts** for automatic logout
 - [ ] **Set up password reset** procedures
@@ -142,7 +142,7 @@ Structure your organization for better management:
 - [ ] **Enable in-app notifications** for real-time alerts
 - [ ] **Configure notification sounds** and visual indicators
 - [ ] **Set notification priorities** for different alert types
-- [ ] **Customize notification display** preferences
+- [ ] **Customise notification display** preferences
 
 
 ---
@@ -151,20 +151,20 @@ Structure your organization for better management:
 
 ### Data Management
 - [ ] **Review data retention** policies and settings
-- [ ] **Optimize data upload** processes
+- [ ] **Optimise data upload** processes
 - [ ] **Monitor data quality** and accuracy
 - [ ] **Set up data backup** procedures
 
 ### Performance Monitoring
 - [ ] **Track system performance** metrics
 - [ ] **Monitor user activity** patterns
-- [ ] **Identify usage bottlenecks** and optimize
+- [ ] **Identify usage bottlenecks** and optimise
 - [ ] **Plan for capacity** increases
 
 ### Cost Optimization
 - [ ] **Review usage patterns** to identify optimization opportunities
 - [ ] **Set up usage alerts** to avoid overages
-- [ ] **Optimize data processing** to reduce costs
+- [ ] **Optimise data processing** to reduce costs
 - [ ] **Plan for scaling** based on growth
 
 ---
@@ -175,7 +175,7 @@ Structure your organization for better management:
 - [ ] **Upload company logo** for reports and dashboards
 - [ ] **Set brand colors** for consistent appearance
 - [ ] **Configure email signatures** for notifications
-- [ ] **Customize report templates** with your branding
+- [ ] **Customise report templates** with your branding
 
 ### Workflow Automation
 - [ ] **Set up automated alerts** for specific conditions

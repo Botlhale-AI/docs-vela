@@ -51,12 +51,12 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 ![Date range Report](../img/screenshots/reports/reports2.png)
 ![Date range Report](../img/screenshots/reports/reports3.png)
-- [ ] **Choose date range** - Select the period you want to analyze
+- [ ] **Choose date range** - Select the period you want to analyse
 - [ ] **Select teams/departments** - Focus on specific groups
 - [ ] **Pick metrics** - Choose the data points that matter most
 - [ ] **Set filters** - Narrow down to specific call types or agents
 
-### Step 3: Customize Your Report
+### Step 3: Customise Your Report
 
 - [ ] **Include executive summary** - Key findings and recommendations
 - [ ] **Add visualizations** - Charts and graphs for better understanding

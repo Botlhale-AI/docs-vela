@@ -58,10 +58,10 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 
 ## 🏗️ Building Your Knowledge Base
 
-### Content Organization
+### Content Organisation
 Structure your knowledge base for easy navigation:
 
-| **Organization Level** | **Purpose** | **Example Structure** |
+| **Organisation Level** | **Purpose** | **Example Structure** |
 |----------------------|-------------|---------------------|
 | **Categories** | High-level grouping | Products, Services, Policies, Training |
 | **Subcategories** | Specific topic areas | Product A, Product B, Billing, Technical Support |
@@ -108,7 +108,7 @@ Monitor how agents use the knowledge base:
 | **Metric** | **What It Shows** | **Action** |
 |------------|-------------------|------------|
 | **Search Frequency** | Most common queries | Add missing content, improve existing |
-| **Content Usage** | Most/least accessed information | Optimize popular content, review unused |
+| **Content Usage** | Most/least accessed information | Optimise popular content, review unused |
 | **Search Success** | How often agents find what they need | Improve search terms, reorganize content |
 | **Time to Find** | How long agents spend searching | Simplify navigation, improve search |
 
@@ -121,7 +121,7 @@ Manage your knowledge base content effectively:
 
 | **Stage** | **Action** | **Timeline** |
 |-----------|------------|--------------|
-| **Creation** | Add new content with proper organization | As needed |
+| **Creation** | Add new content with proper organisation | As needed |
 | **Review** | Check accuracy and relevance | Monthly |
 | **Update** | Modify content based on feedback and changes | Quarterly |
 | **Archive** | Remove outdated or irrelevant content | Annually |
@@ -171,7 +171,7 @@ Enable agents to access information during calls:
 | **Problem** | **Cause** | **Solution** |
 |-------------|-----------|--------------|
 | **Low usage rates** | Poor content, difficult navigation, lack of training | Improve content quality, simplify navigation, provide training |
-| **Search not finding content** | Poor keywords, unclear organization, missing content | Optimize search terms, reorganize content, add missing information |
+| **Search not finding content** | Poor keywords, unclear organisation, missing content | Optimise search terms, reorganise content, add missing information |
 | **Outdated information** | Infrequent updates, no review process | Establish update schedule, assign content owners, regular reviews |
 | **Agent resistance** | Poor training, unclear benefits, difficult access | Provide comprehensive training, demonstrate benefits, improve accessibility |
 
@@ -186,7 +186,7 @@ Enable agents to access information during calls:
 - [ ] **Get feedback** - Involve agents in content development
 
 ### User Experience
-- [ ] **Make it searchable** - Optimize for quick discovery
+- [ ] **Make it searchable** - Optimise for quick discovery
 - [ ] **Organize logically** - Use intuitive categories and structure
 - [ ] **Keep it accessible** - Ensure easy access during interactions
 - [ ] **Provide examples** - Make information practical and actionable

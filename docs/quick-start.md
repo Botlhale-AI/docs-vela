@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 🚀 Get Started with Vela in 5 Minutes
 
-Welcome to Vela! This guide will help you start analyzing your call center data and improving customer experience immediately.
+Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
 
 ## 🎯 What You'll Achieve
 
@@ -36,7 +36,7 @@ By the end of this guide, you'll be able to:
 
 ![Dashboard Setup - Screenshot showing the Vela dashboard customization interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
 
-> 💡 **Why this matters**: Your dashboard becomes your command center for monitoring team performance and customer satisfaction at a glance.
+> 💡 **Why this matters**: Your dashboard becomes your command centre for monitoring team performance and customer satisfaction at a glance.
 
 ### Step 2: Upload Your First Data (2 minutes)
 **Goal**: Get your call data into Vela for analysis
@@ -47,10 +47,10 @@ By the end of this guide, you'll be able to:
 - [ ] **Select your call files** (we support most audio formats)
 - [ ] **Click "Upload"** and wait for processing
 
-#### Option B: FTP Integration (For larger organizations)
+#### Option B: FTP Integration (For larger organisations)
 - [ ] Contact your Vela Account Manager to set up automated uploads
 
-> 💡 **Why this matters**: Once your data is uploaded, Vela automatically analyzes every interaction for insights you can't get manually.
+> 💡 **Why this matters**: Once your data is uploaded, Vela automatically analyses every interaction for insights you can't get manually.
 
 ### Step 3: Review Your First Insights (1 minute)
 **Goal**: See immediate value from your data
@@ -71,7 +71,7 @@ By the end of this guide, you'll be able to:
 - [ ] **Click "Create"**
 - [ ] **Name your search** (e.g., "Customer Complaints")
 - [ ] **Add example phrases** like "I'm not happy" or "This is terrible"
-- [ ] **Set scope** to your organization or specific team
+- [ ] **Set scope** to your organisation or specific team
 - [ ] **Click "Create"** to start monitoring
 
 > 💡 **Why this matters**: Vela will automatically alert you when customers express dissatisfaction, helping you respond proactively.
@@ -80,9 +80,9 @@ By the end of this guide, you'll be able to:
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You're now ready to transform your call center operations with AI-powered insights. Vela will automatically process your interactions and provide actionable insights to improve customer experience and team performance.
+**Congratulations!** You're now ready to transform your call centre operations with AI-powered insights. Vela will automatically process your interactions and provide actionable insights to improve customer experience and team performance.
 
-You've just unlocked the superpowers that will make your call center unstoppable! 🚀
+You've just unlocked the superpowers that will make your call centre unstoppable! 🚀
 
 ---
 

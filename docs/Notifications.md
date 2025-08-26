@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # 🔔 Stay Informed and Take Action
 
-In a busy call center, important things happen fast. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues quickly, and keep your team connected when it matters most.
+In a busy call centre, important things happen fast. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues quickly, and keep your team connected when it matters most.
 
 ## 🎯 What You Can Achieve
 
@@ -133,7 +133,7 @@ Receive automated summaries of your team's performance:
 | **Report Type** | **When Sent** | **What to Do** |
 |-----------------|---------------|----------------|
 | **Daily summaries** | Every morning | Review key metrics, identify immediate issues |
-| **Weekly reports** | Every Monday | Analyze trends, plan coaching sessions |
+| **Weekly reports** | Every Monday | Analyse trends, plan coaching sessions |
 | **Monthly analytics** | First of each month | Strategic planning, performance reviews |
 | **Custom reports** | As scheduled | Review specific metrics, take action |
 
@@ -199,7 +199,7 @@ Receive automated summaries of your team's performance:
 
 | **For Smart Monitoring** | **For Call Analysis** | **For Settings** |
 |-------------------------|---------------------|------------------|
-| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📞 Analyze Call Data](./calls.md) | [⚙️ Configure Settings](./settings.md) |
+| [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📞 Analyse Call Data](./calls.md) | [⚙️ Configure Settings](./settings.md) |
 
 ## 🆘 Need Help?
 

@@ -34,7 +34,7 @@ Smart Search is your automated monitoring system. Here's what you'll accomplish:
 ![ Smart Search](../img/screenshots/smart_search/smart8.png)
 - [ ] **Name your search** (e.g., "Customer Complaints")
 - [ ] **Add example phrases** that indicate the issue
-- [ ] **Set the scope** (organization, department, or team)
+- [ ] **Set the scope** (organisation, department, or team)
 - [ ] **Configure notification preferences**
 
 ### Step 3: Test and Refine
@@ -91,7 +91,7 @@ Smart Search is your automated monitoring system. Here's what you'll accomplish:
 | **Low Sensitivity** | Trend analysis, long-term monitoring | Fewer false positives, may miss some issues |
 
 ### Scope Configuration
-- [ ] **Organization-wide** - Monitor all interactions across your company
+- [ ] **Organisation-wide** - Monitor all interactions across your company
 - [ ] **Department-specific** - Focus on particular business areas
 - [ ] **Team-based** - Target specific teams or groups
 - [ ] **Agent-specific** - Monitor individual performance
@@ -140,7 +140,7 @@ When Smart Search finds matches, you'll see:
 ### Trend Analysis
 - [ ] **Track match frequency** over time to identify trends
 - [ ] **Compare periods** to see if issues are improving or worsening
-- [ ] **Analyze patterns** by time of day, day of week, or agent
+- [ ] **Analyse patterns** by time of day, day of week, or agent
 - [ ] **Correlate with other metrics** like customer satisfaction or resolution rates
 
 ### Action Planning

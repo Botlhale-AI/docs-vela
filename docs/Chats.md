@@ -2,9 +2,9 @@
 sidebar_position: 8
 ---
 
-# 💬 Analyze Chat Conversations
+# 💬 Analyse Chat Conversations
 
-Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behavior patterns, optimize response times, and improve the quality of your digital customer service.
+Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behaviour patterns, optimise response times, and improve the quality of your digital customer service.
 
 ## 🎯 What You Can Achieve
 
@@ -12,8 +12,8 @@ Chat analysis unlocks the hidden patterns in digital conversations. Here's what 
 
 | **Digital Experience** | **Response Optimization** | **Quality Improvement** |
 |----------------------|-------------------------|----------------------|
-| 🚀 **Optimize response times** | 📱 **Improve digital engagement** | ✅ **Enhance chat quality** |
-| 🔍 **Understand customer behavior** | 💬 **Perfect your messaging** | 📊 **Track digital performance** |
+| 🚀 **Optimise response times** | 📱 **Improve digital engagement** | ✅ **Enhance chat quality** |
+| 🔍 **Understand customer behaviour** | 💬 **Perfect your messaging** | 📊 **Track digital performance** |
 | 💡 **Identify automation opportunities** | 🎯 **Increase resolution rates** | 🛡️ **Maintain digital standards** |
 
 ---
@@ -35,13 +35,13 @@ Chat analysis provides unique insights into digital customer service:
 | **Indicator** | **What It Means** | **Digital Action** |
 |---------------|-------------------|------------------|
 | **Fast response + High satisfaction** | Excellent digital service | Replicate and automate |
-| **Slow response + Low satisfaction** | Digital service issues | Optimize response processes |
+| **Slow response + Low satisfaction** | Digital service issues | Optimise response processes |
 | **High message count + Low resolution** | Complex issues or inefficiency | Improve processes or training |
 | **Low message count + High resolution** | Efficient digital service | Scale successful approaches |
 
 ---
 
-## 🔍 How to Analyze Chat Conversations
+## 🔍 How to Analyse Chat Conversations
 
 ### Step 1: Access Chat Data
 
@@ -54,11 +54,11 @@ Chat analysis provides unique insights into digital customer service:
 ### Step 2: Review Conversation Flow
 ![Chats](../img/screenshots/chats/chats-2.png)
 - [ ] **Read the full conversation** with timestamps
-- [ ] **Analyze response patterns** and timing
+- [ ] **Analyse response patterns** and timing
 - [ ] **Identify customer journey** and pain points
 - [ ] **Note successful resolution strategies**
 
-### Step 3: Analyze Digital Metrics
+### Step 3: Analyse Digital Metrics
 ![Chats](../img/screenshots/chats/chats-3.png)
 - [ ] **Check response times** throughout the conversation
 - [ ] **Review message count** and complexity
@@ -69,17 +69,17 @@ Chat analysis provides unique insights into digital customer service:
 ![Chats](../img/screenshots/chats/chats-4.png)
 - [ ] **Add comments** for team learning
 - [ ] **Update chat templates** based on insights
-- [ ] **Optimize response processes** for efficiency
+- [ ] **Optimise response processes** for efficiency
 - [ ] **Identify automation opportunities**
 
 ---
 
 ## 📈 Identifying Digital Patterns
 
-### Customer Behavior Analysis
+### Customer Behaviour Analysis
 Understand how customers interact in digital channels:
 
-| **Behavior Pattern** | **What to Look For** | **Business Opportunity** |
+| **Behaviour Pattern** | **What to Look For** | **Business Opportunity** |
 |---------------------|---------------------|------------------------|
 | **Quick Questions** | Simple queries that could be automated | Chatbot implementation |
 | **Complex Issues** | Detailed problems requiring human expertise | Specialized agent training |
@@ -94,7 +94,7 @@ Identify digital-specific performance patterns:
 | **Fast Typing** | Quick responses, high message count | Efficiency training |
 | **Thoughtful Responses** | Longer, more detailed messages | Quality vs. speed balance |
 | **Template Usage** | Consistent, professional responses | Template optimization |
-| **Personal Touch** | Customized, empathetic responses | Personalization training |
+| **Personal Touch** | Customised, empathetic responses | Personalisation training |
 
 ---
 
@@ -106,7 +106,7 @@ Improve the speed and quality of digital interactions:
 | **Response Time** | **Customer Expectation** | **Action Required** |
 |------------------|-------------------------|-------------------|
 | **Under 30 seconds** | Excellent digital service | Maintain and replicate |
-| **30-60 seconds** | Good digital service | Optimize for faster response |
+| **30-60 seconds** | Good digital service | Optimise for faster response |
 | **60+ seconds** | Poor digital service | Immediate process review |
 | **No response** | Failed digital service | Escalation procedures |
 
@@ -133,14 +133,14 @@ Identify conversations that could be automated:
 ## 📱 Digital Experience Optimization
 
 ### Chat Interface Analysis
-Optimize the digital customer experience:
+Optimise the digital customer experience:
 
 | **Interface Element** | **What to Monitor** | **Optimization** |
 |---------------------|-------------------|-----------------|
 | **Welcome Messages** | Engagement and response rates | A/B test different approaches |
 | **Response Templates** | Consistency and effectiveness | Update based on performance |
 | **Escalation Process** | Smoothness of handoffs | Streamline procedures |
-| **Closing Messages** | Customer satisfaction and follow-up | Optimize for retention |
+| **Closing Messages** | Customer satisfaction and follow-up | Optimise for retention |
 
 ### Multi-channel Integration
 Ensure seamless experience across channels:
@@ -148,7 +148,7 @@ Ensure seamless experience across channels:
 - [ ] **Track customer journey** across different channels
 - [ ] **Maintain conversation context** during transfers
 - [ ] **Provide consistent information** across platforms
-- [ ] **Optimize handoff processes** between channels
+- [ ] **Optimise handoff processes** between channels
 
 ---
 
@@ -167,7 +167,7 @@ Monitor these key indicators for digital success:
 ### Digital Trend Analysis
 - [ ] **Track digital adoption** over time
 - [ ] **Monitor channel preferences** and usage patterns
-- [ ] **Analyze peak usage times** for resource planning
+- [ ] **Analyse peak usage times** for resource planning
 - [ ] **Compare digital vs. voice performance** metrics
 
 ---
@@ -176,8 +176,8 @@ Monitor these key indicators for digital success:
 
 | **Problem** | **Digital Cause** | **Solution** |
 |-------------|------------------|--------------|
-| **Slow response times** | High volume, agent workload, technical issues | Optimize processes, add resources, fix technical problems |
-| **Low customer satisfaction** | Poor response quality, slow service, technical problems | Improve training, optimize processes, enhance technology |
+| **Slow response times** | High volume, agent workload, technical issues | Optimise processes, add resources, fix technical problems |
+| **Low customer satisfaction** | Poor response quality, slow service, technical problems | Improve training, optimise processes, enhance technology |
 | **High escalation rates** | Complex issues, agent limitations, process gaps | Better training, improved processes, clearer escalation criteria |
 | **Technical difficulties** | System issues, connectivity problems, interface problems | Technical support, system upgrades, user training |
 
@@ -186,7 +186,7 @@ Monitor these key indicators for digital success:
 ## 💡 Best Practices for Chat Analysis
 
 ### Digital-First Approach
-- [ ] **Optimize for mobile** and digital interfaces
+- [ ] **Optimise for mobile** and digital interfaces
 - [ ] **Use digital-appropriate language** and tone
 - [ ] **Leverage digital tools** and automation
 - [ ] **Monitor digital metrics** specifically
@@ -199,7 +199,7 @@ Monitor these key indicators for digital success:
 
 ### Continuous Digital Improvement
 - [ ] **Update chat templates** based on performance
-- [ ] **Optimize response processes** for efficiency
+- [ ] **Optimise response processes** for efficiency
 - [ ] **Implement automation** where appropriate
 - [ ] **Monitor digital trends** and adapt accordingly
 

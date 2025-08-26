@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 📞 Analyze Customer Interactions
+# 📞 Analyse Customer Interactions
 
 Every call tells a story. Vela's call analysis tools help you understand what's really happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
 
@@ -41,7 +41,7 @@ Your call analysis provides comprehensive insights into every interaction:
 
 ---
 
-## 🔍 How to Analyze Individual Calls
+## 🔍 How to Analyse Individual Calls
 
 ### Step 1: Access Call Details
 
@@ -59,7 +59,7 @@ Your call analysis provides comprehensive insights into every interaction:
 - [ ] **Identify customer pain points** and agent responses
 - [ ] **Note successful resolution strategies**
 
-### Step 3: Analyze Performance Metrics
+### Step 3: Analyse Performance Metrics
 
 ![Calls](../img/screenshots/calls/calls-3.png)
 - [ ] **Review agent score** and breakdown
@@ -119,7 +119,7 @@ Identify trends that affect team performance:
 - [ ] **Identify bottlenecks** in call handling
 - [ ] **Spot opportunities** for automation or streamlining
 - [ ] **Update procedures** based on customer feedback
-- [ ] **Optimize resource allocation** based on call patterns
+- [ ] **Optimise resource allocation** based on call patterns
 
 ---
 
@@ -138,7 +138,7 @@ Track customer emotions throughout the conversation:
 Identify important topics and themes:
 
 - [ ] **Review keyword frequency** to spot trends
-- [ ] **Analyze context** around important terms
+- [ ] **Analyse context** around important terms
 - [ ] **Track topic evolution** over time
 - [ ] **Identify emerging issues** early
 
@@ -178,7 +178,7 @@ Monitor these metrics to track team performance:
 
 | **Problem** | **Possible Cause** | **Solution** |
 |-------------|-------------------|--------------|
-| **Low call quality scores** | Training gaps, unclear expectations, process issues | Review training materials, clarify expectations, optimize processes |
+| **Low call quality scores** | Training gaps, unclear expectations, process issues | Review training materials, clarify expectations, optimise processes |
 | **High call duration** | Complex issues, agent uncertainty, inefficient processes | Provide better training, improve knowledge base, streamline procedures |
 | **Poor customer sentiment** | Service quality issues, agent attitude, product problems | Address root causes, provide coaching, improve products |
 | **Inconsistent performance** | Varying call complexity, agent experience, external factors | Standardize processes, provide consistent training, account for variables |
@@ -189,13 +189,13 @@ Monitor these metrics to track team performance:
 
 ### Regular Review Schedule
 - [ ] **Daily**: Review high-priority calls and alerts
-- [ ] **Weekly**: Analyze patterns and trends
+- [ ] **Weekly**: Analyse patterns and trends
 - [ ] **Monthly**: Comprehensive team performance review
 - [ ] **Quarterly**: Strategic analysis and planning
 
 ### Effective Coaching
 - [ ] **Use specific examples** from actual calls
-- [ ] **Focus on behaviors** that can be changed
+- [ ] **Focus on behaviours** that can be changed
 - [ ] **Provide constructive feedback** with actionable steps
 - [ ] **Celebrate improvements** and successes
 

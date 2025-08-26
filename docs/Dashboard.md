@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 📊 Monitor Your Team's Performance
 
-Think of your Vela dashboard as mission control for your call center. It's where you'll spot trends before they become problems, identify coaching opportunities, and track how your team is really performing.
+Think of your Vela dashboard as mission control for your call centre. It's where you'll spot trends before they become problems, identify coaching opportunities, and track how your team is really performing.
 
 ## 🎯 What You Can Achieve
 
@@ -14,7 +14,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 |---------------------------|-------------------|------------------------|
 | 🔍 **Spot problems before they escalate** | 👥 **Coach with confidence** | 😊 **Keep customers happy** |
 | 📈 **Track trends and patterns** | 🎯 **Identify top performers** | 📊 **Monitor satisfaction** |
-| ⚡ **Optimize efficiency** | 📋 **Spot training needs** | 🚨 **Catch issues early** |
+| ⚡ **Optimise efficiency** | 📋 **Spot training needs** | 🚨 **Catch issues early** |
 
 ---
 
@@ -61,7 +61,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 
 4. **Click "Save"** to apply your dashboard
 
-![Customize Dashboard - Screenshot showing the dashboard customization panel with metric selection and configuration options](../img/screenshots/costomize.png)
+![Customise Dashboard - Screenshot showing the dashboard customisation panel with metric selection and configuration options](../img/screenshots/costomize.png)
 
 ---
 
@@ -99,7 +99,7 @@ Your dashboard shows real-time data for your selected team and time period. Each
 - [ ] **Review pain points** - See what issues emerged yesterday
 
 ### 📅 Weekly Review (15 minutes)
-- [ ] **Analyze trends** - Look for patterns over the past week
+- [ ] **Analyse trends** - Look for patterns over the past week
 - [ ] **Identify coaching opportunities** - Find agents who need help
 - [ ] **Spot process improvements** - Look for recurring issues
 
@@ -134,7 +134,7 @@ Create different dashboard views for different purposes:
 ### Use Filters Effectively
 - **Date ranges** - Compare different time periods
 - **Team filters** - Focus on specific groups
-- **Call types** - Analyze different interaction types
+- **Call types** - Analyse different interaction types
 - **Agent filters** - Review individual performance
 
 ### Set Up Alerts

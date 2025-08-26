@@ -19,7 +19,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ### 📤 **Data Management Workflow**
 1. **[Data Upload](./data-upload.md)** - Get your data into Vela
-2. **[Settings](./settings.md)** - Configure your organization
+2. **[Settings](./settings.md)** - Configure your organisation
 3. **[Dashboard](./dashboard.md)** - Monitor data processing
 
 
@@ -61,7 +61,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ### 🔧 **Technical Features**
 - **[Data Upload](./data-upload.md)** - Data management and processing
-- **[Settings](./settings.md)** - User and organization management
+- **[Settings](./settings.md)** - User and organisation management
 
 ---
 
@@ -97,6 +97,6 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 | **Generate reports** | [Reports Guide](./reports.md) |
 
 | **Configure alerts** | [Notifications Guide](./notifications.md) |
-| **Analyze calls** | [Call Analysis](./calls.md) |
+| **Analyse calls** | [Call Analysis](./calls.md) |
 | **Set up quality monitoring** | [Smart Detector](./smart-detector-overview.md) |
 | **Manage my account** | [Settings Guide](./settings.md) |
