@@ -341,6 +341,7 @@ body {
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   min-width: 200px;
+  text-decoration: none !important;
 }
 
 .quickStart {
@@ -356,7 +357,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: none !important;
   min-width: 200px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -366,12 +367,14 @@ body {
   background: #e54c1a;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+  text-decoration: none !important;
 }
 
 .quickStart:hover {
   background: #e54c1a;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+  text-decoration: none !important;
 }
 
 .getStarted:active {
