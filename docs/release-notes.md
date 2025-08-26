@@ -14,7 +14,7 @@ We're excited to announce the latest update to Vela! This release brings several
 We've launched a complete coaching portal for agents that includes:
 - **Courses Management**: Assign and track training courses with progress monitoring
 - **Awards System**: Recognise and reward high performers with digital awards
-<!-- - **Warnings Management**: Send and manage cautions and warnings to agents -->
+- **Warnings Management**: Send and manage cautions and warnings to agents
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
 - **Notifications**: Instant notifications for courses, awards, and warnings
@@ -67,35 +67,24 @@ We've renamed Agent Checklists to Agent Scorecards to better reflect their purpo
 
 ## Bug Fixes
 
-### Dashboard Configuration
+<!-- ### Dashboard Configuration
 We have resolved an issue that caused dashboard configurations to reset on reload.
 
 ### Users Table
-We've updated the users page for a better user experience! Now, only the table scrolls horizontally, keeping the rest of the page static for improved navigation and readability.
+We've updated the users page for a better user experience! Now, only the table scrolls horizontally, keeping the rest of the page static for improved navigation and readability. -->
 
 ## What's Next?
 
 ### Enhanced Coaching Features
-We're expanding the coaching portal with:
-- Advanced course creation tools
-- Interactive assessments and quizzes
-- Performance tracking and analytics
-- Peer learning and collaboration features
+We're improving the coaching portal.
 
-### Advanced Voice ID
-We're enhancing the voice ID system with:
-- Voice biometric authentication
-- Advanced voice analysis features
-- Integration with call analysis
-- Voice-based performance insights
+### Voice ID Notifications
+- We'll automatically send emails to agents who have not submitted a sample for Voice ID.
 
 ### Vela Redesign
 We're continuing to redesign Vela's UI for an even better user experience with:
 - Modern design system
 - Improved accessibility
-- Enhanced mobile experience
-- Better performance and loading times
-
 
 ### Advanced Analytics
 We're adding more sophisticated analytics and reporting features to help you better understand your team's performance and customer interactions.
