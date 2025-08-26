@@ -151,7 +151,13 @@ Configure notifications for important events:
 |------------------------|------------------|-------------------|
 | [Improve Agent Performance](./agents.md) | [Generate Reports](./reports.md) | [Configure Notifications](./notifications.md) |
 
+### See also
+- [Data Upload Guide](./data-upload.md) - Get your data into Vela first
+- [Agent Performance](./agents.md) - Detailed agent coaching and development
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [API Integration](./api.md) - Connect Vela with your existing systems
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

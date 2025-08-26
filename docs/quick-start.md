@@ -113,10 +113,15 @@ You've just unlocked the capabilities that will make your call centre more effec
 | [Monitor daily](./dashboard.md) | [Train agents](./agents.md) | [Set up Smart Monitoring](./smart-detector-overview.md) |
 | [Review alerts](./notifications.md) | [Generate reports](./reports.md) |
 
+### See also
+- [Data Upload Guide](./data-upload.md) - Upload more data for better insights
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Search](./smart-search-guide.md) - Find specific patterns in your calls
+- [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
+
 > **Need help finding the right guide?** Check out our [Navigation Guide](./navigation-guide.md) to find documentation based on your role and goals.
 
 ## Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
 - 🎥 **Video Tutorials**: Available on the homepage
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

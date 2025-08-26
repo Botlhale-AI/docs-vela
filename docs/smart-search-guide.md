@@ -194,7 +194,13 @@ Based on search results, you can:
 |-------------------------------|----------------------------|------------------------|
 | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
 
+### See also
+- [Smart Monitoring Overview](./smart-detector-overview.md) - Understand automated detection
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
+- [Dashboard Overview](./dashboard.md) - Monitor search results and trends
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

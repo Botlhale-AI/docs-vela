@@ -168,8 +168,14 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 |---------------------------|------------------------|-------------------|
 | [Monitor Performance](./dashboard.md) | [Improve Agent Performance](./agents.md) | [Configure Notifications](./notifications.md) |
 
+### See also
+- [Dashboard Overview](./dashboard.md) - Monitor performance in real-time
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [API Integration](./api.md) - Automate report generation
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for automation
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

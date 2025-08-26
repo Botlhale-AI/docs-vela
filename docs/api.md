@@ -258,7 +258,14 @@ def update_customer_profile(call_data):
 |------------------------|-------------------|------------------|
 | [Get Your Data into Vela](./data-upload.md) | [Configure Notifications](./notifications.md) | [Analyse Interactions](./calls.md) |
 
+### See also
+- [Data Upload Guide](./data-upload.md) - Manual and automated data uploads
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [Dashboard Integration](./dashboard.md) - Connect your data to dashboards
+- [Settings Configuration](./settings.md) - Configure your API settings
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference and examples
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **API Documentation**: [Official Botlhale API Docs](https://docs-apis.botlhale.xyz)

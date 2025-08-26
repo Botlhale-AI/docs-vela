@@ -213,7 +213,13 @@ Monitor these metrics to track team performance:
 |-------------------------|------------------------|-------------------------|
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
+### See also
+- [Dashboard Overview](./dashboard.md) - Monitor call performance trends
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Search](./smart-search-guide.md) - Find specific patterns in calls
+- [Chat Analysis](./chats.md) - Analyse digital conversations
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

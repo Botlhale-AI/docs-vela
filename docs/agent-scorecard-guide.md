@@ -215,7 +215,13 @@ Use scorecard data to improve processes:
 |-------------------------|----------------------------|------------------------|
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
 
+### See also
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [Dashboard Overview](./dashboard.md) - Monitor performance trends
+- [Knowledge Base](./knowledge-base-guide.md) - Build training resources
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

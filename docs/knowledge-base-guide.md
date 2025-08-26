@@ -205,7 +205,13 @@ Enable agents to access information for future calls and training:
 |-------------------------|-------------------------------|------------------------|
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Improve Agent Performance](./agents.md) |
 
+### See also
+- [Smart Search Guide](./smart-search-guide.md) - Create custom search patterns
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [Dashboard Overview](./dashboard.md) - Monitor team performance
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

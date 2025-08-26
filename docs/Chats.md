@@ -211,8 +211,14 @@ Monitor these key indicators for digital success:
 |-------------------------|------------------------|-------------------------|
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
+### See also
+- [Call Analysis](./calls.md) - Analyse voice interactions
+- [Dashboard Overview](./dashboard.md) - Monitor digital performance trends
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Search](./smart-search-guide.md) - Find patterns in digital conversations
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

@@ -234,7 +234,13 @@ Build a smart, searchable repository of company information:
 |------------------------|--------------------------------|------------------------------|
 | [Create Smart Searches](./smart-search-guide.md) | [Build Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) |
 
+### See also
+- [Smart Search Guide](./smart-search-guide.md) - Create custom search patterns
+- [Knowledge Base Guide](./knowledge-base-guide.md) - Build your team's knowledge resources
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Dashboard Monitoring](./dashboard.md) - Monitor automated alerts and insights
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

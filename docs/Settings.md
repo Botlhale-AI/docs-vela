@@ -202,8 +202,14 @@ Structure your organisation for better management:
 |----------------------|-------------------------|
 | [Configure Notifications](./notifications.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) |
 
+### See also
+- [Dashboard Overview](./dashboard.md) - Monitor your configured settings
+- [API Integration](./api.md) - Configure external system connections
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Data Upload Guide](./data-upload.md) - Set up data import settings
+- [Agent Performance](./agents.md) - Manage team settings and permissions
+
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 
