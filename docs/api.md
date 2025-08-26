@@ -53,11 +53,11 @@ APIs enable seamless integration between systems. Here's what you'll unlock:
 
 ### Step 1: Set Up Authentication
 1. **Log in** to your Vela platform
-2. **Go to "Settings" → "API Keys"**
-3. **Generate a new API key** for your integration
-4. **Copy the token** for use in your API requests
+2. **Contact your Account Manager** to set up API access
+3. **Receive your authentication credentials** for integration
+4. **Use session-based authentication** for API requests
 
-> **Security Best Practice**: Store your API token securely and never expose it in client-side code.
+> **Security Best Practice**: Store your authentication credentials securely and never expose them in client-side code.
 
 ### Step 2: Choose Your Integration Approach
 
@@ -208,7 +208,7 @@ def update_customer_profile(call_data):
 
 ### Security and Authentication
 - **Secure token storage** - Never hardcode API tokens
-- **Token rotation** - Regularly update API keys
+- **Token rotation** - Regularly update authentication credentials
 - **Access control** - Limit API access to necessary endpoints
 - **Audit logging** - Track API usage for security monitoring
 

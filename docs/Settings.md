@@ -195,7 +195,7 @@ Structure your organisation for better management:
 | **Can't access settings** | Check user permissions, verify admin access, contact support |
 | **Changes not saving** | Check internet connection, refresh page, clear browser cache |
 | **Users not receiving notifications** | Verify email settings, check spam filters, test notification delivery |
-| **API integration issues** | Verify API keys, check rate limits, review authentication settings |
+| **API integration issues** | Contact your Account Manager, check rate limits, review authentication settings |
 
 ---
 

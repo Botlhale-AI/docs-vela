@@ -6,7 +6,7 @@ sidebar_position: 0
 
 Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
 
-Call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. Vela automatically transcribes and analyses 100% of your calls regardless of the language spoken, giving you insights that help you improve agent performance and customer satisfaction.
+Call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. Vela transcribes and analyses your call recordings to provide insights that help you improve agent performance and customer satisfaction.
 
 > **What is Vela?** Vela is a **multilingual call centre analytics tool** that processes call recordings in African languages to provide AI-powered insights, agent scoring, and automated alerts for improving your team's performance.
 
