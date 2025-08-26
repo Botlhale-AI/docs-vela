@@ -33,6 +33,25 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarPosition: 'right',
+        docsRouteBasePath: ['docs'],
+        ignoreFiles: [],
+        indexPages: true,
+        searchBarPosition: 'right',
+        docsDir: 'docs',
+        indexDocs: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
