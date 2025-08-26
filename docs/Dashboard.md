@@ -20,6 +20,8 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 
 ## Set Up Your Dashboard
 
+Ready to get started? Let's set up your dashboard in just a few steps.
+
 ### Step 1: Access Your Dashboard
 1. **Log in** to Vela
 2. **Click "Dashboard"** in the left sidebar

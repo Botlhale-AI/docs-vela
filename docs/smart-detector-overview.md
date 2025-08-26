@@ -20,7 +20,7 @@ Smart Detector provides automated analysis and insights. Here's what it does for
 
 ---
 
-## Advanced AI-Powered Analysis Tools
+## Advanced Intelligent Analysis Tools
 
 ### **Smart Search: Comprehensive Call Analysis**
 Detect important events and patterns in your customer interactions:
@@ -46,7 +46,7 @@ Detect important events and patterns in your customer interactions:
 Evaluate and improve agent performance with AI-powered assessments and custom criteria:
 
 #### What It Evaluates:
-- **AI-powered evaluations** - Score every interaction consistently using advanced models
+- **Intelligent evaluations** - Score every interaction consistently using advanced technology
 - **Custom checklists** - Create tailored evaluation criteria for your organisation
 - **Performance tracking** - Monitor improvement over time with detailed metrics
 - **Training identification** - Spot specific areas for coaching and development
@@ -64,7 +64,7 @@ Build a smart, searchable repository of company information and resources:
 
 #### What It Contains:
 - **Document upload** - Add policies, procedures, training materials, and resources
-- **Smart search** - Find relevant information efficiently using AI-powered search
+- **Smart search** - Find relevant information efficiently using intelligent search
 - **Agent access** - Provide support based on call analysis insights and patterns
 - **Continuous improvement** - Update knowledge based on interaction analysis
 - **Resource organisation** - Categorise and tag content for easy discovery

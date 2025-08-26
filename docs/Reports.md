@@ -164,12 +164,12 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 
 ## Next Steps
 
-| **For Real-Time Insights** | **For Team Management** | **For Automation** |
+| **For Real Insights** | **For Team Management** | **For Automation** |
 |---------------------------|------------------------|-------------------|
 | [Monitor Performance](./dashboard.md) | [Improve Agent Performance](./agents.md) | [Configure Notifications](./notifications.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor performance in real-time
+- [Dashboard Overview](./dashboard.md) - Monitor performance
 - [Agent Performance](./agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [API Integration](./api.md) - Automate report generation

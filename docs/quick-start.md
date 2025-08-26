@@ -6,7 +6,7 @@ sidebar_position: 0
 
 Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
 
-Call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. Vela transcribes and analyses your call recordings to provide insights that help you improve agent performance and customer satisfaction.
+We know call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. That's where Vela comes in. We transcribe and analyse your call recordings to provide insights that help you improve agent performance and customer satisfaction.
 
 > **What is Vela?** Vela is a **multilingual call centre analytics tool** that processes call recordings in African languages to provide AI-powered insights, agent scoring, and automated alerts for improving your team's performance.
 
@@ -142,7 +142,7 @@ This is an advanced feature that lets you set up automated monitoring for specif
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You're now ready to transform your call centre operations with AI-powered insights. Vela processes your interactions and provides actionable insights to improve customer experience and team performance.
+**Congratulations!** You've just completed your first steps with Vela. You're now ready to transform your call centre operations with AI-powered insights. Vela processes your interactions and provides actionable insights to improve customer experience and team performance.
 
 Call centres face unique challenges - managing customer expectations, supporting agents, and driving continuous improvement. Vela helps you see what's really happening so you can make informed decisions.
 
@@ -171,8 +171,9 @@ You've just unlocked the capabilities that will make your call centre more effec
 > **💡 Pro Tip**: Use the left sidebar in the Vela platform to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
 
 
-
 ## Need Help?
+
+Don't worry! we're here to help! Here's how to get support:
 
 - 📧 **Contact Support**: support@botlhale.ai
 - 🎥 **Video Tutorials**: Available on the homepage

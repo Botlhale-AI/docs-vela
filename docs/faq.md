@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # Frequently Asked Questions
 
-Find quick answers to the most common questions about Vela. If you don't see your question here, [contact our support team](mailto:support@botlhale.ai).
+Got questions? We've got answers! Here are quick responses to the most common questions about Vela. If you don't see your question here, don't hesitate to [contact our support team](mailto:support@botlhale.ai).
 
 ## Getting Started FAQs
 
@@ -23,7 +23,7 @@ Vela supports a comprehensive range of file formats:
 - **Video files**: Various formats for call recordings with audio extraction
 
 ### How long does it take to process my calls?
-Call processing time varies based on file size and complexity, but you'll receive an email notification when the analysis is complete. The system processes calls asynchronously to ensure optimal performance.
+Call processing time varies based on file size and complexity, but you'll receive an email notification when your calls are ready to review. The system works in the background to ensure everything runs smoothly.
 
 ### Do I need to install any software?
 No, Vela is a web-based platform. You can access it from any modern web browser.
@@ -93,7 +93,7 @@ Vela implements enterprise-grade security measures:
 ### Can I integrate Vela with my existing systems?
 Vela offers comprehensive integration capabilities:
 - **API access**: Programmatic access to call data and analytics
-- **Webhook support**: Real-time notifications for call processing events
+- **Instant notifications**: Get notified immediately when important events happen
 - **Export APIs**: Automated data export and reporting
 - **Third-party integrations**: Connect with CRM systems and other business tools
 - **Custom workflows**: Build custom integrations using Vela's API endpoints
@@ -108,7 +108,7 @@ Vela's AI analysis supports multiple languages for call transcription and analys
 ## Smart Detector & Monitoring
 
 ### How does Smart Search work?
-Smart Search uses advanced AI models to detect specific phrases, patterns, and concepts in your recorded calls. You can search by:
+Smart Search uses advanced AI models to find specific phrases, patterns, and topics in your recorded calls. You can search by:
 - **Topics**: Identify and track conversation themes
 - **Pain Points**: Automatically detect customer issues and complaints
 - **Keywords**: Monitor specific terms and phrases
@@ -119,7 +119,7 @@ Smart Search uses advanced AI models to detect specific phrases, patterns, and c
 Yes, you can configure notifications in the "Notifications" section to alert you when specific patterns or issues are detected in your analysed calls.
 
 ### How accurate is the sentiment analysis?
-Vela's sentiment analysis is highly accurate for the supported languages, trained specifically on call centre conversations.
+Vela's sentiment analysis is highly accurate for the supported languages, specifically designed for call centre conversations.
 
 ### Can I create custom scorecards for my agents?
 Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evaluation criteria for your team.
@@ -133,7 +133,7 @@ Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evalua
 - **Awards system**: Recognise and reward high performers
 
 ### Analytics and Reporting
-- **Performance dashboards**: Detailed performance metrics and insights with real-time updates
+- **Performance dashboards**: Detailed performance metrics and insights that update automatically
 - **Custom reports**: Generate tailored reports for different stakeholders in PDF and CSV formats
 - **Trend analysis**: Track performance trends over time with advanced visualisations
 - **Comparative analytics**: Benchmark performance across teams and departments

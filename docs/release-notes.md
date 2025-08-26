@@ -17,7 +17,7 @@ We've launched a comprehensive coaching portal for agents that includes:
 - **Warnings Management**: Send and manage cautions and warnings to agents
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
-- **Notifications**: Real-time notifications for courses, awards, and warnings
+- **Notifications**: Instant notifications for courses, awards, and warnings
 
 
 ### Knowledge Base
