@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Vela Release Notes – Version 0.1.0
+# Vela Release Notes – Version 2.1
 
 Dear Vela Users,
 
