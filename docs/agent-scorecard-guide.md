@@ -100,7 +100,7 @@ Define clear expectations for each criterion:
 
 ---
 
-## 📊 Implementing Scorecards
+## Implementing Scorecards
 
 ### Training Your Team
 - [ ] **Explain the purpose** of the scorecard system
@@ -218,4 +218,4 @@ Use scorecard data to improve processes:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

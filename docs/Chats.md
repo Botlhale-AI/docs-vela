@@ -2,19 +2,19 @@
 sidebar_position: 8
 ---
 
-# 💬 Analyse Chat Conversations
+# Analyse Chat Conversations
 
 Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behaviour patterns, optimise response times, and improve the quality of your digital customer service.
 
 ## What You Can Achieve
 
-Chat analysis unlocks the hidden patterns in digital conversations. Here's what you'll accomplish:
+Chat analysis reveals patterns in digital conversations. Here's what you'll accomplish:
 
 | **Digital Experience** | **Response Optimization** | **Quality Improvement** |
 |----------------------|-------------------------|----------------------|
-| 🚀 **Optimise response times** | 📱 **Improve digital engagement** | ✅ **Enhance chat quality** |
-| 🔍 **Understand customer behaviour** | 💬 **Perfect your messaging** | 📊 **Track digital performance** |
-| 💡 **Identify automation opportunities** | 🎯 **Increase resolution rates** | 🛡️ **Maintain digital standards** |
+| **Optimise response times** | **Improve digital engagement** | **Enhance chat quality** |
+| **Understand customer behaviour** | **Perfect your messaging** | **Track digital performance** |
+| **Identify automation opportunities** | **Increase resolution rates** | **Maintain digital standards** |
 
 ---
 
@@ -74,7 +74,7 @@ Chat analysis provides unique insights into digital customer service:
 
 ---
 
-## 📈 Identifying Digital Patterns
+## Identifying Digital Patterns
 
 ### Customer Behaviour Analysis
 Understand how customers interact in digital channels:
@@ -98,7 +98,7 @@ Identify digital-specific performance patterns:
 
 ---
 
-## 🚀 Optimizing Digital Customer Service
+## Optimizing Digital Customer Service
 
 ### Response Time Optimization
 Improve the speed and quality of digital interactions:
@@ -130,7 +130,7 @@ Identify conversations that could be automated:
 
 ---
 
-## 📱 Digital Experience Optimization
+## Digital Experience Optimization
 
 ### Chat Interface Analysis
 Optimise the digital customer experience:
@@ -214,5 +214,5 @@ Monitor these key indicators for digital success:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 📊 Monitor Your Team's Performance
+# Monitor Your Team's Performance
 
-Think of your Vela dashboard as mission control for your call centre. It's where you'll spot trends before they become problems, identify coaching opportunities, and track how your team is really performing.
+Your Vela dashboard gives you a comprehensive view of your call centre's performance at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is performing.
 
 ## What You Can Achieve
 
@@ -12,13 +12,13 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 
 | **Performance Monitoring** | **Team Management** | **Customer Experience** |
 |---------------------------|-------------------|------------------------|
-| 🔍 **Spot problems before they escalate** | 👥 **Coach with confidence** | 😊 **Keep customers happy** |
-| 📈 **Track trends and patterns** | 🎯 **Identify top performers** | 📊 **Monitor satisfaction** |
-| ⚡ **Optimise efficiency** | 📋 **Spot training needs** | 🚨 **Catch issues early** |
+| **Spot problems before they escalate** | **Coach with confidence** | **Keep customers happy** |
+| **Track trends and patterns** | **Identify top performers** | **Monitor satisfaction** |
+| **Optimise efficiency** | **Spot training needs** | **Catch issues early** |
 
 ---
 
-## 🛠️ Set Up Your Dashboard
+## Set Up Your Dashboard
 
 ### Step 1: Access Your Dashboard
 1. **Log in** to Vela
@@ -45,17 +45,17 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 2. **Click "Add New Metric"** for each metric you want to track
 3. **Add these essential metrics**:
 
-#### 📈 Performance Metrics
+#### Performance Metrics
 - **Agent Distribution** - See who's handling the most calls
 - **Average Agent Score** - Track overall team performance
 - **Agent Scores Distribution** - Identify top performers and those needing help
 
-#### ⚡ Efficiency Metrics
+#### Efficiency Metrics
 - **Average Call Duration** - Spot efficiency issues
 - **Average Response Time** - Monitor responsiveness
 - **Average Silent Time** - Identify awkward pauses or delays
 
-#### 😊 Customer Experience Metrics
+#### Customer Experience Metrics
 - **Bottom 10 Pain Points** - See what's frustrating customers
 - **Customer Sentiment** - Track satisfaction trends
 
@@ -91,14 +91,14 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 
 ---
 
-## ⏰ Daily Dashboard Routine
+## Daily Dashboard Routine
 
-### 🌅 Morning Check (5 minutes)
+### Morning Check (5 minutes)
 - [ ] **Review yesterday's performance** - Look for any significant changes
 - [ ] **Check agent scores** - Identify anyone who might need support
 - [ ] **Review pain points** - See what issues emerged yesterday
 
-### 📅 Weekly Review (15 minutes)
+### Weekly Review (15 minutes)
 - [ ] **Analyse trends** - Look for patterns over the past week
 - [ ] **Identify coaching opportunities** - Find agents who need help
 - [ ] **Spot process improvements** - Look for recurring issues
@@ -120,7 +120,7 @@ Your dashboard shows comprehensive call analytics data for your selected team an
 
 ---
 
-## Pro Tips
+## Best Practices
 
 ### Save Multiple Dashboards
 Create different dashboard views for different purposes:
@@ -154,4 +154,4 @@ Configure notifications for important events:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

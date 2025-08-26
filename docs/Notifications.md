@@ -2,25 +2,25 @@
 sidebar_position: 6
 ---
 
-# 🔔 Stay Informed and Take Action
+# Stay Informed and Take Action
 
-In a busy call centre, important things happen frequently. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues promptly, and keep your team connected when it matters most.
+Vela's notification system keeps you informed about important events without overwhelming you. Learn how to monitor alerts, respond to issues promptly, and keep your team connected when it matters most.
 
 ## What You Can Achieve
 
-Notifications are your early warning system. Here's what you'll accomplish:
+Notifications help you stay informed and respond quickly. Here's what you'll accomplish:
 
 | **Issue Response** | **Team Communication** | **Performance Monitoring** |
 |-------------------|----------------------|---------------------------|
-| 🚨 **Jump on problems promptly** | 👥 **Work together better** | 📊 **Keep your finger on the pulse** |
-| ⚡ **Never miss a beat** | 💬 **Stay connected** | 📈 **Track what matters** |
-| 🎯 **Respond proactively** | 🤝 **Collaborate effectively** | 📋 **Get automated insights** |
+| **Respond to problems promptly** | **Work together better** | **Keep track of performance** |
+| **Never miss important events** | **Stay connected** | **Track what matters** |
+| **Respond proactively** | **Collaborate effectively** | **Get automated insights** |
 
 ---
 
-## 📋 Three Types of Notifications
+## Three Types of Notifications
 
-### 🚨 Alerts: Respond to Issues Promptly
+### **Alerts: Respond to Issues Promptly**
 Get notified about important events that require your attention (set up your alerts in [Smart Detector Overview](./smart-detector-overview.md)):
 
 | **Alert Type** | **What It Monitors** | **When You Get It** |
@@ -30,7 +30,7 @@ Get notified about important events that require your attention (set up your ale
 | **System notifications** | Data processing complete or errors | When processing status changes |
 | **Quality flags** | Potential issues with customer interactions | When quality issues are identified |
 
-### 💬 Comments: Collaborate with Your Team
+### **Comments: Collaborate with Your Team**
 Stay updated on team discussions and feedback:
 
 | **Comment Type** | **Purpose** | **Use Case** |
@@ -40,7 +40,7 @@ Stay updated on team discussions and feedback:
 | **Management notes** | Important observations and instructions | Team guidance |
 | **Training feedback** | Suggestions for improvement | Process enhancement |
 
-### Reports: Track Progress and Trends
+### **Reports: Track Progress and Trends**
 Receive automated summaries of your team's performance:
 
 | **Report Type** | **Frequency** | **Content** |
@@ -52,7 +52,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 🚀 Getting Started with Notifications
+## Getting Started with Notifications
 
 ### Step 1: Access Your Notifications
 - [ ] **Log in** to your Vela dashboard
@@ -78,7 +78,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 🚨 Managing Alerts Effectively
+## Managing Alerts Effectively
 
 ### Understanding Alert Types
 | **Alert Category** | **Examples** | **Priority** |
@@ -104,7 +104,7 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## 💬 Using Comments for Collaboration
+## Using Comments for Collaboration
 
 ### Adding Comments to Calls
 - [ ] **Open any call** in the Calls section
@@ -146,15 +146,15 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## ⏰ Daily Notification Routine
+## Daily Notification Routine
 
-### 🌅 Morning Check (10 minutes)
+### Morning Check (10 minutes)
 - [ ] **Review overnight alerts** - Check for any critical issues
 - [ ] **Read daily summary** - Understand yesterday's performance
 - [ ] **Check team comments** - See if anyone needs help
 - [ ] **Plan your day** based on notifications
 
-### 📅 End of Day Review (15 minutes)
+### End of Day Review (15 minutes)
 - [ ] **Review all alerts** from the day
 - [ ] **Add comments** to important calls
 - [ ] **Update team** on any issues
@@ -204,4 +204,4 @@ Receive automated summaries of your team's performance:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

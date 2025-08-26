@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# 🧭 Vela Documentation Navigation Guide
+# Vela Documentation Navigation Guide
 
 Welcome to Vela! This guide helps you find the right documentation based on your role and what you want to accomplish.
 
@@ -10,7 +10,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 **Vela is a call analysis tool** that helps you improve your call centre performance by analyzing customer interactions. Here's what you need to know:
 
-### 📞 **How Vela Works**
+### **How Vela Works**
 - Provides insights to improve future customer interactions
 
 ### **What Vela Does**
@@ -27,18 +27,18 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **Process improvement** based on call insights
 - **Trend analysis** and strategic planning
 
-## 👥 Choose Your Path
+## Choose Your Path
 
-### 🚀 **New to Vela? Start Here**
+### **New to Vela? Start Here**
 - **[Quick Start Guide](./quick-start.md)** - Get up and running in 5 minutes
 - **[Data Upload Guide](./data-upload.md)** - Get your data into Vela
 - **[Dashboard Setup](./dashboard.md)** - Monitor your team's performance
 
 ---
 
-## 🔄 **By Workflow**
+## **By Workflow**
 
-### 📤 **Data Management Workflow**
+### **Data Management Workflow**
 1. **[Data Upload](./data-upload.md)** - Get your data into Vela
 2. **[Settings](./settings.md)** - Configure your organisation
 3. **[Dashboard](./dashboard.md)** - Monitor data processing
@@ -61,9 +61,9 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ---
 
-## 📚 **By Feature**
+## **By Feature**
 
-### 🎛️ **Core Platform Features**
+### **Core Platform Features**
 - **[Dashboard](./dashboard.md)** - Performance monitoring and analytics
 - **[Agent Performance](./agents.md)** - Team management and coaching
 - **[Reports](./reports.md)** - Data analysis and insights
@@ -75,7 +75,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Agent Scorecards](./agent-scorecard-guide.md)** - Performance evaluation
 - **[Knowledge Base](./knowledge-base-guide.md)** - Agent resources and training
 
-### 📞 **Interaction Analysis**
+### **Interaction Analysis**
 - **[Call Analysis](./calls.md)** - Voice interaction insights
 - **[Chat Analysis](./chats.md)** - Digital conversation analysis
 - **[Notifications](./notifications.md)** - Alert management
@@ -88,7 +88,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ## **Need Help?**
 
-### 📞 **Support Options**
+### **Support Options**
 - **Email Support**: support@botlhale.ai
 - **API Support**: api-support@botlhale.ai
 - **Video Tutorials**: Available on the homepage

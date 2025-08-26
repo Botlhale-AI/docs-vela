@@ -2,22 +2,22 @@
 sidebar_position: 9
 ---
 
-# 🔧 Integrate Vela with Your Systems
+# Integrate Vela with Your Systems
 
 Your call centre doesn't exist in a vacuum. Vela's API lets you connect your existing systems, automate data flow, and build custom integrations that fit your unique business needs.
 
 ## What You Can Achieve
 
-APIs are the secret sauce that makes everything work together. Here's what you'll unlock:
+APIs enable seamless integration between systems. Here's what you'll unlock:
 
 | **Automation** | **Integration** | **Customization** |
 |----------------|-----------------|-------------------|
-| 🔄 **Stop manual uploads forever** | 🔗 **Build your dream dashboard** | ⚙️ **Work smarter, not harder** |
-| 📊 **Know your customers better** | 🚀 **Build the future** | 🔧 **Create automated workflows** |
+| **Stop manual uploads forever** | **Build your dream dashboard** | **Work smarter, not harder** |
+| **Know your customers better** | **Build the future** | **Create automated workflows** |
 
 ---
 
-## 🏗️ Common Integration Scenarios
+## Common Integration Scenarios
 
 ### Scenario 1: Automated Call Recording Upload
 **Business Goal**: Eliminate manual data upload and ensure all calls are analysed
@@ -49,7 +49,7 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 
 ---
 
-## 🚀 Getting Started with API Integration
+## Getting Started with API Integration
 
 ### Step 1: Set Up Authentication
 1. **Log in** to your Vela platform
@@ -57,7 +57,7 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 3. **Generate a new API key** for your integration
 4. **Copy the token** for use in your API requests
 
-> 🔒 **Security Best Practice**: Store your API token securely and never expose it in client-side code.
+> **Security Best Practice**: Store your API token securely and never expose it in client-side code.
 
 ### Step 2: Choose Your Integration Approach
 
@@ -69,7 +69,7 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 
 ---
 
-## 📚 API Fundamentals
+## API Fundamentals
 
 ### Base URL
 All API endpoints use this base URL:
@@ -192,7 +192,7 @@ def update_customer_profile(call_data):
 
 ---
 
-## 🔄 Advanced Integration Patterns
+## Advanced Integration Patterns
 
 | **Pattern** | **Description** | **Implementation** |
 |-------------|-----------------|-------------------|
@@ -202,7 +202,7 @@ def update_customer_profile(call_data):
 
 ---
 
-## 🛡️ Best Practices for API Integration
+## Best Practices for API Integration
 
 ### Security and Authentication
 - **Secure token storage** - Never hardcode API tokens
@@ -261,4 +261,4 @@ def update_customer_profile(call_data):
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

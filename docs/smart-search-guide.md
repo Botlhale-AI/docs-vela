@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Create Automated Searches
 
-Stop manually reviewing every call. Smart Search detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
+Smart Search detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
 
 ## What You Can Achieve
 
-Smart Search is your monitoring system. Here's what you'll accomplish:
+Smart Search provides automated monitoring. Here's what you'll accomplish:
 
 | **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
 |-------------------|----------------------|------------------------------|
@@ -18,7 +18,7 @@ Smart Search is your monitoring system. Here's what you'll accomplish:
 
 ---
 
-## 🚀 Getting Started with Smart Search
+## Getting Started with Smart Search
 
 ![ Smart Search](../img/screenshots/smart_search/smart5.png)
 
@@ -47,7 +47,7 @@ Smart Search is your monitoring system. Here's what you'll accomplish:
 
 ---
 
-## 📋 Common Search Types
+## Common Search Types
 
 ### Customer Experience Monitoring
 | **Search Type** | **Example Phrases** | **Business Value** |
@@ -125,7 +125,7 @@ Configure how you want to be notified about search matches:
 
 ---
 
-## 📈 Analyzing Search Results
+## Analyzing Search Results
 
 ### Understanding Match Data
 When Smart Search finds matches, you'll see:
@@ -197,4 +197,4 @@ Based on search results, you can:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

@@ -2,34 +2,34 @@
 sidebar_position: 1
 ---
 
-# 🔍 Automate Issue Detection and Agent Evaluation
+# Automate Issue Detection and Agent Evaluation
 
-What if you could catch customer complaints before they become escalations? Or spot training gaps before they impact your team's performance? Smart Detector does the heavy lifting for you, automatically analyzing completed interactions, evaluating agents, and building a knowledge base that makes your team unstoppable.
+Smart Detector automatically analyzes completed interactions, evaluates agents, and builds a knowledge base to help you catch customer complaints before they become escalations and spot training gaps before they impact your team's performance.
 
-> 💡 **Note**: Smart Detector analyzes **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
+> **Note**: Smart Detector analyzes **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
 
 ## What You Can Achieve
 
-Smart Detector is like having a super-powered assistant that never sleeps. Here's what it does for you:
+Smart Detector provides automated analysis and insights. Here's what it does for you:
 
 | **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
 |-------------------|---------------------------|------------------------|
-| 🚨 **Catch complaints before they explode** | 📊 **Score agents objectively** | 🧠 **Build your team's brain** |
-| ⚡ **Monitor compliance efficiently** | 📈 **Track improvement over time** | 🔍 **Find information efficiently** |
-| 🎯 **Spot training needs early** | 🎯 **Identify coaching opportunities** | 📚 **Centralize company knowledge** |
+| **Catch complaints before they escalate** | **Score agents objectively** | **Build your team's knowledge** |
+| **Monitor compliance efficiently** | **Track improvement over time** | **Find information efficiently** |
+| **Spot training needs early** | **Identify coaching opportunities** | **Centralize company knowledge** |
 
 ---
 
-## 🛠️ Three Powerful Tools for Your Team
+## Three Powerful Tools for Your Team
 
-### 🔍 **Smart Search: Catch Issues Early**
+### **Smart Search: Catch Issues Early**
 Detect important events in your customer interactions:
 
 #### What It Monitors:
-- 🚨 **Customer complaints** - Get alerts when customers express dissatisfaction
-- ⚖️ **Compliance violations** - Monitor for regulatory or policy breaches
-- 🔧 **Service quality issues** - Identify patterns that affect customer experience
-- 📚 **Training opportunities** - Spot areas where agents need support
+- **Customer complaints** - Get alerts when customers express dissatisfaction
+- **Compliance violations** - Monitor for regulatory or policy breaches
+- **Service quality issues** - Identify patterns that affect customer experience
+- **Training opportunities** - Spot areas where agents need support
 
 #### How It Works:
 1. **Create search rules** with example phrases
@@ -37,14 +37,14 @@ Detect important events in your customer interactions:
 3. **Receive automated alerts** when issues are detected in processed calls
 4. **Take action** to resolve problems and prevent future issues
 
-### 📊 **Agent Scorecard: Improve Performance Systematically**
+### **Agent Scorecard: Improve Performance Systematically**
 Evaluate and improve agent performance with AI-powered assessments:
 
 #### What It Evaluates:
-- 🎯 **AI-powered evaluations** - Score every interaction consistently
-- 📈 **Performance tracking** - Monitor improvement over time
-- 🎓 **Training identification** - Spot specific areas for coaching
-- 🌟 **Best practice recognition** - Learn from top performers
+- **AI-powered evaluations** - Score every interaction consistently
+- **Performance tracking** - Monitor improvement over time
+- **Training identification** - Spot specific areas for coaching
+- **Best practice recognition** - Learn from top performers
 
 #### How It Works:
 1. **Define evaluation criteria** for different scenarios
@@ -52,14 +52,14 @@ Evaluate and improve agent performance with AI-powered assessments:
 3. **Score** every interaction
 4. **Generate coaching insights** for improvement
 
-### 📚 **Knowledge Base: Empower Your Team**
+### **Knowledge Base: Empower Your Team**
 Build a smart, searchable repository of company information:
 
 #### What It Contains:
-- 📄 **Document upload** - Add policies, procedures, and training materials
-- 🔍 **Smart search** - Find relevant information efficiently
-- 👥 **Agent access** - Provide support based on call analysis insights
-- 🔄 **Continuous improvement** - Update knowledge based on interactions
+- **Document upload** - Add policies, procedures, and training materials
+- **Smart search** - Find relevant information efficiently
+- **Agent access** - Provide support based on call analysis insights
+- **Continuous improvement** - Update knowledge based on interactions
 
 #### How It Works:
 1. **Upload company documents** (PDFs, text files, URLs)
@@ -69,7 +69,7 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## 🚀 Getting Started with Smart Search
+## Getting Started with Smart Search
 
 ### Step 1: Create Your First Search
 ![ Smart Search](../img/screenshots/smart_search/smart1.png)
@@ -122,7 +122,7 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## 📚 Building Your Knowledge Base
+## Building Your Knowledge Base
 
 ![ Knowledge Base](../img/screenshots/smart_search/smart9.png)
 
@@ -202,14 +202,14 @@ Build a smart, searchable repository of company information:
 
 ---
 
-## ⏰ Daily Smart Detector Routine
+## Daily Smart Detector Routine
 
-### 🌅 Morning Review (10 minutes)
+### Morning Review (10 minutes)
 - [ ] **Check Smart Search alerts** - Review any issues detected overnight
 - [ ] **Review agent scores** - Identify anyone needing immediate attention
 - [ ] **Update knowledge base** - Add any new information from recent calls
 
-### 📅 Weekly Analysis (30 minutes)
+### Weekly Analysis (30 minutes)
 - [ ] **Analyse search patterns** - Look for recurring issues
 - [ ] **Review scorecard trends** - Identify team-wide improvement areas
 - [ ] **Update search criteria** - Refine based on what you've learned
@@ -237,4 +237,4 @@ Build a smart, searchable repository of company information:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

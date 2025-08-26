@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Improve Agent Performance
 
-Your agents are the heart of your customer experience. But how do you know who's struggling and who's ready for the next level? Vela's agent insights give you the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
+Your agents are the heart of your customer experience. But managing a team effectively requires more than just listening to occasional calls. You need comprehensive insights into each agent's performance, strengths, and areas for improvement.
+
+Vela's agent insights give you the full picture - the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
 
 ## What You Can Achieve
 
@@ -15,6 +17,8 @@ Agent analytics turn gut feelings into actionable insights. Here's what you'll u
 | **Coach with precision** | **Track real progress** | **Fill knowledge gaps** |
 | **Celebrate success** | **Monitor improvement** | **Make smart decisions** |
 | **Identify training needs** | **Spot patterns** | **Build high-performing teams** |
+
+Instead of relying on gut feelings, you'll have actual data to back up your coaching decisions and performance assessments.
 
 ---
 
@@ -42,6 +46,8 @@ Your agent performance table shows essential information:
 - [ ] **Check agent scores** - Identify anyone needing support
 - [ ] **Review strengths/weaknesses** - Plan coaching sessions
 - [ ] **Look for trends** - Spot patterns across your team
+
+This quick review gives you immediate insights into your team's performance and helps you identify who needs support or recognition.
 
 ### Weekly Coaching Sessions (30 minutes per agent)
 - [ ] **Review detailed metrics** with each agent
@@ -209,9 +215,9 @@ Look for patterns that affect multiple agents:
 
 | **For Performance Reports** | **For Smart Monitoring** | **For Evaluation Systems** |
 |----------------------------|-------------------------|---------------------------|
-| [📊 Generate Performance Reports](./reports.md) | [🔍 Set Up Smart Monitoring](./smart-detector-overview.md) | [📋 Create Agent Scorecards](./agent-scorecard-guide.md) |
+| [Generate Performance Reports](./reports.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
 ## Need Help?
 
 - 📧 **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs 
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs 

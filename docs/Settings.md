@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# ⚙️ Configure Your Vela Experience
+# Configure Your Vela Experience
 
 Customise Vela to match your organisation's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for effective performance and user experience.
 
@@ -17,7 +17,7 @@ With Vela settings, you can:
 
 ---
 
-## 👤 Manage Your Account and Profile
+## Manage Your Account and Profile
 
 ### Update Your Personal Information
 Keep your profile current for better team collaboration:
@@ -32,11 +32,11 @@ Keep your profile current for better team collaboration:
 
 ![Account Settings](../img/screenshots/settings/settings.png)
 
-> 💡 **Why this matters**: Accurate profile information helps with team communication and ensures you receive the right notifications.
+> **Why this matters**: Accurate profile information helps with team communication and ensures you receive the right notifications.
 
 ---
 
-## 🏢 Configure Your Organisation
+## Configure Your Organisation
 
 ### Manage Organisation Settings
 Set up your organisation's branding and information:
@@ -87,7 +87,7 @@ Protect sensitive information with automatic redaction:
 
 ---
 
-## 👥 Manage Your Team
+## Manage Your Team
 
 ### User Management (Admin Access Required)
 Control who has access to your Vela platform:
@@ -119,7 +119,7 @@ Structure your organisation for better management:
 
 ---
 
-## 🔒 Security and Access Control
+## Security and Access Control
 
 ### Password and Authentication
 ![ Settings](../img/screenshots/settings/settings8.png)
@@ -130,7 +130,7 @@ Structure your organisation for better management:
 
 ---
 
-## 🔔 Notification Preferences
+## Notification Preferences
 
 ### Email Notifications
 - [ ] **Configure email delivery** for different notification types
@@ -205,5 +205,5 @@ Structure your organisation for better management:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
 

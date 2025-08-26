@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Analyse Customer Interactions
 
-Every call tells a story. Vela's call analysis tools help you understand what's really happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
+Vela's call analysis tools help you understand what's happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
 
 ## What You Can Achieve
 
@@ -216,4 +216,4 @@ Monitor these metrics to track team performance:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

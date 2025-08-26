@@ -4,7 +4,7 @@ sidebar_position: 8
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 📤 Get Your Data into Vela Quickly
+# Get Your Data into Vela Quickly
 
 Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
 
@@ -19,7 +19,7 @@ By uploading your data to Vela, you can:
 
 ---
 
-## 🚀 Choose Your Upload Method
+## Choose Your Upload Method
 
 ### Option 1: Manual Upload (Recommended for New Users)
 **Best for**: Getting started with existing call files
@@ -35,7 +35,7 @@ By uploading your data to Vela, you can:
 - [ ] **Select your call files** - We support mp3,wave & zip formats (bulk upload)
 - [ ] **Click "Upload"** and wait for processing
 
-> 💡 **Why this matters**: You can start analyzing your data immediately without any technical setup.
+> **Why this matters**: You can start analyzing your data immediately without any technical setup.
 
 ### Option 2: FTP Integration (For Larger Organisations)
 **Best for**: Organisations with automated call recording systems
@@ -46,11 +46,11 @@ By uploading your data to Vela, you can:
 - [ ] **Provide FTP credentials** for your call recording server
 - [ ] **Configure sync** - Data flows without manual intervention
 
-> 💡 **Why this matters**: Once set up, your data flows without manual intervention.
+> **Why this matters**: Once set up, your data flows without manual intervention.
 
 ---
 
-## 📋 Supported Data Formats
+## Supported Data Formats
 
 ### Call Recordings
 | **Format Type** | **Supported Formats** | **File Size Limit** |
@@ -72,7 +72,7 @@ By uploading your data to Vela, you can:
 
 ---
 
-## 🛠️ Getting Started with Manual Upload
+## Getting Started with Manual Upload
 
 Follow these simple steps to upload your call recordings and start analyzing customer interactions in Vela.
 
@@ -85,7 +85,7 @@ Before uploading, ensure your files are ready for optimal processing:
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
 - [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
 
-> 💡 **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organisation later.
+> **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organisation later.
 
 ### Step 2: Upload Your Data
 Upload your files through Vela's interface:
@@ -99,7 +99,7 @@ Upload your files through Vela's interface:
 - [ ] **Review the upload summary** showing file names, sizes, and formats
 - [ ] **Click "Upload"** to begin the upload process
 
-> 🎯 **What happens next**: Your files will be securely uploaded and queued for processing.
+> **What happens next**: Your files will be securely uploaded and queued for processing.
 
 ### Step 3: Monitor Processing
 Track the progress of your uploads and processing:
@@ -108,7 +108,7 @@ Track the progress of your uploads and processing:
 - [ ] **Check processing status** in the Calls section - Files will show "Processing" status
 - [ ] **Start analyzing** - Click on processed calls to view transcripts, insights, and analytics
 
-> ⏱️ **Processing**: Files will be processed and available for analysis when complete.
+> **Processing**: Files will be processed and available for analysis when complete.
 
 ### Step 4: Verify and Optimise
 Ensure your data is ready for analysis:
@@ -212,9 +212,9 @@ print(response.json())
 
 ---
 
-## ⏱️ Data Processing Timeline
+## Data Processing Timeline
 
-> 💡 **Processing Timeline**: Processing times vary based on file size and system load.
+> **Processing Timeline**: Processing times vary based on file size and system load.
 
 ### Processing Overview
 | **File Size** | **Processing** | **What Happens** |
@@ -267,4 +267,4 @@ print(response.json())
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs

@@ -2,23 +2,23 @@
 sidebar_position: 4
 ---
 
-# 📚 Build Your Team's Knowledge Base
+# Build Your Team's Knowledge Base
 
-Create a smart, searchable repository of company information that empowers your agents to provide better service, answer questions confidently, and continuously improve their knowledge. Your knowledge base becomes your team's collective brain.
+Create a smart, searchable repository of company information that empowers your agents to provide better service, answer questions confidently, and continuously improve their knowledge.
 
 ## What You Can Achieve
 
-A well-built knowledge base transforms your team's capabilities. Here's what you'll accomplish:
+A well-built knowledge base enhances your team's capabilities. Here's what you'll accomplish:
 
 | **Agent Empowerment** | **Service Quality** | **Continuous Learning** |
 |---------------------|-------------------|----------------------|
-| 🚀 **Give agents instant answers** | ✅ **Ensure consistent responses** | 📈 **Build collective knowledge** |
-| 💡 **Reduce training time** | 🎯 **Improve accuracy and speed** | 🔄 **Keep information current** |
-| 📚 **Centralize company knowledge** | 🛡️ **Maintain quality standards** | 🌟 **Foster knowledge sharing** |
+| **Give agents instant answers** | **Ensure consistent responses** | **Build collective knowledge** |
+| **Reduce training time** | **Improve accuracy and speed** | **Keep information current** |
+| **Centralize company knowledge** | **Maintain quality standards** | **Foster knowledge sharing** |
 
 ---
 
-## 🚀 Getting Started with Knowledge Base
+## Getting Started with Knowledge Base
 
 ### Step 1: Access Knowledge Base
 
@@ -36,7 +36,7 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 
 ---
 
-## 📋 Knowledge Base Content Types
+## Knowledge Base Content Types
 
 ### Essential Information
 | **Content Category** | **What to Include** | **Business Value** |
@@ -56,7 +56,7 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 
 ---
 
-## 🏗️ Building Your Knowledge Base
+## Building Your Knowledge Base
 
 ### Content Organisation
 Structure your knowledge base for easy navigation:
@@ -208,4 +208,4 @@ Enable agents to access information for future calls and training:
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- 📚 **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
+- **Navigation Guide**: [Find the right documentation](./navigation-guide.md) for your needs
