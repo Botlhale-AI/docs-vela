@@ -10,7 +10,7 @@ Smart Detector automatically analyses completed interactions, evaluates agents, 
 
 ## What You Can Achieve
 
-Smart Detector provides automated analysis and insights. Here's what it does for you:
+Smart Detector provides automated analysis and insights. It helps you:
 
 | **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
 |-------------------|---------------------------|------------------------|
@@ -22,7 +22,7 @@ Smart Detector provides automated analysis and insights. Here's what it does for
 
 ## Advanced Intelligent Analysis Tools
 
-### **Smart Search: Comprehensive Call Analysis**
+### **Smart Search: Complete Call Analysis**
 Detect important events and patterns in your customer interactions:
 
 #### What It Monitors:
@@ -42,7 +42,7 @@ Detect important events and patterns in your customer interactions:
 3. **Receive automated alerts** when issues are detected in processed calls
 4. **Take action** to resolve problems and prevent future issues
 
-### **Agent Scorecard & Checklist: Comprehensive Performance Evaluation**
+### **Agent Scorecard & Checklist: Complete Performance Evaluation**
 Evaluate and improve agent performance with AI-powered assessments and custom criteria:
 
 #### What It Evaluates:

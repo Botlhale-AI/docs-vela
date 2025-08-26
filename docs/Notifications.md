@@ -8,7 +8,7 @@ Vela's notification system keeps you informed about important events without ove
 
 ## What You Can Achieve
 
-Notifications help you stay informed and respond quickly. Here's what you'll accomplish:
+Notifications help you stay informed and respond quickly. You'll be able to:
 
 | **Issue Response** | **Team Communication** | **Performance Monitoring** |
 |-------------------|----------------------|---------------------------|

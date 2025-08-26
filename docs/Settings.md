@@ -8,7 +8,7 @@ Customise Vela to match your organisation's needs, manage your team effectively,
 
 ## What You Can Achieve
 
-With Vela settings, you can:
+Vela settings let you:
 - [ ] **Customise your profile** and organisation information
 - [ ] **Manage team access** and permissions effectively
 - [ ] **Configure security** and privacy settings

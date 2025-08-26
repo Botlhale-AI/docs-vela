@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Monitor Your Team's Performance
 
-Your Vela dashboard gives you a comprehensive view of your call centre's performance at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is performing.
+Your Vela dashboard shows you everything about your call centre's performance at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is performing.
 
 ## What You Can Achieve
 
-Your dashboard transforms raw data into actionable insights. Here's what you'll be able to do:
+Your dashboard transforms raw data into actionable insights. With it, you can:
 
 | **Performance Monitoring** | **Team Management** | **Customer Experience** |
 |---------------------------|-------------------|------------------------|
@@ -74,7 +74,7 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 ## Understanding Your Dashboard
 
 ### Performance Overview
-Your dashboard shows comprehensive call analytics data for your selected team and time period. Each metric card displays:
+Your dashboard shows call analytics data for your selected team and time period. Each metric card displays:
 - **Current value** (e.g., average call duration)
 - **Trend indicator** (up/down arrows showing improvement or decline)
 - **Filter icon** for additional filtering options

@@ -8,7 +8,7 @@ Vela's call analysis tools help you understand what's happening in your customer
 
 ## What You Can Achieve
 
-Call analysis transforms conversations into actionable insights. Here's what you'll accomplish:
+Call analysis transforms conversations into actionable insights. You'll be able to:
 
 | **Customer Understanding** | **Performance Improvement** | **Quality Assurance** |
 |---------------------------|----------------------------|---------------------|
@@ -21,7 +21,7 @@ Call analysis transforms conversations into actionable insights. Here's what you
 ## Understanding Call Data
 
 ### Key Metrics Explained
-Your call analysis provides comprehensive insights into every interaction:
+Your call analysis gives you insights into every interaction:
 
 | **Metric Category** | **What It Shows** | **Business Impact** |
 |-------------------|-------------------|-------------------|
@@ -49,7 +49,7 @@ Your call analysis provides comprehensive insights into every interaction:
 
 - [ ] **Go to "Calls"** in the left sidebar
 - [ ] **Click on any call** to view detailed analysis
-- [ ] **Review the comprehensive breakdown** of the interaction
+- [ ] **Review the detailed breakdown** of the interaction
 
 ### Step 2: Review Call Transcript
 
@@ -190,7 +190,7 @@ Monitor these metrics to track team performance:
 ### Regular Review Schedule
 - [ ] **Daily**: Review high-priority calls and alerts
 - [ ] **Weekly**: Analyse patterns and trends
-- [ ] **Monthly**: Comprehensive team performance review
+- [ ] **Monthly**: Full team performance review
 - [ ] **Quarterly**: Strategic analysis and planning
 
 ### Effective Coaching

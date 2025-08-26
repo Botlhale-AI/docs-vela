@@ -8,7 +8,7 @@ Vela's reporting tools help you turn raw data into compelling narratives that dr
 
 ## What You Can Achieve
 
-Reports help you communicate insights effectively. Here's what you'll accomplish:
+Reports help you communicate insights effectively. You'll be able to:
 
 | **Data Storytelling** | **Stakeholder Communication** | **Strategic Decision Making** |
 |---------------------|------------------------------|------------------------------|

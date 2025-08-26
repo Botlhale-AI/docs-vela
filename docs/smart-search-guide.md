@@ -8,7 +8,7 @@ Smart Search detects important events in your customer interactions, so you can 
 
 ## What You Can Achieve
 
-Smart Search provides automated monitoring. Here's what you'll accomplish:
+Smart Search provides automated monitoring. You'll be able to:
 
 | **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
 |-------------------|----------------------|------------------------------|

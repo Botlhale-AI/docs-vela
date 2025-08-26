@@ -11,7 +11,7 @@ We're excited to announce the latest update to Vela! This release brings several
 ## New Features
 
 ### Agent Coaching Portal
-We've launched a comprehensive coaching portal for agents that includes:
+We've launched a complete coaching portal for agents that includes:
 - **Courses Management**: Assign and track training courses with progress monitoring
 - **Awards System**: Recognise and reward high performers with digital awards
 - **Warnings Management**: Send and manage cautions and warnings to agents

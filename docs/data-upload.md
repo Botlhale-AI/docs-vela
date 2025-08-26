@@ -10,7 +10,7 @@ Upload your call and chat data to start analysing customer interactions and impr
 
 ## What You Can Achieve
 
-By uploading your data to Vela, you can:
+When you upload your data to Vela, you can:
 - [ ] **Analyse every customer interaction** with AI-powered insights
 - [ ] **Identify patterns and trends** across your team
 - [ ] **Spot training opportunities** for agents
@@ -222,7 +222,7 @@ print(response.json())
 |---------------|----------------|------------------|
 | **Small files** (< 10 MB) | Varies | Transcription, analysis, insights generation |
 | **Medium files** (10-100 MB) | Varies | Full processing with detailed analysis |
-| **Large files** (> 100 MB) | Varies | Comprehensive analysis with all features |
+| **Large files** (> 100 MB) | Varies | Full analysis with all features |
 
 ### Factors Affecting Processing Time
 - [ ] **File size** - Larger files take longer to process

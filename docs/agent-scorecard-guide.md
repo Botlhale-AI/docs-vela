@@ -8,7 +8,7 @@ Build fair, consistent, and effective evaluation systems that help your agents i
 
 ## What You Can Achieve
 
-Agent scorecards transform subjective evaluations into objective insights. Here's what you'll accomplish:
+Agent scorecards transform subjective evaluations into objective insights. You'll be able to:
 
 | **Performance Evaluation** | **Coaching & Development** | **Quality Assurance** |
 |---------------------------|---------------------------|---------------------|

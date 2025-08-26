@@ -13,7 +13,7 @@ We know call centres handle thousands of conversations every day, but most of th
 ## What You'll Achieve
 
 By the end of this guide, you'll be able to:
-- **Monitor your team's performance** with comprehensive call analytics
+- **Monitor your team's performance** with detailed call analytics
 - **Identify customer pain points** automatically from call recordings
 - **Generate insights** to improve customer satisfaction
 - **Track agent performance** with AI-powered scoring
@@ -27,7 +27,7 @@ We've made this guide as straightforward as possible because we understand you h
 Before we dive into the setup, let's quickly familiarise you with the Vela platform interface:
 
 ### **Left Sidebar Navigation**
-The left sidebar is your main navigation hub in Vela. You can collapse it to maximise your workspace. Here's what you'll find:
+The left sidebar is your main navigation hub in Vela. You can collapse it to maximise your workspace. You'll find:
 
 - **[Dashboard](./dashboard.md)** - Your main monitoring view with customisable metrics
 - **Interactions**

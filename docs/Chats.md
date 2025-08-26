@@ -8,7 +8,7 @@ Digital conversations reveal insights that voice calls can't capture. Vela's cha
 
 ## What You Can Achieve
 
-Chat analysis reveals patterns in digital conversations. Here's what you'll accomplish:
+Chat analysis reveals patterns in digital conversations. You'll be able to:
 
 | **Digital Experience** | **Response Optimization** | **Quality Improvement** |
 |----------------------|-------------------------|----------------------|

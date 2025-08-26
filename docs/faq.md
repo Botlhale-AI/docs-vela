@@ -16,7 +16,7 @@ You can upload call recordings through the Interactions section. Vela supports *
 - Email notifications when analysis is complete
 
 ### What file formats does Vela support?
-Vela supports a comprehensive range of file formats:
+Vela supports many file formats:
 - **Audio files**: `.wav`, `.mp3`, and other standard call recording formats
 - **Document files**: `.pdf`, `.jpg`, `.png`, `.docx` (for course materials and resources)
 - **Archive files**: `.zip`, `.rar`, `.7z` (for batch uploads)
@@ -31,7 +31,7 @@ No, Vela is a web-based platform. You can access it from any modern web browser.
 ## Platform Navigation FAQs
 
 ### How do I find specific calls?
-Vela provides multiple ways to find calls:
+Vela gives you several ways to find calls:
 - **Search functionality**: Use the search bar to find calls by agent name, topics, or keywords
 - **Advanced filtering**: Filter by date range, agent scores, teams, departments, tags, and more
 - **Sort options**: Sort calls by date, score, duration, or other criteria
@@ -63,7 +63,7 @@ If your dashboard isn't showing data, check:
 - **Processing status**: Check if calls are still being analysed (you'll receive email notifications)
 
 ### What do the different agent scores mean?
-Vela provides comprehensive scoring for agent performance:
+Vela gives you detailed scoring for agent performance:
 - **Agent Score**: Overall performance rating based on call quality and adherence to best practices
 - **Checklist Score**: Compliance with required procedures and protocols
 - **Total Agent Score**: Combined score incorporating all performance metrics
@@ -91,7 +91,7 @@ Vela implements enterprise-grade security measures:
 - **Audit trails**: Complete logging of data access and modifications
 
 ### Can I integrate Vela with my existing systems?
-Vela offers comprehensive integration capabilities:
+Vela works with many other systems:
 - **API access**: Programmatic access to call data and analytics
 - **Instant notifications**: Get notified immediately when important events happen
 - **Export APIs**: Automated data export and reporting

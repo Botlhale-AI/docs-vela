@@ -8,7 +8,7 @@ Create a smart, searchable repository of company information that empowers your 
 
 ## What You Can Achieve
 
-A well-built knowledge base enhances your team's capabilities. Here's what you'll accomplish:
+A well-built knowledge base enhances your team's capabilities. You'll be able to:
 
 | **Agent Empowerment** | **Service Quality** | **Continuous Learning** |
 |---------------------|-------------------|----------------------|

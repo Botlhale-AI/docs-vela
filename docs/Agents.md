@@ -10,7 +10,7 @@ Vela's agent insights give you the full picture - the data you need to coach eff
 
 ## What You Can Achieve
 
-Agent analytics turn gut feelings into actionable insights. Here's what you'll unlock:
+Agent analytics turn gut feelings into actionable insights. You'll discover:
 
 | **Coaching & Development** | **Performance Tracking** | **Team Optimization** |
 |---------------------------|-------------------------|---------------------|

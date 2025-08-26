@@ -8,7 +8,7 @@ Your call centre doesn't exist in a vacuum. Vela's API lets you connect your exi
 
 ## What You Can Achieve
 
-APIs enable seamless integration between systems. Here's what you'll unlock:
+APIs enable seamless integration between systems. You'll be able to:
 
 | **Automation** | **Integration** | **Customisation** |
 |----------------|-----------------|-------------------|
