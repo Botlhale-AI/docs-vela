@@ -14,7 +14,7 @@ We're excited to announce the latest update to Vela! This release brings several
 We've launched a complete coaching portal for agents that includes:
 - **Courses Management**: Assign and track training courses with progress monitoring
 - **Awards System**: Recognise and reward high performers with digital awards
-- **Warnings Management**: Send and manage cautions and warnings to agents
+<!-- - **Warnings Management**: Send and manage cautions and warnings to agents -->
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
 - **Notifications**: Instant notifications for courses, awards, and warnings
