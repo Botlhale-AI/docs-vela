@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # 🔍 Create Automated Searches
 
-Stop manually reviewing every call. Smart Search automatically detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
+Stop manually reviewing every call. Smart Search detects important events in your customer interactions, so you can respond to issues before they become problems and spot opportunities to improve your service.
 
 ## 🎯 What You Can Achieve
 
-Smart Search is your automated monitoring system. Here's what you'll accomplish:
+Smart Search is your monitoring system. Here's what you'll accomplish:
 
 | **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
 |-------------------|----------------------|------------------------------|
@@ -86,7 +86,7 @@ Smart Search is your automated monitoring system. Here's what you'll accomplish:
 ### Search Sensitivity Settings
 | **Sensitivity Level** | **Use Case** | **Trade-offs** |
 |---------------------|--------------|---------------|
-| **High Sensitivity** | Critical issues, compliance violations | More false positives, immediate alerts |
+| **High Sensitivity** | Critical issues, compliance violations | More false positives, alerts |
 | **Medium Sensitivity** | General monitoring, quality assurance | Balanced accuracy and coverage |
 | **Low Sensitivity** | Trend analysis, long-term monitoring | Fewer false positives, may miss some issues |
 
@@ -105,7 +105,7 @@ Configure how you want to be notified about search matches:
 
 | **Notification Type** | **When to Use** | **Delivery Method** |
 |---------------------|-----------------|-------------------|
-| **Immediate Alerts** | Critical issues, compliance violations | Email, platform notifications |
+| **Alerts** | Critical issues, compliance violations | Email, platform notifications |
 | **Daily Summaries** | General monitoring, trend analysis | Email digest, dashboard updates |
 | **Weekly Reports** | Long-term trends, strategic insights | Scheduled reports, analytics |
 
@@ -118,7 +118,7 @@ Configure how you want to be notified about search matches:
 ### Escalation Procedures
 | **Alert Level** | **Response Time** | **Action Required** |
 |-----------------|------------------|-------------------|
-| **Critical** | Immediate (within 1 hour) | Direct intervention, management notification |
+| **Critical** | Within 1 hour | Direct intervention, management notification |
 | **High** | Same day (within 4 hours) | Investigation and action plan |
 | **Medium** | Within 24 hours | Review and follow-up |
 | **Low** | Within 48 hours | Monitor and trend analysis |

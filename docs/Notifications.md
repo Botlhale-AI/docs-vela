@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # 🔔 Stay Informed and Take Action
 
-In a busy call centre, important things happen fast. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues quickly, and keep your team connected when it matters most.
+In a busy call centre, important things happen frequently. Vela's notification system keeps you in the loop without overwhelming you. Learn how to monitor alerts, respond to issues promptly, and keep your team connected when it matters most.
 
 ## 🎯 What You Can Achieve
 
@@ -12,7 +12,7 @@ Notifications are your early warning system. Here's what you'll accomplish:
 
 | **Issue Response** | **Team Communication** | **Performance Monitoring** |
 |-------------------|----------------------|---------------------------|
-| 🚨 **Jump on problems fast** | 👥 **Work together better** | 📊 **Keep your finger on the pulse** |
+| 🚨 **Jump on problems promptly** | 👥 **Work together better** | 📊 **Keep your finger on the pulse** |
 | ⚡ **Never miss a beat** | 💬 **Stay connected** | 📈 **Track what matters** |
 | 🎯 **Respond proactively** | 🤝 **Collaborate effectively** | 📋 **Get automated insights** |
 
@@ -20,12 +20,12 @@ Notifications are your early warning system. Here's what you'll accomplish:
 
 ## 📋 Three Types of Notifications
 
-### 🚨 Alerts: Respond to Issues Immediately
+### 🚨 Alerts: Respond to Issues Promptly
 Get notified about important events that require your attention (set up your alerts in [Smart Detector Overview](./smart-detector-overview.md)):
 
 | **Alert Type** | **What It Monitors** | **When You Get It** |
 |----------------|---------------------|-------------------|
-| **Smart Search matches** | Customer complaints or compliance issues detected | Immediately when detected |
+| **Smart Search matches** | Customer complaints or compliance issues detected | When detected |
 | **Performance alerts** | Agent scores below thresholds | When thresholds are exceeded |
 | **System notifications** | Data processing complete or errors | When processing status changes |
 | **Quality flags** | Potential issues with customer interactions | When quality issues are identified |
@@ -178,7 +178,7 @@ Receive automated summaries of your team's performance:
 ### Alert Management
 - [ ] **Set appropriate thresholds** - Not too sensitive, not too lenient
 - [ ] **Review alerts regularly** - Don't let them pile up
-- [ ] **Take action quickly** - Respond to issues promptly
+- [ ] **Take action promptly** - Respond to issues when needed
 - [ ] **Document actions taken** - Keep track of resolutions
 
 ### Team Communication

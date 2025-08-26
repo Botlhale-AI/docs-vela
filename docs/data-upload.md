@@ -6,12 +6,12 @@ import TabItem from '@theme/TabItem';
 
 # 📤 Get Your Data into Vela Quickly
 
-Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you the fastest ways to get your data into Vela and start seeing insights.
+Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
 
 ## 🎯 What You Can Achieve
 
 By uploading your data to Vela, you can:
-- [ ] **Analyse every customer interaction** automatically
+- [ ] **Analyse every customer interaction** with AI-powered insights
 - [ ] **Identify patterns and trends** across your team
 - [ ] **Spot training opportunities** for agents
 - [ ] **Track customer satisfaction** over time
@@ -22,7 +22,7 @@ By uploading your data to Vela, you can:
 ## 🚀 Choose Your Upload Method
 
 ### Option 1: Manual Upload (Recommended for New Users)
-**Best for**: Getting started quickly with existing call files
+**Best for**: Getting started with existing call files
 
 #### Step-by-Step Process
 
@@ -44,9 +44,9 @@ By uploading your data to Vela, you can:
 #### Setup Process
 - [ ] **Contact your Vela Account Manager** to set up FTP integration
 - [ ] **Provide FTP credentials** for your call recording server
-- [ ] **Configure automatic sync** - Data flows automatically
+- [ ] **Configure sync** - Data flows without manual intervention
 
-> 💡 **Why this matters**: Once set up, your data flows automatically without manual intervention.
+> 💡 **Why this matters**: Once set up, your data flows without manual intervention.
 
 ---
 
@@ -66,7 +66,7 @@ By uploading your data to Vela, you can:
 | **Metadata** | Session information | Agent IDs, customer IDs |
 
 ### Data Requirements
-- [ ] **Call recordings**: Clear audio quality for best transcription
+- [ ] **Call recordings**: Audio quality affects transcription accuracy
 - [ ] **Chat data**: Properly formatted with sender, timestamp, and message content
 - [ ] **Metadata**: Agent information, call dates, customer IDs (if available)
 
@@ -81,7 +81,7 @@ Before uploading, ensure your files are ready for optimal processing:
 
 - [ ] **Organize your call recordings** in a dedicated folder for easy access
 - [ ] **Verify file formats** - We support WAV, MP3, and ZIP files for bulk uploads
-- [ ] **Check file sizes** - Individual files should be under 1 GB for best performance
+- [ ] **Check file sizes** - Ensure files are within your system's upload limits
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
 - [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
 
@@ -108,7 +108,7 @@ Track the progress of your uploads and processing:
 - [ ] **Check processing status** in the Calls section - Files will show "Processing" status
 - [ ] **Start analyzing** - Click on processed calls to view transcripts, insights, and analytics
 
-> ⏱️ **Processing times**: Small files (< 10 MB) process in 15-30 minutes, larger files may take 1-2 hours.
+> ⏱️ **Processing**: Files will be processed and available for analysis when complete.
 
 ### Step 4: Verify and Optimise
 Ensure your data is ready for analysis:
@@ -214,16 +214,18 @@ print(response.json())
 
 ## ⏱️ Data Processing Timeline
 
-### Typical Processing Times
-| **File Size** | **Processing Time** | **What Happens** |
-|---------------|-------------------|------------------|
-| **Small files** (< 10 MB) | **15-30 minutes** | Transcription, analysis, insights generation |
-| **Medium files** (10-100 MB) | **30-60 minutes** | Full processing with detailed analysis |
-| **Large files** (> 100 MB) | **1-2 hours** | Comprehensive analysis with all features |
+> 💡 **Processing Timeline**: Processing times vary based on file size and system load.
+
+### Processing Overview
+| **File Size** | **Processing** | **What Happens** |
+|---------------|----------------|------------------|
+| **Small files** (< 10 MB) | Varies | Transcription, analysis, insights generation |
+| **Medium files** (10-100 MB) | Varies | Full processing with detailed analysis |
+| **Large files** (> 100 MB) | Varies | Comprehensive analysis with all features |
 
 ### Factors Affecting Processing Time
 - [ ] **File size** - Larger files take longer to process
-- [ ] **Audio quality** - Clear audio processes faster
+- [ ] **Audio quality** - Clear audio may process more efficiently
 - [ ] **System load** - Peak times may be slower
 - [ ] **Analysis depth** - More detailed analysis requires more time
 
@@ -243,8 +245,8 @@ print(response.json())
 ## 📊 Data Quality Best Practices
 
 ### Before Upload
-- [ ] **Check audio quality** - Clear, audible recordings work best
-- [ ] **Verify file formats** - Use supported formats for best results
+- [ ] **Check audio quality** - Clear, audible recordings improve transcription accuracy
+- [ ] **Verify file formats** - Use supported formats for processing
 - [ ] **Organize files** - Group related recordings together
 - [ ] **Include metadata** - Agent IDs, customer IDs, timestamps
 

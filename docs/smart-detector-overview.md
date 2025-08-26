@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # 🔍 Automate Issue Detection and Agent Evaluation
 
-What if you could catch customer complaints before they become escalations? Or spot training gaps before they impact your team's performance? Smart Detector does the heavy lifting for you, automatically monitoring interactions, evaluating agents, and building a knowledge base that makes your team unstoppable.
+What if you could catch customer complaints before they become escalations? Or spot training gaps before they impact your team's performance? Smart Detector does the heavy lifting for you, automatically analyzing completed interactions, evaluating agents, and building a knowledge base that makes your team unstoppable.
+
+> 💡 **Note**: Smart Detector analyzes **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
 
 ## 🎯 What You Can Achieve
 
@@ -13,7 +15,7 @@ Smart Detector is like having a super-powered assistant that never sleeps. Here'
 | **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
 |-------------------|---------------------------|------------------------|
 | 🚨 **Catch complaints before they explode** | 📊 **Score agents objectively** | 🧠 **Build your team's brain** |
-| ⚡ **Monitor compliance effortlessly** | 📈 **Track improvement over time** | 🔍 **Find information instantly** |
+| ⚡ **Monitor compliance efficiently** | 📈 **Track improvement over time** | 🔍 **Find information efficiently** |
 | 🎯 **Spot training needs early** | 🎯 **Identify coaching opportunities** | 📚 **Centralize company knowledge** |
 
 ---
@@ -21,7 +23,7 @@ Smart Detector is like having a super-powered assistant that never sleeps. Here'
 ## 🛠️ Three Powerful Tools for Your Team
 
 ### 🔍 **Smart Search: Catch Issues Early**
-Automatically detect important events in your customer interactions:
+Detect important events in your customer interactions:
 
 #### What It Monitors:
 - 🚨 **Customer complaints** - Get alerts when customers express dissatisfaction
@@ -32,14 +34,14 @@ Automatically detect important events in your customer interactions:
 #### How It Works:
 1. **Create search rules** with example phrases
 2. **Set monitoring scope** (organisation, department, or team)
-3. **Receive real-time alerts** when issues are detected
-4. **Take immediate action** to resolve problems
+3. **Receive automated alerts** when issues are detected in processed calls
+4. **Take action** to resolve problems and prevent future issues
 
 ### 📊 **Agent Scorecard: Improve Performance Systematically**
 Evaluate and improve agent performance with AI-powered assessments:
 
 #### What It Evaluates:
-- 🎯 **Automated evaluations** - Score every interaction consistently
+- 🎯 **AI-powered evaluations** - Score every interaction consistently
 - 📈 **Performance tracking** - Monitor improvement over time
 - 🎓 **Training identification** - Spot specific areas for coaching
 - 🌟 **Best practice recognition** - Learn from top performers
@@ -47,7 +49,7 @@ Evaluate and improve agent performance with AI-powered assessments:
 #### How It Works:
 1. **Define evaluation criteria** for different scenarios
 2. **Set performance standards** and scoring weights
-3. **Automatically score** every interaction
+3. **Score** every interaction
 4. **Generate coaching insights** for improvement
 
 ### 📚 **Knowledge Base: Empower Your Team**
@@ -55,8 +57,8 @@ Build a smart, searchable repository of company information:
 
 #### What It Contains:
 - 📄 **Document upload** - Add policies, procedures, and training materials
-- 🔍 **Smart search** - Find relevant information quickly
-- 👥 **Agent access** - Provide real-time support during calls
+- 🔍 **Smart search** - Find relevant information efficiently
+- 👥 **Agent access** - Provide support based on call analysis insights
 - 🔄 **Continuous improvement** - Update knowledge based on interactions
 
 #### How It Works:

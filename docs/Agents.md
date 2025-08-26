@@ -26,7 +26,7 @@ Your agent performance table shows essential information:
 
 | **Metric** | **What It Means** | **Action Thresholds** |
 |------------|-------------------|----------------------|
-| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs immediate coaching | 🟢 90%+ = Recognize and mentor others<br/>🟡 70-89% = Provide targeted coaching<br/>🔴 Below 70% = Immediate intervention needed |
+| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 🟢 90%+ = Recognize and mentor others<br/>🟡 70-89% = Provide targeted coaching<br/>🔴 Below 70% = Intervention needed |
 | **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
 | **Weaknesses** - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
 | **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
@@ -39,7 +39,7 @@ Your agent performance table shows essential information:
 ## ⏰ Daily Agent Management Routine
 
 ### 🌅 Morning Review (10 minutes)
-- [ ] **Check agent scores** - Identify anyone below 70%
+- [ ] **Check agent scores** - Identify anyone needing support
 - [ ] **Review strengths/weaknesses** - Plan coaching sessions
 - [ ] **Look for trends** - Spot patterns across your team
 
@@ -70,7 +70,7 @@ Look for these key indicators:
 #### 😊 Customer Satisfaction
 | **Pattern** | **Indicators** | **Actions** |
 |-------------|----------------|-------------|
-| **Low satisfaction scores** | Customer complaints, negative feedback | Immediate coaching, review call recordings, provide specific training |
+| **Low satisfaction scores** | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
 | **Declining satisfaction** | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
 | **High satisfaction** | Positive feedback, good efficiency | Recognize success, use as mentor, share best practices |
 
@@ -84,7 +84,7 @@ Look for these key indicators:
 Based on your analysis, create specific improvement plans:
 
 #### 🔴 For Struggling Agents (Score < 70%)
-**Immediate Actions**:
+**Actions**:
 - [ ] **Identify specific weaknesses** from the data
 - [ ] **Schedule one-on-one coaching** sessions
 - [ ] **Provide targeted training** materials

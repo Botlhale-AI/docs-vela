@@ -6,11 +6,13 @@ sidebar_position: 0
 
 Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
 
+> 💡 **What is Vela?** Vela is a **call analysis tool** that provides comprehensive insights from your call data to help you improve customer interactions.
+
 ## 🎯 What You'll Achieve
 
 By the end of this guide, you'll be able to:
-- ✅ **Monitor your team's performance** in real-time
-- ✅ **Identify customer pain points** automatically  
+- ✅ **Monitor your team's performance** with comprehensive call analytics
+- ✅ **Identify customer pain points** automatically from call recordings
 - ✅ **Generate insights** to improve customer satisfaction
 - ✅ **Track agent performance** with AI-powered scoring
 
@@ -50,7 +52,7 @@ By the end of this guide, you'll be able to:
 #### Option B: FTP Integration (For larger organisations)
 - [ ] Contact your Vela Account Manager to set up automated uploads
 
-> 💡 **Why this matters**: Once your data is uploaded, Vela automatically analyses every interaction for insights you can't get manually.
+> 💡 **Why this matters**: Once your data is uploaded, Vela analyses every interaction for insights you can't get manually.
 
 ### Step 3: Review Your First Insights (1 minute)
 **Goal**: See immediate value from your data
@@ -58,7 +60,7 @@ By the end of this guide, you'll be able to:
 - [ ] **Go to "Calls"** to see your uploaded interactions
 - [ ] **Click on any call** to view detailed analysis:
   - [ ] **Full transcript** with sentiment analysis
-  - [ ] **Agent performance metrics** (automatically scored)
+  - [ ] **Agent performance metrics** (AI-powered scoring)
   - [ ] **Customer satisfaction insights**
   - [ ] **Automated alerts** for important moments
 
@@ -74,13 +76,13 @@ By the end of this guide, you'll be able to:
 - [ ] **Set scope** to your organisation or specific team
 - [ ] **Click "Create"** to start monitoring
 
-> 💡 **Why this matters**: Vela will automatically alert you when customers express dissatisfaction, helping you respond proactively.
+> 💡 **Why this matters**: Vela can alert you when customers express dissatisfaction, helping you respond proactively.
 
 ---
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You're now ready to transform your call centre operations with AI-powered insights. Vela will automatically process your interactions and provide actionable insights to improve customer experience and team performance.
+**Congratulations!** You're now ready to transform your call centre operations with AI-powered insights. Vela processes your interactions and provides actionable insights to improve customer experience and team performance.
 
 You've just unlocked the superpowers that will make your call centre unstoppable! 🚀
 

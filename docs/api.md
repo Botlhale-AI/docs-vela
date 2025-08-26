@@ -26,12 +26,12 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 
 **Solution**: Build an integration that monitors your recording system and uploads new calls via API.
 
-### Scenario 2: Real-Time Alert Integration
-**Business Goal**: Respond immediately to critical customer issues
+### Scenario 2: Automated Alert Integration
+**Business Goal**: Respond promptly to critical customer issues identified in call analysis
 
-**Use Case**: When Vela detects a customer complaint or compliance issue, you want to automatically create a ticket in your help desk system or send an alert to your team.
+**Use Case**: When Vela detects a customer complaint or compliance issue in analyzed calls, you want to automatically create a ticket in your help desk system or send an alert to your team.
 
-**Solution**: Use webhooks to receive real-time notifications and trigger your existing workflows.
+**Solution**: Use webhooks to receive automated notifications and trigger your existing workflows.
 
 ### Scenario 3: Custom Analytics Dashboard
 **Business Goal**: Combine Vela data with other business metrics
@@ -63,8 +63,8 @@ APIs are the secret sauce that makes everything work together. Here's what you'l
 
 | **Approach** | **Best For** | **When to Use** |
 |--------------|--------------|-----------------|
-| **Direct API Integration** | Custom applications, automated workflows, real-time data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, real-time data processing |
-| **Webhook Integration** | Event-driven workflows, real-time notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, real-time notification systems, automated ticket creation |
+| **Direct API Integration** | Custom applications, automated workflows, call analytics data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, call analytics data processing |
+| **Webhook Integration** | Event-driven workflows, automated notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, automated notification systems, automated ticket creation |
 | **Batch Processing** | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
 
 ---
@@ -155,7 +155,7 @@ response = requests.get(url, headers=headers, params=params)
 analytics_data = response.json()
 ```
 
-### Real-Time Event Processing
+### Automated Event Processing
 ```python
 from flask import Flask, request
 import json
@@ -197,7 +197,7 @@ def update_customer_profile(call_data):
 | **Pattern** | **Description** | **Implementation** |
 |-------------|-----------------|-------------------|
 | **Data Synchronization** | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
-| **Event-Driven Architecture** | React to Vela events in real-time | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
+| **Event-Driven Architecture** | React to Vela events automatically | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
 | **Custom Analytics Pipeline** | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualization |
 
 ---
@@ -247,7 +247,7 @@ def update_customer_profile(call_data):
 |-----------------|------------------------|
 | **Data synchronization accuracy** | Reduced manual work |
 | **API response times** | Improved data accuracy |
-| **Error rates** | Faster response times |
+| **Error rates** | Improved response times |
 | **Data quality** | Enhanced insights |
 
 ---

@@ -73,7 +73,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 ## 📈 Essential Reports for Different Goals
 
 ### 📊 **For Team Managers: Daily Performance Report**
-**Goal**: Monitor daily team performance and identify immediate issues
+**Goal**: Monitor daily team performance and identify issues
 
 **Include these metrics**:
 - [ ] Agent scores for the day
@@ -83,7 +83,7 @@ Reports are your secret weapon for driving change. Here's what you'll accomplish
 
 **How to use it**:
 - Morning team huddles
-- Identify agents needing immediate support
+- Identify agents needing support
 - Spot trends that need attention
 
 ### 📋 **For Executives: Monthly Executive Summary**

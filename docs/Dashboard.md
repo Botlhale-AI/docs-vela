@@ -68,7 +68,7 @@ Your dashboard transforms raw data into actionable insights. Here's what you'll 
 ## 📊 Understanding Your Dashboard
 
 ### Performance Overview
-Your dashboard shows real-time data for your selected team and time period. Each metric card displays:
+Your dashboard shows comprehensive call analytics data for your selected team and time period. Each metric card displays:
 - **Current value** (e.g., average call duration)
 - **Trend indicator** (up/down arrows showing improvement or decline)
 - **Filter icon** for additional filtering options

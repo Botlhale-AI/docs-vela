@@ -34,7 +34,7 @@ Chat analysis provides unique insights into digital customer service:
 ### Chat Quality Indicators
 | **Indicator** | **What It Means** | **Digital Action** |
 |---------------|-------------------|------------------|
-| **Fast response + High satisfaction** | Excellent digital service | Replicate and automate |
+| **Fast response + High satisfaction** | Excellent digital service | Replicate successful patterns |
 | **Slow response + Low satisfaction** | Digital service issues | Optimise response processes |
 | **High message count + Low resolution** | Complex issues or inefficiency | Improve processes or training |
 | **Low message count + High resolution** | Efficient digital service | Scale successful approaches |
@@ -91,7 +91,7 @@ Identify digital-specific performance patterns:
 
 | **Pattern** | **Digital Indicators** | **Improvement Focus** |
 |-------------|---------------------|---------------------|
-| **Fast Typing** | Quick responses, high message count | Efficiency training |
+| **Fast Typing** | Quick responses, high message count | Response efficiency |
 | **Thoughtful Responses** | Longer, more detailed messages | Quality vs. speed balance |
 | **Template Usage** | Consistent, professional responses | Template optimization |
 | **Personal Touch** | Customised, empathetic responses | Personalisation training |
@@ -106,7 +106,7 @@ Improve the speed and quality of digital interactions:
 | **Response Time** | **Customer Expectation** | **Action Required** |
 |------------------|-------------------------|-------------------|
 | **Under 30 seconds** | Excellent digital service | Maintain and replicate |
-| **30-60 seconds** | Good digital service | Optimise for faster response |
+| **30-60 seconds** | Good digital service | Optimise response processes |
 | **60+ seconds** | Poor digital service | Immediate process review |
 | **No response** | Failed digital service | Escalation procedures |
 

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # ⚙️ Configure Your Vela Experience
 
-Customise Vela to match your organisation's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for optimal performance and user experience.
+Customise Vela to match your organisation's needs, manage your team effectively, and ensure your data is secure. This guide shows you how to set up Vela for effective performance and user experience.
 
 ## 🎯 What You Can Achieve
 
@@ -139,7 +139,7 @@ Structure your organisation for better management:
 - [ ] **Set up email templates** for consistency
 
 ### Platform Notifications
-- [ ] **Enable in-app notifications** for real-time alerts
+- [ ] **Enable in-app notifications** for automated alerts
 - [ ] **Configure notification sounds** and visual indicators
 - [ ] **Set notification priorities** for different alert types
 - [ ] **Customise notification display** preferences

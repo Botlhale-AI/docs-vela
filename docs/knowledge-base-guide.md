@@ -32,7 +32,7 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 - [ ] **Add company documents** (PDFs, text files, URLs)
 - [ ] **Organize with tags** and categories
 - [ ] **Set access permissions** for different teams
-- [ ] **Configure search settings** for optimal discovery
+- [ ] **Configure search settings** for efficient discovery
 
 ---
 
@@ -43,7 +43,7 @@ A well-built knowledge base transforms your team's capabilities. Here's what you
 |---------------------|-------------------|------------------|
 | **Product Information** | Features, specifications, pricing, availability | Accurate product knowledge, reduced errors |
 | **Service Policies** | Procedures, guidelines, escalation processes | Consistent service delivery, compliance |
-| **Troubleshooting Guides** | Common issues, solutions, workarounds | Faster problem resolution, improved satisfaction |
+| **Troubleshooting Guides** | Common issues, solutions, workarounds | Improved problem resolution, enhanced satisfaction |
 | **Training Materials** | Best practices, scripts, techniques | Skill development, performance improvement |
 
 ### Advanced Content
@@ -92,8 +92,8 @@ Make information easy to find:
 | **Search Feature** | **Configuration** | **Benefit** |
 |-------------------|------------------|-------------|
 | **Keyword Optimization** | Add relevant terms and synonyms | Improve search accuracy |
-| **Category Filtering** | Organize content by topic | Faster content discovery |
-| **Tag-Based Search** | Use tags for cross-referencing | Find related information quickly |
+| **Category Filtering** | Organize content by topic | Efficient content discovery |
+| **Tag-Based Search** | Use tags for cross-referencing | Find related information efficiently |
 | **Recent Updates** | Highlight new and updated content | Keep agents informed of changes |
 
 ### Content Discovery
@@ -142,12 +142,12 @@ Manage your knowledge base content effectively:
 
 ## 🎯 Using Knowledge Base During Interactions
 
-### Real-Time Access
-Enable agents to access information during calls:
+### Post-Call Access
+Enable agents to access information for future calls and training:
 
 | **Access Method** | **When to Use** | **Benefits** |
 |------------------|-----------------|-------------|
-| **Quick Search** | During live interactions | Immediate answers, improved confidence |
+| **Quick Search** | For training and preparation | Immediate answers, improved confidence |
 | **Category Browse** | When exploring options | Discover related information |
 | **Recent Content** | For latest updates | Stay current with changes |
 | **Favorites** | For frequently used information | Quick access to common resources |

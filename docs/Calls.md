@@ -35,7 +35,7 @@ Your call analysis provides comprehensive insights into every interaction:
 | **Indicator** | **What It Means** | **Action Required** |
 |---------------|-------------------|-------------------|
 | **High sentiment + High score** | Excellent service delivery | Recognize and replicate |
-| **Low sentiment + Low score** | Service quality issues | Immediate coaching needed |
+| **Low sentiment + Low score** | Service quality issues | Coaching needed |
 | **High sentiment + Low score** | Good outcome despite challenges | Identify what worked |
 | **Low sentiment + High score** | Technical issues or external factors | Investigate root causes |
 
@@ -95,7 +95,7 @@ Identify trends that affect team performance:
 | **Pattern** | **Indicators** | **Intervention** |
 |-------------|----------------|-----------------|
 | **Consistent High Performance** | High scores across multiple calls | Use as mentor, share best practices |
-| **Declining Performance** | Decreasing scores over time | Immediate coaching, identify root causes |
+| **Declining Performance** | Decreasing scores over time | Coaching, identify root causes |
 | **Inconsistent Performance** | High variance in scores | Focus on specific skill areas |
 | **Specific Weaknesses** | Low scores in particular areas | Targeted training programs |
 
@@ -132,7 +132,7 @@ Track customer emotions throughout the conversation:
 |-------------------|---------------------|-------------------|
 | **Positive** | Customer satisfaction, successful resolution | Maintain current approach |
 | **Neutral** | Standard interaction, no major issues | Monitor for improvement opportunities |
-| **Negative** | Customer dissatisfaction, potential escalation | Immediate attention needed |
+| **Negative** | Customer dissatisfaction, potential escalation | Attention needed |
 
 ### Keyword Analysis
 Identify important topics and themes:
@@ -162,7 +162,7 @@ Monitor these metrics to track team performance:
 | **KPI** | **Target** | **Action Threshold** |
 |---------|------------|-------------------|
 | **Average Call Duration** | 5-8 minutes | Above 10 minutes = efficiency review needed |
-| **Customer Satisfaction** | 85%+ positive | Below 75% = immediate intervention |
+| **Customer Satisfaction** | 85%+ positive | Below 75% = intervention needed |
 | **First Call Resolution** | 80%+ | Below 70% = training or process review |
 | **Agent Performance Score** | 85%+ | Below 70% = coaching required |
 

@@ -63,7 +63,7 @@ Structure your scorecard with these key performance areas:
 | **90-100%** | Excellent | Recognize, mentor others, advanced development |
 | **80-89%** | Good | Minor improvements, skill refinement |
 | **70-79%** | Satisfactory | Coaching needed, specific improvements |
-| **Below 70%** | Needs Improvement | Immediate intervention, intensive coaching |
+| **Below 70%** | Needs Improvement | Intervention, intensive coaching |
 
 ---
 
@@ -158,7 +158,7 @@ Use scorecard data to improve processes:
 
 ### Automated Scoring
 - [ ] **Set up automatic evaluation** of all interactions
-- [ ] **Configure real-time scoring** for immediate feedback
+- [ ] **Configure scoring** for feedback
 - [ ] **Enable trend analysis** to track improvement over time
 - [ ] **Integrate with coaching** systems for seamless development
 
