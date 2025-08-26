@@ -6,7 +6,7 @@ import TabItem from '@theme/TabItem';
 
 # Get Your Data into Vela Quickly
 
-Upload your call and chat data to start analyzing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
+Upload your call and chat data to start analysing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
 
 ## What You Can Achieve
 
@@ -35,7 +35,7 @@ By uploading your data to Vela, you can:
 - [ ] **Select your call files** - We support mp3,wave & zip formats (bulk upload)
 - [ ] **Click "Upload"** and wait for processing
 
-> **Why this matters**: You can start analyzing your data immediately without any technical setup.
+> **Why this matters**: You can start analysing your data immediately without any technical setup.
 
 ### Option 2: FTP Integration (For Larger Organisations)
 **Best for**: Organisations with automated call recording systems
@@ -74,12 +74,12 @@ By uploading your data to Vela, you can:
 
 ## Getting Started with Manual Upload
 
-Follow these simple steps to upload your call recordings and start analyzing customer interactions in Vela.
+Follow these simple steps to upload your call recordings and start analysing customer interactions in Vela.
 
 ### Step 1: Prepare Your Files
 Before uploading, ensure your files are ready for optimal processing:
 
-- [ ] **Organize your call recordings** in a dedicated folder for easy access
+- [ ] **Organise your call recordings** in a dedicated folder for easy access
 - [ ] **Verify file formats** - We support WAV, MP3, and ZIP files for bulk uploads
 - [ ] **Check file sizes** - Ensure files are within your system's upload limits
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
@@ -106,7 +106,7 @@ Track the progress of your uploads and processing:
 
 - [ ] **Watch the upload progress** - Real-time progress bars show upload status
 - [ ] **Check processing status** in the Calls section - Files will show "Processing" status
-- [ ] **Start analyzing** - Click on processed calls to view transcripts, insights, and analytics
+- [ ] **Start analysing** - Click on processed calls to view transcripts, insights, and analytics
 
 > **Processing**: Files will be processed and available for analysis when complete.
 
@@ -247,7 +247,7 @@ print(response.json())
 ### Before Upload
 - [ ] **Check audio quality** - Clear, audible recordings improve transcription accuracy
 - [ ] **Verify file formats** - Use supported formats for processing
-- [ ] **Organize files** - Group related recordings together
+- [ ] **Organise files** - Group related recordings together
 - [ ] **Include metadata** - Agent IDs, customer IDs, timestamps
 
 ### After Upload

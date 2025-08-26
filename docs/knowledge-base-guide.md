@@ -14,7 +14,7 @@ A well-built knowledge base enhances your team's capabilities. Here's what you'l
 |---------------------|-------------------|----------------------|
 | **Give agents instant answers** | **Ensure consistent responses** | **Build collective knowledge** |
 | **Reduce training time** | **Improve accuracy and speed** | **Keep information current** |
-| **Centralize company knowledge** | **Maintain quality standards** | **Foster knowledge sharing** |
+| **Centralise company knowledge** | **Maintain quality standards** | **Foster knowledge sharing** |
 
 ---
 
@@ -30,7 +30,7 @@ A well-built knowledge base enhances your team's capabilities. Here's what you'l
 
 ### Step 2: Upload Your Content
 - [ ] **Add company documents** (PDFs, text files, URLs)
-- [ ] **Organize with tags** and categories
+- [ ] **Organise with tags** and categories
 - [ ] **Set access permissions** for different teams
 - [ ] **Configure search settings** for efficient discovery
 
@@ -50,7 +50,7 @@ A well-built knowledge base enhances your team's capabilities. Here's what you'l
 | **Content Type** | **Purpose** | **Implementation** |
 |-----------------|-------------|------------------|
 | **FAQ Collections** | Quick answers to common questions | Reduce repetitive inquiries, improve efficiency |
-| **Process Documentation** | Step-by-step procedures and workflows | Standardize operations, reduce errors |
+| **Process Documentation** | Step-by-step procedures and workflows | Standardise operations, reduce errors |
 | **Compliance Information** | Regulatory requirements and standards | Ensure compliance, reduce risk |
 | **Best Practice Guides** | Proven techniques and strategies | Improve performance, share excellence |
 
@@ -78,13 +78,13 @@ Structure your knowledge base for easy navigation:
 | **Access Level** | **Who Has Access** | **Content Examples** |
 |-----------------|-------------------|-------------------|
 | **Public** | All agents | General policies, basic procedures |
-| **Team-Specific** | Designated teams | Specialized procedures, team-specific information |
+| **Team-Specific** | Designated teams | Specialised procedures, team-specific information |
 | **Management** | Supervisors and managers | Sensitive information, strategic documents |
 | **Admin** | System administrators | Configuration, technical documentation |
 
 ---
 
-## Optimizing Search and Discovery
+## Optimising Search and Discovery
 
 ### Search Configuration
 Make information easy to find:
@@ -92,7 +92,7 @@ Make information easy to find:
 | **Search Feature** | **Configuration** | **Benefit** |
 |-------------------|------------------|-------------|
 | **Keyword Optimization** | Add relevant terms and synonyms | Improve search accuracy |
-| **Category Filtering** | Organize content by topic | Efficient content discovery |
+| **Category Filtering** | Organise content by topic | Efficient content discovery |
 | **Tag-Based Search** | Use tags for cross-referencing | Find related information efficiently |
 | **Recent Updates** | Highlight new and updated content | Keep agents informed of changes |
 
@@ -109,7 +109,7 @@ Monitor how agents use the knowledge base:
 |------------|-------------------|------------|
 | **Search Frequency** | Most common queries | Add missing content, improve existing |
 | **Content Usage** | Most/least accessed information | Optimise popular content, review unused |
-| **Search Success** | How often agents find what they need | Improve search terms, reorganize content |
+| **Search Success** | How often agents find what they need | Improve search terms, reorganise content |
 | **Time to Find** | How long agents spend searching | Simplify navigation, improve search |
 
 ---
@@ -150,7 +150,7 @@ Enable agents to access information for future calls and training:
 | **Quick Search** | For training and preparation | Immediate answers, improved confidence |
 | **Category Browse** | When exploring options | Discover related information |
 | **Recent Content** | For latest updates | Stay current with changes |
-| **Favorites** | For frequently used information | Quick access to common resources |
+| **Favourites** | For frequently used information | Quick access to common resources |
 
 ### Integration with Workflows
 - [ ] **Embed in call scripts** for consistent information delivery
@@ -187,7 +187,7 @@ Enable agents to access information for future calls and training:
 
 ### User Experience
 - [ ] **Make it searchable** - Optimise for quick discovery
-- [ ] **Organize logically** - Use intuitive categories and structure
+- [ ] **Organise logically** - Use intuitive categories and structure
 - [ ] **Keep it accessible** - Ensure easy access during interactions
 - [ ] **Provide examples** - Make information practical and actionable
 
@@ -195,7 +195,7 @@ Enable agents to access information for future calls and training:
 - [ ] **Assign ownership** - Designate content managers and reviewers
 - [ ] **Establish processes** - Create workflows for content updates
 - [ ] **Monitor usage** - Track effectiveness and identify improvements
-- [ ] **Celebrate success** - Recognize when knowledge base helps improve performance
+- [ ] **Celebrate success** - Recognise when knowledge base helps improve performance
 
 ---
 

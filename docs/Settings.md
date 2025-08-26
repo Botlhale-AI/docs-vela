@@ -173,7 +173,7 @@ Structure your organisation for better management:
 
 ### Custom Branding
 - [ ] **Upload company logo** for reports and dashboards
-- [ ] **Set brand colors** for consistent appearance
+- [ ] **Set brand colours** for consistent appearance
 - [ ] **Configure email signatures** for notifications
 - [ ] **Customise report templates** with your branding
 

@@ -2,51 +2,29 @@
 sidebar_position: 0
 ---
 
-# Get Started with Vela in 5 Minutes
+# Get Started with Vela
 
 Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
 
-Every call centre manager knows the challenge - you're dealing with agents, customers, and the constant pressure to improve performance. Vela helps you understand what's really happening in your customer interactions so you can make informed decisions.
+Call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. Vela automatically transcribes and analyses 100% of your calls regardless of the language spoken, giving you insights that help you improve agent performance and customer satisfaction.
 
-> **What is Vela?** Vela is a **call analysis tool** that provides comprehensive insights from your call data to help you improve customer interactions.
+> **What is Vela?** Vela is a **multilingual call centre analytics tool** that processes call recordings in African languages to provide AI-powered insights, agent scoring, and automated alerts for improving your team's performance.
 
 ## What You'll Achieve
 
 By the end of this guide, you'll be able to:
-- ✅ **Monitor your team's performance** with comprehensive call analytics
-- ✅ **Identify customer pain points** automatically from call recordings
-- ✅ **Generate insights** to improve customer satisfaction
-- ✅ **Track agent performance** with AI-powered scoring
+- **Monitor your team's performance** with comprehensive call analytics
+- **Identify customer pain points** automatically from call recordings
+- **Generate insights** to improve customer satisfaction
+- **Track agent performance** with AI-powered scoring
 
-The best part? This guide takes about 5 minutes to complete. We've made it as straightforward as possible because we understand you have calls to handle and agents to manage.
+We've made this guide as straightforward as possible because we understand you have calls to handle and agents to manage.
 
 ---
 
 ## Quick Setup Checklist
 
-### Step 1: Set Up Your Dashboard (2 minutes)
-**Goal**: Create a personalized view of your most important metrics
-
-The dashboard is your command centre - it gives you a comprehensive view of your entire operation at a glance.
-
-- [ ] **Log in** to your Vela platform
-- [ ] **Click "Dashboard"** in the left sidebar
-- [ ] **Click "Customise"** in the top-right corner
-- [ ] **Select your team** from the "View By" dropdown
-- [ ] **Choose "All" interactions** to see both calls and chats
-- [ ] **Set your date range** (try "This Month" to start)
-- [ ] **Add these key metrics**:
-  - [ ] Agent Distribution (see who's handling calls)
-  - [ ] Average Call Duration (identify efficiency issues)
-  - [ ] Agent Scores (spot training opportunities)
-  - [ ] Customer Sentiment (gauge satisfaction)
-- [ ] **Click "Save"** to apply your settings
-
-![Dashboard Setup - Screenshot showing the Vela dashboard customization interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
-
-> **Why this matters**: Your dashboard becomes your command centre for monitoring team performance and customer satisfaction at a glance.
-
-### Step 2: Upload Your First Data (2 minutes)
+### Step 1: Upload Your First Data
 **Goal**: Get your call data into Vela for analysis
 
 Getting your call data into Vela is straightforward. We offer two approaches depending on your needs.
@@ -66,7 +44,7 @@ Ideal for organisations handling hundreds of calls daily.
 
 > **Why this matters**: Once your data is uploaded, Vela analyses every interaction for insights you can't get manually.
 
-### Step 3: Review Your First Insights (1 minute)
+### Step 2: Review Your First Insights
 **Goal**: See immediate value from your data
 
 This is where you'll see the real value. You'll discover patterns and insights about your calls that weren't visible before.
@@ -80,6 +58,28 @@ This is where you'll see the real value. You'll discover patterns and insights a
 
 > **Why this matters**: You'll immediately see patterns and issues that would take hours to identify manually.
 
+### Step 3: Set Up Your Dashboard
+**Goal**: Create a personalised view of your most important metrics
+
+Now that you have data, you can create a meaningful dashboard that shows actual insights.
+
+- [ ] **Log in** to your Vela platform
+- [ ] **Click "Dashboard"** in the left sidebar
+- [ ] **Click "Customise"** in the top-right corner
+- [ ] **Select your team** from the "View By" dropdown
+- [ ] **Choose "All" interactions** to see both calls and chats
+- [ ] **Set your date range** (try "This Month" to start)
+- [ ] **Add these key metrics**:
+  - [ ] Agent Distribution (see who's handling calls)
+  - [ ] Average Call Duration (identify efficiency issues)
+  - [ ] Agent Scores (spot training opportunities)
+  - [ ] Customer Sentiment (gauge satisfaction)
+- [ ] **Click "Save"** to apply your settings
+
+![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
+
+> **Why this matters**: Your dashboard becomes your command centre for monitoring team performance and customer satisfaction at a glance.
+
 ### Step 4: Set Up Smart Monitoring (Optional)
 **Goal**: Automatically detect important events and issues
 
@@ -92,7 +92,7 @@ This is an advanced feature that lets you set up automated monitoring for specif
 - [ ] **Set scope** to your organisation or specific team
 - [ ] **Click "Create"** to start monitoring
 
-> **Why this matters**: Vela can alert you when customers can express dissatisfaction, helping you respond proactively.
+> **Why this matters**: Vela can alert you when customers express dissatisfaction, helping you respond proactively.
 
 ---
 

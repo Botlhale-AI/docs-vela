@@ -14,7 +14,7 @@ Agent scorecards transform subjective evaluations into objective insights. Here'
 |---------------------------|---------------------------|---------------------|
 | **Measure performance objectively** | **Guide targeted coaching** | **Ensure consistent standards** |
 | **Identify training needs** | **Track improvement over time** | **Maintain quality standards** |
-| **Recognize excellence** | **Drive continuous improvement** | **Support compliance requirements** |
+| **Recognise excellence** | **Drive continuous improvement** | **Support compliance requirements** |
 
 ---
 
@@ -60,7 +60,7 @@ Structure your scorecard with these key performance areas:
 ### Scoring System
 | **Score Range** | **Performance Level** | **Action Required** |
 |-----------------|---------------------|-------------------|
-| **90-100%** | Excellent | Recognize, mentor others, advanced development |
+| **90-100%** | Excellent | Recognise, mentor others, advanced development |
 | **80-89%** | Good | Minor improvements, skill refinement |
 | **70-79%** | Satisfactory | Coaching needed, specific improvements |
 | **Below 70%** | Needs Improvement | Intervention, intensive coaching |
@@ -139,7 +139,7 @@ Analyse patterns across your team:
 
 | **Pattern** | **Team Impact** | **Management Action** |
 |-------------|-----------------|---------------------|
-| **High team scores** | Excellent performance, strong culture | Maintain standards, share best practices, recognize excellence |
+| **High team scores** | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
 | **Mixed team performance** | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
 | **Low team scores** | Systemic issues, training gaps | Comprehensive training review, process improvement |
 | **Declining scores** | Performance issues, changing standards | Investigate root causes, adjust expectations |
@@ -149,7 +149,7 @@ Use scorecard data to improve processes:
 
 - [ ] **Identify common weaknesses** across the team
 - [ ] **Spot training gaps** that affect multiple agents
-- [ ] **Recognize process issues** that impact performance
+- [ ] **Recognise process issues** that impact performance
 - [ ] **Track improvement** over time to measure effectiveness
 
 ---
@@ -205,7 +205,7 @@ Use scorecard data to improve processes:
 - [ ] **Regular review** - Update criteria and standards as needed
 - [ ] **Monitor effectiveness** - Track impact on performance and satisfaction
 - [ ] **Share results** - Use data to guide coaching and development
-- [ ] **Celebrate success** - Recognize improvements and achievements
+- [ ] **Celebrate success** - Recognise improvements and achievements
 
 ---
 

@@ -10,7 +10,7 @@ Your call centre doesn't exist in a vacuum. Vela's API lets you connect your exi
 
 APIs enable seamless integration between systems. Here's what you'll unlock:
 
-| **Automation** | **Integration** | **Customization** |
+| **Automation** | **Integration** | **Customisation** |
 |----------------|-----------------|-------------------|
 | **Stop manual uploads forever** | **Build your dream dashboard** | **Work smarter, not harder** |
 | **Know your customers better** | **Build the future** | **Create automated workflows** |
@@ -29,7 +29,7 @@ APIs enable seamless integration between systems. Here's what you'll unlock:
 ### Scenario 2: Automated Alert Integration
 **Business Goal**: Respond promptly to critical customer issues identified in call analysis
 
-**Use Case**: When Vela detects a customer complaint or compliance issue in analyzed calls, you want to automatically create a ticket in your help desk system or send an alert to your team.
+**Use Case**: When Vela detects a customer complaint or compliance issue in analysed calls, you want to automatically create a ticket in your help desk system or send an alert to your team.
 
 **Solution**: Use webhooks to receive automated notifications and trigger your existing workflows.
 
@@ -198,7 +198,7 @@ def update_customer_profile(call_data):
 |-------------|-----------------|-------------------|
 | **Data Synchronization** | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
 | **Event-Driven Architecture** | React to Vela events automatically | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
-| **Custom Analytics Pipeline** | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualization |
+| **Custom Analytics Pipeline** | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualisation |
 
 ---
 

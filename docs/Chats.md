@@ -82,7 +82,7 @@ Understand how customers interact in digital channels:
 | **Behaviour Pattern** | **What to Look For** | **Business Opportunity** |
 |---------------------|---------------------|------------------------|
 | **Quick Questions** | Simple queries that could be automated | Chatbot implementation |
-| **Complex Issues** | Detailed problems requiring human expertise | Specialized agent training |
+| **Complex Issues** | Detailed problems requiring human expertise | Specialised agent training |
 | **Multi-channel** | Customers switching between channels | Omnichannel optimization |
 | **Peak Usage Times** | High-volume periods | Resource planning |
 
@@ -98,7 +98,7 @@ Identify digital-specific performance patterns:
 
 ---
 
-## Optimizing Digital Customer Service
+## Optimising Digital Customer Service
 
 ### Response Time Optimization
 Improve the speed and quality of digital interactions:
@@ -126,7 +126,7 @@ Identify conversations that could be automated:
 | **FAQ Questions** | High - Standard responses | Chatbot with knowledge base |
 | **Simple Requests** | Medium - Basic workflows | Automated workflows |
 | **Complex Issues** | Low - Human expertise needed | Human agent escalation |
-| **Complaints** | Low - Emotional intelligence required | Specialized agent handling |
+| **Complaints** | Low - Emotional intelligence required | Specialised agent handling |
 
 ---
 
@@ -194,7 +194,7 @@ Monitor these key indicators for digital success:
 ### Response Optimization
 - [ ] **Balance speed and quality** in digital responses
 - [ ] **Use templates effectively** for consistency
-- [ ] **Personalize when possible** for better engagement
+- [ ] **Personalise when possible** for better engagement
 - [ ] **Follow up appropriately** to ensure resolution
 
 ### Continuous Digital Improvement

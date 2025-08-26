@@ -30,7 +30,7 @@ Your agent performance table shows essential information:
 
 | **Metric** | **What It Means** | **Action Thresholds** |
 |------------|-------------------|----------------------|
-| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognize and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
+| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognise and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
 | **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
 | **Weaknesses** - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
 | **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
@@ -78,7 +78,7 @@ Look for these key indicators:
 |-------------|----------------|-------------|
 | **Low satisfaction scores** | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
 | **Declining satisfaction** | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
-| **High satisfaction** | Positive feedback, good efficiency | Recognize success, use as mentor, share best practices |
+| **High satisfaction** | Positive feedback, good efficiency | Recognise success, use as mentor, share best practices |
 
 #### Resolution Rate
 | **Pattern** | **Implications** | **Training Focus** |
@@ -118,7 +118,7 @@ Based on your analysis, create specific improvement plans:
 
 #### For Top Performers (Score 90%+)
 **Recognition & Growth**:
-- [ ] **Recognize their achievements**
+- [ ] **Recognise their achievements**
 - [ ] **Use them as mentors** for other agents
 - [ ] **Provide advanced training** opportunities
 - [ ] **Consider promotion** or leadership roles
@@ -197,7 +197,7 @@ Look for patterns that affect multiple agents:
 - [ ] **Pair struggling agents** with top performers
 - [ ] **Create peer mentoring** programs
 - [ ] **Share best practices** across the team
-- [ ] **Recognize and reward** improvement
+- [ ] **Recognise and reward** improvement
 
 ---
 

@@ -71,7 +71,7 @@ Smart Search provides automated monitoring. Here's what you'll accomplish:
 | **Knowledge Gaps** | "I don't know", "Can you explain", "I'm not sure how" | Identify training needs, skill development |
 | **Process Confusion** | "What's the procedure", "How do I do this", "I'm confused" | Process improvement, documentation |
 | **Escalation Requests** | "I need a supervisor", "Can I speak to someone else", "This is too complex" | Skill assessment, escalation procedures |
-| **Positive Feedback** | "Great service", "Thank you so much", "You're amazing" | Recognize excellence, share best practices |
+| **Positive Feedback** | "Great service", "Thank you so much", "You're amazing" | Recognise excellence, share best practices |
 
 ---
 
@@ -125,7 +125,7 @@ Configure how you want to be notified about search matches:
 
 ---
 
-## Analyzing Search Results
+## Analysing Search Results
 
 ### Understanding Match Data
 When Smart Search finds matches, you'll see:
@@ -178,7 +178,7 @@ Based on search results, you can:
 - [ ] **Share insights** - Use search results to inform team discussions
 - [ ] **Coordinate responses** - Ensure consistent handling of similar issues
 - [ ] **Learn from patterns** - Use findings to improve processes and training
-- [ ] **Celebrate improvements** - Recognize when search results show positive trends
+- [ ] **Celebrate improvements** - Recognise when search results show positive trends
 
 ### Continuous Improvement
 - [ ] **Monitor effectiveness** - Track how well searches are working

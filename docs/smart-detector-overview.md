@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Automate Issue Detection and Agent Evaluation
 
-Smart Detector automatically analyzes completed interactions, evaluates agents, and builds a knowledge base to help you catch customer complaints before they become escalations and spot training gaps before they impact your team's performance.
+Smart Detector automatically analyses completed interactions, evaluates agents, and builds a knowledge base to help you catch customer complaints before they become escalations and spot training gaps before they impact your team's performance.
 
-> **Note**: Smart Detector analyzes **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
+> **Note**: Smart Detector analyses **completed calls and chats** to identify patterns and issues, helping you improve future interactions.
 
 ## What You Can Achieve
 
@@ -16,7 +16,7 @@ Smart Detector provides automated analysis and insights. Here's what it does for
 |-------------------|---------------------------|------------------------|
 | **Catch complaints before they escalate** | **Score agents objectively** | **Build your team's knowledge** |
 | **Monitor compliance efficiently** | **Track improvement over time** | **Find information efficiently** |
-| **Spot training needs early** | **Identify coaching opportunities** | **Centralize company knowledge** |
+| **Spot training needs early** | **Identify coaching opportunities** | **Centralise company knowledge** |
 
 ---
 
@@ -63,7 +63,7 @@ Build a smart, searchable repository of company information:
 
 #### How It Works:
 1. **Upload company documents** (PDFs, text files, URLs)
-2. **Organize with tags** and categories
+2. **Organise with tags** and categories
 3. **Enable agent access** during calls
 4. **Update content** based on common questions
 
@@ -133,7 +133,7 @@ Build a smart, searchable repository of company information:
    - Product information and FAQs
    - Training materials and scripts
    - Compliance guidelines
-3. **Organize content** with tags and categories
+3. **Organise content** with tags and categories
 4. **Set access permissions** for different teams
 
 ---

@@ -59,7 +59,7 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 ### Step 3: Customise Your Report
 
 - [ ] **Include executive summary** - Key findings and recommendations
-- [ ] **Add visualizations** - Charts and graphs for better understanding
+- [ ] **Add visualisations** - Charts and graphs for better understanding
 - [ ] **Set up recurring reports** - Automate regular reporting
 
 ### Step 4: Generate and Share
@@ -120,7 +120,7 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 ## Advanced Reporting Features
 
 ### Custom Branding
-**Add your company logo and brand colors** to reports for professional presentations
+**Add your company logo and brand colours** to reports for professional presentations
 
 ### Export Options
 **Download as PDF, Excel, or CSV** for further analysis and sharing
@@ -140,7 +140,7 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 
 ### Design Clear Reports
 - [ ] **Start with executive summary** - Key findings upfront
-- [ ] **Use visualizations** - Charts and graphs for clarity
+- [ ] **Use visualisations** - Charts and graphs for clarity
 - [ ] **Include recommendations** - What actions to take
 - [ ] **Keep it concise** - Focus on what matters most
 
@@ -158,7 +158,7 @@ Reports help you communicate insights effectively. Here's what you'll accomplish
 |-------------|--------------|
 | **Report Generation Fails** | Check if you have sufficient data for the selected period, verify your date range includes uploaded data, ensure you have proper permissions |
 | **Missing Data in Reports** | Verify data has been uploaded and processed, check your date range and filters, ensure agents are properly assigned to teams |
-| **Report Formatting Issues** | Use the customization options for branding, choose appropriate visualizations for your data, include clear titles and descriptions |
+| **Report Formatting Issues** | Use the customisation options for branding, choose appropriate visualisations for your data, include clear titles and descriptions |
 
 ---
 

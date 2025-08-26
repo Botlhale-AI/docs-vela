@@ -34,7 +34,7 @@ Your call analysis provides comprehensive insights into every interaction:
 ### Call Quality Indicators
 | **Indicator** | **What It Means** | **Action Required** |
 |---------------|-------------------|-------------------|
-| **High sentiment + High score** | Excellent service delivery | Recognize and replicate |
+| **High sentiment + High score** | Excellent service delivery | Recognise and replicate |
 | **Low sentiment + Low score** | Service quality issues | Coaching needed |
 | **High sentiment + Low score** | Good outcome despite challenges | Identify what worked |
 | **Low sentiment + High score** | Technical issues or external factors | Investigate root causes |
@@ -181,7 +181,7 @@ Monitor these metrics to track team performance:
 | **Low call quality scores** | Training gaps, unclear expectations, process issues | Review training materials, clarify expectations, optimise processes |
 | **High call duration** | Complex issues, agent uncertainty, inefficient processes | Provide better training, improve knowledge base, streamline procedures |
 | **Poor customer sentiment** | Service quality issues, agent attitude, product problems | Address root causes, provide coaching, improve products |
-| **Inconsistent performance** | Varying call complexity, agent experience, external factors | Standardize processes, provide consistent training, account for variables |
+| **Inconsistent performance** | Varying call complexity, agent experience, external factors | Standardise processes, provide consistent training, account for variables |
 
 ---
 
