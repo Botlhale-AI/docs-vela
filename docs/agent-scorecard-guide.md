@@ -132,7 +132,7 @@ Use scorecard results to guide agent improvement:
 | **High scores across all areas** | Advanced development, leadership | Mentoring opportunities, advanced training, career progression |
 | **Mixed scores** | Targeted improvement | Focus coaching on low-scoring areas, build on strengths |
 | **Low scores in specific areas** | Skill development | Targeted training, practice opportunities, peer support |
-| **Consistently low scores** | Comprehensive development | Intensive coaching, skill assessment, role evaluation |
+| **Consistently low scores** | Full development plan | Intensive coaching, skill assessment, role evaluation |
 
 ### Team Analysis
 Analyse patterns across your team:
@@ -141,7 +141,7 @@ Analyse patterns across your team:
 |-------------|-----------------|---------------------|
 | **High team scores** | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
 | **Mixed team performance** | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
-| **Low team scores** | Systemic issues, training gaps | Comprehensive training review, process improvement |
+| **Low team scores** | Systemic issues, training gaps | Full training review, process improvement |
 | **Declining scores** | Performance issues, changing standards | Investigate root causes, adjust expectations |
 
 ### Process Improvement

@@ -98,7 +98,7 @@ Make information easy to find:
 
 ### Content Discovery
 - [ ] **Use descriptive titles** that clearly indicate content
-- [ ] **Add comprehensive tags** for better categorization
+- [ ] **Add detailed tags** for better categorization
 - [ ] **Include search keywords** that agents might use
 - [ ] **Create cross-references** between related content
 
@@ -173,7 +173,7 @@ Enable agents to access information for future calls and training:
 | **Low usage rates** | Poor content, difficult navigation, lack of training | Improve content quality, simplify navigation, provide training |
 | **Search not finding content** | Poor keywords, unclear organisation, missing content | Optimise search terms, reorganise content, add missing information |
 | **Outdated information** | Infrequent updates, no review process | Establish update schedule, assign content owners, regular reviews |
-| **Agent resistance** | Poor training, unclear benefits, difficult access | Provide comprehensive training, demonstrate benefits, improve accessibility |
+| **Agent resistance** | Poor training, unclear benefits, difficult access | Provide thorough training, demonstrate benefits, improve accessibility |
 
 ---
 

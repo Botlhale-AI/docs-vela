@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Improve Agent Performance
 
-Your agents are the heart of your customer experience. But managing a team effectively requires more than just listening to occasional calls. You need comprehensive insights into each agent's performance, strengths, and areas for improvement.
+Your agents are the heart of your customer experience. But managing a team effectively requires more than just listening to occasional calls. You need detailed insights into each agent's performance, strengths, and areas for improvement.
 
 Vela's agent insights give you the full picture - the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
 

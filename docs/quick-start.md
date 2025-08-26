@@ -142,7 +142,7 @@ This is an advanced feature that lets you set up automated monitoring for specif
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You've just completed your first steps with Vela. You're now ready to transform your call centre operations with AI-powered insights. Vela processes your interactions and provides actionable insights to improve customer experience and team performance.
+**Congratulations!** You've just completed your first steps with Vela. You're now ready to transform your call centre operations with AI-powered insights. Vela processes your interactions and gives you actionable insights to improve customer experience and team performance.
 
 Call centres face unique challenges - managing customer expectations, supporting agents, and driving continuous improvement. Vela helps you see what's really happening so you can make informed decisions.
 

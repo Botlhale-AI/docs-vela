@@ -47,7 +47,7 @@ Receive automated summaries of your team's performance:
 |-----------------|---------------|-------------|
 | **Daily summaries** | Every day | Key metrics and highlights |
 | **Weekly reports** | Every week | Performance trends and insights |
-| **Monthly analytics** | Every month | Comprehensive team analysis |
+| **Monthly analytics** | Every month | Full team analysis |
 | **Custom reports** | As scheduled | Specific metrics you've requested |
 
 ---

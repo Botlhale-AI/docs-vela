@@ -24,7 +24,7 @@ We've launched a complete coaching portal for agents that includes:
 We've added the ability to upload your knowledge base and a well-defined description for your documents into the system. This feature is available as an add-on and will allow Vela to analyse calls more effectively and assess agent performance based on your specific business context.
 
 ### Scorecard (Checklist) Results
-You can now view the results of the agent scorecard at a question level. Find this on the new Results tab on the Agents Scorecard page in the Smart Detector.
+View the results of the agent scorecard at a question level. Find this on the new Results tab on the Agents Scorecard page in the Smart Detector.
 
 ### Smart Search Insights
 Vela will now provide explanations for smart search results, giving you deeper context and understanding behind the data.
@@ -50,10 +50,10 @@ We've improved the quality of the redaction model.
 We've created three classes of admin and user views: Organisational, Departmental and Team. Teams belong to departments, and departments belong to an organisation which houses everything.
 
 ### Smart Detector Filtering
-We've expanded the filtering capabilities of the smart search and agent checklist tables. You can now filter by a wider range of table metrics, making it that much quicker to find the search or checklist you're looking for.
+We've expanded the filtering capabilities of the smart search and agent checklist tables. Filter by a wider range of table metrics, making it that much quicker to find the search or checklist you're looking for.
 
 ### Created vs Detected Smart Search Terms
-This improvement allows users to distinguish between smart search terms (topics, intents, and pain points) detected by Vela and those that have been manually created within the platform. This provides greater transparency and control over your search criteria, allowing you to easily manage and understand the origins of your smart searches.
+This improvement allows users to distinguish between smart search terms (topics, intents, and pain points) detected by Vela and those that have been manually created within the platform. This gives you greater transparency and control over your search criteria, allowing you to easily manage and understand the origins of your smart searches.
 
 ### Model Accuracy
 We've enhanced the accuracy of our multilingual ASR (transcription) models, resulting in greater precision and more dependable insights.

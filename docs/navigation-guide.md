@@ -11,14 +11,14 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 **Vela is a call analysis tool** that helps you improve your call centre performance by analysing customer interactions. Here's what you need to know:
 
 ### **How Vela Works**
-- Provides insights to improve future customer interactions
+- Gives you insights to improve future customer interactions
 
 ### **What Vela Does**
 - **Analyses call recordings** for sentiment, quality, and compliance
 - **Evaluates agent performance** with AI-powered scoring
 - **Identifies patterns** in customer complaints and satisfaction
 - **Generates insights** to guide training and process improvements
-- **Provides automated alerts** when issues are detected in analysed calls
+- **Gives you automated alerts** when issues are detected in analysed calls
 
 ### **Best Use Cases**
 - **Quality assurance** and compliance monitoring

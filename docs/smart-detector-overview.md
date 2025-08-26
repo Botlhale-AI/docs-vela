@@ -10,7 +10,7 @@ Smart Detector automatically analyses completed interactions, evaluates agents, 
 
 ## What You Can Achieve
 
-Smart Detector provides automated analysis and insights. It helps you:
+Smart Detector gives you automated analysis and insights. It helps you:
 
 | **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
 |-------------------|---------------------------|------------------------|

@@ -9,7 +9,7 @@ Got questions? We've got answers! Here are quick responses to the most common qu
 ## Getting Started FAQs
 
 ### How do I upload my first call recording?
-You can upload call recordings through the Interactions section. Vela supports **.wav** and **.mp3** audio file formats. The upload process includes:
+Upload call recordings through the Interactions section. Vela supports **.wav** and **.mp3** audio file formats. The upload process includes:
 - Drag and drop functionality for easy file upload
 - Support for both single file uploads and batch uploads
 - Automatic file validation and processing
@@ -26,7 +26,7 @@ Vela supports many file formats:
 Call processing time varies based on file size and complexity, but you'll receive an email notification when your calls are ready to review. The system works in the background to ensure everything runs smoothly.
 
 ### Do I need to install any software?
-No, Vela is a web-based platform. You can access it from any modern web browser.
+No, Vela is a web-based platform. Access it from any modern web browser.
 
 ## Platform Navigation FAQs
 
@@ -37,7 +37,7 @@ Vela gives you several ways to find calls:
 - **Sort options**: Sort calls by date, score, duration, or other criteria
 
 ### Can I export my data?
-Yes, Vela offers a range of data export capabilities:
+Yes, Vela gives you many ways to export your data:
 - **Individual call exports**: Export detailed call analysis and transcripts
 - **Batch exports**: Export filtered call data in CSV format
 - **Performance reports**: Generate PDF reports for agents and teams
@@ -108,7 +108,7 @@ Vela's AI analysis supports multiple languages for call transcription and analys
 ## Smart Detector & Monitoring
 
 ### How does Smart Search work?
-Smart Search uses advanced AI models to find specific phrases, patterns, and topics in your recorded calls. You can search by:
+Smart Search uses advanced AI models to find specific phrases, patterns, and topics in your recorded calls. Search by:
 - **Topics**: Identify and track conversation themes
 - **Pain Points**: Automatically detect customer issues and complaints
 - **Keywords**: Monitor specific terms and phrases
@@ -116,7 +116,7 @@ Smart Search uses advanced AI models to find specific phrases, patterns, and top
 - **Agent Performance**: Find calls based on agent scoring and behaviour
 
 ### Can I set up alerts for specific issues?
-Yes, you can configure notifications in the "Notifications" section to alert you when specific patterns or issues are detected in your analysed calls.
+Yes, configure notifications in the "Notifications" section to alert you when specific patterns or issues are detected in your analysed calls.
 
 ### How accurate is the sentiment analysis?
 Vela's sentiment analysis is highly accurate for the supported languages, specifically designed for call centre conversations.
@@ -152,7 +152,7 @@ Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evalua
 Contact our sales team for detailed pricing information and custom quotes tailored to your organisation's needs.
 
 ### Can I add more users to my account?
-Yes, you can add additional users through the "Settings" section. Contact support if you need assistance.
+Yes, add additional users through the "Settings" section. Contact support if you need assistance.
 
 ### How do I cancel my subscription?
 Contact your Account Manager or support@botlhale.ai to discuss subscription changes.
