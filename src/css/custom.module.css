@@ -336,7 +336,7 @@ body {
   padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-color) !important;
+  color: #031019 !important;
   background-color: var(--primary-color) !important;
   border: none;
   border-radius: 50px;
@@ -354,7 +354,7 @@ body {
   padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-color) !important;
+  color: #031019 !important;
   background-color: var(--primary-color) !important;
   border: none;
   border-radius: 50px;
