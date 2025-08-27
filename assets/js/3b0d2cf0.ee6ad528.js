@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvela_documentation=self.webpackChunkvela_documentation||[]).push([[9007],{399:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/docs-vela/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

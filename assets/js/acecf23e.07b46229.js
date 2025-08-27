@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvela_documentation=self.webpackChunkvela_documentation||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/docs-vela/blog","blogTitle":"Blog","authorsListPath":"/docs-vela/blog/authors"}')}}]);
