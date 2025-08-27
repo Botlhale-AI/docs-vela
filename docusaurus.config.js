@@ -12,7 +12,7 @@ const config = {
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-vela', 
   deploymentBranch: 'gh-pages', 
-  trailingSlash: false,
+  trailingSlash: true,
 
   presets: [
     [
