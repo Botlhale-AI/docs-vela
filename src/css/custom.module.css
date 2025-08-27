@@ -215,7 +215,6 @@ body {
 
 .card:hover * {
   background-color: var(--card-bg-color) !important;
-  color: var(--text-color) !important;
 }
 
 .main {
@@ -634,10 +633,35 @@ mark {
   border-radius: 3px;
 }
 
-*:hover,
-*:focus {
-  color: inherit !important;
+/* Search results specific styling - overrides global * selector */
+.dropdownMenu_qbY6,
+.dropdownMenu_qbY6 *:not(mark),
+.dropdownMenu_qbY6:hover,
+.dropdownMenu_qbY6:hover *:not(mark),
+.dataset_QiCy-1,
+.dataset_QiCy-1 *:not(mark),
+.dataset_QiCy-1:hover,
+.dataset_QiCy-1:hover *:not(mark),
+#searchBar_RVTs-listbox-0,
+#searchBar_RVTs-listbox-0 *:not(mark),
+#searchBar_RVTs-listbox-0:hover,
+#searchBar_RVTs-listbox-0:hover *:not(mark) {
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
 }
+
+/* Ensure highlighted text in search results maintains orange background and dark text */
+.dropdownMenu_qbY6 mark,
+.dropdownMenu_qbY6:hover mark,
+.dataset_QiCy-1 mark,
+.dataset_QiCy-1:hover mark,
+#searchBar_RVTs-listbox-0 mark,
+#searchBar_RVTs-listbox-0:hover mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+}
+
+
 
 .card:focus,
 .card:focus *,
@@ -646,7 +670,6 @@ mark {
 .videoCard:focus,
 .videoCard:focus * {
   background-color: var(--card-bg-color) !important;
-  color: var(--text-color) !important;
   outline: 2px solid var(--primary-color) !important;
   outline-offset: 2px !important;
 }
@@ -657,7 +680,6 @@ mark {
 .feature *,
 .videoCard,
 .videoCard * {
-  color: #031019 !important;
   background-color: var(--card-bg-color) !important;
 }
 
@@ -673,7 +695,6 @@ mark {
 .card:hover *,
 .feature:hover *,
 .videoCard:hover * {
-  color: #031019 !important;
   background-color: var(--card-bg-color) !important;
 }
 
@@ -694,7 +715,6 @@ mark {
 }
 
 .feature:hover * {
-  color: var(--text-color) !important; /* Keep text color on feature hover */
   background-color: var(--card-bg-color) !important; /* Keep feature background */
 }
 
@@ -706,6 +726,5 @@ mark {
 }
 
 .videoCard:hover * {
-  color: var(--text-color) !important; /* Keep text color on video card hover */
   background-color: var(--card-bg-color) !important; /* Keep video card background */
 }
