@@ -23,7 +23,7 @@ Vela settings let you:
 Keep your profile current for better team collaboration:
 
 - [ ] **Go to "Settings" → "Account"**
-- [ ] **Update your information**:
+- [ ] **View your information**:
   - [ ] Name and email address
   - [ ] Organisation affiliations
   - [ ] Team assignments
@@ -46,8 +46,7 @@ Set up your organisation's branding and information:
 - [ ] **Go to "Settings" → "Organisations"**
 - [ ] **Update organisation details**:
   - [ ] Organisation name and logo
-  - [ ] Description and contact information
-  - [ ] Branding preferences
+  - [ ] Organisation Bio
   - [ ] Package and subscription details
 - [ ] **Configure usage settings** as needed
 
@@ -176,14 +175,11 @@ Structure your organisation for better management:
 
 ### Custom Branding
 - [ ] **Upload company logo** for reports and dashboards
-- [ ] **Set brand colours** for consistent appearance
-- [ ] **Configure email signatures** for notifications
 - [ ] **Customise report templates** with your branding
 
 ### Workflow Automation
 - [ ] **Set up automated alerts** for specific conditions
 - [ ] **Configure report scheduling** for regular delivery
-- [ ] **Set up data sync** with external systems
 - [ ] **Configure escalation workflows** for issues
 
 ---
@@ -195,7 +191,7 @@ Structure your organisation for better management:
 | **Can't access settings** | Check user permissions, verify admin access, contact support |
 | **Changes not saving** | Check internet connection, refresh page, clear browser cache |
 | **Users not receiving notifications** | Verify email settings, check spam filters, test notification delivery |
-| **API integration issues** | Contact your Account Manager, check rate limits, review authentication settings |
+<!-- | **API integration issues** | Contact your Account Manager, check rate limits, review authentication settings | -->
 
 ---
 

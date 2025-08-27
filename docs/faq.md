@@ -94,9 +94,6 @@ Vela implements enterprise-grade security measures:
 Vela works with many other systems:
 - **API access**: Programmatic access to call data and analytics
 - **Instant notifications**: Get notified immediately when important events happen
-- **Export APIs**: Automated data export and reporting
-- **Third-party integrations**: Connect with CRM systems and other business tools
-- **Custom workflows**: Build custom integrations using Vela's API endpoints
 - **FTP integration**: Automated file uploads for larger organisations
 
 ### Is my data backed up?
@@ -137,14 +134,14 @@ Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evalua
 - **Custom reports**: Generate tailored reports for different stakeholders in PDF and CSV formats
 - **Trend analysis**: Track performance trends over time with advanced visualisations
 - **Comparative analytics**: Benchmark performance across teams and departments
-- **Interactive charts**: Explore data with Chart.js and D3-powered visualisations
+- **Interactive charts**: Explore data visualisations
 
 ### Team Management
 - **Hierarchical organisation**: Departments, teams, and agents with flexible structure
 - **Role-based access**: Different permission levels for different users with AWS Cognito integration
 - **Performance monitoring**: Track team and individual performance with detailed metrics
 - **Collaborative features**: Share insights and best practices across teams
-- **Multi-factor authentication**: Enhanced security with MFA support
+
 
 ## Billing & Account Management
 

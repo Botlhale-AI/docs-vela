@@ -36,12 +36,12 @@ The left sidebar is your main navigation hub in Vela. You can collapse it to max
 - **Smart Detector**
   - **[Smart Search](./smart-search-guide.md)** - AI-powered search across all your calls
   - **[Knowledge Base](./knowledge-base-guide.md)** - Build and manage agent resources
+  - **[Agent Scorecard](./agent-scorecard-guide.md)** - Create custom evaluation criteria
   - **[Topics](./smart-detector-overview.md)** - Identify and track conversation topics
   - **[Pain Points](./smart-detector-overview.md)** - Automatically detect customer issues
   - **[Keywords](./smart-detector-overview.md)** - Monitor specific terms and phrases
   - **[Intents](./smart-detector-overview.md)** - Understand customer intentions
-  - **[Agent Search](./smart-detector-overview.md)** - Find calls by agent performance
-  - **[Agent Checklist](./agent-scorecard-guide.md)** - Create custom evaluation criteria
+
 - **Agents**
   - **[Agent Details](./agents.md)** - View detailed agent profiles and information
   - **[Agent Performance](./agents.md)** - Monitor individual agent performance metrics
@@ -89,7 +89,7 @@ This is where you'll see the real value. You'll discover patterns and insights a
   - [ ] **Full transcript** with sentiment analysis
   - [ ] **Agent performance metrics** (AI-powered scoring)
   - [ ] **Customer satisfaction insights**
-  - [ ] **Automated alerts** for important moments
+  <!-- - [ ] **Automated alerts** for important moments -->
 
 > **[📖 Understanding call analysis](./calls.md)** - Learn how to interpret transcripts, scores, and insights
 > **[📖 Agent performance metrics](./agents.md)** - Understand how agent scoring works
@@ -111,7 +111,7 @@ Now that you have data, you can create a meaningful dashboard that shows actual 
   - [ ] Agent Distribution (see who's handling calls)
   - [ ] Average Call Duration (identify efficiency issues)
   - [ ] Agent Scores (spot training opportunities)
-  - [ ] Customer Sentiment (gauge satisfaction)
+  - [ ] Sentiment Distribution  (gauge satisfaction)
 - [ ] **Click "Save"** to apply your settings
 
 ![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)

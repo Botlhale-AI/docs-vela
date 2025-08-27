@@ -28,9 +28,8 @@ Chat analysis gives you unique insights into digital customer service:
 | **Response Time** | Speed of agent replies | Customer satisfaction, engagement |
 | **Message Count** | Conversation complexity | Issue complexity, efficiency |
 | **Customer Sentiment** | Digital satisfaction levels | Digital experience quality |
-| **Resolution Rate** | Problem-solving effectiveness | Digital service quality |
 | **Session Duration** | Time investment and efficiency | Resource allocation, automation opportunities |
-
+<!-- | **Resolution Rate** | Problem-solving effectiveness | Digital service quality | -->
 ### Chat Quality Indicators
 | **Indicator** | **What It Means** | **Digital Action** |
 |---------------|-------------------|------------------|
@@ -161,8 +160,8 @@ Monitor these key indicators for digital success:
 |---------|------------|---------------------|
 | **Average Response Time** | Under 30 seconds | Above 60 seconds = process review |
 | **Customer Satisfaction** | 90%+ positive | Below 80% = immediate optimization |
-| **First Contact Resolution** | 85%+ | Below 75% = training or process review |
 | **Session Duration** | 3-5 minutes | Above 10 minutes = efficiency review |
+<!-- | **First Contact Resolution** | 85%+ | Below 75% = training or process review | -->
 
 ### Digital Trend Analysis
 - [ ] **Track digital adoption** over time

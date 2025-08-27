@@ -20,7 +20,7 @@ Smart Search gives you automated monitoring. You'll be able to:
 
 ## Getting Started with Smart Search
 
-![ Smart Search](../img/screenshots/smart_search/smart5.png)
+![ Smart Search](../img/screenshots/smart_search/10.png)
 
 
 ### Step 1: Access Smart Search
@@ -30,8 +30,8 @@ Smart Search gives you automated monitoring. You'll be able to:
 
 ### Step 2: Define Your Search Criteria
 
-![ Smart Search](../img/screenshots/smart_search/smart7.png)
-![ Smart Search](../img/screenshots/smart_search/smart8.png)
+![ Smart Search](../img/screenshots/smart_search/11.png)
+![ Smart Search](../img/screenshots/smart_search/12.png)
 - [ ] **Name your search** (e.g., "Customer Complaints")
 - [ ] **Add example phrases** that indicate the issue
 - [ ] **Set the scope** (organisation, department, or team)
@@ -94,7 +94,7 @@ Smart Search gives you automated monitoring. You'll be able to:
 - [ ] **Organisation-wide** - Monitor all interactions across your company
 - [ ] **Department-specific** - Focus on particular business areas
 - [ ] **Team-based** - Target specific teams or groups
-- [ ] **Agent-specific** - Monitor individual performance
+
 
 ---
 

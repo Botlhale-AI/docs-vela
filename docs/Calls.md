@@ -28,8 +28,8 @@ Your call analysis gives you insights into every interaction:
 | **Call Duration** | Time efficiency and complexity | Resource allocation, capacity planning |
 | **Customer Sentiment** | Satisfaction and emotional state | Customer experience, retention |
 | **Agent Score** | Performance and skill assessment | Training needs, coaching opportunities |
-| **Resolution Rate** | Problem-solving effectiveness | Service quality, customer satisfaction |
 | **Silent Time** | Communication gaps and delays | Process efficiency, training opportunities |
+<!-- | **Resolution Rate** | Problem-solving effectiveness | Service quality, customer satisfaction | -->
 
 ### Call Quality Indicators
 | **Indicator** | **What It Means** | **Action Required** |
@@ -163,8 +163,8 @@ Monitor these metrics to track team performance:
 |---------|------------|-------------------|
 | **Average Call Duration** | 5-8 minutes | Above 10 minutes = efficiency review needed |
 | **Customer Satisfaction** | 85%+ positive | Below 75% = intervention needed |
-| **First Call Resolution** | 80%+ | Below 70% = training or process review |
 | **Agent Performance Score** | 85%+ | Below 70% = coaching required |
+<!-- | **First Call Resolution** | 80%+ | Below 70% = training or process review | -->
 
 ### Trend Analysis
 - [ ] **Track performance over time** to identify trends

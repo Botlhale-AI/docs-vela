@@ -63,7 +63,7 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 
 #### Customer Experience Metrics
 - **Bottom 10 Pain Points** - See what's frustrating customers
-- **Customer Sentiment** - Track satisfaction trends
+- **Sentiment Distribution** - Track satisfaction trends
 
 4. **Click "Save"** to apply your dashboard
 
@@ -77,7 +77,7 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 Your dashboard shows call analytics data for your selected team and time period. Each metric card displays:
 - **Current value** (e.g., average call duration)
 - **Trend indicator** (up/down arrows showing improvement or decline)
-- **Filter icon** for additional filtering options
+<!-- - **Filter icon** for additional filtering options -->
 
 ### Key Insights to Look For
 
@@ -123,14 +123,14 @@ Create different dashboard views for different purposes:
 ### Use Filters Effectively
 - **Date ranges** - Compare different time periods
 - **Team filters** - Focus on specific groups
-- **Call types** - Analyse different interaction types
-- **Agent filters** - Review individual performance
+<!-- - **Call types** - Analyse different interaction types -->
+<!-- - **Agent filters** - Review individual performance -->
 
-### Set Up Alerts
+<!-- ### Set Up Alerts
 Configure notifications for important events:
 - Agent scores drop below thresholds
 - Customer satisfaction declines
-- Call volumes spike unexpectedly
+- Call volumes spike unexpectedly -->
 
 ---
 

@@ -28,7 +28,7 @@ Get notified about important events that require your attention (set up your ale
 | **Smart Search matches** | Customer complaints or compliance issues detected | When detected |
 | **Performance alerts** | Agent scores below thresholds | When thresholds are exceeded |
 | **System notifications** | Data processing complete or errors | When processing status changes |
-| **Quality flags** | Potential issues with customer interactions | When quality issues are identified |
+<!-- | **Quality flags** | Potential issues with customer interactions | When quality issues are identified | -->
 
 ### **Comments: Collaborate with Your Team**
 Stay updated on team discussions and feedback:
@@ -65,7 +65,7 @@ Receive automated summaries of your team's performance:
 ![Notifications Overview - Screenshot showing the notifications interface with alerts, comments, and reports tabs](../img/screenshots/notifications-alerts.png)
 
 ### Step 2: Configure Your Preferences
-![Agent Performance](../img/screenshots/notifications/notifications.png)
+
 - [ ] **Go to "Settings" → "Notifications"**
 - [ ] **Choose your delivery method**:
   - [ ] Platform notifications (in-app)
@@ -76,6 +76,7 @@ Receive automated summaries of your team's performance:
   - [ ] Daily digest for general updates
   - [ ] Weekly summary for reports
 
+![Agent Performance](../img/screenshots/notifications/notifications.png)
 ---
 
 ## Managing Alerts Effectively
@@ -84,7 +85,7 @@ Receive automated summaries of your team's performance:
 | **Alert Category** | **Examples** | **Priority** |
 |-------------------|--------------|--------------|
 | **Smart Search Alerts** | Customer complaints detected, compliance violations flagged, quality issues identified, training opportunities spotted | High - Immediate action needed |
-| **Performance Alerts** | Agent scores below thresholds, call quality issues, customer satisfaction drops, efficiency problems | Medium - Review and address |
+<!-- | **Performance Alerts** | Agent scores below thresholds, call quality issues, customer satisfaction drops, efficiency problems | Medium - Review and address | -->
 
 ### Taking Action on Alerts
 - [ ] **Click the eye icon** to view detailed information

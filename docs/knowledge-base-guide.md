@@ -25,7 +25,7 @@ A well-built knowledge base enhances your team's capabilities. You'll be able to
 ![ Knowledge Base](../img/screenshots/smart_search/smart9.png)
 
 - [ ] **Go to "Smart Detector" → "Knowledge Base"**
-- [ ] **Click "Create"** to start building your knowledge base
+- [ ] **Click "Upload"** to start building your knowledge base
 - [ ] **Choose your content focus** based on your team's needs
 
 ### Step 2: Upload Your Content

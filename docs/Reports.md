@@ -92,15 +92,15 @@ Reports help you communicate insights effectively. You'll be able to:
 **Include these metrics**:
 - [ ] Overall team performance trends
 - [ ] Customer satisfaction over time
-- [ ] Cost per call and efficiency metrics
-- [ ] Training ROI and improvement areas
+<!-- - [ ] Cost per call and efficiency metrics -->
+<!-- - [ ] Training ROI and improvement areas -->
 
 **How to use it**:
 - Board meetings and presentations
 - Strategic planning sessions
-- Budget and resource allocation
 
-### **For Training Teams: Coaching Effectiveness Report**
+
+<!-- ### **For Training Teams: Coaching Effectiveness Report**
 **Goal**: Measure the impact of training and coaching programs
 
 **Include these metrics**:
@@ -115,7 +115,7 @@ Reports help you communicate insights effectively. You'll be able to:
 - Program improvement
 - Resource allocation
 
----
+--- -->
 
 ## Advanced Reporting Features
 

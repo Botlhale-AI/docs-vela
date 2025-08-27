@@ -36,7 +36,7 @@ Your agent performance table shows essential information:
 | **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
 | **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
-![Agent Performance](../img/screenshots/performance/performance-1.png)
+
 
 ---
 
@@ -48,6 +48,8 @@ Your agent performance table shows essential information:
 1. **Go to "Agents"** in the left sidebar
 2. **Click "View"** next to any agent's name
 3. **Review their detailed performance breakdown**
+
+![Agent Performance](../img/screenshots/performance/performance-1.png)
 
 ### Step 2: Analyse Performance Patterns
 Look for these key indicators:

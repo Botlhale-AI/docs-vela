@@ -106,8 +106,9 @@ Upload your files through Vela's interface:
 Track the progress of your uploads and processing:
 
 - [ ] **Watch the upload progress** - Real-time progress bars show upload status
-- [ ] **Check processing status** in the Calls section - Files will show "Processing" status
 - [ ] **Start analysing** - Click on processed calls to view transcripts, insights, and analytics
+<!-- - [ ] **Check processing status** in the Calls section - Files will show "Processing" status -->
+
 
 > **Processing**: Files will be processed and available for analysis when complete.
 
