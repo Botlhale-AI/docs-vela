@@ -45,7 +45,6 @@ const config = {
         docsRouteBasePath: ['docs'],
         ignoreFiles: [],
         indexPages: true,
-        searchBarPosition: 'right',
         docsDir: 'docs',
         indexDocs: true,
       },

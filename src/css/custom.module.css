@@ -209,6 +209,13 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px var(--box-shadow-hover);
   border-color: var(--highlight-color);
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.card:hover * {
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
 }
 
 .main {
@@ -618,4 +625,87 @@ body {
   width: 1rem;
   height: 1rem;
   margin-right: 0.25rem;
+}
+
+mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+*:hover,
+*:focus {
+  color: inherit !important;
+}
+
+.card:focus,
+.card:focus *,
+.feature:focus,
+.feature:focus *,
+.videoCard:focus,
+.videoCard:focus * {
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
+  outline: 2px solid var(--primary-color) !important;
+  outline-offset: 2px !important;
+}
+
+.card,
+.card *,
+.feature,
+.feature *,
+.videoCard,
+.videoCard * {
+  color: #031019 !important;
+  background-color: var(--card-bg-color) !important;
+}
+
+.card:hover,
+.feature:hover,
+.videoCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px var(--box-shadow-hover);
+  border-color: var(--highlight-color);
+  background-color: var(--card-bg-color) !important;
+}
+
+.card:hover *,
+.feature:hover *,
+.videoCard:hover * {
+  color: #031019 !important;
+  background-color: var(--card-bg-color) !important;
+}
+
+.card mark,
+.feature mark,
+.videoCard mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+}
+
+/* Feature card hover styles */
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px var(--box-shadow-hover);
+  border-color: #fc5f1e;
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
+}
+
+.feature:hover * {
+  color: var(--text-color) !important; /* Keep text color on feature hover */
+  background-color: var(--card-bg-color) !important; /* Keep feature background */
+}
+
+/* Video card hover styles */
+.videoCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px var(--box-shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.videoCard:hover * {
+  color: var(--text-color) !important; /* Keep text color on video card hover */
+  background-color: var(--card-bg-color) !important; /* Keep video card background */
 }
