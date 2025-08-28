@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from '../../css/custom.module.css';
 import logo from '/static/img/VELA.png';
@@ -7,57 +8,63 @@ import logo from '/static/img/VELA.png';
 const FeatureList = [
   {
     title: 'Dashboard',
-    link: '/docs/Dashboard',
-    description: 'Learn how to view and customise your call insights.',
+    link: '/docs/dashboard',
+    description: 'Monitor performance and spot trends before they become problems.',
     icon: 'fas fa-tachometer-alt',
   },
   {
     title: 'Interactions - Calls',
-    link: '/docs/Calls',
-    description: 'Learn how to review call recordings and hone in on specific calls.',
+    link: '/docs/calls',
+    description: 'Review call recordings and identify customer pain points automatically.',
     icon: 'fas fa-phone',
   },
   {
     title: 'Interactions - Chats',
-    link: '/docs/Chats',
-    description: 'Learn how to review chats and hone in on specific chats.',
+    link: '/docs/chats',
+    description: 'Review chats and identify customer pain points automatically.',
     icon: 'fas fa-phone',
   },
   {
     title: 'Smart Detector',
-    link: '/docs/Smart Detector',
-    description: 'Learn how to build and manage complex search queries.',
+    link: '/docs/smart-detector-overview',
+    description: 'Automate issue detection and catch complaints before they escalate.',
     icon: 'fas fa-search',
   },
   {
     title: 'Agents',
-    link: '/docs/Agents',
-    description: 'Learn how to review and export insights specific to agent performance.',
+    link: '/docs/agents',
+    description: 'Improve agent performance with AI-powered insights.',
     icon: 'fas fa-user-tie',
   },
   {
     title: 'Reports',
-    link: '/docs/Reports',
-    description: 'Learn how to create and view custom reports.',
+    link: '/docs/reports',
+    description: 'Generate custom reports to share insights with stakeholders.',
     icon: 'fas fa-chart-line',
   },
   {
     title: 'Notifications',
-    link: '/docs/Notifications',
-    description: 'Learn how to manage your platform and alert preferences.',
+    link: '/docs/notifications',
+    description: 'Configure alerts to stay informed about important events.',
     icon: 'fas fa-bell',
   },
   {
     title: 'Settings',
-    link: '/docs/Settings',
-    description: 'Learn how to manage your platform settings.',
+    link: '/docs/settings',
+    description: 'Manage your platform settings and organization configuration.',
     icon: 'fas fa-cogs',
   },
   {
-    title: 'Data Upload',
-    link: '/docs/Data Upload',
-    description: 'Learn how to upload call recordings.',
+    title: 'Data Management',
+    link: '/docs/data-upload',
+    description: 'Upload call and chat recordings to start analyzing your data.',
     icon: 'fas fa-upload',
+  },
+  {
+    title: 'FAQ',
+    link: '/docs/faq',
+    description: 'Find quick answers to common questions about Vela.',
+    icon: 'fas fa-question-circle',
   }
 ];
 
@@ -150,8 +157,13 @@ export default function HomepageFeatures() {
               <b>Call Centre Analytics Tool</b>: Monitor 100% of your calls regardless of the languages spoken.
               <br />
             </p>
-            <div className={styles.getStarted} onClick={scrollToFeatures}>
-              Get Started
+            <div className={styles.heroButtons}>
+              <div className={styles.getStarted} onClick={scrollToFeatures}>
+              Browse Documentation
+              </div>
+              <Link to="/docs/quick-start" className={styles.quickStart}>
+                Getting Started
+              </Link>
             </div>
           </div>
           <div className={styles.heroImageContainer}>

@@ -2,137 +2,214 @@
 sidebar_position: 4
 ---
 
+# Improve Agent Performance
 
-# Agents
+Your agents are the heart of your customer experience. But managing a team effectively requires more than just listening to occasional calls. You need detailed insights into each agent's performance, strengths, and areas for improvement.
 
+Vela's agent insights give you the full picture - the data you need to coach effectively, spot training gaps, and build a team that consistently delivers amazing customer experiences.
 
-The Agents screen in the Vela platform provides a comprehensive view of your agents' performance. This screen is designed to help you monitor, analyze, and improve the performance of your call center agents. The information on this screen is available in both a list view and a board view, allowing you to choose the format that best suits your needs. You can toggle between both views using the **View** icon in the top right corner of the screen.
+## What You Can Achieve
 
-## Overview
+Agent analytics turn gut feelings into actionable insights. You'll discover:
 
-### Understanding the Agent Performance Table
+| **Coaching & Development** | **Performance Tracking** | **Team Optimization** |
+|---------------------------|-------------------------|---------------------|
+| **Coach with precision** | **Track real progress** | **Fill knowledge gaps** |
+| **Celebrate success** | **Monitor improvement** | **Make smart decisions** |
+| **Identify training needs** | **Spot patterns** | **Build high-performing teams** |
 
-![alt text](../img/screenshots/agents-p.png)
+Instead of relying on gut feelings, you'll have actual data to back up your coaching decisions and performance assessments.
 
-The Agents screen includes the following key elements:
+---
 
-- **Name** – The agent's name.
-- **Team** – The team the agent belongs to.
-- **Department** – The department associated with the agent.
-- **Calls** – The number of calls handled by the agent within the selected date range.
-- **Score** – The agent’s overall performance score (percentage-based), with lower scores indicating a need for improvement.
-- **Strengths** – The agent’s top-performing skills, as identified by the system.
-- **Weaknesses** – Areas where the agent needs improvement.
-- **Rank** – The agent’s ranking based on performance compared to other agents.
-- **Detailed View** – Clicking "View" provides an in-depth breakdown of the agent’s call history, analytics, and feedback.
+## Understanding Agent Performance
 
-## Detailed Agent View
+### Key Metrics Explained
 
-The Detailed Agent View provides an in-depth analysis of individual agent metrics. This view includes a scorecard for each agent, which users can download for further analysis. The scorecard includes detailed metrics such as:
+Your agent performance table shows essential information:
 
-- **Call Duration**: The average duration of calls handled by the agent.
-- **Customer Satisfaction**: The average customer satisfaction score for the agent.
-- **Resolution Rate**: The percentage of calls resolved by the agent.
-- **Adherence to Scripts**: The agent's adherence to predefined scripts during calls.
-- **Missed Customer Cues**: The number of missed customer cues during calls.
+| **Metric** | **What It Means** | **Action Thresholds** |
+|------------|-------------------|----------------------|
+| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognise and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
+| **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
+| **Weaknesses** - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
+| **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
+| **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
-## Sorting, Filtering, and Exporting Data
 
-The Agents screen facilitates efficient navigation and manipulation of your contact center data. Users can:
 
-- **Sort**: Order entries by any table column, except the Detailed View column, for streamlined identification of specific agent performance metrics.
-- **Filter**: Apply targeted criteria based on various parameters, enabling focused analysis on relevant interactions.
-- **Export**: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools.
+---
 
 
-## How To Sort and Filter - Guide
 
-Below is a step-by-step guide to navigating and using the Agents screen:
+## How to Use Agent Data for Coaching
 
-### 1. Let's start with the Sort functionality.
+### Step 1: Access Agent Details
+1. **Go to "Agents"** in the left sidebar
+2. **Click "View"** next to any agent's name
+3. **Review their detailed performance breakdown**
 
-![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/t_WQbjJuTMFrEHytdEgMe.jpg&x=2246&y=325&fill=2ca5e0&color=2ca5e0)
+![Agent Performance](../img/screenshots/performance/performance-1.png)
 
-### 2. Sort By 
+### Step 2: Analyse Performance Patterns
+Look for these key indicators:
 
-You have the ability to sort the agent performance table by a range of attributes, in ascending order or descending order.
+#### Call Duration Analysis
+| **Pattern** | **Possible Causes** | **Coaching Actions** |
+|-------------|-------------------|---------------------|
+| **Long calls** | Complex customer issues, agent uncertainty, inefficient processes | Provide training on issue resolution, improve knowledge base access |
+| **Short calls** | Rushed interactions, missed opportunities, good efficiency | Review for completeness, ensure quality isn't sacrificed for speed |
 
-![2 After, click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/zRBalwTWxlUleCHRX3RHD.jpg&x=1797&y=584&fill=2ca5e0&color=2ca5e0)
+#### Customer Satisfaction
+| **Pattern** | **Indicators** | **Actions** |
+|-------------|----------------|-------------|
+| **Low satisfaction scores** | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
+| **Declining satisfaction** | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
+| **High satisfaction** | Positive feedback, good efficiency | Recognise success, use as mentor, share best practices |
 
+#### Resolution Rate
+| **Pattern** | **Implications** | **Training Focus** |
+|-------------|------------------|-------------------|
+| **Low resolution rates** | Training needs, process gaps | Product knowledge, troubleshooting skills, escalation procedures |
+| **High resolution rates** | Strong performance, good knowledge | Advanced training, leadership development, mentoring opportunities |
 
-### 4. Then, confirm by clicking Apply.
+### Step 3: Create Action Plans
+Based on your analysis, create specific improvement plans:
 
-![4 Afterwards, click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/6hU7lZPs08qpIsaWbOpO0.jpg&x=1846&y=1033&fill=2ca5e0&color=2ca5e0)
+#### For Struggling Agents (Score < 70%)
+**Actions**:
+- [ ] **Identify specific weaknesses** from the data
+- [ ] **Schedule one-on-one coaching** sessions
+- [ ] **Provide targeted training** materials
+- [ ] **Set weekly improvement goals**
+- [ ] **Monitor progress** closely
 
-### 5. Filter
+**Coaching Focus**:
+- Basic skills reinforcement
+- Confidence building
+- Clear expectations setting
+- Regular check-ins
 
-Next, you have the option to filter.
+#### For Average Agents (Score 70-89%)
+**Development Actions**:
+- [ ] **Focus on strengths** to build confidence
+- [ ] **Address specific weaknesses** systematically
+- [ ] **Provide peer mentoring** opportunities
+- [ ] **Set stretch goals** for improvement
 
-![5 Once that's done, click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/F70fLsZXXKFuUC6TrGHYy.jpg&x=2452&y=322&fill=2ca5e0&color=2ca5e0)
+**Coaching Focus**:
+- Skill refinement
+- Advanced techniques
+- Leadership development
+- Career progression
 
-### 6. Check the attributes you'd like to filter by.
+#### For Top Performers (Score 90%+)
+**Recognition & Growth**:
+- [ ] **Recognise their achievements**
+- [ ] **Use them as mentors** for other agents
+- [ ] **Provide advanced training** opportunities
+- [ ] **Consider promotion** or leadership roles
+
+**Development Focus**:
+- Leadership skills
+- Training others
+- Process improvement
+- Strategic thinking
 
-![6 Click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/zp5UevkI4CXD5p95bZ_aP.jpg&x=1673&y=672&fill=2ca5e0&color=2ca5e0)
+---
 
-### 7. Again, click Apply to proceed.
+## Team Performance Analysis
 
-![7 After, click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/VljC9pZfFyr8x0ZpseFKD.jpg&x=2062&y=1233&fill=2ca5e0&color=2ca5e0)
+### Compare Agents Effectively
+- [ ] **Use the sort function** to rank agents by different metrics
+- [ ] **Filter by team or department** to focus on specific groups
+- [ ] **Export data** for detailed analysis in spreadsheets
 
+### Identify Team Trends
+Look for patterns that affect multiple agents:
 
-### 8. Filter Agent Performance by a date range.
+| **Pattern Type** | **What to Look For** | **Action** |
+|------------------|---------------------|------------|
+| **Common weaknesses** | Skills gaps across the team | Team-wide training programs |
+| **Training gaps** | Knowledge areas needing attention | Update training materials |
+| **Process issues** | Inefficiencies affecting performance | Process improvement initiatives |
+| **Success patterns** | What top performers do differently | Share best practices |
 
-![18 Click on "Apply".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/j7uRkUSkUBuKV2cWRUaDM.jpg&x=2007&y=1244&fill=2ca5e0&color=2ca5e0)
+---
 
-### 9. Now, let's navigate to the Agent Details section.
+## Agent Management Tools
 
-![19 Click on "Agent Details".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/pn-PWu6EIQ0OHt8Nzv57f.jpg&x=230&y=690&fill=2ca5e0&color=2ca5e0)
+![Agent Performance](../img/screenshots/performance/performance-2.png)
 
-### 10. Agent Details
+### Adding New Agents
+1. **Click "+ Add Agent"** in the top right
+2. **Enter agent information**:
+   - Name and email
+   - Department and team assignment
+   - Start date and role
+3. **Click "Save"** to add them to your system
 
-The Agent Details section enables users with admin privilleges to view, edit and update the details of the agents in their respective teams or department.s You have the option to activate the **VOice ID Status** or simply see the current status. You also have the ability to search for an agent, sort and filter by a range of attributes. In the top right, you have the ability to Add a new Agent. And equally as important, you have the option to reassign an agent from one team to another. See below.
+### Reassigning Agents
 
-![alt text](../img/screenshots/agents-d.png)
+![Agent Performance](../img/screenshots/performance/performance-3.png)
+![Agent Performance](../img/screenshots/performance/performance-4.png)
+1. **Select the agent** you want to reassign
+2. **Click "Reassign"** button
+3. **Choose new department/team**
+4. **Confirm the change**
 
-### 11. Proceed by selecting Debt Collection (Department A).
+### Managing Agent Access
+- [ ] **Activate/deactivate** agents as needed
+- [ ] **Update contact information**
+- [ ] **Modify team assignments**
 
-![22 Now, click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/5MCg0b6wok_JQaSoLULa0.jpg&x=1125&y=797&fill=2ca5e0&color=2ca5e0)
+---
 
-### 12. Click Reassign for the next operation.
+## Best Practices for Agent Coaching
 
-![23 After that, click on "Debt Collection (Department A)".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/RyRoIHLKvU1wdzHrZKgMW.jpg&x=1034&y=941&fill=2ca5e0&color=2ca5e0)
+### Regular Feedback Sessions
+| **Session Type** | **Frequency** | **Focus** |
+|------------------|---------------|-----------|
+| **Weekly one-on-ones** | Every week | Struggling agents, immediate issues |
+| **Monthly reviews** | Monthly | All agents, performance trends |
+| **Quarterly discussions** | Quarterly | Top performers, career development |
 
-### 13. Confirm by clicking on Add Agent.
+### Data-Driven Coaching
+- [ ] **Use specific examples** from call transcripts
+- [ ] **Show improvement trends** over time
+- [ ] **Set measurable goals** based on metrics
+- [ ] **Celebrate improvements** and achievements
 
-![24 Next, click on "Reassign".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/kKvnz5Av33Iuk0EcqS6ed.jpg&x=1800&y=933&fill=2ca5e0&color=2ca5e0)
+### Team Development
+- [ ] **Pair struggling agents** with top performers
+- [ ] **Create peer mentoring** programs
+- [ ] **Share best practices** across the team
+- [ ] **Recognise and reward** improvement
 
-### 14. Now, how do you add an Agent?
+---
 
-Click the button titled **+ Add Agent** and follow the flow below.
+## Troubleshooting Common Issues
 
-![alt text](../img/screenshots/d-25.png)
+| **Problem** | **Root Cause** | **Solutions** |
+|-------------|----------------|---------------|
+| **Low Agent Scores** | Training gaps, unclear expectations, lack of support | Review specific weaknesses, provide targeted training, schedule additional coaching, consider role reassignment |
+| **Inconsistent Performance** | External factors, inconsistent training, unclear goals | Look for patterns in good vs. bad days, check for external factors, provide consistent training, set daily goals |
+| **Team-Wide Issues** | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programs, review and improve processes, consider external training resources |
 
-### 15. Click to enter characters.
+---
 
-![26 Click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/9t1Oi4Za7aaRj8sioQyJ6.jpg&x=921&y=797&fill=2ca5e0&color=2ca5e0)
+## Next Steps
 
+| **For Performance Reports** | **For Smart Monitoring** | **For Evaluation Systems** |
+|----------------------------|-------------------------|---------------------------|
+| [Generate Performance Reports](./reports.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
-![27 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/_W2lDOfOAuH4vsR04bqIU.jpg&x=1080&y=809&fill=2ca5e0&color=2ca5e0)
+### See also
+- [Dashboard Overview](./dashboard.md) - Monitor your team's performance
+- [Agent Scorecards](./agent-scorecard-guide.md) - Create detailed performance evaluations
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts for agent issues
+- [Knowledge Base](./knowledge-base-guide.md) - Build training resources for your team
 
+## Need Help?
 
-![28 Once that's done, click here.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/LFxyWHDozlzBmOvb8grej.jpg&x=1011&y=1108&fill=2ca5e0&color=2ca5e0)
-
-![29 Click on "Customer Success (Department A)".](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/S9akeseiZSyuAt1YZ_vNw.jpg&x=1012&y=1198&fill=2ca5e0&color=2ca5e0)
-
-
-![30 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/ruwu600T5ACpmfQOfrU9A.jpg&x=2051&y=1057&fill=2ca5e0&color=2ca5e0)
-
-If you choose to create a team on the go, you also have that option as demonstrated below.
-
-![31 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/MX-pubjRpab7lzOFYHXFJ.jpg&x=1067&y=1041&fill=2ca5e0&color=2ca5e0)
-
-### Then, click Save once more to finalize.
-
-
-## Contact Us
-
-We are here to help! If you have any questions or need further assistance, please [contact us](mailto:support@botlhale.ai).
+- 📧 **Contact Support**: support@botlhale.ai 

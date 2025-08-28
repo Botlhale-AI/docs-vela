@@ -12,7 +12,7 @@ const config = {
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-vela', 
   deploymentBranch: 'gh-pages', 
-  trailingSlash: false,
+  trailingSlash: true,
 
   presets: [
     [
@@ -33,6 +33,24 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarPosition: 'right',
+        docsRouteBasePath: ['docs'],
+        ignoreFiles: [],
+        indexPages: true,
+        docsDir: 'docs',
+        indexDocs: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -43,7 +61,7 @@ const config = {
       },
       items: [
         { to: '/', label: 'Home', position: 'right' },
-        { to: '/docs/release-notes', label: 'Release Notes', position: 'right' }, // Add this line
+        { to: '/docs/release-notes', label: 'Release Notes', position: 'right' },
         {
           type: 'search',
           position: 'right',
@@ -59,6 +77,7 @@ const config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
 
     head: [
       {

@@ -1,92 +1,223 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 ---
 
-# Chats
+# Analyse Chat Conversations
 
-The Chats screen displays a detailed table of all processed chat interactions, organized by key metadata to support easy navigation and in-depth exploration.
+Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behaviour patterns, optimise response times, and improve the quality of your digital customer service.
 
-## 1. Accessing the Chats Screen
-![alt text](../img/screenshots/callz.png)
+## What You Can Achieve
 
-## 2. Understanding the Chat Log
-- Each entry within the log table includes:
-- Chat ID – Unique identifier for each chat.
-- Date – The exact timestamp when the chat occurred.
-- Agent – The agent who handled the chat.
-- Handle Time – The total duration of the chat.
-- Response Time – The average time it took the agent to respond to the customer
-- Topic – The main subject of the chat, automatically categorized based on the conversation. This helps identify common discussion areas such as Billing, Support, Sales, or Product Inquiry.
-- Alerts – The number of detected issues based on Smart Search analysis.
-- Agent Score – The system-generated performance score for the agent.
-- Team – The team to which the agent belongs.
-- Tags – Custom labels assigned to calls for better categorization.
+Chat analysis reveals patterns in digital conversations. You'll be able to:
 
-## 3. Using Chat Management Tools
-The Vela chat screen facilitates efficient navigation and manipulation of your contact center data.
+| **Digital Experience** | **Response Optimization** | **Quality Improvement** |
+|----------------------|-------------------------|----------------------|
+| **Optimise response times** | **Improve digital engagement** | **Enhance chat quality** |
+| **Understand customer behaviour** | **Perfect your messaging** | **Track digital performance** |
+| **Identify automation opportunities** | **Increase resolution rates** | **Maintain digital standards** |
 
-## Users can:
-- Upload – Manually upload a single chat log.
-- Sort: Order entries by any table column, except the Detailed View column, for streamlined identification of specific call segments.
-- Filter: Apply targeted criteria based on various parameters like duration, response time, issues, date, agent ID, and team, enabling focused analysis on relevant interactions.
-- Export: Download the entire table as a CSV file for further analysis in external data visualization or statistical software tools.
+---
 
-# Chat Tags​
+## Understanding Chat Data
 
-## How To Get Started - Guide​
+### Key Metrics for Digital Interactions
+Chat analysis gives you unique insights into digital customer service:
 
-1.Click on the Select Tag button.
-2.Choose an existing tag from the dropdown list.
-3.Click Add Tag to apply the selected tag to the call.
+| **Metric Category** | **What It Shows** | **Digital Impact** |
+|-------------------|-------------------|------------------|
+| **Response Time** | Speed of agent replies | Customer satisfaction, engagement |
+| **Message Count** | Conversation complexity | Issue complexity, efficiency |
+| **Customer Sentiment** | Digital satisfaction levels | Digital experience quality |
+| **Session Duration** | Time investment and efficiency | Resource allocation, automation opportunities |
+<!-- | **Resolution Rate** | Problem-solving effectiveness | Digital service quality | -->
+### Chat Quality Indicators
+| **Indicator** | **What It Means** | **Digital Action** |
+|---------------|-------------------|------------------|
+| **Fast response + High satisfaction** | Excellent digital service | Replicate successful patterns |
+| **Slow response + Low satisfaction** | Digital service issues | Optimise response processes |
+| **High message count + Low resolution** | Complex issues or inefficiency | Improve processes or training |
+| **Low message count + High resolution** | Efficient digital service | Scale successful approaches |
 
-![alt text](../img/screenshots/Chat%20Tags.png)
+---
 
-## Creating a New Tag​
-1.Click on the New Tag button.
-2.Enter a tag name in the text field.
-3.Select a color for the tag to visually differentiate it from others.
-4.Click Add Tag to save the new tag.
+## How to Analyse Chat Conversations
 
-![alt text](../img/screenshots/New%20Chat%20Tag.png)
+### Step 1: Access Chat Data
 
-## Detailed Chat View​
+![Chats](../img/screenshots/chats/chats-1.png)
 
-The Vela detailed call screen provides a comprehensive interface for in-depth analysis of individual customer interactions. It goes beyond a simple chat log by presenting a multi-faceted view of the conversation.
+- [ ] **Go to "Chats"** in the left sidebar
+- [ ] **Click on any conversation** to view detailed analysis
+- [ ] **Review the conversation flow** and timing
 
-**This screen integrates several key elements**:
-- Full Transcript: A textual representation of the entire conversation.
-- Smart Search: This customizable, automated intelligence section leverages advanced natural language processing and machine learning algorithms to generate a concise summary, identify prominent keywords, categorize key issues and customer intents, gauge overall sentiment, and even assess agent performance metrics like adherence to scripts and resolution effectiveness. For more information around setting up this feature, see the Smart Search section of this documentation.
+### Step 2: Review Conversation Flow
+![Chats](../img/screenshots/chats/chats-2.png)
+- [ ] **Read the full conversation** with timestamps
+- [ ] **Analyse response patterns** and timing
+- [ ] **Identify customer journey** and pain points
+- [ ] **Note successful resolution strategies**
 
-![alt text](../img/screenshots/Chats%20Detailes%20V.png)
+### Step 3: Analyse Digital Metrics
+![Chats](../img/screenshots/chats/chats-3.png)
+- [ ] **Check response times** throughout the conversation
+- [ ] **Review message count** and complexity
+- [ ] **Assess customer sentiment** in digital context
+- [ ] **Evaluate resolution effectiveness**
 
-## Transcript​
-The Vela transcript facilitates deeper analysis and collaboration through several key features:
+### Step 4: Take Digital Action
+![Chats](../img/screenshots/chats/chats-4.png)
+- [ ] **Add comments** for team learning
+- [ ] **Update chat templates** based on insights
+- [ ] **Optimise response processes** for efficiency
+- [ ] **Identify automation opportunities**
 
-- **Commenting**: Team members can annotate specific sections of the transcript by leaving comments visible to others. Clicking the comment button allows you to add your annotation and tag relevant team members.
-- **Language Translation**: For non-English call recordings, the transcript offers translation capabilities. Toggle between the original language and English with a dedicated button, allowing you to understand the conversation regardless of the spoken language.
-- **Utterance Details**: The vertical menu found in each speech bubble in the transcript reveals additional information specific to the utterance, including:
-- **Sentiment**: The perceived emotional tone of the speaker.
-- **Intent**: The inferred underlying goal or purpose of the speaker's statement.
-- **Confidence**: The level of certainty associated with the model's interpretation of the utterance, expressed as a percentage for transparency.
-- **Language**: The specific language used in the utterance, identified by automatic language detection.
+---
 
-# Smart Search​
+## Identifying Digital Patterns
 
-The **Smart Search** section harnesses advanced natural language processing (NLP) and machine learning algorithms to dissect individual calls.
+### Customer Behaviour Analysis
+Understand how customers interact in digital channels:
 
-This automated analysis generates valuable insights, presented right on the screen:
+| **Behaviour Pattern** | **What to Look For** | **Business Opportunity** |
+|---------------------|---------------------|------------------------|
+| **Quick Questions** | Simple queries that could be automated | Chatbot implementation |
+| **Complex Issues** | Detailed problems requiring human expertise | Specialised agent training |
+| **Multi-channel** | Customers switching between channels | Omnichannel optimization |
+| **Peak Usage Times** | High-volume periods | Resource planning |
 
-- **Summary** – Generates a concise overview of the call’s key points, summarizing the agent’s and customer’s interactions.
-- **Keywords** – Highlights important words and phrases that frequently appear in the conversation, helping to identify recurring topics.
-- **Alerts** – Detects potential issues or flagged moments in the call that may require further review, such as compliance risks, customer complaints, or unresolved concerns.
-- **Intents** – Identifies the customer's purpose in the conversation, such as inquiring about a service, requesting assistance, or escalating an issue.
-- **Sentiment** – Analyzes the emotional tone of the conversation, categorizing interactions as positive, neutral, or negative.
-- **Scorecard**– Ensures that agents follow a structured approach, checking if they have met the required conversation guidelines.
-- **Pain Points** – Detects potential customer frustrations or issues raised during the chat.
+### Agent Performance in Digital
+Identify digital-specific performance patterns:
 
-## Contact us
+| **Pattern** | **Digital Indicators** | **Improvement Focus** |
+|-------------|---------------------|---------------------|
+| **Fast Typing** | Quick responses, high message count | Response efficiency |
+| **Thoughtful Responses** | Longer, more detailed messages | Quality vs. speed balance |
+| **Template Usage** | Consistent, professional responses | Template optimization |
+| **Personal Touch** | Customised, empathetic responses | Personalisation training |
 
-:::info
-We are here to help! Please [contact us](mailto:support@botlhale.ai) with any questions.
-:::
+---
+
+## Optimising Digital Customer Service
+
+### Response Time Optimization
+Improve the speed and quality of digital interactions:
+
+| **Response Time** | **Customer Expectation** | **Action Required** |
+|------------------|-------------------------|-------------------|
+| **Under 30 seconds** | Excellent digital service | Maintain and replicate |
+| **30-60 seconds** | Good digital service | Optimise response processes |
+| **60+ seconds** | Poor digital service | Immediate process review |
+| **No response** | Failed digital service | Escalation procedures |
+
+### Message Quality Improvement
+Enhance the effectiveness of digital communication:
+
+- [ ] **Use clear, concise language** for digital audiences
+- [ ] **Include relevant links** and resources
+- [ ] **Maintain professional tone** while being friendly
+- [ ] **Follow up appropriately** to ensure resolution
+
+### Automation Opportunities
+Identify conversations that could be automated:
+
+| **Conversation Type** | **Automation Potential** | **Implementation** |
+|---------------------|------------------------|------------------|
+| **FAQ Questions** | High - Standard responses | Chatbot with knowledge base |
+| **Simple Requests** | Medium - Basic workflows | Automated workflows |
+| **Complex Issues** | Low - Human expertise needed | Human agent escalation |
+| **Complaints** | Low - Emotional intelligence required | Specialised agent handling |
+
+---
+
+## Digital Experience Optimization
+
+### Chat Interface Analysis
+Optimise the digital customer experience:
+
+| **Interface Element** | **What to Monitor** | **Optimization** |
+|---------------------|-------------------|-----------------|
+| **Welcome Messages** | Engagement and response rates | A/B test different approaches |
+| **Response Templates** | Consistency and effectiveness | Update based on performance |
+| **Escalation Process** | Smoothness of handoffs | Streamline procedures |
+| **Closing Messages** | Customer satisfaction and follow-up | Optimise for retention |
+
+### Multi-channel Integration
+Ensure seamless experience across channels:
+
+- [ ] **Track customer journey** across different channels
+- [ ] **Maintain conversation context** during transfers
+- [ ] **Provide consistent information** across platforms
+- [ ] **Optimise handoff processes** between channels
+
+---
+
+## Chat Analytics Dashboard
+
+### Digital Performance Metrics
+Monitor these key indicators for digital success:
+
+| **KPI** | **Target** | **Digital Threshold** |
+|---------|------------|---------------------|
+| **Average Response Time** | Under 30 seconds | Above 60 seconds = process review |
+| **Customer Satisfaction** | 90%+ positive | Below 80% = immediate optimization |
+| **Session Duration** | 3-5 minutes | Above 10 minutes = efficiency review |
+<!-- | **First Contact Resolution** | 85%+ | Below 75% = training or process review | -->
+
+### Digital Trend Analysis
+- [ ] **Track digital adoption** over time
+- [ ] **Monitor channel preferences** and usage patterns
+- [ ] **Analyse peak usage times** for resource planning
+- [ ] **Compare digital vs. voice performance** metrics
+
+---
+
+## Troubleshooting Digital Issues
+
+| **Problem** | **Digital Cause** | **Solution** |
+|-------------|------------------|--------------|
+| **Slow response times** | High volume, agent workload, technical issues | Optimise processes, add resources, fix technical problems |
+| **Low customer satisfaction** | Poor response quality, slow service, technical problems | Improve training, optimise processes, enhance technology |
+| **High escalation rates** | Complex issues, agent limitations, process gaps | Better training, improved processes, clearer escalation criteria |
+| **Technical difficulties** | System issues, connectivity problems, interface problems | Technical support, system upgrades, user training |
+
+---
+
+## Best Practices for Chat Analysis
+
+### Digital-First Approach
+- [ ] **Optimise for mobile** and digital interfaces
+- [ ] **Use digital-appropriate language** and tone
+- [ ] **Leverage digital tools** and automation
+- [ ] **Monitor digital metrics** specifically
+
+### Response Optimization
+- [ ] **Balance speed and quality** in digital responses
+- [ ] **Use templates effectively** for consistency
+- [ ] **Personalise when possible** for better engagement
+- [ ] **Follow up appropriately** to ensure resolution
+
+### Continuous Digital Improvement
+- [ ] **Update chat templates** based on performance
+- [ ] **Optimise response processes** for efficiency
+- [ ] **Implement automation** where appropriate
+- [ ] **Monitor digital trends** and adapt accordingly
+
+---
+
+## Next Steps
+
+| **For Smart Monitoring** | **For Team Management** | **For Quality Assurance** |
+|-------------------------|------------------------|-------------------------|
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
+
+### See also
+- [Call Analysis](./calls.md) - Analyse voice interactions
+- [Dashboard Overview](./dashboard.md) - Monitor digital performance trends
+- [Agent Performance](./agents.md) - Coach your team effectively
+- [Smart Search](./smart-search-guide.md) - Find patterns in digital conversations
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+
+## Need Help?
+
+- **Contact Support**: support@botlhale.ai
 

@@ -180,7 +180,9 @@ body {
 }
 
 .videosSection {
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
+  margin-top: 4rem;
+  padding-top: 2rem;
 }
 
 .row {
@@ -207,6 +209,12 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px var(--box-shadow-hover);
   border-color: var(--highlight-color);
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.card:hover * {
+  background-color: var(--card-bg-color) !important;
 }
 
 .main {
@@ -316,12 +324,19 @@ body {
   margin-right: auto;
 }
 
-.getStarted {
+.heroButtons {
+  display: flex;
+  gap: 1rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.getStarted {
   padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-color) !important;
+  color: #031019 !important;
   background-color: var(--primary-color) !important;
   border: none;
   border-radius: 50px;
@@ -331,8 +346,26 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 300px; /* Set a max width */
+  min-width: 200px;
+  text-decoration: none !important;
+}
+
+.quickStart {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #031019 !important;
+  background-color: var(--primary-color) !important;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover Effect */
@@ -340,6 +373,14 @@ body {
   background: #e54c1a;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+  text-decoration: none !important;
+}
+
+.quickStart:hover {
+  background: #e54c1a;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  text-decoration: none !important;
 }
 
 .getStarted:active {
@@ -404,7 +445,14 @@ body {
 .feature:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px var(--box-shadow-hover);
-  border-color: var(--primary-color);
+  border-color: #fc5f1e;
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
+}
+
+.featureCard:hover {
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
 }
 
 .feature h3 {
@@ -477,16 +525,16 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
   background-color: var(--bg-color) !important;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .col--4 {
-  flex: 1 1 calc(33.333% - 2rem);
-  max-width: calc(33.333% - 2rem);
   background-color: var(--bg-color) !important;
 }
 
@@ -523,4 +571,160 @@ body {
   .subtitle {
     font-size: 1rem;
   }
+}
+
+/* Breadcrumb Styles */
+.breadcrumbs {
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  background-color: var(--bg-color);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: '/';
+  margin: 0 0.5rem;
+  color: var(--secondary-text-color);
+}
+
+.breadcrumbs__link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  background-color: var(--bg-color);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumbs__link--active {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.breadcrumbs__home-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Search results specific styling - overrides global * selector */
+.dropdownMenu_qbY6,
+.dropdownMenu_qbY6 *:not(mark),
+.dropdownMenu_qbY6:hover,
+.dropdownMenu_qbY6:hover *:not(mark),
+.dataset_QiCy-1,
+.dataset_QiCy-1 *:not(mark),
+.dataset_QiCy-1:hover,
+.dataset_QiCy-1:hover *:not(mark),
+#searchBar_RVTs-listbox-0,
+#searchBar_RVTs-listbox-0 *:not(mark),
+#searchBar_RVTs-listbox-0:hover,
+#searchBar_RVTs-listbox-0:hover *:not(mark) {
+  background-color: var(--card-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Ensure highlighted text in search results maintains orange background and dark text */
+.dropdownMenu_qbY6 mark,
+.dropdownMenu_qbY6:hover mark,
+.dataset_QiCy-1 mark,
+.dataset_QiCy-1:hover mark,
+#searchBar_RVTs-listbox-0 mark,
+#searchBar_RVTs-listbox-0:hover mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+}
+
+
+
+.card:focus,
+.card:focus *,
+.feature:focus,
+.feature:focus *,
+.videoCard:focus,
+.videoCard:focus * {
+  background-color: var(--card-bg-color) !important;
+  outline: 2px solid var(--primary-color) !important;
+  outline-offset: 2px !important;
+}
+
+.card,
+.card *,
+.feature,
+.feature *,
+.videoCard,
+.videoCard * {
+  background-color: var(--card-bg-color) !important;
+}
+
+.card:hover,
+.feature:hover,
+.videoCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px var(--box-shadow-hover);
+  border-color: var(--highlight-color);
+  background-color: var(--card-bg-color) !important;
+}
+
+.card:hover *,
+.feature:hover *,
+.videoCard:hover * {
+  background-color: var(--card-bg-color) !important;
+}
+
+.card mark,
+.feature mark,
+.videoCard mark {
+  background-color: #fc5f1e !important;
+  color: #031019 !important;
+}
+
+/* Feature card hover styles */
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px var(--box-shadow-hover);
+  border-color: #fc5f1e;
+  outline: 2px solid #fc5f1e;
+  outline-offset: 2px;
+}
+
+.feature:hover * {
+  background-color: var(--card-bg-color) !important; /* Keep feature background */
+}
+
+/* Video card hover styles */
+.videoCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px var(--box-shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.videoCard:hover * {
+  background-color: var(--card-bg-color) !important; /* Keep video card background */
 }

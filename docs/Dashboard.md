@@ -2,91 +2,151 @@
 sidebar_position: 1
 ---
 
-# Dashboard 
+# Monitor Your Team's Performance
 
-The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.
+Your Vela dashboard shows you everything about your call centre's performance at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is performing.
 
-What the Dashboard Does
+## What You Can Achieve
 
-* **Quick Overview**: See key data like silent time, customer feelings, agent
-performance, and call summaries at a glance
-* **Deep Dive**: Look closer at specific calls with charts and graphs to understand
-customer feelings, topics, and agent interactions.
+Your dashboard transforms raw data into actionable insights. With it, you can:
 
-* **Make It Your Own**: Change the dashboard to show the data you care about most.
+| **Performance Monitoring** | **Team Management** | **Customer Experience** |
+|---------------------------|-------------------|------------------------|
+| **Spot problems before they escalate** | **Coach with confidence** | **Keep customers happy** |
+| **Track trends and patterns** | **Identify top performers** | **Monitor satisfaction** |
+| **Optimise efficiency** | **Spot training needs** | **Catch issues early** |
 
-The Vela Dashboard turns call center data into clear insights, helping you improve
-operations and give better customer experiences.
+---
+
+## Set Up Your Dashboard
+
+Ready to get started? Let's set up your dashboard in just a few steps.
+
+### Step 1: Access Your Dashboard
+1. **Log in** to Vela
+2. **Click "Dashboard"** in the left sidebar
+3. You'll see an empty dashboard initially - this is normal
+
+> **Tip**: If your dashboard is empty, you'll need to upload some call data first. See our [Data Upload Guide](./data-upload.md) to get started.
+
+### Step 2: Choose Your Team
+1. **Click "View By"** dropdown
+2. **Select your team** (e.g., "Customer Support Team")
+3. This filters all data to show only your team's performance
+
+![Team Selection - Screenshot showing the team dropdown menu and selection interface in the Vela dashboard](../img/screenshots/dashboard01.png)
+
+### Step 3: Set Your Time Period
+1. **Click the date range** (e.g., "20/04/2025 – 28/04/2025")
+2. **Choose a preset** like "This Week" or "Last Month"
+3. **Or select custom dates** from the calendar
+4. **Click "Save"** to apply
+
+![Date Range Selection - Screenshot showing the date picker interface with preset options like "This Week" and "Last Month"](../img/screenshots/date-range.png)
+
+### Step 4: Add Key Metrics
+1. **Click "Customise"** in the top-right corner
+2. **Click "Add New Metric"** for each metric you want to track
+3. **Add these essential metrics**:
+
+> **Important**: Start with these core metrics to get the most value from your dashboard. You can always add more later as you become familiar with the platform.
+
+#### Performance Metrics
+- **Agent Distribution** - See who's handling the most calls
+- **Average Agent Score** - Track overall team performance
+- **Agent Scores Distribution** - Identify top performers and those needing help
+
+#### Efficiency Metrics
+- **Average Call Duration** - Spot efficiency issues
+- **Average Response Time** - Monitor responsiveness
+- **Average Silent Time** - Identify awkward pauses or delays
+
+#### Customer Experience Metrics
+- **Bottom 10 Pain Points** - See what's frustrating customers
+- **Sentiment Distribution** - Track satisfaction trends
+
+4. **Click "Save"** to apply your dashboard
+
+![Customise Dashboard - Screenshot showing the dashboard customisation panel with metric selection and configuration options](../img/screenshots/costomize.png)
+
+---
+
+## Understanding Your Dashboard
+
+### Performance Overview
+Your dashboard shows call analytics data for your selected team and time period. Each metric card displays:
+- **Current value** (e.g., average call duration)
+- **Trend indicator** (up/down arrows showing improvement or decline)
+<!-- - **Filter icon** for additional filtering options -->
+
+### Key Insights to Look For
+
+#### Agent Performance
+- **High scores** (90%+) indicate excellent performance
+- **Low scores** (below 70%) suggest training opportunities
+- **Score distribution** helps identify if issues are isolated or team-wide
+
+#### Call Efficiency
+- **Long call durations** might indicate complex issues or inefficiency
+- **High silent time** could signal agent uncertainty or system delays
+- **Response times** show how quickly your team responds to customers
+
+#### Customer Satisfaction
+- **Pain points** reveal what's frustrating customers
+- **Sentiment trends** show if satisfaction is improving or declining
+
+---
 
 
-## Customise your dashboard
 
-When you first log in, your dashboard will be empty. You need to set it up to show the data
-you want. Follow these steps to customize your dashboard.
+## Troubleshooting Common Issues
 
+| **Problem** | **Solution** |
+|-------------|--------------|
+| **Empty Dashboard** | Check if you have uploaded call data, verify your date range includes data, ensure you've selected the correct team |
+| **Missing Metrics** | Click "Customise" to add missing metrics, check if the metric is available for your data, contact support if metrics seem incorrect |
+| **Outdated Data** | Refresh your browser, check if new data has been uploaded, verify your date range is current |
 
-##  How To Get Started - Guide
-1.  **Go to the Dashboard Screen**: Make sure you are on the "Dashboard" section of the
-Vela platform.
+---
 
-2.  **Choose a Team**: Use the "View By" dropdown to select a team, like "Interns Team."
+## Best Practices
 
-![alt text](../img/screenshots/dashboard01.png)
+### Save Multiple Dashboards
+Create different dashboard views for different purposes:
 
-3. **Set Interactions Type**: Pick the type of interactions to view—choose from "All,"
-"Calls," or "Chats."
+| **Dashboard Type** | **Focus** | **Use Case** |
+|-------------------|-----------|--------------|
+| **Daily Operations** | Current performance | Morning check-ins |
+| **Weekly Review** | Trend analysis | Team meetings |
+| **Monthly Planning** | Forecasting metrics | Strategic planning |
 
+### Use Filters Effectively
+- **Date ranges** - Compare different time periods
+- **Team filters** - Focus on specific groups
+<!-- - **Call types** - Analyse different interaction types -->
+<!-- - **Agent filters** - Review individual performance -->
 
-![alt text](../img/screenshots/dh-interaction.png)
+<!-- ### Set Up Alerts
+Configure notifications for important events:
+- Agent scores drop below thresholds
+- Customer satisfaction declines
+- Call volumes spike unexpectedly -->
 
-4. **Set Date Range**:
-![alt text](../img/screenshots/date-range.png)
+---
 
-- Click the orange pencil on "Date range" (example: "20/04/2025 –
-28/04/2025") to open the date picker.
+## Next Steps
 
-- In the "Select Date Range" pop-up, choose a preset option like "Today,"
-"Yesterday," "This Week," "Last Week," "This Month," or "Last Month," or pick
-custom dates from the calendar (e.g., April 20 to April 26, 2025).
+| **For Team Management** | **For Reporting** | **For Automation** |
+|------------------------|------------------|-------------------|
+| [Improve Agent Performance](./agents.md) | [Generate Reports](./reports.md) | [Configure Notifications](./notifications.md) |
 
-![alt text](../img/screenshots/date-range%202.0.png)
+### See also
+- [Data Upload Guide](./data-upload.md) - Get your data into Vela first
+- [Agent Performance](./agents.md) - Detailed agent coaching and development
+- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
+- [API Integration](./api.md) - Connect Vela with your existing systems
+- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
-- Click "Save" in the date range pop-up.
-### **Save Your Changes**: Click the orange "Save" button in the metrics pop-up. 
-Your dashboard will now show the data you selected.
+## Need Help?
 
-5. **Open Customization**:
-![alt text](../img/screenshots/costomize.png)
-
-- Click the "Customize" button on the top right corner of the screen. A pop-up window
-will appear.
-
-6. **Select Metrics**:
-
-![alt text](../img/screenshots/Add%20metric.png)
-
-**In the pop-up, click "Add New Metric" to choose the data you want to see, like**:
-- Agent Distribution
-- Agents Scores Distribution
-- Ave Call Duration
-- Ave Response Time
-- Average Agent Score
-- Average Silent Time
-- Bottom 10 Pain Points (Detected) Note: Each metric will show data for the
-whole organization and the team you choose. You can also filter data for a
-specific time period using the filter icon next to the metric.
-
-**Save Your Changes: Click the orange "Save" button**
-
-**Notes**
-- If your organization hasn’t uploaded any call data, your dashboard will show empty
-cards. Check the "Data Upload" section for more details on how to add data.
-- You can always go back to the "Customize" button to change the metrics, team,
-interaction type, or date range.
-
-
-
-
-
-
-<!-- ![1 Click on the element.](https://d16ev9qffqt5qm.cloudfront.net/?s3_key=cm6hxl3ri01k2pefpgonr5yom/wn_kFOBJmpc95RolDFvG0.jpg&x=1990&y=318&fill=2ca5e0&color=2ca5e0) -->
+- **Contact Support**: support@botlhale.ai
