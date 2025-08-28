@@ -24,7 +24,7 @@ We've made this guide as straightforward as possible because we understand you h
 
 ## Understanding the Vela Interface
 
-Before we dive into the setup, let's quickly familiarise you with the Vela platform interface:
+Before we dive into the features, let's quickly familiarise you with the Vela platform interface:
 
 ### **Left Sidebar Navigation**
 The left sidebar is your main navigation hub in Vela. You can collapse it to maximise your workspace. You'll find:
@@ -173,7 +173,7 @@ You've just unlocked the capabilities that will make your call centre more effec
 
 ## Need Help?
 
-Don't worry! we're here to help! Here's how to get support:
+Don't worry! We're here to help! Here's how to get support:
 
 - 📧 **Contact Support**: support@botlhale.ai
 - 🎥 **Video Tutorials**: Available on the homepage
