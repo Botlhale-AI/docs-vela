@@ -34,7 +34,7 @@ Reports help you communicate insights effectively. You'll be able to:
 | **Call Volume Analysis** | Peak times and workload distribution | Capacity planning, scheduling |
 | **Response Time Tracking** | Speed and efficiency metrics | Process optimization, training needs |
 | **Issue Resolution** | Problem patterns and solutions | Training focus, knowledge gaps |
-| **Training Impact** | Before/after improvement analysis | ROI measurement, program effectiveness |
+| **Training Impact** | Before/after improvement analysis | ROI measurement, programme effectiveness |
 
 ---
 
@@ -58,7 +58,7 @@ Reports help you communicate insights effectively. You'll be able to:
 
 ### Step 3: Customise Your Report
 
-- [ ] **Include executive summary** - Key findings and recommendations
+
 - [ ] **Add visualisations** - Charts and graphs for better understanding
 - [ ] **Set up recurring reports** - Automate regular reporting
 
@@ -101,7 +101,7 @@ Reports help you communicate insights effectively. You'll be able to:
 
 
 <!-- ### **For Training Teams: Coaching Effectiveness Report**
-**Goal**: Measure the impact of training and coaching programs
+**Goal**: Measure the impact of training and coaching programmes
 
 **Include these metrics**:
 - [ ] Before/after performance comparisons
@@ -110,9 +110,9 @@ Reports help you communicate insights effectively. You'll be able to:
 - [ ] Long-term performance trends
 
 **How to use it**:
-- Training program evaluation
+- Training programme evaluation
 - ROI measurement
-- Program improvement
+- Programme improvement
 - Resource allocation
 
 --- -->
@@ -141,7 +141,6 @@ Reports help you communicate insights effectively. You'll be able to:
 ### Design Clear Reports
 - [ ] **Start with executive summary** - Key findings upfront
 - [ ] **Use visualisations** - Charts and graphs for clarity
-- [ ] **Include recommendations** - What actions to take
 - [ ] **Keep it concise** - Focus on what matters most
 
 ### Share Reports Effectively
