@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# Vela Platform Compression Methods
+# Vela Compression Methods
 
 Learn how Vela optimises performance and reduces bandwidth usage through smart compression techniques. This guide explains the compression methods used throughout the platform to ensure fast, efficient data processing.
 
@@ -19,7 +19,7 @@ By understanding Vela's compression methods, you can:
 
 ## Overview
 
-Vela implements a comprehensive compression strategy to optimise performance, reduce bandwidth usage, and minimise storage costs. This approach ensures your data is processed efficiently while maintaining quality for accurate call analysis.
+Vela uses compression to make everything faster and use less space. This helps your data process quickly while keeping quality for accurate call analysis.
 
 ---
 
@@ -390,7 +390,7 @@ const nextConfig = {
 
 ### Planned Improvements
 - **Advanced audio compression**: Implement more efficient audio formats
-- **Video compression**: Add comprehensive video file support
+- **Video compression**: Add video file support
 - **Real-time compression**: Implement streaming compression for live data
 - **Smart optimisation**: Use advanced techniques for better compression
 
@@ -417,6 +417,6 @@ const nextConfig = {
 
 ## Conclusion
 
-Vela's comprehensive compression strategy optimises performance across all aspects of the platform. From HTTP compression to specialised audio and PDF compression, the system ensures efficient data transfer, reduced storage costs, and improved user experience.
+Vela's compression makes everything work faster across the platform. From web compression to audio and PDF compression, the system ensures fast data transfer, lower storage costs, and better user experience.
 
 For questions or support regarding compression methods, please contact our support team or consult the relevant technical documentation.
