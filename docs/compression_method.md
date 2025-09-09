@@ -313,7 +313,7 @@ const nextConfig = {
 - [ ] **Handle errors**: Implement robust error recovery mechanisms
 
 ### 3. Image Optimisation
-- [ ] **Use Next.js Image**: Leverage automatic optimisation features
+- [ ] **Use Next.js Image**: Use automatic optimisation features
 - [ ] **Choose appropriate formats**: WebP for photos, PNG for graphics
 - [ ] **Implement lazy loading**: Improve page load times
 - [ ] **Use responsive images**: Different sizes for different devices
