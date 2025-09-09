@@ -76,7 +76,7 @@ const sidebars = {
       label: 'Data Management',
       collapsible: true,
       collapsed: true,
-      items: ['data-upload'],
+      items: ['data-upload', 'compression_method'],
     },
     {
       type: 'category',

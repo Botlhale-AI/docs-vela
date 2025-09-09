@@ -19,7 +19,7 @@ By understanding Vela's compression methods, you can:
 
 ## Overview
 
-Vela implements a comprehensive compression strategy to optimise performance, reduce bandwidth usage, and minimise storage costs. This multi-layered approach ensures your data is processed efficiently while maintaining quality for accurate call analysis.
+Vela implements a comprehensive compression strategy to optimise performance, reduce bandwidth usage, and minimise storage costs. This approach ensures your data is processed efficiently while maintaining quality for accurate call analysis.
 
 ---
 
@@ -267,14 +267,14 @@ webpack(config, { isServer, webpack }) {
 
 ## Configuration
 
-### Environment Variables
+<!-- ### Environment Variables
 ```bash
 # Compression-related environment variables
 NODE_ENV=production  # Enables production optimisations
 NEXT_PUBLIC_CLIENT_URL=https://your-domain.com
 NEXT_PUBLIC_SOCKET_URL=wss://your-socket-server.com
 NEXT_PUBLIC_SERVER_URL=https://your-api-server.com
-```
+``` -->
 
 ### Next.js Configuration
 ```javascript
