@@ -26,7 +26,7 @@ Vela uses compression to make everything faster and use less space. This helps y
 ## HTTP and Network Compression
 
 ### Built-in Performance Optimisation
-Vela leverages advanced compression technologies to deliver content quickly and efficiently.
+Vela uses advanced compression technologies to deliver content quickly and efficiently.
 
 **Key Features:**
 - **Automatic compression** of static assets and API responses
@@ -38,7 +38,7 @@ Vela leverages advanced compression technologies to deliver content quickly and 
 Vela automatically detects your browser's compression capabilities and delivers optimised content. No configuration required - it works seamlessly in the background.
 
 ### Brotli Compression
-Vela includes Brotli compression support for modern browsers, providing superior compression ratios compared to traditional methods.
+Vela includes Brotli compression support for modern browsers, providing better compression ratios compared to traditional methods.
 
 **Benefits:**
 - **Better compression ratios** than Gzip (typically 15-25% smaller)
@@ -51,7 +51,7 @@ Vela includes Brotli compression support for modern browsers, providing superior
 ## Audio File Compression
 
 ### FFmpeg Integration
-Vela uses FFmpeg for professional audio processing and compression through the `fluent-ffmpeg` package.
+Vela uses FFmpeg for audio processing and compression through the `fluent-ffmpeg` package.
 
 **Supported Audio Formats:**
 - **Input formats**: WAV, MP3, M4A, FLAC
@@ -184,7 +184,7 @@ accept = "application/zip, application/vnd.rar, application/x-7z-compressed, app
 **Archive Types:**
 - **ZIP**: Standard compression format for most files
 - **RAR**: High compression ratio format for large files
-- **7-Zip**: Ultra-high compression format for maximum efficiency
+- **7-Zip**: High compression format for maximum efficiency
 - **Other compressed formats**: Additional archive support for flexibility
 
 ### Batch Upload Optimisation
@@ -260,7 +260,7 @@ webpack(config, { isServer, webpack }) {
 ### Caching Strategies
 - **Browser caching**: Static asset caching for repeat visits
 - **CDN caching**: Global content caching for worldwide access
-- **API response caching**: Intelligent API caching for faster responses
+- **API response caching**: API caching for faster responses
 - **Database query caching**: Optimised database queries for performance
 
 ---
@@ -392,7 +392,7 @@ const nextConfig = {
 - **Advanced audio compression**: Implement more efficient audio formats
 - **Video compression**: Add video file support
 - **Real-time compression**: Implement streaming compression for live data
-- **Smart optimisation**: Use advanced techniques for better compression
+- **Smart optimisation**: Use better techniques for improved compression
 
 ### Technology Updates
 - **WebP 2.0**: Next-generation image format with improved compression
