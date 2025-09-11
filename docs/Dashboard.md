@@ -12,9 +12,9 @@ Your dashboard transforms raw data into actionable insights. With it, you can:
 
 | **Performance Monitoring** | **Team Management** | **Customer Experience** |
 |---------------------------|-------------------|------------------------|
-| **Spot problems before they escalate** | **Coach with confidence** | **Keep customers happy** |
-| **Track trends and patterns** | **Identify top performers** | **Monitor satisfaction** |
-| **Optimise efficiency** | **Spot training needs** | **Catch issues early** |
+| Spot problems before they escalate | Coach with confidence | Keep customers happy |
+| Track trends and patterns | Identify top performers | Monitor satisfaction |
+| Optimise efficiency | Spot training needs | Catch issues early |
 
 ---
 
