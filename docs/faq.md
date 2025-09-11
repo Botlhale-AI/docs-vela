@@ -161,7 +161,7 @@ Contact your Account Manager to discuss trial options for your organisation.
 
 ### How do I get help when I'm stuck?
 - Check this FAQ first
-- Review our [video tutorials](../#video-tutorials)
+- Review our video tutorials on the homepage
 - Contact support@botlhale.ai
 - Check our documentation guides
 
@@ -186,4 +186,4 @@ If your question isn't answered here, we're here to help:
 
 ### Related Resources
 - [Quick Start Guide](./quick-start.md) - Get up and running
-- [Video Tutorials](../#video-tutorials) - Step-by-step guides
+- Video Tutorials - Step-by-step guides (available on the homepage)

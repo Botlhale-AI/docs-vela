@@ -102,6 +102,10 @@ const config = {
       src: '/js/themeToggle.js',
       async: true,
     },
+    {
+      src: '/js/hideHashLinks.js',
+      async: true,
+    },
   ],
 };
 

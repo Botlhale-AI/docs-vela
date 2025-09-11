@@ -728,3 +728,12 @@ mark {
 .videoCard:hover * {
   background-color: var(--card-bg-color) !important; /* Keep video card background */
 }
+
+/* Hide hashtag anchor links - backup CSS for JavaScript solution */
+.hash-link,
+a.hash-link,
+a[aria-label*="Direct link to"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
