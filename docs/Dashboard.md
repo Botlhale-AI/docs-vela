@@ -116,9 +116,9 @@ Create different dashboard views for different purposes:
 
 | **Dashboard Type** | **Focus** | **Use Case** |
 |-------------------|-----------|--------------|
-| **Daily Operations** | Current performance | Morning check-ins |
-| **Weekly Review** | Trend analysis | Team meetings |
-| **Monthly Planning** | Forecasting metrics | Strategic planning |
+| Daily Operations | Current performance | Morning check-ins |
+| Weekly Review | Trend analysis | Team meetings |
+| Monthly Planning | Forecasting metrics | Strategic planning |
 
 ### Use Filters Effectively
 - **Date ranges** - Compare different time periods

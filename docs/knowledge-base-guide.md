@@ -12,9 +12,9 @@ A well-built knowledge base enhances your team's capabilities. You'll be able to
 
 | **Agent Empowerment** | **Service Quality** | **Continuous Learning** |
 |---------------------|-------------------|----------------------|
-| **Give agents instant answers** | **Ensure consistent responses** | **Build collective knowledge** |
-| **Reduce training time** | **Improve accuracy and speed** | **Keep information current** |
-| **Centralise company knowledge** | **Maintain quality standards** | **Foster knowledge sharing** |
+| Give agents instant answers | Ensure consistent responses | Build collective knowledge |
+| Reduce training time | Improve accuracy and speed | Keep information current |
+| Centralise company knowledge | Maintain quality standards | Foster knowledge sharing |
 
 ---
 
@@ -41,18 +41,18 @@ A well-built knowledge base enhances your team's capabilities. You'll be able to
 ### Essential Information
 | **Content Category** | **What to Include** | **Business Value** |
 |---------------------|-------------------|------------------|
-| **Product Information** | Features, specifications, pricing, availability | Accurate product knowledge, reduced errors |
-| **Service Policies** | Procedures, guidelines, escalation processes | Consistent service delivery, compliance |
-| **Troubleshooting Guides** | Common issues, solutions, workarounds | Improved problem resolution, enhanced satisfaction |
-| **Training Materials** | Best practices, scripts, techniques | Skill development, performance improvement |
+| Product Information | Features, specifications, pricing, availability | Accurate product knowledge, reduced errors |
+| Service Policies | Procedures, guidelines, escalation processes | Consistent service delivery, compliance |
+| Troubleshooting Guides | Common issues, solutions, workarounds | Improved problem resolution, enhanced satisfaction |
+| Training Materials | Best practices, scripts, techniques | Skill development, performance improvement |
 
 ### Advanced Content
 | **Content Type** | **Purpose** | **Implementation** |
 |-----------------|-------------|------------------|
-| **FAQ Collections** | Quick answers to common questions | Reduce repetitive inquiries, improve efficiency |
-| **Process Documentation** | Step-by-step procedures and workflows | Standardise operations, reduce errors |
-| **Compliance Information** | Regulatory requirements and standards | Ensure compliance, reduce risk |
-| **Best Practice Guides** | Proven techniques and strategies | Improve performance, share excellence |
+| FAQ Collections | Quick answers to common questions | Reduce repetitive inquiries, improve efficiency |
+| Process Documentation | Step-by-step procedures and workflows | Standardise operations, reduce errors |
+| Compliance Information | Regulatory requirements and standards | Ensure compliance, reduce risk |
+| Best Practice Guides | Proven techniques and strategies | Improve performance, share excellence |
 
 ---
 

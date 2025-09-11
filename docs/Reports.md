@@ -12,9 +12,9 @@ Reports help you communicate insights effectively. You'll be able to:
 
 | **Data Storytelling** | **Stakeholder Communication** | **Strategic Decision Making** |
 |---------------------|------------------------------|------------------------------|
-| **Tell the story behind the numbers** | **Get buy-in from leadership** | **Identify opportunities** |
-| **Track trends and patterns** | **Share insights that matter** | **Prove your impact** |
-| **Spot insights others miss** | **Communicate effectively** | **Make informed decisions** |
+| Tell the story behind the numbers | Get buy-in from leadership | Identify opportunities |
+| Track trends and patterns | Share insights that matter | Prove your impact |
+| Spot insights others miss | Communicate effectively | Make informed decisions |
 
 ---
 
@@ -23,18 +23,18 @@ Reports help you communicate insights effectively. You'll be able to:
 ### Performance Reports
 | **Report Type** | **What It Shows** | **Best For** |
 |-----------------|-------------------|--------------|
-| **Agent Performance** | Individual and team metrics | Coaching sessions, performance reviews |
-| **Customer Satisfaction** | Sentiment and satisfaction trends | Service improvement, customer experience |
-| **Call Quality** | Resolution rates and efficiency metrics | Quality assurance, process improvement |
-| **Team Comparison** | Performance across different teams | Resource allocation, best practice sharing |
+| Agent Performance | Individual and team metrics | Coaching sessions, performance reviews |
+| Customer Satisfaction | Sentiment and satisfaction trends | Service improvement, customer experience |
+| Call Quality | Resolution rates and efficiency metrics | Quality assurance, process improvement |
+| Team Comparison | Performance across different teams | Resource allocation, best practice sharing |
 
 ### Operational Reports
 | **Report Type** | **What It Shows** | **Best For** |
 |-----------------|-------------------|--------------|
-| **Call Volume Analysis** | Peak times and workload distribution | Capacity planning, scheduling |
-| **Response Time Tracking** | Speed and efficiency metrics | Process optimization, training needs |
-| **Issue Resolution** | Problem patterns and solutions | Training focus, knowledge gaps |
-| **Training Impact** | Before/after improvement analysis | ROI measurement, programme effectiveness |
+| Call Volume Analysis | Peak times and workload distribution | Capacity planning, scheduling |
+| Response Time Tracking | Speed and efficiency metrics | Process optimization, training needs |
+| Issue Resolution | Problem patterns and solutions | Training focus, knowledge gaps |
+| Training Impact | Before/after improvement analysis | ROI measurement, programme effectiveness |
 
 ---
 

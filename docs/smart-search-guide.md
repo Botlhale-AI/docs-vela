@@ -12,9 +12,9 @@ Smart Search gives you automated monitoring. You'll be able to:
 
 | **Issue Detection** | **Quality Monitoring** | **Opportunity Identification** |
 |-------------------|----------------------|------------------------------|
-| **Catch problems early** | **Monitor compliance** | **Spot improvement opportunities** |
-| **Respond proactively** | **Track quality trends** | **Identify training needs** |
-| **Never miss important events** | **Maintain standards** | **Drive continuous improvement** |
+| Catch problems early | Monitor compliance | Spot improvement opportunities |
+| Respond proactively | Track quality trends | Identify training needs |
+| Never miss important events | Maintain standards | Drive continuous improvement |
 
 ---
 
@@ -52,26 +52,26 @@ Smart Search gives you automated monitoring. You'll be able to:
 ### Customer Experience Monitoring
 | **Search Type** | **Example Phrases** | **Business Value** |
 |-----------------|-------------------|------------------|
-| **Customer Complaints** | "I'm not happy", "This is terrible", "I want to speak to a manager" | Early intervention, prevent escalations |
-| **Service Issues** | "This doesn't work", "I've been waiting", "Nobody helped me" | Identify service gaps, improve processes |
-| **Billing Problems** | "I was charged twice", "This bill is wrong", "I want a refund" | Financial impact, customer retention |
-| **Product Issues** | "This is broken", "It's not working", "Defective product" | Product quality, warranty management |
+| Customer Complaints | "I'm not happy", "This is terrible", "I want to speak to a manager" | Early intervention, prevent escalations |
+| Service Issues | "This doesn't work", "I've been waiting", "Nobody helped me" | Identify service gaps, improve processes |
+| Billing Problems | "I was charged twice", "This bill is wrong", "I want a refund" | Financial impact, customer retention |
+| Product Issues | "This is broken", "It's not working", "Defective product" | Product quality, warranty management |
 
 ### Compliance and Quality Assurance
 | **Search Type** | **Example Phrases** | **Compliance Focus** |
 |-----------------|-------------------|-------------------|
-| **Regulatory Violations** | "I didn't authorize this", "That's illegal", "You can't do that" | Legal compliance, risk management |
-| **Policy Breaches** | "That's against policy", "You're not following procedure" | Policy adherence, quality standards |
-| **Security Concerns** | "My information was shared", "Data breach", "Privacy violation" | Data protection, security compliance |
-| **Documentation Issues** | "That wasn't documented", "No record of this", "Missing information" | Audit readiness, record keeping |
+| Regulatory Violations | "I didn't authorize this", "That's illegal", "You can't do that" | Legal compliance, risk management |
+| Policy Breaches | "That's against policy", "You're not following procedure" | Policy adherence, quality standards |
+| Security Concerns | "My information was shared", "Data breach", "Privacy violation" | Data protection, security compliance |
+| Documentation Issues | "That wasn't documented", "No record of this", "Missing information" | Audit readiness, record keeping |
 
 ### Training and Development
 | **Search Type** | **Example Phrases** | **Training Value** |
 |-----------------|-------------------|------------------|
-| **Knowledge Gaps** | "I don't know", "Can you explain", "I'm not sure how" | Identify training needs, skill development |
-| **Process Confusion** | "What's the procedure", "How do I do this", "I'm confused" | Process improvement, documentation |
-| **Escalation Requests** | "I need a supervisor", "Can I speak to someone else", "This is too complex" | Skill assessment, escalation procedures |
-| **Positive Feedback** | "Great service", "Thank you so much", "You're amazing" | Recognise excellence, share best practices |
+| Knowledge Gaps | "I don't know", "Can you explain", "I'm not sure how" | Identify training needs, skill development |
+| Process Confusion | "What's the procedure", "How do I do this", "I'm confused" | Process improvement, documentation |
+| Escalation Requests | "I need a supervisor", "Can I speak to someone else", "This is too complex" | Skill assessment, escalation procedures |
+| Positive Feedback | "Great service", "Thank you so much", "You're amazing" | Recognise excellence, share best practices |
 
 ---
 

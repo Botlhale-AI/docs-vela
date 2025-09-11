@@ -14,9 +14,9 @@ Smart Detector gives you automated analysis and insights. It helps you:
 
 | **Issue Detection** | **Performance Evaluation** | **Knowledge Management** |
 |-------------------|---------------------------|------------------------|
-| **Catch complaints before they escalate** | **Score agents objectively** | **Build your team's knowledge** |
-| **Monitor compliance efficiently** | **Track improvement over time** | **Find information efficiently** |
-| **Spot training needs early** | **Identify coaching opportunities** | **Centralise company knowledge** |
+| Catch complaints before they escalate | Score agents objectively | Build your team's knowledge |
+| Monitor compliance efficiently | Track improvement over time | Find information efficiently |
+| Spot training needs early | Identify coaching opportunities | Centralise company knowledge |
 
 ---
 
