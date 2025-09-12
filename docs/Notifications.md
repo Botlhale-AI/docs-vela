@@ -12,9 +12,9 @@ Notifications help you stay informed and respond quickly. You'll be able to:
 
 | **Issue Response** | **Team Communication** | **Performance Monitoring** |
 |-------------------|----------------------|---------------------------|
-| **Respond to problems promptly** | **Work together better** | **Keep track of performance** |
-| **Never miss important events** | **Stay connected** | **Track what matters** |
-| **Respond proactively** | **Collaborate effectively** | **Get automated insights** |
+| Respond to problems promptly | Work together better | Keep track of performance |
+| Never miss important events | Stay connected | Track what matters |
+| Respond proactively | Collaborate effectively | Get automated insights |
 
 ---
 
@@ -25,9 +25,9 @@ Get notified about important events that require your attention (set up your ale
 
 | **Alert Type** | **What It Monitors** | **When You Get It** |
 |----------------|---------------------|-------------------|
-| **Smart Search matches** | Customer complaints or compliance issues detected | When detected |
-| **Performance alerts** | Agent scores below thresholds | When thresholds are exceeded |
-| **System notifications** | Data processing complete or errors | When processing status changes |
+| Smart Search matches | Customer complaints or compliance issues detected | When detected |
+| Performance alerts | Agent scores below thresholds | When thresholds are exceeded |
+| System notifications | Data processing complete or errors | When processing status changes |
 <!-- | **Quality flags** | Potential issues with customer interactions | When quality issues are identified | -->
 
 ### **Comments: Collaborate with Your Team**
@@ -35,20 +35,20 @@ Stay updated on team discussions and feedback:
 
 | **Comment Type** | **Purpose** | **Use Case** |
 |------------------|-------------|--------------|
-| **Agent feedback** | Comments on specific calls or interactions | Coaching and improvement |
-| **Team discussions** | Questions and insights from colleagues | Knowledge sharing |
-| **Management notes** | Important observations and instructions | Team guidance |
-| **Training feedback** | Suggestions for improvement | Process enhancement |
+| Agent feedback | Comments on specific calls or interactions | Coaching and improvement |
+| Team discussions | Questions and insights from colleagues | Knowledge sharing |
+| Management notes | Important observations and instructions | Team guidance |
+| Training feedback | Suggestions for improvement | Process enhancement |
 
 ### **Reports: Track Progress and Trends**
 Receive automated summaries of your team's performance:
 
 | **Report Type** | **Frequency** | **Content** |
 |-----------------|---------------|-------------|
-| **Daily summaries** | Every day | Key metrics and highlights |
-| **Weekly reports** | Every week | Performance trends and insights |
-| **Monthly analytics** | Every month | Full team analysis |
-| **Custom reports** | As scheduled | Specific metrics you've requested |
+| Daily summaries | Every day | Key metrics and highlights |
+| Weekly reports | Every week | Performance trends and insights |
+| Monthly analytics | Every month | Full team analysis |
+| Custom reports | As scheduled | Specific metrics you've requested |
 
 ---
 
@@ -84,7 +84,7 @@ Receive automated summaries of your team's performance:
 ### Understanding Alert Types
 | **Alert Category** | **Examples** | **Priority** |
 |-------------------|--------------|--------------|
-| **Smart Search Alerts** | Customer complaints detected, compliance violations flagged, quality issues identified, training opportunities spotted | High - Immediate action needed |
+| Smart Search Alerts | Customer complaints detected, compliance violations flagged, quality issues identified, training opportunities spotted | High - Immediate action needed |
 <!-- | **Performance Alerts** | Agent scores below thresholds, call quality issues, customer satisfaction drops, efficiency problems | Medium - Review and address | -->
 
 ### Taking Action on Alerts
@@ -133,10 +133,10 @@ Receive automated summaries of your team's performance:
 ### Understanding Report Types
 | **Report Type** | **When Sent** | **What to Do** |
 |-----------------|---------------|----------------|
-| **Daily summaries** | Every morning | Review key metrics, identify immediate issues |
-| **Weekly reports** | Every Monday | Analyse trends, plan coaching sessions |
-| **Monthly analytics** | First of each month | Strategic planning, performance reviews |
-| **Custom reports** | As scheduled | Review specific metrics, take action |
+| Daily summaries | Every morning | Review key metrics, identify immediate issues |
+| Weekly reports | Every Monday | Analyse trends, plan coaching sessions |
+| Monthly analytics | First of each month | Strategic planning, performance reviews |
+| Custom reports | As scheduled | Review specific metrics, take action |
 
 ### Using Reports for Decision Making
 - [ ] **Review trends** over time
@@ -153,10 +153,10 @@ Receive automated summaries of your team's performance:
 
 | **Problem** | **Solution** |
 |-------------|--------------|
-| **Too many notifications** | Adjust alert thresholds, change notification frequency, filter by priority |
-| **Missing important alerts** | Check notification settings, verify alert criteria, review spam filters |
-| **Comments not showing** | Check permissions, verify team settings, refresh the page |
-| **Reports not arriving** | Verify email settings, check spam folder, confirm report scheduling |
+| Too many notifications | Adjust alert thresholds, change notification frequency, filter by priority |
+| Missing important alerts | Check notification settings, verify alert criteria, review spam filters |
+| Comments not showing | Check permissions, verify team settings, refresh the page |
+| Reports not arriving | Verify email settings, check spam folder, confirm report scheduling |
 
 ---
 

@@ -14,9 +14,9 @@ Agent analytics turn gut feelings into actionable insights. You'll discover:
 
 | **Coaching & Development** | **Performance Tracking** | **Team Optimization** |
 |---------------------------|-------------------------|---------------------|
-| **Coach with precision** | **Track real progress** | **Fill knowledge gaps** |
-| **Celebrate success** | **Monitor improvement** | **Make smart decisions** |
-| **Identify training needs** | **Spot patterns** | **Build high-performing teams** |
+| Coach with precision | Track real progress | Fill knowledge gaps |
+| Celebrate success | Monitor improvement | Make smart decisions |
+| Identify training needs | Spot patterns | Build high-performing teams |
 
 Instead of relying on gut feelings, you'll have actual data to back up your coaching decisions and performance assessments.
 
@@ -30,11 +30,11 @@ Your agent performance table shows essential information:
 
 | **Metric** | **What It Means** | **Action Thresholds** |
 |------------|-------------------|----------------------|
-| **Score** - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognise and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
-| **Strengths** - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
-| **Weaknesses** - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
-| **Rank** - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
-| **Calls** - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
+| Score - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognise and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
+| Strengths - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
+| Weaknesses - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
+| Rank - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
+| Calls - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
 
 
@@ -57,21 +57,21 @@ Look for these key indicators:
 #### Call Duration Analysis
 | **Pattern** | **Possible Causes** | **Coaching Actions** |
 |-------------|-------------------|---------------------|
-| **Long calls** | Complex customer issues, agent uncertainty, inefficient processes | Provide training on issue resolution, improve knowledge base access |
-| **Short calls** | Rushed interactions, missed opportunities, good efficiency | Review for completeness, ensure quality isn't sacrificed for speed |
+| Long calls | Complex customer issues, agent uncertainty, inefficient processes | Provide training on issue resolution, improve knowledge base access |
+| Short calls | Rushed interactions, missed opportunities, good efficiency | Review for completeness, ensure quality isn't sacrificed for speed |
 
 #### Customer Satisfaction
 | **Pattern** | **Indicators** | **Actions** |
 |-------------|----------------|-------------|
-| **Low satisfaction scores** | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
-| **Declining satisfaction** | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
-| **High satisfaction** | Positive feedback, good efficiency | Recognise success, use as mentor, share best practices |
+| Low satisfaction scores | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
+| Declining satisfaction | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
+| High satisfaction | Positive feedback, good efficiency | Recognise success, use as mentor, share best practices |
 
 #### Resolution Rate
 | **Pattern** | **Implications** | **Training Focus** |
 |-------------|------------------|-------------------|
-| **Low resolution rates** | Training needs, process gaps | Product knowledge, troubleshooting skills, escalation procedures |
-| **High resolution rates** | Strong performance, good knowledge | Advanced training, leadership development, mentoring opportunities |
+| Low resolution rates | Training needs, process gaps | Product knowledge, troubleshooting skills, escalation procedures |
+| High resolution rates | Strong performance, good knowledge | Advanced training, leadership development, mentoring opportunities |
 
 ### Step 3: Create Action Plans
 Based on your analysis, create specific improvement plans:
@@ -130,10 +130,10 @@ Look for patterns that affect multiple agents:
 
 | **Pattern Type** | **What to Look For** | **Action** |
 |------------------|---------------------|------------|
-| **Common weaknesses** | Skills gaps across the team | Team-wide training programs |
-| **Training gaps** | Knowledge areas needing attention | Update training materials |
-| **Process issues** | Inefficiencies affecting performance | Process improvement initiatives |
-| **Success patterns** | What top performers do differently | Share best practices |
+| Common weaknesses | Skills gaps across the team | Team-wide training programs |
+| Training gaps | Knowledge areas needing attention | Update training materials |
+| Process issues | Inefficiencies affecting performance | Process improvement initiatives |
+| Success patterns | What top performers do differently | Share best practices |
 
 ---
 
@@ -170,9 +170,9 @@ Look for patterns that affect multiple agents:
 ### Regular Feedback Sessions
 | **Session Type** | **Frequency** | **Focus** |
 |------------------|---------------|-----------|
-| **Weekly one-on-ones** | Every week | Struggling agents, immediate issues |
-| **Monthly reviews** | Monthly | All agents, performance trends |
-| **Quarterly discussions** | Quarterly | Top performers, career development |
+| Weekly one-on-ones | Every week | Struggling agents, immediate issues |
+| Monthly reviews | Monthly | All agents, performance trends |
+| Quarterly discussions | Quarterly | Top performers, career development |
 
 ### Data-Driven Coaching
 - [ ] **Use specific examples** from call transcripts
@@ -192,9 +192,9 @@ Look for patterns that affect multiple agents:
 
 | **Problem** | **Root Cause** | **Solutions** |
 |-------------|----------------|---------------|
-| **Low Agent Scores** | Training gaps, unclear expectations, lack of support | Review specific weaknesses, provide targeted training, schedule additional coaching, consider role reassignment |
-| **Inconsistent Performance** | External factors, inconsistent training, unclear goals | Look for patterns in good vs. bad days, check for external factors, provide consistent training, set daily goals |
-| **Team-Wide Issues** | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programs, review and improve processes, consider external training resources |
+| Low Agent Scores | Training gaps, unclear expectations, lack of support | Review specific weaknesses, provide targeted training, schedule additional coaching, consider role reassignment |
+| Inconsistent Performance | External factors, inconsistent training, unclear goals | Look for patterns in good vs. bad days, check for external factors, provide consistent training, set daily goals |
+| Team-Wide Issues | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programs, review and improve processes, consider external training resources |
 
 ---
 

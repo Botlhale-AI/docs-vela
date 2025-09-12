@@ -12,9 +12,9 @@ Chat analysis reveals patterns in digital conversations. You'll be able to:
 
 | **Digital Experience** | **Response Optimization** | **Quality Improvement** |
 |----------------------|-------------------------|----------------------|
-| **Optimise response times** | **Improve digital engagement** | **Enhance chat quality** |
-| **Understand customer behaviour** | **Perfect your messaging** | **Track digital performance** |
-| **Identify automation opportunities** | **Increase resolution rates** | **Maintain digital standards** |
+| Optimise response times | Improve digital engagement | Enhance chat quality |
+| Understand customer behaviour | Perfect your messaging | Track digital performance |
+| Identify automation opportunities | Increase resolution rates | Maintain digital standards |
 
 ---
 
@@ -25,18 +25,18 @@ Chat analysis gives you unique insights into digital customer service:
 
 | **Metric Category** | **What It Shows** | **Digital Impact** |
 |-------------------|-------------------|------------------|
-| **Response Time** | Speed of agent replies | Customer satisfaction, engagement |
-| **Message Count** | Conversation complexity | Issue complexity, efficiency |
-| **Customer Sentiment** | Digital satisfaction levels | Digital experience quality |
-| **Session Duration** | Time investment and efficiency | Resource allocation, automation opportunities |
+| Response Time | Speed of agent replies | Customer satisfaction, engagement |
+| Message Count | Conversation complexity | Issue complexity, efficiency |
+| Customer Sentiment | Digital satisfaction levels | Digital experience quality |
+| Session Duration | Time investment and efficiency | Resource allocation, automation opportunities |
 <!-- | **Resolution Rate** | Problem-solving effectiveness | Digital service quality | -->
 ### Chat Quality Indicators
 | **Indicator** | **What It Means** | **Digital Action** |
 |---------------|-------------------|------------------|
-| **Fast response + High satisfaction** | Excellent digital service | Replicate successful patterns |
-| **Slow response + Low satisfaction** | Digital service issues | Optimise response processes |
-| **High message count + Low resolution** | Complex issues or inefficiency | Improve processes or training |
-| **Low message count + High resolution** | Efficient digital service | Scale successful approaches |
+| Fast response + High satisfaction | Excellent digital service | Replicate successful patterns |
+| Slow response + Low satisfaction | Digital service issues | Optimise response processes |
+| High message count + Low resolution | Complex issues or inefficiency | Improve processes or training |
+| Low message count + High resolution | Efficient digital service | Scale successful approaches |
 
 ---
 
@@ -80,20 +80,20 @@ Understand how customers interact in digital channels:
 
 | **Behaviour Pattern** | **What to Look For** | **Business Opportunity** |
 |---------------------|---------------------|------------------------|
-| **Quick Questions** | Simple queries that could be automated | Chatbot implementation |
-| **Complex Issues** | Detailed problems requiring human expertise | Specialised agent training |
-| **Multi-channel** | Customers switching between channels | Omnichannel optimization |
-| **Peak Usage Times** | High-volume periods | Resource planning |
+| Quick Questions | Simple queries that could be automated | Chatbot implementation |
+| Complex Issues | Detailed problems requiring human expertise | Specialised agent training |
+| Multi-channel | Customers switching between channels | Omnichannel optimization |
+| Peak Usage Times | High-volume periods | Resource planning |
 
 ### Agent Performance in Digital
 Identify digital-specific performance patterns:
 
 | **Pattern** | **Digital Indicators** | **Improvement Focus** |
 |-------------|---------------------|---------------------|
-| **Fast Typing** | Quick responses, high message count | Response efficiency |
-| **Thoughtful Responses** | Longer, more detailed messages | Quality vs. speed balance |
-| **Template Usage** | Consistent, professional responses | Template optimization |
-| **Personal Touch** | Customised, empathetic responses | Personalisation training |
+| Fast Typing | Quick responses, high message count | Response efficiency |
+| Thoughtful Responses | Longer, more detailed messages | Quality vs. speed balance |
+| Template Usage | Consistent, professional responses | Template optimization |
+| Personal Touch | Customised, empathetic responses | Personalisation training |
 
 ---
 
@@ -104,10 +104,10 @@ Improve the speed and quality of digital interactions:
 
 | **Response Time** | **Customer Expectation** | **Action Required** |
 |------------------|-------------------------|-------------------|
-| **Under 30 seconds** | Excellent digital service | Maintain and replicate |
-| **30-60 seconds** | Good digital service | Optimise response processes |
-| **60+ seconds** | Poor digital service | Immediate process review |
-| **No response** | Failed digital service | Escalation procedures |
+| Under 30 seconds | Excellent digital service | Maintain and replicate |
+| 30-60 seconds | Good digital service | Optimise response processes |
+| 60+ seconds | Poor digital service | Immediate process review |
+| No response | Failed digital service | Escalation procedures |
 
 ### Message Quality Improvement
 Enhance the effectiveness of digital communication:
@@ -122,10 +122,10 @@ Identify conversations that could be automated:
 
 | **Conversation Type** | **Automation Potential** | **Implementation** |
 |---------------------|------------------------|------------------|
-| **FAQ Questions** | High - Standard responses | Chatbot with knowledge base |
-| **Simple Requests** | Medium - Basic workflows | Automated workflows |
-| **Complex Issues** | Low - Human expertise needed | Human agent escalation |
-| **Complaints** | Low - Emotional intelligence required | Specialised agent handling |
+| FAQ Questions | High - Standard responses | Chatbot with knowledge base |
+| Simple Requests | Medium - Basic workflows | Automated workflows |
+| Complex Issues | Low - Human expertise needed | Human agent escalation |
+| Complaints | Low - Emotional intelligence required | Specialised agent handling |
 
 ---
 
@@ -136,10 +136,10 @@ Optimise the digital customer experience:
 
 | **Interface Element** | **What to Monitor** | **Optimization** |
 |---------------------|-------------------|-----------------|
-| **Welcome Messages** | Engagement and response rates | A/B test different approaches |
-| **Response Templates** | Consistency and effectiveness | Update based on performance |
-| **Escalation Process** | Smoothness of handoffs | Streamline procedures |
-| **Closing Messages** | Customer satisfaction and follow-up | Optimise for retention |
+| Welcome Messages | Engagement and response rates | A/B test different approaches |
+| Response Templates | Consistency and effectiveness | Update based on performance |
+| Escalation Process | Smoothness of handoffs | Streamline procedures |
+| Closing Messages | Customer satisfaction and follow-up | Optimise for retention |
 
 ### Multi-channel Integration
 Ensure seamless experience across channels:
@@ -158,9 +158,9 @@ Monitor these key indicators for digital success:
 
 | **KPI** | **Target** | **Digital Threshold** |
 |---------|------------|---------------------|
-| **Average Response Time** | Under 30 seconds | Above 60 seconds = process review |
-| **Customer Satisfaction** | 90%+ positive | Below 80% = immediate optimization |
-| **Session Duration** | 3-5 minutes | Above 10 minutes = efficiency review |
+| Average Response Time | Under 30 seconds | Above 60 seconds = process review |
+| Customer Satisfaction | 90%+ positive | Below 80% = immediate optimization |
+| Session Duration | 3-5 minutes | Above 10 minutes = efficiency review |
 <!-- | **First Contact Resolution** | 85%+ | Below 75% = training or process review | -->
 
 ### Digital Trend Analysis
@@ -175,10 +175,10 @@ Monitor these key indicators for digital success:
 
 | **Problem** | **Digital Cause** | **Solution** |
 |-------------|------------------|--------------|
-| **Slow response times** | High volume, agent workload, technical issues | Optimise processes, add resources, fix technical problems |
-| **Low customer satisfaction** | Poor response quality, slow service, technical problems | Improve training, optimise processes, enhance technology |
-| **High escalation rates** | Complex issues, agent limitations, process gaps | Better training, improved processes, clearer escalation criteria |
-| **Technical difficulties** | System issues, connectivity problems, interface problems | Technical support, system upgrades, user training |
+| Slow response times | High volume, agent workload, technical issues | Optimise processes, add resources, fix technical problems |
+| Low customer satisfaction | Poor response quality, slow service, technical problems | Improve training, optimise processes, enhance technology |
+| High escalation rates | Complex issues, agent limitations, process gaps | Better training, improved processes, clearer escalation criteria |
+| Technical difficulties | System issues, connectivity problems, interface problems | Technical support, system upgrades, user training |
 
 ---
 

@@ -57,10 +57,10 @@ Track your organisation's platform usage:
 
 | **Metric** | **What It Shows** | **Action** |
 |------------|-------------------|------------|
-| **Current usage** | How much data you've processed | Monitor growth trends |
-| **Monthly allocation** | Your plan limits | Plan for upgrades if needed |
-| **Usage trends** | Growth over time | Optimise usage patterns |
-| **Upgrade options** | Available plan improvements | Consider scaling up |
+| Current usage | How much data you've processed | Monitor growth trends |
+| Monthly allocation | Your plan limits | Plan for upgrades if needed |
+| Usage trends | Growth over time | Optimise usage patterns |
+| Upgrade options | Available plan improvements | Consider scaling up |
 
 ![Account Settings](../img/screenshots/settings/settings3.png)
 
@@ -114,10 +114,10 @@ Structure your organisation for better management:
 ### User Roles and Permissions
 | **Role** | **Permissions** | **Best For** |
 |----------|-----------------|--------------|
-| **Admin** | Full system access, user management, organisation settings | IT managers, system administrators |
-| **Manager** | Team management, reports, agent oversight | Team leaders, supervisors |
-| **Agent** | View own performance, access knowledge base | Customer service agents |
-| **Analyst** | Data analysis, reporting, insights | Business analysts, quality assurance |
+| Admin | Full system access, user management, organisation settings | IT managers, system administrators |
+| Manager | Team management, reports, agent oversight | Team leaders, supervisors |
+| Agent | View own performance, access knowledge base | Customer service agents |
+| Analyst | Data analysis, reporting, insights | Business analysts, quality assurance |
 
 ---
 
@@ -188,9 +188,9 @@ Structure your organisation for better management:
 
 | **Problem** | **Solution** |
 |-------------|--------------|
-| **Can't access settings** | Check user permissions, verify admin access, contact support |
-| **Changes not saving** | Check internet connection, refresh page, clear browser cache |
-| **Users not receiving notifications** | Verify email settings, check spam filters, test notification delivery |
+| Can't access settings | Check user permissions, verify admin access, contact support |
+| Changes not saving | Check internet connection, refresh page, clear browser cache |
+| Users not receiving notifications | Verify email settings, check spam filters, test notification delivery |
 <!-- | **API integration issues** | Contact your Account Manager, check rate limits, review authentication settings | -->
 
 ---

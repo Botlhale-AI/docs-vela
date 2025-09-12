@@ -111,13 +111,13 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 | **I want to...** | **Start with...** |
 |------------------|-------------------|
-| **Get started** | [Quick Start Guide](./quick-start.md) |
-| **Upload my data** | [Data Upload Guide](./data-upload.md) |
-| **Monitor my team** | [Dashboard Guide](./dashboard.md) |
-| **Coach my agents** | [Agent Performance](./agents.md) |
-| **Generate reports** | [Reports Guide](./reports.md) |
+| Get started | [Quick Start Guide](./quick-start.md) |
+| Upload my data | [Data Upload Guide](./data-upload.md) |
+| Monitor my team | [Dashboard Guide](./dashboard.md) |
+| Coach my agents | [Agent Performance](./agents.md) |
+| Generate reports | [Reports Guide](./reports.md) |
 
-| **Configure alerts** | [Notifications Guide](./notifications.md) |
-| **Analyse calls** | [Call Analysis](./calls.md) |
-| **Set up quality monitoring** | [Smart Detector](./smart-detector-overview.md) |
-| **Manage my account** | [Settings Guide](./settings.md) |
+| Configure alerts | [Notifications Guide](./notifications.md) |
+| Analyse calls | [Call Analysis](./calls.md) |
+| Set up quality monitoring | [Smart Detector](./smart-detector-overview.md) |
+| Manage my account | [Settings Guide](./settings.md) |

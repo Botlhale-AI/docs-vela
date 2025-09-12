@@ -12,9 +12,9 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 
 | **Performance Evaluation** | **Coaching & Development** | **Quality Assurance** |
 |---------------------------|---------------------------|---------------------|
-| **Measure performance objectively** | **Guide targeted coaching** | **Ensure consistent standards** |
-| **Identify training needs** | **Track improvement over time** | **Maintain quality standards** |
-| **Recognise excellence** | **Drive continuous improvement** | **Support compliance requirements** |
+| Measure performance objectively | Guide targeted coaching | Ensure consistent standards |
+| Identify training needs | Track improvement over time | Maintain quality standards |
+| Recognise excellence | Drive continuous improvement | Support compliance requirements |
 
 ---
 
@@ -50,20 +50,20 @@ Structure your scorecard with these key performance areas:
 
 | **Category** | **What It Measures** | **Scoring Focus** |
 |--------------|---------------------|------------------|
-| **Communication** | Clarity, professionalism, empathy | Tone, language, listening skills |
-| **Problem Solving** | Issue resolution effectiveness | Analysis, creativity, follow-through |
-| **Product Knowledge** | Understanding of products/services | Accuracy, depth, application |
-| **Customer Focus** | Meeting customer needs and expectations | Understanding, responsiveness, satisfaction |
-| **Efficiency** | Time management and process adherence | Speed, accuracy, resource utilization |
-| **Compliance** | Policy adherence and regulatory requirements | Documentation, procedures, standards |
+| Communication | Clarity, professionalism, empathy | Tone, language, listening skills |
+| Problem Solving | Issue resolution effectiveness | Analysis, creativity, follow-through |
+| Product Knowledge | Understanding of products/services | Accuracy, depth, application |
+| Customer Focus | Meeting customer needs and expectations | Understanding, responsiveness, satisfaction |
+| Efficiency | Time management and process adherence | Speed, accuracy, resource utilization |
+| Compliance | Policy adherence and regulatory requirements | Documentation, procedures, standards |
 
 ### Scoring System
 | **Score Range** | **Performance Level** | **Action Required** |
 |-----------------|---------------------|-------------------|
-| **90-100%** | Excellent | Recognise, mentor others, advanced development |
-| **80-89%** | Good | Minor improvements, skill refinement |
-| **70-79%** | Satisfactory | Coaching needed, specific improvements |
-| **Below 70%** | Needs Improvement | Intervention, intensive coaching |
+| 90-100% | Excellent | Recognise, mentor others, advanced development |
+| 80-89% | Good | Minor improvements, skill refinement |
+| 70-79% | Satisfactory | Coaching needed, specific improvements |
+| Below 70% | Needs Improvement | Intervention, intensive coaching |
 
 ---
 
@@ -74,29 +74,29 @@ Choose evaluation criteria that align with your business goals:
 
 | **Business Goal** | **Focus Areas** | **Evaluation Criteria** |
 |------------------|-----------------|----------------------|
-| **Customer Satisfaction** | Service quality, problem resolution | Communication, customer focus, problem solving |
-| **Operational Efficiency** | Speed, accuracy, productivity | Efficiency, process adherence, time management |
-| **Compliance & Quality** | Standards, procedures, documentation | Compliance, accuracy, documentation |
-| **Team Development** | Skill growth, knowledge sharing | Product knowledge, communication, mentoring |
+| Customer Satisfaction | Service quality, problem resolution | Communication, customer focus, problem solving |
+| Operational Efficiency | Speed, accuracy, productivity | Efficiency, process adherence, time management |
+| Compliance & Quality | Standards, procedures, documentation | Compliance, accuracy, documentation |
+| Team Development | Skill growth, knowledge sharing | Product knowledge, communication, mentoring |
 
 ### Weighting Strategy
 Assign appropriate weights to different criteria:
 
 | **Weighting Approach** | **When to Use** | **Example Weights** |
 |----------------------|-----------------|-------------------|
-| **Balanced** | General performance evaluation | Equal weights (16.7 percent each) |
-| **Customer-Focused** | Service-oriented roles | Communication (25 percent), Customer Focus (25 percent), Problem Solving (20 percent) |
-| **Efficiency-Focused** | High-volume operations | Efficiency (30 percent), Process Adherence (25 percent), Speed (20 percent) |
-| **Quality-Focused** | Compliance-heavy roles | Compliance (30 percent), Accuracy (25 percent), Documentation (20 percent) |
+| Balanced | General performance evaluation | Equal weights (16.7 percent each) |
+| Customer-Focused | Service-oriented roles | Communication (25 percent), Customer Focus (25 percent), Problem Solving (20 percent) |
+| Efficiency-Focused | High-volume operations | Efficiency (30 percent), Process Adherence (25 percent), Speed (20 percent) |
+| Quality-Focused | Compliance-heavy roles | Compliance (30 percent), Accuracy (25 percent), Documentation (20 percent) |
 
 ### Performance Standards
 Define clear expectations for each criterion:
 
 | **Criterion** | **Excellent (90-100 percent)** | **Good (80-89 percent)** | **Satisfactory (70-79 percent)** | **Needs Improvement (below 70 percent)** |
 |---------------|------------------------|------------------|-------------------------|----------------------------|
-| **Communication** | Clear, professional, empathetic, excellent listening | Generally clear, professional, good listening | Sometimes unclear, basic professionalism | Unclear, unprofessional, poor listening |
-| **Problem Solving** | Creative solutions, excellent follow-through | Effective solutions, good follow-through | Basic solutions, some follow-through | Ineffective solutions, poor follow-through |
-| **Customer Focus** | Exceeds expectations, anticipates needs | Meets expectations, responsive | Sometimes meets expectations | Fails to meet expectations |
+| Communication | Clear, professional, empathetic, excellent listening | Generally clear, professional, good listening | Sometimes unclear, basic professionalism | Unclear, unprofessional, poor listening |
+| Problem Solving | Creative solutions, excellent follow-through | Effective solutions, good follow-through | Basic solutions, some follow-through | Ineffective solutions, poor follow-through |
+| Customer Focus | Exceeds expectations, anticipates needs | Meets expectations, responsive | Sometimes meets expectations | Fails to meet expectations |
 
 ---
 
@@ -129,20 +129,20 @@ Use scorecard results to guide agent improvement:
 
 | **Score Pattern** | **Development Focus** | **Action Plan** |
 |------------------|---------------------|----------------|
-| **High scores across all areas** | Advanced development, leadership | Mentoring opportunities, advanced training, career progression |
-| **Mixed scores** | Targeted improvement | Focus coaching on low-scoring areas, build on strengths |
-| **Low scores in specific areas** | Skill development | Targeted training, practice opportunities, peer support |
-| **Consistently low scores** | Full development plan | Intensive coaching, skill assessment, role evaluation |
+| High scores across all areas | Advanced development, leadership | Mentoring opportunities, advanced training, career progression |
+| Mixed scores | Targeted improvement | Focus coaching on low-scoring areas, build on strengths |
+| Low scores in specific areas | Skill development | Targeted training, practice opportunities, peer support |
+| Consistently low scores | Full development plan | Intensive coaching, skill assessment, role evaluation |
 
 ### Team Analysis
 Analyse patterns across your team:
 
 | **Pattern** | **Team Impact** | **Management Action** |
 |-------------|-----------------|---------------------|
-| **High team scores** | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
-| **Mixed team performance** | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
-| **Low team scores** | Systemic issues, training gaps | Full training review, process improvement |
-| **Declining scores** | Performance issues, changing standards | Investigate root causes, adjust expectations |
+| High team scores | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
+| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
+| Low team scores | Systemic issues, training gaps | Full training review, process improvement |
+| Declining scores | Performance issues, changing standards | Investigate root causes, adjust expectations |
 
 ### Process Improvement
 Use scorecard data to improve processes:
@@ -180,10 +180,10 @@ Use scorecard data to improve processes:
 
 | **Problem** | **Cause** | **Solution** |
 |-------------|-----------|--------------|
-| **Inconsistent scoring** | Unclear criteria, subjective standards | Define specific criteria, provide examples, train evaluators |
-| **Low agent engagement** | Lack of understanding, perceived unfairness | Explain purpose, provide training, address concerns |
-| **Resistance to change** | Fear of evaluation, unclear benefits | Communicate benefits, involve agents in design, provide support |
-| **Poor correlation with outcomes** | Misaligned criteria, wrong focus areas | Review business goals, adjust criteria, measure impact |
+| Inconsistent scoring | Unclear criteria, subjective standards | Define specific criteria, provide examples, train evaluators |
+| Low agent engagement | Lack of understanding, perceived unfairness | Explain purpose, provide training, address concerns |
+| Resistance to change | Fear of evaluation, unclear benefits | Communicate benefits, involve agents in design, provide support |
+| Poor correlation with outcomes | Misaligned criteria, wrong focus areas | Review business goals, adjust criteria, measure impact |
 
 ---
 

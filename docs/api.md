@@ -12,8 +12,8 @@ APIs enable seamless integration between systems. You'll be able to:
 
 | **Automation** | **Integration** | **Customisation** |
 |----------------|-----------------|-------------------|
-| **Stop manual uploads forever** | **Build your dream dashboard** | **Work smarter, not harder** |
-| **Know your customers better** | **Build the future** | **Create automated workflows** |
+| Stop manual uploads forever | Build your dream dashboard | Work smarter, not harder |
+| Know your customers better | Build the future | Create automated workflows |
 
 ---
 
@@ -63,9 +63,9 @@ APIs enable seamless integration between systems. You'll be able to:
 
 | **Approach** | **Best For** | **When to Use** |
 |--------------|--------------|-----------------|
-| **Direct API Integration** | Custom applications, automated workflows, call analytics data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, call analytics data processing |
-| **Webhook Integration** | Event-driven workflows, automated notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, automated notification systems, automated ticket creation |
-| **Batch Processing** | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
+| Direct API Integration | Custom applications, automated workflows, call analytics data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, call analytics data processing |
+| Webhook Integration | Event-driven workflows, automated notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, automated notification systems, automated ticket creation |
+| Batch Processing | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
 
 ---
 
@@ -198,9 +198,9 @@ def update_customer_profile(call_data):
 
 | **Pattern** | **Description** | **Implementation** |
 |-------------|-----------------|-------------------|
-| **Data Synchronization** | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
-| **Event-Driven Architecture** | React to Vela events automatically | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
-| **Custom Analytics Pipeline** | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualisation |
+| Data Synchronization | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
+| Event-Driven Architecture | React to Vela events automatically | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
+| Custom Analytics Pipeline | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualisation |
 
 ---
 
@@ -236,10 +236,10 @@ def update_customer_profile(call_data):
 
 | **Problem** | **Solution** |
 |-------------|--------------|
-| **Authentication Problems** | Verify API token is correct and not expired, check token permissions and scope, ensure token is included in request headers |
-| **Rate Limiting Issues** | Implement exponential backoff retry logic, reduce request frequency, use batch operations to reduce API calls |
-| **Data Upload Failures** | Verify file format and size requirements, check network connectivity and timeouts, validate request payload structure |
-| **Webhook Delivery Issues** | Verify webhook endpoint is accessible, check webhook URL and authentication, monitor webhook delivery logs |
+| Authentication Problems | Verify API token is correct and not expired, check token permissions and scope, ensure token is included in request headers |
+| Rate Limiting Issues | Implement exponential backoff retry logic, reduce request frequency, use batch operations to reduce API calls |
+| Data Upload Failures | Verify file format and size requirements, check network connectivity and timeouts, validate request payload structure |
+| Webhook Delivery Issues | Verify webhook endpoint is accessible, check webhook URL and authentication, monitor webhook delivery logs |
 
 ---
 
@@ -247,10 +247,10 @@ def update_customer_profile(call_data):
 
 | **Key Metrics** | **Success Indicators** |
 |-----------------|------------------------|
-| **Data synchronization accuracy** | Reduced manual work |
-| **API response times** | Improved data accuracy |
-| **Error rates** | Improved response times |
-| **Data quality** | Enhanced insights |
+| Data synchronization accuracy | Reduced manual work |
+| API response times | Improved data accuracy |
+| Error rates | Improved response times |
+| Data quality | Enhanced insights |
 
 ---
 

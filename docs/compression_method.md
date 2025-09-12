@@ -404,7 +404,7 @@ const nextConfig = {
 
 ## Next Steps
 
-| **For Performance Monitoring** | **For Technical Support** |
+| For Performance Monitoring | For Technical Support |
 |------------------------|------------------|
 | [Monitor Performance](./dashboard.md) | [Contact Support](mailto:support@botlhale.ai) |
 

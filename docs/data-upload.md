@@ -55,16 +55,16 @@ When you upload your data to Vela, you can:
 ### Call Recordings
 | **Format Type** | **Supported Formats** | **File Size Limit** |
 |-----------------|---------------------|-------------------|
-| **Audio formats** | WAV, MP3, and other standard call recording formats | Up to 1 GB per upload |
-| **Video formats** | Various video formats with audio extraction | Up to 1 GB per upload |
-| **Batch uploads** | Multiple files at once / zipped files (ZIP, RAR, 7Z) | Up to 3 GB per upload |
+| Audio formats | WAV, MP3, and other standard call recording formats | Up to 1 GB per upload |
+| Video formats | Various video formats with audio extraction | Up to 1 GB per upload |
+| Batch uploads | Multiple files at once / zipped files (ZIP, RAR, 7Z) | Up to 3 GB per upload |
 
 ### Chat Data
 | **Format Type** | **Supported Formats** | **Requirements** |
 |-----------------|---------------------|------------------|
-| **Text formats** | JSON | Structured data with timestamps |
-| **Structured data** | Agent and customer messages | Sender, timestamp, message content |
-| **Metadata** | Session information | Agent IDs, customer IDs |
+| Text formats | JSON | Structured data with timestamps |
+| Structured data | Agent and customer messages | Sender, timestamp, message content |
+| Metadata | Session information | Agent IDs, customer IDs |
 
 ### Data Requirements
 - [ ] **Call recordings**: Audio quality affects transcription accuracy
@@ -128,18 +128,18 @@ Ensure your data is ready for analysis:
 
 | **Step** | **Action** | **Details** |
 |----------|------------|-------------|
-| **1** | **Contact your Vela Account Manager** | Provide system details and requirements |
-| **2** | **Provide system details** | Call recording system type, data storage location, current data format |
-| **3** | **Set up integration** | We'll configure the connection |
-| **4** | **Test the connection** | Ensure data flows correctly |
-| **5** | **Go live** | Automated uploads begin |
+| 1 | Contact your Vela Account Manager | Provide system details and requirements |
+| 2 | Provide system details | Call recording system type, data storage location, current data format |
+| 3 | Set up integration | We'll configure the connection |
+| 4 | Test the connection | Ensure data flows correctly |
+| 5 | Go live | Automated uploads begin |
 
 ### Integration Options
 | **Integration Type** | **Best For** | **Setup Complexity** |
 |---------------------|--------------|---------------------|
-| **FTP/SFTP servers** | Direct file transfer | Medium |
-| **Cloud storage** | AWS S3, Google Cloud, Azure | Low |
-| **API integration** | Custom data feeds | High |
+| FTP/SFTP servers | Direct file transfer | Medium |
+| Cloud storage | AWS S3, Google Cloud, Azure | Low |
+| API integration | Custom data feeds | High |
 
 
 ---
@@ -221,9 +221,9 @@ print(response.json())
 ### Processing Overview
 | **File Size** | **Processing** | **What Happens** |
 |---------------|----------------|------------------|
-| **Small files** (< 10 MB) | Varies | Transcription, analysis, insights generation |
-| **Medium files** (10-100 MB) | Varies | Full processing with detailed analysis |
-| **Large files** (> 100 MB) | Varies | Full analysis with all features |
+| Small files (< 10 MB) | Varies | Transcription, analysis, insights generation |
+| Medium files (10-100 MB) | Varies | Full processing with detailed analysis |
+| Large files (> 100 MB) | Varies | Full analysis with all features |
 
 ### Factors Affecting Processing Time
 - [ ] **File size** - Larger files take longer to process
@@ -238,9 +238,9 @@ print(response.json())
 ### Troubleshooting Upload Issues
 | **Problem** | **Common Cause** | **Solution** |
 |-------------|------------------|--------------|
-| **Upload fails** | File too large, unsupported format | Check file size and format requirements |
-| **Processing fails** | Poor audio quality, corrupted file | Verify file integrity and audio quality |
-| **Slow processing** | Large files, system load | Wait for completion or try during off-peak hours |
+| Upload fails | File too large, unsupported format | Check file size and format requirements |
+| Processing fails | Poor audio quality, corrupted file | Verify file integrity and audio quality |
+| Slow processing | Large files, system load | Wait for completion or try during off-peak hours |
 
 ---
 
