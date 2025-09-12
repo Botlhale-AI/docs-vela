@@ -109,20 +109,7 @@ Your dashboard shows call analytics data for your selected team and time period.
 
 ---
 
-## Best Practices
 
-### Save Multiple Dashboards
-Create different dashboard views for different purposes:
-
-| **Dashboard Type** | **Focus** | **Use Case** |
-|-------------------|-----------|--------------|
-| Daily Operations | Current performance | Morning check-ins |
-| Weekly Review | Trend analysis | Team meetings |
-| Monthly Planning | Forecasting metrics | Strategic planning |
-
-### Use Filters Effectively
-- **Date ranges** - Compare different time periods
-- **Team filters** - Focus on specific groups
 <!-- - **Call types** - Analyse different interaction types -->
 <!-- - **Agent filters** - Review individual performance -->
 
