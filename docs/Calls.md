@@ -55,6 +55,7 @@ Your call analysis gives you insights into every interaction:
 
 ![Calls](../img/screenshots/calls/calls-2.png)
 - [ ] **Read the full conversation** with timestamps
+- [ ] **Use the translation feature** to understand calls in African languages (Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, Xitsonga)
 - [ ] **Look for key moments** that affected the outcome
 - [ ] **Identify customer pain points** and agent responses
 - [ ] **Note successful resolution strategies**
