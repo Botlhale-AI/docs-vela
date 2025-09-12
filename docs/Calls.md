@@ -170,20 +170,20 @@ Understand how agents are evaluated:
 | Customer Focus | Understanding and meeting customer needs | Customer service training |
 
 ### Agent Score Boundaries
-Know what each score range means and what to do about it:
+Understand the performance zones and what actions to take:
 
-| **Score Range** | **What It Means** | **Action Required** |
-|----------------|-------------------|-------------------|
-| **90-100%** | Excellent performance | Recognise and replicate |
-| **80-89%** | Good performance | Monitor and maintain |
-| **70-79%** | Satisfactory performance | Regular coaching needed |
-| **60-69%** | Needs improvement | Intensive coaching required |
-| **Below 60%** | Poor performance | Immediate intervention needed |
+| **Zone** | **Score Range** | **What It Means** | **Action Required** |
+|----------|----------------|-------------------|-------------------|
+| 🟢 **Green Zone** | Upper Bound to 100% | Excellent performance | Recognise and replicate |
+| 🟡 **Amber Zone** | Lower Bound to Upper Bound | Needs improvement | Regular coaching needed |
+| 🔴 **Red Zone** | 0% to Lower Bound | Poor performance | Immediate intervention needed |
 
 #### Quick Reference
-- **80%+**: High performers - use as mentors
-- **70-79%**: Solid performance - focus on consistency
-- **Below 70%**: Needs attention - provide support
+- 🟢 **Green Zone**: High performers - use as mentors
+- 🟡 **Amber Zone**: Focus on specific skill gaps
+- 🔴 **Red Zone**: Needs immediate attention and support
+
+> **Note**: Score boundaries are configured in Settings → Notifications → Agent Score Boundaries. Default values are typically Lower Bound (50%) and Upper Bound (80%).
 
 ---
 

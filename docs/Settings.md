@@ -119,6 +119,39 @@ Structure your organisation for better management:
 | Agent | View own performance, access knowledge base | Customer service agents |
 | Analyst | Data analysis, reporting, insights | Business analysts, quality assurance |
 
+### Agent Score Boundaries
+Configure performance thresholds for your team:
+
+- [ ] **Go to "Settings" → "Notification " → "Agent Score Boundaries"**
+- [ ] **Set performance thresholds** for your organisation:
+  - [ ] **Red Zone**: 0% to Lower Bound (e.g., 0-50%)
+  - [ ] **Amber Zone**: Lower Bound to Upper Bound (e.g., 50-80%)
+  - [ ] **Green Zone**: Upper Bound to 100% (e.g., 80-100%)
+- [ ] **Adjust Lower Bound** using the input field
+- [ ] **Adjust Upper Bound** using the input field
+- [ ] **Customise coaching actions** for each threshold
+- [ ] **Set up automated alerts** for performance drops
+- [ ] **Configure escalation rules** for low performers
+
+### Agent Performance Sharing
+Automate performance report delivery to agents:
+
+- [ ] **Enable "Share Agent Performance Reports"** checkbox
+- [ ] **Choose reporting frequency**:
+  - [ ] **Daily** - Send reports every day
+  - [ ] **Weekly** - Send reports weekly (recommended)
+    - [ ] **Set time** for report delivery (e.g., 10:00)
+    - [ ] **Select day of week** (e.g., Monday)
+  - [ ] **Monthly** - Send reports monthly
+- [ ] **Test report delivery** to ensure agents receive notifications
+
+| **Score Range** | **Action Required** | **Coaching Focus** |
+|----------------|-------------------|-------------------|
+| 🟢 **Green Zone** | Recognition and replication | Share best practices with team |
+| 🟡 **Amber Zone** | Regular coaching needed | Address specific skill gaps |
+| 🔴 **Red Zone** | Immediate intervention needed | Comprehensive retraining |
+
+![ Settings](../img/screenshots/settings/settings9.png)
 ---
 
 ## Security and Access Control
