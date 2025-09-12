@@ -36,7 +36,7 @@ const sidebars = {
       label: 'Agents',
       collapsible: true,
       collapsed: true,
-      items: ['agents'],
+      items: ['Agents'],
     },
     {
       type: 'category',
@@ -77,6 +77,11 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items: ['data-upload', 'compression_method'],
+    },
+    {
+      type: 'link',
+      label: 'API & Integration',
+      href: 'https://docs-apis.botlhale.xyz',
     },
     {
       type: 'category',
