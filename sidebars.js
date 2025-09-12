@@ -36,7 +36,7 @@ const sidebars = {
       label: 'Agents',
       collapsible: true,
       collapsed: true,
-      items: ['Agents'],
+      items: ['agents'],
     },
     {
       type: 'category',
