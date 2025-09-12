@@ -162,9 +162,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   background-color: var(--bg-color);
-  height: 100vh; 
+  min-height: 70vh; 
+  margin-bottom: 5rem;
 }
 
 .heroContent {
@@ -173,6 +174,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 2rem;
 }
 
 .featuresSection {
@@ -329,7 +331,8 @@ body {
   gap: 1rem;
   margin-top: 2rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .getStarted {
@@ -395,7 +398,11 @@ body {
 
 .heroText {
   flex: 1;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroImageContainer {
@@ -570,6 +577,30 @@ body {
 
   .subtitle {
     font-size: 1rem;
+  }
+
+  .heroSection {
+    padding: 2rem 1rem;
+    min-height: 60vh;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .heroText {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .heroLogo {
+    width: 200px;
+  }
+
+  .heroButtons {
+    justify-content: center;
   }
 }
 
