@@ -64,9 +64,16 @@ Your call analysis gives you insights into every interaction:
 
 ![Calls](../img/screenshots/calls/calls-3.png)
 - [ ] **Review agent score** and breakdown
-- [ ] **Check customer sentiment** throughout the call
+- [ ] **Check customer sentiment** throughout the call using the Sentiment tab
 - [ ] **Examine call duration** and efficiency
 - [ ] **Assess resolution effectiveness**
+- [ ] **Explore Smart Detector tabs** for deeper insights:
+  - [ ] **Summary** - Overview of key call metrics and highlights
+  - [ ] **Keywords** - Important terms and phrases identified in the conversation
+  - [ ] **Alerts** - Automated notifications about critical moments or issues
+  - [ ] **Intents** - Customer intentions and goals detected during the call
+  - [ ] **Scorecard** - Detailed performance evaluation across multiple criteria
+  - [ ] **Pain Points** - Specific customer frustrations and challenges identified
 
 ### Step 4: Take Action
 
