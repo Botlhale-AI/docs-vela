@@ -172,3 +172,34 @@ You've just unlocked the capabilities that will make your call centre more effec
 
 
 > **💡 Pro Tip**: Use the left sidebar in the Vela platform to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation based on your feedback. Your input helps us identify pain points and make the guides more useful for everyone.
+
+### Quick Feedback
+**How would you rate this guide?**
+- ⭐⭐⭐⭐⭐ **Excellent** - Everything I needed to get started
+- ⭐⭐⭐⭐ **Good** - Mostly helpful with minor issues
+- ⭐⭐⭐ **Average** - Some useful information but needs improvement
+- ⭐⭐ **Poor** - Missing important information
+- ⭐ **Terrible** - Not helpful at all
+
+### What Could We Improve?
+- [ ] **More detailed steps** - Need more specific instructions
+- [ ] **Better screenshots** - Visual examples would help
+- [ ] **Additional examples** - Real-world use cases
+- [ ] **Different organization** - Restructure the content flow
+- [ ] **Missing information** - Something important wasn't covered
+- [ ] **Too complex** - Need simpler explanations
+
+### Share Your Experience
+- **What worked well?** Tell us what was most helpful
+- **What was confusing?** Help us identify unclear sections
+- **What's missing?** What would make this guide better?
+
+**[📝 Submit Feedback](https://forms.gle/oiTZYysNvyRnGRcY6)** - Help us improve this guide for everyone
+
+> **Why this matters**: Your feedback directly influences how we improve our documentation. We review every submission and use it to make our guides more helpful for future users.
