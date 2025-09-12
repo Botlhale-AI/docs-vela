@@ -113,6 +113,7 @@ Identify trends that affect team performance:
 
 ### For Individual Agents
 - [ ] **Review recent calls** with the agent
+- [ ] **Give direct feedback** using the comment system on specific calls
 - [ ] **Identify specific improvement areas** from the data
 - [ ] **Create targeted coaching plans** based on patterns
 - [ ] **Track progress** over time
@@ -128,6 +129,14 @@ Identify trends that affect team performance:
 - [ ] **Spot opportunities** for automation or streamlining
 - [ ] **Update procedures** based on customer feedback
 - [ ] **Optimise resource allocation** based on call patterns
+
+### Direct Feedback System
+Team Leads can provide immediate, targeted feedback to agents:
+
+- [ ] **Add comments** directly on specific calls
+- [ ] **Highlight key moments** in the conversation that need attention
+- [ ] **Provide specific examples** of what went well or needs improvement
+- [ ] **Track feedback history** to monitor agent development over time
 
 ---
 
