@@ -34,7 +34,7 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 2. **Select your team** (e.g., "Customer Support Team")
 3. This filters all data to show only your team's performance
 
-![Team Selection - Screenshot showing the team dropdown menu and selection interface in the Vela dashboard](../img/screenshots/dashboard01.png)
+![Team Selection - Screenshot showing the team dropdown menu and selection interface in the Vela dashboard](../img/screenshots/dashboard/dashboard01.png)
 
 ### Step 3: Set Your Time Period
 1. **Click the date range** (e.g., "20/04/2025 – 28/04/2025")
@@ -42,7 +42,16 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 3. **Or select custom dates** from the calendar
 4. **Click "Save"** to apply
 
-![Date Range Selection - Screenshot showing the date picker interface with preset options like "This Week" and "Last Month"](../img/screenshots/date-range.png)
+---
+#### Date Range
+![Date Range"](../img/screenshots/dashboard/dashboard02.png)
+
+---
+
+#### Date Range Selection- Calendar
+![Date Range Selection- Calendar"](../img/screenshots/dashboard/dashboard04.png)
+
+---
 
 ### Step 4: Add Key Metrics
 1. **Click "Customise"** in the top-right corner
@@ -67,7 +76,15 @@ Ready to get started? Let's set up your dashboard in just a few steps.
 
 4. **Click "Save"** to apply your dashboard
 
-![Customise Dashboard - Screenshot showing the dashboard customisation panel with metric selection and configuration options](../img/screenshots/costomize.png)
+---
+
+#### Customise Button
+![Customise Button](../img/screenshots/dashboard/dashboard03.png)
+
+---
+
+#### Customise Dashboard - Options
+![Customise Dashboard - Options"](../img/screenshots/dashboard/dashboard05.png)
 
 ---
 

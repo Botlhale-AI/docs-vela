@@ -115,7 +115,7 @@ Now that you have data, you can create a meaningful dashboard that shows actual 
   - [ ] Sentiment Distribution  (gauge satisfaction)
 - [ ] **Click "Save"** to apply your settings
 
-![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
+![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard/dashboard01.png)
 
 > **[📖 Complete dashboard guide](./dashboard.md)** - Learn about all available metrics and customisation options
 > 
