@@ -65,6 +65,12 @@ const FeatureList = [
     link: '/docs/faq',
     description: 'Find quick answers to common questions about Vela.',
     icon: 'fas fa-question-circle',
+  },
+  {
+    title: 'Coaching Portal',
+    link: 'https://docs-coaching.botlhale.xyz',
+    description: 'Manage teams, create courses, and track agent progress.',
+    icon: 'fas fa-graduation-cap',
   }
 ];
 
@@ -92,6 +98,14 @@ const ytVideos = [
 ];
 
 function Feature({ title, link, description, icon }) {
+  const handleClick = () => {
+    if (link.startsWith('http')) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    } else {
+      window.location.href = link;
+    }
+  };
+
   return (
     <div className={clsx('col col--4')}>
       <div
@@ -101,7 +115,7 @@ function Feature({ title, link, description, icon }) {
           'padding--lg',
           'margin-bottom--lg'
         )}
-        onClick={() => (window.location.href = link)}
+        onClick={handleClick}
         style={{ cursor: 'pointer' }}
       >
         <div className={styles.featureHeader}>
