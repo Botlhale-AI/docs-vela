@@ -118,6 +118,7 @@ Now that you have data, you can create a meaningful dashboard that shows actual 
 ![Dashboard Setup - Screenshot showing the Vela dashboard customisation interface with team selection and metric configuration options](../img/screenshots/dashboard01.png)
 
 > **[📖 Complete dashboard guide](./dashboard.md)** - Learn about all available metrics and customisation options
+> 
 > **[📖 Dashboard troubleshooting](./dashboard.md#troubleshooting-common-issues)** - Fix common dashboard issues
 
 > **Why this matters**: Your dashboard becomes your command centre for monitoring team performance and customer satisfaction at a glance.
@@ -135,6 +136,7 @@ This is an advanced feature that lets you set up automated monitoring for specif
 - [ ] **Click "Create"** to start monitoring
 
 > **[📖 Smart Search guide](./smart-search-guide.md)** - Learn advanced search techniques and best practices
+> 
 > **[📖 Setting up notifications](./notifications.md)** - Configure alerts for your searches
 
 > **Why this matters**: Vela can alert you when customers express dissatisfaction, helping you respond proactively.
