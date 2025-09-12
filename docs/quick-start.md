@@ -92,6 +92,7 @@ This is where you'll see the real value. You'll discover patterns and insights a
   <!-- - [ ] **Automated alerts** for important moments -->
 
 > **[📖 Understanding call analysis](./calls.md)** - Learn how to interpret transcripts, scores, and insights
+> 
 > **[📖 Agent performance metrics](./agents.md)** - Understand how agent scoring works
 
 > **Why this matters**: You'll immediately see patterns and issues that would take hours to identify manually.
