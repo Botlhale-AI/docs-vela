@@ -82,8 +82,8 @@ Understand how customers interact in digital channels:
 |---------------------|---------------------|------------------------|
 | Quick Questions | Simple queries that could be automated | Chatbot implementation |
 | Complex Issues | Detailed problems requiring human expertise | Specialised agent training |
-| Multi-channel | Customers switching between channels | Omnichannel optimization |
 | Peak Usage Times | High-volume periods | Resource planning |
+| Response Patterns | How customers engage with different message types | Message optimization |
 
 ### Agent Performance in Digital
 Identify digital-specific performance patterns:
@@ -141,13 +141,13 @@ Optimise the digital customer experience:
 | Escalation Process | Smoothness of handoffs | Streamline procedures |
 | Closing Messages | Customer satisfaction and follow-up | Optimise for retention |
 
-### Multi-channel Integration
-Ensure seamless experience across channels:
+### Chat Source Analysis
+Understand where your chat conversations originate:
 
-- [ ] **Track customer journey** across different channels
-- [ ] **Maintain conversation context** during transfers
-- [ ] **Provide consistent information** across platforms
-- [ ] **Optimise handoff processes** between channels
+- [ ] **Review chat metadata** to identify conversation sources
+- [ ] **Analyse channel performance** across different entry points
+- [ ] **Track conversation quality** by source channel
+- [ ] **Optimise channel-specific** response strategies
 
 ---
 
