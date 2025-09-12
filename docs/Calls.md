@@ -160,6 +160,22 @@ Understand how agents are evaluated:
 | Efficiency | Time management and process adherence | Process optimization |
 | Customer Focus | Understanding and meeting customer needs | Customer service training |
 
+### Agent Score Boundaries
+Know what each score range means and what to do about it:
+
+| **Score Range** | **What It Means** | **Action Required** |
+|----------------|-------------------|-------------------|
+| **90-100%** | Excellent performance | Recognise and replicate |
+| **80-89%** | Good performance | Monitor and maintain |
+| **70-79%** | Satisfactory performance | Regular coaching needed |
+| **60-69%** | Needs improvement | Intensive coaching required |
+| **Below 60%** | Poor performance | Immediate intervention needed |
+
+#### Quick Reference
+- **80%+**: High performers - use as mentors
+- **70-79%**: Solid performance - focus on consistency
+- **Below 70%**: Needs attention - provide support
+
 ---
 
 ## Call Analytics Dashboard
