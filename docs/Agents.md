@@ -34,7 +34,7 @@ Your agent performance table shows essential information:
 | Strengths - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
 | Weaknesses - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
 | Rank - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
-| Calls - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
+| Interactions - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
 
 
 
@@ -51,29 +51,7 @@ Your agent performance table shows essential information:
 
 ![Agent Performance](../img/screenshots/performance/performance-1.png)
 
-### Step 2: Analyse Performance Patterns
-Look for these key indicators:
-
-#### Call Duration Analysis
-| **Pattern** | **Possible Causes** | **Coaching Actions** |
-|-------------|-------------------|---------------------|
-| Long calls | Complex customer issues, agent uncertainty, inefficient processes | Provide training on issue resolution, improve knowledge base access |
-| Short calls | Rushed interactions, missed opportunities, good efficiency | Review for completeness, ensure quality isn't sacrificed for speed |
-
-#### Customer Satisfaction
-| **Pattern** | **Indicators** | **Actions** |
-|-------------|----------------|-------------|
-| Low satisfaction scores | Customer complaints, negative feedback | Coaching, review call recordings, provide specific training |
-| Declining satisfaction | Worsening performance over time | Identify root causes, create improvement plan, monitor closely |
-| High satisfaction | Positive feedback, good efficiency | Recognise success, use as mentor, share best practices |
-
-#### Resolution Rate
-| **Pattern** | **Implications** | **Training Focus** |
-|-------------|------------------|-------------------|
-| Low resolution rates | Training needs, process gaps | Product knowledge, troubleshooting skills, escalation procedures |
-| High resolution rates | Strong performance, good knowledge | Advanced training, leadership development, mentoring opportunities |
-
-### Step 3: Create Action Plans
+### Step 2: Create Action Plans
 Based on your analysis, create specific improvement plans:
 
 #### For Struggling Agents (Score < 70%)
