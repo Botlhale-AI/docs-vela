@@ -160,7 +160,6 @@ Automate performance report delivery to agents:
 ![ Settings](../img/screenshots/settings/settings8.png)
 - [ ] **Set strong password requirements** for your organisation
 - [ ] **Enable two-factor authentication** for enhanced security
-- [ ] **Configure session timeouts** for automatic logout
 - [ ] **Set up password reset** procedures
 
 ---
@@ -171,13 +170,11 @@ Automate performance report delivery to agents:
 - [ ] **Configure email delivery** for different notification types
 - [ ] **Set notification frequency** (immediate, daily, weekly)
 - [ ] **Choose notification content** (summary vs. detailed)
-- [ ] **Set up email templates** for consistency
 
 ### Platform Notifications
 - [ ] **Enable in-app notifications** for automated alerts
-- [ ] **Configure notification sounds** and visual indicators
-- [ ] **Set notification priorities** for different alert types
-- [ ] **Customise notification display** preferences
+
+
 
 
 ---
