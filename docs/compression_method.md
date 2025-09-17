@@ -230,7 +230,8 @@ Having issues? Here are some common problems and how to fix them:
 
 ### Upload Problems
 **Problem**: Files won't upload or keep timing out
-**What to try**: 
+
+**Solution**: 
 - [ ] Check your file size - really big files take longer
 - [ ] Make sure you're using supported formats (WAV, MP3, M4A)
 - [ ] Try uploading smaller batches if you have lots of files
@@ -238,6 +239,7 @@ Having issues? Here are some common problems and how to fix them:
 
 ### Audio Processing Issues
 **Problem**: Audio conversion fails or produces errors
+
 **Solution**:
 - [ ] Make sure your audio files aren't corrupted
 - [ ] Check the file format is supported
@@ -246,14 +248,16 @@ Having issues? Here are some common problems and how to fix them:
 
 ### PDF Generation Problems
 **Problem**: PDF files are too large or fail to generate
+
 **Solution**:
-- [ ] Make sure compression is enabled (it should be by default)
+
 - [ ] Try generating a smaller report first
 - [ ] Check if you have too many images in the report
 - [ ] Contact support if the problem persists
 
 ### Slow Loading
 **Problem**: Images load slowly or fail to display
+
 **Solution**:
 - [ ] Check your internet connection
 - [ ] Try refreshing the page
@@ -262,21 +266,9 @@ Having issues? Here are some common problems and how to fix them:
 
 ---
 
-## What's Coming Next
+## Future Improvements
 
-We're always working to make Vela even better:
-
-### Upcoming Features
-- **Better audio compression**: Even more efficient audio processing
-- **Video support**: Soon you'll be able to upload video files too
-- **Real-time processing**: Live compression for streaming data
-- **Smarter optimisation**: AI-powered compression for better results
-
-### New Technologies
-- **Better image formats**: New formats that compress even better
-- **Improved audio quality**: Better compression without losing quality
-- **Faster processing**: New methods to make everything quicker
-- **Smarter algorithms**: More intelligent compression techniques
+We're constantly working to improve Vela's compression capabilities and overall performance. Stay tuned for updates that will make your experience even better.
 
 ---
 
