@@ -21,7 +21,7 @@ By following these guidelines, you can:
 
 ### Supported Compression Algorithms
 
-Vela uses the `decompress-unzip` package to handle ZIP file uploads. To ensure compatibility, use standard compression methods.
+Vela uses the `decompress-unzip` package to handle ZIP file uploads. To make sure your files work properly, stick to standard compression methods.
 
 **✅ Supported Methods:**
 - **Deflate (Method 8)**: Standard ZIP compression - **Best choice**
@@ -34,7 +34,7 @@ Vela uses the `decompress-unzip` package to handle ZIP file uploads. To ensure c
 
 ### Why Deflate64 Causes Issues
 
-Deflate64 is a proprietary compression method that's not widely supported. This causes the error "Unsupported compression method 9" when trying to decompress files created with Deflate64.
+Deflate64 is a proprietary compression method that's not widely supported. If you use it, you'll get the error "Unsupported compression method 9" when trying to decompress your files.
 
 ---
 
@@ -42,7 +42,7 @@ Deflate64 is a proprietary compression method that's not widely supported. This 
 
 ### Using 7-Zip (Recommended)
 
-7-Zip is a popular compression tool that gives you control over compression methods:
+7-Zip is a great compression tool that lets you choose exactly how your files get compressed:
 
 **Step-by-Step Process:**
 1. **Right-click** your files/folder
