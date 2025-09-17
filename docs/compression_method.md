@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # File Upload Guidelines
 
-Learn how to prepare your files for optimal upload to Vela. This guide covers supported compression methods, browser limitations, and best practices to ensure your data uploads successfully.
+Learn how to prepare your files for optimal upload to Vela. We'll cover supported compression methods, browser limitations, and best practices to help your data upload successfully.
 
 ## What You'll Learn
 
@@ -21,22 +21,20 @@ By following these guidelines, you can:
 
 ### Supported Compression Algorithms
 
-Vela uses the `decompress-unzip` package (which relies on the `yauzl` library and Node.js `zlib` module) to handle ZIP file uploads. This package supports standard ZIP compression methods but has limitations with certain proprietary formats.
+Vela uses the `decompress-unzip` package to handle ZIP file uploads. To ensure compatibility, use standard compression methods.
 
 **✅ Supported Methods:**
-- **Deflate (Method 8)**: Standard ZIP compression - **RECOMMENDED**
+- **Deflate (Method 8)**: Standard ZIP compression - **Best choice**
 - **Store (Method 0)**: Files stored without compression
-- **No Compression (Method 0)**: Uncompressed files
 
 **❌ Not Supported:**
-- **Deflate64 (Method 9)**: Proprietary compression method - causes "Unsupported compression method 9" error
-- **LZMA (Method 14)**: 7-Zip compression method - causes "Unsupported compression method 14" error
+- **Deflate64 (Method 9)**: Causes "Unsupported compression method 9" error
+- **LZMA (Method 14)**: Causes "Unsupported compression method 14" error
 - **BZip2 (Method 12)**: Alternative compression algorithm
-- **PPMd (Method 98)**: Advanced compression method
 
 ### Why Deflate64 Causes Issues
 
-Deflate64 is a proprietary extension of the standard Deflate algorithm. While it offers slightly better compression ratios, it's not supported by the `yauzl` library that Vela uses. This causes the error "Unsupported compression method 9" when trying to decompress files created with Deflate64.
+Deflate64 is a proprietary compression method that's not widely supported. This causes the error "Unsupported compression method 9" when trying to decompress files created with Deflate64.
 
 ---
 
@@ -95,22 +93,7 @@ Vela supports uploads up to **3 GB**, but browser limitations can affect your ab
 
 ### Why Firefox Works Better
 
-Firefox handles large file uploads more efficiently than Chromium-based browsers (Chrome, Edge) because:
-- **Higher memory limits** for file processing
-- **Better memory management** during uploads
-- **More stable** with large file operations
-
-### Browser-Specific Issues
-
-**Chrome/Edge Problems:**
-- Browser may run out of memory during upload
-- Upload progress may freeze or fail
-- Files may appear to upload but fail processing
-
-**Firefox Advantages:**
-- More reliable with large files
-- Better progress tracking
-- Fewer memory-related failures
+Firefox handles large file uploads more reliably than Chrome or Edge, which may run out of memory during large file uploads.
 
 ---
 
@@ -135,10 +118,9 @@ Firefox handles large file uploads more efficiently than Chromium-based browsers
 - [ ] **Include a README file** if needed for context
 
 ### 4. Quality Checks
-- [ ] **Verify audio quality** before zipping
 - [ ] **Check file formats** are supported
 - [ ] **Test ZIP extraction** on another computer
-- [ ] **Ensure files aren't corrupted**
+- [ ] **Make sure files aren't corrupted**
 
 ---
 
@@ -181,19 +163,8 @@ Firefox handles large file uploads more efficiently than Chromium-based browsers
 
 **Solution**:
 - [ ] **Wait longer** - large files take time
-- [ ] **Check internet connection** stability
-- [ ] **Try refreshing** and starting over
 - [ ] **Use Firefox** instead of Chrome/Edge
 
-### File Format Issues
-
-**Problem**: Audio files won't process
-
-**Solution**:
-- [ ] **Check audio format** (WAV, MP3, M4A supported)
-- [ ] **Verify file isn't corrupted**
-- [ ] **Try a different audio file**
-- [ ] **Check file size** isn't too large
 
 ---
 
@@ -212,22 +183,6 @@ If you're having trouble with browser uploads:
 - Split large datasets into smaller ZIP files
 - Upload in multiple batches
 - Process files incrementally
-
----
-
-## What to Expect
-
-### Upload Process
-- **Progress tracking**: Real-time upload status
-- **Automatic processing**: Files processed after upload
-- **Error notifications**: Clear error messages if issues occur
-- **Processing time**: Larger files take longer to process
-
-### Success Indicators
-- **Upload completes** without errors
-- **Files appear** in your dashboard
-- **Processing begins** automatically
-- **No error messages** displayed
 
 ---
 
