@@ -175,212 +175,108 @@ accept = "application/zip, application/vnd.rar, application/x-7z-compressed, app
 - **Progress tracking**: Real-time upload progress monitoring
 - **Error handling**: Robust error recovery and retry mechanisms
 
----
-
-## Database and Storage Compression
-
-### MongoDB Compression
-Vela uses MongoDB with built-in compression features for efficient data storage.
-
-**Compression Benefits:**
-- **WiredTiger compression**: Default storage engine compression
-- **Index compression**: Optimised index storage for faster queries
-- **Data deduplication**: Reduced storage requirements
-- **Query optimisation**: Faster data retrieval and analysis
-
-### Cloud Storage Optimisation
-
-#### AWS S3 Compression
-```javascript
-// S3 upload with automatic compression
-const uploadCalls = async (filename) => {
-  // Automatic S3 compression handling
-  const formData = new FormData();
-  formData.append("file", new Blob([fileData]), "[PROXY]");
-  
-  const uploadFileRes = await fetch(uploadRes.url, {
-    method: "POST",
-    body: formData,
-  });
-};
-```
-
-**S3 Compression Features:**
-- **Automatic compression**: S3 handles compression automatically
-- **Lifecycle policies**: Automatic file optimisation over time
-- **Storage classes**: Cost-optimised storage tiers
-- **CDN integration**: Global content delivery for fast access
-
----
-
-## Performance Optimisation
-
-### Webpack Optimisation
-```javascript
-// next.config.js
-webpack(config, { isServer, webpack }) {
-  if (isServer) {
-    config.resolve.alias.canvas = false;
-  }
-
-  config.plugins.push(
-    new webpack.DefinePlugin({
-      "process.env.FLUENTFFMPEG_COV": false,
-    })
-  );
-
-  return config;
-},
-```
-
-### Code Splitting and Optimisation
-- **Dynamic imports**: Lazy-loaded components for faster initial loads
-- **Route-based splitting**: Page-level code splitting for efficiency
-- **Vendor optimisation**: Third-party library optimisation
-- **Tree shaking**: Unused code elimination for smaller bundles
-
-### Caching Strategies
-- **Browser caching**: Static asset caching for repeat visits
-- **CDN caching**: Global content caching for worldwide access
-- **API response caching**: API caching for faster responses
-- **Database query caching**: Optimised database queries for performance
-
----
-
-## Configuration
-
-<!-- ### Environment Variables
-```bash
-# Compression-related environment variables
-NODE_ENV=production  # Enables production optimisations
-NEXT_PUBLIC_CLIENT_URL=https://your-domain.com
-NEXT_PUBLIC_SOCKET_URL=wss://your-socket-server.com
-NEXT_PUBLIC_SERVER_URL=https://your-api-server.com
-``` -->
-
-### Next.js Configuration
-```javascript
-// next.config.js
-const nextConfig = {
-  poweredByHeader: false,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production" ? true : false,
-  },
-  experimental: {
-    serverActions: true,
-    serverComponentsExternalPackages: [
-      "@react-email/components",
-      "@react-email/render",
-      "@react-email/tailwind",
-      "pdf-parse"
-    ],
-  },
-};
-```
 
 ---
 
 ## Best Practices
 
+Here are some handy tips to get the most out of Vela's compression features:
+
 ### 1. File Upload Optimisation
-- [ ] **Validate file types**: Ensure supported formats before upload
-- [ ] **Limit file sizes**: Implement appropriate size restrictions
-- [ ] **Use chunked uploads**: For large files to improve reliability
-- [ ] **Monitor progress**: Provide user feedback during uploads
+- [ ] **Check your file types**: Make sure you're uploading supported formats
+- [ ] **Keep file sizes reasonable**: Large files take longer to process
+- [ ] **Use chunked uploads**: For really big files, this helps avoid timeouts
+- [ ] **Watch the progress**: You'll see real-time updates on your uploads
 
 ### 2. Audio Processing
-- [ ] **Standardise formats**: Convert to consistent format for processing
-- [ ] **Optimise sample rates**: Use appropriate sample rates for your content
-- [ ] **Preserve quality**: Maintain audio quality for accurate call analysis
-- [ ] **Handle errors**: Implement robust error recovery mechanisms
+- [ ] **Stick to standard formats**: WAV, MP3, work best
+- [ ] **Use good quality audio**: Better input means better analysis
+- [ ] **Let Vela handle the conversion**: We'll optimise everything automatically
+- [ ] **Be patient with large files**: Processing takes time, but it's worth it
 
 ### 3. Image Optimisation
-- [ ] **Use optimised image handling**: Leverage automatic optimisation features
-- [ ] **Choose appropriate formats**: WebP for photos, PNG for graphics
-- [ ] **Implement lazy loading**: Improve page load times
-- [ ] **Use responsive images**: Different sizes for different devices
+- [ ] **Choose the right format**: WebP for photos, PNG for graphics
+- [ ] **Let Vela optimise automatically**: We'll handle the technical bits
+- [ ] **Use appropriate sizes**: Don't upload massive images
+- [ ] **Trust the lazy loading**: Images load when needed, not all at once
 
 ### 4. PDF Generation
-- [ ] **Enable compression**: Always use PDF compression for reports
-- [ ] **Optimise content**: Remove unnecessary elements and metadata
-- [ ] **Use appropriate fonts**: Subset fonts when possible
-- [ ] **Monitor file sizes**: Keep reports manageable for users
 
-### 5. Database Optimisation
-- [ ] **Use indexes**: Optimise query performance with proper indexing
-- [ ] **Implement pagination**: Limit result sets for better performance
-- [ ] **Cache frequently accessed data**: Reduce database load
-- [ ] **Monitor query performance**: Identify and resolve bottlenecks
+- [ ] **Keep content clean**: Remove unnecessary elements before generating
+- [ ] **Use standard fonts**: This helps keep file sizes down
+- [ ] **Check file sizes**: Make sure reports aren't too big to download
 
 ---
 
-## Monitoring and Analytics
+## What to Expect
 
-### Compression Metrics
-- **File size reduction**: Track compression ratios across different file types
-- **Upload/download times**: Monitor performance improvements
-- **Storage costs**: Track storage optimisation and cost savings
-- **User experience**: Monitor page load times and responsiveness
+### Performance Benefits
+- **Faster uploads**: Your files will upload more quickly
+- **Smaller downloads**: Reports and exports will be much smaller
+- **Better quality**: Compression doesn't mean lower quality
+- **Smoother experience**: Everything loads faster and works better
 
-### Performance Monitoring
-- **Core Web Vitals**: Monitor LCP, FID, CLS for user experience
-- **API response times**: Track backend performance and optimisation
-- **Database query times**: Monitor database performance improvements
-- **Error rates**: Track compression-related errors and issues
+### Monitoring Your Data
+- **Upload progress**: You'll see real-time updates on file processing
+- **File sizes**: Check how much space you're saving
+- **Processing times**: See how quickly your data gets analysed
+- **Quality reports**: Get detailed insights without massive file sizes
 
 ---
 
 ## Troubleshooting
 
-### Common Issues and Solutions
+Having issues? Here are some common problems and how to fix them:
 
-#### 1. Large File Uploads
-**Problem**: Files fail to upload or timeout
-**Solution**: 
-- [ ] Check file size limits and restrictions
-- [ ] Verify supported formats and compatibility
-- [ ] Use chunked uploads for large files
-- [ ] Ensure stable internet connection
+### Upload Problems
+**Problem**: Files won't upload or keep timing out
+**What to try**: 
+- [ ] Check your file size - really big files take longer
+- [ ] Make sure you're using supported formats (WAV, MP3, M4A)
+- [ ] Try uploading smaller batches if you have lots of files
+- [ ] Check your internet connection is stable
 
-#### 2. Audio Processing Errors
+### Audio Processing Issues
 **Problem**: Audio conversion fails or produces errors
 **Solution**:
-- [ ] Verify FFmpeg installation and configuration
-- [ ] Check audio file format and integrity
-- [ ] Ensure sufficient disk space for processing
-- [ ] Validate audio file quality and format
+- [ ] Make sure your audio files aren't corrupted
+- [ ] Check the file format is supported
+- [ ] Try a different audio file to test
+- [ ] Give it more time - large files take longer to process
 
-#### 3. PDF Generation Issues
+### PDF Generation Problems
 **Problem**: PDF files are too large or fail to generate
 **Solution**:
-- [ ] Enable PDF compression in generation settings
-- [ ] Optimise embedded images and graphics
-- [ ] Use appropriate fonts and text formatting
-- [ ] Monitor and limit content size
+- [ ] Make sure compression is enabled (it should be by default)
+- [ ] Try generating a smaller report first
+- [ ] Check if you have too many images in the report
+- [ ] Contact support if the problem persists
 
-#### 4. Image Loading Problems
+### Slow Loading
 **Problem**: Images load slowly or fail to display
 **Solution**:
-- [ ] Use optimised image handling for automatic optimisation
-- [ ] Implement lazy loading for better performance
-- [ ] Optimise image formats and sizes
-- [ ] Check CDN configuration and caching
+- [ ] Check your internet connection
+- [ ] Try refreshing the page
+- [ ] Clear your browser cache
+- [ ] Let us know if it keeps happening
 
 ---
 
-## Future Enhancements
+## What's Coming Next
 
-### Planned Improvements
-- **Advanced audio compression**: Implement more efficient audio formats
-- **Video compression**: Add video file support
-- **Real-time compression**: Implement streaming compression for live data
-- **Smart optimisation**: Use better techniques for improved compression
+We're always working to make Vela even better:
 
-### Technology Updates
-- **WebP 2.0**: Next-generation image format with improved compression
-- **AVIF**: Advanced video/image format for better efficiency
-- **Opus audio**: High-quality audio compression for voice recordings
-- **Zstandard**: Fast compression method for improved performance
+### Upcoming Features
+- **Better audio compression**: Even more efficient audio processing
+- **Video support**: Soon you'll be able to upload video files too
+- **Real-time processing**: Live compression for streaming data
+- **Smarter optimisation**: AI-powered compression for better results
+
+### New Technologies
+- **Better image formats**: New formats that compress even better
+- **Improved audio quality**: Better compression without losing quality
+- **Faster processing**: New methods to make everything quicker
+- **Smarter algorithms**: More intelligent compression techniques
 
 ---
 
@@ -399,6 +295,6 @@ const nextConfig = {
 
 ## Conclusion
 
-Vela's compression makes everything work faster across the platform. From web compression to audio and PDF compression, the system ensures fast data transfer, lower storage costs, and better user experience.
+Vela's compression makes everything work faster and smoother. Whether you're uploading audio files, generating reports, or just browsing the platform, compression helps everything load quicker and use less bandwidth.
 
-For questions or support regarding compression methods, please contact our support team or consult the relevant technical documentation.
+**Need help?** If you're having trouble with any compression features, just drop us a line at support@botlhale.ai - we're here to help!
