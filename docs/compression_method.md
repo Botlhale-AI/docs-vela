@@ -135,8 +135,8 @@ const { toPDF, targetRef } = usePDF({
 
 ## Image Compression
 
-### Next.js Image Optimisation
-Vela uses Next.js Image component for automatic image optimisation and compression.
+### Image Optimisation
+Vela uses optimised image handling for automatic compression and performance.
 
 **Key Features:**
 - **Automatic format selection**: WebP for modern browsers, with JPEG/PNG fallbacks
@@ -146,21 +146,8 @@ Vela uses Next.js Image component for automatic image optimisation and compressi
 
 **Configuration:**
 ```javascript
-// next.config.js
-images: {
-  domains: [
-    'botlhale-ai-assets.s3.us-east-1.amazonaws.com',
-    'botlhale-ai-assets.s3.amazonaws.com',
-    'botlhale-vela-org-logos.s3.eu-west-1.amazonaws.com',
-  ],
-  remotePatterns: [
-    {
-      protocol: 'https',
-      hostname: '*.amazonaws.com',
-      pathname: '/**',
-    },
-  ],
-},
+// Image optimisation is handled automatically
+// No additional configuration needed for local images
 ```
 
 ### Supported Image Formats
@@ -313,7 +300,7 @@ const nextConfig = {
 - [ ] **Handle errors**: Implement robust error recovery mechanisms
 
 ### 3. Image Optimisation
-- [ ] **Use Next.js Image**: Use automatic optimisation features
+- [ ] **Use optimised image handling**: Leverage automatic optimisation features
 - [ ] **Choose appropriate formats**: WebP for photos, PNG for graphics
 - [ ] **Implement lazy loading**: Improve page load times
 - [ ] **Use responsive images**: Different sizes for different devices
@@ -379,7 +366,7 @@ const nextConfig = {
 #### 4. Image Loading Problems
 **Problem**: Images load slowly or fail to display
 **Solution**:
-- [ ] Use Next.js Image component for automatic optimisation
+- [ ] Use optimised image handling for automatic optimisation
 - [ ] Implement lazy loading for better performance
 - [ ] Optimise image formats and sizes
 - [ ] Check CDN configuration and caching
