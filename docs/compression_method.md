@@ -17,12 +17,6 @@ By understanding Vela's compression methods, you can:
 
 ---
 
-## Overview
-
-Vela uses compression to make everything faster and use less space. This helps your data process quickly while keeping quality for accurate call analysis.
-
----
-
 ## HTTP and Network Compression
 
 ### Built-in Performance Optimisation
@@ -32,10 +26,10 @@ Vela uses advanced compression technologies to deliver content quickly and effic
 - **Automatic compression** of static assets and API responses
 - **Gzip and Brotli support** for modern browsers
 - **Dynamic content optimisation** for real-time data
-- **Bandwidth reduction** of up to 70% for text-based content
+- **Significant bandwidth reduction** for text-based content
 
 **How it works:**
-Vela automatically detects your browser's compression capabilities and delivers optimised content. No configuration required - it works seamlessly in the background.
+Vela automatically detects your browser's compression capabilities and delivers optimised content. No configuration required. It works seamlessly in the background.
 
 ### Brotli Compression
 Vela includes Brotli compression support for modern browsers, providing better compression ratios compared to traditional methods.
@@ -283,10 +277,3 @@ We're constantly working to improve Vela's compression capabilities and overall 
 - [Data Upload Guide](./data-upload.md) - Upload your call recordings
 - [Dashboard Setup](./dashboard.md) - Create your performance dashboard
 
----
-
-## Conclusion
-
-Vela's compression makes everything work faster and smoother. Whether you're uploading audio files, generating reports, or just browsing the platform, compression helps everything load quicker and use less bandwidth.
-
-**Need help?** If you're having trouble with any compression features, just drop us a line at support@botlhale.ai - we're here to help!
