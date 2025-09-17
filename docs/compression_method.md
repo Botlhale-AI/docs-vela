@@ -2,275 +2,233 @@
 sidebar_position: 11
 ---
 
-# Vela Compression Methods
+# File Upload Guidelines
 
-Learn how Vela optimises performance and reduces bandwidth usage through smart compression techniques. This guide explains the compression methods used throughout the platform to ensure fast, efficient data processing.
+Learn how to prepare your files for optimal upload to Vela. This guide covers supported compression methods, browser limitations, and best practices to ensure your data uploads successfully.
 
 ## What You'll Learn
 
-By understanding Vela's compression methods, you can:
-- [ ] **Optimise your file uploads** for faster processing
-- [ ] **Reduce bandwidth usage** and improve performance
-- [ ] **Understand storage efficiency** and cost optimisation
-- [ ] **Troubleshoot compression-related issues**
-- [ ] **Maximise platform performance** for your organisation
+By following these guidelines, you can:
+- [ ] **Create compatible ZIP files** that upload and process successfully
+- [ ] **Choose the right browser** for large file uploads
+- [ ] **Avoid common upload issues** and errors
+- [ ] **Optimise your file preparation** for faster processing
+- [ ] **Troubleshoot upload problems** quickly and effectively
 
 ---
 
-## HTTP and Network Compression
+## ZIP File Compression Methods
 
-### Built-in Performance Optimisation
-Vela uses advanced compression technologies to deliver content quickly and efficiently.
+### Supported Compression Algorithms
 
-**Key Features:**
-- **Automatic compression** of static assets and API responses
-- **Gzip and Brotli support** for modern browsers
-- **Dynamic content optimisation** for real-time data
-- **Significant bandwidth reduction** for text-based content
+Vela uses the `decompress-unzip` package to handle ZIP file uploads. This package supports standard ZIP compression methods but has limitations with certain proprietary formats.
 
-**How it works:**
-Vela automatically detects your browser's compression capabilities and delivers optimised content. No configuration required. It works seamlessly in the background.
+**✅ Supported Methods:**
+- **Deflate (Method 8)**: Standard ZIP compression - **RECOMMENDED**
+- **No Compression (Method 0)**: Uncompressed files
+- **Store (Method 0)**: Files stored without compression
 
-### Brotli Compression
-Vela includes Brotli compression support for modern browsers, providing better compression ratios compared to traditional methods.
+**❌ Not Supported:**
+- **Deflate64 (Enhanced Deflate)**: Proprietary compression method
+- **BZip2**: Alternative compression algorithm
+- **LZMA**: 7-Zip compression method
 
-**Benefits:**
-- **Better compression ratios** than Gzip (typically 15-25% smaller)
-- **Faster decompression** for improved page load times
-- **Modern browser support** for optimal performance
-- **Reduced bandwidth usage** for cost savings
+### Why Deflate64 Causes Issues
+
+Deflate64 is a proprietary extension of the standard Deflate algorithm. While it offers slightly better compression ratios, it's not widely supported by libraries like the one Vela uses. This can cause upload failures and processing errors.
 
 ---
 
-## Audio File Compression
+## Creating Compatible ZIP Files
 
-### FFmpeg Integration
-Vela uses FFmpeg for audio processing and compression through the `fluent-ffmpeg` package.
+### Using 7-Zip (Recommended)
 
-**Supported Audio Formats:**
-- **Input formats**: WAV, MP3, M4A, FLAC
-- **Processing format**: WAV (16kHz standardised)
-- **Quality optimisation**: Automatic bitrate adjustment
+7-Zip is a popular compression tool that gives you control over compression methods:
 
-### Audio Processing Pipeline
+**Step-by-Step Process:**
+1. **Right-click** your files/folder
+2. **Select "7-Zip"** → "Add to archive..."
+3. **Archive format**: Choose "ZIP"
+4. **Compression level**: Any level (1-9)
+5. **Compression method**: **IMPORTANT** - Select "Deflate" (not "Deflate64")
+6. **Click "OK"** to create your ZIP file
 
-#### 1. Format Standardisation
-Vela converts all audio files to a standardised format for consistent processing:
-
-```javascript
-// MP3 to WAV conversion for processing
-function convertMp3ToWav(mp3Filename) {
-  return new Promise((resolve, reject) => {
-    if (!isWavFile(mp3Filename)) {
-      throw new Error(`Not an mp3 file`);
-    }
-    const outputFile = mp3Filename.replace(".mp3", ".wav");
-    ffmpeg({
-      source: mp3Filename,
-    })
-      .on("error", (err) => {
-        reject(err);
-      })
-      .on("end", () => {
-        resolve(outputFile);
-      })
-      .save(outputFile);
-  });
-}
+**7-Zip Settings:**
+```
+Archive format: ZIP
+Compression level: 5 (recommended)
+Compression method: Deflate
 ```
 
-#### 2. Sample Rate Optimisation
-All audio is standardised to 16kHz for optimal processing:
+### Using Windows Built-in ZIP
 
-```javascript
-// Standardised 16kHz sample rate for processing
-data.append("sample_rate", "16000");
-```
+Windows Explorer's built-in ZIP creation uses Deflate by default, making it compatible:
 
-### Audio Compression Benefits
-- **Consistent processing**: Standardised format ensures reliable call analysis
-- **Storage optimisation**: Efficient audio storage without quality loss
-- **Quality preservation**: Maintains audio quality for accurate transcription
-- **Bandwidth reduction**: Optimised for faster uploads and downloads
+1. **Select** your files/folder
+2. **Right-click** → "Send to" → "Compressed (zipped) folder"
+3. **Rename** the ZIP file as needed
 
----
+### Using WinRAR
 
-## PDF Compression
-
-### Report Generation Optimisation
-PDF reports are automatically compressed during generation to ensure fast downloads and efficient storage.
-
-**Implementation:**
-```javascript
-const { toPDF, targetRef } = usePDF({
-  filename: `${agent.name.split(" ").join("_")}_performance.pdf`,
-  method: "build",
-  page: {
-    margin: Margin.SMALL,
-  },
-  overrides: {
-    pdf: {
-      compress: true,  // PDF compression enabled
-    },
-    canvas: {
-      backgroundColor: theme !== "dark" ? "#ffffff" : "#031019",
-    },
-  },
-});
-```
-
-### PDF Compression Features
-- **Text compression**: Optimised text rendering for smaller file sizes
-- **Image compression**: Compressed embedded images and graphics
-- **Font optimisation**: Subset fonts to reduce file size
-- **Metadata compression**: Reduced PDF metadata for efficiency
+If using WinRAR:
+1. **Select** your files
+2. **Right-click** → "Add to archive..."
+3. **Archive format**: Choose "ZIP"
+4. **Compression method**: Select "ZIP" (not "RAR")
+5. **Compression level**: Any level
 
 ---
 
-## Image Compression
+## Browser Limitations for Large Files
 
-### Image Optimisation
-Vela uses optimised image handling for automatic compression and performance.
+### File Size Limits
 
-**Key Features:**
-- **Automatic format selection**: WebP for modern browsers, with JPEG/PNG fallbacks
-- **Responsive sizing**: Automatic image resizing based on device requirements
-- **Lazy loading**: Images load only when needed for faster page loads
-- **Quality optimisation**: Automatic quality adjustment for optimal file sizes
+Vela supports uploads up to **3 GB**, but browser limitations can affect your ability to upload large files:
 
+| Browser | Recommended Max Size | Notes |
+|---------|---------------------|-------|
+| **Firefox** | Up to 3 GB | ✅ **Best for large uploads** |
+| **Chrome** | Up to 1-2 GB | ⚠️ May run out of memory |
+| **Edge** | Up to 1-2 GB | ⚠️ May run out of memory |
+| **Safari** | Up to 2-3 GB | ⚠️ Varies by version |
 
-### Supported Image Formats
-- **WebP**: Modern format with excellent compression ratios
-- **JPEG**: Standard format with quality optimisation
-- **PNG**: Lossless format for graphics and logos
-- **SVG**: Vector format for scalable graphics
+### Why Firefox Works Better
 
----
+Firefox handles large file uploads more efficiently than Chromium-based browsers (Chrome, Edge) because:
+- **Higher memory limits** for file processing
+- **Better memory management** during uploads
+- **More stable** with large file operations
 
-## File Upload Compression
+### Browser-Specific Issues
 
-### Archive File Support
-Vela supports various compressed archive formats for efficient batch uploads.
+**Chrome/Edge Problems:**
+- Browser may run out of memory during upload
+- Upload progress may freeze or fail
+- Files may appear to upload but fail processing
 
-**Supported Archive Formats:**
-```javascript
-accept = "application/zip, application/vnd.rar, application/x-7z-compressed, application/x-zip-compressed, application/x-compressed, multipart/x-zip"
-```
-
-**Archive Types:**
-- **ZIP**: Standard compression format for most files
-- **RAR**: High compression ratio format for large files
-- **7-Zip**: High compression format for maximum efficiency
-- **Other compressed formats**: Additional archive support for flexibility
-
-### Batch Upload Optimisation
-- **Chunked uploads**: Large files uploaded in manageable chunks
-- **Parallel processing**: Multiple files processed simultaneously
-- **Progress tracking**: Real-time upload progress monitoring
-- **Error handling**: Robust error recovery and retry mechanisms
-
+**Firefox Advantages:**
+- More reliable with large files
+- Better progress tracking
+- Fewer memory-related failures
 
 ---
 
-## Best Practices
+## Best Practices for File Preparation
 
-Here are some handy tips to get the most out of Vela's compression features:
+### 1. ZIP File Creation
+- [ ] **Use Deflate compression** - avoid Deflate64
+- [ ] **Test your ZIP file** before uploading
+- [ ] **Keep file names simple** - avoid special characters
+- [ ] **Organise files logically** in folders
 
-### 1. File Upload Optimisation
-- [ ] **Check your file types**: Make sure you're uploading supported formats
-- [ ] **Keep file sizes reasonable**: Large files take longer to process
-- [ ] **Use chunked uploads**: For really big files, this helps avoid timeouts
-- [ ] **Watch the progress**: You'll see real-time updates on your uploads
+### 2. File Size Management
+- [ ] **Use Firefox** for files over 1 GB
+- [ ] **Split large datasets** into smaller ZIP files if needed
+- [ ] **Check file sizes** before uploading
+- [ ] **Monitor upload progress** closely
 
-### 2. Audio Processing
-- [ ] **Stick to standard formats**: WAV, MP3, work best
-- [ ] **Use good quality audio**: Better input means better analysis
-- [ ] **Let Vela handle the conversion**: We'll optimise everything automatically
-- [ ] **Be patient with large files**: Processing takes time, but it's worth it
+### 3. File Organisation
+- [ ] **Use descriptive folder names** (e.g., "Call_Recordings_2024-01")
+- [ ] **Group related files** together
+- [ ] **Avoid deeply nested folders** (max 3-4 levels)
+- [ ] **Include a README file** if needed for context
 
-### 3. Image Optimisation
-- [ ] **Choose the right format**: WebP for photos, PNG for graphics
-- [ ] **Let Vela optimise automatically**: We'll handle the technical bits
-- [ ] **Use appropriate sizes**: Don't upload massive images
-- [ ] **Trust the lazy loading**: Images load when needed, not all at once
+### 4. Quality Checks
+- [ ] **Verify audio quality** before zipping
+- [ ] **Check file formats** are supported
+- [ ] **Test ZIP extraction** on another computer
+- [ ] **Ensure files aren't corrupted**
 
-### 4. PDF Generation
+---
 
-- [ ] **Keep content clean**: Remove unnecessary elements before generating
-- [ ] **Use standard fonts**: This helps keep file sizes down
-- [ ] **Check file sizes**: Make sure reports aren't too big to download
+## Troubleshooting Upload Issues
+
+### ZIP File Problems
+
+**Problem**: ZIP file uploads but fails to process
+
+**Solution**:
+- [ ] **Recreate the ZIP** using Deflate compression
+- [ ] **Check file names** for special characters
+- [ ] **Try a smaller ZIP file** first
+- [ ] **Use 7-Zip** with correct settings
+
+**Problem**: "Unsupported compression method" error
+
+**Solution**:
+- [ ] **Use Deflate compression** (not Deflate64)
+- [ ] **Recreate the ZIP file** with correct settings
+- [ ] **Check your compression tool** settings
+
+### Browser-Related Issues
+
+**Problem**: Upload fails or browser crashes with large files
+
+**Solution**:
+- [ ] **Switch to Firefox** for large uploads
+- [ ] **Try smaller file sizes** first
+- [ ] **Clear browser cache** and try again
+- [ ] **Close other browser tabs** to free memory
+
+**Problem**: Upload progress freezes
+
+**Solution**:
+- [ ] **Wait longer** - large files take time
+- [ ] **Check internet connection** stability
+- [ ] **Try refreshing** and starting over
+- [ ] **Use Firefox** instead of Chrome/Edge
+
+### File Format Issues
+
+**Problem**: Audio files won't process
+
+**Solution**:
+- [ ] **Check audio format** (WAV, MP3, M4A supported)
+- [ ] **Verify file isn't corrupted**
+- [ ] **Try a different audio file**
+- [ ] **Check file size** isn't too large
+
+---
+
+## Alternative Upload Methods
+
+### For Very Large Files
+
+If you're having trouble with browser uploads:
+
+**FTP Integration:**
+- Contact your Vela Account Manager
+- Set up automated FTP uploads
+- Bypass browser limitations entirely
+
+**Batch Processing:**
+- Split large datasets into smaller ZIP files
+- Upload in multiple batches
+- Process files incrementally
 
 ---
 
 ## What to Expect
 
-### Performance Benefits
-- **Faster uploads**: Your files will upload more quickly
-- **Smaller downloads**: Reports and exports will be much smaller
-- **Better quality**: Compression doesn't mean lower quality
-- **Smoother experience**: Everything loads faster and works better
+### Upload Process
+- **Progress tracking**: Real-time upload status
+- **Automatic processing**: Files processed after upload
+- **Error notifications**: Clear error messages if issues occur
+- **Processing time**: Larger files take longer to process
 
-### Monitoring Your Data
-- **Upload progress**: You'll see real-time updates on file processing
-- **File sizes**: Check how much space you're saving
-- **Processing times**: See how quickly your data gets analysed
-- **Quality reports**: Get detailed insights without massive file sizes
-
----
-
-## Troubleshooting
-
-Having issues? Here are some common problems and how to fix them:
-
-### Upload Problems
-**Problem**: Files won't upload or keep timing out
-
-**Solution**: 
-- [ ] Check your file size - really big files take longer
-- [ ] Make sure you're using supported formats (WAV, MP3, M4A)
-- [ ] Try uploading smaller batches if you have lots of files
-- [ ] Check your internet connection is stable
-
-### Audio Processing Issues
-**Problem**: Audio conversion fails or produces errors
-
-**Solution**:
-- [ ] Make sure your audio files aren't corrupted
-- [ ] Check the file format is supported
-- [ ] Try a different audio file to test
-- [ ] Give it more time - large files take longer to process
-
-### PDF Generation Problems
-**Problem**: PDF files are too large or fail to generate
-
-**Solution**:
-
-- [ ] Try generating a smaller report first
-- [ ] Check if you have too many images in the report
-- [ ] Contact support if the problem persists
-
-### Slow Loading
-**Problem**: Images load slowly or fail to display
-
-**Solution**:
-- [ ] Check your internet connection
-- [ ] Try refreshing the page
-- [ ] Clear your browser cache
-- [ ] Let us know if it keeps happening
-
----
-
-## Future Improvements
-
-We're constantly working to improve Vela's compression capabilities and overall performance. Stay tuned for updates that will make your experience even better.
+### Success Indicators
+- **Upload completes** without errors
+- **Files appear** in your dashboard
+- **Processing begins** automatically
+- **No error messages** displayed
 
 ---
 
 ## Next Steps
 
-| For Performance Monitoring | For Technical Support |
-|------------------------|------------------|
-| [Monitor Performance](./dashboard.md) | [Contact Support](mailto:support@botlhale.ai) |
+| For File Upload | For Technical Support |
+|----------------|----------------------|
+| [Data Upload Guide](./data-upload.md) | [Contact Support](mailto:support@botlhale.ai) |
 
 ### See also
 - [Quick Start Guide](./quick-start.md) - Get started with Vela
