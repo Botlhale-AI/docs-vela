@@ -21,21 +21,22 @@ By following these guidelines, you can:
 
 ### Supported Compression Algorithms
 
-Vela uses the `decompress-unzip` package to handle ZIP file uploads. This package supports standard ZIP compression methods but has limitations with certain proprietary formats.
+Vela uses the `decompress-unzip` package (which relies on the `yauzl` library and Node.js `zlib` module) to handle ZIP file uploads. This package supports standard ZIP compression methods but has limitations with certain proprietary formats.
 
 **✅ Supported Methods:**
 - **Deflate (Method 8)**: Standard ZIP compression - **RECOMMENDED**
-- **No Compression (Method 0)**: Uncompressed files
 - **Store (Method 0)**: Files stored without compression
+- **No Compression (Method 0)**: Uncompressed files
 
 **❌ Not Supported:**
-- **Deflate64 (Enhanced Deflate)**: Proprietary compression method
-- **BZip2**: Alternative compression algorithm
-- **LZMA**: 7-Zip compression method
+- **Deflate64 (Method 9)**: Proprietary compression method - causes "Unsupported compression method 9" error
+- **LZMA (Method 14)**: 7-Zip compression method - causes "Unsupported compression method 14" error
+- **BZip2 (Method 12)**: Alternative compression algorithm
+- **PPMd (Method 98)**: Advanced compression method
 
 ### Why Deflate64 Causes Issues
 
-Deflate64 is a proprietary extension of the standard Deflate algorithm. While it offers slightly better compression ratios, it's not widely supported by libraries like the one Vela uses. This can cause upload failures and processing errors.
+Deflate64 is a proprietary extension of the standard Deflate algorithm. While it offers slightly better compression ratios, it's not supported by the `yauzl` library that Vela uses. This causes the error "Unsupported compression method 9" when trying to decompress files created with Deflate64.
 
 ---
 
@@ -155,10 +156,16 @@ Firefox handles large file uploads more efficiently than Chromium-based browsers
 
 **Problem**: "Unsupported compression method" error
 
-**Solution**:
-- [ ] **Use Deflate compression** (not Deflate64)
+**Common Error Messages:**
+- "Unsupported compression method 9" = Deflate64 compression used
+- "Unsupported compression method 14" = LZMA compression used
+- "Unsupported compression method 12" = BZip2 compression used
+
+**Solution**: 
+- [ ] **Use Deflate compression** (not Deflate64, LZMA, or BZip2)
 - [ ] **Recreate the ZIP file** with correct settings
 - [ ] **Check your compression tool** settings
+- [ ] **Verify compression method** is set to "Deflate" or "Store"
 
 ### Browser-Related Issues
 
