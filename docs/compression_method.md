@@ -144,11 +144,6 @@ Vela uses optimised image handling for automatic compression and performance.
 - **Lazy loading**: Images load only when needed for faster page loads
 - **Quality optimisation**: Automatic quality adjustment for optimal file sizes
 
-**Configuration:**
-```javascript
-// Image optimisation is handled automatically
-// No additional configuration needed for local images
-```
 
 ### Supported Image Formats
 - **WebP**: Modern format with excellent compression ratios
