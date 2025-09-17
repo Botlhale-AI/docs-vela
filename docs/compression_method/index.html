@@ -12,7 +12,7 @@
 
 <script src="/js/themeToggle.js" async></script>
 <script src="/js/hideHashLinks.js" async></script><link rel="stylesheet" href="/assets/css/styles.277bce5d.css">
-<script src="/assets/js/runtime~main.252f0f3f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.20a4490b.js" defer="defer"></script>
 <script src="/assets/js/main.f74e8d8d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -33,7 +33,7 @@
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="zip-file-compression-methods">ZIP File Compression Methods<a href="#zip-file-compression-methods" class="hash-link" aria-label="Direct link to ZIP File Compression Methods" title="Direct link to ZIP File Compression Methods">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="supported-compression-algorithms">Supported Compression Algorithms<a href="#supported-compression-algorithms" class="hash-link" aria-label="Direct link to Supported Compression Algorithms" title="Direct link to Supported Compression Algorithms">​</a></h3>
-<p>Vela uses the <code>decompress-unzip</code> package to handle ZIP file uploads. To ensure compatibility, use standard compression methods.</p>
+<p>Vela uses the <code>decompress-unzip</code> package to handle ZIP file uploads. To make sure your files work properly, stick to standard compression methods.</p>
 <p><strong>✅ Supported Methods:</strong></p>
 <ul>
 <li><strong>Deflate (Method 8)</strong>: Standard ZIP compression - <strong>Best choice</strong></li>
@@ -46,11 +46,11 @@
 <li><strong>BZip2 (Method 12)</strong>: Alternative compression algorithm</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-deflate64-causes-issues">Why Deflate64 Causes Issues<a href="#why-deflate64-causes-issues" class="hash-link" aria-label="Direct link to Why Deflate64 Causes Issues" title="Direct link to Why Deflate64 Causes Issues">​</a></h3>
-<p>Deflate64 is a proprietary compression method that&#x27;s not widely supported. This causes the error &quot;Unsupported compression method 9&quot; when trying to decompress files created with Deflate64.</p>
+<p>Deflate64 is a proprietary compression method that&#x27;s not widely supported. If you use it, you&#x27;ll get the error &quot;Unsupported compression method 9&quot; when trying to decompress your files.</p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="creating-compatible-zip-files">Creating Compatible ZIP Files<a href="#creating-compatible-zip-files" class="hash-link" aria-label="Direct link to Creating Compatible ZIP Files" title="Direct link to Creating Compatible ZIP Files">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="using-7-zip-recommended">Using 7-Zip (Recommended)<a href="#using-7-zip-recommended" class="hash-link" aria-label="Direct link to Using 7-Zip (Recommended)" title="Direct link to Using 7-Zip (Recommended)">​</a></h3>
-<p>7-Zip is a popular compression tool that gives you control over compression methods:</p>
+<p>7-Zip is a great compression tool that lets you choose exactly how your files get compressed:</p>
 <p><strong>Step-by-Step Process:</strong></p>
 <ol>
 <li><strong>Right-click</strong> your files/folder</li>
