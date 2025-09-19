@@ -16,15 +16,14 @@ Upload your company's knowledge base documents to enhance Vela's AI analysis. Th
 
 ### Step 2: Upload Your Information
 - [ ] **Upload your company documents** (PDFs)
-- [ ] **Add descriptions** for each document to help with organisation
-- [ ] **Set scope** - choose "Entire Organisation", "specific department" or "specific teams"
+- [ ] **Add descriptions** for each document
+- [ ] **Set scope** - choose "entire organisation", "specific department" or "specific teams"
 - [ ] **Click "Upload Files"** to complete the process
 
 ---
 
 ## What to Upload
 
-### Company Documents
 Upload these types of documents to help our AI understand your business:
 
 - **Company policies and procedures** - HR policies, customer service procedures, escalation processes
@@ -46,23 +45,6 @@ After uploading, you can manage your documents in the Document Library:
 - **Include current information** - Update when your business changes
 - **Keep it relevant** - Focus on information that affects your calls
 
-
-## Examples
-
-### Healthcare Call Centre
-**Upload**: Medical terminology, HIPAA compliance requirements, patient care standards
-
-**Result**: AI understands medical language and identifies compliance issues
-
-### Financial Services
-**Upload**: Banking regulations, financial terminology, fraud detection procedures
-
-**Result**: AI recognises regulatory violations and financial processes
-
-### E-commerce Support
-**Upload**: Product information, return policies, shipping processes
-
-**Result**: AI understands product-related conversations and customer issues
 
 ## Next Steps
 
