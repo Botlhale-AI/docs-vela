@@ -16,7 +16,9 @@ Upload your company's knowledge base documents to enhance Vela's AI analysis. Th
 
 ### Step 2: Upload Your Information
 - [ ] **Upload your company documents** (PDFs)
-- [ ] **Include industry-specific information** to help our LLM understand your business
+- [ ] **Add descriptions** for each document to help with organisation
+- [ ] **Set scope** - choose "Entire Organisation", "specific department" or "specific teams"
+- [ ] **Click "Upload Files"** to complete the process
 
 ---
 
@@ -29,6 +31,14 @@ Upload these types of documents to help our AI understand your business:
 - **Product information** - Features, specifications, pricing, troubleshooting guides
 
 ---
+
+## Managing Your Documents
+
+After uploading, you can manage your documents in the Document Library:
+
+- **Search documents** - Use the search bar to find specific documents
+- **Add file name** - Edit document file name
+- **View, download, or delete** - Use the action icons to manage individual documents
 
 ## Best Practices
 
