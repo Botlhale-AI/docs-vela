@@ -20,6 +20,8 @@ Upload your company's knowledge base documents to enhance Vela's AI analysis. Th
 - [ ] **Set scope** - choose "entire organisation", "specific department" or "specific teams"
 - [ ] **Click "Upload Files"** to complete the process
 
+![RAG](../img/screenshots/smart_search/smart10.png)
+
 ---
 
 ## What to Upload
@@ -38,6 +40,8 @@ After uploading, you can manage your documents in the Document Library:
 - **Search documents** - Use the search bar to find specific documents
 - **Add file name** - Edit document file name
 - **View, download, or delete** - Use the action icons to manage individual documents
+
+![RAG](../img/screenshots/smart_search/smart11.png)
 
 ## Best Practices
 
