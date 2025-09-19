@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Build Your Knowledge Base
 
-Upload your company's knowledge base documents to enhance Vela's AI analysis. This helps our LLM understand your business context and provide more accurate call analysis and agent performance assessment.
+Upload your company's knowledge base documents to enhance Vela's AI analysis. This helps our LLM understand your business context and provide more accurate call analysis.
 
 ## How to Upload
 
@@ -15,7 +15,7 @@ Upload your company's knowledge base documents to enhance Vela's AI analysis. Th
 ![RAG](../img/screenshots/smart_search/smart9.png)
 
 ### Step 2: Upload Your Information
-- [ ] **Upload your company documents** (PDFs, text files, URLs)
+- [ ] **Upload your company documents** (PDFs)
 - [ ] **Include industry-specific information** to help our LLM understand your business
 
 ---
