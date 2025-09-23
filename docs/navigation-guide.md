@@ -31,6 +31,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ### **New to Vela? Start Here**
 - **[Quick Start Guide for Team Leads & Administrators](./quick-start.md)** - Get up and running in 30 minutes
+- **[Quick Start Guide for Agents](./agent-quick-start.md)** - Get comfortable with your Agent Portal in 15 minutes
 - **[Data Upload Guide](./data-upload.md)** - Get your data into Vela
 - **[Dashboard Setup](./dashboard.md)** - Monitor your team's performance
 

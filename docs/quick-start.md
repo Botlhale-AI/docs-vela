@@ -286,7 +286,7 @@ Once you're comfortable with these basics, explore:
 
 ## Quick Reference
 
-### Essential Keyboard Shortcuts
+### Checklist
 - **Dashboard filters** - Use date and scope dropdowns for focused analysis
 - **Bulk operations** - Prepare CSV templates carefully to avoid upload errors
 - **Smart Search alerts** - Enable notifications for proactive quality management

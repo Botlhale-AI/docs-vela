@@ -12,6 +12,13 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Quick Start Guide for Agents',
+      collapsible: true,
+      collapsed: false,
+      items: ['agent-quick-start'],
+    },
+    {
+      type: 'category',
       label: 'Dashboard',
       collapsible: true,
       collapsed: true,
