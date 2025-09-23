@@ -76,19 +76,7 @@ const sidebars = {
       label: 'Data Management',
       collapsible: true,
       collapsed: true,
-      items: ['data-upload', 'compression_method'],
-    },
-    {
-      type: 'link',
-      label: 'API & Integration',
-      href: 'https://docs-apis.botlhale.xyz',
-    },
-    {
-      type: 'category',
-      label: 'FAQ',
-      collapsible: true,
-      collapsed: true,
-      items: ['faq'],
+      items: ['data-upload'],
     },
 
   ],

@@ -4,22 +4,22 @@ sidebar_position: 0
 
 # Get Started with Vela
 
-Welcome to Vela! This guide will help you start analysing your call centre data and improving customer experience immediately.
+This guide will show you how to upload and analyse your customer interactions. Giving you clear insights to improve agent performance, business operations and customer satisfaction.
 
-We know call centres handle thousands of conversations every day, but most of that valuable data goes unanalysed, especially when your customers speak African languages like Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, or Xitsonga. That's where Vela comes in. We transcribe and analyse your call recordings to provide insights that help you improve agent performance and customer satisfaction.
-
-> **What is Vela?** Vela is a **multilingual call centre analytics tool** that processes call recordings in African languages to provide AI-powered insights, agent scoring, and automated alerts for improving your team's performance.
+> **What is Vela?** Vela is a **call centre analytics tool** that processes customer interactions in multiple languages to provide insights on calls/chat and agent performance. 
 
 ## What You'll Achieve
 
 By the end of this guide, you'll be able to:
-- **Monitor your team's performance** with detailed call analytics
-- **Identify customer pain points** automatically from call recordings
-- **Generate insights** to improve customer satisfaction
-- **Track agent performance** with AI-powered scoring
+- **understand how to navigate thorugh Vela**
+- **View insights of each one of your interractions** This could be calls or chats
+- **Monitor your agents' performance** with different scopes (departments, teams, individual agents)
+- **Generate insights through reports** 
+- **Search for specific events in your interactions**
+- **Setup scorecards to automate QA on your interactions**
+-
 
-We've made this guide as straightforward as possible because we understand you have calls to handle and agents to manage.
-
+Ready to dive in? Click any of the goals above to jump right to that section.
 ---
 
 ## Understanding the Vela Interface
