@@ -5,7 +5,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Quick Start Team Lead & Admin',
       collapsible: true,
       collapsed: false,
       items: ['quick-start'],

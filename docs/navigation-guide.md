@@ -30,7 +30,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 ## Choose Your Path
 
 ### **New to Vela? Start Here**
-- **[Quick Start Guide](./quick-start.md)** - Get up and running in 5 minutes
+- **[Quick Start Guide for Team Leads & Administrators](./quick-start.md)** - Get up and running in 30 minutes
 - **[Data Upload Guide](./data-upload.md)** - Get your data into Vela
 - **[Dashboard Setup](./dashboard.md)** - Monitor your team's performance
 

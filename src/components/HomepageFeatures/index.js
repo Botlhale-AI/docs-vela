@@ -176,7 +176,7 @@ export default function HomepageFeatures() {
               Browse Documentation
               </div>
               <Link to="/docs/quick-start" className={styles.quickStart}>
-                Getting Started
+                Quick Start
               </Link>
             </div>
           </div>
