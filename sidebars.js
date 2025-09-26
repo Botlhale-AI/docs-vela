@@ -26,7 +26,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Interactions - Calls',
+      label: 'Interactions',
       collapsible: true,
       collapsed: true,
       items: ['Calls'],

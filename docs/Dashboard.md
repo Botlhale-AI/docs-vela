@@ -2,139 +2,178 @@
 sidebar_position: 1
 ---
 
-# Monitor Your Team's Performance
+# Dashboard & Analytics
 
-Your Vela dashboard shows you everything about your call centre's performance at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is performing.
+The Dashboard is your command center for monitoring performance, identifying trends, and making data-driven decisions about your team's development needs.
 
-## What You Can Achieve
+## Dashboard Overview
 
-Your dashboard transforms raw data into actionable insights. With it, you can:
+### Date Range Controls
+Located in the top-right corner, these filters allow you to focus your analysis:
 
-| **Performance Monitoring** | **Team Management** | **Customer Experience** |
-|---------------------------|-------------------|------------------------|
-| Spot problems before they escalate | Coach with confidence | Keep customers happy |
-| Track trends and patterns | Identify top performers | Monitor satisfaction |
-| Optimise efficiency | Spot training needs | Catch issues early |
+- **Quick Select**: Today, Yesterday, This Week, Last Week, This Month, Last Month
+- **Custom Range**: Select specific date periods for targeted analysis
+- **Comparison Mode**: View current period vs. previous period for trend analysis
+
+### Scope Selection
+Choose your data view based on your access permissions:
+- **Organisation**: All teams and departments (Admin level)
+- **Department**: Your department's teams (Department Manager level)
+- **Team**: Your specific team only (Team Lead level)
+
+![Dashboard header showing date range picker and scope selector](../img/screenshots/dashboard/dashboard01.png)
+
+## Core Performance Metrics
+
+### Agent Performance Indicators
+
+#### Average Agent Score
+- **Range**: 0-100 scale
+- **Calculation**: Weighted average of all agent interaction scores in selected period
+- **Color coding**: Green (80+), Yellow (60-79), Red (below 60)
+- **Use case**: Quick assessment of overall team performance quality
+
+#### Agent Scores Distribution
+- **Visualisation**: Histogram showing score ranges
+- **Identifies**: Performance clustering and outliers
+- **Action triggers**: Agents consistently below threshold need immediate coaching
+
+#### Talk to Listen Ratio
+- **Calculation**: Agent talking time ÷ Customer talking time
+- **Optimal range**: Typically 0.7-1.2 (varies by industry)
+- **High ratios**: May indicate agents talking too much, not listening enough
+- **Low ratios**: Could suggest engagement issues or lack of product knowledge
+
+### Interaction Volume Metrics
+
+#### No. Calls / No. Chats
+- **Purpose**: Workload distribution and capacity planning
+- **Trends**: Identify peak times and staffing needs
+- **Quality correlation**: High volume periods may show score decreases
+
+#### Ave Call Duration
+- **Benchmarking**: Compare against industry standards and internal targets
+- **Efficiency indicator**: Longer calls aren't always better - depends on resolution quality
+- **Training needs**: Consistently long calls may indicate knowledge gaps
+
+#### Average Silent Time
+- **Ideal range**: Minimal silent periods indicate smooth interaction flow
+- **High silent time**: May indicate system issues, knowledge gaps, or training needs
+
+### Alert and Quality Monitoring
+
+#### No. Alerts
+- **Types**: Compliance violations, escalations, negative sentiment spikes
+- **Priority levels**: Critical, High, Medium, Low
+- **Response tracking**: Time to resolution and resolution quality
+
+#### Resolved vs. Unresolved Alerts
+- **Resolution rate**: Percentage of alerts addressed within SLA
+- **Aging alerts**: Issues requiring immediate management attention
+- **Trend analysis**: Improving or declining issue management effectiveness
+
+![Dashboard grid showing key performance metrics with color-coded indicators](../img/screenshots/dashboard/dashboard06.png)
+
+## Advanced Analytics Metrics
+
+### Customer Experience Indicators
+
+#### Sentiment Distribution
+- **Categories**: Positive, Neutral, Negative
+- **Visualisation**: Pie chart or doughnut chart showing proportions
+- **Trend tracking**: Daily/weekly sentiment changes
+- **Alert thresholds**: Significant negative sentiment increases
+
+#### Pain Point Analysis
+- **Top 10 Pain Points (Detected)**: AI-identified customer frustration indicators
+- **Bottom 10 Pain Points**: Less common but still important issues
+- **Organisational vs. Detected**: Compare AI findings with your known issues
+- **Resolution tracking**: How effectively pain points are being addressed
+
+### Operational Intelligence
+
+#### Language Distribution
+- **Multi-language support**: Breakdown of interaction languages
+- **Resource planning**: Staffing for language-specific support needs
+- **Quality consistency**: Ensure performance standards across all languages
+
+#### Intent Distribution
+- **Customer purposes**: Sales, Support, Complaints, Information requests
+- **Resource allocation**: Match agent skills with customer intents
+- **Training focus**: Address gaps in specific intent handling
+
+#### Keyword Distribution
+- **Trending terms**: Most frequently mentioned topics
+- **Compliance monitoring**: Track required phrases and procedures
+- **Product/service insights**: Customer focus areas and concerns
+
+### Team Performance Metrics
+
+#### Team Scores Distribution
+- **Comparison**: Performance across different teams
+- **Benchmarking**: Identify high-performing team practices
+- **Resource allocation**: Support for underperforming teams
+
+#### Agent Distribution
+- **Workload balance**: Ensure equitable interaction distribution
+- **Performance correlation**: Relationship between volume and quality
+- **Capacity planning**: Optimal team sizing decisions
+
+## Dashboard Customisation
+
+### Metric Selection
+1. **Access customisation**: Click the "Customise" button
+2. **Choose metrics**: Select from available metrics
+3. **Chart types**: Select table, bar, line, pie, or doughnut visualisations for each metric
+4. **Save configuration**: Save your customised view for future sessions
+
+### Chart Type Optimisation
+- **Table Format**: Best for detailed data comparison and exact values
+- **Bar Charts**: Ideal for comparing categories (team performance, agent rankings)
+- **Line Charts**: Perfect for trend analysis over time
+- **Pie/Doughnut Charts**: Effective for proportion visualisation (sentiment distribution, language breakdown etc)
+
+![Dashboard customisation interface with drag-and-drop metric selection](../img/screenshots/dashboard/dashboard05.png)
+
+### Filter Combinations
+**Multi-dimensional Analysis**:
+- Date + Scope: "Last month's departmental performance"
+- Interaction type + Team: "Team A's call performance or chat performance"
+
+
+## Performance Interpretation Guide
+
+### Score Trends Analysis
+**Improving Trends**:
+- Consistent score increases over time
+- Positive coaching effectiveness
+- Successfully implemented training programs
+
+**Stable Trends**:
+- Consistent performance within acceptable range
+- May indicate need for advanced training to drive improvement
+- Consider recognition programs to maintain motivation
+
+**Declining Trends**:
+- Immediate intervention required
+- Review recent changes in processes, systems, or team composition
+- Implement focused coaching and additional training
+
+### Alert Pattern Recognition
+**High Alert Volume Patterns**:
+- **Time-based**: Specific days/hours with more issues
+- **Agent-specific**: Individual performance concerns
+- **System-related**: Technical issues affecting service quality
+- **Process-related**: Training gaps or procedure unclear
+
+**Resolution Effectiveness**:
+- **Fast resolution**: Good training and clear procedures
+- **Slow resolution**: Need for process improvement or additional resources
+- **Recurring issues**: Systemic problems requiring root cause analysis
 
 ---
 
-## Set Up Your Dashboard
 
-Ready to get started? Let's set up your dashboard in just a few steps.
-
-### Step 1: Access Your Dashboard
-1. **Log in** to Vela
-2. **Click "Dashboard"** in the left sidebar
-3. You'll see an empty dashboard initially - this is normal
-
-> **Tip**: If your dashboard is empty, you'll need to upload some call data first. See our [Data Upload Guide](./data-upload.md) to get started.
-
-### Step 2: Choose Your Team
-1. **Click "View By"** dropdown
-2. **Select your team** (e.g., "Customer Support Team")
-3. This filters all data to show only your team's performance
-
-![Team Selection - Screenshot showing the team dropdown menu and selection interface in the Vela dashboard](../img/screenshots/dashboard/dashboard01.png)
-
-### Step 3: Set Your Time Period
-1. **Click the date range** (e.g., "20/04/2025 – 28/04/2025")
-2. **Choose a preset** like "This Week" or "Last Month"
-3. **Or select custom dates** from the calendar
-4. **Click "Save"** to apply
-
----
-#### Date Range
-![Date Range"](../img/screenshots/dashboard/dashboard02.png)
-
----
-
-#### Date Range Selection- Calendar
-![Date Range Selection- Calendar"](../img/screenshots/dashboard/dashboard04.png)
-
----
-
-### Step 4: Add Key Metrics
-1. **Click "Customise"** in the top-right corner
-2. **Click "Add New Metric"** for each metric you want to track
-3. **Add these essential metrics**:
-
-> **Important**: Start with these core metrics to get the most value from your dashboard. You can always add more later as you become familiar with the platform.
-
-#### Performance Metrics
-- **Agent Distribution** - See who's handling the most calls
-- **Average Agent Score** - Track overall team performance
-- **Agent Scores Distribution** - Identify top performers and those needing help
-
-#### Efficiency Metrics
-- **Average Call Duration** - Spot efficiency issues
-- **Average Response Time** - Monitor responsiveness
-- **Average Silent Time** - Identify awkward pauses or delays
-
-#### Customer Experience Metrics
-- **Bottom 10 Pain Points** - See what's frustrating customers
-- **Sentiment Distribution** - Track satisfaction trends
-
-4. **Click "Save"** to apply your dashboard
-
----
-
-#### Customise Button
-![Customise Button](../img/screenshots/dashboard/dashboard03.png)
-
----
-
-#### Customise Dashboard - Options
-![Customise Dashboard - Options"](../img/screenshots/dashboard/dashboard05.png)
-
----
-
-## Understanding Your Dashboard
-
-### Performance Overview
-Your dashboard shows call analytics data for your selected team and time period. Each metric card displays:
-- **Current value** (e.g., average call duration)
-- **Trend indicator** (up/down arrows showing improvement or decline)
-<!-- - **Filter icon** for additional filtering options -->
-
-### Key Insights to Look For
-
-#### Agent Performance
-- **High scores** (90%+) indicate excellent performance
-- **Low scores** (below 70%) suggest training opportunities
-- **Score distribution** helps identify if issues are isolated or team-wide
-
-#### Call Efficiency
-- **Long call durations** might indicate complex issues or inefficiency
-- **High silent time** could signal agent uncertainty or system delays
-- **Response times** show how quickly your team responds to customers
-
-#### Customer Satisfaction
-- **Pain points** reveal what's frustrating customers
-- **Sentiment trends** show if satisfaction is improving or declining
-
----
-
-
-
-## Troubleshooting Common Issues
-
-| **Problem** | **Solution** |
-|-------------|--------------|
-| **Empty Dashboard** | Check if you have uploaded call data, verify your date range includes data, ensure you've selected the correct team |
-| **Missing Metrics** | Click "Customise" to add missing metrics, check if the metric is available for your data, contact support if metrics seem incorrect |
-| **Outdated Data** | Refresh your browser, check if new data has been uploaded, verify your date range is current |
-
----
-
-
-<!-- - **Call types** - Analyse different interaction types -->
-<!-- - **Agent filters** - Review individual performance -->
-
-<!-- ### Set Up Alerts
-Configure notifications for important events:
-- Agent scores drop below thresholds
-- Customer satisfaction declines
-- Call volumes spike unexpectedly -->
 
 ---
 

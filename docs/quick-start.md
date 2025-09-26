@@ -251,7 +251,6 @@ Generate management insights:
 ## Advanced Features Preview
 Once you're comfortable with these basics, explore:
 - **Custom Agent Scorecards** - Create evaluation criteria specific to your business
-- **Coaching Automation** - Set up training triggers based on performance thresholds
 - **Advanced Smart Searches** - Complex keyword combinations and sentiment-based monitoring
 - **API Integration** - Connect Vela data with other business systems
 - **Scheduled Reports** - Automated weekly/monthly management dashboards

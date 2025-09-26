@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Quick Start Guide for Agents
 
-Welcome to Vela Agent Portal! Vela agent portal helps you understand your performance, receive feedback from your team lead, and access training to improve your skills. This guide will get you comfortable using your Agent Portal in just 15 minutes, so you can start tracking your progress and responding to coaching right away.
+Welcome to Vela Agent Portal! Vela agent portal helps you understand your performance, receive feedback from your team lead, and access courses to improve your skills. This guide will get you comfortable using your Agent Portal in just 15 minutes, so you can start tracking your progress and responding to coaching right away.
 
 ## Getting Started
 
 ### System Requirements
 - **Supported browsers**: Chrome, Firefox, Edge
-- **Internet connection**: Required to access your portal and training
+- **Internet connection**: Required to access your portal
 
 ### Logging Into Vela
 Your team lead or administrator has set up your account. Here's how to access it:
@@ -39,7 +39,7 @@ After logging in, you'll see your Agent Portal - a simplified, focused view desi
 #### Your Main Sections
 - **Dashboard** - Your performance scores and trends
 - **My Interactions** - Your calls and chats with feedback
-- **Training** - Courses assigned to help you improve
+- **Courses** - Courses assigned to help you improve
 - **Awards** - Recognition for your achievements
 - **Notifications** - Messages from your team lead
 
@@ -75,7 +75,7 @@ What you'll see on your dashboard:
 #### What the colors mean:
 - **Green scores** - Great job! Keep up the excellent work
 - **Yellow scores** - Good, with room for small improvements
-- **Red scores** - Need attention - check feedback and training
+- **Red scores** - Need attention - check feedback and courses
 
 **Expected outcome**: You'll understand exactly how you're performing and whether you're improving over time.
 
@@ -100,16 +100,16 @@ Check for feedback from your team lead:
 #### Types of feedback you might see:
 - **Positive feedback**: "Great job handling that difficult customer calmly"
 - **Coaching suggestions**: "Try to summarize the solution before ending the call"
-- **Training recommendations**: "Please complete the Active Listening course"
+- **Courses recommendations**: "Please complete the Active Listening course"
 
 #### How to respond:
 - Thank your team lead for feedback
 - Ask questions if something isn't clear
-- Confirm when you've made changes or completed suggested training
+- Confirm when you've made changes or completed suggested courses
 
 **Expected outcome**: You'll stay connected with your team lead's coaching and can ask questions to improve faster.
 
-### 3. Complete Your Assigned Training (10 minutes)
+### 3. Complete Your Assigned Courses (10 minutes)
 Access your learning:
 
 1. Click **"Courses"** 
@@ -118,15 +118,15 @@ Access your learning:
 4. Work through the modules at your own pace
 5. Take any quizzes or assessments included
 
-![Training portal showing assigned courses and progress bars](../img/screenshots/courses/agent-courses.png)
-![Training portal showing assigned courses and progress bars](../img/screenshots/courses/agent-progress.png)
+![Courses portal showing assigned courses and progress bars](../img/screenshots/courses/agent-courses.png)
+![Courses portal showing assigned courses and progress bars](../img/screenshots/courses/agent-progress.png)
 
 #### Track your progress:
 - In progress modules will appear on the "In Progress" tab
 - Completed modules will appear in the "Completed" tab
 - Certificates are available when you complete full courses
 
-#### Why training is assigned:
+#### Why courses is assigned:
 - Based on your performance scores
 - Addresses specific areas where you can improve
 - Helps you develop new skills for better customer service
@@ -141,7 +141,7 @@ Access your learning:
 - **Review priority training** - See if you have any urgent courses to complete
 
 ### During Breaks (5 minutes)
-- **Complete training modules** - Use downtime productively
+- **Complete courses modules** - Use downtime productively
 - **Review recent interaction feedback** - Learn from your latest calls/chats
 - **Check your peer ranking** - Stay motivated by tracking your progress
 
@@ -169,7 +169,7 @@ Vela's AI analyzes your interactions for:
 ### Using Peer Comparisons Positively
 - **Top performers** - Learn from what they're doing well
 - **Average range** - Solid performance, look for small improvements
-- **Below average** - Focus on training and implementing feedback
+- **Below average** - Focus on courses and implementing feedback
 
 **Remember**: Everyone improves at different rates - focus on your own progress
 
@@ -186,7 +186,7 @@ Vela's AI analyzes your interactions for:
 - **Take courses when you're alert** - Don't rush through when tired
 - **Take notes on key points** you want to remember
 - **Practice immediately** - Try new techniques on your very next calls
-- **Ask questions** - Contact your team lead if training content is unclear
+- **Ask questions** - Contact your team lead if courses content is unclear
 - **Review certificates** - Keep track of what you've completed
 
 ### Connecting Training to Performance
@@ -199,7 +199,7 @@ Vela's AI analyzes your interactions for:
 ### Types of Awards You Can Receive
 - **Performance achievements** - High scores over time
 - **Improvement recognition** - Significant score increases
-- **Training completion** - Finishing assigned courses
+- **Courses completion** - Finishing assigned courses
 - **Special recognition** - Outstanding customer feedback
 - **Team contributions** - Helping colleagues or special projects
 
@@ -215,7 +215,7 @@ Vela's AI analyzes your interactions for:
 
 ### When to Reach Out
 - **You don't understand feedback** - Ask for specific examples
-- **Technical problems** - Can't access training or see scores
+- **Technical problems** - Can't access courses or see scores
 - **Personal challenges** - Life situations affecting your performance
 - **Ideas for improvement** - Suggestions for better processes
 
@@ -254,24 +254,24 @@ Vela's AI analyzes your interactions for:
 - **Only your own interactions** - Never other agents' calls or chats
 - **Your own performance data** - Scores, trends, and feedback
 - **Anonymous peer comparisons** - Rankings without names
-- **Your training records** - Courses assigned and completed
+- **Your course records** - Courses assigned and completed
 
 ### What Your Team Lead Sees
 - **Your performance scores and trends**
 - **Your interaction details for quality assurance**
-- **Your training progress and completion rates**
+- **Your course progress and completion rates**
 - **Comments and feedback you send through the system**
 
 ### Your Privacy Rights
 - **Personal conversations are not recorded or monitored outside work**
 - **Performance data is used only for coaching and development**
-- **Training records help identify your professional development needs**
+- **Course records help identify your professional development needs**
 
 ## Tips for Long-term Success
 
 ### Build Good Habits
 - **Check your dashboard daily** - Stay aware of your performance trends
-- **Complete training promptly** - Don't let courses pile up
+- **Complete courses promptly** - Don't let courses pile up
 - **Engage with feedback** - Treat coaching as a growth opportunity
 - **Set personal goals** - Aim to improve specific scores each month
 
@@ -298,7 +298,7 @@ Vela's AI analyzes your interactions for:
 
 ### When You Need Help
 - **Login issues**: Contact your team lead
-- **Training questions**: Use the comment system to ask your team lead
+- **Courses questions**: Use the comment system to ask your team lead
 - **Technical problems**: Try refreshing your browser first
 - **Performance concerns**: Schedule time to discuss with your team lead
 

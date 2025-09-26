@@ -2,241 +2,320 @@
 sidebar_position: 7
 ---
 
-# Analyse Customer Interactions
+# Interactions Management
 
-Vela's call analysis tools help you understand what's happening in your customer conversations, spot patterns that affect satisfaction, and identify opportunities to improve your team's performance.
+The Interactions section is your comprehensive quality assurance workspace, where you can upload, review, analyze, and score every customer conversation to ensure consistent service quality. 
 
-## What You Can Achieve
+## Interaction Upload Methods
 
-Call analysis transforms conversations into actionable insights. You'll be able to:
+### Single Call Upload
 
-| **Customer Understanding** | **Performance Improvement** | **Quality Assurance** |
-|---------------------------|----------------------------|---------------------|
-| Understand customer needs | Improve agent performance | Ensure consistent quality |
-| Spot pain points | Track improvement over time | Maintain compliance |
-| Identify opportunities | Guide training programs | Monitor standards |
+#### When to Use:
+- Individual call review and analysis
+- Spot-checking agent performance
+- Analyzing specific customer complaints or compliments
+- Training examples for coaching sessions
 
----
+#### Upload Process:
+1. **Navigate**: Go to Interactions → Calls
+2. **Click "Upload"**
+3. **Click "Single Upload"** tab
+4. **Complete the form**:
+   - **Agent**: Select from your team dropdown (filtered by your permission scope)
+   - **Direction**: Choose "Inbound" or "Outbound"
+   - **Tags**: Add classification labels (optional but recommended)
+   - **File Upload**: Browse your device or drag-and-drop the audio file
+5. **Submit**: Click "Upload" and monitor processing status
 
-## Understanding Call Data
+![Single call upload interface with form fields and file drop zone](../img/screenshots/data_upload/upload2.png)
 
-### Key Metrics Explained
-Your call analysis gives you insights into every interaction:
+#### Processing Times:
+- **Short calls**: (under 5 minutes)
+- **Standard calls**: (5-15 minutes)
+- **Long calls** : (15+ minutes) depending on content complexity
 
-| **Metric Category** | **What It Shows** | **Business Impact** |
-|-------------------|-------------------|-------------------|
-| Call Duration | Time efficiency and complexity | Resource allocation, capacity planning |
-| Customer Sentiment | Satisfaction and emotional state | Customer experience, retention |
-| Agent Score | Performance and skill assessment | Training needs, coaching opportunities |
-| Silent Time | Communication gaps and delays | Process efficiency, training opportunities |
-<!-- | **Resolution Rate** | Problem-solving effectiveness | Service quality, customer satisfaction | -->
+### Bulk Call Upload
 
-### Call Quality Indicators
-| **Indicator** | **What It Means** | **Action Required** |
-|---------------|-------------------|-------------------|
-| High sentiment + High score | Excellent service delivery | Recognise and replicate |
-| Low sentiment + Low score | Service quality issues | Coaching needed |
-| High sentiment + Low score | Good outcome despite challenges | Identify what worked |
-| Low sentiment + High score | Technical issues or external factors | Investigate root causes |
+#### When to Use:
+- Processing daily/weekly call batches
+- Historical data import during initial setup
+- Routine quality assurance on large volumes
+- Comprehensive team performance analysis
 
----
+#### Preparation Requirements:
 
-## How to Analyse Individual Calls
+**1. Create ZIP Archive:**
+- Maximum recommended size: 3GB per batch
+- Include all audio files (WAV or MP3 format)
+- Ensure consistent file naming for easy identification
 
-### Step 1: Access Call Details
+**2. Prepare Metadata CSV:**
+Required columns (exact column names):
+```
+filename,agent_name,team,department,direction,tags
+call_001.mp3,john.smith,Sales Team,Sales,inbound,sales;product_inquiry
+call_002.wav,mary.jones,Support Team,Customer Service,outbound,follow_up;resolution
+```
 
-![Calls](../img/screenshots/calls/calls-1.png)
+**Column Details:**
+- **filename**: Exact audio file name (including extension)
+- **agent_name**: Must match existing agent names in your system
+- **team**: Agent's team assignment
+- **department**: Department classification
+- **direction**: "inbound" or "outbound"
+- **tags**: Semicolon-separated classification labels
 
-- [ ] **Go to "Calls"** in the left sidebar
-- [ ] **Click on any call** to view detailed analysis
-- [ ] **Review the detailed breakdown** of the interaction
+**3. Download Template:**
+- Use the metadata.csv template available on the upload page
+- Ensures correct formatting and reduces upload errors
 
-### Step 2: Review Call Transcript
+#### Bulk Upload Process:
+1. **Navigate**: Go to Interactions → Calls
+2. **Click "Upload"**
+3. **Click "Bulk Upload"** tab
+4. **Upload ZIP file**: Select your prepared archive
+5. **Monitor processing**: Large batches display progress indicators
+6. **Review results**: Check for any failed uploads or errors
 
-![Calls](../img/screenshots/calls/calls-2.png)
-- [ ] **Read the full conversation** with timestamps
-- [ ] **Use the translation feature** to understand calls in African languages (Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, Xitsonga)
-- [ ] **Look for key moments** that affected the outcome
-- [ ] **Identify customer pain points** and agent responses
-- [ ] **Note successful resolution strategies**
+![Bulk upload interface showing progress bar and error reporting](../img/screenshots/data_upload/upload3.png)
 
-### Step 3: Analyse Performance Metrics
+#### Best Practices for Bulk Uploads:
+- Test small batches first (5-10 files) to verify format
+- Upload during off-peak hours to ensure optimal processing speed
+- Keep backup copies of original files until processing is confirmed
+- Monitor processing status - don't navigate away during large uploads
 
-![Calls](../img/screenshots/calls/calls-3.png)
-- [ ] **Review agent score** and breakdown
-- [ ] **Check customer sentiment** throughout the call using the Sentiment tab
-- [ ] **Examine call duration** and efficiency
-- [ ] **Assess resolution effectiveness**
-- [ ] **Explore Smart Detector tabs** for deeper insights:
-  - [ ] **Summary** - Overview of key call metrics and highlights
-  - [ ] **Keywords** - Important terms and phrases identified in the conversation
-  - [ ] **Alerts** - Automated notifications about critical moments or issues
-  - [ ] **Intents** - Customer intentions and goals detected during the call
-  - [ ] **Scorecard** - Detailed performance evaluation across multiple criteria
-  - [ ] **Pain Points** - Specific customer frustrations and challenges identified
+### Chat Upload Process
 
-### Step 4: Take Action
+#### JSON Format Requirements:
+```json
+[
+    {
+        "metadata": {
+            "date": "23/09/2025, 14:30",
+            "agent": "agent@yourcompany.com",
+            "interaction_id": "chat_12345",
+            "language": "en-ZA"
+        },
+        "messages": [
+            {
+                "message": "Hello, how can I help you today?",
+                "time": "23/09/2025, 14:30",
+                "sender": "agent",
+                "language": "en-ZA"
+            },
+            {
+                "message": "I need help with my billing",
+                "time": "23/09/2025, 14:31",
+                "sender": "customer",
+                "language": "en-ZA"
+            }
+        ]
+    }
+]
+```
 
-![Calls](../img/screenshots/calls/calls-4.png)
-- [ ] **Add comments** for coaching purposes
-- [ ] **Share insights** with the team
-- [ ] **Update training materials** based on learnings
-- [ ] **Follow up** with customers if needed
+#### JSON Structure Explanation:
+- **metadata**: Overall chat session information
+- **messages**: Array of individual chat messages in chronological order
+- **sender**: "agent" or "customer" to identify message source
+- **language**: Language code for multilingual analysis
 
----
+## Interaction Analysis Features
 
-## Identifying Patterns Across Calls
+### Automatic AI Analysis
 
-### Customer Pain Point Analysis
-Look for recurring issues that affect multiple customers:
+Every uploaded interaction receives comprehensive AI analysis:
 
-| **Pattern Type** | **What to Look For** | **Business Impact** |
-|------------------|---------------------|-------------------|
-| Product Issues | Repeated complaints about features or functionality | Product development priorities |
-| Process Problems | Confusion about procedures or policies | Process improvement opportunities |
-| Service Gaps | Unmet customer expectations | Service enhancement needs |
-| Training Needs | Agents struggling with specific topics | Training program development |
+#### Transcription Processing:
+- **Multi-language support**: Including African languages (Zulu, Xhosa, Afrikaans, etc.)
+- **Speaker identification**: Automatic separation of agent vs. customer speech
+- **Timestamp synchronization**: Precise timing for quality review
+- **Confidence scoring**: Transcription accuracy indicators
 
-### Agent Performance Patterns
-Identify trends that affect team performance:
+#### Smart Detector Analysis:
 
-| **Pattern** | **Indicators** | **Intervention** |
-|-------------|----------------|-----------------|
-| Consistent High Performance | High scores across multiple calls | Use as mentor, share best practices |
-| Declining Performance | Decreasing scores over time | Coaching, identify root causes |
-| Inconsistent Performance | High variance in scores | Focus on specific skill areas |
-| Specific Weaknesses | Low scores in particular areas | Targeted training programs |
+**1. Summary Generation**
+- AI-created overview of interaction key points
+- Issue identification and resolution tracking
+- Customer satisfaction assessment
+- Agent performance highlights
 
----
+**2. Keyword Detection**
+- Automatic identification of important terms and phrases
+- Compliance monitoring for required scripts and procedures
+- Product/service mentions for business intelligence
+- Sentiment-bearing words that influence customer experience
 
-## Using Call Analysis for Coaching
+**3. Alert Generation**
+- Compliance violations (missed procedures, inappropriate language)
+- Escalation indicators (customer dissatisfaction, unresolved issues)
+- Quality concerns (long hold times, process deviations)
+- Positive highlights (excellent service, successful resolution)
 
-### For Individual Agents
-- [ ] **Review recent calls** with the agent
-- [ ] **Give direct feedback** using the comment system on specific calls
-- [ ] **Identify specific improvement areas** from the data
-- [ ] **Create targeted coaching plans** based on patterns
-- [ ] **Track progress** over time
+**4. Intent Classification**
+- Customer goals: Support, Sales, Complaint, Information, Billing
+- Intent confidence: AI certainty level for each classification
+- Multi-intent detection: Interactions covering multiple customer needs
+- Intent progression: How customer goals evolved during interaction
 
-### For Team Development
-- [ ] **Share successful strategies** from high-performing calls
-- [ ] **Address common challenges** identified in analysis
-- [ ] **Update training materials** based on real examples
-- [ ] **Celebrate improvements** and successes
+**5. Sentiment Analysis**
+- Overall sentiment: Positive, Neutral, Negative for entire interaction
+- Sentiment journey: How customer mood changed throughout conversation
+- Agent impact: Whether agent actions improved or worsened customer sentiment
+- Critical moments: Specific points where sentiment shifted significantly
 
-### For Process Improvement
-- [ ] **Identify bottlenecks** in call handling
-- [ ] **Spot opportunities** for automation or streamlining
-- [ ] **Update procedures** based on customer feedback
-- [ ] **Optimise resource allocation** based on call patterns
+**6. Pain Point Identification**
+- Customer frustration indicators: Long wait times, repeated explanations, unresolved issues
+- System/process problems: Technical difficulties, unclear procedures
+- Agent-related issues: Knowledge gaps, communication problems
+- Resolution tracking: Whether pain points were addressed effectively
 
-### Direct Feedback System
-Team Leads can provide immediate, targeted feedback to agents:
+![Interaction detail view showing all AI analysis components](../img/screenshots/calls/calls-3.png)
 
-- [ ] **Add comments** directly on specific calls
-- [ ] **Highlight key moments** in the conversation that need attention
-- [ ] **Provide specific examples** of what went well or needs improvement
-- [ ] **Track feedback history** to monitor agent development over time
+### Manual Review and Scoring
 
----
+#### Accessing Interactions:
+1. **Navigate**: Interactions section (Calls or Chats tab)
+2. **Filter options**:
+   - **Date range**: Focus on specific time periods
+   - **Agent/Team**: Individual or group analysis
+   - **Score range**: Focus on high/low performing interactions
+   - **Alert status**: Prioritize flagged interactions
+   - **Review status**: Track your QA progress
 
-## Advanced Call Analysis Features
+#### Interaction Detail View:
 
-### Sentiment Analysis
-Track customer emotions throughout the conversation:
+**Audio/Chat Playback Controls:**
+- **Play/Pause**: Standard media controls for audio review
+- **Speed adjustment**: 0.5x to 2x playback speed for efficient review
+- **Skip controls**: Jump to specific timestamps
+- **Volume control**: Adjust for clear listening
 
-| **Sentiment Level** | **What It Indicates** | **Action Required** |
-|-------------------|---------------------|-------------------|
-| Positive | Customer satisfaction, successful resolution | Maintain current approach |
-| Neutral | Standard interaction, no major issues | Monitor for improvement opportunities |
-| Negative | Customer dissatisfaction, potential escalation | Attention needed |
+**Transcript Review:**
+- **Speaker identification**: Clear visual separation of agent vs. customer
+- **Searchable text**: Find specific keywords or phrases instantly
+- **Timestamp navigation**: Click timestamps to jump to specific audio moments
+- **Confidence indicators**: Visual cues for transcription accuracy
 
-### Keyword Analysis
-Identify important topics and themes:
+**Scorecard System:**
 
-- [ ] **Review keyword frequency** to spot trends
-- [ ] **Analyse context** around important terms
-- [ ] **Track topic evolution** over time
-- [ ] **Identify emerging issues** early
+*Automatic Scorecard:*
+- AI-generated evaluation based on your organisation's criteria
+- Category breakdown: Communication, Problem Resolution, Professionalism, Compliance
+- Individual scores: Detailed evaluation of each performance area
+- Overall score: Weighted average based on category importance
 
-### Performance Scoring
-Understand how agents are evaluated:
+*Manual Scorecard:*
+1. **Click "Manual"**
+2. **Evaluate each category**:
+   - Use your organisation's specific criteria
+   - Consider context that AI might miss
+   - Apply human judgment to nuanced situations
+   - Add detailed comments explaining your evaluation
+3. **Submit final score** which will override AI assessment
 
-| **Score Component** | **What It Measures** | **Improvement Focus** |
-|-------------------|-------------------|-------------------|
-| Communication | Clarity, professionalism, empathy | Soft skills training |
-| Problem Solving | Issue resolution effectiveness | Technical training |
-| Efficiency | Time management and process adherence | Process optimization |
-| Customer Focus | Understanding and meeting customer needs | Customer service training |
+![Scorecard interface showing AI and manual evaluation options](../img/screenshots/calls/calls-5.png)
 
-### Agent Score Boundaries
-Understand the performance zones and what actions to take:
+### Collaboration and Feedback
 
-| **Zone** | **Score Range** | **What It Means** | **Action Required** |
-|----------|----------------|-------------------|-------------------|
-| 🟢 **Green Zone** | Upper Bound to 100% | Excellent performance | Recognise and replicate |
-| 🟡 **Amber Zone** | Lower Bound to Upper Bound | Needs improvement | Regular coaching needed |
-| 🔴 **Red Zone** | 0% to Lower Bound | Poor performance | Immediate intervention needed |
+#### Comment System:
+- Add comments at interaction level or specific timestamps
+- Tag agents to notify them of feedback
+- Collaborate with other team leads on complex quality issues
+- Create coaching notes for development discussions
 
-#### Quick Reference
-- 🟢 **Green Zone**: High performers - use as mentors
-- 🟡 **Amber Zone**: Focus on specific skill gaps
-- 🔴 **Red Zone**: Needs immediate attention and support
+#### Comment Best Practices:
+- **Be specific**: Reference exact moments in the interaction
+- **Be constructive**: Focus on improvement opportunities, not criticism
+- **Be actionable**: Provide clear next steps or suggestions
+- **Be timely**: Add feedback within 24-48 hours of interaction
 
-> **Note**: Score boundaries are configured in Settings → Notifications → Agent Score Boundaries. Default values are typically Lower Bound (50%) and Upper Bound (80%).
+#### Agent Notification:
+- Agents receive notifications in their portal when you add comments
+- They can respond with questions or acknowledgment
+- Two-way communication supports effective coaching relationships
 
----
+## Quality Assurance Workflows
 
-## Call Analytics Dashboard
+### Daily QA Routine
 
-### Key Performance Indicators
-Monitor these metrics to track team performance:
+#### 1. Priority Review Process:
 
-| **KPI** | **Target** | **Action Threshold** |
-|---------|------------|-------------------|
-| Average Call Duration | 5-8 minutes | Above 10 minutes = efficiency review needed |
-| Customer Satisfaction | 85%+ positive | Below 75% = intervention needed |
-| Agent Performance Score | 85%+ | Below 70% = coaching required |
-<!-- | **First Call Resolution** | 80%+ | Below 70% = training or process review | -->
+**Morning (30 minutes):**
+- → Check overnight interactions for high-priority alerts
+- → Review any escalated customer issues
+- → Identify agents needing immediate coaching
 
-### Trend Analysis
-- [ ] **Track performance over time** to identify trends
-- [ ] **Compare team performance** across different periods
-- [ ] **Monitor improvement** after training interventions
-- [ ] **Identify seasonal patterns** in call volume and complexity
+**Midday (45 minutes):**
+- → Sample current day's interactions across all agents
+- → Focus on agents with declining score trends  
+- → Add feedback comments for agent development
 
----
+**End-of-day (30 minutes):**
+- → Complete any pending manual scorecards
+- → Review agent responses to feedback
+- → Plan next day's coaching priorities
 
-## Troubleshooting Common Issues
+#### 2. Sampling Strategy:
+- **High performers**: 10-20% random sampling for consistency verification
+- **Average performers**: 30-40% sampling focused on improvement opportunities
+- **Low performers**: 60-80% sampling until consistent improvement demonstrated
+- **New agents**: 100% review for first 2-4 weeks
 
-| **Problem** | **Possible Cause** | **Solution** |
-|-------------|-------------------|--------------|
-| Low call quality scores | Training gaps, unclear expectations, process issues | Review training materials, clarify expectations, optimise processes |
-| High call duration | Complex issues, agent uncertainty, inefficient processes | Provide better training, improve knowledge base, streamline procedures |
-| Poor customer sentiment | Service quality issues, agent attitude, product problems | Address root causes, provide coaching, improve products |
-| Inconsistent performance | Varying call complexity, agent experience, external factors | Standardise processes, provide consistent training, account for variables |
+### Weekly QA Analysis
 
----
+#### Comprehensive Review Process:
+- Generate weekly performance reports for all agents
+- Identify patterns in low-scoring interactions
+- Review alert trends and systemic issues
+- Assess coaching effectiveness through score improvements
+- Plan training initiatives based on common quality issues
 
-## Best Practices for Call Analysis
+#### Quality Trend Monitoring:
+- **Score consistency**: Are agents maintaining performance standards?
+- **Improvement trajectories**: Which agents are responding well to coaching?
+- **Compliance adherence**: Are procedure violations decreasing?
+- **Customer satisfaction**: Is sentiment improving with quality initiatives?
 
-### Regular Review Schedule
-- [ ] **Daily**: Review high-priority calls and alerts
-- [ ] **Weekly**: Analyse patterns and trends
-- [ ] **Monthly**: Full team performance review
-- [ ] **Quarterly**: Strategic analysis and planning
+## Advanced Interaction Features
 
-### Effective Coaching
-- [ ] **Use specific examples** from actual calls
-- [ ] **Focus on behaviours** that can be changed
-- [ ] **Provide constructive feedback** with actionable steps
-- [ ] **Celebrate improvements** and successes
+### Search and Filter Capabilities
 
-### Continuous Improvement
-- [ ] **Update training materials** based on call analysis
-- [ ] **Refine processes** based on customer feedback
-- [ ] **Share best practices** across the team
-- [ ] **Monitor the impact** of improvements
+#### Transcript Search:
+- **Keyword search**: Find interactions containing specific terms
+- **Phrase matching**: Exact phrase identification across all interactions
+- **Regular expressions**: Advanced pattern matching for complex searches
+- **Multi-language search**: Search across different language interactions
+
+#### Advanced Filtering:
+- **Combine multiple criteria**: Date + Agent + Score range + Alert type
+- **Saved filter sets**: Quick access to routine filter combinations
+- **Export filtered results**: Download specific interaction subsets
+- **Filter sharing**: Share useful filter combinations with other team leads
+
+#### Interaction Tagging System:
+- **Custom tags**: Create organisation-specific classification labels
+- **Tag hierarchies**: Organize tags in logical categories
+- **Bulk tagging**: Apply tags to multiple interactions simultaneously
+- **Tag-based reporting**: Generate insights based on tag classifications
+
+![Advanced search and filter interface with multiple criteria options](../img/screenshots/calls/calls-6.png)
+![Advanced search and filter interface with multiple criteria options](../img/screenshots/calls/calls-7.png)
+
+### Performance Correlation Analysis
+
+#### Score Correlation Insights:
+- **Time of day**: Do certain shifts show performance variations?
+- **Interaction length**: Relationship between call duration and quality scores
+- **Customer sentiment**: How agent performance affects customer mood
+- **Resolution effectiveness**: Quality scores vs. issue resolution success
+
+#### Team Comparison Features:
+- **Cross-team benchmarking**: Compare performance across different teams
+- **Best practice identification**: Learn from highest-performing interactions
+- **Skill gap analysis**: Identify training needs through comparative performance
+- **Resource optimisation**: Understand which teams handle which interaction types best
 
 ---
 
@@ -247,10 +326,9 @@ Monitor these metrics to track team performance:
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor call performance trends
+- [Dashboard Overview](./dashboard.md) - Monitor interaction performance trends
 - [Agent Performance](./agents.md) - Coach your team effectively
-- [Smart Search](./smart-search-guide.md) - Find specific patterns in calls
-- [Chat Analysis](./chats.md) - Analyse digital conversations
+- [Smart Search](./smart-search-guide.md) - Find specific patterns in interactions
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
 ## Need Help?

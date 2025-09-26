@@ -55,7 +55,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 1. **[Smart Detector](./smart-detector-overview.md)** - Set up automated monitoring
 2. **[Smart Search](./smart-search-guide.md)** - Create issue detection rules
 3. **[Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation criteria
-4. **[Call Analysis](./calls.md)** - Review specific interactions
+4. **[Interactions](./calls.md)** - Review specific interactions (calls and chats)
 5. **[Knowledge Base](./knowledge-base-guide.md)** - Provide agent resources
 
 
@@ -77,8 +77,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Knowledge Base](./knowledge-base-guide.md)** - Agent resources and training
 
 ### **Interaction Analysis**
-- **[Call Analysis](./calls.md)** - Voice interaction insights
-- **[Chat Analysis](./chats.md)** - Digital conversation analysis
+- **[Interactions](./calls.md)** - Voice and digital interaction insights
 - **[Notifications](./notifications.md)** - Alert management
 
 ### **Technical Features**
@@ -119,6 +118,6 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 | Generate reports | [Reports Guide](./reports.md) |
 
 | Configure alerts | [Notifications Guide](./notifications.md) |
-| Analyse calls | [Call Analysis](./calls.md) |
+| Analyse interactions | [Interactions](./calls.md) |
 | Set up quality monitoring | [Smart Detector](./smart-detector-overview.md) |
 | Manage my account | [Settings Guide](./settings.md) |
