@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Interactions - Calls',
-    link: '/docs/calls',
+    link: '/docs/Calls',
     description: 'Review call recordings and identify customer pain points automatically.',
     icon: 'fas fa-phone',
   },
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Agents',
-    link: '/docs/agents',
+    link: '/docs/Agents',
     description: 'Improve agent performance with AI-powered insights.',
     icon: 'fas fa-user-tie',
   },
@@ -172,7 +172,7 @@ export default function HomepageFeatures() {
               <br />
             </p>
             <div className={styles.heroButtons}>
-              <Link to="/quick-start" className={styles.quickStart}>
+              <Link to="/docs/getting-started/quick-start/team-lead-quick-start" className={styles.quickStart}>
                 Get Started
               </Link>
               <div className={styles.getStarted} onClick={scrollToFeatures}>

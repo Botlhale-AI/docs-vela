@@ -1,7 +1,7 @@
 ---
 id: team-lead-quick-start
 title: Team Lead Quick Start
-sidebar_label: Team Lead Quick Start (15-30 min)
+sidebar_label: Team Lead Quick Start
 sidebar_position: 0
 ---
 

@@ -1,7 +1,7 @@
 ---
-id: getting-started/quick-start/agent-quick-start
+id: agent-quick-start-nested
 title: Agent Quick Start
-sidebar_label: Agent Quick Start (10–15 min)
+sidebar_label: Agent Quick Start
 sidebar_position: 0
 ---
 
