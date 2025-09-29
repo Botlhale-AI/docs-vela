@@ -199,12 +199,12 @@ const sidebars = {
         },
         {
           type: "doc",
-          id: "chats",
+          id: "Chats",
           label: "Chat Management"
         },
         {
           type: "doc",
-          id: "dashboard",
+          id: "Dashboard",
           label: "Dashboard Overview"
         },
         {
@@ -214,17 +214,17 @@ const sidebars = {
         },
         {
           type: "doc",
-          id: "settings",
+          id: "Settings",
           label: "System Settings"
         },
         {
           type: "doc",
-          id: "reports",
+          id: "Reports",
           label: "Reports & Analytics"
         },
         {
           type: "doc",
-          id: "notifications",
+          id: "Notifications",
           label: "Notifications"
         },
         {
