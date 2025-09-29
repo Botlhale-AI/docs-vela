@@ -580,9 +580,13 @@ body {
 }
 
 [data-theme='dark'] .pageContainer,
-[data-theme='dark'] .pageContainer *,
 [data-theme='dark'] .featuresSection,
 [data-theme='dark'] .featuresSection * {
+  background-color: #031019 !important;
+}
+
+
+[data-theme='dark'] .pageContainer *:not(.getStarted):not(.quickStart) {
   background-color: #031019 !important;
 }
 
