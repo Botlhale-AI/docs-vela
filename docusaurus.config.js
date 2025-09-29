@@ -20,8 +20,9 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // editUrl: '/',
+          routeBasePath: '/',
         },
+
         blog: {
           showReadingTime: true,
           // editUrl: '/',
@@ -61,7 +62,7 @@ const config = {
       },
       items: [
         { to: '/', label: 'Home', position: 'right' },
-        { to: '/docs/release-notes', label: 'Release Notes', position: 'right' },
+        { to: '/release-notes', label: 'Release Notes', position: 'right' },
         {
           type: 'search',
           position: 'right',
@@ -95,6 +96,15 @@ const config = {
         },
       },
     ],
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+      toc: {
+        minHeadingLevel: 0,
+        maxHeadingLevel: 0,
+      },
+    },
   },
 
   scripts: [

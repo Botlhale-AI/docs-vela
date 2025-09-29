@@ -2,102 +2,90 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  tutorialSidebar: [
+  docsSidebar: [
     {
-      type: 'category',
-      label: 'Quick Start Team Lead & Admin',
-      collapsible: true,
+      type: "category",
+      label: "🚀 Getting Started",
       collapsed: false,
-      items: ['quick-start'],
-    },
-    {
-      type: 'category',
-      label: 'Quick Start Guide for Agents',
-      collapsible: true,
-      collapsed: false,
-      items: ['agent-quick-start'],
-    },
-    {
-      type: 'category',
-      label: 'Dashboard',
-      collapsible: true,
-      collapsed: true,
-      items: ['Dashboard'],
-    },
-    {
-      type: 'category',
-      label: 'Interactions',
-      collapsible: true,
-      collapsed: true,
-      items: ['Calls'],
-    },
-    {
-      type: 'category',
-      label: 'Interactions - Chats',
-      collapsible: true,
-      collapsed: true,
-      items: ['Chats'],
-    },
-    {
-      type: 'category',
-      label: 'Agents',
-      collapsible: true,
-      collapsed: true,
-      items: ['Agents'],
-    },
-    {
-      type: 'category',
-      label: 'Notifications',
-      collapsible: true,
-      collapsed: true,
-      items: ['Notifications'],
-    },
-    {
-      type: 'category',
-      label: 'Reports',
-      collapsible: true,
-      collapsed: true,
-      items: ['Reports'],
-    },
-    {
-      type: 'category',
-      label: 'Settings',
-      collapsible: true,
-      collapsed: true,
-      items: ['Settings'],
-    },
-    {
-      type: 'category',
-      label: 'Smart Detector',
-      collapsible: true,
-      collapsed: true,
       items: [
-        'smart-detector-overview',
-        'smart-search-guide',
-        'agent-scorecard-guide',
-        'knowledge-base-guide',
+        "getting-started/platform-overview",
+        "getting-started/system-requirements",
+        {
+          type: "category",
+          label: "Quick Start Guides",
+          collapsed: false,
+          items: [
+            "getting-started/quick-start/team-lead-quick-start",
+            "getting-started/quick-start/agent-quick-start",  
+            "getting-started/quick-start/administrator-setup",
+          ],
+        },
       ],
     },
-    {
-      type: 'category',
-      label: 'Data Management',
-      collapsible: true,
-      collapsed: true,
-      items: ['data-upload', 'compression_method'],
-    },
-    {
-      type: 'link',
-      label: 'API & Integration',
-      href: 'https://docs-apis.botlhale.xyz',
-    },
-    {
-      type: 'category',
-      label: 'FAQ',
-      collapsible: true,
-      collapsed: true,
-      items: ['faq'],
-    },
-
+    // {
+    //   type: "category",
+    //   label: "📖 User Guides",
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       type: "category",
+    //       label: "Team Lead Complete Guide",
+    //       items: [
+    //         "user-guides/team-lead/dashboard-analytics",
+    //         "user-guides/team-lead/interactions-management",
+    //         "user-guides/team-lead/smart-detector",
+    //         "user-guides/team-lead/agent-management",
+    //         "user-guides/team-lead/reports-insights",
+    //         "user-guides/team-lead/coaching-training",
+    //         "user-guides/team-lead/settings-administration",
+    //       ],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "Agent User Guide",
+    //       items: [
+    //         "user-guides/agent/personal-dashboard",
+    //         "user-guides/agent/my-interactions",
+    //         "user-guides/agent/training-portal",
+    //         "user-guides/agent/awards-recognition",
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "⚙️ Features",
+    //   collapsed: true,
+    //   items: [
+    //     "features/ai-analysis-transcription",
+    //     "features/quality-assurance-tools",
+    //     "features/multi-language-support",
+    //     "features/bulk-operations",
+    //     "features/custom-reporting",
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "🔧 Advanced",
+    //   collapsed: true,
+    //   items: [
+    //     "advanced/api-documentation",
+    //     "advanced/system-integrations",
+    //     "advanced/advanced-workflows",
+    //     "advanced/best-practices",
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "🆘 Support",
+    //   collapsed: true,
+    //   items: [
+    //     "support/troubleshooting-guide",
+    //     "support/faq",
+    //     "support/video-tutorials",
+    //     "support/release-notes",
+    //   ],
+    // },
   ],
 };
 

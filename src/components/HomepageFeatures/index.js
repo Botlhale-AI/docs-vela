@@ -172,12 +172,13 @@ export default function HomepageFeatures() {
               <br />
             </p>
             <div className={styles.heroButtons}>
-              <div className={styles.getStarted} onClick={scrollToFeatures}>
-              Browse Documentation
-              </div>
-              <Link to="/docs/quick-start" className={styles.quickStart}>
-                Quick Start
+              <Link to="/quick-start" className={styles.quickStart}>
+                Get Started
               </Link>
+              <div className={styles.getStarted} onClick={scrollToFeatures}>
+              Explore Features
+              </div>
+              
             </div>
           </div>
           <div className={styles.heroImageContainer}>
