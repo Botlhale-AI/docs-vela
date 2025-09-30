@@ -113,6 +113,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          id: "features/monitor-agent-performance",
+          label: "Monitor Agent Performance"
+        },
+        {
+          type: "doc",
           id: "features/multi-language-support",
           label: "Multi-Language Support"
         },
