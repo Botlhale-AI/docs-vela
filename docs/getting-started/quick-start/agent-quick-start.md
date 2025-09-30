@@ -14,16 +14,7 @@ This guide will get you comfortable using your portal in just **15 minutes**, so
 
 ---
 
----
-id: agent-quick-start
-title: Quick Start Guide for Agents
-sidebar_label: Agent Quick Start
-sidebar_position: 1
----
 
-# Quick Start Guide for Agents
-
-Welcome to Vela! This guide will help you get comfortable with your Agent Portal in just 15 minutes. You'll learn how to track your performance, respond to feedback, and complete training to continuously improve your skills.
 
 :::info Your Agent Portal
 As an agent, you have a focused view designed specifically for your personal development. You can see your own performance, receive feedback from your team lead, complete training courses, and track your progress—all in one place.
@@ -116,10 +107,10 @@ Your dashboard shows how you're performing and where you can improve. Let's expl
 - It's based on your recent customer interactions
 - Updated regularly as you handle calls and chats
 
-**What the Colours Mean:**
-- 🟢 **Green (80+):** Excellent work! Keep it up!
-- 🟡 **Yellow (60-79):** Good performance with room for improvement
-- 🔴 **Red (Below 60):** Needs attention—check your feedback and training
+**What the performance score mean:**
+- 🟢 **(80+):** Excellent work! Keep it up!
+- 🟡 **(60-79):** Good performance with room for improvement
+- 🔴 **(Below 60):** Needs attention. Check your feedback and training
 
 :::info How Your Score is Calculated
 Your score is based on several factors: how well you communicate, how effectively you solve customer problems, whether you follow procedures, and how satisfied customers are with your service. Vela's AI analyses every interaction to give you an accurate, fair assessment.
@@ -130,8 +121,8 @@ Your score is based on several factors: how well you communicate, how effectivel
 **The Graph Showing Your Journey**
 
 This line graph shows how your performance has changed over time:
-- **Going up?** 📈 You're improving—brilliant!
-- **Staying steady?** ➡️ Consistent performance—now aim higher
+- **Going up?** 📈 You're improving, brilliant!
+- **Staying steady?** ➡️ Consistent performance. Now aim higher
 - **Going down?** 📉 Time to check feedback and focus on training
 
 **What to Look For:**
@@ -153,7 +144,7 @@ See where you stand compared to your teammates (their names aren't shown—this 
 - **Bottom 25%:** Focus on training and feedback to improve
 
 :::tip Use Comparisons Positively
-Peer comparison isn't about competition—it's about motivation and understanding what's possible. If others are scoring higher, it means you can too with the right focus and training!
+Peer comparison isn't about competition, it's about motivation and understanding what's possible. If others are scoring higher, it means you can too with the right focus and training!
 :::
 
 ### Recent Activity Summary
@@ -166,10 +157,6 @@ Quick view of your most recent calls and chats:
 - Whether your team lead has added feedback
 - Customer sentiment (how the customer felt)
 
-**Colour-Coded Indicators:**
-- 🟢 High score—great job!
-- 🟡 Average score—solid work
-- 🔴 Low score—review feedback carefully
 
 ### Key Performance Categories
 

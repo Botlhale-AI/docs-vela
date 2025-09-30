@@ -271,8 +271,8 @@ Ready to dive deeper? Here are the recommended next steps:
 
 ### Popular Next Steps
 
-- [Team Lead Quick Start Guide](/docs/quick-start/team-lead-quick-start)
-- [Agent Quick Start Guide](/docs/quick-start/agent-quick-start)
+- [Team Lead Quick Start Guide](/docs/getting-started/quick-start/team-lead-quick-start)
+- [Agent Quick Start Guide](/docs/getting-started/quick-start/agent-quick-start)
 - [Understanding Dashboard Metrics](/docs/user-guides/team-lead/dashboard-analytics)
 - [Uploading Your First Interaction](/docs/user-guides/team-lead/interactions-management)
 - [Setting Up Smart Search](/docs/user-guides/team-lead/smart-detector)

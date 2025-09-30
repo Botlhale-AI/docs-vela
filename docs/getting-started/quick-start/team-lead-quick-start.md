@@ -43,7 +43,7 @@ Your administrator assigned you one of these access levels:
 
 | Access Level | What You Can See |
 |--------------|------------------|
-| **Organizational** | All departments and teams across the organization |
+| **Organisational** | All departments and teams across the organisation |
 | **Departmental** | All teams within your specific department |
 | **Team** | Only your immediate team's data |
 
@@ -63,7 +63,7 @@ Check your email for a verification link from Vela. Click it to activate your ac
 **Option A: Single Sign-On (SSO)**
 - Click **"Sign in with Google"** if using Google Workspace
 - Click **"Sign in with Microsoft"** if using Azure AD
-- Follow your organization's authentication flow
+- Follow your organisation's authentication flow
 
 **Option B: Email and Password**
 - Enter your email address
@@ -95,24 +95,28 @@ After logging in, you'll land on your **Dashboard** - your command center for mo
 
 ### Dashboard Overview
 
-Your Dashboard provides an at-a-glance view of team performance. Let's explore the key components:
+**Your Dashboard provides an overview of your team’s performance.**  
 
-![Dashboard with main sections labeled]
+If no calls or chats have been uploaded in your organization yet, performance data will not be available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
+
+Let’s explore the key components of the Dashboard:
+
+![Dashboard grid showing key performance metrics with color-coded indicators](../../../img/screenshots/dashboard/dashboard06.png)
 
 ### Essential Controls
 
-**Date Range Selector** (Top Right)
+**Date Range Selector** (Top Center)
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
 - Custom range: Select specific start and end dates
 - **Try it now:** Set the date range to "Today" to see current performance
 
-**Scope Filter** (If you have multi-team access)
-- Organization view: See all teams
+**Scope Filter** (Top left)
+- Organisation view: See all teams
 - Department view: Focus on specific departments
-- Team view: Your immediate team only
+- Team view: Focus on a specific teams only
 - **Try it now:** Ensure you're viewing your team's scope
 
-**Interaction Type Filter**
+**Interaction Type Filter** (Top left, below Scope Filter)
 - All: Calls and chats combined
 - Calls only: Voice interactions
 - Chats only: Text-based interactions
@@ -126,8 +130,8 @@ Your dashboard displays critical performance indicators. Here are the most impor
 **Average Agent Score**
 - **What it is:** Overall team performance rating (0-100 scale)
 - **What to look for:** 
-  - Green (80+): Excellent performance
-  - Yellow (60-79): Good with room for improvement
+  -  (80+): Excellent performance
+  -  (60-79): Good with room for improvement
 - **Why it matters:** Quick indicator of overall team quality
 
 **Agent Scores Distribution**
@@ -184,17 +188,17 @@ Start each day by checking these three metrics:
 3. **Sentiment Distribution** - Customer satisfaction trends
 :::
 
-### Customizing Your Dashboard
+### Customising Your Dashboard
 
-You can personalize which metrics appear on your dashboard:
+You can customise/choose which metrics appear on your dashboard:
 
-1. Click **"Customize Dashboard"** button
+1. Click **"Customise Dashboard"** button
 2. **Select metrics** from the available list (30+ options)
 3. **Choose chart types** - Table, Bar, Line, Pie, or Donut
 4. **Drag and drop** to arrange layout
 5. **Save** your configuration
 
-![Dashboard customization interface]
+![Dashboard customisation interface]
 
 **Try it now:** Add "Top 10 Pain Points" to your dashboard to monitor common customer issues.
 
@@ -282,7 +286,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 **What to look for:**
 - Did the agent improve negative sentiment?
 - Where did sentiment deteriorate, and why?
-- Overall trajectory—did interaction end positively?
+- Overall trajectory. Did interaction end positively?
 
 #### 4. Keywords Detected
 
@@ -297,7 +301,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 
 #### 5. Alerts
 
-**Issues flagged by AI or Smart Search:**
+**Issues flagged by Smart Search or Vela AI:**
 - **Compliance violations:** Missed required procedures or scripts
 - **Negative escalations:** Customer dissatisfaction or complaints
 - **Quality concerns:** Long hold times, unprofessional language
@@ -322,7 +326,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 
 #### 7. Automatic Scorecard
 
-**AI evaluation based on your organization's criteria:**
+**AI evaluation based on your organisation's scorecard/criteria:**
 
 ![Automatic scorecard showing category scores]
 
@@ -359,3 +363,56 @@ After reviewing the AI analysis, add your own observations:
 3. **Write specific feedback:**
 
 **Good feedback example:**
+
+Great job handling this difficult customer, @Sarah / @Agent! I particularly liked how you:
+
+-Remained calm when the customer raised their voice
+-Took ownership of the issue immediately
+-Offered a clear solution with timeline
+
+4. **Tag the agent** (they'll receive a notification. If you don't use the @Agent tag, the comment will be seen by team leaders only)
+5. **Send your comment**
+
+:::tip Comments Best Practices
+- **Be specific** - Reference exact moments in the interaction
+- **Be actionable** - Provide clear next steps
+- **Balance positive and constructive** - Acknowledge strengths, suggest improvements
+:::
+
+### Creating a Manual Scorecard (Optional)
+
+If you disagree with the Vela AI's assessment, you can override it:
+
+1. **Click "Create Manual Scorecard"**
+2. **Evaluate each category** using your judgment
+3. **Add detailed comments** explaining your scores
+4. **Submit** - This replaces the AI scorecard
+
+**When to use manual scoring:**
+- AI missed important context or nuance
+- Cultural or language subtleties not captured by AI
+- Complex situations requiring human judgment
+
+---
+
+## Step 4: Set Up Your First Smart Search (10 minutes)
+
+Smart Search automatically monitors all interactions for specific keywords, phrases, or patterns. This is essential for compliance monitoring and proactive quality management.
+
+### Creating a Compliance Monitor
+
+Let's create a Smart Search to monitor refund-related conversations:
+
+1. **Navigate to Smart Detector**
+   - Click **"Smart Detector"** in the left sidebar
+   - Select **"Smart Search"** tab
+
+2. **Click "Create New Smart Search"**
+
+![Smart Search creation form]
+
+3. **Configure your search:**
+
+**Title:** `Refund Request Monitor`
+
+**Description:**
