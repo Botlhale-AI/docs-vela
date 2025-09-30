@@ -68,7 +68,7 @@ Check your email inbox (and spam folder) for your Vela account verification emai
 - Enter your password
 - Click **'Log In'**
 
-![Login page with authentication options]
+![Simple login page with agent-friendly layout](../../../img/screenshots/settings/agent-login.png)
 
 ### Setting Your Password (First Time Only)
 
@@ -90,7 +90,8 @@ Use a phrase you'll remember, like the first letters of a sentence: 'I want to b
 
 After logging in, you'll see your **Personal Dashboard**—this is your home screen. It's designed to be simple and focused on what matters to you: your performance and development.
 
-![Agent portal dashboard overview]
+![Simple dashboards page ](../../../img/screenshots/dashboard/agent-dashboard.png)
+
 
 ---
 
@@ -98,7 +99,8 @@ After logging in, you'll see your **Personal Dashboard**—this is your home scr
 
 Your dashboard shows how you're performing and where you can improve. Let's explore what everything means.
 
-![Agent dashboard with key sections highlighted]
+![Agent dashboard showing performance metrics in a clean, easy-to-read format](../../../img/screenshots/dashboard/agent-dashboard.png)
+![Agent dashboard showing performance metrics in a clean, easy-to-read format](../../../img/screenshots/dashboard/agent-dashboard2.png)
 
 ### Your Current Performance Score
 
@@ -130,7 +132,7 @@ This line graph shows how your performance has changed over time:
 - Do you perform better on certain days or times?
 - Are there patterns you can learn from?
 
-![Performance trend graph example]
+![Agent dashboard showing performance metrics in a clean, easy-to-read format](../../../img/screenshots/dashboard/dashboard-agent3.png)
 
 ### Comparing Yourself with Peers
 
@@ -189,7 +191,7 @@ Your performance can be broken down into specific areas such as:
 - **Short or yellow bars:** Areas to focus on for improvement
 - **Red bars:** Priority areas—check assigned training
 
-![Performance categories breakdown chart]
+![Agent performance categories](../../../img/screenshots/dashboard/dashboard-agent4.png)
 
 ---
 
@@ -199,11 +201,11 @@ Your team lead reviews your interactions and provides specific feedback to help 
 
 ### Accessing Your Interactions
 
-1. **Click 'My Interactions'** in your portal navigation
+1. **Click 'Interactions'** in your portal navigation
 2. **Look for the comment icon (💬)** next to any interactions
 3. **Click on an interaction** to see full details and feedback
 
-![Interactions list with comment indicators]
+![Agent interaction list showing comment indicators and feedback interface](../../../img/screenshots/calls/agent-interaction.png)
 
 ### Understanding Your Interaction Details
 
@@ -231,7 +233,7 @@ When you open an interaction, you'll see:
 - Specific comments about your performance
 - Suggestions for improvement
 
-![Interaction detail view with feedback section highlighted]
+![Interaction detail view showing scorecard, comments section, and analysis panel](../../../img/screenshots/calls/interaction-detail.png)
 
 ### Types of Feedback You'll Receive
 
@@ -249,6 +251,8 @@ When you open an interaction, you'll see:
 1. **Read the feedback carefully**—understand exactly what your team lead is saying
 2. **Click 'Reply' in the comments section**
 3. **Write your response:**
+
+![Interaction detail view showing scorecard, comments section, and analysis panel](../../../img/screenshots/calls/calls-4.png)
 
 **Good response examples:**
 
