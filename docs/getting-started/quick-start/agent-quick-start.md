@@ -140,7 +140,7 @@ See where you stand compared to your teammates (their names aren't shown—this 
 
 **Percentile Ranking:**
 - **Top 25%:** You're amongst the highest performers!
-- **Middle 50%:** Solid performance with potential to climb
+- **Middle 40%-60%:** Solid performance with potential to climb
 - **Bottom 25%:** Focus on training and feedback to improve
 
 :::tip Use Comparisons Positively
@@ -162,7 +162,7 @@ Quick view of your most recent calls and chats:
 
 **Where You Excel and Where to Improve**
 
-Your performance is broken down into specific areas:
+Your performance can be broken down into specific areas such as:
 
 **Communication Skills**
 - How clearly you speak or write
@@ -221,7 +221,7 @@ When you open an interaction, you'll see:
 - Complete chat conversation (for chats)
 - You can search for specific words or moments
 
-**AI Analysis:**
+**Vela AI Analysis:**
 - What you did well
 - Areas for improvement
 - Key moments in the conversation
@@ -230,21 +230,19 @@ When you open an interaction, you'll see:
 **Your Team Lead's Feedback:**
 - Specific comments about your performance
 - Suggestions for improvement
-- Positive recognition for good work
-- Training recommendations
 
 ![Interaction detail view with feedback section highlighted]
 
 ### Types of Feedback You'll Receive
 
 **Positive Feedback:**
-> 'Excellent work on this call, James! You remained calm when the customer was frustrated (at 2:15) and your explanation at 3:40 was crystal clear. The customer went from annoyed to satisfied—that's great service!'
+> 'Excellent work on this call, James! You remained calm when the customer was frustrated (at 2:15) and your explanation at 3:40 was crystal clear. The customer went from annoyed to satisfied, that's great service!'
 
 **Constructive Feedback:**
-> 'Good effort on this interaction, Sarah. For next time: try to confirm the customer's issue before offering solutions (around 1:20). This ensures we're solving the right problem. Please review the "Active Listening" training module.'
+> 'Good effort on this interaction, Sarah. For next time: try to confirm the customer's issue before offering solutions (around 1:20). This ensures we're solving the right problem.'
 
 **Coaching Feedback:**
-> 'This interaction shows improvement in your product knowledge, well done! However, the hold time at 4:30 was quite long. If you need to research something, give the customer a time estimate. See the "Managing Customer Expectations" course.'
+> 'This interaction shows improvement in your product knowledge, well done! However, the hold time at 4:30 was quite long. If you need to research something, give the customer a time estimate. '
 
 ### How to Respond to Feedback
 
@@ -254,92 +252,3 @@ When you open an interaction, you'll see:
 
 **Good response examples:**
 
-
-:::info Course Completion Tips
-- **Set aside focused time:** Don't rush through courses during breaks
-- **Take notes:** Write down key takeaways you can apply immediately
-- **Complete assessments:** They help reinforce what you've learnt
-- **Apply immediately:** Try new techniques on your very next calls
-- **Review certificates:** Keep track of your professional development
-:::
-
-### Using What You've Learnt
-
-**After Completing a Course:**
-
-1. **Review key takeaways**—what are the 3 main things you learnt?
-2. **Identify opportunities**—when will you use these skills?
-3. **Apply immediately**—use new techniques in your next interactions
-4. **Track improvement**—watch your scores in related performance areas
-5. **Share success**—tell your team lead what you've learnt and applied
-
-**Example Application:**
-
-After completing 'Active Listening' training:
-- ✅ On my next call, I'll summarise what the customer says before responding
-- ✅ I'll use phrases like 'What I'm hearing is...' to confirm understanding
-- ✅ I'll avoid interrupting even when I think I know the issue
-- ✅ I'll watch my scores in 'Communication Skills' to see improvement
-
----
-
-## Step 5: Tracking Your Achievements (3 minutes)
-
-Vela recognises your hard work and improvement through awards, certificates, and achievements. Let's explore how to track your success.
-
-### Accessing Your Awards
-
-1. **Click 'Awards'** in your agent portal
-2. **View your earned awards** and achievements
-3. **Check progress** towards awards you're working on
-
-![Awards section showing earned and in-progress achievements]
-
-### Types of Awards You Can Earn
-
-**Performance Awards:**
-- **Consistency Champion:** Maintaining high scores over time
-- **Top Performer:** Ranking in top 25% of team
-- **Excellence Award:** Outstanding scores in specific categories
-- **Improvement Star:** Significant score increases
-
-**Learning & Development Awards:**
-- **Training Champion:** Completing all assigned courses ahead of schedule
-- **Knowledge Seeker:** Voluntarily completing additional courses
-- **Quick Learner:** Rapid skill acquisition and application
-- **Certification Master:** Earning multiple professional certifications
-
-**Customer Experience Awards:**
-- **Customer Favourite:** Highest customer satisfaction scores
-- **Problem Solver:** Excellent first-call resolution rates
-- **Empathy Expert:** Outstanding customer sentiment scores
-- **Service Excellence:** Consistently exceeding customer expectations
-
-**Special Recognition:**
-- **Team Player:** Helping colleagues and contributing to team success
-- **Compliance Champion:** Perfect adherence to procedures
-- **Innovation Contributor:** Suggesting process improvements
-- **Rising Star:** New agents showing exceptional promise
-
-### Certificate Downloads
-
-**For Completed Achievements:**
-- Download professional certificates
-- Add to your CV or professional portfolio
-- Share on professional networking sites
-- Keep for performance reviews
-
-**Certificate Information Includes:**
-- Your name
-- Award or course title
-- Completion date
-- Skills or competencies demonstrated
-- Vela and company branding
-
-![Certificate example]
-
-### Progress Tracking
-
-**Awards In Progress:**
-
-See what you're working towards:
