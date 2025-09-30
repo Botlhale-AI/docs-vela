@@ -162,7 +162,7 @@ Configure platform preferences, manage users and permissions, set performance th
 
 **Upload interactions through multiple methods:**
 - Single call/chat upload for immediate analysis
-- Bulk upload for processing large volumes (up to 50GB batches)
+- Bulk upload for processing large volumes (up to 3GB batches)
 - API integration for automated data flow
 - Supported formats: WAV, MP3 for audio; JSON for chats
 

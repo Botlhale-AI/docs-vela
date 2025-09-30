@@ -87,7 +87,7 @@ If you experience issues, try disabling extensions temporarily to identify confl
 | Report generation | 1 - 5 MB per report |
 
 :::info Bulk Upload Planning
-When uploading large batches of calls (approaching the 50GB limit), ensure you have sufficient bandwidth and time allocated. A 50GB upload on a 10 Mbps connection will take approximately 11-12 hours.
+When uploading large batches of calls (approaching the 3GB limit), ensure you have sufficient bandwidth and time allocated. A 3GB upload on a 10 Mbps connection will take approximately 11-12 hours.
 :::
 
 ### Firewall and Security

@@ -22,80 +22,80 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: "category",
-      label: "📖 User Guides",
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Team Lead Complete Guide",
-          items: [
-            {
-              type: "doc",
-              id: "user-guides/team-lead/dashboard-analytics",
-              label: "Dashboard & Analytics"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/interactions-management",
-              label: "Interactions Management"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/smart-detector",
-              label: "Smart Detector"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/agent-management",
-              label: "Agent Management"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/reports-insights",
-              label: "Reports & Insights"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/coaching-training",
-              label: "Coaching & Training"
-            },
-            {
-              type: "doc",
-              id: "user-guides/team-lead/settings-administration",
-              label: "Settings & Administration"
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Agent User Guide",
-          items: [
-            {
-              type: "doc",
-              id: "user-guides/agent/personal-dashboard",
-              label: "Agent Dashboard"
-            },
-            {
-              type: "doc",
-              id: "user-guides/agent/my-interactions",
-              label: "Agent Interactions"
-            },
-            {
-              type: "doc",
-              id: "user-guides/agent/training-portal",
-              label: "Agent Coaching Portal"
-            },
-            {
-              type: "doc",
-              id: "user-guides/agent/awards-recognition",
-              label: "Awards & Recognition"
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "📖 User Guides",
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       type: "category",
+    //       label: "Team Lead Complete Guide",
+    //       items: [
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/dashboard-analytics",
+    //           label: "Dashboard & Analytics"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/interactions-management",
+    //           label: "Interactions Management"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/smart-detector",
+    //           label: "Smart Detector"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/agent-management",
+    //           label: "Agent Management"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/reports-insights",
+    //           label: "Reports & Insights"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/coaching-training",
+    //           label: "Coaching & Training"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/team-lead/settings-administration",
+    //           label: "Settings & Administration"
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "Agent User Guide",
+    //       items: [
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/agent/personal-dashboard",
+    //           label: "Agent Dashboard"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/agent/my-interactions",
+    //           label: "Agent Interactions"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/agent/training-portal",
+    //           label: "Agent Coaching Portal"
+    //         },
+    //         {
+    //           type: "doc",
+    //           id: "user-guides/agent/awards-recognition",
+    //           label: "Awards & Recognition"
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       type: "category",
       label: "⚙️ Features",
@@ -138,21 +138,21 @@ const sidebars = {
           id: "advanced/api-documentation",
           label: "API Documentation"
         },
-        {
-          type: "doc",
-          id: "advanced/system-integrations",
-          label: "System Integrations"
-        },
-        {
-          type: "doc",
-          id: "advanced/advanced-workflows",
-          label: "Advanced Workflows"
-        },
-        {
-          type: "doc",
-          id: "advanced/best-practices",
-          label: "Best Practices"
-        },
+        // {
+        //   type: "doc",
+        //   id: "advanced/system-integrations",
+        //   label: "System Integrations"
+        // },
+        // {
+        //   type: "doc",
+        //   id: "advanced/advanced-workflows",
+        //   label: "Advanced Workflows"
+        // },
+        // {
+        //   type: "doc",
+        //   id: "advanced/best-practices",
+        //   label: "Best Practices"
+        // },
       ],
     },
     {
@@ -160,11 +160,11 @@ const sidebars = {
       label: "🆘 Support",
       collapsed: true,
       items: [
-        {
-          type: "doc",
-          id: "support/troubleshooting-guide",
-          label: "Troubleshooting Guide"
-        },
+        // {
+        //   type: "doc",
+        //   id: "support/troubleshooting-guide",
+        //   label: "Troubleshooting Guide"
+        // },
         {
           type: "doc",
           id: "support/faq",
@@ -175,11 +175,7 @@ const sidebars = {
           id: "support/video-tutorials",
           label: "Video Tutorials"
         },
-        {
-          type: "doc",
-          id: "support/release-notes",
-          label: "Release Notes"
-        },
+        
       ],
     },
     {

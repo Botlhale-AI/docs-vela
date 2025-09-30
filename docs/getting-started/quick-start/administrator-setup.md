@@ -44,7 +44,7 @@ As a **Vela Administrator**, you have the highest level of access and control. T
 
 ## System Integrations
 
-- **Telephony/CRM integrations** – Connect external systems to automatically ingest calls/chats.  
+- **Telephony/CRM integrations** – Work with Botlhale AI Support to connect external systems to automatically ingest calls/chats.  
 - **APIs** – Use Vela’s API to automate uploads and pull analytics.  
 - **Data Management** – Configure retention policies, data compression methods, and storage.  
 
