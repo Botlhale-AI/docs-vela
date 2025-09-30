@@ -87,7 +87,7 @@ If this is your first login, you'll need to create a password that meets these r
 
 After logging in, you'll land on your **Dashboard** - your command center for monitoring team performance. The left sidebar shows your main navigation areas.
 
-![Dashboard homepage with navigation sidebar highlighted]
+![Dashboard Homepage](../../../img/screenshots/dashboard/dashboard01.png)]
 
 ---
 
@@ -192,13 +192,14 @@ Start each day by checking these three metrics:
 
 You can customise/choose which metrics appear on your dashboard:
 
-1. Click **"Customise Dashboard"** button
+1. Click **"Customise"** button
 2. **Select metrics** from the available list (30+ options)
 3. **Choose chart types** - Table, Bar, Line, Pie, or Donut
 4. **Drag and drop** to arrange layout
 5. **Save** your configuration
 
-![Dashboard customisation interface]
+![Dashboard Customise](../../../img/screenshots/dashboard/dashboard03.png)
+![Dashboard Customise](../../../img/screenshots/dashboard/dashboard05.png)
 
 **Try it now:** Add "Top 10 Pain Points" to your dashboard to monitor common customer issues.
 
@@ -218,7 +219,7 @@ Let's walk through uploading and analyzing a call to understand how Vela's AI pr
 
 3. **Fill in the upload form:**
 
-![Single call upload form with fields highlighted]
+![Single call](../../../img/screenshots/data_upload/upload2.png)
 
 **Required Fields:**
 - **Agent:** Select the agent who handled this call (dropdown filtered by your access)
@@ -246,8 +247,8 @@ Vela's AI is transcribing the call, identifying speakers, analyzing sentiment, d
 ### Reviewing the AI Analysis
 
 Once processing completes, click on your uploaded interaction to see the analysis:
-
-![Interaction detail view showing analysis panels]
+![Single call](../../../img/screenshots/calls/calls-1.png)
+![Single call](../../../img/screenshots/calls/calls-3.png)
 
 #### 1. Interaction Summary
 
@@ -281,7 +282,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 - Critical moments where customer mood shifted
 - Agent's impact on customer sentiment
 
-![Sentiment graph showing mood changes over time]
+![sentiment call](../../../img/screenshots/calls/calls-3.png)
 
 **What to look for:**
 - Did the agent improve negative sentiment?
@@ -328,7 +329,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 
 **AI evaluation based on your organisation's scorecard/criteria:**
 
-![Automatic scorecard showing category scores]
+![Single call](../../../img/screenshots/calls/calls-8.png)
 
 **Typical categories:**
 - **Communication Skills** - Clarity, professionalism, tone
@@ -409,7 +410,8 @@ Let's create a Smart Search to monitor refund-related conversations:
 
 2. **Click "Create New Smart Search"**
 
-![Smart Search creation form]
+![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation.png)
+![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation2.png)
 
 3. **Configure your search:**
 
