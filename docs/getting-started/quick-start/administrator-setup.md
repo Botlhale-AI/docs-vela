@@ -17,8 +17,6 @@ As a **Vela Administrator**, you have the highest level of access and control. T
 - **Permissions management**: Ability to configure who sees what (departmental, team, or organisational level).  
 - **System settings**: Manage authentication, integrations, and global configuration.  
 
-![Admin sidebar](../../../img/screenshots/settings/sidebar.png)
-
 ---
 
 ## Initial Setup Tasks
@@ -27,19 +25,29 @@ As a **Vela Administrator**, you have the highest level of access and control. T
 - Set up SSO with **Google OAuth** or **Microsoft Azure AD**.  
 - Manage email/password authentication rules (minimum password complexity, expiry).  
 
+![Admin sidebar](../../../img/screenshots/settings/login-options.png)
+
 ### 2. Create Departments and Teams
-- Navigate to **Agents → Departments/Teams**.  
+- Navigate to **Settings → Users → Org Table → Create**.  
+- Select **Departments/Teams**
 - Add structure to mirror your organisation hierarchy.  
+
+![Create Dept / Team](../../../img/screenshots/settings/create-dept-team.png)
 
 ### 3. Add Users
 - **Bulk Upload** via CSV for multiple agents.  
 - Assign users to teams and departments.  
 - Apply appropriate permission scopes (Agent, Team Lead, Admin).  
 
+![Bulk upload agents sidebar](../../../img/screenshots/settings/agent-bulk.png)
+
 ### 4. Set Up Global Smart Searches
 - Define organisation-wide monitors (e.g., compliance phrases, sales objections, critical keywords).  
 - Configure notifications for admins or compliance teams.  
 
+![ Smart Search](../../../img/screenshots/smart_search/smart2.png)
+
+![ Smart Search](../../../img/screenshots/smart_search/smart3.png)
 ---
 
 ## System Integrations
