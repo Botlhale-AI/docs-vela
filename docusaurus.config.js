@@ -5,7 +5,7 @@ const config = {
   title: 'Vela - Docs',
   tagline: "Documentation",
   url: 'https://docs-vela.botlhale.xyz', 
-  baseUrl: '/',
+  baseUrl: '/docs-vela/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

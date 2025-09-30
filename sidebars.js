@@ -104,7 +104,7 @@ const sidebars = {
         {
           type: "doc",
           id: "features/ai-analysis-transcription",
-          label: "AI Analysis"
+          label: "Call Analysis"
         },
         {
           type: "doc",
