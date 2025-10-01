@@ -98,7 +98,7 @@ const sidebars = {
     // },
     {
       type: "category",
-      label: "⚙️ Features",
+      label: "📚 Features",
       collapsed: true,
       items: [
         {
@@ -135,7 +135,39 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🔧 Advanced",
+      label: "⚙️ Administration & Configuration",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "settings-config/access-control",
+          label: "Settings Access by Role	"
+        },
+        {
+          type: "doc",
+          id: "settings-config/account-security",
+          label: "Account & Security"
+        },
+        {
+          type: "doc",
+          id: "settings-config/organisation-configuration",
+          label: "Organisation Configuration"
+        },
+        {
+          type: "doc",
+          id: "settings-config/user-management",
+          label: "User & Team Management"
+        },
+        {
+          type: "doc",
+          id: "settings-config/access-requests-audits",
+          label: "Access Requests & Audits"
+        }
+      ],
+    },
+    {
+      type: "category",
+      label: "🦾 Advanced",
       collapsed: true,
       items: [
         {
