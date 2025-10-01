@@ -183,98 +183,98 @@ const sidebars = {
         
       ],
     },
-    {
-      type: "category",
-      label: "📚 Core Documentation",
-      collapsed: true,
-      items: [
-        {
-          type: "doc",
-          id: "Agents",
-          label: "Agents Management"
-        },
-        {
-          type: "doc",
-          id: "Calls",
-          label: "Call Management"
-        },
-        {
-          type: "doc",
-          id: "Chats",
-          label: "Chat Management"
-        },
-        {
-          type: "doc",
-          id: "Dashboard",
-          label: "Dashboard Overview"
-        },
-        {
-          type: "doc",
-          id: "api",
-          label: "API Reference"
-        },
-        {
-          type: "doc",
-          id: "Settings",
-          label: "System Settings"
-        },
-        {
-          type: "doc",
-          id: "Reports",
-          label: "Reports & Analytics"
-        },
-        {
-          type: "doc",
-          id: "Notifications",
-          label: "Notifications"
-        },
-        {
-          type: "doc",
-          id: "data-upload",
-          label: "Data Upload"
-        },
-        {
-          type: "doc",
-          id: "smart-detector-overview",
-          label: "Smart Detector"
-        },
-        {
-          type: "doc",
-          id: "smart-search-guide",
-          label: "Smart Search"
-        },
-        {
-          type: "doc",
-          id: "knowledge-base-guide",
-          label: "Knowledge Base"
-        },
-        {
-          type: "doc",
-          id: "navigation-guide",
-          label: "Navigation Guide"
-        },
-        {
-          type: "doc",
-          id: "agent-scorecard-guide",
-          label: "Agent Scorecard"
-        },
-        {
-          type: "doc",
-          id: "compression_method",
-          label: "Compression Methods"
-        },
-        {
-          type: "doc",
-          id: "faq",
-          label: "FAQ"
-        },
-        {
-          type: "doc",
-          id: "release-notes",
-          label: "Release Notes"
-        },
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "📚 Core Documentation",
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       type: "doc",
+    //       id: "Agents",
+    //       label: "Agents Management"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Calls",
+    //       label: "Call Management"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Chats",
+    //       label: "Chat Management"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Dashboard",
+    //       label: "Dashboard Overview"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "api",
+    //       label: "API Reference"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Settings",
+    //       label: "System Settings"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Reports",
+    //       label: "Reports & Analytics"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "Notifications",
+    //       label: "Notifications"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "data-upload",
+    //       label: "Data Upload"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "smart-detector-overview",
+    //       label: "Smart Detector"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "smart-search-guide",
+    //       label: "Smart Search"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "knowledge-base-guide",
+    //       label: "Knowledge Base"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "navigation-guide",
+    //       label: "Navigation Guide"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "agent-scorecard-guide",
+    //       label: "Agent Scorecard"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "compression_method",
+    //       label: "Compression Methods"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "faq",
+    //       label: "FAQ"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "release-notes",
+    //       label: "Release Notes"
+    //     },
+    //   ],
+    // },
   ],
 };
 
