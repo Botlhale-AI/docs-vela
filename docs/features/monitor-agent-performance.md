@@ -44,13 +44,18 @@ The **Agent Management** section allows you to dive into individual performance 
 
 ### A. Access Agent Performance Data
 
-1.  Navigate to the **Agent Management** section.
+1.  Navigate to the **Agents → Performance** section.
 2.  Use the filters to view agents by **Team** or **Department**.
 3.  Sort the table by **Overall Agent Score** (ascending) to instantly see who needs immediate coaching.
 
+![Agent Performance](/img/screenshots/performance/performance-5.png)
+![Agent Performance](/img/screenshots/performance/performance-7.png)
+![Agent Performance](/img/screenshots/performance/performance-6.png)
+
+
 ### B. Analyse Individual Performance
 
-Click on an agent's name to view their individual performance dashboard and profile.
+Click on **View** in line with agent's name to view their individual performance dashboard and profile.
 
 * **View Individual Agent Scores and Rankings:** Track their rolling average score and how they rank against their peers.
 * **Track Strengths and Weaknesses:** The system highlights which scorecard categories (e.g., Compliance, Communication) are their strongest and weakest points.
@@ -70,7 +75,7 @@ Vela helps you benchmark individual success against team consistency.
 
 Use the reporting features to share progress with management and external stakeholders.
 
-1.  Navigate to the **Reporting & Insights** section.
+1.  Navigate to the **Reports** section.
 2.  **Create a One-Time Report:** Choose a custom date range and specific metrics (e.g., Average Agent Score, Sentiment Distribution).
 3.  **Schedule Recurring Reports:** Set up daily, weekly, or monthly reports to run automatically for easy distribution to managers.
 4.  **Export Data:** You can export agent data from the **Agent Management** section for external reporting or payroll purposes.
