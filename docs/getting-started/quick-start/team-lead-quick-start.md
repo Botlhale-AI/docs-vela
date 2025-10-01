@@ -410,11 +410,12 @@ Let's create a Smart Search to monitor refund-related conversations:
 
 2. **Click "Create New Smart Search"**
 
-![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation.png)
-![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation2.png)
-
 3. **Configure your search:**
 
 **Title:** `Refund Request Monitor`
 
-**Description:**
+**Description:** `Track all refund requests and customer complaints for quality review`
+
+![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation.png)
+![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation2.png)
+
