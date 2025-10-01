@@ -248,11 +248,7 @@ When you open an interaction, you'll see:
 
 ### How to Respond to Feedback
 
-1. **Read the feedback carefully**—understand exactly what your team lead is saying
-2. **Click 'Reply' in the comments section**
+1. **Read the feedback carefully** - understand exactly what your team lead is saying
+2. Click **'Reply'** in the comments section**
 3. **Write your response:**
-
-![Interaction detail view showing scorecard, comments section, and analysis panel](../../../img/screenshots/calls/calls-4.png)
-
-**Good response examples:**
 
