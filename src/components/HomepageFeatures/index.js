@@ -175,10 +175,9 @@ export default function HomepageFeatures() {
               <Link to="/docs/getting-started/quick-start/team-lead-quick-start" className={styles.quickStart}>
                 Get Started
               </Link>
-              <div className={styles.getStarted} onClick={scrollToFeatures}>
+              {/* <div className={styles.getStarted} onClick={scrollToFeatures}>
               Explore Features
-              </div>
-              
+              </div> */}
             </div>
           </div>
           <div className={styles.heroImageContainer}>
@@ -188,13 +187,13 @@ export default function HomepageFeatures() {
       </section>
 
       {/* Features Section */}
-      <section className={styles.featuresSection}>
+      {/* <section className={styles.featuresSection}>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Video Tutorials Section */}
       <section className={styles.videosSection}>

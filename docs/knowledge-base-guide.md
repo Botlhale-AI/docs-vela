@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+draft: true
 ---
 
 # Build Your Team's Knowledge Base
