@@ -5,7 +5,7 @@ const config = {
   title: 'Vela - Docs',
   tagline: "Documentation",
   url: 'https://docs-vela.botlhale.xyz', 
-  baseUrl: '/docs-vela/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -20,7 +20,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/docs',
+          // editUrl: '/',
         },
 
         blog: {
