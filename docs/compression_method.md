@@ -5,7 +5,7 @@ draft: true
 
 # File Upload Guidelines
 
-Learn how to prepare your files for optimal upload to Vela. We'll cover supported compression methods, browser limitations, and best practices to help your data upload successfully.
+This guide will help you prepare your files properly so they upload smoothly and process without any issues. We'll walk you through everything you need to know about compression methods, browser choices, and best practices.
 
 ## What You'll Learn
 
@@ -20,40 +20,42 @@ By following these guidelines, you can:
 
 ## ZIP File Compression Methods
 
-### Supported Compression Algorithms
+### Understanding Compression Types
 
-Vela uses the `decompress-unzip` package to handle ZIP file uploads. To make sure your files work properly, stick to standard compression methods.
+ZIP files can use different compression methods, and not all of them work with Vela. Our system uses the `decompress-unzip` package, so we need to stick to the most widely supported compression methods.
 
-**✅ Supported Methods:**
-- **Deflate (Method 8)**: Standard ZIP compression - **Best choice**
+**✅ What Works Great:**
+- **Deflate (Method 8)**: This is the standard ZIP compression - **Best choice**
 - **Store (Method 0)**: Files stored without compression
 
-**❌ Not Supported:**
-- **Deflate64 (Method 9)**: Causes "Unsupported compression method 9" error
-- **LZMA (Method 14)**: Causes "Unsupported compression method 14" error
-- **BZip2 (Method 12)**: Alternative compression algorithm
+**❌ What Causes Problems:**
+- **Deflate64 (Method 9)**: This proprietary method will give you "Unsupported compression method 9" errors
+- **LZMA (Method 14)**: Another method that causes "Unsupported compression method 14" errors  
+- **BZip2 (Method 12)**: Alternative compression that we don't support
 
-### Why Deflate64 Causes Issues
+### Why Some Methods Don't Work
 
-Deflate64 is a proprietary compression method that's not widely supported. If you use it, you'll get the error "Unsupported compression method 9" when trying to decompress your files.
+Deflate64 is a proprietary compression method that's not widely supported. If you 
+use it, you'll get the error "Unsupported compression method 9" when trying to 
+decompress your files.
 
 ---
 
 ## Creating Compatible ZIP Files
 
-### Using 7-Zip (Recommended)
+### Using 7-Zip (Our Recommendation)
 
-7-Zip is a great compression tool that lets you choose exactly how your files get compressed:
+7-Zip gives you complete control over compression settings. Here's how to use it properly:
 
-**Step-by-Step Process:**
-1. **Right-click** your files/folder
+**Step-by-step process:**
+1. **Right-click** your files or folder
 2. **Select "7-Zip"** → "Add to archive..."
-3. **Archive format**: Choose "ZIP"
-4. **Compression level**: Any level (1-9)
-5. **Compression method**: **IMPORTANT** - Select "Deflate" (not "Deflate64")
+3. **Archive format**: Choose "ZIP" 
+4. **Compression level**: Any level works (1-9)
+5. **Compression method**: Select "Deflate" (NOT "Deflate64")
 6. **Click "OK"** to create your ZIP file
 
-**7-Zip Settings:**
+**Recommended 7-Zip Settings:**
 ```
 Archive format: ZIP
 Compression level: 5 (recommended)
@@ -62,20 +64,23 @@ Compression method: Deflate
 
 ### Using Windows Built-in ZIP
 
-Windows Explorer's built-in ZIP creation uses Deflate by default, making it compatible:
+Windows Explorer's built-in ZIP creation uses Deflate by default, so it's already compatible:
 
-1. **Select** your files/folder
+1. **Select** your files or folder
 2. **Right-click** → "Send to" → "Compressed (zipped) folder"
-3. **Rename** the ZIP file as needed
+3. **Rename** the ZIP file if you want
+
+No complicated settings required.
 
 ### Using WinRAR
 
-If using WinRAR:
+For WinRAR users:
+
 1. **Select** your files
 2. **Right-click** → "Add to archive..."
-3. **Archive format**: Choose "ZIP"
-4. **Compression method**: Select "ZIP" (not "RAR")
-5. **Compression level**: Any level
+3. **Archive format**: Choose "ZIP" (not RAR)
+4. **Compression method**: Select "ZIP compression method" 
+5. **Compression level**: Any level works fine
 
 ---
 
@@ -83,27 +88,28 @@ If using WinRAR:
 
 ### File Size Limits
 
-Vela supports uploads up to **3 GB**, but browser limitations can affect your ability to upload large files:
+Vela supports uploads up to **3 GB**, but different browsers handle large uploads differently:
 
 | Browser | Recommended Max Size | Notes |
 |---------|---------------------|-------|
 | **Firefox** | Up to 3 GB | ✅ **Best for large uploads** |
-| **Chrome** | Up to 1-2 GB | ⚠️ May run out of memory |
-| **Edge** | Up to 1-2 GB | ⚠️ May run out of memory |
-| **Safari** | Up to 2-3 GB | ⚠️ Varies by version |
+| **Chrome** | Up to 1-2 GB | ⚠️ May run out of memory with large files |
+| **Edge** | Up to 1-2 GB | ⚠️ May struggle with large files |
+| **Safari** | Up to 2-3 GB | ⚠️ Performance varies by version |
 
 ### Why Firefox Works Better
 
 Firefox handles large file uploads more reliably than Chrome or Edge, which may run out of memory during large file uploads.
+
 
 ---
 
 ## Best Practices for File Preparation
 
 ### 1. ZIP File Creation
-- [ ] **Use Deflate compression** - avoid Deflate64
+- [ ] **Use Deflate compression** - Recommended
 - [ ] **Test your ZIP file** before uploading
-- [ ] **Keep file names simple** - avoid special characters
+- [ ] **Keep file names simple** - avoid special characters that might cause issues
 - [ ] **Organise files logically** in folders
 
 ### 2. File Size Management
@@ -115,11 +121,11 @@ Firefox handles large file uploads more reliably than Chrome or Edge, which may 
 ### 3. File Organisation
 - [ ] **Use descriptive folder names** (e.g., "Call_Recordings_2024-01")
 - [ ] **Group related files** together
-- [ ] **Avoid deeply nested folders** (max 3-4 levels)
+- [ ] **Avoid deeply nested folders**
 - [ ] **Include a README file** if needed for context
 
 ### 4. Quality Checks
-- [ ] **Check file formats** are supported
+- [ ] **Check file formats** are supported (WAV, MP3, etc.)
 - [ ] **Test ZIP extraction** on another computer
 - [ ] **Make sure files aren't corrupted**
 
@@ -127,26 +133,28 @@ Firefox handles large file uploads more reliably than Chrome or Edge, which may 
 
 ## Troubleshooting Upload Issues
 
+Most upload issues have simple solutions. Here are the most common problems and how to fix them.
+
 ### ZIP File Problems
 
 **Problem**: ZIP file uploads but fails to process
 
-**Solution**:
+**Here's how to fix it:**
 - [ ] **Recreate the ZIP** using Deflate compression
 - [ ] **Check file names** for special characters
 - [ ] **Try a smaller ZIP file** first
-- [ ] **Use 7-Zip** with correct settings
+- [ ] **Use 7-Zip** with the correct settings
 
 **Problem**: "Unsupported compression method" error
 
-**Common Error Messages:**
-- "Unsupported compression method 9" = Deflate64 compression used
-- "Unsupported compression method 14" = LZMA compression used
-- "Unsupported compression method 12" = BZip2 compression used
+**These error messages tell you exactly what's wrong:**
+- "Unsupported compression method 9" = You used Deflate64 compression
+- "Unsupported compression method 14" = You used LZMA compression  
+- "Unsupported compression method 12" = You used BZip2 compression
 
 **Solution**: 
 - [ ] **Use Deflate compression** (not Deflate64, LZMA, or BZip2)
-- [ ] **Recreate the ZIP file** with correct settings
+- [ ] **Recreate the ZIP file** with the correct settings
 - [ ] **Check your compression tool** settings
 - [ ] **Verify compression method** is set to "Deflate" or "Store"
 
@@ -158,12 +166,12 @@ Firefox handles large file uploads more reliably than Chrome or Edge, which may 
 - [ ] **Switch to Firefox** for large uploads
 - [ ] **Try smaller file sizes** first
 - [ ] **Clear browser cache** and try again
-- [ ] **Close other browser tabs** to free memory
+- [ ] **Close other browser tabs** to free up memory
 
 **Problem**: Upload progress freezes
 
 **Solution**:
-- [ ] **Wait longer** - large files take time
+- [ ] **Wait a bit longer** - large files take time
 - [ ] **Use Firefox** instead of Chrome/Edge
 
 
@@ -173,7 +181,7 @@ Firefox handles large file uploads more reliably than Chrome or Edge, which may 
 
 ### For Very Large Files
 
-If you're having trouble with browser uploads:
+If you're still having trouble with browser uploads, there are other options available:
 
 **FTP Integration:**
 - Contact your Vela Account Manager
@@ -197,4 +205,12 @@ If you're having trouble with browser uploads:
 - [Quick Start Guide](./quick-start.md) - Get started with Vela
 - [Data Upload Guide](./data-upload.md) - Upload your call recordings
 - [Dashboard Setup](./dashboard.md) - Create your performance dashboard
+
+## Need Help?
+
+Still having trouble? Contact our support team for assistance.
+
+- **📧 Email Support**: support@botlhale.ai
+- **📞 Response Time**: Within 24 hours (usually much faster!)
+- **🕒 Available**: Monday - Friday, 9 AM - 5 PM SAST
 
