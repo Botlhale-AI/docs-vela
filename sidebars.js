@@ -96,43 +96,43 @@ const sidebars = {
     //     },
     //   ],
     // },
-    {
-      type: "category",
-      label: "📚 Features",
-      collapsed: true,
-      items: [
-        {
-          type: "doc",
-          id: "features/ai-analysis-transcription",
-          label: "Call Analysis"
-        },
-        {
-          type: "doc",
-          id: "features/quality-assurance-tools",
-          label: "Quality Assurance"
-        },
-        {
-          type: "doc",
-          id: "features/monitor-agent-performance",
-          label: "Monitor Agent Performance"
-        },
-        // {
-        //   type: "doc",
-        //   id: "features/multi-language-support",
-        //   label: "Multi-Language Support"
-        // },
-        {
-          type: "doc",
-          id: "features/bulk-operations",
-          label: "Bulk Operations"
-        },
-        {
-          type: "doc",
-          id: "features/custom-reporting",
-          label: "Custom Reporting"
-        },
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "📚 Features",
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       type: "doc",
+    //       id: "features/ai-analysis-transcription",
+    //       label: "Call Analysis"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "features/quality-assurance-tools",
+    //       label: "Quality Assurance"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "features/monitor-agent-performance",
+    //       label: "Monitor Agent Performance"
+    //     },
+    //     // {
+    //     //   type: "doc",
+    //     //   id: "features/multi-language-support",
+    //     //   label: "Multi-Language Support"
+    //     // },
+    //     {
+    //       type: "doc",
+    //       id: "features/bulk-operations",
+    //       label: "Bulk Operations"
+    //     },
+    //     {
+    //       type: "doc",
+    //       id: "features/custom-reporting",
+    //       label: "Custom Reporting"
+    //     },
+    //   ],
+    // },
     {
       type: "category",
       label: "⚙️ Administration & Configuration",
