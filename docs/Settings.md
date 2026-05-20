@@ -65,12 +65,10 @@ Track your organisation's platform usage:
 
 ![Account Settings](../img/screenshots/settings/settings3.png)
 
-### Set Up Usage Notifications
-Configure alerts to stay within your limits:
-- [ ] **Set notification thresholds** (50% to 100% of allocation)
-- [ ] **Choose delivery method** (email, platform, or both)
-- [ ] **Configure escalation** for approaching limits
-- [ ] **Set up overage handling** preferences
+### Duration Usage Settings
+Configure what happens when your monthly allocation is reached:
+- [ ] **Halt call analysis** — processing stops when the allocation is used up
+- [ ] **Continue at additional rates** — processing continues past the allocation and additional usage is billed accordingly
 
 ### Configure Data Privacy
 Protect sensitive information with automatic redaction:
@@ -113,12 +111,15 @@ Structure your organisation for better management:
 - [ ] **Assign users** to appropriate teams
 
 ### User Roles and Permissions
-| **Role** | **Permissions** | **Best For** |
-|----------|-----------------|--------------|
-| Admin | Full system access, user management, organisation settings | IT managers, system administrators |
-| Manager | Team management, reports, agent oversight | Team leaders, supervisors |
-| Agent | View own performance, access knowledge base | Customer service agents |
-| Analyst | Data analysis, reporting, insights | Business analysts, quality assurance |
+Each user has two separate settings that together determine what they can do and see:
+
+| **Setting** | **Options** | **What It Controls** |
+|-------------|-------------|----------------------|
+| **Role** | `Admin` or `User` | Whether the user can manage other users and organisation settings |
+| **View (Scope)** | `Organisation`, `Department`, or `Team` | Which data the user can see across the platform |
+| **View Redactions** | `Yes` or `No` | Whether the user sees raw transcripts or redacted versions |
+
+An Admin with organisational scope has full visibility and management access. A User with team scope can only see data for their assigned team.
 
 ### Agent Score Boundaries
 Configure performance thresholds for your team:
@@ -146,12 +147,6 @@ Automate performance report delivery to agents:
   - [ ] **Monthly** - Send reports monthly
 - [ ] **Test report delivery** to ensure agents receive notifications
 
-| **Score Range** | **Action Required** | **Coaching Focus** |
-|----------------|-------------------|-------------------|
-| 🟢 **Green Zone** | Recognition and replication | Share best practices with team |
-| 🟡 **Amber Zone** | Regular coaching needed | Address specific skill gaps |
-| 🔴 **Red Zone** | Immediate intervention needed | Comprehensive retraining |
-
 ![ Settings](../img/screenshots/settings/settings9.png)
 ---
 
@@ -167,51 +162,13 @@ Automate performance report delivery to agents:
 
 ## Notification Preferences
 
-### Email Notifications
-- [ ] **Configure email delivery** for different notification types
-- [ ] **Set notification frequency** (immediate, daily, weekly)
-- [ ] **Choose notification content** (summary vs. detailed)
-
 ### Platform Notifications
-- [ ] **Enable in-app notifications** for automated alerts
+In-app notifications are sent automatically for Smart Search alerts, comments, assigned courses, and presented awards. You can configure Smart Search notifications per search when creating or editing a Smart Search.
 
 
 
 
 ---
-
-## Usage Optimization
-
-### Data Management
-- [ ] **Review data retention** policies and settings
-- [ ] **Optimise data upload** processes
-- [ ] **Monitor data quality** and accuracy
-- [ ] **Set up data backup** procedures
-
-### Performance Monitoring
-- [ ] **Track system performance** metrics
-- [ ] **Monitor user activity** patterns
-- [ ] **Identify usage bottlenecks** and optimise
-- [ ] **Plan for capacity** increases
-
-### Cost Optimization
-- [ ] **Review usage patterns** to identify optimization opportunities
-- [ ] **Set up usage alerts** to avoid overages
-- [ ] **Optimise data processing** to reduce costs
-- [ ] **Plan for scaling** based on growth
-
----
-
-## Advanced Configuration
-
-### Custom Branding
-- [ ] **Upload company logo** for reports and dashboards
-- [ ] **Customise report templates** with your branding
-
-### Workflow Automation
-- [ ] **Set up automated alerts** for specific conditions
-- [ ] **Configure report scheduling** for regular delivery
-- [ ] **Configure escalation workflows** for issues
 
 ---
 

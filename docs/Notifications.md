@@ -19,37 +19,19 @@ Notifications help you stay informed and respond quickly. You'll be able to:
 
 ---
 
-## Three Types of Notifications
+## What Triggers a Notification
 
-### **Alerts: Respond to Issues Promptly**
-Get notified about important events that require your attention (set up your alerts in [Smart Detector Overview](./smart-detector-overview.md)):
+Vela sends in-app notifications for the following events:
 
-| **Alert Type** | **What It Monitors** | **When You Get It** |
-|----------------|---------------------|-------------------|
-| Smart Search matches | Customer complaints or compliance issues detected | When detected |
-| Performance alerts | Agent scores below thresholds | When thresholds are exceeded |
-| System notifications | Data processing complete or errors | When processing status changes |
-<!-- | **Quality flags** | Potential issues with customer interactions | When quality issues are identified | -->
+| **Notification Type** | **When You Receive It** |
+|----------------------|------------------------|
+| **Smart Search alert** | A processed interaction matches one of your Smart Search rules |
+| **Comment** | Someone adds a comment to an interaction you are involved with |
+| **Report ready** | A scheduled or one-time report has finished generating |
+| **Course assigned** | A training course has been assigned to you |
+| **Award presented** | An award has been presented to you |
+| **Call processed** | A call upload has finished processing |
 
-### **Comments: Collaborate with Your Team**
-Stay updated on team discussions and feedback:
-
-| **Comment Type** | **Purpose** | **Use Case** |
-|------------------|-------------|--------------|
-| Agent feedback | Comments on specific calls or interactions | Coaching and improvement |
-| Team discussions | Questions and insights from colleagues | Knowledge sharing |
-| Management notes | Important observations and instructions | Team guidance |
-| Training feedback | Suggestions for improvement | Process enhancement |
-
-### **Reports: Track Progress and Trends**
-Receive automated summaries of your team's performance:
-
-| **Report Type** | **Frequency** | **Content** |
-|-----------------|---------------|-------------|
-| Daily summaries | Every day | Key metrics and highlights |
-| Weekly reports | Every week | Performance trends and insights |
-| Monthly analytics | Every month | Full team analysis |
-| Custom reports | As scheduled | Specific metrics you've requested |
 
 ---
 
@@ -65,28 +47,19 @@ Receive automated summaries of your team's performance:
 
 ![Notifications Overview - Screenshot showing the notifications interface with alerts, comments, and reports tabs](../img/screenshots/notifications-alerts.png)
 
-### Step 2: Configure Your Preferences
+### Step 2: Configure Smart Search Notifications
 
-- [ ] **Go to "Settings" → "Notifications"**
-- [ ] **Choose your delivery method**:
-  - [ ] Platform notifications (in-app)
-  - [ ] Email notifications
-  - [ ] Both for important alerts
-- [ ] **Set notification frequency**:
-  - [ ] Immediate for critical alerts
-  - [ ] Daily digest for general updates
-  - [ ] Weekly summary for reports
+To control which Smart Searches send you notifications:
+- [ ] **Go to "Smart Detector" → "Smart Search"**
+- [ ] **Edit a Smart Search** and toggle the **Notifications** setting on or off
 
 ![Agent Performance](../img/screenshots/notifications/notifications.png)
 ---
 
 ## Managing Alerts Effectively
 
-### Understanding Alert Types
-| **Alert Category** | **Examples** | **Priority** |
-|-------------------|--------------|--------------|
-| Smart Search Alerts | Customer complaints detected, compliance violations flagged, quality issues identified, training opportunities spotted | High - Immediate action needed |
-<!-- | **Performance Alerts** | Agent scores below thresholds, call quality issues, customer satisfaction drops, efficiency problems | Medium - Review and address | -->
+### Understanding Alerts
+Alerts in the Notifications section are Smart Search matches — raised automatically when a processed interaction triggers one of your configured Smart Search rules. Each alert links to the specific interaction and Smart Search that generated it.
 
 ### Taking Action on Alerts
 - [ ] **Click the eye icon** to view detailed information
@@ -100,9 +73,8 @@ Receive automated summaries of your team's performance:
 
 ### Setting Up Smart Alerts
 - [ ] **Go to "Smart Detector" → "Smart Search"**
-- [ ] **Create searches** for issues you want to monitor
-- [ ] **Set appropriate thresholds** for performance alerts
-- [ ] **Configure notification preferences** for each alert type
+- [ ] **Create searches** for the phrases or patterns you want to monitor
+- [ ] **Enable notifications** on each Smart Search to receive an in-app alert when it triggers
 
 ---
 
@@ -129,22 +101,9 @@ Receive automated summaries of your team's performance:
 
 ---
 
-## Managing Report Notifications
+## Report Notifications
 
-### Understanding Report Types
-| **Report Type** | **When Sent** | **What to Do** |
-|-----------------|---------------|----------------|
-| Daily summaries | Every morning | Review key metrics, identify immediate issues |
-| Weekly reports | Every Monday | Analyse trends, plan coaching sessions |
-| Monthly analytics | First of each month | Strategic planning, performance reviews |
-| Custom reports | As scheduled | Review specific metrics, take action |
-
-### Using Reports for Decision Making
-- [ ] **Review trends** over time
-- [ ] **Identify patterns** in performance
-- [ ] **Spot improvement opportunities**
-- [ ] **Share insights** with stakeholders
-- [ ] **Plan next actions** based on data
+When a scheduled or one-time report finishes generating, you'll receive a notification in your Notifications inbox. Click it to open the report directly. Report frequency (daily, weekly, or monthly) is configured when you create or schedule the report in the Reports section.
 
 ---
 
@@ -154,7 +113,7 @@ Receive automated summaries of your team's performance:
 
 | **Problem** | **Solution** |
 |-------------|--------------|
-| Too many notifications | Adjust alert thresholds, change notification frequency, filter by priority |
+| Too many notifications | Review your Smart Search configurations and disable notifications on searches that are too broad |
 | Missing important alerts | Check notification settings, verify alert criteria, review spam filters |
 | Comments not showing | Check permissions, verify team settings, refresh the page |
 | Reports not arriving | Verify email settings, check spam folder, confirm report scheduling |

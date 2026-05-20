@@ -76,99 +76,26 @@ Chat analysis gives you unique insights into digital customer service:
 
 ## Identifying Digital Patterns
 
-### Customer Behaviour Analysis
-Understand how customers interact in digital channels:
+### Patterns to Look For
 
-| **Behaviour Pattern** | **What to Look For** | **Business Opportunity** |
-|---------------------|---------------------|------------------------|
-| Quick Questions | Simple queries that could be automated | Chatbot implementation |
-| Complex Issues | Detailed problems requiring human expertise | Specialised agent training |
-| Peak Usage Times | High-volume periods | Resource planning |
-| Response Patterns | How customers engage with different message types | Message optimization |
-
-### Agent Performance in Digital
-Identify digital-specific performance patterns:
-
-| **Pattern** | **Digital Indicators** | **Improvement Focus** |
-|-------------|---------------------|---------------------|
-| Fast Typing | Quick responses, high message count | Response efficiency |
-| Thoughtful Responses | Longer, more detailed messages | Quality vs. speed balance |
-| Template Usage | Consistent, professional responses | Template optimization |
-| Personal Touch | Customised, empathetic responses | Personalisation training |
+When reviewing chat interactions, consider:
+- **Response time** — Are agents replying quickly? Longer response times may indicate high volume or knowledge gaps.
+- **Message count** — More messages may indicate a complex issue or unclear communication.
+- **Sentiment shifts** — Where in the conversation did the customer's mood improve or worsen?
+- **Resolution** — Did the agent resolve the issue within the conversation, or did it require escalation?
 
 ---
 
-## Optimising Digital Customer Service
+## Reviewing Chat Performance on the Dashboard
 
-### Response Time Optimization
-Improve the speed and quality of digital interactions:
+Chat metrics appear alongside call metrics on your Dashboard. Chat-specific indicators include:
 
-| **Response Time** | **Customer Expectation** | **Action Required** |
-|------------------|-------------------------|-------------------|
-| Under 30 seconds | Excellent digital service | Maintain and replicate |
-| 30-60 seconds | Good digital service | Optimise response processes |
-| 60+ seconds | Poor digital service | Immediate process review |
-| No response | Failed digital service | Escalation procedures |
+- **No. Chats** — total chat interactions in the selected period
+- **Average Response Time** — average time between messages in a conversation
+- **Sentiment Distribution** — proportion of positive, neutral, and negative chat interactions
+- **Intent Distribution** — what customers were trying to achieve across chat conversations
 
-### Message Quality Improvement
-Enhance the effectiveness of digital communication:
-
-- [ ] **Use clear, concise language** for digital audiences
-- [ ] **Include relevant links** and resources
-- [ ] **Maintain professional tone** while being friendly
-- [ ] **Follow up appropriately** to ensure resolution
-
-### Automation Opportunities
-Identify conversations that could be automated:
-
-| **Conversation Type** | **Automation Potential** | **Implementation** |
-|---------------------|------------------------|------------------|
-| FAQ Questions | High - Standard responses | Chatbot with knowledge base |
-| Simple Requests | Medium - Basic workflows | Automated workflows |
-| Complex Issues | Low - Human expertise needed | Human agent escalation |
-| Complaints | Low - Emotional intelligence required | Specialised agent handling |
-
----
-
-## Digital Experience Optimization
-
-### Chat Interface Analysis
-Optimise the digital customer experience:
-
-| **Interface Element** | **What to Monitor** | **Optimization** |
-|---------------------|-------------------|-----------------|
-| Welcome Messages | Engagement and response rates | A/B test different approaches |
-| Response Templates | Consistency and effectiveness | Update based on performance |
-| Escalation Process | Smoothness of handoffs | Streamline procedures |
-| Closing Messages | Customer satisfaction and follow-up | Optimise for retention |
-
-### Chat Source Analysis
-Understand where your chat conversations originate:
-
-- [ ] **Review chat metadata** to identify conversation sources
-- [ ] **Analyse channel performance** across different entry points
-- [ ] **Track conversation quality** by source channel
-- [ ] **Optimise channel-specific** response strategies
-
----
-
-## Chat Analytics Dashboard
-
-### Digital Performance Metrics
-Monitor these key indicators for digital success:
-
-| **KPI** | **Target** | **Digital Threshold** |
-|---------|------------|---------------------|
-| Average Response Time | Under 30 seconds | Above 60 seconds = process review |
-| Customer Satisfaction | 90%+ positive | Below 80% = immediate optimization |
-| Session Duration | 3-5 minutes | Above 10 minutes = efficiency review |
-<!-- | **First Contact Resolution** | 85%+ | Below 75% = training or process review | -->
-
-### Digital Trend Analysis
-- [ ] **Track digital adoption** over time
-- [ ] **Monitor channel preferences** and usage patterns
-- [ ] **Analyse peak usage times** for resource planning
-- [ ] **Compare digital vs. voice performance** metrics
+Use the Dashboard's **Interaction Type** filter to view chat-only metrics separately from calls.
 
 ---
 
@@ -183,25 +110,12 @@ Monitor these key indicators for digital success:
 
 ---
 
-## Best Practices for Chat Analysis
+## Best Practices for Chat QA
 
-### Digital-First Approach
-- [ ] **Optimise for mobile** and digital interfaces
-- [ ] **Use digital-appropriate language** and tone
-- [ ] **Leverage digital tools** and automation
-- [ ] **Monitor digital metrics** specifically
-
-### Response Optimization
-- [ ] **Balance speed and quality** in digital responses
-- [ ] **Use templates effectively** for consistency
-- [ ] **Personalise when possible** for better engagement
-- [ ] **Follow up appropriately** to ensure resolution
-
-### Continuous Digital Improvement
-- [ ] **Update chat templates** based on performance
-- [ ] **Optimise response processes** for efficiency
-- [ ] **Implement automation** where appropriate
-- [ ] **Monitor digital trends** and adapt accordingly
+- **Prioritise chats with negative sentiment** — use the sentiment filter in Interactions → Chats to find conversations where the customer's mood declined
+- **Review low-scoring chats first** — apply the score range filter to surface interactions that scored below your team's threshold
+- **Check Smart Search alerts** — Smart Search rules apply to both calls and chats, so alerts in the Smart Detector may relate to chat interactions
+- **Use comments for coaching** — add feedback directly to individual chat interactions so agents can see specific examples
 
 ---
 
