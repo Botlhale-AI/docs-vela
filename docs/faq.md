@@ -98,7 +98,7 @@ Vela works with many other systems:
 Yes, Vela automatically backs up all your data with multiple redundancies to ensure data safety.
 
 ### What languages does Vela support?
-Vela's AI analysis supports 13 languages for call transcription and analysis: Setswana, isiZulu, XiTsonga, IsiNdebele, English (SA), isiXhosa, Tshivenda, siSwati, Sesotho, Sepedi, Afrikaans, Kinyarwanda, and Swahili.
+Vela's AI analysis supports the 11 official South African languages for call transcription and analysis: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
 ## Smart Detector & Monitoring
 

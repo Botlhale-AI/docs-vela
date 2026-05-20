@@ -184,9 +184,8 @@ Most upload issues have simple solutions. Here are the most common problems and 
 If you're still having trouble with browser uploads, there are other options available:
 
 **FTP Integration:**
-- Contact your Vela Account Manager
-- Set up automated FTP uploads
-- Bypass browser limitations entirely
+- Contact your Vela Account Manager to set up automated FTP ingestion
+- Calls are pulled from your FTP server on a schedule — no manual uploads needed
 
 **Batch Processing:**
 - Split large datasets into smaller ZIP files
@@ -210,7 +209,7 @@ If you're still having trouble with browser uploads, there are other options ava
 
 Still having trouble? Contact our support team for assistance.
 
-- **📧 Email Support**: support@botlhale.ai
-- **📞 Response Time**: Within 24 hours (usually much faster!)
-- **🕒 Available**: Monday - Friday, 9 AM - 5 PM SAST
+- **Email Support**: support@botlhale.ai
+- **Response Time**: Within 24 hours (usually much faster!)
+- **Available**: Monday - Friday, 9 AM - 5 PM SAST
 

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Organisation Configuration
 ---
 
-# Organisation Configuration & Limits 🇿🇦
+# Organisation Configuration & Limits
 
 The **Organisations** tab, combined with specific settings from the Notifications section, is where Administrators manage the overall profile, financial limits, quality boundaries, and data security for the current organisation.
 

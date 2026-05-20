@@ -93,7 +93,7 @@ Rate limits are configured based on your organisation's package and usage patter
 
 ---
 
-## 🔌 Core API Endpoints
+## Core API Endpoints
 
 ### Upload Call Recordings
 ```bash

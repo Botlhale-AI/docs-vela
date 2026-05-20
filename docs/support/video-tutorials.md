@@ -1,4 +1,4 @@
-# 🎥 Tutorial Videos
+# Tutorial Videos
 
 Welcome! These short tutorials will guide you through getting started with Vela and using its key features.  
 

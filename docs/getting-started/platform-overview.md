@@ -47,7 +47,7 @@ Vela is uniquely designed to handle the complexities of the modern South African
 
 ### Multilingual Excellence
 
-* Vela supports advanced transcription and analysis in **multiple languages, including African languages** (such as IsiXhosa, Sesotho, and Afrikaans) that many competitors don't cover.
+* Vela supports advanced transcription and analysis in all **11 official South African languages** (Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho, Sepedi, Setswana, siSwati, Tshivenda, and Xitsonga).
 
 ### End-to-End Coaching Workflow
 

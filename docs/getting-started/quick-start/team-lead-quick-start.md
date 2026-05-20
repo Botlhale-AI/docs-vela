@@ -129,9 +129,7 @@ Your dashboard displays critical performance indicators. Here are the most impor
 
 **Average Agent Score**
 - **What it is:** Overall team performance rating (0-100 scale)
-- **What to look for:** 
-  -  (80+): Excellent performance
-  -  (60-79): Good with room for improvement
+- **What to look for:** Scores relative to your organisation's configured thresholds (Red/Amber/Green zones set by your administrator)
 - **Why it matters:** Quick indicator of overall team quality
 
 **Agent Scores Distribution**

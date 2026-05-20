@@ -418,7 +418,7 @@ If you clear your browser cache or cookies, you'll need to log in again and may 
 - English (primary)  
 
 ### Transcription Languages
-Vela supports 13 languages: Setswana, isiZulu, XiTsonga, IsiNdebele, English (SA), isiXhosa, Tshivenda, siSwati, Sesotho, Sepedi, Afrikaans, Kinyarwanda, and Swahili.
+Vela supports the 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
 :::tip Language Accuracy
 Transcription accuracy is highest when:

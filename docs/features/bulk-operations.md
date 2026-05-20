@@ -3,7 +3,7 @@ sidebar_position: 0
 title: Bulk Uploading Calls and Metadata
 ---
 
-# Bulk Uploading Calls and Metadata 🇿🇦
+# Bulk Uploading Calls and Metadata
 
 The Bulk Upload feature allows Team Leads and Administrators to process large batches of recorded calls efficiently. This is crucial for initial setup or processing daily/weekly call volumes.
 

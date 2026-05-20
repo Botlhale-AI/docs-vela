@@ -120,9 +120,9 @@ Your score is a weighted average of the scorecard items evaluated across your in
 **The Graph Showing Your Journey**
 
 This line graph shows how your performance has changed over time:
-- **Going up?** 📈 You're improving, brilliant!
-- **Staying steady?** ➡️ Consistent performance. Now aim higher
-- **Going down?** 📉 Time to check feedback and focus on training
+- **Going up?** You're improving — keep it up!
+- **Staying steady?** Consistent performance. Now aim higher.
+- **Going down?** Time to check feedback and focus on training.
 
 **What to Look For:**
 - Are you improving after completing training?

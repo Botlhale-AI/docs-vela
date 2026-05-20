@@ -129,7 +129,7 @@ call_002.wav,mary.jones,Support Team,Customer Service,outbound,follow_up;resolut
 Every uploaded interaction receives comprehensive AI analysis:
 
 #### Transcription Processing:
-- **Multi-language support**: Including African languages (Zulu, Xhosa, Afrikaans, Sesotho, Setswana, and more)
+- **Multi-language support**: All 11 official South African languages (Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho, Sepedi, Setswana, siSwati, Tshivenda, Xitsonga)
 - **Speaker identification**: Automatic separation of agent vs. customer speech
 - **Timestamp synchronisation**: Precise timing for quality review
 

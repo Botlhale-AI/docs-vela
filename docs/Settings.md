@@ -74,13 +74,20 @@ Configure what happens when your monthly allocation is reached:
 Protect sensitive information with automatic redaction:
 
 - [ ] **Select sensitive data types** for redaction:
-  - [ ] Email addresses
-  - [ ] ID numbers
+  - [ ] Credit card numbers
+  - [ ] IBAN codes
+  - [ ] Person names
+  - [ ] Locations
+  - [ ] Cryptocurrency addresses
   - [ ] Phone numbers
-  - [ ] Credit card information
-  - [ ] Other PII (Personally Identifiable Information)
-- [ ] **Set redaction rules** for different data types
-- [ ] **Test redaction** with sample data
+  - [ ] Email addresses
+  - [ ] NRP (National Registration/Passport numbers)
+  - [ ] IP addresses
+  - [ ] Dates and times
+  - [ ] URLs
+  - [ ] ID numbers
+  - [ ] Custom entity types (configurable)
+- [ ] **Save** your redaction configuration
 
 ![Privacy Settings](../img/screenshots/settings/settings5.png)
 

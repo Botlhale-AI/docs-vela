@@ -33,21 +33,20 @@ When you upload your data to Vela, you can:
 
 - [ ] **Go to "Calls"** in the left sidebar
 - [ ] **Click "Upload"** button
-- [ ] **Select your call files** - We support WAV, MP3, video formats, and ZIP/RAR/7Z archives for bulk upload
+- [ ] **Select your call files** - Supported formats: WAV or MP3 for individual calls; ZIP archive (with metadata CSV) for bulk uploads
 - [ ] **Click "Upload"** and wait for processing
 
 > **Why this matters**: You can start analysing your data immediately without any technical setup.
 
 ### Option 2: FTP Integration (For Larger Organisations)
-**Best for**: Organisations with automated call recording systems
-
+**Best for**: Organisations with automated call recording systems where calls should flow into Vela without manual intervention
 
 #### Setup Process
 - [ ] **Contact your Vela Account Manager** to set up FTP integration
-- [ ] **Provide FTP credentials** for your call recording server
-- [ ] **Configure sync** - Data flows without manual intervention
+- [ ] **Provide your FTP server credentials** (host, port, user, password, path)
+- [ ] **Vela configures the connection** — calls are automatically ingested on a scheduled basis
 
-> **Why this matters**: Once set up, your data flows without manual intervention.
+> **Why this matters**: Once set up, new recordings are pulled from your FTP server and processed automatically — no manual uploads required.
 
 ---
 
@@ -56,9 +55,8 @@ When you upload your data to Vela, you can:
 ### Call Recordings
 | **Format Type** | **Supported Formats** | **File Size Limit** |
 |-----------------|---------------------|-------------------|
-| Audio formats | WAV, MP3, and other standard call recording formats | Up to 1 GB per upload |
-| Video formats | Various video formats with audio extraction | Up to 1 GB per upload |
-| Batch uploads | Multiple files at once / zipped files (ZIP, RAR, 7Z) | Up to 3 GB per upload |
+| Audio formats | WAV, MP3 | Up to 1 GB per upload |
+| Batch uploads | ZIP archive containing WAV/MP3 files + metadata CSV | Up to 3 GB per batch |
 
 ### Chat Data
 | **Format Type** | **Supported Formats** | **Requirements** |
@@ -82,7 +80,7 @@ Follow these simple steps to upload your call recordings and start analysing cus
 Before uploading, ensure your files are ready for optimal processing:
 
 - [ ] **Organise your call recordings** in a dedicated folder for easy access
-- [ ] **Verify file formats** - We support WAV, MP3, video formats, and ZIP/RAR/7Z archives for bulk uploads
+- [ ] **Verify file formats** - WAV or MP3 for individual calls; ZIP archive with metadata CSV for bulk uploads
 - [ ] **Check file sizes** - Ensure files are within your system's upload limits
 - [ ] **Ensure audio quality** - Clear recordings provide better transcription results
 - [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
@@ -138,14 +136,13 @@ Ensure your data is ready for analysis:
 ### Integration Options
 | **Integration Type** | **Best For** | **Setup Complexity** |
 |---------------------|--------------|---------------------|
-| FTP/SFTP servers | Direct file transfer | Medium |
-| Cloud storage | AWS S3, Google Cloud, Azure | Low |
+| FTP/SFTP servers | Automated call ingestion from existing recording systems | Set up by Vela team |
 | API integration | Custom data feeds | High |
 
 
 ---
 
-## 🔌 API Integration for Developers
+## API Integration for Developers
 
 ### Upload Call Recordings via API
 For organisations with custom systems, use our API to upload data programmatically:

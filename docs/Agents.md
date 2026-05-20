@@ -83,7 +83,6 @@ Based on your analysis, create specific improvement plans:
 ### Compare Agents Effectively
 - [ ] **Use the sort function** to rank agents by different metrics
 - [ ] **Filter by team or department** to focus on specific groups
-- [ ] **Export data** for detailed analysis in spreadsheets
 
 ### Identify Team Trends
 Look for patterns that affect multiple agents:
