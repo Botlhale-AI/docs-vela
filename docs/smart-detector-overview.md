@@ -60,22 +60,18 @@ Evaluate and improve agent performance with AI-powered assessments and custom cr
 3. **Score** every interaction
 4. **Generate coaching insights** for improvement
 
-### **Knowledge Base: Intelligent Resource Management**
-Build a smart, searchable repository of company information and resources:
+### **Knowledge Base: Document Repository for AI Context**
+Upload company documents to improve the accuracy of AI scoring:
 
 #### What It Contains:
-- **Document upload** - Add policies, procedures, training materials, and resources
-- **Smart search** - Find relevant information efficiently using intelligent search
-- **Agent access** - Provide support based on call analysis insights and patterns
-- **Continuous improvement** - Update knowledge based on interaction analysis
-- **Resource organisation** - Categorise and tag content for easy discovery
-- **Integration with coaching** - Connect knowledge base with training programmes
+- **Document upload** - Add policies, procedures, and reference materials as PDFs or URLs
+- **Scoped access** - Assign each document to an organisation, department, or team scope
+- **Integration with Smart Search and Scorecards** - Link a knowledge base document to a Smart Search or checklist item so the AI uses it as context when evaluating interactions
 
 #### How It Works:
-1. **Upload company documents** (PDFs, text files, URLs)
-2. **Organise with tags** and categories
-3. **Enable agent access** during calls
-4. **Update content** based on common questions
+1. **Upload company documents** (PDFs or URLs)
+2. **Set a scope** (organisation, department, or team)
+3. **Link to a Smart Search or checklist item** to use the document as AI evaluation context
 
 ---
 
@@ -138,17 +134,15 @@ Build a smart, searchable repository of company information and resources:
 
 ### Step 1: Upload Company Documents
 1. **Go to "Smart Detector" → "Knowledge Base"**
-2. **Upload important documents**:
+2. **Upload important documents** as PDFs or add a URL:
    - Company policies and procedures
    - Product information and FAQs
-   - Training materials and scripts
    - Compliance guidelines
-3. **Organise content** with tags and categories
-4. **Set access permissions** for different teams
+3. **Set the scope** (organisation, department, or team) to control visibility
 
 ---
 
-## 💼 Real-World Use Cases
+## Real-World Use Cases
 
 ### Customer Service Excellence
 **Goal**: Improve customer satisfaction and reduce complaints

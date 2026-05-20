@@ -29,13 +29,15 @@ Instead of relying on gut feelings, you'll have actual data to back up your coac
 
 Your agent performance table shows essential information:
 
-| **Metric** | **What It Means** | **Action Thresholds** |
-|------------|-------------------|----------------------|
-| Score - Overall performance rating (0-100%) | 90%+ = Excellent performance<br/>70-89% = Good performance with room for improvement<br/>Below 70% = Needs coaching | 90%+ = Recognise and mentor others<br/>70-89% = Provide targeted coaching<br/>Below 70% = Intervention needed |
-| Strengths - What the agent does well consistently | Areas where they excel and can mentor others | Use strengths to build confidence and mentor others |
-| Weaknesses - Areas needing improvement | Specific skills or behaviours to focus on | Create targeted training plans |
-| Rank - Performance compared to other agents | Relative standing within the team | Identify top performers and those needing support |
-| Interactions - Number of interactions in the selected period | Sample size for reliability | Ensure sufficient data for accurate assessment |
+| **Metric** | **What It Means** |
+|------------|-------------------|
+| **Score** | Overall performance rating (0-100%), based on the weighted results of evaluated interactions |
+| **Strengths** | Scorecard categories where the agent consistently scores well |
+| **Weaknesses** | Scorecard categories where the agent consistently underperforms |
+| **Rank** | The agent's standing relative to others in the same scope |
+| **Interactions** | Number of evaluated interactions in the selected period |
+
+> Performance thresholds (what counts as good, acceptable, or needs improvement) are set by your organisation's administrator, not fixed by the platform.
 
 
 
@@ -55,45 +57,24 @@ Your agent performance table shows essential information:
 ### Step 2: Create Action Plans
 Based on your analysis, create specific improvement plans:
 
-#### For Struggling Agents (Score < 70%)
+#### For Agents Below Your Organisation's Threshold
 **Actions**:
-- [ ] **Identify specific weaknesses** from the data
+- [ ] **Identify specific weaknesses** from the scorecard breakdown
 - [ ] **Schedule one-on-one coaching** sessions
-- [ ] **Provide targeted training** materials
-- [ ] **Set weekly improvement goals**
-- [ ] **Monitor progress** closely
+- [ ] **Assign targeted training** courses from the Coaching section
+- [ ] **Monitor progress** closely with regular interaction reviews
 
-**Coaching Focus**:
-- Basic skills reinforcement
-- Confidence building
-- Clear expectations setting
-- Regular check-ins
-
-#### For Average Agents (Score 70-89%)
+#### For Agents Meeting the Threshold
 **Development Actions**:
-- [ ] **Focus on strengths** to build confidence
-- [ ] **Address specific weaknesses** systematically
+- [ ] **Focus on strengthening weak categories** while maintaining strong ones
 - [ ] **Provide peer mentoring** opportunities
-- [ ] **Set stretch goals** for improvement
+- [ ] **Set improvement goals** based on specific scorecard categories
 
-**Coaching Focus**:
-- Skill refinement
-- Advanced techniques
-- Leadership development
-- Career progression
-
-#### For Top Performers (Score 90%+)
+#### For Top Performers
 **Recognition & Growth**:
-- [ ] **Recognise their achievements**
-- [ ] **Use them as mentors** for other agents
-- [ ] **Provide advanced training** opportunities
-- [ ] **Consider promotion** or leadership roles
-
-**Development Focus**:
-- Leadership skills
-- Training others
-- Process improvement
-- Strategic thinking
+- [ ] **Recognise their achievements** using the Awards feature in Coaching
+- [ ] **Use them as peer mentors** for lower-performing agents
+- [ ] **Assign advanced training** to continue development
 
 ---
 
@@ -191,4 +172,4 @@ Look for patterns that affect multiple agents:
 
 ## Need Help?
 
-- 📧 **Contact Support**: support@botlhale.ai 
+- **Contact Support**: support@botlhale.ai

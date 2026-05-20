@@ -14,7 +14,6 @@ Located in the top-right corner, these filters allow you to focus your analysis:
 
 - **Quick Select**: Today, Yesterday, This Week, Last Week, This Month, Last Month
 - **Custom Range**: Select specific date periods for targeted analysis
-- **Comparison Mode**: View current period vs. previous period for trend analysis
 
 ### Scope Selection
 Choose your data view based on your access permissions:
@@ -31,7 +30,6 @@ Choose your data view based on your access permissions:
 #### Average Agent Score
 - **Range**: 0-100 scale
 - **Calculation**: Weighted average of all agent interaction scores in selected period
-- **Color coding**: Green (80+), Yellow (60-79), Red (below 60)
 - **Use case**: Quick assessment of overall team performance quality
 
 #### Agent Scores Distribution
@@ -64,14 +62,13 @@ Choose your data view based on your access permissions:
 ### Alert and Quality Monitoring
 
 #### No. Alerts
-- **Types**: Compliance violations, escalations, negative sentiment spikes
-- **Priority levels**: Critical, High, Medium, Low
-- **Response tracking**: Time to resolution and resolution quality
+- **What they are**: Alerts are raised when a Smart Search match is found in a processed interaction
+- **Status**: Each alert can be marked as **Resolved** or remains **Unresolved**
 
 #### Resolved vs. Unresolved Alerts
-- **Resolution rate**: Percentage of alerts addressed within SLA
-- **Aging alerts**: Issues requiring immediate management attention
-- **Trend analysis**: Improving or declining issue management effectiveness
+- **Resolved**: Alerts that a team lead has reviewed and closed
+- **Unresolved**: Open alerts requiring attention
+- **Trend analysis**: Use the ratio to track how promptly your team is acting on flagged interactions
 
 ![Dashboard grid showing key performance metrics with color-coded indicators](../img/screenshots/dashboard/dashboard06.png)
 

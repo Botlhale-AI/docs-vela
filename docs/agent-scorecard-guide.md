@@ -31,10 +31,11 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 ### Step 2: Define Evaluation Criteria
 ![ Smart Search](../img/screenshots/smart_search/smart7.png)
 ![ Smart Search](../img/screenshots/smart_search/smart8.png)
-- [ ] **Select evaluation categories** (communication, problem-solving, etc.)
-- [ ] **Set scoring weights** for each category
-- [ ] **Define performance standards** and expectations
-- [ ] **Configure scoring thresholds** for different performance levels
+- [ ] **Write scorecard questions** — each question is a pass/fail evaluation point (e.g. "Did the agent confirm the customer's name at the start of the call?")
+- [ ] **Assign a category** to group related questions (e.g. "Opening", "Compliance", "Closing")
+- [ ] **Set a weight** for each question to reflect its importance in the overall score
+- [ ] **Flag critical items** as auto-fail where a single failure should disqualify the interaction
+- [ ] **Set the scope** (organisation, department, or team) and applicable interaction direction (inbound, outbound, or all)
 
 ### Step 3: Test and Deploy
 - [ ] **Review sample evaluations** to ensure accuracy
@@ -46,58 +47,38 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 
 ## Scorecard Components
 
-### Evaluation Categories
-Structure your scorecard with these key performance areas:
+### How scorecard Items Work
+Each item in the Agent scorecard  is a question evaluated against the interaction. Items can be:
 
-| **Category** | **What It Measures** | **Scoring Focus** |
-|--------------|---------------------|------------------|
-| Communication | Clarity, professionalism, empathy | Tone, language, listening skills |
-| Problem Solving | Issue resolution effectiveness | Analysis, creativity, follow-through |
-| Product Knowledge | Understanding of products/services | Accuracy, depth, application |
-| Customer Focus | Meeting customer needs and expectations | Understanding, responsiveness, satisfaction |
-| Efficiency | Time management and process adherence | Speed, accuracy, resource utilization |
-| Compliance | Policy adherence and regulatory requirements | Documentation, procedures, standards |
+| **Property** | **Description** |
+|--------------|----------------|
+| **Question** | The specific behaviour or action being assessed (e.g. "Did the agent verify the customer's identity?") |
+| **Category** | A grouping label you define to organise related questions |
+| **Weight** | The relative importance of this item in calculating the overall score |
+| **Auto-Fail** | If enabled, failing this item automatically fails the entire evaluation |
+| **Compliance** | Mark as a compliance item to distinguish regulatory checks from quality checks |
+| **Direction** | Whether the item applies to inbound calls, outbound calls, or both |
 
-### Scoring System
-| **Score Range** | **Performance Level** | **Action Required** |
-|-----------------|---------------------|-------------------|
-| 90-100% | Excellent | Recognise, mentor others, advanced development |
-| 80-89% | Good | Minor improvements, skill refinement |
-| 70-79% | Satisfactory | Coaching needed, specific improvements |
-| Below 70% | Needs Improvement | Intervention, intensive coaching |
+### Scoring
+The agent's scorecard score is calculated from the weighted results of all applicable scorecard items. Performance thresholds (what constitutes a pass or fail score overall) are configured by your organisation's administrator.
+
+> **[TO BE VERIFIED]:** Confirm with your administrator what performance threshold your organisation has set for acceptable scores.
 
 ---
 
 ## Building Effective Scorecards
 
 ### Criteria Selection
-Choose evaluation criteria that align with your business goals:
+Choose evaluation criteria that align with your business goals. Common areas to consider include:
+- **Compliance** — adherence to regulatory and policy requirements
+- **Opening and closing scripts** — whether the agent follows required greeting or sign-off procedures
+- **Verification** — identity checks or data confirmation steps
+- **Problem resolution** — whether the agent resolved the customer's issue
 
-| **Business Goal** | **Focus Areas** | **Evaluation Criteria** |
-|------------------|-----------------|----------------------|
-| Customer Satisfaction | Service quality, problem resolution | Communication, customer focus, problem solving |
-| Operational Efficiency | Speed, accuracy, productivity | Efficiency, process adherence, time management |
-| Compliance & Quality | Standards, procedures, documentation | Compliance, accuracy, documentation |
-| Team Development | Skill growth, knowledge sharing | Product knowledge, communication, mentoring |
+Write each item as a concrete, observable question so the AI (and human reviewers) can give a clear yes/no answer.
 
 ### Weighting Strategy
-Assign appropriate weights to different criteria:
-
-| **Weighting Approach** | **When to Use** | **Example Weights** |
-|----------------------|-----------------|-------------------|
-| Balanced | General performance evaluation | Equal weights (16.7 percent each) |
-| Customer-Focused | Service-oriented roles | Communication (25 percent), Customer Focus (25 percent), Problem Solving (20 percent) |
-| Efficiency-Focused | High-volume operations | Efficiency (30 percent), Process Adherence (25 percent), Speed (20 percent) |
-| Quality-Focused | Compliance-heavy roles | Compliance (30 percent), Accuracy (25 percent), Documentation (20 percent) |
-
-### Performance Standards
-Define clear expectations for each criterion:
-
-| **Criterion** | **Excellent (90-100 percent)** | **Good (80-89 percent)** | **Satisfactory (70-79 percent)** | **Needs Improvement (below 70 percent)** |
-|---------------|------------------------|------------------|-------------------------|----------------------------|
-| Communication | Clear, professional, empathetic, excellent listening | Generally clear, professional, good listening | Sometimes unclear, basic professionalism | Unclear, unprofessional, poor listening |
-| Problem Solving | Creative solutions, excellent follow-through | Effective solutions, good follow-through | Basic solutions, some follow-through | Ineffective solutions, poor follow-through |
-| Customer Focus | Exceeds expectations, anticipates needs | Meets expectations, responsive | Sometimes meets expectations | Fails to meet expectations |
+Assign higher weights to items that have a greater business impact — for example, compliance items typically carry more weight than stylistic ones. Items flagged as **auto-fail** will disqualify the entire interaction regardless of other scores, so reserve this for the most critical requirements.
 
 ---
 

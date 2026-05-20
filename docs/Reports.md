@@ -19,23 +19,11 @@ Reports help you communicate insights effectively. You'll be able to:
 
 ---
 
-## Understanding Report Types
+## Understanding Reports
 
-### Performance Reports
-| **Report Type** | **What It Shows** | **Best For** |
-|-----------------|-------------------|--------------|
-| Agent Performance | Individual and team metrics | Coaching sessions, performance reviews |
-| Customer Satisfaction | Sentiment and satisfaction trends | Service improvement, customer experience |
-| Call Quality | Resolution rates and efficiency metrics | Quality assurance, process improvement |
-| Team Comparison | Performance across different teams | Resource allocation, best practice sharing |
+Vela reports are built by selecting the metrics you want to include, the date range, and the scope (teams or agents). The platform then generates a visual report from those metrics alongside an AI-written analysis and recommendations.
 
-### Operational Reports
-| **Report Type** | **What It Shows** | **Best For** |
-|-----------------|-------------------|--------------|
-| Call Volume Analysis | Peak times and workload distribution | Capacity planning, scheduling |
-| Response Time Tracking | Speed and efficiency metrics | Process optimization, training needs |
-| Issue Resolution | Problem patterns and solutions | Training focus, knowledge gaps |
-| Training Impact | Before/after improvement analysis | ROI measurement, programme effectiveness |
+Available metrics match those on the Dashboard — for example: average agent score, number of calls/chats, talk to listen ratio, sentiment distribution, alert counts, and more. Some metrics are call-only or chat-only; Vela will indicate which apply based on your selected interaction type.
 
 ---
 
@@ -120,14 +108,11 @@ Reports help you communicate insights effectively. You'll be able to:
 
 ## Advanced Reporting Features
 
-### Custom Branding
-**Add your company logo and brand colours** to reports for professional presentations
+### Scheduled Reports
+Set up recurring reports to run automatically on a **daily, weekly, or monthly** basis. Configure the day and time of delivery when creating the report schedule.
 
 ### Export Options
-**Download as PDF, Excel, or CSV** for further analysis and sharing
-
-### Automated Alerts
-**Get notified when important metrics exceed thresholds** for proactive management
+Generated reports can be downloaded as **PDF** or **DOCX** for sharing with stakeholders.
 
 ---
 

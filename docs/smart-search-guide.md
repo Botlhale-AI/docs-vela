@@ -84,13 +84,6 @@ Smart Search gives you automated monitoring. You'll be able to:
 - [ ] **Test with real data** - Review results to ensure accuracy
 - [ ] **Refine over time** - Adjust based on what you learn
 
-### Search Sensitivity Settings
-| **Sensitivity Level** | **Use Case** | **Trade-offs** |
-|---------------------|--------------|---------------|
-| **High Sensitivity** | Critical issues, compliance violations | More false positives, alerts |
-| **Medium Sensitivity** | General monitoring, quality assurance | Balanced accuracy and coverage |
-| **Low Sensitivity** | Trend analysis, long-term monitoring | Fewer false positives, may miss some issues |
-
 ### Scope Configuration
 - [ ] **Organisation-wide** - Monitor all interactions across your company
 - [ ] **Department-specific** - Focus on particular business areas
@@ -102,27 +95,13 @@ Smart Search gives you automated monitoring. You'll be able to:
 ## Monitoring and Alerts
 
 ### Setting Up Notifications
-Configure how you want to be notified about search matches:
-
-| **Notification Type** | **When to Use** | **Delivery Method** |
-|---------------------|-----------------|-------------------|
-| **Alerts** | Critical issues, compliance violations | Email, platform notifications |
-| **Daily Summaries** | General monitoring, trend analysis | Email digest, dashboard updates |
-| **Weekly Reports** | Long-term trends, strategic insights | Scheduled reports, analytics |
+You can enable in-app notifications when creating a Smart Search. When enabled, you will receive a platform notification each time a new alert is raised for that search.
 
 ### Alert Management
 - [ ] **Review alerts promptly** - Don't let them pile up
 - [ ] **Investigate matches** - Understand the context and severity
 - [ ] **Take appropriate action** - Address issues or opportunities
 - [ ] **Document responses** - Track what actions were taken
-
-### Escalation Procedures
-| **Alert Level** | **Response Time** | **Action Required** |
-|-----------------|------------------|-------------------|
-| **Critical** | Within 1 hour | Direct intervention, management notification |
-| **High** | Same day (within 4 hours) | Investigation and action plan |
-| **Medium** | Within 24 hours | Review and follow-up |
-| **Low** | Within 48 hours | Monitor and trend analysis |
 
 ---
 

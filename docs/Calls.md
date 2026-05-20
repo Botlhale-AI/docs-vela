@@ -129,10 +129,9 @@ call_002.wav,mary.jones,Support Team,Customer Service,outbound,follow_up;resolut
 Every uploaded interaction receives comprehensive AI analysis:
 
 #### Transcription Processing:
-- **Multi-language support**: Including African languages (Zulu, Xhosa, Afrikaans, etc.)
+- **Multi-language support**: Including African languages (Zulu, Xhosa, Afrikaans, Sesotho, Setswana, and more)
 - **Speaker identification**: Automatic separation of agent vs. customer speech
-- **Timestamp synchronization**: Precise timing for quality review
-- **Confidence scoring**: Transcription accuracy indicators
+- **Timestamp synchronisation**: Precise timing for quality review
 
 #### Smart Detector Analysis:
 
@@ -149,22 +148,15 @@ Every uploaded interaction receives comprehensive AI analysis:
 - Sentiment-bearing words that influence customer experience
 
 **3. Alert Generation**
-- Compliance violations (missed procedures, inappropriate language)
-- Escalation indicators (customer dissatisfaction, unresolved issues)
-- Quality concerns (long hold times, process deviations)
-- Positive highlights (excellent service, successful resolution)
+Alerts are raised when a processed interaction matches one of your organisation's **Smart Search** rules. Each alert links back to the specific Smart Search that triggered it and can be resolved once reviewed.
 
 **4. Intent Classification**
-- Customer goals: Support, Sales, Complaint, Information, Billing
-- Intent confidence: AI certainty level for each classification
-- Multi-intent detection: Interactions covering multiple customer needs
-- Intent progression: How customer goals evolved during interaction
+- The AI identifies the customer's primary purpose for the interaction (e.g. Support, Sales, Complaint, Information)
+- Intents are visible in the interaction detail view (intent tab) and aggregated in the Dashboard
 
 **5. Sentiment Analysis**
-- Overall sentiment: Positive, Neutral, Negative for entire interaction
-- Sentiment journey: How customer mood changed throughout conversation
-- Agent impact: Whether agent actions improved or worsened customer sentiment
-- Critical moments: Specific points where sentiment shifted significantly
+- Overall sentiment: Positive, Neutral, or Negative for the entire interaction
+- Sentiment is tracked across the conversation so you can see how the customer's mood shifted at different points
 
 **6. Pain Point Identification**
 - Customer frustration indicators: Long wait times, repeated explanations, unresolved issues
@@ -197,15 +189,14 @@ Every uploaded interaction receives comprehensive AI analysis:
 - **Speaker identification**: Clear visual separation of agent vs. customer
 - **Searchable text**: Find specific keywords or phrases instantly
 - **Timestamp navigation**: Click timestamps to jump to specific audio moments
-- **Confidence indicators**: Visual cues for transcription accuracy
 
 **Scorecard System:**
 
 *Automatic Scorecard:*
-- AI-generated evaluation based on your organisation's criteria
-- Category breakdown: Communication, Problem Resolution, Professionalism, Compliance
-- Individual scores: Detailed evaluation of each performance area
-- Overall score: Weighted average based on category importance
+- AI-generated evaluation based on your organisation's Agent Scorecard items
+- Each scorecard item receives a pass/fail result from the AI
+- Categories and weights are set by your organisation. The breakdown reflects your own criteria
+- The overall score is a weighted average of all applicable scorecard items
 
 *Manual Scorecard:*
 1. **Click "Manual"**
@@ -241,28 +232,10 @@ Every uploaded interaction receives comprehensive AI analysis:
 
 ### Daily QA Routine
 
-#### 1. Priority Review Process:
-
-**Morning (30 minutes):**
-- → Check overnight interactions for high-priority alerts
-- → Review any escalated customer issues
-- → Identify agents needing immediate coaching
-
-**Midday (45 minutes):**
-- → Sample current day's interactions across all agents
-- → Focus on agents with declining score trends  
-- → Add feedback comments for agent development
-
-**End-of-day (30 minutes):**
-- → Complete any pending manual scorecards
-- → Review agent responses to feedback
-- → Plan next day's coaching priorities
-
-#### 2. Sampling Strategy:
-- **High performers**: 10-20% random sampling for consistency verification
-- **Average performers**: 30-40% sampling focused on improvement opportunities
-- **Low performers**: 60-80% sampling until consistent improvement demonstrated
-- **New agents**: 100% review for first 2-4 weeks
+A recommended daily approach:
+- Check new interactions for open alerts and prioritise those for review first
+- Focus sampling on agents whose scores are declining
+- Add comments to interactions as coaching notes for agents
 
 ### Weekly QA Analysis
 
@@ -284,39 +257,25 @@ Every uploaded interaction receives comprehensive AI analysis:
 ### Search and Filter Capabilities
 
 #### Transcript Search:
-- **Keyword search**: Find interactions containing specific terms
-- **Phrase matching**: Exact phrase identification across all interactions
-- **Regular expressions**: Advanced pattern matching for complex searches
-- **Multi-language search**: Search across different language interactions
+- **Keyword search**: Find interactions containing specific terms or phrases within their transcripts
+- **Multi-language search**: Search across interactions in different languages
 
 #### Advanced Filtering:
-- **Combine multiple criteria**: Date + Agent + Score range + Alert type
-- **Saved filter sets**: Quick access to routine filter combinations
-- **Export filtered results**: Download specific interaction subsets
-- **Filter sharing**: Share useful filter combinations with other team leads
+Combine multiple criteria to narrow your interaction list:
+- Date range (call date or upload date)
+- Department, team, or agent
+- Score range (overall, compliance, quality)
+- Number of alerts
+- Call duration and silent time
+- Tags
+- Review status (reviewed / not reviewed)
+- Direction (inbound / outbound)
 
-#### Interaction Tagging System:
-- **Custom tags**: Create organisation-specific classification labels
-- **Tag hierarchies**: Organize tags in logical categories
-- **Bulk tagging**: Apply tags to multiple interactions simultaneously
-- **Tag-based reporting**: Generate insights based on tag classifications
+#### Interaction Tags:
+Tags are custom labels you assign to interactions when uploading (or during review) to help classify and find them later. Tags are defined at your organisation level.
 
 ![Advanced search and filter interface with multiple criteria options](../img/screenshots/calls/calls-6.png)
 ![Advanced search and filter interface with multiple criteria options](../img/screenshots/calls/calls-7.png)
-
-### Performance Correlation Analysis
-
-#### Score Correlation Insights:
-- **Time of day**: Do certain shifts show performance variations?
-- **Interaction length**: Relationship between call duration and quality scores
-- **Customer sentiment**: How agent performance affects customer mood
-- **Resolution effectiveness**: Quality scores vs. issue resolution success
-
-#### Team Comparison Features:
-- **Cross-team benchmarking**: Compare performance across different teams
-- **Best practice identification**: Learn from highest-performing interactions
-- **Skill gap analysis**: Identify training needs through comparative performance
-- **Resource optimisation**: Understand which teams handle which interaction types best
 
 ---
 

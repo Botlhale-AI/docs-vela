@@ -30,10 +30,9 @@ A well-built knowledge base enhances your team's capabilities. You'll be able to
 - [ ] **Choose your content focus** based on your team's needs
 
 ### Step 2: Upload Your Content
-- [ ] **Add company documents** (PDFs, text files, URLs)
-- [ ] **Organise with tags** and categories
-- [ ] **Set access permissions** for different teams
-- [ ] **Configure search settings** for efficient discovery
+- [ ] **Add company documents** (PDFs or URLs)
+- [ ] **Set a scope** (organisation, department, or team) to control which users the document is visible to
+- [ ] **Add a description** to help identify the document's purpose
 
 ---
 
@@ -76,42 +75,22 @@ Structure your knowledge base for easy navigation:
 - [ ] **Include examples** - Make information practical and useful
 
 ### Access Control
-| **Access Level** | **Who Has Access** | **Content Examples** |
-|-----------------|-------------------|-------------------|
-| **Public** | All agents | General policies, basic procedures |
-| **Team-Specific** | Designated teams | Specialised procedures, team-specific information |
-| **Management** | Supervisors and managers | Sensitive information, strategic documents |
-| **Admin** | System administrators | Configuration, technical documentation |
+Each document is assigned a **scope** that determines which users can see and use it:
+
+| **Scope** | **Who Has Access** |
+|-----------|-------------------|
+| **Organisation** | All users in the organisation |
+| **Department** | Users belonging to the selected department(s) |
+| **Team** | Users belonging to the selected team(s) |
 
 ---
 
-## Optimising Search and Discovery
-
-### Search Configuration
-Make information easy to find:
-
-| **Search Feature** | **Configuration** | **Benefit** |
-|-------------------|------------------|-------------|
-| **Keyword Optimization** | Add relevant terms and synonyms | Improve search accuracy |
-| **Category Filtering** | Organise content by topic | Efficient content discovery |
-| **Tag-Based Search** | Use tags for cross-referencing | Find related information efficiently |
-| **Recent Updates** | Highlight new and updated content | Keep agents informed of changes |
+## Optimising Content Discoverability
 
 ### Content Discovery
-- [ ] **Use descriptive titles** that clearly indicate content
-- [ ] **Add detailed tags** for better categorization
-- [ ] **Include search keywords** that agents might use
-- [ ] **Create cross-references** between related content
-
-### Search Analytics
-Monitor how agents use the knowledge base:
-
-| **Metric** | **What It Shows** | **Action** |
-|------------|-------------------|------------|
-| **Search Frequency** | Most common queries | Add missing content, improve existing |
-| **Content Usage** | Most/least accessed information | Optimise popular content, review unused |
-| **Search Success** | How often agents find what they need | Improve search terms, reorganise content |
-| **Time to Find** | How long agents spend searching | Simplify navigation, improve search |
+- [ ] **Use descriptive titles** that clearly indicate what the document covers
+- [ ] **Write a clear description** when uploading so users know when to apply it
+- [ ] **Assign the correct scope** so the document is only visible to the teams that need it
 
 ---
 
@@ -138,32 +117,6 @@ Manage your knowledge base content effectively:
 - [ ] **Gather agent feedback** on content usefulness
 - [ ] **Track customer satisfaction** improvements
 - [ ] **Update content** based on business changes
-
----
-
-## Using Knowledge Base During Interactions
-
-### Post-Call Access
-Enable agents to access information for future calls and training:
-
-| **Access Method** | **When to Use** | **Benefits** |
-|------------------|-----------------|-------------|
-| **Quick Search** | For training and preparation | Immediate answers, improved confidence |
-| **Category Browse** | When exploring options | Discover related information |
-| **Recent Content** | For latest updates | Stay current with changes |
-| **Favourites** | For frequently used information | Quick access to common resources |
-
-### Integration with Workflows
-- [ ] **Embed in call scripts** for consistent information delivery
-- [ ] **Link to escalation procedures** for complex issues
-- [ ] **Connect with training programs** for skill development
-- [ ] **Integrate with quality assurance** for performance monitoring
-
-### Best Practices for Agents
-- [ ] **Search before escalating** to find existing solutions
-- [ ] **Use multiple search terms** to find relevant information
-- [ ] **Bookmark frequently used content** for quick access
-- [ ] **Provide feedback** on content usefulness and accuracy
 
 ---
 
