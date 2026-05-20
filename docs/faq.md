@@ -17,11 +17,11 @@ Upload call recordings through the Interactions section. Vela supports **.wav** 
 - Email notifications when analysis is complete
 
 ### What file formats does Vela support?
-Vela supports many file formats:
-- **Audio files**: `.wav`, `.mp3`, and other standard call recording formats
-- **Document files**: `.pdf`, `.jpg`, `.png`, `.docx` (for course materials and resources)
-- **Archive files**: `.zip`, `.rar`, `.7z` (for batch uploads)
-- **Video files**: Various formats for call recordings with audio extraction
+Vela supports the following file formats:
+- **Audio files**: `.wav`, `.mp3` (for call uploads)
+- **Chat files**: `.json` (for chat conversation uploads)
+- **Archive files**: `.zip` (for bulk call uploads, with a metadata CSV inside)
+- **Knowledge Base**: `.pdf` files or URLs
 
 ### How long does it take to process my calls?
 Call processing time varies based on file size and complexity, but you'll receive an email notification when your calls are ready to review. The system works in the background to ensure everything runs smoothly.
@@ -38,11 +38,9 @@ Vela gives you several ways to find calls:
 - **Sort options**: Sort calls by date, score, duration, or other criteria
 
 ### Can I export my data?
-Yes, Vela gives you many ways to export your data:
+Yes, Vela gives you ways to export your data:
 - **Individual call exports**: Export detailed call analysis and transcripts
-- **Batch exports**: Export filtered call data in CSV format
-- **Performance reports**: Generate PDF reports for agents and teams
-- **Analytics exports**: Export dashboard data and performance metrics
+- **Performance reports**: Generate reports for agents and teams — downloadable as PDF or DOCX
 
 ### How do I change my team settings?
 Team settings can be managed through:
@@ -95,13 +93,12 @@ Vela implements enterprise-grade security measures:
 Vela works with many other systems:
 - **API access**: Programmatic access to call data and analytics
 - **Instant notifications**: Get notified immediately when important events happen
-- **FTP integration**: Automated file uploads for larger organisations
 
 ### Is my data backed up?
 Yes, Vela automatically backs up all your data with multiple redundancies to ensure data safety.
 
 ### What languages does Vela support?
-Vela's AI analysis supports multiple languages for call transcription and analysis, with special expertise in African languages including Tshivenda, IsiZulu, Afrikaans, Sesotho, Swahili, IsiXhosa, Setswana, Sepedi, and Xitsonga. The platform can process calls in various languages, though specific language support may depend on your subscription tier.
+Vela's AI analysis supports 13 languages for call transcription and analysis: Setswana, isiZulu, XiTsonga, IsiNdebele, English (SA), isiXhosa, Tshivenda, siSwati, Sesotho, Sepedi, Afrikaans, Kinyarwanda, and Swahili.
 
 ## Smart Detector & Monitoring
 
@@ -132,14 +129,14 @@ Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evalua
 
 ### Analytics and Reporting
 - **Performance dashboards**: Detailed performance metrics and insights that update automatically
-- **Custom reports**: Generate tailored reports for different stakeholders in PDF and CSV formats
+- **Custom reports**: Generate tailored reports for different stakeholders, downloadable as PDF or DOCX
 - **Trend analysis**: Track performance trends over time with advanced visualisations
 - **Comparative analytics**: Benchmark performance across teams and departments
 - **Interactive charts**: Explore data visualisations
 
 ### Team Management
 - **Hierarchical organisation**: Departments, teams, and agents with flexible structure
-- **Role-based access**: Different permission levels for different users with AWS Cognito integration
+- **Role-based access**: Different permission levels for different users
 - **Performance monitoring**: Track team and individual performance with detailed metrics
 - **Collaborative features**: Share insights and best practices across teams
 
@@ -181,9 +178,9 @@ We regularly release updates with new features and improvements. Check our [rele
 
 If your question isn't answered here, we're here to help:
 
-- **📧 Email Support**: support@botlhale.ai
-- **📞 Response Time**: Within 24 hours (usually much faster)
-- **🕒 Available**: Monday - Friday, 9 AM - 5 PM SAST
+- **Email Support**: support@botlhale.ai
+- **Response Time**: Within 24 hours (usually much faster)
+- **Available**: Monday - Friday, 9 AM - 5 PM SAST
 
 ### Related Resources
 - [Quick Start Guide](./quick-start.md) - Get up and running

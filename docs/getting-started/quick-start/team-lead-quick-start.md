@@ -308,11 +308,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 - **Quality concerns:** Long hold times, unprofessional language
 - **Positive highlights:** Excellent service, successful resolution
 
-**Alert priority levels:**
-- 🔴 Critical - Immediate attention required
-- 🟠 High - Review within 24 hours
-- 🟡 Medium - Standard review needed
-- 🟢 Low - Informational only
+Alerts are raised when a processed interaction matches a Smart Search rule. Each alert can be marked as resolved once reviewed.
 
 #### 6. Intent Classification
 
@@ -331,16 +327,7 @@ Once processing completes, click on your uploaded interaction to see the analysi
 
 ![Single call](../../../img/screenshots/calls/calls-8.png)
 
-**Typical categories:**
-- **Communication Skills** - Clarity, professionalism, tone
-- **Problem Resolution** - Issue identification and solution quality
-- **Compliance Adherence** - Following procedures and scripts
-- **Customer Experience** - Courtesy, empathy, satisfaction
-
-**Each category shows:**
-- Score (0-100)
-- Specific observations
-- Strengths and improvement areas
+The scorecard breakdown reflects your organisation's Agent Scorecard criteria — categories and questions are defined by your administrator.
 
 #### 8. Pain Points
 

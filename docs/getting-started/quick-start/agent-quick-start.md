@@ -109,13 +109,10 @@ Your dashboard shows how you're performing and where you can improve. Let's expl
 - It's based on your recent customer interactions
 - Updated regularly as you handle calls and chats
 
-**What the performance score mean:**
-- 🟢 **(80+):** Excellent work! Keep it up!
-- 🟡 **(60-79):** Good performance with room for improvement
-- 🔴 **(Below 60):** Needs attention. Check your feedback and training
+Your score reflects how your interactions are evaluated against your organisation's Agent scorecard criteria. The performance thresholds (what counts as good, acceptable, or needs improvement) are set by your administrator.
 
 :::info How Your Score is Calculated
-Your score is based on several factors: how well you communicate, how effectively you solve customer problems, whether you follow procedures, and how satisfied customers are with your service. Vela's AI analyses every interaction to give you an accurate, fair assessment.
+Your score is a weighted average of the scorecard items evaluated across your interactions. Each scorecard item is defined by your organisation — check with your team lead if you need clarification on the criteria.
 :::
 
 ### Your Performance Trend

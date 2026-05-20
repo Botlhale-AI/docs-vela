@@ -99,7 +99,7 @@ When uploading large batches of calls (approaching the 3GB limit), ensure you ha
 
 **Recommended whitelist domains:**
 
-- *.vela.ai
+- *.botlhale.ai
 - *.cloudflare.com (for CDN services)
 
 If your organisation uses a restrictive firewall or proxy, contact your IT department to ensure these domains are accessible.
@@ -393,13 +393,7 @@ If you clear your browser cache or cookies, you'll need to log in again and may 
 
 | Data Type | Available Formats | Use Case |
 |---|---|---|
-| Reports | PDF | Presentations and analysis |
-| Interaction data | CSV | Varies |
-
-**File size limits**
-- PDF reports: Up to **100 pages** (larger reports split)  
-- Excel exports: Up to **1,000,000 rows** per file  (Recommended)
-- CSV exports: No practical limit (very large exports may be split)
+| Reports | PDF, DOCX | Presentations and analysis |
 
 ---
 
@@ -424,8 +418,7 @@ If you clear your browser cache or cookies, you'll need to log in again and may 
 - English (primary)  
 
 ### Transcription Languages
-- **African languages:** 11 spoken South African languages (available on request)  
-- **International:** English (and more on request)
+Vela supports 13 languages: Setswana, isiZulu, XiTsonga, IsiNdebele, English (SA), isiXhosa, Tshivenda, siSwati, Sesotho, Sepedi, Afrikaans, Kinyarwanda, and Swahili.
 
 :::tip Language Accuracy
 Transcription accuracy is highest when:
