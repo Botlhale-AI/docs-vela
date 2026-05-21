@@ -39,6 +39,10 @@ If you are a member of multiple organisations, you can easily change your active
 
 The Security tab is dedicated to protecting your account by allowing you to update your password.
 
+:::note SSO Users
+If your organisation uses Single Sign-On (Google or Microsoft), the Security tab is not shown. Your password is managed by your identity provider, not Vela.
+:::
+
 ### Step 1: Access the Change Password Section
 
 1.  Navigate to **Settings** → **Security**.

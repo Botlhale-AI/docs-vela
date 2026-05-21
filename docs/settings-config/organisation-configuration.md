@@ -8,7 +8,7 @@ title: Organisation Configuration
 The **Organisations** tab, combined with specific settings from the Notifications section, is where Administrators manage the overall profile, financial limits, quality boundaries, and data security for the current organisation.
 
 :::warning ACCESS RESTRICTION
-This section is fully editable by **Administrators and Team Leads** except the current package of the account. **Administrators** can change the package that the account is on by contacting support.
+The **This Org** sub-tab is visible to all non-agent users, but **only Administrators with organisational-level access** can edit its settings. Team Leads can view the organisation details but cannot make changes. The current package can only be changed by contacting support.
 :::
 
 ---

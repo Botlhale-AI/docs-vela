@@ -40,7 +40,7 @@ A: Yes. Vela automatically adapts the layout based on your screen size, and you 
 A: You can log in using email/password or through Single Sign-On (SSO) if your organization has enabled it.  
 
 **Q: Does Vela support multi-factor authentication (MFA)?**  
-A: Yes, MFA can be enabled for added account security. Contact your administrator for setup details.  
+A: Vela does not have native MFA. If your organisation uses Single Sign-On (Google or Microsoft), MFA can be enforced through your identity provider. Contact your IT administrator for setup.  
 
 ---
 

@@ -23,7 +23,7 @@ As a **Vela Administrator**, you have the highest level of access and control. T
 
 ### 1. Configure Authentication
 - Set up SSO with **Google OAuth** or **Microsoft Azure AD**.  
-- Manage email/password authentication rules (minimum password complexity, expiry).  
+- Manage email/password authentication (minimum password complexity requirements apply).  
 
 ![Admin sidebar](../../../img/screenshots/settings/login-options.png)
 

@@ -368,9 +368,8 @@ We recommend using a password manager (LastPass, 1Password, Bitwarden) to genera
 :::
 
 ### Multi-Factor Authentication (MFA)
-- MFA may be available and can be enforced for administrator accounts  
-- Supported methods: authenticator apps and SMS codes  
-- Contact your administrator to enable/enforce MFA
+- Vela does not have native MFA. If your organisation uses SSO (Google or Microsoft), MFA can be enforced through your identity provider's own settings.
+- Contact your IT administrator to enable MFA via Google Workspace or Microsoft Azure AD.
 
 ---
 

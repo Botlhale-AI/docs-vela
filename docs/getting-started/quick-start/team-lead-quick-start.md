@@ -401,6 +401,53 @@ Let's create a Smart Search to monitor refund-related conversations:
 
 **Description:** `Track all refund requests and customer complaints for quality review`
 
+**Phrases / Keywords:** Add the terms you want to monitor, for example:
+- `refund`
+- `money back`
+- `complaint`
+- `I want to cancel`
+
+**Scope:** Select whether this search applies across the **Organisation**, a specific **Department**, or your **Team** only.
+
+**Notifications:** Toggle this on to receive an in-app notification each time a new match is detected.
+
+**Historical Search:** Enable this if you want the search to also run against calls that have already been uploaded.
+
 ![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation.png)
 ![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation2.png)
+
+4. **Click "Create"** to save and activate your Smart Search.
+
+### Reviewing Smart Search Results
+
+Once interactions are processed, any matches will appear automatically.
+
+1. **Go to Smart Detector → Smart Search**
+2. **Click "View"** next to your search
+3. **Review matched interactions** — each result links directly to the call or chat that triggered it
+4. **Click an interaction** to open it and review the full context, transcript, and AI analysis
+5. **Resolve the alert** once you have reviewed and acted on it
+
+![Smart Search results](../../../img/screenshots/smart_search/smart6.png)
+![Smart Search results](../../../img/screenshots/smart_search/smart4.png)
+
+:::tip What to do with results
+Use Smart Search matches as your daily QA priority queue. Interactions that triggered a compliance or complaint search deserve immediate review and, where appropriate, a coaching comment for the agent.
+:::
+
+---
+
+## You're Ready to Go
+
+You've completed the Team Lead Quick Start. You can now:
+
+- ✅ Monitor team performance on the Dashboard
+- ✅ Upload and review individual calls
+- ✅ Provide coaching feedback to agents via comments
+- ✅ Run automated compliance monitoring with Smart Search
+
+**Suggested next steps:**
+- Set up a **bulk upload** to bring in your historical call data (see the Data Upload guide)
+- Create your first **Scheduled Report** for weekly management updates
+- Explore the **Agent Scorecard** in Smart Detector to set up automated quality evaluations
 

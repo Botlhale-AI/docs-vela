@@ -87,7 +87,7 @@ Vela provides tailored experiences designed for the specific needs and goals of 
 * **Dashboard & Analytics:** Customisable views for monitoring team performance, trends, and key metrics.
 * **Interactions Management:** Upload, transcribe, and analyse calls and chats. Includes automatic AI evaluation and the option to create manual scorecards.
 * **Smart Detector:** Automated monitoring for specific keywords, compliance violations, and pain points. Includes customisable Agent Scorecards.
-* **Agent Management:** Track individual agent scores, rankings, strengths, and weaknesses. Includes bulk agent upload and data export.
+* **Agent Management:** Track individual agent scores, rankings, strengths, and weaknesses. Includes bulk agent upload.
 * **Reporting & Insights:** Create custom, scheduled reports with AI-powered analysis and recommendations for management.
 * **Coaching & Training:** Build and assign training courses, track completion, and manage recognition awards.
 * **Settings & Administration:** Configure performance thresholds, manage user access, and control data privacy settings.

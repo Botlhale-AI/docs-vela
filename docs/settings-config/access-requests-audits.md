@@ -8,7 +8,7 @@ title: Access Requests & Audits
 The **Requests** tab allows Administrators to manage the audit trail of sensitive data access. This ensures regulatory compliance by systematically tracking when users are granted permission to view data that is typically redacted.
 
 :::warning ACCESS RESTRICTION
-This tab is **only visible to and manageable by Administrators**. Any user without redaction access can *initiate* a request from within a call or chat detail view, but only Administrators can view, process, or approve requests here.
+This tab is **only visible to and manageable by Administrators**. Any user without redaction access can *initiate* a request from within a call detail view, but only Administrators can view, process, or approve requests here.
 :::
 
 ---

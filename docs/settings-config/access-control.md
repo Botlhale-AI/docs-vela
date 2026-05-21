@@ -18,7 +18,7 @@ The table below shows which tabs are visible to each user role when navigating t
 | Settings Tab | Administrator | Team Lead | Agent | Primary Purpose |
 | :--- | :--- | :--- | :--- | :--- |
 | **Account** | ✅ **Full View** | ✅ **Full View** | ✅ **Full View** | View personal details and current org (Name, Email). |
-| **Security** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | Change user password. |
+| **Security** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | Change user password. Not shown for SSO users. |
 | **Organisations** | ✅ **Full Edit** | ✅ **View** (Own Scope only) | ❌ **No Access** | Manage organisation profile, usage limits, and score boundaries. |
 | **Notifications** | ✅ **Full Edit** | ✅ **Full Edit** | ❌ **No Access** | Configure email and in-platform notifications. |
 | **Users** | ✅ **Full Edit** | ✅ **View** (Own Scope only) | ❌ **No Access** | Create, manage, and assign roles/teams to user accounts. |
