@@ -102,14 +102,14 @@ POST /interactions/calls
 
 **Required Parameters**:
 - `org_id` - Your organisation identifier
-- `file` - Audio file (WAV, MP3, M4A, FLAC)
+- `file` - Audio file (WAV or MP3)
 - `metadata` - Call information (optional)
 
 **Example Request**:
 ```python
 import requests
 
-url = "https://api.botlhale.xyz/v1/asr/async/upload/vela"
+url = "https://api.botlhale.xyz/asr/async/upload/vela"
 headers = {
     "Authorization": "Bearer YOUR_API_TOKEN"
 }
@@ -127,71 +127,9 @@ response = requests.post(url, headers=headers, files=files, data=data)
 print(response.json())
 ```
 
-### Retrieve Call Analytics
-```bash
-GET /analytics/calls
-```
-
-**Query Parameters**:
-- `start_date` - Start date for analysis
-- `end_date` - End date for analysis
-- `agent_id` - Filter by specific agent
-- `team_id` - Filter by team
-
-**Example Request**:
-```python
-import requests
-from datetime import datetime
-
-url = "https://api.botlhale.xyz/v1/analytics/calls"
-headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN"
-}
-
-params = {
-    'start_date': '2024-01-01',
-    'end_date': '2024-01-31',
-    'team_id': 'your_team_id'
-}
-
-response = requests.get(url, headers=headers, params=params)
-analytics_data = response.json()
-```
-
-### Automated Event Processing
-```python
-from flask import Flask, request
-import json
-
-app = Flask(__name__)
-
-@app.route('/webhook/vela', methods=['POST'])
-def handle_vela_webhook():
-    # Verify webhook signature (recommended)
-    webhook_data = request.json
-    
-    # Process different event types
-    event_type = webhook_data.get('event_type')
-    
-    if event_type == 'call_completed':
-        handle_call_completed(webhook_data)
-    elif event_type == 'alert_triggered':
-        handle_alert_triggered(webhook_data)
-    
-    return {'status': 'success'}
-
-def handle_call_completed(call_data):
-    # Update CRM with call insights
-    update_customer_profile(call_data)
-
-def create_support_ticket(call_data):
-    # Integrate with your help desk system
-    pass
-
-def update_customer_profile(call_data):
-    # Update CRM with call insights
-    pass
-```
+:::info Additional API Endpoints
+For the complete list of available API endpoints — including chat uploads, analytics, and integrations — see the [Official API Documentation](./advanced/api-documentation.md) or contact your Account Manager.
+:::
 
 ---
 

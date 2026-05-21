@@ -63,7 +63,7 @@ Chat interactions are uploaded using a different file format:
   {
     "metadata": {
       "date": "DD/MM/YYYY, HH:mm",
-      "agent": "[agent@example.com](mailto:agent@example.com)",
+      "agent": "agent@example.com",
       "interaction_id": "<interaction_id>",
       "language": "en-ZA"
     },
@@ -73,12 +73,11 @@ Chat interactions are uploaded using a different file format:
         "time": "DD/MM/YYYY, HH:mm",
         "sender": "user",
         "language": "en-ZA"
-      },
-      // ... more messages
+      }
     ]
   }
-  // ... more chat interactions
 ]
+```
 
 ### Process for Chat Uploads
 

@@ -58,16 +58,6 @@ A well-built knowledge base enhances your team's capabilities. You'll be able to
 
 ## Building Your Knowledge Base
 
-### Content Organisation
-Structure your knowledge base for easy navigation:
-
-| **Organisation Level** | **Purpose** | **Example Structure** |
-|----------------------|-------------|---------------------|
-| **Categories** | High-level grouping | Products, Services, Policies, Training |
-| **Subcategories** | Specific topic areas | Product A, Product B, Billing, Technical Support |
-| **Tags** | Cross-referencing | Urgent, New, Updated, Compliance, Training |
-| **Search Keywords** | Discovery optimization | Synonyms, common terms, abbreviations |
-
 ### Content Quality Standards
 - [ ] **Keep it current** - Update information regularly
 - [ ] **Be specific** - Provide clear, actionable information
@@ -108,8 +98,6 @@ Manage your knowledge base content effectively:
 
 ### Quality Assurance
 - [ ] **Regular content reviews** to ensure accuracy
-- [ ] **Feedback collection** from agents and customers
-- [ ] **Usage analytics** to identify improvement opportunities
 - [ ] **Expert validation** for technical or complex content
 
 ### Continuous Improvement

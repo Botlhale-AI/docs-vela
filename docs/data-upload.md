@@ -151,14 +151,14 @@ For organisations with custom systems, use our API to upload data programmatical
 
 **Required Parameters**:
 - `org_id` - Your organisation identifier
-- `file` - Audio file (WAV, MP3, M4A, FLAC)
+- `file` - Audio file (WAV or MP3)
 - `metadata` - Call information (optional)
 
 **Example Request**:
 ```python
 import requests
 
-url = "https://api.botlhale.xyz/v1/asr/async/upload/vela"
+url = "https://api.botlhale.xyz/asr/async/upload/vela"
 headers = {
     "Authorization": "Bearer YOUR_API_TOKEN"
 }
@@ -177,38 +177,9 @@ print(response.json())
 ```
 
 ### Upload Chat Data via API
-**Endpoint**: `https://api.botlhale.xyz/chat/upload`
+**Endpoint**: `https://api.botlhale.xyz/chats/vela`
 
-**Example Request**:
-```python
-import requests
-import json
-
-url = "https://api.botlhale.xyz/v1/chat/upload"
-headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
-    "Content-Type": "application/json"
-}
-
-chat_data = {
-    "org_id": "your_org_id",
-    "conversation": [
-        {
-            "sender": "agent",
-            "message": "Hello, how can I help you today?",
-            "timestamp": "2024-01-15T10:30:00Z",
-        },
-        {
-            "sender": "customer",
-            "message": "I have a question about my account",
-            "timestamp": "2024-01-15T10:31:00Z",
-        }
-    ]
-}
-
-response = requests.post(url, headers=headers, json=chat_data)
-print(response.json())
-```
+See the [API Documentation](./advanced/api-documentation.md) for the full chat upload payload format and example requests.
 
 ---
 

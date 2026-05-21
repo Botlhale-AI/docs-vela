@@ -212,8 +212,8 @@ Alerts are raised when a processed interaction matches one of your organisation'
 ### Collaboration and Feedback
 
 #### Comment System:
-- Add comments at interaction level or specific timestamps
-- Tag agents to notify them of feedback
+- Add comments at the interaction level
+- Tag agents using @agent to notify them of feedback (new comments only, not replies)
 - Collaborate with other team leads on complex quality issues
 - Create coaching notes for development discussions
 

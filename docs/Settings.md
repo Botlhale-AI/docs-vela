@@ -138,9 +138,6 @@ Configure performance thresholds for your team:
   - [ ] **Green Zone**: Upper Bound to 100% (e.g., 80-100%)
 - [ ] **Adjust Lower Bound** using the input field
 - [ ] **Adjust Upper Bound** using the input field
-- [ ] **Customise coaching actions** for each threshold
-- [ ] **Set up automated alerts** for performance drops
-- [ ] **Configure escalation rules** for low performers
 
 ### Agent Performance Sharing
 Automate performance report delivery to agents:
@@ -161,9 +158,12 @@ Automate performance report delivery to agents:
 
 ### Password and Authentication
 ![ Settings](../img/screenshots/settings/settings8.png)
-- [ ] **Set strong password requirements** for your organisation
-- [ ] **Enable two-factor authentication** for enhanced security
-- [ ] **Set up password reset** procedures
+- [ ] **Change your password** through Settings → Security (not shown for SSO users)
+- [ ] **Reset your password** via the "Forgot your password?" link on the login page
+
+:::note Password Requirements
+Password requirements are fixed by the platform (minimum 8 characters, at least one letter, one number, and one special character). These cannot be changed by administrators.
+:::
 
 ---
 

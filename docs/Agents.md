@@ -101,12 +101,12 @@ Look for patterns that affect multiple agents:
 ![Agent Performance](../img/screenshots/performance/performance-2.png)
 
 ### Adding New Agents
-1. **Click "+ Add Agent"** in the top right
-2. **Enter agent information**:
+1. **Navigate to Agents → Agent Details**
+2. **Click the add icon** to open the agent creation modal
+3. **Enter agent information**:
    - Name and email
    - Department and team assignment
-   - Start date and role
-3. **Click "Save"** to add them to your system
+4. **Submit** — the agent receives an email invitation to the platform
 
 ### Reassigning Agents
 

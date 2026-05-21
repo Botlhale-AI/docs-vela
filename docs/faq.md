@@ -122,10 +122,9 @@ Yes, use the "Agent Scorecard" feature in Smart Detector to create custom evalua
 ## Additional Platform Features
 
 ### Coaching Portal
-- **AI-powered coaching**: Personalised training recommendations
-- **Course management**: Assign and track training courses
+- **Course management**: Team leads assign training courses; agents review materials and complete a quiz
 - **Performance tracking**: Monitor improvement over time
-- **Awards system**: Recognise and reward high performers
+- **Awards system**: Team leads recognise and reward high performers with digital awards and certificates
 
 ### Analytics and Reporting
 - **Performance dashboards**: Detailed performance metrics and insights that update automatically
