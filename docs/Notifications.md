@@ -28,8 +28,6 @@ Vela sends in-app notifications for the following events:
 | **Smart Search alert** | A processed interaction matches one of your Smart Search rules |
 | **Comment** | Someone adds a comment to an interaction you are involved with |
 | **Report ready** | A scheduled or one-time report has finished generating |
-| **Course assigned** | A training course has been assigned to you |
-| **Award presented** | An award has been presented to you |
 | **Call processed** | A call upload has finished processing |
 
 
@@ -94,7 +92,7 @@ Alerts in the Notifications section are Smart Search matches — raised automati
 - [ ] **Use comments for coaching** and feedback
 
 ### Best Practices for Comments
-- [ ] **Be specific** - Reference exact moments in calls
+- [ ] **Be specific** - Reference specific interactions or call details
 - [ ] **Be constructive** - Focus on improvement opportunities
 - [ ] **Tag relevant people** - Use @mentions for attention
 - [ ] **Follow up** - Check if comments led to improvements

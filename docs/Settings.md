@@ -74,19 +74,20 @@ Configure what happens when your monthly allocation is reached:
 Protect sensitive information with automatic redaction:
 
 - [ ] **Select sensitive data types** for redaction:
-  - [ ] Credit card numbers
-  - [ ] IBAN codes
-  - [ ] Person names
-  - [ ] Locations
-  - [ ] Cryptocurrency addresses
-  - [ ] Phone numbers
-  - [ ] Email addresses
-  - [ ] NRP (National Registration/Passport numbers)
-  - [ ] IP addresses
-  - [ ] Dates and times
-  - [ ] URLs
-  - [ ] ID numbers
-  - [ ] Custom entity types (configurable)
+  - [ ] Credit Card
+  - [ ] IBAN Code
+  - [ ] Person
+  - [ ] Location
+  - [ ] Crypto
+  - [ ] Phone Number
+  - [ ] Email
+  - [ ] NRP
+  - [ ] IP Address
+  - [ ] Date & Time
+  - [ ] URL
+  - [ ] ID Number
+  - [ ] Medical License
+  - [ ] Organisation
 - [ ] **Save** your redaction configuration
 
 ![Privacy Settings](../img/screenshots/settings/settings5.png)
@@ -112,7 +113,7 @@ Control who has access to your Vela platform:
 ### Department and Team Organisation
 Structure your organisation for better management:
 ![ Settings](../img/screenshots/settings/settings7.png)
-- [ ] **Go to "Settings" → "Users - Organisation Table"**
+- [ ] **Go to "Settings" → "Users"** and select the **"Org Table"** tab
 - [ ] **Create departments** to group related teams
 - [ ] **Set up teams** within departments
 - [ ] **Assign users** to appropriate teams
@@ -149,7 +150,6 @@ Automate performance report delivery to agents:
     - [ ] **Set time** for report delivery (e.g., 10:00)
     - [ ] **Select day of week** (e.g., Monday)
   - [ ] **Monthly** - Send reports monthly
-- [ ] **Test report delivery** to ensure agents receive notifications
 
 ![ Settings](../img/screenshots/settings/settings9.png)
 ---
