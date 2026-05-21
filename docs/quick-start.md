@@ -188,7 +188,7 @@ Add multiple agents efficiently:
 1. Go to **Agents** section
 2. Compare individual performance to team averages
 3. Identify coaching opportunities: Look for consistent patterns in low-scoring areas
-4. Export performance data for management reporting
+4. Use the **Reports** section to generate management reports as PDF or DOCX
 
 ![Agent](../img/screenshots/settings/agent.png)
 ![Agent](../img/screenshots/settings/agent02.png)

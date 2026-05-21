@@ -84,6 +84,6 @@ Once the report is configured, you can generate it immediately or set it to run 
 After the report is generated, Vela AI produces an analysis of the data, making suggestions on what the data might mean and what might need attention.
 
 * Review the **Insights** section for AI-powered recommendations.
-* **Download and share** the final reports with stakeholders.
+* **Download and share** the final reports with stakeholders as **PDF or DOCX**.
 
 The expected outcome is that management receives a comprehensive performance summary and actionable recommendations.

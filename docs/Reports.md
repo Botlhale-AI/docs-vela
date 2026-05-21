@@ -54,7 +54,7 @@ Available metrics match those on the Dashboard — for example: average agent sc
 ### Step 4: Generate and Share
 - [ ] **Click "Create"** to generate your report
 - [ ] **Review the results** for accuracy
-- [ ] **Download as PDF** for sharing
+- [ ] **Download as PDF or DOCX** for sharing
 - [ ] **Schedule recurring delivery** if needed
 
 ---

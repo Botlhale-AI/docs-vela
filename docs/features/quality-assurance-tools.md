@@ -18,7 +18,7 @@ Instead of manually reviewing every interaction, use Vela’s built-in intellige
 Smart Searches automatically flag interactions based on your defined keywords and compliance terms. These should be your first priority.
 
 1.  Navigate to **Smart Detector** → **Smart Search**.
-2.  Review the **Results** for critical alerts (e.g., "complaint", "refund", "escalation", or specific compliance violations).
+2.  Review the **Results** for flagged interactions (e.g., those matching compliance terms, escalation phrases, or other defined keywords).
 3.  Sort results by **Number of matched results** (High to Low) to see the most matched issues first.
 
 :::tip
@@ -87,7 +87,7 @@ The Automatic Scorecard provides a base score, but your expertise is required fo
 
 1.  On the Interaction Detail View, locate the **Scorecard** section.
 2.  Click **"Manual"**.
-3.  Evaluate the agent against your organisation's criteria in each category (e.g., Communication Skills, Compliance Adherence, Problem Resolution).
+3.  Evaluate the agent against your organisation's defined scorecard criteria in each category.
     * **Be consistent:** Ensure your scoring aligns with the established quality standards and training.
     * **Be objective:** Base your score only on the evidence from the interaction and the defined criteria.
 4.  **Add detailed comments** explaining your score for each category.
@@ -129,7 +129,7 @@ Mark the interaction's review status to keep your team's QA process clear.
 Use the analysis to inform your coaching strategy.
 
 1.  Review all the agent's recent scorecards and comments.
-2.  Look for **consistent patterns** in low-scoring areas (e.g., always scoring low on 'Active Listening' or 'Compliance').
+2.  Look for **consistent patterns** in low-scoring areas across the agent's recent scorecard results.
 3.  Go to the **Coaching** section.
 4.  **Assign targeted training courses** that specifically address the identified skill gaps.
 5.  **Schedule a coaching discussion** with the agent to review the feedback and performance trend.

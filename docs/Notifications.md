@@ -84,7 +84,7 @@ Alerts in the Notifications section are Smart Search matches — raised automati
 - [ ] **Open any call** in the Calls section
 - [ ] **Click "Add Comment"** at the bottom
 - [ ] **Write your observation** or feedback
-- [ ] **Tag team members** using @username
+- [ ] **Tag agents** using the **@** symbol to share the comment directly with a specific agent
 - [ ] **Save the comment** for team visibility
 
 ### Managing Team Discussions

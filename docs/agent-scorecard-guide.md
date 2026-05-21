@@ -62,7 +62,7 @@ Each item in the Agent scorecard  is a question evaluated against the interactio
 ### Scoring
 The agent's scorecard score is calculated from the weighted results of all applicable scorecard items. Performance thresholds (what constitutes a pass or fail score overall) are configured by your organisation's administrator.
 
-> **[TO BE VERIFIED]:** Confirm with your administrator what performance threshold your organisation has set for acceptable scores.
+> Contact your administrator to confirm what performance threshold your organisation has set for acceptable scores.
 
 ---
 

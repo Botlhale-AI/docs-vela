@@ -43,7 +43,7 @@ The Interaction Detail View combines the full transcript with the audio/chat con
 1.  Click on the interaction to open the Detail View.
 2.  **Listen to the call recording or read the chat transcript**.
 3.  Use the playback **Speed adjustment** (e.g., 1.25x or 1.5x) for efficient review.
-4.  The **Transcription** is automatically processed in **multiple languages** (including African languages).
+4.  The **Transcription** is automatically processed in all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho, Sepedi, Setswana, siSwati, Tshivenda, and Xitsonga.
 5.  Click on a **Timestamp** in the transcript to jump to the exact moment in the audio.
 
 ### B. Review Smart Detector Insights

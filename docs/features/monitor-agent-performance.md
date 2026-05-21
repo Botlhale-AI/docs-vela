@@ -24,7 +24,7 @@ Focus on these key indicators to spot areas needing attention:
 
 | Metric | What to Look For | Action Trigger |
 | :--- | :--- | :--- |
-| **Average Agent Score** | The overall quality performance for your scope. | A score consistently below your set threshold (e.g., 70 points). |
+| **Average Agent Score** | The overall quality performance for your scope. | A score consistently below the performance threshold configured by your administrator. |
 | **Agent Scores Distribution** | How scores are spread across the team. | A clustering of agents in the lower score ranges, indicating a team-wide training need. |
 | **No. Alerts & Resolved Alerts** | The number of compliance or escalation alerts. | A high number of **Unresolved Alerts**, meaning critical issues are being missed or ignored. |
 | **Sentiment Distribution** | The proportion of positive, neutral, and negative customer moods. | A sudden spike in **Negative** sentiment, pointing to a service or system issue. |
@@ -58,7 +58,7 @@ The **Agent Management** section allows you to dive into individual performance 
 Click on **View** in line with agent's name to view their individual performance dashboard and profile.
 
 * **View Individual Agent Scores and Rankings:** Track their rolling average score and how they rank against their peers.
-* **Track Strengths and Weaknesses:** The system highlights which scorecard categories (e.g., Compliance, Communication) are their strongest and weakest points.
+* **Track Strengths and Weaknesses:** The system highlights which scorecard categories are their strongest and weakest points based on your organisation's defined criteria.
 * **Check Checklist Scores:** Review the agent's performance on manual evaluations and checklist-based quality assessments.
 * **Review Agent Voice Profiles:** Manage voice profiles to improve AI accuracy and speaker separation in transcripts.
 
@@ -103,10 +103,10 @@ Performance monitoring must lead directly to coaching and development to drive i
 :::info
 **Workflow: Performance Gap to Training**
 
-1.  **Find Gap:** Dashboard shows Agent A has a low **Problem Resolution** score.
-2.  **Review Interactions:** Go to **Interactions** and see that Agent A frequently misses the key 'solution confirmation' step.
-3.  **Assign Training:** Go to **Coaching** and assign the "Effective Solution Confirmation" course.
-4.  **Track Results:** Monitor Agent A's score trend to see improvement post-training.
+1.  **Find Gap:** Dashboard shows an agent has a low score in a specific scorecard category.
+2.  **Review Interactions:** Go to **Interactions** and look at that agent's recent calls or chats to identify the recurring issue.
+3.  **Assign Training:** Go to **Coaching** and assign a course that targets the identified skill gap.
+4.  **Track Results:** Monitor the agent's score trend to see improvement post-training.
 :::
 
 ---

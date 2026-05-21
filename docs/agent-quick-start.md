@@ -154,12 +154,7 @@ Access your learning:
 ## Understanding Your Performance
 
 ### What Gets Measured
-Vela's AI analyzes your interactions for:
-- **Customer service quality** - How well you help customers
-- **Communication skills** - How clearly you explain things
-- **Problem resolution** - How effectively you solve issues
-- **Professionalism** - Your tone and approach with customers
-- **Compliance** - Following company procedures and policies
+Vela's AI scores each of your interactions against your organisation's Agent Scorecard criteria. The specific evaluation categories and what they measure are defined by your administrator — ask your team lead if you need clarification on what is being assessed.
 
 ### How Scores Are Calculated
 - AI automatically scores each of your interactions
@@ -177,11 +172,7 @@ Vela's AI analyzes your interactions for:
 ## Making the Most of Training
 
 ### Types of Courses You Might See
-- **Communication Skills** - Better phone and chat techniques
-- **Product Knowledge** - Understanding what you're selling or supporting
-- **Compliance Training** - Following company rules and regulations
-- **Customer Service** - Handling difficult situations professionally
-- **Technical Skills** - Using your call center tools more effectively
+Courses are created by your Team Lead and are tailored to your organisation's specific needs. They will typically address skill gaps identified from your interaction scores and scorecard results. Ask your team lead for context on any course assigned to you.
 
 ### Study Tips for Success
 - **Take courses when you're alert** - Don't rush through when tired
