@@ -90,16 +90,16 @@ For WinRAR users:
 
 Vela supports uploads up to **3 GB**, but different browsers handle large uploads differently:
 
-| Browser | Recommended Max Size | Notes |
+| Browser | Large File Handling | Notes |
 |---------|---------------------|-------|
-| **Firefox** | Up to 3 GB | ✅ **Best for large uploads** |
-| **Chrome** | Up to 1-2 GB | ⚠️ May run out of memory with large files |
-| **Edge** | Up to 1-2 GB | ⚠️ May struggle with large files |
-| **Safari** | Up to 2-3 GB | ⚠️ Performance varies by version |
+| **Firefox** | Generally reliable | ✅ **Recommended for large uploads** |
+| **Chrome** | May struggle | ⚠️ Can run out of memory with large files |
+| **Edge** | May struggle | ⚠️ Similar memory constraints to Chrome |
+| **Safari** | Varies | ⚠️ Performance depends on system memory and version |
 
 ### Why Firefox Works Better
 
-Firefox handles large file uploads more reliably than Chrome or Edge, which may run out of memory during large file uploads.
+Firefox tends to handle large file uploads more reliably than Chrome or Edge. Actual limits depend on your system's available memory.
 
 
 ---

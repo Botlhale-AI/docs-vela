@@ -21,7 +21,7 @@ Reports help you communicate insights effectively. You'll be able to:
 
 ## Understanding Reports
 
-Vela reports are built by selecting the metrics you want to include, the date range, and the scope (teams or agents). The platform then generates a visual report from those metrics alongside an AI-written analysis and recommendations.
+Vela reports are built by selecting the metrics you want to include, the date range, and the scope (teams or agents). The platform then generates a visual report from those metrics.
 
 Available metrics match those on the Dashboard — for example: average agent score, number of calls/chats, talk to listen ratio, sentiment distribution, alert counts, and more. Some metrics are call-only or chat-only; Vela will indicate which apply based on your selected interaction type.
 

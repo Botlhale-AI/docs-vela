@@ -131,7 +131,7 @@ An Admin with organisational scope has full visibility and management access. A 
 ### Agent Score Boundaries
 Configure performance thresholds for your team:
 
-- [ ] **Go to "Settings" → "Notification " → "Agent Score Boundaries"**
+- [ ] **Go to "Settings" → "Organisations"** and locate the Agent Score Boundaries section
 - [ ] **Set performance thresholds** for your organisation:
   - [ ] **Red Zone**: 0% to Lower Bound (e.g., 0-50%)
   - [ ] **Amber Zone**: Lower Bound to Upper Bound (e.g., 50-80%)

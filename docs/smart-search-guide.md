@@ -43,7 +43,6 @@ Smart Search gives you automated monitoring. You'll be able to:
 ![ Smart Search](../img/screenshots/smart_search/smart4.png)
 - [ ] **Review initial results** to ensure accuracy
 - [ ] **Adjust search criteria** based on findings
-- [ ] **Fine-tune sensitivity** to reduce false positives
 - [ ] **Set up alerts** for immediate notification
 
 ---
@@ -139,7 +138,7 @@ Based on search results, you can:
 
 | **Problem** | **Cause** | **Solution** |
 |-------------|----------|--------------|
-| **Too many false positives** | Search criteria too broad, low specificity | Refine search phrases, add more specific criteria, adjust sensitivity |
+| **Too many false positives** | Search criteria too broad, low specificity | Refine search phrases, add more specific criteria |
 | **Missing important issues** | Search criteria too narrow, missing variations | Add more example phrases, expand search scope, review recent calls |
 | **Alerts not triggering** | Search not active, notification settings incorrect | Check search status, verify notification settings, test with sample data |
 | **Inconsistent results** | Varying data quality, changing patterns | Review data consistency, update search criteria, monitor for changes |
