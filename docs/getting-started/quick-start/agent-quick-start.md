@@ -161,32 +161,7 @@ Quick view of your most recent calls and chats:
 
 **Where You Excel and Where to Improve**
 
-Your performance can be broken down into specific areas such as:
-
-**Communication Skills**
-- How clearly you speak or write
-- Your tone and professionalism
-- How well you listen to customers
-
-**Problem Resolution**
-- How effectively you solve issues
-- First-call resolution success
-- Following through on commitments
-
-**Compliance & Procedures**
-- Following company scripts and processes
-- Handling customer data correctly
-- Meeting quality standards
-
-**Customer Experience**
-- Customer satisfaction and sentiment
-- Courtesy and respect
-- Making customers feel valued
-
-**What the Bars Mean:**
-- **Long green bars:** Your strengths—keep doing what you're doing!
-- **Short or yellow bars:** Areas to focus on for improvement
-- **Red bars:** Priority areas—check assigned training
+Your scorecard breakdown shows the categories your organisation has defined in its Agent scorecard. The specific areas and their names are set by your administrator — ask your team lead if you need clarification on what each category means.
 
 ![Agent performance categories](../../../img/screenshots/dashboard/dashboard-agent4.png)
 

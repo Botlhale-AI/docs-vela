@@ -349,7 +349,6 @@ Vela's dashboard automatically adjusts layout based on screen size. Larger displ
 - **Single Sign-On (SSO)**  
   - Google OAuth (Google Workspace)  
   - Microsoft Azure AD (Enterprise AD)  
-  - Custom SSO (SAML 2.0 compatible)
 - **Traditional Authentication**  
   - Email and Password
 

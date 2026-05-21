@@ -161,10 +161,10 @@ Look for patterns that affect multiple agents:
 
 | **For Performance Reports** | **For Smart Monitoring** | **For Evaluation Systems** |
 |----------------------------|-------------------------|---------------------------|
-| [Generate Performance Reports](./reports.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
+| [Generate Performance Reports](./Reports.md) | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor your team's performance
+- [Dashboard Overview](./Dashboard.md) - Monitor your team's performance
 - [Agent Scorecards](./agent-scorecard-guide.md) - Create detailed performance evaluations
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts for agent issues
 - [Knowledge Base](./knowledge-base-guide.md) - Build training resources for your team

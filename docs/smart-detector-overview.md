@@ -228,8 +228,8 @@ Upload company documents to improve the accuracy of AI scoring:
 ### See also
 - [Smart Search Guide](./smart-search-guide.md) - Create custom search patterns
 - [Knowledge Base Guide](./knowledge-base-guide.md) - Build your team's knowledge resources
-- [Agent Performance](./agents.md) - Coach your team effectively
-- [Dashboard Monitoring](./dashboard.md) - Monitor automated alerts and insights
+- [Agent Performance](./Agents.md) - Coach your team effectively
+- [Dashboard Monitoring](./Dashboard.md) - Monitor automated alerts and insights
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
 ## Need Help?

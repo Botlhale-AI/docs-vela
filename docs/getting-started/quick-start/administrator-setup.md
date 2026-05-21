@@ -37,7 +37,7 @@ As a **Vela Administrator**, you have the highest level of access and control. T
 ### 3. Add Users
 - **Bulk Upload** via CSV for multiple agents.  
 - Assign users to teams and departments.  
-- Apply appropriate permission scopes (Agent, Team Lead, Admin).  
+- Set each user's **role** (Admin or User) and **view scope** (Organisational, Departmental, or Team).  
 
 ![Bulk upload agents sidebar](../../../img/screenshots/settings/agent-bulk.png)
 

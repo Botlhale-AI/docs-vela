@@ -157,13 +157,13 @@ Manage your knowledge base content effectively:
 
 | **For Smart Monitoring** | **For Performance Evaluation** | **For Team Development** |
 |-------------------------|-------------------------------|------------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Improve Agent Performance](./agents.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Improve Agent Performance](./Agents.md) |
 
 ### See also
 - [Smart Search Guide](./smart-search-guide.md) - Create custom search patterns
-- [Agent Performance](./agents.md) - Coach your team effectively
+- [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [Dashboard Overview](./dashboard.md) - Monitor team performance
+- [Dashboard Overview](./Dashboard.md) - Monitor team performance
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
 ## Need Help?

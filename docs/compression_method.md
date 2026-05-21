@@ -203,7 +203,7 @@ If you're still having trouble with browser uploads, there are other options ava
 ### See also
 - [Quick Start Guide](./quick-start.md) - Get started with Vela
 - [Data Upload Guide](./data-upload.md) - Upload your call recordings
-- [Dashboard Setup](./dashboard.md) - Create your performance dashboard
+- [Dashboard Setup](./Dashboard.md) - Create your performance dashboard
 
 ## Need Help?
 

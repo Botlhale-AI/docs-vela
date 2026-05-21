@@ -151,11 +151,11 @@ Generated reports can be downloaded as **PDF** or **DOCX** for sharing with stak
 
 | **For Real Insights** | **For Team Management** | **For Automation** |
 |---------------------------|------------------------|-------------------|
-| [Monitor Performance](./dashboard.md) | [Improve Agent Performance](./agents.md) | [Configure Notifications](./notifications.md) |
+| [Monitor Performance](./Dashboard.md) | [Improve Agent Performance](./Agents.md) | [Configure Notifications](./Notifications.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor performance
-- [Agent Performance](./agents.md) - Coach your team effectively
+- [Dashboard Overview](./Dashboard.md) - Monitor performance
+- [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [API Integration](./api.md) - Automate report generation
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for automation

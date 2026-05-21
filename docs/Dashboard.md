@@ -179,11 +179,11 @@ Choose your data view based on your access permissions:
 
 | **For Team Management** | **For Reporting** | **For Automation** |
 |------------------------|------------------|-------------------|
-| [Improve Agent Performance](./agents.md) | [Generate Reports](./reports.md) | [Configure Notifications](./notifications.md) |
+| [Improve Agent Performance](./Agents.md) | [Generate Reports](./Reports.md) | [Configure Notifications](./Notifications.md) |
 
 ### See also
 - [Data Upload Guide](./data-upload.md) - Get your data into Vela first
-- [Agent Performance](./agents.md) - Detailed agent coaching and development
+- [Agent Performance](./Agents.md) - Detailed agent coaching and development
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [API & Integration](./api.md) - Connect Vela with your existing systems
 

@@ -146,13 +146,13 @@ When a scheduled or one-time report finishes generating, you'll receive a notifi
 
 | **For Smart Monitoring** | **For Call Analysis** | **For Settings** |
 |-------------------------|---------------------|------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Analyse Call Data](./calls.md) | [Configure Settings](./settings.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Analyse Call Data](./Calls.md) | [Configure Settings](./Settings.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor alerts and notifications
+- [Dashboard Overview](./Dashboard.md) - Monitor alerts and notifications
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [Agent Performance](./agents.md) - Coach your team based on alerts
-- [Settings Configuration](./settings.md) - Configure notification preferences
+- [Agent Performance](./Agents.md) - Coach your team based on alerts
+- [Settings Configuration](./Settings.md) - Configure notification preferences
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
 ## Need Help?

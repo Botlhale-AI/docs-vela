@@ -262,13 +262,13 @@ print(response.json())
 
 | **For Data Monitoring** | **For Analysis** |
 |------------------------|------------------|
-| [Monitor Performance](./dashboard.md) | [Analyse Calls](./calls.md) |
+| [Monitor Performance](./Dashboard.md) | [Analyse Calls](./Calls.md) |
 
 ### See also
 - [Quick Start Guide](./quick-start.md) - Get started with Vela
-- [Dashboard Setup](./dashboard.md) - Create your performance dashboard
+- [Dashboard Setup](./Dashboard.md) - Create your performance dashboard
 - [API Integration](./api.md) - Automate your data uploads
-- [Settings Configuration](./settings.md) - Configure your organisation settings
+- [Settings Configuration](./Settings.md) - Configure your organisation settings
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for data uploads
 
 ## Need Help?

@@ -8,7 +8,7 @@ title: Access Requests & Audits
 The **Requests** tab allows Administrators to manage the audit trail of sensitive data access. This ensures regulatory compliance by systematically tracking when users are granted permission to view data that is typically redacted.
 
 :::warning ACCESS RESTRICTION
-This tab is **only visible to and manageable by Administrators**. Team Leads can *initiate* a request for redacted information in another section, but they cannot view, process, or approve requests here.
+This tab is **only visible to and manageable by Administrators**. Any user without redaction access can *initiate* a request from within a call or chat detail view, but only Administrators can view, process, or approve requests here.
 :::
 
 ---
@@ -29,12 +29,12 @@ This section lists all requests that have been fully processed and resolved, ser
 
 | Field | Description | Status Indication |
 | :--- | :--- | :--- |
-| **Request Type** | The nature of the request (e.g., Access to Redacted Information). | N/A |
-| **Timestamp** | The date and time the request was processed. | N/A |
+| **Submitted** | The date and time the request was submitted. | N/A |
 | **Requested By** | The name and email address of the user who initiated the request. | N/A |
-| **Call ID** | The unique identifier of the specific call or item the user requested access to. | N/A |
+| **Call ID** | A link to the specific call the user requested access to. | N/A |
 | **Status** | The final outcome of the request. | **Approved** (Green) or **Declined** (Red). |
-| **Completed By** | The Administrator who finalised the request. | N/A |
+| **Comment** | An optional note added by the requester when submitting. | N/A |
+| **Completed By** | The name and email of the Administrator who approved or declined the request. | N/A |
 
 ---
 
@@ -42,6 +42,6 @@ This section lists all requests that have been fully processed and resolved, ser
 
 The Requests tab is critical for maintaining data protection and auditability:
 
-* **Redaction Policy:** Vela automatically redacts sensitive entities (like Credit Card numbers, Phone Numbers, and ID Numbers) based on Administrator configuration.
+* **Redaction Policy:** Vela automatically redacts sensitive entities based on the Administrator's redaction configuration (e.g., credit card numbers, phone numbers, ID numbers, email addresses).
 * **Compliance:** This workflow ensures that temporary access to unredacted data is only granted with explicit, logged authorisation from an Administrator.
 * **Audit Logging:** The **Completed** section provides an immutable record of who requested access to specific sensitive data and who approved or declined that request, supporting legal and internal auditing requirements.

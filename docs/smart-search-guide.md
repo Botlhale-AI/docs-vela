@@ -172,13 +172,13 @@ Based on search results, you can:
 
 | **For Performance Evaluation** | **For Knowledge Management** | **For Team Management** |
 |-------------------------------|----------------------------|------------------------|
-| [Create Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
+| [Create Agent Scorecards](./agent-scorecard-guide.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./Agents.md) |
 
 ### See also
 - [Smart Monitoring Overview](./smart-detector-overview.md) - Understand automated detection
-- [Agent Performance](./agents.md) - Coach your team effectively
+- [Agent Performance](./Agents.md) - Coach your team effectively
 - [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
-- [Dashboard Overview](./dashboard.md) - Monitor search results and trends
+- [Dashboard Overview](./Dashboard.md) - Monitor search results and trends
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 
 ## Need Help?

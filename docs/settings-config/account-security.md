@@ -8,7 +8,7 @@ title: Account & Security
 The **Account** and **Security** tabs allow all users to manage their personal profile information and maintain account protection.
 
 :::info ACCESS
-This section is visible and editable by **all user roles**: Administrator, Team Lead, and Agent.
+This section is visible and editable by **all users**, regardless of their role or scope.
 :::
 
 ---

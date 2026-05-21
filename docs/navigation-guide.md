@@ -34,7 +34,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Quick Start Guide for Team Leads & Administrators](./quick-start.md)** - Get up and running in 30 minutes
 - **[Quick Start Guide for Agents](./agent-quick-start.md)** - Get comfortable with your Agent Portal in 15 minutes
 - **[Data Upload Guide](./data-upload.md)** - Get your data into Vela
-- **[Dashboard Setup](./dashboard.md)** - Monitor your team's performance
+- **[Dashboard Setup](./Dashboard.md)** - Monitor your team's performance
 
 ---
 
@@ -42,21 +42,21 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ### **Data Management Workflow**
 1. **[Data Upload](./data-upload.md)** - Get your data into Vela
-2. **[Settings](./settings.md)** - Configure your organisation
-3. **[Dashboard](./dashboard.md)** - Monitor data processing
+2. **[Settings](./Settings.md)** - Configure your organisation
+3. **[Dashboard](./Dashboard.md)** - Monitor data processing
 
 
 ### **Performance Monitoring Workflow**
-1. **[Dashboard](./dashboard.md)** - Set up your monitoring view
-2. **[Notifications](./notifications.md)** - Configure alerts
-3. **[Agent Performance](./agents.md)** - Review individual performance
-4. **[Reports](./reports.md)** - Generate insights for stakeholders
+1. **[Dashboard](./Dashboard.md)** - Set up your monitoring view
+2. **[Notifications](./Notifications.md)** - Configure alerts
+3. **[Agent Performance](./Agents.md)** - Review individual performance
+4. **[Reports](./Reports.md)** - Generate insights for stakeholders
 
 ### **Quality Assurance Workflow**
 1. **[Smart Detector](./smart-detector-overview.md)** - Set up automated monitoring
 2. **[Smart Search](./smart-search-guide.md)** - Create issue detection rules
 3. **[Agent Scorecards](./agent-scorecard-guide.md)** - Build evaluation criteria
-4. **[Interactions](./calls.md)** - Review specific interactions (calls and chats)
+4. **[Interactions](./Calls.md)** - Review specific interactions (calls and chats)
 5. **[Knowledge Base](./knowledge-base-guide.md)** - Provide agent resources
 
 
@@ -66,10 +66,10 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 ## **By Feature**
 
 ### **Core Platform Features**
-- **[Dashboard](./dashboard.md)** - Performance monitoring and analytics
-- **[Agent Performance](./agents.md)** - Team management and coaching
-- **[Reports](./reports.md)** - Data analysis and insights
-- **[Settings](./settings.md)** - Platform configuration
+- **[Dashboard](./Dashboard.md)** - Performance monitoring and analytics
+- **[Agent Performance](./Agents.md)** - Team management and coaching
+- **[Reports](./Reports.md)** - Data analysis and insights
+- **[Settings](./Settings.md)** - Platform configuration
 
 ### **Smart Detector Tools**
 - **[Smart Detector Overview](./smart-detector-overview.md)** - Automated monitoring system
@@ -78,12 +78,12 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 - **[Knowledge Base](./knowledge-base-guide.md)** - Agent resources and training
 
 ### **Interaction Analysis**
-- **[Interactions](./calls.md)** - Voice and digital interaction insights
-- **[Notifications](./notifications.md)** - Alert management
+- **[Interactions](./Calls.md)** - Voice and digital interaction insights
+- **[Notifications](./Notifications.md)** - Alert management
 
 ### **Technical Features**
 - **[Data Upload](./data-upload.md)** - Data management and processing
-- **[Settings](./settings.md)** - User and organisation management
+- **[Settings](./Settings.md)** - User and organisation management
 
 ---
 
@@ -114,11 +114,11 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 |------------------|-------------------|
 | Get started | [Quick Start Guide](./quick-start.md) |
 | Upload my data | [Data Upload Guide](./data-upload.md) |
-| Monitor my team | [Dashboard Guide](./dashboard.md) |
-| Coach my agents | [Agent Performance](./agents.md) |
-| Generate reports | [Reports Guide](./reports.md) |
+| Monitor my team | [Dashboard Guide](./Dashboard.md) |
+| Coach my agents | [Agent Performance](./Agents.md) |
+| Generate reports | [Reports Guide](./Reports.md) |
 
-| Configure alerts | [Notifications Guide](./notifications.md) |
-| Analyse interactions | [Interactions](./calls.md) |
+| Configure alerts | [Notifications Guide](./Notifications.md) |
+| Analyse interactions | [Interactions](./Calls.md) |
 | Set up quality monitoring | [Smart Detector](./smart-detector-overview.md) |
-| Manage my account | [Settings Guide](./settings.md) |
+| Manage my account | [Settings Guide](./Settings.md) |

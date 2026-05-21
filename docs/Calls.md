@@ -283,11 +283,11 @@ Tags are custom labels you assign to interactions when uploading (or during revi
 
 | **For Smart Monitoring** | **For Team Management** | **For Quality Assurance** |
 |-------------------------|------------------------|-------------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./Agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
 ### See also
-- [Dashboard Overview](./dashboard.md) - Monitor interaction performance trends
-- [Agent Performance](./agents.md) - Coach your team effectively
+- [Dashboard Overview](./Dashboard.md) - Monitor interaction performance trends
+- [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Search](./smart-search-guide.md) - Find specific patterns in interactions
 - [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
 

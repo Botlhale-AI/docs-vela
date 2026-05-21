@@ -48,6 +48,4 @@ A: Yes, MFA can be enabled for added account security. Contact your administrato
 
 **Q: Where can I get help if I run into issues?**  
 A: You can reach us through:  
-- Email: support@botlhale.ai 
-- In-app support chat (for logged-in users)  
-<!-- - Knowledge base: [help.vela.com](https://help.vela.com)   -->
+- Email: support@botlhale.ai
