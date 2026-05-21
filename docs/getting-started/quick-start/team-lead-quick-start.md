@@ -87,7 +87,7 @@ If this is your first login, you'll need to create a password that meets these r
 
 After logging in, you'll land on your **Dashboard** - your command center for monitoring team performance. The left sidebar shows your main navigation areas.
 
-![Dashboard Homepage](../../../img/screenshots/dashboard/dashboard01.png)]
+![Dashboard Homepage](../../../img/screenshots/dashboard/dashboard01.png)
 
 ---
 

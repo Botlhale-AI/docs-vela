@@ -202,23 +202,6 @@ tags - Semicolon-separated classification labels (optional)
 Download the metadata.csv template from the Vela upload interface to ensure correct formatting. This prevents common upload errors.
 :::
 
-# System & File Requirements
-
-## Required CSV Columns
-
-- **filename** – Exact audio file name (including extension)  
-- **agent_name** – Agent identifier (must match existing agent in system)  
-- **team** – Team assignment  
-- **department** – Department name  
-- **direction** – `"inbound"` or `"outbound"`  
-- **tags** – Semicolon-separated classification labels *(optional)*  
-
-:::tip Metadata Template
-Download the `metadata.csv` template from the Vela upload interface to ensure correct formatting. This prevents common upload errors.
-:::
-
----
-
 ## Agent Management Files
 
 ### Bulk Agent Import
@@ -517,6 +500,5 @@ System requirements and performance guidelines may change as the platform evolve
 
 ## Next Steps
 
-- [Platform Overview](docs/getting-started/platform-overview.md)  
-- [Quick Start Guides](docs/getting-started/quick-start/)  
-- [Authentication Setup](docs/authentication/setup.md)
+- [Platform Overview](../getting-started/platform-overview.md)  
+- [Quick Start Guides](../getting-started/quick-start/)

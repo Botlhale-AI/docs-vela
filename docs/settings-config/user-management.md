@@ -8,7 +8,7 @@ title: User & Team Management
 The **Users** tab is the control centre for managing individual user accounts, assigning roles, and structuring the organisation's teams and departments.
 
 :::warning ACCESS RESTRICTION
-This entire tab and its features are **only visible to and editable by Administrators**. Team Leads and Agents cannot access this section.
+**Administrators** have full edit access to this tab. **Team Leads** can view user details within their assigned scope (team, department, or organisation) but cannot create or modify accounts. **Agents** have no access to this section.
 :::
 
 ---

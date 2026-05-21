@@ -222,5 +222,90 @@ When you open an interaction, you'll see:
 
 1. **Read the feedback carefully** - understand exactly what your team lead is saying
 2. Click **'Reply'** in the comments section
-3. **Write your response**
+3. **Write your response** - acknowledge the feedback and share your thoughts
+4. Click **'Send'**
+
+:::tip Responding to Feedback
+Be specific in your replies — reference the moment or behaviour your team lead highlighted. A short, genuine response shows you've engaged with the feedback.
+:::
+
+---
+
+## Step 4: Accessing and Completing Training Courses (5 minutes)
+
+Your team lead can assign training courses to help you improve in specific areas. Here's how to access and complete them.
+
+### Finding Your Courses
+
+1. **Click 'Courses'** in your portal navigation
+2. You'll see a list of courses assigned to you, each showing:
+   - **Course title and description**
+   - **Category** (linked to a performance area in your organisation)
+   - **Status** — Incomplete, In Progress, or Complete
+   - **Due date** — the deadline for completion
+   - **Initiation score** — the score that triggered the course assignment
+
+:::info Courses Are Assigned to You
+You don't self-enrol in courses. Your team lead assigns courses based on your performance data. If you feel a course is missing or incorrect, speak to your team lead.
+:::
+
+### Completing a Course
+
+1. **Click on a course** to open its detail page
+2. **Read the course description** to understand what it covers
+3. **Review the course material:**
+   - Click **'View Material'** to open the content (this may be an external link or a downloadable file)
+   - Go through the material carefully before attempting the quiz
+4. **Take the quiz:**
+   - Scroll to the **Take Quiz** section and click **'Take Quiz'**
+   - Answer all questions
+   - Submit your answers to receive your score
+5. Your status updates to **Complete** once you submit — your result is recorded and your team lead can see it
+
+:::tip Pass Mark
+The pass mark is set by your organisation. If you don't pass on the first attempt, review the material again and speak to your team lead about next steps.
+:::
+
+---
+
+## Step 5: Tracking Your Awards (3 minutes)
+
+Awards are recognition given to you by your team lead for strong performance or improvement. You can view all your awards in one place.
+
+### Viewing Your Awards
+
+1. **Click 'Awards'** in your portal navigation
+2. Your most recent award appears at the top as a **"New Achievement"** highlight
+3. All your awards appear below as individual cards, each showing:
+   - **Award name and description**
+   - **Category**
+   - **Date awarded**
+
+### Viewing Award Details
+
+Click on any award card to open the detail view:
+- **Message from your team lead** — a personalised note explaining why you received the award
+- **Certificate** — a downloadable PDF certificate for the award
+- Click **'Download'** to save your certificate
+
+:::tip Use the Date Filter
+If you're looking for awards from a specific period, use the date range filter at the top of the Awards page to narrow the results.
+:::
+
+---
+
+## You're Ready to Go
+
+You've completed the Agent Quick Start. You can now:
+
+- ✅ Log in and navigate your Agent Portal
+- ✅ Monitor your performance score and trends on the Dashboard
+- ✅ View and respond to feedback from your team lead
+- ✅ Complete assigned training courses and quizzes
+- ✅ View your awards and download certificates
+
+**Suggested next steps:**
+- Check your Dashboard daily to monitor your performance trend
+- Review any open courses and work through them before their due date
+- If you have questions about your scorecard criteria, ask your team lead
 
