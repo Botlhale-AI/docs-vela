@@ -178,7 +178,7 @@ Based on search results, you can:
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Knowledge Base](./knowledge-base-guide.md) - Build your team's resources
 - [Dashboard Overview](./Dashboard.md) - Monitor search results and trends
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

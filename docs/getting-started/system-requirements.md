@@ -212,21 +212,19 @@ Download the metadata.csv template from the Vela upload interface to ensure corr
 |---------------------|--------------------|
 | File type           | CSV (.csv)         |
 | Encoding            | UTF-8              |
-| Required columns    | `name`, `email`, `team`, `department` |
-| Optional columns    | `start_date`, `employee_id`, `phone` |
+| Required columns    | `name`, `email`, `department`, `team` |
 
 **CSV Example**
 
 ```csv
-name,email,team,department,start_date,employee_id
-John Smith,john.smith@company.com,Sales Team,Sales,01/09/2025,EMP001
-Mary Johnson,mary.johnson@company.com,Support Team,Customer Service,15/08/2025,EMP002
+name,email,department,team
+John Smith,john.smith@company.com,Sales,Sales Team
+Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 ```
 ### Data Validation Rules
 
 - Email addresses must be unique across the platform
 - Team and department names should match existing entries (or use create option)
-- Date format should be DD/MM/YYYY
 - No empty required fields
 
 ## Performance Specifications

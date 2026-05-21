@@ -230,7 +230,7 @@ Upload company documents to improve the accuracy of AI scoring:
 - [Knowledge Base Guide](./knowledge-base-guide.md) - Build your team's knowledge resources
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Dashboard Monitoring](./Dashboard.md) - Monitor automated alerts and insights
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

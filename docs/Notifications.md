@@ -151,7 +151,7 @@ When a scheduled or one-time report finishes generating, you'll receive a notifi
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [Agent Performance](./Agents.md) - Coach your team based on alerts
 - [Settings Configuration](./Settings.md) - Configure notification preferences
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

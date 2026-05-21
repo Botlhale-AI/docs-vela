@@ -121,8 +121,8 @@ Your QA process is complete when the interaction is scored and the next steps ar
 
 Mark the interaction's review status to keep your team's QA process clear.
 
-* Mark the interaction as **Reviewed** or **Completed**.
-* If follow-up is needed, flag the interaction or add it to the agent's coaching queue.
+* Click **"Mark as Reviewed"** to record that you have completed your quality assessment of this interaction.
+* If follow-up is needed, add coaching comments for the agent.
 
 ### B. Plan Next Steps
 

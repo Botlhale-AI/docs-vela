@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 **Endpoint URL:**
 ```
-https://api.botlhale.xyz/asr/async/upload/vela
+https://api.botlhale.ai/asr/async/upload/vela
 ```
 
 **Description:**
@@ -136,7 +136,7 @@ request(options, function (error, response) {
 **POST Request**
 
 ```
-https://api.botlhale.xyz/chats/vela
+https://api.botlhale.ai/chats/vela
 ```
 
 `Authorization: Bearer <ProvidedToken>`
@@ -178,7 +178,7 @@ chats: [
 import json
 import requests
 
-url = "https://api.botlhale.xyz/chats/upload/vela"
+url = "https://api.botlhale.ai/chats/upload/vela"
 
 chats = [ 
         { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15", "sender": "user", "language": "zu-ZA" }, 

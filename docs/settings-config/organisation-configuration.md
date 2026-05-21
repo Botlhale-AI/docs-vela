@@ -41,7 +41,7 @@ Administrators must set the policy for when the monthly allocation is exceeded.
 
 ## 2. Quality Boundaries and Sharing
 
-These settings, found within the Notifications section under Organisations, define performance categories and automated reporting.
+These settings are found within the **Organisations** tab (This Org sub-tab) and define performance categories and automated reporting.
 
 ### A. Agent Score Boundaries
 These boundaries define the scoring ranges that Vela uses to categorise agent performance (Red, Amber, Green) across the platform.

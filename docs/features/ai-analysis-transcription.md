@@ -75,7 +75,7 @@ A detailed analysis culminates in either validating the AI's score or applying y
 Use the built-in communication tools to give timely feedback directly related to the interaction.
 
 1.  Use the **Comment System** within the interaction detail view.
-2.  Add specific comments or notes to the interaction transcript at relevant timestamps.
+2.  Add specific comments or notes to the interaction.
 3.  **Send and view comments** for collaboration with other Team Leads or Managers.
 4.  Send direct feedback to the agent, who will receive it in their dedicated **Agent Portal** notifications.
 

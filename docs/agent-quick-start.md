@@ -39,7 +39,7 @@ After logging in, you'll see your Agent Portal - a simplified, focused view desi
 
 #### Your Main Sections
 - **Dashboard** - Your performance scores and trends
-- **My Interactions** - Your calls and chats with feedback
+- **Interactions** - Your calls and chats with feedback
 - **Courses** - Courses assigned to help you improve
 - **Awards** - Recognition for your achievements
 - **Notifications** - Messages from your team lead
@@ -83,7 +83,7 @@ What you'll see on your dashboard:
 ### 2. Review Your Interactions and Feedback (5 minutes)
 Check for feedback from your team lead:
 
-1. Click **"My Interactions"**
+1. Click **"Interactions"**
 2. Click on a specific call
 3. Look for the comment icon next to any calls or chats
 4. Click on interactions with comments to read feedback

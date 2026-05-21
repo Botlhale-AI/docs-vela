@@ -170,7 +170,7 @@ Password requirements are fixed by the platform (minimum 8 characters, at least 
 ## Notification Preferences
 
 ### Platform Notifications
-In-app notifications are sent automatically for Smart Search alerts, comments, assigned courses, and presented awards. You can configure Smart Search notifications per search when creating or editing a Smart Search.
+In-app notifications are sent automatically for Smart Search alerts, comments, reports, and call processing completions. You can configure Smart Search notifications per search when creating or editing a Smart Search.
 
 
 
@@ -199,7 +199,7 @@ In-app notifications are sent automatically for Smart Search alerts, comments, a
 ### See also
 - [Dashboard Overview](./Dashboard.md) - Monitor your configured settings
 - [API Integration](./api.md) - Configure external system connections
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 - [Data Upload Guide](./data-upload.md) - Set up data import settings
 - [Agent Performance](./Agents.md) - Manage team settings and permissions
 

@@ -202,7 +202,7 @@ Use scorecard data to improve processes:
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [Dashboard Overview](./Dashboard.md) - Monitor performance trends
 - [Knowledge Base](./knowledge-base-guide.md) - Build training resources
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

@@ -208,12 +208,11 @@ Generate management insights:
    - **Metrics**: Select key performance indicators
    - **Chart Type**: Choose visualisation (bar, line, pie, table)
    - **Interaction Type**: All, calls only, or chats only
-4. Generate report and review AI-powered insights and recommendations
-5. Download or schedule for regular delivery
+4. Generate report and download or schedule for regular delivery
 
 ![Report creation interface with parameter options highlighted](../img/screenshots/reports/report-creation2.png)
 
-**Expected outcome**: You'll have professional analytics ready to share with management, plus AI suggestions for performance improvements.
+**Expected outcome**: You'll have professional analytics ready to share with management.
 
 ## Navigation and Productivity Tips
 

@@ -152,7 +152,7 @@ Manage your knowledge base content effectively:
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [Dashboard Overview](./Dashboard.md) - Monitor team performance
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

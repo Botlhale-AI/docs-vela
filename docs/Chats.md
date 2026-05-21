@@ -130,7 +130,7 @@ Use the Dashboard's **Interaction Type** filter to view chat-only metrics separa
 - [Dashboard Overview](./Dashboard.md) - Monitor digital performance trends
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Search](./smart-search-guide.md) - Find patterns in digital conversations
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

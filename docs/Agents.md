@@ -114,7 +114,7 @@ Look for patterns that affect multiple agents:
 ![Agent Performance](../img/screenshots/performance/performance-4.png)
 1. **Select the agent** you want to reassign
 2. **Click "Reassign"** button
-3. **Choose new department/team**
+3. **Choose new team**
 4. **Confirm the change**
 
 ### Managing Agent Access

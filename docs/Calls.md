@@ -289,7 +289,7 @@ Tags are custom labels you assign to interactions when uploading (or during revi
 - [Dashboard Overview](./Dashboard.md) - Monitor interaction performance trends
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Search](./smart-search-guide.md) - Find specific patterns in interactions
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 

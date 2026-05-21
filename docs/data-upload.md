@@ -147,7 +147,7 @@ Ensure your data is ready for analysis:
 ### Upload Call Recordings via API
 For organisations with custom systems, use our API to upload data programmatically:
 
-**Endpoint**: `https://api.botlhale.xyz/asr/async/upload/vela`
+**Endpoint**: `https://api.botlhale.ai/asr/async/upload/vela`
 
 **Required Parameters**:
 - `org_id` - Your organisation identifier
@@ -158,7 +158,7 @@ For organisations with custom systems, use our API to upload data programmatical
 ```python
 import requests
 
-url = "https://api.botlhale.xyz/asr/async/upload/vela"
+url = "https://api.botlhale.ai/asr/async/upload/vela"
 headers = {
     "Authorization": "Bearer YOUR_API_TOKEN"
 }
@@ -177,7 +177,7 @@ print(response.json())
 ```
 
 ### Upload Chat Data via API
-**Endpoint**: `https://api.botlhale.xyz/chats/vela`
+**Endpoint**: `https://api.botlhale.ai/chats/vela`
 
 See the [API Documentation](./advanced/api-documentation.md) for the full chat upload payload format and example requests.
 
@@ -240,7 +240,7 @@ See the [API Documentation](./advanced/api-documentation.md) for the full chat u
 - [Dashboard Setup](./Dashboard.md) - Create your performance dashboard
 - [API Integration](./api.md) - Automate your data uploads
 - [Settings Configuration](./Settings.md) - Configure your organisation settings
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for data uploads
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for data uploads
 
 ## Need Help?
 

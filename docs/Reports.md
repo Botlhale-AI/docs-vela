@@ -158,7 +158,7 @@ Generated reports can be downloaded as **PDF** or **DOCX** for sharing with stak
 - [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [API Integration](./api.md) - Automate report generation
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for automation
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for automation
 
 ## Need Help?
 

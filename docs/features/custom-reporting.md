@@ -79,11 +79,8 @@ Once the report is configured, you can generate it immediately or set it to run 
 * You can schedule recurring reports to run **daily, weekly, or monthly**.
 * The system allows you to **View scheduled reports and manage them**.
 
-### C. Reviewing Insights and Recommendations
+### C. Download and Share
 
-After the report is generated, Vela AI produces an analysis of the data, making suggestions on what the data might mean and what might need attention.
-
-* Review the **Insights** section for AI-powered recommendations.
 * **Download and share** the final reports with stakeholders as **PDF or DOCX**.
 
-The expected outcome is that management receives a comprehensive performance summary and actionable recommendations.
+The expected outcome is that management receives a comprehensive performance summary with the selected metrics and visualisations.

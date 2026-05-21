@@ -109,7 +109,7 @@ POST /interactions/calls
 ```python
 import requests
 
-url = "https://api.botlhale.xyz/asr/async/upload/vela"
+url = "https://api.botlhale.ai/asr/async/upload/vela"
 headers = {
     "Authorization": "Bearer YOUR_API_TOKEN"
 }
@@ -204,9 +204,9 @@ For the complete list of available API endpoints — including chat uploads, ana
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
 - [Dashboard Integration](./Dashboard.md) - Connect your data to dashboards
 - [Settings Configuration](./Settings.md) - Configure your API settings
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference and examples
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference and examples
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-- **API Documentation**: [Official Botlhale API Docs](https://docs-apis.botlhale.xyz)
+- **API Documentation**: [Official Botlhale API Docs](https://docs-apis.botlhale.ai)
