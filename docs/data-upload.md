@@ -94,7 +94,7 @@ Upload your files through Vela's interface:
 - [ ] **Click the "Upload" button** in the top-right corner of the Calls page
 - [ ] **Choose your upload method**:
   - **Single file**: Click "Choose File" and select individual recordings
-  - **Multiple files**: Use "Batch Upload" to select multiple files at once
+  - **Multiple files**: Use "Bulk Upload" to select multiple files at once
   - **Drag & Drop**: Simply drag files from your computer directly into the upload area
 - [ ] **Review the upload summary** showing file names, sizes, and formats
 - [ ] **Click "Upload"** to begin the upload process
@@ -106,7 +106,6 @@ Track the progress of your uploads and processing:
 
 - [ ] **Watch the upload progress** - Real-time progress bars show upload status
 - [ ] **Start analysing** - Click on processed calls to view transcripts, insights, and analytics
-<!-- - [ ] **Check processing status** in the Calls section - Files will show "Processing" status -->
 
 
 > **Processing**: Files will be processed and available for analysis when complete.
@@ -183,22 +182,13 @@ See the [API Documentation](./advanced/api-documentation.md) for the full chat u
 
 ---
 
-## Data Processing Timeline
+## Data Processing
 
-> **Processing Timeline**: Processing times vary based on file size and system load.
+Once uploaded, files are queued for processing. Vela transcribes the audio (or parses the chat JSON), identifies speakers, analyses sentiment, detects keywords, classifies intent, and generates an automatic scorecard — all as part of the same pipeline.
 
-### Processing Overview
-| **File Size** | **Processing** | **What Happens** |
-|---------------|----------------|------------------|
-| Small files (< 10 MB) | Varies | Transcription, analysis, insights generation |
-| Medium files (10-100 MB) | Varies | Full processing with detailed analysis |
-| Large files (> 100 MB) | Varies | Full analysis with all features |
+Processing time depends on file size, audio quality, and current server load. Shorter calls and smaller files complete faster; longer recordings or large bulk uploads take more time. You will receive an in-app notification when processing is complete.
 
-### Factors Affecting Processing Time
-- [ ] **File size** - Larger files take longer to process
-- [ ] **Audio quality** - Clear audio may process more efficiently
-- [ ] **System load** - Peak times may be slower
-- [ ] **Analysis depth** - More detailed analysis requires more time
+If a file fails to process, check the audio quality or file integrity and re-upload. See the troubleshooting table below for common causes.
 
 ---
 

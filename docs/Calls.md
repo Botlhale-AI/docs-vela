@@ -31,9 +31,8 @@ The Interactions section is your comprehensive quality assurance workspace, wher
 ![Single call upload interface with form fields and file drop zone](../img/screenshots/data_upload/upload2.png)
 
 #### Processing Times:
-- **Short calls**: (under 5 minutes)
-- **Standard calls**: (5-15 minutes)
-- **Long calls** : (15+ minutes) depending on content complexity
+
+Processing time depends on call length, audio quality, and current server load. Shorter calls complete faster; longer calls or those with multiple speakers take more time. You will receive an in-app notification when processing is complete.
 
 ### Bulk Call Upload
 
@@ -47,7 +46,7 @@ The Interactions section is your comprehensive quality assurance workspace, wher
 
 **1. Create ZIP Archive:**
 - Maximum recommended size: 3GB per batch
-- Include all audio files (WAV or MP3 format)
+- Include all audio files (WAV or MP3 format) and your `metadata.csv` file inside the same ZIP archive
 - Ensure consistent file naming for easy identification
 
 **2. Prepare Metadata CSV:**

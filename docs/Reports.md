@@ -3,147 +3,126 @@ sidebar_position: 5
 draft: true
 ---
 
-# Generate Meaningful Reports
+# Generate Reports
 
-Vela's reporting tools help you turn raw data into compelling narratives that drive decisions, track progress, and communicate effectively with stakeholders.
-
-## What You Can Achieve
-
-Reports help you communicate insights effectively. You'll be able to:
-
-| **Data Storytelling** | **Stakeholder Communication** | **Strategic Decision Making** |
-|---------------------|------------------------------|------------------------------|
-| Tell the story behind the numbers | Get buy-in from leadership | Identify opportunities |
-| Track trends and patterns | Share insights that matter | Prove your impact |
-| Spot insights others miss | Communicate effectively | Make informed decisions |
+Vela's reporting tools let you build custom reports from your interaction data, download them for stakeholder presentations, and schedule recurring reports to run automatically.
 
 ---
 
 ## Understanding Reports
 
-Vela reports are built by selecting the metrics you want to include, the date range, and the scope (teams or agents). The platform then generates a visual report from those metrics.
+There is one report type in Vela: a **custom report**. You define the date range, the scope (which teams and agents to include), which metrics to visualise, and the chart type for each metric. Vela then generates the report and makes it available for download.
 
-Available metrics match those on the Dashboard — for example: average agent score, number of calls/chats, talk to listen ratio, sentiment distribution, alert counts, and more. Some metrics are call-only or chat-only; Vela will indicate which apply based on your selected interaction type.
+Available metrics match those on the Dashboard — for example: average agent score, number of calls or chats, talk-to-listen ratio, sentiment distribution, alert counts, and more. Some metrics are call-only or chat-only; Vela removes incompatible metrics automatically if you change the interaction type after adding them.
 
 ---
 
-## Creating Your First Report
+## Creating a One-Time Report
 
-### Step 1: Access the Reports Section
-1. **Click "Reports"** in the left sidebar
-2. **Click "Create"** tab
-3. **Choose your report type** based on your goal
+### Step 1: Open the Reports Section
+
+1. Click **Reports** in the left sidebar.
+2. Click the **Create** tab (top right of the page).
+3. The create form defaults to the **Create One-Time Report** tab.
 
 ![Create Report](../img/screenshots/reports/reports.png)
 
-### Step 2: Select Your Data
+### Step 2: Select a Date Range
+
+The date picker opens by default. Choose your start and end dates using the calendar, or select a preset such as Today, Last Week, or Last Month.
 
 ![Date range Report](../img/screenshots/reports/reports2.png)
 ![Date range Report](../img/screenshots/reports/reports3.png)
-- [ ] **Choose date range** - Select the period you want to analyse
-- [ ] **Select teams/departments** - Focus on specific groups
-- [ ] **Pick metrics** - Choose the data points that matter most
-- [ ] **Set filters** - Narrow down to specific call types or agents
 
-### Step 3: Customise Your Report
+### Step 3: Select Interaction Type
 
+Choose which interactions to include:
 
-- [ ] **Add visualisations** - Charts and graphs for better understanding
-- [ ] **Set up recurring reports** - Automate regular reporting
+- **All** — calls and chats combined
+- **Calls** — voice interactions only
+- **Chats** — text interactions only
 
-### Step 4: Generate and Share
-- [ ] **Click "Create"** to generate your report
-- [ ] **Review the results** for accuracy
-- [ ] **Download as PDF or DOCX** for sharing
-- [ ] **Schedule recurring delivery** if needed
+### Step 4: Select Scope
 
----
+Use the team and agent selectors to define which data the report covers:
 
-## Essential Reports for Different Goals
+- Select one or more **departments** (if your access level permits)
+- Select one or more **teams**
+- Select one or more **agents**
+- Tick **Include interactions with unspecified agent** if you want to include calls not assigned to a named agent
 
-### **For Team Managers: Daily Performance Report**
-**Goal**: Monitor daily team performance and identify issues
+### Step 5: Add Metrics
 
-**Include these metrics**:
-- [ ] Agent scores for the day
-- [ ] Call volume and duration
-- [ ] Customer satisfaction scores
-- [ ] Any alerts or issues detected
+1. Click **Add New Metric**.
+2. From the **Select a metric** dropdown, choose a metric from the grouped list. Metrics are organised by category (for example: Performance, Volume, Sentiment).
+3. Once a metric is selected, a second dropdown appears — **Select a chart**. Choose the visualisation type for that metric. Available chart types include: Bar, Line, Pie, Doughnut, Table, and Card (not all types are available for every metric).
+4. Click **Add Metric** to add it to your report. Repeat for each metric you want to include.
+5. To remove a metric, click the **×** icon on its tag.
 
-**How to use it**:
-- Morning team huddles
-- Identify agents needing support
-- Spot trends that need attention
+### Step 6: Generate the Report
 
-### **For Executives: Monthly Executive Summary**
-**Goal**: Provide high-level insights for strategic decision-making
+Click **Create**. Vela generates the report and saves it to your **View** tab. You will see a success notification when it is ready.
 
-**Include these metrics**:
-- [ ] Overall team performance trends
-- [ ] Customer satisfaction over time
-<!-- - [ ] Cost per call and efficiency metrics -->
-<!-- - [ ] Training ROI and improvement areas -->
-
-**How to use it**:
-- Board meetings and presentations
-- Strategic planning sessions
-
-
-<!-- ### **For Training Teams: Coaching Effectiveness Report**
-**Goal**: Measure the impact of training and coaching programmes
-
-**Include these metrics**:
-- [ ] Before/after performance comparisons
-- [ ] Specific skill improvements
-- [ ] Training completion rates
-- [ ] Long-term performance trends
-
-**How to use it**:
-- Training programme evaluation
-- ROI measurement
-- Programme improvement
-- Resource allocation
-
---- -->
-
-## Advanced Reporting Features
-
-### Scheduled Reports
-Set up recurring reports to run automatically on a **daily, weekly, or monthly** basis. Configure the day and time of delivery when creating the report schedule.
-
-### Export Options
-Generated reports can be downloaded as **PDF** or **DOCX** for sharing with stakeholders.
+If a metric has no data for the selected date range, Vela will display an error message for that metric and exclude it from the report.
 
 ---
 
-## Best Practices for Effective Reporting
+## Creating a Scheduled Report
 
-### Choose the Right Metrics
-- [ ] **Focus on actionable data** - Metrics that drive decisions
-- [ ] **Include context** - Compare to benchmarks or goals
-- [ ] **Show trends** - Don't just report current numbers
-- [ ] **Highlight anomalies** - Unusual patterns that need attention
+A scheduled report runs automatically on a recurring basis and saves the output to your Reports list each time it runs.
 
-### Design Clear Reports
-- [ ] **Start with executive summary** - Key findings upfront
-- [ ] **Use visualisations** - Charts and graphs for clarity
-- [ ] **Keep it concise** - Focus on what matters most
+1. Click **Reports** in the left sidebar, then the **Create** tab.
+2. Click the **Schedule Recurring Report** tab.
+3. Configure the schedule:
+   - **Report Frequency** — Daily, Weekly, or Monthly
+   - **Time** — select the hour (24-hour format) at which the report should run
+   - **Day of Week** (weekly only) — select the day
+   - **Day of Month** (monthly only) — select the date
+4. Select the **interaction type**, **scope**, and **metrics** using the same steps as for a one-time report (Steps 3–5 above).
+5. Click **Schedule Report**.
 
-### Share Reports Effectively
-- [ ] **Know your audience** - Different stakeholders need different details
-- [ ] **Provide context** - Explain what the numbers mean
-- [ ] **Include next steps** - What actions will be taken
-- [ ] **Follow up** - Track if recommendations were implemented
+The schedule is saved and appears in the **Scheduled Reports** tab under **Reports → View**.
+
+### Viewing and Cancelling Scheduled Reports
+
+1. Go to **Reports** in the left sidebar and click the **View** tab.
+2. Click **Scheduled Reports** (the second tab on the view page).
+3. The table shows each schedule's frequency, last run date, next run date, and who created it.
+4. Click a row to expand it and see the teams, agents, metrics, and other details for that schedule.
+5. To cancel a schedule, click the **delete icon** (bin) on the right of the row and confirm the deletion.
 
 ---
 
-## Troubleshooting Common Issues
+## Downloading a Report
+
+Generated reports appear in the **Created Reports** tab under **Reports → View**.
+
+To download a report:
+
+1. Locate the report in the list.
+2. Click the **download icon** in the Download column.
+3. A small menu appears with the available formats:
+   - **.pdf** — for sharing and presenting
+   - **.docx** — for editing in Microsoft Word
+
+Click the format you want to begin the download.
+
+---
+
+## Renaming a Report
+
+In the **Created Reports** list, click the **edit icon** (pencil) next to a report name to rename it inline. Press **Enter** to save or **Escape** to cancel.
+
+---
+
+## Troubleshooting
 
 | **Problem** | **Solution** |
 |-------------|--------------|
-| **Report Generation Fails** | Check if you have sufficient data for the selected period, verify your date range includes uploaded data, ensure you have proper permissions |
-| **Missing Data in Reports** | Verify data has been uploaded and processed, check your date range and filters, ensure agents are properly assigned to teams |
-| **Report Formatting Issues** | Use the customisation options for branding, choose appropriate visualisations for your data, include clear titles and descriptions |
+| Report generation fails with "no data" errors | Check that data has been uploaded and processed for the selected date range; verify your scope includes agents with interactions in that period |
+| A metric is missing from the dropdown | Some metrics are call-only or chat-only — check your selected interaction type |
+| Download button shows no options | The report may still be generating; refresh the page and try again |
+| Scheduled report shows no last run date | The schedule has not yet reached its first run time |
 
 ---
 
@@ -154,11 +133,10 @@ Generated reports can be downloaded as **PDF** or **DOCX** for sharing with stak
 | [Monitor Performance](./Dashboard.md) | [Improve Agent Performance](./Agents.md) | [Configure Notifications](./Notifications.md) |
 
 ### See also
-- [Dashboard Overview](./Dashboard.md) - Monitor performance
-- [Agent Performance](./Agents.md) - Coach your team effectively
-- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [API Integration](./api.md) - Automate report generation
-- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for automation
+- [Dashboard Overview](./Dashboard.md) — Monitor performance
+- [Agent Performance](./Agents.md) — Coach your team effectively
+- [Smart Monitoring](./smart-detector-overview.md) — Set up automated alerts
+- [Official API Documentation](https://docs-apis.botlhale.ai) — Complete API reference for automation
 
 ## Need Help?
 

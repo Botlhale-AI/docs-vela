@@ -177,8 +177,6 @@ In-app notifications are sent for comments, reports, and call processing complet
 
 ---
 
----
-
 ## Troubleshooting Common Issues
 
 | **Problem** | **Solution** |

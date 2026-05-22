@@ -40,9 +40,8 @@ As an agent, you have a focused view designed specifically for your personal dev
 ### What You Need
 
 - **Active Vela account** - Your team lead or administrator has created your account
-- **Login credentials** - Check your email for verification link
+- **Login credentials** - Check your email for a verification link
 - **Supported browser** - Chrome (recommended), Firefox, Safari, or Edge
-- **Positive mindset** - Vela is here to help you succeed and grow!
 
 :::tip First Login
 Check your email inbox (and spam folder) for your Vela account verification email. Click the link to activate your account before proceeding.

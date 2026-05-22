@@ -5,117 +5,191 @@ draft: true
 
 # Analyse Chat Conversations
 
-Digital conversations reveal insights that voice calls can't capture. Vela's chat analysis helps you understand customer behaviour patterns, optimise response times, and improve the quality of your digital customer service.
-
-## What You Can Achieve
-
-Chat analysis reveals patterns in digital conversations. You'll be able to:
-
-| **Digital Experience** | **Response Optimization** | **Quality Improvement** |
-|----------------------|-------------------------|----------------------|
-| Optimise response times | Improve digital engagement | Enhance chat quality |
-| Understand customer behaviour | Perfect your messaging | Track digital performance |
-| Identify automation opportunities | Increase resolution rates | Maintain digital standards |
+The Chats section of Interactions lets you upload digital chat transcripts, review AI-generated analysis, score agent performance, and add coaching feedback — all in the same workflow as voice calls.
 
 ---
 
-## Understanding Chat Data
+## Uploading a Chat Interaction
 
-### Key Metrics for Digital Interactions
-Chat analysis gives you unique insights into digital customer service:
+Chat data must be submitted as a structured file. The upload page offers two tabs: **Upload** (single chat via CSV) and **Bulk Upload** (multiple chats via JSON).
 
-| **Metric Category** | **What It Shows** | **Digital Impact** |
-|-------------------|-------------------|------------------|
-| Response Time | Speed of agent replies | Customer satisfaction, engagement |
-| Message Count | Conversation complexity | Issue complexity, efficiency |
-| Customer Sentiment | Digital satisfaction levels | Digital experience quality |
-| Session Duration | Time investment and efficiency | Resource allocation, automation opportunities |
-<!-- | **Resolution Rate** | Problem-solving effectiveness | Digital service quality | -->
-### Chat Quality Indicators
-| **Indicator** | **What It Means** | **Digital Action** |
-|---------------|-------------------|------------------|
-| Fast response + High satisfaction | Excellent digital service | Replicate successful patterns |
-| Slow response + Low satisfaction | Digital service issues | Optimise response processes |
-| High message count + Low resolution | Complex issues or inefficiency | Improve processes or training |
-| Low message count + High resolution | Efficient digital service | Scale successful approaches |
+### Single Chat Upload
 
----
+Use this when you want to review one chat in detail or add it for coaching purposes.
 
-## How to Analyse Chat Conversations
+1. Go to **Interactions** in the left sidebar, then select the **Chats** tab.
+2. Click **Upload**.
+3. Select the **Upload** tab (single upload).
+4. Complete the form:
+   - **Agent** — select from the dropdown, or click **Create an agent** to add a new one
+   - **Team** — auto-populated from the selected agent; adjust if needed
+   - **Department** — select the relevant department
+   - **Tags** — optional classification labels (defined at organisation level)
+   - **Interaction ID** — optional reference ID for your own records
+5. Drag and drop your CSV file into the drop zone, or click **browse your device**.
+6. Click **Upload**.
 
-### Step 1: Access Chat Data
+### Bulk Chat Upload
 
-![Chats](../img/screenshots/chats/chats-1.png)
+Use this to upload a batch of chat sessions at once.
 
-- [ ] **Go to "Chats"** in the left sidebar
-- [ ] **Click on any conversation** to view detailed analysis
-- [ ] **Review the conversation flow** and timing
+1. Go to **Interactions → Chats**.
+2. Click **Upload**, then select the **Bulk Upload** tab.
+3. Prepare your JSON file. It must follow the required format — see [JSON Format](#json-format-for-bulk-chat-upload) below and the full specification in [System Requirements](./system-requirements.md).
+4. Drag and drop the JSON file into the drop zone, or click **browse your device**.
+5. Click **Upload**.
 
-### Step 2: Review Conversation Flow
-![Chats](../img/screenshots/chats/chats-2.png)
-- [ ] **Read the full conversation** with timestamps
-- [ ] **Analyse response patterns** and timing
-- [ ] **Identify customer journey** and pain points
-- [ ] **Note successful resolution strategies**
-
-### Step 3: Analyse Digital Metrics
-![Chats](../img/screenshots/chats/chats-3.png)
-- [ ] **Check response times** throughout the conversation
-- [ ] **Review message count** and complexity
-- [ ] **Assess customer sentiment** in digital context
-- [ ] **Evaluate resolution effectiveness**
-
-### Step 4: Take Digital Action
-![Chats](../img/screenshots/chats/chats-4.png)
-- [ ] **Add comments** for team learning
-- [ ] **Update chat templates** based on insights
-- [ ] **Optimise response processes** for efficiency
-- [ ] **Identify automation opportunities**
+> If your monthly chat allocation is exhausted, the upload button will be disabled. Contact your Vela Account Manager to review your plan.
 
 ---
 
-## Identifying Digital Patterns
+## JSON Format for Bulk Chat Upload
 
-### Patterns to Look For
+Your JSON file must be an array of chat session objects. Each session requires a `metadata` block and a `messages` array:
 
-When reviewing chat interactions, consider:
-- **Response time** — Are agents replying quickly? Longer response times may indicate high volume or knowledge gaps.
-- **Message count** — More messages may indicate a complex issue or unclear communication.
-- **Sentiment shifts** — Where in the conversation did the customer's mood improve or worsen?
-- **Resolution** — Did the agent resolve the issue within the conversation, or did it require escalation?
+```json
+[
+    {
+        "metadata": {
+            "date": "23/09/2025, 14:30",
+            "agent": "agent@yourcompany.com",
+            "interaction_id": "chat_12345",
+            "language": "en-ZA"
+        },
+        "messages": [
+            {
+                "message": "Hello, how can I help you today?",
+                "time": "23/09/2025, 14:30",
+                "sender": "agent",
+                "language": "en-ZA"
+            },
+            {
+                "message": "I need help with my billing",
+                "time": "23/09/2025, 14:31",
+                "sender": "customer",
+                "language": "en-ZA"
+            }
+        ]
+    }
+]
+```
+
+**Field notes:**
+
+- `metadata.agent` — must be the agent's email address as registered in Vela
+- `sender` — must be either `"agent"` or `"customer"`
+- `language` — language code for the message (used for multilingual analysis)
+- Messages must be in chronological order
+
+See [System Requirements](./system-requirements.md) for the complete specification including all supported language codes.
 
 ---
 
-## Reviewing Chat Performance on the Dashboard
+## Reviewing a Chat Interaction
 
-Chat metrics appear alongside call metrics on your Dashboard. Chat-specific indicators include:
+Once a chat has been processed, click on any row in the Chats list to open the detail view. The detail view shows the same AI analysis components as calls:
+
+### Conversation Transcript
+
+The transcript displays each message in chronological order, with the sender (agent or customer) identified visually. Use the search bar to find specific words or phrases within the conversation.
+
+### Summary
+
+An AI-generated overview of the chat session, including the main topic discussed, whether the issue was resolved, and any notable moments in the conversation.
+
+### Sentiment
+
+The overall sentiment (Positive, Neutral, or Negative) for the interaction, plus a view of how sentiment shifted across the conversation. Use this to identify the point at which a customer's mood improved or declined.
+
+### Keywords
+
+Important terms and phrases detected in the chat — including compliance-related words, product or service mentions, and sentiment-bearing language.
+
+### Alerts
+
+Any alerts raised against this chat by your organisation's Smart Search rules. Each alert links back to the rule that triggered it. Mark an alert as resolved once you have reviewed and acted on it.
+
+### Intent
+
+The AI-classified purpose of the chat session (for example: Support, Sales, Billing, Complaint). Intent is visible in the detail view and aggregated on the Dashboard.
+
+### Scorecard
+
+The automatic scorecard evaluates the chat against your organisation's Agent Scorecard criteria and produces a weighted score. To override an AI outcome:
+
+1. Locate the **Scorecard** section.
+2. Use the **Automatic** or **Manual** tab to find the item you want to change.
+3. Click the **edit icon** (pencil) in the Outcome column header to enter edit mode.
+4. Adjust the outcome (Yes / No / N/A) for any item.
+5. Click **Save Changes** — the score is recalculated using your edits.
+
+### Pain Points
+
+Customer frustration indicators identified by the AI — such as repeated explanations, unresolved issues, or unclear communication.
+
+---
+
+## Adding Comments and Coaching Feedback
+
+Comments let you leave feedback directly on an individual chat interaction, visible to the agent.
+
+1. Scroll to the **Comments** section at the bottom of the detail view.
+2. Click **Add Comment**.
+3. Write your feedback. Be specific — reference what the agent said or did well, and what they should do differently.
+4. To notify the agent, include `@AgentName` in your comment. The agent will receive an in-app notification. Comments without an `@` mention are visible to team leads only.
+5. Submit the comment.
+
+Agents can respond to comments, creating a two-way coaching thread on the interaction.
+
+---
+
+## Filtering and Searching Chats
+
+### Search
+
+Use the search bar at the top of the Chats list to find interactions by keyword. The search runs against the transcript content.
+
+### Filter
+
+Click **Filter** to open the filter panel. Available filters for chats include:
+
+- **Agent** — one or more specific agents
+- **Team** — one or more teams (visible based on your access level)
+- **Department** — available at organisational access level
+- **Handle time** — range in seconds
+- **Response time** — average time between messages, in seconds
+- **Alerts** — number of alerts raised
+- **Agent score** — percentage range
+- **Tags** — classification labels assigned at upload
+- **Direction** — All, Inbound, or Outbound
+- **Topic** — topics detected by Smart Search
+- **Reviewed** — filter by whether the interaction has been reviewed
+
+Click **Save Changes** in the filter panel to apply your selection. Click **clear all fields** to reset.
+
+### Sort
+
+Use the **Sort** control to order the list by date, agent name, score, or other available columns.
+
+---
+
+## Chat Metrics on the Dashboard
+
+Chat performance metrics appear on the Dashboard alongside call metrics. Switch to **Chats only** using the Interaction Type filter to see chat-specific data, including:
 
 - **No. Chats** — total chat interactions in the selected period
-- **Average Response Time** — average time between messages in a conversation
-- **Sentiment Distribution** — proportion of positive, neutral, and negative chat interactions
-- **Intent Distribution** — what customers were trying to achieve across chat conversations
-
-Use the Dashboard's **Interaction Type** filter to view chat-only metrics separately from calls.
-
----
-
-## Troubleshooting Digital Issues
-
-| **Problem** | **Digital Cause** | **Solution** |
-|-------------|------------------|--------------|
-| Slow response times | High volume, agent workload, technical issues | Optimise processes, add resources, fix technical problems |
-| Low customer satisfaction | Poor response quality, slow service, technical problems | Improve training, optimise processes, enhance technology |
-| High escalation rates | Complex issues, agent limitations, process gaps | Better training, improved processes, clearer escalation criteria |
-| Technical difficulties | System issues, connectivity problems, interface problems | Technical support, system upgrades, user training |
+- **Ave Response Time** — average time between messages across conversations
+- **Sentiment Distribution** — breakdown of Positive, Neutral, and Negative chats
+- **Intent Distribution** — what customers were trying to achieve
 
 ---
 
 ## Best Practices for Chat QA
 
-- **Prioritise chats with negative sentiment** — use the sentiment filter in Interactions → Chats to find conversations where the customer's mood declined
-- **Review low-scoring chats first** — apply the score range filter to surface interactions that scored below your team's threshold
-- **Check Smart Search alerts** — Smart Search rules apply to both calls and chats, so alerts in the Smart Detector may relate to chat interactions
-- **Use comments for coaching** — add feedback directly to individual chat interactions so agents can see specific examples
+- **Prioritise chats with negative sentiment** — use the sentiment filter to surface conversations where the customer's mood declined
+- **Use the score range filter** — quickly identify chats that scored below your team's threshold
+- **Check Smart Search alerts** — Smart Search rules apply to both calls and chats; alerts in the Smart Detector may relate to chat interactions
+- **Add comments for coaching** — feedback left directly on an interaction gives agents concrete examples to learn from
 
 ---
 
@@ -126,13 +200,12 @@ Use the Dashboard's **Interaction Type** filter to view chat-only metrics separa
 | [Set Up Smart Monitoring](./smart-detector-overview.md) | [Improve Agent Performance](./Agents.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) |
 
 ### See also
-- [Call Analysis](./Calls.md) - Analyse voice interactions
-- [Dashboard Overview](./Dashboard.md) - Monitor digital performance trends
-- [Agent Performance](./Agents.md) - Coach your team effectively
-- [Smart Search](./smart-search-guide.md) - Find patterns in digital conversations
-- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
+- [Call Analysis](./Calls.md) — Analyse voice interactions
+- [Dashboard Overview](./Dashboard.md) — Monitor digital performance trends
+- [Agent Performance](./Agents.md) — Coach your team effectively
+- [Smart Search](./smart-search-guide.md) — Find patterns in digital conversations
+- [System Requirements](./system-requirements.md) — Chat JSON format specification
 
 ## Need Help?
 
 - **Contact Support**: support@botlhale.ai
-
