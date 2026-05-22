@@ -151,33 +151,33 @@ For organisations with custom systems, use our API to upload data programmatical
 
 **Required Parameters**:
 - `org_id` - Your organisation identifier
-- `file` - Audio file (WAV or MP3)
-- `metadata` - Call information (optional)
+- `metadata` - Call information (optional): `email` (agent email), `date_of_call` (date of the call)
 
-**Example Request**:
+This endpoint validates your organisation's allocation and returns upload credentials. Use these to complete the audio file upload in a second request.
+
+**Step 1 — Get upload credentials**:
 ```python
-import requests
+import requests, json
 
-url = "https://api.botlhale.ai/asr/async/upload/vela"
-headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN"
-}
+response = requests.post(
+    "https://api.botlhale.ai/asr/async/upload/vela",
+    headers={"Authorization": "Bearer YOUR_API_TOKEN"},
+    data={
+        'org_id': 'your_org_id',
+        'metadata': json.dumps({"email": "agent@example.com", "date_of_call": "2025-01-15"})
+    }
+)
+result = response.json()
+```
 
-files = {
-    'file': open('call_recording.wav', 'rb')
-}
-
-data = {
-    'org_id': 'your_org_id',
-    'metadata': '{"agent_id": "123", "customer_id": "456"}'
-}
-
-response = requests.post(url, headers=headers, files=files, data=data)
-print(response.json())
+**Step 2 — Upload the audio file**:
+```python
+files = [('file', ('call.wav', open('call.wav', 'rb'), 'audio/wav'))]
+requests.post(result['url'], data=result['fields'], files=files)
 ```
 
 ### Upload Chat Data via API
-**Endpoint**: `https://api.botlhale.ai/chats/vela`
+**Endpoint**: `https://api.botlhale.ai/chats/upload/vela`
 
 See the [API Documentation](./advanced/api-documentation.md) for the full chat upload payload format and example requests.
 

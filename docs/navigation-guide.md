@@ -91,7 +91,6 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 
 ### **Support Options**
 - **Email Support**: support@botlhale.ai
-- **API Support**: api-support@botlhale.ai
 - **Video Tutorials**: Available on the homepage
 
 ### **Finding Specific Information**

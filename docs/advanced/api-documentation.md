@@ -19,50 +19,31 @@ https://api.botlhale.ai/asr/async/upload/vela
 ```
 
 **Description:**
-This API endpoint generates a presigned URL and associated credentials that allow for the secure upload of a call recording. This feature is designed for integration with Vela, enabling organizations to seamlessly upload call data for processing.
+This endpoint accepts a call recording for processing by Vela. It validates the organisation's allocation and returns upload credentials for securely transferring the audio file.
 
 **Parameters:**
 
 | Parameter      | Requirement | Description                                              |
 |----------------|-------------|----------------------------------------------------------|
 | org_id         | Required    | Identifier for the organization submitting the call.     |
-| metadata       | Optional    | A JSON containing the information below.              |
+| metadata       | Optional    | A JSON object containing the information below.          |
 
 - **email**: Email address of the agent who participated in the call.
-- **date_of_call**: The date when the call took place.                     
+- **date_of_call**: The date when the call took place.
 
-:::info **Endpoint Behaviour**
-
-Before generating the presigned URL and upload credentials, the endpoint forwards the provided `org_id`, `email`, and `date_of_call` to Vela for logging and processing. Vela responds with `minute_allocation` and `voice_id` statuses. The API performs the following checks:
-
-- **Minute Allocation Check:** The API verifies if the organization (`org_id`) is within its `minute_allocation`. If the organization has exceeded its allocation, an error is thrown.
+:::info **Allocation Check**
+The API verifies that the organisation is within its monthly allocated duration. If the allocation has been exceeded, an error is returned.
 :::
 
-
-**Response Format**: The response returns a JSON object containing a presigned URL and the necessary fields for secure data upload to an AWS S3 bucket.
+**Response Format**: The response returns a JSON object containing an `url` and `fields` required to complete the audio file upload.
 
 **Sample Response:**
 ```json
 {
-    "fields": {
-        "key": "<key>",
-        "policy": "<policy>",
-        "x-amz-algorithm": "<>",
-        "x-amz-credential": "<>",
-        "x-amz-date": "<>",
-        "x-amz-security-token": "<>",
-        "x-amz-signature": "<>"
-    },
-    "url": "upload_url"
+    "fields": { ... },
+    "url": "<upload_url>"
 }
 ```
-
-Integrate this API into your application to request a presigned URL, which allows you to upload call recordings to the specified `upload_url` securely using the provided credentials and fields. Using the `upload_url` works the same as a normal upload.
-
-
-**Upload via Presigned URL**
-
-The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent `HTTP POST` request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a `POST` request for file upload.
 
 **Request Example**
 
@@ -70,54 +51,48 @@ The generated presigned URL includes both a URL and additional fields that must 
 <TabItem value="py" label="Python" default>
 
 ```py
-import requests
+import requests, json
 
-url = "{{uploadUrl}}"
+# Step 1: Get upload credentials
+response = requests.post(
+    "https://api.botlhale.ai/asr/async/upload/vela",
+    headers={"Authorization": "Bearer YOUR_API_TOKEN"},
+    data={
+        "org_id": "your_org_id",
+        "metadata": json.dumps({"email": "agent@example.com", "date_of_call": "2025-01-15"})
+    }
+)
+result = response.json()
 
-payload = {'AWSAccessKeyId': '{{fields-AWSAccessKeyId}}',
-'key': '{{fields-key}}',
-'policy': '{{fields-policy}}',
-'signature': '{{fields-signature}}',
-'x-amz-security-token': '{{fields-x-amz-security-token}}'}
-files=[
-  ('file',('tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav',open('KpALthHva/tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav','rb'),'audio/wav'))
-]
-headers = {}
-
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
-print(response.text)
-
+# Step 2: Upload the audio file
+files = [('file', ('call.wav', open('/path/to/audio/call.wav', 'rb'), 'audio/wav'))]
+requests.post(result['url'], data=result['fields'], files=files)
 ```
 
 </TabItem>
 <TabItem value="nodejs" label="NodeJs - Request" >
 
-```js 
-var request = require('request');
-var fs = require('fs');
-var options = {
-  'method': 'POST',
-  'url': '{{uploadUrl}}',
-  'headers': {
-  },
+```js
+const request = require('request');
+const fs = require('fs');
+
+// Step 1: Get upload credentials
+request.post({
+  url: 'https://api.botlhale.ai/asr/async/upload/vela',
+  headers: { 'Authorization': 'Bearer YOUR_API_TOKEN' },
   formData: {
-    'AWSAccessKeyId': '{{fields-AWSAccessKeyId}}',
-    'key': '{{fields-key}}',
-    'policy': '{{fields-policy}}',
-    'signature': '{{fields-signature}}',
-    'x-amz-security-token': '{{fields-x-amz-security-token}}',
-    'file': [
-      fs.createReadStream('KpALthHva/tts_aw215n3s4ni4_IsiZulu_H127Bqf8aN08.wav')
-    ]
+    org_id: 'your_org_id',
+    metadata: JSON.stringify({ email: 'agent@example.com', date_of_call: '2025-01-15' })
   }
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
+}, (err, res) => {
+  const { url, fields } = JSON.parse(res.body);
+
+  // Step 2: Upload the audio file
+  request.post({
+    url,
+    formData: { ...fields, file: fs.createReadStream('/path/to/audio/call.wav') }
+  }, (err, res) => console.log(res.body));
 });
-
-
 ```
 
 </TabItem>
@@ -136,7 +111,7 @@ request(options, function (error, response) {
 **POST Request**
 
 ```
-https://api.botlhale.ai/chats/vela
+https://api.botlhale.ai/chats/upload/vela
 ```
 
 `Authorization: Bearer <ProvidedToken>`

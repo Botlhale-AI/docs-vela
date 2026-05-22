@@ -27,26 +27,19 @@ APIs enable seamless integration between systems. You'll be able to:
 
 **Solution**: Build an integration that monitors your recording system and uploads new calls via API.
 
-### Scenario 2: Automated Alert Integration
-**Business Goal**: Respond promptly to critical customer issues identified in call analysis
-
-**Use Case**: When Vela detects a customer complaint or compliance issue in analysed calls, you want to automatically create a ticket in your help desk system or send an alert to your team.
-
-**Solution**: Use webhooks to receive automated notifications and trigger your existing workflows.
-
-### Scenario 3: Custom Analytics Dashboard
+### Scenario 2: Custom Analytics Dashboard
 **Business Goal**: Combine Vela data with other business metrics
 
 **Use Case**: You want to create a custom dashboard that shows call centre performance alongside sales data, customer satisfaction scores, and other KPIs.
 
 **Solution**: Use the API to retrieve Vela analytics and combine them with data from other systems.
 
-### Scenario 4: CRM Integration
+### Scenario 3: CRM Integration
 **Business Goal**: Enhance customer profiles with call insights
 
 **Use Case**: When a customer calls, you want to automatically update their CRM profile with call sentiment, issues discussed, and agent performance.
 
-**Solution**: Use webhooks to receive call completion events and update your CRM system.
+**Solution**: Use the API to retrieve call analysis results and push them to your CRM after processing is complete.
 
 ---
 
@@ -65,7 +58,6 @@ APIs enable seamless integration between systems. You'll be able to:
 | **Approach** | **Best For** | **When to Use** |
 |--------------|--------------|-----------------|
 | Direct API Integration | Custom applications, automated workflows, call analytics data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, call analytics data processing |
-| Webhook Integration | Event-driven workflows, automated notifications, automated responses | Receiving alerts for important events, triggering actions based on call insights, automated notification systems, automated ticket creation |
 | Batch Processing | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
 
 ---
@@ -81,12 +73,12 @@ https://your-vela-domain.com/api
 > **Note**: Replace `your-vela-domain.com` with your actual Vela platform domain.
 
 ### Authentication
-Vela uses NextAuth.js for authentication. Include your session token in all requests:
+Include your Bearer token in all requests:
 ```bash
-Authorization: Bearer YOUR_SESSION_TOKEN_HERE
+Authorization: Bearer YOUR_API_TOKEN
 ```
 
-> **Note**: Session tokens are obtained through the standard login process and managed by NextAuth.js.
+> **Note**: API tokens are provided by your Vela Account Manager.
 
 ### Rate Limits
 Rate limits are configured based on your organisation's package and usage patterns. Contact your Account Manager for specific rate limit information.
@@ -102,29 +94,27 @@ POST /interactions/calls
 
 **Required Parameters**:
 - `org_id` - Your organisation identifier
-- `file` - Audio file (WAV or MP3)
-- `metadata` - Call information (optional)
+- `metadata` - Optional: `email` (agent email), `date_of_call`
+
+Call uploads use a two-step process: first request upload credentials, then use them to upload the audio file.
 
 **Example Request**:
 ```python
-import requests
+import requests, json
 
-url = "https://api.botlhale.ai/asr/async/upload/vela"
-headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN"
-}
+# Step 1: Get upload credentials
+result = requests.post(
+    "https://api.botlhale.ai/asr/async/upload/vela",
+    headers={"Authorization": "Bearer YOUR_API_TOKEN"},
+    data={
+        'org_id': 'your_org_id',
+        'metadata': json.dumps({"email": "agent@example.com", "date_of_call": "2025-01-15"})
+    }
+).json()
 
-files = {
-    'file': open('call_recording.wav', 'rb')
-}
-
-data = {
-    'org_id': 'your_org_id',
-    'metadata': '{"agent_id": "123", "customer_id": "456"}'
-}
-
-response = requests.post(url, headers=headers, files=files, data=data)
-print(response.json())
+# Step 2: Upload the audio file
+files = [('file', ('call.wav', open('call.wav', 'rb'), 'audio/wav'))]
+requests.post(result['url'], data=result['fields'], files=files)
 ```
 
 :::info Additional API Endpoints
@@ -138,7 +128,6 @@ For the complete list of available API endpoints — including chat uploads, ana
 | **Pattern** | **Description** | **Implementation** |
 |-------------|-----------------|-------------------|
 | Data Synchronization | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
-| Event-Driven Architecture | React to Vela events automatically | Webhook endpoints, event processing pipelines, action triggers, monitoring and alerting |
 | Custom Analytics Pipeline | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualisation |
 
 ---
@@ -178,7 +167,6 @@ For the complete list of available API endpoints — including chat uploads, ana
 | Authentication Problems | Verify API token is correct and not expired, check token permissions and scope, ensure token is included in request headers |
 | Rate Limiting Issues | Implement exponential backoff retry logic, reduce request frequency, use batch operations to reduce API calls |
 | Data Upload Failures | Verify file format and size requirements, check network connectivity and timeouts, validate request payload structure |
-| Webhook Delivery Issues | Verify webhook endpoint is accessible, check webhook URL and authentication, monitor webhook delivery logs |
 
 ---
 
