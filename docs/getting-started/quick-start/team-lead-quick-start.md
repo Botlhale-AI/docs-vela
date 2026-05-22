@@ -446,7 +446,7 @@ You've completed the Team Lead Quick Start. You can now:
 - ✅ Run automated compliance monitoring with Smart Search
 
 **Suggested next steps:**
-- Set up a **bulk upload** to bring in your historical call data (see the Data Upload guide)
+- Set up a **bulk upload** to bring in your historical call data (see the [Data Upload Guide](../../../data-upload.md))
 - Create your first **Scheduled Report** for weekly management updates
 - Explore the **Agent Scorecard** in Smart Detector to set up automated quality evaluations
 

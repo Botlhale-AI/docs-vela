@@ -170,7 +170,7 @@ Password requirements are fixed by the platform (minimum 8 characters, at least 
 ## Notification Preferences
 
 ### Platform Notifications
-In-app notifications are sent automatically for Smart Search alerts, comments, reports, and call processing completions. You can configure Smart Search notifications per search when creating or editing a Smart Search.
+In-app notifications are sent for comments, reports, and call processing completions. Smart Search notifications are opt-in — tick the **Notifications** checkbox when creating or editing a Smart Search to receive an alert each time a new match is detected.
 
 
 

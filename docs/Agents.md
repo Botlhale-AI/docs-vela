@@ -61,7 +61,7 @@ Based on your analysis, create specific improvement plans:
 **Actions**:
 - [ ] **Identify specific weaknesses** from the scorecard breakdown
 - [ ] **Schedule one-on-one coaching** sessions
-- [ ] **Assign targeted training** courses from the Coaching section
+- [ ] **Assign targeted training** courses from the [Coaching section](./user-guides/team-lead/coaching-training.md)
 - [ ] **Monitor progress** closely with regular interaction reviews
 
 #### For Agents Meeting the Threshold

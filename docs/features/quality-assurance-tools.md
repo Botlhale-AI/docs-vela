@@ -129,7 +129,7 @@ Use the analysis to inform your coaching strategy.
 
 1.  Review all the agent's recent scorecards and comments.
 2.  Look for **consistent patterns** in low-scoring areas across the agent's recent scorecard results.
-3.  Go to the **Coaching** section.
+3.  Go to the **Coaching** section (click **Coaching** in the left sidebar).
 4.  **Assign targeted training courses** that specifically address the identified skill gaps.
 5.  **Schedule a coaching discussion** with the agent to review the feedback and performance trend.
 
