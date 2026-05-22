@@ -106,7 +106,7 @@ Look for patterns that affect multiple agents:
 3. **Enter agent information**:
    - Name and email
    - Department and team assignment
-4. **Submit** — the agent receives an email invitation to the platform
+4. **Submit** — if your organisation's coaching portal is enabled, the agent receives an email invitation to set up their account
 
 ### Reassigning Agents
 

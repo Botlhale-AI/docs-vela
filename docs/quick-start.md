@@ -224,7 +224,6 @@ Generate management insights:
 ### Search and Filter Best Practices
 - Use interaction search to find specific calls by keywords in transcripts
 - Apply multiple filters simultaneously (agent + date range + sentiment)
-- Save frequently used filter combinations for quick access
 
 ### Keyboard Shortcuts
 - **Ctrl/Cmd + F** - Search within any page

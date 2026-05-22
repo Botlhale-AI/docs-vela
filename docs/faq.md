@@ -65,7 +65,7 @@ If your dashboard isn't showing data, check:
 Vela gives you detailed scoring for agent performance:
 - **Agent Score**: Overall performance rating based on call quality and adherence to best practices
 - **Agent Scorecard Score**: Compliance with required procedures and protocols, evaluated against your organisation's Agent Scorecard criteria
-- **Total Agent Score**: Combined score incorporating all performance metrics
+- **Total Score**: Combined score across all Smart Search evaluation results
 - **Team Score**: Performance relative to team benchmarks
 - **Category Scores**: Specific scores for different performance categories
 

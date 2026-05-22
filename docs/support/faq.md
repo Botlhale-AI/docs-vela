@@ -30,7 +30,7 @@ A: Processing times vary based on call length, audio quality, and batch size. Sh
 A: If you haven’t uploaded calls or chats yet, performance data won’t appear. Upload interactions to start seeing metrics.  
 
 **Q: Can I customize my Dashboard?**  
-A: Yes. Vela automatically adapts the layout based on your screen size, and you can adjust visible metrics in your preferences.  
+A: Yes. Click the "Customise" button on the Dashboard to add or remove the metrics displayed.  
 
 ---
 
