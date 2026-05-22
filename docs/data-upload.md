@@ -1,160 +1,74 @@
 ---
 sidebar_position: 8
-draft: true
+title: Data Upload Guide
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Get Your Data into Vela Quickly
+# Get Your Data into Vela
 
-Upload your call and chat data to start analysing customer interactions and improving team performance. This guide shows you how to get your data into Vela and start seeing insights.
-
-## What You Can Achieve
-
-When you upload your data to Vela, you can:
-- [ ] **Analyse every customer interaction** with AI-powered insights
-- [ ] **Identify patterns and trends** across your team
-- [ ] **Spot training opportunities** for agents
-- [ ] **Track customer satisfaction** over time
-- [ ] **Generate insights** that improve your business
+Upload your call and chat data to start analysing customer interactions and improving team performance.
 
 ---
 
-## Choose Your Upload Method
+## Upload Methods
 
-### Option 1: Manual Upload (Recommended for New Users)
-**Best for**: Getting started with existing call files
+### Manual Upload
 
-#### Step-by-Step Process
+Use the Vela interface to upload files directly. Best for getting started and for ad-hoc uploads.
 
-![ Upload](../img/screenshots/data_upload/upload.png)
-![ Upload](../img/screenshots/data_upload/upload2.png)
-![ Upload](../img/screenshots/data_upload/upload3.png)
+#### Single Call Upload
 
-- [ ] **Go to "Calls"** in the left sidebar
-- [ ] **Click "Upload"** button
-- [ ] **Select your call files** - Supported formats: WAV or MP3 for individual calls; ZIP archive (with metadata CSV) for bulk uploads
-- [ ] **Click "Upload"** and wait for processing
+1. Click **Interactions → Calls** in the left sidebar
+2. Click **Upload**
+3. Select the **Upload** tab
+4. Fill in the form: Agent, Direction, Tags (optional)
+5. Select your audio file (WAV or MP3) or drag and drop it into the upload area
+6. Click **Upload**
 
-> **Why this matters**: You can start analysing your data immediately without any technical setup.
+#### Bulk Call Upload
 
-### Option 2: FTP Integration (For Larger Organisations)
-**Best for**: Organisations with automated call recording systems where calls should flow into Vela without manual intervention
+1. Prepare a ZIP archive containing your audio files and a `metadata.csv` file inside the same archive
+2. Click **Interactions → Calls → Upload**
+3. Select the **Bulk Upload** tab
+4. Upload your ZIP file
+5. Monitor processing status — you will receive an in-app notification when complete
 
-#### Setup Process
-- [ ] **Contact your Vela Account Manager** to set up FTP integration
-- [ ] **Provide your FTP server credentials** (host, port, user, password, path)
-- [ ] **Vela configures the connection** — calls are automatically ingested on a scheduled basis
+**Metadata CSV format:**
+```csv
+filename,agent_name,team,department,direction,tags
+call_001.mp3,john.smith,Sales Team,Sales,inbound,sales;product_inquiry
+call_002.wav,mary.jones,Support Team,Customer Service,outbound,follow_up
+```
 
-> **Why this matters**: Once set up, new recordings are pulled from your FTP server and processed automatically — no manual uploads required.
+Download the metadata template from the upload page to ensure correct column names.
 
----
+#### Chat Upload
 
-## Supported Data Formats
+1. Click **Interactions → Chats → Upload**
+2. Select the **Upload** tab for a single chat or **Bulk Upload** for multiple
+3. Upload your JSON file(s)
 
-### Call Recordings
-| **Format Type** | **Supported Formats** | **File Size Limit** |
-|-----------------|---------------------|-------------------|
-| Audio formats | WAV, MP3 | Up to 1 GB per upload |
-| Batch uploads | ZIP archive containing WAV/MP3 files + metadata CSV | Up to 3 GB per batch |
-
-### Chat Data
-| **Format Type** | **Supported Formats** | **Requirements** |
-|-----------------|---------------------|------------------|
-| Text formats | JSON | Structured data with timestamps |
-| Structured data | Agent and customer messages | Sender, timestamp, message content |
-| Metadata | Session information | Agent IDs, customer IDs |
-
-### Data Requirements
-- [ ] **Call recordings**: Audio quality affects transcription accuracy
-- [ ] **Chat data**: Properly formatted with sender, timestamp, and message content
-- [ ] **Metadata**: Agent information, call dates, customer IDs (if available)
+Chat files must follow the Vela JSON schema — see [System Requirements](./getting-started/system-requirements.md) for the full format.
 
 ---
 
-## Getting Started with Manual Upload
+### FTP Integration
 
-Follow these simple steps to upload your call recordings and start analysing customer interactions in Vela.
+For organisations with automated call recording systems, Vela can ingest calls automatically from an FTP/SFTP server on a scheduled basis.
 
-### Step 1: Prepare Your Files
-Before uploading, ensure your files are ready for optimal processing:
-
-- [ ] **Organise your call recordings** in a dedicated folder for easy access
-- [ ] **Verify file formats** - WAV or MP3 for individual calls; ZIP archive with metadata CSV for bulk uploads
-- [ ] **Check file sizes** - Ensure files are within your system's upload limits
-- [ ] **Ensure audio quality** - Clear recordings provide better transcription results
-- [ ] **Optional**: Create a ZIP file containing multiple recordings for batch upload
-
-> **Pro Tip**: Name your files descriptively (e.g., "Agent_John_Call_2024-01-15.wav") to help with organisation later.
-
-### Step 2: Upload Your Data
-Upload your files through Vela's interface:
-
-- [ ] **Navigate to "Calls"** in the left sidebar of your Vela dashboard
-- [ ] **Click the "Upload" button** in the top-right corner of the Calls page
-- [ ] **Choose your upload method**:
-  - **Single file**: Click "Choose File" and select individual recordings
-  - **Multiple files**: Use "Bulk Upload" to select multiple files at once
-  - **Drag & Drop**: Simply drag files from your computer directly into the upload area
-- [ ] **Review the upload summary** showing file names, sizes, and formats
-- [ ] **Click "Upload"** to begin the upload process
-
-> **What happens next**: Your files will be securely uploaded and queued for processing.
-
-### Step 3: Monitor Processing
-Track the progress of your uploads and processing:
-
-- [ ] **Watch the upload progress** - Real-time progress bars show upload status
-- [ ] **Start analysing** - Click on processed calls to view transcripts, insights, and analytics
-
-
-> **Processing**: Files will be processed and available for analysis when complete.
-
-### Step 4: Verify and Optimise
-Ensure your data is ready for analysis:
-
-- [ ] **Review transcriptions** for accuracy and completeness
-- [ ] **Check metadata** - Agent information, timestamps, and call details
-- [ ] **Explore insights** - View sentiment analysis, key topics, and performance metrics
-- [ ] **Set up notifications** - Configure alerts for new uploads and processing completion
+Contact your Vela Account Manager to set up FTP integration. You will need to provide your FTP server credentials (host, port, username, password, and path).
 
 ---
 
-## Setting Up Automated Uploads
+### API Upload
 
-### For Organisations with Existing Systems
+Upload call recordings or chat data programmatically via the Vela API.
 
-| **Step** | **Action** | **Details** |
-|----------|------------|-------------|
-| 1 | Contact your Vela Account Manager | Provide system details and requirements |
-| 2 | Provide system details | Call recording system type, data storage location, current data format |
-| 3 | Set up integration | We'll configure the connection |
-| 4 | Test the connection | Ensure data flows correctly |
-| 5 | Go live | Automated uploads begin |
+**Call recordings endpoint:** `https://api.botlhale.ai/asr/async/upload/vela`
 
-### Integration Options
-| **Integration Type** | **Best For** | **Setup Complexity** |
-|---------------------|--------------|---------------------|
-| FTP/SFTP servers | Automated call ingestion from existing recording systems | Set up by Vela team |
-| API integration | Custom data feeds | High |
-
-
----
-
-## API Integration for Developers
-
-### Upload Call Recordings via API
-For organisations with custom systems, use our API to upload data programmatically:
-
-**Endpoint**: `https://api.botlhale.ai/asr/async/upload/vela`
-
-**Required Parameters**:
-- `org_id` - Your organisation identifier
-- `metadata` - Call information (optional): `email` (agent email), `date_of_call` (date of the call)
-
-This endpoint validates your organisation's allocation and returns upload credentials. Use these to complete the audio file upload in a second request.
-
-**Step 1 — Get upload credentials**:
+**Step 1 — Get upload credentials:**
 ```python
 import requests, json
 
@@ -169,69 +83,50 @@ response = requests.post(
 result = response.json()
 ```
 
-**Step 2 — Upload the audio file**:
+**Step 2 — Upload the audio file:**
 ```python
 files = [('file', ('call.wav', open('call.wav', 'rb'), 'audio/wav'))]
 requests.post(result['url'], data=result['fields'], files=files)
 ```
 
-### Upload Chat Data via API
-**Endpoint**: `https://api.botlhale.ai/chats/upload/vela`
+**Chat upload endpoint:** `https://api.botlhale.ai/chats/upload/vela`
 
-See the [API Documentation](./advanced/api-documentation.md) for the full chat upload payload format and example requests.
-
----
-
-## Data Processing
-
-Once uploaded, files are queued for processing. Vela transcribes the audio (or parses the chat JSON), identifies speakers, analyses sentiment, detects keywords, classifies intent, and generates an automatic scorecard — all as part of the same pipeline.
-
-Processing time depends on file size, audio quality, and current server load. Shorter calls and smaller files complete faster; longer recordings or large bulk uploads take more time. You will receive an in-app notification when processing is complete.
-
-If a file fails to process, check the audio quality or file integrity and re-upload. See the troubleshooting table below for common causes.
+See the [API Documentation](./advanced/api-documentation.md) for full request formats and the chat payload schema.
 
 ---
 
+## Supported Formats
 
-
-### Troubleshooting Upload Issues
-| **Problem** | **Common Cause** | **Solution** |
-|-------------|------------------|--------------|
-| Upload fails | File too large, unsupported format | Check file size and format requirements |
-| Processing fails | Poor audio quality, corrupted file | Verify file integrity and audio quality |
-| Slow processing | Large files, system load | Wait for completion or try during off-peak hours |
+| Type | Formats | Size limit |
+|------|---------|------------|
+| Single audio upload | WAV, MP3 | Up to 1 GB |
+| Bulk upload (ZIP) | WAV or MP3 + metadata.csv | Up to 3 GB recommended |
+| Chat | JSON (Vela schema) | — |
 
 ---
 
-## Data Quality Best Practices
+## Processing
 
-### Before Upload
-- [ ] **Check audio quality** - Clear, audible recordings improve transcription accuracy
-- [ ] **Verify file formats** - Use supported formats for processing
-- [ ] **Organise files** - Group related recordings together
-- [ ] **Include metadata** - Agent IDs, customer IDs, timestamps
+Once uploaded, Vela queues files for processing — transcription, speaker identification, sentiment analysis, keyword detection, intent classification, and automatic scorecard evaluation all run as part of the same pipeline.
 
-### After Upload
-- [ ] **Review processing results** - Check for any issues
-- [ ] **Verify data accuracy** - Ensure transcripts are correct
-- [ ] **Monitor insights** - Look for patterns and trends
-- [ ] **Optimise processes** - Improve efficiency over time
+Processing time depends on file length, audio quality, and current server load. You will receive an in-app notification when processing is complete.
+
+---
+
+## Troubleshooting
+
+| Problem | Likely cause | Solution |
+|---------|-------------|----------|
+| Upload fails | Unsupported format or file too large | Verify WAV or MP3 format; keep ZIP under 3 GB |
+| Processing fails | Poor audio quality or corrupted file | Verify the file plays locally before uploading |
+| Metadata errors | CSV column names wrong or missing files | Download the template; ensure all filenames in the CSV exist in the ZIP |
+| Slow processing | Large batch or peak server load | Upload during off-peak hours; split large batches |
 
 ---
 
 ## Next Steps
 
-| **For Data Monitoring** | **For Analysis** |
-|------------------------|------------------|
-| [Monitor Performance](./Dashboard.md) | [Analyse Calls](./Calls.md) |
-
-### See also
-- [Quick Start Guide](./quick-start.md) - Get started with Vela
-- [Dashboard Setup](./Dashboard.md) - Create your performance dashboard
-- [API Integration](./api.md) - Automate your data uploads
-- [Settings Configuration](./Settings.md) - Configure your organisation settings
-- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for data uploads
-
-## Need Help?
-
-- **Contact Support**: support@botlhale.ai
+- [Calls](./Calls.md) — Review and score uploaded call interactions
+- [Chats](./Chats.md) — Review uploaded chat interactions
+- [System Requirements](./getting-started/system-requirements.md) — Full file format specifications
+- [API Documentation](./advanced/api-documentation.md) — Automate uploads via API

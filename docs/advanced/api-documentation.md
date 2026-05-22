@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 ## Calls
 
 :::tip important
-> You need to include an `Authentication Token` in request headers. See the [Authentication](API.md#authentication) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../api.md#authentication) section for information on how to generate authentication token codes.
 :::
 
 **Endpoint URL:**
@@ -105,7 +105,7 @@ request.post({
 ## Chats
 
 :::tip important
-> You need to include an `Authentication Token` in request headers. See the [Authentication](API.md#authentication) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../api.md#authentication) section for information on how to generate authentication token codes.
 :::
 
 **POST Request**
