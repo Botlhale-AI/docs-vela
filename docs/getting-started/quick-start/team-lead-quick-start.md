@@ -264,13 +264,11 @@ Once processing completes, click on your uploaded interaction to see the analysi
 **Full text of the conversation with:**
 - Speaker identification (Agent vs. Customer)
 - Timestamps for each statement
-- Searchable text (use Ctrl+F to find specific words)
-- Confidence indicators (how certain the AI is about the transcription)
+- Searchable text
 
 **Navigation tips:**
 - Click on any timestamp to jump to that moment in the audio
 - Use the search function to find specific keywords or phrases
-- Review transcription quality—flag any major errors for system improvement
 
 #### 3. Sentiment Analysis
 

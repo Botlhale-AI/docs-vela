@@ -137,10 +137,7 @@ This line graph shows how your performance has changed over time:
 
 See where you stand compared to your teammates (their names aren't shown—this is just for your motivation):
 
-**Percentile Ranking:**
-- **Top 25%:** You're amongst the highest performers!
-- **Middle 40%-60%:** Solid performance with potential to climb
-- **Bottom 25%:** Focus on training and feedback to improve
+Your dashboard shows how your scores compare against your teammates' scores across each scorecard category. Use this to understand where you stand relative to the team average.
 
 :::tip Use Comparisons Positively
 Peer comparison isn't about competition, it's about motivation and understanding what's possible. If others are scoring higher, it means you can too with the right focus and training!

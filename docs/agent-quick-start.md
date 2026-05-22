@@ -227,7 +227,7 @@ Courses are created by your Team Lead and are tailored to your organisation's sp
 
 ### Login and Access Problems
 - **"Wrong password"** - Contact your team lead for a reset
-- **"Account locked"** - Usually resolves in 15 minutes, or contact team lead
+- **"Account locked"** - Contact support at support@botlhale.ai to unblock your account
 - **"Page won't load"** - Try a different browser or clear your browser cache
 
 ### Training and Course Issues
