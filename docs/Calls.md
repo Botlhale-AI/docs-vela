@@ -199,7 +199,7 @@ Alerts are raised when a processed interaction matches one of your organisation'
 - The overall score is a weighted average of all applicable scorecard items
 
 *Manual Override:*
-1. **Click "Manual"** tab to view manually-defined scorecard items
+1. Use the **Automatic** or **Manual** tab to find the scorecard item you want to change
 2. **Click the edit icon** (pencil) in the Outcome column header to enter edit mode
 3. **Adjust individual outcomes** (Yes / No / N/A) using your judgment
 4. **Click "Save Changes"** — the score is recalculated using your edits

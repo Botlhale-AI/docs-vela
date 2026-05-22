@@ -367,10 +367,11 @@ Great job handling this difficult customer, @Sarah / @Agent! I particularly like
 
 If you disagree with the AI's outcome on a specific scorecard item, you can override it:
 
-1. **Click the "Manual" tab** in the Scorecard section to see manually-defined scorecard items
-2. **Click the edit icon** (pencil) in the Outcome column header to enter edit mode
-3. **Adjust the outcome** (Yes / No / N/A) for any item using your judgment
-4. **Click "Save Changes"** — your edits are saved and the score is recalculated
+1. Locate the **Scorecard** section in the interaction detail view
+2. Use the **Automatic** or **Manual** tab to find the item you want to change
+3. **Click the edit icon** (pencil) in the Outcome column header to enter edit mode
+4. **Adjust the outcome** (Yes / No / N/A) for any item using your judgment
+5. **Click "Save Changes"** — your edits are saved and the score is recalculated
 
 **When to use manual overrides:**
 - AI missed important context or nuance
