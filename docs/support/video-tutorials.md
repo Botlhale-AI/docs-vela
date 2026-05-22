@@ -24,5 +24,5 @@ Welcome! These short tutorials will guide you through getting started with Vela 
 
 ---
 
-## 5. Agent Checklist
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/xIpKvq829Ms" title="Agent Checklist" frameborder="0" allowfullscreen></iframe>
+## 5. Agent Scorecard
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/xIpKvq829Ms" title="Agent Scorecard" frameborder="0" allowfullscreen></iframe>

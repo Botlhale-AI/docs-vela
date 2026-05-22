@@ -114,7 +114,7 @@ When a scheduled or one-time report finishes generating, you'll receive a notifi
 | Too many notifications | Review your Smart Search configurations and disable notifications on searches that are too broad |
 | Missing important alerts | Check notification settings, verify alert criteria, review spam filters |
 | Comments not showing | Check permissions, verify team settings, refresh the page |
-| Reports not arriving | Verify email settings, check spam folder, confirm report scheduling |
+| Reports not arriving | Verify report scheduling settings and that the date range includes data |
 
 ---
 

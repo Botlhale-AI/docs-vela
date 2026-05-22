@@ -64,7 +64,7 @@ If your dashboard isn't showing data, check:
 ### What do the different agent scores mean?
 Vela gives you detailed scoring for agent performance:
 - **Agent Score**: Overall performance rating based on call quality and adherence to best practices
-- **Checklist Score**: Compliance with required procedures and protocols
+- **Agent Scorecard Score**: Compliance with required procedures and protocols, evaluated against your organisation's Agent Scorecard criteria
 - **Total Agent Score**: Combined score incorporating all performance metrics
 - **Team Score**: Performance relative to team benchmarks
 - **Category Scores**: Specific scores for different performance categories

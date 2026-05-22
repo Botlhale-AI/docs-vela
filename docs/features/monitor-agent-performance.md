@@ -59,7 +59,7 @@ Click on **View** in line with agent's name to view their individual performance
 
 * **View Individual Agent Scores and Rankings:** Track their rolling average score and how they rank against their peers.
 * **Track Strengths and Weaknesses:** The system highlights which scorecard categories are their strongest and weakest points based on your organisation's defined criteria.
-* **Check Checklist Scores:** Review the agent's performance on manual evaluations and checklist-based quality assessments.
+* **Check Agent Scorecard Results:** Review the agent's performance across the categories defined in your organisation's Agent Scorecard.
 * **Review Agent Voice Profiles:** Manage voice profiles to improve AI accuracy and speaker separation in transcripts.
 
 ### C. Compare Agent to Team
@@ -78,7 +78,7 @@ Use the reporting features to share progress with management and external stakeh
 1.  Navigate to the **Reports** section.
 2.  **Create a One-Time Report:** Choose a custom date range and specific metrics (e.g., Average Agent Score, Sentiment Distribution).
 3.  **Schedule Recurring Reports:** Set up daily, weekly, or monthly reports to run automatically for easy distribution to managers.
-4.  **Export Data:** You can export agent data from the **Agent Management** section for external reporting or payroll purposes.
+4.  **Export Data:** You can export agent data from the **Agent Management** section for external reporting.
 
 ---
 
