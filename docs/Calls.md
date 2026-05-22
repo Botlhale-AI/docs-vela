@@ -5,7 +5,7 @@ draft: true
 
 # Interactions Management
 
-The Interactions section is your comprehensive quality assurance workspace, where you can upload, review, analyze, and score every customer conversation to ensure consistent service quality. 
+The Interactions section is your comprehensive quality assurance workspace, where you can upload, review, analyse, and score every customer conversation to ensure consistent service quality. 
 
 ## Interaction Upload Methods
 
@@ -14,7 +14,7 @@ The Interactions section is your comprehensive quality assurance workspace, wher
 #### When to Use:
 - Individual call review and analysis
 - Spot-checking agent performance
-- Analyzing specific customer complaints or compliments
+- Analysing specific customer complaints or compliments
 - Training examples for coaching sessions
 
 #### Upload Process:
@@ -174,7 +174,7 @@ Alerts are raised when a processed interaction matches one of your organisation'
    - **Date range**: Focus on specific time periods
    - **Agent/Team**: Individual or group analysis
    - **Score range**: Focus on high/low performing interactions
-   - **Alert status**: Prioritize flagged interactions
+   - **Alert status**: Prioritise flagged interactions
    - **Review status**: Track your QA progress
 
 #### Interaction Detail View:

@@ -60,7 +60,7 @@ Smart Search gives you automated monitoring. You'll be able to:
 ### Compliance and Quality Assurance
 | **Search Type** | **Example Phrases** | **Compliance Focus** |
 |-----------------|-------------------|-------------------|
-| Regulatory Violations | "I didn't authorize this", "That's illegal", "You can't do that" | Legal compliance, risk management |
+| Regulatory Violations | "I didn't authorise this", "That's illegal", "You can't do that" | Legal compliance, risk management |
 | Policy Breaches | "That's against policy", "You're not following procedure" | Policy adherence, quality standards |
 | Security Concerns | "My information was shared", "Data breach", "Privacy violation" | Data protection, security compliance |
 | Documentation Issues | "That wasn't documented", "No record of this", "Missing information" | Audit readiness, record keeping |
@@ -127,7 +127,7 @@ Based on search results, you can:
 
 | **Result Type** | **Action Plan** | **Expected Outcome** |
 |-----------------|-----------------|-------------------|
-| **High frequency issues** | Process improvement, training programs | Reduced occurrence, improved service |
+| **High frequency issues** | Process improvement, training programmes | Reduced occurrence, improved service |
 | **Agent-specific patterns** | Individual coaching, skill development | Improved performance, reduced issues |
 | **Trending problems** | Strategic intervention, resource allocation | Proactive problem solving |
 | **Positive patterns** | Best practice sharing, recognition | Replication of success |

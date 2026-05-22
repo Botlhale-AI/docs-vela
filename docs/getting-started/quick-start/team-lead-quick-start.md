@@ -10,7 +10,7 @@ sidebar_position: 0
 Welcome to Vela! This guide will get you up and running as a Team Lead or Manager in 30 minutes. By the end, you'll know how to monitor performance, review interactions, and start coaching your team effectively.
 
 :::info Your Role in Vela
-As a Team Lead, you have comprehensive access to monitor and manage your team's performance. You can review interactions, generate reports, create training programs, and track coaching effectiveness—all powered by AI insights that make quality assurance faster and more effective.
+As a Team Lead, you have comprehensive access to monitor and manage your team's performance. You can review interactions, generate reports, create training programmes, and track coaching effectiveness—all powered by AI insights that make quality assurance faster and more effective.
 :::
 
 ---
@@ -85,7 +85,7 @@ If this is your first login, you'll need to create a password that meets these r
 
 ### What You'll See After Login
 
-After logging in, you'll land on your **Dashboard** - your command center for monitoring team performance. The left sidebar shows your main navigation areas.
+After logging in, you'll land on your **Dashboard** - your command centre for monitoring team performance. The left sidebar shows your main navigation areas.
 
 ![Dashboard Homepage](../../../img/screenshots/dashboard/dashboard01.png)
 
@@ -97,15 +97,15 @@ After logging in, you'll land on your **Dashboard** - your command center for mo
 
 **Your Dashboard provides an overview of your team’s performance.**  
 
-If no calls or chats have been uploaded in your organization yet, performance data will not be available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
+If no calls or chats have been uploaded in your organisation yet, performance data will not be available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
 
 Let’s explore the key components of the Dashboard:
 
-![Dashboard grid showing key performance metrics with color-coded indicators](../../../img/screenshots/dashboard/dashboard06.png)
+![Dashboard grid showing key performance metrics with colour-coded indicators](../../../img/screenshots/dashboard/dashboard06.png)
 
 ### Essential Controls
 
-**Date Range Selector** (Top Center)
+**Date Range Selector** (Top Centre)
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
 - Custom range: Select specific start and end dates
 - **Try it now:** Set the date range to "Today" to see current performance
@@ -205,7 +205,7 @@ You can customise/choose which metrics appear on your dashboard:
 
 ## Step 3: Upload and Review Your First Interaction (10 minutes)
 
-Let's walk through uploading and analyzing a call to understand how Vela's AI provides quality insights.
+Let's walk through uploading and analysing a call to understand how Vela's AI provides quality insights.
 
 ### Uploading a Single Call
 
@@ -239,7 +239,7 @@ You'll see a processing indicator. Typical times:
 - **Long calls (15+ min):** 3-10 minutes
 
 :::info What Happens During Processing
-Vela's AI is transcribing the call, identifying speakers, analyzing sentiment, detecting keywords, classifying intent, identifying pain points, and generating an automatic quality scorecard—all simultaneously!
+Vela's AI is transcribing the call, identifying speakers, analysing sentiment, detecting keywords, classifying intent, identifying pain points, and generating an automatic quality scorecard—all simultaneously!
 :::
 
 ### Reviewing the AI Analysis

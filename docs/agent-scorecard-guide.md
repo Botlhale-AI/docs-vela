@@ -122,7 +122,7 @@ Analyse patterns across your team:
 | **Pattern** | **Team Impact** | **Management Action** |
 |-------------|-----------------|---------------------|
 | High team scores | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
-| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
+| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programmes |
 | Low team scores | Systemic issues, training gaps | Full training review, process improvement |
 | Declining scores | Performance issues, changing standards | Investigate root causes, adjust expectations |
 

@@ -5,7 +5,7 @@ draft: true
 
 # Dashboard & Analytics
 
-The Dashboard is your command center for monitoring performance, identifying trends, and making data-driven decisions about your team's development needs.
+The Dashboard is your command centre for monitoring performance, identifying trends, and making data-driven decisions about your team's development needs.
 
 ## Dashboard Overview
 
@@ -70,7 +70,7 @@ Choose your data view based on your access permissions:
 - **Unresolved**: Open alerts requiring attention
 - **Trend analysis**: Use the ratio to track how promptly your team is acting on flagged interactions
 
-![Dashboard grid showing key performance metrics with color-coded indicators](../img/screenshots/dashboard/dashboard06.png)
+![Dashboard grid showing key performance metrics with colour-coded indicators](../img/screenshots/dashboard/dashboard06.png)
 
 ## Advanced Analytics Metrics
 
@@ -145,12 +145,12 @@ Choose your data view based on your access permissions:
 **Improving Trends**:
 - Consistent score increases over time
 - Positive coaching effectiveness
-- Successfully implemented training programs
+- Successfully implemented training programmes
 
 **Stable Trends**:
 - Consistent performance within acceptable range
 - May indicate need for advanced training to drive improvement
-- Consider recognition programs to maintain motivation
+- Consider recognition programmes to maintain motivation
 
 **Declining Trends**:
 - Immediate intervention required

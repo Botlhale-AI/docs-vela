@@ -58,7 +58,7 @@ APIs enable seamless integration between systems. You'll be able to:
 | **Approach** | **Best For** | **When to Use** |
 |--------------|--------------|-----------------|
 | Direct API Integration | Custom applications, automated workflows, call analytics data access | Building custom dashboards, creating automated workflows, integrating with existing business systems, call analytics data processing |
-| Batch Processing | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronization, bulk data processing, offline data upload |
+| Batch Processing | Large data uploads, historical data migration, scheduled updates | Migrating existing call data, scheduled data synchronisation, bulk data processing, offline data upload |
 
 ---
 
@@ -127,7 +127,7 @@ For the complete list of available API endpoints — including chat uploads, ana
 
 | **Pattern** | **Description** | **Implementation** |
 |-------------|-----------------|-------------------|
-| Data Synchronization | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
+| Data Synchronisation | Keep Vela data in sync with your existing systems | Scheduled sync jobs, incremental updates, conflict resolution, error handling |
 | Custom Analytics Pipeline | Build advanced analytics using Vela data | Data extraction, transformation and enrichment, custom analytics and machine learning, results storage and visualisation |
 
 ---
@@ -174,7 +174,7 @@ For the complete list of available API endpoints — including chat uploads, ana
 
 | **Key Metrics** | **Success Indicators** |
 |-----------------|------------------------|
-| Data synchronization accuracy | Reduced manual work |
+| Data synchronisation accuracy | Reduced manual work |
 | API response times | Improved data accuracy |
 | Error rates | Improved response times |
 | Data quality | Enhanced insights |

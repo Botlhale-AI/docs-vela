@@ -89,7 +89,7 @@ Look for patterns that affect multiple agents:
 
 | **Pattern Type** | **What to Look For** | **Action** |
 |------------------|---------------------|------------|
-| Common weaknesses | Skills gaps across the team | Team-wide training programs |
+| Common weaknesses | Skills gaps across the team | Team-wide training programmes |
 | Training gaps | Knowledge areas needing attention | Update training materials |
 | Process issues | Inefficiencies affecting performance | Process improvement initiatives |
 | Success patterns | What top performers do differently | Share best practices |
@@ -141,7 +141,7 @@ Look for patterns that affect multiple agents:
 
 ### Team Development
 - [ ] **Pair struggling agents** with top performers
-- [ ] **Create peer mentoring** programs
+- [ ] **Create peer mentoring** programmes
 - [ ] **Share best practices** across the team
 - [ ] **Recognise and reward** improvement
 
@@ -153,7 +153,7 @@ Look for patterns that affect multiple agents:
 |-------------|----------------|---------------|
 | Low Agent Scores | Training gaps, unclear expectations, lack of support | Review specific weaknesses, provide targeted training, schedule additional coaching, consider role reassignment |
 | Inconsistent Performance | External factors, inconsistent training, unclear goals | Look for patterns in good vs. bad days, check for external factors, provide consistent training, set daily goals |
-| Team-Wide Issues | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programs, review and improve processes, consider external training resources |
+| Team-Wide Issues | Common training gaps, process problems, systemic issues | Identify common training gaps, update team training programmes, review and improve processes, consider external training resources |
 
 ---
 

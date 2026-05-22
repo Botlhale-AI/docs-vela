@@ -280,7 +280,7 @@ Once you're comfortable with these basics, explore:
 - **Coaching precision** - More targeted development vs. generic training
 - **Compliance coverage** - 100% monitoring vs. sample-based approaches
 
-**Expected outcome**: You'll transform from reactive management to proactive performance optimization, with data-driven insights enabling more effective team leadership.
+**Expected outcome**: You'll transform from reactive management to proactive performance optimisation, with data-driven insights enabling more effective team leadership.
 
 ## Quick Reference
 

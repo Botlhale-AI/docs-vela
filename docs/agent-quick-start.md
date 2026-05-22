@@ -73,7 +73,7 @@ What you'll see on your dashboard:
 ![Agent dashboard showing performance metrics in a clean, easy-to-read format](../img/screenshots/dashboard/agent-dashboard.png)
 ![Agent dashboard showing performance metrics in a clean, easy-to-read format](../img/screenshots/dashboard/agent-dashboard2.png)
 
-#### What the colors mean:
+#### What the colours mean:
 - **Green scores** - Great job! Keep up the excellent work
 - **Yellow scores** - Good, with room for small improvements
 - **Red scores** - Need attention - check feedback and courses
@@ -100,7 +100,7 @@ Check for feedback from your team lead:
 
 #### Types of feedback you might see:
 - **Positive feedback**: "Great job handling that difficult customer calmly"
-- **Coaching suggestions**: "Try to summarize the solution before ending the call"
+- **Coaching suggestions**: "Try to summarise the solution before ending the call"
 - **Courses recommendations**: "Please complete the Active Listening course"
 
 #### How to respond:

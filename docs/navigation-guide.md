@@ -24,7 +24,7 @@ Welcome to Vela! This guide helps you find the right documentation based on your
 ### **Best Use Cases**
 - **Quality assurance** and compliance monitoring
 - **Agent training** and performance improvement
-- **Customer experience** analysis and optimization
+- **Customer experience** analysis and optimisation
 - **Process improvement** based on call insights
 - **Trend analysis** and strategic planning
 

@@ -25,7 +25,7 @@ This endpoint accepts a call recording for processing by Vela. It validates the 
 
 | Parameter      | Requirement | Description                                              |
 |----------------|-------------|----------------------------------------------------------|
-| org_id         | Required    | Identifier for the organization submitting the call.     |
+| org_id         | Required    | Identifier for the organisation submitting the call.     |
 | metadata       | Optional    | A JSON object containing the information below.          |
 
 - **email**: Email address of the agent who participated in the call.

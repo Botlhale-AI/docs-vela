@@ -271,7 +271,7 @@ Bulk uploads initiated during **business hours (9 AM – 5 PM)** may experience 
 
 **Display Recommendations**
 - Prefer monitors **15" or larger** for desktop work  
-- Color depth: **24-bit true color** (16.7M colors)  
+- Colour depth: **24-bit true colour** (16.7M colours)  
 - Brightness: Adjustable for comfortable extended use  
 - Multiple monitors: Supported — use one for Vela, another for reference materials
 
@@ -372,7 +372,7 @@ If you clear your browser cache or cookies, you'll need to log in again and may 
 - **Common shortcuts:**  
   - `Ctrl/Cmd + F` — Search within page  
   - `Tab` / `Shift + Tab` — Navigate forward/backward  
-  - `Esc` — Close modal/dialog
+  - `Esc` — Close modal/dialogue
 - **Visual Accessibility:**  
   - Light mode and Darkmode support
   - Resizable text (browser zoom up to 200%)  
