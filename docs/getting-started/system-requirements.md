@@ -87,7 +87,7 @@ If you experience issues, try disabling extensions temporarily to identify confl
 | Report generation | 1 - 5 MB per report |
 
 :::info Bulk Upload Planning
-When uploading large batches of calls (approaching the 3GB limit), ensure you have sufficient bandwidth and time allocated. A 3GB upload on a 10 Mbps connection will take approximately 11-12 hours.
+When uploading large batches of calls (approaching the 3GB limit), ensure you have sufficient bandwidth and time allocated. A 3GB upload on a 10 Mbps connection will take approximately 40 minutes of upload time (plus processing time after upload completes).
 :::
 
 ### Firewall and Security
@@ -138,7 +138,7 @@ Higher quality audio (16 kHz+, 128 kbps+) produces more accurate transcriptions 
 **File Size Considerations:**
 - **Single upload:** No strict limit, but files over 500 MB may take longer to process
 - **Bulk upload:** Individual files within ZIP should be reasonable size (< 2 GB each)
-- **Processing time:** Longer files take more time to process (typically 1-3 minutes for a 10-minute call)
+- **Processing time:** Longer files take more time to process
 
 ### Chat Conversations
 
@@ -231,13 +231,7 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 
 ### Processing Times
 
-| Call Duration | Processing Time | Notes |
-|---:|---:|---|
-| `< 5 minutes` | 30–60 seconds | Quick turnaround |
-| `5–15 minutes` | 1–3 minutes | Standard processing |
-| `15–30 minutes` | 3–7 minutes | Moderate processing |
-| `30–60 minutes` | 7–15 minutes | Extended processing |
-| `> 60 minutes` | 15–30 minutes | Long-form processing |
+Processing time varies depending on call duration, audio quality, number of speakers, and server load. Longer calls take more time to process. For accurate estimates in your environment, contact support.
 
 **Factors affecting processing time**
 - Audio quality (clearer audio processes faster)  
@@ -248,12 +242,7 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 
 ### Bulk Upload Performance
 
-| Batch Size | Number of Files | Estimated Upload Time (10 Mbps) | Estimated Processing Time |
-|---|---:|---:|---:|
-| Small | 1–50 calls | 1–30 minutes | 30 minutes – 2 hours |
-| Medium | 51–500 calls | 15 minutes – 1 hour | 2–4 hours |
-| Large | 501–2000 calls | 1–4 hours | 4–10 hours |
-| Very Large | 2001+ calls | 4+ hours | 6+ hours |
+Bulk upload and processing times depend on total file size, number of files, your upload bandwidth, and server load. Large batches should be uploaded during off-peak hours to ensure optimal processing speed.
 
 :::warning Processing During Peak Hours
 Bulk uploads initiated during **business hours (9 AM – 5 PM)** may experience longer processing times. For large batches, consider uploading during **off-peak hours** (evenings or weekends).

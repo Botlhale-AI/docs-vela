@@ -72,7 +72,7 @@ The first screen you'll see is an empty dashboard since you don't have data uplo
 ![Single call upload interface with form fields highlighted](../img/screenshots/data_upload/upload2.png)
 
 #### Review AI Analysis Results
-1. Wait for processing (typically 30 seconds to 2 minutes depending on call length)
+1. Wait for processing to complete (time varies depending on call length)
 2. Click on your uploaded interaction to open the analysis
 3. Review Smart Detector insights:
    - **Summary** - AI-generated interaction overview
@@ -147,7 +147,7 @@ Create your first automated monitor:
 #### Upload process:
 1. Go to **Interactions → Calls → "Bulk Upload"**
 2. Upload your prepared ZIP file
-3. Monitor processing status - large batches may take 10-30 minutes
+3. Monitor processing status — large batches may take some time depending on size
 4. Review upload results and address any errors
 
 ![Bulk upload interface showing metadata template download and upload progress](../img/screenshots/data_upload/upload3.png)
@@ -301,4 +301,4 @@ Once you're comfortable with these basics, explore:
 - **Audio formats** - WAV, MP3 supported
 - **Bulk upload maximum** - 3GB per batch recommended
 - **Browser requirements** - Chrome, Firefox, Safari, Edge
-- **Processing time** - 30 seconds to 2 minutes per call depending on duration
+- **Processing time** - Varies per call depending on duration

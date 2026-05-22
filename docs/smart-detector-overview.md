@@ -43,7 +43,7 @@ Detect important events and patterns in your customer interactions:
 3. **Receive automated alerts** when issues are detected in processed calls
 4. **Take action** to resolve problems and prevent future issues
 
-### **Agent Scorecard & Checklist: Complete Performance Evaluation**
+### **Agent Scorecard: Complete Performance Evaluation**
 Evaluate and improve agent performance with AI-powered assessments and custom criteria:
 
 #### What It Evaluates:

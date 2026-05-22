@@ -90,8 +90,7 @@ The Automatic Scorecard provides a base score, but your expertise is required fo
 3.  Evaluate the agent against your organisation's defined scorecard criteria in each category.
     * **Be consistent:** Ensure your scoring aligns with the established quality standards and training.
     * **Be objective:** Base your score only on the evidence from the interaction and the defined criteria.
-4.  **Add detailed comments** explaining your score for each category.
-5.  Click **"Save Changes"**.
+4.  Click **"Save Changes"**.
     * The manual score will now be used in the agent’s overall performance metrics instead of the initial Vela AI generated one.
 
 ### B. Use the Comment System for Targeted Coaching

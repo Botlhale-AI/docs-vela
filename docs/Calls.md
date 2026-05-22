@@ -198,14 +198,11 @@ Alerts are raised when a processed interaction matches one of your organisation'
 - Categories and weights are set by your organisation. The breakdown reflects your own criteria
 - The overall score is a weighted average of all applicable scorecard items
 
-*Manual Scorecard:*
-1. **Click "Manual"**
-2. **Evaluate each category**:
-   - Use your organisation's specific criteria
-   - Consider context that AI might miss
-   - Apply human judgment to nuanced situations
-   - Add detailed comments explaining your evaluation
-3. **Submit final score** which will override AI assessment
+*Manual Override:*
+1. **Click "Manual"** tab to view manually-defined scorecard items
+2. **Click the edit icon** (pencil) in the Outcome column header to enter edit mode
+3. **Adjust individual outcomes** (Yes / No / N/A) using your judgment
+4. **Click "Save Changes"** — the score is recalculated using your edits
 
 ![Scorecard interface showing AI and manual evaluation options](../img/screenshots/calls/calls-5.png)
 
@@ -262,7 +259,7 @@ A recommended daily approach:
 
 #### Advanced Filtering:
 Combine multiple criteria to narrow your interaction list:
-- Date range (call date or upload date)
+- Upload date range
 - Department, team, or agent
 - Score range (overall, compliance, quality)
 - Number of alerts

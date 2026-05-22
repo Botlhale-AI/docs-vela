@@ -44,7 +44,7 @@ Once your ZIP archive and `metadata.csv` file are ready, follow these steps:
 1.  Navigate to **Interactions** → **Calls**.
 2.  Click **"Bulk Upload"**.
 3.  Upload your prepared **ZIP file** (containing both the audio files and the `metadata.csv`).
-4.  **Monitor Processing Status:** Large batches may take several minutes to process (e.g., 10-30 minutes, depending on the volume).
+4.  **Monitor Processing Status:** Large batches may take several minutes to process depending on the volume.
 5.  **Review Upload Results:** Check for any errors in the processing queue. If there are metadata errors, you can download an error report, correct the `metadata.csv`, and re-upload the corrected batch.
 
 :::tip Efficiency Tip

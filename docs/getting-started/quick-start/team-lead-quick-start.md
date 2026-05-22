@@ -363,16 +363,16 @@ Great job handling this difficult customer, @Sarah / @Agent! I particularly like
 - **Balance positive and constructive** - Acknowledge strengths, suggest improvements
 :::
 
-### Creating a Manual Scorecard (Optional)
+### Overriding a Scorecard Item (Optional)
 
-If you disagree with the Vela AI's assessment, you can override it:
+If you disagree with the AI's outcome on a specific scorecard item, you can override it:
 
-1. **Click "Create Manual Scorecard"**
-2. **Evaluate each category** using your judgment
-3. **Add detailed comments** explaining your scores
-4. **Submit** - This replaces the AI scorecard
+1. **Click the "Manual" tab** in the Scorecard section to see manually-defined scorecard items
+2. **Click the edit icon** (pencil) in the Outcome column header to enter edit mode
+3. **Adjust the outcome** (Yes / No / N/A) for any item using your judgment
+4. **Click "Save Changes"** — your edits are saved and the score is recalculated
 
-**When to use manual scoring:**
+**When to use manual overrides:**
 - AI missed important context or nuance
 - Cultural or language subtleties not captured by AI
 - Complex situations requiring human judgment
