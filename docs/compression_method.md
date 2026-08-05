@@ -1,216 +1,63 @@
 ---
 sidebar_position: 11
+title: Preparing ZIP Files for Bulk Upload
+type: how-to
 draft: true
 ---
 
-# File Upload Guidelines
+# Preparing ZIP Files for Bulk Upload
 
-This guide will help you prepare your files properly so they upload smoothly and process without any issues. We'll walk you through everything you need to know about compression methods, browser choices, and best practices.
-
-## What You'll Learn
-
-By following these guidelines, you can:
-- [ ] **Create compatible ZIP files** that upload and process successfully
-- [ ] **Choose the right browser** for large file uploads
-- [ ] **Avoid common upload issues** and errors
-- [ ] **Optimise your file preparation** for faster processing
-- [ ] **Troubleshoot upload problems** quickly and effectively
+Bulk upload accepts a ZIP archive of call recordings plus a `metadata.csv`. Vela can only read ZIP files created with the two most common compression methods, so an archive made with a less common method fails to process. This page shows how to create a compatible ZIP and how to fix a compression error.
 
 ---
 
-## ZIP File Compression Methods
+## Supported Compression
 
-### Understanding Compression Types
+Create your ZIP with one of these methods:
 
-ZIP files can use different compression methods, and not all of them work with Vela. Our system uses the `decompress-unzip` package, so we need to stick to the most widely supported compression methods.
+- **Deflate** (method 8): the standard ZIP compression. Use this.
+- **Store** (method 0): no compression.
 
-**✅ What Works Great:**
-- **Deflate (Method 8)**: This is the standard ZIP compression - **Best choice**
-- **Store (Method 0)**: Files stored without compression
-
-**❌ What Causes Problems:**
-- **Deflate64 (Method 9)**: This proprietary method will give you "Unsupported compression method 9" errors
-- **LZMA (Method 14)**: Another method that causes "Unsupported compression method 14" errors  
-- **BZip2 (Method 12)**: Alternative compression that we don't support
-
-### Why Some Methods Don't Work
-
-Deflate64 is a proprietary compression method that's not widely supported. If you 
-use it, you'll get the error "Unsupported compression method 9" when trying to 
-decompress your files.
+These methods are not supported and cause the upload to fail: **Deflate64** (method 9), **BZip2** (method 12), and **LZMA** (method 14).
 
 ---
 
-## Creating Compatible ZIP Files
+## Creating a Compatible ZIP
 
-### Using 7-Zip (Our Recommendation)
+### Windows (Built-In)
 
-7-Zip gives you complete control over compression settings. Here's how to use it properly:
+Windows Explorer uses Deflate by default, so its archives are already compatible. Select your files, right-click, and choose **Send to → Compressed (zipped) folder**.
 
-**Step-by-step process:**
-1. **Right-click** your files or folder
-2. **Select "7-Zip"** → "Add to archive..."
-3. **Archive format**: Choose "ZIP" 
-4. **Compression level**: Any level works (1-9)
-5. **Compression method**: Select "Deflate" (NOT "Deflate64")
-6. **Click "OK"** to create your ZIP file
+### 7-Zip
 
-**Recommended 7-Zip Settings:**
-```
-Archive format: ZIP
-Compression level: 5 (recommended)
-Compression method: Deflate
-```
+1. Select your files, right-click, and choose **7-Zip → Add to archive**.
+2. Set **Archive format** to **zip**.
+3. Set **Compression method** to **Deflate** (not Deflate64).
+4. Click **OK**.
 
-### Using Windows Built-in ZIP
+### WinRAR
 
-Windows Explorer's built-in ZIP creation uses Deflate by default, so it's already compatible:
-
-1. **Select** your files or folder
-2. **Right-click** → "Send to" → "Compressed (zipped) folder"
-3. **Rename** the ZIP file if you want
-
-No complicated settings required.
-
-### Using WinRAR
-
-For WinRAR users:
-
-1. **Select** your files
-2. **Right-click** → "Add to archive..."
-3. **Archive format**: Choose "ZIP" (not RAR)
-4. **Compression method**: Select "ZIP compression method" 
-5. **Compression level**: Any level works fine
+1. Select your files, right-click, and choose **Add to archive**.
+2. Set the archive format to **ZIP** (not RAR).
+3. Any compression level works.
 
 ---
 
-## Browser Limitations for Large Files
+## Fixing a Compression Error
 
-### File Size Limits
+If a bulk upload fails to process with an **Unknown compression method** error, the archive used a method Vela cannot read. The number in the message identifies it:
 
-Vela supports uploads up to **3 GB**, but different browsers handle large uploads differently:
+| Error | Method used | Fix |
+| :--- | :--- | :--- |
+| `Unknown compression method: 9` | Deflate64 | Recreate the ZIP with Deflate |
+| `Unknown compression method: 12` | BZip2 | Recreate the ZIP with Deflate |
+| `Unknown compression method: 14` | LZMA | Recreate the ZIP with Deflate |
 
-| Browser | Recommended Max Size | Notes |
-|---------|---------------------|-------|
-| **Firefox** | Up to 3 GB | ✅ **Best for large uploads** |
-| **Chrome** | Up to 1-2 GB | ⚠️ May run out of memory with large files |
-| **Edge** | Up to 1-2 GB | ⚠️ May struggle with large files |
-| **Safari** | Up to 2-3 GB | ⚠️ Performance varies by version |
-
-### Why Firefox Works Better
-
-Firefox handles large file uploads more reliably than Chrome or Edge, which may run out of memory during large file uploads.
-
+Recreate the archive using Deflate or Store, then upload again.
 
 ---
 
-## Best Practices for File Preparation
+## Related
 
-### 1. ZIP File Creation
-- [ ] **Use Deflate compression** - Recommended
-- [ ] **Test your ZIP file** before uploading
-- [ ] **Keep file names simple** - avoid special characters that might cause issues
-- [ ] **Organise files logically** in folders
-
-### 2. File Size Management
-- [ ] **Use Firefox** for files over 1 GB
-- [ ] **Split large datasets** into smaller ZIP files if needed
-- [ ] **Check file sizes** before uploading
-- [ ] **Monitor upload progress** closely
-
-### 3. File Organisation
-- [ ] **Use descriptive folder names** (e.g., "Call_Recordings_2024-01")
-- [ ] **Group related files** together
-- [ ] **Avoid deeply nested folders**
-- [ ] **Include a README file** if needed for context
-
-### 4. Quality Checks
-- [ ] **Check file formats** are supported (WAV, MP3, etc.)
-- [ ] **Test ZIP extraction** on another computer
-- [ ] **Make sure files aren't corrupted**
-
----
-
-## Troubleshooting Upload Issues
-
-Most upload issues have simple solutions. Here are the most common problems and how to fix them.
-
-### ZIP File Problems
-
-**Problem**: ZIP file uploads but fails to process
-
-**Here's how to fix it:**
-- [ ] **Recreate the ZIP** using Deflate compression
-- [ ] **Check file names** for special characters
-- [ ] **Try a smaller ZIP file** first
-- [ ] **Use 7-Zip** with the correct settings
-
-**Problem**: "Unsupported compression method" error
-
-**These error messages tell you exactly what's wrong:**
-- "Unsupported compression method 9" = You used Deflate64 compression
-- "Unsupported compression method 14" = You used LZMA compression  
-- "Unsupported compression method 12" = You used BZip2 compression
-
-**Solution**: 
-- [ ] **Use Deflate compression** (not Deflate64, LZMA, or BZip2)
-- [ ] **Recreate the ZIP file** with the correct settings
-- [ ] **Check your compression tool** settings
-- [ ] **Verify compression method** is set to "Deflate" or "Store"
-
-### Browser-Related Issues
-
-**Problem**: Upload fails or browser crashes with large files
-
-**Solution**:
-- [ ] **Switch to Firefox** for large uploads
-- [ ] **Try smaller file sizes** first
-- [ ] **Clear browser cache** and try again
-- [ ] **Close other browser tabs** to free up memory
-
-**Problem**: Upload progress freezes
-
-**Solution**:
-- [ ] **Wait a bit longer** - large files take time
-- [ ] **Use Firefox** instead of Chrome/Edge
-
-
----
-
-## Alternative Upload Methods
-
-### For Very Large Files
-
-If you're still having trouble with browser uploads, there are other options available:
-
-**FTP Integration:**
-- Contact your Vela Account Manager
-- Set up automated FTP uploads
-- Bypass browser limitations entirely
-
-**Batch Processing:**
-- Split large datasets into smaller ZIP files
-- Upload in multiple batches
-- Process files incrementally
-
----
-
-## Next Steps
-
-| For File Upload | For Technical Support |
-|----------------|----------------------|
-| [Data Upload Guide](./data-upload.md) | [Contact Support](mailto:support@botlhale.ai) |
-
-### See also
-- [Quick Start Guide](./quick-start.md) - Get started with Vela
-- [Data Upload Guide](./data-upload.md) - Upload your call recordings
-- [Dashboard Setup](./dashboard.md) - Create your performance dashboard
-
-## Need Help?
-
-Still having trouble? Contact our support team for assistance.
-
-- **📧 Email Support**: support@botlhale.ai
-- **📞 Response Time**: Within 24 hours (usually much faster!)
-- **🕒 Available**: Monday - Friday, 9 AM - 5 PM SAST
-
+- [Upload Your Data](./data-upload.md): the full bulk upload process and the `metadata.csv` format.
+- [Troubleshooting Guide](./support/troubleshooting-guide.md): other upload and processing issues.
