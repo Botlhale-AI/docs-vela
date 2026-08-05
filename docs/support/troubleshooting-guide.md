@@ -1,0 +1,388 @@
+---
+id: troubleshooting-guide
+title: Troubleshooting Guide
+sidebar_position: 1
+type: troubleshooting
+---
+
+# Troubleshooting Guide
+
+This guide consolidates common issues reported by administrators, team leads, and agents, and provides step-by-step resolutions. Where issues appear in multiple areas of the platform, cross-references are included.
+
+If this guide does not resolve your issue, see [Need Help?](#need-help) at the end of this page.
+
+---
+
+## Login and Authentication Issues
+
+**Problem:** Cannot log in. The page shows an error, or the login button does not respond.
+
+**Cause:** JavaScript or cookies may be disabled in the browser, or the browser cache may contain stale session data.
+
+**Solution:**
+1. Confirm that JavaScript and cookies are enabled in your browser settings.
+2. Clear your browser cache and cookies, then reload the login page.
+3. Try logging in using a supported browser: Chrome (recommended), Firefox, Edge, or Safari.
+4. If the problem persists, disable your browser extensions, especially ad blockers or script blockers, then try again.
+
+---
+
+**Problem:** SSO login fails. Clicking "Sign in with Google" or "Sign in with Microsoft" redirects to an error page.
+
+**Cause:** The OAuth credentials configured for your organisation may be incorrect, or the user's email domain does not match the configured identity provider.
+
+**Solution:**
+1. Confirm that your email address uses a domain that matches the configured SSO provider.
+2. If your organisation enforces MFA through Google Workspace or Microsoft Azure AD, complete the MFA prompt as required by your identity provider.
+3. If the issue only affects one user, ask your administrator to verify that the user's account exists in Vela and that the email address matches.
+4. If SSO fails for everyone, Botlhale needs to check the OAuth configuration. It is set at deployment level and cannot be changed from Settings. Contact **support@botlhale.ai**.
+
+---
+
+**Problem:** Password reset email does not arrive.
+
+**Cause:** The email may have been filtered to spam, or the address entered does not match an existing account.
+
+**Solution:**
+1. Check your spam or junk mail folder.
+2. Confirm you entered the correct email address on the "Forgot your password?" screen.
+3. If no account exists for that address, ask your administrator to check that your user account has been created in **Settings → Users**.
+4. Contact support if the email still does not arrive after checking the above.
+
+---
+
+**Problem:** Password is rejected when creating a new account or resetting.
+
+**Cause:** The new password does not meet the platform's requirements.
+
+**Solution:**
+Ensure your password is at least 8 characters long and includes at least one letter, one number, and one special character (for example, `@`, `#`, or `!`).
+
+---
+
+**Problem:** Session expires unexpectedly and the user is logged out during work.
+
+**Cause:** The user may be working in incognito or private browsing mode, where session persistence is limited.
+
+**Solution:**
+1. Use a standard browser window rather than incognito or private mode.
+2. Avoid clearing browser data while a session is active.
+3. If your organisation enforces session timeout policies through an SSO provider, contact your IT administrator.
+
+---
+
+## Upload Issues
+
+### Single Call Upload
+
+**Problem:** Single call upload fails immediately after clicking "Upload".
+
+**Cause:** The audio file is not in a supported format, or the file is corrupted.
+
+**Solution:**
+1. Confirm the file is in WAV or MP3 format. Other audio formats are not supported.
+2. Play the file locally on your device to confirm it is not corrupted.
+3. Ensure the required fields are completed. Only **Agent** and the audio file are required. **Direction** and **Tags** are optional, so leaving them empty is not the cause.
+4. If the file plays locally but still fails to upload, try a different browser or check your internet connection stability.
+
+---
+
+**Problem:** Single call upload appears to complete but the call never appears in the Interactions list.
+
+**Cause:** The call may still be processing, or it was uploaded with metadata that places it outside your current filter view.
+
+**Solution:**
+1. Allow time for processing to finish before expecting the call to appear in the list. Vela emails you when it is complete, if you have email notifications enabled.
+2. Check that the date range and scope filters on the Interactions page include the period and team for the uploaded call.
+3. Refresh the page if the call does not appear once processing has finished.
+
+---
+
+### Bulk Upload
+
+**Problem:** Bulk upload fails or returns errors on the metadata CSV.
+
+**Cause:** Column names in the CSV do not match the expected template, the CSV is not UTF-8 encoded, or some files listed in the CSV are missing from the ZIP.
+
+**Solution:**
+1. Download the metadata CSV template from the upload page and use it as your starting point. Do not rename or reorder the columns.
+2. Ensure the CSV is saved with UTF-8 encoding. In Microsoft Excel, use "Save As" and select "CSV UTF-8 (comma delimited)".
+3. Verify that every filename listed in the `filename` column (including the file extension) is present in the ZIP archive.
+4. Confirm that `agent_name` values correspond to agent names in Vela. Matching is case-insensitive, but it matches on the agent's **name**. A username or email such as `john.smith` does not match `John Smith`.
+5. Confirm that `department` and `team` values correspond to existing records in Vela. These are also matched case-insensitively.
+
+---
+
+**Problem:** Bulk upload succeeds but some calls fail to process and do not appear.
+
+**Cause:** Individual files in the batch may have format issues, or their metadata rows contained errors.
+
+**Solution:**
+1. Check which calls from the batch appear in the Interactions list, and identify the ones missing.
+2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device.
+3. Check the metadata row for each missing file, particularly that `agent_name`, `team`, and `department` correspond to records that exist in Vela.
+4. Correct the issues and re-upload only the affected files.
+
+---
+
+**Problem:** Bulk upload times out before completing.
+
+**Cause:** The ZIP archive exceeds the recommended 3 GB limit, or the upload connection is too slow.
+
+**Solution:**
+1. Split large batches into smaller ZIP archives, each under 3 GB.
+2. Upload during off-peak hours (evenings or weekends) when server load is lower.
+3. Use a wired internet connection rather than Wi-Fi for large uploads, as a stable connection matters more than raw speed over a long transfer.
+4. Do not navigate away from the upload page while a bulk upload is in progress.
+
+---
+
+## Processing Issues
+
+**Problem:** Uploaded calls are not appearing in the Interactions list.
+
+**Cause:** Processing time varies depending on call length, audio quality, number of speakers, and server load. The call may still be queued or processing.
+
+**Solution:**
+1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
+2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
+3. If a call has remained in a processing state for an unusually long time with no notification, contact support with the filename and upload time.
+
+---
+
+**Problem:** Processed calls appear in the list but show no score.
+
+**Cause:** No active Agent Scorecard exists with a scope that covers the relevant team or department, so the AI has no criteria to score against.
+
+**Solution:**
+1. Ask your administrator to navigate to **Smart Detector → Agent Scorecard** and confirm that an active scorecard exists.
+2. Check the scope of the scorecard. It must cover the department or team the agent belongs to.
+3. Once a scorecard is active, newly processed calls are scored automatically.
+
+---
+
+**Problem:** The AI summary, sentiment, or keywords are missing from a processed call.
+
+**Cause:** The audio quality may be too low for accurate transcription. The summary, sentiment, and keywords all depend on the transcript, so a poor transcript weakens all of them.
+
+**Solution:**
+1. Check the audio quality of the original file. Heavily compressed audio, background noise, and overlapping speakers all reduce analysis accuracy.
+2. If the problem affects multiple recent uploads rather than a single file, contact support.
+
+---
+
+## Dashboard and Performance Issues
+
+**Problem:** The Dashboard shows no data or displays empty charts.
+
+**Cause:** No interactions have been uploaded yet, or the current date range and scope filters are not returning any data.
+
+**Solution:**
+1. Confirm that calls or chats have been uploaded and that processing is complete. The Dashboard only reflects interactions that have finished processing.
+2. Check the date range selector covers the period you expect to see data for.
+3. Check the scope filter to confirm you are viewing data for your team, department, or organisation as appropriate.
+
+---
+
+**Problem:** The Dashboard is loading slowly or charts are not rendering.
+
+**Cause:** The selected date range or scope is very large, requiring a high volume of data to be loaded. Browser performance issues may also contribute.
+
+**Solution:**
+1. Narrow the date range to reduce the data volume (for example, use "This Week" instead of a multi-month range).
+2. Close unnecessary browser tabs to free up memory.
+3. Clear the browser cache and reload the page.
+4. Ensure your browser is a supported, up-to-date version. Chrome and Edge offer the best performance.
+
+---
+
+**Problem:** Dashboard customisation changes are not saved between sessions.
+
+**Cause:** The changes were not saved before navigating away.
+
+**Solution:**
+1. After customising the dashboard, confirm you clicked **Save** before navigating away.
+2. Dashboard preferences are stored against your user profile, not in your browser, so they follow you across devices and browsers. Clearing browser data does not reset them.
+3. If your saved layout still does not appear after signing in again, contact support.
+
+---
+
+## Scorecard and Scoring Issues
+
+**Problem:** An agent's score appears incorrect or seems to miss context from the conversation.
+
+**Cause:** AI scoring is based on the criteria defined in your organisation's Agent Scorecard. Complex situations, cultural nuances, or contextual details that the AI cannot reliably detect from the transcript may result in an outcome that does not match your judgement.
+
+**Solution:**
+Override the individual scorecard items you disagree with. Your edited outcome takes precedence over the AI's, and the score is recalculated.
+
+See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-complete-a-manual-scorecard) for the full steps.
+
+---
+
+**Problem:** The Scorecard section is missing from an interaction.
+
+**Cause:** No active scorecard with the correct scope covers the team or department this agent belongs to.
+
+**Solution:**
+1. Ask your administrator to navigate to **Smart Detector → Agent Scorecard** and create or activate a scorecard.
+2. Ensure the scorecard scope is set to cover the relevant team, department, or organisation.
+
+---
+
+**Problem:** Changes to scorecard criteria (questions or weights) do not appear to affect existing scores.
+
+**Cause:** A score is calculated when the interaction is processed, and stored. Scorecard changes apply to interactions processed after the change is saved. Already-scored interactions keep their original scores.
+
+**Solution:**
+1. Re-upload the affected interactions so they are processed again against the updated scorecard. Delete the earlier copies first if you do not want duplicates.
+2. For a large number of interactions, contact **support@botlhale.ai**.
+
+The **Rerun Scorecard** button, on the interaction's **Automatic** tab, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.
+
+---
+
+## Smart Search and Alert Issues
+
+**Problem:** A Smart Search is not producing any matches, even though you expect it to.
+
+**Cause:** The search may not be active, the scope may not cover the relevant teams, or the search was created without the Historical Search option, so it only applies to future uploads.
+
+**Solution:**
+1. Navigate to **Smart Detector → Smart Search** and confirm the search status is **Active**.
+2. Check the scope setting. A search scoped to one team does not match interactions from other teams.
+3. Review the phrases in your search. Very specific phrasing may not match the exact wording used in recorded calls. Add variations and synonyms to improve coverage.
+4. Confirm the interactions you expect to match were uploaded after the search was created. A search only applies to earlier interactions if **Historical Search** was enabled when it was created.
+
+---
+
+**Problem:** A Smart Search is producing too many results, many of which are irrelevant.
+
+**Cause:** The search phrases are too broad or too common, matching unrelated conversations.
+
+**Solution:**
+1. Edit the search and make the phrases more specific. For example, replace a generic word like "problem" with a more precise phrase like "I want to cancel my account".
+2. Review false-positive matches to identify what language is triggering them, and refine accordingly.
+
+---
+
+**Problem:** In-app notifications are not arriving for Smart Search matches.
+
+**Cause:** The notification option was not enabled when the search was created.
+
+**Solution:**
+Open the Smart Search and confirm its **Notifications** setting is on. You can change this at any time by editing the search. Matches still appear in the search results view regardless of the notification setting.
+
+---
+
+**Problem:** Alerts are accumulating faster than the team can review them.
+
+**Cause:** Too many Smart Searches are active, or the searches are too broad, generating a high volume of matches.
+
+**Solution:**
+1. Review all active Smart Searches and deactivate any that are no longer relevant.
+2. Tighten the phrasing in searches that generate excessive matches.
+3. Prioritise work by sorting the Smart Search list by **results** in descending order, and addressing the searches generating the most matches first.
+
+---
+
+## Redaction and Access Issues
+
+**Problem:** Names, numbers, or other details in a transcript are replaced with placeholders.
+
+**Cause:** Your organisation has redaction enabled, and your account does not have **View Redactions**. Vela masks the entity types your administrator has configured.
+
+**Solution:**
+1. Open the interaction and request access to the unmasked version. Your request goes to an administrator.
+2. An administrator approves or declines the request, and you are notified of the outcome.
+3. If you need standing access rather than per-interaction access, ask an administrator to enable **View Redactions** on your account in **Settings → Users**.
+
+Administrators can reveal unmasked content on demand and do not need to request access.
+
+See [Access Requests](../settings-config/access-requests-audits.md).
+
+---
+
+## Audio Playback Issues
+
+**Problem:** Audio does not play in the interaction detail view.
+
+**Cause:** The browser's audio permissions may be blocked, the output device may not be selected, or the browser requires explicit permission to play audio on the site.
+
+**Solution:**
+1. Check that your browser has permission to play audio. In Chrome or Edge, look for the speaker or lock icon in the address bar and confirm audio is not blocked for the Vela site.
+2. Check your system audio output: ensure the correct device is selected and the volume is not muted.
+3. If the issue only affects one specific call, the original file may be corrupted. Try playing a different call to determine whether the problem is platform-wide or specific to that file.
+4. Try a different supported browser to rule out a browser-specific issue.
+5. If no audio plays on any call, and everyone at your organisation is affected, ask your IT department to confirm that `*.amazonaws.com` is reachable. Vela streams recordings from Amazon S3, so a firewall that blocks it leaves the rest of the platform working while audio fails.
+
+---
+
+**Problem:** Clicking a timestamp in the transcript does not jump to the correct point in the audio.
+
+**Cause:** The audio file had not finished loading when the timestamp was clicked, or the page did not render correctly.
+
+**Solution:**
+1. Wait until the audio has fully loaded before clicking timestamps.
+2. Refresh the page and try again.
+3. If the problem persists across page refreshes, try a different supported browser.
+
+---
+
+**Problem:** Audio plays but the quality is very poor or difficult to understand.
+
+**Cause:** The original recording was captured at a low sample rate or bitrate, or there was significant background noise in the source call.
+
+**Solution:**
+This is a characteristic of the source recording and cannot be improved within the platform. Improving the quality of your call recordings at source produces clearer playback and more accurate transcription.
+
+---
+
+## Browser and Performance Issues
+
+**Problem:** The platform does not load or displays a blank screen.
+
+**Cause:** JavaScript may be disabled, or a browser extension (such as an ad blocker or script blocker) may be preventing the platform from loading.
+
+**Solution:**
+1. Confirm that JavaScript is enabled in your browser settings.
+2. Disable browser extensions one at a time to identify whether any are blocking the platform. Aggressive ad blockers and script blockers are the most common culprits.
+3. Clear browser cache and cookies, then reload.
+4. Try a different supported browser (Chrome, Edge, Firefox, or Safari).
+5. If the problem affects everyone at your organisation simultaneously, it may be a network or firewall issue. Contact your IT department to confirm that `*.botlhale.ai`, `*.botlhale.xyz`, and `*.amazonaws.com` are all reachable on your network. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so a firewall that blocks it leaves the platform loading while audio playback and template downloads fail.
+
+---
+
+**Problem:** The platform runs slowly or charts take a long time to load.
+
+**Cause:** Too many browser tabs are open, the device does not meet recommended specifications, or the selected date range is returning a very large dataset.
+
+**Solution:**
+1. Close unnecessary browser tabs.
+2. Clear the browser cache.
+3. Narrow the date range or scope on dashboards and report views.
+4. Use Chrome or Edge (Chromium-based) for the best performance.
+5. If the device is older or low on memory, try the same view on another machine to confirm whether the slowdown is device-related.
+
+---
+
+**Problem:** Features behave unexpectedly or parts of a page do not render correctly.
+
+**Cause:** The browser version may be outdated, or a browser extension may be interfering with the platform.
+
+**Solution:**
+1. Update your browser to the latest stable version.
+2. Disable all extensions and reload the page.
+3. If the problem only appears in one browser, try a different supported browser to confirm whether it is browser-specific.
+4. If the issue persists across multiple browsers and devices, contact support with a description of the behaviour and a screenshot.
+
+---
+
+## Need Help?
+
+If this guide does not resolve your issue, contact **support@botlhale.ai**. Include:
+
+- Browser type and version
+- Operating system
+- A clear description of the issue and the steps that led to it
+- Screenshots or any error messages displayed on screen
