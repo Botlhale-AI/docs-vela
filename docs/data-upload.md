@@ -46,7 +46,7 @@ call_001.mp3,John Smith,Sales Team,Sales,inbound,sales;product_inquiry
 call_002.wav,Mary Jones,Support Team,Customer Service,outbound,follow_up;resolution
 ```
 
-![metadata csv](../img/screenshots/calls/metadata.png)
+![The Add Metadata modal on the Bulk Upload page, listing the metadata.csv columns above Download Template](../img/screenshots/calls/metadata.png)
 
 | Column | Description | Example |
 | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ For the complete specification, including size limits, see [System Requirements]
 
 ### API Upload
 
-Upload call recordings or chat data programmatically via the Vela API.
+Upload call recordings or chat data programmatically via the Vela API. You need an API token first. See the [API Reference](./advanced/api-documentation.md) for how to obtain one, and for the full request and response formats.
 
 **Call recordings endpoint:** `https://api.botlhale.xyz/asr/async/upload/vela`
 
@@ -160,13 +160,13 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 |------|---------|------------|
 | Single audio upload | WAV, MP3 | 1 GB |
 | Bulk upload (archive) | WAV or MP3 + metadata.csv, in a ZIP | 3 GB |
-| Single chat upload | CSV | 1 MB recommended |
-| Bulk chat upload | JSON (Vela schema) | 1 MB recommended |
+| Single chat upload | CSV | 1 MB |
+| Bulk chat upload | JSON (Vela schema) | 1 MB |
 
-Files above the limit are rejected before the upload starts, with a "file too big" message.
+Audio files above their limit are rejected before the upload starts, with a "file too big" message.
 
 :::note Chat file size
-The chat upload page advises a 1 MB maximum. The uploader itself accepts larger files, but keep to the stated guidance. Split large exports into several files rather than uploading one big one.
+The chat upload page states a 1 MB maximum. Split large exports into several files rather than uploading one big one. A failed upload then costs you one small file rather than the whole export.
 :::
 
 ---
@@ -179,15 +179,23 @@ Processing time depends on file length, audio quality, and current server load. 
 
 ---
 
+## Confirm It Arrived
+
+Open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed. A bulk upload also shows a results screen naming any rows it could not process, so read that before assuming the whole batch succeeded.
+
+Until processing finishes, an interaction has no transcript, no score, and no analysis. Give it time before treating a missing score as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
+
+---
+
 ## Troubleshooting
 
 | Problem | Likely cause | Solution |
 | :--- | :--- | :--- |
-| Upload fails | Unsupported format or file too large | Use WAV or MP3, and keep the ZIP under 3 GB |
+| Upload fails | Unsupported format or file too large | Use WAV or MP3. Keep a single call under 1 GB and a ZIP under 3 GB |
 | Chat upload fails | The file format does not match the tab. **Upload** takes CSV, **Bulk Upload** takes JSON | Check which tab you are on, then supply that format |
 | Bulk chat upload fails | Malformed JSON, or JSON that does not match the Vela schema | Validate the JSON, and confirm every message has `message`, `time`, and `sender` |
 | Processing fails | Poor audio quality or corrupted file | Verify the file plays locally before uploading |
-| Slow processing | Large batch or peak server load | Upload during off-peak hours, or split large batches |
+| Slow processing | Large batch or peak server load | Split large batches, and run a big historical import overnight |
 
 ### Bulk Metadata Errors
 
@@ -199,8 +207,13 @@ A bulk upload checks the `metadata.csv` before it processes anything. If it retu
 | `Mismatch between .wav/.mp3 files and CSV entries` | A `filename` in the CSV is not in the ZIP, or a file in the ZIP is not listed | Make every `filename` match a file in the ZIP exactly, including the extension |
 | `Invalid direction value in CSV` | A `direction` value is not `inbound`, `outbound`, or blank | Use `inbound`, `outbound`, or leave it blank |
 | `Agent 'X' cannot be created without a team` | The CSV names a new agent with no team | Add that agent's `team` and `department` to the row |
+| `Department name 'X' exceeds the maximum length of 30 characters` | A new department or team name is too long. The same limit applies to both | Shorten the name to 30 characters or fewer |
+| `Team name 'X' contains invalid characters` | The name uses a character outside the allowed set | Use letters, numbers, spaces, hyphens, underscores, or ampersands only |
+| `You are trying to create a new department but you don't have permissions to do that` | Creating a department needs organisational access, and creating a team needs departmental or organisational access | Ask an administrator to create it first, or choose the skip option during import |
 
-If the CSV names a department that has not been created in Vela yet, the upload can create it only when you have organisation-level access. New department names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands.
+A bulk upload can create departments and teams that the CSV names but Vela does not have yet, within your own access level. Creating a department needs organisational access. Creating a team needs departmental or organisational access.
+
+New department and team names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands. A name containing a slash, apostrophe, or full stop is rejected.
 
 ---
 
