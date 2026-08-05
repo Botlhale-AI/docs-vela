@@ -5,7 +5,7 @@ type: how-to
 ---
 
 # Monitor Agent Performance
-The Vela platform gives Team Leads and Administrators the tools to track agent performance, identify skill gaps, and implement targeted coaching. By combining the **Dashboard** for trends and the **Agents** section for detail, you can move from reactive to proactive performance management.
+The Vela platform gives Team Leads and Administrators the tools to track agent performance, identify skill gaps, and implement targeted coaching. Use the **Dashboard** for trends across a team, and the **Agents** section for detail on one person.
 
 ---
 
@@ -55,7 +55,7 @@ The **Agents** section lets you dive into individual performance details, compar
 2.  Click **Filter** to narrow the list. The **Filter By** modal covers **Department**, **Team**, **Strengths**, **Weaknesses**, a **Total Calls** range, and a **Rank** range. Click **Apply**, or **Clear All Fields** to reset.
 3.  Click **Sort By** to order the table. Choose **Ascending** or **Descending**, then sort on Name, Team, Department, Interactions, Score, Strength, Weakness, or Rank, and click **Save Changes**. Sorting by **Score** ascending puts the agents who need coaching first at the top.
 
-Use **Export** to take the table away as a file, and **Board View** to switch layout.
+Use **Export** to download the table, as a PDF or as a CSV, and **Board View** to switch from the table to a card layout.
 
 ![The Performance Overview tab, listing agents with their score, strength, and weakness](../../img/screenshots/performance/performance-5.png)
 ![The Filter By modal, showing the department, team, strength, and weakness filters](../../img/screenshots/performance/performance-7.png)
@@ -67,7 +67,7 @@ Use **Export** to take the table away as a file, and **Board View** to switch la
 Click **View** in the agent's row to open their individual performance page.
 
 * **View Individual Agent Scores and Rankings:** Track their **Overall Score** against the **Team Overall Score**, and how they rank against their peers.
-* **Track Strengths and Weaknesses:** The system highlights which scorecard categories are their strongest and weakest points based on your organisation's defined criteria.
+* **Track Strengths and Weaknesses:** The system highlights which scorecard categories are their strongest and weakest points based on your organisation's defined criteria. Categories come from the **Category** field on each scorecard question, so how you group your questions decides what a strength or weakness can be. See [How Scoring Works](../explanation/how-scoring-works.md).
 * **Check Agent Scorecard Results:** Review the agent's performance across the categories defined in your organisation's Agent Scorecard.
 
 Voice profiles, which improve AI accuracy and speaker separation in transcripts, are managed separately under **Agents → Agent Details**.
@@ -85,7 +85,7 @@ Use the Dashboard to understand whether an agent is an outlier or part of a broa
 
 Turn what you see into something you can share with management. Build a report over a date range with the metrics that matter, for example Average Agent Score and Sentiment Distribution, and schedule it to run daily, weekly, or monthly so managers receive it automatically. For the full steps, see [Generate Reports](./custom-reporting.md).
 
-To export the performance table itself, use the export option in the **Agents** section.
+To export the performance table itself, use **Export** on **Agents → Performance**, described above.
 
 ---
 

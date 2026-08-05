@@ -19,7 +19,7 @@ Click **Notifications** in the left sidebar. The page is divided into tabs:
 | **Comments** | Comments added to interactions you are involved with. |
 | **Reports** | Reports that have finished generating, whether one-time or scheduled. |
 
-The **Alerts** tab appears only on plans that include Smart Search.
+The **Alerts** tab appears only on plans that include Smart Search. On a [Lite](../reference/glossary.md#lite) edition the page opens on **Comments** instead.
 
 Unread notifications are also indicated in the top navigation bar, so you can see at a glance whether anything new has arrived.
 

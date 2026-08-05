@@ -74,7 +74,17 @@ For large teams or detailed comparison, start with the **Table** chart to review
 ## 3. Generate or Schedule
 
 - On the **Create One-Time Report** tab, click **Create**. The report generates immediately and opens in the Reports list.
-- On the **Schedule Recurring Report** tab, click **Schedule Report**. Vela then runs it on the schedule you set. Your schedules appear in the Reports list, where you can review and remove them.
+- On the **Schedule Recurring Report** tab, click **Schedule Report**. Vela then runs it on the schedule you set. Your schedules appear on the **Scheduled Reports** tab of the Reports list, where you can review and delete them.
+
+:::note A schedule cannot be edited
+To change a report's frequency, metrics, or filters, delete the schedule and create a new one.
+:::
+
+### Who Is Told When a Report Is Ready
+
+A finished report is not emailed as a file. Vela notifies the other people in your organisation and links them to it, and each person is notified according to their own **Settings → Notifications** preferences: in the platform, by email, or not at all. Those on a batched email interval receive it in their next digest rather than immediately.
+
+If a scheduled run finds no interactions in its date range, Vela emails you to say the report could not be generated, and the schedule continues to its next run.
 
 ![The Schedule Report button at the foot of the recurring report form](../../img/screenshots/report/schedule_report2.png)
 
