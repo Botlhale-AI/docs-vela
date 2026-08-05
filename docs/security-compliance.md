@@ -1,5 +1,6 @@
 ---
 id: security-compliance
+sidebar_position: 5
 title: Security and Compliance
 type: reference
 ---
@@ -29,7 +30,7 @@ These are the controls your own administrators configure and use.
 ### Signing In
 
 * Vela supports Google and Microsoft sign-in. Where an organisation uses either, passwords are held by that identity provider and the **Security** tab is hidden in Vela.
-* Passwords set in Vela must be at least 8 characters and include a letter, a number, and a special character. They are stored hashed, never in plain text.
+* Passwords set in Vela must meet a minimum length and mix of characters, listed in [Password Requirements](./settings-config/account-security.md#password-requirements). They are stored hashed, never in plain text.
 * Sessions expire after 24 hours, after which you sign in again.
 
 ### Controlling What People See
@@ -109,3 +110,9 @@ For a security questionnaire, an audit summary, or any detail not covered here, 
 - [Settings Access by Role](./settings-config/access-control.md): the roles and access levels that govern what people see
 - [Organisation Configuration](./settings-config/organisation-configuration.md): choose which sensitive entities are masked
 - [Access Requests](./settings-config/access-requests-audits.md): how access to masked content is granted and recorded
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

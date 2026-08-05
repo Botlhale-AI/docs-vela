@@ -27,7 +27,7 @@ The tabs are listed below in the order they appear on the page.
 | **Users** | Edit, within your access level | View, within your access level | No access | Add and edit accounts, and manage departments and teams. |
 | **Requests** | Edit | No access | No access | Approve or decline requests to view redacted information. |
 
-![The Settings tab bar as an administrator sees it, showing all six tabs](../../img/screenshots/settings/notification.png)
+![The Settings tab bar as an administrator sees it: Account, Organisations, Notifications, Security, Users, and Requests](../../img/screenshots/settings/settings-tabs.png)
 
 Everything in the Edit and View columns applies to your own account and your own access level, not to the organisation as a whole.
 
@@ -49,7 +49,7 @@ Administrators hold every administrative right in the platform, limited to what 
 * **Redaction:** Reveal masked information on any interaction through **Review Redacted Info**, without raising a request.
 * **Requests:** Approve or decline other users' requests through the **Requests** tab. See [Access Requests](./access-requests-audits.md).
 
-Deactivating an account is not a deletion. The user can no longer sign in, but their record stays and can be reactivated.
+Removing an account is a deactivation, not a deletion. The control is a bin icon and the prompt reads **Delete User**, but the record stays in place: the user can no longer sign in, and an administrator brings them back with **Show Deleted Users** and **Reactivate**. See [User and Team Management](./user-management.md).
 
 ### 2. User
 

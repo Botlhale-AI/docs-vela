@@ -142,6 +142,8 @@ The package name is shown at the bottom of the page. Click **show package detail
 | **Agent Scorecard Limit** | The number of Agent Scorecards your organisation can hold. |
 | **Pain Points Limit** | The number of [pain points](../reference/glossary.md#pain-point) your organisation can hold. |
 
+Your edition also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
+
 To change your package, contact **support@botlhale.ai**. It is set outside Settings.
 
 ---
