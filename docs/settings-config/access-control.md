@@ -1,54 +1,95 @@
 ---
 sidebar_position: 0
 title: Settings Access by Role
+type: reference
 ---
 
-# Platform Settings Access by Role
+# Settings Access by Role
+Which Settings tabs you see, and whether you can change anything on them, depends on two things: your **role** and your **access level**.
 
-The **Administration and Configuration** section contains sensitive data and critical system settings. Access to different tabs and functionality within the Settings menu is strictly determined by your user role.
+* **Role** is `admin`, `user`, or `agent`. It decides what you are allowed to do.
+* **Access level** is organisational, departmental, or team. It decides how much of the organisation you see. The field is labelled **Access** in the product.
 
-This guide outlines which roles can view, edit, or manage the features within each main Settings category.
+The two combine. An administrator with departmental access holds every administrative right, but only over their own department. See the [Glossary](../reference/glossary.md#access-level).
 
 ---
 
-## Settings Menu Breakdown by User Role
+## Settings Tabs by Role
 
-The table below shows which tabs are visible to each user role when navigating the main Settings menu.
+The tabs are listed below in the order they appear on the page.
 
-| Settings Tab | Administrator | Team Lead | Agent | Primary Purpose |
+| Settings Tab | Administrator | User | Agent | Purpose |
 | :--- | :--- | :--- | :--- | :--- |
-| **Account** | ✅ **Full View** | ✅ **Full View** | ✅ **Full View** | View personal details and current org (Name, Email). |
-| **Security** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | ✅ **Full View/Edit** | Change user password. |
-| **Organisations** | ✅ **Full Edit** | ✅ **View** (Own Scope only) | ❌ **No Access** | Manage organisation profile, usage limits, and score boundaries. |
-| **Notifications** | ✅ **Full Edit** | ✅ **Full Edit** | ❌ **No Access** | Configure email and in-platform notifications. |
-| **Users** | ✅ **Full Edit** | ✅ **View** (Own Scope only) | ❌ **No Access** | Create, manage, and assign roles/teams to user accounts. |
-| **Requests** | ✅ **Full Edit** (Process/Approve) | ❌ **No Access** | ❌ **No Access** | Track and process requests for access to redacted information. |
+| **Account** | View | View | View | Personal details and current organisation. Read-only. |
+| **Organisations** | Edit, with organisational access. View otherwise. | View | No access | Organisation profile, duration allocation, score boundaries, redaction, and package limits. |
+| **Notifications** | Edit | Edit | No access | Choose which in-app and email notifications you receive. |
+| **Security** | Edit | Edit | Edit | Change your password. Hidden for SSO users. |
+| **Users** | Edit, within your access level | View, within your access level | No access | Add and edit accounts, and manage departments and teams. |
+| **Requests** | Edit | No access | No access | Approve or decline requests to view redacted information. |
+
+![The Settings tab bar as an administrator sees it, showing all six tabs](../../img/screenshots/settings/notification.png)
+
+Everything in the Edit and View columns applies to your own account and your own access level, not to the organisation as a whole.
+
+:::note Agents use the Agent Portal
+Agents sign in to the separate Agent Portal, not the main platform. Its Settings page has two tabs, **account** and **security**, and Security is hidden for SSO users there too. Agents never see the other tabs.
+:::
 
 ---
 
-## Role Permissions Summary
+## What Each Role Can Do
 
-### 1. Administrator (Full Control)
+### 1. Administrator
 
-Administrators have full system access and management capabilities.
+Administrators hold every administrative right in the platform, limited to what their access level covers.
 
-* **User Management:** Can create, edit, and delete all user accounts, including other Administrators.
-* **Organisational Structure:** Manages the hierarchical structure (Organisation, Departments, Teams).
-* **Configuration:** Sets critical system defaults, such as **Agent Score Boundaries**, **Redactable Entities**, and **Duration Usage Settings** (Halt/Continue call analysis).
-* **Auditing:** Processes and resolves access requests through the **Requests** tab.
+* **Users:** Add, edit, and deactivate accounts, including other administrators. The list only shows accounts within your access level, and the Access options you can grant stop at your own level. An administrator with departmental access cannot create an organisational user.
+* **Structure:** Create and edit departments and teams. Creating a department requires organisational access. Creating a team requires organisational or departmental access.
+* **Organisation settings:** Set the score boundaries, redactable entities, duration usage policy, and agent report schedule. Changing these requires **both** the administrator role and **organisational** access. An administrator with departmental or team access sees the settings but cannot save changes.
+* **Redaction:** Reveal masked information on any interaction through **Review Redacted Info**, without raising a request.
+* **Requests:** Approve or decline other users' requests through the **Requests** tab. See [Access Requests](./access-requests-audits.md).
 
-### 2. Team Lead (Scoped Management)
+Deactivating an account is not a deletion. The user can no longer sign in, but their record stays and can be reactivated.
 
-Team Leads have extensive access to features relevant to managing their assigned agents and team performance.
+### 2. User
 
-* **User Visibility:** Can view user details within their assigned **scope** (Team, Department, or Organisation).
-* **Request Initiation:** Can *make* requests for access to redacted information (via another section), but **cannot approve them** (they cannot see the **Requests** tab).
-* **Organisations Tab:** Can only **view** organisation details, allocated usage, and score boundaries; they **cannot edit** these settings.
+The User role covers day-to-day work: reviewing interactions, coaching agents, and reporting. Team leads and QA managers are normally given this role.
 
-### 3. Agent (Personal Account Only)
+* **Users:** See the user list and the Org Table within their access level, but no controls that add, edit, or deactivate an account.
+* **Organisation settings:** Open the **This Org** sub-tab and read every setting on it, including the score boundaries and package limits. Nothing on it can be saved.
+* **Redaction:** By default, raise a request per interaction with **Request Redacted Access**. A request covers that one interaction only. An administrator can grant **View Redactions** on the account, after which the user reveals masked information themselves through **Review Redacted Info**.
+* **Requests:** Cannot see the **Requests** tab, so cannot approve anything, including their own request.
 
-Agents have the most restricted access, focused primarily on their individual security and performance.
+### 3. Agent
 
-* **Account Access:** Limited to the **Account** and **Security** tabs to manage their personal details and password.
-* **No Configuration:** Cannot view or access any configuration settings related to the organisation, users, or quality thresholds.
-* **Performance:** All performance data is viewed through their dedicated **Agent Portal**.
+Agents do not use the main platform. They sign in to the **Agent Portal** and work entirely within it.
+
+* **Account and password:** The Agent Portal has its own **account** and **security** tabs. Security is hidden for SSO users.
+* **No configuration:** No access to organisation settings, users, teams, or quality thresholds.
+* **Performance:** Scores, courses, and coaching are all viewed in the Agent Portal.
+
+---
+
+## Access Levels
+
+Access level decides how much of the organisation a role applies to.
+
+| Access level | Sees |
+| :--- | :--- |
+| **Organisational** | Every department and team in the organisation. |
+| **Departmental** | Their own department, and the teams inside it. |
+| **Team** | Their own team. |
+
+This filtering applies to the user list, the Org Table, and the filter options offered on them. It is set per user on the **Access** field, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
+
+---
+
+## Related
+
+- [User and Team Management](./user-management.md): set a person's role and access level
+- [Account and Security](./account-security.md): what each user manages on their own account
+- [Access Requests](./access-requests-audits.md): approve requests to view redacted information
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

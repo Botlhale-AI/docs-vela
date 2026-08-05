@@ -1,14 +1,17 @@
 ---
 sidebar_position: 4
-title: Access Requests & Audits
+title: Access Requests
+type: reference
 ---
 
-# Access Requests and Audits
+# Access Requests
 
-The **Requests** tab allows Administrators to manage the audit trail of sensitive data access. This ensures regulatory compliance by systematically tracking when users are granted permission to view data that is typically redacted.
+The **Requests** tab is where Administrators process requests to view redacted information. When a user without **View Redactions** needs to see masked content in a call, they raise a request here for an Administrator to approve or decline.
 
 :::warning ACCESS RESTRICTION
-This tab is **only visible to and manageable by Administrators**. Team Leads can *initiate* a request for redacted information in another section, but they cannot view, process, or approve requests here.
+This tab is **only visible to and manageable by Administrators**. A user without **View Redactions** initiates a request from within a call, but only Administrators can view, process, and approve requests here.
+
+Transcripts are masked by default for everyone. Administrators, and users granted **View Redactions**, reveal masked content on demand, so they do not raise requests themselves. The permission is set per account in **Settings → Users**, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
 :::
 
 ---
@@ -19,29 +22,43 @@ The **Requests** tab is divided into two sub-sections to manage the workflow of 
 
 ### A. Pending Requests (Action Required)
 
-This section lists all requests that have been submitted by users but have **not yet been processed** by an Administrator.
+Requests that users have submitted and that have **not yet been processed**.
 
-* **Administrator Task:** This is the primary queue where Administrators review new requests and decide to **Approve** or **Decline** the access.
+This is your working queue. Review each request and either **Approve** or **Decline** it.
 
-### B. Completed Requests (Audit Trail)
+### B. Completed Requests
 
-This section lists all requests that have been fully processed and resolved, serving as the official audit trail.
+Requests you have already processed, kept as a record of each one.
 
 | Field | Description | Status Indication |
 | :--- | :--- | :--- |
-| **Request Type** | The nature of the request (e.g., Access to Redacted Information). | N/A |
-| **Timestamp** | The date and time the request was processed. | N/A |
+| *(relative time)* | How long ago the request was submitted, for example "2 hours ago". It sits beside the heading **Request for Access to Redacted Information** rather than under a label. | N/A |
 | **Requested By** | The name and email address of the user who initiated the request. | N/A |
-| **Call ID** | The unique identifier of the specific call or item the user requested access to. | N/A |
+| **Call ID** | A link to the specific call the user requested access to. | N/A |
 | **Status** | The final outcome of the request. | **Approved** (Green) or **Declined** (Red). |
-| **Completed By** | The Administrator who finalised the request. | N/A |
+| **Comment** | An optional note added by the requester when submitting. | N/A |
+| **Completed By** | The name and email of the Administrator who approved or declined the request. | N/A |
 
 ---
 
-## 2. Importance for Compliance
+{/* SCREENSHOT: The Completed requests table, showing the Submitted, Requested By, Call ID, Status, Comment, and Completed By columns with at least one Approved and one Declined row so both status colours appear. Save as img/screenshots/settings/requests-completed.png */}
 
-The Requests tab is critical for maintaining data protection and auditability:
+## 2. Why It Matters
 
-* **Redaction Policy:** Vela automatically redacts sensitive entities (like Credit Card numbers, Phone Numbers, and ID Numbers) based on Administrator configuration.
-* **Compliance:** This workflow ensures that temporary access to unredacted data is only granted with explicit, logged authorisation from an Administrator.
-* **Audit Logging:** The **Completed** section provides an immutable record of who requested access to specific sensitive data and who approved or declined that request, supporting legal and internal auditing requirements.
+The Requests tab keeps access to redacted information controlled and recorded:
+
+* **Redaction:** Vela masks the entities an Administrator selects in the organisation's redaction settings, such as Credit Card, Phone Number, ID Number, and Email.
+* **Controlled access:** A user without **View Redactions** sees unredacted content only after an Administrator approves their request.
+* **A record of each request:** The **Completed** tab keeps every processed request, showing who asked, which call it was for, and who approved or declined it.
+
+---
+
+## Related
+
+- [User and Team Management](./user-management.md): grant View Redactions so a user does not need to ask
+- [Organisation Configuration](./organisation-configuration.md): choose which entities are masked
+- [Settings Access by Role](./access-control.md): why only administrators see this tab
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

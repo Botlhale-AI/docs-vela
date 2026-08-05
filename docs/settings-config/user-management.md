@@ -1,68 +1,167 @@
 ---
 sidebar_position: 3
-title: User & Team Management
+title: User and Team Management
+type: reference
 ---
 
 # User and Team Management
-
-The **Users** tab is the control centre for managing individual user accounts, assigning roles, and structuring the organisation's teams and departments.
+The **Users** tab has two sub-tabs. **Users** lists every account in your organisation and holds the controls for adding, editing, and deactivating them. **Org Table** shows the departments and teams those accounts sit in.
 
 :::warning ACCESS RESTRICTION
-This entire tab and its features are **only visible to and editable by Administrators**. Team Leads and Agents cannot access this section.
+The **Users** tab is hidden from the Agent role. Administrators get the **Add User** control and the **Actions** column. Users with the User role see the same lists but none of the controls that change an account.
+
+What you see is also capped by your own access level. Organisational access shows the whole organisation, departmental access shows your department, and team access shows your team. See [Settings Access by Role](./access-control.md).
 :::
 
 ---
 
-## 1. Managing Individual User Accounts
+## 1. The Users Sub-Tab
 
-The **Users** sub-tab provides a comprehensive list and management tools for every account in your organisation.
+### A. Finding Users
 
-### A. Finding and Adding Users
+* **Search:** Matches on name, email address, department, and team. Matching text is highlighted in the results.
+* **Filter:** Opens the **Filter By** modal. The fields you get depend on your own access level:
+  * **Department**, for organisational access only.
+  * **Team**, for organisational or departmental access. Teams are listed as the team name followed by its department.
+  * **Role**, `admin` or `user`. These are mutually exclusive, so selecting one clears the other.
 
-* **Search Bar:** Quickly find specific users by typing in a name or email address.
-* **Filter:** Open options to filter the list by **Department**, **Team**, or **Role**.
-* **Add User:** Click the **Add User** icon to create a new user account or invite a team member.
-* **Show Deleted Users:** View previously deactivated accounts.
+  Click **Apply** to filter, or **clear all fields** to reset.
+* **Show Deleted Users:** Adds deactivated accounts to the list, shown faded. The button then reads **Hide Deleted Users**.
 
-### B. Configuring User Permissions
+If nothing matches, the table reads `No results found.`
 
-When adding or editing a user, Administrators define their access and visibility:
+{/* SCREENSHOT: The Users sub-tab with several rows, showing the Search box, Add User and Filter controls, the Show Deleted Users toggle, and the full column set including View and View Redactions. Save as img/screenshots/settings/users-table.png */}
 
-| Setting | Description | Role Options |
+### B. The User Table
+
+| Column | Description |
+| :--- | :--- |
+| **User** | The user's name. |
+| **Email Address** | The address they sign in with. |
+| **Department** | The department they are assigned to. Empty for organisational access. |
+| **Team** | The team they are assigned to. Empty for organisational and departmental access. |
+| **Role** | `admin` or `user`. |
+| **View** | The user's access level: `organisation`, `department`, or `team`. |
+| **View Redactions** | `Yes` or `No`. Always `Yes` for administrators. |
+| **Actions** | Edit and delete. Shown to administrators only. |
+
+### C. Adding a User
+
+Click **Add User** to open the modal. It is available to administrators only.
+
+| Field | Notes |
+| :--- | :--- |
+| **Name** | The user's full name. |
+| **Email Address** | Must be unique across the platform. |
+| **Access** | **Organisational**, **Departmental**, or **Team**. |
+| **Department** | Shown when Access is Departmental or Team. |
+| **Team** | Shown when Access is Team. Only teams in the selected department are listed. |
+| **Role** | **Admin** or **User**. |
+
+Every field is required, so the modal reports an error if one is missing. Click **Add User** to finish, or **Close** to abandon the form. Vela emails the new user an invitation containing a generated password and a link to confirm their address. The email recommends they change the password after signing in.
+
+:::note You cannot grant more than you hold
+The Access options offered are limited to your own access level. An administrator with departmental access can create departmental and team users, but not organisational ones. An administrator with team access can only create team users.
+:::
+
+![The Add User modal, with the name, email, access and role fields](../../img/screenshots/settings/users_add.png)
+
+The Add User modal has no **View Redactions** field. New users start without it, and you grant it by editing the account afterwards.
+
+### D. Editing a User
+
+Click the pencil icon in the **Actions** column. The modal is titled **Edit** followed by the user's name, and holds **Access**, **Department**, **Team**, **Role**, and **View Redactions**. Click **Apply** to save.
+
+Changing the department clears the team selection, because the team list is filtered to the department you choose.
+
+To change a name or email address, contact **support@botlhale.ai**. Those two fields are set outside the platform.
+
+### E. Deleting and Reactivating
+
+Click the bin icon in the **Actions** column and confirm on the **Delete User** prompt. This deactivates the account rather than erasing it, so the user can no longer sign in but their record stays in place.
+
+To bring an account back, click **Show Deleted Users**, find the row, and click **Reactivate**.
+
+---
+
+## 2. Role, Access, and View Redactions
+
+These three settings decide what a user can do and how much they can see.
+
+| Setting | Values | What it controls |
 | :--- | :--- | :--- |
-| **Role** | The level of administrative access and permissions granted. | `admin` or `user`. |
-| **View** | The **scope** of data the user can view across the platform. | `organisation`, `department`, or `team`. |
-| **View Redactions** | Permission to view transcripts *before* sensitive data is masked. | `Yes` (can see sensitive data) or `No` (sees redacted data). |
+| **Role** | `admin` or `user` | Administrative rights. Administrators configure the organisation, manage users, and process access requests. |
+| **Access** | organisational, departmental, or team | The user's access level: how much of the organisation's data they see. Shown in the **View** column. |
+| **View Redactions** | `Yes` or `No` | Whether the user can reveal masked information themselves. |
+
+Transcripts are masked for everyone by default, administrators included. **View Redactions** decides how a user gets to the unmasked version. With `Yes`, they reveal it themselves through **Review Redacted Info**. With `No`, they raise a request for each interaction and wait for an administrator to approve it. See [Access Requests](./access-requests-audits.md).
+
+Administrators hold this permission by default. The **View Redactions** column reads `Yes` for every administrator, and the field disappears from the edit modal when you set the role to `admin`.
 
 ---
 
-## 2. Managing Organisational Structure
+## 3. The Org Table Sub-Tab
 
-The **Org Table** sub-tab provides a hierarchical view of the Departments and Teams within your organisation.
+The Org Table shows the organisation, its departments, and its teams side by side, with the users assigned at each level.
 
-### A. Viewing the Hierarchy
+![The Org Table, with the Create menu open on Department and Team](../../img/screenshots/settings/create-dept-team.png)
 
-The table is organised into three main columns, showing nested relationships:
+### A. Reading the Table
 
-1.  **Organisation:** The top level, also listing users who are members but currently unassigned to a team or department.
-2.  **Departments:** All created departments (e.g., Load Dept).
-3.  **Teams:** All teams, typically nested under a Department, showing their member lists (e.g., New Team (Test) has Khaya as a member).
+| Column | Contains |
+| :--- | :--- |
+| **Organisation** | The organisation name, then the users whose access level is organisational. |
+| **Departments** | Each department with its colour marker, then the users whose access level is departmental. |
+| **Teams** | The teams in each department, then the users whose access level is team. |
 
-:::tip Unassigned Users
-If a Department or Team is listed with the label **"No Users"**, it means the structure exists but no user accounts are currently assigned to it.
-:::
+`No Users` marks a level that exists but has nobody assigned at it. `No Departments` means the organisation has none yet.
 
-### B. Creating New Structures
+The search box filters departments by name. It does not search users.
 
-* **Create:** Use the **Create** icon to initiate the process of establishing a new **Department** or a new **Team** within the organisational structure.
+Next to each user is a menu with **View More**, which opens their name, email, role, department, team, and the dates the account was created and last updated.
+
+### B. Creating a Department
+
+Click **Create** and choose **Department**. Creating departments requires organisational access.
+
+| Field | Notes |
+| :--- | :--- |
+| **Department Name** | Must not match an existing department. |
+| **Create New Team** | Selected by default. Enter a **Team Name** for the department's first team. |
+| **Select a Team** | Shown when **Create New Team** is cleared. Moves an existing team into the new department. |
+| **Colour** | Fourteen swatches. Each department must have a colour no other department is using. |
+
+Click **Add Department** to finish. Every department needs at least one team, so supply a new one or move an existing one across.
+
+### C. Creating a Team
+
+Click **Create** and choose **Team**. Creating teams requires organisational or departmental access.
+
+Enter the **Team Name**, choose the **Department Name** it belongs to, and click **Create team**.
+
+### D. Editing a Department or Team
+
+Open the menu next to the department or team and click **Edit**.
+
+* **Edit Department:** Change the name or the colour.
+* **Edit Team:** Change the name, or move the team to a different department. Moving a team takes all of its users and agents with it into the new department.
 
 ---
 
-## 3. Bulk Importing Agents
+## 4. Importing Agents in Bulk
 
-While individual user creation is done here, the **Bulk Upload** feature for agents is found under the **Agent Management** feature.
+Agents are separate from users. They have their interactions analysed but do not sign in to the platform, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
 
-When bulk importing agents via a CSV file, Administrators have two choices regarding new teams and departments:
+For the columns, the template, and how unmatched departments and teams are handled, see [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv). For the distinction between an agent and a user, see the [Glossary](../reference/glossary.md#user).
 
-* **Create new departments and teams:** If a department or team in the CSV does not exist in the Org Table, Vela will create them.
-* **Skip agents:** Agents whose teams or departments do not yet exist will be skipped during the import.
+---
+
+## Related
+
+- [Settings Access by Role](./access-control.md): what each role and access level allows
+- [Access Requests](./access-requests-audits.md): what happens when a user without View Redactions asks to see masked content
+- [Organisation Configuration](./organisation-configuration.md): the settings that apply to the whole organisation
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai
