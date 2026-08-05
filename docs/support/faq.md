@@ -16,6 +16,9 @@ A: Vela is a platform that helps call centres analyse conversations, track perfo
 **Q: Who can use Vela?**  
 A: Vela is designed for call centre teams: agents, team leads, and administrators. Team leads and administrators work in the main platform, where what they see depends on their role and access level. Agents sign in to a separate Agent Portal. See [Settings Access by Role](../settings-config/access-control.md).
 
+**Q: A feature in the documentation is missing from my sidebar. Why?**  
+A: Your organisation's edition decides which features appear. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which edition you have.
+
 **Q: What languages does Vela support for transcription?**  
 A: Vela supports all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The platform interface is in English.
 
@@ -36,7 +39,7 @@ A: Vela emails you when processing is complete, depending on your notification s
 A: Processing time depends on call length, audio quality, and current server load. Shorter calls typically complete faster than longer ones. Avoid navigating away from the page during a large bulk upload.
 
 **Q: My upload failed. What should I check?**  
-A: For single uploads, verify the file is a valid WAV or MP3 that plays on your device. For bulk uploads, check that your CSV column names match the template exactly, all files listed in the CSV are present in the ZIP, and the ZIP is within the 3 GB recommended limit.
+A: For single uploads, verify the file is a valid WAV or MP3 that plays on your device, and is under 1 GB. For bulk uploads, check that your CSV column names match the template exactly, all files listed in the CSV are present in the ZIP, and the ZIP is under the 3 GB limit. Files above the limit are rejected before the upload starts.
 
 ---
 
@@ -72,7 +75,7 @@ A: Where Coaching is enabled for your organisation, administrators and team lead
 ## Account & Security
 
 **Q: How do I log in?**  
-A: You can log in using your email and password, or through Single Sign-On (SSO) if your organisation uses Google Workspace or Microsoft Azure AD.
+A: You can log in using your email and password, or with **Sign in with Google** or **Sign in with Microsoft** if your organisation uses Single Sign-On.
 
 **Q: I forgot my password. How do I reset it?**  
 A: On the login page, click **"Forgot your password?"** and enter your email address. Vela emails you a link to reset it.
@@ -81,7 +84,7 @@ A: On the login page, click **"Forgot your password?"** and enter your email add
 A: Vela does not have native MFA. If your organisation uses Single Sign-On (Google or Microsoft), MFA can be enforced through your identity provider. Contact your IT administrator for setup.
 
 **Q: What are the password requirements?**  
-A: Your password must be at least 8 characters and include at least one letter, one number, and one special character (for example `@`, `#`, or `!`).
+A: A minimum length and a mix of character types. See [Password Requirements](../settings-config/account-security.md#password-requirements) for the full list and how to change your password.
 
 ---
 
@@ -98,3 +101,10 @@ A: Contact **support@botlhale.ai**. Include your browser type and version, opera
 - [Team Lead Quick Start](../getting-started/quick-start/team-lead-quick-start.md): get up and running
 - [Coaching Portal Documentation](https://docs-coaching.botlhale.xyz): how agents use their own portal
 - [Troubleshooting Guide](./troubleshooting-guide.md): step-by-step solutions to common issues
+- [Video Tutorials](./video-tutorials.md): the main workflows shown rather than written
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

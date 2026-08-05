@@ -56,7 +56,7 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 **Cause:** The new password does not meet the platform's requirements.
 
 **Solution:**
-Ensure your password is at least 8 characters long and includes at least one letter, one number, and one special character (for example, `@`, `#`, or `!`).
+Check your password against the rules in [Password Requirements](../settings-config/account-security.md#password-requirements). The most common causes are a missing special character or a password under the minimum length.
 
 ---
 
@@ -127,7 +127,7 @@ Ensure your password is at least 8 characters long and includes at least one let
 
 **Problem:** Bulk upload times out before completing.
 
-**Cause:** The ZIP archive exceeds the recommended 3 GB limit, or the upload connection is too slow.
+**Cause:** The ZIP archive exceeds the 3 GB limit, or the upload connection is too slow.
 
 **Solution:**
 1. Split large batches into smaller ZIP archives, each under 3 GB.
@@ -155,7 +155,7 @@ Ensure your password is at least 8 characters long and includes at least one let
 **Cause:** No active Agent Scorecard exists with a scope that covers the relevant team or department, so the AI has no criteria to score against.
 
 **Solution:**
-1. Ask your administrator to navigate to **Smart Detector → Agent Scorecard** and confirm that an active scorecard exists.
+1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and confirm that an active scorecard exists.
 2. Check the scope of the scorecard. It must cover the department or team the agent belongs to.
 3. Once a scorecard is active, newly processed calls are scored automatically.
 
@@ -225,7 +225,7 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 **Cause:** No active scorecard with the correct scope covers the team or department this agent belongs to.
 
 **Solution:**
-1. Ask your administrator to navigate to **Smart Detector → Agent Scorecard** and create or activate a scorecard.
+1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and create or activate a scorecard.
 2. Ensure the scorecard scope is set to cover the relevant team, department, or organisation.
 
 ---
@@ -238,7 +238,20 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 1. Re-upload the affected interactions so they are processed again against the updated scorecard. Delete the earlier copies first if you do not want duplicates.
 2. For a large number of interactions, contact **support@botlhale.ai**.
 
-The **Rerun Scorecard** button, on the interaction's **Automatic** tab, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.
+The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.
+
+---
+
+**Problem:** An interaction shows a score of 0.0%, with a different percentage in brackets beside it.
+
+**Cause:** The interaction failed a question marked **Auto-Fail**, which fails the whole interaction whatever else went well. The bracketed figure is the score earned on every other question.
+
+**Solution:**
+1. Open the **Scorecard** tab to see which Auto-Fail question failed.
+2. Read the bracketed figure when coaching. An agent who scored `0.0% (90.0%)` did good work and missed one critical step.
+3. If interactions are auto-failing more often than you expect, review which questions have Auto-Fail enabled. It is meant for critical compliance breaches rather than quality issues.
+
+This is working as configured, not a scoring error. See [How Scoring Works](../explanation/how-scoring-works.md).
 
 ---
 
@@ -282,7 +295,18 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 **Solution:**
 1. Review all active Smart Searches and deactivate any that are no longer relevant.
 2. Tighten the phrasing in searches that generate excessive matches.
-3. Prioritise work by sorting the Smart Search list by **results** in descending order, and addressing the searches generating the most matches first.
+3. Prioritise work by sorting the Smart Search list by **Results** in descending order, and addressing the searches generating the most matches first.
+
+---
+
+**Problem:** **New Smart Search** is greyed out and cannot be clicked.
+
+**Cause:** Your organisation has reached the number of Smart Searches its plan allows. Most plans include five. No message explains this on the page.
+
+**Solution:**
+1. Check your allowance under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
+2. Delete a search you no longer need. Setting one to Inactive does not free up room, so it has to be deleted.
+3. If you need more, ask your Account Manager about a higher limit.
 
 ---
 
@@ -377,6 +401,13 @@ This is a characteristic of the source recording and cannot be improved within t
 4. If the issue persists across multiple browsers and devices, contact support with a description of the behaviour and a screenshot.
 
 ---
+
+## Related
+
+- [Frequently Asked Questions](./faq.md): short answers to common questions, rather than steps for a problem
+- [Upload Your Data](../data-upload.md): the upload procedures these entries refer to
+- [How Scoring Works](../explanation/how-scoring-works.md): why a score reads the way it does
+- [System Requirements](../getting-started/system-requirements.md): browsers, formats, and network requirements
 
 ## Need Help?
 

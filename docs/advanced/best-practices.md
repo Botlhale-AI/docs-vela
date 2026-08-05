@@ -32,13 +32,13 @@ Review and update the scorecard when procedures change. Scores based on outdated
 
 ### Smart Search Configuration
 
-Create your most important Smart Searches, particularly the compliance-critical ones, before your first calls are uploaded. Searches only match interactions uploaded after they are activated (unless you enable the Historical Search option at creation time).
+Create your most important Smart Searches, particularly the compliance-critical ones, before your first calls are uploaded. A search matches only the interactions uploaded after it is created, unless you enable **Historical Search** and choose whether it covers all historical calls or a specific date range. That option is available only when you create the search, and cannot be added by editing it later, so a search that needs to cover your archive has to be built with it on.
 
 For compliance monitoring, write search phrases around the specific language your agents are required to use or prohibited from using. For customer experience monitoring, build phrase lists around the real language your customers use when frustrated, escalating, or requesting specific actions. Review the results after your first batch of calls and refine the phrases based on what you see. Early false positives are a normal part of tuning.
 
 Scope each search appropriately. An organisation-wide compliance search is appropriate for a policy that applies to everyone. A search specific to one product line or team should be scoped to that team or department so that results are actionable by the right people.
 
-Keep the number of active searches manageable. A large number of poorly scoped searches generates noise and reduces the value of each alert.
+Keep the number of active searches manageable. Your plan caps how many you can hold, typically five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so spend the allowance on your compliance-critical rules first. A small set of well-scoped searches produces more actionable alerts than a large set of broad ones. See [Search Management](../smart-search-guide.md#search-management).
 
 ---
 
@@ -48,9 +48,9 @@ Keep the number of active searches manageable. A large number of poorly scoped s
 
 Begin each day by reviewing outstanding Smart Search alerts before opening individual interactions. Alerts are interactions your own rules have already flagged, so they are a better starting point than sampling the call list at random.
 
-On **Smart Detector → Smart Search**, sort the list by **results** in descending order to see the most frequently triggered searches first. These often point to systemic issues rather than one-off incidents, and systemic issues merit faster attention.
+On **Smart Detector → Smart Search**, sort the list by **Results** in descending order to see the most frequently triggered searches first. These often point to systemic issues rather than one-off incidents, and systemic issues merit faster attention.
 
-After working through alerts, check the Dashboard for agents whose scores are declining day-over-day or whose sentiment distribution is shifting negative. Use the score distribution and the agent view to identify individuals who need targeted review rather than sampling broadly.
+After working through alerts, check the Dashboard for agents whose scores are declining day-over-day, or whose **Sentiment Distribution** is shifting negative. Use the score distribution and the agent view to identify individuals who need targeted review rather than sampling broadly.
 
 When you review an interaction, always complete the feedback cycle: add a coaching comment, tag the agent so they receive a notification, and mark the interaction as reviewed. An interaction reviewed but not commented on represents a missed coaching opportunity.
 
@@ -97,6 +97,12 @@ After assigning a training course, monitor whether the relevant scorecard item i
 **Coaching** appears in the navigation only when it is enabled for your organisation. If you do not see it, agents receive their performance reports on the schedule set in [Organisation Configuration](../settings-config/organisation-configuration.md#4-agent-performance-sharing) instead.
 :::
 
+### Decide What Agents Can See
+
+Where Coaching is enabled, **Coaching → Preferences → Agent View Permissions** decides whether agents see all of their interactions or only the ones a reviewer has marked as reviewed.
+
+Reviewed-only is the stricter setting and the one worth considering if your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so pick it only if your team keeps up with reviewing. Agree the setting before agents are invited, because changing it later changes what they have already been able to see.
+
 ---
 
 ## Bulk Upload Best Practices
@@ -111,7 +117,7 @@ Ensure that the `agent_name`, `team`, and `department` values in `metadata.csv` 
 
 ### During Upload
 
-Upload large batches outside busy hours, such as evenings or weekends, to reduce the risk of timeouts. Keep batches under the recommended 3 GB limit. If your historical dataset is larger, split it into multiple batches rather than trying to upload everything at once.
+Upload large batches outside busy hours, such as evenings or weekends, to reduce the risk of timeouts. Keep batches under the 3 GB limit, above which the upload is rejected before it starts. If your historical dataset is larger, split it into multiple batches rather than trying to upload everything at once.
 
 Keep the upload page open and do not navigate away during a bulk upload. Monitor the progress indicator and review the results screen when the batch completes.
 
@@ -163,3 +169,9 @@ Review user access levels at least twice a year and whenever there is a change i
 - [Set Up Smart Search](../smart-search-guide.md): building and managing automated searches
 - [Build Your Knowledge Base](../knowledge-base-guide.md): uploading and linking documents
 - [Troubleshooting Guide](../support/troubleshooting-guide.md): resolving common issues
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

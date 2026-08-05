@@ -12,8 +12,8 @@ Endpoint reference for sending call recordings and chat transcripts to Vela prog
 
 ## Calls
 
-:::tip important
-> You need to include an `Authentication Token` in request headers. Your Account Manager issues your API token. Contact **support@botlhale.ai** if you do not have one.
+:::info Authentication
+Every request needs an `Authorization: Bearer <token>` header. Your Account Manager issues your API token and your organisation's API identifier. Contact **support@botlhale.ai** if you do not have them.
 :::
 
 **Endpoint URL:**
@@ -28,7 +28,7 @@ This endpoint accepts a call recording for processing by Vela. It validates the 
 
 | Parameter      | Requirement | Description                                              |
 |----------------|-------------|----------------------------------------------------------|
-| org_id         | Required    | Identifier for the organisation submitting the call.     |
+| org_id         | Required    | Your organisation's API identifier, issued with your token. It is not the organisation name, and it does not appear in Settings. |
 | metadata       | Optional    | A JSON object containing the information below.          |
 
 All `metadata` fields are optional:
@@ -119,8 +119,8 @@ request.post({
 
 ## Chats
 
-:::tip important
-> You need to include an `Authentication Token` in request headers. Your Account Manager issues your API token. Contact **support@botlhale.ai** if you do not have one.
+:::info Authentication
+Every request needs an `Authorization: Bearer <token>` header. Your Account Manager issues your API token and your organisation's API identifier. Contact **support@botlhale.ai** if you do not have them.
 :::
 
 **POST Request**
@@ -181,8 +181,14 @@ On success the endpoint returns the Vela ID of the new chat. Analysis runs after
 |--------|-------|-------|
 | 404 | `Organisation not found` | `org_id` does not match an organisation. |
 | 400 | `Monthly chats allocation exceeded` | The organisation has used its chat allocation. |
-| 400 | Validation message | A metadata field is invalid and `validate_metadata` is set. |
+| 400 | `Invalid date of chat. Correct format is DD/MM/YYYY, HH:mm:ss` | `date`, or a message `time`, could not be parsed. |
+| 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` is not one of the two accepted values. |
+| 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string. |
+| 400 | `Invalid notify email` | `notifyEmail` is not a valid address. |
+| 400 | `Could not find agent with the provided metadata` | No agent matches `email`, `agent`, or `agent_name`. The same applies to an unmatched `team` or `department`. |
 | 500 | `Something went wrong with the upload` | The request could not be processed. |
+
+The 400 validation errors are returned only when `validate_metadata` is `true`. Without it, an invalid field falls back to a default and the upload succeeds.
 
 Set `notifyEmail` if you want an email when the chat's analysis completes.
 
@@ -240,6 +246,4 @@ print(json.dumps(response.json(), indent=4))
 
 ## Need Help?
 
-:::info
-[Contact us](mailto:support@botlhale.ai) with any questions.
-:::
+**Contact Support:** support@botlhale.ai

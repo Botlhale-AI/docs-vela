@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: Video Tutorials
 type: reference
 ---
@@ -6,6 +7,8 @@ type: reference
 # Video Tutorials
 
 Short video walkthroughs of the main Vela workflows. Watch these to get started, or use them alongside the written guides when you prefer to see a task performed.
+
+The videos are hosted on YouTube. If the players below do not load, your network may block it, and your IT team can allow `youtube.com` and `ytimg.com`. Every workflow shown here is also written up in the guides linked at the foot of this page.
 
 ---
 
@@ -26,6 +29,7 @@ Short video walkthroughs of the main Vela workflows. Watch these to get started,
 
 ## 4. Agent Scorecard
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/xIpKvq829Ms" title="Agent Scorecard" frameborder="0" allowfullscreen></iframe>
+
 ---
 
 ## Related
