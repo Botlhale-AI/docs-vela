@@ -29,9 +29,22 @@ Three consequences follow, and they surprise people:
 
 **Questions marked N/A disappear entirely.** They are removed from both totals, not counted as failures. An interaction where half the scorecard did not apply is scored on the half that did, and is directly comparable to one where everything applied.
 
-**Adding a question changes every future score.** The denominator moves. Scores before and after a scorecard change are not strictly comparable, which is why it is worth recording when you changed it.
+**Adding a question changes every future score.** The denominator moves. Scores before and after a scorecard change are not strictly comparable, so keep your own note of when you changed it. Vela does not record scorecard changes for you.
 
-A short example makes this concrete. Take a four-question scorecard:
+Every question on an interaction takes one of four paths, and between them they explain why one call scores 75% and another reads zero:
+
+```mermaid
+flowchart TD
+    Q("A question on<br/>this interaction") --> A{"Does it apply?"}
+    A -- "No, marked N/A" --> NA("Drops out.<br/>Removed from both totals")
+    A -- Yes --> B{"Does the answer match<br/>the Expected Outcome?"}
+    B -- Yes --> P("Earns its weight")
+    B -- No --> C{"Is it marked<br/>Auto-Fail?"}
+    C -- No --> F("Earns nothing.<br/>Still counts in the total")
+    C -- Yes --> AF("The whole interaction<br/>reads 0.0%")
+```
+
+The sections that follow take each path in turn. A short example makes the arithmetic concrete. Take a four-question scorecard:
 
 | Question | Weight | Outcome |
 | :--- | :--- | :--- |
@@ -51,6 +64,8 @@ Whether the AI can use N/A comes down to the question's **Always Applicable** se
 - **Off** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
 - **On**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
+The default costs something either way. Left Off without a cue in the wording, a question that did not apply is scored No and pulls the score down, which is the same outcome as switching Always Applicable on. Wording the question so the AI can tell when it applies is what actually earns you the N/A.
+
 For questions the AI cannot judge from the transcript, two settings help:
 
 - **Search Type: Manual** hands the question to a reviewer. It stays N/A until they answer.
@@ -66,21 +81,27 @@ This is worth understanding because a mis-set Expected Outcome inverts a questio
 
 ## Changing a scorecard after interactions are scored
 
-A score is fixed when the interaction is processed. Later edits to the scorecard do not re-score interactions that are already done, so a change applies only from that point on. To score older interactions on the new version, upload them again.
+A score is calculated when the interaction is processed and then stored. Editing the scorecard afterwards does not touch interactions that are already scored, so a change applies to new interactions from that point on. An interaction that already has a score keeps it: there is no way to re-score it against your revised scorecard.
 
-Take particular care with **Expected Outcome**. Change it after interactions have been scored, and their stored answers were judged against the old setting, so they look wrong until you re-process them.
+Plan around that rather than against it. Record when you changed the scorecard, and compare periods rather than treating a whole history as one measurement.
 
-If an interaction has no scorecard at all, for example because it was processed before you created one, open it and choose **Rerun Scorecard**.
+**Rerun Scorecard** is a narrower tool than it sounds. It appears only on an interaction with no automatic scorecard at all, for example one processed before you created yours, and it scores that interaction against the questions applying now. It is not offered on an interaction that already has a score.
 
-## Auto-fail is recorded next to the score, not inside it
+Re-uploading a recording does produce a fresh score, because the copy is processed from scratch, but it also leaves you with two interactions for one conversation. Weigh that against starting the new measurement from the change instead.
 
-A question marked Auto-Fail represents something that should invalidate an interaction on its own, such as a regulatory disclosure that was never given.
+Take particular care with **Expected Outcome**. Change it after interactions have been scored, and their stored answers were judged against the old setting, so they read as wrong from then on.
 
-Vela records auto-fail as a **flag alongside the score**, rather than forcing the percentage to zero. An auto-failed interaction still shows what it scored on everything else.
+## Auto-fail shows as zero, with the earned score kept beside it
 
-This is a deliberate choice, and a useful one. Zeroing the number would destroy information. Two auto-failed calls, one that scored 30% on everything else and one that scored 90%, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
+A question marked Auto-Fail represents something that should invalidate an interaction on its own, such as a regulatory disclosure that was never given. Failing one auto-fails the whole interaction.
 
-The same applies to the compliance and quality subtotals, each of which carries its own auto-fail flag.
+An auto-failed interaction reads **0.0%**, with the score the agent earned on everything else in brackets after it. A call showing `0.0% (20.5%)` was auto-failed and scored 20.5% on the rest of the scorecard. A question you mark **N/A** cannot auto-fail an interaction, since it drops out of the scorecard entirely.
+
+Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, and it is the reason the earned score is not thrown away. Two auto-failed calls, one that scored 30% on everything else and one that scored 90%, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
+
+Read the bracketed number alongside the zero. An agent whose scores are all zeros is not necessarily an agent who is failing at everything.
+
+The same applies to the compliance and quality subtotals. Each carries its own auto-fail flag and its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
 
 ## Compliance and quality are two views of one scorecard
 
@@ -90,7 +111,7 @@ The split exists because the two behave differently in practice. Compliance is u
 
 ## Human judgement overrides the AI, by design
 
-When a reviewer changes an outcome, their answer replaces the AI's for that question and the score is recalculated. The original answer stays visible next to the new one.
+When a reviewer changes an outcome, their answer replaces the AI's for that question and the score is recalculated. Nothing is lost in the process. The interaction keeps Vela's original **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, and the scorecard download records both the initial and the current outcome for every question.
 
 The reason for keeping both is accountability rather than nostalgia. A score a human has adjusted is a different kind of claim from one the AI produced alone, and an agent disputing a score is entitled to see which is which. It also lets you audit your own reviewers: if overrides consistently move scores in one direction, the problem is more likely the scorecard than the AI.
 
@@ -118,7 +139,9 @@ If you are unsure where a question belongs, ask what the answer describes. If it
 
 A scorecard applies to an organisation, a department, or a team. An interaction is scored against the scorecards covering the agent who handled it.
 
-Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no scorecard covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
+Scope is not the only filter. A question is applied to an interaction when four things line up: the scorecard's **scope** covers the agent, the question is **active**, its **Apply To** setting matches the call's direction, and its **Interactions** setting matches the channel. A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
+
+Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no question covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
 ## The thresholds are yours
 
@@ -136,3 +159,15 @@ Set them against your own standards and history rather than an external benchmar
 - [Metrics](../reference/metrics.md): what each score metric measures
 - [Glossary](../reference/glossary.md): definitions of the terms used here
 - [Review and Score Interactions](../features/quality-assurance-tools.md): reviewing and scoring interactions
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

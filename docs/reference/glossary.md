@@ -33,7 +33,7 @@ See also [User](#user).
 
 The set of questions Vela evaluates every interaction against. Each question has a category and a weight, and the results combine into the agent's score.
 
-In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" throughout. See [Scorecard Fields](./scorecard-fields.md).
+In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" for the feature, and the plural in navigation steps, so that what you click matches what you read. See [Scorecard Fields](./scorecard-fields.md).
 
 ## Alert
 
@@ -89,6 +89,12 @@ A single customer conversation, either a **call** (voice) or a **chat** (text). 
 ## Knowledge Base
 
 A store of your organisation's documents, such as policies, scripts, and procedures. You upload them as PDF files. When you link a Knowledge Base document to a Smart Search or a scorecard question, the AI uses its content as reference when it evaluates interactions. See [Knowledge Base](../knowledge-base-guide.md).
+
+## Lite
+
+A Vela edition with a reduced feature set. On Lite, Smart Search and Smart Questions are unavailable, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear, and Dashboard and report metrics are limited to interaction volume, duration, review progress, topics, and agent scores.
+
+If a feature this documentation describes is missing from your sidebar, your edition is the first thing to check. Your Account Manager can tell you which one your organisation has.
 
 ## Pain Point
 
@@ -166,3 +172,9 @@ See also [Agent](#agent). Bulk CSV import creates agents, not users.
 
 - [Metrics](./metrics.md): what each dashboard and report metric measures
 - [Scorecard Fields](./scorecard-fields.md): every field on a scorecard question
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai
