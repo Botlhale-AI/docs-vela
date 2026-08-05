@@ -106,3 +106,9 @@ Deleting a term does not change interactions that have already been analysed. It
 * [Set Up Smart Search](./smart-search-guide.md): use these terms as search criteria
 * [Smart Search Criteria](./reference/smart-search-criteria.md): every criterion type and what it matches
 * [Glossary](./reference/glossary.md): definitions of topic, intent, keyword, and pain point
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

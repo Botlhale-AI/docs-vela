@@ -100,3 +100,9 @@ Thank you for being a valued part of our community!
 
 Warm regards,  
 The Vela Team
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

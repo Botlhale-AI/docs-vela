@@ -139,3 +139,9 @@ Keywords only count where your team has added them. See [Manage Smart Search Ter
 - [Glossary](./glossary.md): definitions of the terms used above
 - [Monitor Agent Performance](../features/monitor-agent-performance.md): using these metrics day to day
 - [Generate Reports](../features/custom-reporting.md): putting metrics into a report
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai
