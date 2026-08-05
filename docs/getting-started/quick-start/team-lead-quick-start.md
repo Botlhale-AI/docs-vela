@@ -1,30 +1,22 @@
 ---
 id: team-lead-quick-start
 title: Team Lead Quick Start
-sidebar_label: Team Lead Quick Start
 sidebar_position: 0
+type: tutorial
 ---
 
-# Quick Start Guide for Team Leads
-
-Welcome to Vela! This guide will get you up and running as a Team Lead or Manager in 30 minutes. By the end, you'll know how to monitor performance, review interactions, and start coaching your team effectively.
-
-:::info Your Role in Vela
-As a Team Lead, you have comprehensive access to monitor and manage your team's performance. You can review interactions, generate reports, create training programs, and track coaching effectiveness—all powered by AI insights that make quality assurance faster and more effective.
-:::
+# Team Lead Quick Start
+A hands-on walkthrough for team leads and managers new to Vela. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
 
 ---
 
 ## What You'll Learn
 
-- ✅ How to log in and navigate the platform
+- ✅ Log in and navigate the platform
 - ✅ Check today's team performance at a glance
 - ✅ Upload and review your first call or chat
-- ✅ Set up automated monitoring with Smart Search
 - ✅ Understand key metrics and their meanings
 - ✅ Provide feedback to agents
-
-**Estimated time:** 30 minutes
 
 ---
 
@@ -32,10 +24,10 @@ As a Team Lead, you have comprehensive access to monitor and manage your team's 
 
 ### What You Need
 
-- **Active Vela account** - Your administrator should have created your account
-- **Login credentials** - Email verification link or SSO access
-- **Supported browser** - Chrome (recommended), Firefox, Safari, or Edge
-- **Sample call recording** (optional) - For practicing uploads (WAV or MP3 format)
+- **Active Vela account**: Your administrator should have created your account
+- **Login credentials**: Email verification link or SSO access
+- **A current browser**: Chrome, Edge, Firefox, or Safari
+- **A call recording** in WAV or MP3 format, to upload during Step 3
 
 ### Understanding Your Access Level
 
@@ -48,12 +40,14 @@ Your administrator assigned you one of these access levels:
 | **Team** | Only your immediate team's data |
 
 :::tip First-Time Setup
-Check your email for a verification link from Vela. Click it to activate your account and set your password before proceeding.
+Your administrator's invitation email contains a verification link and a password. **Click the link first.** Vela refuses the sign-in until your address is verified, and tells you to check your email if you try.
+
+Once verified, sign in with the password from the email. Vela does not force you to change it, so change it yourself under **Settings → Security**.
 :::
 
 ---
 
-## Step 1: Log In to Vela (2 minutes)
+## Step 1: Log In to Vela
 
 ### Accessing the Platform
 
@@ -61,361 +55,178 @@ Check your email for a verification link from Vela. Click it to activate your ac
 2. **Choose your authentication method:**
 
 **Option A: Single Sign-On (SSO)**
-- Click **"Sign in with Google"** if using Google Workspace
-- Click **"Sign in with Microsoft"** if using Azure AD
+- Click **Sign in with Google** if using Google Workspace
+- Click **Sign in with Microsoft** if using Azure AD
 - Follow your organisation's authentication flow
 
 **Option B: Email and Password**
 - Enter your email address
 - Enter your password
-- Click **"Log In"**
+- Click **Sign In**
 
 ![Login options](../../../img/screenshots/settings/login-options.png)
 
-### First-Time Password Setup
+### Password Requirements
 
-If this is your first login, you'll need to create a password that meets these requirements:
+When you change your password under **Settings → Security**, or reset a forgotten one, it must meet these requirements.
 
-- ✓ At least 8 characters
-- ✓ At least one letter
-- ✓ At least one number
-- ✓ At least one special character (@, #, $, etc.)
+- At least 8 characters
+- At least one letter
+- At least one number
+- At least one special character (for example `@`, `#`, or `!`)
 
-**Example:** `VelaTeam2024!`
+Signing in with Google or Microsoft? You do not set a Vela password. Your identity provider manages it.
 
 ### What You'll See After Login
 
-After logging in, you'll land on your **Dashboard** - your command center for monitoring team performance. The left sidebar shows your main navigation areas.
+Signing in takes you to your **Dashboard**, where you monitor performance. The left sidebar shows your main navigation areas.
 
-![Dashboard Homepage](../../../img/screenshots/dashboard/dashboard01.png)]
+Vela remembers which organisation you were working in, including the one your administrator assigned when they created your account, so you go straight there. To work in a different organisation, use **Settings → Organisations → My Orgs**.
+
+If Vela has no active organisation set for you, it asks you to choose one before going any further. Pick yours from the **Organisation** list and click **Select**. Vela stores your choice, so this is a one-time step and later sign-ins go straight to the Dashboard.
+
+You see that screen if your account was created without an organisation, or if the one you were working in has been deactivated. If the list is empty, or you get "You are not part of the selected organization", your account has not been added to an organisation yet. Ask your administrator.
 
 ---
 
-## Step 2: Understand Your Dashboard (5 minutes)
+## Step 2: Understand Your Dashboard
 
 ### Dashboard Overview
 
-**Your Dashboard provides an overview of your team’s performance.**  
+**Your Dashboard gives you an overview of performance across everything you can access.** That might be your whole organisation, a department, or a single team, depending on your access level.  
 
-If no calls or chats have been uploaded in your organization yet, performance data will not be available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
+If no calls or chats have been uploaded in your organisation yet, performance data is not available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
 
-Let’s explore the key components of the Dashboard:
+The Dashboard has a few key components:
 
-![Dashboard grid showing key performance metrics with color-coded indicators](../../../img/screenshots/dashboard/dashboard06.png)
+![The Select Date Range modal, with its presets and the two-month calendar](../../../img/screenshots/dashboard/calendar.png)
+![A Dashboard metric group, showing the alert count and its trend](../../../img/screenshots/dashboard/dashboard06.png)
 
 ### Essential Controls
 
-**Date Range Selector** (Top Center)
+**Date Range Selector**
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
 - Custom range: Select specific start and end dates
 - **Try it now:** Set the date range to "Today" to see current performance
 
-**Scope Filter** (Top left)
-- Organisation view: See all teams
-- Department view: Focus on specific departments
-- Team view: Focus on a specific teams only
-- **Try it now:** Ensure you're viewing your team's scope
+**Filter**: click **Filter** to narrow the dashboard by department, team, and agent, within your access level, and by direction, tags, topic, or score.
 
-**Interaction Type Filter** (Top left, below Scope Filter)
-- All: Calls and chats combined
-- Calls only: Voice interactions
-- Chats only: Text-based interactions
+**Interaction Type Filter**: show all interactions, calls only, or chats only.
 
 ### Key Metrics to Monitor
 
-Your dashboard displays critical performance indicators. Here are the most important ones:
+Your dashboard displays a set of performance indicators. When you are starting out, these three are a good place to begin:
 
-#### Performance Quality Metrics
+1. **Average Agent Score**: a quick read on overall performance
+2. **No. Alerts** (number of alerts): issues raised by your Smart Searches that need attention
+3. **Sentiment Distribution**: how sentiment breaks down across the period
 
-**Average Agent Score**
-- **What it is:** Overall team performance rating (0-100 scale)
-- **What to look for:** 
-  -  (80+): Excellent performance
-  -  (60-79): Good with room for improvement
-- **Why it matters:** Quick indicator of overall team quality
-
-**Agent Scores Distribution**
-- **What it is:** Histogram showing how your agents' scores are spread
-- **What to look for:** Are scores clustered or widely spread?
-- **Why it matters:** Identifies consistency and outliers needing attention
-
-**Talk to Listen Ratio**
-- **What it is:** Amount of time agents spend talking vs. listening
-- **Typical good range:** 0.7 - 1.2 (varies by industry)
-- **What to look for:** Very high ratios may indicate agents not listening enough
-- **Why it matters:** Balance is key to effective communication
-
-#### Volume and Efficiency Metrics
-
-**No. Calls / No. Chats**
-- **What it is:** Total interactions handled in selected time period
-- **Why it matters:** Understand workload and capacity
-
-**Ave Call Duration**
-- **What it is:** Average length of customer interactions
-- **Why it matters:** Efficiency indicator (but longer isn't always bad if quality is high)
-
-**Average Silent Time**
-- **What it is:** Average silence during interactions
-- **What to look for:** High values may indicate knowledge gaps or system issues
-
-#### Alert and Issue Tracking
-
-**No. Alerts**
-- **What it is:** Total issues flagged by AI or Smart Search
-- **Types include:** Compliance violations, negative sentiment spikes, keyword triggers
-- **Why it matters:** Shows volume of issues requiring your attention
-
-**Resolved vs. Unresolved Alerts**
-- **What it is:** How many flagged issues have been addressed
-- **Why it matters:** Tracks your team's responsiveness to problems
-
-#### Customer Experience Metrics
-
-**Sentiment Distribution**
-- **What it is:** Breakdown of customer emotions (Positive, Neutral, Negative)
-- **What to look for:** High negative sentiment percentages
-- **Why it matters:** Direct measure of customer satisfaction
-
-**Pain Point Distribution**
-- **What it is:** Common customer frustrations identified by AI
-- **Why it matters:** Shows what's bothering your customers most
-
-:::tip Quick Daily Check
-Start each day by checking these three metrics:
-1. **Average Agent Score** - Overall team health
-2. **No. Alerts** - Issues requiring immediate attention
-3. **Sentiment Distribution** - Customer satisfaction trends
-:::
+Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each one.
 
 ### Customising Your Dashboard
 
-You can customise/choose which metrics appear on your dashboard:
+Click **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, card, or speedometer), then **Save Changes**. The chart types offered vary by metric. Metrics are grouped, and each group shows how many it holds.
 
-1. Click **"Customise"** button
-2. **Select metrics** from the available list (30+ options)
-3. **Choose chart types** - Table, Bar, Line, Pie, or Donut
-4. **Drag and drop** to arrange layout
-5. **Save** your configuration
-
-![Dashboard Customise](../../../img/screenshots/dashboard/dashboard03.png)
-![Dashboard Customise](../../../img/screenshots/dashboard/dashboard05.png)
+![The Dashboard header, with the Customise button, the Interactions radio, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
+![The Customise Dashboard modal, with metrics grouped and a chart type icon on each](../../../img/screenshots/dashboard/dashboard05.png)
 
 **Try it now:** Add "Top 10 Pain Points" to your dashboard to monitor common customer issues.
 
 ---
 
-## Step 3: Upload and Review Your First Interaction (10 minutes)
+## Step 3: Upload and Review Your First Interaction
 
-Let's walk through uploading and analyzing a call to understand how Vela's AI provides quality insights.
+Upload a call and review the analysis to see how Vela analyses an interaction.
+
+:::note Chats work the same way
+This walkthrough uses a call. Text chats follow the same flow under **Interactions → Chats**, where a single chat is uploaded as CSV and a bulk upload as JSON. The analysis is the same, except chats report response time instead of talk-to-listen ratio and silent time.
+:::
 
 ### Uploading a Single Call
 
-1. **Navigate to Interactions**
-   - Click **"Interactions"** in the left sidebar
-   - Select **"Calls"** tab
-
-2. **Click "Upload Single Call"**
+1. Navigate to **Interactions → Calls**
+2. **Click Upload**, then select the single-call upload tab
 
 3. **Fill in the upload form:**
 
-![Single call](../../../img/screenshots/data_upload/upload2.png)
+![The Single Upload form, with the agent, direction, and tags fields above the dropzone](../../../img/screenshots/data_upload/upload2.png)
 
-**Required Fields:**
-- **Agent:** Select the agent who handled this call (dropdown filtered by your access)
-- **Direction:** Choose "Inbound" or "Outbound"
-- **Tags:** (Optional but recommended) Add labels like "complaint", "sales", "billing"
-  - Use semicolons to separate: `complaint;billing;escalation`
+- **Agent** (required): Select the agent who handled this call. The list is filtered by your access level, and **+ Create an agent** adds one without leaving the page.
+- **Direction** (optional): Choose inbound or outbound.
+- **Tags** (optional, but recommended): Add labels such as "complaint", "sales", or "billing".
 
 4. **Upload your audio file:**
-   - Click **"Browse"** to select file OR
-   - **Drag and drop** the audio file into the upload area
-   - Supported formats: WAV or MP3
+   - **Drag and drop** the file into the upload area, or click **browse your device**
+   - Supported formats: WAV or MP3, up to 1 GB
 
-5. **Click "Upload"**
+5. **Click Upload**
 
 ### Processing Time
 
-You'll see a processing indicator. Typical times:
-- **Standard calls (5-15 min):** 1-3 minutes
-- **Long calls (15+ min):** 3-10 minutes
+While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call, the audio quality, and current server load, and longer calls take longer. Vela emails you when the analysis is complete, depending on your notification settings. You can manage these in **Settings → Notifications**.
 
-:::info What Happens During Processing
-Vela's AI is transcribing the call, identifying speakers, analyzing sentiment, detecting keywords, classifying intent, identifying pain points, and generating an automatic quality scorecard—all simultaneously!
-:::
+![The Notifications tab, with the platform and email lists and the frequency setting](../../../img/screenshots/settings/notification.png)
 
-### Reviewing the AI Analysis
+### Reviewing the Analysis
 
-Once processing completes, click on your uploaded interaction to see the analysis:
-![Single call](../../../img/screenshots/calls/calls-1.png)
-![Single call](../../../img/screenshots/calls/calls-3.png)
+Click your processed interaction to open it. The full transcript sits alongside Vela's analysis.
 
-#### 1. Interaction Summary
+![The Calls list, where you pick an interaction to open](../../../img/screenshots/calls/calls-1.png)
+![The Detailed View, with the audio player, the Smart Detector tabs, and the Call Details panel](../../../img/screenshots/calls/calls-3.png)
 
-**AI-Generated Overview:**
-- Main topic of conversation
-- Key issues discussed
-- Resolution status
-- Overall interaction outcome
+Four parts do most of the work when you review:
 
-**Example:**
-> "Customer called regarding billing discrepancy on their August invoice. Agent identified the issue as a promotional discount not applied correctly. Issue resolved by applying the discount retroactively and issuing a credit. Customer expressed satisfaction with the resolution."
+- **Summary**: a plain-language recap of what happened and how it was resolved.
+- **Sentiment**: how the customer felt through the conversation, and where it shifted.
+- **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
+- **Alerts**: anything a Smart Search or the AI flagged. Mark each one resolved once you have acted on it.
 
-#### 2. Transcription
-
-**Full text of the conversation with:**
-- Speaker identification (Agent vs. Customer)
-- Timestamps for each statement
-- Searchable text (use Ctrl+F to find specific words)
-- Confidence indicators (how certain the AI is about the transcription)
-
-**Navigation tips:**
-- Click on any timestamp to jump to that moment in the audio
-- Use the search function to find specific keywords or phrases
-- Review transcription quality—flag any major errors for system improvement
-
-#### 3. Sentiment Analysis
-
-**Visual sentiment journey showing:**
-- Overall sentiment (Positive, Neutral, Negative)
-- Sentiment changes throughout the conversation
-- Critical moments where customer mood shifted
-- Agent's impact on customer sentiment
-
-![sentiment call](../../../img/screenshots/calls/calls-3.png)
-
-**What to look for:**
-- Did the agent improve negative sentiment?
-- Where did sentiment deteriorate, and why?
-- Overall trajectory. Did interaction end positively?
-
-#### 4. Keywords Detected
-
-**Important terms and phrases identified:**
-- Compliance-related keywords (if configured)
-- Product/service mentions
-- Action items and commitments
-- Sentiment-bearing words
-
-**Example keywords:**
-- "refund", "frustrated", "manager", "resolved", "thank you"
-
-#### 5. Alerts
-
-**Issues flagged by Smart Search or Vela AI:**
-- **Compliance violations:** Missed required procedures or scripts
-- **Negative escalations:** Customer dissatisfaction or complaints
-- **Quality concerns:** Long hold times, unprofessional language
-- **Positive highlights:** Excellent service, successful resolution
-
-**Alert priority levels:**
-- 🔴 Critical - Immediate attention required
-- 🟠 High - Review within 24 hours
-- 🟡 Medium - Standard review needed
-- 🟢 Low - Informational only
-
-#### 6. Intent Classification
-
-**Customer's purpose for the interaction:**
-- Support request
-- Sales inquiry
-- Billing question
-- Complaint or escalation
-- Information request
-
-**Why it matters:** Helps you understand if agents are handling different intent types effectively.
-
-#### 7. Automatic Scorecard
-
-**AI evaluation based on your organisation's scorecard/criteria:**
-
-![Single call](../../../img/screenshots/calls/calls-8.png)
-
-**Typical categories:**
-- **Communication Skills** - Clarity, professionalism, tone
-- **Problem Resolution** - Issue identification and solution quality
-- **Compliance Adherence** - Following procedures and scripts
-- **Customer Experience** - Courtesy, empathy, satisfaction
-
-**Each category shows:**
-- Score (0-100)
-- Specific observations
-- Strengths and improvement areas
-
-#### 8. Pain Points
-
-**Customer frustration indicators detected:**
-- Long wait times
-- Repeated explanations required
-- System or process issues
-- Unresolved problems
-
-**Example pain points:**
-- "Customer had to explain the issue multiple times"
-- "Extended hold time of 4 minutes"
-- "System error prevented first-attempt resolution"
+The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 
 ### Adding Your Feedback
 
-After reviewing the AI analysis, add your own observations:
+After reviewing the analysis, add your own observations:
 
 1. **Scroll to the Comments section**
-2. **Click "Add Comment"**
-3. **Write specific feedback:**
+2. Write specific feedback with clear next steps in the comment box.
+3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. Without the tag, only team leads see the comment.
+4. Click **Send** to post it.
 
-**Good feedback example:**
-
-Great job handling this difficult customer, @Sarah / @Agent! I particularly liked how you:
-
--Remained calm when the customer raised their voice
--Took ownership of the issue immediately
--Offered a clear solution with timeline
-
-4. **Tag the agent** (they'll receive a notification. If you don't use the @Agent tag, the comment will be seen by team leaders only)
-5. **Send your comment**
-
-:::tip Comments Best Practices
-- **Be specific** - Reference exact moments in the interaction
-- **Be actionable** - Provide clear next steps
-- **Balance positive and constructive** - Acknowledge strengths, suggest improvements
+:::note Mentions only work in new comments
+You cannot tag an agent in a reply to an existing comment. If you need to bring an agent into a thread, add a new comment rather than replying.
 :::
 
-### Creating a Manual Scorecard (Optional)
+![@agent screenshot](../../../img/screenshots/settings/@agent.png)
 
-If you disagree with the Vela AI's assessment, you can override it:
+:::note Example comment
+Great job handling this difficult customer, @Samke! I liked how you stayed calm when the customer raised their voice, took ownership immediately, and offered a clear solution with a timeline.
+:::
 
-1. **Click "Create Manual Scorecard"**
-2. **Evaluate each category** using your judgment
-3. **Add detailed comments** explaining your scores
-4. **Submit** - This replaces the AI scorecard
+:::tip Comments Best Practices
+- **Be specific**: Reference exact moments in the interaction
+- **Be practical**: Give clear next steps
+- **Balance positive and constructive**: Acknowledge strengths, suggest improvements
+:::
 
-**When to use manual scoring:**
-- AI missed important context or nuance
-- Cultural or language subtleties not captured by AI
-- Complex situations requiring human judgment
+### Override a Scorecard Item
+
+The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. The AI's original answer stays on the record next to yours.
+
+Override an item when the AI missed context, a required phrase was said in different words, or the situation needed human judgement. For the full step-by-step, see [Review and Score Interactions](../../features/quality-assurance-tools.md#a-complete-a-manual-scorecard).
 
 ---
 
-## Step 4: Set Up Your First Smart Search (10 minutes)
+## You're Ready to Go
 
-Smart Search automatically monitors all interactions for specific keywords, phrases, or patterns. This is essential for compliance monitoring and proactive quality management.
+You've completed the Team Lead Quick Start. You can now:
 
-### Creating a Compliance Monitor
+- ✅ Monitor team performance on the Dashboard
+- ✅ Upload and review individual calls
+- ✅ Provide coaching feedback to agents via comments
 
-Let's create a Smart Search to monitor refund-related conversations:
+## Next Steps
 
-1. **Navigate to Smart Detector**
-   - Click **"Smart Detector"** in the left sidebar
-   - Select **"Smart Search"** tab
-
-2. **Click "Create New Smart Search"**
-
-3. **Configure your search:**
-
-**Title:** `Refund Request Monitor`
-
-**Description:** `Track all refund requests and customer complaints for quality review`
-
-![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation.png)
-![Smart Search creation form with example fields filled in](../../../img/screenshots/smart_search/smart-search-creation2.png)
+- [Set up monitoring](../../smart-search-guide.md): create a Smart Search to flag interactions automatically
+- Bring in your historical call data with a bulk upload (see [Upload Your Data](../../data-upload.md))
+- Create your first Scheduled Report for weekly management updates
 

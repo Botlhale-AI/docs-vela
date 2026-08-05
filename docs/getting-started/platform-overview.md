@@ -1,104 +1,91 @@
 ---
 id: platform-overview
-title: Welcome to Vela
-sidebar_label: Platform Overview
+title: Platform Overview
 sidebar_position: 0
+type: explanation
 ---
 
-# Welcome to Vela: The Call Centre Analytics Platform
+# Platform Overview
+Vela is a call centre analytics platform. It transcribes your calls, reads your chats, and scores both against your organisation's criteria. Traditional QA reviews a sample. Vela works through every interaction you upload, so you see all of your team's work, not the handful of calls someone had time to check.
 
-Vela is a comprehensive **call centre analytics platform** that transforms how organisations approach quality assurance, agent development, and customer experience optimisation. By leveraging advanced AI, Vela processes **100% of your customer interactions** (calls and chats) to deliver actionable insights that drive measurable improvements.
+Vela analyses interactions after they are completed and uploaded. It works on finished calls and chats, not on calls while they are in progress.
 
----
+This page explains what Vela does and who uses it. When you are ready to start, jump to [Where to Start](#where-to-start).
 
-## The Three Core Pillars of Vela
+:::info Key terms
+A few words used throughout the documentation:
 
-Vela is built on three integrated capabilities that work together to elevate your contact centre operations:
+- **Interaction**: a single call or chat.
+- **Agent Scorecard**: the questions every interaction is scored against.
+- **Smart Search**: an automated monitor that flags interactions matching criteria you set.
+- **Scope**: how widely something applies, from the whole organisation down to a single department or team.
 
-### 1. 100% Quality Assurance (QA)
-
-Stop relying on random sampling. Vela's AI analyses every single interaction, providing **complete, objective coverage** of your service quality:
-
-* **No Blind Spots:** Every call and chat is evaluated for compliance and quality.
-* **Objective Scoring:** AI-powered evaluation provides **consistent, unbiased assessment**.
-* **Compliance & Risk:** Strengthen adherence and quickly catch potential risks before they escalate.
-
-### 2. Data-Driven Agent Coaching & Development
-
-Vela turns quality data into a continuous improvement cycle, making coaching **smarter and more efficient**:
-
-* **Targeted Training:** Automatically **identify specific skill gaps** and assign relevant training courses.
-* **Track Progress:** Monitor agent learning completion and performance improvement over time.
-* **Recognition:** Use the platform to set up custom **awards and certificates** to boost morale and recognise excellence.
-
-### 3. Actionable Business Insights
-
-Vela provides strategic intelligence from millions of conversations that would otherwise go unanalysed. This informs business decisions beyond the contact centre floor:
-
-* **Customer Understanding:** Analyse **sentiment** and identify recurring **pain points** before they escalate.
-* **Operational Efficiency:** Replace manual reviews with **AI-powered insights** for faster, more consistent evaluation cycles.
-* **Organisational Growth:** Drive measurable improvements in sales, support, and customer satisfaction and loyalty.
+Full definitions are in the [Glossary](../reference/glossary.md).
+:::
 
 ---
 
-## What Makes Vela Different
+## What Vela Does
 
-Vela is uniquely designed to handle the complexities of the modern South African contact centre environment.
+Every interaction follows the same path, from upload to report.
 
-### Multilingual Excellence
+**Upload → Transcribe → Analyse and score → Review → Report**
 
-* Vela supports advanced transcription and analysis in **multiple languages, including African languages** (such as IsiXhosa, Sesotho, and Afrikaans) that many competitors don't cover.
+1. **Upload**: add calls as WAV or MP3, and chats as CSV or, in bulk, as JSON. See [Upload Your Data](../data-upload.md).
+2. **Transcribe**: calls are transcribed across all 11 official South African languages. Chats are already text.
+3. **Analyse and score**: every interaction is analysed for sentiment and scored against your [Agent Scorecard](../reference/scorecard-fields.md). [Smart Search](../smart-search-guide.md) flags the ones that match your criteria.
+4. **Review**: open an interaction to read the transcript alongside Vela's analysis, override any score, and leave coaching feedback.
+5. **Report**: [Dashboards and Reports](../features/custom-reporting.md) turn the results into trends you can share.
 
-### End-to-End Coaching Workflow
+![The Vela Dashboard, showing alert metrics with their trend against the previous period](../../img/screenshots/dashboard/dashboard06.png)
 
-* Unlike platforms that stop at reporting, Vela provides a complete, **integrated workflow** to turn insights into measurable action: Analyse → Report → Coach → Train → Track → Recognise → Improve.
+### Review and score every interaction
 
-### Unified Call and Chat Analytics
+Every uploaded interaction is scored against your organisation's [Agent Scorecard](../reference/scorecard-fields.md). Calls are transcribed first. Chats are already text. Applying the same scorecard to every interaction keeps scoring consistent across the team.
 
-* We provide a **single, unified view** of customer interactions across both **voice calls** and **chat conversations**, ensuring consistent quality standards regardless of channel.
+Calls and chats go through the same core analysis. Both are analysed for sentiment and scored against your scorecard. A few metrics apply to only one channel, since call audio can be measured in ways text chats cannot. See [Metrics](../reference/metrics.md) for the full list.
 
-### AI-Powered, Human-Centric Design
+Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
-* Our technology supports your judgment, it doesn't replace it. You have **manual override capabilities** to adjust AI assessments when human context is required.
-* Vela uses your organisation's specific **Knowledge Base** (procedures, products, and policies) to provide more accurate and relevant scoring.
+### Coach and develop agents
+
+If your organisation has the coaching portal enabled, you can see where an agent is struggling, assign a course that targets the gap, track whether they finish it, and mark good work with awards and certificates. Coaching has its own [documentation](https://docs-coaching.botlhale.xyz).
+
+### Spot patterns across your conversations
+
+Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and [Reports](../features/custom-reporting.md) turn all this into something you can hand to a manager. Between them they surface patterns a manual review would never catch.
 
 ---
 
-## Who Uses Vela? (Target Personas)
+## Scoring Against Your Own Standards
 
-Vela provides tailored experiences designed for the specific needs and goals of different user roles.
+Vela does not score against a generic idea of good service. You give it your own policies, scripts, and procedures through the [Knowledge Base](../knowledge-base-guide.md), and when a document is linked to a Smart Search or a [scorecard question](../reference/scorecard-fields.md), the AI evaluates against those.
 
-### Team Leads & Managers
-* **Primary Goal:** Monitoring agent and team performance, identifying coaching opportunities, and generating reports confidently.
-* **Focus Areas:** Dashboard, Interactions, Smart Detector, Coaching.
+The AI produces a first assessment, not a final verdict. A reviewer can change any outcome, and both answers stay on the record. The AI gives you the coverage. The reviewer keeps the final say. For how the score is worked out, and what the AI can and cannot judge reliably, see [How Scoring Works](../explanation/how-scoring-works.md).
 
-### Agents
-* **Primary Goal:** Tracking personal performance, completing assigned training, receiving timely feedback, and earning recognition.
-* **Focus Areas:** Agent Portal (Personal Dashboard, Training, Awards, Notifications).
+---
+
+## Who Uses Vela
+
+### Team leads and QA managers
+Monitor agent and team performance, review interactions, set up automated monitoring, and generate reports. **Main areas:** Dashboard, Interactions, Smart Detector, Reports.
 
 ### Administrators
-* **Primary Goal:** Managing user accounts, configuring organisational settings, and ensuring data security and compliance.
-* **Focus Areas:** Settings, User Management, Organisation Usage Limits.
+Set the platform up and keep it running: authentication, departments and teams, users, scorecards, and data privacy. **Main area:** Settings.
+
+### Agents
+Track personal performance, complete assigned training, read feedback, and earn recognition. Agents work in the separate Agent Portal, which is documented in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).
 
 ---
 
-## Key Capabilities at a Glance
+## Where to Start
 
-* **Dashboard & Analytics:** Customisable views for monitoring team performance, trends, and key metrics.
-* **Interactions Management:** Upload, transcribe, and analyse calls and chats. Includes automatic AI evaluation and the option to create manual scorecards.
-* **Smart Detector:** Automated monitoring for specific keywords, compliance violations, and pain points. Includes customisable Agent Scorecards.
-* **Agent Management:** Track individual agent scores, rankings, strengths, and weaknesses. Includes bulk agent upload and data export.
-* **Reporting & Insights:** Create custom, scheduled reports with AI-powered analysis and recommendations for management.
-* **Coaching & Training:** Build and assign training courses, track completion, and manage recognition awards.
-* **Settings & Administration:** Configure performance thresholds, manage user access, and control data privacy settings.
+Your next step depends on your role.
 
----
+| Your role | Start here | What it covers |
+| :--- | :--- | :--- |
+| **Administrator** | [Administrator Setup](./quick-start/administrator-setup.md) | Setting Vela up before anyone else can use it |
+| **Team lead or QA manager** | [Team Lead Quick Start](./quick-start/team-lead-quick-start.md) | Reviewing interactions, coaching agents, and monitoring performance |
+| **Agent** | [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) | Your personal development portal, documented separately |
 
-## Getting Started
-
-Your next steps depend on your role:
-
-* **Team Leads & Managers:** Start with the **Quick Start Guide for Team Leads** for an overview of your management workflow.
-* **Agents:** Begin with the **Quick Start Guide for Agents** to understand your personal development portal.
-
-**Vela Version:** 2.0
+If you are setting Vela up for the first time, start with Administrator Setup. Once setup is complete, Vela can score your interactions.
