@@ -1,0 +1,168 @@
+---
+id: glossary
+title: Glossary
+sidebar_position: 1
+type: reference
+---
+
+# Glossary
+
+Definitions of the terms used in Vela and in this documentation.
+
+---
+
+## Access Level
+
+How much of the organisation a user can see. An administrator sets this per user. There are three levels:
+
+- **Organisational**: all departments and teams
+- **Departmental**: their department only
+- **Team**: their immediate team only
+
+Access level is separate from [Role](#role), which controls what actions they can take. A user with the Admin role and Team access can manage users, but only sees their own team's data.
+
+Agents do not have an access level. They only ever see their own interactions. See [Settings Access by Role](../settings-config/access-control.md).
+
+## Agent
+
+A person whose interactions are analysed by Vela. Agents do not need a login unless your organisation uses the Agent Portal. Agents are the only records you can import in bulk from a CSV file.
+
+See also [User](#user).
+
+## Agent Scorecard
+
+The set of questions Vela evaluates every interaction against. Each question has a category and a weight, and the results combine into the agent's score.
+
+In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" throughout. See [Scorecard Fields](./scorecard-fields.md).
+
+## Alert
+
+A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. You can mark an alert as resolved once you have reviewed it.
+
+Alerts appear in the **Alerts** tab under Notifications, and the **No. Alerts** metric counts them.
+
+## Auto-Fail
+
+A setting on a scorecard question. When it is on, failing that question flags the whole interaction as auto-failed. The flag is recorded next to the score rather than replacing it, so you can see both that a critical requirement was missed and how the interaction scored otherwise.
+
+## Compliance Item
+
+A scorecard question marked as a compliance check rather than a quality one. Vela scores compliance items separately, which produces the **Average Agent Compliance Score** alongside the quality score.
+
+## Department
+
+An organisational grouping that contains teams. The hierarchy is Organisation, then Department, then Team. A department must exist before you can assign a team to it.
+
+## Detected and Organisational
+
+Two sources for topics, intents, and pain points:
+
+- **Detected**: found automatically by the AI in your interactions
+- **Organisational**: created manually by your team
+
+This lets you separate what the AI found from what you told it to look for.
+
+Keywords have one source. Vela does not detect them on its own, so a keyword matches only where your team has added it.
+
+To read either list, or to add your own terms, see [Manage Smart Search Terms](../topics-and-terms-guide.md).
+
+## Direction
+
+Whether a call was **inbound** or **outbound**. You can set scorecard questions and Smart Questions to apply to inbound only, outbound only, or all calls.
+
+## Expected Outcome
+
+A setting on a scorecard question that records whether **Yes** or **No** is the desired answer. Set it to match the way you have phrased the question.
+
+## Historical Search
+
+An option available when you create a Smart Search or Smart Question. By default a new search only applies to interactions processed after you create it. Turning on Historical Search also runs it against interactions already in Vela.
+
+## Intent
+
+The customer's reason for the interaction, for example Sales, Support, or Complaint. The AI can detect intents, or your organisation can create them.
+
+## Interaction
+
+A single customer conversation, either a **call** (voice) or a **chat** (text). Vela uses "interaction" as the collective term for both.
+
+## Knowledge Base
+
+A store of your organisation's documents, such as policies, scripts, and procedures. You upload them as PDF files. When you link a Knowledge Base document to a Smart Search or a scorecard question, the AI uses its content as reference when it evaluates interactions. See [Knowledge Base](../knowledge-base-guide.md).
+
+## Pain Point
+
+A sign of customer frustration identified by the AI, such as repeated explanations, long waits, or unresolved issues. Pain points can be detected automatically or defined by your organisation.
+
+## Redaction
+
+Automatic masking of sensitive information in transcripts. Administrators choose which types to mask. The available types are:
+
+Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
+
+The masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
+
+## Review Status
+
+Whether someone has marked an interaction as reviewed. Use it to track QA progress and to tell AI-scored interactions apart from ones a person has checked.
+
+## Role
+
+What kind of user someone is, and which actions they can take. There are three roles:
+
+- **Admin**: can manage users, departments, and organisation settings
+- **User**: can view users and work with interactions, but cannot manage users, approve access requests, or manage departments
+- **Agent**: restricted to the Agent Portal and their own data
+
+Role is separate from [Access Level](#access-level), which controls how much data they see. The two combine: an Admin with Team access has full admin actions, but only over their own team.
+
+Agents are the exception. They have no access level, because they only ever see their own interactions.
+
+## Scope
+
+Which parts of the organisation a Smart Search, Smart Question, scorecard, or Knowledge Base document applies to. Set it to organisation, department, or team.
+
+## Score Boundaries
+
+The thresholds that sort agent performance into Red, Amber, and Green bands. An administrator sets them in Organisation Configuration, and Vela applies them across the platform.
+
+## Silent Time
+
+Periods in an interaction where neither person is speaking. High silent time can mean an agent is searching for information.
+
+## Smart Question
+
+A question asked of your interactions whose answer Vela records but **does not count towards any agent's score**. Use Smart Questions to gather information about conversations where scoring an agent would not be fair or relevant.
+
+This is the main difference from the Agent Scorecard. See [Smart Questions](../smart-questions-guide.md).
+
+## Smart Search
+
+An automated monitor that flags interactions matching criteria you define: words, intents, keywords, topics, pain points, or specific agents. Each match raises an [Alert](#alert).
+
+A search can match on presence (**includes**) or absence (**excludes**). Use excludes to monitor for something an agent failed to say. See [Smart Search](../smart-search-guide.md).
+
+## Talk to Listen Ratio (TTLR)
+
+How much of an interaction the agent spent talking, compared with the customer.
+
+## Team
+
+The smallest organisational grouping. Teams belong to departments. You assign agents and users to teams.
+
+## Topic
+
+A theme identified across conversations. The AI can detect topics, or your organisation can create them. The Top 10 and Bottom 10 Topics metrics report on them.
+
+## User
+
+A person who logs in to Vela, usually an administrator or team lead. Users have a [Role](#role) and an [Access Level](#access-level).
+
+See also [Agent](#agent). Bulk CSV import creates agents, not users.
+
+---
+
+## Related
+
+- [Metrics](./metrics.md): what each dashboard and report metric measures
+- [Scorecard Fields](./scorecard-fields.md): every field on a scorecard question
