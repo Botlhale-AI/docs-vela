@@ -14,7 +14,7 @@ Before anyone else can use Vela, an administrator configures authentication, dep
 
 ## What You'll Complete
 
-- ✅ Configure authentication
+- ✅ Choose how users sign in
 - ✅ Create your organisational structure (departments and teams)
 - ✅ Add users individually or in bulk
 - ✅ Set up the Agent Scorecard so interactions can be scored
@@ -22,7 +22,6 @@ Before anyone else can use Vela, an administrator configures authentication, dep
 - ✅ Build the Knowledge Base
 - ✅ Configure data privacy (redaction)
 - ✅ Confirm the pipeline works end to end
-
 
 ---
 
@@ -48,9 +47,9 @@ For how to make these decisions well, see [Best Practices: Setting Up for Succes
 
 ---
 
-## Step 1: Configure Authentication
+## Step 1: Choose How Users Sign In
 
-Choose how users log in to Vela.
+Vela offers two ways to sign in, and which applies to your organisation shapes how you add people in Step 3.
 
 ### Option A: Single Sign-On (SSO)
 
@@ -62,15 +61,11 @@ Users who sign in through SSO manage their password with Google or Microsoft, so
 
 ### Option B: Email and Password
 
-If SSO is not available, users log in with an email and password. Passwords must meet these requirements:
-- At least 8 characters
-- At least one letter
-- At least one number
-- At least one special character (for example `@`, `#`, or `!`)
+If SSO is not available, users log in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
 Vela emails each new user a password and a verification link. They must click the link before they can sign in. Vela does not force a password change afterwards, so tell users to set their own under **Settings → Security**.
 
-![Login options](../../../img/screenshots/settings/login-options.png)
+![The Sign In page, with the email and password fields above the Sign in with Google and Sign in with Microsoft buttons](../../../img/screenshots/settings/login-options.png)
 
 ---
 
@@ -93,7 +88,7 @@ Create departments and teams before you add users. Users are assigned to teams, 
 3. Enter the team name and assign it to a department
 4. Save and repeat for each team
 
-![Create Dept / Team](../../../img/screenshots/settings/create-dept-team.png)
+![The Org Table on the Users tab, with the Create menu open on Department and Team, beside the Organisation, Departments, and Teams columns](../../../img/screenshots/settings/create-dept-team.png)
 
 :::tip Mirror Your Organisation
 Set your departments and teams up to match your real reporting lines. Each team lead then sees the right data, and reports line up with how the organisation actually works.
@@ -109,7 +104,7 @@ You add two kinds of record in this step.
 - **Users**, who log in to Vela. Add these one at a time in **Settings → Users**.
 
 :::warning Bulk import creates agents, not users
-If you are onboarding team leads or administrators, add them individually in Step 3B. A CSV import does not give them a login. See [Glossary](../../reference/glossary.md) for the full distinction.
+If you are onboarding team leads or administrators, add them individually in Step 3B. A CSV import does not give them a login. See [Agent](../../reference/glossary.md#agent) in the Glossary for the full distinction.
 :::
 
 ### Step 3A: Bulk Import Agents via CSV
@@ -155,7 +150,7 @@ Adding an agent, singly or in bulk, emails them an invitation to the Agent Porta
 2. Click **Add User**
 3. Enter name, email, and assign their department, team, role, and access level
 
-![Add users](../../../img/screenshots/settings/users_add.png)
+![The Add User modal, with Name and Email Address above the Access levels and the Admin and User roles](../../../img/screenshots/settings/users_add.png)
 
 ### Setting Roles and Access
 
@@ -172,11 +167,15 @@ Each user needs:
 
 The Agent Scorecard defines the evaluation criteria used to score every interaction. **A scorecard is what lets Vela score your interactions**, which makes this the most important configuration step.
 
-1. Navigate to **Smart Detector → Agent Scorecard**
+1. Navigate to **Smart Detector → Agents Scorecard**
 2. Open the **Create** tab
 3. Set the **scope** (organisation, department, or team) that the scorecard applies to
 4. Write your scorecard questions. Each one is a yes/no evaluation point, configured as below.
 5. Click **Create** to save the scorecard. Its questions are active as soon as it is created.
+
+:::note The sidebar says "Agents Scorecard"
+The sidebar and breadcrumb name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
+:::
 
 **For each question, configure:**
 
@@ -186,7 +185,7 @@ The Agent Scorecard defines the evaluation criteria used to score every interact
 | **Category** | A grouping label (for example, "Opening", "Compliance", or "Closing") |
 | **Expected Outcome** | Which answer, Yes or No, counts as a pass |
 | **Weight** | Relative importance in the overall score |
-| **Auto-Fail** | If enabled, failing this item flags the interaction as auto-failed |
+| **Auto-Fail** | If enabled, failing this item auto-fails the whole interaction. It then reads 0.0%, with the score earned on everything else in brackets. See [How Scoring Works](../../explanation/how-scoring-works.md) |
 | **Apply To** | Inbound calls, outbound calls, or all calls |
 
 ![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_search/smart5.png)
@@ -221,7 +220,11 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
 ![The New Smart Search form: title, status, description, and scope](../../../img/screenshots/smart_search/11.png)
 ![The rest of the form: Example Phrases, Search Filter, Historical Search, and Notifications](../../../img/screenshots/smart_search/12.png)
 
-Repeat for each compliance or quality monitoring rule your organisation requires.
+Repeat for each compliance or quality monitoring rule your organisation requires, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so create the rules that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
+
+:::note Smart Questions ask, rather than flag
+A Smart Search flags interactions that match your criteria. A **Smart Question** asks a yes or no question of every interaction for reporting, without affecting anyone's score, which suits anything it would be unfair to judge an agent on. On plans that include it, see [Set Up Smart Questions](../../smart-questions-guide.md).
+:::
 
 ---
 
@@ -234,7 +237,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 3. Set the **scope** (organisation, department, or team), and optionally add a description
 4. Click **Upload Files**
 
-![knowledge base](../../../img/screenshots/settings/knowledge_base.png)
+![The Knowledge Base PDF Upload tab, with Apply documents to set to Entire Organisation, an uploaded PDF with its description box, and Upload Files](../../../img/screenshots/settings/knowledge_base.png)
 
 ---
 
@@ -244,7 +247,7 @@ Vela can automatically mask sensitive information in transcripts, such as ID num
 
 In **Settings → Organisations**, choose which entity types Vela should redact.
 
-![Redaction](../../../img/screenshots/settings/redaction.png) 
+![The Redactable Entities checkboxes in Settings, listing Credit Card, IBAN Code, Person, and the other entity types, with Save below](../../../img/screenshots/settings/redaction.png)
 
 Once redaction is configured, masked details are hidden from everyone by default, administrators included. Administrators, and any user you grant **View Redactions**, can reveal the unmasked version on a transcript with **Review Redacted Info**. Everyone else sees only the masked version. They can request access to a specific interaction, which you approve in **Settings → Requests**, or you can grant **View Redactions** on the account in **Settings → Users**. See [Access Requests](../../settings-config/access-requests-audits.md) for the full workflow.
 
@@ -270,6 +273,7 @@ Once all eight steps are complete, your platform is ready for use.
 **Hand-off checklist:**
 - ✅ Point team leads to the [Team Lead Quick Start](./team-lead-quick-start.md) guide
 - ✅ If your organisation uses the Coaching Portal, direct agents to the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz)
+- ✅ If your organisation uses the Coaching Portal, set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed
 
 ---
 
@@ -286,6 +290,8 @@ Check that the CSV has all required columns (name, email, department, team) and 
 **Interactions are not being scored**  
 Confirm that an active Agent Scorecard exists with a scope that covers the relevant team or department. The AI scores each interaction against that scorecard, so its scope determines which interactions get scored.
 
+An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and click **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
+
 **Smart Search not matching expected interactions**  
 Check that the search status is set to **Active** and that the scope covers the relevant team or department. If you want historical calls matched, enable the **Historical Search** option when creating the search.
 
@@ -296,3 +302,9 @@ Check that the search status is set to **Active** and that the scope covers the 
 - [Best Practices](../../advanced/best-practices.md): advanced configuration guidance
 - [Build Your Knowledge Base](../../knowledge-base-guide.md): uploading, scoping, and linking documents
 - [Set Up Smart Search](../../smart-search-guide.md): advanced search configuration
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

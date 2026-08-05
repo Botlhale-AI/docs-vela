@@ -31,13 +31,7 @@ A hands-on walkthrough for team leads and managers new to Vela. By the end you w
 
 ### Understanding Your Access Level
 
-Your administrator assigned you one of these access levels:
-
-| Access Level | What You Can See |
-|--------------|------------------|
-| **Organisational** | All departments and teams across the organisation |
-| **Departmental** | All teams within your specific department |
-| **Team** | Only your immediate team's data |
+Your administrator assigned you an access level, and it decides how much of the organisation you see: everything, your department, or your immediate team. Every dashboard, list, and filter in this guide is bounded by it, so if a team lead beside you sees more than you do, this is why. See [Access Level](../../reference/glossary.md#access-level).
 
 :::tip First-Time Setup
 Your administrator's invitation email contains a verification link and a password. **Click the link first.** Vela refuses the sign-in until your address is verified, and tells you to check your email if you try.
@@ -55,8 +49,8 @@ Once verified, sign in with the password from the email. Vela does not force you
 2. **Choose your authentication method:**
 
 **Option A: Single Sign-On (SSO)**
-- Click **Sign in with Google** if using Google Workspace
-- Click **Sign in with Microsoft** if using Azure AD
+- Click **Sign in with Google** to sign in with your Google account
+- Click **Sign in with Microsoft** to sign in with your Microsoft account
 - Follow your organisation's authentication flow
 
 **Option B: Email and Password**
@@ -64,16 +58,11 @@ Once verified, sign in with the password from the email. Vela does not force you
 - Enter your password
 - Click **Sign In**
 
-![Login options](../../../img/screenshots/settings/login-options.png)
+![The Sign In page, with the email and password fields above the Sign in with Google and Sign in with Microsoft buttons](../../../img/screenshots/settings/login-options.png)
 
 ### Password Requirements
 
-When you change your password under **Settings → Security**, or reset a forgotten one, it must meet these requirements.
-
-- At least 8 characters
-- At least one letter
-- At least one number
-- At least one special character (for example `@`, `#`, or `!`)
+When you change your password under **Settings → Security**, or reset a forgotten one, it has to meet Vela's password rules. See [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
 Signing in with Google or Microsoft? You do not set a Vela password. Your identity provider manages it.
 
@@ -97,7 +86,7 @@ You see that screen if your account was created without an organisation, or if t
 
 If no calls or chats have been uploaded in your organisation yet, performance data is not available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
 
-The Dashboard has a few key components:
+Four controls shape everything you see: the **Interactions** type, the **Date range**, **Filter**, and **Customise**. The metrics themselves sit in groups you can collapse, such as Alert Metrics and Customer Sentiment, and each card states whether it applies to calls, chats, or all interactions. The rest of this step covers each control in turn.
 
 ![The Select Date Range modal, with its presets and the two-month calendar](../../../img/screenshots/dashboard/calendar.png)
 ![A Dashboard metric group, showing the alert count and its trend](../../../img/screenshots/dashboard/dashboard06.png)
@@ -130,7 +119,7 @@ Click **Customise** to choose which metrics appear and how each is charted (tabl
 ![The Dashboard header, with the Customise button, the Interactions radio, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
 ![The Customise Dashboard modal, with metrics grouped and a chart type icon on each](../../../img/screenshots/dashboard/dashboard05.png)
 
-**Try it now:** Add "Top 10 Pain Points" to your dashboard to monitor common customer issues.
+**Try it now:** Add **Top 10 Pain Points** to your dashboard to monitor common customer issues.
 
 ---
 
@@ -144,22 +133,16 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 ### Uploading a Single Call
 
-1. Navigate to **Interactions → Calls**
-2. **Click Upload**, then select the single-call upload tab
-
-3. **Fill in the upload form:**
-
 ![The Single Upload form, with the agent, direction, and tags fields above the dropzone](../../../img/screenshots/data_upload/upload2.png)
 
-- **Agent** (required): Select the agent who handled this call. The list is filtered by your access level, and **+ Create an agent** adds one without leaving the page.
-- **Direction** (optional): Choose inbound or outbound.
-- **Tags** (optional, but recommended): Add labels such as "complaint", "sales", or "billing".
-
-4. **Upload your audio file:**
-   - **Drag and drop** the file into the upload area, or click **browse your device**
-   - Supported formats: WAV or MP3, up to 1 GB
-
-5. **Click Upload**
+1. Navigate to **Interactions → Calls**
+2. Click **Upload**, then select the single-call upload tab
+3. Fill in the upload form:
+   - **Agent** (required): select the agent who handled this call. The list is filtered by your access level, and **+ Create an agent** adds one without leaving the page
+   - **Direction** (optional): choose inbound or outbound
+   - **Tags** (optional, but recommended): add labels such as `complaint`, `sales`, or `billing`
+4. Add your audio file by dragging it into the upload area, or click **browse your device**. Calls can be WAV or MP3, up to 1 GB
+5. Click **Upload**
 
 ### Processing Time
 
@@ -190,13 +173,13 @@ After reviewing the analysis, add your own observations:
 1. **Scroll to the Comments section**
 2. Write specific feedback with clear next steps in the comment box.
 3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. Without the tag, only team leads see the comment.
-4. Click **Send** to post it.
+4. Click **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
 You cannot tag an agent in a reply to an existing comment. If you need to bring an agent into a thread, add a new comment rather than replying.
 :::
 
-![@agent screenshot](../../../img/screenshots/settings/@agent.png)
+![The Comments panel with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../../img/screenshots/settings/@agent.png)
 
 :::note Example comment
 Great job handling this difficult customer, @Samke! I liked how you stayed calm when the customer raised their voice, took ownership immediately, and offered a clear solution with a timeline.
@@ -210,7 +193,7 @@ Great job handling this difficult customer, @Samke! I liked how you stayed calm 
 
 ### Override a Scorecard Item
 
-The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. The AI's original answer stays on the record next to yours.
+The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. Vela's original scores stay on the record as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** in the Call Details panel, next to the scores your override produced.
 
 Override an item when the AI missed context, a required phrase was said in different words, or the situation needed human judgement. For the full step-by-step, see [Review and Score Interactions](../../features/quality-assurance-tools.md#a-complete-a-manual-scorecard).
 
@@ -224,9 +207,30 @@ You've completed the Team Lead Quick Start. You can now:
 - ✅ Upload and review individual calls
 - ✅ Provide coaching feedback to agents via comments
 
+**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, they have been notified. Click **Mark as Reviewed** to record that you are finished with it, which is what your team's review coverage is measured on.
+
+---
+
+## If Something Did Not Work
+
+| What you see | Why | What to do |
+| :--- | :--- | :--- |
+| The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email telling you the analysis is ready. Check **Settings → Notifications** if you are not receiving them |
+| The interaction has no scorecard | No active Agent Scorecard covers this agent's team | Ask your administrator to check the scorecard's scope. See [Administrator Setup](./administrator-setup.md) |
+| Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and pick the agent from the `@` list |
+
+For uploads, playback, and anything else, see the [Troubleshooting Guide](../../support/troubleshooting-guide.md).
+
+---
+
 ## Next Steps
 
 - [Set up monitoring](../../smart-search-guide.md): create a Smart Search to flag interactions automatically
 - Bring in your historical call data with a bulk upload (see [Upload Your Data](../../data-upload.md))
-- Create your first Scheduled Report for weekly management updates
+- [Generate Reports](../../features/custom-reporting.md): schedule a recurring report for weekly management updates
 
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

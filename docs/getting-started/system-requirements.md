@@ -70,7 +70,7 @@ Files larger than 1 GB are rejected before the upload begins.
 - **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
 - **Encoding:** UTF-8
 - **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, use **See this example** on the upload page for the CSV layout.
-- **Maximum size:** 1 MB per file (as advised on the chat upload page)
+- **Maximum size:** 1 MB per file, as stated on the upload page, and one file at a time. Split a large export into several files rather than uploading one big one.
 
 **JSON Structure Example:**
 ```json
@@ -134,6 +134,8 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 - Team and department names should match existing entries, or use the create option
 - No empty required fields
 
+---
+
 ## Processing Times
 
 Processing time varies with call length, audio quality, number of speakers, and server load. Longer calls take longer to process, and large batches take longer than single files. For a large historical import, upload during off-peak hours or overnight.
@@ -144,26 +146,30 @@ Processing time varies with call length, audio quality, number of speakers, and 
 
 ### Supported Methods
 - **Single Sign-On (SSO)**  
-  - Google OAuth (Google Workspace)  
-  - Microsoft Azure AD (Enterprise AD)  
-- **Traditional Authentication**  
-  - Email and Password
+  - Google, for organisations using Google accounts  
+  - Microsoft, for organisations using Microsoft accounts  
+- **Email and password**, where SSO is not used
 
 ### Password Requirements
-- At least 8 characters
-- At least one letter
-- At least one number
-- At least one special character (for example `@`, `#`, or `!`)
+
+Passwords must meet a minimum length and mix of characters. For the full list, and how to change your password, see [Password Requirements](../settings-config/account-security.md#password-requirements).
 
 ### Multi-Factor Authentication (MFA)
-- Vela does not have native MFA. If your organisation uses SSO (Google or Microsoft), MFA can be enforced through your identity provider's own settings.
-- Contact your IT administrator to enable MFA via Google Workspace or Microsoft Azure AD.
+- Vela does not have native MFA. If your organisation uses SSO, MFA can be enforced through your identity provider's own settings.
+- Contact your IT administrator to enable MFA through your Google or Microsoft account.
 
 ---
 
 ## Data Export
 
-Reports can be exported as PDF or DOCX.
+| What you can export | Where | Format |
+| :--- | :--- | :--- |
+| A report | Reports, download icon on a row | PDF or DOCX |
+| An interaction's scorecard | The Scorecard tab, download icon | CSV |
+| Smart Search insights | A search's results, **Download Detailed Insights** | PDF |
+| A list of interactions | Interactions, **Export** | CSV |
+
+Downloads open in a new tab, so allow pop-ups for the Vela domain.
 
 ---
 
@@ -189,6 +195,9 @@ Vela can automatically mask sensitive information in transcripts, so calls and c
 ### Access Level
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Settings Access by Role](../settings-config/access-control.md).
 
+### Sessions
+A session expires after 24 hours, after which you sign in again. See [Security and Compliance](../security-compliance.md).
+
 ### User Device Security
 - Keep browsers up to date
 - Lock devices when unattended
@@ -204,9 +213,7 @@ If the platform does not load, an upload fails, or audio does not play, see the 
 
 ## Need Help?
 
-If you have questions or encounter technical issues:
-
-- **Email:** `support@botlhale.ai`
+**Contact Support:** support@botlhale.ai
 
 **Before contacting support, provide:**
 - Browser type and version
