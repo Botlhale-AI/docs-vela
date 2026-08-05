@@ -9,10 +9,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
   },
+  themes: ['@docusaurus/theme-mermaid'],
   favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-vela', 
