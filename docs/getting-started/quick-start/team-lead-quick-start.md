@@ -177,7 +177,7 @@ Click your processed interaction to open it. The full transcript sits alongside 
 Four parts do most of the work when you review:
 
 - **Summary**: a plain-language recap of what happened and how it was resolved.
-- **Sentiment**: how the customer felt through the conversation, and where it shifted.
+- **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
 - **Alerts**: anything a Smart Search or the AI flagged. Mark each one resolved once you have acted on it.
 

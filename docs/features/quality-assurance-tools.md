@@ -87,12 +87,13 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 
 | Tab | What it shows | What to look for |
 | :--- | :--- | :--- |
-| **Summary** | A recap of what happened and how it ended. | Did the agent address the main issue? Was the resolution captured? |
-| **Sentiment** | How the customer's mood moved through the conversation. | Did the agent improve it, or did it worsen? Where did it shift? |
-| **Pain Points** | Signs of customer frustration. | Did the agent address the difficulty that was raised? |
-| **Keywords** | Tracked terms that came up. | Were the mandatory phrases used? Were product terms right? |
-| **Intents** | What the customer came for, such as sales, a complaint, or support. | Did the agent match their approach to it? |
-| **Alerts** | Which Smart Searches this interaction matched. | Is the match genuine, or is the search too broad? |
+| **Summary** | A recap of what happened and how it ended. | Whether the agent resolved what the customer came for, and whether the outcome was stated clearly before the conversation closed. |
+| **Keywords** | Tracked terms that came up. | Whether your mandatory phrases were said, and whether products and policies were named correctly. |
+| **Alerts** | Which Smart Searches this interaction matched. | Whether the flagged moment holds up once you read it in context. If a search keeps matching interactions it should not, tell your administrator so its phrases can be tightened. |
+| **Intents** | What the customer came for, such as sales, a complaint, or support. | Whether the agent handled it as that kind of conversation, for example following the complaints process when the intent is a complaint. |
+| **Sentiment** | The positive, neutral, and negative split for the conversation, shown for the agent and the customer separately. | A high negative share on the customer's side, and whether the agent's own tone held steady. Use the transcript timestamps to find where it turned. |
+| **Scorecard** | How Vela scored the interaction against your Agent Scorecard. | Any item you would have judged differently. This is the tab where you override it, in [Score and Provide Feedback](#3-score-and-provide-feedback) below. |
+| **Pain Points** | Signs of customer frustration. | Whether each frustration was acknowledged when it was raised, rather than left unanswered. |
 
 ![The Interaction Detail View, with the Smart Detector tabs across the analysis panel and the Call Details summary beside it](../../img/screenshots/calls/calls-3.png)
 
@@ -119,7 +120,7 @@ The Automatic Scorecard provides a base score, but your expertise is required fo
 
 ![The Scorecard tab on Manual view, with a question's outcome open on Yes, No and N/A](../../img/screenshots/calls/manual_scorecard.png)
 
-1.  On the Interaction Detail View, locate the **Scorecard** section.
+1.  On the Interaction Detail View, open the **Scorecard** tab in the Smart Detector panel.
 2.  Switch **View** between **Automatic** and **Manual** to find the item you want to change.
 3.  Click the **edit icon** (pencil) to enter edit mode.
 4.  Set the **Current Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
