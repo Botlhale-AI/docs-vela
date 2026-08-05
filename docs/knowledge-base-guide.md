@@ -1,218 +1,118 @@
 ---
+id: knowledge-base-guide
+title: Build Your Knowledge Base
 sidebar_position: 4
-draft: true
+type: how-to
 ---
 
-# Build Your Team's Knowledge Base
+# Build Your Knowledge Base
 
-Create a smart, searchable repository of company information that empowers your agents to provide better service, answer questions confidently, and continuously improve their knowledge.
+## What the Knowledge Base Does in Vela
 
-## What You Can Achieve
+The Knowledge Base stores your organisation's procedures, policies, scripts, and product information as uploaded documents. On its own, a document does nothing. You link it to the feature that should use it, and Vela's AI then reads that document as reference when it evaluates an interaction.
 
-A well-built knowledge base enhances your team's capabilities. You'll be able to:
+You can link a Knowledge Base document to:
 
-| **Agent Empowerment** | **Service Quality** | **Continuous Learning** |
-|---------------------|-------------------|----------------------|
-| Give agents instant answers | Ensure consistent responses | Build collective knowledge |
-| Reduce training time | Improve accuracy and speed | Keep information current |
-| Centralise company knowledge | Maintain quality standards | Foster knowledge sharing |
+- an **Agent Scorecard question**, so the AI judges that question against your written procedure rather than generic wording. This shapes the automatic score.
+- a **Smart Search**, so the AI weighs your document when deciding whether an interaction matches. This sharpens what the search flags, it does not change the score.
+- a **Smart Question**, so the AI uses your document when answering the question.
 
----
+In every case you link the document the same way: in that item's configuration, turn on the Knowledge Base option and select the document.
 
-## Getting Started with Knowledge Base
-
-### Step 1: Access Knowledge Base
-
-![ Knowledge Base](../img/screenshots/smart_search/smart9.png)
-
-- [ ] **Go to "Smart Detector" → "Knowledge Base"**
-- [ ] **Click "Upload"** to start building your knowledge base
-- [ ] **Choose your content focus** based on your team's needs
-
-### Step 2: Upload Your Content
-- [ ] **Add company documents** (PDFs, text files, URLs)
-- [ ] **Organise with tags** and categories
-- [ ] **Set access permissions** for different teams
-- [ ] **Configure search settings** for efficient discovery
+The Knowledge Base is managed by administrators and team leads. Agents do not upload or manage documents.
 
 ---
 
-## Knowledge Base Content Types
+## Uploading a Document
 
-### Essential Information
-| **Content Category** | **What to Include** | **Business Value** |
-|---------------------|-------------------|------------------|
-| Product Information | Features, specifications, pricing, availability | Accurate product knowledge, reduced errors |
-| Service Policies | Procedures, guidelines, escalation processes | Consistent service delivery, compliance |
-| Troubleshooting Guides | Common issues, solutions, workarounds | Improved problem resolution, enhanced satisfaction |
-| Training Materials | Best practices, scripts, techniques | Skill development, performance improvement |
+### Step 1: Navigate to the Knowledge Base
 
-### Advanced Content
-| **Content Type** | **Purpose** | **Implementation** |
-|-----------------|-------------|------------------|
-| FAQ Collections | Quick answers to common questions | Reduce repetitive inquiries, improve efficiency |
-| Process Documentation | Step-by-step procedures and workflows | Standardise operations, reduce errors |
-| Compliance Information | Regulatory requirements and standards | Ensure compliance, reduce risk |
-| Best Practice Guides | Proven techniques and strategies | Improve performance, share excellence |
+In the left sidebar, click **Smart Detector**, then **Knowledge Base**.
 
----
+![The Knowledge Base page, with PDF upload above the Document Library](../img/screenshots/smart_search/smart9.png)
 
-## Building Your Knowledge Base
+{/* RESHOOT: smart9.png predates Smart Questions, so its sidebar shows only three Smart Detector entries and in the old order. The page content itself is still accurate. Also filed under smart_search/ rather than a knowledge base folder. */}
 
-### Content Organisation
-Structure your knowledge base for easy navigation:
+### Step 2: Upload Your Document
 
-| **Organisation Level** | **Purpose** | **Example Structure** |
-|----------------------|-------------|---------------------|
-| **Categories** | High-level grouping | Products, Services, Policies, Training |
-| **Subcategories** | Specific topic areas | Product A, Product B, Billing, Technical Support |
-| **Tags** | Cross-referencing | Urgent, New, Updated, Compliance, Training |
-| **Search Keywords** | Discovery optimization | Synonyms, common terms, abbreviations |
+1. Drag a PDF onto the upload area, or click it to select one. Knowledge Base accepts PDF files.
+2. Add a **Description** (optional). Say what it covers and which teams or situations it applies to, so you can identify the document later when linking it.
+3. Set the document's scope under **Apply documents to**: the organisation, a department, or a team. The scope controls which users can see and use the document. Set it to match the teams whose interactions the document is relevant to.
+4. Click **Upload Files**.
 
-### Content Quality Standards
-- [ ] **Keep it current** - Update information regularly
-- [ ] **Be specific** - Provide clear, actionable information
-- [ ] **Use clear language** - Write for your audience
-- [ ] **Include examples** - Make information practical and useful
+### Step 3: Link the Document
 
-### Access Control
-| **Access Level** | **Who Has Access** | **Content Examples** |
-|-----------------|-------------------|-------------------|
-| **Public** | All agents | General policies, basic procedures |
-| **Team-Specific** | Designated teams | Specialised procedures, team-specific information |
-| **Management** | Supervisors and managers | Sensitive information, strategic documents |
-| **Admin** | System administrators | Configuration, technical documentation |
+Uploading a document makes it available in the Knowledge Base, but Vela only uses it once you link it to a scorecard question, a Smart Search, or a Smart Question. The steps are the same for each. Linking to a Smart Search is shown here:
+
+1. Navigate to **Smart Detector → Smart Search**.
+2. Open or create the Smart Search you want to link the document to.
+3. In the Smart Search configuration, turn on the Knowledge Base option and select your document.
+4. Save the Smart Search.
+
+![The Knowledge Base option at the foot of the Smart Search form, reading "Use a knowledge base document to enhance this smart search"](../img/screenshots/smart_search/knowledge_base.png)
+
+To use the document when **scoring**, link it to an Agent Scorecard question instead, in the same way, under **Smart Detector → Agent Scorecard**. The AI then judges that question against the document rather than generic wording.
 
 ---
 
-## Optimising Search and Discovery
+## What to Upload
 
-### Search Configuration
-Make information easy to find:
+Upload documents that define how agents should behave in specific situations. These are the materials you would hand a new agent and say "follow this". Useful content includes:
 
-| **Search Feature** | **Configuration** | **Benefit** |
-|-------------------|------------------|-------------|
-| **Keyword Optimization** | Add relevant terms and synonyms | Improve search accuracy |
-| **Category Filtering** | Organise content by topic | Efficient content discovery |
-| **Tag-Based Search** | Use tags for cross-referencing | Find related information efficiently |
-| **Recent Updates** | Highlight new and updated content | Keep agents informed of changes |
+- Call scripts and opening or closing statement requirements
+- Escalation procedures and criteria
+- Compliance obligations and mandatory disclosures
+- Product or service information that agents are expected to communicate accurately
+- Objection-handling frameworks and approved responses
 
-### Content Discovery
-- [ ] **Use descriptive titles** that clearly indicate content
-- [ ] **Add detailed tags** for better categorization
-- [ ] **Include search keywords** that agents might use
-- [ ] **Create cross-references** between related content
-
-### Search Analytics
-Monitor how agents use the knowledge base:
-
-| **Metric** | **What It Shows** | **Action** |
-|------------|-------------------|------------|
-| **Search Frequency** | Most common queries | Add missing content, improve existing |
-| **Content Usage** | Most/least accessed information | Optimise popular content, review unused |
-| **Search Success** | How often agents find what they need | Improve search terms, reorganise content |
-| **Time to Find** | How long agents spend searching | Simplify navigation, improve search |
+The test is whether a document describes an observable agent action. The AI reads these to assess what agents said and did, so material written for another purpose, such as background reading or marketing copy, leaves scoring accuracy where it was.
 
 ---
 
-## Knowledge Base Management
+## Access Control
 
-### Content Lifecycle
-Manage your knowledge base content effectively:
+Each document is assigned a scope that determines which users can access it:
 
-| **Stage** | **Action** | **Timeline** |
-|-----------|------------|--------------|
-| **Creation** | Add new content with proper organisation | As needed |
-| **Review** | Check accuracy and relevance | Monthly |
-| **Update** | Modify content based on feedback and changes | Quarterly |
-| **Archive** | Remove outdated or irrelevant content | Annually |
+| **Scope** | **Who Has Access** |
+|-----------|-------------------|
+| **Organisation** | All users across the organisation |
+| **Department** | Users belonging to the selected department |
+| **Team** | Users belonging to the selected team |
 
-### Quality Assurance
-- [ ] **Regular content reviews** to ensure accuracy
-- [ ] **Feedback collection** from agents and customers
-- [ ] **Usage analytics** to identify improvement opportunities
-- [ ] **Expert validation** for technical or complex content
-
-### Continuous Improvement
-- [ ] **Monitor search patterns** to identify gaps
-- [ ] **Gather agent feedback** on content usefulness
-- [ ] **Track customer satisfaction** improvements
-- [ ] **Update content** based on business changes
+Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to Organisation. A script specific to one team's product line should be scoped to that team.
 
 ---
 
-## Using Knowledge Base During Interactions
+## Keeping the Knowledge Base Current
 
-### Post-Call Access
-Enable agents to access information for future calls and training:
+Update documents when procedures change. AI scoring based on an outdated procedure document produces results that conflict with your current standards, which undermines both the scoring accuracy and agent confidence in the feedback they receive.
 
-| **Access Method** | **When to Use** | **Benefits** |
-|------------------|-----------------|-------------|
-| **Quick Search** | For training and preparation | Immediate answers, improved confidence |
-| **Category Browse** | When exploring options | Discover related information |
-| **Recent Content** | For latest updates | Stay current with changes |
-| **Favourites** | For frequently used information | Quick access to common resources |
+When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-### Integration with Workflows
-- [ ] **Embed in call scripts** for consistent information delivery
-- [ ] **Link to escalation procedures** for complex issues
-- [ ] **Connect with training programs** for skill development
-- [ ] **Integrate with quality assurance** for performance monitoring
-
-### Best Practices for Agents
-- [ ] **Search before escalating** to find existing solutions
-- [ ] **Use multiple search terms** to find relevant information
-- [ ] **Bookmark frequently used content** for quick access
-- [ ] **Provide feedback** on content usefulness and accuracy
+Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
 
 ---
 
-## Troubleshooting Common Issues
+## Troubleshooting
 
-| **Problem** | **Cause** | **Solution** |
-|-------------|-----------|--------------|
-| **Low usage rates** | Poor content, difficult navigation, lack of training | Improve content quality, simplify navigation, provide training |
-| **Search not finding content** | Poor keywords, unclear organisation, missing content | Optimise search terms, reorganise content, add missing information |
-| **Outdated information** | Infrequent updates, no review process | Establish update schedule, assign content owners, regular reviews |
-| **Agent resistance** | Poor training, unclear benefits, difficult access | Provide thorough training, demonstrate benefits, improve accessibility |
+**The Knowledge Base document does not appear to be affecting AI scoring.**
 
----
+Confirm that the document has been explicitly linked to the item that should use it: a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document to the Knowledge Base does not apply it anywhere on its own. You create the link yourself in that item's configuration.
 
-## Best Practices for Knowledge Base
+**Uploaded document is not visible to certain team leads or agents.**
 
-### Content Strategy
-- [ ] **Start with essentials** - Focus on most-needed information first
-- [ ] **Keep it simple** - Use clear, concise language
-- [ ] **Update regularly** - Maintain current and accurate information
-- [ ] **Get feedback** - Involve agents in content development
-
-### User Experience
-- [ ] **Make it searchable** - Optimise for quick discovery
-- [ ] **Organise logically** - Use intuitive categories and structure
-- [ ] **Keep it accessible** - Ensure easy access during interactions
-- [ ] **Provide examples** - Make information practical and actionable
-
-### Management
-- [ ] **Assign ownership** - Designate content managers and reviewers
-- [ ] **Establish processes** - Create workflows for content updates
-- [ ] **Monitor usage** - Track effectiveness and identify improvements
-- [ ] **Celebrate success** - Recognise when knowledge base helps improve performance
+Check the scope setting on the document. If it is scoped to a specific team or department, users outside that scope do not see it. Adjust the scope if wider access is needed.
 
 ---
 
-## Next Steps
+## Related
 
-| **For Smart Monitoring** | **For Performance Evaluation** | **For Team Development** |
-|-------------------------|-------------------------------|------------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Create Agent Scorecards](./agent-scorecard-guide.md) | [Improve Agent Performance](./agents.md) |
-
-### See also
-- [Smart Search Guide](./smart-search-guide.md) - Create custom search patterns
-- [Agent Performance](./agents.md) - Coach your team effectively
-- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [Dashboard Overview](./dashboard.md) - Monitor team performance
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Set Up Smart Search](./smart-search-guide.md): link a document to a search so the AI matches against it
+- [Review and Score Interactions](./features/quality-assurance-tools.md): review and score the interactions your documents help assess
+- [Monitor Agent Performance](./features/monitor-agent-performance.md): track how an agent's scores move over time
+- [Administrator Setup](./getting-started/quick-start/administrator-setup.md): build the Knowledge Base as part of initial configuration
+- [Security and Compliance](./security-compliance.md): where the documents you upload are held, and how they are encrypted
 
 ## Need Help?
 
-- **Contact Support**: support@botlhale.ai
+**Contact Support:** support@botlhale.ai

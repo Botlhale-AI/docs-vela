@@ -1,5 +1,8 @@
 ---
+id: agent-scorecard-guide
+title: Create Agent Scorecards
 sidebar_position: 3
+type: how-to
 draft: true
 ---
 
@@ -22,19 +25,27 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 ## Getting Started with Agent Scorecards
 
 ### Step 1: Access Scorecard Builder
-![ Smart Search](../img/screenshots/smart_search/smart5.png)
+
+![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_search/smart5.png)
 
 - [ ] **Go to "Smart Detector" → "Agent Scorecard"**
 - [ ] **Click "Create"** to build your first scorecard
 - [ ] **Choose your evaluation focus** based on your team's needs
 
 ### Step 2: Define Evaluation Criteria
-![ Smart Search](../img/screenshots/smart_search/smart7.png)
-![ Smart Search](../img/screenshots/smart_search/smart8.png)
-- [ ] **Select evaluation categories** (communication, problem-solving, etc.)
-- [ ] **Set scoring weights** for each category
-- [ ] **Define performance standards** and expectations
-- [ ] **Configure scoring thresholds** for different performance levels
+
+![The top of the question form: scorecard scope and historical search](../img/screenshots/smart_search/smart7.png)
+![The rest of the question form, ending in Add Question and Create](../img/screenshots/smart_search/smart8.png)
+
+- [ ] **Write scorecard questions**: each question is a pass/fail evaluation point (e.g. "Did the agent confirm the customer's name at the start of the call?")
+- [ ] **Assign a category** to group related questions (e.g. "Opening", "Compliance", "Closing")
+- [ ] **Set a weight** for each question to reflect its importance in the overall score
+- [ ] **Flag critical items** as auto-fail where a single failure should disqualify the interaction
+- [ ] **Set the scope** (organisation, department, or team), the applicable call direction (inbound, outbound, or all), and which interaction types the item applies to (calls, chats, or all)
+
+:::tip Phrase questions so "yes" is the good answer
+Write questions so that a "yes" outcome means the agent did the right thing. For example, use "Did the agent verify the customer's identity?" rather than "Did the agent skip verification?". This keeps scoring consistent and makes results easier to read at a glance.
+:::
 
 ### Step 3: Test and Deploy
 - [ ] **Review sample evaluations** to ensure accuracy
@@ -46,58 +57,40 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 
 ## Scorecard Components
 
-### Evaluation Categories
-Structure your scorecard with these key performance areas:
+### How scorecard Items Work
+Each item in the Agent scorecard  is a question evaluated against the interaction. Items can be:
 
-| **Category** | **What It Measures** | **Scoring Focus** |
-|--------------|---------------------|------------------|
-| Communication | Clarity, professionalism, empathy | Tone, language, listening skills |
-| Problem Solving | Issue resolution effectiveness | Analysis, creativity, follow-through |
-| Product Knowledge | Understanding of products/services | Accuracy, depth, application |
-| Customer Focus | Meeting customer needs and expectations | Understanding, responsiveness, satisfaction |
-| Efficiency | Time management and process adherence | Speed, accuracy, resource utilization |
-| Compliance | Policy adherence and regulatory requirements | Documentation, procedures, standards |
+| **Property** | **Description** |
+|--------------|----------------|
+| **Question** | The specific behaviour or action being assessed (e.g. "Did the agent verify the customer's identity?") |
+| **Category** | A grouping label you define to organise related questions |
+| **Weight** | The relative importance of this item in calculating the overall score |
+| **Auto-Fail** | If enabled, failing this item flags the interaction as auto-failed |
+| **Compliance** | Mark as a compliance item to distinguish regulatory checks from quality checks |
+| **Direction** | Whether the item applies to inbound calls, outbound calls, or both |
+| **Interactions** | Whether the item applies to calls only, chats only, or all interactions |
+| **Expected Outcome** | Whether **Yes** or **No** is the desired answer for this item. Set this to match how you have phrased the question |
 
-### Scoring System
-| **Score Range** | **Performance Level** | **Action Required** |
-|-----------------|---------------------|-------------------|
-| 90-100% | Excellent | Recognise, mentor others, advanced development |
-| 80-89% | Good | Minor improvements, skill refinement |
-| 70-79% | Satisfactory | Coaching needed, specific improvements |
-| Below 70% | Needs Improvement | Intervention, intensive coaching |
+### Scoring
+The agent's scorecard score is calculated from the weighted results of all applicable scorecard items. Performance thresholds (what constitutes a pass or fail score overall) are configured by your organisation's administrator.
+
+> Contact your administrator to confirm what performance threshold your organisation has set for acceptable scores.
 
 ---
 
 ## Building Effective Scorecards
 
 ### Criteria Selection
-Choose evaluation criteria that align with your business goals:
+Choose evaluation criteria that align with your business goals. Common areas to consider include:
+- **Compliance**: adherence to regulatory and policy requirements
+- **Opening and closing scripts**: whether the agent follows required greeting or sign-off procedures
+- **Verification**: identity checks or data confirmation steps
+- **Problem resolution**: whether the agent resolved the customer's issue
 
-| **Business Goal** | **Focus Areas** | **Evaluation Criteria** |
-|------------------|-----------------|----------------------|
-| Customer Satisfaction | Service quality, problem resolution | Communication, customer focus, problem solving |
-| Operational Efficiency | Speed, accuracy, productivity | Efficiency, process adherence, time management |
-| Compliance & Quality | Standards, procedures, documentation | Compliance, accuracy, documentation |
-| Team Development | Skill growth, knowledge sharing | Product knowledge, communication, mentoring |
+Write each item as a concrete, observable question so the AI (and human reviewers) can give a clear yes/no answer.
 
 ### Weighting Strategy
-Assign appropriate weights to different criteria:
-
-| **Weighting Approach** | **When to Use** | **Example Weights** |
-|----------------------|-----------------|-------------------|
-| Balanced | General performance evaluation | Equal weights (16.7 percent each) |
-| Customer-Focused | Service-oriented roles | Communication (25 percent), Customer Focus (25 percent), Problem Solving (20 percent) |
-| Efficiency-Focused | High-volume operations | Efficiency (30 percent), Process Adherence (25 percent), Speed (20 percent) |
-| Quality-Focused | Compliance-heavy roles | Compliance (30 percent), Accuracy (25 percent), Documentation (20 percent) |
-
-### Performance Standards
-Define clear expectations for each criterion:
-
-| **Criterion** | **Excellent (90-100 percent)** | **Good (80-89 percent)** | **Satisfactory (70-79 percent)** | **Needs Improvement (below 70 percent)** |
-|---------------|------------------------|------------------|-------------------------|----------------------------|
-| Communication | Clear, professional, empathetic, excellent listening | Generally clear, professional, good listening | Sometimes unclear, basic professionalism | Unclear, unprofessional, poor listening |
-| Problem Solving | Creative solutions, excellent follow-through | Effective solutions, good follow-through | Basic solutions, some follow-through | Ineffective solutions, poor follow-through |
-| Customer Focus | Exceeds expectations, anticipates needs | Meets expectations, responsive | Sometimes meets expectations | Fails to meet expectations |
+Assign higher weights to items that have a greater business impact. For example, compliance items typically carry more weight than stylistic ones. Items flagged as **auto-fail** will disqualify the entire interaction regardless of other scores, so reserve this for the most critical requirements.
 
 ---
 
@@ -141,7 +134,7 @@ Analyse patterns across your team:
 | **Pattern** | **Team Impact** | **Management Action** |
 |-------------|-----------------|---------------------|
 | High team scores | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
-| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programs |
+| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programmes |
 | Low team scores | Systemic issues, training gaps | Full training review, process improvement |
 | Declining scores | Performance issues, changing standards | Investigate root causes, adjust expectations |
 
@@ -161,7 +154,7 @@ Use scorecard data to improve processes:
 - [ ] **Set up automatic evaluation** of all interactions
 - [ ] **Configure scoring** for feedback
 - [ ] **Enable trend analysis** to track improvement over time
-- [ ] **Integrate with coaching** systems for seamless development
+- [ ] **Integrate with coaching** so a low-scoring item leads directly to a course
 
 ### Custom Metrics
 - [ ] **Add business-specific criteria** relevant to your industry
@@ -214,14 +207,14 @@ Use scorecard data to improve processes:
 
 | **For Smart Monitoring** | **For Knowledge Management** | **For Team Development** |
 |-------------------------|----------------------------|------------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./agents.md) |
+| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./Agents.md) |
 
 ### See also
-- [Agent Performance](./agents.md) - Coach your team effectively
+- [Agent Performance](./Agents.md) - Coach your team effectively
 - [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [Dashboard Overview](./dashboard.md) - Monitor performance trends
+- [Dashboard Overview](./Dashboard.md) - Monitor performance trends
 - [Knowledge Base](./knowledge-base-guide.md) - Build training resources
-- [Official API Documentation](https://docs-apis.botlhale.xyz) - Complete API reference for integrations
+- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
 
 ## Need Help?
 
