@@ -38,7 +38,7 @@ If the answer says something about **the conversation** rather than **the agent'
 3. Configure the settings described below.
 4. Click **Create Smart Questions** to save.
 
-![ Smart Question Create](../img/screenshots/smart_questions/create_1.png)
+![The Smart Question Details form on the Create tab, with the scope selector, the All, Calls, and Chats options, Historical Search, and the Question box](../img/screenshots/smart_questions/create_1.png)
 
 {/* RESHOOT: create_1.png shows a set-level "Interactions" radio (All / Calls / Chats) that has been removed from the product. The prompt string no longer exists anywhere in the app. The surrounding text is correct; only the image is behind. */}
 
@@ -76,6 +76,8 @@ Choose which interactions the question runs against:
 - **Inbound Calls**
 - **Outbound Calls**
 - **All Calls**
+
+The setting filters on direction, and chats have a direction too. A chat uploaded without one is treated as inbound, so a question set to **Outbound Calls** never reaches those chats. Use **All Calls** if you want the question answered on chats as well as calls.
 
 ### Search Status
 
@@ -119,6 +121,7 @@ Because the answers do not feed into scoring, they are best read as a body of ev
 
 ## Related
 
+- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each one does
 - [Set Up Smart Search](./smart-search-guide.md): detect keywords, intents, topics, and pain points
 - [Build Your Knowledge Base](./knowledge-base-guide.md): upload the documents a question is judged against
 - [Review and Score Interactions](./features/quality-assurance-tools.md): score interactions against the Agent Scorecard

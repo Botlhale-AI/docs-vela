@@ -51,7 +51,7 @@ Uploading a document makes it available in the Knowledge Base, but Vela only use
 
 ![The Knowledge Base option at the foot of the Smart Search form, reading "Use a knowledge base document to enhance this smart search"](../img/screenshots/smart_search/knowledge_base.png)
 
-To use the document when **scoring**, link it to an Agent Scorecard question instead, in the same way, under **Smart Detector → Agent Scorecard**. The AI then judges that question against the document rather than generic wording.
+To use the document when **scoring**, link it to an Agent Scorecard question instead, in the same way, under **Smart Detector → Agents Scorecard**. The AI then judges that question against the document rather than generic wording.
 
 ---
 
@@ -88,6 +88,8 @@ Set the scope to match the teams whose calls the document is relevant to. A comp
 Update documents when procedures change. AI scoring based on an outdated procedure document produces results that conflict with your current standards, which undermines both the scoring accuracy and agent confidence in the feedback they receive.
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
+
+Before deleting a document, check what still points at it. A scorecard question, Smart Search, or Smart Question that referenced a deleted document falls back to judging against general wording rather than your procedure, and the score it produces changes without anyone editing the question. Relink those items to the new version rather than leaving them pointing at nothing.
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
 

@@ -2,12 +2,23 @@
 sidebar_position: 1
 title: Smart Detector
 type: explanation
-draft: true
 ---
 
 # Smart Detector
 
 Smart Detector is where you set up automatic monitoring and evaluation. It brings together several tools.
+
+---
+
+## The Smart Detector Home Page
+
+Clicking **Smart Detector** in the left sidebar opens a home page with a card for each tool, rather than jumping straight into one of them. The sidebar lists the same tools, so you can go directly to any of them once you know which you want.
+
+Below the cards sit four more buttons: **Topics**, **Intents**, **Keywords**, and **Pain Points**. These are the term lists your searches and analysis match against. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
+
+![The Smart Detector home page, with a card for each tool above the Topics, Intents, Keywords, and Pain Points buttons](../img/screenshots/smart_detector/smart-detector-landing.png)
+
+{/* SCREENSHOT: the home page also shows a Number Search card, which is not documented. Number Search is not in the vela codebase used to verify this documentation, so its behaviour, inputs, and results have not been confirmed. Capture at img/pending/number-search.png. Document it once it can be verified. */}
 
 ---
 
@@ -18,6 +29,10 @@ Smart Detector is where you set up automatic monitoring and evaluation. It bring
 - **Agent Scorecard**: the evaluation criteria Vela scores every interaction against.
 - **Knowledge Base**: your own policies and procedures, used as the reference point when Vela evaluates agents.
 
+The home page also has a **Number Search** card, for looking up the interactions associated with a phone number. It is not covered in this documentation yet.
+
+Smart Search and Smart Questions depend on your plan. If either is missing from the sidebar, your organisation's plan does not include it, and your Account Manager can tell you what it would take to add.
+
 ---
 
 ## Related
@@ -27,3 +42,9 @@ Smart Detector is where you set up automatic monitoring and evaluation. It bring
 - [Build Your Knowledge Base](./knowledge-base-guide.md): give the AI your own documents as reference
 - [Manage Smart Search Terms](./topics-and-terms-guide.md): the topics, intents, keywords, and pain points searches match on
 - [Scorecard Fields](./reference/scorecard-fields.md): every field on a scorecard question
+
+---
+
+## Need Help?
+
+**Contact Support:** support@botlhale.ai

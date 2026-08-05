@@ -28,7 +28,7 @@ Agent scorecards transform subjective evaluations into objective insights. You'l
 
 ![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_search/smart5.png)
 
-- [ ] **Go to "Smart Detector" → "Agent Scorecard"**
+- [ ] **Go to Smart Detector → Agents Scorecard**
 - [ ] **Click "Create"** to build your first scorecard
 - [ ] **Choose your evaluation focus** based on your team's needs
 
@@ -65,7 +65,7 @@ Each item in the Agent scorecard  is a question evaluated against the interactio
 | **Question** | The specific behaviour or action being assessed (e.g. "Did the agent verify the customer's identity?") |
 | **Category** | A grouping label you define to organise related questions |
 | **Weight** | The relative importance of this item in calculating the overall score |
-| **Auto-Fail** | If enabled, failing this item flags the interaction as auto-failed |
+| **Auto-Fail** | If enabled, failing this item auto-fails the whole interaction. It then reads 0.0%, with the score earned on the other questions in brackets beside it |
 | **Compliance** | Mark as a compliance item to distinguish regulatory checks from quality checks |
 | **Direction** | Whether the item applies to inbound calls, outbound calls, or both |
 | **Interactions** | Whether the item applies to calls only, chats only, or all interactions |
@@ -90,7 +90,7 @@ Choose evaluation criteria that align with your business goals. Common areas to 
 Write each item as a concrete, observable question so the AI (and human reviewers) can give a clear yes/no answer.
 
 ### Weighting Strategy
-Assign higher weights to items that have a greater business impact. For example, compliance items typically carry more weight than stylistic ones. Items flagged as **auto-fail** will disqualify the entire interaction regardless of other scores, so reserve this for the most critical requirements.
+Assign higher weights to items that have a greater business impact. For example, compliance items typically carry more weight than stylistic ones. Failing an item flagged as **auto-fail** drops the interaction to 0.0% regardless of the other scores, with the score it earned elsewhere kept in brackets beside the zero, so reserve this for the most critical requirements.
 
 ---
 
@@ -184,10 +184,10 @@ Use scorecard data to improve processes:
 ## Best Practices for Scorecards
 
 ### Design Principles
-- [ ] **Keep it simple** - Focus on the most important criteria
-- [ ] **Be objective** - Use measurable, observable behaviours
-- [ ] **Stay relevant** - Align with business goals and customer needs
-- [ ] **Ensure fairness** - Apply consistent standards across all agents
+- [ ] **Keep it short**: focus on the most important criteria
+- [ ] **Be objective**: use measurable, observable behaviours
+- [ ] **Stay relevant**: align with business goals and customer needs
+- [ ] **Ensure fairness**: apply consistent standards across all agents
 
 ### Implementation Strategy
 - [ ] **Start small** - Begin with a few key criteria
