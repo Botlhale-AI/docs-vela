@@ -6,8 +6,13 @@ const config = {
   tagline: "Documentation",
   url: 'https://docs-vela.botlhale.xyz', 
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-vela', 
@@ -81,6 +86,7 @@ const config = {
     docs: {
       sidebar: {
         hideable: false,
+        autoCollapseCategories: true,
       },
     },
     head: [
