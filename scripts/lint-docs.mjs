@@ -199,14 +199,154 @@ function walkAll(dir, out = []) {
   return out;
 }
 
-// Pages nothing else links to are reachable only from the sidebar.
+// --- Links -----------------------------------------------------------------
+// The build catches broken links, but only after a full compile. These run in
+// under a second, and each one corresponds to a break that reached the build.
+
+/** Docusaurus heading slug: lowercase, drop punctuation, spaces to hyphens. */
+const slug = (h) =>
+  h
+    .replace(/`[^`]*`/g, (s) => s.replace(/`/g, ""))
+    .replace(/\*\*|\*|_/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
+
+const draftPaths = new Set();
+for (const file of files) {
+  const raw = readFileSync(file, "utf8");
+  if (/^draft:\s*true$/m.test(raw)) draftPaths.add(key(file));
+}
+
+const anchorsOf = new Map();
+const titleOf = new Map();
+for (const { file, raw } of live) {
+  const explicit = [...raw.matchAll(/^#{1,6} .*?\{#([\w-]+)\}\s*$/gm)].map((m) => m[1]);
+  const derived = [...raw.replace(/```[\s\S]*?```/g, "").matchAll(/^#{1,6} (.+)$/gm)].map((m) =>
+    slug(m[1].replace(/\s*\{#[\w-]+\}\s*$/, ""))
+  );
+  anchorsOf.set(key(file), new Set([...explicit, ...derived]));
+  titleOf.set(key(file), raw.match(/^title:\s*(.+)$/m)?.[1].trim());
+}
+const titleToPage = new Map();
+for (const [k, t] of titleOf) if (t) titleToPage.set(t.toLowerCase(), k);
+
+for (const { rel, file, raw } of live) {
+  for (const m of raw.matchAll(/\[([^\]]+)\]\((\.[^)\s]*?\.md)(#[^)\s]*)?\)/g)) {
+    const [, text, href, hash] = m;
+    const target = resolve(dirname(file), href);
+
+    if (!existsSync(target)) {
+      err(rel, `broken link: "${text}" points at ${href}, which does not exist`);
+      continue;
+    }
+    if (draftPaths.has(key(target)))
+      err(rel, `links to a draft page: ${href}. Drafts are excluded from production, so the link breaks`);
+
+    if (hash) {
+      const anchor = hash.slice(1).toLowerCase();
+      const have = anchorsOf.get(key(target));
+      if (have && !have.has(anchor))
+        err(rel, `broken anchor: ${href}${hash} has no matching heading`);
+    }
+
+    // Link text that is another page's exact title sends the reader somewhere
+    // other than the page they think they are clicking through to.
+    const other = titleToPage.get(text.trim().toLowerCase());
+    if (other && other !== key(target))
+      err(rel, `link text "${text}" is the title of a different page (${other}), but points at ${href}`);
+  }
+
+  // Same checks for same-page anchors.
+  for (const m of raw.matchAll(/\[([^\]]+)\]\((#[\w-]+)\)/g)) {
+    const anchor = m[2].slice(1).toLowerCase();
+    if (!anchorsOf.get(key(file))?.has(anchor))
+      err(rel, `broken anchor: ${m[2]} has no matching heading on this page`);
+  }
+}
+
+// --- Navigation ------------------------------------------------------------
+// A rename has to land in four places at once: the title, the H1, the sidebar
+// label, and the navigation table. Each of these has drifted before.
+
+const sidebarSrc = readFileSync(join(ROOT, "sidebars.js"), "utf8")
+  .split("\n")
+  .filter((l) => !l.trim().startsWith("//"))
+  .join("\n");
+
+/** Strip a leading emoji or symbol from a sidebar label. */
+const bare = (s) => s.replace(/^[^A-Za-z0-9(]+\s*/, "").trim();
+
+const sidebarEntries = [...sidebarSrc.matchAll(/id:\s*"([^"]+)"[\s\S]{0,160}?label:\s*"([^"]+)"/g)];
+const inSidebar = new Set(sidebarEntries.map((m) => m[1]));
+
+for (const [, id, label] of sidebarEntries) {
+  const k = key(join(DOCS, `${id}.md`));
+  const t = titleOf.get(k);
+  if (!t) {
+    err("sidebars.js", `entry "${id}" has no matching published page`);
+    continue;
+  }
+  if (bare(label) !== t)
+    err("sidebars.js", `label "${bare(label)}" does not match the title of ${id}.md ("${t}")`);
+}
+
+// The navigation table in the framework doc must list what the sidebar builds.
+const fwPath = join(ROOT, "DOCUMENTATION_FRAMEWORK.md");
+if (existsSync(fwPath)) {
+  const fw = readFileSync(fwPath, "utf8");
+  const documented = new Map(
+    [...fw.matchAll(/^\| \*\*([^*]+)\*\* \| (.+?) \|$/gm)].map((r) => [
+      r[1].trim(),
+      r[2].split("·").map((s) => s.trim()),
+    ])
+  );
+  const actual = new Map();
+  let cur = null;
+  const navRe =
+    /type:\s*"category",\s*label:\s*"([^"]+)"|id:\s*"([^"]+)"[\s\S]{0,160}?label:\s*"([^"]+)"/g;
+  let m;
+  while ((m = navRe.exec(sidebarSrc))) {
+    if (m[1]) actual.set((cur = bare(m[1])), []);
+    else if (cur) actual.get(cur).push(bare(m[3]));
+  }
+  for (const [cat, items] of actual) {
+    if (!documented.has(cat)) {
+      err("DOCUMENTATION_FRAMEWORK.md", `section 4 has no row for the sidebar category "${cat}"`);
+      continue;
+    }
+    const a = items.join(" · ");
+    const d = documented.get(cat).join(" · ");
+    if (a !== d)
+      err("DOCUMENTATION_FRAMEWORK.md", `section 4 row "${cat}" reads "${d}" but the sidebar builds "${a}"`);
+  }
+}
+
+// Pages reachable from the top navigation bar rather than the sidebar.
+const configPath = join(ROOT, "docusaurus.config.js");
+const inNavbar = new Set();
+if (existsSync(configPath)) {
+  const cfg = readFileSync(configPath, "utf8");
+  for (const m of cfg.matchAll(/to:\s*['"]\/docs\/([^'"]+)['"]/g)) inNavbar.add(m[1].toLowerCase());
+  for (const m of cfg.matchAll(/docId:\s*['"]([^'"]+)['"]/g)) inNavbar.add(m[1].toLowerCase());
+}
+
+// A page in none of the sidebar, the navbar, or another page cannot be reached.
 for (const { rel, file } of live) {
   const name = basename(file, ".md");
+  const id = key(file).replace(/^docs\//, "").replace(/\.md$/, "");
   const linked = live.some(
     (other) => other.file !== file && other.raw.includes(`${name}.md)`)
   );
-  if (!linked) warn(rel, "no inbound links from other pages, reachable only via the sidebar");
+  const listed = [...inSidebar].some((s) => s.toLowerCase() === id);
+  const navbarred = inNavbar.has(id);
+  if (!linked && !listed && !navbarred)
+    err(rel, "unreachable: not in the sidebar, not in the navbar, and nothing links to it");
+  else if (!linked && !navbarred)
+    warn(rel, "no inbound links from other pages, reachable only via the sidebar");
 }
+
 
 // --- Report ----------------------------------------------------------------
 for (const w of warnings) console.log(`warning  ${w}`);
