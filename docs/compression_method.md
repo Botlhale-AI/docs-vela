@@ -2,7 +2,6 @@
 sidebar_position: 11
 title: Preparing ZIP Files for Bulk Upload
 type: how-to
-draft: true
 ---
 
 # Preparing ZIP Files for Bulk Upload

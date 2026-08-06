@@ -11,6 +11,17 @@ Recordings and transcripts you upload are encrypted in transit and at rest, and 
 
 ---
 
+## Before You Begin
+
+You need:
+
+- **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. The dropzone rejects the wrong format, so check which tab you are on before preparing the file. See [Supported Formats](#supported-formats) for every limit.
+- **The agent who handled the interaction.** Agent is the only required field on a single upload, and Team and Department fill in from it.
+- **An access level that reaches that agent.** The agent list is bounded by your access level, so an agent outside your team or department does not appear in it. See [Access Level](./reference/glossary.md#access-level).
+- **Duration left in your organisation's monthly allocation.** What happens when it runs out depends on the **Duration Usage Setting** an administrator chose: analysis either halts or continues at additional rates. See [Organisation Configuration](./settings-config/organisation-configuration.md).
+
+---
+
 ## Upload Methods
 
 ### Manual Upload
@@ -35,6 +46,8 @@ Bulk upload brings in many recordings at once from a single ZIP archive. Use it 
 **Step 1: Prepare your audio files**
 
 Confirm every file is WAV or MP3, then compress them into a single ZIP archive. Keep the archive under the 3 GB limit, and split larger sets into several batches.
+
+Vela reads ZIP files compressed with Deflate or Store. Windows Explorer produces these by default. If you use 7-Zip or WinRAR, check the setting first: see [Preparing ZIP Files for Bulk Upload](./compression_method.md).
 
 **Step 2: Prepare the metadata file**
 
@@ -175,15 +188,28 @@ The chat upload page states a 1 MB maximum. Split large exports into several fil
 
 Once uploaded, Vela queues files for processing. Transcription, speaker identification, sentiment analysis, keyword detection, intent classification, and automatic scorecard evaluation all run as part of the same pipeline.
 
+```mermaid
+flowchart LR
+    A("**Uploaded**<br/>the file reaches Vela") --> B("**Queued**")
+    B --> C("**Transcribed**<br/>speech to text,<br/>speakers separated")
+    C --> D("**Analysed**<br/>sentiment, topics, intents,<br/>keywords, pain points")
+    D --> E("**Scored**<br/>against the scorecards<br/>covering that agent")
+    E --> F("**Listed and notified**<br/>the interaction appears under<br/>Calls or Chats")
+```
+
+An interaction reaches the **Calls** or **Chats** list at the end of that pipeline, not the start. An upload you cannot find yet is normally still working through it rather than lost.
+
 Processing time depends on file length, audio quality, and current server load. Vela emails you when processing is complete, depending on your notification settings.
 
 ---
 
-## Confirm It Arrived
+## Check Your Work
 
-Open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed. A bulk upload also shows a results screen naming any rows it could not process, so read that before assuming the whole batch succeeded.
+Wait for the notification telling you the analysis is ready, then open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed.
 
-Until processing finishes, an interaction has no transcript, no score, and no analysis. Give it time before treating a missing score as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
+An interaction that is not in the list yet has not finished processing. That is the normal state straight after an upload, so give it time before treating it as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
+
+A bulk upload also shows a results screen naming any rows it could not process. Read that before assuming the whole batch succeeded, because a row rejected there never enters the pipeline at all.
 
 ---
 
@@ -192,6 +218,7 @@ Until processing finishes, an interaction has no transcript, no score, and no an
 | Problem | Likely cause | Solution |
 | :--- | :--- | :--- |
 | Upload fails | Unsupported format or file too large | Use WAV or MP3. Keep a single call under 1 GB and a ZIP under 3 GB |
+| `Unknown compression method` | The ZIP was made with Deflate64, BZip2, or LZMA | Recreate it with Deflate or Store. See [Preparing ZIP Files for Bulk Upload](./compression_method.md) |
 | Chat upload fails | The file format does not match the tab. **Upload** takes CSV, **Bulk Upload** takes JSON | Check which tab you are on, then supply that format |
 | Bulk chat upload fails | Malformed JSON, or JSON that does not match the Vela schema | Validate the JSON, and confirm every message has `message`, `time`, and `sender` |
 | Processing fails | Poor audio quality or corrupted file | Verify the file plays locally before uploading |
