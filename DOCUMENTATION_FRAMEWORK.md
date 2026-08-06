@@ -88,7 +88,7 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Getting Data In** | Upload Your Data |
 | **Using Vela** | Review and Score Interactions · Monitor Agent Performance · Generate Reports · Notifications |
 | **Smart Detector** | Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms |
-| **Understanding Vela** | How Scoring Works |
+| **Understanding Vela** | How Scoring Works · How the Pieces Fit Together |
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
 | **Administration & Configuration** | Settings Access by Role · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
 | **Advanced** | API Reference · Best Practices |

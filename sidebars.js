@@ -108,6 +108,11 @@ const sidebars = {
       type: "category",
       label: "🔍 Smart Detector",
       collapsed: true,
+      // `smart-detector-overview` is deliberately absent from this list. The
+      // category's generated-index below already introduces the section, so a
+      // second overview inside it would duplicate that. The page stays
+      // published as a link target: Smart Search and Smart Questions both
+      // point at it for "the home page these tools sit under". Do not add it.
       link: {
         type: "generated-index",
         title: "Smart Detector",
@@ -154,6 +159,11 @@ const sidebars = {
           type: "doc",
           id: "explanation/how-scoring-works",
           label: "🎯 How Scoring Works"
+        },
+        {
+          type: "doc",
+          id: "explanation/how-the-pieces-fit",
+          label: "🧩 How the Pieces Fit Together"
         },
       ],
     },

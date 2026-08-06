@@ -195,9 +195,11 @@ A screenshot is a claim about the product, and it ages faster than the text arou
 
   None of the internal-only controls should be documented at all.
 
-- **Editing a capture to remove an internal-only control is allowed**, and preferred to shipping one that shows it. Painting out the **Support** entry makes the sidebar match what a customer sees, so the screenshot becomes more truthful, not less. Two limits: only ever remove something the reader genuinely does not have, and never alter a value, label, or result the reader is meant to read. Reshooting from a customer-like account is still the better fix when someone has the access.
+- **Editing a capture to remove an internal-only control is allowed**, and preferred to shipping one that shows it. Painting out the **Support** entry makes the sidebar match what a customer sees, so the screenshot becomes more truthful, not less. Two limits: only ever remove something the reader genuinely does not have, and never alter a value, label, or result the reader is meant to read. Masking personal information is the one exception to the second limit, covered below, because a mask declares itself rather than pretending the field is empty. Reshooting from a customer-like account is still the better fix when someone has the access.
+- **Numbered callouts may be drawn on top of a capture.** They add to the image rather than changing it, so the "never alter a value" rule does not apply: nothing underneath is hidden or altered. Keep them to screens dense enough that a reader has to hunt, number them in the same order as the numbered steps in the text, and never let a marker cover a label or a value. A callout that needs a caption to make sense is doing too much work, so split the screenshot instead.
 - **Check the sidebar before you shoot.** It is the fastest way to date a screenshot. If it does not match the current navigation, the whole image is out of date.
 - **Use demo data.** Never capture a real customer's name, contact details, or transcript.
+- **Mask other people's personal information.** Some screens list real users and their email addresses, and publishing those processes personal information for a purpose nobody consented to. Under POPIA that is not ours to do. Draw a plain bar over each address instead. A bar is honest where deletion is not: it shows that an address sits in that field without disclosing it, so the reader still learns what the column holds. Filtering the list down to your own record works too, but it costs you the rows that make a table worth showing, so prefer masking. Either way, leave a comment in the page saying the capture is deliberate, otherwise the next person will "fix" it.
 - **Crop to what you are explaining.** A full-page capture to illustrate one button wastes the reader's attention.
 
 ### Saving one
@@ -219,6 +221,9 @@ Both markers are MDX comments, so they compile to nothing:
 | :--- | :--- |
 | `{/* SCREENSHOT: ... */}` | A screenshot is needed and does not exist yet |
 | `{/* RESHOOT: ... */}` | One exists but the product has moved on |
+| `{/* UNVERIFIED: ... */}` | Something exists in the product that cannot be checked yet, so it is named but not documented |
+
+Keep the three apart. A marker filed under the wrong one inflates the count of outstanding screenshot work and hides the real task.
 
 Say what to capture and where to save it, or what is wrong and what you verified it against. List everything outstanding with:
 
