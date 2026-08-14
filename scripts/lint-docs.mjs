@@ -6,18 +6,27 @@
  * The build already fails on broken links and anchors, so this covers the rest:
  * frontmatter, naming, house style, and the screenshot rules.
  *
- * Run locally with `npm run lint:docs`.
+ * Run locally with `npm run lint:docs`. CI runs it on every push, together
+ * with the build, from .github/workflows/docs.yml.
  * Draft pages are skipped, because they are excluded from production builds.
  */
 
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative, basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
 /** Normalise a path so Windows separators and drive-letter case never matter. */
 const key = (p) => relative(ROOT, p).split(/[\\/]/).join("/").toLowerCase();
+
+/**
+ * Read a file with line endings normalised to LF. Several rules below anchor
+ * on `$`, which sits before the `\n` and so never matches a trailing `\r`.
+ * Reading a CRLF checkout raw makes those rules pass silently rather than fail.
+ */
+const read = (p) => readFileSync(p, "utf8").split("\r\n").join("\n");
 const DOCS = join(ROOT, "docs");
 const SHOTS = join(ROOT, "img", "screenshots");
 
@@ -47,10 +56,15 @@ const FUTURE_TENSE_OK = [
 
 // Literal product strings that would otherwise trip a rule above.
 // Every entry is a label that appears in the Vela UI exactly as written.
+// Pages where the vendor speaks in their own voice. Keep this list short:
+// every entry is a page the first-person rule no longer protects.
+const FIRST_PERSON_OK = ["docs/release-notes.md"];
+
 const UI_LITERALS = [
   "Medical License",
   "Simple Storage",
   "not part of the selected organization", // Vela's own error message
+  "Color", // the Tags screen labels the column this way
 ];
 
 const errors = [];
@@ -82,7 +96,7 @@ const referencedImages = new Set();
 
 for (const file of files) {
   const rel = relative(ROOT, file).replace(/\\/g, "/");
-  const raw = readFileSync(file, "utf8").split("\r\n").join("\n");
+  const raw = read(file);
   const fm = raw.match(/^---\n([\s\S]*?)\n---/);
 
   if (fm && /^draft:\s*true$/m.test(fm[1])) continue;
@@ -119,6 +133,15 @@ for (const file of files) {
   const body = prose(raw);
   if (/[—–]/.test(body)) err(rel, "contains an em or en dash");
 
+  // Style guide section 2 bans semicolons in prose. prose() has already removed
+  // fenced blocks and inline code, so the only other legitimate source is an
+  // MDX import line at the top of the file.
+  for (const line of body.split("\n")) {
+    if (/^\s*import\s/.test(line)) continue;
+    if (line.includes(";"))
+      err(rel, `semicolon in prose, use two sentences: ${line.trim().slice(0, 90)}`);
+  }
+
   for (const word of BANNED) {
     const re = new RegExp(`\\b${word}\\b`, "gi");
     for (const m of body.matchAll(re)) {
@@ -137,13 +160,47 @@ for (const file of files) {
     }
   }
 
-  if (/\b(we|our|us)\b/i.test(body.replace(/\bVela's\b/g, "")))
+  // Release notes are the one genre where first person is correct: they are
+  // Botlhale announcing a change to a customer, not a page describing the
+  // product. Rewriting "we've launched" into the passive would read worse.
+  // Recorded as a deliberate deviation in STYLE_GUIDE.md section 5.
+  if (!FIRST_PERSON_OK.includes(rel) &&
+      /\b(we|our|us)\b/i.test(body.replace(/\bVela's\b/g, "")))
     warn(rel, "first person (we/our/us): documentation is not a person");
 
   for (const m of body.matchAll(/\bwill\b/gi)) {
     const ctx = body.slice(Math.max(0, m.index - 60), m.index + 60).replace(/\n/g, " ");
     if (FUTURE_TENSE_OK.some((ok) => ctx.includes(ok))) continue;
     err(rel, `future tense "will": house style is present tense. In: ...${ctx.trim()}...`);
+  }
+
+  // --- Mermaid -----------------------------------------------------------
+  // Mermaid draws node labels as plain text, so markdown emphasis inside one
+  // renders as literal asterisks on the page. Diagrams are drawn in the
+  // browser, so a green build never catches it. prose() strips fenced blocks
+  // before the house-style checks above, which is how 64 of these shipped.
+  for (const m of raw.matchAll(/```mermaid\n([\s\S]*?)```/g)) {
+    const firstLine = raw.slice(0, m.index).split("\n").length;
+    m[1].split("\n").forEach((l, i) => {
+      const at = `mermaid line ${firstLine + i + 1}`;
+      if (l.includes("**"))
+        err(rel, `${at} uses markdown bold, which renders literally: ${l.trim()}`);
+      else if (/"[^"]*\*[^"]*"/.test(l))
+        err(rel, `${at} has an asterisk in a label, which renders literally: ${l.trim()}`);
+      // The em dash rule above runs on prose(), which strips fenced blocks,
+      // so diagram labels are the one place a dash can hide from it.
+      if (/[—–]/.test(l))
+        err(rel, `${at} contains an em or en dash: ${l.trim()}`);
+    });
+  }
+
+  // --- How-to completeness ------------------------------------------------
+  // A how-to states what the reader needs before starting and how they know
+  // they are done. Both were retrofitted across the set; this keeps them.
+  if (type === "how-to") {
+    const h2s = [...headingSource.matchAll(/^## (.+)$/gm)].map((h) => h[1].trim());
+    for (const required of ["Before You Begin", "Check Your Work"])
+      if (!h2s.includes(required)) err(rel, `how-to is missing "## ${required}"`);
   }
 
   // --- Images ------------------------------------------------------------
@@ -179,6 +236,41 @@ for (const file of files) {
 
   const dupes = alts.filter((a, i) => alts.indexOf(a) !== i);
   for (const d of new Set(dupes)) err(rel, `alt text "${d}" is used more than once on this page`);
+
+  // --- Diagrams ----------------------------------------------------------
+  // Mermaid draws in the browser, so a malformed diagram builds cleanly and
+  // then shows an error box on the live page. Node labels wrap across lines,
+  // so balance is counted over the whole diagram rather than line by line.
+  let diagram = 0;
+  for (const m of raw.matchAll(/```mermaid\n([\s\S]*?)```/g)) {
+    diagram++;
+    const code = m[1];
+    const where = `mermaid diagram ${diagram}`;
+
+    const kind = code.trim().split(/\s/)[0];
+    if (!/^(flowchart|graph|sequenceDiagram|classDiagram|stateDiagram(-v2)?|erDiagram|journey|gantt|pie|quadrantChart|mindmap|timeline)$/.test(kind))
+      err(rel, `${where}: starts with "${kind}", which is not a diagram type`);
+
+    const unquoted = code.replace(/"[^"]*"/g, '""');
+    if ((code.match(/"/g) || []).length % 2)
+      err(rel, `${where}: odd number of quotation marks`);
+    for (const [open, close, name] of [["(", ")", "parentheses"], ["[", "]", "brackets"], ["{", "}", "braces"]]) {
+      const o = unquoted.split(open).length - 1;
+      const c = unquoted.split(close).length - 1;
+      if (o !== c) err(rel, `${where}: unbalanced ${name}`);
+    }
+
+    // A dash run only means an edge as part of a connector. A line that has
+    // dashes and no connector is the "A -- B" mistake, which draws nothing.
+    for (const [i, line] of code.split("\n").entries()) {
+      const label = line.replace(/"[^"]*"/g, '""').replace(/<br\s*\/?>/g, "");
+      if (!/-/.test(label)) continue;
+      if (/(-->|---|-\.->|-\.-|==>|===|--[xo]|<--)/.test(label)) continue;
+      if (/^\s*(flowchart|graph|subgraph|end|classDef|class|style|%%)/.test(label)) continue;
+      if (/(^|\s)-{1,2}(\s|$)/.test(label))
+        err(rel, `${where}, line ${i + 1}: dashes with no connector, use --> or ---`);
+    }
+  }
 }
 
 // --- Cross-page checks -----------------------------------------------------
@@ -188,6 +280,50 @@ if (existsSync(SHOTS)) {
     if (!referencedImages.has(key(img)))
       err(relative(ROOT, img).replace(/\\/g, "/"), "screenshot is not referenced by any page");
   }
+  checkScreenshotAge(all);
+}
+
+// A screenshot is a claim about the product, and it ages faster than the text
+// around it. This warns before the set quietly rots.
+//
+// Dates come from git, not the filesystem. A fresh clone rewrites every mtime
+// to the checkout time, so mtime reports every screenshot as new in CI, which
+// is exactly where the check needs to work.
+function checkScreenshotAge(files) {
+  const MAX_AGE_DAYS = 365;
+  let log;
+  try {
+    log = execSync('git log --format="C|%cI" --name-only --diff-filter=AM -- img/screenshots', {
+      cwd: ROOT,
+      encoding: "utf8",
+      maxBuffer: 32 * 1024 * 1024,
+      stdio: ["ignore", "pipe", "ignore"],
+    });
+  } catch {
+    return; // no git, shallow clone, or no history: skip rather than guess
+  }
+
+  const lastSeen = new Map();
+  let when = null;
+  for (const line of log.split("\n")) {
+    if (line.startsWith("C|")) when = line.slice(2).trim();
+    else if (line.trim() && when && !lastSeen.has(line.trim()))
+      lastSeen.set(line.trim(), when); // git log is newest-first
+  }
+
+  const now = Date.now();
+  const aged = [];
+  for (const f of files) {
+    const rel = relative(ROOT, f).replace(/\\/g, "/");
+    const iso = lastSeen.get(rel);
+    if (!iso) continue; // never committed: new, so nothing to judge yet
+    const days = Math.floor((now - new Date(iso).getTime()) / 86400000);
+    if (days > MAX_AGE_DAYS) aged.push({ rel, days });
+  }
+
+  aged.sort((a, b) => b.days - a.days);
+  for (const { rel, days } of aged)
+    warn(rel, `screenshot last changed ${days} days ago. Check it still matches the product`);
 }
 
 function walkAll(dir, out = []) {
@@ -211,12 +347,15 @@ const slug = (h) =>
     .trim()
     .toLowerCase()
     .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-");
+    // One hyphen per whitespace character, not per run. Dropping punctuation
+    // leaves the spaces that surrounded it, so "Quality & Performance" slugs
+    // to "quality--performance". Collapsing runs here reported false broken
+    // anchors on any heading with punctuation between words.
+    .replace(/\s/g, "-");
 
 const draftPaths = new Set();
 for (const file of files) {
-  const raw = readFileSync(file, "utf8");
-  if (/^draft:\s*true$/m.test(raw)) draftPaths.add(key(file));
+  if (/^draft:\s*true$/m.test(read(file))) draftPaths.add(key(file));
 }
 
 const anchorsOf = new Map();
@@ -270,7 +409,7 @@ for (const { rel, file, raw } of live) {
 // A rename has to land in four places at once: the title, the H1, the sidebar
 // label, and the navigation table. Each of these has drifted before.
 
-const sidebarSrc = readFileSync(join(ROOT, "sidebars.js"), "utf8")
+const sidebarSrc = read(join(ROOT, "sidebars.js"))
   .split("\n")
   .filter((l) => !l.trim().startsWith("//"))
   .join("\n");
@@ -295,7 +434,7 @@ for (const [, id, label] of sidebarEntries) {
 // The navigation table in the framework doc must list what the sidebar builds.
 const fwPath = join(ROOT, "DOCUMENTATION_FRAMEWORK.md");
 if (existsSync(fwPath)) {
-  const fw = readFileSync(fwPath, "utf8");
+  const fw = read(fwPath);
   const documented = new Map(
     [...fw.matchAll(/^\| \*\*([^*]+)\*\* \| (.+?) \|$/gm)].map((r) => [
       r[1].trim(),
@@ -327,7 +466,7 @@ if (existsSync(fwPath)) {
 const configPath = join(ROOT, "docusaurus.config.js");
 const inNavbar = new Set();
 if (existsSync(configPath)) {
-  const cfg = readFileSync(configPath, "utf8");
+  const cfg = read(configPath);
   for (const m of cfg.matchAll(/to:\s*['"]\/docs\/([^'"]+)['"]/g)) inNavbar.add(m[1].toLowerCase());
   for (const m of cfg.matchAll(/docId:\s*['"]([^'"]+)['"]/g)) inNavbar.add(m[1].toLowerCase());
 }

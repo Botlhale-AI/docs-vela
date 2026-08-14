@@ -51,3 +51,6 @@ temp/
 
 # Crash artefacts
 *.stackdump
+
+# Single lockfile: this repo uses npm and package-lock.json
+yarn.lock

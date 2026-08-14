@@ -1,0 +1,44 @@
+name: Docs
+
+# Runs the same two commands a writer runs locally: the linter, then the build.
+# The linter covers the house rules Docusaurus cannot see. The build covers
+# broken links and anchors. Between them they catch every class of defect that
+# has reached this repository so far.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+# A newer push to the same branch makes an in-flight run pointless.
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Kept as separate steps so a failure names itself in the run summary
+      # rather than hiding inside a combined script.
+      - name: Lint the documentation
+        run: npm run lint:docs
+
+      - name: Build the site
+        run: npm run build
