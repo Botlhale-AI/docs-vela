@@ -8,11 +8,13 @@ type: reference
 
 What has changed in each release of Vela, newest first.
 
-Version 2.1 brings new features, improvements, and bug fixes.
+## Version 2.1
 
-## New Features
+Version 2.1 brings new features and improvements.
 
-### Agent Coaching Portal
+### New Features
+
+#### Agent Coaching Portal
 We've launched a complete coaching portal for agents that includes:
 - **Courses Management**: Assign and track training courses with progress monitoring
 - **Awards System**: Recognise and reward high performers with digital awards
@@ -25,7 +27,7 @@ We've launched a complete coaching portal for agents that includes:
 <!-- ### Knowledge Base
 We've added the ability to upload your knowledge base and a well-defined description for your documents into the system. This feature is available as an add-on and allows Vela to analyse calls more effectively and assess agent performance based on your specific business context.
 
-### Scorecard (Checklist) Results
+### Scorecard Results
 View the results of the agent scorecard at a question level. Find this on the new Results tab on the Agent Scorecard page in the Smart Detector.
 
 ### Smart Search Insights
@@ -43,7 +45,7 @@ The chats API allows clients to send their chat text data to Botlhale for proces
 ### Interactions Metadata
 Include rich interaction metadata when sending and loading your interactions to Vela (manually via the platform's Upload functionality, or automatically via APIs). -->
 
-## Improvements
+### Improvements
 
 <!-- ### Redaction
 We've improved the quality of the redaction model.
@@ -63,7 +65,7 @@ We've enhanced the accuracy of our multilingual ASR (transcription) models, resu
 ### Checklists Are Scorecards
 We've renamed Agent Checklists to Agent Scorecards to better reflect their purpose. This new name more accurately represents their role in evaluating agent performance, making it clearer and more intuitive for users. -->
 
-### UI/UX Improvements
+#### UI/UX Improvements
 - **Redesigned Modals**: Updated modal components for better user experience
 - **Better Visual Design**: Updated styling and layout for improved usability
 
@@ -75,23 +77,23 @@ We have resolved an issue that caused dashboard configurations to reset on reloa
 ### Users Table
 We've updated the users page for a better user experience! Now, only the table scrolls horizontally, keeping the rest of the page static for improved navigation and readability. -->
 
-## What's Next?
+### What's Next?
 
-### Enhanced Coaching Features
+#### Enhanced Coaching Features
 We're improving the coaching portal.
 
-### Improving Smart Detector
+#### Improving Smart Detector
 We're improving Smart Detector.
 
-### Voice ID Notifications
+#### Voice ID Notifications
 - We'll automatically send emails to agents who have not submitted a sample for Voice ID.
 
-### Vela Redesign
+#### Vela Redesign
 We're continuing to redesign Vela's UI for an even better user experience with:
 - Modern design system
 - Improved accessibility
 
-### Advanced Analytics
+#### Advanced Analytics
 We're adding more analytics and reporting features to help you better understand your team's performance and customer interactions.
 
 We're constantly working to make Vela better. Stay tuned for more updates, and as always, we'd love to hear your feedback at product@botlhale.ai.

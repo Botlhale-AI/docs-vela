@@ -15,7 +15,7 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 
 ## Login and Authentication Issues
 
-**Problem:** Cannot log in. The page shows an error, or the login button does not respond.
+**Problem:** Cannot sign in. The page shows an error, or the login button does not respond.
 
 **Cause:** JavaScript or cookies may be disabled in the browser, or the browser cache may contain stale session data.
 
@@ -118,7 +118,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Cause:** Individual files in the batch may have format issues, or their metadata rows contained errors.
 
 **Solution:**
-1. Check which calls from the batch appear in the Interactions list, and identify the ones missing.
+1. Check which calls from the batch appear in the Interactions list, and identify which are missing.
 2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device.
 3. Check the metadata row for each missing file, particularly that `agent_name`, `team`, and `department` correspond to records that exist in Vela.
 4. Correct the issues and re-upload only the affected files.
@@ -146,18 +146,18 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Solution:**
 1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
-3. If a call has remained in a processing state for an unusually long time with no notification, contact support with the filename and upload time.
+3. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
 
 ---
 
 **Problem:** Processed calls appear in the list but show no score.
 
-**Cause:** No active Agent Scorecard exists with a scope that covers the relevant team or department, so the AI has no criteria to score against.
+**Cause:** No scorecard question is scoped to the relevant team or department, so the AI has no criteria to score against.
 
 **Solution:**
-1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and confirm that an active scorecard exists.
-2. Check the scope of the scorecard. It must cover the department or team the agent belongs to.
-3. Once a scorecard is active, newly processed calls are scored automatically.
+1. Ask your administrator to open **Smart Detector → Agents Scorecard** and confirm that questions exist with **Search Status** set to Enabled.
+2. Check the scope of the scorecard. It must cover the department or team the agent belongs to, and its **Interactions** setting must match the channel: a scorecard set to Chats never scores a call.
+3. Once a scorecard is active, newly processed calls are scored automatically. It does not reach back over calls already processed unless it was created with Historical Search on. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 
 ---
 
@@ -201,7 +201,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Cause:** The changes were not saved before navigating away.
 
 **Solution:**
-1. After customising the dashboard, confirm you clicked **Save** before navigating away.
+1. After customising the dashboard, confirm you clicked **Save Changes** before navigating away. Closing the modal any other way discards your selection.
 2. Dashboard preferences are stored against your user profile, not in your browser, so they follow you across devices and browsers. Clearing browser data does not reset them.
 3. If your saved layout still does not appear after signing in again, contact support.
 
@@ -222,7 +222,7 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 **Problem:** The Scorecard section is missing from an interaction.
 
-**Cause:** No active scorecard with the correct scope covers the team or department this agent belongs to.
+**Cause:** No scorecard question is scoped to the team or department this agent belongs to.
 
 **Solution:**
 1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and create or activate a scorecard.
@@ -230,13 +230,18 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 ---
 
-**Problem:** Changes to scorecard criteria (questions or weights) do not appear to affect existing scores.
+**Problem:** A newly added scorecard question does not appear on interactions that were already scored.
 
-**Cause:** A score is calculated when the interaction is processed, and stored. Scorecard changes apply to interactions processed after the change is saved. Already-scored interactions keep their original scores.
+**Cause:** Which questions an interaction was scored against is fixed when it is processed. A question added afterwards is not applied to it.
 
 **Solution:**
-1. Re-upload the affected interactions so they are processed again against the updated scorecard. Delete the earlier copies first if you do not want duplicates.
-2. For a large number of interactions, contact **support@botlhale.ai**.
+1. Accept the gap and start the new measurement from the date you added the question. This is usually the right choice.
+2. If an older interaction must be scored against it, upload the recording again so it is processed from scratch. That leaves two interactions for one conversation, so delete the earlier copy if you do not want duplicates.
+3. For a large number of interactions, contact **support@botlhale.ai**.
+
+:::note Editing a question is different from adding one
+Editing an existing question's **weight**, **Auto-Fail**, **Compliance**, or **Expected Outcome** does apply backwards. Interactions already scored against that question are re-scored from the current settings the next time you open them, including their **Initial** scores. See [How Scoring Works](../explanation/how-scoring-works.md).
+:::
 
 The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.
 
@@ -305,7 +310,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 
 **Solution:**
 1. Check your allowance under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
-2. Delete a search you no longer need. Setting one to Inactive does not free up room, so it has to be deleted.
+2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
 3. If you need more, ask your Account Manager about a higher limit.
 
 ---

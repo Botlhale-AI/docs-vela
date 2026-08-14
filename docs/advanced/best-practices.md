@@ -38,7 +38,7 @@ For compliance monitoring, write search phrases around the specific language you
 
 Scope each search appropriately. An organisation-wide compliance search is appropriate for a policy that applies to everyone. A search specific to one product line or team should be scoped to that team or department so that results are actionable by the right people.
 
-Keep the number of active searches manageable. Your plan caps how many you can hold, typically five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so spend the allowance on your compliance-critical rules first. A small set of well-scoped searches produces more actionable alerts than a large set of broad ones. See [Search Management](../smart-search-guide.md#search-management).
+Keep the number of active searches manageable. Your plan caps how many you can hold, and that is five unless your plan sets a different number. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so spend the allowance on your compliance-critical searches first. A small set of well-scoped searches produces more actionable alerts than a large set of broad ones. See [Search Management](../smart-search-guide.md#search-management).
 
 ---
 
@@ -46,7 +46,7 @@ Keep the number of active searches manageable. Your plan caps how many you can h
 
 ### Daily QA Routine
 
-Begin each day by reviewing outstanding Smart Search alerts before opening individual interactions. Alerts are interactions your own rules have already flagged, so they are a better starting point than sampling the call list at random.
+Begin each day with your unresolved Smart Search alerts, before opening individual interactions. Alerts are interactions your own searches have already flagged, so they are a better starting point than sampling the call list at random.
 
 On **Smart Detector → Smart Search**, sort the list by **Results** in descending order to see the most frequently triggered searches first. These often point to systemic issues rather than one-off incidents, and systemic issues merit faster attention.
 
@@ -60,7 +60,7 @@ Set aside time each week to look across the period rather than interaction by in
 
 - Whether the team's average score has moved relative to the previous week.
 - Whether the number of alerts has increased or decreased, and whether that change is explained by a known event (a new product launch, a recent process change, or a training programme).
-- Which agents have the widest gap between their automatic and manual scores: a persistent gap suggests the scorecard criteria may need refinement, or that the agent consistently operates in situations that require human judgement to score accurately.
+- Which agents have the widest gap between their automatic and manual scores. A gap that persists points at the scorecard criteria, or at an agent whose calls routinely need human judgement to score.
 - Whether any Smart Search is consistently triggering for the same agent. Repeated matches for the same individual point to a pattern requiring direct coaching.
 
 Review the trend over several weeks before concluding whether a change represents genuine improvement or natural variation. Single-week movements in either direction rarely justify a strategic change.
@@ -89,9 +89,9 @@ Do not override scores to inflate performance metrics. If overrides are consiste
 
 Look for patterns across multiple interactions rather than acting on individual calls. An agent who fails one scorecard item on one call may have had an unusual interaction. An agent who fails the same item across five of their last ten interactions has a skill gap that training can address.
 
-If Coaching is enabled for your organisation, assign training courses targeted to the identified gap. Generic training assigned to everyone produces less measurable improvement than targeted courses assigned in response to specific scorecard patterns.
+If Coaching is enabled for your organisation, build a course around the gap and give it a trigger score range that selects the agents who have it. Courses are assigned by score, not by name, so a narrow range reaches the people who need it while a wide one reaches everyone and measures nothing.
 
-After assigning a training course, monitor whether the relevant scorecard item improves over the following two to four weeks. If it does not, a direct coaching conversation is likely needed in addition to the course.
+Once a course has gone out, monitor whether the relevant scorecard item improves over the following two to four weeks. If it does not, a direct coaching conversation is likely needed in addition to the course.
 
 :::note Coaching is an add-on
 **Coaching** appears in the navigation only when it is enabled for your organisation. If you do not see it, agents receive their performance reports on the schedule set in [Organisation Configuration](../settings-config/organisation-configuration.md#4-agent-performance-sharing) instead.
@@ -99,7 +99,7 @@ After assigning a training course, monitor whether the relevant scorecard item i
 
 ### Decide What Agents Can See
 
-Where Coaching is enabled, **Coaching → Preferences → Agent View Permissions** decides whether agents see all of their interactions or only the ones a reviewer has marked as reviewed.
+Where Coaching is enabled, **Coaching → Preferences → Agent View Permissions** decides whether agents see all of their interactions or only those a reviewer has marked as reviewed.
 
 Reviewed-only is the stricter setting and the one worth considering if your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so pick it only if your team keeps up with reviewing. Agree the setting before agents are invited, because changing it later changes what they have already been able to see.
 

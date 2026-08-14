@@ -24,6 +24,15 @@ https://api.botlhale.xyz/asr/async/upload/vela
 **Description:**
 This endpoint accepts a call recording for processing by Vela. It validates the organisation's allocation and returns upload credentials for securely transferring the audio file.
 
+Uploading a call takes two requests, and the audio never goes to this endpoint. The first call returns a URL and a set of form fields. You post the audio to that URL:
+
+```mermaid
+flowchart LR
+    A("1. POST to<br/>/asr/async/upload/vela<br/>with org_id and metadata") --> B("Returns<br/>url and fields")
+    B --> C("2. POST the audio file<br/>to that returned url,<br/>with those fields")
+    C --> D("Vela processes the call<br/>and it appears under<br/>Interactions → Calls")
+```
+
 **Parameters:**
 
 | Parameter      | Requirement | Description                                              |
@@ -35,30 +44,38 @@ All `metadata` fields are optional:
 
 - **email**: Email address of the agent who participated in the call.
 - **agent**: Alternative to `email`: also matched on the agent's email address.
-- **agent_name**: The agent's name, matched against agent records case-insensitively. Use the name as it appears in Vela (for example `John Smith`), not a username.
-- **team**: Team the call should be attributed to.
+- **agent_name**: The agent's name, matched against agent records case-insensitively. Use the name as it appears in Vela (for example `John Smith`), not a username. Where no agent matches, Vela creates one, but only when the `team` you sent already exists. Check the spelling before you send a batch.
+- **team**: The team the call belongs to. The team has to exist in Vela already, because an upload never creates one. A team Vela cannot match is dropped, and that also stops a new agent being created from `agent_name`.
 - **department**: Department the call should be attributed to.
 - **direction**: Call direction: `inbound` or `outbound`.
 - **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`).
-- **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted or unparseable, the upload time is used.
-- **interaction_id**: Your own reference for the call.
-- **contact**: The customer's contact, as a string or number.
-- **notifyEmail**: An email address to notify when the call's analysis is complete.
-- **validate_metadata**: Set to `true` to reject the upload with an error when a field is invalid, such as an unparseable date or an unmatched agent, team, or department. Without it, invalid fields fall back to defaults.
+- **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
+- **interaction_id**: Your own reference for the call. It is stored as the call's filename.
+- **validate_metadata**: Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
+
+:::warning Metadata problems are silent by default
+Vela records the fields it can use and fills in defaults for the ones it cannot, so the upload succeeds either way. An unmatched `team` or `department`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, and an unparseable `date_of_call` all behave this way.
+
+Send `validate_metadata` to change that. Vela then returns a **400** naming the field it could not use, which is the safer setting while you are building an integration.
+
+Either way, check the first few calls of a new integration under **Interactions → Calls** and confirm the agent, team, direction, and tags landed as you intended.
+:::
 
 :::info **Allocation Check**
 The API verifies that the organisation is within its monthly allocated duration. If the allocation has been exceeded, an error is returned.
 :::
 
-**Response Format**: The response returns a JSON object containing an `url` and `fields` required to complete the audio file upload.
+**Response Format**: The response carries the two things the second request needs. `url` is where the audio goes, and `fields` is a set of form values that authorise that upload.
 
 **Sample Response:**
 ```json
 {
-    "fields": { ... },
-    "url": "<upload_url>"
+    "url": "<upload_url>",
+    "fields": { "<form field>": "<value>" }
 }
 ```
+
+Send every entry in `fields` back unchanged, as form fields, alongside the audio. Both samples below do this by spreading `fields` into the second request. The storage service issues that set and can change it, so pass through whatever arrives rather than hard-coding the keys.
 
 **Request Example**
 
@@ -142,17 +159,15 @@ Below are the attributes and the formats of each attribute required in the body.
 Metadata object: 
 - **email** (string): Email address of the agent in the chat.
 - **agent** (string): Alternative to `email`: also matched on the agent's email address. If no agent is matched, the chat is left unassigned.
-- **agent_name** (string): The agent's name, matched case-insensitively. Use the name as it appears in Vela, not a username.
+- **agent_name** (string): The agent's name, matched case-insensitively. Use the name as it appears in Vela, not a username. Sent together with `team`, it creates the agent when no existing record matches, so check the spelling before you send a batch.
 - **team** (string): Team the chat should be attributed to.
 - **department** (string): Department the chat should be attributed to.
 - **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
 - **tags** (array): Classification labels for the chat, as an array of strings.
-- **date** (string): Format `DD/MM/YYYY, HH:mm:ss`. Date and time the chat took place. If omitted or unparseable, the upload time is used.
+- **date** (string): Format `DD/MM/YYYY, HH:mm:ss`. Date and time the chat took place. If omitted, the upload time is used. Send the exact format, since a value in any other format is stored as-is and leaves the chat with an unusable date.
 - **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
-- **interaction_id** (string): Your own reference for the chat.
-- **contact** (string or number): The customer's contact.
+- **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
 - **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
-- **validate_metadata** (boolean): Set to `true` to reject the upload with an error when a field is invalid, instead of falling back to defaults.      
 
 
 Message object:
@@ -168,29 +183,28 @@ Chats are counted against a separate monthly chat allocation, not the duration a
 
 **Response Format**
 
-On success the endpoint returns the Vela ID of the new chat. Analysis runs afterwards, so a success response means the chat was accepted, not that it has finished processing.
+The endpoint accepts the request and starts the analysis in the background, so a success response means the chat was accepted rather than processed. The body carries the chat's ID:
 
 ```json
 {
     "message": "Chat successfully created.",
-    "id": "<chat_id>"
+    "id": "68f2a1c4e9b7d3a80f5c2e11"
 }
 ```
+
+Keep that `id` to match what you sent against what you find. To confirm the analysis finished, look under **Interactions → Chats**, or set `notifyEmail` and wait for the completion email.
 
 | Status | Error | Cause |
 |--------|-------|-------|
 | 404 | `Organisation not found` | `org_id` does not match an organisation. |
 | 400 | `Monthly chats allocation exceeded` | The organisation has used its chat allocation. |
-| 400 | `Invalid date of chat. Correct format is DD/MM/YYYY, HH:mm:ss` | `date`, or a message `time`, could not be parsed. |
-| 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` is not one of the two accepted values. |
-| 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string. |
-| 400 | `Invalid notify email` | `notifyEmail` is not a valid address. |
-| 400 | `Could not find agent with the provided metadata` | No agent matches `email`, `agent`, or `agent_name`. The same applies to an unmatched `team` or `department`. |
-| 500 | `Something went wrong with the upload` | The request could not be processed. |
+| 500 | `Something went wrong with the upload` | The request could not be read, usually because `chats` is not valid JSON. |
 
-The 400 validation errors are returned only when `validate_metadata` is `true`. Without it, an invalid field falls back to a default and the upload succeeds.
+:::warning Metadata problems are silent
+Vela matches each metadata field as it creates the chat, and drops the ones it cannot match. A field it cannot use leaves the chat created without it, so you get a success response either way. An unmatched `team`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, and a malformed `notifyEmail` all behave this way.
 
-Set `notifyEmail` if you want an email when the chat's analysis completes.
+Check the first few chats of a new integration under **Interactions → Chats** and confirm the agent, team, direction, and tags landed as you intended.
+:::
 
 **Example of body**
 
