@@ -4,99 +4,187 @@ title: Generate Reports
 type: how-to
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Generate Reports
-The Reports section lets Team Leads and Administrators build, customise, and schedule reports. Use them to track metrics over time, spot trends, and share results with people outside the platform.
+Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how figures leave the platform, as a file rather than a screen.
 
 ---
 
-## 1. Open the Report Builder
+## Before You Begin
 
-Go to **Reports** in the left sidebar and select the **Create** tab. At the top, choose one of two tabs:
+You need:
+
+- **Processed interactions inside the period you are reporting on.** Vela builds the report from what it finds. Where a run finds nothing, it emails you to say so instead of producing an empty report.
+- **Access level:** Organisational, Departmental, or Team, covering the teams you want in the report. See [Access Level](../reference/glossary.md#access-level).
+- **To know which metrics your plan offers.** Plans without Smart Search carry the quality assurance groups only. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
+
+---
+
+## 1. Choose One-Time or Recurring
+
+Go to **Reports** in the left sidebar and select the **Create** tab. Two tabs sit at the top:
 
 - **Create One-Time Report**: build a report now for a date range you pick.
 - **Schedule Recurring Report**: have Vela build the report automatically on a schedule.
 
 Both tabs share the same options below. The only difference is how you set the period: a one-time report uses a date range, a recurring report uses a frequency and a time.
 
-![The Create tab on Create One-Time Report, with the date presets and the two-month calendar](../../img/screenshots/report/report_create.png)
+```mermaid
+flowchart LR
+    C{"One-time<br/>or recurring?"} -- One-time --> D("Set a date range")
+    C -- Recurring --> F("Set a frequency<br/>and a time")
+    D --> M("Everything else<br/>is the same")
+    F --> M
+    M --> E("Create, or<br/>Schedule Report")
+```
 
 ---
 
-## 2. Configure the Report
+## 2. Build the Report
 
-### Set the Period
+### A. Set the Period
 
-- **One-time report**: use the calendar to pick a start and end date, or a quick option such as "Last Month".
-- **Recurring report**: set the **Report Frequency** (daily, weekly, or monthly) and the **Time**. For a weekly report, also choose the day of the week. For a monthly report, choose the day of the month.
+<Tabs groupId="report-type">
+<TabItem value="onetime" label="One-time report">
+
+Pick a start and end date on the calendar, or use a preset: **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, or **Last Month**. Your choice shows in **From** and **To** above the calendar.
+
+![The Create tab on Create One-Time Report, with the date presets and the two-month calendar](../../img/screenshots/report/report_create.png)
+
+</TabItem>
+<TabItem value="recurring" label="Recurring report">
+
+Set the **Report Frequency** (daily, weekly, or monthly) and the **Time**, which is entered in 24-hour format. For a weekly report, also choose the day of the week. For a monthly report, choose the day of the month.
 
 ![The Schedule Recurring Report tab, with Report Frequency set to Daily and the 24-hour Time selector](../../img/screenshots/report/scheduled_report.png)
 
-### Choose the Interaction Type
+</TabItem>
+</Tabs>
+
+### B. Choose the Interaction Type
 
 Under "Which interactions would you like to include in this report?", choose **All**, **Calls**, or **Chats**.
 
-### Filter by Team, Department, or Agent
+### C. Filter by Team, Department, or Agent
 
 - Select the departments, teams, and agents to include.
 - Tick **Include interactions with unspecified agent** to include calls or chats that are not linked to a particular agent.
 
-![The interaction type radio above the department and team selectors and the unspecified agent tickbox](../../img/screenshots/report/report_create2.png)
+A report needs at least one team and one agent, and at least one metric, before Vela builds it. Ticking **Include interactions with unspecified agent** satisfies the team and agent requirement on its own, which is how you report on interactions that were never assigned to anyone.
 
-### Choose Data Points and Charts
+![The interaction type options above the department and team selectors and the unspecified agent checkbox](../../img/screenshots/report/report_create2.png)
+
+### D. Choose the Metrics and Charts
 
 Click **Add New Metric**, pick a metric, and pick a chart type for it. Repeat to add as many as you need. Each metric is paired with its own chart, so you can mix figures and charts in one report.
 
 Chart types are **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**.
 
-Metrics are organised into groups:
+Metrics are organised into groups, listed alphabetically:
 
 | Group | Examples |
 | :--- | :--- |
-| **Interactions and Volume** | No. Calls, No. Chats, No. Agents, Ave Call Duration |
-| **Quality & Performance** | Average Agent Score |
-| **Topics & Pain Points** | Topic and pain point metrics |
-| **Keywords, Intents, & Language** | No. Languages |
-| **Alert Metrics** | No. Alerts |
+| **Alert Metrics** | No. Alerts, Resolved Alerts |
 | **Customer Sentiment** | Sentiment Distribution |
+| **Interactions and Volume** | No. Calls, No. Chats, Ave Call Duration |
+| **Keywords, Intents, & Language** | No. Keywords, No. Languages, Intent Distribution |
+| **Quality & Performance** | Average Agent Score, Agent Scores Distribution |
+| **Reviewed Interactions** | Number of Reviewed Interactions, Percentage of Reviewed |
+| **Team Workload** | No. Agents, Agent Distribution |
+| **Topics & Pain Points** | Top 10 Topics, Top 10 Pain Points |
 
-Two things narrow that list. Metrics that apply only to calls or only to chats are hidden when they do not fit the interaction type you chose. Your plan matters too: on plans without Smart Search, the groups are limited to quality assurance metrics, so alert, keyword, intent, and pain point metrics do not appear.
+Two things narrow what you see. Metrics that apply only to calls or only to chats are hidden when they do not fit the interaction type you chose. Your plan matters too: on plans without Smart Search, the groups are limited to quality assurance metrics, so alert, keyword, intent, and pain point metrics do not appear.
+
+A group appears once at least one of its metrics survives both, so you may see fewer than eight.
 
 ![Selected metrics grouped under Customer Sentiment, Interactions And Volume, and Keywords, Intents, & Language, with Add New Metric below](../../img/screenshots/report/report_metrics.png)
 
 For the full list and what each metric means, see [Metrics](../reference/metrics.md).
 
-:::tip Best Practice
-For large teams or detailed comparison, start with the **Table** chart to review exact figures, then switch to charts for visual trends.
+:::tip Start with a table
+For a large team, or when you are comparing figures rather than looking for a shape, pick **Table** first. It shows exact numbers. Switch a metric to a chart once you know what you are looking for.
 :::
 
 ---
 
-## 3. Generate or Schedule
+## 3. Run It or Schedule It
 
-- On the **Create One-Time Report** tab, click **Create**. The report generates immediately and opens in the Reports list.
-- On the **Schedule Recurring Report** tab, click **Schedule Report**. Vela then runs it on the schedule you set. Your schedules appear on the **Scheduled Reports** tab of the Reports list, where you can review and delete them.
+### A. Submit the Report
+
+<Tabs groupId="report-type">
+<TabItem value="onetime" label="One-time report">
+
+Click **Create**, at the foot of the form below **Add New Metric**. The report generates immediately and opens in the Reports list.
+
+![The foot of the one-time report form, with Add New Metric above the Create button](../../img/screenshots/report/report_create3.png)
+
+Vela includes the metrics that have data and names each one it dropped. Where none of them have data, widen the date range or check the teams and agents you selected, and run it again.
+
+</TabItem>
+<TabItem value="recurring" label="Recurring report">
+
+Click **Schedule Report**. Vela then runs it on the schedule you set.
+
+![The Schedule Report button at the foot of the recurring report form](../../img/screenshots/report/schedule_report2.png)
+
+Your schedules appear on the **Scheduled Reports** tab of the Reports list, one row each, under **Frequency**, **Last Run**, **Next Run**, and **Created By**. A schedule that has not run yet reads **No runs yet**, and **Next Run** is where you confirm it runs when you expect.
+
+![The Scheduled Reports tab, with one daily schedule listed under Frequency, Last Run reading No runs yet, Next Run, and Created By](../../img/screenshots/report/schedule5.png)
+
+Click a row to expand it. Since a schedule cannot be edited, this is how you check what one is set to:
+
+| Section | What it shows |
+| :--- | :--- |
+| **Interactions** | Whether the schedule covers All, Calls, or Chats |
+| **Selected Teams** | Every team in the schedule's scope |
+| **Selected Agents** | Every agent in the schedule's scope |
+| **Metrics** | Each metric with its chart type, such as `No. alerts-line` |
+| **Additional Details** | **Status**, **Created**, **Last Updated**, and the **Time** it runs at |
+
+A schedule that has not finished a run yet shows a **Status** of **Pending**, which is what a newly created one reads.
+
+![The same schedule expanded, showing Interactions set to All and the Selected Teams below it](../../img/screenshots/report/schedule3.png)
+
+![The lower half of the expanded schedule, with Selected Agents, the Metrics list, and Additional Details showing Status, Created, Last Updated, and Time](../../img/screenshots/report/schedule4.png)
+
+{/* One agent name is masked in schedule4.png, to keep a real address out of the documentation under POPIA. The bar shows where it sits without disclosing it. */}
+
+</TabItem>
+</Tabs>
 
 :::note A schedule cannot be edited
 To change a report's frequency, metrics, or filters, delete the schedule and create a new one.
 :::
 
-### Who Is Told When a Report Is Ready
+### B. Who Is Told When a Report Is Ready
 
-A finished report is not emailed as a file. Vela notifies the other people in your organisation and links them to it, and each person is notified according to their own **Settings → Notifications** preferences: in the platform, by email, or not at all. Those on a batched email interval receive it in their next digest rather than immediately.
+A finished report is not emailed as a file. Vela notifies people in your organisation with a link to it, each according to their own **Settings → Notifications** preferences: in the platform, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
 
 If a scheduled run finds no interactions in its date range, Vela emails you to say the report could not be generated, and the schedule continues to its next run.
-
-![The Schedule Report button at the foot of the recurring report form](../../img/screenshots/report/schedule_report2.png)
 
 ---
 
 ## 4. Download and Share
 
-Open a finished report from the Reports list and download it as **PDF** or **DOCX** to share with people outside the platform. The file contains the metrics and charts you selected.
+Go to **Reports** and stay on the **View** tab. It holds two tabs of its own, **Created Reports** and **Scheduled Reports**, with **Search**, **Sort By**, and **Filter** above them. **Created Reports** lists each report by **Name**, **Created By**, and **Date**.
 
-The Reports list has two tabs, **Created Reports** and **Scheduled Reports**, with **Search**, **Sort By**, and **Filter** above them. Click the download icon on a row to choose the format.
+Click the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected.
+
+To rename a report, click the pencil beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
 
 ![The Created Reports list with the download menu open on .pdf and .docx](../../img/screenshots/report/download_share.png)
+
+---
+
+## Check Your Work
+
+A one-time report is built as you wait, and Vela takes you to the Reports list once it is done. A schedule produces nothing until its first run, so the two are checked differently.
+
+For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file had no data in the period.
+
+For a schedule, open **Scheduled Reports** and confirm **Next Run** is the date and time you intended. Until it runs, that is the only thing that tells you the schedule is right.
 
 ---
 
@@ -104,7 +192,7 @@ The Reports list has two tabs, **Created Reports** and **Scheduled Reports**, wi
 
 - [Metrics](../reference/metrics.md): what each metric in a report measures
 - [Monitor Agent Performance](./monitor-agent-performance.md): the same figures on your Dashboard, day to day
-- [Notifications](./notifications.md): how you are told when a report finishes generating
+- [Manage Notifications](./notifications.md): how you are told when a report finishes generating
 
 ## Need Help?
 

@@ -14,35 +14,46 @@ Vela analyses every customer interaction, so you review a full picture rather th
 You need:
 
 - **An interaction that has finished processing.** Vela analyses each call and chat after upload, and notifies you when the analysis is ready.
-- **An active Agent Scorecard covering the agent's team.** Without one, the interaction has no scorecard to review or override. An administrator sets this up in [Administrator Setup](../getting-started/quick-start/administrator-setup.md). If the Scorecard tab is empty, see [Scorecard and Scoring Issues](../support/troubleshooting-guide.md#scorecard-and-scoring-issues).
-- **An access level that covers the agent.** You see interactions for your team, your department, or the whole organisation, depending on the level an administrator gave you. See [Access Level](../reference/glossary.md#access-level).
+- **An Agent Scorecard covering the agent's team.** Without one, the interaction has nothing to be scored against and the Scorecard tab is empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md), or [Scorecard and Scoring Issues](../support/troubleshooting-guide.md#scorecard-and-scoring-issues).
+- **Access level**, covering the agent. See [Access Level](../reference/glossary.md#access-level).
+  - **Organisational**: every agent in the organisation.
+  - **Departmental**: the agents in your department.
+  - **Team**: the agents in your immediate team.
 
 ---
 
 ## 1. Prioritise Interactions for Review
 
-You do not have to work through every interaction by hand. Smart Search alerts, Dashboard metrics, and the interaction filters each narrow the list to the conversations that need your attention most. For how often to review and how much to cover, see [Daily and Weekly QA Workflows](../advanced/best-practices.md#daily-and-weekly-qa-workflows).
+Use Smart Search alerts, Dashboard metrics, and the interaction filters to focus on the conversations that matter most. For how often to review and how much to cover, see [Daily and Weekly QA Workflows](../advanced/best-practices.md#daily-and-weekly-qa-workflows).
 
 ### A. Review Smart Search Alerts
 
-Smart Searches automatically flag interactions based on your defined keywords and compliance terms. These should be your first priority.
+A Smart Search flags interactions that match the example phrases you gave it, by meaning rather than by exact wording. These are your first priority, because your own searches raised them rather than chance.
 
 1.  Navigate to **Smart Detector** → **Smart Search**.
-2.  Review the flagged interactions for each search, such as those matching compliance terms, escalation phrases, or other defined keywords.
-3.  Use **Sort By**, select **Results**, and choose **Descending** to bring the searches with the most matches to the top.
+2.  Review the flagged interactions for each search.
+
+:::tip Try it: put the busiest searches first
+1. Click **Sort By**.
+2. Choose **Descending**.
+3. Sort on **Results**.
+4. Click **Save Changes**.
+
+The searches with the most matches move to the top, so you start where the volume is.
+:::
 
 ![The Smart Search list, with the results column and the Sort By control](../../img/screenshots/smart_search/10.png)
 
 :::tip Cover your compliance terms first
-A Smart Search checks every processed interaction, so compliance terms are the ones worth setting up before anything else. Nothing is sampled, and nothing is missed because a reviewer ran out of time.
+A Smart Search checks every processed interaction, so compliance terms are worth setting up before anything else. They help you identify potential compliance violations without relying on manual reviews or sampled calls.
 :::
 
 ### B. Use Dashboard Metrics
 
-The Dashboard highlights agents and teams that are underperforming.
+The Dashboard shows how your teams and agents are scoring over the period you select. It reports the figures and does not judge them, so read them against the standard your organisation expects.
 
 1.  Go to the **Dashboard**.
-2.  Check the **Agent Scores Distribution** to quickly identify agents with scores below your performance threshold.
+2.  Check **Agent Scores Distribution** to see how scores are spread, and how many agents sit in the red band below the Lower Bound your administrator set. See [Score Boundaries](../reference/glossary.md#score-boundaries).
 3.  Check **Sentiment Distribution**, in the **Customer Sentiment** group, for a rising negative share, and **No. Alerts** for a high volume of Smart Search matches. Either can point to a problem that is systemic rather than individual.
 
 ![The Quality and Performance group, with average score per agent beside the red, amber and green call distribution](../../img/screenshots/dashboard/use_dashboard1.png)
@@ -57,17 +68,38 @@ Read it before you decide where to spend review time. A department carrying most
 
 ![The Interactions page, with the Calls and Chats cards above the Interactions Distribution tables for calls and chats by department](../../img/screenshots/calls/interactions-distribution.png)
 
-### D. Filter Interactions Directly
+### D. Read the Interactions List
+
+Go to **Interactions**, then **Calls** or **Chats**. The list itself tells you enough to prioritise before you open anything:
+
+![The Interactions list, with the Compliance Score column added and the Filter, Sort By and Export controls above it](../../img/screenshots/calls/filter_by.png)
+
+![The Chats list, with the Chat ID, Date, Agent, Contact, Handle Time, Response Time, Topic, and Alerts columns](../../img/screenshots/chats/table.png)
+
+The two lists work the same way, with columns suited to the channel. Chats carry **Contact** and **Response Time** where calls carry **Silent Time**, because the rest needs call audio.
+
+* **Handle and silent time:** the length of the conversation and any significant silent gaps.
+* **Agent, compliance, and quality scores:** the scores Vela assigned to the interaction. The compliance and quality scores split the scorecard into its compliance items and everything else. See [Quality & Performance](../reference/metrics.md#quality--performance).
+* **Alerts:** how many Smart Searches the interaction triggered.
+* **Topic and tags:** what the conversation was about.
+
+:::tip Choose your columns
+Not every column is shown by default. Click the settings icon next to **Upload** on the Interactions list to choose which of these appear: Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
+
+Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
+:::
+
+### E. Filter Interactions Directly
 
 Filter the list of all interactions to find specific examples based on performance data.
 
 1.  Go to **Interactions** (Calls or Chats).
-2.  Click **Filter** and set any of the options in the **Filter By** panel:
+2.  Click **Filter** and set any of the options in the **Filter By** modal:
     * **Agent Score:** filter for a score range, for example the lowest performers.
     * **Agent, Team, or Department:** focus reviews on the people you are coaching.
-    * **Reviewed:** show everything, only interactions already marked as reviewed, or only those still waiting for review.
+    * **Reviewed:** show everything, only interactions already marked as reviewed, or only those not marked as reviewed.
 
-![The Filter By panel for interactions, with the department, team and agent lists](../../img/screenshots/calls/filter_by1.png)
+![The Filter By modal for interactions, with the department, team and agent lists](../../img/screenshots/calls/filter_by1.png)
 
 ---
 
@@ -84,20 +116,7 @@ Once you have selected an interaction, the **Detailed View** gives you everythin
 
     The Dashboard does not link to individual interactions. Use it to spot which agents or teams need attention, as in [Use Dashboard Metrics](#b-use-dashboard-metrics) above, then find their interactions from one of the routes here.
 
-![The Interactions list, with the Compliance Score column added and the Filter, Sort By and Export controls above it](../../img/screenshots/calls/filter_by.png)
-
-Before opening an interaction, the list view already gives you enough to prioritise:
-
-* **Handle and silent time:** the length of the conversation and any significant silent gaps.
-* **Agent, compliance, and quality scores:** the scores Vela assigned to the interaction. The compliance and quality scores split the scorecard into its compliance items and everything else. See [Quality and Scoring](../reference/metrics.md#quality-and-scoring).
-* **Alerts:** how many Smart Search rules the interaction triggered.
-* **Topic and tags:** what the conversation was about.
-
-:::tip Choose your columns
-Not every column is shown by default. Click the settings icon next to **Upload** on the Interactions list to choose which of these appear: Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
-
-Your choice is remembered in the browser you made it in, so it does not follow you to another machine. The Alerts column is available on plans that include Smart Search, so it does not appear on a [Lite](../reference/glossary.md#lite) edition.
-:::
+![The Detailed View of a chat, with the transcript beside the same analysis tabs a call has](../../img/screenshots/chats/detailed-chat.png)
 
 ### B. Use the AI Analysis
 
@@ -105,14 +124,35 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 
 | Tab | What it shows | What to look for |
 | :--- | :--- | :--- |
-| **Summary** | A recap of what happened and how it ended. | Whether the agent resolved what the customer came for, and whether the outcome was stated clearly before the conversation closed. |
+| **Summary** | A recap of what happened and how it ended. | Whether the agent resolved the customer's query, and whether the outcome was stated clearly before the conversation closed. |
 | **Keywords** | Tracked terms that came up. | Whether your mandatory phrases were said, and whether products and policies were named correctly. |
-| **Alerts** | Which Smart Searches this interaction matched. | Whether the flagged moment holds up once you read it in context. If a search keeps matching interactions it should not, tell your administrator so its phrases can be tightened. |
+| **Alerts** | Which Smart Searches this interaction matched, with links to the moment and a **Resolve** control on each row. | Whether the flagged moment holds up once you read it in context. If a search keeps matching interactions it should not, tell your administrator so its phrases can be tightened. |
 | **Intents** | What the customer came for, such as sales, a complaint, or support. | Whether the agent handled it as that kind of conversation, for example following the complaints process when the intent is a complaint. |
 | **Sentiment** | The positive, neutral, and negative split for the conversation, shown for the agent and the customer separately. | A high negative share on the customer's side, and whether the agent's own tone held steady. Use the transcript timestamps to find where it turned. |
-| **Scorecard** | How Vela scored the interaction against your Agent Scorecard. | Any item you would have judged differently. This is the tab where you override it, in [Score and Provide Feedback](#3-score-and-provide-feedback) below. |
+| **Scorecard** | How Vela scored the interaction against your Agent Scorecard, question by question. | Any item you would have judged differently. Hover over the information icon beside a score to read why Vela answered as it did. This is the tab where you override an item, in [Score and Provide Feedback](#3-score-and-provide-feedback) below. |
 | **Pain Points** | Signs of customer frustration. | Whether each frustration was acknowledged when it was raised, rather than left unanswered. |
-| **Smart Questions** | The answers to any questions your organisation asks of every interaction for reporting. These carry no score. | Answers that change how you would coach, even though they do not move the score. This tab appears on plans that include [Smart Questions](../smart-questions-guide.md). |
+| **Smart Questions** | The answers to any questions your organisation asks of every interaction for reporting. These carry no score. | Answers that change how you would coach, even though they do not move the score. The information icon here shows Vela's reasoning too, and the download icon saves the answers as CSV (**Download Smart Questions as CSV**). This tab appears on plans that include [Smart Questions](../smart-questions-guide.md). |
+
+![The Scorecard tab, with each question, its outcome, and the information icon showing Vela's reasoning](../../img/screenshots/calls/detailed-scorecard.png)
+
+![The Alerts tab, listing the Smart Searches this interaction matched, with the In Transcript, In Audio, and Resolve columns](../../img/screenshots/calls/detailed-alerts.png)
+
+![The Intents tab, showing what the customer came for](../../img/screenshots/calls/detailed-intents.png)
+
+![The Pain Points tab, showing the signs of customer frustration Vela detected](../../img/screenshots/calls/detailed-pain-points.png)
+
+![The Smart Questions tab, with the recorded answers and the download control](../../img/screenshots/calls/detailed-smart-question.png)
+
+On the **Alerts** tab, two columns take you straight to the moment the alert refers to:
+
+* **In Transcript**: click **View** to scroll the transcript to the line that triggered the alert.
+* **In Audio**: click **Listen** to move the player to that second, so you can hear the exchange rather than infer it from a phrase. On a chat this column reads **In Chat**.
+
+Where no timestamp was recorded for a match, both columns read `-`.
+
+Click **Resolve** once you have acted on the alert. The row then reads **Resolved**.
+
+A tab with nothing to show says so, for example `No alerts detected in call` or `No pain points detected in call`. Vela analysed the interaction and found nothing of that kind in it.
 
 The tab strip scrolls, so use the arrows at either end if a tab is out of view.
 
@@ -120,13 +160,14 @@ The tab strip scrolls, so use the arrows at either end if a tab is out of view.
 
 ### C. Listen to the Call or Read the Chat
 
-The player and the transcript are synchronised, so you can move between them freely.
+The player and the transcript follow each other. As the audio plays, the transcript scrolls to keep the current line in view, and clicking a line's timestamp moves the player to that point.
 
 1.  Listen to the **Audio** or read the **Chat Transcript**.
-2.  Use the **Speed Adjustment** to review calls efficiently. Available rates are 0.5x, 0.75x, 1x, 1.25x, 1.5x, and 2x.
+2.  Use the **Playback Speed** control to review calls efficiently. Available rates are 0.5x, 0.75x, 1x, 1.25x, 1.5x, and 2x.
 3.  Click a **timestamp** in the transcript to jump to that moment in the recording.
 4.  Switch the transcript between **Original** and **English** when the conversation was not in English. Vela translates every interaction to English as it processes it.
-5.  Focus on the agent's tone, active listening skills, and adherence to procedures.
+
+While you listen, attend to the agent's tone, whether they listened actively, and whether they followed procedure.
 
 Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Speakers are separated automatically, so agent and customer turns are distinguishable in the transcript.
 
@@ -138,38 +179,65 @@ Chats carry the same analysis as calls. Vela reports average response time on th
 
 Your manual scorecard and comments are the core of the quality process, turning the analysis into coaching the agent can act on.
 
-The **Automatic Scorecard** is Vela's own assessment, based on its analysis and your Knowledge Base. The **Manual Scorecard** is yours. Where the two differ, your outcome is the one that counts, and both stay visible so an agent can see which is which.
+The Scorecard tab has a **View** control with two settings. **Automatic** is Vela's own assessment of the interaction, judged against a Knowledge Base document on any question set to use one. **Manual** is yours. Where the two differ, your outcome is the one that counts, and both stay visible so an agent can see which is which.
 
 ### A. Complete a Manual Scorecard
 
-The Automatic Scorecard gives you a base score. You make the final judgement.
+Vela's assessment gives you a base score. You make the final judgement.
 
 ![The Scorecard tab on Manual view, with a question's outcome open on Yes, No and N/A](../../img/screenshots/calls/manual_scorecard.png)
 
 1.  On the Detailed View, open the **Scorecard** tab in the Smart Detector panel.
 2.  Switch **View** between **Automatic** and **Manual** to find the item you want to change.
-3.  Click the **edit icon** (pencil) to enter edit mode.
-4.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
-    * **Be consistent:** Ensure your scoring aligns with the established quality standards and training.
-    * **Be objective:** Base your score only on the evidence from the interaction and the defined criteria.
+3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript: the AI having missed context is the case for overriding, and the AI being right is the case for leaving the score and coaching instead.
+4.  Click the **edit icon** (pencil) to enter edit mode.
+5.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
     * **N/A removes the question from the score** rather than counting it as a failure, so use it where the question did not apply to this conversation. The difference is large: see [How Scoring Works](../explanation/how-scoring-works.md) for a worked example.
-5.  Click **Save Changes**.
+6.  Click **Save Changes**.
     * Your edited outcome replaces the AI's for that item, and the score is recalculated.
+
+:::note Overriding an item hides its reasoning
+The information icon appears only on items Vela answered itself. Once you override an item, the icon goes from that row, because the reasoning explained the AI's answer rather than yours. Read it before you override, and put anything worth keeping into a comment. The scorecard download still carries the reasoning for every item you left as it was.
+:::
 
 The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, so Vela's original assessment stays visible next to your override.
 
+:::tip If you are overriding the same question every week
+A question you keep correcting in the same direction is usually a question that needs rewording, not an AI that keeps getting it wrong. Take it back to whoever maintains the scorecard rather than fixing it one interaction at a time. See [How Scoring Works](../explanation/how-scoring-works.md).
+:::
+
 For the same record question by question, use the download icon on the Scorecard tab (**Download Scorecard as CSV**). The file lists each question with its **Initial Outcome**, **Current Outcome**, weight, score, and the reason Vela gave, which is what you need when an agent disputes a score.
+
+#### Narrow a Long Scorecard
+
+**Filter Scorecard**, above the table, opens **Filter Scorecard By**. Tick the categories you want and click **Apply**, or **clear all fields** to go back to everything. On a long scorecard this lets you review one category at a time.
+
+The table then carries two totals, and they are not the same figure:
+
+| Row | What it counts |
+| :--- | :--- |
+| **Total in Selection** | Only the categories you filtered to |
+| **Total Score** | Every question on the interaction, whatever the filter |
+
+**Total Score** is the agent's score for the interaction. **Total in Selection** is there to help you read the categories in front of you, so **Total Score** is the figure to use when you discuss the result with an agent.
+
+#### Comment Straight from a Question
+
+Each row has a comment icon beside its score. Click it and the **Comments** panel opens with that question and its outcome already written in, ready for you to add the coaching point.
+
+This is quicker than retyping the question, and it keeps the agent's feedback tied to the exact scorecard item it came from.
 
 ### B. Comment to Coach
 
 Add specific, time-stamped feedback to make coaching clear and concrete.
 
-1.  Open **Comments** on the interaction.
+1.  Click **View Comments** on the interaction to open the panel.
 2.  Add your comment. Remember the best practices:
     * **Be specific:** "At 1:45, you missed the required closing statement."
     * **Be constructive:** "Try to summarise the solution before ending the call next time."
     * **Tag the agent:** type `@` and pick them from the list. Without the tag the comment stays visible to team leads only.
 3.  The agent can read and respond to your comments in their Agent Portal.
+4.  Click **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you click **Resolve** on it.
 
 :::warning A posted comment is final
 Comments cannot be edited or deleted once sent. Read yours back before clicking **Send**, particularly where you have tagged the agent. The delete icon beside the reply box clears what you have typed, not a comment already posted.
@@ -179,15 +247,13 @@ Comments cannot be edited or deleted once sent. Read yours back before clicking 
 
 ---
 
-## 4. Finalise the QA Workflow and Coach
-
-Your QA process is complete when the interaction is scored and the next steps are planned.
+## 4. Close the Review and Plan Coaching
 
 ### A. Track Review Status
 
-Mark the interaction's review status to keep your team's QA process clear.
+Marking an interaction reviewed is what tells the rest of the platform you are done with it.
 
-* Click **Mark as Reviewed** to record that you have finished assessing this interaction. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Review Progress](../reference/metrics.md#review-progress).
+* Click **Mark as Reviewed** to record that you have finished assessing this interaction. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
 * If follow-up is needed, add coaching comments for the agent.
 
 :::note Reviewing can be what releases the interaction to the agent
@@ -196,22 +262,67 @@ Organisations using the Coaching Portal choose, under **Coaching → Preferences
 
 ![The Detailed View header, with Review Redacted Info and Mark as Reviewed](../../img/screenshots/calls/mark_reviewed.png)
 
-### B. Plan Next Steps
+### B. Tag the Interaction
 
-Use the analysis to inform your coaching strategy.
+Tags are your own labels for classifying interactions, and they are what you filter and report on later. Give one to anything you want to find again as a group, such as every call about a failed delivery.
 
-1.  Review all the agent's recent scorecards and comments.
-2.  Look for **consistent patterns** in low-scoring areas across the agent's recent scorecard results.
-3.  Click **Coaching** in the left sidebar. It appears only where your organisation has the Coaching Portal enabled.
-4.  **Assign targeted training courses** that specifically address the identified skill gaps.
-5.  **Schedule a coaching discussion** with the agent to review the feedback and performance trend.
+You can tag without opening an interaction. The **Tags** column on the Interactions list carries a tag icon on every row, reading **Add a tag** when you hover it. The same control sits on the **Tags** line of the **Call Details** panel in the Detailed View. Both open the same window, and both work for calls and chats.
 
-Worked through end to end, this leaves every reviewed interaction scored, the reasoning recorded in comments the agent can read, and a next step agreed with them.
+![The Tags line of the Call Details panel, with an existing tag beside the Add a tag icon](../../img/screenshots/calls/call-details-tags.png)
+
+1. Click the tag icon to open **Edit Tags**.
+2. On **Select a Tag**, pick one from the list. To make a new one, switch to **Create a Tag**, type the name, and give it a colour. Both are required.
+3. Click **Add Tag**, or **Discard** to abandon it.
+
+![The Calls list with the Tags column, showing the tag icon on every row and existing tags beside it](../../img/screenshots/calls/interactions-tags-column.png)
+
+![The Edit Tags window on Select a Tag, with the tag list above Add Tag, Manage Tags, and Discard](../../img/screenshots/calls/edit-tags-select.png)
+
+![The Create a Tag tab, with the tag name field above the colour swatches](../../img/screenshots/calls/edit-tags-create.png)
+
+Tags already on an interaction appear beside the icon, and each one can be removed from there.
+
+:::tip Tag from the list when working through a batch
+Tagging from the **Tags** column lets you classify a whole screen of interactions without opening any of them. The settings icon beside **Upload** adds the column.
+:::
+
+Tags belong to the organisation rather than to you, so one you create is available to everyone and appears in their filters too. Agree a small set with your team before everyone invents their own wording for the same thing.
+
+**To manage the list**, click **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
+
+![The Tags page, listing each tag by name with the Edit and Delete controls and the New Tag button](../../img/screenshots/calls/tags-page.png)
+
+**New Tag** on that page opens its own window, where you name the tag and pick its colour from the swatches before clicking **Create Tag**.
+
+![The New Tag window, with the name field above the colour swatches and the Create Tag button](../../img/screenshots/calls/new-tag-window.png)
+
+Deleting a tag takes it off every interaction carrying it, and the page does not tell you how many that is. Vela refuses duplicate names, so renaming a tag to something clearer is the safer move when the wording is the problem.
+
+### C. Plan Next Steps
+
+One weak interaction is not a pattern. Before acting, read the agent's recent scorecards and comments together and look for the same category scoring low more than once.
+
+Where you find one, click **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course whose trigger score range covers that gap. Vela assigns courses on its evaluation cycle, so you set the range rather than picking the agent.
+
+A course is not a substitute for the conversation. Arrange time with the agent to go through the feedback and what you expect to change.
+
+---
+
+## Check Your Work
+
+Your scoring, your comment, and the reviewed flag all live on the interaction itself, so that is the only place to check them. Open it again and confirm three things:
+
+- **The Scorecard tab shows an outcome on every applicable question**, with your overrides in place and the score recalculated. Vela's original figures remain beside yours as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score**.
+- **Your comment is on the interaction**, and the agent is tagged if you meant to notify them. A comment cannot be edited or deleted afterwards, so read it back rather than reposting.
+- **The interaction is marked as reviewed.** Your team's review coverage counts the interactions you mark, so marking is what makes the work visible.
+
+If you meant to notify the agent and the tag is missing, add a second comment with the tag rather than editing the first, which cannot be changed.
 
 ---
 
 ## Related
 
+- [Build an Agent Scorecard](../agent-scorecard-guide.md): create and edit the questions behind these scores
 - [Set Up Smart Search](../smart-search-guide.md): build the searches that flag interactions for review
 - [Monitor Agent Performance](./monitor-agent-performance.md): track how an agent's scores move over time
 - [Scorecard Fields](../reference/scorecard-fields.md): every field on a scorecard question

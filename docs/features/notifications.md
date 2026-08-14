@@ -1,77 +1,115 @@
 ---
 sidebar_position: 0
-title: Notifications
-type: reference
+title: Manage Notifications
+type: how-to
 ---
 
-# Notifications
-Vela notifies you when something needs your attention: a Smart Search match, a comment on an interaction, or a report that has finished generating. This page explains what triggers a notification, where to find them, and how to control what you receive.
+# Manage Notifications
+Vela notifies you when something needs your attention: a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. This page covers what triggers a notification, where to find it, and how to control what reaches you.
 
 ---
 
-## 1. Where to Find Your Notifications
+## Before You Begin
 
-Click **Notifications** in the left sidebar. The page is divided into tabs:
+You need:
+
+- **Something to be notified about.** Notifications follow activity, so a new organisation with nothing uploaded and no Smart Searches configured has an empty page rather than an error.
+- **Your own preferences set.** What arrives, and by which route, comes from **Settings → Notifications** on your own account. Another user's settings do not affect yours.
+- **A Smart Search with notifications on**, if you are expecting alerts. See [Set Up Smart Search](../smart-search-guide.md).
+
+---
+
+## 1. Find Your Notifications
+
+### A. The Tabs
+
+Click **Notifications** in the left sidebar. Three tabs sit at the top right of the page:
 
 | Tab | What it contains |
 | :--- | :--- |
-| **Alerts** | Smart Search matches. These are interactions that triggered one of your organisation's Smart Search rules. |
-| **Comments** | Comments added to interactions you are involved with. |
+| **Alerts** | Smart Search matches, and Smart Question answers that hit the outcome you set them to alert on. |
+| **Comments** | Comments on interactions, according to the comment preferences on your account. |
 | **Reports** | Reports that have finished generating, whether one-time or scheduled. |
 
-The **Alerts** tab appears only on plans that include Smart Search. On a [Lite](../reference/glossary.md#lite) edition the page opens on **Comments** instead.
+The **Alerts** tab appears on every edition except [Lite](../reference/glossary.md#lite), where the page opens on **Comments** instead.
 
 Unread notifications are also indicated in the top navigation bar, so you can see at a glance whether anything new has arrived.
 
-{/* SCREENSHOT: The Notifications page on the Alerts tab, with all three tabs visible and the unread indicator in the top navigation bar in frame. Save as img/screenshots/notifications/notifications-tabs.png */}
+![The Notifications page on the Alerts tab, with the Comments and Reports tabs beside it and the unread count on Notifications in the top navigation bar](../../img/screenshots/notifications/notifications-tabs.png)
+
+![The Comments tab, with one card per comment showing its heading, date, the dismiss cross, and the eye icon](../../img/screenshots/notifications/comments.png)
+
+![The Reports tab, listing finished reports with the eye and download controls on each card](../../img/screenshots/notifications/reports.png)
+
+:::note The page lists unread notifications only
+Once a notification is dismissed it leaves the list for good. There is no read or archived view to recover it from, so treat the page as a queue to work through rather than a history to search later.
+
+Nothing is lost when you dismiss one. The interaction, comment, or report it pointed at stays exactly where it was, and you reach it through **Interactions**, **Smart Detector**, or **Reports** as usual.
+:::
+
+### B. Work a Notification
+
+Every notification, on all three tabs, carries the same controls:
+
+| Control | What it does |
+| :--- | :--- |
+| **Search** | Sits above the list and narrows it by wording, matching both the heading and the body of a notification. Matches are highlighted |
+| The **eye** icon | Opens what the notification is about: the interaction on **Alerts** and **Comments**, the report itself on **Reports** |
+| The **×** | Dismisses the notification and takes it off the list |
+
+Each one shows its heading, how long ago it arrived, and a line of detail. Past one page, **Previous** and **Next** sit at the foot of the list with **Page 1 of 2** between them.
+
+On the **Reports** tab there is also a download control beside the eye, so you can take a finished report straight from the notification without going to the Reports list. A report whose file is no longer available reads **No report available** in place of the link.
 
 ---
 
 ## 2. What Triggers a Notification
 
-| Notification Type | When You Receive It |
-| :--- | :--- |
-| **Smart Search alert** | A processed interaction matches one of your Smart Search rules |
-| **Comment** | Someone adds a comment to an interaction you are involved with |
-| **Report ready** | A scheduled or one-time report has finished generating |
-| **Access request** | A request to view redacted information has been approved or declined |
-| **Course assigned** | A training course has been assigned to you (Agent Portal) |
-| **Award presented** | An award has been presented to you (Agent Portal) |
+Not everything lands in the same place, which is the usual reason a notification you expected seems to be missing:
 
-The last three only appear where they are relevant to your role. An access request outcome notifies the person who raised it and the administrators who process these requests, by email and in-app. Course and award notifications appear in the Agent Portal.
+| Notification Type | When You Receive It | Where It Appears |
+| :--- | :--- | :--- |
+| **Smart Search alert** | A processed interaction matches one of your Smart Searches | **Alerts** tab |
+| **Smart Question alert** | A Smart Question returns the outcome you set it to alert on, under **Receive notifications when** | **Alerts** tab |
+| **Comment** | Someone comments on an interaction your preferences cover | **Comments** tab |
+| **Report ready** | A scheduled or one-time report has finished generating | **Reports** tab |
+| **Access request** | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
+| **Call processed** | A call has finished transcription and analysis | **Email only.** There is no in-app notification for this |
+| **Course assigned** | A training course has been assigned to you | **Agent Portal**, not the main platform |
+| **Award presented** | An award has been presented to you | **Agent Portal**, not the main platform |
 
-:::note Call processing is emailed, not in-app
-When a call finishes processing, Vela emails you rather than posting an in-app notification, if you have email notifications enabled. Manage this in **Settings → Notifications**.
-:::
+The last three only appear where they are relevant to your role. Email delivery depends on your own preferences in **Settings → Notifications**.
 
 ---
 
-## 3. Working Through Alerts
+## 3. Work Through Your Alerts
 
-Alerts are Smart Search matches, raised automatically when a processed interaction triggers one of your configured rules. Each alert links to the interaction and to the Smart Search that generated it.
+An alert is raised automatically when a processed interaction matches one of your Smart Searches, or when a Smart Question returns the outcome you set it to alert on. Each one links to the interaction that raised it.
 
 A practical routine for each alert:
 
 1. Open the matched interaction from the alert.
 2. Review the full context. The transcript and AI analysis show whether the match is a genuine issue.
-3. Take the appropriate action: leave a coaching comment for the agent, escalate internally, or record that no action is required.
-4. Resolve the alert to keep your list clear for incoming matches.
+3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction, tagging the agent with **@** so it reaches them. A false match needs nothing further.
+4. Click **Resolve** on the alert either way, so your list holds only what you still have to look at.
 
 :::tip Use alerts as your review queue
-Rather than sampling interactions at random, work your alerts first. They are the conversations your own rules have identified as worth looking at.
+Rather than sampling interactions at random, work your alerts first. They are the conversations your own searches have identified as worth looking at.
 :::
 
 ---
 
-## 4. Controlling Smart Search Notifications
+## 4. Control What Reaches You
 
-Each Smart Search has its own **Notifications** setting. You can enable it when creating the search, and change it later by opening the search and editing it.
+Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
 
 Matches still appear in the Smart Search results view whether or not notifications are on. The setting only controls whether Vela tells you about them.
 
 :::tip Turning down the volume
-If one search is generating more alerts than your team can act on, you have two options: edit its phrases to be more specific, or turn its Notifications setting off and review its matches in the results view instead.
+A search generating more alerts than your team can act on has two fixes. Tighten its phrases so it matches less, or turn its Notifications off and review the matches in the results view instead.
 :::
+
+A Smart Question has that same **Notifications** setting and one more, **Receive notifications when**, which chooses whether a **Yes** or a **No** is the answer that alerts you. See [Set Up Smart Questions](../smart-questions-guide.md#notifications).
 
 For more on building searches, see [Smart Search](../smart-search-guide.md).
 
@@ -81,23 +119,60 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 Comments are how feedback reaches your agents.
 
-- Open an interaction and add your comment in the **Comments** section.
-- Tag an agent using the **@** symbol to send the comment directly to them. They receive a notification and can read and respond in their Agent Portal.
-- If you do not tag an agent, the comment is visible to team leads only.
+1. Open the interaction and click **View Comments** to open the panel.
+2. Write your comment. Type **@** and pick the agent to send it to them, and they can read and reply in their Agent Portal.
+3. Click **Send**. An untagged comment stays visible to team leads only.
 
-This makes the @ mention the deliberate step that turns an internal note into agent-facing feedback.
+Tagging is what turns a comment your team can see into feedback the agent receives.
 
 ---
 
-## 6. Notification Settings
+## 6. Set Your Preferences
 
-Go to **Settings → Notifications** to configure your preferences for email and in-platform notifications.
+Go to **Settings → Notifications**. Everything here applies to your own account only.
 
 ![The Notifications settings tab, with the platform and email lists and the delivery frequency below them](../../img/screenshots/settings/notification.png)
 
-:::note Agents do not see this tab
-The Notifications settings tab is not available to users with the Agent role.
+### A. Choose What You Receive
+
+Two lists, **Platform Notifications** and **Email Notifications**, offer the same choices. Tick an item in both lists to receive it in Vela and by email, or in one list to receive it only there. Leave it unticked in both to stop receiving it.
+
+| Setting | What it covers |
+| :--- | :--- |
+| **Comments** | Any comment added anywhere in your organisation |
+| **Activity On Your Comments** | Replies and activity on comments you wrote |
+| **Comments Mentioning You** | Comments where someone tagged you with **@** |
+| **New Reports** | A report has finished generating |
+| **New Alerts Detected** | A Smart Search matched an interaction, or a Smart Question returned the outcome it alerts on. One setting covers both |
+
+**New Alerts Detected** appears in both lists on every edition except [Lite](../reference/glossary.md#lite).
+
+The three comment settings widen as you go up the list. **Comments Mentioning You** is the narrowest and **Comments** the broadest, so tick that one only if you want every comment in the organisation.
+
+Click **Save** to apply your changes. Leaving the tab without saving discards them.
+
+### B. Choose How Often Email Arrives
+
+Below the two lists, choose how often email is sent. This applies to email only. Notifications appear in Vela as they happen whichever you pick.
+
+- **Real-time**: each email is sent as the event happens.
+- **Daily**: one email a day, gathering everything since the last one. Choosing this reveals a time picker, so you can set the hour it arrives.
+
+Pick daily if alerts arrive faster than you act on them.
+
+:::note The Notifications tab belongs to the Administrator and User roles
+Agents have no notification settings of their own. Their Agent Portal carries an **account** and a **security** tab only.
 :::
+
+---
+
+## Check Your Work
+
+Open **Notifications** and confirm the tab you expect to use has entries in it. An empty tab is a result, not a fault: it means nothing of that type is waiting on you.
+
+Clicking **Save** shows a confirmation message, and that message is what tells you the ticks were stored.
+
+Testing an alert end to end takes one interaction. Upload one you know matches a Smart Search that has notifications on, then check the **Alerts** tab once processing finishes. Alerts are raised during analysis, so one that has not appeared yet usually means the interaction is still being processed.
 
 ---
 
@@ -105,10 +180,12 @@ The Notifications settings tab is not available to users with the Agent role.
 
 | Problem | Solution |
 | :--- | :--- |
-| Too many notifications | A search is matching too broadly. Edit it to use more specific phrases, or turn its Notifications setting off |
-| Missing expected alerts | Confirm the Smart Search has Notifications enabled and that its scope covers the relevant teams |
-| Comments not appearing | Check that you have access to the interaction's team or department, then refresh the page |
-| Reports not arriving | Verify the report schedule and that the selected date range contains data |
+| Too many notifications | **Comments** sends you every comment in the organisation, so untick it in **Settings → Notifications** if that is the source. For alerts, tighten the search's phrases or turn its **Notifications** off |
+| Alerts not arriving | Two settings have to agree. Confirm **New Alerts Detected** is ticked in **Settings → Notifications**, and that the Smart Search has **Notifications** on with a scope covering the relevant teams |
+| Comments not arriving | Check which comment settings you have ticked in **Settings → Notifications**. **Comments Mentioning You** covers only comments that tag you with **@** |
+| Reports not arriving | Confirm **New Reports** is ticked in **Settings → Notifications**, then check the schedule and that its date range contains data |
+| Email missing, but notifications appear in Vela | Check the **Email Notifications** list in **Settings → Notifications**. On a daily frequency the email arrives at the time you set rather than as the event happens |
+| A notification dismissed by mistake | Dismissing is final. Open the interaction, comment, or report directly instead |
 
 ---
 
