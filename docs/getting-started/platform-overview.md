@@ -33,14 +33,14 @@ Every interaction follows the same path, from upload to report.
 
 ```mermaid
 flowchart LR
-    A("**Upload**
-    your calls and chats") --> B("**Transcribe**
+    A("Upload
+    your calls and chats") --> B("Transcribe
     in 11 languages")
-    B --> C("**Analyse and score**
+    B --> C("Analyse and score
     against your scorecard")
-    C --> D("**Review**
+    C --> D("Review
     and coach your agents")
-    D --> E("**Report**
+    D --> E("Report
     on the trends")
 ```
 
@@ -52,7 +52,7 @@ Vela handles transcription, analysis, and scoring. Reviewing and reporting are y
 4. **Review**: open an interaction to read the transcript alongside Vela's analysis, override any score, and leave coaching feedback.
 5. **Report**: [Dashboards and Reports](../features/custom-reporting.md) turn the results into trends you can share.
 
-Steps 2 and 3 run in the background after you upload, so you do not wait on the page. Vela emails you when an interaction's analysis is ready, depending on your notification settings.
+Steps 2 and 3 run in the background after you upload, so you do not wait on the page. Vela emails you when an interaction's analysis is ready.
 
 ![The Vela Dashboard, with the Alert Metrics group showing the total number of alerts and its trend](../../img/screenshots/dashboard/dashboard06.png)
 
@@ -68,7 +68,7 @@ Transcription covers all 11 official South African languages: Afrikaans, English
 
 ### Coach and develop agents
 
-If your organisation has the Coaching Portal enabled, you can see where an agent is struggling, assign a course that targets the gap, track whether they finish it, and mark good work with awards and certificates. Coaching has its own [documentation](https://docs-coaching.botlhale.xyz).
+If your organisation has the Coaching Portal enabled, you can see where an agent is struggling and build a course that targets the gap. Vela assigns it to whoever scores in that range. You then track whether they finish it, and mark good work with awards and certificates. Coaching has its own [documentation](https://docs-coaching.botlhale.xyz).
 
 ### Spot patterns across your conversations
 

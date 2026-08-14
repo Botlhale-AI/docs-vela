@@ -4,6 +4,9 @@ title: Upload Your Data
 type: how-to
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Upload Your Data
 Upload your call and chat data to start analysing customer interactions and improving team performance.
 
@@ -15,9 +18,9 @@ Recordings and transcripts you upload are encrypted in transit and at rest, and 
 
 You need:
 
-- **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. The dropzone rejects the wrong format, so check which tab you are on before preparing the file. See [Supported Formats](#supported-formats) for every limit.
+- **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. Check which tab you are on before preparing the file, because the tabs take different formats. See [Supported Formats](#supported-formats) for every limit.
 - **The agent who handled the interaction.** Agent is the only required field on a single upload, and Team and Department fill in from it.
-- **An access level that reaches that agent.** The agent list is bounded by your access level, so an agent outside your team or department does not appear in it. See [Access Level](./reference/glossary.md#access-level).
+- **Access level:** Organisational, Departmental, or Team, covering the agent. See [Access Level](./reference/glossary.md#access-level).
 - **Duration left in your organisation's monthly allocation.** What happens when it runs out depends on the **Duration Usage Setting** an administrator chose: analysis either halts or continues at additional rates. See [Organisation Configuration](./settings-config/organisation-configuration.md).
 
 ---
@@ -37,7 +40,7 @@ Use Vela to upload files directly. Best for getting started and for ad-hoc uploa
 5. Select your audio file (WAV or MP3) or drag and drop it into the upload area
 6. Click **Upload**
 
-![The Single Upload form, with the agent, direction, and tags fields above the dropzone](../img/screenshots/data_upload/upload2.png)
+![The Single Upload form, with the agent, direction, and tags fields above the upload area](../img/screenshots/data_upload/upload2.png)
 
 #### Bulk Call Upload
 
@@ -47,7 +50,32 @@ Bulk upload brings in many recordings at once from a single ZIP archive. Use it 
 
 Confirm every file is WAV or MP3, then compress them into a single ZIP archive. Keep the archive under the 3 GB limit, and split larger sets into several batches.
 
-Vela reads ZIP files compressed with Deflate or Store. Windows Explorer produces these by default. If you use 7-Zip or WinRAR, check the setting first: see [Preparing ZIP Files for Bulk Upload](./compression_method.md).
+Use ZIP, not RAR or 7z. The upload area takes those too, so the file uploads in full before Vela reads it and finds it cannot.
+
+Vela reads ZIP files compressed with **Deflate** (the standard method) or **Store** (no compression). **Deflate64**, **BZip2** and **LZMA** archives fail to process.
+
+<Tabs groupId="zip-tool">
+<TabItem value="windows" label="Windows (built-in)">
+
+Windows Explorer uses Deflate by default, so its archives are already compatible. Select your files, right-click, and choose **Send to → Compressed (zipped) folder**.
+
+</TabItem>
+<TabItem value="7zip" label="7-Zip">
+
+1. Select your files, right-click, and choose **7-Zip → Add to archive**.
+2. Set **Archive format** to **zip**.
+3. Set **Compression method** to **Deflate** (not Deflate64).
+4. Click **OK**.
+
+</TabItem>
+<TabItem value="winrar" label="WinRAR">
+
+1. Select your files, right-click, and choose **Add to archive**.
+2. Set the archive format to **ZIP** (not RAR).
+3. Any compression level works.
+
+</TabItem>
+</Tabs>
 
 **Step 2: Prepare the metadata file**
 
@@ -81,10 +109,10 @@ Download the `metadata.csv` template from the upload page and build your file fr
 1. Click **Interactions → Calls → Upload**
 2. Select the **Bulk Upload** tab
 3. Upload your ZIP file
-4. Monitor processing status. Vela emails you when processing completes, depending on your notification settings
-5. Review the results screen and address any failed rows
+4. Wait for the upload to finish. Processing then runs in the background, so you can leave the page
+5. Vela emails you when the analysis is ready, and the calls appear under **Interactions → Calls**
 
-![The Bulk Upload tab, with the Add Metadata button and the .zip dropzone](../img/screenshots/calls/bulk.png)
+![The Bulk Upload tab, with the Add Metadata button and the .zip upload area](../img/screenshots/calls/bulk.png)
 
 :::tip Test with a small batch first
 Upload five to ten files before committing a large historical dataset. Confirming that agent, team, and department names match correctly on a small batch is far less disruptive than discovering a systematic error after thousands of files.
@@ -95,15 +123,15 @@ Upload five to ten files before committing a large historical dataset. Confirmin
 1. Click **Interactions → Chats → Upload**
 2. Select the **Upload** tab for a single chat or **Bulk Upload** for multiple
 3. Upload your file
-4. Monitor processing status until the upload completes
+4. Wait for the upload to finish. Processing then runs in the background
 
 :::warning The two tabs take different file formats
-**Upload** accepts a **CSV** file containing the messages of one chat. **Bulk Upload** accepts **JSON**. The dropzone rejects the wrong format, so check which tab you are on before preparing the file.
+**Upload** accepts a **CSV** file containing the messages of one chat. **Bulk Upload** accepts **JSON**. The upload area rejects the wrong format, so check which tab you are on before preparing the file.
 
-On the **Upload** tab you can also set **Agent**, **Tags**, and an **Interaction ID**, all optional except the agent. Use **See this example** on the page for the exact CSV layout.
+On the **Upload** tab you can also set **Agent**, **Tags**, and an **Interaction ID**, all optional except the agent. The page ends that instruction with a dotted-underlined **example** link. Click it to download a sample CSV with the exact layout.
 :::
 
-![The chat Upload tab, with the agent, tags, and interaction ID fields above the CSV dropzone](../img/screenshots/chats/upload.png)
+![The chat Upload tab, with the agent, tags, and interaction ID fields above the CSV upload area](../img/screenshots/chats/upload.png)
 
 Bulk chat files must follow the Vela JSON schema. This is an array of conversations, each with `metadata` and a `messages` array:
 
@@ -173,33 +201,35 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 |------|---------|------------|
 | Single audio upload | WAV, MP3 | 1 GB |
 | Bulk upload (archive) | WAV or MP3 + metadata.csv, in a ZIP | 3 GB |
-| Single chat upload | CSV | 1 MB |
+| Single chat upload | CSV | Not stated on the page |
 | Bulk chat upload | JSON (Vela schema) | 1 MB |
 
 Audio files above their limit are rejected before the upload starts, with a "file too big" message.
 
 :::note Chat file size
-The chat upload page states a 1 MB maximum. Split large exports into several files rather than uploading one big one. A failed upload then costs you one small file rather than the whole export.
+The **Bulk Upload** tab states a 1 MB maximum. The single **Upload** tab states none, so treat 1 MB as the guide for both.
+
+Split large exports into several files rather than uploading one big one. A failed upload then costs you one small file rather than the whole export.
 :::
 
 ---
 
 ## Processing
 
-Once uploaded, Vela queues files for processing. Transcription, speaker identification, sentiment analysis, keyword detection, intent classification, and automatic scorecard evaluation all run as part of the same pipeline.
+Once uploaded, Vela queues files for processing. Transcription, speaker identification, sentiment analysis, keyword detection, intent classification, and automatic scorecard evaluation all happen during processing, one after another.
 
 ```mermaid
 flowchart LR
-    A("**Uploaded**<br/>the file reaches Vela") --> B("**Queued**")
-    B --> C("**Transcribed**<br/>speech to text,<br/>speakers separated")
-    C --> D("**Analysed**<br/>sentiment, topics, intents,<br/>keywords, pain points")
-    D --> E("**Scored**<br/>against the scorecards<br/>covering that agent")
-    E --> F("**Listed and notified**<br/>the interaction appears under<br/>Calls or Chats")
+    A("Uploaded<br/>the file reaches Vela") --> B("Queued")
+    B --> C("Transcribed<br/>speech to text,<br/>speakers separated")
+    C --> D("Analysed<br/>sentiment, topics, intents,<br/>keywords, pain points")
+    D --> E("Scored<br/>against the scorecards<br/>covering that agent")
+    E --> F("Listed and notified<br/>the interaction appears under<br/>Calls or Chats")
 ```
 
-An interaction reaches the **Calls** or **Chats** list at the end of that pipeline, not the start. An upload you cannot find yet is normally still working through it rather than lost.
+An interaction reaches the **Calls** or **Chats** list once all of that has finished, not when you upload it. An upload you cannot find yet is normally still working through it rather than lost.
 
-Processing time depends on file length, audio quality, and current server load. Vela emails you when processing is complete, depending on your notification settings.
+Processing time depends on file length, audio quality, and current server load. Vela emails you when processing is complete.
 
 ---
 
@@ -209,7 +239,7 @@ Wait for the notification telling you the analysis is ready, then open **Interac
 
 An interaction that is not in the list yet has not finished processing. That is the normal state straight after an upload, so give it time before treating it as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
 
-A bulk upload also shows a results screen naming any rows it could not process. Read that before assuming the whole batch succeeded, because a row rejected there never enters the pipeline at all.
+A bulk upload also shows a results screen naming any rows it could not process. Read that before assuming the whole batch succeeded, because a row rejected there is never processed at all.
 
 ---
 
@@ -218,7 +248,8 @@ A bulk upload also shows a results screen naming any rows it could not process. 
 | Problem | Likely cause | Solution |
 | :--- | :--- | :--- |
 | Upload fails | Unsupported format or file too large | Use WAV or MP3. Keep a single call under 1 GB and a ZIP under 3 GB |
-| `Unknown compression method` | The ZIP was made with Deflate64, BZip2, or LZMA | Recreate it with Deflate or Store. See [Preparing ZIP Files for Bulk Upload](./compression_method.md) |
+| A bulk upload uploads, then processes nothing | The archive is RAR or 7z rather than ZIP | Recreate it as a ZIP and upload again |
+| `Unknown compression method: 9`, `: 12`, or `: 14` | The ZIP was made with Deflate64, BZip2, or LZMA | Recreate it with Deflate or Store. See [Prepare your audio files](#bulk-call-upload) |
 | Chat upload fails | The file format does not match the tab. **Upload** takes CSV, **Bulk Upload** takes JSON | Check which tab you are on, then supply that format |
 | Bulk chat upload fails | Malformed JSON, or JSON that does not match the Vela schema | Validate the JSON, and confirm every message has `message`, `time`, and `sender` |
 | Processing fails | Poor audio quality or corrupted file | Verify the file plays locally before uploading |

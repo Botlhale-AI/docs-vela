@@ -5,14 +5,17 @@ sidebar_position: 0
 type: tutorial
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Team Lead Quick Start
-A hands-on walkthrough for team leads and managers new to Vela. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
+A hands-on walkthrough for team leads and managers new to Vela. If you have not met the platform yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
 
 ---
 
 ## What You'll Learn
 
-- ✅ Log in and navigate the platform
+- ✅ Sign in and navigate the platform
 - ✅ Check today's team performance at a glance
 - ✅ Upload and review your first call or chat
 - ✅ Understand key metrics and their meanings
@@ -34,29 +37,40 @@ A hands-on walkthrough for team leads and managers new to Vela. By the end you w
 Your administrator assigned you an access level, and it decides how much of the organisation you see: everything, your department, or your immediate team. Every dashboard, list, and filter in this guide is bounded by it, so if a team lead beside you sees more than you do, this is why. See [Access Level](../../reference/glossary.md#access-level).
 
 :::tip First-Time Setup
-Your administrator's invitation email contains a verification link and a password. **Click the link first.** Vela refuses the sign-in until your address is verified, and tells you to check your email if you try.
+Your administrator's invitation email contains a **Confirm Account** button and a password. **Use the button first.** Vela refuses the sign-in until your address is verified. Trying anyway sends you a fresh confirmation email, so check your inbox again rather than asking for a new invitation. If the button does not work, the email also gives you the link to paste into your browser.
 
-Once verified, sign in with the password from the email. Vela does not force you to change it, so change it yourself under **Settings → Security**.
+Once verified, sign in with the password from the email. If it is not accepted, use **Forgot your password?** on the sign-in page to set your own.
+
+Once you are in, set your own password under **Settings → Security**.
 :::
 
 ---
 
-## Step 1: Log In to Vela
+## Step 1: Sign In to Vela
 
 ### Accessing the Platform
 
 1. **Navigate to your Vela login page** (provided by your administrator)
 2. **Choose your authentication method:**
 
-**Option A: Single Sign-On (SSO)**
+<Tabs groupId="auth-method">
+<TabItem value="sso" label="Single Sign-On">
+
 - Click **Sign in with Google** to sign in with your Google account
 - Click **Sign in with Microsoft** to sign in with your Microsoft account
 - Follow your organisation's authentication flow
 
-**Option B: Email and Password**
+</TabItem>
+<TabItem value="password" label="Email and Password">
+
 - Enter your email address
 - Enter your password
 - Click **Sign In**
+
+Signing in for the first time? Confirm your account from the invitation email first. See **First-Time Setup** under [Before You Begin](#before-you-begin).
+
+</TabItem>
+</Tabs>
 
 ![The Sign In page, with the email and password fields above the Sign in with Google and Sign in with Microsoft buttons](../../../img/screenshots/settings/login-options.png)
 
@@ -93,14 +107,14 @@ Four controls shape everything you see: the **Interactions** type, the **Date ra
 
 ### Essential Controls
 
-**Date Range Selector**
+**Date range**: click it to open **Select Date Range**.
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
-- Custom range: Select specific start and end dates
+- Custom range: pick a start and an end date, then click **Save**
 - **Try it now:** Set the date range to "Today" to see current performance
 
 **Filter**: click **Filter** to narrow the dashboard by department, team, and agent, within your access level, and by direction, tags, topic, or score.
 
-**Interaction Type Filter**: show all interactions, calls only, or chats only.
+**Interactions**: show **All** interactions, **Calls** only, or **Chats** only.
 
 ### Key Metrics to Monitor
 
@@ -108,16 +122,24 @@ Your dashboard displays a set of performance indicators. When you are starting o
 
 1. **Average Agent Score**: a quick read on overall performance
 2. **No. Alerts** (number of alerts): issues raised by your Smart Searches that need attention
-3. **Sentiment Distribution**: how sentiment breaks down across the period
+3. **Sentiment Distribution**: how sentiment breaks down across the date range
 
 Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each one.
 
 ### Customising Your Dashboard
 
-Click **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, card, or speedometer), then **Save Changes**. The chart types offered vary by metric. Metrics are grouped, and each group shows how many it holds.
+Click **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card), then **Save Changes**. The chart types offered vary by metric. Metrics are grouped, and each group shows how many it holds.
 
-![The Dashboard header, with the Customise button, the Interactions radio, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
-![The Customise Dashboard modal, with metrics grouped and a chart type icon on each](../../../img/screenshots/dashboard/dashboard05.png)
+![The Dashboard header, with the Customise button, the All, Calls, and Chats options, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
+![The Customise Dashboard modal with five controls numbered, from the metric group heading through to Save Changes](../../../img/screenshots/dashboard/dashboard05.png)
+
+| # | Control | What it does |
+|:--|---------|--------------|
+| 1 | The group heading | Names the group and how many metrics it holds |
+| 2 | The icon on each metric | The chart type it is drawn as. The same metric appears once per chart type available to it |
+| 3 | The cross on a metric | Removes it from your dashboard |
+| 4 | The scrollbar | The remaining groups sit below the two in view |
+| 5 | **Save Changes** | Applies your selection. Closing without saving discards it |
 
 **Try it now:** Add **Top 10 Pain Points** to your dashboard to monitor common customer issues.
 
@@ -133,10 +155,10 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 ### Uploading a Single Call
 
-![The Single Upload form, with the agent, direction, and tags fields above the dropzone](../../../img/screenshots/data_upload/upload2.png)
+![The Single Upload form, with the agent, direction, and tags fields above the upload area](../../../img/screenshots/data_upload/upload2.png)
 
 1. Navigate to **Interactions → Calls**
-2. Click **Upload**, then select the single-call upload tab
+2. Click **Upload**, then select the **Single Upload** tab
 3. Fill in the upload form:
    - **Agent** (required): select the agent who handled this call. The list is filtered by your access level, and **+ Create an agent** adds one without leaving the page
    - **Direction** (optional): choose inbound or outbound
@@ -146,7 +168,7 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 ### Processing Time
 
-While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call, the audio quality, and current server load, and longer calls take longer. Vela emails you when the analysis is complete, depending on your notification settings. You can manage these in **Settings → Notifications**.
+While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call, the audio quality, and current server load, and longer calls take longer. Vela emails you when the analysis is complete.
 
 ![The Notifications tab, with the platform and email lists and the frequency setting](../../../img/screenshots/settings/notification.png)
 
@@ -162,7 +184,7 @@ Four parts do most of the work when you review:
 - **Summary**: a plain-language recap of what happened and how it was resolved.
 - **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
-- **Alerts**: anything a Smart Search or the AI flagged. Mark each one resolved once you have acted on it.
+- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Click **Resolve** on each one once you have acted on it.
 
 The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 
@@ -170,9 +192,9 @@ The interaction view also shows timestamps on every line, detected keywords, the
 
 After reviewing the analysis, add your own observations:
 
-1. **Scroll to the Comments section**
+1. Click **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. Without the tag, only team leads see the comment.
+3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. An untagged comment stays visible to team leads only.
 4. Click **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
@@ -216,7 +238,7 @@ You've completed the Team Lead Quick Start. You can now:
 | What you see | Why | What to do |
 | :--- | :--- | :--- |
 | The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email telling you the analysis is ready. Check **Settings → Notifications** if you are not receiving them |
-| The interaction has no scorecard | No active Agent Scorecard covers this agent's team | Ask your administrator to check the scorecard's scope. See [Administrator Setup](./administrator-setup.md) |
+| The interaction has no scorecard | No scorecard question is scoped to this agent's team | Ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
 | Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and pick the agent from the `@` list |
 
 For uploads, playback, and anything else, see the [Troubleshooting Guide](../../support/troubleshooting-guide.md).
@@ -228,6 +250,7 @@ For uploads, playback, and anything else, see the [Troubleshooting Guide](../../
 - [Set up monitoring](../../smart-search-guide.md): create a Smart Search to flag interactions automatically
 - Bring in your historical call data with a bulk upload (see [Upload Your Data](../../data-upload.md))
 - [Generate Reports](../../features/custom-reporting.md): schedule a recurring report for weekly management updates
+- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and the order to set them up in
 
 ---
 

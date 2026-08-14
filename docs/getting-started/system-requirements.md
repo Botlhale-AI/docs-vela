@@ -43,6 +43,22 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 
 ## File Format Requirements
 
+The format you need depends on what you are uploading and whether it is one file or many. The sections below give the full specification for each:
+
+```mermaid
+flowchart TD
+    Q("What are you uploading?") --> C{"Calls"}
+    Q --> H{"Chats"}
+    Q --> A("Agents")
+    C -- One --> C1("WAV or MP3<br/>up to 1 GB")
+    C -- Many --> C2("ZIP holding the audio<br/>plus metadata.csv<br/>up to 3 GB")
+    H -- One --> H1("CSV<br/>one chat")
+    H -- Many --> H2("JSON<br/>the Vela schema<br/>1 MB advised")
+    A --> A1("CSV<br/>name, email,<br/>department, team")
+```
+
+Each tab takes its own format, so check which one you are on before preparing the file. The chat tabs reject anything else outright. The bulk call tab also takes RAR and 7z, which Vela cannot read, so send it a ZIP. See [Upload Your Data](../data-upload.md).
+
 ### Audio Files (Calls)
 
 **Supported Formats:**
@@ -69,8 +85,8 @@ Files larger than 1 GB are rejected before the upload begins.
 **Required Format:**
 - **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
 - **Encoding:** UTF-8
-- **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, use **See this example** on the upload page for the CSV layout.
-- **Maximum size:** 1 MB per file, as stated on the upload page, and one file at a time. Split a large export into several files rather than uploading one big one.
+- **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, click the **example** link on the upload page to download a sample CSV.
+- **Maximum size:** 1 MB per file, as stated on the **Bulk Upload** tab, and one file at a time. The single **Upload** tab states no limit, so use 1 MB as the guide for both. Split a large export into several files rather than uploading one big one.
 
 **JSON Structure Example:**
 ```json
@@ -225,5 +241,6 @@ If the platform does not load, an upload fails, or audio does not play, see the 
 
 ## Next Steps
 
-- [Platform Overview](../getting-started/platform-overview.md)  
-- [Quick Start Guides](./quick-start/administrator-setup.md)
+- [Administrator Setup](./quick-start/administrator-setup.md): set Vela up before anyone else uses it
+- [Team Lead Quick Start](./quick-start/team-lead-quick-start.md): review interactions, coach agents, and monitor performance
+- [Upload Your Data](../data-upload.md): the upload steps for the formats listed above

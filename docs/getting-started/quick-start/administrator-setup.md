@@ -5,8 +5,11 @@ sidebar_position: 0
 type: tutorial
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Administrator Setup
-Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy.
+Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met the platform yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
 
 **To score your interactions, you need the Agent Scorecard in place (Step 4)**, so work through these in order.
 
@@ -21,7 +24,7 @@ Before anyone else can use Vela, an administrator configures authentication, dep
 - ✅ Create organisation-wide Smart Searches for compliance monitoring
 - ✅ Build the Knowledge Base
 - ✅ Configure data privacy (redaction)
-- ✅ Confirm the pipeline works end to end
+- ✅ Confirm an upload works end to end
 
 ---
 
@@ -51,7 +54,8 @@ For how to make these decisions well, see [Best Practices: Setting Up for Succes
 
 Vela offers two ways to sign in, and which applies to your organisation shapes how you add people in Step 3.
 
-### Option A: Single Sign-On (SSO)
+<Tabs groupId="auth-method">
+<TabItem value="sso" label="Single Sign-On">
 
 Users can sign in with their existing Google or Microsoft account. The **Sign in with Google** and **Sign in with Microsoft** buttons are on the login page for everyone, so there is nothing to switch on and no configuration in Settings.
 
@@ -59,11 +63,15 @@ The only requirement is that the person already exists in Vela. Add them first (
 
 Users who sign in through SSO manage their password with Google or Microsoft, so the **Security** tab is hidden for them in Vela.
 
-### Option B: Email and Password
+</TabItem>
+<TabItem value="password" label="Email and Password">
 
-If SSO is not available, users log in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
+If SSO is not available, users sign in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
 Vela emails each new user a password and a verification link. They must click the link before they can sign in. Vela does not force a password change afterwards, so tell users to set their own under **Settings → Security**.
+
+</TabItem>
+</Tabs>
 
 ![The Sign In page, with the email and password fields above the Sign in with Google and Sign in with Microsoft buttons](../../../img/screenshots/settings/login-options.png)
 
@@ -98,10 +106,17 @@ Set your departments and teams up to match your real reporting lines. Each team 
 
 ## Step 3: Add Users and Agents
 
-You add two kinds of record in this step.
+You add two kinds of record in this step. They are separate records, and adding one does not create the other:
+
+```mermaid
+flowchart TD
+    D("Departments<br/>created first, in Step 2") --> T("Teams<br/>each belongs to a department")
+    T --> A("Agents, Step 3A<br/>their calls and chats are analysed<br/>added singly or by CSV import<br/>no Vela login")
+    T --> U("Users, Step 3B<br/>the people who sign in to Vela<br/>added one at a time<br/>each has a Role and an Access level")
+```
 
 - **Agents**, whose interactions are analysed. Add them individually, or import many at once from a CSV.
-- **Users**, who log in to Vela. Add these one at a time in **Settings → Users**.
+- **Users**, who sign in to Vela. Add these one at a time in **Settings → Users**.
 
 :::warning Bulk import creates agents, not users
 If you are onboarding team leads or administrators, add them individually in Step 3B. A CSV import does not give them a login. See [Agent](../../reference/glossary.md#agent) in the Glossary for the full distinction.
@@ -174,25 +189,15 @@ The Agent Scorecard defines the evaluation criteria used to score every interact
 5. Click **Create** to save the scorecard. Its questions are active as soon as it is created.
 
 :::note The sidebar says "Agents Scorecard"
-The sidebar and breadcrumb name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
+The sidebar and the trail at the top of the page name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
 :::
 
-**For each question, configure:**
+![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_detector/scorecard-list.png)
+![The top of the Agents Scorecard Create tab, with Scorecard Scope, the Interactions options, and Historical Search](../../../img/screenshots/smart_detector/scorecard-create.png)
 
-| Property | Description |
-|----------|-------------|
-| **Question** | A specific, observable behaviour (for example, "Did the agent verify the customer's identity?") |
-| **Category** | A grouping label (for example, "Opening", "Compliance", or "Closing") |
-| **Expected Outcome** | Which answer, Yes or No, counts as a pass |
-| **Weight** | Relative importance in the overall score |
-| **Auto-Fail** | If enabled, failing this item auto-fails the whole interaction. It then reads 0.0%, with the score earned on everything else in brackets. See [How Scoring Works](../../explanation/how-scoring-works.md) |
-| **Apply To** | Inbound calls, outbound calls, or all calls |
+Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. The remaining settings, and what each one does, are covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md). Every field with its values and default is in [Scorecard Fields](../../reference/scorecard-fields.md).
 
-![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_search/smart5.png)
-![The top of the question form: scorecard scope and historical search](../../../img/screenshots/smart_search/smart7.png)
-![The rest of the question form, ending in Add Question and Create](../../../img/screenshots/smart_search/smart8.png)
-
-{/* RESHOOT: smart8.png predates Always Applicable, Compliance Question, and Interactions, verified against smart_detector/agents_checklist/createForm.jsx. Low priority: this page deliberately covers a subset of the fields and scorecard-fields.md holds the full list, so the form simply offers more than the shot shows. */}
+![The question block of the scorecard form, with Question, Category, Expected Outcome, and Weight above the remaining settings](../../../img/screenshots/smart_detector/scorecard-create2.png)
 
 :::tip Write Concrete Questions
 Write each question so that the AI, and human reviewers, can give a clear yes or no answer. Prefer specific criteria like "Did the agent use the customer's name at least once?" over vague ones like "Was the agent professional?"
@@ -217,10 +222,12 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
    - **Notifications:** Enable if you want alerts when matches are detected
 4. Click **Create Smart Search**
 
-![The New Smart Search form: title, status, description, and scope](../../../img/screenshots/smart_search/11.png)
-![The rest of the form: Example Phrases, Search Filter, Historical Search, and Notifications](../../../img/screenshots/smart_search/12.png)
+![The New Smart Search form with its fields numbered, from Smart Search Title through to Example Phrases](../../../img/screenshots/smart_search/smart-search-create.png)
+![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../../../img/screenshots/smart_search/smart-search-create2.png)
 
-Repeat for each compliance or quality monitoring rule your organisation requires, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so create the rules that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
+The numbers on both screenshots are keyed to the field descriptions in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
+
+Repeat for each compliance or quality check your organisation needs to monitor, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
 
 :::note Smart Questions ask, rather than flag
 A Smart Search flags interactions that match your criteria. A **Smart Question** asks a yes or no question of every interaction for reporting, without affecting anyone's score, which suits anything it would be unfair to judge an agent on. On plans that include it, see [Set Up Smart Questions](../../smart-questions-guide.md).
@@ -253,16 +260,16 @@ Once redaction is configured, masked details are hidden from everyone by default
 
 ---
 
-## Step 8: Confirm the Pipeline Works
+## Step 8: Confirm an Upload Works End to End
 
 Before you hand Vela over, upload one test interaction and confirm it processes from start to finish. This proves authentication, the scorecard, and redaction are working together.
 
 1. Upload a single test call in **Interactions → Calls** (see [Upload Your Data](../../data-upload.md))
-2. Wait for processing to finish. Vela emails you when the analysis is ready, depending on your notification settings
+2. Wait for processing to finish. Vela emails you when the analysis is ready
 3. Open the processed interaction and confirm it has a transcript, a scorecard outcome, and, if you configured redaction, masked details
 4. If an organisation-wide Smart Search should have matched, check that it appears in that search's results
 
-A scorecard outcome on that interaction confirms your scorecard reaches the test agent's team. If the outcome is missing, check that an active Agent Scorecard covers that team, and see the troubleshooting below.
+A scorecard outcome on that interaction confirms your questions reach the test agent's team. If the outcome is missing, check the scope on those questions, and see the troubleshooting below.
 
 ---
 
@@ -281,14 +288,14 @@ Once all eight steps are complete, your platform is ready for use.
 
 For general platform issues, such as uploads, playback, or the app not loading, see the [Troubleshooting Guide](../../support/troubleshooting-guide.md). The items below are specific to setup.
 
-**Users can't log in via SSO**  
+**Users can't sign in via SSO**  
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.
 
 **Bulk agent import errors**  
 Check that the CSV has all required columns (name, email, department, team) and that none are empty. Team and department names must match those created in Step 2, unless you use the create option during import.
 
 **Interactions are not being scored**  
-Confirm that an active Agent Scorecard exists with a scope that covers the relevant team or department. The AI scores each interaction against that scorecard, so its scope determines which interactions get scored.
+Confirm that scorecard questions exist with a scope covering the relevant team or department. Each question carries its own scope, so that is what decides which interactions it is applied to.
 
 An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and click **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
 
@@ -299,6 +306,8 @@ Check that the search status is set to **Active** and that the scope covers the 
 
 ## Next Steps
 
+- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and the order to set them up in
+- [Build an Agent Scorecard](../../agent-scorecard-guide.md): every question setting, and editing a scorecard once it is live
 - [Best Practices](../../advanced/best-practices.md): advanced configuration guidance
 - [Build Your Knowledge Base](../../knowledge-base-guide.md): uploading, scoping, and linking documents
 - [Set Up Smart Search](../../smart-search-guide.md): advanced search configuration
