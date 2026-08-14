@@ -71,7 +71,7 @@ type: how-to
 ---
 ```
 
-**Current distribution:** 16 reference, 8 how-to, 3 explanation, 2 tutorial, 1 troubleshooting, across 30 published pages.
+**Current distribution:** 15 reference, 11 how-to, 5 explanation, 2 tutorial, 1 troubleshooting, across 34 published pages.
 
 Reference being the largest is intentional. In a mature product it is the material people return to most.
 
@@ -86,8 +86,8 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Getting Started** | Platform Overview · System Requirements |
 | **Quick Start Guides** | Administrator Setup · Team Lead Quick Start |
 | **Getting Data In** | Upload Your Data |
-| **Using Vela** | Review and Score Interactions · Monitor Agent Performance · Generate Reports · Notifications |
-| **Smart Detector** | Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms |
+| **Using Vela** | Review and Score Interactions · Monitor Agent Performance · Generate Reports · Manage Notifications · Manage Agents and Teams |
+| **Smart Detector** | Build an Agent Scorecard · Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms |
 | **Understanding Vela** | How Scoring Works · How the Pieces Fit Together |
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
 | **Administration & Configuration** | Settings Access by Role · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
@@ -174,17 +174,31 @@ Anything else that mixes types is a defect, not a deviation.
 
 ## 9. What is enforced automatically
 
+Both commands run on every push through [.github/workflows/docs.yml](../.github/workflows/docs.yml), so nothing below depends on someone remembering.
+
 | Check | Mechanism | Status |
 | :--- | :--- | :--- |
-| Broken links | `onBrokenLinks: 'throw'` | Build fails |
-| Broken anchors | `onBrokenAnchors: 'throw'` | Build fails |
-| Page type recorded | `type:` frontmatter | Manual, visible in review |
-| UI labels match the product | None | Manual |
-| Style guide compliance | None | Manual |
+| Broken links and anchors | `onBrokenLinks` and `onBrokenAnchors`, plus the linter | Fails |
+| Frontmatter: title, type, one H1 matching the title | Linter | Fails |
+| House style: dashes, banned words, UK spelling, present tense | Linter | Fails |
+| Images: alt text, spacing, resolution, no orphans | Linter | Fails |
+| Links to draft pages | Linter | Fails |
+| Link text that is another page's title | Linter | Fails |
+| Sidebar label matches the page title | Linter | Fails |
+| Section 4 above matches what the sidebar builds | Linter | Fails |
+| Pages reachable from somewhere | Linter | Fails |
+| UI labels match the product | `npm run check:labels` | Reports, run on demand |
 
-The gap is the last two rows. A UI label can be renamed in the product and the documentation will keep building happily with the old name. Until there is a check for that, review is the only defence.
+The last row is the only one that cannot be a gate, for two reasons. CI has no access to the `vela` repositories, and bold marks emphasis as well as labels, so the output needs a person to read it. Roughly one result in six is worth acting on.
 
-**Recommended next step:** a CI job running `npm run build` on every pull request, plus a script that greps documented UI labels against the `vela` source and fails when one has no match.
+Run it before a release, or after the product changes:
+
+```
+npm run check:labels
+VELA_SRC=/path/to/vela,/path/to/vela-data npm run check:labels
+```
+
+It found four invented terms on its first run: "performance threshold", which is not a Vela concept at all, and "Speed Adjustment", "Date Range Selector", and "Interaction Type Filter", which name controls the product calls **Playback Speed**, **Select Date Range**, and **Interactions**.
 
 ---
 

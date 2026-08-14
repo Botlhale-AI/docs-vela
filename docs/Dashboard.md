@@ -13,7 +13,7 @@ The Dashboard is your at-a-glance view of performance. It shows trends across wh
 
 ## What It Shows
 
-Performance indicators for the scope and period you choose, such as Average Agent Score, number of alerts, and sentiment. You choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, card, or speedometer). Every metric is defined in [Metrics](./reference/metrics.md).
+Performance indicators for the scope and period you choose, such as Average Agent Score, number of alerts, and sentiment. You choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card). Every metric is defined in [Metrics](./reference/metrics.md).
 
 ---
 

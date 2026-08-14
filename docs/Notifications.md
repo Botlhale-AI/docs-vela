@@ -21,4 +21,4 @@ When a call finishes processing, Vela emails you rather than posting an in-app n
 
 ## Related
 
-- [Notifications](./features/notifications.md): what triggers each notification and how to control it.
+- [Manage Notifications](./features/notifications.md): what triggers each notification and how to control it.

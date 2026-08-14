@@ -78,7 +78,7 @@ const sidebars = {
         type: "generated-index",
         title: "Using Vela",
         description:
-          "The day-to-day work: reviewing interactions, monitoring agent performance, generating reports, and staying on top of alerts.",
+          "The day-to-day work: reviewing interactions, monitoring agent performance, generating reports, staying on top of alerts, and keeping agent and team records right.",
         slug: "/using-vela",
       },
       items: [
@@ -100,7 +100,12 @@ const sidebars = {
         {
           type: "doc",
           id: "features/notifications",
-          label: "🔔 Notifications"
+          label: "🔔 Manage Notifications"
+        },
+        {
+          type: "doc",
+          id: "features/manage-agents-and-teams",
+          label: "🧑‍💼 Manage Agents and Teams"
         },
       ],
     },
@@ -121,6 +126,11 @@ const sidebars = {
         slug: "/smart-detector",
       },
       items: [
+        {
+          type: "doc",
+          id: "agent-scorecard-guide",
+          label: "📋 Build an Agent Scorecard"
+        },
         {
           type: "doc",
           id: "smart-search-guide",
