@@ -10,15 +10,14 @@ type: reference
 Vela runs on AWS, encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside the platform.
 
 {/*
-INTERNAL NOTE: not rendered on the published page. Keep this comment below the
-intro paragraph. Docusaurus derives the category card description from the first
-content block, so a comment at the top of the file becomes the card description.
+Keep this comment below the intro paragraph. Docusaurus takes the category card
+description from the first content block, so a comment at the top of the file
+becomes the card description.
 
-The infrastructure claims below (POPIA/GDPR, SOC 2 Type 2, ISO 27001, TLS 1.2,
-AES-256, VPC isolation, RPO/RTO, penetration testing) come from Botlhale's DR
-policy and security statement. They are not verifiable in the product code and
-must be re-checked against that policy before each release.
-The "In the Product" section is verified against the vela source.
+Sources. Hosting onwards: Botlhale's DR policy and security statement. Confirm
+against the current version of that policy at each release, since the figures
+and certifications move.
+In the Product: the vela source.
 */}
 
 ---

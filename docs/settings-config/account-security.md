@@ -13,7 +13,7 @@ The Account tab is visible to **all users**, regardless of role or scope. The Se
 
 ---
 
-## 1. Account Tab (Personal Details)
+## 1. Your Account Details
 
 The Account tab displays your personal information and current organisational context.
 
@@ -34,6 +34,8 @@ An administrator can change your **team**, **department**, **role**, and **acces
 
 ### B. Switching Organisations
 
+![The My Orgs tab, listing each organisation by name, role, department, and team with a Switch control on every row](../../img/screenshots/settings/my-orgs.png)
+
 If you belong to more than one organisation, you can change which one you are working in.
 
 1.  Navigate to **Settings** → **Organisations** → **My Orgs**.
@@ -42,7 +44,7 @@ If you belong to more than one organisation, you can change which one you are wo
 
 ---
 
-## 2. Security Tab (Change Password)
+## 2. Changing Your Password
 
 The Security tab is dedicated to protecting your account by allowing you to update your password.
 
@@ -50,30 +52,30 @@ The Security tab is dedicated to protecting your account by allowing you to upda
 If your organisation uses Single Sign-On (Google or Microsoft), the Security tab is not shown. Your password is managed by your identity provider, not Vela.
 :::
 
-### Step 1: Access the Change Password Section
+### A. Open the Change Password Form
 
 1.  Navigate to **Settings** → **Security**.
 2.  Locate the **Change your password** form.
 
-### Step 2: Input Your Details
+### B. Enter Your Details
 
 * **Current Password:** Enter your existing password to authorise the change.
-* **New Password:** Enter your desired new password.
+* **New Password:** Enter your desired new password. It has to meet the rules in [Password Requirements](#password-requirements) below.
 * **Verify Password:** Re-enter the new password exactly as typed to confirm it.
+
+### C. Save Your Changes
+
+1.  Once all fields are complete and the new password meets the requirements, click the **Save** button.
+2.  Vela prompts you to sign in again with your new credentials.
 
 ### Password Requirements
 
-To ensure strong security, your new password must meet the following criteria:
+Your new password must meet all of these:
 
 * At least **8 characters**.
 * At least **one letter** (a-z, A-Z).
 * At least **one number** (0-9).
 * At least **one special character** (for example `@`, `#`, or `!`).
-
-### Step 3: Save Changes
-
-1.  Once all fields are complete and the new password meets the requirements, click the **Save** button.
-2.  Vela prompts you to log in again with your new credentials.
 
 ---
 

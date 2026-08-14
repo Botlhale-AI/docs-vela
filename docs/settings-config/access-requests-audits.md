@@ -8,7 +8,7 @@ type: reference
 
 The **Requests** tab is where Administrators process requests to view redacted information. When a user without **View Redactions** needs to see masked content in a call, they raise a request here for an Administrator to approve or decline.
 
-:::warning ACCESS RESTRICTION
+:::warning Administrators only
 This tab is **only visible to and manageable by Administrators**. A user without **View Redactions** initiates a request from within a call, but only Administrators can view, process, and approve requests here.
 
 Transcripts are masked by default for everyone. Administrators, and users granted **View Redactions**, reveal masked content on demand, so they do not raise requests themselves. The permission is set per account in **Settings → Users**, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
@@ -18,9 +18,20 @@ Transcripts are masked by default for everyone. Administrators, and users grante
 
 ## 1. Processing Access Requests
 
+Whether someone raises a request at all depends on one setting on their account, which is why most people never see this workflow:
+
+```mermaid
+flowchart LR
+    M("Someone opens a call<br/>with masked content") --> P{"Does the account have<br/>View Redactions?"}
+    P -- Yes --> R("They reveal it themselves.<br/>No request, nothing to process")
+    P -- No --> Q("They raise a request<br/>from inside the call")
+    Q --> PE("Pending<br/>your working queue")
+    PE --> CO("Completed<br/>approved or declined,<br/>with a record of who did both")
+```
+
 The **Requests** tab is divided into two sub-sections to manage the workflow of access requests.
 
-### A. Pending Requests (Action Required)
+### A. Pending Requests
 
 Requests that users have submitted and that have **not yet been processed**.
 
@@ -28,11 +39,11 @@ This is your working queue. Review each request and either **Approve** or **Decl
 
 ### B. Completed Requests
 
-Requests you have already processed, kept as a record of each one.
+Requests you have already processed, kept as a record of each one. Each request is a card rather than a table row, with the fields below down the left of it.
 
 | Field | Description | Status Indication |
 | :--- | :--- | :--- |
-| *(relative time)* | How long ago the request was submitted, for example "2 hours ago". It sits beside the heading **Request for Access to Redacted Information** rather than under a label. | N/A |
+| *(timestamp)* | When the request was submitted. It sits beside the heading **Request for Access to Redacted Information** rather than under a label. Requests from today read as relative time, such as "2 hours ago". Older ones show a date and time, such as "Jul 29 at 07:47 PM". | N/A |
 | **Requested By** | The name and email address of the user who initiated the request. | N/A |
 | **Call ID** | A link to the specific call the user requested access to. | N/A |
 | **Status** | The final outcome of the request. | **Approved** (Green) or **Declined** (Red). |
@@ -41,7 +52,9 @@ Requests you have already processed, kept as a record of each one.
 
 ---
 
-{/* SCREENSHOT: The Completed requests table, showing the Submitted, Requested By, Call ID, Status, Comment, and Completed By columns with at least one Approved and one Declined row so both status colours appear. Save as img/screenshots/settings/requests-completed.png */}
+![The Completed sub-tab of Requests, with one approved and one declined request card showing the green and red status labels](../../img/screenshots/settings/requests-completed.png)
+
+{/* The email addresses in Requested By and Completed By are masked on purpose, to keep real people's personal information out of the documentation under POPIA. The bars show where an address sits without disclosing it. */}
 
 ## 2. Why It Matters
 

@@ -8,7 +8,7 @@ type: reference
 
 The **Organisations → This Org** sub-tab holds the settings that apply to your whole organisation: the profile, the monthly duration allocation, the score boundaries, agent report scheduling, redaction, and the package limits.
 
-:::warning ACCESS RESTRICTION
+:::warning Administrators only
 The **Organisations** tab is hidden from the Agent role. Everyone else can open **This Org** and read the settings, but only an Administrator whose access level is **organisational** can change them. An administrator scoped to a department or a team has read access only.
 :::
 
@@ -53,7 +53,7 @@ Select the points at which Vela sends a duration usage email. Each threshold is 
 The list also shows a 90% and a 100% checkbox. Those two do not respond to clicks on this screen. Contact **support@botlhale.ai** if you need either threshold changed.
 :::
 
-{/* SCREENSHOT: The duration section of This Org, showing Allocated Monthly Duration, Current Duration Usage, the gauge, and both checkbox groups side by side. Save as img/screenshots/settings/org-duration.png */}
+![The duration section of This Org, with Allocated Monthly Duration and Current Duration Usage beside the usage gauge, above the Duration Usage Notifications and Duration Usage Setting checkbox groups](../../img/screenshots/settings/org-duration.png)
 
 ### B. Duration Usage Setting
 
@@ -138,7 +138,7 @@ The package name is shown at the bottom of the page. Click **show package detail
 | :--- | :--- |
 | **Package Name** | The package your organisation is on. |
 | **Monthly Allocated Duration (minutes)** | The analysis minutes allocated each month. |
-| **Smart Search Limit** | The number of Smart Searches your organisation can hold. |
+| **Smart Search Limit** | How many Smart Searches your organisation can have Active at once. Inactive searches are kept without using a place. |
 | **Agent Scorecard Limit** | The number of Agent Scorecards your organisation can hold. |
 | **Pain Points Limit** | The number of [pain points](../reference/glossary.md#pain-point) your organisation can hold. |
 
