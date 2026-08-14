@@ -19,6 +19,19 @@ How much of the organisation a user can see. An administrator sets this per user
 - **Departmental**: their department only
 - **Team**: their immediate team only
 
+```mermaid
+flowchart TD
+    O("Organisational<br/>sees everything below") --> D1("Department A")
+    O --> D2("Department B")
+    D1 --> T1("Team 1")
+    D1 --> T2("Team 2")
+    D2 --> T3("Team 3")
+    DA("Departmental<br/>a user in Department A") -.-> D1
+    TA("Team<br/>a user in Team 1") -.-> T1
+```
+
+A user sees the node they are attached to and everything beneath it, and nothing to the side. This is why two team leads looking at the same Dashboard on the same day can see different numbers.
+
 Access level is separate from [Role](#role), which controls what actions they can take. A user with the Admin role and Team access can manage users, but only sees their own team's data.
 
 Agents do not have an access level. They only ever see their own interactions. See [Settings Access by Role](../settings-config/access-control.md).
@@ -37,7 +50,7 @@ In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This 
 
 ## Alert
 
-A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. You can mark an alert as resolved once you have reviewed it.
+A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. Click **Resolve** on an alert once you have reviewed it. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
 
 Alerts appear in the **Alerts** tab under Notifications, and the **No. Alerts** metric counts them.
 
@@ -86,6 +99,12 @@ The customer's reason for the interaction, for example Sales, Support, or Compla
 
 A single customer conversation, either a **call** (voice) or a **chat** (text). Vela uses "interaction" as the collective term for both.
 
+## Keyword
+
+A specific term your organisation tracks across interactions. Unlike topics, intents, and pain points, the AI never detects keywords on its own, so a keyword exists only after someone adds it under **Smart Detector → Keywords**.
+
+Once added, a keyword can be used as a Smart Search filter, and it appears in the keyword metrics on your Dashboard and in reports. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
+
 ## Knowledge Base
 
 A store of your organisation's documents, such as policies, scripts, and procedures. You upload them as PDF files. When you link a Knowledge Base document to a Smart Search or a scorecard question, the AI uses its content as reference when it evaluates interactions. See [Knowledge Base](../knowledge-base-guide.md).
@@ -106,6 +125,8 @@ Automatic masking of sensitive information in transcripts. Administrators choose
 
 Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
 
+{/* UNVERIFIED: NRP appears in Settings as a bare abbreviation and is not expanded anywhere in the product, so it is listed here as shown. Someone who knows what it covers should add a short gloss. */}
+
 The masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
 
 ## Review Status
@@ -119,6 +140,8 @@ What kind of user someone is, and which actions they can take. There are three r
 - **Admin**: can manage users, departments, and organisation settings
 - **User**: can view users and work with interactions, but cannot manage users, approve access requests, or manage departments
 - **Agent**: restricted to the Agent Portal and their own data
+
+When you add a user you choose **Admin** or **User**. The Agent role belongs to agent records, which are created separately and do not sign in to the main platform. See [Agent](#agent).
 
 Role is separate from [Access Level](#access-level), which controls how much data they see. The two combine: an Admin with Team access has full admin actions, but only over their own team.
 
@@ -162,7 +185,7 @@ A theme identified across conversations. The AI can detect topics, or your organ
 
 ## User
 
-A person who logs in to Vela, usually an administrator or team lead. Users have a [Role](#role) and an [Access Level](#access-level).
+A person who signs in to Vela, usually an administrator or team lead. Users have a [Role](#role) and an [Access Level](#access-level).
 
 See also [Agent](#agent). Bulk CSV import creates agents, not users.
 

@@ -26,7 +26,7 @@ A search can use any of these, and can combine several in one search.
 
 **Words** are matched by meaning, as described above. The other criteria (intents, keywords, topics, pain points, and agents) match the labels Vela has already detected on an interaction, so they match those values exactly rather than by meaning.
 
-The intents, keywords, topics, and pain points offered here are the ones on your organisation's lists, whether Vela detected them or your team added them. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
+The intents, keywords, topics, and pain points offered here come from your organisation's lists, whether Vela detected them or your team added them. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
 
 ## Match Settings
 
@@ -50,10 +50,12 @@ When a search uses more than one criterion, a **Show results when** setting cont
 
 | Setting | Behaviour |
 | :--- | :--- |
-| **All of the filters are matched** | An interaction matches only when every criterion matches |
-| **Some of the filters are matched** | An interaction matches when at least one criterion matches |
+| **All conditions are met** | An interaction matches only when every criterion matches |
+| **Some of the conditions are met** | An interaction matches when at least one criterion matches |
 
 With a single criterion, this setting has no effect.
+
+The edit form labels the same two options **All of the filters are matched** and **Some of the filters are matched**. They behave identically, so recognise either.
 
 ## Search Settings
 

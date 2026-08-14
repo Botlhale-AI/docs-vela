@@ -23,16 +23,18 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | **Always Applicable** | Yes / No | No | Whether the question can be marked N/A. When No, the AI may answer N/A on interactions the question does not apply to. When Yes, only Yes or No are offered, so the question is always scored |
 | **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score earned on the other questions in brackets beside it |
 | **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance items are scored separately |
-| **Apply To** | Inbound / Outbound / All | All | Which call directions the question applies to |
-| **Interactions** | Calls / Chats / All | All | Which interaction types the question applies to |
+| **Apply To** | Inbound Calls / Outbound Calls / All Calls | All Calls | Which call directions the question applies to |
+| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. Smart Search calls the same setting Active / Inactive |
 
-## Applicability
+## Scorecard Fields
+
+These sit above the question list and are set once for the whole scorecard. Every question in it inherits them.
 
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
-| **Scope** | Organisation / Department / Team | Widest your access allows | Which parts of the organisation this question applies to |
-| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. Smart Search calls the same setting Active / Inactive |
-| **Historical Search** | On / Off | Off | Whether the question also runs against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range**. This is set when you create the question and cannot be added by editing it afterwards |
+| **Scorecard Scope** | Entire Organisation / Specific Departments / Specific Teams | Widest your access allows | Which parts of the organisation the scorecard applies to. The form labels the selection below it **Apply these questions to** |
+| **Interactions** | All / Calls / Chats | All | Which interaction types the scorecard runs against. Not to be confused with **Apply To** above, which is per question and chooses the direction rather than the type |
+| **Historical Search** | On / Off | Off | Whether the scorecard also runs against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range**. This is set at creation and cannot be added by editing afterwards |
 
 ## AI Context
 
@@ -64,17 +66,24 @@ Scores are also broken down by category, which is what produces an agent's stren
 
 A reviewer can change any outcome after the AI has scored it. The edited outcome takes precedence over the AI's for that question, and the score is recalculated.
 
-Vela's original assessment stays on the record. The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, and the scorecard download (**Download Scorecard as CSV**) lists **Initial Outcome** and **Current Outcome** for every question, along with the reason Vela gave.
+Vela's original assessment stays on the record. The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones. The scorecard download, **Download Scorecard as CSV**, lists **Initial Outcome** and **Current Outcome** for every question, with the reason Vela gave.
+
+On the Scorecard tab, an information icon beside a question's score shows that reason on screen. It appears only on questions Vela answered itself, so it disappears from a question once a reviewer overrides it.
 
 ## Editing and Deleting Questions
 
 Open a question from the Agents Scorecard list to change its wording, category, weight, scope, and settings, or to delete it. **Historical Search cannot be added afterwards**, so a question that needs to cover past interactions has to be created with it enabled.
 
-Deleting a question does not re-score interactions that were already scored against it. Their stored scores keep the question in the total, and there is no way to re-score an interaction that already has one. See [How Scoring Works](../explanation/how-scoring-works.md).
+Deleting a question retires it from future scoring. Interactions already scored against it keep it in their total, and their scores do not change. See [How Scoring Works](../explanation/how-scoring-works.md).
+
+**Editing a question is not the same.** Its **weight**, **Auto-Fail**, **Compliance**, and **Expected Outcome** are read from the current scorecard each time an interaction is opened. Change any of them and every interaction that question already applies to is re-scored, **Initial** figures included. Delete a question you want to stop using rather than setting its weight to zero, which would silently rewrite historical scores.
+
+The question also stays on the **Scorecard** tab of those interactions, with its outcome, so a reviewer can still see what the score was made of. This means a scorecard you no longer use can appear on an older interaction. That is the record of how it was scored at the time, not a sign the question is still live. Check the Agents Scorecard list for what is actually being applied now.
 
 ## Related
 
 - [Glossary](./glossary.md): definitions of the terms above
+- [Build an Agent Scorecard](../agent-scorecard-guide.md): creating and editing the questions these fields belong to
 - [Review and Score Interactions](../features/quality-assurance-tools.md): scoring interactions day to day
 - [Set Up Smart Questions](../smart-questions-guide.md): asking questions that do not affect scores
 

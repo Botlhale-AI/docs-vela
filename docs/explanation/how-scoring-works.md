@@ -34,7 +34,7 @@ Three consequences follow, and they surprise people:
 Every question on an interaction takes one of four paths, and between them they explain why one call scores 75% and another reads zero:
 
 ```mermaid
-flowchart TD
+flowchart LR
     Q("A question on<br/>this interaction") --> A{"Does it apply?"}
     A -- "No, marked N/A" --> NA("Drops out.<br/>Removed from both totals")
     A -- Yes --> B{"Does the answer match<br/>the Expected Outcome?"}
@@ -81,15 +81,41 @@ This is worth understanding because a mis-set Expected Outcome inverts a questio
 
 ## Changing a scorecard after interactions are scored
 
-A score is calculated when the interaction is processed and then stored. Editing the scorecard afterwards does not touch interactions that are already scored, so a change applies to new interactions from that point on. An interaction that already has a score keeps it: there is no way to re-score it against your revised scorecard.
+Two different things happen here, and the difference matters. Some of what makes up a score is saved with the interaction and never changes again. The rest is taken from your scorecard as it stands today, every time someone opens that interaction:
 
-Plan around that rather than against it. Record when you changed the scorecard, and compare periods rather than treating a whole history as one measurement.
+```mermaid
+flowchart LR
+    subgraph F["Saved with the interaction, and never changes"]
+        A("Which questions<br/>it was scored against")
+        B("The answer to each one:<br/>Yes, No, or N/A")
+    end
+    subgraph L["Taken from your scorecard as it is today"]
+        C("Weight")
+        D("Auto-Fail")
+        E("Compliance")
+        G("Expected Outcome")
+    end
+    F --> S("The score<br/>on screen")
+    L --> S
+```
 
-**Rerun Scorecard** is a narrower tool than it sounds. It appears only on an interaction with no automatic scorecard at all, for example one processed before you created yours, and it scores that interaction against the questions applying now. It is not offered on an interaction that already has a score.
+So an old interaction keeps its answers for good, but the sum built from those answers is worked out fresh each time, using whatever the scorecard says now.
 
-Re-uploading a recording does produce a fresh score, because the copy is processed from scratch, but it also leaves you with two interactions for one conversation. Weigh that against starting the new measurement from the change instead.
+**Which questions an interaction was scored against is fixed when it is processed.** A question you add later does not appear on an older interaction, and one you delete stays on it, with the outcome it was given. Deleting a question retires it from future scoring rather than erasing it from the past.
 
-Take particular care with **Expected Outcome**. Change it after interactions have been scored, and their stored answers were judged against the old setting, so they read as wrong from then on.
+**The settings on those questions are taken from your scorecard as it is today.** An interaction's score is worked out when you open it, not stored as a number at processing time. Change a question's **weight**, **Auto-Fail**, or **Compliance** setting, and every interaction already scored against that question is scored differently from that moment on. The stored answers do not move. The arithmetic applied to them does.
+
+:::warning Editing a weight rewrites history
+This applies backwards across your whole history, and it moves the **Initial** scores too, so the AI's original assessment is re-weighted along with yours. A trend that looked flat can change shape because of an edit made today.
+
+Change weights deliberately, record when you did it, and compare periods either side of the change rather than reading the whole history as one measurement.
+:::
+
+The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are judged against the new setting, so answers that read as passes can become failures.
+
+**Rerun Scorecard** covers the one case the above does not. It appears only on an interaction with no automatic scorecard at all, for example one processed before you created yours, and it scores that interaction against the questions applying now. It is not offered on an interaction that already has a score, so it is not a way to pick up questions added since.
+
+To apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation, so weigh it against starting the new measurement from the change instead.
 
 ## Auto-fail shows as zero, with the earned score kept beside it
 
@@ -101,11 +127,24 @@ Both numbers are there on purpose. The zero is the verdict: this interaction fai
 
 Read the bracketed number alongside the zero. An agent whose scores are all zeros is not necessarily an agent who is failing at everything.
 
-The same applies to the compliance and quality subtotals. Each carries its own auto-fail flag and its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
+The same applies to the compliance and quality subtotals. Each can be auto-failed on its own, and each has its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
 
 ## Compliance and quality are two views of one scorecard
 
 There are not two scorecards. Each question is either marked as a compliance item or it is not, and Vela calculates the same weighted percentage twice: once across the compliance questions, once across the rest.
+
+One set of answers therefore produces six figures in the Call Details panel, which is the usual reason that panel looks more complicated than it is:
+
+```mermaid
+flowchart LR
+    Q("The answers on<br/>this interaction") --> S1("Overall Score<br/>every applicable question")
+    Q --> S2("Compliance Score<br/>questions marked Compliance")
+    Q --> S3("Quality Score<br/>every other question")
+    S1 --> I("Each is reported twice:<br/>Initial, from the AI alone<br/>Current, after any overrides<br/><br/>and each carries its own Auto-Fail,<br/>so any of them can read 0.0%<br/>while the others do not")
+    S2 --> I
+    S3 --> I
+```
+
 
 The split exists because the two behave differently in practice. Compliance is usually binary and non-negotiable, and a dip matters immediately. Quality is a gradient you improve over months. Averaging them into a single figure hides both signals, since a compliance failure can be masked by strong quality work.
 
@@ -114,6 +153,8 @@ The split exists because the two behave differently in practice. Compliance is u
 When a reviewer changes an outcome, their answer replaces the AI's for that question and the score is recalculated. Nothing is lost in the process. The interaction keeps Vela's original **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, and the scorecard download records both the initial and the current outcome for every question.
 
 The reason for keeping both is accountability rather than nostalgia. A score a human has adjusted is a different kind of claim from one the AI produced alone, and an agent disputing a score is entitled to see which is which. It also lets you audit your own reviewers: if overrides consistently move scores in one direction, the problem is more likely the scorecard than the AI.
+
+Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before deciding it was wrong. Where the reasoning holds up and the answer still feels harsh, reword the question. That fixes it once, whereas overriding the same item every week fixes it never.
 
 ## What the AI judges well, and what it does not
 
@@ -159,12 +200,6 @@ Set them against your own standards and history rather than an external benchmar
 - [Metrics](../reference/metrics.md): what each score metric measures
 - [Glossary](../reference/glossary.md): definitions of the terms used here
 - [Review and Score Interactions](../features/quality-assurance-tools.md): reviewing and scoring interactions
-
----
-
-## Need Help?
-
-**Contact Support:** support@botlhale.ai
 
 ---
 
