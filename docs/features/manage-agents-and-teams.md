@@ -5,7 +5,7 @@ type: how-to
 ---
 
 # Manage Agents and Teams
-Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins, moving someone between teams, retiring someone who leaves, and building the team structure they sit in.
+Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins, moving someone between teams, and retiring someone who leaves.
 
 Getting this wrong is quiet rather than loud. An agent in the wrong team still gets scored, but their results land in another team lead's figures, so the numbers stay plausible while being wrong.
 
@@ -36,7 +36,7 @@ Go to **Agents → Agent Details** in the left sidebar. The table lists everyone
 | **Filter** | Opens **Filter By**, where you select departments, teams, and **Status**. Click **Apply** to use it |
 | **Export** | Downloads the list, including each agent's department, team, and status |
 
-An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so the gaps sort together instead of hiding. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, **Previous** and **Next** sit below the table with **Page 1 of 2** between them.
+An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, **Previous** and **Next** sit below the table with **Page 1 of 2** between them.
 
 ![The Agent Details table, with the Name, Email, Department, Team, Voice Profile Status, and Actions columns above the Previous and Next controls](../../img/screenshots/agent_details/agent-details-table.png)
 
@@ -54,7 +54,7 @@ On **Single Upload**:
 
 ![The Add an Agent window on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
 
-Name and team are always required. Whether the email is depends on your organisation, and so does what happens after you save:
+Name and team are always required. Whether you also need the email, and what the agent receives when you save, depends on your organisation:
 
 | Your organisation has | Email address | What the agent receives |
 | :--- | :--- | :--- |
@@ -75,13 +75,13 @@ Adding an agent can therefore email them straight away. Check the name and addre
 
 ## 3. Edit, Remove, or Restore an Agent
 
-Each row carries its own controls.
+The **Actions** column holds all three.
 
-**To edit**, open the agent and change their name, email, department, or team. Moving someone to another team changes whose performance figures they appear in from that point on. It does not move interactions they have already had, so their history stays with the team that handled it.
+**Edit** opens the agent's record. Moving them to another team changes whose figures they appear in from that point on, and leaves their existing interactions with the team that handled them.
 
-**To remove**, use **Delete Agent**. This retires the agent rather than erasing them, so their past interactions and scores stay intact and keep counting towards the team's historical figures.
+**Delete Agent** retires the agent rather than erasing them, so their past interactions and scores keep counting towards the team's historical figures.
 
-**To restore**, use **Reactivate** on a removed agent. Use this rather than adding them again, which would create a second record and split their history across two.
+**Reactivate** brings a removed agent back. Use it rather than adding them again, which would create a second record and split their history.
 
 ---
 
@@ -90,7 +90,7 @@ Each row carries its own controls.
 A voice profile helps Vela tell the agent apart from the customer in a recording. Better speaker separation means a more accurate transcript, and everything scored from that transcript improves with it.
 
 :::note This section depends on your organisation
-Voice profiles are enabled per organisation. The **Voice Profile Status** column on the Agent Details table tells you whether yours has them. Where the column appears, the rest of this section applies.
+Voice profiles are enabled per organisation. Where the **Voice Profile Status** column appears on the Agent Details table, yours has them and this section applies.
 :::
 
 The **Voice Profile Status** column shows where each agent stands, and carries the action for that state:
@@ -101,23 +101,21 @@ The **Voice Profile Status** column shows where each agent stands, and carries t
 | **Waiting** | Invited, no sample provided yet | Resend the invite if it has been a while |
 | *(a toggle)* | A sample has been provided | Switch the profile off to stop Vela using it, and on again to resume |
 
-The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows: an invitation nobody acted on leaves the profile doing nothing.
+The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers on its own.
 
 ---
 
 ## 5. Move Agents Between Teams
 
-**Reassign** moves several agents at once, rather than opening each one in turn. It is the control to reach for when a team is restructured.
+**Reassign** moves several agents at once, rather than opening each one in turn.
 
-1. Tick the agents you want to move. **Reassign** appears above the table once at least one is selected, and stays hidden until then.
+1. Tick the agents you want to move. **Reassign** appears above the table once at least one is ticked.
 2. Click **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.
 3. Confirm the move.
 
 ![The Reassign window, with the department and team selectors for moving the chosen agents](../../img/screenshots/agent_details/reassign.png)
 
 ![Create new team opened from within Reassign, so the destination can be made without leaving the move](../../img/screenshots/agent_details/create-new-team-on-reassign.png)
-
-Reassigning changes whose figures those agents appear in from that point on. Their existing interactions stay with the team that handled them, so nothing in the history moves.
 
 :::note Teams themselves are managed in Settings
 Only reassignment is on this screen. Teams are created, renamed, and moved between departments on the **Org Table**, under **Settings → Users**. See [Departments and Teams](../settings-config/user-management.md#3-departments-and-teams).
@@ -127,7 +125,7 @@ Only reassignment is on this screen. Teams are created, renamed, and moved betwe
 
 ## Check Your Work
 
-Open **Agents → Agent Details** and find the agent you changed. Their **Department** and **Team** should read what you set, and neither should say **No Department** or **No Team** unless you meant it.
+Open **Agents → Agent Details** and find the agent you changed. Both should name the department and team you chose. Where either reads **No Department** or **No Team**, the assignment did not take.
 
 Changes apply from now on rather than backwards. An agent you moved keeps their existing interactions under the team that handled them, so their new team's figures build up from today rather than jumping.
 
