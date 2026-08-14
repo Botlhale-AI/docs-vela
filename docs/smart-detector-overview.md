@@ -18,7 +18,7 @@ Below the cards sit four more buttons: **Topics**, **Intents**, **Keywords**, an
 
 ![The Smart Detector home page, with a card for each tool above the Topics, Intents, Keywords, and Pain Points buttons](../img/screenshots/smart_detector/smart-detector-landing.png)
 
-{/* SCREENSHOT: the home page also shows a Number Search card, which is not documented. Number Search is not in the vela codebase used to verify this documentation, so its behaviour, inputs, and results have not been confirmed. Capture at img/pending/number-search.png. Document it once it can be verified. */}
+{/* UNVERIFIED: Number Search. Deferred to the next version, so it stays named but undocumented on purpose. The card is on the Smart Detector home page, but the feature is absent from the vela codebase this documentation is verified against, so its behaviour, inputs and results are unconfirmed. Write it up when the next version confirms it, and take a screenshot then. */}
 
 ---
 
@@ -31,13 +31,14 @@ Below the cards sit four more buttons: **Topics**, **Intents**, **Keywords**, an
 
 The home page also has a **Number Search** card, for looking up the interactions associated with a phone number. It is not covered in this documentation yet.
 
-Smart Search and Smart Questions depend on your plan. If either is missing from the sidebar, your organisation's plan does not include it, and your Account Manager can tell you what it would take to add.
+Smart Search and Smart Questions appear in the sidebar on the plans that include them. Where one is absent, your Account Manager can tell you what it would take to add.
 
 ---
 
 ## Related
 
-- [Set Up Smart Search](./smart-search-guide.md): monitor every interaction against rules you define
+- [Build an Agent Scorecard](./agent-scorecard-guide.md): the criteria every interaction is scored against
+- [Set Up Smart Search](./smart-search-guide.md): monitor every interaction against searches you define
 - [Set Up Smart Questions](./smart-questions-guide.md): ask questions of interactions without affecting scores
 - [Build Your Knowledge Base](./knowledge-base-guide.md): give the AI your own documents as reference
 - [Manage Smart Search Terms](./topics-and-terms-guide.md): the topics, intents, keywords, and pain points searches match on

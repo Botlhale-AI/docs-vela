@@ -10,7 +10,7 @@ type: how-to
 Smart Questions let you ask a question of your interactions and see the answers, without those answers affecting anyone's score.
 
 :::info Plan availability
-Smart Questions is available on plans that include it. If **Smart Questions** does not appear under **Smart Detector** in the left sidebar, your organisation's plan does not cover it. Contact your Account Manager.
+**Smart Questions** appears under **Smart Detector** in the left sidebar on the plans that include it. Where it is absent, your Account Manager can tell you what it would take to add.
 :::
 
 ## How Smart Questions Differ from the Agent Scorecard
@@ -31,6 +31,16 @@ If the answer says something about **the conversation** rather than **the agent'
 
 ---
 
+## Before You Begin
+
+You need:
+
+- **Smart Questions on your plan.** The sidebar entry under **Smart Detector** tells you, as noted above.
+- **Access level:** Organisational, Departmental, or Team, covering the scope you want. See [Access Level](./reference/glossary.md#access-level).
+- **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the only point at which you can set it.
+
+---
+
 ## Creating a Smart Question
 
 1. Click **Smart Detector** in the left sidebar, then **Smart Questions**.
@@ -38,11 +48,29 @@ If the answer says something about **the conversation** rather than **the agent'
 3. Configure the settings described below.
 4. Click **Create Smart Questions** to save.
 
-![The Smart Question Details form on the Create tab, with the scope selector, the All, Calls, and Chats options, Historical Search, and the Question box](../img/screenshots/smart_questions/create_1.png)
+The two screenshots below are one form, scrolled. The numbers run continuously across them, and **Question** carries a 4 on each because the captures overlap at that point.
 
-{/* RESHOOT: create_1.png shows a set-level "Interactions" radio (All / Calls / Chats) that has been removed from the product. The prompt string no longer exists anywhere in the app. The surrounding text is correct; only the image is behind. */}
+Settings 1 to 3 sit above the question list and cover the **whole set**, so every question inherits them. Everything from 4 onwards is set **per question**, so one set can hold questions that differ from each other.
 
-![The rest of the question form: search type, apply to, status, and knowledge base](../img/screenshots/smart_questions/create_2.png)
+![The top of the Smart Question form, numbered one to four, from Smart Question Scope down to the first Question field](../img/screenshots/smart_questions/create3.png)
+
+![The question block of the Smart Question form, numbered four to thirteen, from Question through to Create Smart Questions](../img/screenshots/smart_questions/create4.png)
+
+| # | Field | Covered in |
+|:--|-------|------------|
+| 1 | **Smart Question Scope** | [Scope](#scope) |
+| 2 | **Interactions** | [Interactions](#interactions) |
+| 3 | **Historical Search** | [Historical Search](#historical-search) |
+| 4 | **Question** | [Questions](#questions) |
+| 5 | **Expected Outcome** | [Questions](#questions) |
+| 6 | **Search Status** | [Search Status](#search-status) |
+| 7 | **Search Type** | [Search Type](#search-type) |
+| 8 | **Apply To** | [Apply To](#apply-to) |
+| 9 | **Notifications** | [Notifications](#notifications) |
+| 10 | **Always Applicable** | [Always Applicable](#always-applicable) |
+| 11 | **Apply Knowledge Base** | [Knowledge Base Document](#knowledge-base-document) |
+| 12 | **Add Question** | adds another question block to this set |
+| 13 | **Create Smart Questions** | saves the set |
 
 ### Scope
 
@@ -53,6 +81,12 @@ Under **Smart Question Scope**, use **Apply these questions to** to choose how f
 * Team access: **Entire Team**, the only option offered.
 
 Choosing **Specific Departments** or **Specific Teams** opens a second selector for picking which ones.
+
+### Interactions
+
+Under **Interactions**, answer "Which interactions would you like these questions to apply to?" with **All**, **Calls**, or **Chats**. The choice covers the whole set, so every question in it runs against the same interaction types.
+
+This is not the same control as **Apply To** further down the form. Interactions chooses the *type*, calls or chats. Apply To chooses the *direction*, inbound or outbound.
 
 ### Questions
 
@@ -77,7 +111,7 @@ Choose which interactions the question runs against:
 - **Outbound Calls**
 - **All Calls**
 
-The setting filters on direction, and chats have a direction too. A chat uploaded without one is treated as inbound, so a question set to **Outbound Calls** never reaches those chats. Use **All Calls** if you want the question answered on chats as well as calls.
+The setting filters on direction, and the chat upload form has no direction field, so chats arrive without one. A question restricted to **Inbound Calls** or **Outbound Calls** therefore never reaches a chat. Use **All Calls** if you want the question answered on chats as well as calls.
 
 ### Search Status
 
@@ -116,6 +150,16 @@ See [Knowledge Base](./knowledge-base-guide.md) for how to upload documents.
 ![The Smart Questions Results tab, with the Yes, No, and N/A counts for each question](../img/screenshots/smart_questions/results.png)
 
 Because the answers do not feed into scoring, they are best read as a body of evidence across many interactions rather than a judgement on any single one. Patterns in the answers are usually more informative than individual results.
+
+---
+
+## Check Your Work
+
+Your set appears on the **View** tab straight away. Answers do not.
+
+A question with **Historical Search** off only applies to interactions processed after you created it, so the **Results** tab shows nothing until new interactions arrive. That is working correctly, not a fault. If you turned Historical Search on, answers appear against past interactions as Vela works through them.
+
+You are finished when the **Results** tab shows Yes, No, and N/A counts against your question and **Calls Analysed** is above zero. If it stays at zero after new interactions have been processed, check that Search Status is **Enabled** and that the scope covers the teams those interactions belong to.
 
 ---
 

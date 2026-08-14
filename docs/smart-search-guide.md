@@ -19,7 +19,7 @@ Smart Search is available on plans that include it. If **Smart Search** does not
 
 - **Your access level sets how far a search can reach.** Organisational access can scope a search to the whole organisation, chosen departments, or chosen teams. Departmental access reaches its own department and the teams in it, and team access reaches one team. See [Access Level](./reference/glossary.md#access-level).
 - **Phrases need nothing set up first.** Filters do: intents, keywords, topics, and pain points can only be used once they exist in your organisation's lists. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
-- **Your plan caps how many searches you can have**, so decide what matters most before creating a dozen. See [Search Management](#search-management).
+- **Your plan caps how many searches can be Active at once**, so decide what matters most before creating a dozen. Inactive searches are kept without using a place. See [Search Management](#search-management).
 
 New to this? Click **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
 
@@ -50,6 +50,17 @@ Searches work across languages. Calls and chats in the 11 official South African
 
 You can also narrow a search with structured filters (intents, keywords, topics, pain points, or agents), each set to **include** or **exclude**, and combine several conditions in one search. For every filter type and setting, see [Smart Search Criteria](./reference/smart-search-criteria.md).
 
+Three separate things therefore feed one decision, which is why editing the description changes your results even though it reads like a note to yourself:
+
+```mermaid
+flowchart LR
+    P("Example phrases<br/>what to look for") --> M{"Does this<br/>interaction match?"}
+    D("Description<br/>read by the AI,<br/>not just a label") --> M
+    F("Search filters<br/>intents, keywords, topics,<br/>pain points, agents<br/>each include or exclude") --> M
+    M -- Yes --> A("An alert on<br/>that interaction")
+    M -- No --> N("Nothing.<br/>The interaction is still<br/>processed and scored")
+```
+
 ---
 
 ## Creating a Smart Search
@@ -63,10 +74,10 @@ You can also narrow a search with structured filters (intents, keywords, topics,
 
 ### Step 2: Define Your Search Criteria
 
-![The New Smart Search form: title, status, description, and scope](../img/screenshots/smart_search/11.png)
-![The rest of the form: Example Phrases, Search Filter, Historical Search, and Notifications](../img/screenshots/smart_search/12.png)
+![The New Smart Search form with five fields numbered, from Smart Search Title through to Example Phrases](../img/screenshots/smart_search/smart-search-create.png)
+![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../img/screenshots/smart_search/smart-search-create2.png)
 
-{/* RESHOOT: 11.png and 12.png predate Smart Questions, so the sidebar shows three Smart Detector entries in the old order. The form fields themselves still match createForm.jsx. Same applies to 10.png above. */}
+The numbers on both screenshots match the numbered steps below. Example Phrases carries a 5 on each, because the two captures overlap at that point in the form.
 
 1. Enter a descriptive **Smart Search Title** (for example, "Customer Complaints: Escalation Language").
 2. Set the **Search Status** to **Active** so the search starts matching once you save it. An **Inactive** search is kept but does not run.
@@ -77,10 +88,11 @@ You can also narrow a search with structured filters (intents, keywords, topics,
    * Team access: **Entire Team**.
 
    Choosing **Specific Departments** or **Specific Teams** opens a second selector for picking which ones.
-5. Add the criteria you want to monitor. Most searches start with phrases: click **Add** under **Example Phrases** for each one. To narrow the search further, click **Add Filter** under **Search Filter** to match on intents, keywords, topics, pain points, or specific agents. Those come from your organisation's lists, whether Vela detected them or your team added them, so add the term first if it is not offered. See [Smart Search Criteria](./reference/smart-search-criteria.md) and [Manage Smart Search Terms](./topics-and-terms-guide.md).
-6. Toggle **Notifications** on if you want to be alerted each time a new match is detected. You can change this later by editing the search.
+5. Add your **Example Phrases**. Most searches start here: click **Add** and enter each phrase. Write them the way people actually speak, not the way an internal process document describes the situation.
+6. Narrow the search further with a **Search Filter**, if you need one. Click **Add Filter** to match on intents, keywords, topics, pain points, or specific agents. Those come from your organisation's lists, whether Vela detected them or your team added them, so add the term first if it is not offered. See [Smart Search Criteria](./reference/smart-search-criteria.md) and [Manage Smart Search Terms](./topics-and-terms-guide.md).
 7. Enable **Historical Search** to run the search against interactions uploaded before you created it. Under **Historical Search Options**, choose **All historical calls** or a **Specific date range** with a start and end date. Pick a date range unless you want your whole archive reprocessed. Historical Search is set at creation and cannot be added by editing the search later.
-8. Click **Create Smart Search** to save the search.
+8. Tick **Notifications** if you want to be alerted each time a new match is detected. You can change this later by editing the search.
+9. Click **Create Smart Search** to save the search.
 
 The form also lets you combine several conditions, link this search to another, and attach a Knowledge Base document. See [More Search Options](#more-search-options).
 
@@ -91,10 +103,12 @@ The form also lets you combine several conditions, link this search to another, 
 Once interactions are processed, matches appear automatically in the search results.
 
 1. Navigate to **Smart Detector → Smart Search**.
-2. Click **View** next to your search.
-3. Review the matched interactions. Each result links directly to the call or chat that triggered the match.
-4. Click an interaction to open it and review the full transcript, AI analysis, and context.
-5. Resolve the alert once you have reviewed and acted on it.
+2. Click **View** next to your search to open its results. For what each panel on that page shows, see [Understanding the Results View](#understanding-the-results-view).
+3. Open a matched interaction from **Returned Interactions**. Each row links to the call or chat that triggered the match.
+4. Read the transcript alongside Vela's analysis to judge whether the match is genuine.
+5. Click **Resolve** on the alert once you have acted on it, which drops the interaction out of Returned Interactions. See [Alert Management](#alert-management).
+
+![A matched interaction opened from the results, with the transcript beside the Smart Detector analysis tabs](../img/screenshots/calls/calls-3.png)
 
 If the results contain too many irrelevant matches, return to the search and make the description and examples more specific. If matches are being missed, add another clear example or sharpen the description. Refining a search based on early results is a normal part of getting it to perform well.
 
@@ -189,9 +203,21 @@ Whether that alert reaches you in-app, by email, or both depends on your prefere
 
 ### Alert Management
 
-Work through alerts regularly rather than letting them accumulate. See [Notifications](./features/notifications.md) for the review routine and where alerts appear.
+Work through alerts regularly rather than letting them accumulate. See [Manage Notifications](./features/notifications.md) for the review routine and where alerts appear.
 
-Resolving is what closes the loop. Open the interaction, read the alert in context, and click **Mark as Resolved** on it. The alert then records who resolved it, and the interaction drops out of the search's **Returned Interactions** list, which only shows unresolved matches. To clear several at once, select interactions on the list with **Select All** or the row checkboxes and resolve them together.
+Resolving is what closes the loop. Open the interaction, find the alert in the **Smart Detector** section, and read it in context. Click **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
+
+Three controls close three different things, and they sit close together on the detailed view. Pick by what you want to close:
+
+| To close | Click | Where | Then it reads |
+| :--- | :--- | :--- | :--- |
+| One alert | **Resolve** | The **Smart Detector** section, on the alert's row | **Resolved** |
+| A comment or a reply | **Mark as Resolved** | The **Comments** section, on that comment | **Resolved by** your name |
+| The whole interaction | **Mark as Reviewed** | The top of the detailed view | **Reviewed** |
+
+Each one is independent. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
+
+To clear several alerts at once, open a single search's results and click through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
 
 An alert you resolve without acting on it is worse than one you leave open, because the list stops reminding you.
 
@@ -253,7 +279,7 @@ On the Smart Search list, use **Sort By** to order your searches by **Results** 
 
 ### Action Planning
 
-| **Result Type** | **Suggested Action** | **Expected Outcome** |
+| What you are seeing | What to do about it | What you should see next |
 |-----------------|--------------------|-------------------|
 | **High frequency issues** | Process improvement, targeted training | Fewer repeat issues |
 | **Agent-specific patterns** | Individual coaching, skill development | Improved performance |
@@ -269,8 +295,8 @@ On the Smart Search list, use **Sort By** to order your searches by **Results** 
 | **Too many false positives** | Description or examples too broad | Tighten the description and use more specific examples. Review the false-positive matches to see what is triggering them |
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
-| **Notifications not arriving** | Notifications turned off for the search | Edit the search and turn the Notifications toggle on |
-| **New Smart Search is greyed out** | Your organisation has reached the number of searches its plan allows | Delete a search you no longer need, or ask your Account Manager about a higher limit |
+| **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
+| **New Smart Search is greyed out** | Your organisation has reached the number of Active searches its plan allows | Set a search you are not using to Inactive, which frees a place and keeps the search. Deleting one works too. For a higher limit, ask your Account Manager |
 | **A linked search stopped matching** | Its main search was set to Inactive, so there is nothing for it to run against | Set the main search back to Active, or unlink the search |
 
 ---
@@ -279,31 +305,43 @@ On the Smart Search list, use **Sort By** to order your searches by **Results** 
 
 Review your active Smart Searches regularly. For each one, check that it is still relevant, that its matches are being actioned, and that its phrases still reflect how customers and agents actually speak. Language drifts over time, so a phrase list that was accurate months ago may start producing false positives or missing new patterns.
 
-Set a search to **Inactive** when it is no longer being acted upon. Unreviewed alerts pile up and make it harder for the team to spot the ones that matter.
+Set a search to **Inactive** when it is no longer being acted upon. Alerts nobody works through make it harder for the team to spot those that matter.
 
 ### Edit or Delete a Search
 
 Open a search from the Smart Search list to change its title, description, status, **Apply to** scope, example phrases, **Show results when** setting, and linked Knowledge Base document. **Historical Search cannot be added afterwards**, so a search that needs to cover past interactions has to be created with it enabled.
 
-The same view has a **Delete Search** control for searches you no longer need. Deleting is worth doing rather than leaving searches inactive, because your plan caps how many you can have.
+The same view has a **Delete Search** control for searches you no longer need. Setting a search to **Inactive** is enough to free a place under your plan's limit, which counts Active searches only, so delete a search when you want the definition gone rather than to make room.
 
-:::warning Your plan limits how many searches you can create
-When you reach the limit, **New Smart Search** is greyed out and no message explains why. Delete searches you no longer need to free up room, or ask your Account Manager about a higher limit.
+:::note Your plan limits how many searches can be Active
+When you reach the limit, **New Smart Search** is greyed out, and no message explains why. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about a higher limit. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
 :::
 
 To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.
 
 ---
 
+## Check Your Work
+
+A saved search appears in the Smart Search list immediately. Matches do not, and an empty result is the normal first state rather than a mistake.
+
+Unless you turned on **Historical Search**, the search only monitors interactions processed from the moment you saved it, so it stays at zero results until new interactions arrive.
+
+You are finished when the search shows a results count above zero and, opening one of those matches, the interaction genuinely contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
+
+If it stays at zero once new interactions have been processed, work through [Troubleshooting Common Issues](#troubleshooting-common-issues) above, starting with the search's status and scope.
+
+---
+
 ## Related
 
-- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each one does.
-- [Notifications](./features/notifications.md): receive and work through the alerts your searches raise.
-- [Review and Score Interactions](./features/quality-assurance-tools.md): turn matches into scored reviews.
-- [Monitor Agent Performance](./features/monitor-agent-performance.md): coach your team on what the searches surface.
-- [Build Your Knowledge Base](./knowledge-base-guide.md): give Vela your documents to sharpen matching.
-- [Smart Search Criteria](./reference/smart-search-criteria.md): every criterion type you can search on.
-- [Manage Smart Search Terms](./topics-and-terms-guide.md): build the term lists a search matches against.
+- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each one does
+- [Manage Notifications](./features/notifications.md): receive and work through the alerts your searches raise
+- [Review and Score Interactions](./features/quality-assurance-tools.md): turn matches into scored reviews
+- [Monitor Agent Performance](./features/monitor-agent-performance.md): coach your team on what the searches surface
+- [Build Your Knowledge Base](./knowledge-base-guide.md): give Vela your documents to sharpen matching
+- [Smart Search Criteria](./reference/smart-search-criteria.md): every criterion type you can search on
+- [Manage Smart Search Terms](./topics-and-terms-guide.md): build the term lists a search matches against
 
 ## Need Help?
 

@@ -1,221 +1,146 @@
 ---
 id: agent-scorecard-guide
-title: Create Agent Scorecards
-sidebar_position: 3
+title: Build an Agent Scorecard
+sidebar_position: 1
 type: how-to
-draft: true
 ---
 
-# Create Agent Scorecards
+# Build an Agent Scorecard
 
-Build fair, consistent, and effective evaluation systems that help your agents improve and your team succeed. Agent scorecards provide objective assessments that drive coaching, training, and performance improvement.
+The Agent Scorecard is the set of questions Vela scores every interaction against. Without one, interactions are transcribed and analysed but carry no score, so every figure that depends on scoring stays empty: agent scores, the compliance and quality split, categories, and the strengths and weaknesses on an agent's Details page.
 
-## What You Can Achieve
-
-Agent scorecards transform subjective evaluations into objective insights. You'll be able to:
-
-| **Performance Evaluation** | **Coaching & Development** | **Quality Assurance** |
-|---------------------------|---------------------------|---------------------|
-| Measure performance objectively | Guide targeted coaching | Ensure consistent standards |
-| Identify training needs | Track improvement over time | Maintain quality standards |
-| Recognise excellence | Drive continuous improvement | Support compliance requirements |
-
----
-
-## Getting Started with Agent Scorecards
-
-### Step 1: Access Scorecard Builder
-
-![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_search/smart5.png)
-
-- [ ] **Go to Smart Detector → Agents Scorecard**
-- [ ] **Click "Create"** to build your first scorecard
-- [ ] **Choose your evaluation focus** based on your team's needs
-
-### Step 2: Define Evaluation Criteria
-
-![The top of the question form: scorecard scope and historical search](../img/screenshots/smart_search/smart7.png)
-![The rest of the question form, ending in Add Question and Create](../img/screenshots/smart_search/smart8.png)
-
-- [ ] **Write scorecard questions**: each question is a pass/fail evaluation point (e.g. "Did the agent confirm the customer's name at the start of the call?")
-- [ ] **Assign a category** to group related questions (e.g. "Opening", "Compliance", "Closing")
-- [ ] **Set a weight** for each question to reflect its importance in the overall score
-- [ ] **Flag critical items** as auto-fail where a single failure should disqualify the interaction
-- [ ] **Set the scope** (organisation, department, or team), the applicable call direction (inbound, outbound, or all), and which interaction types the item applies to (calls, chats, or all)
-
-:::tip Phrase questions so "yes" is the good answer
-Write questions so that a "yes" outcome means the agent did the right thing. For example, use "Did the agent verify the customer's identity?" rather than "Did the agent skip verification?". This keeps scoring consistent and makes results easier to read at a glance.
+:::note The sidebar says "Agents Scorecard"
+The sidebar and the trail at the top of the page name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
 :::
 
-### Step 3: Test and Deploy
-- [ ] **Review sample evaluations** to ensure accuracy
-- [ ] **Adjust criteria** based on initial results
-- [ ] **Train your team** on the new evaluation system
-- [ ] **Launch scorecard** for ongoing use
+---
+
+## Before You Begin
+
+You need:
+
+- **Access level:** Organisational, Departmental, or Team, covering the teams the scorecard should apply to. See [Access Level](./reference/glossary.md#access-level).
+- **The behaviours you want to measure**, written down before you start. A scorecard built at the keyboard tends to grow questions that overlap.
+- **To decide about Historical Search**, covered in step 2. It is the one choice on this form you cannot revisit later.
 
 ---
 
-## Scorecard Components
+## 1. Open the Create Tab
 
-### How scorecard Items Work
-Each item in the Agent scorecard  is a question evaluated against the interaction. Items can be:
+1. Click **Smart Detector** in the left sidebar, then **Agents Scorecard**.
+2. Select the **Create** tab.
 
-| **Property** | **Description** |
-|--------------|----------------|
-| **Question** | The specific behaviour or action being assessed (e.g. "Did the agent verify the customer's identity?") |
-| **Category** | A grouping label you define to organise related questions |
-| **Weight** | The relative importance of this item in calculating the overall score |
-| **Auto-Fail** | If enabled, failing this item auto-fails the whole interaction. It then reads 0.0%, with the score earned on the other questions in brackets beside it |
-| **Compliance** | Mark as a compliance item to distinguish regulatory checks from quality checks |
-| **Direction** | Whether the item applies to inbound calls, outbound calls, or both |
-| **Interactions** | Whether the item applies to calls only, chats only, or all interactions |
-| **Expected Outcome** | Whether **Yes** or **No** is the desired answer for this item. Set this to match how you have phrased the question |
+The page has four tabs. **View** lists the questions you already have, **Create** adds one, **Results** shows how interactions have scored against them, and **Examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
 
-### Scoring
-The agent's scorecard score is calculated from the weighted results of all applicable scorecard items. Performance thresholds (what constitutes a pass or fail score overall) are configured by your organisation's administrator.
-
-> Contact your administrator to confirm what performance threshold your organisation has set for acceptable scores.
+![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_detector/scorecard-list.png)
 
 ---
 
-## Building Effective Scorecards
+## 2. Set What the Scorecard Covers
 
-### Criteria Selection
-Choose evaluation criteria that align with your business goals. Common areas to consider include:
-- **Compliance**: adherence to regulatory and policy requirements
-- **Opening and closing scripts**: whether the agent follows required greeting or sign-off procedures
-- **Verification**: identity checks or data confirmation steps
-- **Problem resolution**: whether the agent resolved the customer's issue
+The settings above the question list apply to the whole scorecard. Every question you add inherits them.
 
-Write each item as a concrete, observable question so the AI (and human reviewers) can give a clear yes/no answer.
+| Setting | What it does |
+| :--- | :--- |
+| **Scorecard Scope** | Which parts of the organisation the scorecard applies to. An interaction is scored against the scorecards covering the agent who handled it |
+| **Interactions** | **All**, **Calls**, or **Chats**. This covers the whole set, so one scorecard cannot mix call-only and chat-only questions |
+| **Historical Search** | Runs the scorecard against interactions already in Vela. Choose **All historical calls** or a **Specific date range** |
 
-### Weighting Strategy
-Assign higher weights to items that have a greater business impact. For example, compliance items typically carry more weight than stylistic ones. Failing an item flagged as **auto-fail** drops the interaction to 0.0% regardless of the other scores, with the score it earned elsewhere kept in brackets beside the zero, so reserve this for the most critical requirements.
+![The top of the Agents Scorecard Create tab, with Scorecard Scope, the Interactions options, and Historical Search](../img/screenshots/smart_detector/scorecard-create.png)
 
----
-
-## Implementing Scorecards
-
-### Training Your Team
-- [ ] **Explain the purpose** of the scorecard system
-- [ ] **Review evaluation criteria** and scoring standards
-- [ ] **Provide examples** of different performance levels
-- [ ] **Address questions** and concerns about the system
-
-### Monitoring and Adjustments
-- [ ] **Review initial results** to ensure fairness and accuracy
-- [ ] **Adjust criteria** based on feedback and observations
-- [ ] **Refine scoring weights** to better reflect priorities
-- [ ] **Update standards** as business needs evolve
-
-### Feedback Integration
-- [ ] **Share results** with agents regularly
-- [ ] **Provide specific feedback** on areas for improvement
-- [ ] **Celebrate successes** and improvements
-- [ ] **Use results** to guide coaching and training
+:::warning Historical Search cannot be added later
+It is only offered when you create the scorecard. Leave it off and the interactions already in Vela are never scored against these questions, and the only way to change that is to upload those recordings again.
+:::
 
 ---
 
-## Using Scorecard Results
+## 3. Write the Questions
 
-### Individual Development
-Use scorecard results to guide agent improvement:
+Each question is one yes/no judgement about the interaction. The fields below are numbered to match the screenshot.
 
-| **Score Pattern** | **Development Focus** | **Action Plan** |
-|------------------|---------------------|----------------|
-| High scores across all areas | Advanced development, leadership | Mentoring opportunities, advanced training, career progression |
-| Mixed scores | Targeted improvement | Focus coaching on low-scoring areas, build on strengths |
-| Low scores in specific areas | Skill development | Targeted training, practice opportunities, peer support |
-| Consistently low scores | Full development plan | Intensive coaching, skill assessment, role evaluation |
+| # | Field | What it does |
+|:--|-------|--------------|
+| 1 | **Question** | The behaviour being assessed, phrased so it can be answered yes or no |
+| 2 | **Category** | A grouping label such as Opening, Compliance, or Closing. Categories are what produce an agent's strengths and weaknesses. See the note below on adding one |
+| 3 | **Expected Outcome** | Which answer counts as a pass. Set it to match how you phrased the question |
+| 4 | **Weight** | How much this question contributes, relative to the others |
+| 5 | **Search Status** | Whether the question runs against incoming interactions |
+| 6 | **Search Type** | Whether the AI answers it, or a reviewer does by hand |
+| 7 | **Apply To** | Inbound calls, outbound calls, or all calls |
+| 8 | **Auto-Fail** | Failing this question takes the whole interaction to `0.0%`, with the score earned on the other questions shown in brackets beside it |
+| 9 | **Compliance Question** | Counts this question towards the **Compliance Score** instead of the **Quality Score**. Every question counts towards the **Overall Score** either way |
+| 10 | **Always Applicable** | Whether the AI may answer N/A, or only Yes and No |
 
-### Team Analysis
-Analyse patterns across your team:
+![The question block of the scorecard form with its ten fields numbered, from Question and Category through to Always Applicable](../img/screenshots/smart_detector/scorecard-create2.png)
 
-| **Pattern** | **Team Impact** | **Management Action** |
-|-------------|-----------------|---------------------|
-| High team scores | Excellent performance, strong culture | Maintain standards, share best practices, recognise excellence |
-| Mixed team performance | Varying skill levels, training opportunities | Identify training needs, implement coaching programmes |
-| Low team scores | Systemic issues, training gaps | Full training review, process improvement |
-| Declining scores | Performance issues, changing standards | Investigate root causes, adjust expectations |
+Click **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 
-### Process Improvement
-Use scorecard data to improve processes:
+:::warning Your plan caps how many questions you can have
+The limit is five unless your plan sets a different one. When you reach it the **Create** tab is greyed out, with no message explaining why. Delete a question you no longer need to make room, or ask your Account Manager about a higher limit. Only your own enabled questions count towards it, so the ready-made ones on **Examples** do not.
+:::
 
-- [ ] **Identify common weaknesses** across the team
-- [ ] **Spot training gaps** that affect multiple agents
-- [ ] **Recognise process issues** that impact performance
-- [ ] **Track improvement** over time to measure effectiveness
+Every field, including those this page does not cover, is listed in [Scorecard Fields](./reference/scorecard-fields.md). For how the three scores are worked out, and why compliance is reported separately, see [How Scoring Works](./explanation/how-scoring-works.md).
 
----
+:::note Adding a category
+**Category** starts as a list of the categories you already use. To add a new one, click the folder-with-a-plus icon beside the field and type the name. The icon then becomes a pointing hand, which takes you back to choosing from the list.
 
-## Advanced Scorecard Features
+Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page, so a category per question tells you nothing about where they are strong.
+:::
 
-### Automated Scoring
-- [ ] **Set up automatic evaluation** of all interactions
-- [ ] **Configure scoring** for feedback
-- [ ] **Enable trend analysis** to track improvement over time
-- [ ] **Integrate with coaching** so a low-scoring item leads directly to a course
+### Writing Questions the AI Can Answer
 
-### Custom Metrics
-- [ ] **Add business-specific criteria** relevant to your industry
-- [ ] **Include compliance requirements** for regulated environments
-- [ ] **Create role-specific scorecards** for different positions
-- [ ] **Develop seasonal adjustments** for varying business needs
+The AI reads a transcript. A question works when its answer is visible there.
 
-### Reporting and Analytics
-- [ ] **Generate individual reports** for agent development
-- [ ] **Create team summaries** for management review
-- [ ] **Track trends over time** to measure improvement
-- [ ] **Compare performance** across teams and departments
+* **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
+* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
+* **Keep weights relative.** There is no external scale. A question weighted 10 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
+* **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given.
 
----
+For questions the AI cannot judge from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it by hand. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
 
-## Troubleshooting Common Issues
+Where the answer depends on your own procedure rather than general knowledge, turn on **Apply Knowledge Base** instead, and the AI judges the question against a document you have uploaded. See [Build Your Knowledge Base](./knowledge-base-guide.md).
 
-| **Problem** | **Cause** | **Solution** |
-|-------------|-----------|--------------|
-| Inconsistent scoring | Unclear criteria, subjective standards | Define specific criteria, provide examples, train evaluators |
-| Low agent engagement | Lack of understanding, perceived unfairness | Explain purpose, provide training, address concerns |
-| Resistance to change | Fear of evaluation, unclear benefits | Communicate benefits, involve agents in design, provide support |
-| Poor correlation with outcomes | Misaligned criteria, wrong focus areas | Review business goals, adjust criteria, measure impact |
+## 4. Edit or Delete a Question
 
----
+Open a question from the **View** tab to change its wording, category, weight, scope, or settings, or to delete it.
 
-## Best Practices for Scorecards
+Editing and deleting behave differently, and the difference matters:
 
-### Design Principles
-- [ ] **Keep it short**: focus on the most important criteria
-- [ ] **Be objective**: use measurable, observable behaviours
-- [ ] **Stay relevant**: align with business goals and customer needs
-- [ ] **Ensure fairness**: apply consistent standards across all agents
+| | What happens to interactions already scored |
+| :--- | :--- |
+| **Deleting a question** | Nothing. They keep the question and its outcome, and their scores do not change |
+| **Editing its weight, Auto-Fail, Compliance, or Expected Outcome** | They are scored again from the current settings, including their **Initial** figures |
 
-### Implementation Strategy
-- [ ] **Start small** - Begin with a few key criteria
-- [ ] **Pilot test** - Try with a small group before full rollout
-- [ ] **Gather feedback** - Listen to agents and managers
-- [ ] **Iterate and improve** - Refine based on experience and results
+:::warning Editing a weight changes past scores
+Scores are worked out from your scorecard as it stands today, so a change reaches backwards across your whole history. A trend that looked flat can change shape because of an edit made this morning.
 
-### Ongoing Management
-- [ ] **Regular review** - Update criteria and standards as needed
-- [ ] **Monitor effectiveness** - Track impact on performance and satisfaction
-- [ ] **Share results** - Use data to guide coaching and development
-- [ ] **Celebrate success** - Recognise improvements and achievements
+Change weights deliberately, note when you did it, and compare periods either side of the change rather than reading the history as one measurement. To stop using a question, delete it rather than setting its weight to zero. See [How Scoring Works](./explanation/how-scoring-works.md).
+:::
+
+Adding a question is safe. It applies to interactions processed after the change, and older interactions keep the scorecard they were scored against.
 
 ---
 
-## Next Steps
+## Check Your Work
 
-| **For Smart Monitoring** | **For Knowledge Management** | **For Team Development** |
-|-------------------------|----------------------------|------------------------|
-| [Set Up Smart Monitoring](./smart-detector-overview.md) | [Build Knowledge Base](./knowledge-base-guide.md) | [Improve Agent Performance](./Agents.md) |
+The questions appear on the **View** tab as soon as you save, but a score needs an interaction to score.
 
-### See also
-- [Agent Performance](./Agents.md) - Coach your team effectively
-- [Smart Monitoring](./smart-detector-overview.md) - Set up automated alerts
-- [Dashboard Overview](./Dashboard.md) - Monitor performance trends
-- [Knowledge Base](./knowledge-base-guide.md) - Build training resources
-- [Official API Documentation](https://docs-apis.botlhale.ai) - Complete API reference for integrations
+If you turned Historical Search on, interactions already in Vela are scored as it works through them. If you left it off, the scorecard applies from now on, so the **Results** tab stays empty until new interactions are processed. That is the expected state rather than a fault.
+
+You are finished when you open a processed interaction, go to its **Scorecard** tab, and see your questions with an outcome on each. An interaction showing no scorecard usually means the scope does not cover that agent's team, or the **Interactions** setting does not match the channel. See [Scorecard and Scoring Issues](./support/troubleshooting-guide.md#scorecard-and-scoring-issues).
+
+---
+
+## Related
+
+- [Scorecard Fields](./reference/scorecard-fields.md): every field on a question, with its values and default
+- [How Scoring Works](./explanation/how-scoring-works.md): weights, N/A, auto-fail, and why editing rewrites history
+- [Review and Score Interactions](./features/quality-assurance-tools.md): reviewing and overriding what the scorecard produces
+- [Set Up Smart Questions](./smart-questions-guide.md): asking about a conversation without scoring the agent
+- [Administrator Setup](./getting-started/quick-start/administrator-setup.md): the scorecard as part of first-time configuration
+
+---
 
 ## Need Help?
 
-- **Contact Support**: support@botlhale.ai
+**Contact Support:** support@botlhale.ai
