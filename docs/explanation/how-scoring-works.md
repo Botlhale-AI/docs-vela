@@ -180,7 +180,7 @@ If you are unsure where a question belongs, ask what the answer describes. If it
 
 A scorecard applies to an organisation, a department, or a team. An interaction is scored against the scorecards covering the agent who handled it.
 
-Scope is not the only filter. A question is applied to an interaction when four things line up: the scorecard's **scope** covers the agent, the question is **active**, its **Apply To** setting matches the call's direction, and its **Interactions** setting matches the channel. A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
+Scope is not the only filter. A question is applied to an interaction when four things line up: the scorecard's **scope** covers the agent, the question's **Search Status** is **Enabled**, its **Apply To** matches the call's direction, and the set's **Interactions** setting matches the channel. A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
 Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no question covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
