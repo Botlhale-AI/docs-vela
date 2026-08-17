@@ -39,7 +39,7 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 
 | Metric | What it tells you | When to act |
 | :--- | :--- | :--- |
-| **Average Agent Score** | The overall quality performance for your scope. | It stays below your team's standard. |
+| **Average Agent Score** | The overall quality performance for your scope. See [How Scoring Works](../explanation/how-scoring-works.md). | It stays below your team's standard. |
 | **Agent Scores Distribution** | How scores are spread across the team. | Agents cluster in the lower ranges, which points at the team rather than a person. |
 | **No. Alerts** and **Resolved Alerts** | How many Smart Search matches were raised, and how many of them have been resolved. | The gap between them widens week on week. |
 | **Sentiment Distribution** | The proportion of positive, neutral, and negative customer emotion. | **Negative** spikes suddenly, which usually means a service or system problem. |

@@ -146,6 +146,8 @@ flowchart LR
 ```
 
 
+![The Scores block in Call Details, with Agent, Compliance, and Quality Score each beside its Initial counterpart](../../img/screenshots/calls/call-details-scores.png)
+
 The split exists because the two behave differently in practice. Compliance is usually binary and non-negotiable, and a dip matters immediately. Quality is a gradient you improve over months. Averaging them into a single figure hides both signals, since a compliance failure can be masked by strong quality work.
 
 ## Human judgement overrides the AI, by design

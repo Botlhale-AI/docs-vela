@@ -34,7 +34,7 @@ The exact metrics available to you depend on your organisation's configuration a
 | **Interaction Distribution by Agent Score** | How many interactions fall into each score band |
 | **Interaction Distribution by Agent Score Boundaries** | Interactions grouped by your organisation's Red, Amber, and Green boundaries |
 
-An administrator sets the score boundaries. See [Organisation Configuration](../settings-config/organisation-configuration.md).
+An administrator sets the score boundaries. See [Organisation Configuration](../settings-config/organisation-configuration.md). For how these figures are calculated, and what changing a weight does to them, see [How Scoring Works](../explanation/how-scoring-works.md).
 
 **What to look for:** tightly clustered scores suggest consistent performance. A wide spread points to outliers who need individual attention rather than team-wide training.
 
