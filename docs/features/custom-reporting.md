@@ -9,7 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Generate Reports
-Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how figures leave Vela, as a file rather than a screen.
+Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how your analytics are shared with people off the platform, as a file rather than a screen.
 
 ---
 
@@ -17,7 +17,7 @@ Build a report from the metrics you care about, over the period you choose, and 
 
 You need:
 
-- **Processed interactions inside the period you are reporting on.** Vela builds the report from what it finds. Where a run finds nothing, it emails you to say so instead of producing an empty report.
+- **Processed interactions inside the period you are reporting on.** Vela builds the report from the interactions it finds in that period, so a period with none produces no results. Where a scheduled run finds nothing, Vela emails you to say so rather than sending an empty report.
 - **Access level:** Organisational, Departmental, or Team, covering the teams you want in the report. See [Access Level](../reference/glossary.md#access-level).
 - **To know which metrics your plan offers.** Plans without Smart Search carry the quality assurance groups only. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
 
@@ -89,7 +89,7 @@ Metrics are organised into groups, listed alphabetically:
 | :--- | :--- |
 | **Alert Metrics** | No. Alerts, Resolved Alerts |
 | **Customer Sentiment** | Sentiment Distribution |
-| **Interactions and Volume** | No. Calls, No. Chats, Ave Call Duration |
+| **Interactions and Volume** | No. Calls, No. Chats, Ave. Call Duration |
 | **Keywords, Intents, & Language** | No. Keywords, No. Languages, Intent Distribution |
 | **Quality & Performance** | Average Agent Score, Agent Scores Distribution |
 | **Reviewed Interactions** | Number of Reviewed Interactions, Percentage of Reviewed |
@@ -105,7 +105,7 @@ A group appears once at least one of its metrics survives both, so you may see f
 For the full list and what each metric means, see [Metrics](../reference/metrics.md).
 
 :::tip Start with a table
-For a large team, or when you are comparing figures rather than looking for a shape, pick **Table** first. It shows exact numbers. Switch a metric to a chart once you know what you are looking for.
+For a large team, or when you are comparing exact numbers rather than reading a chart, pick **Table** first. It shows the values themselves. Switch a metric to a chart once you know what you are looking for.
 :::
 
 ---
@@ -161,7 +161,7 @@ To change a report's frequency, metrics, or filters, delete the schedule and cre
 
 ### B. Who Is Told When a Report Is Ready
 
-A finished report is not emailed as a file. Vela notifies people in your organisation with a link to it, each according to their own **Settings → Notifications** preferences: in Vela, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
+A finished report is not emailed as a file. Vela notifies people in your organisation with a link to the report, each according to their own **Settings → Notifications** preferences: in Vela, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
 
 If a scheduled run finds no interactions in its date range, Vela emails you to say the report could not be generated, and the schedule continues to its next run.
 
@@ -173,7 +173,7 @@ Go to **Reports** and stay on the **View** tab. It holds two tabs of its own, **
 
 Select the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected.
 
-To rename a report, select the pencil beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
+To rename a report, select the pencil icon beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
 
 ![The Created Reports list with the download menu open on .pdf and .docx](../../img/screenshots/report/download_share.png)
 
@@ -181,18 +181,18 @@ To rename a report, select the pencil beside its name, type the new one, and con
 
 ## Check Your Work
 
-A one-time report is built as you wait, and Vela takes you to the Reports list once it is done. A schedule produces nothing until its first run, so the two are checked differently.
+How you check depends on which you built. A one-time report is ready straight away, so you can open it now. A schedule produces its first report on its next run, so what you confirm today is that the schedule itself is set correctly.
 
 For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file had no data in the period.
 
-For a schedule, open **Scheduled Reports** and confirm **Next Run** is the date and time you intended. Until it runs, that is the only thing that tells you the schedule is right.
+For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the date and time you intended. That confirms the schedule is set. To confirm it delivers, wait for that first run and check the report arrives as expected.
 
 ---
 
 ## Related
 
 - [Metrics](../reference/metrics.md): what each metric in a report measures
-- [Monitor Agent Performance](./monitor-agent-performance.md): the same figures on your Dashboard, day to day
+- [Monitor Agent Performance](./monitor-agent-performance.md): the same analytics on your Dashboard, day to day
 - [Manage Notifications](./notifications.md): how you are told when a report finishes generating
 
 ## Need Help?
