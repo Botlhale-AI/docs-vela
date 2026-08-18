@@ -58,7 +58,7 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
 2. Add a **Description** (optional). Say what it covers and which teams or situations it applies to, so you can identify the document later when linking it.
-3. Set the document's scope under **Apply documents to**: the organisation, a department, or a team. The scope controls which users can see and use the document. Set it to match the teams whose interactions the document is relevant to.
+3. Set the document's scope under **Apply documents to**, choosing the organisation, a department, or a team. The scope controls which users can see and use the document. Set it to match the teams whose interactions the document is relevant to.
 4. Select **Upload Files**.
 
 ### Step 3: Link the Document
@@ -141,7 +141,7 @@ Review the documents in your Knowledge Base at least quarterly and whenever a si
 
 **The Knowledge Base document does not appear to be affecting AI scoring.**
 
-Confirm that the document has been explicitly linked to the item that should use it: a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document to the Knowledge Base does not apply it anywhere on its own. You create the link yourself in that item's configuration.
+Confirm that the document has been explicitly linked to the item that should use it, whether that is a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document to the Knowledge Base does not apply it anywhere on its own. You create the link yourself in that item's configuration.
 
 **Uploaded document is not visible to certain team leads or agents.**
 

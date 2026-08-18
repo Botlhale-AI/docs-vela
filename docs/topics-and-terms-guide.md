@@ -8,7 +8,7 @@ type: how-to
 
 # Manage Smart Search Terms
 
-Your Smart Search terms are the four lists of things Vela looks for in your interactions: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list has two sources. Vela adds what it finds on its own, and you add the terms your organisation cares about. This page covers how to read those lists and how to add your own terms.
+Your Smart Search terms are the four lists of things Vela looks for in your interactions. They are **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list has two sources. Vela adds what it finds on its own, and you add the terms your organisation cares about. This page covers how to read those lists and how to add your own terms.
 
 These terms feed the rest of Vela. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and when you [generate reports](./features/custom-reporting.md).
 
@@ -87,7 +87,7 @@ Both apply to the Detected and Created sections at once. When nothing matches, t
 
 ## 4. Adding a Term
 
-Open the **Created Search** section and select the button at the top right. Its label matches the list: **New Topic**, **New Intent**, **New Keyword**, or **New Pain Point**.
+Open the **Created Search** section and select the button at the top right. Its label matches the list, reading **New Topic**, **New Intent**, **New Keyword**, or **New Pain Point**.
 
 | List | What you enter |
 | :--- | :--- |

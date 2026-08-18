@@ -50,7 +50,7 @@ flowchart LR
 <Tabs groupId="report-type">
 <TabItem value="onetime" label="One-time report">
 
-Pick a start and end date on the calendar, or use a preset: **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, or **Last Month**. Your choice shows in **From** and **To** above the calendar.
+Pick a start and end date on the calendar, or use one of the presets. These are **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month**. Your choice shows in **From** and **To** above the calendar.
 
 ![The Create tab on Create One-Time Report, with the date presets and the two-month calendar](../../img/screenshots/report/report_create.png)
 

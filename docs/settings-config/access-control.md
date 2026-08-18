@@ -6,7 +6,7 @@ type: reference
 ---
 
 # Settings Access by Role
-Which Settings tabs you see, and whether you can change anything on them, depends on two things: your **role** and your **access level**.
+Which Settings tabs you see, and whether you can change anything on them, depends on your **role** and your **access level**.
 
 * **Role** is `admin`, `user`, or `agent`. It decides what you are allowed to do.
 * **Access level** is organisational, departmental, or team. It decides how much of the organisation you see. The field is labelled **Access** in the product.
@@ -54,7 +54,7 @@ Removing an account is a deactivation, not a deletion. The control is a bin icon
 
 ### 2. User
 
-The User role covers day-to-day work: reviewing interactions, coaching agents, and reporting. Team leads and QA managers are normally given this role.
+The User role covers day-to-day work, meaning reviewing interactions, coaching agents, and reporting. Team leads and QA managers are normally given this role.
 
 * **Users:** See the user list and the Org Table within their access level, but no controls that add, edit, or deactivate an account.
 * **Organisation settings:** Open the **This Org** sub-tab and read every setting on it, including the score boundaries and package limits. Nothing on it can be saved.

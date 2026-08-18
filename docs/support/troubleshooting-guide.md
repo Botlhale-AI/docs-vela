@@ -23,7 +23,7 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 **Solution:**
 1. Confirm that JavaScript and cookies are enabled in your browser settings.
 2. Clear your browser cache and cookies, then reload the login page.
-3. Try logging in using a supported browser: Chrome (recommended), Firefox, Edge, or Safari.
+3. Try logging in using a supported browser. These are Chrome (recommended), Firefox, Edge, and Safari.
 4. If the problem persists, disable your browser extensions, especially ad blockers or script blockers, then try again.
 
 ---

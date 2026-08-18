@@ -168,7 +168,7 @@ This is the main difference from the Agent Scorecard. See [Smart Questions](../s
 
 ## Smart Search
 
-An automated monitor that flags interactions matching criteria you define: words, intents, keywords, topics, pain points, or specific agents. Each match raises an [Alert](#alert).
+An automated monitor that flags interactions matching criteria you define, such as words, intents, keywords, topics, pain points, or specific agents. Each match raises an [Alert](#alert).
 
 A search can match on presence (**includes**) or absence (**excludes**). Use excludes to monitor for something an agent failed to say. See [Smart Search](../smart-search-guide.md).
 

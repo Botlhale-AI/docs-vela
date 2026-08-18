@@ -8,7 +8,7 @@ type: how-to
 
 # Build an Agent Scorecard
 
-The Agent Scorecard is the set of questions Vela scores every interaction against. Without one, interactions are transcribed and analysed but carry no score, so every figure that depends on scoring stays empty: agent scores, the compliance and quality split, categories, and the strengths and weaknesses on an agent's Details page.
+The Agent Scorecard is the set of questions Vela scores every interaction against. Without one, interactions are transcribed and analysed but carry no score, so every figure that depends on scoring stays empty. That covers agent scores, the compliance and quality split, categories, and the strengths and weaknesses on an agent's Details page.
 
 :::note The sidebar says "Agents Scorecard"
 The sidebar and the trail at the top of the page name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.

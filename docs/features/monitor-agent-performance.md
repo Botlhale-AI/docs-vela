@@ -15,7 +15,7 @@ Track how your agents are performing, find where they need help, and turn that i
 You need:
 
 - **Interactions that have finished processing.** Performance figures are calculated from analysed interactions, so a new organisation with nothing uploaded shows no data rather than zeros.
-- **An Agent Scorecard covering these agents' teams.** Every figure on this page comes from it: the scores, the categories behind them, and each agent's strengths and weaknesses. Without one, the pages stay empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
+- **An Agent Scorecard covering these agents' teams.** Every figure on this page comes from it. That means the scores, the categories behind them, and each agent's strengths and weaknesses. Without one, the pages stay empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 - **Access level:** Organisational, Departmental, or Team, covering the agents you are monitoring. See [Access Level](../reference/glossary.md#access-level).
 
 ---
@@ -49,7 +49,7 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 ![The Quality & Performance group, with Average Agent Scores beside the distribution of calls by RAG score](../../img/screenshots/dashboard/use_dashboard1.png)
 
 :::tip Choose your own metrics
-Select **Customise** on the Dashboard to choose which metrics appear and how each is charted: table, bar, line, pie, doughnut, or card. The chart types offered vary by metric, so pick the ones that suit what your team is measured on.
+Select **Customise** on the Dashboard to choose which metrics appear and how each is charted as a table, bar, line, pie, doughnut, or card. The chart types offered vary by metric, so pick the ones that suit what your team is measured on.
 :::
 
 ---
@@ -225,11 +225,11 @@ The trigger range is your lever. Set it to match the gap you found, and the agen
 
 ## Check Your Work
 
-The Dashboard and the Performance table both show the date range you selected. Read them back, and they should tell you three things: which agent or team to look at, which scorecard category or metric moved, and the direction it moved in.
+The Dashboard and the Performance table both show the date range you selected. Read them back, and they should tell you which agent or team to look at, which scorecard category or metric moved, and the direction it moved in.
 
 Then open two or three of the interactions behind that figure. Reading them tells you whether the score matches the conversations. Where the two agree, you have your answer. Where they differ, trust the conversations and check whether a scorecard question is firing when it should not.
 
-Finish by recording what you decided: a comment on a specific interaction, a course whose trigger range covers the gap, or a note to look again next week.
+Finish by recording what you decided, whether that is a comment on a specific interaction, a course whose trigger range covers the gap, or a note to look again next week.
 
 ---
 

@@ -35,7 +35,7 @@ A hands-on walkthrough for team leads and managers new to Vela. If you have not 
 
 ### Understanding Your Access Level
 
-Your administrator assigned you an access level, and it decides how much of the organisation you see: everything, your department, or your immediate team. Every dashboard, list, and filter in this guide is bounded by it, so if a team lead beside you sees more than you do, this is why. See [Access Level](../../reference/glossary.md#access-level).
+Your administrator assigned you an access level, and it decides how much of the organisation you see, whether that is everything, your department, or your immediate team. Every dashboard, list, and filter in this guide is bounded by it, so if a team lead beside you sees more than you do, this is why. See [Access Level](../../reference/glossary.md#access-level).
 
 :::tip First-Time Setup
 Your administrator's invitation email contains a **Confirm Account** button and a password. **Use the button first.** Vela refuses the sign-in until your address is verified. Trying anyway sends you a fresh confirmation email, so check your inbox again rather than asking for a new invitation. If the button does not work, the email also gives you the link to paste into your browser.
@@ -103,7 +103,7 @@ An empty list, or the message "You are not part of the selected organization", m
 
 If no calls or chats have been uploaded in your organisation yet, performance data is not available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
 
-Four controls shape everything you see: the **Interactions** type, the **Date range**, **Filter**, and **Customise**. The metrics themselves sit in groups you can collapse, such as Alert Metrics and Customer Sentiment, and each card states whether it applies to calls, chats, or all interactions. The rest of this step covers each control in turn.
+Four controls shape everything you see. They are the **Interactions** type, the **Date range**, **Filter**, and **Customise**. The metrics themselves sit in groups you can collapse, such as Alert Metrics and Customer Sentiment, and each card states whether it applies to calls, chats, or all interactions. The rest of this step covers each control in turn.
 
 ![The Select Date Range modal, with its presets and the two-month calendar](../../../img/screenshots/dashboard/calendar.png)
 ![A Dashboard metric group, showing the alert count and its trend](../../../img/screenshots/dashboard/dashboard06.png)

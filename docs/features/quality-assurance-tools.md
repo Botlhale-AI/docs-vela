@@ -172,7 +172,7 @@ The player and the transcript follow each other. As the audio plays, the transcr
 
 While you listen, attend to the agent's tone, whether they listened actively, and whether they followed procedure.
 
-Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Speakers are separated automatically, so agent and customer turns are distinguishable in the transcript.
+Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Speakers are separated automatically, so agent and customer turns are distinguishable in the transcript.
 
 Chats carry the same analysis as calls. Vela reports average response time on them, in place of the measures that need call audio. See [Metrics](../reference/metrics.md).
 

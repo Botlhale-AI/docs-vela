@@ -65,7 +65,7 @@ Calls and chats go through the same core analysis. Both are analysed for sentime
 
 ![An interaction open in the Detailed View, with the audio player and Smart Detector analysis on the left and the Call Details panel on the right](../../img/screenshots/calls/calls-3.png)
 
-Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
+Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
 ### Coach and develop agents
 
@@ -93,7 +93,7 @@ These are the jobs people do in Vela. Separately, each account carries a **Role*
 Monitor agent and team performance, review interactions, set up automated monitoring, and generate reports. **Main areas:** Dashboard, Interactions, Smart Detector, Reports.
 
 ### Administrators
-Set Vela up and keep it running: authentication, departments and teams, users, scorecards, and data privacy. **Main area:** Settings.
+Set Vela up and keep it running, covering authentication, departments and teams, users, scorecards, and data privacy. **Main area:** Settings.
 
 ### Agents
 Track personal performance, complete assigned training, read feedback, and earn recognition. Agents work in the separate Agent Portal, which is documented in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).

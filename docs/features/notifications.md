@@ -6,7 +6,7 @@ type: how-to
 ---
 
 # Manage Notifications
-Vela notifies you when something needs your attention: a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. This page covers what triggers a notification, where to find it, and how to control what reaches you.
+Vela notifies you when something needs your attention. That might be a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. Not all of them arrive in the same place. Some are email only, and some belong to the Agent Portal. This page covers what triggers a notification, where each one arrives, and how to control what reaches you.
 
 ---
 

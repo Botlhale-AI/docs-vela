@@ -7,7 +7,7 @@ type: reference
 
 # Organisation Configuration
 
-The **Organisations → This Org** sub-tab holds the settings that apply to your whole organisation: the profile, the monthly duration allocation, the score boundaries, agent report scheduling, redaction, and the package limits.
+The **Organisations → This Org** sub-tab holds the settings that apply to your whole organisation. Those are the profile, the monthly duration allocation, the score boundaries, agent report scheduling, redaction, and the package limits.
 
 :::warning Administrators only
 The **Organisations** tab is hidden from the Agent role. Everyone else can open **This Org** and read the settings, but only an Administrator whose access level is **organisational** can change them. An administrator scoped to a department or a team has read access only.

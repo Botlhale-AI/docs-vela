@@ -192,7 +192,7 @@ Downloads open in a new tab, so allow pop-ups for the Vela domain.
 
 ## Language Support
 
-The interface is in English. Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
+The interface is in English. Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
 :::tip Language Accuracy
 Transcription accuracy is highest when:

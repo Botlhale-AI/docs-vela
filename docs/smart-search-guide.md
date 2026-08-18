@@ -19,7 +19,7 @@ Smart Search is available on plans that include it. If **Smart Search** does not
 ## Before You Begin
 
 - **Your access level sets how far a search can reach.** Organisational access can scope a search to the whole organisation, chosen departments, or chosen teams. Departmental access reaches its own department and the teams in it, and team access reaches one team. See [Access Level](./reference/glossary.md#access-level).
-- **Phrases need nothing set up first.** Filters do: intents, keywords, topics, and pain points can only be used once they exist in your organisation's lists. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
+- **Phrases need nothing set up first.** Filters do, because intents, keywords, topics, and pain points can only be used once they exist in your organisation's lists. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
 - **Your plan caps how many searches can be Active at once**, so decide what matters most before creating a dozen. Inactive searches are kept without using a place. See [Search Management](#search-management).
 
 New to this? Select **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.

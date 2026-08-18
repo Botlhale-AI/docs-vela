@@ -63,7 +63,33 @@ Other punctuation:
 
 - Use the Oxford comma.
 - Avoid semicolons. Use two sentences.
-- Use `:` to introduce a list or a definition.
+- Use `:` to introduce a list or a definition, but not in the opening sentence of a page.
+
+### Where a colon does not belong
+
+A colon introduces a definition or lands a point. Two uses it should not be put to:
+
+**Not in the first sentence of a page.** Every page is page one. A reader often lands on it from search with no idea yet what the page is, and a colon in the opening sentence hands them a list before they know why they would want it. Say what the thing is, finish the sentence, then enumerate.
+
+| Instead of | Write |
+| :--- | :--- |
+| Your Smart Search terms are the four lists of things Vela looks for in your interactions: **Topics**, **Intents**, **Keywords**, and **Pain Points**. | Your Smart Search terms are the four lists of things Vela looks for in your interactions. They are **Topics**, **Intents**, **Keywords**, and **Pain Points**. |
+| Vela notifies you when something needs your attention: an alert, a comment, or a finished report. | Vela notifies you when something needs your attention. That might be an alert, a comment, or a finished report. |
+
+**Not to hide a list inside a sentence.** Where a colon is followed by three or more parallel items, it is a list wearing a sentence's clothes. Either make it a real list, or fold the items into the sentence. Eleven language names behind a colon is the clearest case: the reader is scanning for one of them and has to read a paragraph to find it.
+
+| Instead of | Write |
+| :--- | :--- |
+| Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, and so on. | Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, and so on. |
+| …choose how each is charted: table, bar, line, pie, doughnut, or card. | …choose how each is charted as a table, bar, line, pie, doughnut, or card. |
+
+**What the colon is still for.** A definition, and a pivot where the second half explains or lands the first. These are correct and should not be rewritten:
+
+- **Access level** is organisational, departmental, or team: it decides how much of the organisation you see.
+- The zero is the verdict: this interaction failed, whatever else went well.
+- An empty tab is a result, not a fault: it means nothing of that type is waiting.
+
+The test is whether the colon is followed by an enumeration or by an explanation. Enumeration belongs in a list. Explanation can stay.
 
 ---
 
