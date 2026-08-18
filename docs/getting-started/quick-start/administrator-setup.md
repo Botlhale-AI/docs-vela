@@ -280,7 +280,7 @@ Once all eight steps are complete, your platform is ready for use.
 
 **Hand-off checklist:**
 - ✅ Point team leads to the [Team Lead Quick Start](./team-lead-quick-start.md) guide
-- ✅ If your organisation uses the Coaching Portal, direct agents to the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz)
+- ✅ If your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, and direct agents to it for their own portal
 - ✅ If your organisation uses the Coaching Portal, set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed
 
 ---

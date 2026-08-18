@@ -102,7 +102,7 @@ A: Contact **support@botlhale.ai**. Include your browser type and version, opera
 
 - [System Requirements](../getting-started/system-requirements.md): supported browsers, file formats, and network requirements
 - [Team Lead Quick Start](../getting-started/quick-start/team-lead-quick-start.md): get up and running
-- [Coaching Portal Documentation](https://docs-coaching.botlhale.xyz): how agents use their own portal
+- [Coaching Portal Documentation](https://docs-coaching.botlhale.xyz): courses, awards, and progress for team leads, and the agent's own portal
 - [Troubleshooting Guide](./troubleshooting-guide.md): step-by-step solutions to common issues
 - [Video Tutorials](./video-tutorials.md): the main workflows shown rather than written
 

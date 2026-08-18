@@ -69,7 +69,7 @@ Transcription covers all 11 official South African languages: Afrikaans, English
 
 ### Coach and develop agents
 
-If your organisation has the Coaching Portal enabled, you can see where an agent is struggling and build a course that targets the gap. Vela assigns it to whoever scores in that range. You then track whether they finish it, and mark good work with awards and certificates. Coaching has its own [documentation](https://docs-coaching.botlhale.xyz).
+If your organisation has the Coaching Portal enabled, you can see where an agent is struggling and build a course that targets the gap. Vela assigns it to whoever scores in that range. You then track whether they finish it, and mark good work with awards and certificates. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
 
 ### Spot patterns across your conversations
 
@@ -107,7 +107,7 @@ Your next step depends on your role.
 | Your role | Start here | What it covers |
 | :--- | :--- | :--- |
 | **Administrator** | [Administrator Setup](./quick-start/administrator-setup.md) | Setting Vela up before anyone else can use it |
-| **Team lead or QA manager** | [Team Lead Quick Start](./quick-start/team-lead-quick-start.md) | Reviewing interactions, coaching agents, and monitoring performance |
+| **Team lead or QA manager** | [Team Lead Quick Start](./quick-start/team-lead-quick-start.md) | Reviewing interactions, coaching agents, and monitoring performance. Where Coaching is enabled, the courses, awards, and progress screens are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) |
 | **Agent** | [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) | Your personal development portal, documented separately |
 
 If you are setting Vela up for the first time, start with Administrator Setup. Once setup is complete, Vela can score your interactions.
