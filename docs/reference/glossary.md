@@ -172,6 +172,12 @@ An automated monitor that flags interactions matching criteria you define: words
 
 A search can match on presence (**includes**) or absence (**excludes**). Use excludes to monitor for something an agent failed to say. See [Smart Search](../smart-search-guide.md).
 
+## Tag
+
+Your own label for classifying an interaction, applied by a person rather than found by the AI. This is what separates a tag from a [Topic](#topic), an [Intent](#intent), or a [Keyword](#keyword), which describe what was said in the conversation.
+
+Tags belong to the organisation, not to the person who created one, so every tag appears in everyone's filters. Each has a name and a colour, both required. See [Tag the Interaction](../features/quality-assurance-tools.md#b-tag-the-interaction).
+
 ## Talk to Listen Ratio (TTLR)
 
 How much of an interaction the agent spent talking, compared with the customer.

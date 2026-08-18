@@ -291,6 +291,21 @@ Tagging from the **Tags** column lets you classify a whole screen of interaction
 
 Tags belong to the organisation rather than to you, so one you create is available to everyone and appears in their filters too. Agree a small set with your team before everyone invents their own wording for the same thing.
 
+#### Managing the Tag List
+
+**Manage Tags**, on the **Edit Tags** window, opens the organisation's tag list in a new browser tab. From there you can add a tag with **New Tag**, change a tag's name or colour with **Edit Tag**, and remove one with **Delete Tag**.
+
+Both editing and deleting reach further than the list, so treat them as organisation-wide changes rather than tidying:
+
+| Action | What happens to interactions already tagged |
+| :--- | :--- |
+| **Delete Tag** | The tag is stripped from every interaction carrying it, in one go. There is no undo, and no warning that says how many are affected |
+| **Edit Tag** | The list shows the new name, but interactions keep the name they were tagged with. Renaming does not carry the tag across |
+
+Because a rename leaves the old name on the interactions and the new name on the list, the two stop agreeing. If a tag's wording is wrong, the safer route is to create the tag you want, apply it to the interactions concerned, and delete the old one once nothing depends on it.
+
+{/* UNVERIFIED: editTag in interactions/calls/calls.js updates org.tags only, with no matching Call.updateMany, while deleteTag does pull the tag from every call. So a rename provably leaves the old string on the interactions. What that then does to the Tags filter and to tag metrics was not traced. Confirm by renaming a tag on a populated organisation and filtering by both the old and the new name. */}
+
 **To manage the list**, select **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
 
 ![The Tags page, listing each tag by name with the Edit and Delete controls and the New Tag button](../../img/screenshots/calls/tags-page.png)
