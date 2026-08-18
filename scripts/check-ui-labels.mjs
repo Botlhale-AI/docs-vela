@@ -30,7 +30,10 @@ const SOURCES = (process.env.VELA_SRC ?? join(ROOT, "..", "vela") + "," + join(R
   .filter(Boolean);
 
 // Pages about software that is not Vela. Their bold text is another product's.
-const SKIP_PAGES = [/compression_method/, /api-documentation/, /release-notes/];
+// Compression methods used to be listed here as a page name that never existed,
+// so it matched nothing. They are handled as labels in NOT_A_LABEL instead,
+// which keeps the rest of data-upload.md checked.
+const SKIP_PAGES = [/api-documentation/, /release-notes/];
 
 // Bold that is emphasis or document structure rather than a control.
 const NOT_A_LABEL = [
@@ -40,6 +43,10 @@ const NOT_A_LABEL = [
   /^(Your|The|A|An|Their|This|These|Both|Either)\b/,
   /^(Required|Optional|Default|Format|Cause|Solution|Problem|Purpose)\b/i,
   /^(Google|Microsoft|Mozilla|Apple|Windows|Chrome|Edge|Firefox|Safari|7-Zip|WinRAR)\b/,
+  // ZIP compression methods, and the fields 7-Zip and WinRAR use to set them.
+  // This is the archive format's vocabulary rather than Vela's, and the upload
+  // guide has to name it so a reader can produce an archive Vela can read.
+  /^(Deflate64|Deflate|BZip2|LZMA|Store|Archive format|Compression method)\b/,
 ];
 
 function walk(dir, test, out = []) {
