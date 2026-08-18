@@ -38,7 +38,7 @@ You need:
 
 - **Smart Questions on your plan.** The sidebar entry under **Smart Detector** tells you, as noted above.
 - **Access level:** Organisational, Departmental, or Team, covering the scope you want. See [Access Level](./reference/glossary.md#access-level).
-- **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the only point at which you can set it.
+- **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the point at which you set it for good.
 
 ---
 

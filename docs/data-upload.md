@@ -20,7 +20,7 @@ Recordings and transcripts you upload are encrypted in transit and at rest, and 
 You need:
 
 - **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. Check which tab you are on before preparing the file, because the tabs take different formats. See [Supported Formats](#supported-formats) for every limit.
-- **The agent who handled the interaction.** Agent is the only required field on a single upload, and Team and Department fill in from it.
+- **The agent who handled the interaction.** Choosing the agent fills in their team and department for you. All three are required, so an agent recorded with **No Team** or **No Department** leaves those fields empty and the Upload button stays disabled.
 - **Access level:** Organisational, Departmental, or Team, covering the agent. See [Access Level](./reference/glossary.md#access-level).
 - **Duration left in your organisation's monthly allocation.** What happens when it runs out depends on the **Duration Usage Setting** an administrator chose: analysis either halts or continues at additional rates. See [Organisation Configuration](./settings-config/organisation-configuration.md).
 

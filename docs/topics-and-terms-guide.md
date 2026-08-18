@@ -115,7 +115,7 @@ In the **Created Search** section, each row has an **Actions** column.
 * **Edit**: the row becomes editable in place. Change the text and confirm, or cancel to leave it as it was. On Pain Points you can edit the description as well as the name.
 * **Delete**: Vela asks you to confirm before removing the term.
 
-Detected terms have no Actions column. You cannot edit or delete what Vela found on its own, and you cannot move a detected term into your created list.
+Detected terms have no Actions column. Vela maintains the detected list, so it is read-only. Your own list is where you add, edit, and remove terms, and a detected term you want to keep working with is added there as your own.
 
 ![A Created Search Topics row being edited in place, with the confirm tick and cancel cross replacing the usual actions](../img/screenshots/smart_detector/topic-edit.png)
 

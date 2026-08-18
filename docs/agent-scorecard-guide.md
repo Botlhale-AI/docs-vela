@@ -22,7 +22,7 @@ You need:
 
 - **Access level:** Organisational, Departmental, or Team, covering the teams the scorecard should apply to. See [Access Level](./reference/glossary.md#access-level).
 - **The behaviours you want to measure**, written down before you start. A scorecard built at the keyboard tends to grow questions that overlap.
-- **To decide about Historical Search**, covered in step 2. It is the one choice on this form you cannot revisit later.
+- **To decide about Historical Search**, covered in step 2. Set it before you save, because it is the one choice on this form that creation fixes for good.
 
 ---
 
