@@ -1,6 +1,7 @@
 ---
 id: agent-scorecard-guide
 title: Build an Agent Scorecard
+description: "Build the set of questions Vela scores every interaction against."
 sidebar_position: 1
 type: how-to
 ---
@@ -27,7 +28,7 @@ You need:
 
 ## 1. Open the Create Tab
 
-1. Click **Smart Detector** in the left sidebar, then **Agents Scorecard**.
+1. Select **Smart Detector** in the left sidebar, then **Agents Scorecard**.
 2. Select the **Create** tab.
 
 The page has four tabs. **View** lists the questions you already have, **Create** adds one, **Results** shows how interactions have scored against them, and **Examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
@@ -73,16 +74,16 @@ Each question is one yes/no judgement about the interaction. The fields below ar
 
 ![The question block of the scorecard form with its ten fields numbered, from Question and Category through to Always Applicable](../img/screenshots/smart_detector/scorecard-create2.png)
 
-Click **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
+Select **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 
 :::warning Your plan caps how many questions you can have
-The limit is five unless your plan sets a different one. When you reach it the **Create** tab is greyed out, with no message explaining why. Delete a question you no longer need to make room, or ask your Account Manager about a higher limit. Only your own enabled questions count towards it, so the ready-made ones on **Examples** do not.
+The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations**, where **show package details** lists the **Agent Scorecard Limit**. When you reach it the **Create** tab is greyed out, with no message explaining why. Delete a question you no longer need to make room, or ask your Account Manager about a higher limit. Only your own enabled questions count towards it, so the ready-made ones on **Examples** do not.
 :::
 
 Every field, including those this page does not cover, is listed in [Scorecard Fields](./reference/scorecard-fields.md). For how the three scores are worked out, and why compliance is reported separately, see [How Scoring Works](./explanation/how-scoring-works.md).
 
 :::note Adding a category
-**Category** starts as a list of the categories you already use. To add a new one, click the folder-with-a-plus icon beside the field and type the name. The icon then becomes a pointing hand, which takes you back to choosing from the list.
+**Category** starts as a list of the categories you already use. To add a new one, select the folder-with-a-plus icon beside the field and type the name. The icon then becomes a pointing hand, which takes you back to choosing from the list.
 
 Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page, so a category per question tells you nothing about where they are strong.
 :::
@@ -109,6 +110,8 @@ Editing and deleting behave differently, and the difference matters:
 | | What happens to interactions already scored |
 | :--- | :--- |
 | **Deleting a question** | Nothing. They keep the question and its outcome, and their scores do not change |
+
+{/* UNVERIFIED: the stored score on the interaction is not recomputed when a question is deleted, so the screen figure holds. But the export path in interactions/calls/[id]/call.js (around line 517) looks each score's question up in a map and returns early with query: null when it is gone, skipping the compliance and quality denominator accumulation below it. An export taken after a deletion may therefore disagree with the compliance/quality split shown on screen. Confirm by exporting one interaction before and after deleting a compliance question. */}
 | **Editing its weight, Auto-Fail, Compliance, or Expected Outcome** | They are scored again from the current settings, including their **Initial** figures |
 
 :::warning Editing a weight changes past scores

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 title: Settings
+description: "Configure your organisation and manage your own account."
 type: explanation
 draft: true
 ---

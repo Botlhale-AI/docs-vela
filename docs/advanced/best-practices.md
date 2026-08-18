@@ -1,6 +1,7 @@
 ---
 id: best-practices
 title: Best Practices
+description: "Practical recommendations for setting up Vela and running day-to-day QA."
 sidebar_position: 1
 type: explanation
 ---
@@ -166,6 +167,7 @@ Review user access levels at least twice a year and whenever there is a change i
 ## Related
 
 - [Administrator Setup](../getting-started/quick-start/administrator-setup.md): step-by-step initial configuration
+- [Review and Score Interactions](../features/quality-assurance-tools.md): the review, scoring, and coaching steps these recommendations build on
 - [Set Up Smart Search](../smart-search-guide.md): building and managing automated searches
 - [Build Your Knowledge Base](../knowledge-base-guide.md): uploading and linking documents
 - [Troubleshooting Guide](../support/troubleshooting-guide.md): resolving common issues

@@ -1,6 +1,7 @@
 ---
 id: administrator-setup
 title: Administrator Setup
+description: "Set up your organisation, departments, teams, and users for the first time."
 sidebar_position: 0
 type: tutorial
 ---
@@ -9,7 +10,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Administrator Setup
-Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met the platform yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
+Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
 
 **To score your interactions, you need the Agent Scorecard in place (Step 4)**, so work through these in order.
 
@@ -39,7 +40,7 @@ You need:
 
 ## Plan Before You Configure
 
-The steps below set the platform up. A few decisions shape how you configure each one, so they are worth making before you start:
+The steps below set Vela up. A few decisions shape how you configure each one, so they are worth making before you start:
 
 - **Your structure**: the departments and teams that mirror your real reporting lines.
 - **Your scorecard standards**: the specific, observable behaviours you score agents against.
@@ -68,7 +69,7 @@ Users who sign in through SSO manage their password with Google or Microsoft, so
 
 If SSO is not available, users sign in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
-Vela emails each new user a password and a verification link. They must click the link before they can sign in. Vela does not force a password change afterwards, so tell users to set their own under **Settings → Security**.
+Vela emails each new user a password and a verification link. They must open the link before they can sign in. Vela does not force a password change afterwards, so tell users to set their own under **Settings → Security**.
 
 </TabItem>
 </Tabs>
@@ -84,14 +85,14 @@ Create departments and teams before you add users. Users are assigned to teams, 
 ### Create Departments First
 
 1. Navigate to **Settings → Users → Org Table**
-2. Click **Create**
+2. Select **Create**
 3. Select **Department**
 4. Enter the department name (for example, "Customer Service" or "Sales")
 5. Save and repeat for each department
 
 ### Then Create Teams
 
-1. From the same **Org Table** view, click **Create**
+1. From the same **Org Table** view, select **Create**
 2. Select **Team**
 3. Enter the team name and assign it to a department
 4. Save and repeat for each team
@@ -125,7 +126,7 @@ If you are onboarding team leads or administrators, add them individually in Ste
 ### Step 3A: Bulk Import Agents via CSV
 
 :::note Adding one agent
-To add a single agent, go to **Agents → Agent Details** and click **Add Agent**, then fill in their name, email, department, and team.
+To add a single agent, go to **Agents → Agent Details** and select **Add Agent**, then fill in their name, email, department, and team.
 :::
 
 For onboarding many agents at once:
@@ -145,7 +146,7 @@ Mary Johnson,mary.johnson@company.com,Sales,Sales Team
 | Column | Description |
 |--------|-------------|
 | `name` | Full name of the agent |
-| `email` | Email address (must be unique across the platform) |
+| `email` | Email address (must be unique across Vela) |
 | `department` | Must match an existing department name. Matching ignores case |
 | `team` | Must match an existing team name. Matching ignores case |
 
@@ -162,7 +163,7 @@ Adding an agent, singly or in bulk, emails them an invitation to the Agent Porta
 ### Step 3B: Add Users Individually
 
 1. Navigate to **Settings → Users**
-2. Click **Add User**
+2. Select **Add User**
 3. Enter name, email, and assign their department, team, role, and access level
 
 ![The Add User modal, with Name and Email Address above the Access levels and the Admin and User roles](../../../img/screenshots/settings/users_add.png)
@@ -186,7 +187,7 @@ The Agent Scorecard defines the evaluation criteria used to score every interact
 2. Open the **Create** tab
 3. Set the **scope** (organisation, department, or team) that the scorecard applies to
 4. Write your scorecard questions. Each one is a yes/no evaluation point, configured as below.
-5. Click **Create** to save the scorecard. Its questions are active as soon as it is created.
+5. Select **Create** to save the scorecard. Its questions are active as soon as it is created.
 
 :::note The sidebar says "Agents Scorecard"
 The sidebar and the trail at the top of the page name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
@@ -212,7 +213,7 @@ Smart Searches automatically monitor all processed interactions for keywords, ph
 A Smart Search flags an interaction when the phrases or conditions you define are detected in it.
 
 1. Navigate to **Smart Detector → Smart Search**
-2. Click **New Smart Search**
+2. Select **New Smart Search**
 3. Configure a compliance monitor, for example:
    - **Smart Search Title:** `Compliance: Guarantee Language`
    - **Description:** `Flags interactions where guarantee language is used`
@@ -220,7 +221,7 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
    - **Search Scope:** Organisation (to apply across all teams)
    - **Search Status:** Active
    - **Notifications:** Enable if you want alerts when matches are detected
-4. Click **Create Smart Search**
+4. Select **Create Smart Search**
 
 ![The New Smart Search form with its fields numbered, from Smart Search Title through to Example Phrases](../../../img/screenshots/smart_search/smart-search-create.png)
 ![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../../../img/screenshots/smart_search/smart-search-create2.png)
@@ -240,9 +241,9 @@ A Smart Search flags interactions that match your criteria. A **Smart Question**
 The Knowledge Base stores your organisation's procedures, product information, and policies. Link a document to a scorecard question, a Smart Search, or a Smart Question, and the AI uses it as reference rather than generic criteria. See [Knowledge Base](../../knowledge-base-guide.md).
 
 1. Navigate to **Smart Detector → Knowledge Base**
-2. On the **PDF Upload** tab, drag and drop your PDF files, or click to select them
+2. On the **PDF Upload** tab, drag and drop your PDF files, or select the upload area to browse for them
 3. Set the **scope** (organisation, department, or team), and optionally add a description
-4. Click **Upload Files**
+4. Select **Upload Files**
 
 ![The Knowledge Base PDF Upload tab, with Apply documents to set to Entire Organisation, an uploaded PDF with its description box, and Upload Files](../../../img/screenshots/settings/knowledge_base.png)
 
@@ -297,7 +298,7 @@ Check that the CSV has all required columns (name, email, department, team) and 
 **Interactions are not being scored**  
 Confirm that scorecard questions exist with a scope covering the relevant team or department. Each question carries its own scope, so that is what decides which interactions it is applied to.
 
-An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and click **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
+An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and select **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
 
 **Smart Search not matching expected interactions**  
 Check that the search status is set to **Active** and that the scope covers the relevant team or department. If you want historical calls matched, enable the **Historical Search** option when creating the search.

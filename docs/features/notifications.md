@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Manage Notifications
+description: "Control what Vela tells you about, and where each notification arrives."
 type: how-to
 ---
 
@@ -23,7 +24,7 @@ You need:
 
 ### A. The Tabs
 
-Click **Notifications** in the left sidebar. Three tabs sit at the top right of the page:
+Select **Notifications** in the left sidebar. Three tabs sit at the top right of the page:
 
 | Tab | What it contains |
 | :--- | :--- |
@@ -91,7 +92,7 @@ A practical routine for each alert:
 1. Open the matched interaction from the alert.
 2. Review the full context. The transcript and AI analysis show whether the match is a genuine issue.
 3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction, tagging the agent with **@** so it reaches them. A false match needs nothing further.
-4. Click **Resolve** on the alert either way, so your list holds only what you still have to look at.
+4. Select **Resolve** on the alert either way, so your list holds only what you still have to look at.
 
 :::tip Use alerts as your review queue
 Rather than sampling interactions at random, work your alerts first. They are the conversations your own searches have identified as worth looking at.
@@ -119,9 +120,9 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 Comments are how feedback reaches your agents.
 
-1. Open the interaction and click **View Comments** to open the panel.
+1. Open the interaction and select **View Comments** to open the panel.
 2. Write your comment. Type **@** and pick the agent to send it to them, and they can read and reply in their Agent Portal.
-3. Click **Send**. An untagged comment stays visible to team leads only.
+3. Select **Send**. An untagged comment stays visible to team leads only.
 
 Tagging is what turns a comment your team can see into feedback the agent receives.
 
@@ -149,7 +150,7 @@ Two lists, **Platform Notifications** and **Email Notifications**, offer the sam
 
 The three comment settings widen as you go up the list. **Comments Mentioning You** is the narrowest and **Comments** the broadest, so tick that one only if you want every comment in the organisation.
 
-Click **Save** to apply your changes. Leaving the tab without saving discards them.
+Select **Save** to apply your changes. Leaving the tab without saving discards them.
 
 ### B. Choose How Often Email Arrives
 
@@ -170,7 +171,7 @@ Agents have no notification settings of their own. Their Agent Portal carries an
 
 Open **Notifications** and confirm the tab you expect to use has entries in it. An empty tab is a result, not a fault: it means nothing of that type is waiting on you.
 
-Clicking **Save** shows a confirmation message, and that message is what tells you the ticks were stored.
+Selecting **Save** shows a confirmation message, and that message is what tells you the ticks were stored.
 
 Testing an alert end to end takes one interaction. Upload one you know matches a Smart Search that has notifications on, then check the **Alerts** tab once processing finishes. Alerts are raised during analysis, so one that has not appeared yet usually means the interaction is still being processed.
 

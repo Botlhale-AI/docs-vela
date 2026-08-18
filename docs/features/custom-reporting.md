@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Generate Reports
+description: "Build a report, choose its metrics, and run it once or on a schedule."
 type: how-to
 ---
 
@@ -8,7 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Generate Reports
-Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how figures leave the platform, as a file rather than a screen.
+Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how figures leave Vela, as a file rather than a screen.
 
 ---
 
@@ -78,7 +79,7 @@ A report needs at least one team and one agent, and at least one metric, before 
 
 ### D. Choose the Metrics and Charts
 
-Click **Add New Metric**, pick a metric, and pick a chart type for it. Repeat to add as many as you need. Each metric is paired with its own chart, so you can mix figures and charts in one report.
+Select **Add New Metric**, pick a metric, and pick a chart type for it. Repeat to add as many as you need. Each metric is paired with its own chart, so you can mix figures and charts in one report.
 
 Chart types are **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**.
 
@@ -116,7 +117,7 @@ For a large team, or when you are comparing figures rather than looking for a sh
 <Tabs groupId="report-type">
 <TabItem value="onetime" label="One-time report">
 
-Click **Create**, at the foot of the form below **Add New Metric**. The report generates immediately and opens in the Reports list.
+Select **Create**, at the foot of the form below **Add New Metric**. The report generates immediately and opens in the Reports list.
 
 ![The foot of the one-time report form, with Add New Metric above the Create button](../../img/screenshots/report/report_create3.png)
 
@@ -125,7 +126,7 @@ Vela includes the metrics that have data and names each one it dropped. Where no
 </TabItem>
 <TabItem value="recurring" label="Recurring report">
 
-Click **Schedule Report**. Vela then runs it on the schedule you set.
+Select **Schedule Report**. Vela then runs it on the schedule you set.
 
 ![The Schedule Report button at the foot of the recurring report form](../../img/screenshots/report/schedule_report2.png)
 
@@ -133,7 +134,7 @@ Your schedules appear on the **Scheduled Reports** tab of the Reports list, one 
 
 ![The Scheduled Reports tab, with one daily schedule listed under Frequency, Last Run reading No runs yet, Next Run, and Created By](../../img/screenshots/report/schedule5.png)
 
-Click a row to expand it. Since a schedule cannot be edited, this is how you check what one is set to:
+Select a row to expand it. Since a schedule cannot be edited, this is how you check what one is set to:
 
 | Section | What it shows |
 | :--- | :--- |
@@ -160,7 +161,7 @@ To change a report's frequency, metrics, or filters, delete the schedule and cre
 
 ### B. Who Is Told When a Report Is Ready
 
-A finished report is not emailed as a file. Vela notifies people in your organisation with a link to it, each according to their own **Settings → Notifications** preferences: in the platform, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
+A finished report is not emailed as a file. Vela notifies people in your organisation with a link to it, each according to their own **Settings → Notifications** preferences: in Vela, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
 
 If a scheduled run finds no interactions in its date range, Vela emails you to say the report could not be generated, and the schedule continues to its next run.
 
@@ -170,9 +171,9 @@ If a scheduled run finds no interactions in its date range, Vela emails you to s
 
 Go to **Reports** and stay on the **View** tab. It holds two tabs of its own, **Created Reports** and **Scheduled Reports**, with **Search**, **Sort By**, and **Filter** above them. **Created Reports** lists each report by **Name**, **Created By**, and **Date**.
 
-Click the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected.
+Select the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected.
 
-To rename a report, click the pencil beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
+To rename a report, select the pencil beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
 
 ![The Created Reports list with the download menu open on .pdf and .docx](../../img/screenshots/report/download_share.png)
 

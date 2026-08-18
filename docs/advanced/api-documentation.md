@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: API Reference
+description: "Endpoint reference for sending interactions to Vela from your own systems."
 type: reference
 ---
 
@@ -8,7 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # API Reference
-Endpoint reference for sending call recordings and chat transcripts to Vela programmatically. For uploading through the platform instead, see [Upload Your Data](../data-upload.md).
+Endpoint reference for sending call recordings and chat transcripts to Vela programmatically. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
 
 ## Calls
 
@@ -61,7 +62,7 @@ Send `validate_metadata` to change that. Vela then returns a **400** naming the 
 Either way, check the first few calls of a new integration under **Interactions → Calls** and confirm the agent, team, direction, and tags landed as you intended.
 :::
 
-:::info **Allocation Check**
+:::info Allocation check
 The API verifies that the organisation is within its monthly allocated duration. If the allocation has been exceeded, an error is returned.
 :::
 
@@ -164,10 +165,11 @@ Metadata object:
 - **department** (string): Department the chat should be attributed to.
 - **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
 - **tags** (array): Classification labels for the chat, as an array of strings.
-- **date** (string): Format `DD/MM/YYYY, HH:mm:ss`. Date and time the chat took place. If omitted, the upload time is used. Send the exact format, since a value in any other format is stored as-is and leaves the chat with an unusable date.
+- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
 - **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
 - **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
 - **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
+- **validate_metadata** (boolean): Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
 
 
 Message object:
@@ -198,10 +200,13 @@ Keep that `id` to match what you sent against what you find. To confirm the anal
 |--------|-------|-------|
 | 404 | `Organisation not found` | `org_id` does not match an organisation. |
 | 400 | `Monthly chats allocation exceeded` | The organisation has used its chat allocation. |
+| 400 | `Invalid date of chat. Correct format is DD/MM/YYYY, HH:mm:ss` | `date` could not be parsed, and `validate_metadata` was set. |
 | 500 | `Something went wrong with the upload` | The request could not be read, usually because `chats` is not valid JSON. |
 
 :::warning Metadata problems are silent
-Vela matches each metadata field as it creates the chat, and drops the ones it cannot match. A field it cannot use leaves the chat created without it, so you get a success response either way. An unmatched `team`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, and a malformed `notifyEmail` all behave this way.
+Vela matches each metadata field as it creates the chat, and drops the ones it cannot match. A field it cannot use leaves the chat created without it, so you get a success response either way. An unmatched `team`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, an unparseable `date`, and a malformed `notifyEmail` all behave this way.
+
+Send `validate_metadata` to change that. Vela then returns a **400** naming the field it could not use, which is the safer setting while you are building an integration.
 
 Check the first few chats of a new integration under **Interactions → Chats** and confirm the agent, team, direction, and tags landed as you intended.
 :::
@@ -210,10 +215,10 @@ Check the first few chats of a new integration under **Interactions → Chats** 
 
 ```python 
 chats: [ 
-    { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15", "sender": "user", "language": "zu-ZA" }, 
-    { "message": "Sawubona! Ngingu-bot lokwesekwa. Ngiyaxolisa ukuzwa ukuthi imali ayikafiki. Ake sibheke ndawonye.", "time": "06/08/2024, 09:15", "sender": "bot", "language": "zu-ZA" }, 
-    { "message": "Ngicela unginike inombolo yesazisi noma ikhodi yesithenjwa yokuthumela imali.", "time": "06/08/2024, 09:16", "sender": "bot", "language": "zu-ZA" }, 
-    { "message": "Nansi inombolo yesazisi: 1234567890.", "time": "06/08/2024, 09:17", "sender": "user", "language": "zu-ZA" }
+    { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15:00", "sender": "user", "language": "zu-ZA" }, 
+    { "message": "Sawubona! Ngingu-bot lokwesekwa. Ngiyaxolisa ukuzwa ukuthi imali ayikafiki. Ake sibheke ndawonye.", "time": "06/08/2024, 09:15:00", "sender": "bot", "language": "zu-ZA" }, 
+    { "message": "Ngicela unginike inombolo yesazisi noma ikhodi yesithenjwa yokuthumela imali.", "time": "06/08/2024, 09:16:00", "sender": "bot", "language": "zu-ZA" }, 
+    { "message": "Nansi inombolo yesazisi: 1234567890.", "time": "06/08/2024, 09:17:00", "sender": "user", "language": "zu-ZA" }
 ]
 
 ```
@@ -227,10 +232,10 @@ import requests
 url = "https://api.botlhale.xyz/chats/upload/vela"
 
 chats = [ 
-        { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15", "sender": "user", "language": "zu-ZA" }, 
-        { "message": "Sawubona! Ngingu-bot lokwesekwa. Ngiyaxolisa ukuzwa ukuthi imali ayikafiki. Ake sibheke ndawonye.", "time": "06/08/2024, 09:15", "sender": "bot", "language": "zu-ZA" }, 
-        { "message": "Ngicela unginike inombolo yesazisi noma ikhodi yesithenjwa yokuthumela imali.", "time": "06/08/2024, 09:16", "sender": "bot", "language": "zu-ZA" }, 
-        { "message": "Nansi inombolo yesazisi: 1234567890.", "time": "06/08/2024, 09:17", "sender": "user", "language": "zu-ZA" }
+        { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15:00", "sender": "user", "language": "zu-ZA" }, 
+        { "message": "Sawubona! Ngingu-bot lokwesekwa. Ngiyaxolisa ukuzwa ukuthi imali ayikafiki. Ake sibheke ndawonye.", "time": "06/08/2024, 09:15:00", "sender": "bot", "language": "zu-ZA" }, 
+        { "message": "Ngicela unginike inombolo yesazisi noma ikhodi yesithenjwa yokuthumela imali.", "time": "06/08/2024, 09:16:00", "sender": "bot", "language": "zu-ZA" }, 
+        { "message": "Nansi inombolo yesazisi: 1234567890.", "time": "06/08/2024, 09:17:00", "sender": "user", "language": "zu-ZA" }
     ]
 data = {
     'org_id': 'your_org_id',
@@ -254,7 +259,7 @@ print(json.dumps(response.json(), indent=4))
 
 ## Related
 
-- [Upload Your Data](../data-upload.md): upload through the platform instead of the API
+- [Upload Your Data](../data-upload.md): upload through Vela instead of the API
 - [System Requirements](../getting-started/system-requirements.md): the formats and size limits these endpoints accept
 - [Security and Compliance](../security-compliance.md): where the recordings and transcripts you send are held, and how they are encrypted
 

@@ -1,6 +1,7 @@
 ---
 id: topics-and-terms-guide
 title: Manage Smart Search Terms
+description: "Manage the topics, intents, keywords, and pain points Vela looks for."
 sidebar_position: 4
 type: how-to
 ---
@@ -9,7 +10,7 @@ type: how-to
 
 Your Smart Search terms are the four lists of things Vela looks for in your interactions: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list has two sources. Vela adds what it finds on its own, and you add the terms your organisation cares about. This page covers how to read those lists and how to add your own terms.
 
-These terms feed the rest of the platform. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and in [Reports](./features/custom-reporting.md).
+These terms feed the rest of Vela. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and when you [generate reports](./features/custom-reporting.md).
 
 ```mermaid
 flowchart LR
@@ -40,7 +41,7 @@ You need:
 
 ## 1. Opening a List
 
-These lists are not in the left sidebar. Click **Smart Detector** in the sidebar to open its landing page, then choose **Topics**, **Intents**, **Keywords**, or **Pain Points** from the entries below the feature cards.
+These lists are not in the left sidebar. Select **Smart Detector** in the sidebar to open its landing page, then choose **Topics**, **Intents**, **Keywords**, or **Pain Points** from the entries below the feature cards.
 
 ![The Topics, Intents, Keywords, and Pain Points entries on the Smart Detector landing page, below the feature cards](../img/screenshots/smart_detector/smart-detector-landing.png)
 
@@ -66,7 +67,7 @@ Both tables show the term, **Date Created**, and **Last Detected**. The Created 
 :::warning The date range defaults to today
 The date control above the two sections filters both of them on **Last Detected**, and it starts on today's date. A term that was not detected today is hidden until you widen the range, so a list can look empty when it is not.
 
-Click the date control, pick a start and end date, and click **Apply**. The heading above the sections tells you which range is in effect.
+Select the date control, pick a start and end date, and select **Apply**. The heading above the sections tells you which range is in effect.
 :::
 
 Terms you created but that have never been detected are dated from when you added them, so they stay visible on the day you create them.
@@ -78,7 +79,7 @@ Terms you created but that have never been detected are dated from when you adde
 Two controls sit at the top of every list.
 
 * **Search**: type any part of a term. Matches are highlighted in orange as you type. On Pain Points, the search also covers the description.
-* **Sort**: click **Sort** to open **Sort By**. Choose **Ascending** or **Descending**, then sort by the term itself or by **Date Created**, and click **Apply**.
+* **Sort**: select **Sort** to open **Sort By**. Choose **Ascending** or **Descending**, then sort by the term itself or by **Date Created**, and select **Apply**.
 
 Both apply to the Detected and Created sections at once. When nothing matches, the table reads `No results found.`
 
@@ -86,7 +87,7 @@ Both apply to the Detected and Created sections at once. When nothing matches, t
 
 ## 4. Adding a Term
 
-Open the **Created Search** section and click the button at the top right. Its label matches the list: **New Topic**, **New Intent**, **New Keyword**, or **New Pain Point**.
+Open the **Created Search** section and select the button at the top right. Its label matches the list: **New Topic**, **New Intent**, **New Keyword**, or **New Pain Point**.
 
 | List | What you enter |
 | :--- | :--- |
@@ -95,7 +96,7 @@ Open the **Created Search** section and click the button at the top right. Its l
 | **Keywords** | The keyword. |
 | **Pain Points** | The pain point, and a **Description**. Both are required. |
 
-Click the confirm button in the modal to save, or **Close** to abandon it. The term appears in the Created section straight away.
+Select the confirm button in the modal to save, or **Close** to abandon it. The term appears in the Created section straight away.
 
 ![The Add New Pain Point modal, with the Pain Point and Description fields. It is the only one of the four lists with a second field](../img/screenshots/smart_detector/add-pain-point.png)
 

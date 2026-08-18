@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Review and Score Interactions
+description: "Review interactions, score them against your scorecard, and coach your agents."
 type: how-to
 ---
 
@@ -34,10 +35,10 @@ A Smart Search flags interactions that match the example phrases you gave it, by
 2.  Review the flagged interactions for each search.
 
 :::tip Try it: put the busiest searches first
-1. Click **Sort By**.
+1. Select **Sort By**.
 2. Choose **Descending**.
 3. Sort on **Results**.
-4. Click **Save Changes**.
+4. Select **Save Changes**.
 
 The searches with the most matches move to the top, so you start where the volume is.
 :::
@@ -62,7 +63,7 @@ The Dashboard shows how your teams and agents are scoring over the period you se
 
 ### C. See Where Your Volume Is
 
-Clicking **Interactions** in the sidebar opens a page with a **Calls** card and a **Chats** card, and an **Interactions Distribution** section below them. Set a date range there to see **Calls by Department** and **Chats by Department**, each showing the department, its total, its percentage of all interactions, and a daily average.
+Selecting **Interactions** in the sidebar opens a page with a **Calls** card and a **Chats** card, and an **Interactions Distribution** section below them. Set a date range there to see **Calls by Department** and **Chats by Department**, each showing the department, its total, its percentage of all interactions, and a daily average.
 
 Read it before you decide where to spend review time. A department carrying most of your volume deserves proportionate review, and a channel that has grown since you last looked is usually where unreviewed interactions are piling up.
 
@@ -84,7 +85,9 @@ The two lists work the same way, with columns suited to the channel. Chats carry
 * **Topic and tags:** what the conversation was about.
 
 :::tip Choose your columns
-Not every column is shown by default. Click the settings icon next to **Upload** on the Interactions list to choose which of these appear: Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
+Not every column is shown by default. Select the settings icon next to **Upload** on the Interactions list to choose which appear. The full set is:
+
+Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
 
 Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
 :::
@@ -94,7 +97,7 @@ Your choice is remembered per browser, so each machine keeps its own. The Alerts
 Filter the list of all interactions to find specific examples based on performance data.
 
 1.  Go to **Interactions** (Calls or Chats).
-2.  Click **Filter** and set any of the options in the **Filter By** modal:
+2.  Select **Filter** and set any of the options in the **Filter By** modal:
     * **Agent Score:** filter for a score range, for example the lowest performers.
     * **Agent, Team, or Department:** focus reviews on the people you are coaching.
     * **Reviewed:** show everything, only interactions already marked as reviewed, or only those not marked as reviewed.
@@ -145,12 +148,12 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 
 On the **Alerts** tab, two columns take you straight to the moment the alert refers to:
 
-* **In Transcript**: click **View** to scroll the transcript to the line that triggered the alert.
-* **In Audio**: click **Listen** to move the player to that second, so you can hear the exchange rather than infer it from a phrase. On a chat this column reads **In Chat**.
+* **In Transcript**: select **View** to scroll the transcript to the line that triggered the alert.
+* **In Audio**: select **Listen** to move the player to that second, so you can hear the exchange rather than infer it from a phrase. On a chat this column reads **In Chat**.
 
 Where no timestamp was recorded for a match, both columns read `-`.
 
-Click **Resolve** once you have acted on the alert. The row then reads **Resolved**.
+Select **Resolve** once you have acted on the alert. The row then reads **Resolved**.
 
 A tab with nothing to show says so, for example `No alerts detected in call` or `No pain points detected in call`. Vela analysed the interaction and found nothing of that kind in it.
 
@@ -160,11 +163,11 @@ The tab strip scrolls, so use the arrows at either end if a tab is out of view.
 
 ### C. Listen to the Call or Read the Chat
 
-The player and the transcript follow each other. As the audio plays, the transcript scrolls to keep the current line in view, and clicking a line's timestamp moves the player to that point.
+The player and the transcript follow each other. As the audio plays, the transcript scrolls to keep the current line in view, and selecting a line's timestamp moves the player to that point.
 
 1.  Listen to the **Audio** or read the **Chat Transcript**.
 2.  Use the **Playback Speed** control to review calls efficiently. Available rates are 0.5x, 0.75x, 1x, 1.25x, 1.5x, and 2x.
-3.  Click a **timestamp** in the transcript to jump to that moment in the recording.
+3.  Select a **timestamp** in the transcript to jump to that moment in the recording.
 4.  Switch the transcript between **Original** and **English** when the conversation was not in English. Vela translates every interaction to English as it processes it.
 
 While you listen, attend to the agent's tone, whether they listened actively, and whether they followed procedure.
@@ -190,10 +193,10 @@ Vela's assessment gives you a base score. You make the final judgement.
 1.  On the Detailed View, open the **Scorecard** tab in the Smart Detector panel.
 2.  Switch **View** between **Automatic** and **Manual** to find the item you want to change.
 3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript: the AI having missed context is the case for overriding, and the AI being right is the case for leaving the score and coaching instead.
-4.  Click the **edit icon** (pencil) to enter edit mode.
+4.  Select the **edit icon** (pencil) to enter edit mode.
 5.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
     * **N/A removes the question from the score** rather than counting it as a failure, so use it where the question did not apply to this conversation. The difference is large: see [How Scoring Works](../explanation/how-scoring-works.md) for a worked example.
-6.  Click **Save Changes**.
+6.  Select **Save Changes**.
     * Your edited outcome replaces the AI's for that item, and the score is recalculated.
 
 :::note Overriding an item hides its reasoning
@@ -210,7 +213,7 @@ For the same record question by question, use the download icon on the Scorecard
 
 #### Narrow a Long Scorecard
 
-**Filter Scorecard**, above the table, opens **Filter Scorecard By**. Tick the categories you want and click **Apply**, or **clear all fields** to go back to everything. On a long scorecard this lets you review one category at a time.
+**Filter Scorecard**, above the table, opens **Filter Scorecard By**. Tick the categories you want and select **Apply**, or **clear all fields** to go back to everything. On a long scorecard this lets you review one category at a time.
 
 The table then carries two totals, and they are not the same figure:
 
@@ -223,7 +226,7 @@ The table then carries two totals, and they are not the same figure:
 
 #### Comment Straight from a Question
 
-Each row has a comment icon beside its score. Click it and the **Comments** panel opens with that question and its outcome already written in, ready for you to add the coaching point.
+Each row has a comment icon beside its score. Select it and the **Comments** panel opens with that question and its outcome already written in, ready for you to add the coaching point.
 
 This is quicker than retyping the question, and it keeps the agent's feedback tied to the exact scorecard item it came from.
 
@@ -231,16 +234,16 @@ This is quicker than retyping the question, and it keeps the agent's feedback ti
 
 Add specific, time-stamped feedback to make coaching clear and concrete.
 
-1.  Click **View Comments** on the interaction to open the panel.
+1.  Select **View Comments** on the interaction to open the panel.
 2.  Add your comment. Remember the best practices:
     * **Be specific:** "At 1:45, you missed the required closing statement."
     * **Be constructive:** "Try to summarise the solution before ending the call next time."
     * **Tag the agent:** type `@` and pick them from the list. Without the tag the comment stays visible to team leads only.
 3.  The agent can read and respond to your comments in their Agent Portal.
-4.  Click **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you click **Resolve** on it.
+4.  Select **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you select **Resolve** on it.
 
 :::warning A posted comment is final
-Comments cannot be edited or deleted once sent. Read yours back before clicking **Send**, particularly where you have tagged the agent. The delete icon beside the reply box clears what you have typed, not a comment already posted.
+Comments cannot be edited or deleted once sent. Read yours back before selecting **Send**, particularly where you have tagged the agent. The delete icon beside the reply box clears what you have typed, not a comment already posted.
 :::
 
 ![The comment box with an @ mention being selected, and the Send button](../../img/screenshots/settings/@agent.png)
@@ -251,9 +254,9 @@ Comments cannot be edited or deleted once sent. Read yours back before clicking 
 
 ### A. Track Review Status
 
-Marking an interaction reviewed is what tells the rest of the platform you are done with it.
+Marking an interaction reviewed is what tells the rest of Vela you are done with it.
 
-* Click **Mark as Reviewed** to record that you have finished assessing this interaction. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
+* Select **Mark as Reviewed** to record that you have finished assessing this interaction. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
 * If follow-up is needed, add coaching comments for the agent.
 
 :::note Reviewing can be what releases the interaction to the agent
@@ -270,9 +273,9 @@ You can tag without opening an interaction. The **Tags** column on the Interacti
 
 ![The Tags line of the Call Details panel, with an existing tag beside the Add a tag icon](../../img/screenshots/calls/call-details-tags.png)
 
-1. Click the tag icon to open **Edit Tags**.
+1. Select the tag icon to open **Edit Tags**.
 2. On **Select a Tag**, pick one from the list. To make a new one, switch to **Create a Tag**, type the name, and give it a colour. Both are required.
-3. Click **Add Tag**, or **Discard** to abandon it.
+3. Select **Add Tag**, or **Discard** to abandon it.
 
 ![The Calls list with the Tags column, showing the tag icon on every row and existing tags beside it](../../img/screenshots/calls/interactions-tags-column.png)
 
@@ -288,11 +291,11 @@ Tagging from the **Tags** column lets you classify a whole screen of interaction
 
 Tags belong to the organisation rather than to you, so one you create is available to everyone and appears in their filters too. Agree a small set with your team before everyone invents their own wording for the same thing.
 
-**To manage the list**, click **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
+**To manage the list**, select **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
 
 ![The Tags page, listing each tag by name with the Edit and Delete controls and the New Tag button](../../img/screenshots/calls/tags-page.png)
 
-**New Tag** on that page opens its own window, where you name the tag and pick its colour from the swatches before clicking **Create Tag**.
+**New Tag** on that page opens its own window, where you name the tag and pick its colour from the swatches before selecting **Create Tag**.
 
 ![The New Tag window, with the name field above the colour swatches and the Create Tag button](../../img/screenshots/calls/new-tag-window.png)
 
@@ -302,7 +305,7 @@ Deleting a tag takes it off every interaction carrying it, and the page does not
 
 One weak interaction is not a pattern. Before acting, read the agent's recent scorecards and comments together and look for the same category scoring low more than once.
 
-Where you find one, click **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course whose trigger score range covers that gap. Vela assigns courses on its evaluation cycle, so you set the range rather than picking the agent.
+Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course whose trigger score range covers that gap. Vela assigns courses on its evaluation cycle, so you set the range rather than picking the agent.
 
 A course is not a substitute for the conversation. Arrange time with the agent to go through the feedback and what you expect to change.
 

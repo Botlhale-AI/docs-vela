@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Video Tutorials
+description: "Short video walkthroughs of the main Vela workflows."
 type: reference
 ---
 
@@ -37,7 +38,9 @@ The videos are hosted on YouTube. If the players below do not load, your network
 ## Related
 
 - [Team Lead Quick Start](../getting-started/quick-start/team-lead-quick-start.md): the same first steps in writing
-- [Administrator Setup](../getting-started/quick-start/administrator-setup.md): configure the platform before your team uses it
+- [Administrator Setup](../getting-started/quick-start/administrator-setup.md): configure Vela before your team uses it
+- [Monitor Agent Performance](../features/monitor-agent-performance.md): the Dashboard video, in writing
+- [Set Up Smart Search](../smart-search-guide.md): the Smart Search video, in writing
 - [Build an Agent Scorecard](../agent-scorecard-guide.md): the scorecard video, in writing
 - [Troubleshooting Guide](./troubleshooting-guide.md): fix a problem the videos do not cover
 

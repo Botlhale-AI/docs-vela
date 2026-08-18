@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Frequently Asked Questions
+description: "Short answers to the most common questions about Vela."
 type: reference
 ---
 
@@ -20,7 +21,9 @@ A: Vela is designed for call centre teams: agents, team leads, and administrator
 A: Your organisation's edition decides which features appear. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which edition you have.
 
 **Q: What languages does Vela support for transcription?**  
-A: Vela supports all 11 official South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The platform interface is in English.
+A: Vela supports 11 South African languages: Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The Vela interface is in English.
+
+{/* UNVERIFIED: the 11-name list matches the `languages` array in settings/preferences.jsx, but that array is the per-user language preference, not a declared transcription list. Backend transcription takes language codes (en-ZA, zu-ZA) and routes through a translation service rather than a fixed list. Confirm the transcription-supported set with the product team before restating it. */}
 
 ---
 
@@ -49,7 +52,7 @@ A: For single uploads, verify the file is a valid WAV or MP3 that plays on your 
 A: If no calls or chats have been uploaded yet, performance data does not appear. Upload interactions to start seeing metrics.
 
 **Q: Can I customise my Dashboard?**  
-A: Yes. Click the **Customise** button on the Dashboard to add, remove, or rearrange the metrics displayed.
+A: Yes. Select the **Customise** button on the Dashboard to add, remove, or rearrange the metrics displayed.
 
 **Q: Why is an agent's score lower or higher than I expected?**  
 A: Vela's AI produces the first score, based on your organisation's scorecard criteria. If the AI missed important context, you can override individual scorecard items. Your manual score takes precedence over the AI's assessment. See [Review and Score Interactions](../features/quality-assurance-tools.md).
@@ -78,7 +81,7 @@ A: Where Coaching is enabled, administrators and team leads create courses in th
 A: You can sign in using your email and password, or with **Sign in with Google** or **Sign in with Microsoft** if your organisation uses Single Sign-On.
 
 **Q: I forgot my password. How do I reset it?**  
-A: On the login page, click **"Forgot your password?"** and enter your email address. Vela emails you a link to reset it.
+A: On the login page, select **Forgot your password?** and enter your email address. Vela emails you a link to reset it.
 
 **Q: Does Vela support multi-factor authentication (MFA)?**  
 A: Vela does not have native MFA. If your organisation uses Single Sign-On (Google or Microsoft), MFA can be enforced through your identity provider. Contact your IT administrator for setup.

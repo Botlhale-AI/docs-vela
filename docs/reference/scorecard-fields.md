@@ -1,6 +1,7 @@
 ---
 id: scorecard-fields
 title: Scorecard Fields
+description: "Every field on an Agent Scorecard question, and what it controls."
 sidebar_position: 3
 type: reference
 ---

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: Manage Agents and Teams
+description: "Add agents, move them between teams, and retire the ones who leave."
 type: how-to
 ---
 
@@ -33,7 +34,7 @@ Go to **Agents → Agent Details** in the left sidebar. The table lists everyone
 | :--- | :--- |
 | **Search** | Narrows the list by name |
 | **Sort** | Orders the list on any column |
-| **Filter** | Opens **Filter By**, where you select departments, teams, and **Status**. Click **Apply** to use it |
+| **Filter** | Opens **Filter By**, where you select departments, teams, and **Status**. Select **Apply** to use it |
 | **Export** | Downloads the list, including each agent's department, team, and status |
 
 An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, **Previous** and **Next** sit below the table with **Page 1 of 2** between them.
@@ -44,13 +45,13 @@ An agent with nothing assigned reads **No Department** or **No Team** rather tha
 
 ## 2. Add an Agent
 
-Click **Add Agent** to open **Add an Agent** modal. It has two tabs, **Single Upload** for one person and **Batch Upload** for a CSV of many.
+Select **Add Agent** to open **Add an Agent** modal. It has two tabs, **Single Upload** for one person and **Batch Upload** for a CSV of many.
 
 On **Single Upload**:
 
 1. Enter the **Name**, and the **Email** where it is required.
 2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the window.
-3. Click **Save Changes**, or **Discard** to abandon it.
+3. Select **Save Changes**, or **Discard** to abandon it.
 
 ![The Add an Agent window on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
 
@@ -110,7 +111,7 @@ The agent records their own sample from the invitation, so this is a request rat
 **Reassign** moves several agents at once, rather than opening each one in turn.
 
 1. Tick the agents you want to move. **Reassign** appears above the table once at least one is ticked.
-2. Click **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.
+2. Select **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.
 3. Confirm the move.
 
 ![The Reassign window, with the department and team selectors for moving the chosen agents](../../img/screenshots/agent_details/reassign.png)

@@ -1,6 +1,7 @@
 ---
 id: smart-questions-guide
 title: Set Up Smart Questions
+description: "Ask a question of your interactions without affecting anyone's score."
 sidebar_position: 3
 type: how-to
 ---
@@ -43,10 +44,10 @@ You need:
 
 ## Creating a Smart Question
 
-1. Click **Smart Detector** in the left sidebar, then **Smart Questions**.
+1. Select **Smart Detector** in the left sidebar, then **Smart Questions**.
 2. Select the **Create** tab.
 3. Configure the settings described below.
-4. Click **Create Smart Questions** to save.
+4. Select **Create Smart Questions** to save.
 
 The two screenshots below are one form, scrolled. The numbers run continuously across them, and **Question** carries a 4 on each because the captures overlap at that point.
 
@@ -90,7 +91,7 @@ This is not the same control as **Apply To** further down the form. Interactions
 
 ### Questions
 
-Enter your question in the **Question** field. Click **Add Question** to include more than one question in a single set.
+Enter your question in the **Question** field. Select **Add Question** to include more than one question in a single set.
 
 Write questions so they can be answered clearly from the transcript. As with scorecard items, a concrete question produces more reliable answers than a vague one.
 
@@ -101,7 +102,7 @@ Set an **Expected Outcome** (optional) to record the answer you expect. Because 
 | Option | Meaning |
 | :--- | :--- |
 | **Automatic** | The AI answers the question for each interaction |
-| **Manual** | The question is answered by a reviewer rather than the AI |
+| **Manual** | A reviewer answers the question rather than the AI |
 
 ### Apply To
 
@@ -145,7 +146,7 @@ See [Knowledge Base](./knowledge-base-guide.md) for how to upload documents.
 
 1. Go to **Smart Detector → Smart Questions**.
 2. Select the **Results** tab. Each question shows how many interactions were answered **Yes**, **No**, or **N/A**, as a count and a percentage, alongside its **Scope**, **Calls Analysed**, **Direction**, **Search Type**, and whether it uses a Knowledge Base document.
-3. Click a count to open the matching interactions, then open any interaction to read the full transcript and AI analysis in context.
+3. Select a count to open the matching interactions, then open any interaction to read the full transcript and AI analysis in context.
 
 ![The Smart Questions Results tab, with the Yes, No, and N/A counts for each question](../img/screenshots/smart_questions/results.png)
 

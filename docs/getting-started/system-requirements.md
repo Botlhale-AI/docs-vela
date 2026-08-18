@@ -1,6 +1,7 @@
 ---
 id: system-requirements
 title: System Requirements
+description: "The browsers, file formats, and limits Vela supports."
 sidebar_position: 0
 type: reference
 ---
@@ -22,7 +23,7 @@ Vela is a web-based platform. Use a current version of one of the following brow
 - **Mozilla Firefox**
 - **Safari**
 
-Keep your browser up to date. Older versions may not support the features the platform relies on.
+Keep your browser up to date. Older versions may not support the features Vela relies on.
 
 Vela is built for desktop and laptop browsers. It is not built for phones or small screens.
 
@@ -85,7 +86,7 @@ Files larger than 1 GB are rejected before the upload begins.
 **Required Format:**
 - **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
 - **Encoding:** UTF-8
-- **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, click the **example** link on the upload page to download a sample CSV.
+- **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, select the **example** link on the upload page to download a sample CSV.
 - **Maximum size:** 1 MB per file, as stated on the **Bulk Upload** tab, and one file at a time. The single **Upload** tab states no limit, so use 1 MB as the guide for both. Split a large export into several files rather than uploading one big one.
 
 **JSON Structure Example:**
@@ -146,7 +147,7 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 ```
 
 **Validation rules:**
-- Email addresses must be unique across the platform
+- Email addresses must be unique across Vela
 - Team and department names should match existing entries, or use the create option
 - No empty required fields
 
@@ -223,7 +224,7 @@ A session expires after 24 hours, after which you sign in again. See [Security a
 
 ## Troubleshooting
 
-If the platform does not load, an upload fails, or audio does not play, see the [Troubleshooting Guide](../support/troubleshooting-guide.md). It covers each of these with step-by-step resolutions.
+If Vela does not load, an upload fails, or audio does not play, see the [Troubleshooting Guide](../support/troubleshooting-guide.md). It covers each of these with step-by-step resolutions.
 
 ---
 

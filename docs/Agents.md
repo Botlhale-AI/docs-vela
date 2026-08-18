@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Agents
+description: "Manage your agent records and review how each person is performing."
 type: explanation
 draft: true
 ---

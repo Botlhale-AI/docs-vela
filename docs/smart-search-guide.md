@@ -1,6 +1,7 @@
 ---
 id: smart-search-guide
 title: Set Up Smart Search
+description: "Monitor every interaction for the words and patterns you care about."
 sidebar_position: 2
 type: how-to
 ---
@@ -21,7 +22,7 @@ Smart Search is available on plans that include it. If **Smart Search** does not
 - **Phrases need nothing set up first.** Filters do: intents, keywords, topics, and pain points can only be used once they exist in your organisation's lists. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
 - **Your plan caps how many searches can be Active at once**, so decide what matters most before creating a dozen. Inactive searches are kept without using a place. See [Search Management](#search-management).
 
-New to this? Click **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
+New to this? Select **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
 
 ---
 
@@ -68,7 +69,7 @@ flowchart LR
 ### Step 1: Access Smart Search
 
 1. In the left sidebar, open **Smart Detector** and select **Smart Search**.
-2. Click **New Smart Search** to open the creation form.
+2. Select **New Smart Search** to open the creation form.
 
 ![The Smart Search list, with New Smart Search above the table of searches and their name, description, scope, status, and results](../img/screenshots/smart_search/10.png)
 
@@ -88,11 +89,11 @@ The numbers on both screenshots match the numbered steps below. Example Phrases 
    * Team access: **Entire Team**.
 
    Choosing **Specific Departments** or **Specific Teams** opens a second selector for picking which ones.
-5. Add your **Example Phrases**. Most searches start here: click **Add** and enter each phrase. Write them the way people actually speak, not the way an internal process document describes the situation.
-6. Narrow the search further with a **Search Filter**, if you need one. Click **Add Filter** to match on intents, keywords, topics, pain points, or specific agents. Those come from your organisation's lists, whether Vela detected them or your team added them, so add the term first if it is not offered. See [Smart Search Criteria](./reference/smart-search-criteria.md) and [Manage Smart Search Terms](./topics-and-terms-guide.md).
+5. Add your **Example Phrases**. Most searches start here: select **Add** and enter each phrase. Write them the way people actually speak, not the way an internal process document describes the situation.
+6. Narrow the search further with a **Search Filter**, if you need one. Select **Add Filter** to match on intents, keywords, topics, pain points, or specific agents. Those come from your organisation's lists, whether Vela detected them or your team added them, so add the term first if it is not offered. See [Smart Search Criteria](./reference/smart-search-criteria.md) and [Manage Smart Search Terms](./topics-and-terms-guide.md).
 7. Enable **Historical Search** to run the search against interactions uploaded before you created it. Under **Historical Search Options**, choose **All historical calls** or a **Specific date range** with a start and end date. Pick a date range unless you want your whole archive reprocessed. Historical Search is set at creation and cannot be added by editing the search later.
 8. Tick **Notifications** if you want to be alerted each time a new match is detected. You can change this later by editing the search.
-9. Click **Create Smart Search** to save the search.
+9. Select **Create Smart Search** to save the search.
 
 The form also lets you combine several conditions, link this search to another, and attach a Knowledge Base document. See [More Search Options](#more-search-options).
 
@@ -103,10 +104,10 @@ The form also lets you combine several conditions, link this search to another, 
 Once interactions are processed, matches appear automatically in the search results.
 
 1. Navigate to **Smart Detector → Smart Search**.
-2. Click **View** next to your search to open its results. For what each panel on that page shows, see [Understanding the Results View](#understanding-the-results-view).
+2. Select **View** next to your search to open its results. For what each panel on that page shows, see [Understanding the Results View](#understanding-the-results-view).
 3. Open a matched interaction from **Returned Interactions**. Each row links to the call or chat that triggered the match.
 4. Read the transcript alongside Vela's analysis to judge whether the match is genuine.
-5. Click **Resolve** on the alert once you have acted on it, which drops the interaction out of Returned Interactions. See [Alert Management](#alert-management).
+5. Select **Resolve** on the alert once you have acted on it, which drops the interaction out of Returned Interactions. See [Alert Management](#alert-management).
 
 ![A matched interaction opened from the results, with the transcript beside the Smart Detector analysis tabs](../img/screenshots/calls/calls-3.png)
 
@@ -205,11 +206,11 @@ Whether that alert reaches you in-app, by email, or both depends on your prefere
 
 Work through alerts regularly rather than letting them accumulate. See [Manage Notifications](./features/notifications.md) for the review routine and where alerts appear.
 
-Resolving is what closes the loop. Open the interaction, find the alert in the **Smart Detector** section, and read it in context. Click **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
+Resolving is what closes the loop. Open the interaction, find the alert in the **Smart Detector** section, and read it in context. Select **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
 
 Three controls close three different things, and they sit close together on the detailed view. Pick by what you want to close:
 
-| To close | Click | Where | Then it reads |
+| To close | Select | Where | Then it reads |
 | :--- | :--- | :--- | :--- |
 | One alert | **Resolve** | The **Smart Detector** section, on the alert's row | **Resolved** |
 | A comment or a reply | **Mark as Resolved** | The **Comments** section, on that comment | **Resolved by** your name |
@@ -217,7 +218,7 @@ Three controls close three different things, and they sit close together on the 
 
 Each one is independent. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
 
-To clear several alerts at once, open a single search's results and click through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
+To clear several alerts at once, open a single search's results and select through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
 
 An alert you resolve without acting on it is worse than one you leave open, because the list stops reminding you.
 
@@ -229,7 +230,7 @@ If a search is producing more matches than your team can act on, edit it to use 
 
 ### Understanding the Results View
 
-Click **View**, in the **Results** column of the Smart Search list, to open a search's results. At the top, set the **Date range**, or use the **Quick** picks (**1h**, **6h**, **12h**, **24h**) to jump to a recent window. Everything below updates to the period you choose.
+Select **View**, in the **Results** column of the Smart Search list, to open a search's results. At the top, set the **Date range**, or use the **Quick** picks (**1h**, **6h**, **12h**, **24h**) to jump to a recent window. Everything below updates to the period you choose.
 
 The results view has three collapsible sections.
 
@@ -269,7 +270,7 @@ Only unresolved matches appear here, so resolving an alert removes it from the l
 
 Under **Quick Search**, select two or more searches to see the interactions that matched **all** of them. A call flagged by both a billing search and an escalation search is a more specific problem than either search describes on its own, and usually a better use of review time than working down one list.
 
-Below that, **Top Smart Search Combinations** shows the pairs of searches that most often fire together this month. Click one to open the matching interactions.
+Below that, **Top Smart Search Combinations** shows the pairs of searches that most often fire together this month. Select one to open the matching interactions.
 
 ### Trend Analysis
 

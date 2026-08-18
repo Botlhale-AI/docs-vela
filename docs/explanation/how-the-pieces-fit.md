@@ -1,6 +1,7 @@
 ---
 id: how-the-pieces-fit
 title: How the Pieces Fit Together
+description: "How Vela's features relate, and why the order you set them up in matters."
 sidebar_position: 2
 type: explanation
 ---

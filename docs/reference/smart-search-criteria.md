@@ -1,6 +1,7 @@
 ---
 id: smart-search-criteria
 title: Smart Search Criteria
+description: "The criteria types a Smart Search can match on, and the settings for each."
 sidebar_position: 4
 type: reference
 ---

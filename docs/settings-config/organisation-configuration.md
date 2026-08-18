@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Organisation Configuration
+description: "Set the score boundaries, redaction rules, and other organisation-wide options."
 type: reference
 ---
 
@@ -20,7 +21,7 @@ The **My Orgs** sub-tab is covered in [Account and Security Settings](./account-
 
 | Field | Description |
 | :--- | :--- |
-| **Organisation Logo** | The logo shown for the organisation. Click the pencil icon to open the file picker. |
+| **Organisation Logo** | The logo shown for the organisation. Select the pencil icon to open the file picker. |
 | **Organisation Name** | Read-only. The name cannot be changed here. |
 | **Organisation Bio** | A short description of the organisation. Maximum 100 characters, with a counter under the box. |
 | **Org Status** | `Active` or `Inactive`. Read-only. |
@@ -50,7 +51,7 @@ Select the points at which Vela sends a duration usage email. Each threshold is 
 * 80% of duration allocation
 
 :::note
-The list also shows a 90% and a 100% checkbox. Those two do not respond to clicks on this screen. Contact **support@botlhale.ai** if you need either threshold changed.
+The list also shows a 90% and a 100% checkbox. Those two cannot be changed on this screen. Contact **support@botlhale.ai** if you need either threshold changed.
 :::
 
 ![The duration section of This Org, with Allocated Monthly Duration and Current Duration Usage beside the usage gauge, above the Duration Usage Notifications and Duration Usage Setting checkbox groups](../../img/screenshots/settings/org-duration.png)
@@ -68,7 +69,7 @@ Choose what happens when the organisation reaches its monthly allocated duration
 
 ## 3. Agent Score Boundaries
 
-These two numbers set the red, amber, and green bands Vela uses to categorise agent performance across the platform.
+These two numbers set the red, amber, and green bands Vela uses to categorise agent performance, and they decide which band a score falls into.
 
 | Field | Description |
 | :--- | :--- |
@@ -132,7 +133,7 @@ Redaction applies to every user by default, administrators included. For how to 
 
 ## 6. Current Package
 
-The package name is shown at the bottom of the page. Click **show package details** to open the limits table.
+The package name is shown at the bottom of the page. Select **show package details** to open the limits table.
 
 | Row | Description |
 | :--- | :--- |
@@ -150,7 +151,7 @@ To change your package, contact **support@botlhale.ai**. It is set outside Setti
 
 ## 7. Saving Changes
 
-Click **Save** at the bottom of the page. One Save applies to the bio, the duration notifications, the duration usage setting, the score boundaries, the agent performance sharing schedule, and the redactable entities. The logo is uploaded separately and is not affected by **Save**.
+Select **Save** at the bottom of the page. One Save applies to the bio, the duration notifications, the duration usage setting, the score boundaries, the agent performance sharing schedule, and the redactable entities. The logo is uploaded separately and is not affected by **Save**.
 
 ---
 

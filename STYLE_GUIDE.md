@@ -20,7 +20,7 @@ This is not a style preference. Most of the serious errors found in this documen
 
 ### Existing in code and being reachable are different claims
 
-Finding a feature in the codebase does not mean a user can get to it. Half-built and deliberately hidden features leave working code behind. Before documenting a capability, confirm there is a control a user can actually click.
+Finding a feature in the codebase does not mean a user can get to it. Half-built and deliberately hidden features leave working code behind. Before documenting a capability, confirm there is a control a user can actually reach.
 
 Two real examples from this documentation:
 
@@ -29,7 +29,7 @@ Two real examples from this documentation:
 
 Both were documented as working because the code was there.
 
-**The check:** trace the path from something the user clicks to the code you found. If you cannot, the feature is not shipped, whatever the codebase says. Look for commented-out JSX, imports with no corresponding render, and routes with no navigation entry.
+**The check:** trace the path from a control the user can reach to the code you found. If you cannot, the feature is not shipped, whatever the codebase says. Look for commented-out JSX, imports with no corresponding render, and routes with no navigation entry.
 
 ### The string in the source and the label on the screen are different claims
 
@@ -96,7 +96,7 @@ Where Vela has a word for something, use that word everywhere, including in the 
 | check whether it is a pattern | check the **trend** | Trend is the analytics term the rest of the platform uses |
 | data points | **metrics** | The product says Metric on every control that touches them |
 | report builder | the **Create** tab | There is no feature called Report Builder |
-| period | **date range** | The control the reader clicks is labelled Date Range |
+| period | **date range** | The control the reader opens is labelled Date Range |
 
 The last two are the common failure: inventing a plausible-sounding name for something that already has one. Search the product for your noun before you use it.
 
@@ -133,6 +133,21 @@ Two exceptions, both narrow:
 
 **Release notes are a historical record.** They describe what shipped, in the words used at the time. Do not retrofit current terminology into past entries.
 
+### Name the colour, and give the number with it
+
+Red, Amber, and Green are the product's own labels for the performance bands, so the documentation uses them. What it must not do is leave the colour carrying the meaning on its own. A reader who cannot distinguish the colours, or who is reading the page rather than looking at the screen, gets nothing from "the agent is in the amber band" by itself.
+
+Name the band, then say what it means in numbers, or point at where the numbers are set:
+
+| Not this | This |
+| :--- | :--- |
+| Agents in the red band need attention | Agents below the Lower Bound, shown in red, need attention |
+| The score turns green above the threshold | The score is green at or above the Upper Bound, which defaults to `80` |
+
+The boundaries are configurable, so a page that states a default must say so. [Organisation Configuration](./docs/settings-config/organisation-configuration.md) is the page that owns the actual numbers, including which end of each band is inclusive; link to it rather than restating the ranges.
+
+The same rule applies to anything else where colour is the signal in the interface, such as a dark cell on a heatmap or a status dot. Say what the colour means, not only that it is there.
+
 ---
 
 ## 4. Voice, tone, and grammar
@@ -144,6 +159,28 @@ Two exceptions, both narrow:
 - **Active voice.** "An administrator sets the boundaries", not "The boundaries are set by an administrator".
 - **Short sentences.** If a sentence has two ideas, make it two sentences.
 - **UK English.** organisation, analyse, recognise, customise, behaviour.
+- **Select, not click.** "Select **Apply**", not "Click Apply". See below.
+
+### Select, not click
+
+**Use "select" as the default verb for acting on a control.** It is the house standard and it is not a preference.
+
+"Click" presumes a mouse. Our readers include people working on tablets, on contact-centre touchscreens, and using keyboard navigation or a screen reader, and for them an instruction to click describes an action they are not performing. "Select" is true whatever the device, which is why Microsoft and Google both moved to it.
+
+| Not this | This |
+| :--- | :--- |
+| Click **Save Changes** | Select **Save Changes** |
+| Click on the **Calls** tab | Select the **Calls** tab |
+| Clicking **Interactions** opens the page | Selecting **Interactions** opens the page |
+| The button cannot be clicked | The button cannot be selected |
+
+**Keep "click" only where the mouse action itself is the point.** Right-click and double-click have no device-neutral equivalent and are instructions about the mouse, so they stay:
+
+- Select your files, **right-click**, and choose **Send to → Compressed (zipped) folder**.
+
+Drag-and-drop is the same case. Where a drop target also accepts a file picker, describe the alternative by what it does rather than by the mouse: "drag a PDF onto the upload area, or select the area to browse for one".
+
+**Watch two collisions.** Vela has controls whose label contains the word Select, so "Select **Select Date Range**" is a sentence the sweep can produce. Name the control instead: "open the date range control, labelled **Select Date Range**". And where a control is literally labelled **Select**, use "choose" for the verb rather than writing "select **Select**".
 
 ### Who is actually reading this
 
@@ -208,7 +245,7 @@ The same applies to anything they cannot undo. Say what happens, say what to do 
 - **Do not repeat yourself for emphasis.** If a point matters, put it where the reader hits the problem, not three times across a page.
 - **Answer the question the reader arrived with**, then stop. A page that keeps going past its own answer buries it.
 
-### Explain enough to act, not only what to click
+### Explain enough to act, not only what to select
 
 Our readers are QA managers, not engineers. Steps alone leave them able to operate a screen without knowing whether they should. Where a number or a setting carries a judgement, give them the judgement:
 
@@ -267,7 +304,7 @@ A name the reader cannot find is not much better than a wrong name. When you fir
 | :--- | :--- |
 | the **Agents** section | **Agents** in the left sidebar, holding **Performance** and **Agent Details** |
 | the Agent Scorecard table | the **Agent Scorecard** table, directly below the agent header |
-| click **View** | in List View, click **View** at the end of the row; in Board View, click the card |
+| select **View** | in List View, select **View** at the end of the row; in Board View, select the card |
 
 That last one matters most where a page documents two views or two tabs. An instruction that only works in one of them reads as broken in the other.
 
@@ -325,9 +362,9 @@ Anything else that mixes types is a defect, not a deviation.
 - **Closing sections**: use `## Related` for links to other pages and `## Need Help?` for the support address. A page that hands the reader to a specific next task may use `## Next Steps` instead of Related. Do not invent further variants.
 - **Numbering H2s**: number them (`## 1. Open the Report Builder`) when the sections are a sequence the reader works through in order. Leave them unnumbered when the sections are independent and a reader may start at any of them. Both forms are in use, so match the page you are editing rather than converting it.
 - One H1, at the top of the body. Docusaurus renders that as the page heading instead of adding its own, so a second H1 never appears.
-- Keep the H1 and the frontmatter `title` saying the same thing. The title is what the sidebar, browser tab, and search results show, so a reader who clicks "Data Upload Guide" should not land on a page headed something else.
+- Keep the H1 and the frontmatter `title` saying the same thing. The title is what the sidebar, browser tab, and search results show, so a reader who selects "Data Upload Guide" should not land on a page headed something else.
 - Do not skip heading levels.
-- **UI elements** in bold: click **Apply**.
+- **UI elements** in bold: select **Apply**.
 - **Field values and code** in backticks: set `sender` to `user`.
 - **Menu paths** with arrows: **Smart Detector → Smart Search**.
 - Numbered lists for sequences. Bullets for everything else.

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Account and Security
+description: "View your profile details and change your password."
 type: reference
 ---
 
@@ -21,7 +22,7 @@ The Account tab displays your personal information and current organisational co
 
 This section allows you to quickly verify your credentials and current status.
 
-* **Name:** Your full name as recorded in the system.
+* **Name:** Your full name as recorded in Vela.
 * **Email:** The primary email address associated with your Vela account.
 * **Current Organisation:** The organisation you are working in.
 * **Current Team:** Shown if your access level is team.
@@ -29,7 +30,7 @@ This section allows you to quickly verify your credentials and current status.
 :::note Read-only
 These fields are read-only. The Account tab has no Save button.
 
-An administrator can change your **team**, **department**, **role**, and **access level** from **Settings → Users**. To change your **name** or **email address**, contact **support@botlhale.ai**. Those two are set outside the platform.
+An administrator can change your **team**, **department**, **role**, and **access level** from **Settings → Users**. To change your **name** or **email address**, contact **support@botlhale.ai**. Those two are set outside Vela.
 :::
 
 ### B. Switching Organisations
@@ -40,7 +41,7 @@ If you belong to more than one organisation, you can change which one you are wo
 
 1.  Navigate to **Settings** → **Organisations** → **My Orgs**.
 2.  Locate the organisation you wish to access in the list.
-3.  Click the switch icon (the arrow) next to the organisation to make it your active organisation.
+3.  Select the switch icon (the arrow) next to the organisation to make it your active organisation.
 
 ---
 
@@ -65,7 +66,7 @@ If your organisation uses Single Sign-On (Google or Microsoft), the Security tab
 
 ### C. Save Your Changes
 
-1.  Once all fields are complete and the new password meets the requirements, click the **Save** button.
+1.  Once all fields are complete and the new password meets the requirements, select the **Save** button.
 2.  Vela prompts you to sign in again with your new credentials.
 
 ### Password Requirements

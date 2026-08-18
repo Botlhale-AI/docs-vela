@@ -1,6 +1,7 @@
 ---
 id: how-scoring-works
 title: How Scoring Works
+description: "Why Vela scores the way it does, and how much weight to put on the numbers."
 sidebar_position: 1
 type: explanation
 ---
@@ -17,7 +18,7 @@ Traditional QA reviews a handful of calls per agent per month. The sample is sma
 
 Vela scores every interaction it processes. That changes what the number means. An average across hundreds of interactions is stable in a way a five-call sample never is, and an outlier stops being alarming because you can see the distribution it sits in.
 
-It also changes where your effort goes. The scarce resource is no longer coverage, it is attention. That is why the platform is built around Smart Searches and alerts: they decide which of the scored interactions deserve a human.
+It also changes where your effort goes. The scarce resource is attention, not coverage. That is what Smart Searches and alerts are for. They pick out which of the scored interactions need a person to look at them.
 
 ## The score is a weighted percentage
 
@@ -64,7 +65,7 @@ Whether the AI can use N/A comes down to the question's **Always Applicable** se
 - **Off** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
 - **On**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
-The default costs something either way. Left Off without a cue in the wording, a question that did not apply is scored No and pulls the score down, which is the same outcome as switching Always Applicable on. Wording the question so the AI can tell when it applies is what actually earns you the N/A.
+The default costs something either way. Without a cue in the wording, a question left Off is scored No on the calls it does not fit, which lands the agent where switching Always Applicable on would have left them anyway. The wording is what earns the N/A.
 
 For questions the AI cannot judge from the transcript, two settings help:
 
@@ -113,7 +114,7 @@ Change weights deliberately, record when you did it, and compare periods either 
 
 The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are judged against the new setting, so answers that read as passes can become failures.
 
-**Rerun Scorecard** covers the one case the above does not. It appears only on an interaction with no automatic scorecard at all, for example one processed before you created yours, and it scores that interaction against the questions applying now. It is not offered on an interaction that already has a score, so it is not a way to pick up questions added since.
+**Rerun Scorecard** covers the one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against the questions applying now. An interaction that already has a score keeps it, so this is not a route to picking up questions added since.
 
 To apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation, so weigh it against starting the new measurement from the change instead.
 
@@ -137,7 +138,7 @@ One set of answers therefore produces six figures in the Call Details panel, whi
 
 ```mermaid
 flowchart LR
-    Q("The answers on<br/>this interaction") --> S1("Overall Score<br/>every applicable question")
+    Q("The answers on<br/>this interaction") --> S1("Agent Score<br/>every applicable question")
     Q --> S2("Compliance Score<br/>questions marked Compliance")
     Q --> S3("Quality Score<br/>every other question")
     S1 --> I("Each is reported twice:<br/>Initial, from the AI alone<br/>Current, after any overrides<br/><br/>and each carries its own Auto-Fail,<br/>so any of them can read 0.0%<br/>while the others do not")
@@ -182,7 +183,14 @@ If you are unsure where a question belongs, ask what the answer describes. If it
 
 A scorecard applies to an organisation, a department, or a team. An interaction is scored against the scorecards covering the agent who handled it.
 
-Scope is not the only filter. A question is applied to an interaction when four things line up: the scorecard's **scope** covers the agent, the question's **Search Status** is **Enabled**, its **Apply To** matches the call's direction, and the set's **Interactions** setting matches the channel. A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
+Scope is not the only filter. A question is applied to an interaction when four things line up:
+
+- The scorecard's **scope** covers the agent.
+- The question's **Search Status** is **Enabled**.
+- Its **Apply To** matches the call's direction.
+- The set's **Interactions** setting matches the channel.
+
+A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
 Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no question covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
@@ -190,7 +198,7 @@ Two implications follow. Teams under different scorecards are not directly compa
 
 Vela produces a percentage. It does not decide what counts as good.
 
-The Red, Amber, and Green boundaries are set by your administrator, and everything that appears to be a judgement in the interface, such as an agent being flagged as underperforming, traces back to those numbers rather than to any platform default.
+Your administrator sets the Red, Amber, and Green boundaries. Everything that looks like a judgement in the interface, such as an agent flagged as underperforming, traces back to those numbers rather than to any platform default.
 
 Set them against your own standards and history rather than an external benchmark. A score of 70% means whatever your scorecard makes it mean, and comparing that figure with another organisation's is comparing two different measurements that happen to share a unit.
 

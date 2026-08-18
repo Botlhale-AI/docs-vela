@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Smart Detector
+description: "The tools Vela uses for automatic monitoring, and what each one is for."
 type: explanation
 ---
 
@@ -12,7 +13,7 @@ Smart Detector is where you set up automatic monitoring and evaluation. It bring
 
 ## The Smart Detector Home Page
 
-Clicking **Smart Detector** in the left sidebar opens a home page with a card for each tool, rather than jumping straight into one of them. The sidebar lists the same tools, so you can go directly to any of them once you know which you want.
+Selecting **Smart Detector** in the left sidebar opens a home page with a card for each tool, rather than jumping straight into one of them. The sidebar lists the same tools, so you can go directly to any of them once you know which you want.
 
 Below the cards sit four more buttons: **Topics**, **Intents**, **Keywords**, and **Pain Points**. These are the term lists your searches and analysis match against. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
 

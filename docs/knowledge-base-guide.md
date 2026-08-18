@@ -1,6 +1,7 @@
 ---
 id: knowledge-base-guide
 title: Build Your Knowledge Base
+description: "Upload your policies and scripts so the AI can reference them when scoring."
 sidebar_position: 4
 type: how-to
 ---
@@ -29,7 +30,7 @@ flowchart LR
 
 Uploading is only half of it. A document nobody has linked is the most common reason the Knowledge Base appears to have no effect.
 
-The Knowledge Base is managed by administrators and team leads. Agents do not upload or manage documents.
+Administrators and team leads manage the Knowledge Base. Agents do not upload or manage documents.
 
 ---
 
@@ -38,7 +39,7 @@ The Knowledge Base is managed by administrators and team leads. Agents do not up
 You need:
 
 - **Your document as a PDF.** The Knowledge Base accepts PDF only. Convert a Word or Google document before you start.
-- **To know which teams the document applies to.** You set a scope on upload, and it decides who can see and use the document. Getting this wrong is the usual reason a colleague cannot find a document you uploaded.
+- **To know which teams the document applies to.** You set a scope on upload, and it decides who can see and use the document. Getting this wrong is the usual reason a colleague cannot find a document you uploaded, and scope is fixed once the document is in, so decide it before you upload rather than after.
 - **Somewhere to link it.** A document on its own does nothing. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
 
 ---
@@ -47,18 +48,18 @@ You need:
 
 ### Step 1: Navigate to the Knowledge Base
 
-In the left sidebar, click **Smart Detector**, then **Knowledge Base**.
+In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
 ![The Knowledge Base page, with the PDF upload area above the Document Library and its File Name, Description, Uploaded, Scope, and Actions columns](../img/screenshots/smart_detector/knowledge-base.png)
 
 ### Step 2: Upload Your Document
 
-1. Drag a PDF onto the upload area, or click it to select one. Knowledge Base accepts PDF files.
+1. Drag a PDF onto the upload area, or select the area to browse for one. Knowledge Base accepts PDF files.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
 2. Add a **Description** (optional). Say what it covers and which teams or situations it applies to, so you can identify the document later when linking it.
 3. Set the document's scope under **Apply documents to**: the organisation, a department, or a team. The scope controls which users can see and use the document. Set it to match the teams whose interactions the document is relevant to.
-4. Click **Upload Files**.
+4. Select **Upload Files**.
 
 ### Step 3: Link the Document
 
@@ -88,6 +89,7 @@ The table below the upload area is where you manage what is already there:
 | The tick box on a row | Selects the document. **Select all** at the head of the column takes every row |
 | **Download selected documents** | Downloads everything you have ticked in one go |
 | **Download document** | Downloads that one document |
+| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to |
 | **Edit filename** | Renames the document in Vela |
 | **Delete** | Removes the document from the Knowledge Base, after a confirmation |
 
@@ -143,7 +145,9 @@ Confirm that the document has been explicitly linked to the item that should use
 
 **Uploaded document is not visible to certain team leads or agents.**
 
-Check the scope setting on the document. If it is scoped to a specific team or department, users outside that scope do not see it. Adjust the scope if wider access is needed.
+Check the scope on the document with the **expand** icon on its row, which lists the departments or teams it covers. Users outside that scope do not see it.
+
+Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope and deleting the original. Relink anything that pointed at the old copy.
 
 ---
 

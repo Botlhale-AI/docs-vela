@@ -1,6 +1,7 @@
 ---
 id: platform-overview
 title: Platform Overview
+description: "What Vela does, who uses it, and how it differs from sampling-based QA."
 sidebar_position: 0
 type: explanation
 ---
@@ -72,7 +73,7 @@ If your organisation has the Coaching Portal enabled, you can see where an agent
 
 ### Spot patterns across your conversations
 
-Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and [Reports](../features/custom-reporting.md) turn all this into something you can hand to a manager. Between them they surface patterns a manual review would never catch.
+Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and you can [generate reports](../features/custom-reporting.md) that turn all this into something you can hand to a manager. Between them they surface patterns a manual review would never catch.
 
 ---
 
@@ -92,7 +93,7 @@ These are the jobs people do in Vela. Separately, each account carries a **Role*
 Monitor agent and team performance, review interactions, set up automated monitoring, and generate reports. **Main areas:** Dashboard, Interactions, Smart Detector, Reports.
 
 ### Administrators
-Set the platform up and keep it running: authentication, departments and teams, users, scorecards, and data privacy. **Main area:** Settings.
+Set Vela up and keep it running: authentication, departments and teams, users, scorecards, and data privacy. **Main area:** Settings.
 
 ### Agents
 Track personal performance, complete assigned training, read feedback, and earn recognition. Agents work in the separate Agent Portal, which is documented in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).

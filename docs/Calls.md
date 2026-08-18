@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: Calls
+description: "Upload call recordings for transcription and analysis, then review and score them."
 type: explanation
 draft: true
 ---

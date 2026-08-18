@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Dashboard
+description: "See performance trends across your organisation, a department, or a single team."
 type: explanation
 draft: true
 ---

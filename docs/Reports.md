@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: Reports
+description: "Package the metrics that matter into a document you can share with management."
 type: explanation
 draft: true
 ---

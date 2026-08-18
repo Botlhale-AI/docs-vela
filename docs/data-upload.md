@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: Upload Your Data
+description: "Get your calls and chats into Vela, one at a time or in bulk."
 type: how-to
 ---
 
@@ -33,12 +34,12 @@ Use Vela to upload files directly. Best for getting started and for ad-hoc uploa
 
 #### Single Call Upload
 
-1. Click **Interactions → Calls** in the left sidebar
-2. Click **Upload**
+1. Select **Interactions → Calls** in the left sidebar
+2. Select **Upload**
 3. Select the **Single Upload** tab
 4. Fill in the form: choose the **Agent** (Team and Department fill in automatically), then optionally set **Direction** and **Tags**
 5. Select your audio file (WAV or MP3) or drag and drop it into the upload area
-6. Click **Upload**
+6. Select **Upload**
 
 ![The Single Upload form, with the agent, direction, and tags fields above the upload area](../img/screenshots/data_upload/upload2.png)
 
@@ -52,7 +53,11 @@ Confirm every file is WAV or MP3, then compress them into a single ZIP archive. 
 
 Use ZIP, not RAR or 7z. The upload area takes those too, so the file uploads in full before Vela reads it and finds it cannot.
 
-Vela reads ZIP files compressed with **Deflate** (the standard method) or **Store** (no compression). **Deflate64**, **BZip2** and **LZMA** archives fail to process.
+If you zip files the normal way in Windows Explorer, the archive already works. The tabs below cover 7-Zip and WinRAR, which offer choices that can produce a ZIP Vela cannot read.
+
+:::note If an archive uploads but never processes
+The compression method is the usual cause. Vela reads archives compressed with **Deflate**, which is what Windows Explorer uses by default, and **Store**, which means no compression. **Deflate64**, **BZip2** and **LZMA** produce a valid ZIP file that Vela cannot open, so it uploads in full and then fails.
+:::
 
 <Tabs groupId="zip-tool">
 <TabItem value="windows" label="Windows (built-in)">
@@ -65,7 +70,7 @@ Windows Explorer uses Deflate by default, so its archives are already compatible
 1. Select your files, right-click, and choose **7-Zip → Add to archive**.
 2. Set **Archive format** to **zip**.
 3. Set **Compression method** to **Deflate** (not Deflate64).
-4. Click **OK**.
+4. Select **OK**.
 
 </TabItem>
 <TabItem value="winrar" label="WinRAR">
@@ -106,7 +111,7 @@ Download the `metadata.csv` template from the upload page and build your file fr
 
 **Step 3: Upload**
 
-1. Click **Interactions → Calls → Upload**
+1. Select **Interactions → Calls → Upload**
 2. Select the **Bulk Upload** tab
 3. Upload your ZIP file
 4. Wait for the upload to finish. Processing then runs in the background, so you can leave the page
@@ -120,7 +125,7 @@ Upload five to ten files before committing a large historical dataset. Confirmin
 
 #### Chat Upload
 
-1. Click **Interactions → Chats → Upload**
+1. Select **Interactions → Chats → Upload**
 2. Select the **Upload** tab for a single chat or **Bulk Upload** for multiple
 3. Upload your file
 4. Wait for the upload to finish. Processing then runs in the background
@@ -128,12 +133,12 @@ Upload five to ten files before committing a large historical dataset. Confirmin
 :::warning The two tabs take different file formats
 **Upload** accepts a **CSV** file containing the messages of one chat. **Bulk Upload** accepts **JSON**. The upload area rejects the wrong format, so check which tab you are on before preparing the file.
 
-On the **Upload** tab you can also set **Agent**, **Tags**, and an **Interaction ID**, all optional except the agent. The page ends that instruction with a dotted-underlined **example** link. Click it to download a sample CSV with the exact layout.
+On the **Upload** tab you can also set **Agent**, **Tags**, and an **Interaction ID**, all optional except the agent. The page ends that instruction with a dotted-underlined **example** link. Select it to download a sample CSV with the exact layout.
 :::
 
 ![The chat Upload tab, with the agent, tags, and interaction ID fields above the CSV upload area](../img/screenshots/chats/upload.png)
 
-Bulk chat files must follow the Vela JSON schema. This is an array of conversations, each with `metadata` and a `messages` array:
+Bulk chat files must follow the layout Vela expects: a list of conversations, each with a `metadata` section and a `messages` list.
 
 ```json
 [
@@ -158,7 +163,7 @@ Bulk chat files must follow the Vela JSON schema. This is an array of conversati
 
 Every message must have `message`, `time`, and `sender`. `sender` must be `user`, `agent`, or `bot`.
 
-For the complete specification, including size limits, see [System Requirements](./getting-started/system-requirements.md).
+For the full details, including size limits, see [System Requirements](./getting-started/system-requirements.md).
 
 ---
 
@@ -202,7 +207,7 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 | Single audio upload | WAV, MP3 | 1 GB |
 | Bulk upload (archive) | WAV or MP3 + metadata.csv, in a ZIP | 3 GB |
 | Single chat upload | CSV | Not stated on the page |
-| Bulk chat upload | JSON (Vela schema) | 1 MB |
+| Bulk chat upload | JSON, in the layout shown above | 1 MB |
 
 Audio files above their limit are rejected before the upload starts, with a "file too big" message.
 
@@ -251,7 +256,7 @@ A bulk upload also shows a results screen naming any rows it could not process. 
 | A bulk upload uploads, then processes nothing | The archive is RAR or 7z rather than ZIP | Recreate it as a ZIP and upload again |
 | `Unknown compression method: 9`, `: 12`, or `: 14` | The ZIP was made with Deflate64, BZip2, or LZMA | Recreate it with Deflate or Store. See [Prepare your audio files](#bulk-call-upload) |
 | Chat upload fails | The file format does not match the tab. **Upload** takes CSV, **Bulk Upload** takes JSON | Check which tab you are on, then supply that format |
-| Bulk chat upload fails | Malformed JSON, or JSON that does not match the Vela schema | Validate the JSON, and confirm every message has `message`, `time`, and `sender` |
+| Bulk chat upload fails | The JSON is broken, or does not match the layout Vela expects | Check the file against the layout in [Chat Upload](#chat-upload), and confirm every message has `message`, `time`, and `sender` |
 | Processing fails | Poor audio quality or corrupted file | Verify the file plays locally before uploading |
 | Slow processing | Large batch or peak server load | Split large batches, and run a big historical import overnight |
 

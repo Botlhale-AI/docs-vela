@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Access Requests
+description: "Process requests from users who need to see redacted information."
 type: reference
 ---
 

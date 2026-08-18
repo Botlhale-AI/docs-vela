@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Monitor Agent Performance
+description: "Track agent performance, find where people need help, and turn that into coaching."
 type: how-to
 ---
 
@@ -26,8 +27,8 @@ The Dashboard is where you find out whether anything needs your attention today,
 ### A. Set the Date Range and Scope
 
 1.  Sign in to Vela and go to the **Dashboard**.
-2.  Click the date range to open **Select Date Range**, and pick **Today** or **Yesterday** for a current check.
-3.  Click **Filter** to narrow the metrics by department, team, and agent, within your access level, and by direction, tags, topic, or score.
+2.  Open the date range control, labelled **Select Date Range**, and pick **Today** or **Yesterday** for a current check.
+3.  Select **Filter** to narrow the metrics by department, team, and agent, within your access level, and by direction, tags, topic, or score.
 
 ![The Dashboard header, with the All, Calls, and Chats options, the date range, Filter, and Customise](../../img/screenshots/dashboard/dashboard03.png)
 
@@ -48,7 +49,7 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 ![The Quality & Performance group, with Average Agent Scores beside the distribution of calls by RAG score](../../img/screenshots/dashboard/use_dashboard1.png)
 
 :::tip Choose your own metrics
-Click **Customise** on the Dashboard to choose which metrics appear and how each is charted: table, bar, line, pie, doughnut, or card. The chart types offered vary by metric, so pick the ones that suit what your team is measured on.
+Select **Customise** on the Dashboard to choose which metrics appear and how each is charted: table, bar, line, pie, doughnut, or card. The chart types offered vary by metric, so pick the ones that suit what your team is measured on.
 :::
 
 ---
@@ -86,17 +87,17 @@ The modal has two kinds of field:
 * **Tick lists**: **Department**, **Team**, **Strengths**, and **Weaknesses**.
 * **From and To ranges**: **Total Calls**, **Rank**, **Score**, **Compliance Score**, and **Quality Score**.
 
-Click **Apply** to filter, or **Clear All Fields** to reset. The modal scrolls, so the last three ranges sit out of sight until you scroll.
+Select **Apply** to filter, or **Clear All Fields** to reset. The modal scrolls, so the last three ranges sit out of sight until you scroll.
 
 **Strengths** and **Weaknesses** list your scorecard categories, so ticking **Compliance** under Weaknesses finds the agents whose weakest category is compliance.
 
 ![The Filter By modal, showing the department, team, strength, and weakness filters](../../img/screenshots/performance/performance-7.png)
 
 :::tip Try it: put the agents who need coaching first
-1. Click **Sort By**.
+1. Select **Sort By**.
 2. Choose **Ascending**.
 3. Sort on **Score**.
-4. Click **Save Changes**.
+4. Select **Save Changes**.
 
 The lowest-scoring agents move to the top of the table, so the people who need attention are the first you see.
 :::
@@ -107,7 +108,7 @@ The lowest-scoring agents move to the top of the table, so the people who need a
 
 #### Choose a View
 
-The same agents can be shown two ways. The control sits at the top left, above the table, and it names the view it switches you to. In the list it reads **Board View**. Click it and it reads **List View**.
+The same agents can be shown two ways. The control sits at the top left, above the table, and it names the view it switches you to. In the list it reads **Board View**. Select it and it reads **List View**.
 
 | | **List View** | **Board View** |
 | :--- | :--- | :--- |
@@ -121,7 +122,7 @@ In List View the row scrolls sideways for the columns that do not fit. Sorting a
 
 ### B. Read One Agent's Detail
 
-Open **Agents → Performance → Details** for an agent. In List View, click **View** at the end of their row. In Board View, click anywhere on their card. The header shows their rank, name, team, and the date range you are looking at. **Export** downloads the page, and **Mail** sends it to the agent.
+Open **Agents → Performance → Details** for an agent. In List View, select **View** at the end of their row. In Board View, select the card itself. The header shows their rank, name, team, and the date range you are looking at. **Export** downloads the page, and **Mail** sends it to the agent.
 
 **The Agent Scorecard table** sits directly below that header, under a centred **Agent Scorecard** caption. It lists one row per scorecard category and ends in a **Total Score** row. Its six columns put the agent beside their team, so you can see whether a low category is theirs alone or shared:
 
@@ -179,7 +180,7 @@ A category that is dark across a whole row, or long on the Agents chart, points 
 
 ## 3. Share What You Found
 
-Two ways out of the platform, depending on who is asking:
+Two ways to get figures out of Vela, depending on who is asking:
 
 * **Export** on **Agents → Performance** downloads the list you are looking at, as a PDF or a CSV. Quickest for a one-off.
 * A **report** covers a date range with the metrics you choose, and can run daily, weekly, or monthly so managers receive it without asking. See [Generate Reports](./custom-reporting.md).
@@ -237,7 +238,7 @@ Finish by recording what you decided: a comment on a specific interaction, a cou
 - [Build an Agent Scorecard](../agent-scorecard-guide.md): the questions and categories every figure here comes from
 - [Metrics](../reference/metrics.md): what each figure on the Dashboard measures
 - [Review and Score Interactions](./quality-assurance-tools.md): score the interactions behind the numbers
-- [Generate Reports](./custom-reporting.md): share performance trends outside the platform
+- [Generate Reports](./custom-reporting.md): share performance trends outside Vela
 
 ## Need Help?
 

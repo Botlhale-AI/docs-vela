@@ -1,6 +1,7 @@
 ---
 id: glossary
 title: Glossary
+description: "Definitions of the terms used in Vela and in this documentation."
 sidebar_position: 1
 type: reference
 ---
@@ -46,11 +47,11 @@ See also [User](#user).
 
 The set of questions Vela evaluates every interaction against. Each question has a category and a weight, and the results combine into the agent's score.
 
-In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" for the feature, and the plural in navigation steps, so that what you click matches what you read. See [Scorecard Fields](./scorecard-fields.md).
+In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" for the feature, and the plural in navigation steps, so that what you select matches what you read. See [Scorecard Fields](./scorecard-fields.md).
 
 ## Alert
 
-A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. Click **Resolve** on an alert once you have reviewed it. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
+A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. Select **Resolve** on an alert once you have reviewed it. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
 
 Alerts appear in the **Alerts** tab under Notifications, and the **No. Alerts** metric counts them.
 
@@ -111,7 +112,7 @@ A store of your organisation's documents, such as policies, scripts, and procedu
 
 ## Lite
 
-A Vela edition with a reduced feature set. On Lite, Smart Search and Smart Questions are unavailable, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear, and Dashboard and report metrics are limited to interaction volume, duration, review progress, topics, and agent scores.
+A Vela edition with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics are limited to interaction volume, duration, review progress, topics, and agent scores.
 
 If a feature this documentation describes is missing from your sidebar, your edition is the first thing to check. Your Account Manager can tell you which one your organisation has.
 
@@ -153,7 +154,7 @@ Which parts of the organisation a Smart Search, Smart Question, scorecard, or Kn
 
 ## Score Boundaries
 
-The thresholds that sort agent performance into Red, Amber, and Green bands. An administrator sets them in Organisation Configuration, and Vela applies them across the platform.
+The thresholds that sort agent performance into Red, Amber, and Green bands. An administrator sets them in Organisation Configuration, and they decide which band a score falls into. See [How Scoring Works](../explanation/how-scoring-works.md).
 
 ## Silent Time
 

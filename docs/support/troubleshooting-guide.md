@@ -1,13 +1,14 @@
 ---
 id: troubleshooting-guide
 title: Troubleshooting Guide
+description: "Step-by-step fixes for the issues administrators, team leads, and agents report most."
 sidebar_position: 1
 type: troubleshooting
 ---
 
 # Troubleshooting Guide
 
-This guide consolidates common issues reported by administrators, team leads, and agents, and provides step-by-step resolutions. Where issues appear in multiple areas of the platform, cross-references are included.
+This guide consolidates common issues reported by administrators, team leads, and agents, and provides step-by-step resolutions. Where an issue appears in more than one area of Vela, this guide cross-references it.
 
 If this guide does not resolve your issue, see [Need Help?](#need-help) at the end of this page.
 
@@ -27,7 +28,7 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 
 ---
 
-**Problem:** SSO login fails. Clicking "Sign in with Google" or "Sign in with Microsoft" redirects to an error page.
+**Problem:** SSO login fails. Selecting "Sign in with Google" or "Sign in with Microsoft" redirects to an error page.
 
 **Cause:** The OAuth credentials configured for your organisation may be incorrect, or the user's email domain does not match the configured identity provider.
 
@@ -53,16 +54,16 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 
 **Problem:** Password is rejected when creating a new account or resetting.
 
-**Cause:** The new password does not meet the platform's requirements.
+**Cause:** The new password does not meet Vela's requirements.
 
 **Solution:**
 Check your password against the rules in [Password Requirements](../settings-config/account-security.md#password-requirements). The most common causes are a missing special character or a password under the minimum length.
 
 ---
 
-**Problem:** Session expires unexpectedly and the user is logged out during work.
+**Problem:** Session expires unexpectedly and you are logged out during work.
 
-**Cause:** The user may be working in incognito or private browsing mode, where session persistence is limited.
+**Cause:** You may be working in incognito or private browsing mode, where session persistence is limited.
 
 **Solution:**
 1. Use a standard browser window rather than incognito or private mode.
@@ -75,14 +76,14 @@ Check your password against the rules in [Password Requirements](../settings-con
 
 ### Single Call Upload
 
-**Problem:** Single call upload fails immediately after clicking "Upload".
+**Problem:** Single call upload fails immediately after selecting "Upload".
 
 **Cause:** The audio file is not in a supported format, or the file is corrupted.
 
 **Solution:**
 1. Confirm the file is in WAV or MP3 format. Other audio formats are not supported.
 2. Play the file locally on your device to confirm it is not corrupted.
-3. Ensure the required fields are completed. Only **Agent** and the audio file are required. **Direction** and **Tags** are optional, so leaving them empty is not the cause.
+3. Ensure the required fields are completed. **Agent**, **Team**, **Department**, and the audio file are all required, and the Upload button stays disabled until each has a value. Choosing an agent fills in their team and department for you, so an agent recorded with **No Team** or **No Department** leaves those fields empty and blocks the upload with no message. **Direction** and **Tags** are optional.
 4. If the file plays locally but still fails to upload, try a different browser or check your internet connection stability.
 
 ---
@@ -201,7 +202,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Cause:** The changes were not saved before navigating away.
 
 **Solution:**
-1. After customising the dashboard, confirm you clicked **Save Changes** before navigating away. Closing the modal any other way discards your selection.
+1. After customising the dashboard, confirm you selected **Save Changes** before navigating away. Closing the modal any other way discards your selection.
 2. Dashboard preferences are stored against your user profile, not in your browser, so they follow you across devices and browsers. Clearing browser data does not reset them.
 3. If your saved layout still does not appear after signing in again, contact support.
 
@@ -304,7 +305,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 
 ---
 
-**Problem:** **New Smart Search** is greyed out and cannot be clicked.
+**Problem:** **New Smart Search** is greyed out and cannot be selected.
 
 **Cause:** Your organisation has reached the number of Smart Searches its plan allows. Most plans include five. No message explains this on the page.
 
@@ -341,18 +342,18 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 **Solution:**
 1. Check that your browser has permission to play audio. In Chrome or Edge, look for the speaker or lock icon in the address bar and confirm audio is not blocked for the Vela site.
 2. Check your system audio output: ensure the correct device is selected and the volume is not muted.
-3. If the issue only affects one specific call, the original file may be corrupted. Try playing a different call to determine whether the problem is platform-wide or specific to that file.
+3. If the issue only affects one specific call, the original file may be corrupted. Try playing a different call to determine whether the problem affects every call or only that file.
 4. Try a different supported browser to rule out a browser-specific issue.
-5. If no audio plays on any call, and everyone at your organisation is affected, ask your IT department to confirm that `*.amazonaws.com` is reachable. Vela streams recordings from Amazon S3, so a firewall that blocks it leaves the rest of the platform working while audio fails.
+5. If no audio plays on any call, and everyone at your organisation is affected, ask your IT department to confirm that `*.amazonaws.com` is reachable. Vela streams recordings from Amazon S3, so a firewall that blocks it leaves the rest of Vela working while audio fails.
 
 ---
 
-**Problem:** Clicking a timestamp in the transcript does not jump to the correct point in the audio.
+**Problem:** Selecting a timestamp in the transcript does not jump to the correct point in the audio.
 
-**Cause:** The audio file had not finished loading when the timestamp was clicked, or the page did not render correctly.
+**Cause:** The audio file had not finished loading when the timestamp was selected, or the page did not render correctly.
 
 **Solution:**
-1. Wait until the audio has fully loaded before clicking timestamps.
+1. Wait until the audio has fully loaded before selecting timestamps.
 2. Refresh the page and try again.
 3. If the problem persists across page refreshes, try a different supported browser.
 
@@ -363,26 +364,26 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 **Cause:** The original recording was captured at a low sample rate or bitrate, or there was significant background noise in the source call.
 
 **Solution:**
-This is a characteristic of the source recording and cannot be improved within the platform. Improving the quality of your call recordings at source produces clearer playback and more accurate transcription.
+This is a characteristic of the source recording, so Vela cannot improve on it. Improving the quality of your call recordings at source produces clearer playback and more accurate transcription.
 
 ---
 
 ## Browser and Performance Issues
 
-**Problem:** The platform does not load or displays a blank screen.
+**Problem:** Vela does not load, or displays a blank screen.
 
-**Cause:** JavaScript may be disabled, or a browser extension (such as an ad blocker or script blocker) may be preventing the platform from loading.
+**Cause:** JavaScript may be disabled, or a browser extension (such as an ad blocker or script blocker) may be preventing Vela from loading.
 
 **Solution:**
 1. Confirm that JavaScript is enabled in your browser settings.
-2. Disable browser extensions one at a time to identify whether any are blocking the platform. Aggressive ad blockers and script blockers are the most common culprits.
+2. Disable browser extensions one at a time to identify whether any are blocking Vela. Aggressive ad blockers and script blockers are the most common culprits.
 3. Clear browser cache and cookies, then reload.
 4. Try a different supported browser (Chrome, Edge, Firefox, or Safari).
-5. If the problem affects everyone at your organisation simultaneously, it may be a network or firewall issue. Contact your IT department to confirm that `*.botlhale.ai`, `*.botlhale.xyz`, and `*.amazonaws.com` are all reachable on your network. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so a firewall that blocks it leaves the platform loading while audio playback and template downloads fail.
+5. If the problem affects everyone at your organisation simultaneously, it may be a network or firewall issue. Contact your IT department to confirm that `*.botlhale.ai`, `*.botlhale.xyz`, and `*.amazonaws.com` are all reachable on your network. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so a firewall that blocks it leaves Vela loading while audio playback and template downloads fail.
 
 ---
 
-**Problem:** The platform runs slowly or charts take a long time to load.
+**Problem:** Vela runs slowly, or charts take a long time to load.
 
 **Cause:** Too many browser tabs are open, the device does not meet recommended specifications, or the selected date range is returning a very large dataset.
 
@@ -397,7 +398,7 @@ This is a characteristic of the source recording and cannot be improved within t
 
 **Problem:** Features behave unexpectedly or parts of a page do not render correctly.
 
-**Cause:** The browser version may be outdated, or a browser extension may be interfering with the platform.
+**Cause:** The browser version may be outdated, or a browser extension may be interfering with Vela.
 
 **Solution:**
 1. Update your browser to the latest stable version.

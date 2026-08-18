@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 title: Notifications
+description: "Find alerts, comments, and finished reports, and control what reaches you."
 type: explanation
 draft: true
 ---

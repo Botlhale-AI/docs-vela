@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: Chats
+description: "Upload chat transcripts as CSV or JSON and have Vela analyse them like calls."
 type: explanation
 draft: true
 ---

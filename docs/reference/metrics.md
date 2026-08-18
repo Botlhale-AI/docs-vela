@@ -1,6 +1,7 @@
 ---
 id: metrics
 title: Metrics
+description: "Look up what each Dashboard and report metric measures."
 sidebar_position: 2
 type: reference
 ---
@@ -8,13 +9,13 @@ type: reference
 # Metrics
 The metrics available on your Dashboard and in Reports. Use this page to look up what a metric means. To build a dashboard or a report, see [Monitor Agent Performance](../features/monitor-agent-performance.md) and [Generate Reports](../features/custom-reporting.md).
 
-The sections below are the groups Vela itself uses, so a group heading here matches the heading you see when you click **Customise** on the Dashboard or **Add New Metric** in a report. The Dashboard and the report form order the groups differently, so use the headings rather than the position.
+The sections below are the groups Vela itself uses, so a group heading here matches the heading you see when you select **Customise** on the Dashboard or **Add New Metric** in a report. The Dashboard and the report form order the groups differently, so use the headings rather than the position.
 
 :::note Availability varies
 The exact metrics available to you depend on your organisation's configuration and your plan. The names below are those Vela uses. If a metric does not appear in your list, it may not apply to your setup.
 :::
 
-{/* UNVERIFIED: metricGroups.js matches several metric families this page does not list: interaction distribution by agent compliance score, by agent quality score, and the compliance and quality variants of the score boundaries metric; reviewed team compliance and reviewed team quality scores distribution; and a standalone alerts distribution. Metric names are database records rather than code, so the exact display names could not be confirmed with the platform down. Open Customise on the Dashboard and add any that exist. */}
+{/* UNVERIFIED: the pattern list in dashboard/metricGroups.js is a whitelist — getGroupedDashboardMetrics drops any metric matching no pattern — so it bounds the families that can appear in Customise. Diffing it against this page leaves seven patterns with no documented metric: reviewed team compliance scores distribution; reviewed team quality scores distribution; interaction distribution by agent compliance score; by agent quality score; by agent quality score boundaries; by agent compliance score boundaries; and a standalone alerts distribution (this page has Interaction Distribution by Number of Alerts only). A pattern is not proof a metric record exists, and display names come from database records rather than code, so confirm against Customise on the Dashboard before adding rows. Re-run the diff after any metricGroups.js change. */}
 
 ---
 

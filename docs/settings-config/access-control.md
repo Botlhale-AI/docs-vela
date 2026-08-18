@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Settings Access by Role
+description: "Which Settings tabs you see, and what you can change on them."
 type: reference
 ---
 
@@ -41,7 +42,7 @@ Agents sign in to the separate Agent Portal, not the main platform. Its Settings
 
 ### 1. Administrator
 
-Administrators hold every administrative right in the platform, limited to what their access level covers.
+Administrators hold every administrative right in Vela, limited to what their access level covers.
 
 * **Users:** Add, edit, and deactivate accounts, including other administrators. The list only shows accounts within your access level, and the Access options you can grant stop at your own level. An administrator with departmental access cannot create an organisational user.
 * **Structure:** Create and edit departments and teams. Creating a department requires organisational access. Creating a team requires organisational or departmental access.
@@ -49,7 +50,7 @@ Administrators hold every administrative right in the platform, limited to what 
 * **Redaction:** Reveal masked information on any interaction through **Review Redacted Info**, without raising a request.
 * **Requests:** Approve or decline other users' requests through the **Requests** tab. See [Access Requests](./access-requests-audits.md).
 
-Removing an account is a deactivation, not a deletion. The control is a bin icon and the prompt reads **Delete User**, but the record stays in place: the user can no longer sign in, and an administrator brings them back with **Show Deleted Users** and **Reactivate**. See [User and Team Management](./user-management.md).
+Removing an account is a deactivation, not a deletion. The control is a bin icon and the prompt reads **Delete User**, but the record stays in place. The user can no longer sign in, and an administrator brings them back with **Show Deleted Users** and **Reactivate**. See [User and Team Management](./user-management.md).
 
 ### 2. User
 

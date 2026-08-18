@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 title: API
+description: "An overview of the Vela API and what you can use it for."
 type: explanation
 draft: true
 ---

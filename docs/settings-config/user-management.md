@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: User and Team Management
+description: "Manage the people who sign in to Vela, and the departments and teams they sit in."
 type: reference
 ---
 
@@ -25,7 +26,7 @@ What you see is also capped by your own access level. Organisational access show
   * **Team**, for organisational or departmental access. Teams are listed as the team name followed by its department.
   * **Role**, `admin` or `user`. These are mutually exclusive, so selecting one clears the other.
 
-  Click **Apply** to filter, or **Clear All Fields** to reset.
+  Select **Apply** to filter, or **Clear All Fields** to reset.
 * **Show Deleted Users (3):** Adds deactivated accounts to the list, shown faded. The button then reads **Hide Deleted Users**.
 
 If nothing matches, the table reads `No results found.`
@@ -51,18 +52,18 @@ If nothing matches, the table reads `No results found.`
 
 ### C. Adding a User
 
-Click **Add User** to open the modal. It is available to administrators only.
+Select **Add User** to open the modal. It is available to administrators only.
 
 | Field | Notes |
 | :--- | :--- |
 | **Name** | The user's full name. |
-| **Email Address** | Must be unique across the platform. |
+| **Email Address** | Must be unique across Vela, rather than within your organisation alone. |
 | **Access** | **Organisational**, **Departmental**, or **Team**. |
 | **Department** | Shown when Access is Departmental or Team. |
 | **Team** | Shown when Access is Team. Only teams in the selected department are listed. |
 | **Role** | **Admin** or **User**. |
 
-Every field is required, so the modal reports an error if one is missing. Click **Add User** to finish, or **Close** to abandon the form. Vela emails the new user an invitation containing a generated password and a link to confirm their address. The email recommends they change the password after signing in.
+Every field is required, so the modal reports an error if one is missing. Select **Add User** to finish, or **Close** to abandon the form. Vela emails the new user an invitation containing a generated password and a link to confirm their address. The email recommends they change the password after signing in.
 
 :::note You cannot grant more than you hold
 The Access options offered are limited to your own access level. An administrator with departmental access can create departmental and team users, but not organisational ones. An administrator with team access can only create team users.
@@ -74,11 +75,11 @@ The Add User modal has no **View Redactions** field. New users start without it,
 
 ### D. Editing a User
 
-Click the pencil icon in the **Actions** column. The modal is titled **Edit** followed by the user's name, and holds **Access**, **Department**, **Team**, **Role**, and **View Redactions**. Click **Apply** to save.
+Select the pencil icon in the **Actions** column. The modal is titled **Edit** followed by the user's name, and holds **Access**, **Department**, **Team**, **Role**, and **View Redactions**. Select **Apply** to save.
 
 Changing the department clears the team selection, because the team list is filtered to the department you choose.
 
-To change a name or email address, contact **support@botlhale.ai**. Those two fields are set outside the platform.
+To change a name or email address, contact **support@botlhale.ai**. Those two fields are set outside Vela.
 
 ### E. Deleting and Reactivating
 
@@ -86,9 +87,9 @@ To change a name or email address, contact **support@botlhale.ai**. Those two fi
 
 {/* The email column is masked, to keep real addresses out of the documentation under POPIA. The bars show where an address sits without disclosing it. */}
 
-Click the bin icon in the **Actions** column and confirm on the **Delete User** prompt. This deactivates the account rather than erasing it, so the user can no longer sign in but their record stays in place.
+Select the bin icon in the **Actions** column and confirm on the **Delete User** prompt. This deactivates the account rather than erasing it, so the user can no longer sign in but their record stays in place.
 
-To bring an account back, click **Show Deleted Users**, find the row, and click **Reactivate**.
+To bring an account back, select **Show Deleted Users**, find the row, and select **Reactivate**.
 
 ---
 
@@ -130,7 +131,7 @@ Next to each user is a menu with **View More**, which opens their name, email, r
 
 ### B. Creating a Department
 
-Click **Create** and choose **Department**. Creating departments requires organisational access.
+Select **Create** and choose **Department**. Creating departments requires organisational access.
 
 | Field | Notes |
 | :--- | :--- |
@@ -139,17 +140,17 @@ Click **Create** and choose **Department**. Creating departments requires organi
 | **Select a Team** | Shown when **Create New Team** is cleared. Moves an existing team into the new department. |
 | **Colour** | Fourteen swatches. Each department must have a colour no other department is using. |
 
-Click **Add Department** to finish. Every department needs at least one team, so supply a new one or move an existing one across.
+Select **Add Department** to finish. Every department needs at least one team, so supply a new one or move an existing one across.
 
 ### C. Creating a Team
 
-Click **Create** and choose **Team**. Creating teams requires organisational or departmental access.
+Select **Create** and choose **Team**. Creating teams requires organisational or departmental access.
 
-Enter the **Team Name**, choose the **Department Name** it belongs to, and click **Create team**.
+Enter the **Team Name**, choose the **Department Name** it belongs to, and select **Create team**.
 
 ### D. Editing a Department or Team
 
-Open the menu next to the department or team and click **Edit**.
+Open the menu next to the department or team and select **Edit**.
 
 * **Edit Department:** Change the name or the colour.
 * **Edit Team:** Change the name, or move the team to a different department. Moving a team takes all of its users and agents with it into the new department.
@@ -158,7 +159,7 @@ Open the menu next to the department or team and click **Edit**.
 
 ## 4. Importing Agents in Bulk
 
-Agents are separate from users. They have their interactions analysed but do not sign in to the platform, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
+Agents are separate from users. They have their interactions analysed but do not sign in to Vela, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
 
 For the columns, the template, and how unmatched departments and teams are handled, see [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv). For the distinction between an agent and a user, see the [Glossary](../reference/glossary.md#user).
 

@@ -2,12 +2,13 @@
 id: security-compliance
 sidebar_position: 5
 title: Security and Compliance
+description: "Hosting, encryption, POPIA and GDPR compliance, and how your data is handled."
 type: reference
 ---
 
 # Security and Compliance
 
-Vela runs on AWS, encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside the platform.
+Vela runs on AWS, encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside Vela.
 
 {/*
 Keep this comment below the intro paragraph. Docusaurus takes the category card
@@ -34,7 +35,7 @@ These are the controls your own administrators configure and use.
 
 ### Controlling What People See
 
-Access is governed by two settings on each account, a **role** and an **access level**. Together they decide which parts of the platform a person reaches and how much of the organisation's data they see. See [Settings Access by Role](./settings-config/access-control.md).
+Access is governed by two settings on each account, a **role** and an **access level**. Together they decide which parts of Vela a person reaches and how much of the organisation's data they see. See [Settings Access by Role](./settings-config/access-control.md).
 
 Deactivating an account withdraws access while keeping the record. See [User and Team Management](./settings-config/user-management.md#e-deleting-and-reactivating).
 
