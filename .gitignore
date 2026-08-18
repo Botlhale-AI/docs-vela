@@ -8,6 +8,24 @@ yarn-error.log*
 build/
 .docusaurus/
 
+# Build output that was previously committed to the repository root. `docusaurus
+# build` writes the rendered site into build/, but an earlier deploy left a copy
+# at the root: rendered .html for every route, the content-hashed assets/ bundle,
+# the generated feeds, and sitemap.xml. They went stale silently — the last set
+# was Docusaurus v3.1.1 output advertising routes that no longer exist — so they
+# are ignored here rather than tracked.
+#
+# Note img/ is NOT build output. The documentation screenshots live in
+# img/screenshots/ and are referenced by relative path from the .md files.
+/*.html
+/blog/**/*.html
+/markdown-page/
+/assets/
+/sitemap.xml
+/blog/atom.xml
+/blog/rss.xml
+/favicon.ico
+
 # Environment variables
 .env
 .env.local

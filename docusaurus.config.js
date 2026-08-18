@@ -30,10 +30,11 @@ const config = {
           // editUrl: '/',
         },
 
-        blog: {
-          showReadingTime: true,
-          // editUrl: '/',
-        },
+        // The blog is off. It only ever held the four sample posts that ship
+        // with create-docusaurus, it was never linked from the navbar or the
+        // footer, and nothing in src/ referenced it. Set this back to
+        // `{ showReadingTime: true }` and add a blog/ directory to turn it on.
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.module.css'),
         },
@@ -55,6 +56,9 @@ const config = {
         indexPages: true,
         docsDir: 'docs',
         indexDocs: true,
+        // There is no blog to index. Leaving this on makes the build warn that
+        // blogDir does not exist. See the `blog: false` note in the preset.
+        indexBlog: false,
       },
     ],
   ],
