@@ -302,7 +302,7 @@ Both editing and deleting reach further than the list, so treat them as organisa
 | **Delete Tag** | The tag is stripped from every interaction carrying it, in one go. There is no undo, and no warning that says how many are affected |
 | **Edit Tag** | The list shows the new name, but interactions keep the name they were tagged with. The filter offers only the new name, which now matches nothing, so those interactions can no longer be found by tag |
 
-Renaming therefore loses you the interactions rather than relabelling them. The **Tags** filter builds its options from the organisation's list, so after a rename it offers the new name and matches nothing, while the old name it would match is no longer on the list to select.
+Renaming therefore loses you the interactions rather than relabelling them. The **Tags** filter builds its options from the organisation's list. After a rename it offers the new name, which matches nothing, and the old name that would match is no longer there to select.
 
 To change a tag's wording safely, create the tag you want, apply it to the interactions concerned, and delete the old one once nothing depends on it.
 
