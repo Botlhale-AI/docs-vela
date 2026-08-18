@@ -109,9 +109,7 @@ Editing and deleting behave differently, and the difference matters:
 
 | | What happens to interactions already scored |
 | :--- | :--- |
-| **Deleting a question** | Nothing. They keep the question and its outcome, and their scores do not change |
-
-{/* UNVERIFIED: the stored score on the interaction is not recomputed when a question is deleted, so the screen figure holds. But the export path in interactions/calls/[id]/call.js (around line 517) looks each score's question up in a map and returns early with query: null when it is gone, skipping the compliance and quality denominator accumulation below it. An export taken after a deletion may therefore disagree with the compliance/quality split shown on screen. Confirm by exporting one interaction before and after deleting a compliance question. */}
+| **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so interactions keep its outcome and their scores do not change, in the interface and in exports alike |
 | **Editing its weight, Auto-Fail, Compliance, or Expected Outcome** | They are scored again from the current settings, including their **Initial** figures |
 
 :::warning Editing a weight changes past scores

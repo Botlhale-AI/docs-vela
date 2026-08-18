@@ -126,7 +126,7 @@ Automatic masking of sensitive information in transcripts. Administrators choose
 
 Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
 
-{/* UNVERIFIED: NRP appears in Settings as a bare abbreviation and is not expanded anywhere in the product, so it is listed here as shown. Someone who knows what it covers should add a short gloss. */}
+**NRP** covers nationality, religion, and political group. Settings shows the abbreviation on its own, so it is the one entity type whose name does not say what it masks.
 
 The masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
 

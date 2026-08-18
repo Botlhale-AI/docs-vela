@@ -300,11 +300,11 @@ Both editing and deleting reach further than the list, so treat them as organisa
 | Action | What happens to interactions already tagged |
 | :--- | :--- |
 | **Delete Tag** | The tag is stripped from every interaction carrying it, in one go. There is no undo, and no warning that says how many are affected |
-| **Edit Tag** | The list shows the new name, but interactions keep the name they were tagged with. Renaming does not carry the tag across |
+| **Edit Tag** | The list shows the new name, but interactions keep the name they were tagged with. The filter offers only the new name, which now matches nothing, so those interactions can no longer be found by tag |
 
-Because a rename leaves the old name on the interactions and the new name on the list, the two stop agreeing. If a tag's wording is wrong, the safer route is to create the tag you want, apply it to the interactions concerned, and delete the old one once nothing depends on it.
+Renaming therefore loses you the interactions rather than relabelling them. The **Tags** filter builds its options from the organisation's list, so after a rename it offers the new name and matches nothing, while the old name it would match is no longer on the list to select.
 
-{/* UNVERIFIED: editTag in interactions/calls/calls.js updates org.tags only, with no matching Call.updateMany, while deleteTag does pull the tag from every call. So a rename provably leaves the old string on the interactions. What that then does to the Tags filter and to tag metrics was not traced. Confirm by renaming a tag on a populated organisation and filtering by both the old and the new name. */}
+To change a tag's wording safely, create the tag you want, apply it to the interactions concerned, and delete the old one once nothing depends on it.
 
 **To manage the list**, select **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
 
