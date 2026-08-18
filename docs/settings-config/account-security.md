@@ -6,7 +6,7 @@ type: reference
 ---
 
 # Account and Security
-The **Account** tab shows your personal profile information, and the **Security** tab lets you change your password.
+The **Account** tab shows your personal profile information, and the **Security** tab lets you change your password. Your display mode is set from the top navigation bar rather than from Settings, and it is covered here too.
 
 :::info ACCESS
 The Account tab is visible to **all users**, regardless of role or scope. The Security tab is visible to all users **except** those signing in through SSO.
@@ -77,6 +77,22 @@ Your new password must meet all of these:
 * At least **one letter** (a-z, A-Z).
 * At least **one number** (0-9).
 * At least **one special character** (for example `@`, `#`, or `!`).
+
+---
+
+## 3. Choose Light or Dark Mode
+
+Vela opens in **Dark Mode**. To change it, use the switch at the right of the top navigation bar, marked **1** below. A message confirms the change each time you use it.
+
+The switch shows the mode it takes you to rather than the one you are in: a moon while you are in Light Mode, a sun while you are in Dark Mode.
+
+![The Dashboard in Dark Mode, with the display switch marked 1 at the right of the top navigation bar, showing a sun](../../img/screenshots/settings/dark_mode.png)
+
+![The same Dashboard in Light Mode, with the display switch marked 1 in the same place, showing a moon](../../img/screenshots/settings/light_mode.png)
+
+Your choice is stored against your account rather than in the browser, so it follows you to any machine you sign in on.
+
+{/* Both captures are deliberate. This is the one section that needs a Light Mode screenshot, because the subject is the difference between the two modes. Every other capture in the documentation is Dark Mode. See STYLE_GUIDE.md section 8. */}
 
 ---
 
