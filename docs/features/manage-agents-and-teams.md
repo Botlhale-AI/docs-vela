@@ -104,6 +104,8 @@ The **Voice Profile Status** column shows where each agent stands, and carries t
 
 The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers on its own.
 
+Where a sample exists, the column shows a toggle rather than a word. **Export** names the same two states in writing, as **Active** and **Inactive**, so use the export when you want the status of a whole list at once rather than reading toggles row by row.
+
 ---
 
 ## 5. Move Agents Between Teams
