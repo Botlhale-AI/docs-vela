@@ -86,6 +86,10 @@ The bands that result are:
 
 Vela keeps the two in order as you type, so the Lower Bound always stays at or below the Upper Bound.
 
+The page states the three ranges above the fields, so you can check the effect of a change without working it out.
+
+![The Agent Score Boundaries section, with the three band ranges written above the Lower Bound and Upper Bound fields](../../img/screenshots/settings/score-boundaries.png)
+
 For where these bands are applied, see [Metrics](../reference/metrics.md).
 
 ---
@@ -101,6 +105,10 @@ Select **Share agent performance reports** to send agents their own performance 
 | **Monthly** | Time, and Day of Month (1 to 28, or `Last`). |
 
 The default is weekly at `09:00` on a Monday.
+
+![The Agent Performance Sharing section, with Share Agent Performance Reports selected and Monthly chosen, showing its Time and Day Of Month fields](../../img/screenshots/settings/performance-sharing.png)
+
+Selecting an interval opens the fields belonging to it, so only the one you chose asks for a time.
 
 ---
 
@@ -142,6 +150,10 @@ The package name is shown at the bottom of the page. Select **show package detai
 | **Smart Search Limit** | How many Smart Searches your organisation can have Active at once. Inactive searches are kept without using a place. |
 | **Agent Scorecard Limit** | The number of Agent Scorecards your organisation can hold. |
 | **Pain Points Limit** | The number of [pain points](../reference/glossary.md#pain-point) your organisation can hold. |
+
+![The Current Package table with its five rows, the hide package details link, and the Save button below it](../../img/screenshots/settings/current_package.png)
+
+The label beside the heading names the package type, for example **Custom**. **hide package details** closes the table again.
 
 Your edition also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
 
