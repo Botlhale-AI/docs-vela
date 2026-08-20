@@ -31,7 +31,7 @@ You need:
 1. Select **Smart Detector** in the left sidebar, then **Agents Scorecard**.
 2. Select the **Create** tab.
 
-The page has four tabs. **View** lists the questions you already have, **Create** adds one, **Results** shows how interactions have scored against them, and **Examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
+The page has four tabs. **View** lists the questions you already have, **Create** adds one, **Results** shows how your questions have performed across interactions, and **View examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
 
 ![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_detector/scorecard-list.png)
 
@@ -101,7 +101,55 @@ For questions the AI cannot judge from the transcript alone, set **Search Type**
 
 Where the answer depends on your own procedure rather than general knowledge, turn on **Apply Knowledge Base** instead, and the AI judges the question against a document you have uploaded. See [Build Your Knowledge Base](./knowledge-base-guide.md).
 
-## 4. Edit or Delete a Question
+## 4. Read the Results
+
+The **Results** tab shows how your questions have performed across interactions, rather than how one interaction scored. Use it to find the questions that are not working.
+
+Each row is numbered, and holds:
+
+| Column | What it shows |
+| :--- | :--- |
+| **Question** | The question as written |
+| **Category** | The grouping it belongs to |
+| **Scope** | Which part of the organisation it covers |
+| **Weight** | How much it contributes, relative to the others |
+| **Auto-Fail** | Whether failing it fails the whole interaction, as **Active** or **Inactive** |
+| **Passed** | How many interactions passed it, with the percentage beside the count |
+| **Failed** | The same, for interactions that failed it |
+| **N/A** | How many it did not apply to. These are excluded from the score rather than counted as failures |
+| **Calls Analysed** | How many interactions it has run against |
+| **Date Created** | When the question was added |
+
+Reading **Passed**, **Failed**, and **N/A** together matters more than any one of them. A question with a high **N/A** share is not failing. It does not apply to most conversations, which is what **Always Applicable** set to **No** is for.
+
+**What to look for.** A question failed by almost everyone is usually worded in a way the AI cannot answer from a transcript, rather than a behaviour your whole team is missing. A question passed by everyone measures nothing. Both are worth rewording before you read anything into the scores they produce.
+
+A low **Calls Analysed** count against an old question points at scope or channel instead: the question may not be reaching the interactions you expected. See [Check Your Work](#check-your-work).
+
+### The Controls Above the Table
+
+![The controls above the Results table, with View By, Search, Export, Sort By, Filter, and Filter Calls, beside the View, Create, Results, and View examples tabs](../img/screenshots/agents_scorecard/results.png)
+
+
+| Control | What it does |
+| :--- | :--- |
+| **View By** | Sets how much of the organisation the figures cover, for example **Entire Organisation** |
+| The date range | Bounds the interactions counted. Select the pencil to change it |
+| **Search** | Narrows the list by the wording of a question |
+| **Sort By** | Orders the list on a column you choose |
+| **Filter** | Narrows which **questions** are listed |
+| **Filter Calls** | Narrows which **interactions** the figures are counted from |
+| **Export** | Downloads the table |
+
+**Filter** and **Filter Calls** do different jobs, and their names do little to say which is which. Filter changes the rows you see. Filter Calls leaves the rows alone and changes the numbers in them, because it changes which interactions were counted.
+
+Under **Filter**, narrow by category, weight, the passed, failed, and N/A counts, scope, direction, search type, Auto-Fail, and search status as **Active** or **Inactive**, or by the date a question was created. Select **Apply** to use it. **Clear dates** resets the date range on its own, and clearing the filter confirms with **Filters cleared successfully**.
+
+A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
+
+---
+
+## 5. Edit or Delete a Question
 
 Open a question from the **View** tab to change its wording, category, weight, scope, or settings, or to delete it.
 

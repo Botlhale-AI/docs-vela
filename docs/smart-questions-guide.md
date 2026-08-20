@@ -145,10 +145,16 @@ See [Knowledge Base](./knowledge-base-guide.md) for how to upload documents.
 ## Reviewing Answers
 
 1. Go to **Smart Detector → Smart Questions**.
-2. Select the **Results** tab. Each question shows how many interactions were answered **Yes**, **No**, or **N/A**, as a count and a percentage, alongside its **Scope**, **Calls Analysed**, **Direction**, **Search Type**, and whether it uses a Knowledge Base document.
+2. Select the **Results** tab. Each question shows how many interactions were answered **Yes**, **No**, or **N/A**, as a count and a percentage, alongside its **Scope**, whether **Notifications** are on for it, **Calls Analysed**, **Direction**, **Search Type**, and whether it uses a Knowledge Base document.
 3. Select a count to open the matching interactions, then open any interaction to read the full transcript and AI analysis in context.
 
 ![The Smart Questions Results tab, with the Yes, No, and N/A counts for each question](../img/screenshots/smart_questions/results.png)
+
+![The full Results table, with the Scope, Notifications, Calls Analysed, Direction, and Search Type columns beside the counts](../img/screenshots/smart_questions/results_3.png)
+
+**View By** sets how much of the organisation the figures cover, and the date range bounds the interactions counted. **Search**, **Sort By**, and **Filter** narrow the list of questions.
+
+{/* results_3.png has the Support entry painted out of the sidebar. It is internal-only, so a customer never sees it. See STYLE_GUIDE.md section 8. */}
 
 Because the answers do not feed into scoring, they are best read as a body of evidence across many interactions rather than a judgement on any single one. Patterns in the answers are usually more informative than individual results.
 
