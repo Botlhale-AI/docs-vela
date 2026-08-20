@@ -129,12 +129,18 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 | :--- | :--- | :--- |
 | **Summary** | A recap of what happened and how it ended. | Whether the agent resolved the customer's query, and whether the outcome was stated clearly before the conversation closed. |
 | **Keywords** | Tracked terms that came up. | Whether your mandatory phrases were said, and whether products and policies were named correctly. |
-| **Alerts** | Which Smart Searches this interaction matched, with links to the moment and a **Resolve** control on each row. | Whether the flagged moment holds up once you read it in context. If a search keeps matching interactions it should not, tell your administrator so its phrases can be tightened. |
+| **Alerts** | Which Smart Searches this interaction matched, with the AI's reason for each match, links to the moment, and a **Resolve** control on each row. | Whether the flagged moment holds up once you read it in context. If a search keeps matching interactions it should not, tell your administrator so its phrases can be tightened. |
 | **Intents** | What the customer came for, such as sales, a complaint, or support. | Whether the agent handled it as that kind of conversation, for example following the complaints process when the intent is a complaint. |
 | **Sentiment** | The positive, neutral, and negative split for the conversation, shown for the agent and the customer separately. | A high negative share on the customer's side, and whether the agent's own tone held steady. Use the transcript timestamps to find where it turned. |
 | **Scorecard** | How Vela scored the interaction against your Agent Scorecard, question by question. | Any item you would have judged differently. Hover over the information icon beside a score to read why Vela answered as it did. This is the tab where you override an item, in [Score and Provide Feedback](#3-score-and-provide-feedback) below. |
-| **Pain Points** | Signs of customer frustration. | Whether each frustration was acknowledged when it was raised, rather than left unanswered. |
+| **Pain Points** | Signs of customer frustration, each with the AI's justification for flagging it. | Whether each frustration was acknowledged when it was raised, rather than left unanswered. Read the justification where a flag looks wrong. |
 | **Smart Questions** | The answers to any questions your organisation asks of every interaction for reporting. These carry no score. | Answers that change how you would coach, even though they do not move the score. The information icon here shows Vela's reasoning too, and the download icon saves the answers as CSV (**Download Smart Questions as CSV**). This tab appears on plans that include [Smart Questions](../smart-questions-guide.md). |
+
+:::tip Vela explains itself on four of these tabs
+**Scorecard**, **Smart Questions**, **Alerts**, and **Pain Points** each record why the AI answered, matched, or flagged as it did. Read that explanation before you act on anything that looks wrong: it usually separates a one-off misreading from a question or search that needs rewording.
+
+On **Scorecard** and **Smart Questions** the explanation sits behind the information icon, and it goes from the row once you override the answer, because it explained the AI's answer rather than yours.
+:::
 
 ![The Scorecard tab, with each question, its outcome, and the information icon showing Vela's reasoning](../../img/screenshots/calls/detailed-scorecard.png)
 
