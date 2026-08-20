@@ -152,6 +152,27 @@ See [Knowledge Base](./knowledge-base-guide.md) for how to upload documents.
 
 Because the answers do not feed into scoring, they are best read as a body of evidence across many interactions rather than a judgement on any single one. Patterns in the answers are usually more informative than individual results.
 
+### Reading the Answers on One Interaction
+
+The **Results** tab counts answers across interactions. To see why a single conversation was answered as it was, open the interaction and select the **Smart Questions** tab in the **Smart Detector** panel.
+
+Each row holds the question, its answer, and two controls:
+
+| Control | What it does |
+| :--- | :--- |
+| The **information** icon | Shows the AI's reasoning for that answer, in its own words |
+| The **comment** icon | Opens the **Comments** panel with the question and its answer already written in |
+
+Read the reasoning before you act on an answer that looks wrong. It usually shows whether the AI misread the conversation or the question itself is ambiguous, and those need different fixes: the first is a one-off, the second means rewording the question.
+
+Select the **download** icon to take the answers for that interaction as a CSV.
+
+:::note Correcting an answer removes its reasoning
+You can correct an answer where the AI got it wrong. Doing so takes the information icon off that row, because the reasoning explained the AI's answer rather than yours. The CSV leaves the reason column empty for corrected answers for the same reason.
+
+Correcting an answer changes nothing about anyone's score. Smart Questions are never scored, so a correction here records what happened rather than adjusting a figure.
+:::
+
 ---
 
 ## Check Your Work
