@@ -89,6 +89,12 @@ Not every column is shown by default. Select the settings icon next to **Upload*
 
 Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
 
+:::note The list hides unsupported calls by default
+A call whose language Vela could not transcribe is marked unsupported, and the Interactions list leaves those out unless you turn **Show unsupported calls** on. The toggle sits at the top left of the list.
+
+This is the first thing to check when a call you uploaded is not where you expect it.
+:::
+
 Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
 :::
 

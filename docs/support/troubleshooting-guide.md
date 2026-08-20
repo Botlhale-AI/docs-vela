@@ -147,7 +147,8 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Solution:**
 1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
-3. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
+3. Turn **Show unsupported calls** on, at the top left of the list. A call whose language Vela could not transcribe is marked unsupported and left out of the list by default, so it is present but hidden.
+4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
 
 ---
 
