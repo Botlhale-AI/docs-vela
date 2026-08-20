@@ -247,6 +247,13 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
     * **Tag the agent:** type `@` and pick them from the list. Without the tag the comment stays visible to team leads only.
 3.  The agent can read and respond to your comments in their Agent Portal.
 4.  Select **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you select **Resolve** on it.
+5.  Select **Reply** on a comment to answer in the same thread, rather than starting a new one. The agent's replies appear here too.
+6.  Select **Like** to acknowledge a comment without writing one. The control then reads **1 Like**, then **2 Likes**, and so on.
+
+:::warning You cannot tag an agent in a reply
+**@** mentions work in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
+
+This matters because tagging is what notifies the agent. Replying to their response does not reach them, however clearly it answers their question. Where a reply carries something the agent has to see, post it as a new comment and tag them there.
 
 :::warning A posted comment is final
 Comments cannot be edited or deleted once sent. Read yours back before selecting **Send**, particularly where you have tagged the agent. The delete icon beside the reply box clears what you have typed, not a comment already posted.
