@@ -38,6 +38,12 @@ Requests that users have submitted and that have **not yet been processed**.
 
 This is your working queue. Review each request and either **Approve** or **Decline** it.
 
+Each request is a card reading **Request for Access to Redacted Information**, with how long ago it arrived. It shows **Requested By**, the **Call ID** the request is for, a **Status** of **pending**, and the **Comment** the user wrote when asking.
+
+![The Pending sub-tab of Requests, with one request card showing Requested By, Call ID, Status, and Comment above the Approve and Decline buttons](../../img/screenshots/settings/requests-pending.png)
+
+Read the **Comment** before deciding. It is the only place the user says why they need the unmasked version, and it is what you are approving against.
+
 ### B. Completed Requests
 
 Requests you have already processed, kept as a record of each one. Each request is a card rather than a table row, with the fields below down the left of it.
