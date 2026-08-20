@@ -21,9 +21,9 @@ A: Vela is designed for call centre teams, meaning agents, team leads, and admin
 A: Your organisation's edition decides which features appear. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which edition you have.
 
 **Q: What languages does Vela support for transcription?**  
-A: Vela supports 11 South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The Vela interface is in English.
+A: Vela supports the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The Vela interface is in English.
 
-{/* UNVERIFIED: the 11-name list matches the `languages` array in settings/preferences.jsx, but that array is the per-user language preference, not a declared transcription list. Backend transcription takes language codes (en-ZA, zu-ZA) and routes through a translation service rather than a fixed list. Confirm the transcription-supported set with the product team before restating it. */}
+{/* Verified with the engineering lead on 27 October 2025: Vela supports the 11 spoken official South African languages, and this list was confirmed item by item. Swahili and Kinyarwanda appear in the botlhale-apis README because that API serves products beyond Vela; they are not Vela transcription languages. Bengali, Shona, Portuguese, and Mandarin were in beta at that date and are deliberately not listed here. */}
 
 ---
 

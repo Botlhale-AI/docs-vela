@@ -48,7 +48,7 @@ flowchart LR
 Vela handles transcription, analysis, and scoring. Reviewing and reporting are yours.
 
 1. **Upload**: add calls as WAV or MP3, and chats as CSV or, in bulk, as JSON. See [Upload Your Data](../data-upload.md).
-2. **Transcribe**: calls are transcribed across all 11 official South African languages. Chats are already text.
+2. **Transcribe**: calls are transcribed across the 11 spoken official South African languages. Chats are already text.
 3. **Analyse and score**: every interaction is analysed for sentiment and scored against your [Agent Scorecard](../reference/scorecard-fields.md). Sensitive details such as ID numbers and payment information are masked at this stage, where your administrator has configured redaction. On plans that include it, [Smart Search](../smart-search-guide.md) flags the interactions that match your criteria.
 4. **Review**: open an interaction to read the transcript alongside Vela's analysis, override any score, and leave coaching feedback.
 5. **Report**: [Dashboards and Reports](../features/custom-reporting.md) turn the results into trends you can share.
@@ -65,7 +65,7 @@ Calls and chats go through the same core analysis. Both are analysed for sentime
 
 ![An interaction open in the Detailed View, with the audio player and Smart Detector analysis on the left and the Call Details panel on the right](../../img/screenshots/calls/calls-3.png)
 
-Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
+Transcription covers the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
 
 ### Coach and develop agents
 
