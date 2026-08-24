@@ -87,7 +87,7 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Quick Start Guides** | Administrator Setup · Team Lead Quick Start |
 | **Getting Data In** | Upload Your Data |
 | **Using Vela** | Review and Score Interactions · Monitor Agent Performance · Generate Reports · Manage Notifications · Manage Agents and Teams |
-| **Smart Detector** | Build an Agent Scorecard · Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms |
+| **Smart Detector** | Build an Agent Scorecard · Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms · Search by Phone Number |
 | **Understanding Vela** | How Scoring Works · How the Pieces Fit Together |
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
 | **Administration & Configuration** | Settings Access by Role · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |

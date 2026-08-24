@@ -50,6 +50,7 @@ All `metadata` fields are optional:
 - **department**: Department the call should be attributed to.
 - **direction**: Call direction: `inbound` or `outbound`.
 - **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`).
+- **contact**: The customer's phone number, as a string or a number. Vela stores it exactly as you send it, so keep the format consistent across your integration. This is what [Search by Phone Number](../number-search-guide.md) matches on, and sending it here is what makes an interaction findable by number.
 - **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
 - **interaction_id**: Your own reference for the call. It is stored as the call's filename.
 - **validate_metadata**: Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
@@ -165,6 +166,7 @@ Metadata object:
 - **department** (string): Department the chat should be attributed to.
 - **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
 - **tags** (array): Classification labels for the chat, as an array of strings.
+- **contact** (string or number): The customer's phone number, stored exactly as sent. See the note under the calls endpoint above.
 - **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
 - **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
 - **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.

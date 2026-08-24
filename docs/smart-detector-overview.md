@@ -19,8 +19,6 @@ Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords
 
 ![The Smart Detector home page, with a card for each tool above the Topics, Intents, Keywords, and Pain Points buttons](../img/screenshots/smart_detector/smart-detector-landing.png)
 
-{/* UNVERIFIED: Number Search. Deferred to the next version, so it stays named but undocumented on purpose. The card is on the Smart Detector home page, but the feature is absent from the vela codebase this documentation is verified against, so its behaviour, inputs and results are unconfirmed. Write it up when the next version confirms it, and take a screenshot then. */}
-
 ---
 
 ## The Tools
@@ -30,7 +28,7 @@ Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords
 - **Agent Scorecard**: the evaluation criteria Vela scores every interaction against.
 - **Knowledge Base**: your own policies and procedures, used as the reference point when Vela evaluates agents.
 
-The home page also has a **Number Search** card, for looking up the interactions associated with a phone number. It is not covered in this documentation yet.
+The home page also has a **Number Search** card. It gathers every interaction involving a phone number and writes a read across the whole history, which is the view to take into a call-back or a complaint. See [Search by Phone Number](./number-search-guide.md).
 
 Smart Search and Smart Questions appear in the sidebar on the plans that include them. Where one is absent, your Account Manager can tell you what it would take to add.
 

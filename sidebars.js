@@ -151,6 +151,11 @@ const sidebars = {
           id: "topics-and-terms-guide",
           label: "🏷️ Manage Smart Search Terms"
         },
+        {
+          type: "doc",
+          id: "number-search-guide",
+          label: "📞 Search by Phone Number"
+        },
       ],
     },
     {
