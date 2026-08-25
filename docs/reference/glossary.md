@@ -35,7 +35,7 @@ A user sees the node they are attached to and everything beneath it, and nothing
 
 Access level is separate from [Role](#role), which controls what actions they can take. A user with the Admin role and Team access can manage users, but only sees their own team's data.
 
-Agents do not have an access level. They only ever see their own interactions. See [Settings Access by Role](../settings-config/access-control.md).
+Agents do not have an access level. They only ever see their own interactions. See [Roles and Access Levels](../settings-config/access-control.md).
 
 ## Agent
 

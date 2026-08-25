@@ -210,7 +210,7 @@ This section covers the security controls you manage inside Vela. For how your d
 Vela can automatically mask sensitive information in transcripts, so calls and chats are redacted for everyone by default. An administrator configures which details to mask and grants **View Redactions** to the accounts that need it. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
 
 ### Access Level
-A user's access level, organisational, departmental, or team, controls what data they can see. See [Settings Access by Role](../settings-config/access-control.md).
+A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).
 
 ### Sessions
 A session expires after 24 hours, after which you sign in again. See [Security and Compliance](../security-compliance.md).

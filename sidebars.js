@@ -231,7 +231,7 @@ const sidebars = {
         {
           type: "doc",
           id: "settings-config/access-control",
-          label: "🔑 Settings Access by Role"
+          label: "🔑 Roles and Access Levels"
         },
         {
           type: "doc",

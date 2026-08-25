@@ -169,7 +169,7 @@ Select **Save** at the bottom of the page. One Save applies to the bio, the dura
 
 ## Related
 
-- [Settings Access by Role](./access-control.md): who can change these settings
+- [Roles and Access Levels](./access-control.md): who can change these settings
 - [Metrics](../reference/metrics.md): where the score boundaries are applied
 - [Access Requests](./access-requests-audits.md): the workflow behind the redaction settings
 

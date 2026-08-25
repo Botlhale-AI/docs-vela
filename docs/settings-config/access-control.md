@@ -1,11 +1,11 @@
 ---
 sidebar_position: 0
-title: Settings Access by Role
+title: Roles and Access Levels
 description: "Which Settings tabs you see, and what you can change on them."
 type: reference
 ---
 
-# Settings Access by Role
+# Roles and Access Levels
 Which Settings tabs you see, and whether you can change anything on them, depends on your **role** and your **access level**.
 
 * **Role** is `admin`, `user`, or `agent`. It decides what you are allowed to do.
@@ -28,7 +28,7 @@ The tabs are listed below in the order they appear on the page.
 | **Users** | Edit, within your access level | View, within your access level | No access | Add and edit accounts, and manage departments and teams. |
 | **Requests** | Edit | No access | No access | Approve or decline requests to view redacted information. |
 
-![The Settings tab bar as an administrator sees it: Account, Organisations, Notifications, Security, Users, and Requests](../../img/screenshots/settings/settings-tabs.png)
+![The Settings tab bar as an administrator sees it, with Account, Organisations, Notifications, Security, Users, and Requests](../../img/screenshots/settings/settings-tabs.png)
 
 Everything in the Edit and View columns applies to your own account and your own access level, not to the organisation as a whole.
 

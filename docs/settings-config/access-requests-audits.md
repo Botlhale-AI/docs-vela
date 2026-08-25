@@ -77,7 +77,7 @@ The Requests tab keeps access to redacted information controlled and recorded:
 
 - [User and Team Management](./user-management.md): grant View Redactions so a user does not need to ask
 - [Organisation Configuration](./organisation-configuration.md): choose which entities are masked
-- [Settings Access by Role](./access-control.md): why only administrators see this tab
+- [Roles and Access Levels](./access-control.md): why only administrators see this tab
 
 ## Need Help?
 

@@ -98,7 +98,7 @@ Your choice is stored against your account rather than in the browser, so it fol
 
 ## Related
 
-- [Settings Access by Role](./access-control.md): which Settings tabs your role reaches
+- [Roles and Access Levels](./access-control.md): which Settings tabs your role reaches
 - [User and Team Management](./user-management.md): who can change your role, team, and access level
 - [Security and Compliance](../security-compliance.md): how Vela protects the data behind your account
 

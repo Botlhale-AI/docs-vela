@@ -15,7 +15,7 @@ Short answers to the most common questions about Vela. For step-by-step help wit
 A: Vela is a platform that helps call centres analyse conversations, track performance, and improve customer experience using automated quality assurance.
 
 **Q: Who can use Vela?**  
-A: Vela is designed for call centre teams, meaning agents, team leads, and administrators. Team leads and administrators work in the main platform, where what they see depends on their role and access level. Agents sign in to a separate Agent Portal. See [Settings Access by Role](../settings-config/access-control.md).
+A: Vela is designed for call centre teams, meaning agents, team leads, and administrators. Team leads and administrators work in the main platform, where what they see depends on their role and access level. Agents sign in to a separate Agent Portal. See [Roles and Access Levels](../settings-config/access-control.md).
 
 **Q: A feature in the documentation is missing from my sidebar. Why?**  
 A: Your organisation's edition decides which features appear. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which edition you have.

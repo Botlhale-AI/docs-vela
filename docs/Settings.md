@@ -23,7 +23,7 @@ Settings is where administrators configure the organisation, and where every use
 
 ## Related
 
-- [Settings Access by Role](./settings-config/access-control.md)
+- [Roles and Access Levels](./settings-config/access-control.md)
 - [Organisation Configuration](./settings-config/organisation-configuration.md)
 - [User and Team Management](./settings-config/user-management.md)
 - [Account and Security](./settings-config/account-security.md)

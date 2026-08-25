@@ -35,7 +35,7 @@ These are the controls your own administrators configure and use.
 
 ### Controlling What People See
 
-Access is governed by two settings on each account, a **role** and an **access level**. Together they decide which parts of Vela a person reaches and how much of the organisation's data they see. See [Settings Access by Role](./settings-config/access-control.md).
+Access is governed by two settings on each account, a **role** and an **access level**. Together they decide which parts of Vela a person reaches and how much of the organisation's data they see. See [Roles and Access Levels](./settings-config/access-control.md).
 
 Deactivating an account withdraws access while keeping the record. See [User and Team Management](./settings-config/user-management.md#e-deleting-and-reactivating).
 
@@ -107,7 +107,7 @@ For a security questionnaire, an audit summary, or any detail not covered here, 
 
 ## Related
 
-- [Settings Access by Role](./settings-config/access-control.md): the roles and access levels that govern what people see
+- [Roles and Access Levels](./settings-config/access-control.md): the roles and access levels that govern what people see
 - [Organisation Configuration](./settings-config/organisation-configuration.md): choose which sensitive entities are masked
 - [Access Requests](./settings-config/access-requests-audits.md): how access to masked content is granted and recorded
 

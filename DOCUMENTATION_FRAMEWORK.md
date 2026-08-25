@@ -90,7 +90,7 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Smart Detector** | Build an Agent Scorecard · Set Up Smart Search · Set Up Smart Questions · Build Your Knowledge Base · Manage Smart Search Terms · Search by Phone Number |
 | **Understanding Vela** | How Scoring Works · How the Pieces Fit Together |
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
-| **Administration & Configuration** | Settings Access by Role · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
+| **Administration & Configuration** | Roles and Access Levels · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
 | **Advanced** | API Reference · Best Practices |
 | **Support** | Troubleshooting Guide · Frequently Asked Questions · Video Tutorials |
 

@@ -11,7 +11,7 @@ The **Users** tab has two sub-tabs. **Users** lists every account in your organi
 :::warning What you can do here depends on your role
 The **Users** tab is hidden from the Agent role. Administrators get the **Add User** control and the **Actions** column. Users with the User role see the same lists but none of the controls that change an account.
 
-What you see is also capped by your own access level. Organisational access shows the whole organisation, departmental access shows your department, and team access shows your team. See [Settings Access by Role](./access-control.md).
+What you see is also capped by your own access level. Organisational access shows the whole organisation, departmental access shows your department, and team access shows your team. See [Roles and Access Levels](./access-control.md).
 :::
 
 ---
@@ -167,7 +167,7 @@ For the columns, the template, and how unmatched departments and teams are handl
 
 ## Related
 
-- [Settings Access by Role](./access-control.md): what each role and access level allows
+- [Roles and Access Levels](./access-control.md): what each role and access level allows
 - [Access Requests](./access-requests-audits.md): what happens when a user without View Redactions asks to see masked content
 - [Organisation Configuration](./organisation-configuration.md): the settings that apply to the whole organisation
 
