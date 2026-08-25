@@ -302,7 +302,7 @@ You can tag without opening an interaction. The **Tags** column on the Interacti
 
 ![The Create a Tag tab, with the tag name field above the colour swatches](../../img/screenshots/calls/edit-tags-create.png)
 
-Tags already on an interaction appear beside the icon, and each one can be removed from there.
+Tags already on an interaction appear beside the icon, and each tag can be removed from there.
 
 :::tip Tag from the list when working through a batch
 Tagging from the **Tags** column lets you classify a whole screen of interactions without opening any of them. The settings icon beside **Upload** adds the column.

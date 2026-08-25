@@ -336,7 +336,7 @@ If it stays at zero once new interactions have been processed, work through [Tro
 
 ## Related
 
-- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each one does
+- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each tool does
 - [Manage Notifications](./features/notifications.md): receive and work through the alerts your searches raise
 - [Review and Score Interactions](./features/quality-assurance-tools.md): turn matches into scored reviews
 - [Monitor Agent Performance](./features/monitor-agent-performance.md): coach your team on what the searches surface

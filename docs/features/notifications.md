@@ -6,7 +6,7 @@ type: how-to
 ---
 
 # Manage Notifications
-Vela notifies you when something needs your attention. That might be a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. Not all of them arrive in the same place. Some are email only, and some belong to the Agent Portal. This page covers what triggers a notification, where each one arrives, and how to control what reaches you.
+Vela notifies you when something needs your attention. That might be a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. Not all of them arrive in the same place. Some are email only, and some belong to the Agent Portal. This page covers what triggers a notification, where each notification arrives, and how to control what reaches you.
 
 ---
 
@@ -85,7 +85,7 @@ The last three only appear where they are relevant to your role. Email delivery 
 
 ## 3. Work Through Your Alerts
 
-An alert is raised automatically when a processed interaction matches one of your Smart Searches, or when a Smart Question returns the outcome you set it to alert on. Each one links to the interaction that raised it.
+An alert is raised automatically when a processed interaction matches one of your Smart Searches, or when a Smart Question returns the outcome you set it to alert on. Each alert links to the interaction that raised it.
 
 A practical routine for each alert:
 

@@ -127,7 +127,7 @@ Your dashboard displays a set of performance indicators. When you are starting o
 2. **No. Alerts** (number of alerts): issues raised by your Smart Searches that need attention
 3. **Sentiment Distribution**: how sentiment breaks down across the date range
 
-Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each one.
+Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each metric.
 
 ### Customising Your Dashboard
 
@@ -187,7 +187,7 @@ Four parts do most of the work when you review:
 - **Summary**: a plain-language recap of what happened and how it was resolved.
 - **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
-- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each one once you have acted on it.
+- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it.
 
 The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 

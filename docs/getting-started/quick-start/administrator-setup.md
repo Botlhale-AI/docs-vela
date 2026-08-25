@@ -40,7 +40,7 @@ You need:
 
 ## Plan Before You Configure
 
-The steps below set Vela up. A few decisions shape how you configure each one, so they are worth making before you start:
+The steps below set Vela up. A few decisions shape how you configure each step, so they are worth making before you start:
 
 - **Your structure**: the departments and teams that mirror your real reporting lines.
 - **Your scorecard standards**: the specific, observable behaviours you score agents against.
@@ -186,7 +186,7 @@ The Agent Scorecard defines the evaluation criteria used to score every interact
 1. Navigate to **Smart Detector → Agents Scorecard**
 2. Open the **Create** tab
 3. Set the **scope** (organisation, department, or team) that the scorecard applies to
-4. Write your scorecard questions. Each one is a yes/no evaluation point, configured as below.
+4. Write your scorecard questions. Each question is a yes/no evaluation point, configured as below.
 5. Select **Create** to save the scorecard. Its questions are active as soon as it is created.
 
 :::note The sidebar says "Agents Scorecard"
@@ -196,7 +196,7 @@ The sidebar and the trail at the top of the page name it in the plural. This doc
 ![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_detector/scorecard-list.png)
 ![The top of the Agents Scorecard Create tab, with Scorecard Scope, the Interactions options, and Historical Search](../../../img/screenshots/smart_detector/scorecard-create.png)
 
-Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. The remaining settings, and what each one does, are covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md). Every field with its values and default is in [Scorecard Fields](../../reference/scorecard-fields.md).
+Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. The remaining settings, and what each setting does, are covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md). Every field with its values and default is in [Scorecard Fields](../../reference/scorecard-fields.md).
 
 ![The question block of the scorecard form, with Question, Category, Expected Outcome, and Weight above the remaining settings](../../../img/screenshots/smart_detector/scorecard-create2.png)
 

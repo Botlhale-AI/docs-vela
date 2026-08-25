@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Smart Detector
-description: "The tools Vela uses for automatic monitoring, and what each one is for."
+description: "The tools Vela uses for automatic monitoring, and what each tool is for."
 type: explanation
 ---
 

@@ -193,7 +193,7 @@ You are finished when the **Results** tab shows Yes, No, and N/A counts against 
 
 ## Related
 
-- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each one does
+- [Smart Detector](./smart-detector-overview.md): the home page these tools sit under, and what each tool does
 - [Set Up Smart Search](./smart-search-guide.md): detect keywords, intents, topics, and pain points
 - [Build Your Knowledge Base](./knowledge-base-guide.md): upload the documents a question is judged against
 - [Review and Score Interactions](./features/quality-assurance-tools.md): score interactions against the Agent Scorecard

@@ -121,7 +121,7 @@ Select **Create**, at the foot of the form below **Add New Metric**. The report 
 
 ![The foot of the one-time report form, with Add New Metric above the Create button](../../img/screenshots/report/report_create3.png)
 
-Vela includes the metrics that have data and names each one it dropped. Where none of them have data, widen the date range or check the teams and agents you selected, and run it again.
+Vela includes the metrics that have data and names each metric it dropped. Where none of them have data, widen the date range or check the teams and agents you selected, and run it again.
 
 </TabItem>
 <TabItem value="recurring" label="Recurring report">
