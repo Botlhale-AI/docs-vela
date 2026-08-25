@@ -71,7 +71,7 @@ A: Yes. Agents log in to their own Agent Portal, where they can view their inter
 A: When a team lead adds a comment and tags the agent using the @ mention, the agent receives an in-app notification and can read and respond to the comment in their Agent Portal.
 
 **Q: How does training work for agents?**  
-A: Where Coaching is enabled, administrators and team leads create courses in the **Coaching** section and give each one a trigger score range. Vela then assigns courses on an evaluation cycle, so agents receive the courses their scores qualify them for rather than being picked individually. Agents see what they have been given in their portal, with completion status. Coaching is an add-on, so it appears in the navigation only when it is enabled for your organisation.
+A: Where Coaching is enabled, administrators and team leads create courses in the **Coaching** section and give each course a trigger score range. Vela then assigns courses on an evaluation cycle, so agents receive the courses their scores qualify them for rather than being picked individually. Agents see what they have been given in their portal, with completion status. Coaching is an add-on, so it appears in the navigation only when it is enabled for your organisation.
 
 ---
 
