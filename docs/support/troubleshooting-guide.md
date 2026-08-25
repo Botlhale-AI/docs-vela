@@ -182,7 +182,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 **Solution:**
 1. Confirm that calls or chats have been uploaded and that processing is complete. The Dashboard only reflects interactions that have finished processing.
 2. Check the date range selector covers the period you expect to see data for.
-3. Check the scope filter to confirm you are viewing data for your team, department, or organisation as appropriate.
+3. Check the scope filter. It may be set narrower than the agents you are looking for, so widen it to the department or the organisation and see whether the figures appear.
 
 ---
 

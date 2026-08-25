@@ -37,7 +37,7 @@ Create your most important Smart Searches, particularly the compliance-critical 
 
 For compliance monitoring, write search phrases around the specific language your agents are required to use or prohibited from using. For customer experience monitoring, build phrase lists around the real language your customers use when frustrated, escalating, or requesting specific actions. Review the results after your first batch of calls and refine the phrases based on what you see. Early false positives are a normal part of tuning.
 
-Scope each search appropriately. An organisation-wide compliance search is appropriate for a policy that applies to everyone. A search specific to one product line or team should be scoped to that team or department so that results are actionable by the right people.
+Scope each search to the people its results are actionable by. An organisation-wide compliance search suits a policy that applies to everyone. A search specific to one product line or team should be scoped to that team or department so that results are actionable by the right people.
 
 Keep the number of active searches manageable. Your plan caps how many you can hold, and that is five unless your plan sets a different number. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so spend the allowance on your compliance-critical searches first. A small set of well-scoped searches produces more actionable alerts than a large set of broad ones. See [Search Management](../smart-search-guide.md#search-management).
 
