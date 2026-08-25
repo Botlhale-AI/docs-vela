@@ -102,6 +102,8 @@ Rather than sampling interactions at random, work your alerts first. They are th
 
 ## 4. Control What Reaches You
 
+Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether it raises alerts at all, covered here. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on still tells you nothing if your own **New Alerts Detected** is unticked.
+
 Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
 
 Matches still appear in the Smart Search results view whether or not notifications are on. The setting only controls whether Vela notifies you about them.
@@ -120,17 +122,15 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 ## 5. Comments and @ Mentions
 
-Comments are how feedback reaches your agents.
+Comments are how feedback reaches your agents, and the **@** mention is what makes a comment a notification.
 
-1. Open the interaction and select **View Comments** to open the panel.
-2. Write your comment. Type **@** and pick the agent to send it to them, and they can read and reply in their Agent Portal.
-3. Select **Send**. An untagged comment stays visible to team leads only.
+Type **@** in the comment box and pick the agent. Vela then notifies them in their Agent Portal, where they can read it and reply. An untagged comment stays visible to team leads and never reaches the agent.
 
 ![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)
 
-Tagging is what turns a comment your team can see into feedback the agent receives.
+Mentions work in new comments rather than replies, as the panel itself notes. A reply therefore carries no tag and raises no notification, so anything the agent has to see belongs in a new comment with a tag on it.
 
-The panel notes that mentions work in new comments rather than replies, so a reply carries no tag and reaches nobody. Where a reply holds something the agent has to see, post it as a new comment and tag them there. See [Review and Score Interactions](./quality-assurance-tools.md).
+For writing and resolving comments, see [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
 
 ---
 
