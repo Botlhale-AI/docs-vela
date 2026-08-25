@@ -58,7 +58,7 @@ Every notification, on all three tabs, carries the same controls:
 | The **eye** icon | Opens what the notification is about: the interaction on **Alerts** and **Comments**, the report itself on **Reports** |
 | The **×** | Dismisses the notification and takes it off the list |
 
-Each one shows its heading, how long ago it arrived, and a line of detail. Past one page, **Previous** and **Next** sit at the foot of the list with **Page 1 of 2** between them.
+Each notification shows its heading, how long ago it arrived, and a line of detail. Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
 
 On the **Reports** tab there is also a download control beside the eye, so you can take a finished report straight from the notification without going to the Reports list. A report whose file is no longer available reads **No report available** in place of the link.
 
@@ -104,13 +104,15 @@ Rather than sampling interactions at random, work your alerts first. They are th
 
 Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
 
-Matches still appear in the Smart Search results view whether or not notifications are on. The setting only controls whether Vela tells you about them.
+Matches still appear in the Smart Search results view whether or not notifications are on. The setting only controls whether Vela notifies you about them.
 
 :::tip Turning down the volume
 A search generating more alerts than your team can act on has two fixes. Tighten its phrases so it matches less, or turn its Notifications off and review the matches in the results view instead.
 :::
 
-A Smart Question has that same **Notifications** setting and one more, **Receive notifications when**, which chooses whether a **Yes** or a **No** is the answer that alerts you. See [Set Up Smart Questions](../smart-questions-guide.md#notifications).
+A Smart Question has the same **Notifications** setting, and one more. **Receive notifications when** takes a **Yes** or a **No**, and Vela alerts you only when the answer matches it.
+
+Ask whether a customer mentioned a competitor, set it to **Yes**, and you hear about the calls where one was mentioned. The rest are answered and recorded as usual, without reaching you. See [Set Up Smart Questions](../smart-questions-guide.md#notifications).
 
 For more on building searches, see [Smart Search](../smart-search-guide.md).
 
@@ -124,7 +126,11 @@ Comments are how feedback reaches your agents.
 2. Write your comment. Type **@** and pick the agent to send it to them, and they can read and reply in their Agent Portal.
 3. Select **Send**. An untagged comment stays visible to team leads only.
 
+![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)
+
 Tagging is what turns a comment your team can see into feedback the agent receives.
+
+The panel notes that mentions work in new comments rather than replies, so a reply carries no tag and reaches nobody. Where a reply holds something the agent has to see, post it as a new comment and tag them there. See [Review and Score Interactions](./quality-assurance-tools.md).
 
 ---
 
@@ -173,7 +179,7 @@ Open **Notifications** and confirm the tab you expect to use has entries in it. 
 
 Selecting **Save** shows a confirmation message, and that message is what tells you the ticks were stored.
 
-Testing an alert end to end takes one interaction. Upload one you know matches a Smart Search that has notifications on, then check the **Alerts** tab once processing finishes. Alerts are raised during analysis, so one that has not appeared yet usually means the interaction is still being processed.
+Testing an alert end to end takes one interaction. Upload an interaction you know matches a Smart Search that has notifications on, then check the **Alerts** tab once processing finishes. Alerts are raised during analysis, so one that has not appeared yet usually means the interaction is still being processed.
 
 ---
 
