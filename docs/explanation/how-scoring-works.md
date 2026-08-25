@@ -76,7 +76,7 @@ For questions the AI cannot judge from the transcript, two settings help:
 
 Most scorecard questions are phrased so that "yes" is good: *Did the agent verify the customer's identity?* Some are naturally phrased the other way: *Did the agent interrupt the customer?*
 
-Rather than force every question into positive phrasing, each one records which answer is the desired one. Vela compares the actual answer against that setting.
+Rather than force every question into positive phrasing, each question records which answer is the desired one. Vela compares the actual answer against that setting.
 
 This is worth understanding because a mis-set Expected Outcome inverts a question silently. The scorecard looks correct, the AI answers correctly, and the score is wrong in a way that is hard to spot from the number alone.
 

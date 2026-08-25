@@ -46,7 +46,7 @@ Read the **Comment** before deciding. It is the only place the user says why the
 
 ### B. Completed Requests
 
-Requests you have already processed, kept as a record of each one. Each request is a card rather than a table row, with the fields below down the left of it.
+Requests you have already processed, kept as a record. Each request is a card rather than a table row, with the fields below down the left of it.
 
 | Field | Description | Status Indication |
 | :--- | :--- | :--- |

@@ -216,7 +216,7 @@ Three controls close three different things, and they sit close together on the 
 | A comment or a reply | **Mark as Resolved** | The **Comments** section, on that comment | **Resolved by** your name |
 | The whole interaction | **Mark as Reviewed** | The top of the detailed view | **Reviewed** |
 
-Each one is independent. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
+These three are independent of each other. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
 
 To clear several alerts at once, open a single search's results and select through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
 
@@ -304,7 +304,7 @@ On the Smart Search list, use **Sort By** to order your searches by **Results** 
 
 ## Search Management
 
-Review your active Smart Searches regularly. For each one, check that it is still relevant, that its matches are being actioned, and that its phrases still reflect how customers and agents actually speak. Language drifts over time, so a phrase list that was accurate months ago may start producing false positives or missing new patterns.
+Review your active Smart Searches regularly. For each search, check that it is still relevant, that its matches are being actioned, and that its phrases still reflect how customers and agents actually speak. Language drifts over time, so a phrase list that was accurate months ago may start producing false positives or missing new patterns.
 
 Set a search to **Inactive** when it is no longer being acted upon. Alerts nobody works through make it harder for the team to spot those that matter.
 

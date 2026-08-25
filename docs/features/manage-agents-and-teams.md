@@ -37,7 +37,7 @@ Go to **Agents → Agent Details** in the left sidebar. The table lists everyone
 | **Filter** | Opens **Filter By**, where you select departments, teams, and **Status**. Select **Apply** to use it |
 | **Export** | Downloads the list, including each agent's department, team, and status |
 
-An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, **Previous** and **Next** sit below the table with **Page 1 of 2** between them.
+An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, pagination sits below the table: **Previous** and **Next**, with **Page 1 of 2** between them.
 
 ![The Agent Details table, with the Name, Email, Department, Team, Voice Profile Status, and Actions columns above the Previous and Next controls](../../img/screenshots/agent_details/agent-details-table.png)
 
@@ -110,7 +110,7 @@ Where a sample exists, the column shows a toggle rather than a word. **Export** 
 
 ## 5. Move Agents Between Teams
 
-**Reassign** moves several agents at once, rather than opening each one in turn.
+**Reassign** moves several agents at once, rather than opening each agent in turn.
 
 1. Tick the agents you want to move. **Reassign** appears above the table once at least one is ticked.
 2. Select **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.

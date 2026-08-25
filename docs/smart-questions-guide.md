@@ -36,7 +36,7 @@ If the answer says something about **the conversation** rather than **the agent'
 
 You need:
 
-- **Smart Questions on your plan.** The sidebar entry under **Smart Detector** tells you, as noted above.
+- **Smart Questions on your plan.** Where **Smart Questions** appears under **Smart Detector** in the left sidebar, your plan includes it.
 - **Access level:** Organisational, Departmental, or Team, covering the scope you want. See [Access Level](./reference/glossary.md#access-level).
 - **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the point at which you set it for good.
 
