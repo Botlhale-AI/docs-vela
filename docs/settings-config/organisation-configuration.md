@@ -40,6 +40,8 @@ This section tracks the analysis minutes your organisation has used against the 
 | **Current Duration Usage** | The analysis minutes consumed so far, to one decimal place. |
 | **Gauge** | Current usage as a percentage of the allocation, labelled `of allocated duration used`. |
 
+The same figures are readable from the API, which is the way to check remaining allocation before sending a large batch. See [Checking Your Organisation](../advanced/api-documentation.md#checking-your-organisation).
+
 ### A. Duration Usage Notifications
 
 Select the points at which Vela sends a duration usage email. Each threshold is a separate checkbox, so you can select more than one.

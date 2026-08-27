@@ -16,8 +16,9 @@ Vela offers an API so you can send interactions to Vela from your own systems.
 
 - Upload call recordings and chat transcripts programmatically, with metadata such as the agent, team, and direction.
 - Ask to be emailed when a call or chat has finished processing, using the `notifyEmail` field.
+- Export analysed calls back out for reporting in your own tools.
 
-Requests are authenticated with an API token, issued by your Account Manager, and your organisation ID.
+Requests are authenticated with a bearer token you obtain by signing in, and your organisation ID. See [API Reference](./advanced/api-documentation.md#authentication).
 
 ---
 

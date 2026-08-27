@@ -9,35 +9,39 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # API Reference
-Endpoint reference for sending call recordings and chat transcripts to Vela programmatically. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
+Endpoint reference for the Vela endpoints: sending call recordings and chat transcripts in, exporting analysed calls out, and checking what your organisation is entitled to. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
+
+Botlhale's API also covers transcription, translation, text to speech, and chat bots, which sit outside Vela. Those are documented at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
 
 ## Authentication
 
-Sign in once to get a pair of tokens, then use the access token on every request.
+Sign in once to get a refresh token, exchange it for an access token, then send that access token on every request.
+
+### Step 1: Sign In
 
 ```
 POST https://api.botlhale.tech/auth/login
 ```
 
 ```json
-{ "email": "your@email.com", "password": "your_password" }
+{ "email": "your-email@example.com", "password": "your-password" }
 ```
 
-The reply carries both tokens and your organisation identifier:
+The reply carries everything you need to record:
 
 ```json
-{ "token": "<access_token>", "refresh_token": "<refresh_token>", "org_id": "XXXXXXXX" }
+{
+  "message": "Login successful",
+  "token": "<access_token>",
+  "refresh_token": "<refresh_token>",
+  "org_id": "<org_id>",
+  "id": "<refresh_token_entry_id>"
+}
 ```
 
-Keep both. Send the access token on every request:
+Keep the `refresh_token`, the `org_id`, and the `id`. The `id` identifies this particular refresh token, and it is the only way to revoke that one later.
 
-```
-Authorization: Bearer <access_token>
-```
-
-### Refreshing the Access Token
-
-**The access token expires 24 hours after it is issued.** The refresh token is long-lived, so exchange it for a new access token rather than signing in again:
+### Step 2: Get an Access Token
 
 ```
 POST https://api.botlhale.tech/auth/generate
@@ -48,12 +52,40 @@ POST https://api.botlhale.tech/auth/generate
 ```
 
 ```json
-{ "token": "<new_access_token>" }
+{ "token": "<access_token>", "expires": 0 }
+```
+
+`expires` tells you how long the access token is good for, so schedule the next refresh from it rather than guessing.
+
+### Step 3: Send the Access Token
+
+```
+Authorization: Bearer <access_token>
 ```
 
 :::caution Build the refresh in from the start
-An integration that fetches one access token and keeps using it works for a day and then stops. Refresh on a schedule, or when a request comes back unauthorised, and treat the refresh token as the credential worth protecting.
+Access tokens are short-lived and refresh tokens are not. An integration that fetches one access token and keeps using it works for a while and then stops with a **401**, which is the failure most often mistaken for a broken endpoint.
+
+Refresh on a schedule, or whenever a request returns **401**, and treat the refresh token as the credential worth protecting.
 :::
+
+### Revoking a Refresh Token
+
+**Each user can hold at most three active refresh tokens.** Once you reach that limit, revoke one you are no longer using rather than generating another:
+
+```
+POST https://api.botlhale.tech/auth/revoke_token
+```
+
+```json
+{ "email": "your-email@example.com", "id": "<refresh_token_entry_id>" }
+```
+
+The `id` is the one returned by `/auth/login`. This is why it is worth recording at sign-in: without it, a token cannot be revoked and the limit has to be cleared by support.
+
+### Resetting a Password
+
+`POST /auth/reset_password` starts a reset and sends a confirmation code. `POST /auth/confirm_reset_password` completes it, taking `email`, `confirmation_code`, and `new_password`.
 
 ### Base URLs
 
@@ -64,7 +96,7 @@ An integration that fetches one access token and keeps using it works for a day 
 
 Send production data to the production URL. Interactions uploaded to the development environment do not appear in your Vela organisation, and recovering them means someone re-uploading them by hand, which can lose the original call dates.
 
-The full endpoint reference is at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
+The full endpoint reference, covering the wider Botlhale platform as well as Vela, is at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
 
 ---
 
@@ -96,12 +128,14 @@ flowchart LR
 | Parameter      | Requirement | Description                                              |
 |----------------|-------------|----------------------------------------------------------|
 | org_id         | Required    | Your organisation's Vela identifier, issued with your token. It is not the organisation name, and it does not appear in Settings. |
-| metadata       | Optional    | The information below, as a JSON string in a form field. See the note below. |
+| metadata       | Optional    | An object holding the fields below. |
 
-:::caution Two things that fail quietly at the start of an integration
-**Send the request as form data, not as a JSON body.** `metadata` is a form field carrying a JSON string, which is why the examples below use `json.dumps` and `JSON.stringify`. A JSON body is not parsed, and the reply is `Please provide org_id` even though you sent one.
+Send the request as JSON, with `Content-Type: application/json`.
 
-**Use the Vela organisation identifier.** If you have been issued more than one, only the Vela one connects an upload to your Vela account. Uploading with another can succeed, returning a success code and a file key, while nothing appears under **Interactions**. An upload that reports success but never shows up is the sign to check this first.
+:::caution Use the Vela organisation identifier
+If you have been issued more than one organisation ID, only the Vela one connects an upload to your Vela account. Uploading with another can succeed, returning a success code and a file key, while nothing appears under **Interactions**.
+
+An upload that reports success but never shows up is the sign to check this first.
 :::
 
 Before your first upload, confirm with your Account Manager that your organisation is active and has minutes allocated. Uploads against an organisation that is not yet activated do not process, and the failure is not visible from the API response.
@@ -118,7 +152,7 @@ All `metadata` fields are optional:
 - **direction**: Call direction: `inbound` or `outbound`.
 - **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`). Tags are also where identifiers from your own systems belong, such as a queue name, a campaign, or a ticket reference, so they travel with the interaction and can be filtered on in Vela. Anything with a field of its own belongs in that field instead, so send call direction as `direction` rather than as a tag.
 - **contact**: The customer's phone number, as a string or a number. Vela stores it exactly as you send it, so keep the format consistent across your integration. This is what [Search by Phone Number](../number-search-guide.md) matches on, and sending it here is what makes an interaction findable by number.
-- **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
+- **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). Times are read as **Africa/Johannesburg**, so convert before sending if your system records another timezone. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
 - **interaction_id**: Your own reference for the call. It is stored as the call's filename.
 - **validate_metadata**: Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
 
@@ -157,11 +191,14 @@ import requests, json
 # Step 1: Get upload credentials
 response = requests.post(
     "https://api.botlhale.tech/asr/async/upload/vela",
-    headers={"Authorization": "Bearer YOUR_API_TOKEN"},
-    data={
+    headers={
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+        "Content-Type": "application/json",
+    },
+    json={
         "org_id": "your_org_id",
-        "metadata": json.dumps({"email": "agent@example.com", "date_of_call": "15/01/2025, 14:30:00"})
-    }
+        "metadata": {"email": "agent@example.com", "date_of_call": "15/01/2025, 14:30:00"},
+    },
 )
 result = response.json()
 
@@ -180,13 +217,13 @@ const fs = require('fs');
 // Step 1: Get upload credentials
 request.post({
   url: 'https://api.botlhale.tech/asr/async/upload/vela',
-  headers: { 'Authorization': 'Bearer YOUR_API_TOKEN' },
-  formData: {
+  headers: { 'Authorization': 'Bearer YOUR_ACCESS_TOKEN' },
+  json: {
     org_id: 'your_org_id',
-    metadata: JSON.stringify({ email: 'agent@example.com', date_of_call: '15/01/2025, 14:30:00' })
+    metadata: { email: 'agent@example.com', date_of_call: '15/01/2025, 14:30:00' }
   }
 }, (err, res) => {
-  const { url, fields } = JSON.parse(res.body);
+  const { url, fields } = res.body;
 
   // Step 2: Upload the audio file
   request.post({
@@ -234,7 +271,7 @@ Metadata object:
 - **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
 - **tags** (array): Classification labels for the chat, as an array of strings.
 - **contact** (string or number): The customer's phone number, stored exactly as sent. See the note under the calls endpoint above.
-- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
+- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`), read as **Africa/Johannesburg**. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
 - **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
 - **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
 - **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
@@ -244,8 +281,14 @@ Metadata object:
 Message object:
 
 - **message** (string): Text that was sent.
-- **time** (string): Format `DD/MM/YYYY, HH:mm:ss`.
-- **sender** (string): `agent`, `user`, or `bot`. Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
+- **time** (string): Format `DD/MM/YYYY, HH:mm:ss`, read as **Africa/Johannesburg**. Seconds are part of the format, not optional.
+- **sender** (string): `agent`, `user`, or `bot`, in lower case. Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
+
+:::warning Send `sender` in lower case
+Vela matches these three values exactly. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct, but it is not recognised as an agent reply and the conversation's response time is left out of the average.
+
+The wider Botlhale reference shows `Agent` capitalised for this field. Lower case is what Vela reads.
+:::
 - **language** (string): Language code. Optional, and ignored when `metadata.language` is set.
 
 :::info Chat allocation
@@ -308,16 +351,15 @@ chats = [
     ]
 data = {
     'org_id': 'your_org_id',
-    'chats': json.dumps(chats)
-
-    
+    'chats': chats,
 }
 
 headers = {
-  'Authorization': 'Bearer YOUR_API_TOKEN',
+  'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
+  'Content-Type': 'application/json',
 }
 
-response = requests.post(url, data=data, headers=headers)
+response = requests.post(url, json=data, headers=headers)
 
 print(response.status_code)
 print(response.text) 
@@ -325,6 +367,73 @@ print(json.dumps(response.json(), indent=4))
 ```
 
 
+
+## Exporting Calls
+
+Pulls analysed calls back out of Vela, for reporting in your own tools rather than reading them in the platform.
+
+```
+GET https://api.botlhale.tech/calls/export/vela
+```
+
+Everything is a query parameter, and only `org_id` is required:
+
+| Parameter | Description |
+| :--- | :--- |
+| `org_id` | Required. Your Vela organisation identifier |
+| `start_date` and `end_date` | The period to export, formatted `DD-MM-YYYY` (for example `01-11-2025`) |
+| `departments`, `teams`, `agents` | Comma-separated names or IDs to narrow the export |
+| `min_score` and `max_score` | Only calls scoring inside the range |
+| `page` and `count_per_page` | Paging, for exports too large to take in one request |
+
+Note the date format. It is `DD-MM-YYYY` here, with dashes, while `date_of_call` on upload is `DD/MM/YYYY, HH:mm:ss` with slashes. The two are not interchangeable.
+
+The reply does not hold the calls themselves. It gives you a link to fetch them:
+
+```json
+{
+  "file_name": "Exports/calls_export_..._20251125_102753.json",
+  "presigned_url": "https://storage.example.com/exports/calls_export.json?signature=...",
+  "status": "success"
+}
+```
+
+Download `presigned_url` to get the export. Presigned links expire, so fetch the file as part of the same job rather than storing the link to use later.
+
+:::tip Scoring reports without a person exporting them
+This is the endpoint to build a recurring report on. Filter by team or agent, take a score range, and page through the result rather than exporting the whole period at once.
+
+For a one-off, the **Export** control on the Agent Scorecard **Results** tab is quicker. See [Build an Agent Scorecard](../agent-scorecard-guide.md#4-read-the-results).
+:::
+
+---
+
+## Checking Your Organisation
+
+Reports what your organisation is entitled to and how much of it has been used.
+
+```
+GET https://api.botlhale.tech/organisations/vela/{OrgID}
+```
+
+The reply covers the limits behind several things this documentation refers to:
+
+| Field | What it tells you |
+| :--- | :--- |
+| `active` | Whether the organisation is activated. Uploads against an inactive organisation do not process |
+| `monthlyAllocatedDuration` and `currentDurationUse` | The allocation in seconds, and how much has been used |
+| `stopWhenAllocationExceeded` | Whether processing halts once the allocation runs out |
+| `scorecardLimit`, `smartSearchLimit`, `painPointsLimit` | The caps your plan sets |
+| `coachingEnabled` | Whether the Coaching add-on is on |
+| `numberOfActiveAgents`, `numberOfTeams`, `numberOfDepartments` | The size of your structure |
+| `users` | Each user's name, email, role, access level, team, department, and whether they can view redactions |
+
+Administrators see the same two figures under **Settings → Organisation**, as **Allocated Monthly Duration** and **Current Duration Usage**. See [Organisation Configuration](../settings-config/organisation-configuration.md).
+
+Checking `currentDurationUse` against `monthlyAllocatedDuration` before a large batch is the reliable way to know whether it processes. It answers the same question as asking your Account Manager, without waiting for a reply.
+
+
+---
 
 ## Related
 
