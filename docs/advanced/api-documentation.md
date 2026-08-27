@@ -302,7 +302,7 @@ Metadata object:
 - **tags** (array): Classification labels for the chat, as an array of strings.
 - **contact** (string or number): The customer's phone number, stored exactly as sent. See the note under the calls endpoint above.
 - **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm` (for example `28/11/2025, 14:30`), read as **Africa/Johannesburg**. Seconds are accepted as well. If omitted, the upload time is used. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
-- **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
+- **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes. Codes take the form `en-ZA`, and the ones recognised are listed under [Supported Languages](https://api-docs.botlhale.ai/).
 - **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
 - **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
 - **validate_metadata** (boolean): Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.

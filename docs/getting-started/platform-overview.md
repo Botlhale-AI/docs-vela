@@ -65,7 +65,7 @@ Calls and chats go through the same core analysis. Both are analysed for sentime
 
 ![An interaction open in the Detailed View, with the audio player and Smart Detector analysis on the left and the Call Details panel on the right](../../img/screenshots/calls/calls-3.png)
 
-Transcription covers the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga.
+Transcription covers the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Botlhale's speech service recognises more than these, some of them in beta, and the full list with each language's status is at [Supported Languages](https://api-docs.botlhale.ai/). Vela's analysis is built around the South African set.
 
 ### Coach and develop agents
 
