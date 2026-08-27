@@ -69,7 +69,7 @@ Stopping at any of the first three leaves you with a number. The conversations a
 
 ### A. Find the Agent
 
-Go to **Agents → Performance**. It opens on the **Overview** tab, which lists the agents you can see. **Teams**, **Departments**, and **Agents** sit alongside it. Those answer a different question and are covered in [C. Check the Wider Trend](#c-check-the-wider-trend).
+Go to **Agents → Performance**. It opens on the **Overview** tab, which lists the agents within your access level. **Teams**, **Departments**, and **Agents** sit alongside it. Those answer a different question and are covered in [C. Check the Wider Trend](#c-check-the-wider-trend).
 
 Four controls sit above the list:
 

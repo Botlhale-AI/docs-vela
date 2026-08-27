@@ -8,7 +8,7 @@ draft: true
 
 # Dashboard
 
-The Dashboard is your at-a-glance view of performance. It shows trends across whatever you have access to: your whole organisation, a department, or a single team.
+The Dashboard is your at-a-glance view of performance. It shows trends across everything within your access level: your whole organisation, a department, or a single team.
 
 ---
 

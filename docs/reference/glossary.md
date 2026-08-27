@@ -192,9 +192,9 @@ A theme identified across conversations. The AI can detect topics, or your organ
 
 ## User
 
-A person who signs in to Vela, usually an administrator or team lead. Users have a [Role](#role) and an [Access Level](#access-level).
+Anyone who has access to Vela, including administrators. Users have a [Role](#role) and an [Access Level](#access-level).
 
-See also [Agent](#agent). Bulk CSV import creates agents, not users.
+See also [Agent](#agent). Agents are the exception: where your organisation uses the Agent Portal they sign in there rather than to Vela itself. Bulk CSV import creates agents, not users.
 
 ---
 

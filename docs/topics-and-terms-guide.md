@@ -15,7 +15,7 @@ These terms feed the rest of Vela. They appear as criteria when you build a [Sma
 ```mermaid
 flowchart LR
     D("Detected<br/>Vela finds these<br/>on its own") --> L("The four lists:<br/>Topics, Intents,<br/>Keywords, Pain Points")
-    C("Created<br/>you add these<br/>by hand") --> L
+    C("Created<br/>you add these<br/>manually") --> L
     L --> S("Criteria you can<br/>build a Smart Search on")
     L --> M("Metrics on your<br/>Dashboard and in Reports")
     S --> A("Alerts on the interactions<br/>that match")
@@ -54,7 +54,7 @@ Each page is split into two sections you expand and collapse:
 | Section | Contains |
 | :--- | :--- |
 | **Detected** | Terms Vela found on its own while analysing your interactions. Read-only. |
-| **Created Search** | Terms your organisation added by hand. These are the terms you can edit and delete. |
+| **Created Search** | Terms your organisation added manually. These are the terms you can edit and delete. |
 
 The Created section is open when you arrive, and the Detected section is collapsed.
 

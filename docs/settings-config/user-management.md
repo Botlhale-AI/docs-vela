@@ -159,7 +159,7 @@ Open the menu next to the department or team and select **Edit**.
 
 ## 4. Importing Agents in Bulk
 
-Agents are separate from users. They have their interactions analysed but do not sign in to Vela, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
+Agents are separate from users. They have their interactions analysed, they sign in to the Agent Portal rather than to Vela itself where your organisation uses it, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
 
 For the columns, the template, and how unmatched departments and teams are handled, see [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv). For the distinction between an agent and a user, see the [Glossary](../reference/glossary.md#user).
 

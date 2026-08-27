@@ -66,7 +66,7 @@ Each question is one yes/no judgement about the interaction. The fields below ar
 | 3 | **Expected Outcome** | Which answer counts as a pass. Set it to match how you phrased the question |
 | 4 | **Weight** | How much this question contributes, relative to the others |
 | 5 | **Search Status** | Whether the question runs against incoming interactions |
-| 6 | **Search Type** | Whether the AI answers it, or a reviewer does by hand |
+| 6 | **Search Type** | Whether the AI answers it, or a reviewer does manually |
 | 7 | **Apply To** | Inbound calls, outbound calls, or all calls |
 | 8 | **Auto-Fail** | Failing this question takes the whole interaction to `0.0%`, with the score earned on the other questions shown in brackets beside it |
 | 9 | **Compliance Question** | Counts this question towards the **Compliance Score** instead of the **Quality Score**. Every question counts towards the **Overall Score** either way |

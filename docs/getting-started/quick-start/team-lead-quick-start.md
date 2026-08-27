@@ -99,7 +99,7 @@ An empty list, or the message "You are not part of the selected organization", m
 
 ### Dashboard Overview
 
-**Your Dashboard gives you an overview of performance across everything you can access.** That might be your whole organisation, a department, or a single team, depending on your access level.  
+**Your Dashboard gives you an overview of performance within your access level.** That might be your whole organisation, a department, or a single team.  
 
 If no calls or chats have been uploaded in your organisation yet, performance data is not available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
 
