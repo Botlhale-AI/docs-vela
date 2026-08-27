@@ -34,7 +34,7 @@ Find your symptom, rather than reading from the top.
 | Audio does not play, or jumps to the wrong point | [Audio Playback](#audio-playback-issues) |
 | A blank screen, or Vela running slowly | [Browser Issues](#browser-issues) |
 
-Two symptoms are worth naming, because neither looks like a fault:
+Two symptoms are worth naming, because both look like normal behaviour:
 
 - **An upload returns success and nothing appears.** The interaction reached somewhere other than your Vela organisation. See [Integration and API](#integration-and-api-issues).
 - **A score of `0.0%` with a higher figure in brackets.** The interaction auto-failed. The bracketed figure is what it earned otherwise. See [Scorecard and Scoring](#scorecard-and-scoring-issues).
@@ -229,7 +229,7 @@ These cover interactions sent from your own systems. For uploads made through Ve
 
 **Problem:** Interactions arrive, but the agent, team, or department is missing or wrong.
 
-**Cause:** Vela matches these fields against records that already exist, and drops the ones it cannot match. The upload still succeeds, so nothing signals the problem.
+**Cause:** Vela matches these fields against records that already exist, and drops the ones it cannot match. The upload still succeeds, so the problem surfaces only when you open the interaction and look.
 
 **Solution:**
 1. Check the values against the records in Vela. `agent_name` matches case-insensitively on the name as it appears on the agent record, not a username such as `john.smith`.
@@ -244,7 +244,7 @@ These cover interactions sent from your own systems. For uploads made through Ve
 **Cause:** The `sender` value on the messages was not recognised. Vela matches `agent`, `user`, and `bot` exactly, in lower case.
 
 **Solution:**
-1. Send `sender` in lower case. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct, while the reply is counted as neither an agent nor a bot answer.
+1. Send `sender` in lower case. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct, while Vela leaves that reply out of the response time measure.
 2. Check that customer messages are sent as `user`, since response time is measured from each `user` message to the reply that follows it.
 3. Re-upload the affected chats once the casing is corrected. Response time is calculated when the chat is processed.
 
@@ -465,7 +465,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 
 **Problem:** An access request was sent, and nothing has happened.
 
-**Cause:** Requests wait for an administrator to act on them. Nothing reminds them beyond the notification raised when the request was made.
+**Cause:** Requests wait for an administrator to act on them. The only prompt they get is the notification raised when the request was made.
 
 **Solution:**
 1. Ask an administrator to check **Settings → Access Requests**. Requests sit there until approved or declined.
@@ -556,7 +556,7 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 **Solution:**
 1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation.
 2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to render.
-3. Where every view is slow and other sites are not, clear the cache and try a second supported browser to confirm it is Vela rather than the machine.
+3. Where every view is slow but other sites are fine, clear the cache and try a second supported browser to confirm it is Vela rather than the machine.
 4. Where the same narrow view is still slow, contact support with the page, the date range, and the scope you had set.
 
 ---
