@@ -153,7 +153,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 :::note Two people upload the same call and wait different lengths of time
 Processing is queued rather than instant, and the queue is shared, so the wait depends on what is ahead of a call rather than on who uploaded it. Two uploads of the same recording minutes apart can finish an hour apart.
 
-That is expected. What is not expected is a call that never arrives at all. Report those with the filename and the upload time rather than waiting longer, and say whether the same file has been uploaded before, because a repeat of an earlier upload behaves differently from a new one.
+That is expected. What is not expected is a call that never arrives at all. Report those with the filename and the upload time rather than waiting longer. Say whether the same file has been uploaded before, because a repeat behaves differently from a new upload.
 :::
 
 ---

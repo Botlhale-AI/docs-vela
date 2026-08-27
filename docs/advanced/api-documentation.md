@@ -74,7 +74,7 @@ Authorization: Bearer <access_token>
 ```
 
 :::caution Build the refresh in from the start
-Access tokens are short-lived and refresh tokens are not. An integration that fetches one access token and keeps using it works for a while and then stops with a **401**, which is the failure most often mistaken for a broken endpoint.
+Access tokens are short-lived. Refresh tokens last far longer. An integration that fetches one access token and keeps using it works for a while and then stops with a **401**, which is the failure most often mistaken for a broken endpoint.
 
 Refresh on a schedule, or whenever a request returns **401**, and treat the refresh token as the credential worth protecting.
 :::
@@ -91,7 +91,7 @@ POST https://api.botlhale.tech/auth/revoke_token
 { "email": "your-email@example.com", "id": "<refresh_token_entry_id>" }
 ```
 
-The `id` is the one returned by `/auth/login`. This is why it is worth recording at sign-in: without it, a token cannot be revoked and the limit has to be cleared by support.
+The `id` is the one returned by `/auth/login`. Record it at sign-in, because it is the only way to revoke that token yourself. Where it has been lost, support has to clear the limit for you.
 
 ### Resetting a Password
 
@@ -315,7 +315,7 @@ Message object:
 - **sender** (string): `agent`, `user`, or `bot`, in lower case. Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
 
 :::warning Send `sender` in lower case
-Vela matches these three values exactly. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct, but it is not recognised as an agent reply and the conversation's response time is left out of the average.
+Vela matches these three values exactly. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct. Vela reads it as neither an agent nor a bot reply, though, so the conversation drops out of the response time average.
 
 The wider Botlhale reference shows `Agent` capitalised for this field. Lower case is what Vela reads.
 :::

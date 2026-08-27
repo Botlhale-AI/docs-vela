@@ -99,7 +99,7 @@ The AI reads a transcript. A question works when its answer is visible there.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
 
 :::tip Questions that look for something rather than score it
-Not every question is a pass or a fail. Some exist to record that something was present, such as a customer expressing dissatisfaction, or a competitor being mentioned.
+Some questions exist to record that something happened rather than to judge it, such as a customer expressing dissatisfaction, or a competitor being mentioned.
 
 Write those positively too, then set **Expected Outcome** to **No**. The question then passes when the thing is absent and fails when it is present, so a "fail" reads as *this happened* rather than *the agent did badly*.
 
