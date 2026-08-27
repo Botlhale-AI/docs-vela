@@ -96,6 +96,15 @@ The AI reads a transcript. A question works when its answer is visible there.
 * **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
 * **Keep weights relative.** There is no external scale. A question weighted 10 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given.
+* **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
+
+:::tip Questions that look for something rather than score it
+Not every question is a pass or a fail. Some exist to record that something was present, such as a customer expressing dissatisfaction, or a competitor being mentioned.
+
+Write those positively too, then set **Expected Outcome** to **No**. The question then passes when the thing is absent and fails when it is present, so a "fail" reads as *this happened* rather than *the agent did badly*.
+
+Keep the two kinds apart when you read the Results tab. A high failure rate on a scored question is a performance problem. A high failure rate on one of these is a finding.
+:::
 
 For questions the AI cannot judge from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it by hand. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
 
@@ -142,6 +151,8 @@ A low **Calls Analysed** count against an old question points at scope or channe
 | **Export** | Downloads the table |
 
 **Filter** and **Filter Calls** do different jobs, and their names do little to say which is which. Filter changes the rows you see. Filter Calls leaves the rows alone and changes the numbers in them, because it changes which interactions were counted.
+
+**Filter Calls** covers chats as well as calls, despite the name. The figures behind it are counted from every interaction that matches, so a scorecard applied to both channels is reporting on both here.
 
 Under **Filter**, narrow by category, weight, the passed, failed, and N/A counts, scope, direction, search type, Auto-Fail, and search status as **Active** or **Inactive**, or by the date a question was created. Select **Apply** to use it. **Clear dates** resets the date range on its own, and clearing the filter confirms with **Filters cleared successfully**.
 

@@ -11,15 +11,72 @@ import TabItem from '@theme/TabItem';
 # API Reference
 Endpoint reference for sending call recordings and chat transcripts to Vela programmatically. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
 
+## Authentication
+
+Sign in once to get a pair of tokens, then use the access token on every request.
+
+```
+POST https://api.botlhale.tech/auth/login
+```
+
+```json
+{ "email": "your@email.com", "password": "your_password" }
+```
+
+The reply carries both tokens and your organisation identifier:
+
+```json
+{ "token": "<access_token>", "refresh_token": "<refresh_token>", "org_id": "XXXXXXXX" }
+```
+
+Keep both. Send the access token on every request:
+
+```
+Authorization: Bearer <access_token>
+```
+
+### Refreshing the Access Token
+
+**The access token expires 24 hours after it is issued.** The refresh token is long-lived, so exchange it for a new access token rather than signing in again:
+
+```
+POST https://api.botlhale.tech/auth/generate
+```
+
+```json
+{ "refresh_token": "<your_refresh_token>" }
+```
+
+```json
+{ "token": "<new_access_token>" }
+```
+
+:::caution Build the refresh in from the start
+An integration that fetches one access token and keeps using it works for a day and then stops. Refresh on a schedule, or when a request comes back unauthorised, and treat the refresh token as the credential worth protecting.
+:::
+
+### Base URLs
+
+| Environment | Base URL |
+| :--- | :--- |
+| Production | `https://api.botlhale.tech` |
+| Development | `https://dev.botlhale.tech` |
+
+Send production data to the production URL. Interactions uploaded to the development environment do not appear in your Vela organisation, and recovering them means someone re-uploading them by hand, which can lose the original call dates.
+
+The full endpoint reference is at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
+
+---
+
 ## Calls
 
 :::info Authentication
-Every request needs an `Authorization: Bearer <token>` header. Your Account Manager issues your API token and your organisation's API identifier. Contact **support@botlhale.ai** if you do not have them.
+Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. The token expires after 24 hours.
 :::
 
 **Endpoint URL:**
 ```
-https://api.botlhale.xyz/asr/async/upload/vela
+https://api.botlhale.tech/asr/async/upload/vela
 ```
 
 **Description:**
@@ -38,8 +95,18 @@ flowchart LR
 
 | Parameter      | Requirement | Description                                              |
 |----------------|-------------|----------------------------------------------------------|
-| org_id         | Required    | Your organisation's API identifier, issued with your token. It is not the organisation name, and it does not appear in Settings. |
-| metadata       | Optional    | A JSON object containing the information below.          |
+| org_id         | Required    | Your organisation's Vela identifier, issued with your token. It is not the organisation name, and it does not appear in Settings. |
+| metadata       | Optional    | The information below, as a JSON string in a form field. See the note below. |
+
+:::caution Two things that fail quietly at the start of an integration
+**Send the request as form data, not as a JSON body.** `metadata` is a form field carrying a JSON string, which is why the examples below use `json.dumps` and `JSON.stringify`. A JSON body is not parsed, and the reply is `Please provide org_id` even though you sent one.
+
+**Use the Vela organisation identifier.** If you have been issued more than one, only the Vela one connects an upload to your Vela account. Uploading with another can succeed, returning a success code and a file key, while nothing appears under **Interactions**. An upload that reports success but never shows up is the sign to check this first.
+:::
+
+Before your first upload, confirm with your Account Manager that your organisation is active and has minutes allocated. Uploads against an organisation that is not yet activated do not process, and the failure is not visible from the API response.
+
+Processing draws on that allocation, so filter out recordings too short to evaluate before you send them. A few seconds of hold music or a dropped call consumes the allocation without producing anything worth reading.
 
 All `metadata` fields are optional:
 
@@ -49,7 +116,7 @@ All `metadata` fields are optional:
 - **team**: The team the call belongs to. The team has to exist in Vela already, because an upload never creates one. A team Vela cannot match is dropped, and that also stops a new agent being created from `agent_name`.
 - **department**: Department the call should be attributed to.
 - **direction**: Call direction: `inbound` or `outbound`.
-- **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`).
+- **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`). Tags are also where identifiers from your own systems belong, such as a queue name, a campaign, or a ticket reference, so they travel with the interaction and can be filtered on in Vela. Anything with a field of its own belongs in that field instead, so send call direction as `direction` rather than as a tag.
 - **contact**: The customer's phone number, as a string or a number. Vela stores it exactly as you send it, so keep the format consistent across your integration. This is what [Search by Phone Number](../number-search-guide.md) matches on, and sending it here is what makes an interaction findable by number.
 - **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
 - **interaction_id**: Your own reference for the call. It is stored as the call's filename.
@@ -89,7 +156,7 @@ import requests, json
 
 # Step 1: Get upload credentials
 response = requests.post(
-    "https://api.botlhale.xyz/asr/async/upload/vela",
+    "https://api.botlhale.tech/asr/async/upload/vela",
     headers={"Authorization": "Bearer YOUR_API_TOKEN"},
     data={
         "org_id": "your_org_id",
@@ -112,7 +179,7 @@ const fs = require('fs');
 
 // Step 1: Get upload credentials
 request.post({
-  url: 'https://api.botlhale.xyz/asr/async/upload/vela',
+  url: 'https://api.botlhale.tech/asr/async/upload/vela',
   headers: { 'Authorization': 'Bearer YOUR_API_TOKEN' },
   formData: {
     org_id: 'your_org_id',
@@ -139,13 +206,13 @@ request.post({
 ## Chats
 
 :::info Authentication
-Every request needs an `Authorization: Bearer <token>` header. Your Account Manager issues your API token and your organisation's API identifier. Contact **support@botlhale.ai** if you do not have them.
+Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. The token expires after 24 hours.
 :::
 
 **POST Request**
 
 ```
-https://api.botlhale.xyz/chats/upload/vela
+https://api.botlhale.tech/chats/upload/vela
 ```
 
 `Authorization: Bearer <ProvidedToken>`
@@ -231,7 +298,7 @@ chats: [
 import json
 import requests
 
-url = "https://api.botlhale.xyz/chats/upload/vela"
+url = "https://api.botlhale.tech/chats/upload/vela"
 
 chats = [ 
         { "message": "Sawubona, ngithumele imali izolo kodwa ayikafiki. Ngingenzani?", "time": "06/08/2024, 09:15:00", "sender": "user", "language": "zu-ZA" }, 

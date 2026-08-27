@@ -37,7 +37,7 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 
 **Allow these domains:**
 
-- `*.botlhale.ai` and `*.botlhale.xyz`: the Vela application, its real-time server, and the API.
+- `*.botlhale.ai`, `*.botlhale.tech`, and `*.botlhale.xyz`: the Vela application, its real-time server, and the API. All three are needed, as the API moved to `botlhale.tech` while other services remain on the older domains.
 - `*.amazonaws.com`: AWS S3, used to upload recordings and play back audio. Uploads and playback fail if this is blocked.
 
 ---

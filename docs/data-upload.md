@@ -171,14 +171,14 @@ For the full details, including size limits, see [System Requirements](./getting
 
 Upload call recordings or chat data programmatically via the Vela API. You need an API token first. See the [API Reference](./advanced/api-documentation.md) for how to obtain one, and for the full request and response formats.
 
-**Call recordings endpoint:** `https://api.botlhale.xyz/asr/async/upload/vela`
+**Call recordings endpoint:** `https://api.botlhale.tech/asr/async/upload/vela`
 
 **Step 1: Get upload credentials**
 ```python
 import requests, json
 
 response = requests.post(
-    "https://api.botlhale.xyz/asr/async/upload/vela",
+    "https://api.botlhale.tech/asr/async/upload/vela",
     headers={"Authorization": "Bearer YOUR_API_TOKEN"},
     data={
         'org_id': 'your_org_id',
@@ -194,7 +194,7 @@ files = [('file', ('call.wav', open('call.wav', 'rb'), 'audio/wav'))]
 requests.post(result['url'], data=result['fields'], files=files)
 ```
 
-**Chat upload endpoint:** `https://api.botlhale.xyz/chats/upload/vela`
+**Chat upload endpoint:** `https://api.botlhale.tech/chats/upload/vela`
 
 See the [API Reference](./advanced/api-documentation.md) for full request formats and the chat payload schema.
 

@@ -150,6 +150,12 @@ Check your password against the rules in [Password Requirements](../settings-con
 3. Turn **Show unsupported calls** on, at the top left of the list. A call whose language Vela could not transcribe is marked unsupported and left out of the list by default, so it is present but hidden.
 4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
 
+:::note Two people upload the same call and wait different lengths of time
+Processing is queued rather than instant, and the queue is shared, so the wait depends on what is ahead of a call rather than on who uploaded it. Two uploads of the same recording minutes apart can finish an hour apart.
+
+That is expected. What is not expected is a call that never arrives at all. Report those with the filename and the upload time rather than waiting longer, and say whether the same file has been uploaded before, because a repeat of an earlier upload behaves differently from a new one.
+:::
+
 ---
 
 **Problem:** Processed calls appear in the list but show no score.
