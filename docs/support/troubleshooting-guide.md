@@ -14,6 +14,33 @@ If this guide does not resolve your issue, see [Need Help?](#need-help) at the e
 
 ---
 
+## Start Here
+
+Find your symptom, rather than reading from the top.
+
+| What you are seeing | Where to look |
+| :--- | :--- |
+| Cannot sign in, or signed out mid-session | [Login and Authentication](#login-and-authentication-issues) |
+| An upload made in Vela failed or never arrived | [Upload Issues](#upload-issues) |
+| An upload sent from your own system failed or never arrived | [Integration and API](#integration-and-api-issues) |
+| A **401**, a token problem, or an integration that stopped working | [Integration and API](#integration-and-api-issues) |
+| Interactions arrive with the wrong agent, team, or date | [Integration and API](#integration-and-api-issues) |
+| Interactions uploaded but still not listed | [Processing Issues](#processing-issues) |
+| An interaction listed but with no score or no analysis | [Processing Issues](#processing-issues) |
+| The Dashboard is empty, slow, or forgets your changes | [Dashboard and Performance](#dashboard-and-performance-issues) |
+| A score looks wrong, or reads `0.0%` with a figure in brackets | [Scorecard and Scoring](#scorecard-and-scoring-issues) |
+| A Smart Search matches nothing, matches too much, or cannot be created | [Smart Search and Alerts](#smart-search-and-alert-issues) |
+| Names or numbers replaced with placeholders in a transcript | [Redaction and Access](#redaction-and-access-issues) |
+| Audio does not play, or jumps to the wrong point | [Audio Playback](#audio-playback-issues) |
+| A blank screen, or Vela running slowly | [Browser Issues](#browser-issues) |
+
+Two symptoms are worth naming, because neither looks like a fault:
+
+- **An upload returns success and nothing appears.** The interaction reached somewhere other than your Vela organisation. See [Integration and API](#integration-and-api-issues).
+- **A score of `0.0%` with a higher figure in brackets.** The interaction auto-failed. The bracketed figure is what it earned otherwise. See [Scorecard and Scoring](#scorecard-and-scoring-issues).
+
+---
+
 ## Login and Authentication Issues
 
 **Problem:** Cannot sign in. The page shows an error, or the login button does not respond.
@@ -436,6 +463,43 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 
 ---
 
+**Problem:** An access request was sent, and nothing has happened.
+
+**Cause:** Requests wait for an administrator to act on them. Nothing reminds them beyond the notification raised when the request was made.
+
+**Solution:**
+1. Ask an administrator to check **Settings → Access Requests**. Requests sit there until approved or declined.
+2. Where the request is urgent, ask directly rather than waiting. An administrator can already see the unmasked content and can tell you what you need.
+3. Where you need this often, standing **View Redactions** is the better answer than repeated requests.
+
+---
+
+**Problem:** A transcript still shows masked text after **View Redactions** was granted.
+
+**Cause:** Masking is what everyone sees by default, administrators included. The unmasked version is revealed on demand rather than shown automatically.
+
+**Solution:**
+1. Open the interaction and select **Review Redacted Info** to reveal the unmasked content.
+2. Where the control is absent, sign out and back in. Access changes are read when your session starts.
+3. Confirm the permission was set on your account in **Settings → Users**, rather than granted for one interaction only.
+
+---
+
+**Problem:** Something that should have been masked appears in a transcript.
+
+**Cause:** Only the entity types your administrator has configured are masked, so anything outside that list passes through. Spoken detail that the transcript records in an unusual form can also be missed.
+
+**Solution:**
+1. Check which entity types are enabled in **Settings**, and add the missing one. See [Organisation Configuration](../settings-config/organisation-configuration.md).
+2. Adding a type applies to interactions processed afterwards. Interactions already processed keep the masking they were given.
+3. Report anything that should have been caught by an enabled type to **support@botlhale.ai**, with the interaction and the entity type, so the detection can be improved.
+
+:::caution Treat an exposure as an incident
+Personal information appearing where it should not is a data protection matter, not only a product fault. Tell whoever is accountable for data protection at your organisation, rather than handling it as a support ticket alone.
+:::
+
+---
+
 ## Audio Playback Issues
 
 **Problem:** Audio does not play in the interaction detail view.
@@ -471,43 +535,29 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 
 ---
 
-## Browser and Performance Issues
+## Browser Issues
 
 **Problem:** Vela does not load, or displays a blank screen.
 
-**Cause:** JavaScript may be disabled, or a browser extension (such as an ad blocker or script blocker) may be preventing Vela from loading.
+**Cause:** Something between your browser and Vela is blocking it, usually a script blocker or a network rule.
 
 **Solution:**
-1. Confirm that JavaScript is enabled in your browser settings.
-2. Disable browser extensions one at a time to identify whether any are blocking Vela. Aggressive ad blockers and script blockers are the most common culprits.
-3. Clear browser cache and cookies, then reload.
-4. Try a different supported browser (Chrome, Edge, Firefox, or Safari).
-5. If the problem affects everyone at your organisation simultaneously, it may be a network or firewall issue. Contact your IT department to confirm the domains listed under [Firewall and Proxy](../getting-started/system-requirements.md#firewall-and-proxy) are reachable from your network. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so blocking it breaks playback and downloads as well as the application itself.
+1. Disable browser extensions and reload. Ad blockers and script blockers are the usual cause, so turn them off one at a time to find which.
+2. Confirm your browser is one Vela supports, and that JavaScript is on. See [System Requirements](../getting-started/system-requirements.md).
+3. Clear the cache and cookies, then reload.
+4. Where everyone at your organisation is affected at once, it is a network rule rather than a browser. Ask your IT department to confirm the domains under [Firewall and Proxy](../getting-started/system-requirements.md#firewall-and-proxy) are reachable. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so blocking it breaks playback and downloads as well as the application.
 
 ---
 
 **Problem:** Vela runs slowly, or charts take a long time to load.
 
-**Cause:** Too many browser tabs are open, the device does not meet recommended specifications, or the selected date range is returning a very large dataset.
+**Cause:** The view is returning more data than it needs to. A wide date range across a whole organisation is the usual reason, rather than the browser or the device.
 
 **Solution:**
-1. Close unnecessary browser tabs.
-2. Clear the browser cache.
-3. Narrow the date range or scope on dashboards and report views.
-4. Use Chrome or Edge (Chromium-based) for the best performance.
-5. If the device is older or low on memory, try the same view on another machine to confirm whether the slowdown is device-related.
-
----
-
-**Problem:** Features behave unexpectedly or parts of a page do not render correctly.
-
-**Cause:** The browser version may be outdated, or a browser extension may be interfering with Vela.
-
-**Solution:**
-1. Update your browser to the latest stable version.
-2. Disable all extensions and reload the page.
-3. If the problem only appears in one browser, try a different supported browser to confirm whether it is browser-specific.
-4. If the issue persists across multiple browsers and devices, contact support with a description of the behaviour and a screenshot.
+1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation.
+2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to render.
+3. Where every view is slow and other sites are not, clear the cache and try a second supported browser to confirm it is Vela rather than the machine.
+4. Where the same narrow view is still slow, contact support with the page, the date range, and the scope you had set.
 
 ---
 
