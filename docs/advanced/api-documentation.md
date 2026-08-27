@@ -74,7 +74,7 @@ Authorization: Bearer <access_token>
 ```
 
 :::caution Build the refresh in from the start
-Access tokens are short-lived. Refresh tokens last far longer. An integration that fetches one access token and keeps using it works for a while and then stops with a **401**, which is the failure most often mistaken for a broken endpoint.
+Access tokens are short-lived. Refresh tokens last far longer. An integration that fetches one access token and keeps using it works until that token expires, then returns **401** on every request. That is the failure most often mistaken for a broken endpoint, and `expires` on the token tells you when it is due.
 
 Refresh on a schedule, or whenever a request returns **401**, and treat the refresh token as the credential worth protecting.
 :::
@@ -453,7 +453,7 @@ Reports what your organisation is entitled to and how much of it has been used.
 GET https://api.botlhale.tech/organisations/vela/{OrgID}
 ```
 
-The reply covers the limits behind several things this documentation refers to:
+The reply covers the limits this documentation refers to elsewhere:
 
 | Field | What it tells you |
 | :--- | :--- |
