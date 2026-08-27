@@ -9,6 +9,39 @@ type: reference
 
 What has changed in each release of Vela, newest first.
 
+<!-- DRAFT: the next release. Everything below is on the dev branch and not yet on main,
+     so it is commented out until it ships. Uncomment the section when the release lands,
+     and open a documentation task for each item marked "needs a page".
+
+## Version 2.2
+
+### New Features
+
+#### Cautions
+A formal record when performance falls below standard, under **Coaching → Cautions**. Vela detects candidates from category scores, a manager sends one using a template, and the agent acknowledges it with a signature. Escalations email HR with the caution attached as a PDF, and a **Cautions** tab appears under Notifications.
+
+The route is `warnings` and the label is **Cautions**, so both names appear depending on where you look. Needs a page in the Coaching Portal documentation.
+
+#### Conditional scorecard questions
+A scorecard question can now depend on another question's answer. Set **Conditional** on the question, choose a **Parent Question** and the **Triggering Answer**, and the question only applies when the parent was answered that way. This is a more precise alternative to relying on the AI to mark a question N/A. Needs adding to [Scorecard Fields](./reference/scorecard-fields.md) and [Build an Agent Scorecard](./agent-scorecard-guide.md).
+
+#### Access to more than one team or department
+A user can be given access to several teams or departments rather than one. Affects [Roles and Access Levels](./settings-config/access-control.md), [Access Level](./reference/glossary.md#access-level), and the access tables on [User and Team Management](./settings-config/user-management.md).
+
+#### New ways to narrow a list
+Filter interactions by pain point and by dominant language, filter on the Agent Performance pages, and set a date range on the Smart Search list. Predefined Smart Searches by industry are offered when you create a search.
+
+#### Smaller changes
+- Dashboard charts are clickable, opening the interactions behind a figure.
+- Scorecard questions are grouped by category in accordions on the Create tab.
+- Interactions show a comment count, and comments and replies are counted separately.
+- Knowledge Base documents added by URL can be refreshed, rebuilding their embeddings.
+- Users can leave an organisation themselves.
+- Unread notification indicators appear in the navigation bar and the drawer.
+- Course reminders are sent, and packages carry a coaching courses limit.
+
+-->
+
 ## Version 2.1
 
 Version 2.1 brings new features and improvements.
