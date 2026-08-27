@@ -53,7 +53,7 @@ In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This 
 
 A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. Select **Resolve** on an alert once you have reviewed it. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
 
-Alerts appear in the **Alerts** tab under Notifications, and the **No. Alerts** metric counts them.
+Alerts appear in the **Alerts** tab under Notifications, and the **Total Number of Alerts** metric counts them.
 
 ## Auto-Fail
 

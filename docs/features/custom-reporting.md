@@ -87,14 +87,14 @@ Metrics are organised into groups, listed alphabetically:
 
 | Group | Examples |
 | :--- | :--- |
-| **Alert Metrics** | No. Alerts, Resolved Alerts |
-| **Customer Sentiment** | Sentiment Distribution |
-| **Interactions and Volume** | No. Calls, No. Chats, Ave. Call Duration |
-| **Keywords, Intents, & Language** | No. Keywords, No. Languages, Intent Distribution |
-| **Quality & Performance** | Average Agent Score, Agent Scores Distribution |
-| **Reviewed Interactions** | Number of Reviewed Interactions, Percentage of Reviewed |
-| **Team Workload** | No. Agents, Agent Distribution |
-| **Topics & Pain Points** | Top 10 Topics, Top 10 Pain Points |
+| **Alert Metrics** | Total Number of Alerts, Total Number of Resolved Alerts |
+| **Customer Sentiment** | Sentiment Distribution in Interactions |
+| **Interactions and Volume** | Total Number of Calls, Total Number of Chats, Average Call Handle Time (s) |
+| **Keywords, Intents, & Language** | Total Number of Keywords, Total Number of Languages, Intent Distribution in Interactions |
+| **Quality & Performance** | Average Agent Score (%), Distribution of Total Scores |
+| **Reviewed Interactions** | Total Number of Interactions, Percentage of Interactions Reviewed |
+| **Team Workload** | Total Number of Agents, Agent Distribution in Interactions |
+| **Topics & Pain Points** | Top 10 Topics, Top 10 Pain Points in Interactions (Detected) |
 
 Two things narrow what you see. Metrics that apply only to calls or only to chats are hidden when they do not fit the interaction type you chose. Your plan matters too: on plans without Smart Search, the groups are limited to quality assurance metrics, so alert, keyword, intent, and pain point metrics do not appear.
 

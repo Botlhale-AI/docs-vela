@@ -40,11 +40,11 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 
 | Metric | What it tells you | When to act |
 | :--- | :--- | :--- |
-| **Average Agent Score** | The overall quality performance for your scope. See [How Scoring Works](../explanation/how-scoring-works.md). | It stays below your team's standard. |
-| **Agent Scores Distribution** | How scores are spread across the team. | Agents cluster in the lower ranges, which points at the team rather than a person. |
-| **No. Alerts** and **Resolved Alerts** | How many Smart Search matches were raised, and how many of them have been resolved. | The gap between them widens week on week. |
-| **Sentiment Distribution** | The proportion of positive, neutral, and negative customer emotion. | **Negative** spikes suddenly, which usually means a service or system problem. |
-| **Talk to Listen Ratio** | Agent talking time relative to customer talking time. | It stays high, so the agent is talking more than listening. |
+| **Average Agent Score (%)** | The overall quality performance for your scope. See [How Scoring Works](../explanation/how-scoring-works.md). | It stays below your team's standard. |
+| **Distribution of Total Scores** | How scores are spread across the team. | Agents cluster in the lower ranges, which points at the team rather than a person. |
+| **Total Number of Alerts** and **Total Number of Resolved Alerts** | How many Smart Search matches were raised, and how many of them have been resolved. | The gap between them widens week on week. |
+| **Sentiment Distribution in Interactions** | The proportion of positive, neutral, and negative customer emotion. | **Negative** spikes suddenly, which usually means a service or system problem. |
+| **Agent Talk to Listen Ratio** | Agent talking time relative to customer talking time. | It stays high, so the agent is talking more than listening. |
 
 ![The Quality & Performance group, with Average Agent Scores beside the distribution of calls by RAG score](../../img/screenshots/dashboard/use_dashboard1.png)
 
@@ -154,7 +154,7 @@ Voice profiles improve speaker separation in transcripts, which in turn improves
 
 One weak agent and a weak team need different responses, so this is worth a minute before you act.
 
-The quickest check is on the Dashboard: **Agent Scores Distribution** shows how scores are spread, so you can see whether this agent sits apart from their colleagues or with them.
+The quickest check is on the Dashboard: **Distribution of Total Scores** shows how scores are spread, so you can see whether this agent sits apart from their colleagues or with them.
 
 For a fuller answer, the three tabs beside **Overview** count categories rather than ranking people. **Teams**, **Departments**, and **Agents** each show which scorecard categories come up most often as a strength, and which come up as a problem.
 

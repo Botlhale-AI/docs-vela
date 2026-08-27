@@ -51,7 +51,7 @@ Begin each day with your unresolved Smart Search alerts, before opening individu
 
 On **Smart Detector → Smart Search**, sort the list by **Results** in descending order to see the most frequently triggered searches first. These often point to systemic issues rather than one-off incidents, and systemic issues merit faster attention.
 
-After working through alerts, check the Dashboard for agents whose scores are declining day-over-day, or whose **Sentiment Distribution** is shifting negative. Use the score distribution and the agent view to identify individuals who need targeted review rather than sampling broadly.
+After working through alerts, check the Dashboard for agents whose scores are declining day-over-day, or whose **Sentiment Distribution in Interactions** is shifting negative. Use the score distribution and the agent view to identify individuals who need targeted review rather than sampling broadly.
 
 When you review an interaction, always complete the feedback cycle: add a coaching comment, tag the agent so they receive a notification, and mark the interaction as reviewed. An interaction reviewed but not commented on represents a missed coaching opportunity.
 

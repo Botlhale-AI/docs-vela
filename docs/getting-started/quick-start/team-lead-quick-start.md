@@ -123,9 +123,9 @@ Four controls shape everything you see. They are the **Interactions** type, the 
 
 Your dashboard displays a set of performance indicators. When you are starting out, these three are a good place to begin:
 
-1. **Average Agent Score**: a quick read on overall performance
-2. **No. Alerts** (number of alerts): issues raised by your Smart Searches that need attention
-3. **Sentiment Distribution**: how sentiment breaks down across the date range
+1. **Average Agent Score (%)**: a quick read on overall performance
+2. **Total Number of Alerts**: issues raised by your Smart Searches that need attention
+3. **Sentiment Distribution in Interactions**: how sentiment breaks down across the date range
 
 Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each metric.
 
@@ -144,7 +144,7 @@ Select **Customise** to choose which metrics appear and how each is charted (tab
 | 4 | The scrollbar | The remaining groups sit below the two in view |
 | 5 | **Save Changes** | Applies your selection. Closing without saving discards it |
 
-**Try it now:** Add **Top 10 Pain Points** to your dashboard to monitor common customer issues.
+**Try it now:** Add **Top 10 Pain Points in Interactions (Detected)** to your dashboard to monitor common customer issues.
 
 ---
 

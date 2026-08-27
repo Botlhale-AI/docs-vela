@@ -15,7 +15,7 @@ The sections below are the groups Vela itself uses, so a group heading here matc
 The exact metrics available to you depend on your organisation's configuration and your plan. The names below are those Vela uses. If a metric does not appear in your list, it may not apply to your setup.
 :::
 
-{/* UNVERIFIED: the pattern list in dashboard/metricGroups.js is a whitelist — getGroupedDashboardMetrics drops any metric matching no pattern — so it bounds the families that can appear in Customise. Diffing it against this page leaves seven patterns with no documented metric: reviewed team compliance scores distribution; reviewed team quality scores distribution; interaction distribution by agent compliance score; by agent quality score; by agent quality score boundaries; by agent compliance score boundaries; and a standalone alerts distribution (this page has Interaction Distribution by Number of Alerts only). A pattern is not proof a metric record exists, and display names come from database records rather than code, so confirm against Customise on the Dashboard before adding rows. Re-run the diff after any metricGroups.js change. */}
+{/* Names on this page were checked against a live Dashboard on 26 August 2026 and corrected to match. The product's own capitalisation varies ("sentiment distribution in interactions" beside "Average Silent Time (%)") and two labels carry a stray full stop or a typo. Names here are tidied to consistent title case by decision, so they read as one set while keeping every distinguishing word intact for lookup. Do not "correct" them back. */}
 
 ---
 
@@ -23,17 +23,18 @@ The exact metrics available to you depend on your organisation's configuration a
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Average Agent Score** | The mean overall score across evaluated interactions, on a 0 to 100 scale |
+| **Average Agent Score (%)** | The mean overall score across evaluated interactions, as one figure |
+| **Average Agent Scores (%)** | The same mean, broken down per agent and listed highest first |
 | **Average Agent Compliance Score** | The mean score across scorecard items marked as compliance items |
 | **Average Agent Quality Score** | The mean score across scorecard items not marked as compliance |
-| **Agent Scores Distribution** | How individual agents' scores are spread across the range |
+| **Distribution of Total Scores** | How many calls fall into each score range, from 0-10% up to 90-100% |
 | **Agent Compliance Scores Distribution** | The same spread, for compliance items only |
-| **Agent Quality Scores Distribution** | The same spread, for quality items only |
-| **Team Scores Distribution** | Score spread compared across teams |
-| **Team Compliance Scores Distribution** | Team-level spread, compliance items only |
-| **Team Quality Scores Distribution** | Team-level spread, quality items only |
+| **Distribution of Quality Scores** | The same ranges, counting quality items only |
+| **Average Team Scores (%)** | The mean score for each team, listed highest first |
+| **Average Team Compliance Scores (%)** | The mean compliance score for each team |
+| **Average Team Quality Scores (%)** | The mean quality score for each team |
 | **Interaction Distribution by Agent Score** | How many interactions fall into each score band |
-| **Interaction Distribution by Agent Score Boundaries** | Interactions grouped by your organisation's Red, Amber, and Green boundaries |
+| **Distribution of Calls by Total RAG Scores** | Calls grouped into Red, Amber, and Green, using your organisation's boundaries |
 
 An administrator sets the score boundaries. See [Organisation Configuration](../settings-config/organisation-configuration.md). For how these figures are calculated, and what changing a weight does to them, see [How Scoring Works](../explanation/how-scoring-works.md).
 
@@ -45,17 +46,17 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 
 | Metric | What it measures |
 | :--- | :--- |
-| **No. Calls** | Number of call interactions in the selected period |
-| **No. Chats** | Number of chat interactions in the selected period |
+| **Total Number of Calls** | Number of call interactions in the selected period |
+| **Total Number of Chats** | Number of chat interactions in the selected period |
 | **Total Call Duration** | Combined length of all calls in the period |
-| **Ave Call Duration** | Average length of a call |
-| **Average Silent Time** | Average silence within interactions |
-| **Ave Response Time** | Average time an agent takes to respond in a chat |
-| **Talk to Listen Ratio** | Agent talking time relative to customer talking time |
-| **Call Distribution by TTLR** | How calls are spread across talk-to-listen ratios |
-| **Call Distribution by Silent Time** | How calls are spread across silent-time ranges |
-| **Interaction Distribution by Handle Time** | How interactions are spread across handling durations |
-| **Chats Distribution by Average Response Time** | How chats are spread across response-time ranges |
+| **Average Call Handle Time (s)** | Average length of a call |
+| **Average Silent Time (%)** | Average silence within interactions |
+| **Average Chat Response Time (s)** | Average time an agent takes to respond in a chat |
+| **Agent Talk to Listen Ratio** | Agent talking time relative to customer talking time |
+| **Distribution of Calls by TTLR** | How calls are spread across talk-to-listen ratios |
+| **Distribution of Calls by Silent Time** | How calls are spread across silent-time ranges |
+| **Distribution of Calls by Duration** | How interactions are spread across handling durations |
+| **Distribution of Chats by Average Response Time** | How chats are spread across response-time ranges |
 
 **What to look for:** longer calls are not automatically worse, so read duration alongside score and sentiment. High silent time can mean an agent is searching for information. That is usually a training or knowledge-base signal rather than a discipline one.
 
@@ -65,8 +66,8 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 
 | Metric | What it measures |
 | :--- | :--- |
-| **No. Agents** | Number of agents with interactions in the period |
-| **Agent Distribution** | How interactions are spread across agents |
+| **Total Number of Agents** | Number of agents with interactions in the period |
+| **Agent Distribution in Interactions** | How interactions are spread across agents |
 | **Interactions Distribution by Reviewer** | Which team members are completing reviews |
 
 **What to look for:** an uneven Agent Distribution can mean workload is unbalanced, or that some agents joined part-way through the period.
@@ -77,8 +78,9 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Number of Reviewed Interactions** | How many interactions a human has marked as reviewed |
-| **Percentage of Reviewed** | Reviewed interactions as a proportion of the total |
+| **Total Number of Interactions** | How many interactions a human has marked as reviewed |
+| **Percentage of Interactions Reviewed** | Reviewed interactions as a proportion of the total |
+| **Reviewed Interactions Distribution** | Reviewed against not yet reviewed, as a proportion |
 | **Interactions Distribution by Review Status** | Reviewed versus not yet reviewed |
 | **Reviewed Agent Scores Distribution** | Score spread across reviewed interactions only |
 | **Reviewed Compliance Scores Distribution** | Compliance score spread, reviewed interactions only |
@@ -95,7 +97,7 @@ Reviewed metrics count only what a person has marked with **Mark as Reviewed**, 
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Sentiment Distribution** | Proportion of interactions by overall sentiment: Positive, Neutral, or Negative |
+| **Sentiment Distribution in Interactions** | Proportion of interactions by overall sentiment: Positive, Neutral, or Negative |
 
 **What to look for:** a rise in negative sentiment without a matching fall in agent scores usually points at a process or product problem rather than an agent one.
 
@@ -107,14 +109,14 @@ Reviewed metrics count only what a person has marked with **Mark as Reviewed**, 
 | :--- | :--- |
 | **Top 10 Topics** | The most frequently occurring conversation topics |
 | **Bottom 10 Topics** | The least frequently occurring topics |
-| **Top 10 Topics (Detected)** | Most frequent topics identified by the AI |
+| **Top 10 Topics in Interactions (Detected)** | Most frequent topics identified by the AI |
 | **Top 10 Topics (Organisational)** | Most frequent topics from your own configured list |
-| **Bottom 10 Topics (Detected)** | Least frequent AI-identified topics |
+| **Bottom 10 Topics in Interactions (Detected)** | Least frequent AI-identified topics |
 | **Bottom 10 Topics (Organisational)** | Least frequent topics from your configured list |
-| **Top 10 Pain Points** | The most frequently occurring customer pain points |
-| **Bottom 10 Pain Points** | The least frequently occurring pain points |
-| **No. Pain Points** | Number of distinct pain points detected in the period |
-| **Pain Point Distribution** | Proportion of interactions by pain point |
+| **Top 10 Pain Points in Interactions (Detected)** | The most frequently occurring customer pain points |
+| **Bottom 10 Pain Points in Interactions (Detected)** | The least frequently occurring pain points |
+| **Total Number of Pain Points** | Number of distinct pain points detected in the period |
+| **Pain Point Distribution in Interactions** | Proportion of interactions by pain point |
 
 The AI finds detected topics. Your team creates organisational ones. See the [Glossary](./glossary.md), and [Manage Smart Search Terms](../topics-and-terms-guide.md) for how to add your own.
 
@@ -124,11 +126,11 @@ The AI finds detected topics. Your team creates organisational ones. See the [Gl
 
 | Metric | What it measures |
 | :--- | :--- |
-| **No. Keywords** | Number of distinct keywords detected in the period |
+| **Total Number of Keywords** | Number of distinct keywords detected in the period |
 | **Keyword Distribution** | Proportion of interactions by keyword |
-| **Intent Distribution** | Proportion of interactions by customer intent |
-| **No. Languages** | Number of distinct languages detected in the period |
-| **Language Distribution** | Proportion of interactions by language |
+| **Intent Distribution in Interactions** | Proportion of interactions by customer intent |
+| **Total Number of Languages** | Number of distinct languages detected in the period |
+| **Language Distribution in Interactions** | Proportion of interactions by language |
 
 Keywords only count where your team has added them. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
 
@@ -140,9 +142,11 @@ Keywords only count where your team has added them. See [Manage Smart Search Ter
 
 | Metric | What it measures |
 | :--- | :--- |
-| **No. Alerts** | Number of Smart Search matches raised in the period |
-| **Resolved Alerts** | How many of the alerts raised in the period have been marked resolved |
-| **Interaction Distribution by Number of Alerts** | How interactions are spread across the number of alerts they raised |
+| **Total Number of Alerts** | Number of Smart Search matches raised in the period |
+| **Total Number of Resolved Alerts** | How many of the alerts raised in the period have been marked resolved |
+| **Alert Distribution in Interactions** | Which Smart Searches raised the alerts, and how many each accounts for |
+| **Resolved Alerts Distribution** | Resolved against unresolved alerts in the period |
+| **Distribution of Interactions by Number of Alerts** | How interactions are spread across the number of alerts they raised |
 
 **What to look for:** a growing unresolved count means alerts are arriving faster than the team can work through them. Either the searches are too broad, or there is not enough review time. See [Smart Search](../smart-search-guide.md).
 

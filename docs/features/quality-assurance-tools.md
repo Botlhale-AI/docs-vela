@@ -54,8 +54,8 @@ A Smart Search checks every processed interaction, so compliance terms are worth
 The Dashboard shows how your teams and agents are scoring over the period you select. It reports the figures and does not judge them, so read them against the standard your organisation expects.
 
 1.  Go to the **Dashboard**.
-2.  Check **Agent Scores Distribution** to see how scores are spread, and how many agents sit in the red band below the Lower Bound your administrator set. See [Score Boundaries](../reference/glossary.md#score-boundaries).
-3.  Check **Sentiment Distribution**, in the **Customer Sentiment** group, for a rising negative share, and **No. Alerts** for a high volume of Smart Search matches. Either can point to a problem that is systemic rather than individual.
+2.  Check **Distribution of Total Scores** to see how scores are spread, and how many agents sit in the red band below the Lower Bound your administrator set. See [Score Boundaries](../reference/glossary.md#score-boundaries).
+3.  Check **Sentiment Distribution in Interactions**, in the **Customer Sentiment** group, for a rising negative share, and **Total Number of Alerts** for a high volume of Smart Search matches. Either can point to a problem that is systemic rather than individual.
 
 ![The Quality and Performance group, with average score per agent beside the red, amber and green call distribution](../../img/screenshots/dashboard/use_dashboard1.png)
 
