@@ -1,14 +1,16 @@
 ---
 sidebar_position: 5
 title: Manage Agents and Teams
-description: "Add agents, move them between teams, and retire the ones who leave."
+description: "Add agents, move them between teams, and remove the ones who leave."
 type: how-to
 ---
 
 # Manage Agents and Teams
-Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins, moving someone between teams, and retiring someone who leaves.
+Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins your organisation, moving someone between teams, and removing someone who leaves.
 
-Getting this wrong is quiet rather than loud. An agent in the wrong team still gets scored, but their results land in another team lead's figures, so the numbers stay plausible while being wrong.
+Keep these records accurate as your teams change. Every insight Vela produces is grouped by the department and team on an agent's record, so an agent left in the wrong team is still scored, and their results land in another team lead's figures. Nothing appears broken, which is what makes it worth checking: the numbers stay plausible while being wrong.
+
+Check an agent's team whenever they join, move, or leave, and again after any bulk import. Insights are only as accurate as the assignments behind them.
 
 ---
 
@@ -18,26 +20,26 @@ You need:
 
 - **Access level:** Organisational, Departmental, or Team, covering the agents and teams you are changing. You can move an agent into any team your access level covers. See [Access Level](../reference/glossary.md#access-level).
 - **The department a team belongs to.** A team is created inside a department, so the department has to exist first. See [Administrator Setup](../getting-started/quick-start/administrator-setup.md).
-- **The agent's name and email address.** Both are required when you add someone by hand.
+- **The agent's name and email address.** Both are required when you add someone manually.
 
 :::note Agents are not users
-An agent is a person whose interactions are analysed. A user is a person who signs in to Vela. Adding one does not create the other, and a bulk CSV import creates agents only. See [Agent](../reference/glossary.md#agent) and [User](../reference/glossary.md#user).
+An agent is a person whose interactions are analysed. A user is anyone who has access to Vela, including administrators. Adding one does not create the other, and a bulk CSV import creates agents only. See [Agent](../reference/glossary.md#agent) and [User](../reference/glossary.md#user).
 :::
 
 ---
 
 ## 1. Find an Agent
 
-Go to **Agents → Agent Details** in the left sidebar. The table lists everyone you can see, under **Name**, **Email**, **Department**, and **Team**. Four controls sit above it:
+Go to **Agents → Agent Details** in the left sidebar. The table lists everyone within your access level, under **Name**, **Email**, **Department**, and **Team**. Four controls sit above it:
 
 | Control | What it does |
 | :--- | :--- |
 | **Search** | Narrows the list by name |
 | **Sort** | Orders the list on any column |
-| **Filter** | Opens **Filter By**, where you select departments, teams, and **Status**. Select **Apply** to use it |
+| **Filter** | Opens **Filter By**, which filters the list by a specific department, team, and **Status**. Select **Apply** to use it |
 | **Export** | Downloads the list, including each agent's department, team, and status |
 
-An agent with nothing assigned reads **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, pagination sits below the table: **Previous** and **Next**, with **Page 1 of 2** between them.
+Unassigned agents read **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, pagination sits below the table: **Previous** and **Next**, with **Page 1 of 2** between them.
 
 ![The Agent Details table, with the Name, Email, Department, Team, Voice Profile Status, and Actions columns above the Previous and Next controls](../../img/screenshots/agent_details/agent-details-table.png)
 
@@ -78,7 +80,7 @@ Adding an agent can therefore email them straight away. Check the name and addre
 
 The **Actions** column holds all three.
 
-**Edit** opens the agent's record. Moving them to another team changes whose figures they appear in from that point on, and leaves their existing interactions with the team that handled them.
+**Edit** opens the agent's record. Moving them to another team changes where their insights appear from that point on, and leaves their existing interactions with the team that handled them.
 
 **Delete Agent** retires the agent rather than erasing them, so their past interactions and scores keep counting towards the team's historical figures.
 
