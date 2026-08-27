@@ -13,6 +13,16 @@ Endpoint reference for the Vela endpoints: sending call recordings and chat tran
 
 Botlhale's API also covers transcription, translation, text to speech, and chat bots, which sit outside Vela. Those are documented at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
 
+:::note Where this page and the published reference differ
+[api-docs.botlhale.ai](https://api-docs.botlhale.ai/) is the authority on these endpoints. This page follows it, and adds two things it does not yet cover.
+
+**More metadata fields.** The reference lists a short set. Vela also reads `agent_name`, `team`, `department`, `direction`, `tags`, `contact`, `language`, `notifyEmail`, and `validate_metadata`, which are documented below.
+
+**Lower-case `sender`.** The reference shows `Agent` capitalised on chat messages. Vela matches the value exactly, and only lower case is recognised.
+
+Where the two disagree on anything else, the reference is right.
+:::
+
 ## Authentication
 
 Sign in once to get a refresh token, exchange it for an access token, then send that access token on every request.
@@ -138,7 +148,7 @@ If you have been issued more than one organisation ID, only the Vela one connect
 An upload that reports success but never shows up is the sign to check this first.
 :::
 
-Before your first upload, confirm with your Account Manager that your organisation is active and has minutes allocated. Uploads against an organisation that is not yet activated do not process, and the failure is not visible from the API response.
+Before your first upload, confirm with your Account Manager that your organisation is active and has minutes allocated. An organisation with no allocation set is refused with **400** `Allocation exceeded`, the same error as one that has used up its minutes.
 
 Processing draws on that allocation, so filter out recordings too short to evaluate before you send them. A few seconds of hold music or a dropped call consumes the allocation without producing anything worth reading.
 
@@ -165,7 +175,7 @@ Either way, check the first few calls of a new integration under **Interactions 
 :::
 
 :::info Allocation check
-The API verifies that the organisation is within its monthly allocated duration. If the allocation has been exceeded, an error is returned.
+The endpoint checks the organisation's monthly allocated duration before it issues upload credentials. Where the allocation has been used up, or none is set, it returns **400** `Allocation exceeded` and no upload takes place.
 :::
 
 **Response Format**: The response carries the two things the second request needs. `url` is where the audio goes, and `fields` is a set of form values that authorise that upload.
@@ -240,6 +250,26 @@ request.post({
 
 
 
+**Error Responses:**
+
+| Status | Message | Cause |
+| :--- | :--- | :--- |
+| 404 | `Organisation not found` | `org_id` does not match an organisation. |
+| 400 | `Missing fileName` | The request did not name the file being uploaded. |
+| 400 | `Allocation exceeded` | The organisation has used its monthly duration, or has no allocation set. A newly created organisation that has not been activated returns this. |
+| 400 | `Could not find agent with the provided metadata` | Raised when `validate_metadata` is set and no agent matched. |
+| 400 | `Team not found` | Raised when `validate_metadata` is set and `team` did not match. |
+| 400 | `Department not found` | Raised when `validate_metadata` is set and `department` did not match. |
+| 400 | `Invalid date of call. Correct format is DD/MM/YYYY, HH:mm:ss` | `date_of_call` could not be parsed, and `validate_metadata` was set. |
+| 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` was something else, and `validate_metadata` was set. |
+| 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string, and `validate_metadata` was set. |
+| 400 | `Invalid notify email` | `notifyEmail` is not a valid address, and `validate_metadata` was set. |
+
+The wider platform's status codes, including **401** for an expired token and **429** for rate limiting, are listed under [Error Codes](https://api-docs.botlhale.ai/) in the published reference.
+
+
+---
+
 ## Chats
 
 :::info Authentication
@@ -271,7 +301,7 @@ Metadata object:
 - **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
 - **tags** (array): Classification labels for the chat, as an array of strings.
 - **contact** (string or number): The customer's phone number, stored exactly as sent. See the note under the calls endpoint above.
-- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`), read as **Africa/Johannesburg**. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
+- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm` (for example `28/11/2025, 14:30`), read as **Africa/Johannesburg**. Seconds are accepted as well. If omitted, the upload time is used. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
 - **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes.
 - **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
 - **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
@@ -281,7 +311,7 @@ Metadata object:
 Message object:
 
 - **message** (string): Text that was sent.
-- **time** (string): Format `DD/MM/YYYY, HH:mm:ss`, read as **Africa/Johannesburg**. Seconds are part of the format, not optional.
+- **time** (string): Format `DD/MM/YYYY, HH:mm`, read as **Africa/Johannesburg**. Seconds are accepted as well.
 - **sender** (string): `agent`, `user`, or `bot`, in lower case. Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
 
 :::warning Send `sender` in lower case
@@ -312,7 +342,14 @@ Keep that `id` to match what you sent against what you find. To confirm the anal
 |--------|-------|-------|
 | 404 | `Organisation not found` | `org_id` does not match an organisation. |
 | 400 | `Monthly chats allocation exceeded` | The organisation has used its chat allocation. |
-| 400 | `Invalid date of chat. Correct format is DD/MM/YYYY, HH:mm:ss` | `date` could not be parsed, and `validate_metadata` was set. |
+| 400 | `Could not find agent with the provided metadata` | Raised when `validate_metadata` is set and no agent matched. |
+| 400 | `Team not found` | Raised when `validate_metadata` is set and `team` did not match. |
+| 400 | `Department not found` | Raised when `validate_metadata` is set and `department` did not match. |
+| 400 | `Invalid date of chat. Correct format is DD/MM/YYYY, HH:mm:ss` | `date` could not be parsed, and `validate_metadata` was set. The message names the format with seconds, though minutes alone are accepted. |
+| 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` was something else, and `validate_metadata` was set. |
+| 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string, and `validate_metadata` was set. |
+| 400 | `Invalid contact. Contact must be a string or number` | `contact` was another type, and `validate_metadata` was set. |
+| 400 | `Invalid notify email` | `notifyEmail` is not a valid address, and `validate_metadata` was set. |
 | 500 | `Something went wrong with the upload` | The request could not be read, usually because `chats` is not valid JSON. |
 
 :::warning Metadata problems are silent
