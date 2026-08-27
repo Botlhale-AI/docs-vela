@@ -12,7 +12,13 @@ The metrics available on your Dashboard and in Reports. Use this page to look up
 The sections below are the groups Vela itself uses, so a group heading here matches the heading you see when you select **Customise** on the Dashboard or **Add New Metric** in a report. The Dashboard and the report form order the groups differently, so use the headings rather than the position.
 
 :::note Availability varies
-The exact metrics available to you depend on your organisation's configuration and your plan. The names below are those Vela uses. If a metric does not appear in your list, it may not apply to your setup.
+The exact metrics available to you depend on your organisation's configuration and your plan. If a metric does not appear in your list, it may not apply to your setup.
+:::
+
+:::note Two names for the same metric
+This page uses the names on your Dashboard cards. **Customise** names several of them differently: **Total Number of Agents** is **No. Agents** there, and **Average Team Scores (%)** is **Team Scores Distribution**.
+
+The group headings are the same on both screens, so find the group first and the metric is in it.
 :::
 
 {/* Names on this page were checked against a live Dashboard on 26 August 2026 and corrected to match. The product's own capitalisation varies ("sentiment distribution in interactions" beside "Average Silent Time (%)") and two labels carry a stray full stop or a typo. Names here are tidied to consistent title case by decision, so they read as one set while keeping every distinguishing word intact for lookup. Do not "correct" them back. */}
