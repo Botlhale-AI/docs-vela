@@ -234,13 +234,15 @@ Select **View**, in the **Results** column of the Smart Search list, to open a s
 
 The results view has three collapsible sections.
 
+**Set the period first.** The date range sits at the top of the page, with **Quick** picks for **1h**, **6h**, **12h**, and **24h** beside it. Everything in Smart Search Details and Interaction Analytics is recalculated for the period you choose.
+
 #### Smart Search Details
 
 A summary of the search across the period:
 
 - The search's **name**, **description**, date created, and **status** (Active or Inactive).
 - A **Summary**, showing the **Period Covered** and the **Total Interactions** that matched the search.
-- **Main Insights Highlighted**: an AI-written read of the matched interactions. It opens with a short overview, then a **Call Reasons** explanation of why the interactions matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Insights appear once a search has enough matches.
+- **Main Insights Highlighted**: an AI-written read of the matched interactions. Where the period holds too little to draw on, it reads **There are no insights available for this search in the selected time period**, which is a result rather than a fault. It opens with a short overview, then a **Call Reasons** explanation of why the interactions matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Insights appear once a search has enough matches.
 
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
 
@@ -260,7 +262,15 @@ Charts that break down the matched interactions:
 
 The list of matched calls and chats. Open any one to see its full transcript and AI analysis (summary, sentiment, scorecard, keywords, and more) in context. That per-interaction analysis lives on the interaction itself, not in the summaries above.
 
-Only unresolved matches appear here, so resolving an alert removes it from the list.
+Only unresolved matches appear here, so resolving an alert removes it from the list. The heading above it says what you are looking at, for example **Showing 4 interactions with unresolved alerts related to Compliance Violation Risk**.
+
+**Search**, **Filter**, **Sort By**, and **Export** sit above the list, and it paginates like the Interactions list.
+
+:::warning Returned Interactions has its own date range
+The list carries a second date control, separate from the one at the top of the page. The two are set independently, so **Total Interactions** in the Summary can count a different period from the list below it.
+
+When the count and the list disagree, check both dates before concluding anything is missing.
+:::
 
 ![The Returned Interactions panel, listing the calls with unresolved alerts for the search, with their handle time, topic, alert count, and scores](../img/screenshots/smart_search/details_3.png)
 
