@@ -34,6 +34,16 @@ Smart Search and Smart Questions appear in the sidebar on the plans that include
 
 ---
 
+## What the Tools Share
+
+**View By** sits above the list or results on most Smart Detector screens. It sets how much of the organisation the figures cover, for example **Entire Organisation**, and it is bounded by your own access level, so it never shows you more than you are allowed to see.
+
+It is worth checking before you read a count. A figure scoped to one team and a figure scoped to the organisation answer different questions, and nothing on the number itself says which you are looking at.
+
+Most of these screens also carry **Search**, **Sort By**, and **Filter** above their lists, and a date range where the figures depend on a period.
+
+---
+
 ## Related
 
 - [Build an Agent Scorecard](./agent-scorecard-guide.md): the criteria every interaction is scored against

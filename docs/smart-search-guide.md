@@ -286,7 +286,9 @@ Below that, **Top Smart Search Combinations** shows the pairs of searches that m
 
 Review match frequency over time to understand whether an issue is increasing, stable, or improving. Compare periods around known events, such as a training programme, a process change, or a new product launch, to see whether they changed the pattern.
 
-On the Smart Search list, use **Sort By** to order your searches by **Results** (their match count), highest first. This shows which searches are triggering most often. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
+On the Smart Search list, **View By** sets how much of the organisation the list covers. See [Smart Detector](./smart-detector-overview.md#what-the-tools-share).
+
+Use **Sort By** to order your searches by **Results** (their match count), highest first. This shows which searches are triggering most often. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
 
 ### Action Planning
 

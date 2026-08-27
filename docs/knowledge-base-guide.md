@@ -82,12 +82,15 @@ The document has to be in the Knowledge Base already. Upload it there first, the
 
 ### Working with the Document Library
 
+**View By** above the table sets how much of the organisation the list covers, and **Search** narrows it by wording. See [Smart Detector](./smart-detector-overview.md#what-the-tools-share).
+
 The table below the upload area is where you manage what is already there:
 
 | Control | What it does |
 | :--- | :--- |
 | The tick box on a row | Selects the document. **Select all** at the head of the column takes every row |
 | **Download selected documents** | Downloads everything you have ticked in one go |
+| The **eye** icon | Opens the document to read it without downloading |
 | **Download document** | Downloads that one document |
 | The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to |
 | **Edit filename** | Renames the document in Vela |
