@@ -22,6 +22,11 @@ A formal record when performance falls below standard, under **Coaching → Caut
 
 The route is `warnings` and the label is **Cautions**, so both names appear depending on where you look. Needs a page in the Coaching Portal documentation.
 
+#### Terms and Conditions on first sign-in
+Users now accept **Terms and Conditions for Service Access and Usage** before they can use Vela. The terms open on their own after signing in, and the rest of the platform stays out of reach until the user ticks **I have read and agree to the Terms and Conditions for Service Access and Usage** and selects **Accept & Continue**.
+
+Acceptance is recorded against the user and carries a version number, so publishing a new version asks everyone to accept again on their next sign-in. Agents are not asked, as the Coaching Portal is outside the check, and API integrations are unaffected. Needs a short section in [Administrator Setup](./getting-started/quick-start/administrator-setup.md) and [Team Lead Quick Start](./getting-started/quick-start/team-lead-quick-start.md).
+
 #### Conditional scorecard questions
 A scorecard question can now depend on another question's answer. Set **Conditional** on the question, choose a **Parent Question** and the **Triggering Answer**, and the question only applies when the parent was answered that way. This is a more precise alternative to relying on the AI to mark a question N/A. Needs adding to [Scorecard Fields](./reference/scorecard-fields.md) and [Build an Agent Scorecard](./agent-scorecard-guide.md).
 
