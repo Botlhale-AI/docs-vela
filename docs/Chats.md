@@ -12,7 +12,7 @@ Chats are your text interactions. Upload a chat transcript as CSV, or several at
 
 ---
 
-## What You Get
+## What It Does
 
 The same analysis as calls: summary, sentiment, Agent Scorecard outcome, alerts, keywords, intent, and pain points. The one difference is that chats report response time in place of the talk-to-listen ratio and silent time.
 

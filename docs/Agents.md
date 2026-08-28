@@ -12,7 +12,7 @@ The Agents section is where you manage your agents and review how they are perfo
 
 ---
 
-## What It Covers
+## What It Does
 
 - **Agent Details**: add agents individually or import many from a CSV, and manage the voice profiles that improve speaker separation in transcripts.
 - **Performance**: see each agent's score and rank, their strongest and weakest scorecard categories, and how they compare with their team.

@@ -12,7 +12,7 @@ Calls are your voice interactions. Upload a recording and Vela transcribes it an
 
 ---
 
-## What You Get
+## What It Does
 
 Each processed call includes a summary, the sentiment through the conversation, the Agent Scorecard outcome, and any alerts a Smart Search raised. It also surfaces keywords, the customer's intent, and pain points, with timestamps on every line.
 

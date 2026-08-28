@@ -327,6 +327,7 @@ const sidebars = {
     //     { type: "doc", id: "Agents", label: "🎧 Agents" },
     //     { type: "doc", id: "Reports", label: "🧾 Reports" },
     //     { type: "doc", id: "Notifications", label: "🔔 Notifications" },
+    //     { type: "doc", id: "Coaching", label: "📚 Coaching" },
     //     { type: "doc", id: "smart-detector-overview", label: "🔍 Smart Detector" },
     //     { type: "doc", id: "Settings", label: "⚙️ Settings" },
     //     { type: "doc", id: "api", label: "🔌 API" },

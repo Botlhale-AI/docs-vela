@@ -12,9 +12,9 @@ The Dashboard is your at-a-glance view of performance. It shows trends across ev
 
 ---
 
-## What It Shows
+## What It Does
 
-Performance indicators for the scope and period you choose, such as Average Agent Score, number of alerts, and sentiment. You choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card). Every metric is defined in [Metrics](./reference/metrics.md).
+Performance figures for the scope and period you choose, such as **Average Agent Scores (%)**, **Total Number of Alerts**, and **Sentiment Distribution in Interactions**. Select **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card). Every metric is defined in [Metrics](./reference/metrics.md).
 
 ---
 

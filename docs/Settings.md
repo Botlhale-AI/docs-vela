@@ -12,7 +12,7 @@ Settings is where administrators configure the organisation, and where every use
 
 ---
 
-## What You Configure
+## What It Does
 
 - **Users and teams**: add people, build your department and team structure, and set each person's role and access level.
 - **Data privacy**: choose which entity types Vela redacts from transcripts, and who can view the unredacted version.

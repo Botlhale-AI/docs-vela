@@ -12,7 +12,7 @@ Notifications tell you when something needs your attention: a Smart Search alert
 
 ---
 
-## Where They Appear
+## What It Does
 
 The Notifications inbox has three tabs: **Alerts** (Smart Search matches), **Comments** (comments on interactions you are involved with), and **Reports** (finished reports). You can also receive notifications by email.
 

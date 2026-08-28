@@ -12,7 +12,7 @@ Reports let you package the metrics that matter into a document you can share wi
 
 ---
 
-## What You Can Do
+## What It Does
 
 - Build a one-time report for a custom date range and a chosen set of metrics.
 - Schedule daily, weekly, or monthly reports that generate automatically.
