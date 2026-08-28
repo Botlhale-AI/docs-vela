@@ -7,11 +7,34 @@ type: explanation
 ---
 
 # Best Practices
-Practical recommendations drawn from Vela's core workflows, covering initial setup through to day-to-day QA management. Each section stands on its own, so go to the topic you need rather than reading from the top.
+Recommendations drawn from Vela's core workflows, covering setup through to day-to-day QA. Each section stands on its own, so start from the one you need.
+
+| If you are | Read |
+| :--- | :--- |
+| Setting Vela up for the first time | [Setting Up for Success](#setting-up-for-success) |
+| Running QA day to day | [Daily and Weekly QA Workflows](#daily-and-weekly-qa-workflows) |
+| Turning scores into improvement | [Coaching and Agent Development](#coaching-and-agent-development) |
+| Loading historical calls | [Bulk Upload](#bulk-upload-best-practices) |
+| Sending figures to other people | [Report Scheduling and Distribution](#report-scheduling-and-distribution) |
+| Keeping a working setup healthy | [System Maintenance](#system-maintenance) |
 
 ---
 
 ## Setting Up for Success
+
+Set Vela up in dependency order. Each step needs the one before it, and working out of order means going back to redo it.
+
+```mermaid
+flowchart LR
+    D("Departments") --> T("Teams")
+    T --> U("Users and agents")
+    U --> S("Scorecard")
+    S --> M("Smart Searches")
+    M --> UP("First upload")
+```
+
+The order matters most at the two ends. A team cannot be assigned to a department that does not exist, and a Smart Search only matches interactions uploaded after it was created, unless you turn on **Historical Search** when you build it.
+
 
 ### Organisational Structure
 
@@ -21,15 +44,24 @@ Avoid creating catch-all teams (such as "Other" or "Misc"). If a team changes it
 
 ### Scorecard Design
 
-The Agent Scorecard defines the criteria used to score every interaction. Before your first call is uploaded, design your scorecard deliberately.
+The scorecard decides how every interaction is scored, so design it before your first call is uploaded rather than adjusting it once results are in.
 
-Write each question so that both the AI and a human reviewer can give a clear yes or no answer. Questions like "Was the agent professional?" are too subjective and inconsistent. Questions like "Did the agent verify the customer's identity before proceeding?" are specific and auditable. Concrete questions produce more consistent scores and give agents clearer expectations.
+Write questions that both the AI and a human reviewer would answer the same way:
 
-Use categories to group related questions (for example, Opening, Compliance, Handling, Closing). Assign weights that reflect the relative importance of each category to your organisation's quality standard. Use the Auto-Fail option sparingly. Reserve it for questions where a single failure is a critical compliance or regulatory breach, not a quality issue.
+| Write this | Rather than this | Why |
+| :--- | :--- | :--- |
+| Did the agent verify the customer's identity before proceeding? | Was the agent professional? | The first has an answer in the transcript. The second is a judgement that moves between reviewers |
+| Did the agent state the cancellation notice period? | Did the agent explain the policy well? | Names the specific thing that was said or missed |
+| If the customer disputed the charge, did the agent explain the dispute process? | Did the agent handle the dispute? | Says when the question applies, so the AI can answer N/A on the calls it does not |
 
-Set the scorecard scope to match the teams it applies to. If different teams operate under different procedures (for example, inbound support versus outbound sales), create separate scorecards for each. A single catch-all scorecard with broadly worded criteria produces scores that are difficult to act on.
+Phrase questions positively, asking whether the right thing happened, and set **Expected Outcome** to **Yes**. Partners running Vela at scale find scoring more accurate this way, even where their own internal scorecard is written in the negative.
 
-Review and update the scorecard when procedures change. Scores based on outdated criteria are misleading.
+Group related questions into categories, such as Opening, Compliance, Handling, and Closing, and weight the categories by what your organisation actually cares about. Weights are relative to each other, so what matters is the balance across your own questions rather than any external scale.
+
+Use Auto-Fail only where a single failure invalidates the interaction on its own, such as a regulatory disclosure that was never given.
+
+Scope each scorecard to the teams it applies to. Where teams work to different procedures, such as inbound support against outbound sales, build a scorecard for each. One catch-all scorecard with broadly worded criteria produces scores nobody can act on.
+
 
 ### Smart Search Configuration
 
@@ -47,24 +79,28 @@ Keep the number of active searches manageable. Your plan caps how many you can h
 
 ### Daily QA Routine
 
-Begin each day with your unresolved Smart Search alerts, before opening individual interactions. Alerts are interactions your own searches have already flagged, so they are a better starting point than sampling the call list at random.
+Work in this order. It starts from what Vela has already flagged, rather than from a list you sample by hand.
 
-On **Smart Detector → Smart Search**, sort the list by **Results** in descending order to see the most frequently triggered searches first. These often point to systemic issues rather than one-off incidents, and systemic issues merit faster attention.
+1. **Open your unresolved alerts first.** These are interactions your own searches have flagged, which makes them a better starting point than the call list.
+2. **Sort Smart Searches by Results, descending.** The most frequently triggered searches come to the top, and a search triggering repeatedly usually points at something systemic rather than one agent.
+3. **Check the Dashboard for movement.** Look for agents whose scores are falling day over day, or whose **Sentiment Distribution in Interactions** is shifting negative.
+4. **Close the loop on every interaction you review.** Add a coaching comment, tag the agent with an @ mention so they are notified, and mark it as reviewed.
 
-After working through alerts, check the Dashboard for agents whose scores are declining day-over-day, or whose **Sentiment Distribution in Interactions** is shifting negative. Use the score distribution and the agent view to identify individuals who need targeted review rather than sampling broadly.
-
-When you review an interaction, always complete the feedback cycle: add a coaching comment, tag the agent so they receive a notification, and mark the interaction as reviewed. An interaction reviewed but not commented on represents a missed coaching opportunity.
+Step 4 is the one that gets skipped. An interaction marked reviewed with no comment on it is a QA record with no coaching in it, and the agent learns nothing from the time you spent.
 
 ### Weekly QA Analysis
 
-Set aside time each week to look across the period rather than interaction by interaction. Use the Dashboard to review:
+Once a week, read across the period rather than interaction by interaction:
 
-- Whether the team's average score has moved relative to the previous week.
-- Whether the number of alerts has increased or decreased, and whether that change is explained by a known event (a new product launch, a recent process change, or a training programme).
-- Which agents have the widest gap between their automatic and manual scores. A gap that persists points at the scorecard criteria, or at an agent whose calls routinely need human judgement to score.
-- Whether any Smart Search is consistently triggering for the same agent. Repeated matches for the same individual point to a pattern requiring direct coaching.
+| What to check | What it tells you |
+| :--- | :--- |
+| Team average against last week | Whether the direction of travel has changed |
+| Alert volume, up or down | Whether a known event explains it, such as a launch, a process change, or training |
+| The widest gaps between automatic and manual scores | Either the scorecard wording needs work, or those calls genuinely need human judgement |
+| Any search triggering for the same agent repeatedly | A pattern worth a direct conversation rather than more alerts |
 
-Review the trend over several weeks before concluding whether a change represents genuine improvement or natural variation. Single-week movements in either direction rarely justify a strategic change.
+Read several weeks before concluding anything. A single week moving in either direction is usually variation, and acting on it produces changes that are reversed a fortnight later.
+
 
 ---
 
@@ -108,25 +144,20 @@ Reviewed-only is the stricter setting and the one worth considering if your revi
 
 ## Bulk Upload Best Practices
 
-### Preparation
+The mechanics are in [Upload Your Data](../data-upload.md). What follows is what makes a large historical load go well.
 
-Always download the metadata CSV template from the Vela upload page and build your metadata from that template rather than creating the CSV from scratch. This avoids column name mismatches, which are the most common source of bulk upload errors.
+**Test with five to ten files first.** Confirming that the format, agent names, teams, and departments match on a small batch costs minutes. Discovering a systematic error after thousands of files costs a re-upload, and the interactions are already dated by then.
 
-Test with a small batch (five to ten files) before uploading a large historical dataset. Confirming that the format, agent names, teams, and departments are matched correctly on a small batch is far less disruptive than discovering a systematic error after uploading thousands of files.
+**Build the CSV from the downloaded template.** Column name mismatches are the most common cause of bulk failures, and starting from the template avoids them entirely.
 
-Ensure that the `agent_name`, `team`, and `department` values in `metadata.csv` correspond to records that already exist in Vela. `agent_name` must be the agent's name as it appears on their agent record, not a username such as `john.smith`. Any row whose values do not correspond to an existing record is not attributed correctly.
+**Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. Values Vela cannot match are dropped, and the interaction is attributed to nobody.
 
-### During Upload
+**Upload outside busy hours**, and keep the page open until the batch finishes.
 
-Upload large batches outside busy hours, such as evenings or weekends, to reduce the risk of timeouts. Keep batches under the 3 GB limit, above which the upload is rejected before it starts. If your historical dataset is larger, split it into multiple batches rather than trying to upload everything at once.
+**Keep the source audio until processing is confirmed.** Once the results screen is clean, archive it under your own retention policy.
 
-Keep the upload page open and do not navigate away during a bulk upload. Monitor the progress indicator and review the results screen when the batch completes.
+**Read the results screen straight away.** A failure is far easier to explain on the day than a fortnight later.
 
-Keep copies of the original audio files until you have confirmed that all files in a batch have processed successfully. Once processing is confirmed, you may archive the source files according to your organisation's data retention policy.
-
-### After Upload
-
-Review the results screen immediately after each batch completes. Address any failed files promptly. It is easier to find the cause close to the time of upload than days later.
 
 ---
 
