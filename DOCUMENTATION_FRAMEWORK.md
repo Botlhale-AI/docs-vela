@@ -142,6 +142,16 @@ Both were documented as working because the code was there.
 
 If a set of steps appears on two pages, one owns it and the other links. The scorecard override steps were once duplicated across four pages, so renaming a single button made all four wrong at once.
 
+### Coaching belongs in the Coaching Portal documentation
+
+Coaching is an add-on with its own site at [docs-coaching.botlhale.xyz](https://docs-coaching.botlhale.xyz). Courses, awards, progress, cautions, preferences, and the agent's own view are documented there.
+
+These docs say only what a Vela reader needs to act, then link. Naming a Coaching decision that affects QA work is right; explaining how to make it here is not, because the copy drifts from the page that owns it.
+
+### Point at the API reference for endpoints outside Vela
+
+[api-docs.botlhale.ai](https://api-docs.botlhale.ai/) owns the endpoint reference, and it is the source of truth where these docs and it disagree. Document the Vela endpoints here, along with anything proven from source that the reference omits, and say where the two differ. Transcription, translation, text to speech, and chat bots are linked, not restated.
+
 ### Every page states what it is in its opening line
 
 The test: if this page were the only one a customer ever read, would it make sense?

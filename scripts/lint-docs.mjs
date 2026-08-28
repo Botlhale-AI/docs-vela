@@ -37,6 +37,11 @@ const BANNED = [
   "simply", "simple", "easily", "easy", "just", "please", "currently",
   "comprehensive", "powerful", "seamless", "robust", "leverage", "utilise",
   "in order to", "note that", "and/or",
+  // Uncommon words where an ordinary one says the same thing. Many readers
+  // work in English as a second or third language, so a word that makes them
+  // pause is the wrong word however precise it is.
+  "cultural nuance", "systemic", "direction of travel", "fortnight",
+  "granular", "holistic", "commensurate", "myriad", "plethora", "utilize",
 ];
 
 // US spellings the style guide replaces with UK ones.

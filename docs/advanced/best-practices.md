@@ -60,7 +60,7 @@ Three rules cover most of it:
 2. **Name the specific action.** "Verify identity" is in the transcript. "Professional" is a judgement that moves between reviewers.
 3. **Say when a question applies**, so the AI answers N/A on the calls it does not cover.
 
-Use **Auto-Fail** only where one failure invalidates the whole interaction, such as a missed regulatory disclosure.
+Use **Auto-Fail** only where one failure means the whole interaction has failed, such as a missed regulatory disclosure.
 
 Build a separate scorecard for each set of procedures. Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
 
@@ -71,7 +71,7 @@ Build a separate scorecard for each set of procedures. Inbound support and outbo
 ### Every day
 
 1. **Start with your unresolved alerts.** Vela has already flagged these, so they beat sampling the call list.
-2. **Sort Smart Searches by Results, descending.** The top search is triggering most, which usually means a systemic issue rather than one agent.
+2. **Sort Smart Searches by Results, descending.** The top search is triggering most, which usually points at a problem across the team rather than one agent.
 3. **Check the Dashboard for movement.** Look for falling scores and for **Sentiment Distribution in Interactions** turning negative.
 4. **Close the loop on every interaction you open.** Comment, tag the agent with an @ mention, mark as reviewed.
 
@@ -81,12 +81,12 @@ Step 4 is the one teams skip. An interaction marked reviewed with no comment is 
 
 | Check | What it tells you |
 | :--- | :--- |
-| Team average against last week | The direction of travel |
+| Team average against last week | Whether the team is improving or slipping |
 | Alert volume, up or down | Whether a launch, process change, or training explains it |
 | Widest gaps between automatic and manual scores | The scorecard wording needs work, or those calls need human judgement |
 | One search triggering for the same agent | A pattern worth a conversation rather than more alerts |
 
-Read three or four weeks before acting. One week of movement is usually variation.
+Read three or four weeks before acting. One week up or down is usually normal movement.
 
 ---
 
@@ -103,7 +103,24 @@ An untagged comment raises no notification, so the agent may never read it.
 
 **Coach patterns, not incidents.** One failed question on one call is often an unusual call. The same question failed across five of the last ten calls is a skill gap.
 
-**Override a score only where the AI missed context**, such as a required phrase said in different words. Record why in a comment. Overrides that all move the same way point at scorecard wording that needs fixing.
+**Override a score only where the AI missed something a person can hear.** The common cases are:
+
+- The agent said the right thing in another language, or in words the AI did not match.
+- The agent said the right thing using a local expression.
+- The call was resolved in a way the transcript alone does not show.
+
+Record why in a comment, so the change is on the record.
+
+Overrides that all move the same way point at scorecard wording that needs fixing, rather than at scores that need lifting.
+
+### Where Coaching is enabled
+
+Coaching is an add-on with its own documentation. Two decisions there affect the QA work on this page:
+
+- **Build a course around the gap**, and set the score range that assigns it. Courses reach agents by score rather than by name.
+- **Decide what agents see before you invite them**, because changing it later changes what they have already seen.
+
+See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for both.
 
 ---
 
@@ -113,10 +130,10 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 1. **Test five to ten files first.** Checking the format, agent names, teams, and departments on a small batch takes minutes. Finding a systematic error after thousands of files means uploading them again.
 2. **Build the CSV from the downloaded template.** Column name mismatches cause most bulk failures.
-3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. Values Vela cannot match are dropped, and the interaction is attributed to nobody.
+3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. Vela drops values it cannot match, and the interaction is then linked to no agent.
 4. **Upload outside busy hours**, and keep the page open until the batch finishes.
-5. **Keep the source audio** until the results screen is clean.
-6. **Read the results screen the same day.** A failure is easier to explain now than in a fortnight.
+5. **Keep the source audio** until the results screen is clean, then archive it under your organisation's retention policy.
+6. **Read the results screen the same day.** A failure is easier to explain today than in two weeks.
 
 ---
 

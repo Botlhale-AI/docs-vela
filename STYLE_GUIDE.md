@@ -126,6 +126,37 @@ Where Vela has a word for something, use that word everywhere, including in the 
 
 The last two are the common failure: inventing a plausible-sounding name for something that already has one. Search the product for your noun before you use it.
 
+### Use the word a reader already knows
+
+Prefer the ordinary word. A reader working through a problem should never stop to decode vocabulary, and English is a second or third language for many of the people using Vela.
+
+| Instead of | Write |
+| :--- | :--- |
+| cultural nuance | the agent said the right thing in another language, or in words the AI did not match |
+| a systemic issue | a problem across the team |
+| the direction of travel | whether the team is improving or slipping |
+| one week of movement is variation | one week up or down is normal movement |
+| the interaction is attributed to nobody | the interaction is linked to no agent |
+| in a fortnight | in two weeks |
+| one failure invalidates the interaction | one failure means the whole interaction has failed |
+
+The test: read the sentence as a QA specialist halfway through a shift. Anything that makes them pause is the wrong word, however precise it is.
+
+### Prose only where a table cannot carry it
+
+Reach for structure first, and write paragraphs only where the reason genuinely needs sentences.
+
+| Content | Form |
+| :--- | :--- |
+| An order of steps | A numbered list |
+| A comparison, or good against bad | A two-column table |
+| A set of checks | A table of what to check and what it tells you |
+| A dependency between stages | A mermaid diagram |
+| Why a rule exists, where it is not obvious | One or two sentences under the structure |
+
+A page of unbroken prose fails even when every sentence in it is correct. If a page tells the reader to skip to what they need, give them a table at the top that lets them.
+
+
 ### Avoid developer words for ordinary things
 
 The words we use to build the screen are not the words the reader uses to look at it. A team lead does not know what a modal is, and should not have to.
