@@ -8,7 +8,7 @@ type: explanation
 
 # Best Practices
 
-What experienced teams do at each stage. Start from the section you need.
+What to do at each stage of running QA in Vela. Start from the section you need.
 
 | If you are | Go to |
 | :--- | :--- |
@@ -36,12 +36,12 @@ flowchart LR
 
 | Step | Do this | Because |
 | :--- | :--- | :--- |
-| **Departments and teams** | Mirror your real reporting lines. Give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
+| **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
 | **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only |
-| **Smart Searches** | Build your compliance searches before the first upload | A search matches interactions that arrive after it. To cover your archive, turn on **Historical Search** as you create it |
+| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan holds five unless it sets another number, and at the limit **New Smart Search** greys out with nothing to say why |
 
 :::caution Historical Search is set once
-**Historical Search** appears only while you create a search. Editing a search later cannot add it, so a search that needs to cover past interactions has to be built with it on.
+To cover interactions already in Vela, turn on **Historical Search** as you create the search. The option appears only while you create it, so a search built without it can never be given it later.
 :::
 
 ### Writing Scorecard Questions
@@ -54,15 +54,16 @@ Write questions that a reviewer and the AI answer the same way.
 | Did the agent state the cancellation notice period? | Did the agent explain the policy well? |
 | If the customer disputed the charge, did the agent explain the dispute process? | Did the agent handle the dispute? |
 
-Three rules cover most of it:
+Seven rules cover the rest:
 
 1. **Ask whether the right thing happened**, and set **Expected Outcome** to **Yes**. Scoring is more accurate this way, even where your internal scorecard is written in the negative.
-2. **Name the specific action.** "Verify identity" is in the transcript. "Professional" is a judgement that moves between reviewers.
+2. **Name the action.** "Verify identity" is in the transcript. "Professional" is a judgement that moves between reviewers.
 3. **Say when a question applies**, so the AI answers N/A on the calls it does not cover.
+4. **Group questions into categories**, such as Opening, Compliance, Handling, and Closing.
+5. **Weight categories against each other.** There is no outside scale, so what counts is the balance across your own questions.
+6. **Use Auto-Fail only where one failure fails the whole interaction**, such as a missed regulatory disclosure.
+7. **Build a separate scorecard for each set of procedures.** Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
 
-Use **Auto-Fail** only where one failure means the whole interaction has failed, such as a missed regulatory disclosure.
-
-Build a separate scorecard for each set of procedures. Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
 
 ---
 
@@ -70,12 +71,12 @@ Build a separate scorecard for each set of procedures. Inbound support and outbo
 
 ### Every day
 
-1. **Start with your unresolved alerts.** Vela has already flagged these, so they beat sampling the call list.
+1. **Start with your unresolved alerts.** Vela has already flagged these against your own searches, so they are a better use of the first hour than sampling the call list.
 2. **Sort Smart Searches by Results, descending.** The top search is triggering most, which usually points at a problem across the team rather than one agent.
 3. **Check the Dashboard for movement.** Look for falling scores and for **Sentiment Distribution in Interactions** turning negative.
 4. **Close the loop on every interaction you open.** Comment, tag the agent with an @ mention, mark as reviewed.
 
-Step 4 is the one teams skip. An interaction marked reviewed with no comment is a QA record with no coaching in it.
+Step 4 is the one to protect when the day gets busy. An interaction marked reviewed with no comment is a QA record with no coaching in it, and the agent learns nothing from the time you spent.
 
 ### Every week
 
@@ -83,7 +84,7 @@ Step 4 is the one teams skip. An interaction marked reviewed with no comment is 
 | :--- | :--- |
 | Team average against last week | Whether the team is improving or slipping |
 | Alert volume, up or down | Whether a launch, process change, or training explains it |
-| Widest gaps between automatic and manual scores | The scorecard wording needs work, or those calls need human judgement |
+| Widest gaps between automatic and manual scores | Where the gap follows one question, the wording needs work. Where it follows one agent, their calls need human judgement |
 | One search triggering for the same agent | A pattern worth a conversation rather than more alerts |
 
 Read three or four weeks before acting. One week up or down is usually normal movement.
@@ -101,15 +102,16 @@ Read three or four weeks before acting. One week up or down is usually normal mo
 
 An untagged comment raises no notification, so the agent may never read it.
 
-**Coach patterns, not incidents.** One failed question on one call is often an unusual call. The same question failed across five of the last ten calls is a skill gap.
+Two rules decide whether coaching lands:
 
-**Override a score only where the AI missed something a person can hear.** The common cases are:
+1. **Coach patterns, not incidents.** One failed question on one call is often an unusual call. The same question failed across five of the last ten calls is a skill gap.
+2. **Override a score only where the AI missed something a person can hear**, and record why in a comment.
+
+The overrides worth making are these:
 
 - The agent said the right thing in another language, or in words the AI did not match.
 - The agent said the right thing using a local expression.
 - The call was resolved in a way the transcript alone does not show.
-
-Record why in a comment, so the change is on the record.
 
 Overrides that all move the same way point at scorecard wording that needs fixing, rather than at scores that need lifting.
 
@@ -139,9 +141,11 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 ## 5. Reports
 
-- **Schedule a report to arrive before the meeting that uses it**, so people read it beforehand.
-- **Send figures with a sentence of context.** A score on its own reads as a warning rather than coaching.
-- **Remove reports nobody acts on.** A few reports people use beat a library nobody opens.
+| Do this | Because |
+| :--- | :--- |
+| Schedule a report to land before the meeting that uses it | People read it beforehand rather than for the first time in the room |
+| Send figures with a sentence of context | A score on its own reads as a warning rather than as coaching |
+| Remove reports nobody acts on | A few reports people use are worth more than a library nobody opens |
 
 ---
 
