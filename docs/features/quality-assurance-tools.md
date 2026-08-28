@@ -184,7 +184,7 @@ The player and the transcript follow each other. As the audio plays, the transcr
 
 While you listen, attend to the agent's tone, whether they listened actively, and whether they followed procedure.
 
-Transcription covers the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Botlhale's speech service recognises more than these, some of them in beta, and the full list with each language's status is at [Supported Languages](https://api-docs.botlhale.ai/). Vela's analysis is built around the South African set. Speakers are separated automatically, so agent and customer turns are distinguishable in the transcript.
+Transcription covers the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. Botlhale's wider speech service handles other languages, which Vela does not analyse. Speakers are separated automatically, so agent and customer turns are distinguishable in the transcript.
 
 Chats carry the same analysis as calls. Vela reports average response time on them, in place of the measures that need call audio. See [Metrics](../reference/metrics.md).
 
