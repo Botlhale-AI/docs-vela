@@ -64,7 +64,7 @@ A: Agents, yes. Sending `agent_name` with a `team` that already exists creates t
 A: `date_of_call` in the format `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds. Times are read as **Africa/Johannesburg**. A value Vela cannot read falls back to the upload time, which is why every call ends up dated the day you sent it.
 
 **Q: Is there a starter scorecard I can load?**  
-A: No. Scorecards are built around your own procedures, so there is nothing generic to import. Your Account Manager can help you build the first one. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
+A: Vela has no import or template feature, so there is nothing to load yourself. Ask your Account Manager, who can set up a first scorecard for you to work from. Replace its questions with your own procedures before you rely on the scores. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 
 ---
 
@@ -109,7 +109,7 @@ A: On the login page, select **Forgot your password?** and enter your email addr
 A: Vela does not have native MFA. If your organisation uses Single Sign-On (Google or Microsoft), MFA can be enforced through your identity provider. Contact your IT administrator for setup.
 
 **Q: What are the password requirements?**  
-A: A minimum length and a mix of character types. See [Password Requirements](../settings-config/account-security.md#password-requirements) for the full list and how to change your password.
+A: At least 8 characters, with at least one letter, one number, and one special character such as `@`, `#`, or `!`. See [Account and Security](../settings-config/account-security.md#password-requirements) for how to change it.
 
 ---
 
