@@ -71,7 +71,7 @@ type: how-to
 ---
 ```
 
-**Current distribution:** 15 reference, 11 how-to, 5 explanation, 2 tutorial, 1 troubleshooting, across 34 published pages.
+**Current distribution:** 15 reference, 12 how-to, 5 explanation, 2 tutorial, 1 troubleshooting, across 35 published pages.
 
 Reference being the largest is intentional. In a mature product it is the material people return to most.
 
@@ -178,13 +178,13 @@ Anything else that mixes types is a defect, not a deviation.
 4. Open the product, or the `vela` / `vela-data` source, and confirm every UI reference.
 5. Check the procedure does not already exist on another page.
 6. Run the checklist in [STYLE_GUIDE.md](./STYLE_GUIDE.md) section 9.
-7. Run `npm run build`. It fails on broken links and anchors.
+7. Run `npm run check`. It runs the linter and then the build, which fails on broken links and anchors.
 
 ---
 
 ## 9. What is enforced automatically
 
-Both commands run on every push through [.github/workflows/docs.yml](../.github/workflows/docs.yml), so nothing below depends on someone remembering.
+Both commands run on every push through [.github/workflows/docs.yml](./.github/workflows/docs.yml), so nothing below depends on someone remembering.
 
 | Check | Mechanism | Status |
 | :--- | :--- | :--- |
