@@ -113,7 +113,7 @@ The full endpoint reference, covering the wider Botlhale platform as well as Vel
 ## Calls
 
 :::info Authentication
-Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. The token expires after 24 hours.
+Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. Access tokens are short-lived, so refresh yours before it lapses.
 :::
 
 **Endpoint URL:**
@@ -273,7 +273,7 @@ The wider platform's status codes, including **401** for an expired token and **
 ## Chats
 
 :::info Authentication
-Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. The token expires after 24 hours.
+Every request needs an `Authorization: Bearer <token>` header, from [Authentication](#authentication) above. Access tokens are short-lived, so refresh yours before it lapses.
 :::
 
 **POST Request**

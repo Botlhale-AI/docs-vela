@@ -288,7 +288,7 @@ Organisations using the Coaching Portal choose, under **Coaching → Preferences
 
 Tags are your own labels for classifying interactions, and they are what you filter and report on later. Give one to anything you want to find again as a group, such as every call about a failed delivery.
 
-You can tag without opening an interaction. The **Tags** column on the Interactions list carries a tag icon on every row, reading **Add a tag** when you hover it. The same control sits on the **Tags** line of the **Call Details** panel in the Detailed View. Both open the same window, and both work for calls and chats.
+You can tag without opening an interaction. The **Tags** column on the Interactions list carries a tag icon on every row, reading **Add a tag** when you hover it. The same control sits on the **Tags** line of the **Call Details** panel in the Detailed View. Both open the same modal, and both work for calls and chats.
 
 ![The Tags line of the Call Details panel, with an existing tag beside the Add a tag icon](../../img/screenshots/calls/call-details-tags.png)
 
@@ -298,7 +298,7 @@ You can tag without opening an interaction. The **Tags** column on the Interacti
 
 ![The Calls list with the Tags column, showing the tag icon on every row and existing tags beside it](../../img/screenshots/calls/interactions-tags-column.png)
 
-![The Edit Tags window on Select a Tag, with the tag list above Add Tag, Manage Tags, and Discard](../../img/screenshots/calls/edit-tags-select.png)
+![The Edit Tags modal on Select a Tag, with the tag list above Add Tag, Manage Tags, and Discard](../../img/screenshots/calls/edit-tags-select.png)
 
 ![The Create a Tag tab, with the tag name field above the colour swatches](../../img/screenshots/calls/edit-tags-create.png)
 
@@ -312,7 +312,7 @@ Tags belong to the organisation rather than to you, so one you create is availab
 
 #### Managing the Tag List
 
-**Manage Tags**, on the **Edit Tags** window, opens the organisation's tag list in a new browser tab. From there you can add a tag with **New Tag**, change a tag's name or colour with **Edit Tag**, and remove one with **Delete Tag**.
+**Manage Tags**, on the **Edit Tags** modal, opens the organisation's tag list in a new browser tab. From there you can add a tag with **New Tag**, change a tag's name or colour with **Edit Tag**, and remove one with **Delete Tag**.
 
 Both editing and deleting reach further than the list, so treat them as organisation-wide changes rather than tidying:
 
@@ -325,13 +325,13 @@ Renaming therefore loses you the interactions rather than relabelling them. The 
 
 To change a tag's wording safely, create the tag you want, apply it to the interactions concerned, and delete the old one once nothing depends on it.
 
-**To manage the list**, select **Manage Tags** in the same window, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
+**To manage the list**, select **Manage Tags** in the same modal, which opens the Tags page in a new tab. It is not in the sidebar, so this is how you reach it. The page lists every tag by **Name**, each with its colour, and gives you **New Tag**, **Edit**, and **Delete**.
 
 ![The Tags page, listing each tag by name with the Edit and Delete controls and the New Tag button](../../img/screenshots/calls/tags-page.png)
 
-**New Tag** on that page opens its own window, where you name the tag and pick its colour from the swatches before selecting **Create Tag**.
+**New Tag** on that page opens its own modal, where you name the tag and pick its colour from the swatches before selecting **Create Tag**.
 
-![The New Tag window, with the name field above the colour swatches and the Create Tag button](../../img/screenshots/calls/new-tag-window.png)
+![The New Tag modal, with the name field above the colour swatches and the Create Tag button](../../img/screenshots/calls/new-tag-window.png)
 
 Deleting a tag takes it off every interaction carrying it, and the page does not tell you how many that is. Vela refuses duplicate names, so renaming a tag to something clearer is the safer move when the wording is the problem.
 

@@ -52,10 +52,10 @@ Select **Add Agent** to open **Add an Agent** modal. It has two tabs, **Single U
 On **Single Upload**:
 
 1. Enter the **Name**, and the **Email** where it is required.
-2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the window.
+2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the modal.
 3. Select **Save Changes**, or **Discard** to abandon it.
 
-![The Add an Agent window on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
+![The Add an Agent modal on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
 
 Name and team are always required. Whether you also need the email, and what the agent receives when you save, depends on your organisation:
 
@@ -72,7 +72,7 @@ Adding an agent can therefore email them straight away. Check the name and addre
 **Batch Upload**, the second tab, takes a CSV and creates the departments and teams it names as it goes. That is the route for an initial import. See [Importing Agents in Bulk](../settings-config/user-management.md#4-importing-agents-in-bulk).
 :::
 
-![The Add an Agent window on the Batch Upload tab, with the CSV upload area](../../img/screenshots/agent_details/bulk-add.png)
+![The Add an Agent modal on the Batch Upload tab, with the CSV upload area](../../img/screenshots/agent_details/bulk-add.png)
 
 ---
 
@@ -118,7 +118,7 @@ Where a sample exists, the column shows a toggle rather than a word. **Export** 
 2. Select **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.
 3. Confirm the move.
 
-![The Reassign window, with the department and team selectors for moving the chosen agents](../../img/screenshots/agent_details/reassign.png)
+![The Reassign modal, with the department and team selectors for moving the chosen agents](../../img/screenshots/agent_details/reassign.png)
 
 ![Create new team opened from within Reassign, so the destination can be made without leaving the move](../../img/screenshots/agent_details/create-new-team-on-reassign.png)
 
