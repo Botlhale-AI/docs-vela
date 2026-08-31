@@ -72,7 +72,7 @@ Treat the output as a list to read, never as a defect list. Check a screenshot b
 
 - **POPIA.** Mask personal information in screenshots with solid bars, never blur. Blur can be reversed. Never reshoot to expose what was masked.
 - **Internal-only controls** — **Support**, **Switch to Silent Upload**, **Create Organisation** — are painted out of captures and never documented.
-- **Editions** are not mentioned outside the glossary entry.
+- **Editions** are named only to explain why something is missing, and always linked to the [Lite](./docs/reference/glossary.md#lite) glossary entry rather than described again. Do not list what a plan includes, and do not name a price.
 - **Unreleased features** are not documented from a working branch. Check `origin/main` before writing a page. Where something is coming, put it in the commented draft in `docs/release-notes.md`.
 - Accuracy beats positive phrasing. State a real limit plainly, then give the next available action.
 
