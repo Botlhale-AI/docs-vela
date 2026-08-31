@@ -253,7 +253,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 
 Vela can automatically mask sensitive information in transcripts, such as ID numbers and payment details. Configure this before real interactions are uploaded.
 
-In **Settings → Organisations**, choose which entity types Vela should redact.
+In **Settings → Organisations → This Org**, choose which entity types Vela should redact.
 
 ![The Redactable Entities checkboxes in Settings, listing Credit Card, IBAN Code, Person, and the other entity types, with Save below](../../../img/screenshots/settings/redaction.png)
 

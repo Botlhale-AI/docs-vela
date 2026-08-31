@@ -440,7 +440,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 **Cause:** Your organisation has reached the number of Smart Searches its plan allows. Most plans include five. No message explains this on the page.
 
 **Solution:**
-1. Check your allowance under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
+1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
 2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
 3. If you need more, ask your Account Manager about a higher limit.
 

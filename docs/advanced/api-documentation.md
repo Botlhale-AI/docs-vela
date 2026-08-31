@@ -465,7 +465,7 @@ The reply covers the limits this documentation refers to elsewhere:
 | `numberOfActiveAgents`, `numberOfTeams`, `numberOfDepartments` | The size of your structure |
 | `users` | Each user's name, email, role, access level, team, department, and whether they can view redactions |
 
-Administrators see the same two figures under **Settings → Organisation**, as **Allocated Monthly Duration** and **Current Duration Usage**. See [Organisation Configuration](../settings-config/organisation-configuration.md).
+Administrators see the same two figures under **Settings → Organisations → This Org**, as **Allocated Monthly Duration** and **Current Duration Usage**. See [Organisation Configuration](../settings-config/organisation-configuration.md).
 
 Checking `currentDurationUse` against `monthlyAllocatedDuration` before a large batch is the reliable way to know whether it processes. It answers the same question as asking your Account Manager, without waiting for a reply.
 
