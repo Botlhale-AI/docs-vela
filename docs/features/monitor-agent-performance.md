@@ -200,7 +200,7 @@ Monitoring is only worth the time if it ends in coaching. This section covers ho
 ### B. Act on What You Find
 
 1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so they are notified. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
-2.  **Set up a course** in the Coaching section, with a trigger score range that covers the gap.
+2.  **Set up a course** in the Coaching section, with a **Training Initiation Score Range** that covers the gap.
 3.  **Track results** by monitoring the agent's score trend over the following weeks.
 
 This is a loop rather than a sequence. Tracking the result is what tells you whether the coaching worked, and it puts you back at the Dashboard looking for the next gap:
@@ -208,7 +208,7 @@ This is a loop rather than a sequence. Tracking the result is what tells you whe
 ```mermaid
 flowchart LR
     A("Find the gap<br/>the Dashboard shows an agent<br/>scoring low in a category") --> B("Review interactions<br/>open their recent calls or chats<br/>to find the recurring issue")
-    B --> C("Set up a course<br/>with a trigger score range<br/>that matches the gap")
+    B --> C("Set up a course<br/>with a score range<br/>that matches the gap")
     C --> D("Track results<br/>watch the score trend<br/>over the following weeks")
     D --> A
 ```

@@ -39,10 +39,32 @@ A: A single upload lets you upload one audio file at a time using a short form (
 A: Vela emails you when processing is complete. You can also monitor progress from the Interactions page. Processed calls appear in the list as they complete.
 
 **Q: How long does it take for calls to process?**  
-A: Processing time depends on call length, audio quality, and current server load. Shorter calls complete faster than longer ones. Avoid navigating away from the page during a large bulk upload.
+A: Processing is queued, so the wait depends on what is ahead of your call rather than on who uploaded it. Two people uploading the same recording minutes apart can finish an hour apart. Call length and audio quality also matter. Avoid navigating away from the page during a large bulk upload.
 
 **Q: My upload failed. What should I check?**  
 A: For single uploads, verify the file is a valid WAV or MP3 that plays on your device, and is under 1 GB. For bulk uploads, check that your CSV column names match the template exactly, all files listed in the CSV are present in the ZIP, and the ZIP is under the 3 GB limit. Files above the limit are rejected before the upload starts.
+
+---
+
+## Integrations & API
+
+**Q: Which organisation ID do I use?**  
+A: The Vela one. Where more than one has been issued to you, only the Vela organisation ID connects an upload to your Vela account. Sending another can return a success response while nothing appears under **Interactions**.
+
+**Q: My integration worked for months and now returns 401. What changed?**  
+A: The access token expired. Access tokens are short-lived and refresh tokens are not, so exchange the refresh token for a new access token at `POST /auth/generate` rather than signing in again. Build that refresh into the integration. See [API Reference](../advanced/api-documentation.md#authentication).
+
+**Q: Uploads return `Allocation exceeded`. Why?**  
+A: The organisation has used its monthly duration, or has none set. A new organisation that has not been activated returns the same error. Check `currentDurationUse` against `monthlyAllocatedDuration`, or ask your Account Manager to activate it.
+
+**Q: Can I create departments, teams, or agents through the API?**  
+A: Agents, yes. Sending `agent_name` with a `team` that already exists creates the agent. Teams and departments have to exist in Vela first, because an upload never creates one.
+
+**Q: My calls arrive but the date is wrong. What do I send?**  
+A: `date_of_call` in the format `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds. Times are read as **Africa/Johannesburg**. A value Vela cannot read falls back to the upload time, which is why every call ends up dated the day you sent it.
+
+**Q: Is there a starter scorecard I can load?**  
+A: No. Scorecards are built around your own procedures, so there is nothing generic to import. Your Account Manager can help you build the first one. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 
 ---
 
@@ -71,7 +93,7 @@ A: Yes. Agents log in to their own Agent Portal, where they can view their inter
 A: When a team lead adds a comment and tags the agent using the @ mention, the agent receives an in-app notification and can read and respond to the comment in their Agent Portal.
 
 **Q: How does training work for agents?**  
-A: Where Coaching is enabled, administrators and team leads create courses in the **Coaching** section and give each course a trigger score range. Vela then assigns courses on an evaluation cycle, so agents receive the courses their scores qualify them for rather than being picked individually. Agents see what they have been given in their portal, with completion status. Coaching is an add-on, so it appears in the navigation only when it is enabled for your organisation.
+A: Courses are assigned by score, not by name. You build a course, set the **Training Initiation Score Range** that qualifies an agent for it, and Vela assigns it on the next evaluation cycle. Agents work through what they receive in the Agent Portal. Coaching is an add-on, so it appears in the navigation only where it is enabled. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).
 
 ---
 
