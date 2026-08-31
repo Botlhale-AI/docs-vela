@@ -31,7 +31,7 @@ Use Smart Search alerts, Dashboard metrics, and the interaction filters to focus
 
 A Smart Search flags interactions that match the example phrases you gave it, by meaning rather than by exact wording. These are your first priority, because your own searches raised them rather than chance.
 
-1.  Navigate to **Smart Detector** → **Smart Search**.
+1.  Navigate to **Smart Detector → Smart Search**.
 2.  Review the flagged interactions for each search.
 
 :::tip Try it: put the busiest searches first

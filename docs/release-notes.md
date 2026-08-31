@@ -54,10 +54,12 @@ Version 2.1 brings new features and improvements.
 ### New Features
 
 #### Agent Coaching Portal
-We've launched a complete coaching portal for agents that includes:
+The Coaching Portal for agents brings:
 - **Courses Management**: Assign and track training courses with progress monitoring
 - **Awards System**: Recognise and reward high performers with digital awards
-- **Warnings Management**: Send and manage cautions and warnings to agents
+{/* Cautions is on the dev branch and absent from origin/main, so the line that
+    announced "Warnings Management" here was removed. Restore it when Cautions
+    ships, and link the Coaching Portal page for it. */}
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
 - **Notifications**: Instant notifications for courses, awards, and warnings. See [Manage Notifications](./features/notifications.md).
@@ -121,10 +123,10 @@ We've updated the users page for a better user experience! Now, only the table s
 ### What's Next?
 
 #### Enhanced Coaching Features
-We're improving the coaching portal.
+Work on the Coaching Portal continues.
 
 #### Improving Smart Detector
-We're improving [Smart Detector](./smart-detector-overview.md).
+Work on [Smart Detector](./smart-detector-overview.md) continues.
 
 #### Voice ID Notifications
 - We'll automatically send emails to agents who have not submitted a sample for Voice ID. Voice profiles are set up today in [Manage Agents and Teams](./features/manage-agents-and-teams.md#4-set-up-voice-profiles).

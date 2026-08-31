@@ -39,7 +39,7 @@ An administrator can change your **team**, **department**, **role**, and **acces
 
 If you belong to more than one organisation, you can change which one you are working in.
 
-1.  Navigate to **Settings** → **Organisations** → **My Orgs**.
+1.  Navigate to **Settings → Organisations → My Orgs**.
 2.  Locate the organisation you wish to access in the list.
 3.  Select the switch icon (the arrow) next to the organisation to make it your active organisation.
 
@@ -55,7 +55,7 @@ If your organisation uses Single Sign-On (Google or Microsoft), the Security tab
 
 ### A. Open the Change Password Form
 
-1.  Navigate to **Settings** → **Security**.
+1.  Navigate to **Settings → Security**.
 2.  Locate the **Change your password** form.
 
 ### B. Enter Your Details
