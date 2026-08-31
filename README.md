@@ -37,7 +37,7 @@ The linter enforces the rules in [STYLE_GUIDE.md](./STYLE_GUIDE.md) that the bui
 
 ## Writing
 
-Read [STYLE_GUIDE.md](./STYLE_GUIDE.md) before editing a page, and [DOCUMENTATION_FRAMEWORK.md](./DOCUMENTATION_FRAMEWORK.md) before adding one or restructuring a section.
+Read [CLAUDE.md](./CLAUDE.md) before making a change, [STYLE_GUIDE.md](./STYLE_GUIDE.md) before editing a page, and [DOCUMENTATION_FRAMEWORK.md](./DOCUMENTATION_FRAMEWORK.md) before adding one.
 
 ## Deployment
 
