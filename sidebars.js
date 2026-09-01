@@ -301,6 +301,11 @@ const sidebars = {
           id: "support/troubleshooting-guide",
           label: "🩺 Troubleshooting Guide"
         },
+          {
+          type: "doc",
+          id: "support/integration-troubleshooting",
+          label: "🔌 Integration Problems",
+        },
         {
           type: "doc",
           id: "support/faq",

@@ -92,7 +92,7 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
 | **Administration & Configuration** | Roles and Access Levels · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
 | **Advanced** | API Reference · Best Practices |
-| **Support** | Troubleshooting Guide · Frequently Asked Questions · Video Tutorials |
+| **Support** | Troubleshooting Guide · Integration Problems · Frequently Asked Questions · Video Tutorials |
 
 Page names in this table are the page titles, which are also the sidebar labels. Keep them in step when a page is renamed. Names are separated by `·` rather than commas, because a title may contain a comma.
 
