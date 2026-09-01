@@ -132,11 +132,18 @@ This endpoint accepts a call recording for processing by Vela. It validates the 
 Uploading a call takes two requests, and the audio never goes to this endpoint. The first call returns a URL and a set of form fields. You post the audio to that URL:
 
 ```mermaid
-flowchart LR
-    A("1. POST to<br/>/asr/async/upload/vela<br/>with org_id and metadata") --> B("Returns<br/>url and fields")
-    B --> C("2. POST the audio file<br/>to that returned url,<br/>with those fields")
-    C --> D("Vela processes the call<br/>and it appears under<br/>Interactions → Calls")
+sequenceDiagram
+    participant You as Your system
+    participant Vela as api.botlhale.tech
+    participant Store as The returned URL
+    You->>Vela: POST /asr/async/upload/vela<br/>org_id and metadata
+    Vela-->>You: url and fields
+    You->>Store: POST the audio file<br/>with those fields
+    Store-->>You: 204
+    Note over Vela: The call is processed and appears<br/>under Interactions, Calls
 ```
+
+The second request goes to the URL the first one returned, not back to the API. Posting the file to `api.botlhale.tech` is the commonest first-integration mistake.
 
 **Parameters:**
 
