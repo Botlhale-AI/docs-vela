@@ -16,7 +16,12 @@ Botlhale's API also covers transcription, translation, text to speech, and chat 
 :::note Where this page and the published reference differ
 [api-docs.botlhale.ai](https://api-docs.botlhale.ai/) is the authority on these endpoints. This page follows it, and adds two things it does not yet cover.
 
-**More metadata fields**, and the gap differs by endpoint. For calls, the reference omits `contact`, `notifyEmail`, and `validate_metadata`. For chats it lists only `agent`, `date`, and `interaction_id`, while Vela also reads `agent_name`, `team`, `department`, `direction`, `tags`, `contact`, `language`, `notifyEmail`, and `validate_metadata`. All are documented below.
+**More metadata fields.** Vela reads fields the reference does not list, and the gap is much wider for chats than for calls. All of them are documented below.
+
+| Endpoint | Fields Vela reads that the reference leaves out |
+| :--- | :--- |
+| Calls | `contact`, `notifyEmail`, `validate_metadata` |
+| Chats | the three above, plus `agent_name`, `team`, `department`, `direction`, `tags`, `language` |
 
 **Lower-case `sender`.** The reference shows `Agent` capitalised on chat messages. Vela matches the value exactly, and only lower case is recognised.
 
@@ -152,19 +157,28 @@ Before your first upload, confirm with your Account Manager that your organisati
 
 Processing draws on that allocation, so filter out recordings too short to evaluate before you send them. A few seconds of hold music or a dropped call consumes the allocation without producing anything worth reading.
 
-All `metadata` fields are optional:
+Every `metadata` field is optional.
 
-- **email**: Email address of the agent who participated in the call.
-- **agent**: Alternative to `email`: also matched on the agent's email address.
-- **agent_name**: The agent's name, matched against agent records case-insensitively. Use the name as it appears in Vela (for example `John Smith`), not a username. Where no agent matches, Vela creates one, but only when the `team` you sent already exists. Check the spelling before you send a batch.
-- **team**: The team the call belongs to. The team has to exist in Vela already, because an upload never creates one. A team Vela cannot match is dropped, and that also stops a new agent being created from `agent_name`.
-- **department**: Department the call should be attributed to.
-- **direction**: Call direction: `inbound` or `outbound`.
-- **tags**: Classification labels for the call, as an array of strings (for example `["complaint", "billing"]`). Tags are also where identifiers from your own systems belong, such as a queue name, a campaign, or a ticket reference, so they travel with the interaction and can be filtered on in Vela. Anything with a field of its own belongs in that field instead, so send call direction as `direction` rather than as a tag.
-- **contact**: The customer's phone number, as a string or a number. Vela stores it exactly as you send it, so keep the format consistent across your integration. This is what [Search by Phone Number](../number-search-guide.md) matches on, and sending it here is what makes an interaction findable by number.
-- **date_of_call**: When the call took place, formatted `DD/MM/YYYY, HH:mm:ss` (for example `15/01/2025, 14:30:00`). Times are read as **Africa/Johannesburg**, so convert before sending if your system records another timezone. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the call is dated when you sent it rather than when it happened.
-- **interaction_id**: Your own reference for the call. It is stored as the call's filename.
-- **validate_metadata**: Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
+| Field | What it sets | Format and notes |
+| :--- | :--- | :--- |
+| `email` | The agent, matched on their email address | |
+| `agent` | The same as `email` | An alternative name for the field |
+| `agent_name` | The agent, matched on their name | Case-insensitive, and the name as it appears in Vela rather than a username. Creates the agent where none matches, provided `team` exists |
+| `team` | The team the call belongs to | Has to exist in Vela already. An upload never creates one |
+| `department` | The department the call is attributed to | |
+| `direction` | Whether the call was inbound or outbound | `inbound` or `outbound` |
+| `tags` | Your own labels for the call | An array of strings, for example `["complaint", "billing"]` |
+| `contact` | The customer's phone number | A string or a number, stored exactly as you send it |
+| `date_of_call` | When the call took place | `DD/MM/YYYY, HH:mm:ss`, read as **Africa/Johannesburg**. Defaults to the upload time |
+| `interaction_id` | Your own reference | Stored as the call's filename |
+| `validate_metadata` | Rejects metadata Vela cannot use | Returns **400** instead of filling in a default |
+
+Four of these are worth a second look:
+
+- **`agent_name` and `team` work together.** An unmatched team is dropped, and that also stops a new agent being created. Check the spelling before sending a batch.
+- **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs there instead, so send direction as `direction` rather than as a tag.
+- **`contact` is what [Search by Phone Number](../number-search-guide.md) matches on.** Keep the format consistent across your integration, or the same customer looks like several.
+- **`date_of_call` fails quietly.** A value Vela cannot parse falls back to the upload time, so every call ends up dated when you sent it rather than when it happened.
 
 :::warning Metadata problems are silent by default
 Vela records the fields it can use and fills in defaults for the ones it cannot, so the upload succeeds either way. An unmatched `team` or `department`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, and an unparseable `date_of_call` all behave this way.
@@ -246,10 +260,6 @@ request.post({
 </TabItem>
 </Tabs>
 
-
-
-
-
 **Error Responses:**
 
 | Status | Message | Cause |
@@ -266,7 +276,6 @@ request.post({
 | 400 | `Invalid notify email` | `notifyEmail` is not a valid address, and `validate_metadata` was set. |
 
 The wider platform's status codes, including **401** for an expired token and **429** for rate limiting, are listed under [Error Codes](https://api-docs.botlhale.ai/) in the published reference.
-
 
 ---
 
@@ -292,34 +301,40 @@ Below are the attributes and the formats of each attribute required in the body.
 | chats            | Array  | Required    | Array of message objects                                 |
 | metadata         | Object | Optional    | Chat metadata. See description below.                    |
 
-Metadata object: 
-- **email** (string): Email address of the agent in the chat.
-- **agent** (string): Alternative to `email`: also matched on the agent's email address. If no agent is matched, the chat is left unassigned.
-- **agent_name** (string): The agent's name, matched case-insensitively. Use the name as it appears in Vela, not a username. Sent together with `team`, it creates the agent when no existing record matches, so check the spelling before you send a batch.
-- **team** (string): Team the chat should be attributed to.
-- **department** (string): Department the chat should be attributed to.
-- **direction** (string): `inbound` or `outbound`. Defaults to `inbound`.
-- **tags** (array): Classification labels for the chat, as an array of strings.
-- **contact** (string or number): The customer's phone number, stored exactly as sent. See the note under the calls endpoint above.
-- **date** (string): When the chat took place, formatted `DD/MM/YYYY, HH:mm` (for example `28/11/2025, 14:30`), read as **Africa/Johannesburg**. Seconds are accepted as well. If omitted, the upload time is used. If omitted, the upload time is used. Send the exact format: a value Vela cannot parse falls back to the upload time, so the chat is dated when you sent it rather than when it happened.
-- **language** (string): Language code applied to every message in the chat. When set, it overrides the `language` on the individual message objects. Leave it out if your messages carry their own language codes. Codes take the form `en-ZA`, and the ones recognised are listed under [Supported Languages](https://api-docs.botlhale.ai/).
-- **interaction_id** (string): Your own reference for the chat. It is stored as the chat's filename.
-- **notifyEmail** (string): An email address to notify when the chat's analysis is complete.
-- **validate_metadata** (boolean): Set it to make Vela reject a request whose metadata it cannot use, instead of accepting it and filling in a default. See the note below.
+Every `metadata` field is optional.
 
+| Field | Type | What it sets | Format and notes |
+| :--- | :--- | :--- | :--- |
+| `email` | string | The agent, matched on their email address | |
+| `agent` | string | The same as `email` | The chat is left unassigned where no agent matches |
+| `agent_name` | string | The agent, matched on their name | Case-insensitive, and the name as it appears in Vela rather than a username. Sent with `team`, it creates the agent where none matches |
+| `team` | string | The team the chat is attributed to | |
+| `department` | string | The department the chat is attributed to | |
+| `direction` | string | Whether the chat was inbound or outbound | `inbound` or `outbound`. Defaults to `inbound` |
+| `tags` | array | Your own labels for the chat | An array of strings |
+| `contact` | string or number | The customer's phone number | Stored exactly as sent. See the note under Calls above |
+| `date` | string | When the chat took place | `DD/MM/YYYY, HH:mm`, read as **Africa/Johannesburg**. Seconds are accepted. Defaults to the upload time |
+| `language` | string | The language of every message in the chat | Overrides `language` on the individual messages. Leave it out where each message carries its own |
+| `interaction_id` | string | Your own reference | Stored as the chat's filename |
+| `notifyEmail` | string | An address to notify when analysis finishes | |
+| `validate_metadata` | boolean | Rejects metadata Vela cannot use | Returns **400** instead of filling in a default |
 
-Message object:
+Each object in `chats` is one message:
 
-- **message** (string): Text that was sent.
-- **time** (string): Format `DD/MM/YYYY, HH:mm`, read as **Africa/Johannesburg**. Seconds are accepted as well.
-- **sender** (string): `agent`, `user`, or `bot`, in lower case. Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
+| Field | Type | Requirement | What it holds |
+| :--- | :--- | :--- | :--- |
+| `message` | string | Required | The text that was sent |
+| `time` | string | Required | `DD/MM/YYYY, HH:mm`, read as **Africa/Johannesburg**. Seconds are accepted |
+| `sender` | string | Required | `agent`, `user`, or `bot`, in lower case |
+| `language` | string | Optional | The language of this message. Ignored where `metadata.language` is set |
+
+Response time is measured from each `user` message to the `agent` or `bot` message that answers it.
 
 :::warning Send `sender` in lower case
 Vela matches these three values exactly. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct. Vela reads it as neither an agent nor a bot reply, though, so the conversation drops out of the response time average.
 
 The wider Botlhale reference shows `Agent` capitalised for this field. Lower case is what Vela reads.
 :::
-- **language** (string): Language code. Optional, and ignored when `metadata.language` is set.
 
 :::info Chat allocation
 Chats are counted against a separate monthly chat allocation, not the duration allocation used for calls. Once the organisation reaches that allocation, the endpoint returns an error.
@@ -403,8 +418,6 @@ print(response.text)
 print(json.dumps(response.json(), indent=4))
 ```
 
-
-
 ## Exporting Calls
 
 Pulls analysed calls back out of Vela, for reporting in your own tools rather than reading them in the platform.
@@ -468,7 +481,6 @@ The reply covers the limits this documentation refers to elsewhere:
 Administrators see the same two figures under **Settings → Organisations → This Org**, as **Allocated Monthly Duration** and **Current Duration Usage**. See [Organisation Configuration](../settings-config/organisation-configuration.md).
 
 Checking `currentDurationUse` against `monthlyAllocatedDuration` before a large batch is the reliable way to know whether it processes. It answers the same question as asking your Account Manager, without waiting for a reply.
-
 
 ---
 

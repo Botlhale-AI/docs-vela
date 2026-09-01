@@ -15,10 +15,28 @@ Keep this comment below the intro paragraph. Docusaurus takes the category card
 description from the first content block, so a comment at the top of the file
 becomes the card description.
 
-Sources. Hosting onwards: Botlhale's DR policy and security statement. Confirm
-against the current version of that policy at each release, since the figures
-and certifications move.
-In the Product: the vela source.
+Sources.
+
+"In the Product" is verified against the vela source and the live platform:
+the SSO check that hides the Security tab, the 24-hour session maxAge, the
+password rules, and the redaction defaults. TLS was confirmed against the live
+platform, which negotiates 1.3 and accepts 1.2.
+
+Everything from "Hosting" onwards comes from Botlhale's DR policy and security
+statement, and cannot be checked from this repository. DevOps confirms these,
+and they move between releases:
+
+  - the independent audit, and that it covers POPIA and GDPR
+  - AWS SOC 2 Type 2, and the ISO 27001 status, which currently reads "in progress"
+  - AES-256 at rest, and that AWS has no access to unencrypted customer data
+  - RPO 24 hours and RTO 4 business hours
+  - how often backups run, how often automated security tests run, and who
+    carries out penetration testing. The page says "regularly" and "around the
+    clock" because no figure has been supplied. Replace those with the real
+    frequencies once DevOps gives them.
+
+Ask for the date of the policy version each claim came from, and stamp it on
+the page. A reader cannot tell how current "in progress" is.
 */}
 
 ---
