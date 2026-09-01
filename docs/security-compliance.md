@@ -30,7 +30,7 @@ These are the controls your own administrators configure and use.
 ### Signing In
 
 * Vela supports Google and Microsoft sign-in. Where an organisation uses either, passwords are held by that identity provider and the **Security** tab is hidden in Vela.
-* Passwords set in Vela must meet a minimum length and mix of characters, listed in [Password Requirements](./settings-config/account-security.md#password-requirements). They are stored hashed, never in plain text.
+* Passwords set in Vela must be at least 8 characters and include a letter, a number, and a special character. See [Password Requirements](./settings-config/account-security.md#password-requirements). They are stored hashed, never in plain text.
 * Sessions expire after 24 hours, after which you sign in again.
 
 ### Controlling What People See
@@ -61,7 +61,7 @@ Vela runs entirely on Amazon Web Services (AWS). The production environment that
 
 ## Encryption
 
-* **In transit:** traffic between your browser and Vela is encrypted with TLS 1.2.
+* **In transit:** traffic between your browser and Vela is encrypted with TLS 1.2 or above.
 * **At rest:** stored data is encrypted with AES-256.
 
 AWS has no access to unencrypted customer data.

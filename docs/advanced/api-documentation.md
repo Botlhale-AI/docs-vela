@@ -16,7 +16,7 @@ Botlhale's API also covers transcription, translation, text to speech, and chat 
 :::note Where this page and the published reference differ
 [api-docs.botlhale.ai](https://api-docs.botlhale.ai/) is the authority on these endpoints. This page follows it, and adds two things it does not yet cover.
 
-**More metadata fields.** The reference lists a short set. Vela also reads `agent_name`, `team`, `department`, `direction`, `tags`, `contact`, `language`, `notifyEmail`, and `validate_metadata`, which are documented below.
+**More metadata fields**, and the gap differs by endpoint. For calls, the reference omits `contact`, `notifyEmail`, and `validate_metadata`. For chats it lists only `agent`, `date`, and `interaction_id`, while Vela also reads `agent_name`, `team`, `department`, `direction`, `tags`, `contact`, `language`, `notifyEmail`, and `validate_metadata`. All are documented below.
 
 **Lower-case `sender`.** The reference shows `Agent` capitalised on chat messages. Vela matches the value exactly, and only lower case is recognised.
 
