@@ -342,7 +342,11 @@ That is expected. What is not expected is a call that never arrives at all. Repo
 
 **Problem:** An agent's score appears incorrect or seems to miss context from the conversation.
 
-**Cause:** AI scoring is based on the criteria defined in your organisation's Agent Scorecard. Complex situations, cultural nuances, or contextual details that the AI cannot reliably detect from the transcript may result in an outcome that does not match your judgement.
+**Cause:** The AI scores against your organisation's Agent Scorecard, reading the transcript alone. Its answer can differ from yours where:
+
+- The agent said the right thing in another language, or in words the AI did not match.
+- The agent said the right thing using a local expression.
+- The call was resolved in a way the transcript alone does not show.
 
 **Solution:**
 Override the individual scorecard items you disagree with. Your edited outcome takes precedence over the AI's, and the score is recalculated.
@@ -437,7 +441,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 
 **Problem:** **New Smart Search** is greyed out and cannot be selected.
 
-**Cause:** Your organisation has reached the number of Smart Searches its plan allows. Most plans include five. No message explains this on the page.
+**Cause:** Your organisation has reached the number of **Active** searches its plan allows, which is five unless your plan sets another number. No message explains this on the page.
 
 **Solution:**
 1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
