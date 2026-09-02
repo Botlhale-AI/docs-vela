@@ -45,15 +45,18 @@ One symptom is worth naming, because it looks like normal behaviour:
 
 ## Login and Authentication Issues
 
-**Problem:** Cannot sign in. The page shows an error, or the login button does not respond.
+**Problem:** Signing in with email and password fails.
 
-**Cause:** JavaScript or cookies may be disabled in the browser, or the browser cache may contain stale session data.
+**Cause:** Selecting **Sign In** always responds with a message. Which one appears tells you what to do next.
 
 **Solution:**
-1. Confirm that JavaScript and cookies are enabled in your browser settings.
-2. Clear your browser cache and cookies, then reload the login page.
-3. Try logging in using a supported browser. These are Chrome (recommended), Firefox, Edge, and Safari.
-4. If the problem persists, disable your browser extensions, especially ad blockers or script blockers, then try again.
+- `Please fill in all fields.` Enter both an email address and a password before selecting **Sign In**.
+- `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it.
+- `We have sent you an email. Please verify your email address.` The account exists but has not been confirmed. Open the invitation email and select **Confirm Account** before signing in.
+- `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link.
+- `An unexpected error occurred. Please try again later.` The request to Vela failed rather than being refused. Try again in a moment, and contact support if it continues.
+
+If the page fails to load at all, that is a different problem. See [Browser Issues](#browser-issues).
 
 ---
 
