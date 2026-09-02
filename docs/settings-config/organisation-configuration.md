@@ -143,7 +143,7 @@ Redaction applies to every user by default, administrators included. For how to 
 
 ## 6. Current Package
 
-The package name is shown at the bottom of the page. Select **show package details** to open the limits table.
+The package name is shown at the bottom of the page. Select **Show package details** to open the limits table.
 
 | Row | Description |
 | :--- | :--- |
@@ -155,7 +155,7 @@ The package name is shown at the bottom of the page. Select **show package detai
 
 ![The Current Package table with its five rows, the hide package details link, and the Save button below it](../../img/screenshots/settings/current_package.png)
 
-The label beside the heading names the package type, for example **Custom**. **hide package details** closes the table again.
+The label beside the heading names the package type, for example **Custom**. **Hide package details** closes the table again.
 
 Your edition also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
 

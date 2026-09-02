@@ -110,7 +110,7 @@ Set your departments and teams up to match your real reporting lines. Each team 
 You add two kinds of record in this step. They are separate records, and adding one does not create the other:
 
 ```mermaid
-flowchart TD
+flowchart LR
     D("Departments<br/>created first, in Step 2") --> T("Teams<br/>each belongs to a department")
     T --> A("Agents, Step 3A<br/>their calls and chats are analysed<br/>added singly or by CSV import<br/>no Vela login")
     T --> U("Users, Step 3B<br/>the people who sign in to Vela<br/>added one at a time<br/>each has a Role and an Access level")

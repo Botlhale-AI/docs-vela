@@ -47,7 +47,7 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 The format you need depends on what you are uploading and whether it is one file or many. The sections below give the full specification for each:
 
 ```mermaid
-flowchart TD
+flowchart LR
     Q("What are you uploading?") --> C{"Calls"}
     Q --> H{"Chats"}
     Q --> A("Agents")

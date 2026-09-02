@@ -122,9 +122,7 @@ A sign of customer frustration identified by the AI, such as repeated explanatio
 
 ## Redaction
 
-Automatic masking of sensitive information in transcripts. Administrators choose which types to mask. The available types are:
-
-Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
+Automatic masking of sensitive information in transcripts. Administrators choose which types to mask. These are Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
 
 **NRP** covers nationality, religion, and political group. Settings shows the abbreviation on its own, so it is the one entity type whose name does not say what it masks.
 

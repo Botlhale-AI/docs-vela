@@ -77,7 +77,7 @@ All of these can be changed after creation by editing the search, except **Histo
 
 ## Related
 
-- [Smart Search](../smart-search-guide.md): creating and managing searches
+- [Set Up Smart Search](../smart-search-guide.md): creating and managing searches
 - [Glossary](./glossary.md): definitions of the terms above
 
 ---

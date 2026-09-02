@@ -86,7 +86,9 @@ Refresh on a schedule, or whenever a request returns **401**, and treat the refr
 
 ### Revoking a Refresh Token
 
-**Each user can hold at most three active refresh tokens.** Once you reach that limit, revoke one you are no longer using rather than generating another:
+**Each user can hold only a limited number of active refresh tokens at once.** Once you reach that limit, revoke one you are no longer using rather than generating another:
+
+{/* UNVERIFIED: exact limit (recollection says three). Not documented at api-docs.botlhale.ai, and no auth/token-issuing source is available in this checkout. Needs engineering to confirm the number before restating it. */}
 
 ```
 POST https://api.botlhale.tech/auth/revoke_token

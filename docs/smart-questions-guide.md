@@ -14,6 +14,18 @@ Smart Questions let you ask a question of your interactions and see the answers,
 **Smart Questions** appears under **Smart Detector** in the left sidebar on the plans that include it. Where it is absent, your Account Manager can tell you what it would take to add.
 :::
 
+---
+
+## Before You Begin
+
+You need:
+
+- **Smart Questions on your plan.** Where **Smart Questions** appears under **Smart Detector** in the left sidebar, your plan includes it.
+- **Access level:** Organisational, Departmental, or Team, covering the scope you want. See [Access Level](./reference/glossary.md#access-level).
+- **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the point at which you set it for good.
+
+---
+
 ## How Smart Questions Differ from the Agent Scorecard
 
 Both features ask yes/no questions about an interaction, and both are evaluated automatically by the AI. The difference is what happens to the answer:
@@ -29,16 +41,6 @@ Because Smart Questions are not scored, use them whenever you want to know somet
 :::tip When to use a Smart Question instead of a scorecard item
 If the answer says something about **the conversation** rather than **the agent's performance**, it belongs in Smart Questions. Asking whether a customer mentioned a competitor, or referenced a specific product, tells you something useful without implying the agent did anything right or wrong.
 :::
-
----
-
-## Before You Begin
-
-You need:
-
-- **Smart Questions on your plan.** Where **Smart Questions** appears under **Smart Detector** in the left sidebar, your plan includes it.
-- **Access level:** Organisational, Departmental, or Team, covering the scope you want. See [Access Level](./reference/glossary.md#access-level).
-- **To decide about Historical Search before you save.** It runs the questions against interactions already in Vela, and creation is the point at which you set it for good.
 
 ---
 

@@ -327,7 +327,7 @@ Open a search from the Smart Search list to change its title, description, statu
 The same view has a **Delete Search** control for searches you no longer need. Setting a search to **Inactive** is enough to free a place under your plan's limit, which counts Active searches only, so delete a search when you want the definition gone rather than to make room.
 
 :::note Your plan limits how many searches can be Active
-When you reach the limit, **New Smart Search** is greyed out, and no message explains why. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about a higher limit. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
+When you reach the limit, **New Smart Search** is greyed out, and no message explains why. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about a higher limit. Your allowance is under **Settings → Organisations**, where **Show package details** lists the **Smart Search Limit**.
 :::
 
 To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.

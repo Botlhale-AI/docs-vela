@@ -123,7 +123,7 @@ Once you have selected an interaction, the **Detailed View** gives you everythin
     * The **Returned Interactions** section of a Smart Search's results.
     * A **Notifications** entry, where an alert or a comment links to the interaction it came from.
 
-    The Dashboard does not link to individual interactions. Use it to spot which agents or teams need attention, as in [Use Dashboard Metrics](#b-use-dashboard-metrics) above, then find their interactions from one of the routes here.
+    The Dashboard does not link to individual interactions. Use it to spot which agents or teams need attention, as in [B. Use Dashboard Metrics](#b-use-dashboard-metrics) above, then find their interactions from one of the routes here.
 
 ![The Detailed View of a chat, with the transcript beside the same analysis tabs a call has](../../img/screenshots/chats/detailed-chat.png)
 

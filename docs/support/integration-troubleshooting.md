@@ -10,6 +10,14 @@ type: troubleshooting
 
 Problems with interactions sent from your own systems through the API. For uploads made through Vela, see [General Issues](./troubleshooting-guide.md).
 
+If this guide does not resolve your issue, see [Need Help?](#need-help) at the end of this page.
+
+---
+
+## Start Here
+
+Find your symptom, then read the matching entry below.
+
 | What you are seeing | Cause to check first |
 | :--- | :--- |
 | A success response, and nothing under **Interactions** | The wrong organisation ID, or the development environment |
@@ -111,8 +119,6 @@ Problems with interactions sent from your own systems through the API. For uploa
 1. Use `https://api.botlhale.tech`.
 2. Allow `*.botlhale.tech` through your firewall. See [System Requirements](../getting-started/system-requirements.md).
 3. Where your integration was built by a third party, the base URL usually sits in a configuration file rather than in the code, so the change may not need a release.
-
----
 
 ---
 

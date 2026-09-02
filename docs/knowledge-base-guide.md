@@ -7,6 +7,19 @@ type: how-to
 ---
 
 # Build Your Knowledge Base
+The Knowledge Base holds your own documents, so the AI can judge interactions against your procedures and product information instead of generic wording.
+
+---
+
+## Before You Begin
+
+You need:
+
+- **Your document as a PDF.** The Knowledge Base accepts PDF only. Convert a Word or Google document before you start.
+- **To know which teams the document applies to.** You set a scope on upload, and it decides who can see and use the document. Getting this wrong is the usual reason a colleague cannot find a document you uploaded, and scope is fixed once the document is in, so decide it before you upload rather than after.
+- **Somewhere to link it.** A document on its own does nothing. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
+
+---
 
 ## What the Knowledge Base Does in Vela
 
@@ -31,16 +44,6 @@ flowchart LR
 Uploading is only half of it. A document nobody has linked is the most common reason the Knowledge Base appears to have no effect.
 
 Administrators and team leads manage the Knowledge Base. Agents do not upload or manage documents.
-
----
-
-## Before You Begin
-
-You need:
-
-- **Your document as a PDF.** The Knowledge Base accepts PDF only. Convert a Word or Google document before you start.
-- **To know which teams the document applies to.** You set a scope on upload, and it decides who can see and use the document. Getting this wrong is the usual reason a colleague cannot find a document you uploaded, and scope is fixed once the document is in, so decide it before you upload rather than after.
-- **Somewhere to link it.** A document on its own does nothing. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
 
 ---
 

@@ -212,7 +212,7 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 | Single chat upload | CSV | Not stated on the page |
 | Bulk chat upload | JSON, in the layout shown above | 1 MB |
 
-Audio files above their limit are rejected before the upload starts, with a "file too big" message.
+Audio files above their limit are rejected before the upload starts, with the message `file too big!`.
 
 :::note Chat file size
 The **Bulk Upload** tab states a 1 MB maximum. The single **Upload** tab states none, so treat 1 MB as the guide for both.

@@ -22,7 +22,7 @@ Find your symptom, rather than reading from the top.
 
 | What you are seeing | Where to look |
 | :--- | :--- |
-| An interaction has no score, or the Scorecard tab is missing | [Scorecard and Scoring Issues](#scorecard-and-scoring-issues) |
+| An interaction has no score, or nothing appears on its Scorecard tab | [Scorecard and Scoring Issues](#scorecard-and-scoring-issues) |
 | A score looks wrong, or reads `0.0%` with a figure in brackets | [Scorecard and Scoring Issues](#scorecard-and-scoring-issues) |
 | A Smart Search matches nothing, matches too much, or cannot be created | [Smart Search and Alert Issues](#smart-search-and-alert-issues) |
 
@@ -49,13 +49,14 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 ---
 
-**Problem:** The Scorecard section is missing from an interaction.
+**Problem:** An interaction has no score, or nothing appears on its **Scorecard** tab.
 
-**Cause:** No scorecard question is scoped to the team or department this agent belongs to.
+**Cause:** No scorecard question is scoped to the team or department this agent belongs to, so there was nothing to score the interaction against.
 
 **Solution:**
-1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and create or activate a scorecard.
-2. Ensure the scorecard scope is set to cover the relevant team, department, or organisation.
+1. Ask your administrator to open **Smart Detector → Agents Scorecard** and confirm that questions exist with **Search Status** set to Enabled.
+2. Check the scope of the scorecard. It must cover the department or team the agent belongs to, and its **Interactions** setting must match the channel: a scorecard set to Chats never scores a call.
+3. Once a scorecard is active, newly processed calls are scored automatically. It does not reach back over calls already processed unless it was created with Historical Search on. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 
 ---
 

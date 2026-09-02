@@ -144,7 +144,7 @@ Select **Customise** to choose which metrics appear and how each is charted (tab
 | 4 | The scrollbar | The remaining groups sit below the two in view |
 | 5 | **Save Changes** | Applies your selection. Closing without saving discards it |
 
-The chips show what is on your dashboard now. To add one, use the two controls below them: the metric selector, then the view selector below it, which is where you choose the chart type. **Cancel** clears the pair without adding anything.
+The selected metrics show what is on your dashboard now. To add one, use the two controls below them: the metric selector, then the view selector below it, which is where you choose the chart type. **Cancel** clears the pair without adding anything.
 
 **Try it now:** Add **Top 10 Pain Points in Interactions (Detected)** to your dashboard to monitor common customer issues.
 

@@ -28,7 +28,8 @@ Find your symptom, rather than reading from the top.
 | A **401**, a token problem, or an integration that stopped working | [Integration Problems](./integration-troubleshooting.md) |
 | Interactions arrive with the wrong agent, team, or date | [Integration Problems](./integration-troubleshooting.md) |
 | Interactions uploaded but still not listed | [Processing Issues](#processing-issues) |
-| An interaction listed but with no score or no analysis | [Processing Issues](#processing-issues) |
+| An interaction listed but with no summary, sentiment, or keywords | [Processing Issues](#processing-issues) |
+| An interaction listed but with no score | [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues) |
 | The Dashboard is empty, slow, or forgets your changes | [Dashboard and Performance](#dashboard-and-performance-issues) |
 | A score looks wrong, or reads `0.0%` with a figure in brackets | [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues) |
 | A Smart Search matches nothing, matches too much, or cannot be created | [Smart Detector Issues](./smart-detector-issues.md#smart-search-and-alert-issues) |
@@ -187,17 +188,6 @@ That is expected. What is not expected is a call that never arrives at all. Repo
 
 ---
 
-**Problem:** Processed calls appear in the list but show no score.
-
-**Cause:** No scorecard question is scoped to the relevant team or department, so the AI has no criteria to score against.
-
-**Solution:**
-1. Ask your administrator to open **Smart Detector → Agents Scorecard** and confirm that questions exist with **Search Status** set to Enabled.
-2. Check the scope of the scorecard. It must cover the department or team the agent belongs to, and its **Interactions** setting must match the channel: a scorecard set to Chats never scores a call.
-3. Once a scorecard is active, newly processed calls are scored automatically. It does not reach back over calls already processed unless it was created with Historical Search on. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
-
----
-
 **Problem:** The AI summary, sentiment, or keywords are missing from a processed call.
 
 **Cause:** The audio quality may be too low for accurate transcription. The summary, sentiment, and keywords all depend on the transcript, so a poor transcript weakens all of them.
@@ -205,6 +195,8 @@ That is expected. What is not expected is a call that never arrives at all. Repo
 **Solution:**
 1. Check the audio quality of the original file. Heavily compressed audio, background noise, and overlapping speakers all reduce analysis accuracy.
 2. If the problem affects multiple recent uploads rather than a single file, contact support.
+
+An interaction that finished processing but carries no score is a scorecard problem rather than a processing one. See [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues).
 
 ---
 
@@ -315,7 +307,7 @@ Personal information appearing where it should not is a data protection matter, 
 
 **Problem:** Selecting a timestamp in the transcript does not jump to the correct point in the audio.
 
-**Cause:** The audio file had not finished loading when the timestamp was selected, or the page did not render correctly.
+**Cause:** The audio file had not finished loading when the timestamp was selected, or the page did not display correctly.
 
 **Solution:**
 1. Wait until the audio has fully loaded before selecting timestamps.
@@ -353,7 +345,7 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 
 **Solution:**
 1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation.
-2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to render.
+2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to display.
 3. Where every view is slow but other sites are fine, clear the cache and try a second supported browser to confirm it is Vela rather than the machine.
 4. Where the same narrow view is still slow, contact support with the page, the date range, and the scope you had set.
 
