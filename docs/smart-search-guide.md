@@ -309,7 +309,7 @@ Use **Sort By** to order your searches by **Results** (their match count), highe
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
 | **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
-| **New Smart Search is greyed out** | Your organisation has reached the number of Active searches its plan allows | Set a search you are not using to Inactive, which frees a place and keeps the search. Deleting one works too. For a higher limit, ask your Account Manager |
+| **New Smart Search is greyed out** | Your organisation has reached the number of Active searches its plan allows | Set a search you are not using to Inactive, which frees a place and keeps the search. Deleting one works too. For a higher limit, ask your Account Manager about upgrading your plan |
 | **A linked search stopped matching** | Its main search was set to Inactive, so there is nothing for it to run against | Set the main search back to Active, or unlink the search |
 
 ---
@@ -327,7 +327,7 @@ Open a search from the Smart Search list to change its title, description, statu
 The same view has a **Delete Search** control for searches you no longer need. Setting a search to **Inactive** is enough to free a place under your plan's limit, which counts Active searches only, so delete a search when you want the definition gone rather than to make room.
 
 :::note Your plan limits how many searches can be Active
-When you reach the limit, **New Smart Search** is greyed out, and no message explains why. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about a higher limit. Your allowance is under **Settings → Organisations**, where **Show package details** lists the **Smart Search Limit**.
+When you reach the limit, **New Smart Search** is greyed out. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about upgrading your plan for a higher limit. Your allowance is under **Settings → Organisations**, where **Show package details** lists the **Smart Search Limit**.
 :::
 
 To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.
