@@ -22,7 +22,7 @@ You need:
 
 - **Access level:** Organisational, Departmental, or Team, covering the teams the scorecard should apply to. See [Access Level](./reference/glossary.md#access-level).
 - **The behaviours you want to measure**, written down before you start. A scorecard built at the keyboard tends to grow questions that overlap.
-- **To decide about Historical Search**, covered in step 2. Set it before you save, because it is the one choice on this form that creation fixes for good.
+- **To decide about Historical Search**, covered in step 2. Set it before you save, because it cannot be changed once the scorecard is created.
 
 ---
 
@@ -31,7 +31,7 @@ You need:
 1. Select **Smart Detector** in the left sidebar, then **Agents Scorecard**.
 2. Select the **Create** tab.
 
-The page has four tabs. **View** lists the questions you already have, **Create** adds one, **Results** shows how your questions have performed across interactions, and **View examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
+The page has four tabs. **View** lists the questions you already have, **Create** adds a new question, **Results** shows how your questions have performed across interactions, and **View examples** holds ready-made questions supplied with Vela, which are worth reading before you write your own.
 
 ![The Agents Scorecard list, showing existing questions and their status](../img/screenshots/smart_detector/scorecard-list.png)
 
@@ -66,7 +66,7 @@ Each question is one yes/no judgement about the interaction. The fields below ar
 | 3 | **Expected Outcome** | Which answer counts as a pass. Set it to match how you phrased the question |
 | 4 | **Weight** | How much this question contributes, relative to the others |
 | 5 | **Search Status** | Whether the question runs against incoming interactions |
-| 6 | **Search Type** | Whether the AI answers it, or a reviewer does manually |
+| 6 | **Search Type** | Whether the AI answers it, or a reviewer does it manually |
 | 7 | **Apply To** | Inbound calls, outbound calls, or all calls |
 | 8 | **Auto-Fail** | Failing this question takes the whole interaction to `0.0%`, with the score earned on the other questions shown in brackets beside it |
 | 9 | **Compliance Question** | Counts this question towards the **Compliance Score** instead of the **Quality Score**. Every question counts towards the **Overall Score** either way |
@@ -77,7 +77,7 @@ Each question is one yes/no judgement about the interaction. The fields below ar
 Select **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 
 :::warning Your plan caps how many questions you can have
-The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations → This Org**, where **Show package details** lists the **Agent Scorecard Limit**. When you reach it the **Create** tab is greyed out, with no message explaining why. Delete a question you no longer need to make room, or ask your Account Manager about a higher limit. Only your own enabled questions count towards it, so the ready-made ones on **Examples** do not.
+The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations → This Org**, where **Show package details** lists the **Agent Scorecard Limit**. When you reach it, the **Create** tab is greyed out. Delete a question you no longer need to make room, or ask your Account Manager about upgrading your plan for a higher limit. Only your own enabled questions count towards it, so the example questions on **View examples** do not count towards your scorecard.
 :::
 
 Every field, including those this page does not cover, is listed in [Scorecard Fields](./reference/scorecard-fields.md). For how the three scores are worked out, and why compliance is reported separately, see [How Scoring Works](./explanation/how-scoring-works.md).
@@ -85,7 +85,9 @@ Every field, including those this page does not cover, is listed in [Scorecard F
 :::note Adding a category
 **Category** starts as a list of the categories you already use. To add a new one, select the folder-with-a-plus icon beside the field and type the name. The icon then becomes a pointing hand, which takes you back to choosing from the list.
 
-Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page, so a category per question tells you nothing about where they are strong.
+{/* SCREENSHOT NEEDED: the Category field with the folder-with-a-plus icon beside it, ideally alongside the same field after selecting the icon so the pointing-hand state is visible too. Suggested path: img/screenshots/smart_detector/scorecard-add-category.png */}
+
+Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page. Grouping related questions under one category is what lets those reports show a real pattern, rather than a single question's result.
 :::
 
 ### Writing Questions the AI Can Answer
@@ -94,7 +96,7 @@ The AI reads a transcript. A question works when its answer is visible there.
 
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
 * **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
-* **Keep weights relative.** There is no external scale. A question weighted 10 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
+* **Keep weights relative to each other.** There is no external scale. A question weighted 10 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
 
@@ -106,7 +108,7 @@ Write those positively too, then set **Expected Outcome** to **No**. The questio
 Keep the two kinds apart when you read the Results tab. A high failure rate on a scored question is a performance problem. A high failure rate on one of these is a finding.
 :::
 
-For questions the AI cannot judge from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it by hand. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
+For questions the AI cannot judge from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it manually. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
 
 Where the answer depends on your own procedure rather than general knowledge, turn on **Apply Knowledge Base** instead, and the AI judges the question against a document you have uploaded. See [Build Your Knowledge Base](./knowledge-base-guide.md).
 
@@ -126,7 +128,7 @@ Each row is numbered, and holds:
 | **Weight** | How much it contributes, relative to the others |
 | **Auto-Fail** | Whether failing it fails the whole interaction, as **Active** or **Inactive** |
 | **Passed** | How many interactions passed it, with the percentage beside the count |
-| **Failed** | The same, for interactions that failed it |
+| **Failed** | How many interactions failed it, with the percentage beside the count |
 | **N/A** | How many it did not apply to. These are excluded from the score rather than counted as failures |
 | **Calls Analysed** | How many interactions it has run against |
 | **Date Created** | When the question was added |
@@ -135,7 +137,7 @@ Reading **Passed**, **Failed**, and **N/A** together matters more than any one o
 
 **What to look for.** A question failed by almost everyone is usually worded in a way the AI cannot answer from a transcript, rather than a behaviour your whole team is missing. A question passed by everyone measures nothing. Both are worth rewording before you read anything into the scores they produce.
 
-A low **Calls Analysed** count against an old question points at scope or channel instead: the question may not be reaching the interactions you expected. See [Check Your Work](#check-your-work).
+A low **Calls Analysed** count against an old question points at scope or the **Interactions** setting instead: the question may not be reaching the interactions you expected. See [Check Your Work](#check-your-work).
 
 ### The Controls Above the Table
 
@@ -152,7 +154,7 @@ A low **Calls Analysed** count against an old question points at scope or channe
 | **Filter Calls** | Narrows which **interactions** the figures are counted from |
 | **Export** | Downloads the table |
 
-**Filter** and **Filter Calls** do different jobs, and their names do little to say which is which. Filter changes the rows you see. Filter Calls leaves the rows alone and changes the numbers in them, because it changes which interactions were counted.
+**Filter** and **Filter Calls** do different jobs. Filter changes the rows you see. Filter Calls leaves the rows alone and changes the numbers in them, because it changes which interactions were counted.
 
 **Filter Calls** covers chats as well as calls, despite the name. The figures behind it are counted from every interaction that matches, so a scorecard applied to both channels is reporting on both here.
 
@@ -170,7 +172,7 @@ Editing and deleting behave differently, and the difference matters:
 
 | | What happens to interactions already scored |
 | :--- | :--- |
-| **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so interactions keep its outcome and their scores do not change, in the interface and in exports alike |
+| **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so historical interactions keep its outcome and their scores do not change, in the interface and in exports alike |
 | **Editing its weight, Auto-Fail, Compliance, or Expected Outcome** | They are scored again from the current settings, including their **Initial** figures |
 
 :::warning Editing a weight changes past scores
@@ -189,14 +191,14 @@ The questions appear on the **View** tab as soon as you save, but a score needs 
 
 If you turned Historical Search on, interactions already in Vela are scored as it works through them. If you left it off, the scorecard applies from now on, so the **Results** tab stays empty until new interactions are processed. That is the expected state rather than a fault.
 
-You are finished when you open a processed interaction, go to its **Scorecard** tab, and see your questions with an outcome on each. An interaction showing no scorecard usually means the scope does not cover that agent's team, or the **Interactions** setting does not match the channel. See [Scorecard and Scoring Issues](./support/smart-detector-issues.md#scorecard-and-scoring-issues).
+You are finished when you open a processed interaction, go to its **Scorecard** tab, and see your questions with an outcome on each. An interaction showing no scorecard usually means the scope does not cover that agent's team, or the **Interactions** setting excludes calls or chats like this one. See [Scorecard and Scoring Issues](./support/smart-detector-issues.md#scorecard-and-scoring-issues).
 
 ---
 
 ## Related
 
 - [Scorecard Fields](./reference/scorecard-fields.md): every field on a question, with its values and default
-- [How Scoring Works](./explanation/how-scoring-works.md): weights, N/A, auto-fail, and why editing rewrites history
+- [How Scoring Works](./explanation/how-scoring-works.md): weights, N/A, auto-fail, and why editing rewrites historical figures
 - [Review and Score Interactions](./features/quality-assurance-tools.md): reviewing and overriding what the scorecard produces
 - [Set Up Smart Questions](./smart-questions-guide.md): asking about a conversation without scoring the agent
 - [Administrator Setup](./getting-started/quick-start/administrator-setup.md): the scorecard as part of first-time configuration
