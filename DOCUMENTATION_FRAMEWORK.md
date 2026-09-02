@@ -60,7 +60,7 @@ EPPO starts there: **any page might be the first one a reader sees.** Every page
 | **How-to** | Competent, has chosen a task | Get them to the outcome efficiently | Generate Reports |
 | **Reference** | Working, needs a fact | Describe neutrally and consistently | Metrics, Glossary |
 | **Explanation** | Building understanding | Explain why, discuss trade-offs | How Scoring Works |
-| **Troubleshooting** | Stuck, has a symptom | Move from symptom to cause to fix | Troubleshooting Guide |
+| **Troubleshooting** | Stuck, has a symptom | Move from symptom to cause to fix | General Issues |
 
 Every page records its type in frontmatter, so drift is visible in review:
 
@@ -71,7 +71,7 @@ type: how-to
 ---
 ```
 
-**Current distribution:** 15 reference, 12 how-to, 5 explanation, 2 tutorial, 1 troubleshooting, across 35 published pages.
+**Current distribution:** 15 reference, 12 how-to, 5 explanation, 2 tutorial, 3 troubleshooting, across 37 published pages.
 
 Reference being the largest is intentional. In a mature product it is the material people return to most.
 
@@ -92,7 +92,8 @@ Navigation uses plain business language, not framework terminology. A team lead 
 | **Reference** | Glossary · Metrics · Scorecard Fields · Smart Search Criteria |
 | **Administration & Configuration** | Roles and Access Levels · Account and Security · Organisation Configuration · User and Team Management · Access Requests · Security and Compliance |
 | **Advanced** | API Reference · Best Practices |
-| **Support** | Troubleshooting Guide · Integration Problems · Frequently Asked Questions · Video Tutorials |
+| **Troubleshooting** | General Issues · Smart Detector Issues · Integration Problems |
+| **Support** | Frequently Asked Questions · Video Tutorials |
 
 Page names in this table are the page titles, which are also the sidebar labels. Keep them in step when a page is renamed. Names are separated by `·` rather than commas, because a title may contain a comma.
 

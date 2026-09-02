@@ -224,7 +224,7 @@ A session expires after 24 hours, after which you sign in again. See [Security a
 
 ## Troubleshooting
 
-If Vela does not load, an upload fails, or audio does not play, see the [Troubleshooting Guide](../support/troubleshooting-guide.md). It covers each of these with step-by-step resolutions.
+If Vela does not load, an upload fails, or audio does not play, see [General Issues](../support/troubleshooting-guide.md). It covers each of these with step-by-step resolutions.
 
 ---
 

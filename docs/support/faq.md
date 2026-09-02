@@ -7,7 +7,7 @@ type: reference
 
 # Frequently Asked Questions
 
-Short answers to the most common questions about Vela. For step-by-step help with a problem, see the [Troubleshooting Guide](./troubleshooting-guide.md).
+Short answers to the most common questions about Vela. For step-by-step help with a problem, see [General Issues](./troubleshooting-guide.md).
 
 ## General
 
@@ -125,7 +125,9 @@ A: Contact **support@botlhale.ai**. Include your browser type and version, opera
 - [System Requirements](../getting-started/system-requirements.md): supported browsers, file formats, and network requirements
 - [Team Lead Quick Start](../getting-started/quick-start/team-lead-quick-start.md): get up and running
 - [Coaching Portal Documentation](https://docs-coaching.botlhale.xyz): courses, awards, and progress for team leads, and the agent's own portal
-- [Troubleshooting Guide](./troubleshooting-guide.md): step-by-step solutions to common issues
+- [General Issues](./troubleshooting-guide.md): step-by-step fixes for sign-in, upload, dashboard, redaction, audio, and browser problems
+- [Smart Detector Issues](./smart-detector-issues.md): a missing or incorrect score, and Smart Search problems
+- [Integration Problems](./integration-troubleshooting.md): problems with interactions sent through the API
 - [Video Tutorials](./video-tutorials.md): the main workflows shown rather than written
 
 ---

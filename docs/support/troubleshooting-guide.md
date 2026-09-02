@@ -1,16 +1,16 @@
 ---
 id: troubleshooting-guide
-title: Troubleshooting Guide
-description: "Step-by-step fixes for the issues administrators, team leads, and agents report most."
+title: General Issues
+description: "Fix sign-in, upload, processing, Dashboard, redaction, audio, and browser problems."
 sidebar_position: 1
 type: troubleshooting
 ---
 
-# Troubleshooting Guide
+# General Issues
 
 This guide consolidates common issues reported by administrators, team leads, and agents, and provides step-by-step resolutions. Where an issue appears in more than one area of Vela, this guide cross-references it.
 
-For interactions sent from your own systems through the API, see [Integration Problems](./integration-troubleshooting.md).
+For interactions sent from your own systems through the API, see [Integration Problems](./integration-troubleshooting.md). For a missing or incorrect score, or a Smart Search matching too much or too little, see [Smart Detector Issues](./smart-detector-issues.md).
 
 If this guide does not resolve your issue, see [Need Help?](#need-help) at the end of this page.
 
@@ -30,16 +30,15 @@ Find your symptom, rather than reading from the top.
 | Interactions uploaded but still not listed | [Processing Issues](#processing-issues) |
 | An interaction listed but with no score or no analysis | [Processing Issues](#processing-issues) |
 | The Dashboard is empty, slow, or forgets your changes | [Dashboard and Performance](#dashboard-and-performance-issues) |
-| A score looks wrong, or reads `0.0%` with a figure in brackets | [Scorecard and Scoring](#scorecard-and-scoring-issues) |
-| A Smart Search matches nothing, matches too much, or cannot be created | [Smart Search and Alerts](#smart-search-and-alert-issues) |
+| A score looks wrong, or reads `0.0%` with a figure in brackets | [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues) |
+| A Smart Search matches nothing, matches too much, or cannot be created | [Smart Detector Issues](./smart-detector-issues.md#smart-search-and-alert-issues) |
 | Names or numbers replaced with placeholders in a transcript | [Redaction and Access](#redaction-and-access-issues) |
 | Audio does not play, or jumps to the wrong point | [Audio Playback](#audio-playback-issues) |
 | A blank screen, or Vela running slowly | [Browser Issues](#browser-issues) |
 
-Two symptoms are worth naming, because both look like normal behaviour:
+One symptom is worth naming, because it looks like normal behaviour:
 
 - **An upload returns success and nothing appears.** The interaction reached somewhere other than your Vela organisation. See [Integration Problems](./integration-troubleshooting.md).
-- **A score of `0.0%` with a higher figure in brackets.** The interaction auto-failed. The bracketed figure is what it earned otherwise. See [Scorecard and Scoring](#scorecard-and-scoring-issues).
 
 ---
 
@@ -245,118 +244,6 @@ That is expected. What is not expected is a call that never arrives at all. Repo
 
 ---
 
-## Scorecard and Scoring Issues
-
-**Problem:** An agent's score appears incorrect or seems to miss context from the conversation.
-
-**Cause:** The AI scores against your organisation's Agent Scorecard, reading the transcript alone. Its answer can differ from yours where:
-
-- The agent said the right thing in another language, or in words the AI did not match.
-- The agent said the right thing using a local expression.
-- The call was resolved in a way the transcript alone does not show.
-
-**Solution:**
-Override the individual scorecard items you disagree with. Your edited outcome takes precedence over the AI's, and the score is recalculated.
-
-See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-complete-a-manual-scorecard) for the full steps.
-
----
-
-**Problem:** The Scorecard section is missing from an interaction.
-
-**Cause:** No scorecard question is scoped to the team or department this agent belongs to.
-
-**Solution:**
-1. Ask your administrator to navigate to **Smart Detector → Agents Scorecard** and create or activate a scorecard.
-2. Ensure the scorecard scope is set to cover the relevant team, department, or organisation.
-
----
-
-**Problem:** A newly added scorecard question does not appear on interactions that were already scored.
-
-**Cause:** Which questions an interaction was scored against is fixed when it is processed. A question added afterwards is not applied to it.
-
-**Solution:**
-1. Accept the gap and start the new measurement from the date you added the question. This is usually the right choice.
-2. If an older interaction must be scored against it, upload the recording again so it is processed from scratch. That leaves two interactions for one conversation, so delete the earlier copy if you do not want duplicates.
-3. For a large number of interactions, contact **support@botlhale.ai**.
-
-:::note Editing a question is different from adding one
-Editing an existing question's **weight**, **Auto-Fail**, **Compliance**, or **Expected Outcome** does apply backwards. Interactions already scored against that question are re-scored from the current settings the next time you open them, including their **Initial** scores. See [How Scoring Works](../explanation/how-scoring-works.md).
-:::
-
-The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.
-
----
-
-**Problem:** An interaction shows a score of 0.0%, with a different percentage in brackets beside it.
-
-**Cause:** The interaction failed a question marked **Auto-Fail**, which fails the whole interaction whatever else went well. The bracketed figure is the score earned on every other question.
-
-**Solution:**
-1. Open the **Scorecard** tab to see which Auto-Fail question failed.
-2. Read the bracketed figure when coaching. An agent who scored `0.0% (90.0%)` did good work and missed one critical step.
-3. If interactions are auto-failing more often than you expect, review which questions have Auto-Fail enabled. It is meant for critical compliance breaches rather than quality issues.
-
-This is working as configured, not a scoring error. See [How Scoring Works](../explanation/how-scoring-works.md).
-
----
-
-## Smart Search and Alert Issues
-
-**Problem:** A Smart Search is not producing any matches, even though you expect it to.
-
-**Cause:** The search may not be active, the scope may not cover the relevant teams, or the search was created without the Historical Search option, so it only applies to future uploads.
-
-**Solution:**
-1. Navigate to **Smart Detector → Smart Search** and confirm the search status is **Active**.
-2. Check the scope setting. A search scoped to one team does not match interactions from other teams.
-3. Review the phrases in your search. Very specific phrasing may not match the exact wording used in recorded calls. Add variations and synonyms to improve coverage.
-4. Confirm the interactions you expect to match were uploaded after the search was created. A search only applies to earlier interactions if **Historical Search** was enabled when it was created.
-
----
-
-**Problem:** A Smart Search is producing too many results, many of which are irrelevant.
-
-**Cause:** The search phrases are too broad or too common, matching unrelated conversations.
-
-**Solution:**
-1. Edit the search and make the phrases more specific. For example, replace a generic word like "problem" with a more precise phrase like "I want to cancel my account".
-2. Review false-positive matches to identify what language is triggering them, and refine accordingly.
-
----
-
-**Problem:** In-app notifications are not arriving for Smart Search matches.
-
-**Cause:** The notification option was not enabled when the search was created.
-
-**Solution:**
-Open the Smart Search and confirm its **Notifications** setting is on. You can change this at any time by editing the search. Matches still appear in the search results view regardless of the notification setting.
-
----
-
-**Problem:** Alerts are accumulating faster than the team can review them.
-
-**Cause:** Too many Smart Searches are active, or the searches are too broad, generating a high volume of matches.
-
-**Solution:**
-1. Review all active Smart Searches and deactivate any that are no longer relevant.
-2. Tighten the phrasing in searches that generate excessive matches.
-3. Prioritise work by sorting the Smart Search list by **Results** in descending order, and addressing the searches generating the most matches first.
-
----
-
-**Problem:** **New Smart Search** is greyed out and cannot be selected.
-
-**Cause:** Your organisation has reached the number of **Active** searches its plan allows, which is five unless your plan sets another number. No message explains this on the page.
-
-**Solution:**
-1. Check your allowance under **Settings → Organisations → This Org**, where **Show package details** lists the **Smart Search Limit**.
-2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
-3. If you need more, ask your Account Manager about a higher limit.
-
----
-
 ## Redaction and Access Issues
 
 **Problem:** Names, numbers, or other details in a transcript are replaced with placeholders.
@@ -474,9 +361,10 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 
 ## Related
 
+- [Smart Detector Issues](./smart-detector-issues.md): a missing or incorrect score, and Smart Search problems
+- [Integration Problems](./integration-troubleshooting.md): problems with interactions sent through the API
 - [Frequently Asked Questions](./faq.md): short answers to common questions, rather than steps for a problem
 - [Upload Your Data](../data-upload.md): the upload procedures these entries refer to
-- [How Scoring Works](../explanation/how-scoring-works.md): why a score reads the way it does
 - [System Requirements](../getting-started/system-requirements.md): browsers, formats, and network requirements
 
 ## Need Help?

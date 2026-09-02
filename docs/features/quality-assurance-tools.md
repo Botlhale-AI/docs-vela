@@ -15,7 +15,7 @@ Vela analyses every customer interaction, so you review a full picture rather th
 You need:
 
 - **An interaction that has finished processing.** Vela analyses each call and chat after upload, and notifies you when the analysis is ready.
-- **An Agent Scorecard covering the agent's team.** Without one, the interaction has nothing to be scored against and the Scorecard tab is empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md), or [Scorecard and Scoring Issues](../support/troubleshooting-guide.md#scorecard-and-scoring-issues).
+- **An Agent Scorecard covering the agent's team.** Without one, the interaction has nothing to be scored against and the Scorecard tab is empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md), or [Scorecard and Scoring Issues](../support/smart-detector-issues.md#scorecard-and-scoring-issues).
 - **Access level**, covering the agent. See [Access Level](../reference/glossary.md#access-level).
   - **Organisational**: every agent in the organisation.
   - **Departmental**: the agents in your department.
@@ -364,7 +364,7 @@ If you meant to notify the agent and the tag is missing, add a second comment wi
 - [Monitor Agent Performance](./monitor-agent-performance.md): track how an agent's scores move over time
 - [Scorecard Fields](../reference/scorecard-fields.md): every field on a scorecard question
 - [How Scoring Works](../explanation/how-scoring-works.md): how weights, auto-fail, and overrides produce the score
-- [Troubleshooting: Scorecard and Scoring Issues](../support/troubleshooting-guide.md#scorecard-and-scoring-issues): a missing scorecard, a score that looks wrong, or criteria changes that did not apply
+- [Troubleshooting: Scorecard and Scoring Issues](../support/smart-detector-issues.md#scorecard-and-scoring-issues): a missing scorecard, a score that looks wrong, or criteria changes that did not apply
 
 ## Need Help?
 

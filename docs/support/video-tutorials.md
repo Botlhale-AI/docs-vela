@@ -50,7 +50,7 @@ The videos are hosted on YouTube. Where the players below stay blank, your netwo
 - [Team Lead Quick Start](../getting-started/quick-start/team-lead-quick-start.md): the same first steps in writing
 - [Administrator Setup](../getting-started/quick-start/administrator-setup.md): configure Vela before your team uses it
 - [Upload Your Data](../data-upload.md): getting calls and chats into Vela
-- [Troubleshooting Guide](./troubleshooting-guide.md): fix a problem the videos do not cover
+- [General Issues](./troubleshooting-guide.md): fix a problem the videos do not cover
 
 ---
 

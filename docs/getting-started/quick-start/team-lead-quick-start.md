@@ -246,7 +246,7 @@ You've completed the Team Lead Quick Start. You can now:
 | The interaction has no scorecard | No scorecard question is scoped to this agent's team | Ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
 | Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and pick the agent from the `@` list |
 
-For uploads, playback, and anything else, see the [Troubleshooting Guide](../../support/troubleshooting-guide.md).
+For uploads, playback, and other platform problems, see [General Issues](../../support/troubleshooting-guide.md).
 
 ---
 

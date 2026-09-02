@@ -286,26 +286,45 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "🩺 Troubleshooting",
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "Troubleshooting",
+        description:
+          "Stuck on something? Move from symptom to cause to fix, for the platform, the Smart Detector, and your own integration.",
+        slug: "/troubleshooting",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "support/troubleshooting-guide",
+          label: "🩺 General Issues"
+        },
+        {
+          type: "doc",
+          id: "support/smart-detector-issues",
+          label: "🩹 Smart Detector Issues",
+        },
+        {
+          type: "doc",
+          id: "support/integration-troubleshooting",
+          label: "🔌 Integration Problems",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "🆘 Support",
       collapsed: true,
       link: {
         type: "generated-index",
         title: "Support",
         description:
-          "Get unstuck: troubleshooting, answers to common questions, and video walkthroughs.",
+          "Answers to common questions, and video walkthroughs.",
         slug: "/support",
       },
       items: [
-        {
-          type: "doc",
-          id: "support/troubleshooting-guide",
-          label: "🩺 Troubleshooting Guide"
-        },
-          {
-          type: "doc",
-          id: "support/integration-troubleshooting",
-          label: "🔌 Integration Problems",
-        },
         {
           type: "doc",
           id: "support/faq",

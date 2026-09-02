@@ -287,7 +287,7 @@ Once all eight steps are complete, your platform is ready for use.
 
 ## Troubleshooting for Administrators
 
-For general platform issues, such as uploads, playback, or the app not loading, see the [Troubleshooting Guide](../../support/troubleshooting-guide.md). The items below are specific to setup.
+For general platform issues, such as uploads, playback, or the app not loading, see [General Issues](../../support/troubleshooting-guide.md). The items below are specific to setup.
 
 **Users can't sign in via SSO**  
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.

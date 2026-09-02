@@ -169,7 +169,7 @@ Deactivate a Smart Search before deleting it. A short spell inactive confirms no
 - [Build an Agent Scorecard](../agent-scorecard-guide.md): building and editing questions
 - [Set Up Smart Search](../smart-search-guide.md): building and managing searches
 - [Review and Score Interactions](../features/quality-assurance-tools.md): the daily review workflow
-- [Troubleshooting Guide](../support/troubleshooting-guide.md): fixing what goes wrong
+- [General Issues](../support/troubleshooting-guide.md): fixing what goes wrong
 
 ---
 

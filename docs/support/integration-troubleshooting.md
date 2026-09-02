@@ -2,13 +2,13 @@
 id: integration-troubleshooting
 title: Integration Problems
 description: "Fix interactions sent from your own systems: authentication, organisation IDs, metadata, and dates."
-sidebar_position: 2
+sidebar_position: 3
 type: troubleshooting
 ---
 
 # Integration Problems
 
-Problems with interactions sent from your own systems through the API. For uploads made through Vela, see the [Troubleshooting Guide](./troubleshooting-guide.md).
+Problems with interactions sent from your own systems through the API. For uploads made through Vela, see [General Issues](./troubleshooting-guide.md).
 
 | What you are seeing | Cause to check first |
 | :--- | :--- |
@@ -120,7 +120,8 @@ Problems with interactions sent from your own systems through the API. For uploa
 
 - [API Reference](../advanced/api-documentation.md): endpoints, authentication, and the metadata fields
 - [Upload Your Data](../data-upload.md): uploading through Vela instead
-- [Troubleshooting Guide](./troubleshooting-guide.md): problems with the platform itself
+- [General Issues](./troubleshooting-guide.md): problems with the platform itself
+- [Smart Detector Issues](./smart-detector-issues.md): a missing or incorrect score, and Smart Search problems
 
 ---
 

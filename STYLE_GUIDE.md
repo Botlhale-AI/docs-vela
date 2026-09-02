@@ -323,7 +323,7 @@ Every page has a primary type. Do not mix them.
 | **How-to** | Help someone complete a task they have chosen | Generate Reports |
 | **Reference** | Let someone look up a fact | Metrics, Glossary |
 | **Explanation** | Build understanding | How Scoring Works |
-| **Troubleshooting** | Help someone who has hit a problem | Troubleshooting Guide |
+| **Troubleshooting** | Help someone who has hit a problem | General Issues |
 
 Record the type in frontmatter so drift is visible:
 
