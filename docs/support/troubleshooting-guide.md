@@ -62,13 +62,12 @@ If the page fails to load at all, that is a different problem. See [Browser Issu
 
 **Problem:** SSO login fails. Selecting "Sign in with Google" or "Sign in with Microsoft" redirects to an error page.
 
-**Cause:** The OAuth credentials configured for your organisation may be incorrect, or the user's email domain does not match the configured identity provider.
+**Cause:** Vela checks that the signed-in email already has an account before completing SSO sign-in. Where it does not, the page reads `You have not been cleared to create an account on Vela. Please contact sales@botlhale.ai to create an account.` SSO never creates an account on its own.
 
 **Solution:**
-1. Confirm that your email address uses a domain that matches the configured SSO provider.
+1. Confirm your administrator has added you in **Settings → Users**, using the exact email address your Google or Microsoft account signs in with.
 2. If your organisation enforces MFA through Google Workspace or Microsoft Azure AD, complete the MFA prompt as required by your identity provider.
-3. If the issue only affects one user, ask your administrator to verify that the user's account exists in Vela and that the email address matches.
-4. If SSO fails for everyone, Botlhale needs to check the OAuth configuration. It is set at deployment level and cannot be changed from Settings. Contact **support@botlhale.ai**.
+3. If the page shows a different message, or SSO fails for everyone, Botlhale needs to check the OAuth configuration. It is set at deployment level and cannot be changed from Settings. Contact **support@botlhale.ai**.
 
 ---
 
@@ -95,12 +94,12 @@ Check your password against the rules in [Password Requirements](../settings-con
 
 **Problem:** Session expires unexpectedly and you are logged out during work.
 
-**Cause:** You may be working in incognito or private browsing mode, where session persistence is limited.
+**Cause:** A session lasts 24 hours from when you sign in, in any browser mode. What reads as unexpected is usually that limit being reached, or something clearing your cookies before it is.
 
 **Solution:**
-1. Use a standard browser window rather than incognito or private mode.
-2. Avoid clearing browser data while a session is active.
-3. If your organisation enforces session timeout policies through an SSO provider, contact your IT administrator.
+1. Sign in again. Being signed out after 24 hours is expected rather than a fault.
+2. Avoid clearing browser data, or a setting that clears cookies automatically, while a session is active.
+3. If your organisation enforces a shorter session limit through an SSO provider, that ends the session sooner than 24 hours. Contact your IT administrator.
 
 ---
 
@@ -224,7 +223,7 @@ An interaction that finished processing but carries no score is a scorecard prob
 1. Narrow the date range to reduce the data volume (for example, use "This Week" instead of a multi-month range).
 2. Close unnecessary browser tabs to free up memory.
 3. Clear the browser cache and reload the page.
-4. Ensure your browser is a supported, up-to-date version. Chrome and Edge offer the best performance.
+4. Ensure your browser is a supported, up-to-date version. See [System Requirements](../getting-started/system-requirements.md).
 
 ---
 
