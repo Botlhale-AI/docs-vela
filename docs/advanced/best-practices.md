@@ -38,7 +38,7 @@ flowchart LR
 | :--- | :--- | :--- |
 | **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
 | **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only |
-| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five **Active** searches unless it sets another number, and at the limit **New Smart Search** greys out with nothing to say why. Set one to **Inactive** to free a place and keep it |
+| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five **Active** searches unless it sets another number, and at the limit **New Smart Search** greys out. Set one to **Inactive** to free a place and keep it |
 
 :::caution Historical Search is set once
 To cover interactions already in Vela, turn on **Historical Search** as you create the search. The option appears only while you create it, so a search built without it can never be given it later.

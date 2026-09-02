@@ -102,7 +102,7 @@ Rather than sampling interactions at random, work your alerts first. They are th
 
 ## 4. Control What Reaches You
 
-Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether it raises alerts at all, covered here. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on still tells you nothing if your own **New Alerts Detected** is unticked.
+Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether it raises alerts at all, covered here. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on only reaches you if your own **New Alerts Detected** is also ticked.
 
 Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
 

@@ -20,7 +20,7 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | **Category** | Free text | None | A grouping label used to organise questions and to report strengths and weaknesses |
 | **Weight** | Number | 1 | How much this question contributes to the overall score, relative to other questions |
 | **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased |
-| **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it by hand (Manual). A manual question stays N/A until someone sets an outcome |
+| **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets an outcome |
 | **Always Applicable** | Yes / No | No | Whether the question can be marked N/A. When No, the AI may answer N/A on interactions the question does not apply to. When Yes, only Yes or No are offered, so the question is always scored |
 | **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score earned on the other questions in brackets beside it |
 | **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance items are scored separately |

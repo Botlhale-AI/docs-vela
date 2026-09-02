@@ -228,7 +228,7 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
 
 The numbers on both screenshots are keyed to the field descriptions in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
 
-Repeat for each compliance or quality check your organisation needs to monitor, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out with no message explaining why, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
+Repeat for each compliance or quality check your organisation needs to monitor, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
 
 :::note Smart Questions ask, rather than flag
 A Smart Search flags interactions that match your criteria. A **Smart Question** asks a yes or no question of every interaction for reporting, without affecting anyone's score, which suits anything it would be unfair to judge an agent on. On plans that include it, see [Set Up Smart Questions](../../smart-questions-guide.md).
