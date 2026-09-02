@@ -58,7 +58,9 @@ Problems with interactions sent from your own systems through the API. For uploa
 
 **Problem:** Generating a refresh token fails, or an old one keeps being used.
 
-**Cause:** Each user can hold at most three active refresh tokens.
+**Cause:** Each user can hold only a limited number of active refresh tokens at once.
+
+{/* UNVERIFIED: exact limit (recollection says three). Not documented at api-docs.botlhale.ai, and no auth/token-issuing source is available in this checkout. Needs engineering to confirm the number before restating it. */}
 
 **Solution:**
 1. Revoke one you no longer use at `POST /auth/revoke_token`, sending the account email and the token `id`.

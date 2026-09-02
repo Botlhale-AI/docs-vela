@@ -107,13 +107,14 @@ Check your password against the rules in [Password Requirements](../settings-con
 
 **Problem:** Single call upload fails immediately after selecting "Upload".
 
-**Cause:** The audio file is not in a supported format, or the file is corrupted.
+**Cause:** The audio file is not in a supported format, the file is corrupted, or it is over the 1 GB single-file limit.
 
 **Solution:**
-1. Confirm the file is in WAV or MP3 format. Other audio formats are not supported.
-2. Play the file locally on your device to confirm it is not corrupted.
-3. Ensure the required fields are completed. **Agent**, **Team**, **Department**, and the audio file are all required, and the Upload button stays disabled until each has a value. Choosing an agent fills in their team and department for you, so an agent recorded with **No Team** or **No Department** leaves those fields empty and blocks the upload with no message. **Direction** and **Tags** are optional.
-4. If the file plays locally but still fails to upload, try a different browser or check your internet connection stability.
+1. Check the file size. A file over 1 GB is rejected the moment you add it, with the message `file too big!`. Split or re-encode it to bring it under the limit.
+2. Confirm the file is in WAV or MP3 format. Other audio formats are not supported.
+3. Play the file locally on your device to confirm it is not corrupted.
+4. Ensure the required fields are completed. **Agent**, **Team**, **Department**, and the audio file are all required, and the Upload button stays disabled until each has a value. Choosing an agent fills in their team and department for you, so an agent recorded with **No Team** or **No Department** leaves those fields empty and blocks the upload with no message. **Direction** and **Tags** are optional.
+5. If the file plays locally but still fails to upload, try a different browser or check your internet connection stability.
 
 ---
 
@@ -350,7 +351,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 **Cause:** Your organisation has reached the number of **Active** searches its plan allows, which is five unless your plan sets another number. No message explains this on the page.
 
 **Solution:**
-1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
+1. Check your allowance under **Settings → Organisations → This Org**, where **Show package details** lists the **Smart Search Limit**.
 2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
 3. If you need more, ask your Account Manager about a higher limit.
 
