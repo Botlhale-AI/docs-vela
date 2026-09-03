@@ -8,10 +8,10 @@ type: how-to
 
 # Set Up Smart Questions
 
-Smart Questions let you ask a question of your interactions and see the answers, without those answers affecting anyone's score.
+Smart Questions let you ask a question against your interactions and see the answers, without those answers affecting anyone's score.
 
 :::info Plan availability
-**Smart Questions** appears under **Smart Detector** in the left sidebar on the plans that include it. Where it is absent, your Account Manager can tell you what it would take to add.
+**Smart Questions** appears under **Smart Detector** in the left sidebar on the plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -51,7 +51,7 @@ If the answer says something about **the conversation** rather than **the agent'
 3. Configure the settings described below.
 4. Select **Create Smart Questions** to save.
 
-The two screenshots below are one form, scrolled. The numbers run continuously across them, and **Question** carries a 4 on each because the captures overlap at that point.
+The two screenshots below are one form, scrolled.
 
 Settings 1 to 3 sit above the question list and cover the **whole set**, so every question inherits them. Everything from 4 onwards is set **per question**, so one set can hold questions that differ from each other.
 
@@ -158,11 +158,13 @@ See [Knowledge Base](./knowledge-base-guide.md) for how to upload documents.
 
 {/* results_3.png has the Support entry painted out of the sidebar. It is internal-only, so a customer never sees it. See STYLE_GUIDE.md section 8. */}
 
-Because the answers do not feed into scoring, they are best read as a body of evidence across many interactions rather than a judgement on any single one. Patterns in the answers are usually more informative than individual results.
+Because the answers do not feed into scoring, they are best read as a body of evidence across many interactions rather than a judgement on any single agent. Patterns in the answers are usually more informative than individual results.
 
 ### Reading the Answers on One Interaction
 
 The **Results** tab counts answers across interactions. To see why a single conversation was answered as it was, open the interaction and select the **Smart Questions** tab in the **Smart Detector** panel.
+
+{/* SCREENSHOT NEEDED: an interaction's detail page with the Smart Detector panel open on the Smart Questions tab, showing a row with its question, answer, and the information and comment icons. Suggested path: img/screenshots/smart_questions/interaction-detail.png */}
 
 Each row holds the question, its answer, and two controls:
 
@@ -173,12 +175,12 @@ Each row holds the question, its answer, and two controls:
 
 Read the reasoning before you act on an answer that looks wrong. It usually shows whether the AI misread the conversation or the question itself is ambiguous, and those need different fixes: the first is a one-off, the second means rewording the question.
 
-Select the **download** icon to take the answers for that interaction as a CSV.
+Select the **download** icon to view the answers for that interaction as a CSV.
 
 :::note Correcting an answer removes its reasoning
 You can correct an answer where the AI got it wrong. Doing so takes the information icon off that row, because the reasoning explained the AI's answer rather than yours. The CSV leaves the reason column empty for corrected answers for the same reason.
 
-Correcting an answer changes nothing about anyone's score. Smart Questions are never scored, so a correction here records what happened rather than adjusting a figure.
+Correcting an answer does not change the agent's score. Smart Questions are never scored, so a correction here records what happened rather than adjusting a figure.
 :::
 
 ---
@@ -187,7 +189,7 @@ Correcting an answer changes nothing about anyone's score. Smart Questions are n
 
 Your set appears on the **View** tab straight away. Answers do not.
 
-A question with **Historical Search** off only applies to interactions processed after you created it, so the **Results** tab shows nothing until new interactions arrive. That is working correctly, not a fault. If you turned Historical Search on, answers appear against past interactions as Vela works through them.
+A question with **Historical Search** off only applies to interactions processed after you created it, so the **Results** tab remains empty until new interactions arrive.
 
 You are finished when the **Results** tab shows Yes, No, and N/A counts against your question and **Calls Analysed** is above zero. If it stays at zero after new interactions have been processed, check that Search Status is **Enabled** and that the scope covers the teams those interactions belong to.
 
