@@ -30,7 +30,7 @@ Find your symptom, rather than reading from the top.
 | Interactions uploaded but still not listed | [Processing Issues](#processing-issues) |
 | An interaction listed but with no summary, sentiment, or keywords | [Processing Issues](#processing-issues) |
 | An interaction listed but with no score | [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues) |
-| The Dashboard is empty, slow, or forgets your changes | [Dashboard and Performance](#dashboard-and-performance-issues) |
+| The Dashboard is empty, or forgets your changes | [Dashboard and Performance](#dashboard-and-performance-issues) |
 | A score looks wrong, or reads `0.0%` with a figure in brackets | [Smart Detector Issues](./smart-detector-issues.md#scorecard-and-scoring-issues) |
 | A Smart Search matches nothing, matches too much, or cannot be created | [Smart Detector Issues](./smart-detector-issues.md#smart-search-and-alert-issues) |
 | Names or numbers replaced with placeholders in a transcript | [Redaction and Access](#redaction-and-access-issues) |
@@ -118,16 +118,7 @@ Check your password against the rules in [Password Requirements](../settings-con
 4. Ensure the required fields are completed. **Agent**, **Team**, **Department**, and the audio file are all required, and the Upload button stays disabled until each has a value. Choosing an agent fills in their team and department for you, so an agent recorded with **No Team** or **No Department** leaves those fields empty and blocks the upload with no message. **Direction** and **Tags** are optional.
 5. If the file plays locally but still fails to upload, try a different browser or check your internet connection stability.
 
----
-
-**Problem:** Single call upload appears to complete but the call never appears in the Interactions list.
-
-**Cause:** The call may still be processing, or it was uploaded with metadata that places it outside your current filter view.
-
-**Solution:**
-1. Allow time for processing to finish before expecting the call to appear in the list. Vela emails you when it is complete, if you have email notifications enabled.
-2. Check that the date range and scope filters on the Interactions page include the period and team for the uploaded call.
-3. Refresh the page if the call does not appear once processing has finished.
+A single call that appears to upload but never shows up in the Interactions list is the same issue as an upload not appearing generally. See [Processing Issues](#processing-issues) below.
 
 ---
 
@@ -172,9 +163,9 @@ Check your password against the rules in [Password Requirements](../settings-con
 
 ## Processing Issues
 
-**Problem:** Uploaded calls are not appearing in the Interactions list.
+**Problem:** An uploaded call, or an upload of many, is not appearing in the Interactions list.
 
-**Cause:** Processing time varies depending on call length, audio quality, number of speakers, and server load. The call may still be queued or processing.
+**Cause:** Processing time varies depending on call length, audio quality, number of speakers, and server load, so the call may still be queued or processing. Metadata that places it outside your current filter view produces the same symptom.
 
 **Solution:**
 1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
@@ -213,17 +204,7 @@ An interaction that finished processing but carries no score is a scorecard prob
 2. Check the date range selector covers the period you expect to see data for.
 3. Check the scope filter. It may be set narrower than the agents you are looking for, so widen it to the department or the organisation and see whether the figures appear.
 
----
-
-**Problem:** The Dashboard is loading slowly or charts are not rendering.
-
-**Cause:** The selected date range or scope is very large, requiring a high volume of data to be loaded. Browser performance issues may also contribute.
-
-**Solution:**
-1. Narrow the date range to reduce the data volume (for example, use "This Week" instead of a multi-month range).
-2. Close unnecessary browser tabs to free up memory.
-3. Clear the browser cache and reload the page.
-4. Ensure your browser is a supported, up-to-date version. See [System Requirements](../getting-started/system-requirements.md).
+A Dashboard that loads slowly or leaves charts not rendering is the same issue as Vela running slowly generally. See [Browser Issues](#browser-issues) below.
 
 ---
 
@@ -346,9 +327,9 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 **Cause:** The view is returning more data than it needs to. A wide date range across a whole organisation is the usual reason, rather than the browser or the device.
 
 **Solution:**
-1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation.
+1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation. For example, use "This Week" instead of a multi-month range.
 2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to display.
-3. Where every view is slow but other sites are fine, clear the cache and try a second supported browser to confirm it is Vela rather than the machine.
+3. Where every view is slow but other sites are fine, clear the cache and try a second supported, up-to-date browser to confirm it is Vela rather than the machine.
 4. Where the same narrow view is still slow, contact support with the page, the date range, and the scope you had set.
 
 ---
