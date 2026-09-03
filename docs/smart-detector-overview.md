@@ -48,7 +48,7 @@ Most of these screens also carry **Search**, **Sort By**, and **Filter** above t
 
 - [Build an Agent Scorecard](./agent-scorecard-guide.md): the criteria every interaction is scored against
 - [Set Up Smart Search](./smart-search-guide.md): monitor every interaction against searches you define
-- [Set Up Smart Questions](./smart-questions-guide.md): ask questions of interactions without affecting scores
+- [Set Up Smart Questions](./smart-questions-guide.md): ask questions against interactions without affecting scores
 - [Build Your Knowledge Base](./knowledge-base-guide.md): give the AI your own documents as reference
 - [Manage Smart Search Terms](./topics-and-terms-guide.md): the topics, intents, keywords, and pain points searches match on
 - [Scorecard Fields](./reference/scorecard-fields.md): every field on a scorecard question

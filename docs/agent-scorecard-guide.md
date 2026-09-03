@@ -189,7 +189,7 @@ Adding a question is safe. It applies to interactions processed after the change
 
 The questions appear on the **View** tab as soon as you save, but a score needs an interaction to score.
 
-If you turned Historical Search on, interactions already in Vela are scored as it works through them. If you left it off, the scorecard applies from now on, so the **Results** tab stays empty until new interactions are processed. That is the expected state rather than a fault.
+If you left it off, the scorecard applies from now on, so the **Results** tab remains empty until new interactions are processed.
 
 You are finished when you open a processed interaction, go to its **Scorecard** tab, and see your questions with an outcome on each. An interaction showing no scorecard usually means the scope does not cover that agent's team, or the **Interactions** setting excludes calls or chats like this one. See [Scorecard and Scoring Issues](./support/smart-detector-issues.md#scorecard-and-scoring-issues).
 

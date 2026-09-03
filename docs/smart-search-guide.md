@@ -11,7 +11,7 @@ type: how-to
 Smart Search automatically monitors every processed interaction for keywords, phrases, and patterns you define. Each time a processed call or chat matches one of your searches, an alert is raised and linked directly to that interaction. This lets you focus your QA effort on the conversations that matter most rather than reviewing interactions at random.
 
 :::info Plan availability
-Smart Search is available on plans that include it. If **Smart Search** does not appear under **Smart Detector** in the left sidebar, your organisation's plan does not cover it. Contact your Account Manager.
+Smart Search is available on plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -78,7 +78,7 @@ flowchart LR
 ![The New Smart Search form with five fields numbered, from Smart Search Title through to Example Phrases](../img/screenshots/smart_search/smart-search-create.png)
 ![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../img/screenshots/smart_search/smart-search-create2.png)
 
-The numbers on both screenshots match the numbered steps below. Example Phrases carries a 5 on each, because the two captures overlap at that point in the form.
+The numbers on both screenshots match the numbered steps below.
 
 1. Enter a descriptive **Smart Search Title** (for example, "Customer Complaints: Escalation Language").
 2. Set the **Search Status** to **Active** so the search starts matching once you save it. An **Inactive** search is kept but does not run.
