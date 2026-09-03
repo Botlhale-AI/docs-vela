@@ -54,7 +54,7 @@ When a search uses more than one criterion, a **Show results when** setting cont
 | **All conditions are met** | An interaction matches only when every criterion matches |
 | **Some of the conditions are met** | An interaction matches when at least one criterion matches |
 
-With a single criterion, this setting has no effect.
+With a single criterion, **Show results when** has no effect.
 
 The edit form labels the same two options **All of the filters are matched** and **Some of the filters are matched**. They behave identically, so recognise either.
 
@@ -65,7 +65,7 @@ The edit form labels the same two options **All of the filters are matched** and
 | **Title** | Free text | The search name |
 | **Description** | Free text | The purpose of the search. Vela also reads it when matching, so it shapes results |
 | **Scope** | Organisation / Department / Team | Which interactions the search applies to |
-| **Notifications** | On / Off | Whether a match notifies you, via the channel set in Settings → Notifications |
+| **Notifications** | On / Off | Whether a match notifies you, in-app or by email as set in Settings → Notifications |
 | **Historical Search** | On / Off | Whether the search also runs against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range** |
 | **Link to Search** | Off, or a main search | The search is only checked on interactions a chosen main search has already matched. The main search must cover at least the same scope, so an organisation-wide search can be the main search for any team |
 | **Knowledge Base** | Off, or a document | Vela uses the document's content as reference when matching phrases. The document must be within the search's scope |

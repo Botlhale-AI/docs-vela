@@ -188,7 +188,7 @@ Scope is not the only filter. A question is applied to an interaction when four 
 - The scorecard's **scope** covers the agent.
 - The question's **Search Status** is **Enabled**.
 - Its **Apply To** matches the call's direction.
-- The set's **Interactions** setting matches the channel.
+- The set's **Interactions** setting includes the interaction's type, call or chat.
 
 A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
