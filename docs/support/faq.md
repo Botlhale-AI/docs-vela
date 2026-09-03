@@ -93,7 +93,7 @@ A: Yes. Agents log in to their own Agent Portal, where they can view their inter
 A: When a team lead adds a comment and tags the agent using the @ mention, the agent receives an in-app notification and can read and respond to the comment in their Agent Portal.
 
 **Q: How does training work for agents?**  
-A: Courses are assigned by score, not by name. You build a course, set the **Training Initiation Score Range** that qualifies an agent for it, and Vela assigns it on the next evaluation cycle. Agents work through what they receive in the Agent Portal. Coaching is an add-on, so it appears in the navigation only where it is enabled. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).
+A: Courses are assigned by score, not by name. You build a course, set the **Training Initiation Score Range** that qualifies an agent for it, and Vela assigns it on the next evaluation cycle. Agents work through what they receive in the Agent Portal. Coaching is an add-on, so it appears in the navigation only where it is enabled. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses).
 
 ---
 
