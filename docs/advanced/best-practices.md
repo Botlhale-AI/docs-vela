@@ -12,16 +12,16 @@ What to do at each stage of running QA in Vela. Start from the section you need.
 
 | If you are | Go to |
 | :--- | :--- |
-| Setting Vela up | [1. Setting Up](#1-setting-up) |
-| Running QA each day | [2. Running QA](#2-running-qa) |
-| Coaching from scores | [3. Coaching](#3-coaching) |
-| Loading historical calls | [4. Bulk Upload](#4-bulk-upload) |
-| Sending figures to other people | [5. Reports](#5-reports) |
-| Keeping a working setup healthy | [6. Maintenance](#6-maintenance) |
+| Setting Vela up | [Setting Up](#setting-up) |
+| Running QA each day | [Running QA](#running-qa) |
+| Coaching from scores | [Coaching](#coaching) |
+| Loading historical calls | [Bulk Upload](#bulk-upload) |
+| Sending figures to other people | [Reports](#reports) |
+| Keeping a working setup healthy | [Maintenance](#maintenance) |
 
 ---
 
-## 1. Setting Up
+## Setting Up
 
 Build in this order. Each step needs the one before it.
 
@@ -67,7 +67,7 @@ Seven rules cover the rest:
 
 ---
 
-## 2. Running QA
+## Running QA
 
 ### Every day
 
@@ -91,7 +91,7 @@ Read three or four weeks before acting. One week up or down is usually normal mo
 
 ---
 
-## 3. Coaching
+## Coaching
 
 | Do this | Instead of |
 | :--- | :--- |
@@ -124,7 +124,7 @@ Coaching is an add-on with its own documentation. Two decisions there affect the
 
 ---
 
-## 4. Bulk Upload
+## Bulk Upload
 
 The steps are in [Upload Your Data](../data-upload.md). This is what makes a large load go well.
 
@@ -137,7 +137,7 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 ---
 
-## 5. Reports
+## Reports
 
 | Do this | Because |
 | :--- | :--- |
@@ -147,7 +147,7 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 ---
 
-## 6. Maintenance
+## Maintenance
 
 | Review | How often | Look for |
 | :--- | :--- | :--- |

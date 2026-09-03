@@ -25,7 +25,7 @@ You need:
 
 ## 1. Prioritise Interactions for Review
 
-Use Smart Search alerts, Dashboard metrics, and the interaction filters to focus on the conversations that matter most. For how often to review and how much to cover, see [Daily and Weekly QA Workflows](../advanced/best-practices.md#2-running-qa).
+Use Smart Search alerts, Dashboard metrics, and the interaction filters to focus on the conversations that matter most. For how often to review and how much to cover, see [Daily and Weekly QA Workflows](../advanced/best-practices.md#running-qa).
 
 ### A. Review Smart Search Alerts
 

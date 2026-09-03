@@ -14,11 +14,11 @@ The Account tab is visible to **all users**, regardless of role or scope. The Se
 
 ---
 
-## 1. Your Account Details
+## Your Account Details
 
 The Account tab displays your personal information and current organisational context.
 
-### A. Viewing Account Details
+### Viewing Account Details
 
 This section allows you to quickly verify your credentials and current status.
 
@@ -33,7 +33,7 @@ These fields are read-only. The Account tab has no Save button.
 An administrator can change your **team**, **department**, **role**, and **access level** from **Settings → Users**. To change your **name** or **email address**, contact **support@botlhale.ai**. Those two are set outside Vela.
 :::
 
-### B. Switching Organisations
+### Switching Organisations
 
 ![The My Orgs tab, listing each organisation by name, role, department, and team with a Switch control on every row](../../img/screenshots/settings/my-orgs.png)
 
@@ -45,7 +45,7 @@ If you belong to more than one organisation, you can change which one you are wo
 
 ---
 
-## 2. Changing Your Password
+## Changing Your Password
 
 The Security tab is dedicated to protecting your account by allowing you to update your password.
 
@@ -53,18 +53,18 @@ The Security tab is dedicated to protecting your account by allowing you to upda
 If your organisation uses Single Sign-On (Google or Microsoft), the Security tab is not shown. Your password is managed by your identity provider, not Vela.
 :::
 
-### A. Open the Change Password Form
+### Open the Change Password Form
 
 1.  Navigate to **Settings → Security**.
 2.  Locate the **Change your password** form.
 
-### B. Enter Your Details
+### Enter Your Details
 
 * **Current Password:** Enter your existing password to authorise the change.
 * **New Password:** Enter your desired new password. It has to meet the rules in [Password Requirements](#password-requirements) below.
 * **Verify Password:** Re-enter the new password exactly as typed to confirm it.
 
-### C. Save Your Changes
+### Save Your Changes
 
 1.  Once all fields are complete and the new password meets the requirements, select the **Save** button.
 2.  Vela prompts you to sign in again with your new credentials.
@@ -80,7 +80,7 @@ Your new password must meet all of these:
 
 ---
 
-## 3. Choose Light or Dark Mode
+## Choose Light or Dark Mode
 
 Vela opens in **Dark Mode**. To change it, use the switch at the right of the top navigation bar, marked **1** below. A message confirms the change each time you use it.
 

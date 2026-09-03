@@ -47,7 +47,7 @@ The steps below set Vela up. A few decisions shape how you configure each step, 
 - **Your compliance searches**: the language you need to monitor for, so Smart Searches are ready before calls arrive.
 - **Your redaction policy**: which sensitive details to mask.
 
-For how to make these decisions well, see [Best Practices: Setting Up for Success](../../advanced/best-practices.md#1-setting-up).
+For how to make these decisions well, see [Best Practices: Setting Up for Success](../../advanced/best-practices.md#setting-up).
 
 ---
 

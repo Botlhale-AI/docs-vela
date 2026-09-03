@@ -108,7 +108,7 @@ Your next step depends on your role.
 | :--- | :--- | :--- |
 | **Administrator** | [Administrator Setup](./quick-start/administrator-setup.md) | Setting Vela up before anyone else can use it |
 | **Team lead or QA manager** | [Team Lead Quick Start](./quick-start/team-lead-quick-start.md) | Reviewing interactions, coaching agents, and monitoring performance. Where Coaching is enabled, the courses, awards, and progress screens are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) |
-| **Agent** | [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) | Your personal development portal, documented separately |
+| **Agent** | [Getting Started for Agents](https://docs-coaching.botlhale.xyz/docs/GettingStartedAgents) | Your personal development portal, documented separately |
 
 If you are setting Vela up for the first time, start with Administrator Setup. Once setup is complete, Vela can score your interactions.
 
