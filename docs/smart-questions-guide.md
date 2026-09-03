@@ -164,7 +164,7 @@ Because the answers do not feed into scoring, they are best read as a body of ev
 
 The **Results** tab counts answers across interactions. To see why a single conversation was answered as it was, open the interaction and select the **Smart Questions** tab in the **Smart Detector** panel.
 
-{/* SCREENSHOT NEEDED: an interaction's detail page with the Smart Detector panel open on the Smart Questions tab, showing a row with its question, answer, and the information and comment icons. Suggested path: img/screenshots/smart_questions/interaction-detail.png */}
+![The Smart Questions tab on an interaction's detail page, with a row's question, answer, and the information and comment icons](../img/screenshots/smart_questions/interaction-detail.png)
 
 Each row holds the question, its answer, and two controls:
 

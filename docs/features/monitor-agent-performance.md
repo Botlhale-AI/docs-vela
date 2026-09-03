@@ -164,11 +164,15 @@ On **Teams** and **Departments** you get a grid. Your scorecard categories run a
 
 ![The Teams tab on Strengths, a grid of scorecard categories against teams with the higher-frequency cells shaded darker green](../../img/screenshots/performance/team_tab.png)
 
+![The same Teams tab switched to Areas to Improve, the grid now shaded red instead of green](../../img/screenshots/performance/team_tab_areas.png)
+
 ![The Departments tab on Areas to Improve, the same grid grouped by department and shaded red](../../img/screenshots/performance/dept_area_to_improve.png)
 
 Below each grid, **Total Interactions By Team** or **By Department** gives the volume behind it. Read the two together: two people weak on a category means more in a team of four than in a team of forty.
 
 ![The Teams tab scrolled down, with Total Interactions By Team below the grid](../../img/screenshots/performance/team_tab1.png)
+
+![The same scroll position on Areas to Improve, Total Interactions By Team below the red-shaded grid](../../img/screenshots/performance/team_tab_areas1.png)
 
 The **Agents** tab charts every agent together, one bar per scorecard category. The longer the bar, the more agents have that category as a strength, or as an area to improve.
 

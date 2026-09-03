@@ -113,6 +113,10 @@ Administrators hold this permission by default. The **View Redactions** column r
 
 The Org Table shows the organisation, its departments, and its teams side by side, with the users assigned at each level.
 
+![The Org Table, with the Organisation, Departments, and Teams columns side by side](../../img/screenshots/settings/org-table.png)
+
+{/* Two names in the Organisation column are masked on the same POPIA grounds as the Email Address column above: they read as real colleagues rather than demo placeholders, alongside obvious placeholders like Jane Doe and John Doe. Do not "improve" this by reshooting an unmasked table. */}
+
 ![The Org Table, with the Create menu open on Department and Team](../../img/screenshots/settings/create-dept-team.png)
 
 ### A. Reading the Table

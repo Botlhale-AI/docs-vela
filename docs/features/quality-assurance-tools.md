@@ -296,7 +296,7 @@ You can tag without opening an interaction. The **Tags** column on the Interacti
 2. On **Select a Tag**, pick one from the list. To make a new one, switch to **Create a Tag**, type the name, and give it a colour. Both are required.
 3. Select **Add Tag**, or **Discard** to abandon it.
 
-![The Calls list with the Tags column, showing the tag icon on every row and existing tags beside it](../../img/screenshots/calls/interactions-tags-column.png)
+![The Calls list with the Tags column, showing the tag icon on every row](../../img/screenshots/calls/interactions-tags-column.png)
 
 ![The Edit Tags modal on Select a Tag, with the tag list above Add Tag, Manage Tags, and Discard](../../img/screenshots/calls/edit-tags-select.png)
 
