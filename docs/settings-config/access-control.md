@@ -40,7 +40,7 @@ Agents sign in to the separate Agent Portal, not the main platform. Its Settings
 
 ## What Each Role Can Do
 
-### 1. Administrator
+### Administrator
 
 Administrators hold every administrative right in Vela, limited to what their access level covers.
 
@@ -52,7 +52,7 @@ Administrators hold every administrative right in Vela, limited to what their ac
 
 Removing an account is a deactivation, not a deletion. The control is a bin icon and the prompt reads **Delete User**, but the record stays in place. The user can no longer sign in, and an administrator brings them back with **Show Deleted Users** and **Reactivate**. See [User and Team Management](./user-management.md).
 
-### 2. User
+### User
 
 The User role covers day-to-day work, meaning reviewing interactions, coaching agents, and reporting. Team leads and QA managers are normally given this role.
 
@@ -61,7 +61,7 @@ The User role covers day-to-day work, meaning reviewing interactions, coaching a
 * **Redaction:** By default, raise a request per interaction with **Request Redacted Access**. A request covers that one interaction only. An administrator can grant **View Redactions** on the account, after which the user reveals masked information themselves through **Review Redacted Info**.
 * **Requests:** Cannot see the **Requests** tab, so cannot approve anything, including their own request.
 
-### 3. Agent
+### Agent
 
 Agents do not use the main platform. They sign in to the **Agent Portal** and work entirely within it.
 

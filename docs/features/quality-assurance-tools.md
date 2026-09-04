@@ -188,6 +188,18 @@ Transcription covers the 11 spoken official South African languages. These are A
 
 Chats carry the same analysis as calls. Vela reports average response time on them, in place of the measures that need call audio. See [Metrics](../reference/metrics.md).
 
+### D. Reassign the Agent
+
+The agent's name in the **Call Details** panel has an **Edit** control beside it, which reassigns the interaction to a different agent.
+
+:::warning Reassigning silently reruns the scorecard
+Selecting a new agent reruns the interaction against your scorecard as it stands today, whether or not the interaction already had a score. A question added since it was first scored is picked up, and a question deleted since drops its stored outcome. The confirmation message only tells you the agent was assigned, so check the score yourself. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
+
+This is a different control from **Reassign** on **Agents → Agent Details**, which moves an agent between teams in bulk and does not touch scoring. See [Manage Agents and Teams](./manage-agents-and-teams.md#5-move-agents-between-teams).
+:::
+
+Use this to correct a genuine misassignment, such as a recording uploaded under the wrong name. Check the score afterwards rather than assuming only the agent name changed.
+
 ---
 
 ## 3. Score and Provide Feedback
@@ -251,7 +263,7 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
     * **Be specific:** "At 1:45, you missed the required closing statement."
     * **Be constructive:** "Try to summarise the solution before ending the call next time."
     * **Tag the agent:** type `@` and pick them from the list. Without the tag the comment stays visible to team leads only.
-3.  The agent can read and respond to your comments in their Agent Portal.
+3.  The agent can read and respond to your comments in their Agent Portal, where your organisation has the Coaching Portal enabled. Without it, there is no Agent Portal to notify, so tagging the agent is not available and every comment stays visible to team leads only.
 4.  Select **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you select **Resolve** on it.
 5.  Select **Reply** on a comment to answer in the same thread, rather than starting a new one. The agent's replies appear here too.
 6.  Select **Like** to acknowledge a comment without writing one. The control then reads **1 Like**, then **2 Likes**, and so on.

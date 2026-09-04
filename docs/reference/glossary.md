@@ -67,12 +67,14 @@ A scorecard question marked as a compliance check rather than a quality one. Vel
 
 An organisational grouping that contains teams. The hierarchy is Organisation, then Department, then Team. A department must exist before you can assign a team to it.
 
-## Detected and Organisational
+## Detected and Created Search
 
 Two sources for topics, intents, and pain points:
 
 - **Detected**: found automatically by the AI in your interactions
-- **Organisational**: created manually by your team
+- **Created Search**: added manually by your team, under each page's own **Created Search Topics**, **Created Search Intents**, or **Created Search Pain Points** heading
+
+Dashboard and report metrics still label the second group **(Organisational)**, so the two names describe the same source on two different screens.
 
 This lets you separate what the AI found from what you told it to look for.
 
@@ -112,7 +114,7 @@ A store of your organisation's documents, such as policies, scripts, and procedu
 
 ## Lite
 
-A Vela edition with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics are limited to interaction volume, duration, review progress, topics, and agent scores.
+A Vela edition with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics drop everything that depends on them. That means alerts, keywords, intents, and pain points are gone. Interaction volume, duration, review progress, team workload, language, customer sentiment, topics, and agent scores are all still included.
 
 If a feature this documentation describes is missing from your sidebar, your edition is the first thing to check. Your Account Manager can tell you which one your organisation has.
 

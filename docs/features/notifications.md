@@ -60,6 +60,8 @@ Every notification, on all three tabs, carries the same controls:
 
 Each notification shows its heading, how long ago it arrived, and a line of detail. Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
 
+{/* DEV: The eye icon does not reliably open the interaction behind a Smart Question alert — confirmed against the live product. Repro seen: it links to /interactions/calls/undefined, i.e. the call ID is missing rather than wrong, so the Smart Question alert record itself is likely not carrying a call ID through to the notification. The text above states the intended behaviour (opens what the notification is about) rather than this confirmed gap. Please fix, or tell docs to restate this as a real limitation. Workaround in the meantime: open the interaction from the Interactions list, or from the Results tab of the Smart Question itself. */}
+
 On the **Reports** tab there is also a download control beside the eye, so you can take a finished report straight from the notification without going to the Reports list. A report whose file is no longer available reads **No report available** in place of the link.
 
 ---
@@ -125,6 +127,10 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 Comments are how feedback reaches your agents, and the **@** mention is what makes a comment a notification.
 
 Type **@** in the comment box and pick the agent. Vela then notifies them in their Agent Portal, where they can read it and reply. An untagged comment stays visible to team leads and never reaches the agent.
+
+:::note Tagging the agent needs the Coaching Portal
+The **@agent** option only appears in the comment box, and the reminder text above it only shows, where your organisation has the Coaching Portal enabled. Without it, an agent has no Agent Portal to notify, so there is no way to tag them and every comment stays visible to team leads only.
+:::
 
 ![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)
 

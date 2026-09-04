@@ -77,6 +77,17 @@ The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, 
 
 ---
 
+**Problem:** An interaction's score changed after nothing was edited on the scorecard.
+
+**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) reruns the scorecard against your questions as they stand today, whether or not the interaction already had a score. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed.
+
+**Solution:**
+1. Check whether the interaction was recently reassigned to a different agent, in **Call Details**.
+2. If so, the new score reflects your current scorecard rather than the one in force when it was first processed. Compare it against **Initial Score** for what the AI originally produced.
+3. Reassign only to correct a genuine misassignment, and check the score afterwards.
+
+---
+
 **Problem:** An interaction shows a score of 0.0%, with a different percentage in brackets beside it.
 
 **Cause:** The interaction failed a question marked **Auto-Fail**, which fails the whole interaction whatever else went well. The bracketed figure is the score earned on every other question.
@@ -139,7 +150,7 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 **Cause:** Your organisation has reached the number of **Active** searches its plan allows, which is five unless your plan sets another number.
 
 **Solution:**
-1. Check your allowance under **Settings → Organisations → This Org**, where **Show package details** lists the **Smart Search Limit**.
+1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
 2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
 3. If you need more, ask your Account Manager about upgrading your plan for a higher limit.
 

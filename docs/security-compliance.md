@@ -66,7 +66,7 @@ Transcripts are masked for everyone by default, administrators included. An admi
 Getting to the unmasked version is a deliberate, recorded act:
 
 * Administrators, and users granted **View Redactions**, reveal it themselves.
-* Everyone else raises a request for that one interaction, which an administrator approves or declines.
+* Everyone else raises a request for that one interaction, which an administrator approves or declines. This works the same way for a call or a chat.
 * Every processed request is kept, showing who asked, which interaction it was for, and who decided. See [Access Requests](./settings-config/access-requests-audits.md).
 
 ---

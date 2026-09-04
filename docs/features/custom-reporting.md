@@ -83,6 +83,8 @@ Select **Add New Metric**, pick a metric, and pick a chart type for it. Repeat t
 
 Chart types are **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**.
 
+{/* UNVERIFIED: whether "Card" is also offered as a chart type here. It exists as an accepted value in the Reports form (createForm.jsx's allowedCharts set) with its own render path, but which chart types are actually offered for a given metric comes from that metric's `charts` field in the database — vela-data/models/metric.js only types it as an array of strings, no source file lists what is seeded into it. Needs a screenshot of the live Add New Metric picker to confirm Card appears for any metric before restating it here. */}
+
 Metrics are organised into groups, listed alphabetically:
 
 | Group | Examples |

@@ -170,7 +170,7 @@ A single call that appears to upload but never shows up in the Interactions list
 **Solution:**
 1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
-3. Turn **Show unsupported calls** on, at the top left of the list. A call whose language Vela could not transcribe is marked unsupported and left out of the list by default, so it is present but hidden.
+3. Turn **Show unsupported calls** on, at the top left of the list. Vela marks some calls unsupported and leaves them out of the list by default, so a missing call may be present but hidden. {/* UNVERIFIED: the cause historically documented here, an unsupported language, could not be confirmed against current source. Needs engineering to confirm what currently sets a call unsupported. */}
 4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
 
 :::note Two people upload the same call and wait different lengths of time
@@ -241,7 +241,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 **Cause:** Requests wait for an administrator to act on them. The only prompt they get is the notification raised when the request was made.
 
 **Solution:**
-1. Ask an administrator to check **Settings → Access Requests**. Requests sit there until approved or declined.
+1. Ask an administrator to check **Settings → Requests**. Requests sit there until approved or declined.
 2. Where the request is urgent, ask directly rather than waiting. An administrator can already see the unmasked content and can tell you what you need.
 3. Where you need this often, standing **View Redactions** is the better answer than repeated requests.
 
@@ -253,7 +253,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 
 **Solution:**
 1. Open the interaction and select **Review Redacted Info** to reveal the unmasked content.
-2. Where the control is absent, sign out and back in. Access changes are read when your session starts.
+2. Where the control is absent, reload the page or reopen the interaction. Redaction access is read fresh each time the interaction loads, not from your sign-in session, so signing out and back in makes no difference.
 3. Confirm the permission was set on your account in **Settings → Users**, rather than granted for one interaction only.
 
 ---

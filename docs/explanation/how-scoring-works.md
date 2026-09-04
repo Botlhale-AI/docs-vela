@@ -102,7 +102,9 @@ flowchart LR
 
 So an old interaction keeps its answers for good, but the sum built from those answers is worked out fresh each time, using whatever the scorecard says now.
 
-**Which questions an interaction was scored against is fixed when it is processed.** A question you add later does not appear on an older interaction, and one you delete stays on it, with the outcome it was given. Deleting a question retires it from future scoring rather than erasing it from the past.
+**Which questions an interaction was scored against is fixed when it is processed, with one exception.** A question you add later does not appear on an older interaction, and one you delete stays on it, with the outcome it was given. Deleting a question retires it from future scoring rather than erasing it from the past.
+
+The exception is **reassigning the agent** on an interaction. Doing so reruns the scorecard against your questions as they stand today, silently, whether or not the interaction already had a score. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
 
 **The settings on those questions are taken from your scorecard as it is today.** An interaction's score is worked out when you open it, not stored as a number at processing time. Change a question's **weight**, **Auto-Fail**, or **Compliance** setting, and every interaction already scored against that question is scored differently from that moment on. The stored answers do not move. The arithmetic applied to them does.
 
@@ -114,7 +116,7 @@ Change weights deliberately, record when you did it, and compare periods either 
 
 The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are judged against the new setting, so answers that read as passes can become failures.
 
-**Rerun Scorecard** covers the one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against the questions applying now. An interaction that already has a score keeps it, so this is not a route to picking up questions added since.
+**Rerun Scorecard** covers one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against the questions applying now. An interaction that already has a score keeps that score when you use this specific button, so it is not a route to picking up questions added since. Reassigning the agent on an already-scored interaction does pick them up, silently, which is the exception noted above.
 
 To apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation, so weigh it against starting the new measurement from the change instead.
 

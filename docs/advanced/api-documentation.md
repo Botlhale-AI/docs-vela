@@ -14,16 +14,20 @@ Endpoint reference for the Vela endpoints: sending call recordings and chat tran
 Botlhale's API also covers transcription, translation, text to speech, and chat bots, which sit outside Vela. Those are documented at [api-docs.botlhale.ai](https://api-docs.botlhale.ai/).
 
 :::note Where this page and the published reference differ
-[api-docs.botlhale.ai](https://api-docs.botlhale.ai/) is the authority on these endpoints. This page follows it, and adds two things it does not yet cover.
+[api-docs.botlhale.ai](https://api-docs.botlhale.ai/) is the authority on these endpoints. This page follows it, and adds three things it does not yet cover.
 
 **More metadata fields.** Vela reads fields the reference does not list, and the gap is much wider for chats than for calls. All of them are documented below.
 
 | Endpoint | Fields Vela reads that the reference leaves out |
 | :--- | :--- |
 | Calls | `contact`, `notifyEmail`, `validate_metadata` |
-| Chats | the three above, plus `agent_name`, `team`, `department`, `direction`, `tags`, `language` |
+| Chats | the three above, plus `email`, `agent_name`, `team`, `department`, `direction`, `tags`, `language` |
+
+{/* UNVERIFIED, likely wrong for Calls: contact, notifyEmail, and validate_metadata — the three fields not independently confirmed by the published spec — are sourced from vela-data's call/upload and chats/upload route handlers (app/api/call/upload/route.js, app/api/chats/upload/route.js), which live at /api/call/upload and /api/chats/upload rather than the documented public paths. Live-tested against both api.botlhale.tech and dev.botlhale.tech: POST /asr/async/upload/vela and POST /chats/upload/vela both return 401 "Missing authorization token" — real, correctly routed endpoints. POST /api/call/upload returns a flat 404 from the same gateway (identical X-Fc-Request-Id signature) in both environments — the gateway itself has no such route. So call/upload/route.js's contact/notifyEmail/validate_metadata handling is almost certainly NOT live behind the documented Calls endpoint; it may be dead code, or reached some other way not found in this checkout. Confirming the Chats side needs the same live test, but chats/upload/route.js's response shape ({message, id}) does at least match what's documented, unlike the Calls route. Getting past the 401 to test the real behaviour needs a valid org token, which this checkout doesn't have — someone with API credentials should confirm before this is restated as settled. The rest of the metadata table (email, agent, agent_name, team, department, direction, tags, date_of_call, interaction_id) is independently confirmed by the published OpenAPI schema for the documented endpoint, so it doesn't carry this doubt. */}
 
 **Lower-case `sender`.** The reference shows `Agent` capitalised on chat messages. Vela matches the value exactly, and only lower case is recognised.
+
+**The Chats upload response.** The published reference names the response fields `upload_id` and `status`. Vela actually returns `message` and `id`, shown below.
 
 Where the two disagree on anything else, the reference is right.
 :::
@@ -180,7 +184,10 @@ Every `metadata` field is optional.
 | `contact` | The customer's phone number | A string or a number, stored exactly as you send it |
 | `date_of_call` | When the call took place | `DD/MM/YYYY, HH:mm:ss`, read as **Africa/Johannesburg**. Defaults to the upload time |
 | `interaction_id` | Your own reference | Stored as the call's filename |
+| `notifyEmail` | An address to notify when analysis finishes | |
 | `validate_metadata` | Rejects metadata Vela cannot use | Returns **400** instead of filling in a default |
+
+{/* UNVERIFIED: contact, notifyEmail, and validate_metadata rows above — see the sourcing note under "Where this page and the published reference differ" near the top of the page. */}
 
 Four of these are worth a second look:
 
@@ -282,6 +289,7 @@ request.post({
 | 400 | `Invalid date of call. Correct format is DD/MM/YYYY, HH:mm:ss` | `date_of_call` could not be parsed, and `validate_metadata` was set. |
 | 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` was something else, and `validate_metadata` was set. |
 | 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string, and `validate_metadata` was set. |
+| 400 | `Invalid contact. Contact must be a string or number` | `contact` was another type, and `validate_metadata` was set. |
 | 400 | `Invalid notify email` | `notifyEmail` is not a valid address, and `validate_metadata` was set. |
 
 The wider platform's status codes, including **401** for an expired token and **429** for rate limiting, are listed under [Error Codes](https://api-docs.botlhale.ai/) in the published reference.
@@ -327,6 +335,8 @@ Every `metadata` field is optional.
 | `interaction_id` | string | Your own reference | Stored as the chat's filename |
 | `notifyEmail` | string | An address to notify when analysis finishes | |
 | `validate_metadata` | boolean | Rejects metadata Vela cannot use | Returns **400** instead of filling in a default |
+
+{/* UNVERIFIED: contact, notifyEmail, and validate_metadata rows above — see the sourcing note under "Where this page and the published reference differ" near the top of the page. */}
 
 Each object in `chats` is one message:
 

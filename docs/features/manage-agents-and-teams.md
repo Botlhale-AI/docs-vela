@@ -80,7 +80,7 @@ Adding an agent can therefore email them straight away. Check the name and addre
 
 The **Actions** column holds all three.
 
-**Edit** opens the agent's record. Moving them to another team changes where their insights appear from that point on, and leaves their existing interactions with the team that handled them.
+**Edit** opens the agent's record for their name, email, and voice profile. It does not move them to another team. That field is fixed here. To change an agent's team, use **Reassign**, covered below.
 
 **Delete Agent** retires the agent rather than erasing them, so their past interactions and scores keep counting towards the team's historical figures.
 

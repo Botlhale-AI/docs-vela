@@ -18,7 +18,7 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | :--- | :--- | :--- | :--- |
 | **Question** | Free text | None | The behaviour being assessed, phrased so it can be answered yes or no |
 | **Category** | Free text | None | A grouping label used to organise questions and to report strengths and weaknesses |
-| **Weight** | Number | 1 | How much this question contributes to the overall score, relative to other questions |
+| **Weight** | Number, 1 to 5 | 1 | How much this question contributes to the overall score, relative to other questions |
 | **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased |
 | **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets an outcome |
 | **Always Applicable** | Yes / No | No | Whether the question can be marked N/A. When No, the AI may answer N/A on interactions the question does not apply to. When Yes, only Yes or No are offered, so the question is always scored |
@@ -41,7 +41,7 @@ These sit above the question list and are set once for the whole scorecard. Ever
 
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
-| **Apply Knowledge Base** | On / Off | Off | Whether the AI should use one of your documents as reference when answering |
+| **Apply Knowledge Base** | Yes / No | No | Whether the AI should use one of your documents as reference when answering |
 | **Knowledge Base Document** | Document | None | The document to use. Required when Apply Knowledge Base is on |
 
 Linking a Knowledge Base document lets the AI assess whether an agent followed *your* documented procedure, rather than a generic standard. See [Knowledge Base](../knowledge-base-guide.md).

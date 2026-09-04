@@ -65,7 +65,7 @@ Most of Vela is editable. Three things are not, and each one is a decision to ma
 | :--- | :--- |
 | **Historical Search**, on a scorecard, Smart Search, or Smart Question | Only available at creation. Adding it later is not possible, and re-uploading is the only alternative |
 | **Editing a scorecard question's weight, Auto-Fail, Compliance, or Expected Outcome** | Scores are worked out from your scorecard as it is today, so a change re-scores your whole history, including the **Initial** figures. See [How Scoring Works](./how-scoring-works.md) |
-| **Posting a comment** | Comments cannot be edited or deleted, and a mention only works in a new comment, never in a reply |
+| **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tagging the agent also only works in a new comment, never in a reply |
 
 Adding a scorecard question later is safe, but it only applies to interactions processed after the change. Older interactions keep the scorecard they were scored against, so a question added today does not appear on last week's calls.
 

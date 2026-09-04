@@ -114,7 +114,7 @@ Choose which interactions the question runs against:
 - **Outbound Calls**
 - **All Calls**
 
-The setting filters on direction, and the chat upload form has no direction field, so chats arrive without one. A question restricted to **Inbound Calls** or **Outbound Calls** therefore never reaches a chat. Use **All Calls** if you want the question answered on chats as well as calls.
+The setting filters on direction. The chat upload form has no direction field, so a chat is treated as inbound unless your own integration sets one explicitly. A question restricted to **Outbound Calls** therefore never reaches a chat, but **Inbound Calls** and **All Calls** both do. Use **All Calls** if you want the question answered on chats as well as calls of either direction.
 
 ### Search Status
 

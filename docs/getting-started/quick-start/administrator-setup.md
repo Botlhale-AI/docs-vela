@@ -157,7 +157,7 @@ Mary Johnson,mary.johnson@company.com,Sales,Sales Team
 ![The Add an Agent modal on the Batch Upload tab, with the create and skip options](../../../img/screenshots/settings/agent-bulk.png)
 
 :::note What each agent receives
-Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal. Vela also asks them for a voice sample. That sample builds a Voice ID, which helps Vela attribute calls to the right agent. Agents who have not submitted one are sent a reminder.
+Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal. Vela also asks them for a voice sample. That sample builds a Voice ID, which helps Vela attribute calls to the right agent. Agents who have not submitted one show as **Waiting** on the Agent Details table, and you resend the invite yourself from there. Vela does not chase them for you.
 :::
 
 ### Step 3B: Add Users Individually
@@ -207,6 +207,10 @@ Write each question so that the AI, and human reviewers, can give a clear yes or
 ---
 
 ## Step 5: Create Smart Searches
+
+:::info Plan availability
+**Smart Search** appears under **Smart Detector** on the plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
+:::
 
 Smart Searches automatically monitor all processed interactions for keywords, phrases, and patterns you define. Set these up before calls are uploaded so monitoring begins immediately.
 

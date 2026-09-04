@@ -67,7 +67,7 @@ If your organisation uses Single Sign-On (Google or Microsoft), the Security tab
 ### Save Your Changes
 
 1.  Once all fields are complete and the new password meets the requirements, select the **Save** button.
-2.  Vela prompts you to sign in again with your new credentials.
+2.  The new password takes effect immediately. You stay signed in on this device, and use the new password the next time you sign in anywhere else.
 
 ### Password Requirements
 

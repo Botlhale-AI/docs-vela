@@ -119,15 +119,17 @@ The test is whether a document describes an observable agent action. The AI read
 
 ## Access Control
 
-Each document is assigned a scope that determines which users can access it:
+Each document is assigned a scope that determines which users can access it. Under **Apply documents to**, the options depend on your own access level:
 
 | **Scope** | **Who Has Access** |
 |-----------|-------------------|
-| **Organisation** | All users across the organisation |
-| **Department** | Users belonging to the selected department |
-| **Team** | Users belonging to the selected team |
+| **Entire Organisation** | All users across the organisation |
+| **Specific Departments** (or **Entire Department**, if your own access is departmental) | Users belonging to the department or departments you selected |
+| **Specific Teams** (or **Entire Team**, if your own access is team) | Users belonging to the team or teams you selected |
 
-Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to Organisation. A script specific to one team's product line should be scoped to that team.
+Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to **Entire Organisation**. A script specific to one team's product line should be scoped to that team.
+
+The Document Library's **Scope** column, covered below, shows the same setting in shorter form and in lower case: `organisation`, `departments`, or `teams`.
 
 ---
 

@@ -7,10 +7,10 @@ type: reference
 
 # Access Requests
 
-The **Requests** tab is where Administrators process requests to view redacted information. When a user without **View Redactions** needs to see masked content in a call, they raise a request here for an Administrator to approve or decline.
+The **Requests** tab is where Administrators process requests to view redacted information. When a user without **View Redactions** needs to see masked content in a call or a chat, they raise a request here for an Administrator to approve or decline.
 
 :::warning Administrators only
-This tab is **only visible to and manageable by Administrators**. A user without **View Redactions** initiates a request from within a call, but only Administrators can view, process, and approve requests here.
+This tab is **only visible to and manageable by Administrators**. A user without **View Redactions** initiates a request from within the interaction, but only Administrators can view, process, and approve requests here.
 
 Transcripts are masked by default for everyone. Administrators, and users granted **View Redactions**, reveal masked content on demand, so they do not raise requests themselves. The permission is set per account in **Settings → Users**, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
 :::
@@ -23,7 +23,7 @@ Whether someone raises a request at all depends on one setting on their account,
 
 ```mermaid
 flowchart LR
-    M("Someone opens a call<br/>with masked content") --> P{"Does the account have<br/>View Redactions?"}
+    M("Someone opens a call or chat<br/>with masked content") --> P{"Does the account have<br/>View Redactions?"}
     P -- Yes --> R("They reveal it themselves.<br/>No request, nothing to process")
     P -- No --> Q("They raise a request<br/>from inside the call")
     Q --> PE("Pending<br/>your working queue")
@@ -52,7 +52,7 @@ Requests you have already processed, kept as a record. Each request is a card ra
 | :--- | :--- | :--- |
 | *(timestamp)* | When the request was submitted. It sits beside the heading **Request for Access to Redacted Information** rather than under a label. Requests from today read as relative time, such as "2 hours ago". Older ones show a date and time, such as "Jul 29 at 07:47 PM". | N/A |
 | **Requested By** | The name and email address of the user who initiated the request. | N/A |
-| **Call ID** | A link to the specific call the user requested access to. | N/A |
+| **Call ID** | A link to the interaction the user requested access to. The field is labelled **Call ID** for a chat as well as a call. Where the link does not open the chat as expected, find it under **Interactions → Chats** instead. | N/A |
 | **Status** | The final outcome of the request. | **Approved** (Green) or **Declined** (Red). |
 | **Comment** | An optional note added by the requester when submitting. | N/A |
 | **Completed By** | The name and email of the Administrator who approved or declined the request. | N/A |

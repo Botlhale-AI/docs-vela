@@ -199,7 +199,7 @@ After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. An untagged comment stays visible to team leads only.
+3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal to notify them in, and the `@agent` option does not appear.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
