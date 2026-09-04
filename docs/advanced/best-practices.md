@@ -119,7 +119,7 @@ Overrides that all move the same way point at scorecard wording that needs fixin
 
 Coaching is an add-on with its own documentation. Two decisions there affect the QA work on this page:
 
-- **Build a course around the gap**, and set the score range that assigns it. Courses reach agents by score rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses).
+- **Build a course around the gap**, and set the category and the score range within it that assigns the course. Courses reach agents by score in a category rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses).
 - **Decide what agents see before you invite them**, because changing it later changes what they have already seen. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences).
 
 ---

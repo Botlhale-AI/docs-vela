@@ -351,7 +351,7 @@ Deleting a tag takes it off every interaction carrying it, and the page does not
 
 One weak interaction is not a pattern. Before acting, read the agent's recent scorecards and comments together and look for the same category scoring low more than once.
 
-Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course whose **Training Initiation Score Range** covers that gap. Vela assigns courses on its evaluation cycle, so you set the range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses) for building the course.
+Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course scoped to that category, with a **Training Initiation Score Range** that covers the gap. Vela assigns courses on its evaluation cycle, so you set the category and range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses) for building the course.
 
 A course is not a substitute for the conversation. Arrange time with the agent to go through the feedback and what you expect to change.
 
