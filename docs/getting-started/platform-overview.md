@@ -69,7 +69,7 @@ Transcription covers the 11 spoken official South African languages. These are A
 
 ### Coach and develop agents
 
-If your organisation has the Coaching Portal enabled, you can see where an agent is struggling in a specific category and build a course that targets it. Vela assigns the course to whoever scores in that range on that category. You then track whether they finish it, and set up awards that Vela presents automatically to high scorers the same way, with a certificate. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
+If your organisation has the Coaching Portal enabled, you can see where an agent is struggling in a specific category and build a course that targets it. Vela assigns the course to whoever scores in that category within the range you set. You then track whether they finish it, and set up awards that Vela presents automatically to high scorers the same way, with a certificate. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
 
 ### Spot patterns across your conversations
 
