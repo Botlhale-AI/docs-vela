@@ -14,9 +14,9 @@ Coaching is an add-on. Where your organisation has it, **Coaching** appears in t
 
 ## What It Does
 
-- **Courses**: build training around a gap, and set the score range that assigns it. Agents are reached by score rather than by name.
+- **Courses**: build training around a gap, and set the score range in that category that assigns it. Agents are reached by score rather than by name.
 - **Progress**: see who has started, finished, or stalled, and what they scored.
-- **Awards**: define what earns recognition once, and Vela presents it on each evaluation cycle.
+- **Awards**: define what earns recognition once, on a score range in a category, and Vela presents it on each evaluation cycle.
 - **Preferences**: set the evaluation cycle, the pass mark, and how much of their own work agents see.
 
 Agents sign in to the Agent Portal to work through what they have been assigned.

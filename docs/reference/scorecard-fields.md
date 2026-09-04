@@ -17,7 +17,7 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
 | **Question** | Free text | None | The behaviour being assessed, phrased so it can be answered yes or no |
-| **Category** | Free text | None | A grouping label used to organise questions and to report strengths and weaknesses |
+| **Category** | Free text | None | A grouping label used to organise questions and to report strengths and weaknesses. Where your organisation has the Coaching add-on, this is also the category a course or award's score range is measured against. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) |
 | **Weight** | Number, 1 to 5 | 1 | How much this question contributes to the overall score, relative to other questions |
 | **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased |
 | **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets an outcome |
