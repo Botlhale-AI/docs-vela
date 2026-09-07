@@ -6,6 +6,10 @@ sidebar_position: 2
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import searchFormTop from '@site/img/screenshots/smart1.png';
+import searchFormBottom from '@site/img/screenshots/smart2.png';
+
 # Set Up Smart Search
 
 Smart Search automatically monitors every processed interaction for keywords, phrases, and patterns you define. Each time a processed call or chat matches one of your searches, an alert is raised and linked directly to that interaction. This lets you focus your QA effort on the conversations that matter most rather than reviewing interactions at random.
@@ -75,10 +79,33 @@ flowchart LR
 
 ### Step 2: Define Your Search Criteria
 
-![The New Smart Search form with five fields numbered, from Smart Search Title through to Example Phrases](../img/screenshots/smart_search/smart-search-create.png)
-![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../img/screenshots/smart_search/smart-search-create2.png)
+<Hotspots
+  src={searchFormTop}
+  alt="The top of the New Smart Search form: Smart Search Title, Search Status, Description, Search Scope, Link To Search, and the start of Example Phrases"
+  points={[
+    { x: 15, y: 33.5, title: 'Smart Search Title', body: 'A short name for the search. It shows in the search list and on every alert it raises.' },
+    { x: 54, y: 33.5, title: 'Search Status', body: 'Active starts the search matching once you save. Inactive keeps the definition without running it.' },
+    { x: 15, y: 45, title: 'Description', body: 'What the search looks for. Vela reads this when matching, so it shapes the results.' },
+    { x: 15, y: 61.5, title: 'Search Scope', body: 'How far the search reaches. The options depend on your own access level.' },
+    { x: 15, y: 79, title: 'Link To Search', body: 'Ties this search to another, so a match needs both. Covered under More Search Options.' },
+    { x: 15, y: 89, title: 'Example Phrases', body: 'The phrases to match. Select Add and write them the way people actually speak.' },
+  ]}
+/>
 
-The numbers on both screenshots match the numbered steps below.
+<Hotspots
+  src={searchFormBottom}
+  alt="The rest of the New Smart Search form: Example Phrases, Search Filter, Historical Search, Notifications, Knowledge Base, and the Create Smart Search button"
+  points={[
+    { x: 15, y: 27, title: 'Example Phrases', body: 'Select Add and enter each phrase a person might use.' },
+    { x: 15, y: 40, title: 'Search Filter', body: 'Narrows the match to specific intents, keywords, topics, pain points, or agents. Select Add Filter.' },
+    { x: 15, y: 59, title: 'Historical Search', body: 'Runs the search against interactions uploaded before you created it. Set at creation, and cannot be added later.' },
+    { x: 15, y: 68, title: 'Notifications', body: 'Alerts you each time a new match is detected. This one you can change later.' },
+    { x: 15, y: 78, title: 'Knowledge Base', body: 'Judges matches against one of your own documents rather than general knowledge.' },
+    { x: 83, y: 88, title: 'Create Smart Search', body: 'Saves the search. It starts matching new interactions straight away.' },
+  ]}
+/>
+
+The steps below follow the fields on the form, top to bottom.
 
 1. Enter a descriptive **Smart Search Title** (for example, "Customer Complaints: Escalation Language").
 2. Set the **Search Status** to **Active** so the search starts matching once you save it. An **Inactive** search is kept but does not run.
