@@ -144,7 +144,7 @@ Select **Customise** to choose which metrics appear and how each is charted (tab
   points={[
     { x: 37.6, y: 16.5, title: 'The group heading', body: 'Names the group and how many metrics it holds.' },
     { x: 41.7, y: 32.8, title: 'The icon on each metric', body: 'The chart type it is drawn as. The same metric appears once per chart type available to it.' },
-    { x: 49.6, y: 38.6, title: 'The cross on a metric', body: 'Removes it from your dashboard.' },
+    { x: 52.7, y: 38.6, title: 'The cross on a metric', body: 'Removes it from your dashboard.' },
     { x: 70.9, y: 48.2, title: 'The scrollbar', body: 'The remaining groups sit below the two in view.' },
     { x: 56.3, y: 91, title: 'Save Changes', body: 'Applies your selection. Closing without saving discards it.' },
   ]}

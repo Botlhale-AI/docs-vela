@@ -3,7 +3,8 @@ import styles from './styles.module.css';
 
 /**
  * An annotated screenshot. Numbered pins sit on top of the image at the
- * coordinates you give, and each one expands a short explanation below.
+ * coordinates you give, and the list below carries every explanation.
+ * Selecting a pin highlights its entry in the list, and the other way round.
  *
  * Usage, from an .md page:
  *
@@ -25,7 +26,8 @@ import styles from './styles.module.css';
  * readable underneath.
  *
  * The list below the image is the real interface: it works without the
- * picture, on a phone, and with a keyboard. The pins are an overlay on top
+ * picture, on a phone, and with a keyboard, and its text is always rendered,
+ * so it is searchable and prints. The pins are an overlay on top
  * of that.
  */
 export default function Hotspots({ src, alt, points = [] }) {
@@ -47,7 +49,7 @@ export default function Hotspots({ src, alt, points = [] }) {
             className={`${styles.pin} ${active === i ? styles.pinActive : ''}`}
             style={{ left: `${p.x}%`, top: `${p.y}%` }}
             aria-label={`${i + 1}. ${p.title}`}
-            aria-expanded={active === i}
+            aria-pressed={active === i}
             onClick={() => toggle(i)}
           >
             {i + 1}
@@ -64,13 +66,13 @@ export default function Hotspots({ src, alt, points = [] }) {
             <button
               type="button"
               className={styles.itemButton}
-              aria-expanded={active === i}
+              aria-pressed={active === i}
               onClick={() => toggle(i)}
             >
               <span className={styles.itemNum}>{i + 1}</span>
               <span className={styles.itemTitle}>{p.title}</span>
             </button>
-            {active === i && <p className={styles.itemBody}>{p.body}</p>}
+            <p className={styles.itemBody}>{p.body}</p>
           </li>
         ))}
       </ol>

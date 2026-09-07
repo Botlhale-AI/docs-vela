@@ -5,9 +5,6 @@ description: "Add agents, move them between teams, and remove the ones who leave
 type: how-to
 ---
 
-import Hotspots from '@site/src/components/Hotspots';
-import agentTable from '@site/img/screenshots/agent_details/agent-details-table.png';
-
 # Manage Agents and Teams
 Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins your organisation, moving someone between teams, and removing someone who leaves.
 
@@ -33,21 +30,19 @@ An agent is a person whose interactions are analysed. A user is anyone who has a
 
 ## 1. Find an Agent
 
-Go to **Agents → Agent Details** in the left sidebar. The table lists everyone within your access level, under **Name**, **Email**, **Department**, and **Team**.
+Go to **Agents → Agent Details** in the left sidebar. The table lists everyone within your access level, under **Name**, **Email**, **Department**, and **Team**. Five controls sit above it:
 
-<Hotspots
-  src={agentTable}
-  alt="The Agent Details page: Add Agent above the Search box, Sort By, Filter, and Export, with the agent table below showing the Name, Email, Department, Team, Voice Profile Status, and Actions columns and the Previous and Next controls"
-  points={[
-    { x: 84.4, y: 24.1, title: 'Add Agent', body: 'Opens the Add an Agent modal, covered below.' },
-    { x: 56.3, y: 31.7, title: 'Search', body: 'Narrows the list by name.' },
-    { x: 77.6, y: 36.4, title: 'Sort By', body: 'Orders the list on any column.' },
-    { x: 84.9, y: 36.4, title: 'Filter', body: 'Opens Filter By, which filters the list by a specific department, team, and Status. Select Apply to use it.' },
-    { x: 92.8, y: 36.4, title: 'Export', body: "Downloads the list, including each agent's department, team, and status." },
-  ]}
-/>
+| Control | What it does |
+| :--- | :--- |
+| **Add Agent** | Opens the Add an Agent modal, covered below |
+| **Search** | Narrows the list by name |
+| **Sort By** | Orders the list on any column |
+| **Filter** | Opens **Filter By**, which filters the list by a specific department, team, and **Status**. Select **Apply** to use it |
+| **Export** | Downloads the list, including each agent's department, team, and status |
 
 Unassigned agents read **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, pagination sits below the table: **Previous** and **Next**, with **Page 1 of 2** between them.
+
+![The Agent Details page, with Add Agent above the Search box, Sort By, Filter, and Export, and the agent table below showing the Name, Email, Department, Team, Voice Profile Status, and Actions columns](../../img/screenshots/agent_details/agent-details-table.png)
 
 ---
 
