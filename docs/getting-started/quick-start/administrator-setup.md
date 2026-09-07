@@ -8,6 +8,7 @@ type: tutorial
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import AgentCsvBuilder from '@site/src/components/AgentCsvBuilder';
 
 # Administrator Setup
 Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
@@ -133,13 +134,9 @@ For onboarding many agents at once:
 
 1. Navigate to **Agents → Agent Details**
 2. Download the CSV template from the upload page
-3. Fill in the CSV with the following columns:
+3. Fill in the CSV with the columns below. Build it here and copy the result into the template:
 
-```csv
-name,email,department,team
-John Smith,john.smith@company.com,Customer Service,Support Team
-Mary Johnson,mary.johnson@company.com,Sales,Sales Team
-```
+<AgentCsvBuilder />
 
 **Required columns:**
 
