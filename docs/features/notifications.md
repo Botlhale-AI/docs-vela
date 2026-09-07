@@ -5,6 +5,9 @@ description: "Control what Vela tells you about, and where each notification arr
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import notificationsPage from '@site/img/screenshots/notifications/notifications-tabs.png';
+
 # Manage Notifications
 Vela notifies you when something needs your attention. That might be a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. Not all of them arrive in the same place. Some are email only, and some belong to the Agent Portal. This page covers what triggers a notification, where each notification arrives, and how to control what reaches you.
 
@@ -24,19 +27,23 @@ You need:
 
 ### A. The Tabs
 
-Select **Notifications** in the left sidebar. Three tabs sit at the top right of the page:
+Select **Notifications** in the left sidebar. Three tabs sit at the top right of the page.
 
-| Tab | What it contains |
-| :--- | :--- |
-| **Alerts** | Smart Search matches, and Smart Question answers that hit the outcome you set them to alert on. |
-| **Comments** | Comments on interactions, according to the comment preferences on your account. |
-| **Reports** | Reports that have finished generating, whether one-time or scheduled. |
+<Hotspots
+  src={notificationsPage}
+  alt="The Notifications page on the Alerts tab, with the Comments and Reports tabs beside it, the search box above the list, and each notification card carrying a dismiss cross and an eye icon"
+  points={[
+    { x: 74, y: 14, title: 'The Alerts, Comments, and Reports tabs', body: 'Alerts holds Smart Search matches and the Smart Question answers set to alert. Comments holds interaction comments. Reports holds finished reports, one-time or scheduled.' },
+    { x: 83, y: 24, title: 'Search', body: 'Narrows the list by wording, matching both the heading and the body of a notification. Matches are highlighted.' },
+    { x: 25, y: 31, title: 'A notification', body: 'Each shows a heading, how long ago it arrived, and a line of detail. The page lists unread notifications only.' },
+    { x: 88, y: 31, title: 'The dismiss cross', body: 'Takes the notification off the list for good. Nothing it pointed at is lost, and you still reach that through Interactions, Smart Detector, or Reports.' },
+    { x: 88, y: 39, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports.' },
+  ]}
+/>
 
 The **Alerts** tab appears on every edition except [Lite](../reference/glossary.md#lite), where the page opens on **Comments** instead.
 
 Unread notifications are also indicated in the top navigation bar, so you can see at a glance whether anything new has arrived.
-
-![The Notifications page on the Alerts tab, with the Comments and Reports tabs beside it and the unread count on Notifications in the top navigation bar](../../img/screenshots/notifications/notifications-tabs.png)
 
 ![The Comments tab, with one card per comment showing its heading, date, the dismiss cross, and the eye icon](../../img/screenshots/notifications/comments.png)
 
@@ -50,15 +57,9 @@ Nothing is lost when you dismiss one. The interaction, comment, or report it poi
 
 ### B. Work a Notification
 
-Every notification, on all three tabs, carries the same controls:
+Every notification, on all three tabs, carries the same **Search**, **eye**, and **×** controls shown above.
 
-| Control | What it does |
-| :--- | :--- |
-| **Search** | Sits above the list and narrows it by wording, matching both the heading and the body of a notification. Matches are highlighted |
-| The **eye** icon | Opens what the notification is about: the interaction on **Alerts** and **Comments**, the report itself on **Reports** |
-| The **×** | Dismisses the notification and takes it off the list |
-
-Each notification shows its heading, how long ago it arrived, and a line of detail. Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
+Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
 
 {/* DEV: The eye icon does not reliably open the interaction behind a Smart Question alert — confirmed against the live product. Repro seen: it links to /interactions/calls/undefined, i.e. the call ID is missing rather than wrong, so the Smart Question alert record itself is likely not carrying a call ID through to the notification. The text above states the intended behaviour (opens what the notification is about) rather than this confirmed gap. Please fix, or tell docs to restate this as a real limitation. Workaround in the meantime: open the interaction from the Interactions list, or from the Results tab of the Smart Question itself. */}
 

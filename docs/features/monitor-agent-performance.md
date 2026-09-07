@@ -7,6 +7,7 @@ type: how-to
 
 import Hotspots from '@site/src/components/Hotspots';
 import dashboardHeader from '@site/img/screenshots/dashboard/dashboard03.png';
+import teamGrid from '@site/img/screenshots/performance/team_tab.png';
 
 # Monitor Agent Performance
 Track how your agents are performing, find where they need help, and turn that into coaching. Use the **Dashboard** for trends across a team, and the **Agents** section for detail on one person.
@@ -174,7 +175,18 @@ On any of them, switch between **Strengths** and **Areas to Improve**. The colou
 
 On **Teams** and **Departments** you get a grid. Your scorecard categories run across the top, your teams or departments down the side, and each cell counts how many agents that category applies to. The darker the cell, the more agents there are.
 
-![The Teams tab on Strengths, a grid of scorecard categories against teams with the higher-frequency cells shaded darker green](../../img/screenshots/performance/team_tab.png)
+<Hotspots
+  src={teamGrid}
+  alt="The Performance page on the Teams tab, Strengths view: the Overview, Teams, Departments, and Agents tabs, the Strengths and Areas to Improve toggle, and a grid of scorecard categories against teams shaded darker green where more agents apply"
+  points={[
+    { x: 77, y: 19, title: 'Overview, Teams, Departments, Agents', body: 'Overview ranks people. Teams, Departments, and Agents count how often each scorecard category comes up as a strength or a problem.' },
+    { x: 54, y: 27, title: 'Date range', body: 'The period the counts cover. Select the pencil to change it.' },
+    { x: 17, y: 36, title: 'Strengths and Areas to Improve', body: 'Switch between the categories agents do well and the ones they struggle with. The grid turns green for strengths, red for areas to improve.' },
+    { x: 27, y: 50, title: 'Category columns', body: 'Your scorecard categories run across the top.' },
+    { x: 19, y: 63, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
+    { x: 27, y: 63, title: 'A cell', body: 'Counts how many agents that category applies to for that team. The darker the shading, the more agents.' },
+  ]}
+/>
 
 ![The same Teams tab switched to Areas to Improve, the grid now shaded red instead of green](../../img/screenshots/performance/team_tab_areas.png)
 
