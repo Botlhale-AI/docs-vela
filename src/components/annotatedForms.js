@@ -5,6 +5,7 @@ import scorecardScopeImg from '@site/img/screenshots/scorecared1.png';
 import scorecardQuestionImg from '@site/img/screenshots/scorecard2.png';
 import searchTopImg from '@site/img/screenshots/smart1.png';
 import searchBottomImg from '@site/img/screenshots/smart2.png';
+import singleUploadImg from '@site/img/screenshots/data_upload/upload2.png';
 
 /*
  * The annotated form screenshots, one component each, so the pin text lives
@@ -76,6 +77,22 @@ export function SmartSearchFormBottom() {
         { x: 15, y: 68, title: 'Notifications', body: 'Alerts you each time a new match is detected. This one you can change later.' },
         { x: 15, y: 78, title: 'Knowledge Base', body: 'Judges matches against one of your own documents rather than general knowledge.' },
         { x: 83, y: 88, title: 'Create Smart Search', body: 'Saves the search. It starts matching new interactions straight away.' },
+      ]}
+    />
+  );
+}
+
+export function SingleCallUploadForm() {
+  return (
+    <Hotspots
+      src={singleUploadImg}
+      alt="The Single Upload tab of the call Uploads page, with the Single Upload and Bulk Upload tabs above the Agent, Direction, and Tags fields, the drag-and-drop area, and the Upload button"
+      points={[
+        { x: 61.5, y: 20.7, title: 'Single Upload and Bulk Upload', body: 'Single Upload takes one recording. Bulk Upload takes many at once, as a ZIP archive.' },
+        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call, and the only required field. The list is filtered by your access level, Team and Department fill in from your choice, and + Create an agent adds one without leaving the page.' },
+        { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound. Optional.' },
+        { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional, and worth setting, since you can filter and report on them afterwards.' },
+        { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select browse your device. WAV or MP3, up to 1 GB.' },
       ]}
     />
   );

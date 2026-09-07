@@ -6,6 +6,9 @@ sidebar_position: 4
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import topicsPage from '@site/img/screenshots/smart_detector/topics-page1.png';
+
 # Manage Smart Search Terms
 
 Your Smart Search terms are the four lists of things Vela looks for in your interactions. They are **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list has two sources. Vela adds what it finds on its own, and you add the terms your organisation cares about. This page covers how to read those lists and how to add your own terms.
@@ -49,20 +52,22 @@ These lists are not in the left sidebar. Select **Smart Detector** in the sideba
 
 ## 2. Reading a List
 
-Each page is split into two sections you expand and collapse:
+Each page is split into two sections you expand and collapse.
 
-| Section | Contains |
-| :--- | :--- |
-| **Detected** | Terms Vela found on its own while analysing your interactions. Read-only. |
-| **Created Search** | Terms your organisation added manually. These are the terms you can edit and delete. |
-
-The Created section is open when you arrive, and the Detected section is collapsed.
+<Hotspots
+  src={topicsPage}
+  alt="The Topics page: Search and Sort at the top right, the Last Detected date range below them, the collapsed Detected Topics section, and the open Created Search Topics section with its New Topic button and its table of Topic, Date Created, Last Detected, and Actions"
+  points={[
+    { x: 72.9, y: 22.7, title: 'The Last Detected date range', body: 'Filters both sections on Last Detected.' },
+    { x: 36.5, y: 41.9, title: 'Detected', body: 'Terms Vela found on its own while analysing your interactions. Read-only, and collapsed when you arrive.' },
+    { x: 41.7, y: 58.4, title: 'Created Search', body: 'Terms your organisation added manually, and the only ones you can edit and delete. Open when you arrive.' },
+    { x: 83.4, y: 83.1, title: 'Actions', body: 'Edit and delete, on the Created Search table only.' },
+  ]}
+/>
 
 **Keywords works differently.** Vela does not detect keywords on its own, so the Keywords page has only a **Created Search Keywords** section. A keyword matches only when you have added it.
 
-Both tables show the term, **Date Created**, and **Last Detected**. The Created table adds an **Actions** column.
-
-![The Topics page, with Detected Topics collapsed and Created Search Topics open on its table and New Topic button](../img/screenshots/smart_detector/topics-page1.png)
+Both tables show the term, **Date Created**, and **Last Detected**.
 
 :::warning The date range defaults to today
 The date control above the two sections filters both of them on **Last Detected**, and it starts on today's date. A term that was not detected today is hidden until you widen the range, so a list can look empty when it is not.

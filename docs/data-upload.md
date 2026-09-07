@@ -7,6 +7,9 @@ type: how-to
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { SingleCallUploadForm } from '@site/src/components/annotatedForms';
+import Hotspots from '@site/src/components/Hotspots';
+import chatUpload from '@site/img/screenshots/chats/upload.png';
 
 # Upload Your Data
 Upload your call and chat data to start analysing customer interactions and improving team performance.
@@ -37,11 +40,11 @@ Use Vela to upload files directly. Best for getting started and for ad-hoc uploa
 1. Select **Interactions → Calls** in the left sidebar
 2. Select **Upload**
 3. Select the **Single Upload** tab
-4. Fill in the form: choose the **Agent** (Team and Department fill in automatically), then optionally set **Direction** and **Tags**
+4. Fill in the form: the **Agent** is required, **Direction** and **Tags** are not
 5. Select your audio file (WAV or MP3) or drag and drop it into the upload area
 6. Select **Upload**
 
-![The Single Upload form, with the agent, direction, and tags fields above the upload area](../img/screenshots/data_upload/upload2.png)
+<SingleCallUploadForm />
 
 #### Bulk Call Upload
 
@@ -132,11 +135,18 @@ Upload five to ten files before committing a large historical dataset. Confirmin
 
 :::warning The two tabs take different file formats
 **Upload** accepts a **CSV** file containing the messages of one chat. **Bulk Upload** accepts **JSON**. The upload area rejects the wrong format, so check which tab you are on before preparing the file.
-
-On the **Upload** tab you can also set **Agent**, **Tags**, and an **Interaction ID**, all optional except the agent. The page ends that instruction with a dotted-underlined **example** link. Select it to download a sample CSV with the exact layout.
 :::
 
-![The chat Upload tab, with the agent, tags, and interaction ID fields above the CSV upload area](../img/screenshots/chats/upload.png)
+<Hotspots
+  src={chatUpload}
+  alt="The Upload tab of the chat Uploads page, with the Upload and Bulk Upload tabs above the Agent, Tags, and Interaction ID fields, the CSV drag-and-drop area, and the Upload button"
+  points={[
+    { x: 23.5, y: 24.1, title: 'Agent', body: 'The agent who handled the chat, and the only required field. + Create an agent adds one without leaving the page.' },
+    { x: 27.1, y: 38.9, title: 'Tags', body: 'Labels such as complaint, sales, or billing, so you can filter and report on the chat afterwards. Optional.' },
+    { x: 31.3, y: 50.7, title: 'Interaction ID', body: 'Your own reference for the conversation, carried through to the interaction. Optional.' },
+    { x: 56.3, y: 77.6, title: 'The upload area', body: 'Drag the CSV in, or select browse your device. The dotted example link above it downloads a sample CSV with the exact layout.' },
+  ]}
+/>
 
 Bulk chat files must follow the layout Vela expects: a list of conversations, each with a `metadata` section and a `messages` list.
 

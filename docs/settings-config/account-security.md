@@ -82,13 +82,13 @@ Your new password must meet all of these:
 
 ## Choose Light or Dark Mode
 
-Vela opens in **Dark Mode**. To change it, use the switch at the right of the top navigation bar, marked **1** below. A message confirms the change each time you use it.
+Vela opens in **Dark Mode**. To change it, use the switch at the right of the top navigation bar. A message confirms the change each time you use it.
+
+![The Dashboard in Dark Mode, with the display switch at the right of the top navigation bar showing a sun](../../img/screenshots/settings/dark_mode.png)
 
 The switch shows the mode it takes you to rather than the one you are in: a moon while you are in Light Mode, a sun while you are in Dark Mode.
 
-![The Dashboard in Dark Mode, with the display switch marked 1 at the right of the top navigation bar, showing a sun](../../img/screenshots/settings/dark_mode.png)
-
-![The same Dashboard in Light Mode, with the display switch marked 1 in the same place, showing a moon](../../img/screenshots/settings/light_mode.png)
+![The same Dashboard in Light Mode, the display switch in the same place now showing a moon](../../img/screenshots/settings/light_mode.png)
 
 Your choice is stored against your account rather than in the browser, so it follows you to any machine you sign in on.
 

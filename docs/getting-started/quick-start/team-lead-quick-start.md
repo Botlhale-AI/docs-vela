@@ -10,6 +10,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Hotspots from '@site/src/components/Hotspots';
 import customiseModal from '@site/img/screenshots/dashboard/dashboard05.png';
+import { SingleCallUploadForm } from '@site/src/components/annotatedForms';
 
 # Team Lead Quick Start
 A hands-on walkthrough for team leads and managers new to Vela. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
@@ -165,16 +166,12 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 ### Uploading a Single Call
 
-![The Single Upload form, with the agent, direction, and tags fields above the upload area](../../../img/screenshots/data_upload/upload2.png)
+<SingleCallUploadForm />
 
 1. Navigate to **Interactions → Calls**
 2. Select **Upload**, then the **Single Upload** tab
-3. Fill in the upload form:
-   - **Agent** (required): select the agent who handled this call. The list is filtered by your access level, and **+ Create an agent** adds one without leaving the page
-   - **Direction** (optional): choose inbound or outbound
-   - **Tags** (optional, but recommended): add labels such as `complaint`, `sales`, or `billing`
-4. Add your audio file by dragging it into the upload area, or select **browse your device**. Calls can be WAV or MP3, up to 1 GB
-5. Select **Upload**
+3. Fill in the upload form. Only the **Agent** is required.
+4. Add your audio file, then select **Upload**
 
 ### Processing Time
 
