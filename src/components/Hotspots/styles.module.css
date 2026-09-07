@@ -19,6 +19,7 @@
 }
 
 .pin {
+  scroll-margin-top: calc(var(--ifm-navbar-height, 60px) + 1rem);
   position: absolute;
   transform: translate(-50%, -50%);
   width: 1.6rem;
@@ -65,6 +66,7 @@
 }
 
 .item {
+  scroll-margin-top: calc(var(--ifm-navbar-height, 60px) + 1rem);
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
@@ -103,6 +105,11 @@
   color: #fff;
   background: var(--ifm-color-primary);
   border-radius: 50%;
+}
+
+.itemActive {
+  background: var(--ifm-color-emphasis-100);
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
 }
 
 .itemActive .itemNum {

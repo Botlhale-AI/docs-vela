@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useId, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
 /**
  * An annotated screenshot. Numbered pins sit on top of the image at the
  * coordinates you give, and the list below carries every explanation.
- * Selecting a pin highlights its entry in the list, and the other way round.
+ *
+ * The two halves navigate to each other. Selecting a pin scrolls to its
+ * entry in the list and puts the keyboard on it; selecting an entry scrolls
+ * back to its pin on the image. Either way the pair is highlighted, so on a
+ * long list you can tell what you just came from.
  *
  * Usage, from an .md page:
  *
@@ -32,11 +36,42 @@ import styles from './styles.module.css';
  */
 export default function Hotspots({ src, alt, points = [] }) {
   const [active, setActive] = useState(null);
+  const uid = useId();
+  const pinRefs = useRef([]);
+  const itemRefs = useRef([]);
+  const rowRefs = useRef([]);
 
   const imgSrc =
     typeof src === 'string' ? src : src?.src ?? src?.default ?? '';
 
-  const toggle = (i) => setActive((cur) => (cur === i ? null : i));
+  const pinId = (i) => `${uid}-pin-${i}`;
+  const itemId = (i) => `${uid}-item-${i}`;
+
+  // Bring the counterpart into view and hand it the keyboard. Focusing is what
+  // makes this work for someone tabbing through rather than pointing. The
+  // element scrolled into view is not always the one focused: from a pin we
+  // want the whole entry visible, explanation and all, not just its heading.
+  const goTo = (scrollTo, focusOn) => {
+    if (!scrollTo) return;
+    const reduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    scrollTo.scrollIntoView({
+      block: 'nearest',
+      behavior: reduced ? 'auto' : 'smooth',
+    });
+    focusOn?.focus({ preventScroll: true });
+  };
+
+  const fromPin = (i) => {
+    setActive(i);
+    goTo(rowRefs.current[i], itemRefs.current[i]);
+  };
+
+  const fromItem = (i) => {
+    setActive(i);
+    goTo(pinRefs.current[i], pinRefs.current[i]);
+  };
 
   return (
     <figure className={styles.figure}>
@@ -46,11 +81,15 @@ export default function Hotspots({ src, alt, points = [] }) {
           <button
             key={i}
             type="button"
+            id={pinId(i)}
+            ref={(el) => {
+              pinRefs.current[i] = el;
+            }}
             className={`${styles.pin} ${active === i ? styles.pinActive : ''}`}
             style={{ left: `${p.x}%`, top: `${p.y}%` }}
-            aria-label={`${i + 1}. ${p.title}`}
-            aria-pressed={active === i}
-            onClick={() => toggle(i)}
+            aria-label={`${i + 1}. ${p.title}. Go to the explanation`}
+            aria-controls={itemId(i)}
+            onClick={() => fromPin(i)}
           >
             {i + 1}
           </button>
@@ -61,13 +100,21 @@ export default function Hotspots({ src, alt, points = [] }) {
         {points.map((p, i) => (
           <li
             key={i}
+            id={itemId(i)}
+            ref={(el) => {
+              rowRefs.current[i] = el;
+            }}
             className={`${styles.item} ${active === i ? styles.itemActive : ''}`}
           >
             <button
               type="button"
+              ref={(el) => {
+                itemRefs.current[i] = el;
+              }}
               className={styles.itemButton}
-              aria-pressed={active === i}
-              onClick={() => toggle(i)}
+              aria-label={`${i + 1}. ${p.title}. Show on the screenshot`}
+              aria-controls={pinId(i)}
+              onClick={() => fromItem(i)}
             >
               <span className={styles.itemNum}>{i + 1}</span>
               <span className={styles.itemTitle}>{p.title}</span>
