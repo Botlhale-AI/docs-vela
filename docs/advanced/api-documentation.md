@@ -7,6 +7,7 @@ type: reference
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import DateFormatChecker from '@site/src/components/DateFormatChecker';
 
 # API Reference
 Endpoint reference for the Vela endpoints: sending call recordings and chat transcripts in, exporting analysed calls out, and checking what your organisation is entitled to. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
@@ -195,6 +196,10 @@ Four of these are worth a second look:
 - **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs there instead, so send direction as `direction` rather than as a tag.
 - **`contact` is what [Search by Phone Number](../number-search-guide.md) matches on.** Keep the format consistent across your integration, or the same customer looks like several.
 - **`date_of_call` fails quietly.** A value Vela cannot parse falls back to the upload time, so every call ends up dated when you sent it rather than when it happened.
+
+Check a date string against the format before you send a batch:
+
+<DateFormatChecker />
 
 :::warning Metadata problems are silent by default
 Vela records the fields it can use and fills in defaults for the ones it cannot, so the upload succeeds either way. An unmatched `team` or `department`, a `direction` that is not `inbound` or `outbound`, `tags` sent as a string rather than an array, and an unparseable `date_of_call` all behave this way.
