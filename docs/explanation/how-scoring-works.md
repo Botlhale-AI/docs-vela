@@ -6,6 +6,8 @@ sidebar_position: 1
 type: explanation
 ---
 
+import ScorecardCalculator from '@site/src/components/ScorecardCalculator';
+
 # How Scoring Works
 
 This page explains the thinking behind Vela's scoring, so you can interpret the numbers and decide how much weight to put on them. It does not give instructions. For those, see [Review and Score Interactions](../features/quality-assurance-tools.md) and [Scorecard Fields](../reference/scorecard-fields.md).
@@ -55,6 +57,12 @@ The sections that follow take each path in turn. A short example makes the arith
 | Handled the transfer correctly | 2 | N/A |
 
 The transfer question is N/A, so it drops out, leaving three questions worth 8 points between them. The agent passed two of those, worth 6 points, so the score is 6 out of 8, or **75%**. Had the transfer question been scored No instead, it would stay in the total, and the same call would score 6 out of 10, or 60%. That gap is why marking applicability correctly matters.
+
+## Try it yourself
+
+The calculator below runs the same arithmetic on a scorecard you control. Change a weight, an answer, or an Auto-Fail setting and watch the three scores move. It starts on the four-question example above.
+
+<ScorecardCalculator />
 
 ## When a question does not apply
 
