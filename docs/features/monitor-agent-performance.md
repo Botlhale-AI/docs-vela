@@ -37,10 +37,10 @@ The Dashboard is where you find out whether anything needs your attention today,
   src={dashboardHeader}
   alt="The Dashboard header: the page title, the Interactions All, Calls, and Chats options, the date range with its edit control, the Customise button, and Filter"
   points={[
-    { x: 23, y: 87, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
-    { x: 61, y: 87, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
-    { x: 90, y: 63, title: 'Customise', body: 'Choose which metrics appear and how each one is charted. The chart types on offer depend on the metric.' },
-    { x: 93, y: 87, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
+    { x: 22, y: 86, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
+    { x: 61, y: 86, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
+    { x: 92, y: 63, title: 'Customise', body: 'Choose which metrics appear and how each one is charted. The chart types on offer depend on the metric.' },
+    { x: 94, y: 86, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
   ]}
 />
 

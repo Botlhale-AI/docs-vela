@@ -163,12 +163,12 @@ flowchart LR
   src={scoresBlock}
   alt="The Scores block from the Call Details panel: Agent Score and Initial Score, Compliance Score and Initial Compliance Score, Quality Score and Initial Quality Score, each shown as a percentage or a dash"
   points={[
-    { x: 2.5, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It reads 0.0% when an Auto-Fail question failed, with the score earned on the rest kept in brackets.' },
-    { x: 46, y: 36, title: 'Initial Score', body: "The Agent Score as the AI first produced it, before any reviewer override. Keeping it lets a human-adjusted score be told apart from the AI's own." },
-    { x: 2.5, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance. A dash means no question on this interaction was marked Compliance, so there is nothing to score.' },
-    { x: 46, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score as the AI first produced it.' },
-    { x: 2.5, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance. It carries its own Auto-Fail, so it can read 0.0% while Compliance does not, or the other way around.' },
-    { x: 46, y: 81, title: 'Initial Quality Score', body: 'The Quality Score as the AI first produced it.' },
+    { x: 27, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It reads 0.0% when an Auto-Fail question failed, with the score earned on the rest kept in brackets.' },
+    { x: 75, y: 36, title: 'Initial Score', body: "The Agent Score as the AI first produced it, before any reviewer override. Keeping it lets a human-adjusted score be told apart from the AI's own." },
+    { x: 31, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance. A dash means no question on this interaction was marked Compliance, so there is nothing to score.' },
+    { x: 91, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score as the AI first produced it.' },
+    { x: 29, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance. It carries its own Auto-Fail, so it can read 0.0% while Compliance does not, or the other way around.' },
+    { x: 90, y: 81, title: 'Initial Quality Score', body: 'The Quality Score as the AI first produced it.' },
   ]}
 />
 

@@ -6,6 +6,9 @@ sidebar_position: 1
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import scorecardForm from '@site/img/screenshots/smart_detector/scorecard-create2.png';
+
 # Build an Agent Scorecard
 
 The Agent Scorecard is the set of questions Vela scores every interaction against. Without one, interactions are transcribed and analysed but carry no score, so every figure that depends on scoring stays empty. That covers agent scores, the compliance and quality split, categories, and the strengths and weaknesses on an agent's Details page.
@@ -57,22 +60,24 @@ It is only offered when you create the scorecard. Leave it off and the interacti
 
 ## 3. Write the Questions
 
-Each question is one yes/no judgement about the interaction. The fields below are numbered to match the screenshot.
+Each question is one yes/no judgement about the interaction. Select a number on the form to read what that field does.
 
-| # | Field | What it does |
-|:--|-------|--------------|
-| 1 | **Question** | The behaviour being assessed, phrased so it can be answered yes or no |
-| 2 | **Category** | A grouping label such as Opening, Compliance, or Closing. Categories are what produce an agent's strengths and weaknesses. See the note below on adding one |
-| 3 | **Expected Outcome** | Which answer counts as a pass. Set it to match how you phrased the question |
-| 4 | **Weight** | How much this question contributes, relative to the others |
-| 5 | **Search Status** | Whether the question runs against incoming interactions |
-| 6 | **Search Type** | Whether the AI answers it, or a reviewer does it manually |
-| 7 | **Apply To** | Inbound calls, outbound calls, or all calls |
-| 8 | **Auto-Fail** | Failing this question takes the whole interaction to `0.0%`, with the score earned on the other questions shown in brackets beside it |
-| 9 | **Compliance Question** | Counts this question towards the **Compliance Score** instead of the **Quality Score**. Every question counts towards the **Overall Score** either way |
-| 10 | **Always Applicable** | Whether the AI may answer N/A, or only Yes and No |
-
-![The question block of the scorecard form with its ten fields numbered, from Question and Category through to Always Applicable](../img/screenshots/smart_detector/scorecard-create2.png)
+<Hotspots
+  src={scorecardForm}
+  alt="The Agent Scorecard question form with its ten fields numbered: Question, Category, Expected Outcome, Weight, Search Status, Search Type, Apply To, Auto-Fail, Compliance Question, and Always Applicable"
+  points={[
+    { x: 15.9, y: 16.9, title: 'Question', body: 'The behaviour being assessed, phrased so it can be answered yes or no.' },
+    { x: 15.9, y: 35.9, title: 'Category', body: "A grouping label such as Opening, Compliance, or Closing. Categories are what produce an agent's strengths and weaknesses, and where Coaching is enabled they also decide which course an agent picks up." },
+    { x: 55.0, y: 35.8, title: 'Expected Outcome', body: 'Which answer counts as a pass. Set it to match how you phrased the question.' },
+    { x: 80.2, y: 35.8, title: 'Weight', body: 'How much this question contributes, relative to the others. The range is 1 to 5.' },
+    { x: 15.9, y: 47.6, title: 'Search Status', body: 'Whether the question runs against incoming interactions.' },
+    { x: 32.9, y: 44.1, title: 'Search Type', body: 'Whether the AI answers it, or a reviewer does it manually. A manual question stays N/A until someone sets an outcome.' },
+    { x: 47.8, y: 44.1, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls.' },
+    { x: 62.7, y: 44.1, title: 'Auto-Fail', body: 'Failing this question takes the whole interaction to 0.0%, with the score earned on the other questions shown in brackets beside it.' },
+    { x: 77.6, y: 44.1, title: 'Compliance Question', body: 'Counts this question towards the Compliance Score instead of the Quality Score. Every question counts towards the Overall Score either way.' },
+    { x: 15.9, y: 59.0, title: 'Always Applicable', body: 'Whether the AI may answer N/A, or only Yes and No. Set to Yes, a question that did not apply costs the agent a No.' },
+  ]}
+/>
 
 Select **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 

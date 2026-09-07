@@ -5,6 +5,9 @@ description: "Review interactions, score them against your scorecard, and coach 
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import detailedView from '@site/img/screenshots/calls/calls-3.png';
+
 # Review and Score Interactions
 Vela analyses every customer interaction, so you review a full picture rather than a sample. This guide takes Team Leads and Administrators through reviewing interactions, scoring them, and giving agents feedback.
 
@@ -171,7 +174,18 @@ A tab with nothing to show says so, for example `No alerts detected in call` or 
 
 The tab strip scrolls, so use the arrows at either end if a tab is out of view.
 
-![The Detailed View, with the Smart Detector tabs across the analysis panel and the Call Details summary beside it](../../img/screenshots/calls/calls-3.png)
+<Hotspots
+  src={detailedView}
+  alt="The Detailed View of a call: the breadcrumb and the Review Redacted Info and Mark as Reviewed buttons across the top, the Audio player and the Smart Detector analysis tabs down the left, and the Call Details panel on the right"
+  points={[
+    { x: 87, y: 18, title: 'Review Redacted Info and Mark as Reviewed', body: 'Review Redacted Info reveals masked content where you have the permission. Mark as Reviewed records that you are done, and on some setups it is what releases the interaction to the agent.' },
+    { x: 22, y: 37, title: 'Audio', body: 'The player. A timestamp in the transcript jumps it to that moment, and Playback Speed runs from 0.5x to 2x. A chat has no Audio card.' },
+    { x: 34, y: 54, title: 'Smart Detector tabs', body: "Vela's analysis, one tab each: Summary, Keywords, Alerts, Intents, Sentiment, Scorecard, Pain Points. The strip scrolls, so use the arrows at its ends." },
+    { x: 55, y: 48, title: 'View Comments', body: 'Opens the comments panel, where coaching feedback is added and the agent is tagged with an @ mention.' },
+    { x: 71, y: 25, title: 'Call Details', body: 'The facts about the interaction: the Scores block, then Call ID, the dates, Handle Time, Department, Team, Topic, Direction, and Tags.' },
+    { x: 68, y: 33, title: 'Edit, beside the agent name', body: 'Reassigns the interaction to a different agent. It silently reruns the scorecard against your questions as they stand today, so check the score afterwards.' },
+  ]}
+/>
 
 ### C. Listen to the Call or Read the Chat
 

@@ -7,11 +7,6 @@
   display: inline-block;
   max-width: 100%;
   line-height: 0;
-  /* A gutter each side so a pin pointing at something near the edge sits
-     beside the image rather than on top of it. Pin x/y are percentages of
-     this padded box, so 0% is the far edge of the gutter and 50% is the
-     middle of the image. */
-  padding: 0 1.9rem;
 }
 
 .image {
