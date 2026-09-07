@@ -9,6 +9,7 @@ type: tutorial
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import AgentCsvBuilder from '@site/src/components/AgentCsvBuilder';
+import { ScorecardScopeForm, ScorecardQuestionForm, SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/annotatedForms';
 
 # Administrator Setup
 Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
@@ -192,11 +193,11 @@ The sidebar and the trail at the top of the page name it in the plural. This doc
 
 ![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_detector/scorecard-list.png)
 
-![The top of the Agents Scorecard Create tab, with the Scorecard Scope, Interactions, and Historical Search settings](../../../img/screenshots/scorecared1.png)
+<ScorecardScopeForm />
 
-Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. Every field, and what each one does, is covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md), with values and defaults in [Scorecard Fields](../../reference/scorecard-fields.md).
+<ScorecardQuestionForm />
 
-![The Agents Scorecard question form, with Question and Category above Expected Outcome, Weight, and the remaining settings](../../../img/screenshots/scorecard2.png)
+Every field, and what each one does, is covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md), with values and defaults in [Scorecard Fields](../../reference/scorecard-fields.md).
 
 :::tip Write Concrete Questions
 Write each question so that the AI, and human reviewers, can give a clear yes or no answer. Prefer specific criteria like "Did the agent use the customer's name at least once?" over vague ones like "Was the agent professional?"
@@ -227,9 +228,9 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
 
 The form is one page. These two views are it scrolled, so they overlap in the middle.
 
-![The top of the New Smart Search form, with Smart Search Title, Search Status, Description, and Search Scope](../../../img/screenshots/smart1.png)
+<SmartSearchFormTop />
 
-![The rest of the New Smart Search form, with Example Phrases, Search Filter, Historical Search, and Create Smart Search](../../../img/screenshots/smart2.png)
+<SmartSearchFormBottom />
 
 Each field is covered in full in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
 
