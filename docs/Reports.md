@@ -16,7 +16,7 @@ Reports let you package the metrics that matter into a document you can share wi
 
 - Build a one-time report for a custom date range and a chosen set of metrics.
 - Schedule daily, weekly, or monthly reports that generate automatically.
-- Chart each metric as a bar, line, pie, doughnut, or table. The card format is Dashboard-only.
+- Chart each metric as a card, bar, line, pie, doughnut, or table. The types offered vary by metric.
 - Export as PDF or DOCX.
 
 You are notified in your Notifications inbox when a report has finished generating.

@@ -81,9 +81,9 @@ A report needs at least one team and one agent, and at least one metric, before 
 
 Select **Add New Metric**, pick a metric, and pick a chart type for it. Repeat to add as many as you need. Each metric is paired with its own chart, so you can mix figures and charts in one report.
 
-Chart types are **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**.
+Chart types are **Card**, **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**. A **Card** shows the single figure on its own, with no axes. The types offered depend on the metric, so one metric's list can be shorter than this.
 
-{/* UNVERIFIED: whether "Card" is also offered as a chart type here. It exists as an accepted value in the Reports form (createForm.jsx's allowedCharts set) with its own render path, but which chart types are actually offered for a given metric comes from that metric's `charts` field in the database — vela-data/models/metric.js only types it as an array of strings, no source file lists what is seeded into it. Needs a screenshot of the live Add New Metric picker to confirm Card appears for any metric before restating it here. */}
+![The Add New Metric section with a metric's chart-type list open, Card at the top above Pie and Doughnut](../../img/screenshots/report/report-card-metric.png)
 
 Metrics are organised into groups, listed alphabetically:
 
