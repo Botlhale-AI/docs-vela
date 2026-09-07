@@ -66,9 +66,9 @@ Find your symptom, then read the matching entry below.
 
 **Problem:** Generating a refresh token fails, or an old one keeps being used.
 
-**Cause:** Each user can hold only a limited number of active refresh tokens at once.
+**Cause:** Each account can hold up to three active refresh tokens at once, and you have reached that limit.
 
-{/* UNVERIFIED: exact limit (recollection says three). Not documented at api-docs.botlhale.ai, and no auth/token-issuing source is available in this checkout. Needs engineering to confirm the number before restating it. */}
+{/* The three-token limit is stated in the Authentication section at api-docs.botlhale.ai ("Each user can have up to 3 active refresh tokens at a time"), confirmed 2026-09-07. */}
 
 **Solution:**
 1. Revoke one you no longer use at `POST /auth/revoke_token`, sending the account email and the token `id`.
