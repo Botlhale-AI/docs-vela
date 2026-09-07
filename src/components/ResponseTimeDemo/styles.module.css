@@ -1,0 +1,110 @@
+.wrapper {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: 1.25rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.result {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table th,
+.table td {
+  padding: 0.35rem 0.4rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table th {
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.input,
+.msgInput {
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  font: inherit;
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: calc(var(--ifm-global-radius) / 1.5);
+}
+
+.input {
+  min-width: 5rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.msgInput {
+  min-width: 14rem;
+}
+
+.warnInput {
+  border-color: var(--ifm-color-warning);
+  background: var(--ifm-color-warning-contrast-background);
+}
+
+.input:focus,
+.msgInput:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.actionBtn {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  color: var(--ifm-color-primary);
+  background: transparent;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-global-radius);
+  transition: background-color 0.15s ease;
+}
+
+.actionBtn:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.actionBtn:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.footnote {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.footnote code {
+  background: var(--ifm-color-emphasis-200);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}

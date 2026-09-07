@@ -8,6 +8,7 @@ type: reference
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DateFormatChecker from '@site/src/components/DateFormatChecker';
+import ResponseTimeDemo from '@site/src/components/ResponseTimeDemo';
 
 # API Reference
 Endpoint reference for the Vela endpoints: sending call recordings and chat transcripts in, exporting analysed calls out, and checking what your organisation is entitled to. For uploading through Vela instead, see [Upload Your Data](../data-upload.md).
@@ -359,6 +360,8 @@ Vela matches these three values exactly. A capitalised `Agent` still stores the 
 
 The wider Botlhale reference shows `Agent` capitalised for this field. Lower case is what Vela reads.
 :::
+
+<ResponseTimeDemo />
 
 :::info Chat allocation
 Chats are counted against a separate monthly chat allocation, not the duration allocation used for calls. Once the organisation reaches that allocation, the endpoint returns an error.
