@@ -5,6 +5,9 @@ description: "Manage the people who sign in to Vela, and the departments and tea
 type: reference
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import usersTable from '@site/img/screenshots/settings/users-table.png';
+
 # User and Team Management
 The **Users** tab has two sub-tabs. **Users** lists every account in your organisation and holds the controls for adding, editing, and deactivating them. **Org Table** shows the departments and teams those accounts sit in.
 
@@ -20,20 +23,28 @@ What you see is also capped by your own access level. Organisational access show
 
 ### A. Finding Users
 
-* **Search (1):** Matches on name, email address, department, and team. Matching text is highlighted in the results.
-* **Filter (2):** Opens the **Filter By** modal. The fields you get depend on your own access level:
-  * **Department**, for organisational access only.
-  * **Team**, for organisational or departmental access. Teams are listed as the team name followed by its department.
-  * **Role**, `admin` or `user`. These are mutually exclusive, so selecting one clears the other.
+<Hotspots
+  src={usersTable}
+  alt="The Users sub-tab: the Users and Org Table sub-tabs above Show Deleted Users on the left, the Search box with Add User and Filter to its right, and the user table below with the User, Email Address, Department, Team, Role, View, View Redactions, and Actions columns"
+  points={[
+    { x: 70.5, y: 38.8, title: 'Search', body: 'Matches on name, email address, department, and team. Matching text is highlighted in the results.' },
+    { x: 90.3, y: 44.8, title: 'Add User', body: 'Creates a user account.' },
+    { x: 96.3, y: 44.8, title: 'Filter', body: 'Opens the Filter By modal. The fields it offers depend on your own access level.' },
+    { x: 27.1, y: 42.8, title: 'Show Deleted Users', body: 'Adds deactivated accounts to the list, shown faded. The button then reads Hide Deleted Users.' },
+  ]}
+/>
 
-  Select **Apply** to filter, or **Clear All Fields** to reset.
-* **Show Deleted Users (3):** Adds deactivated accounts to the list, shown faded. The button then reads **Hide Deleted Users**.
+The **Filter By** modal offers:
+
+* **Department**, for organisational access only.
+* **Team**, for organisational or departmental access. Teams are listed as the team name followed by its department.
+* **Role**, `admin` or `user`. These are mutually exclusive, so selecting one clears the other.
+
+Select **Apply** to filter, or **Clear All Fields** to reset.
 
 If nothing matches, the table reads `No results found.`
 
-**Add User (4)** is covered in [Adding a User](#c-adding-a-user) below.
-
-![The Users sub-tab with its four controls numbered: Search, Filter, Show Deleted Users, and Add User](../../img/screenshots/settings/users-table.png)
+**Add User** is covered in [Adding a User](#c-adding-a-user) below.
 
 {/* The Email Address column is masked on purpose. The table lists real addresses, and publishing them here would put other people's personal information into the documentation, which POPIA does not allow. The bars show that an address sits in the column without disclosing it. Do not "improve" this by reshooting an unmasked table. */}
 
