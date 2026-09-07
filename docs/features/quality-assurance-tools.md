@@ -172,18 +172,16 @@ Select **Resolve** once you have acted on the alert. The row then reads **Resolv
 
 A tab with nothing to show says so, for example `No alerts detected in call` or `No pain points detected in call`. Vela analysed the interaction and found nothing of that kind in it.
 
-The tab strip scrolls, so use the arrows at either end if a tab is out of view.
-
 <Hotspots
   src={detailedView}
   alt="The Detailed View of a call: the breadcrumb and the Review Redacted Info and Mark as Reviewed buttons across the top, the Audio player and the Smart Detector analysis tabs down the left, and the Call Details panel on the right"
   points={[
-    { x: 87, y: 18, title: 'Review Redacted Info and Mark as Reviewed', body: 'Review Redacted Info reveals masked content where you have the permission. Mark as Reviewed records that you are done, and on some setups it is what releases the interaction to the agent.' },
-    { x: 22, y: 37, title: 'Audio', body: 'The player. A timestamp in the transcript jumps it to that moment, and Playback Speed runs from 0.5x to 2x. A chat has no Audio card.' },
-    { x: 34, y: 54, title: 'Smart Detector tabs', body: "Vela's analysis, one tab each: Summary, Keywords, Alerts, Intents, Sentiment, Scorecard, Pain Points. The strip scrolls, so use the arrows at its ends." },
-    { x: 55, y: 48, title: 'View Comments', body: 'Opens the comments panel, where coaching feedback is added and the agent is tagged with an @ mention.' },
-    { x: 71, y: 25, title: 'Call Details', body: 'The facts about the interaction: the Scores block, then Call ID, the dates, Handle Time, Department, Team, Topic, Direction, and Tags.' },
-    { x: 68, y: 33, title: 'Edit, beside the agent name', body: 'Reassigns the interaction to a different agent. It silently reruns the scorecard against your questions as they stand today, so check the score afterwards.' },
+    { x: 74.5, y: 17.7, title: 'Review Redacted Info and Mark as Reviewed', body: 'Review Redacted Info reveals masked content where you have the permission. Mark as Reviewed records that you are done, and on some setups it is what releases the interaction to the agent.' },
+    { x: 46.9, y: 25.3, title: 'Audio', body: 'The player for the recording. A chat has no Audio card, and shows the transcript alone.' },
+    { x: 57.6, y: 53.6, title: 'Smart Detector tabs', body: "Vela's analysis, one tab each: Summary, Keywords, Alerts, Intents, Sentiment, Scorecard, Pain Points. The strip scrolls, so use the arrows at its ends." },
+    { x: 47.9, y: 47.8, title: 'View Comments', body: 'Opens the comments panel, where coaching feedback is added and the agent is tagged with an @ mention.' },
+    { x: 81.3, y: 25.1, title: 'Call Details', body: 'The facts about the interaction: the Scores block, then Call ID, the dates, Handle Time, Department, Team, Topic, Direction, and Tags.' },
+    { x: 76.1, y: 32.4, title: 'Edit, beside the agent name', body: 'Reassigns the interaction to a different agent. It silently reruns the scorecard against your questions as they stand today, so check the score afterwards.' },
   ]}
 />
 
@@ -286,6 +284,8 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
 **@** mentions work in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
 
 This matters because tagging is what notifies the agent. Replying to their response does not reach them, however clearly it answers their question. Where a reply carries something the agent has to see, post it as a new comment and tag them there.
+
+:::
 
 :::warning A posted comment is final
 Comments cannot be edited or deleted once sent. Read yours back before selecting **Send**, particularly where you have tagged the agent. The delete icon beside the reply box clears what you have typed, not a comment already posted.

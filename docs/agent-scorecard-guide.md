@@ -46,7 +46,7 @@ The settings above the question list apply to the whole scorecard. Every questio
 <ScorecardScopeForm />
 
 :::warning Historical Search cannot be added later
-It is only offered when you create the scorecard. Leave it off and the interactions already in Vela are never scored against these questions, and the only way to change that is to upload those recordings again.
+Leave it off and the interactions already in Vela are never scored against these questions, and the only way to change that is to upload those recordings again.
 :::
 
 ---

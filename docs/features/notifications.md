@@ -33,11 +33,11 @@ Select **Notifications** in the left sidebar. Three tabs sit at the top right of
   src={notificationsPage}
   alt="The Notifications page on the Alerts tab, with the Comments and Reports tabs beside it, the search box above the list, and each notification card carrying a dismiss cross and an eye icon"
   points={[
-    { x: 74, y: 14, title: 'The Alerts, Comments, and Reports tabs', body: 'Alerts holds Smart Search matches and the Smart Question answers set to alert. Comments holds interaction comments. Reports holds finished reports, one-time or scheduled.' },
-    { x: 83, y: 24, title: 'Search', body: 'Narrows the list by wording, matching both the heading and the body of a notification. Matches are highlighted.' },
-    { x: 25, y: 31, title: 'A notification', body: 'Each shows a heading, how long ago it arrived, and a line of detail. The page lists unread notifications only.' },
-    { x: 88, y: 31, title: 'The dismiss cross', body: 'Takes the notification off the list for good. Nothing it pointed at is lost, and you still reach that through Interactions, Smart Detector, or Reports.' },
-    { x: 88, y: 39, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports.' },
+    { x: 67.2, y: 14.2, title: 'The Alerts, Comments, and Reports tabs', body: 'Alerts holds Smart Search matches and the Smart Question answers set to alert. Comments holds interaction comments. Reports holds finished reports, one-time or scheduled.' },
+    { x: 74.5, y: 23.9, title: 'Search', body: 'Narrows the list by wording, matching both the heading and the body of a notification. Matches are highlighted.' },
+    { x: 41.7, y: 31.2, title: 'A notification', body: 'Each shows a heading, how long ago it arrived, and a line of detail. The page lists unread notifications only.' },
+    { x: 84.9, y: 31.2, title: 'The dismiss cross', body: 'Takes the notification off the list for good. Nothing it pointed at is lost, and you still reach that through Interactions, Smart Detector, or Reports.' },
+    { x: 84.9, y: 39.2, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports.' },
   ]}
 />
 
@@ -51,8 +51,6 @@ Unread notifications are also indicated in the top navigation bar, so you can se
 
 :::note The page lists unread notifications only
 Once a notification is dismissed it leaves the list for good. There is no read or archived view to recover it from, so treat the page as a queue to work through rather than a history to search later.
-
-Nothing is lost when you dismiss one. The interaction, comment, or report it pointed at stays exactly where it was, and you reach it through **Interactions**, **Smart Detector**, or **Reports** as usual.
 :::
 
 ### B. Work a Notification

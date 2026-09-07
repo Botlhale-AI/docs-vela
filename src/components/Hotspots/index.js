@@ -20,7 +20,9 @@ import styles from './styles.module.css';
  *
  * x and y are percentages of the image, measured from the top-left corner.
  * The pin is centred on that point. Keep both between about 3 and 97 so the
- * pin does not sit half off the edge.
+ * pin does not sit half off the edge. Put the pin in the blank space beside
+ * what it names rather than on top of it, so the label it points at stays
+ * readable underneath.
  *
  * The list below the image is the real interface: it works without the
  * picture, on a phone, and with a keyboard. The pins are an overlay on top

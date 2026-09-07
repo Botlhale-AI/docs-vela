@@ -8,6 +8,8 @@ type: tutorial
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import Hotspots from '@site/src/components/Hotspots';
+import customiseModal from '@site/img/screenshots/dashboard/dashboard05.png';
 
 # Team Lead Quick Start
 A hands-on walkthrough for team leads and managers new to Vela. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
@@ -131,18 +133,21 @@ Every available metric is defined in [Metrics](../../reference/metrics.md), incl
 
 ### Customising Your Dashboard
 
-Select **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card), then **Save Changes**. The chart types offered vary by metric. Metrics are grouped, and each group shows how many it holds.
+Select **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card), then **Save Changes**.
 
 ![The Dashboard header, with the Customise button, the All, Calls, and Chats options, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
-![The Customise Dashboard modal with five controls numbered, from the metric group heading through to Save Changes](../../../img/screenshots/dashboard/dashboard05.png)
 
-| # | Control | What it does |
-|:--|---------|--------------|
-| 1 | The group heading | Names the group and how many metrics it holds |
-| 2 | The icon on each metric | The chart type it is drawn as. The same metric appears once per chart type available to it |
-| 3 | The cross on a metric | Removes it from your dashboard |
-| 4 | The scrollbar | The remaining groups sit below the two in view |
-| 5 | **Save Changes** | Applies your selection. Closing without saving discards it |
+<Hotspots
+  src={customiseModal}
+  alt="The Customise Dashboard modal: the Alert Metrics and Customer Sentiment group headings with their counts, each metric as a pill carrying a chart-type icon and a cross, the scrollbar down the right, and Save Changes and Close at the foot"
+  points={[
+    { x: 37.6, y: 16.5, title: 'The group heading', body: 'Names the group and how many metrics it holds.' },
+    { x: 41.7, y: 32.8, title: 'The icon on each metric', body: 'The chart type it is drawn as. The same metric appears once per chart type available to it.' },
+    { x: 49.6, y: 38.6, title: 'The cross on a metric', body: 'Removes it from your dashboard.' },
+    { x: 70.9, y: 48.2, title: 'The scrollbar', body: 'The remaining groups sit below the two in view.' },
+    { x: 56.3, y: 91, title: 'Save Changes', body: 'Applies your selection. Closing without saving discards it.' },
+  ]}
+/>
 
 The selected metrics show what is on your dashboard now. To add one, use the two controls below them: the metric selector, then the view selector below it, which is where you choose the chart type. **Cancel** clears the pair without adding anything.
 

@@ -31,17 +31,17 @@ The Dashboard is where you find out whether anything needs your attention today,
 ### A. Set the Date Range and Scope
 
 1.  Sign in to Vela and go to the **Dashboard**.
-2.  Open the date range control, labelled **Select Date Range**, and pick **Today** or **Yesterday** for a current check.
-3.  Select **Filter** to narrow the metrics by department, team, and agent, within your access level, and by direction, tags, topic, or score.
+2.  Set the date range to **Today** or **Yesterday** for a current check.
+3.  Select **Filter** to narrow the metrics to the part of the organisation you are checking.
 
 <Hotspots
   src={dashboardHeader}
   alt="The Dashboard header: the page title, the Interactions All, Calls, and Chats options, the date range with its edit control, the Customise button, and Filter"
   points={[
-    { x: 22, y: 86, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
-    { x: 61, y: 86, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
-    { x: 92, y: 63, title: 'Customise', body: 'Choose which metrics appear and how each one is charted. The chart types on offer depend on the metric.' },
-    { x: 94, y: 86, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
+    { x: 35.4, y: 85.6, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
+    { x: 74, y: 85.6, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
+    { x: 83.4, y: 61.4, title: 'Customise', body: 'Choose which metrics appear and how each one is charted: table, bar, line, pie, doughnut, or card. The chart types on offer depend on the metric.' },
+    { x: 88.1, y: 87.1, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
   ]}
 />
 
@@ -60,10 +60,6 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 | **Agent Talk to Listen Ratio** | Agent talking time relative to customer talking time. | It stays high, so the agent is talking more than listening. |
 
 ![The Quality & Performance group, with Average Agent Scores beside the distribution of calls by RAG score](../../img/screenshots/dashboard/use_dashboard1.png)
-
-:::tip Choose your own metrics
-Select **Customise** on the Dashboard to choose which metrics appear and how each is charted as a table, bar, line, pie, doughnut, or card. The chart types offered vary by metric, so pick the ones that suit what your team is measured on.
-:::
 
 ---
 
@@ -169,22 +165,18 @@ One weak agent and a weak team need different responses, so this is worth a minu
 
 The quickest check is on the Dashboard: **Distribution of Total Scores** shows how scores are spread, so you can see whether this agent sits apart from their colleagues or with them.
 
-For a fuller answer, the three tabs beside **Overview** count categories rather than ranking people. **Teams**, **Departments**, and **Agents** each show which scorecard categories come up most often as a strength, and which come up as a problem.
-
-On any of them, switch between **Strengths** and **Areas to Improve**. The colour changes with it: green for strengths, red for areas to improve.
-
-On **Teams** and **Departments** you get a grid. Your scorecard categories run across the top, your teams or departments down the side, and each cell counts how many agents that category applies to. The darker the cell, the more agents there are.
+For a fuller answer, use the three tabs beside **Overview**. On **Teams** and **Departments** the counts come as a grid.
 
 <Hotspots
   src={teamGrid}
   alt="The Performance page on the Teams tab, Strengths view: the Overview, Teams, Departments, and Agents tabs, the Strengths and Areas to Improve toggle, and a grid of scorecard categories against teams shaded darker green where more agents apply"
   points={[
-    { x: 77, y: 19, title: 'Overview, Teams, Departments, Agents', body: 'Overview ranks people. Teams, Departments, and Agents count how often each scorecard category comes up as a strength or a problem.' },
-    { x: 54, y: 27, title: 'Date range', body: 'The period the counts cover. Select the pencil to change it.' },
-    { x: 17, y: 36, title: 'Strengths and Areas to Improve', body: 'Switch between the categories agents do well and the ones they struggle with. The grid turns green for strengths, red for areas to improve.' },
-    { x: 27, y: 50, title: 'Category columns', body: 'Your scorecard categories run across the top.' },
-    { x: 19, y: 63, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
-    { x: 27, y: 63, title: 'A cell', body: 'Counts how many agents that category applies to for that team. The darker the shading, the more agents.' },
+    { x: 62.5, y: 19.4, title: 'Overview, Teams, Departments, Agents', body: 'Overview ranks people. Teams, Departments, and Agents count how often each scorecard category comes up as a strength or a problem.' },
+    { x: 42.7, y: 27.2, title: 'Date range', body: 'The period the counts cover. Select the pencil to change it.' },
+    { x: 29.2, y: 36.2, title: 'Strengths and Areas to Improve', body: 'Switch between the categories agents do well and the ones they struggle with. The grid turns green for strengths, red for areas to improve.' },
+    { x: 36.5, y: 46.1, title: 'Category columns', body: 'Your scorecard categories run across the top.' },
+    { x: 17.2, y: 71.1, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
+    { x: 36, y: 60.5, title: 'A cell', body: 'Counts how many agents that category applies to for that team. The darker the shading, the more agents.' },
   ]}
 />
 

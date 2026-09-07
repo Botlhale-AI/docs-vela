@@ -83,12 +83,11 @@ The form is one page. The two views below are it scrolled, so they overlap at Li
 
 <SmartSearchFormBottom />
 
-Select a field for what it does. Four of them carry detail worth reading before you save:
+Select a field for what it does. Three of them carry detail worth reading before you save:
 
 - **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams, and team access picks Entire Team. A "Specific" choice opens a second selector for the departments or teams.
 - **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. These come from your organisation's lists, so add a term under [Manage Smart Search Terms](./topics-and-terms-guide.md) first if it is not offered. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
-- **Historical Search** is set once, at creation, and cannot be added later. Choose All historical calls or a Specific date range, and pick the range unless you want your whole archive reprocessed.
-- **Search Status** set to Active starts the search matching as soon as you save. Inactive keeps the definition without running it.
+- **Historical Search** offers All historical calls or a Specific date range. Pick the range unless you want your whole archive reprocessed.
 
 The form also lets you combine several conditions, link this search to another, and attach a Knowledge Base document. See [More Search Options](#more-search-options).
 
