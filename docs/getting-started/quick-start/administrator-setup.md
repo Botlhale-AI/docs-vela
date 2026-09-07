@@ -225,6 +225,8 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
    - **Notifications:** Enable if you want alerts when matches are detected
 4. Select **Create Smart Search**
 
+The form is one page. These two views are it scrolled, so they overlap in the middle.
+
 ![The top of the New Smart Search form, with Smart Search Title, Search Status, Description, and Search Scope](../../../img/screenshots/smart1.png)
 
 ![The rest of the New Smart Search form, with Example Phrases, Search Filter, Historical Search, and Create Smart Search](../../../img/screenshots/smart2.png)
