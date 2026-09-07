@@ -81,22 +81,12 @@ flowchart LR
 
 <SmartSearchFormBottom />
 
-The steps below follow the fields on the form, top to bottom.
+Select a field on the form for what it does. Four of them carry detail worth reading before you save:
 
-1. Enter a descriptive **Smart Search Title** (for example, "Customer Complaints: Escalation Language").
-2. Set the **Search Status** to **Active** so the search starts matching once you save it. An **Inactive** search is kept but does not run.
-3. Add a **Description** of what the search is looking for. Vela reads this when matching, so it shapes the results, and it also helps you when reviewing a list of searches months later.
-4. Under **Search Scope**, use **Apply to** to choose how far the search reaches. The options depend on your own access level:
-   * Organisational access: **Entire Organisation**, **Specific Departments**, or **Specific Teams**.
-   * Departmental access: **Entire Department** or **Specific Teams**.
-   * Team access: **Entire Team**.
-
-   Choosing **Specific Departments** or **Specific Teams** opens a second selector for picking which ones.
-5. Add your **Example Phrases**. Most searches start here: select **Add** and enter each phrase. Write them the way people actually speak, not the way an internal process document describes the situation.
-6. Narrow the search further with a **Search Filter**, if you need one. Select **Add Filter** to match on intents, keywords, topics, pain points, or specific agents. Those come from your organisation's lists, whether Vela detected them or your team added them, so add the term first if it is not offered. See [Smart Search Criteria](./reference/smart-search-criteria.md) and [Manage Smart Search Terms](./topics-and-terms-guide.md).
-7. Enable **Historical Search** to run the search against interactions uploaded before you created it. Under **Historical Search Options**, choose **All historical calls** or a **Specific date range** with a start and end date. Pick a date range unless you want your whole archive reprocessed. Historical Search is set at creation and cannot be added by editing the search later.
-8. Tick **Notifications** if you want to be alerted each time a new match is detected. You can change this later by editing the search.
-9. Select **Create Smart Search** to save the search.
+- **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams, and team access picks Entire Team. A "Specific" choice opens a second selector for the departments or teams.
+- **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. These come from your organisation's lists, so add a term under [Manage Smart Search Terms](./topics-and-terms-guide.md) first if it is not offered. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
+- **Historical Search** is set once, at creation, and cannot be added later. Choose All historical calls or a Specific date range, and pick the range unless you want your whole archive reprocessed.
+- **Search Status** set to Active starts the search matching as soon as you save. Inactive keeps the definition without running it.
 
 The form also lets you combine several conditions, link this search to another, and attach a Knowledge Base document. See [More Search Options](#more-search-options).
 
