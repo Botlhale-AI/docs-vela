@@ -62,9 +62,9 @@ The form is one page, scrolled. The scope, interactions, and Historical Search s
   alt="The top of the New Smart Question form: the Create tab, Smart Question Scope, Interactions, and Historical Search"
   points={[
     { x: 83, y: 22, title: 'The Create tab', body: 'Everything here builds a new set of questions. View lists the sets you already have.' },
-    { x: 16, y: 40, title: 'Smart Question Scope', body: 'Which parts of the organisation the questions apply to. A question is answered on interactions handled by agents in scope.' },
-    { x: 17, y: 60, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set.' },
-    { x: 16, y: 68, title: 'Historical Search', body: 'Runs the questions against interactions already in Vela. Set at creation, and cannot be added later.' },
+    { x: 15, y: 40, title: 'Smart Question Scope', body: 'Which parts of the organisation the questions apply to. A question is answered on interactions handled by agents in scope.' },
+    { x: 15, y: 60, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set.' },
+    { x: 15, y: 68, title: 'Historical Search', body: 'Runs the questions against interactions already in Vela. Set at creation, and cannot be added later.' },
   ]}
 />
 
@@ -72,14 +72,14 @@ The form is one page, scrolled. The scope, interactions, and Historical Search s
   src={questionFormBottom}
   alt="The question block of the New Smart Question form: Question, Expected Outcome, Search Status, Search Type, Apply To, Notifications, Always Applicable, Apply Knowledge Base, and the Create Smart Questions button"
   points={[
-    { x: 16, y: 13.5, title: 'Question', body: 'The question to ask of each interaction, phrased for a yes or no answer.' },
-    { x: 16, y: 32.5, title: 'Expected Outcome', body: 'Optional here, since the answers are never scored. Set it only to highlight a Yes or a No in the results.' },
-    { x: 16, y: 44, title: 'Search Status', body: 'Enabled runs the question. Disabled keeps it without answering anything.' },
-    { x: 34, y: 44, title: 'Search Type', body: 'Automatic lets the AI answer. Manual leaves it for a reviewer.' },
-    { x: 52, y: 44, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls. A chat is treated as inbound.' },
-    { x: 71, y: 44, title: 'Notifications', body: 'Alerts you when the question is answered on a new interaction.' },
-    { x: 16, y: 55.5, title: 'Always Applicable', body: 'No lets the AI answer N/A where the question does not fit. Yes forces a Yes or No.' },
-    { x: 16, y: 63.5, title: 'Apply Knowledge Base', body: 'Answers the question against one of your own documents rather than general knowledge.' },
+    { x: 15, y: 13.5, title: 'Question', body: 'The question to ask of each interaction, phrased for a yes or no answer.' },
+    { x: 15, y: 32.5, title: 'Expected Outcome', body: 'Optional here, since the answers are never scored. Set it only to highlight a Yes or a No in the results.' },
+    { x: 15, y: 44, title: 'Search Status', body: 'Enabled runs the question. Disabled keeps it without answering anything.' },
+    { x: 32, y: 44, title: 'Search Type', body: 'Automatic lets the AI answer. Manual leaves it for a reviewer.' },
+    { x: 50, y: 44, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls. A chat is treated as inbound.' },
+    { x: 69, y: 44, title: 'Notifications', body: 'Alerts you when the question is answered on a new interaction.' },
+    { x: 15, y: 55.5, title: 'Always Applicable', body: 'No lets the AI answer N/A where the question does not fit. Yes forces a Yes or No.' },
+    { x: 15, y: 63.5, title: 'Apply Knowledge Base', body: 'Answers the question against one of your own documents rather than general knowledge.' },
     { x: 82, y: 88, title: 'Create Smart Questions', body: 'Saves the set. Answers appear as new interactions are processed.' },
   ]}
 />

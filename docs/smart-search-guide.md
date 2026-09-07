@@ -84,7 +84,7 @@ flowchart LR
   alt="The top of the New Smart Search form: Smart Search Title, Search Status, Description, Search Scope, Link To Search, and the start of Example Phrases"
   points={[
     { x: 15, y: 33.5, title: 'Smart Search Title', body: 'A short name for the search. It shows in the search list and on every alert it raises.' },
-    { x: 54, y: 33.5, title: 'Search Status', body: 'Active starts the search matching once you save. Inactive keeps the definition without running it.' },
+    { x: 52, y: 33.5, title: 'Search Status', body: 'Active starts the search matching once you save. Inactive keeps the definition without running it.' },
     { x: 15, y: 45, title: 'Description', body: 'What the search looks for. Vela reads this when matching, so it shapes the results.' },
     { x: 15, y: 61.5, title: 'Search Scope', body: 'How far the search reaches. The options depend on your own access level.' },
     { x: 15, y: 79, title: 'Link To Search', body: 'Ties this search to another, so a match needs both. Covered under More Search Options.' },
