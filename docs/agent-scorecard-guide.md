@@ -6,9 +6,7 @@ sidebar_position: 1
 type: how-to
 ---
 
-import Hotspots from '@site/src/components/Hotspots';
-import scorecardScope from '@site/img/screenshots/scorecared1.png';
-import scorecardForm from '@site/img/screenshots/scorecard2.png';
+import { ScorecardScopeForm, ScorecardQuestionForm } from '@site/src/components/annotatedForms';
 
 # Build an Agent Scorecard
 
@@ -45,16 +43,7 @@ The page has four tabs. **View** lists the questions you already have, **Create*
 
 The settings above the question list apply to the whole scorecard. Every question you add inherits them.
 
-<Hotspots
-  src={scorecardScope}
-  alt="The top of the Agents Scorecard Create tab, with the Create tab selected and the Scorecard Scope, Interactions, and Historical Search settings above the question list"
-  points={[
-    { x: 75, y: 21, title: 'The Create tab', body: 'Everything on this page builds a new scorecard. View lists the questions you already have, and View examples holds ready-made questions worth reading first.' },
-    { x: 15, y: 41, title: 'Scorecard Scope', body: 'Which parts of the organisation the scorecard applies to. An interaction is scored against the scorecards covering the agent who handled it.' },
-    { x: 15, y: 61, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set, so one scorecard cannot mix call-only and chat-only questions.' },
-    { x: 15, y: 68, title: 'Historical Search', body: 'Runs the scorecard against interactions already in Vela. Choose All historical calls or a Specific date range. It cannot be added later.' },
-  ]}
-/>
+<ScorecardScopeForm />
 
 :::warning Historical Search cannot be added later
 It is only offered when you create the scorecard. Leave it off and the interactions already in Vela are never scored against these questions, and the only way to change that is to upload those recordings again.
@@ -66,22 +55,7 @@ It is only offered when you create the scorecard. Leave it off and the interacti
 
 Each question is one yes/no judgement about the interaction. Select a field on the form to read what it does.
 
-<Hotspots
-  src={scorecardForm}
-  alt="The Agent Scorecard question form, with the Question, Category, Expected Outcome, Weight, Search Status, Search Type, Apply To, Auto-Fail, Compliance Question, and Always Applicable fields"
-  points={[
-    { x: 15, y: 16.5, title: 'Question', body: 'The behaviour being assessed, phrased so it can be answered yes or no.' },
-    { x: 15, y: 35.5, title: 'Category', body: "A grouping label such as Opening, Compliance, or Closing. Categories are what produce an agent's strengths and weaknesses, and where Coaching is enabled they also decide which course an agent picks up." },
-    { x: 53, y: 35.5, title: 'Expected Outcome', body: 'Which answer counts as a pass. Set it to match how you phrased the question.' },
-    { x: 78, y: 35.5, title: 'Weight', body: 'How much this question contributes, relative to the others. The range is 1 to 5.' },
-    { x: 15, y: 44.5, title: 'Search Status', body: 'Whether the question runs against incoming interactions.' },
-    { x: 28, y: 44.5, title: 'Search Type', body: 'Whether the AI answers it, or a reviewer does it manually. A manual question stays N/A until someone sets an outcome.' },
-    { x: 44.5, y: 44.5, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls.' },
-    { x: 59.5, y: 44.5, title: 'Auto-Fail', body: 'Failing this question takes the whole interaction to 0.0%, with the score earned on the other questions shown in brackets beside it.' },
-    { x: 74, y: 44.5, title: 'Compliance Question', body: 'Counts this question towards the Compliance Score instead of the Quality Score. Every question counts towards the Overall Score either way.' },
-    { x: 15, y: 58, title: 'Always Applicable', body: 'Whether the AI may answer N/A, or only Yes and No. Set to Yes, a question that did not apply costs the agent a No.' },
-  ]}
-/>
+<ScorecardQuestionForm />
 
 Select **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 

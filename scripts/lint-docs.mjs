@@ -293,6 +293,24 @@ for (const file of files) {
   }
 }
 
+// --- Component-held screenshots ------------------------------------------
+// A shared annotation component imports its screenshot itself, so no page
+// carries the reference. Scan src/components the same way as the pages.
+const COMPONENTS = join(ROOT, "src", "components");
+if (existsSync(COMPONENTS)) {
+  for (const f of walkAll(COMPONENTS).filter((p) => /\.(jsx?|tsx?)$/.test(p))) {
+    for (const m of read(f).matchAll(
+      /['"]((?:@site\/|\.\.?\/)[^'"]+\.(?:png|jpe?g|gif|svg|webp))['"]/gi
+    )) {
+      const spec = m[1];
+      const target = spec.startsWith("@site/")
+        ? join(ROOT, spec.slice("@site/".length))
+        : resolve(dirname(f), spec);
+      if (existsSync(target)) referencedImages.add(key(target));
+    }
+  }
+}
+
 // --- Cross-page checks -----------------------------------------------------
 if (existsSync(SHOTS)) {
   const all = walkAll(SHOTS).filter((f) => /\.(png|jpe?g|gif|svg|webp)$/i.test(f));

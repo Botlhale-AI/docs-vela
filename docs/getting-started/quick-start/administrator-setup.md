@@ -9,6 +9,7 @@ type: tutorial
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import AgentCsvBuilder from '@site/src/components/AgentCsvBuilder';
+import { ScorecardScopeForm, ScorecardQuestionForm, SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/annotatedForms';
 
 # Administrator Setup
 Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
@@ -191,11 +192,12 @@ The sidebar and the trail at the top of the page name it in the plural. This doc
 :::
 
 ![The Agents Scorecard list, showing existing questions and their status](../../../img/screenshots/smart_detector/scorecard-list.png)
-![The top of the Agents Scorecard Create tab, with Scorecard Scope, the Interactions options, and Historical Search](../../../img/screenshots/smart_detector/scorecard-create.png)
 
-Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. The remaining settings, and what each setting does, are covered in [Build an Agent Scorecard](../../agent-scorecard-guide.md). Every field with its values and default is in [Scorecard Fields](../../reference/scorecard-fields.md).
+<ScorecardScopeForm />
 
-![The question block of the scorecard form, with Question, Category, Expected Outcome, and Weight above the remaining settings](../../../img/screenshots/smart_detector/scorecard-create2.png)
+Each question needs a **Question**, a **Category** to group it under, an **Expected Outcome** saying which answer is a pass, and a **Weight**. Select a field below to read what it does. The full detail is in [Build an Agent Scorecard](../../agent-scorecard-guide.md), and every field with its values and default is in [Scorecard Fields](../../reference/scorecard-fields.md).
+
+<ScorecardQuestionForm />
 
 :::tip Write Concrete Questions
 Write each question so that the AI, and human reviewers, can give a clear yes or no answer. Prefer specific criteria like "Did the agent use the customer's name at least once?" over vague ones like "Was the agent professional?"
@@ -224,10 +226,11 @@ A Smart Search flags an interaction when the phrases or conditions you define ar
    - **Notifications:** Enable if you want alerts when matches are detected
 4. Select **Create Smart Search**
 
-![The New Smart Search form with its fields numbered, from Smart Search Title through to Example Phrases](../../../img/screenshots/smart_search/smart-search-create.png)
-![The rest of the New Smart Search form, numbered five to nine, from Example Phrases through to Create Smart Search](../../../img/screenshots/smart_search/smart-search-create2.png)
+<SmartSearchFormTop />
 
-The numbers on both screenshots are keyed to the field descriptions in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
+<SmartSearchFormBottom />
+
+Each field is covered in full in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
 
 Repeat for each compliance or quality check your organisation needs to monitor, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
 
