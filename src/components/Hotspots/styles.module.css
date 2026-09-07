@@ -1,0 +1,128 @@
+.figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.frame {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+  /* A gutter each side so a pin pointing at something near the edge sits
+     beside the image rather than on top of it. Pin x/y are percentages of
+     this padded box, so 0% is the far edge of the gutter and 50% is the
+     middle of the image. */
+  padding: 0 1.9rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+}
+
+.pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.pin:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+}
+
+.pin:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.pinActive {
+  box-shadow: 0 0 0 4px rgba(252, 95, 30, 0.4), 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 560px) {
+  .pin {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.72rem;
+  }
+}
+
+.list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.item {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.itemButton {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.55rem 0.25rem;
+  font: inherit;
+  text-align: left;
+  color: var(--ifm-font-color-base);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.itemButton:hover .itemTitle {
+  color: var(--ifm-color-primary);
+}
+
+.itemButton:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+.itemNum {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-radius: 50%;
+}
+
+.itemActive .itemNum {
+  box-shadow: 0 0 0 3px rgba(252, 95, 30, 0.4);
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.itemBody {
+  margin: 0 0 0.7rem 2.1rem;
+  font-size: 0.92rem;
+  color: var(--ifm-color-emphasis-800);
+}

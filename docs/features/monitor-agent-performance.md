@@ -5,6 +5,9 @@ description: "Track agent performance, find where people need help, and turn tha
 type: how-to
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import dashboardHeader from '@site/img/screenshots/dashboard/dashboard03.png';
+
 # Monitor Agent Performance
 Track how your agents are performing, find where they need help, and turn that into coaching. Use the **Dashboard** for trends across a team, and the **Agents** section for detail on one person.
 
@@ -30,7 +33,16 @@ The Dashboard is where you find out whether anything needs your attention today,
 2.  Open the date range control, labelled **Select Date Range**, and pick **Today** or **Yesterday** for a current check.
 3.  Select **Filter** to narrow the metrics by department, team, and agent, within your access level, and by direction, tags, topic, or score.
 
-![The Dashboard header, with the All, Calls, and Chats options, the date range, Filter, and Customise](../../img/screenshots/dashboard/dashboard03.png)
+<Hotspots
+  src={dashboardHeader}
+  alt="The Dashboard header: the page title, the Interactions All, Calls, and Chats options, the date range with its edit control, the Customise button, and Filter"
+  points={[
+    { x: 23, y: 87, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
+    { x: 61, y: 87, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
+    { x: 90, y: 63, title: 'Customise', body: 'Choose which metrics appear and how each one is charted. The chart types on offer depend on the metric.' },
+    { x: 93, y: 87, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
+  ]}
+/>
 
 ![The Select Date Range modal, with Today and Yesterday at the top of the preset list](../../img/screenshots/dashboard/calendar.png)
 

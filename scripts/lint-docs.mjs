@@ -242,6 +242,21 @@ for (const file of files) {
   const dupes = alts.filter((a, i) => alts.indexOf(a) !== i);
   for (const d of new Set(dupes)) err(rel, `alt text "${d}" is used more than once on this page`);
 
+  // Screenshots pulled in by a component rather than markdown: an ES import
+  // or a require() whose path ends in an image extension. These never use
+  // ![](), so the loop above does not see them, and the orphan check at the
+  // end of the run would report the file as referenced by no page.
+  for (const m of raw.matchAll(
+    /['"]((?:@site\/|\.\.?\/)[^'"]+\.(?:png|jpe?g|gif|svg|webp))['"]/gi
+  )) {
+    const spec = m[1];
+    const target = spec.startsWith("@site/")
+      ? join(ROOT, spec.slice("@site/".length))
+      : resolve(dirname(file), spec);
+    if (existsSync(target)) referencedImages.add(key(target));
+    else err(rel, `imported image not found: ${spec}`);
+  }
+
   // --- Diagrams ----------------------------------------------------------
   // Mermaid draws in the browser, so a malformed diagram builds cleanly and
   // then shows an error box on the live page. Node labels wrap across lines,
