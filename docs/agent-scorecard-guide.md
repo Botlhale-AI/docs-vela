@@ -85,7 +85,7 @@ Every field, including those this page does not cover, is listed in [Scorecard F
 :::note Adding a category
 **Category** starts as a list of the categories you already use. To add a new one, select the folder-with-a-plus icon beside the field and type the name. The icon then becomes a pointing hand, which takes you back to choosing from the list.
 
-{/* SCREENSHOT NEEDED: the Category field with the folder-with-a-plus icon beside it, ideally alongside the same field after selecting the icon so the pointing-hand state is visible too. Suggested path: img/screenshots/smart_detector/scorecard-add-category.png */}
+![The Category field with the folder-with-a-plus icon beside it, the Create new category tooltip showing on hover](../img/screenshots/agents_scorecard/category-icon-plus.png)
 
 Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page. Grouping related questions under one category is what lets those reports show a real pattern, rather than a single question's result.
 :::
