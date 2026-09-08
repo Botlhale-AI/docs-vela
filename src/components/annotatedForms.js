@@ -19,7 +19,6 @@ export function ScorecardScopeForm() {
       src={scorecardScopeImg}
       alt="The top of the Agents Scorecard Create tab, with the Create tab selected and the Scorecard Scope, Interactions, and Historical Search settings above the question list"
       points={[
-        { x: 59, y: 21.5, title: 'The Create tab', body: 'Everything on this page builds a new scorecard. View lists the questions you already have, and View examples holds ready-made questions worth reading first.' },
         { x: 29.2, y: 34.3, title: 'Scorecard Scope', body: 'Which parts of the organisation the scorecard applies to. An interaction is scored against the scorecards covering the agent who handled it.' },
         { x: 44.9, y: 52.2, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set, so one scorecard cannot mix call-only and chat-only questions.' },
         { x: 42.8, y: 68.3, title: 'Historical Search', body: 'Runs the scorecard against interactions already in Vela. Choose All historical calls or a Specific date range. It cannot be added later.' },

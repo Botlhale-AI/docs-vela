@@ -45,7 +45,7 @@ The Dashboard is where you find out whether anything needs your attention today,
   ]}
 />
 
-![The Select Date Range modal, with Today and Yesterday at the top of the preset list](../../img/screenshots/dashboard/calendar.png)
+![The Select Date Range modal, with Today and Yesterday among the presets](../../img/screenshots/dashboard/calendar.png)
 
 ### B. What to Read First
 
