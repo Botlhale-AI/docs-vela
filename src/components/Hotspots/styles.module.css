@@ -22,6 +22,9 @@
   scroll-margin-top: calc(var(--ifm-navbar-height, 60px) + 1rem);
   position: absolute;
   transform: translate(-50%, -50%);
+  /* Each fixed value is a fallback for browsers without container-query
+     units. The clamp() line after it wins where cqw is supported, so the
+     pin scales with the image rather than the viewport. */
   width: 1.6rem;
   width: clamp(1.15rem, 3.2cqw, 1.7rem);
   height: 1.6rem;
@@ -56,7 +59,6 @@
 .pinActive {
   box-shadow: 0 0 0 4px rgba(252, 95, 30, 0.4), 0 1px 4px rgba(0, 0, 0, 0.35);
 }
-
 
 .list {
   margin: 1rem 0 0;

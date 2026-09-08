@@ -38,9 +38,9 @@ The Dashboard is where you find out whether anything needs your attention today,
   src={dashboardHeader}
   alt="The Dashboard header: the page title, the Interactions All, Calls, and Chats options, the date range with its edit control, the Customise button, and Filter"
   points={[
+    { x: 83.4, y: 61.4, title: 'Customise', body: 'Choose which metrics appear and how each one is charted. The chart types on offer depend on the metric.' },
     { x: 35.4, y: 85.6, title: 'Interactions: All, Calls, Chats', body: 'Limits every metric on the page to calls only, chats only, or both. It sits out here with the date range and Filter, not inside the Filter modal.' },
     { x: 74, y: 85.6, title: 'Date range', body: 'The period every figure covers. Select the pencil to open Select Date Range, where Today and Yesterday sit at the top of the preset list.' },
-    { x: 83.4, y: 61.4, title: 'Customise', body: 'Choose which metrics appear and how each one is charted: table, bar, line, pie, doughnut, or card. The chart types on offer depend on the metric.' },
     { x: 88.1, y: 87.1, title: 'Filter', body: 'Narrow the metrics by department, team, and agent within your access level, and by direction, tags, topic, or score.' },
   ]}
 />
@@ -175,8 +175,8 @@ For a fuller answer, use the three tabs beside **Overview**. On **Teams** and **
     { x: 42.7, y: 27.2, title: 'Date range', body: 'The period the counts cover. Select the pencil to change it.' },
     { x: 29.2, y: 36.2, title: 'Strengths and Areas to Improve', body: 'Switch between the categories agents do well and the ones they struggle with. The grid turns green for strengths, red for areas to improve.' },
     { x: 36.5, y: 46.1, title: 'Category columns', body: 'Your scorecard categories run across the top.' },
-    { x: 17.2, y: 71.1, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
     { x: 36, y: 60.5, title: 'A cell', body: 'Counts how many agents that category applies to for that team. The darker the shading, the more agents.' },
+    { x: 17.2, y: 71.1, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
   ]}
 />
 

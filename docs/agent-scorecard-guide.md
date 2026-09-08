@@ -53,7 +53,7 @@ Leave it off and the interactions already in Vela are never scored against these
 
 ## 3. Write the Questions
 
-Each question is one yes/no judgement about the interaction. Select a field on the form to read what it does.
+Each question is one yes/no judgement about the interaction.
 
 <ScorecardQuestionForm />
 

@@ -134,7 +134,7 @@ Every available metric is defined in [Metrics](../../reference/metrics.md), incl
 
 ### Customising Your Dashboard
 
-Select **Customise** to choose which metrics appear and how each is charted (table, bar, line, pie, doughnut, or card), then **Save Changes**.
+Select **Customise** to choose which metrics appear and how each is charted, then **Save Changes**.
 
 ![The Dashboard header, with the Customise button, the All, Calls, and Chats options, the date range, and Filter](../../../img/screenshots/dashboard/dashboard03.png)
 
@@ -143,14 +143,14 @@ Select **Customise** to choose which metrics appear and how each is charted (tab
   alt="The Customise Dashboard modal: the Alert Metrics and Customer Sentiment group headings with their counts, each metric as a pill carrying a chart-type icon and a cross, the scrollbar down the right, and Save Changes and Close at the foot"
   points={[
     { x: 37.6, y: 16.5, title: 'The group heading', body: 'Names the group and how many metrics it holds.' },
-    { x: 41.7, y: 32.8, title: 'The icon on each metric', body: 'The chart type it is drawn as. The same metric appears once per chart type available to it.' },
-    { x: 52.7, y: 38.6, title: 'The cross on a metric', body: 'Removes it from your dashboard.' },
+    { x: 26, y: 27, title: 'The icon on each metric', body: 'The chart type it is drawn as. The same metric appears once per chart type available to it.' },
+    { x: 49, y: 33, title: 'The cross on a metric', body: 'Removes it from your dashboard.' },
     { x: 70.9, y: 48.2, title: 'The scrollbar', body: 'The remaining groups sit below the two in view.' },
     { x: 56.3, y: 91, title: 'Save Changes', body: 'Applies your selection. Closing without saving discards it.' },
   ]}
 />
 
-The selected metrics show what is on your dashboard now. To add one, use the two controls below them: the metric selector, then the view selector below it, which is where you choose the chart type. **Cancel** clears the pair without adding anything.
+The selected metrics show what is on your dashboard now. To add one, scroll to the two controls below the list: pick the metric, then pick its view. **Add Metric** confirms it, and **Cancel** beside it clears the pair.
 
 **Try it now:** Add **Top 10 Pain Points in Interactions (Detected)** to your dashboard to monitor common customer issues.
 

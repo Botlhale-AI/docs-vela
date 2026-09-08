@@ -83,7 +83,7 @@ The form is one page. The two views below are it scrolled, so they overlap at Li
 
 <SmartSearchFormBottom />
 
-Select a field for what it does. Three of them carry detail worth reading before you save:
+Three of the fields carry detail worth reading before you save:
 
 - **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams, and team access picks Entire Team. A "Specific" choice opens a second selector for the departments or teams.
 - **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. These come from your organisation's lists, so add a term under [Manage Smart Search Terms](./topics-and-terms-guide.md) first if it is not offered. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
