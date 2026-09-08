@@ -21,8 +21,8 @@ Smart Search is available on plans that include it. Where it is unavailable, ask
 ## Before You Begin
 
 - **Your access level sets how far a search can reach.** Organisational access can scope a search to the whole organisation, chosen departments, or chosen teams. Departmental access reaches its own department and the teams in it, and team access reaches one team. See [Access Level](./reference/glossary.md#access-level).
-- **Phrases need nothing set up first.** Filters do, because intents, keywords, topics, and pain points can only be used once they exist in your organisation's lists. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
-- **Your plan caps how many searches can be Active at once**, so decide what matters most before creating a dozen. Inactive searches are kept without using a place. See [Search Management](#search-management).
+- **Phrases need nothing set up first, but filters do.** An intent, keyword, topic, or pain point has to already exist in your organisation's lists before you can filter on it. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
+- **Your plan limits the number of searches that can be Active at once**, so prioritise the searches that matter most. Inactive searches are saved without counting towards your limit. See [Search Management](#search-management).
 
 New to this? Select **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
 
@@ -40,7 +40,7 @@ Smart Search gives you automated monitoring across three areas:
 
 ## How Matching Works
 
-Vela matches on meaning, not on exact words. When you add an example phrase, Vela flags interactions that say something very similar or express the same thing, so you do not need to list every wording. Capitalisation, punctuation, and small differences in phrasing do not affect a match.
+Vela matches on meaning, not on whether the phrase was said verbatim. When you add an example phrase, Vela flags interactions that say something very similar or express the same thing. Capitalisation, punctuation, and small differences in phrasing do not affect a match.
 
 Two things guide a match:
 
@@ -51,15 +51,15 @@ Vela matches on clear evidence in the transcript rather than guessing. A vague d
 
 Searches work across languages. Calls and chats in the 11 spoken official South African languages are translated to English as they are processed, and matching reads that translation alongside the original. You can write your example phrases in English, and they match interactions spoken in another language.
 
-You can also narrow a search with structured filters (intents, keywords, topics, pain points, or agents), each set to **include** or **exclude**, and combine several conditions in one search. For every filter type and setting, see [Smart Search Criteria](./reference/smart-search-criteria.md).
+You can also narrow a search with structured filters (intents, keywords, topics, pain points, or agents), with the option to include or exclude each, and combine several conditions in one search. For every filter type and setting, see [Smart Search Criteria](./reference/smart-search-criteria.md).
 
-Three separate things therefore feed one decision, which is why editing the description changes your results even though it reads like a note to yourself:
+Three separate things therefore feed one decision, which is why editing the description changes your results:
 
 ```mermaid
 flowchart LR
     P("Example phrases<br/>what to look for") --> M{"Does this<br/>interaction match?"}
     D("Description<br/>read by the AI,<br/>not just a label") --> M
-    F("Search filters<br/>intents, keywords, topics,<br/>pain points, agents<br/>each include or exclude") --> M
+    F("Search filters<br/>intents, keywords, topics,<br/>pain points, agents<br/>with the option to include or exclude each") --> M
     M -- Yes --> A("An alert on<br/>that interaction")
     M -- No --> N("Nothing.<br/>The interaction is still<br/>processed and scored")
 ```
@@ -86,9 +86,10 @@ The form is one page. The two views below are it scrolled, so they overlap at Li
 Two of the fields carry detail worth reading before you save:
 
 - **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams, and team access picks Entire Team. A "Specific" choice opens a second selector for the departments or teams.
+- **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. The intents, keywords, topics, and pain points come from your organisation's lists, whether Vela detected them or your team added them. If a term is not available, add it to the list under [Manage Smart Search Terms](./topics-and-terms-guide.md) first. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
 - **Historical Search** offers All historical calls or a Specific date range. Pick the range unless you want your whole archive reprocessed.
 
-The form also lets you combine several conditions, link this search to another, and attach a Knowledge Base document. See [More Search Options](#more-search-options).
+You can build more advanced searches by combining conditions, linking searches, and attaching a Knowledge Base document. See [More Search Options](#more-search-options).
 
 ---
 
@@ -102,7 +103,7 @@ Once interactions are processed, matches appear automatically in the search resu
 4. Read the transcript alongside Vela's analysis to judge whether the match is genuine.
 5. Select **Resolve** on the alert once you have acted on it, which drops the interaction out of Returned Interactions. See [Alert Management](#alert-management).
 
-![A matched interaction opened from the results, with the transcript beside the Smart Detector analysis tabs](../img/screenshots/calls/calls-3.png)
+![The Alerts tab on a matched interaction, listing each alert with its View, Listen, and Resolve controls](../img/screenshots/calls/detailed-alerts.png)
 
 If the results contain too many irrelevant matches, return to the search and make the description and examples more specific. If matches are being missed, add another clear example or sharpen the description. Refining a search based on early results is a normal part of getting it to perform well.
 
@@ -203,17 +204,42 @@ Resolving is what closes the loop. Open the interaction, find the alert in the *
 
 Three controls close three different things, and they sit close together on the detailed view. Pick by what you want to close:
 
-| To close | Select | Where | Then it reads |
-| :--- | :--- | :--- | :--- |
-| One alert | **Resolve** | The **Smart Detector** section, on the alert's row | **Resolved** |
-| A comment or a reply | **Mark as Resolved** | The **Comments** section, on that comment | **Resolved by** your name |
-| The whole interaction | **Mark as Reviewed** | The top of the detailed view | **Reviewed** |
+<table>
+  <thead>
+    <tr>
+      <th>To close</th>
+      <th>Select</th>
+      <th>Where</th>
+      <th>Then it reads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>One alert</td>
+      <td><strong>Resolve</strong></td>
+      <td>The <strong>Smart Detector</strong> section, on the alert's row</td>
+      <td><strong>Resolved</strong></td>
+    </tr>
+    <tr style={{backgroundColor: 'var(--ifm-table-background)'}}>
+      <td>A comment or a reply</td>
+      <td><strong>Mark as Resolved</strong></td>
+      <td>The <strong>View Comments</strong> panel, on that comment</td>
+      <td><strong>Resolved by</strong> your name</td>
+    </tr>
+    <tr>
+      <td>The whole interaction</td>
+      <td><strong>Mark as Reviewed</strong></td>
+      <td>The top of the detailed view</td>
+      <td><strong>Reviewed</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 These three are independent of each other. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
 
 To clear several alerts at once, open a single search's results and select through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
 
-An alert you resolve without acting on it is worse than one you leave open, because the list stops reminding you.
+An unresolved alert stays visible until you act on it. Resolving it without taking action removes that reminder.
 
 If a search is producing more matches than your team can act on, edit it to use more specific phrases, or turn its Notifications setting off and review its matches in the results view instead.
 
@@ -235,7 +261,7 @@ A summary of the search across the period:
 
 - The search's **name**, **description**, date created, and **status** (Active or Inactive).
 - A **Summary**, showing the **Period Covered** and the **Total Interactions** that matched the search.
-- **Main Insights Highlighted**: an AI-written read of the matched interactions. Where the period holds too little to draw on, it reads **There are no insights available for this search in the selected time period**, which is a result rather than a fault. It opens with a short overview, then a **Call Reasons** explanation of why the interactions matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Insights appear once a search has enough matches.
+- **Main Insights Highlighted**: an AI-generated summary of the interactions matched by the search. If there is not enough data in the selected period to generate meaningful insights, Vela displays **There are no insights available for this search in the selected time period**. This indicates that there is not enough data, not that something has gone wrong. Where there is enough, it opens with a short overview, then a **Call Reasons** explanation of why the interactions matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF.
 
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
 
@@ -257,7 +283,7 @@ The list of matched calls and chats. Open any one to see its full transcript and
 
 Only unresolved matches appear here, so resolving an alert removes it from the list. The heading above it says what you are looking at, for example **Showing 4 interactions with unresolved alerts related to Compliance Violation Risk**.
 
-**Search**, **Filter**, **Sort By**, and **Export** sit above the list, and it paginates like the Interactions list.
+The controls above the list let you **Search**, **Filter**, **Sort By**, and **Export** results.
 
 :::warning Returned Interactions has its own date range
 The list carries a second date control, separate from the one at the top of the page. The two are set independently, so **Total Interactions** in the Summary can count a different period from the list below it.
@@ -274,6 +300,12 @@ When the count and the list disagree, check both dates before concluding anythin
 Under **Quick Search**, select two or more searches to see the interactions that matched **all** of them. A call flagged by both a billing search and an escalation search is a more specific problem than either search describes on its own, and usually a better use of review time than working down one list.
 
 Below that, **Top Smart Search Combinations** shows the pairs of searches that most often fire together this month. Select one to open the matching interactions.
+
+![The View Compounded Results page, with Quick Search set to two searches and their combined match count in Results, and Top Smart Search Combinations below](../img/screenshots/smart_search/view_compounded.png)
+
+Selecting the match count in **Results** opens the **Interactions → Calls** list, filtered to interactions with unresolved alerts from the searches you selected. It is the same list covered in [Read the Interactions List](./features/quality-assurance-tools.md#d-read-the-interactions-list), not a page of its own.
+
+![The Calls list opened from a compounded result, headed "Showing 56 interactions with unresolved alerts related to Customer Satisfaction, Customer Complains"](../img/screenshots/smart_search/view_compounded_results.png)
 
 ### Trend Analysis
 
