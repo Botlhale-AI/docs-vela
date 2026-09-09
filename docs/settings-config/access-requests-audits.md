@@ -12,7 +12,7 @@ The **Requests** tab is where Administrators process requests to view redacted i
 :::warning Administrators only
 This tab is **only visible to and manageable by Administrators**. A user without **View Redactions** initiates a request from within the interaction, but only Administrators can view, process, and approve requests here.
 
-Transcripts are masked by default for everyone. Administrators, and users granted **View Redactions**, reveal masked content on demand, so they do not raise requests themselves. The permission is set per account in **Settings → Users**, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
+Once an administrator has configured redaction, masked details are hidden from everyone by default. Administrators, and users granted **View Redactions**, reveal masked content on demand, so they do not raise requests themselves. The permission is set per account in **Settings → Users**, described in [User and Team Management](./user-management.md#2-role-access-and-view-redactions).
 :::
 
 ---

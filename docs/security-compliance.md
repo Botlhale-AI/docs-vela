@@ -59,7 +59,7 @@ Deactivating an account withdraws access while keeping the record. See [User and
 
 ### Masking Sensitive Information
 
-Transcripts are masked for everyone by default, administrators included. An administrator chooses which categories are masked, from credit card and bank account numbers to ID numbers, phone numbers, and email addresses. See [Organisation Configuration](./settings-config/organisation-configuration.md#5-redactable-entities).
+An administrator chooses which categories to mask, from credit card and bank account numbers to ID numbers, phone numbers, and email addresses. Once configured, masked details are hidden from everyone by default, administrators included. See [Organisation Configuration](./settings-config/organisation-configuration.md#5-redactable-entities).
 
 ![The categories an administrator can choose to mask, on the organisation settings page](../img/screenshots/settings/redaction.png)
 
