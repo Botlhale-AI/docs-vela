@@ -46,18 +46,26 @@ export default function AgentCsvBuilder() {
 
   const warnings = useMemo(() => {
     const out = [];
-    const seen = new Map();
+    const seenEmail = new Map();
+    const seenName = new Map();
     rows.forEach((r, i) => {
       const any = r.name || r.email || r.department || r.team;
       if (!any) return;
-      const missing = ['name', 'email', 'department', 'team'].filter((f) => !r[f].trim());
+      const missing = ['name', 'department', 'team'].filter((f) => !r[f].trim());
       if (missing.length) out.push(`Row ${i + 1}: ${missing.join(', ')} still empty.`);
-      if (r.email.trim() && !r.email.includes('@'))
+      if (!r.email.trim())
+        out.push(`Row ${i + 1}: no email. Required where your organisation uses Voice Profiles or Coaching.`);
+      else if (!r.email.includes('@'))
         out.push(`Row ${i + 1}: that email address has no "@".`);
-      const key = r.email.trim().toLowerCase();
-      if (key) {
-        if (seen.has(key)) out.push(`Row ${i + 1}: the same email is on row ${seen.get(key) + 1}.`);
-        else seen.set(key, i);
+      const emailKey = r.email.trim().toLowerCase();
+      if (emailKey) {
+        if (seenEmail.has(emailKey)) out.push(`Row ${i + 1}: the same email is on row ${seenEmail.get(emailKey) + 1}.`);
+        else seenEmail.set(emailKey, i);
+      }
+      const nameKey = r.name.trim().toLowerCase();
+      if (nameKey) {
+        if (seenName.has(nameKey)) out.push(`Row ${i + 1}: the same name is on row ${seenName.get(nameKey) + 1}. Vela drops the second silently rather than erroring.`);
+        else seenName.set(nameKey, i);
       }
     });
     return out;

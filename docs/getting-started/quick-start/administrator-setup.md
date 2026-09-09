@@ -71,7 +71,7 @@ Users who sign in through SSO manage their password with Google or Microsoft, so
 
 If SSO is not available, users sign in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
-Vela emails each new user a password and a verification link. They must open the link before they can sign in. Vela does not force a password change afterwards, so tell users to set their own under **Settings → Security**.
+Vela emails each new user a password and a verification link. They must open the link before they can sign in. The emailed password stays in place until the user changes it, so tell them to set their own under **Settings → Security**.
 
 </TabItem>
 </Tabs>
@@ -113,9 +113,9 @@ You add two kinds of record in this step. They are separate records, and adding 
 
 ```mermaid
 flowchart LR
-    D("Departments<br/>created first, in Step 2") --> T("Teams<br/>each belongs to a department")
-    T --> A("Agents, Step 3A<br/>their calls and chats are analysed<br/>added singly or by CSV import<br/>no Vela login")
-    T --> U("Users, Step 3B<br/>the people who sign in to Vela<br/>added one at a time<br/>each has a Role and an Access level")
+    D("Departments<br/>Step 2") --> T("Teams<br/>Step 2")
+    T --> A("Agents<br/>Step 3A")
+    T --> U("Users<br/>Step 3B")
 ```
 
 - **Agents**, whose interactions are analysed. Add them individually, or import many at once from a CSV.
@@ -128,14 +128,15 @@ If you are onboarding team leads or administrators, add them individually in Ste
 ### Step 3A: Bulk Import Agents via CSV
 
 :::note Adding one agent
-To add a single agent, go to **Agents → Agent Details** and select **Add Agent**, then fill in their name, email, department, and team.
+To add a single agent, go to **Agents → Agent Details** and select **Add Agent**. The default tab takes name, email, and team. A department field appears only after you choose **Create New Team**.
 :::
 
 For onboarding many agents at once:
 
-1. Navigate to **Agents → Agent Details**
-2. Download the CSV template from the upload page
-3. Fill in the CSV with the columns below. Build it here and copy the result into the template:
+1. Navigate to **Agents → Agent Details** and select **Add Agent**, then open the **Batch Upload** tab.
+2. Choose how to handle unmatched departments or teams: **create them automatically**, or **skip** the rows that reference them. Set this before you drop the file, since it renders above the drop area.
+3. Download the CSV template from the **example** link on that tab.
+4. Fill in the CSV with the columns below. Build it here and copy the result into the template:
 
 <AgentCsvBuilder />
 
@@ -143,37 +144,34 @@ For onboarding many agents at once:
 
 | Column | Description |
 |--------|-------------|
-| `name` | Full name of the agent |
-| `email` | Email address (must be unique across Vela) |
-| `department` | Must match an existing department name. Matching ignores case |
-| `team` | Must match an existing team name. Matching ignores case |
+| `name` | Full name of the agent. Must not already exist in your organisation |
+| `email` | Email address (must be unique across Vela). Required only where your organisation uses Voice Profiles or Coaching |
+| `department` | Must match an existing department name, unless you chose to create unmatched ones. Matching ignores case |
+| `team` | Must match an existing team name, unless you chose to create unmatched ones. Matching ignores case |
 
-4. Upload the completed CSV
-5. Choose how to handle unmatched departments or teams: **create them automatically**, or **skip** the rows that reference them
-6. Review the import results and address any errors
+5. Drop the file, then select **Save Changes** to upload it.
 
 ![The Add an Agent modal on the Batch Upload tab, with the create and skip options](../../../img/screenshots/settings/agent-bulk.png)
 
+:::caution The upload confirms receipt, not success
+The message you see means Vela accepted the file, not that every row was added. A row is silently dropped where the agent's name already exists, the email is missing or malformed and required, or a department or team is outside your access level. Where your organisation uses Coaching, an email lists what was added and what was skipped. Without Coaching, nothing tells you which rows were dropped, so check the Agent Details table against your CSV afterwards.
+:::
+
 :::note What each agent receives
-Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal. Vela also asks them for a voice sample. That sample builds a Voice ID, which helps Vela attribute calls to the right agent. Agents who have not submitted one show as **Waiting** on the Agent Details table, and you resend the invite yourself from there. Vela does not chase them for you.
+Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal where your organisation uses the Coaching Portal. Where your organisation uses Voice Profiles, Vela also asks the agent for a voice sample, which helps Vela attribute calls to the right agent. Agents who have not submitted one show as **Waiting** on the Agent Details table under **Voice Profile Status**, and you resend the invite yourself from there.
 :::
 
 ### Step 3B: Add Users Individually
 
 1. Navigate to **Settings → Users**
 2. Select **Add User**
-3. Enter name, email, and assign their department, team, role, and access level
+3. Enter their name, email, **Access** level, and role. Department and team appear only when Access is not organisational, and are required in that case.
 
 ![The Add User modal, with Name and Email Address above the Access levels and the Admin and User roles](../../../img/screenshots/settings/users_add.png)
 
 ### Setting Roles and Access
 
-Each user needs:
-- **Role**: Admin (full platform control) or User (operational access)
-- **Access level**: what data they can see
-  - **Organisational**: all departments and teams
-  - **Departmental**: their department only
-  - **Team**: their immediate team only
+Each user needs a **Role**, Administrator or User, and an **Access** level that decides how much of the organisation they see. See [Roles and Access Levels](../../settings-config/access-control.md) for what each combination can do.
 
 ---
 
@@ -183,7 +181,7 @@ The Agent Scorecard defines the evaluation criteria used to score every interact
 
 1. Navigate to **Smart Detector → Agents Scorecard**
 2. Open the **Create** tab
-3. Set the **scope** (organisation, department, or team) that the scorecard applies to
+3. Set the **Scorecard Scope** (organisation, department, or team) that the scorecard applies to
 4. Write your scorecard questions. Each question is a yes/no evaluation point, configured as below.
 5. Select **Create** to save the scorecard. Its questions are active as soon as it is created.
 
@@ -211,9 +209,7 @@ Write each question so that the AI, and human reviewers, can give a clear yes or
 **Smart Search** appears under **Smart Detector** on the plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
 :::
 
-Smart Searches automatically monitor all processed interactions for keywords, phrases, and patterns you define. Set these up before calls are uploaded so monitoring begins immediately.
-
-A Smart Search flags an interaction when the phrases or conditions you define are detected in it.
+A Smart Search automatically monitors every processed interaction and flags one when the phrases or conditions you define are detected in it. Set these up before calls are uploaded so monitoring begins immediately.
 
 1. Navigate to **Smart Detector → Smart Search**
 2. Select **New Smart Search**
@@ -248,7 +244,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 
 1. Navigate to **Smart Detector → Knowledge Base**
 2. On the **PDF Upload** tab, drag and drop your PDF files, or select the upload area to browse for them
-3. Set the **scope** (organisation, department, or team), and optionally add a description
+3. Set **Apply documents to** (organisation, department, or team), and optionally add a description
 4. Select **Upload Files**
 
 ![The Knowledge Base PDF Upload tab, with Apply documents to set to Entire Organisation, an uploaded PDF with its description box, and Upload Files](../../../img/screenshots/settings/knowledge_base.png)
@@ -286,8 +282,7 @@ Once all eight steps are complete, your platform is ready for use.
 
 **Hand-off checklist:**
 - ✅ Point team leads to the [Team Lead Quick Start](./team-lead-quick-start.md) guide
-- ✅ If your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, and direct agents to it for their own portal
-- ✅ If your organisation uses the Coaching Portal, set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences)
+- ✅ Where your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, direct agents to it for their own portal, and set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences)
 
 ---
 
@@ -299,7 +294,7 @@ For general platform issues, such as uploads, playback, or the app not loading, 
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.
 
 **Bulk agent import errors**  
-Check that the CSV has all required columns (name, email, department, team) and that none are empty. Team and department names must match those created in Step 2, unless you use the create option during import.
+Check that the CSV has all four columns (name, email, department, team), and that `name`, `department`, and `team` are not empty. `email` is required only where your organisation uses Voice Profiles or Coaching. Team and department names must match those created in Step 2, unless you use the create option during import. A success message means Vela accepted the file, not that every row was added: check the Agent Details table against your CSV, or the confirmation email where Coaching is enabled.
 
 **Interactions are not being scored**  
 Confirm that scorecard questions exist with a scope covering the relevant team or department. Each question carries its own scope, so that is what decides which interactions it is applied to.

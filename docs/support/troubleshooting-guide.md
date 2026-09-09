@@ -53,7 +53,7 @@ One symptom is worth naming, because it looks like normal behaviour:
 - `Please fill in all fields.` Enter both an email address and a password before selecting **Sign In**.
 - `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it.
 - `We have sent you an email. Please verify your email address.` The account exists but has not been confirmed. Open the invitation email and select **Confirm Account** before signing in.
-- `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link.
+- `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link. {/* UNVERIFIED: this exact string was not found in vela or vela-data source. The other four messages on this page are confirmed verbatim. This one may originate from an upstream auth service. Needs a live screen or engineering to confirm the exact wording. */}
 - `An unexpected error occurred. Please try again later.` The request to Vela failed rather than being refused. Try again in a moment, and contact support if it continues.
 
 If the page fails to load at all, that is a different problem. See [Browser Issues](#browser-issues).

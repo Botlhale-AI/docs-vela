@@ -60,7 +60,7 @@ The Dashboard shows how your teams and agents are scoring over the period you se
 2.  Check **Distribution of Total Scores** to see how scores are spread, and how many agents sit in the red band below the Lower Bound your administrator set. See [Score Boundaries](../reference/glossary.md#score-boundaries).
 3.  Check **Sentiment Distribution in Interactions**, in the **Customer Sentiment** group, for a rising negative share, and **Total Number of Alerts** for a high volume of Smart Search matches. Either can point to a problem across the team rather than one agent.
 
-![The Quality and Performance group, with average score per agent beside the red, amber and green call distribution](../../img/screenshots/dashboard/use_dashboard1.png)
+![The Quality & Performance group, with average score per agent beside the red, amber and green call distribution](../../img/screenshots/dashboard/use_dashboard1.png)
 
 ![The Customer Sentiment group, showing the negative, neutral and positive split](../../img/screenshots/dashboard/use_dashboard.png)
 
@@ -105,11 +105,13 @@ Your choice is remembered per browser, so each machine keeps its own. The Alerts
 
 Filter the list of all interactions to find specific examples based on performance data.
 
-1.  Go to **Interactions** (Calls or Chats).
-2.  Select **Filter** and set any of the options in the **Filter By** modal:
+1.  Go to **Interactions** (Calls or Chats). The **Date range** at the top of the list, with its own pencil icon, scopes the whole list to a period. It is separate from the date fields inside Filter By below.
+2.  Select **Filter** and set any of the options in the **Filter By** modal, among them:
     * **Agent Score:** filter for a score range, for example the lowest performers.
     * **Agent, Team, or Department:** focus reviews on the people you are coaching.
     * **Reviewed:** show everything, only interactions already marked as reviewed, or only those not marked as reviewed.
+    * **Call date** and **Upload date:** two separate date fields, for when the interaction happened and for when it was added to Vela. Neither is the **Date range** control at the top of the list.
+    * Department, team, alerts, tags, direction, topic, and handle or silent time are also available.
 
 ![The Filter By modal for interactions, with the department, team and agent lists](../../img/screenshots/calls/filter_by1.png)
 
@@ -161,12 +163,12 @@ On **Scorecard** and **Smart Questions** the explanation sits behind the informa
 
 ![The Smart Questions tab, with the recorded answers and the download control](../../img/screenshots/calls/detailed-smart-question.png)
 
-On the **Alerts** tab, two columns take you straight to the moment the alert refers to:
+On the **Alerts** tab, a call has two columns that take you straight to the moment the alert refers to, and a chat has one:
 
-* **In Transcript**: select **View** to scroll the transcript to the line that triggered the alert.
-* **In Audio**: select **Listen** to move the player to that second, so you can hear the exchange rather than infer it from a phrase. On a chat this column reads **In Chat**.
+* **In Transcript**: select **View** to scroll the transcript to the line that triggered the alert. On a chat, this is the only column, and it is labelled **In Chat**.
+* **In Audio**: select **Listen** to move the player to that second, so you can hear the exchange rather than infer it from a phrase. Calls only.
 
-Where no timestamp was recorded for a match, both columns read `-`.
+Where no timestamp was recorded for a match, the columns read `-`.
 
 Select **Resolve** once you have acted on the alert. The row then reads **Resolved**.
 
@@ -176,12 +178,12 @@ A tab with nothing to show says so, for example `No alerts detected in call` or 
   src={detailedView}
   alt="The Detailed View of a call: the breadcrumb and the Review Redacted Info and Mark as Reviewed buttons across the top, the Audio player and the Smart Detector analysis tabs down the left, and the Call Details panel on the right"
   points={[
-    { x: 74.5, y: 17.7, title: 'Review Redacted Info and Mark as Reviewed', body: 'Review Redacted Info reveals masked content where you have the permission. Mark as Reviewed records that the interaction is dealt with.' },
+    { x: 74.5, y: 17.7, title: 'Review Redacted Info and Mark as Reviewed', body: 'Where you have View Redactions, this button reads Review Redacted Info and reveals masked content, then Close Redacted Info to mask it again. Without that permission it reads Request Redacted Access instead, and opens a request to an administrator. Mark as Reviewed records that the interaction is dealt with. See Access Requests.' },
     { x: 46.9, y: 25.3, title: 'Audio', body: 'The player for the recording. A chat has no Audio card, and shows the transcript alone.' },
     { x: 81.3, y: 25.1, title: 'Call Details', body: 'The facts about the interaction: the Scores block, then Call ID, the dates, Handle Time, Department, Team, Topic, Direction, and Tags.' },
     { x: 76.1, y: 32.4, title: 'Edit, beside the agent name', body: 'Reassigns the interaction to a different agent. It silently reruns the scorecard when you do, so check the score. See D. Reassign the Agent below.' },
-    { x: 47.9, y: 47.8, title: 'View Comments', body: 'Opens the comments panel, where coaching feedback is added and the agent is tagged with an @ mention.' },
-    { x: 57.6, y: 53.6, title: 'Smart Detector tabs', body: "Vela's analysis, one tab each: Summary, Keywords, Alerts, Intents, Sentiment, Scorecard, Pain Points. The strip scrolls, so use the arrows at its ends." },
+    { x: 47.9, y: 47.8, title: 'View Comments', body: 'Replaces the Smart Detector panel with the comments panel, where coaching feedback is added and the agent is tagged with an @ mention. The same button then reads Smart Detector, to switch back.' },
+    { x: 57.6, y: 53.6, title: 'Smart Detector tabs', body: "Vela's analysis, one tab each: Summary, Keywords, Alerts, Intents, Sentiment, Scorecard, Pain Points, and Smart Questions. Where they do not fit, the strip scrolls sideways." },
   ]}
 />
 
@@ -189,7 +191,7 @@ A tab with nothing to show says so, for example `No alerts detected in call` or 
 
 The player and the transcript follow each other. As the audio plays, the transcript scrolls to keep the current line in view, and selecting a line's timestamp moves the player to that point.
 
-1.  Listen to the **Audio** or read the **Chat Transcript**.
+1.  Listen to the **Audio** card on a call, or read the **Chat** card on a chat.
 2.  Use the **Playback Speed** control to review calls efficiently. Available rates are 0.5x, 0.75x, 1x, 1.25x, 1.5x, and 2x.
 3.  Select a **timestamp** in the transcript to jump to that moment in the recording.
 4.  Switch the transcript between **Original** and **English** when the conversation was not in English. Vela translates every interaction to English as it processes it.
@@ -229,7 +231,7 @@ Vela's assessment gives you a base score. You make the final judgement.
 1.  On the Detailed View, open the **Scorecard** tab in the Smart Detector panel.
 2.  Switch **View** between **Automatic** and **Manual** to find the item you want to change.
 3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript: the AI having missed context is the case for overriding, and the AI being right is the case for leaving the score and coaching instead.
-4.  Select the **edit icon** (pencil) to enter edit mode.
+4.  Select the pencil icon in the **Outcome** column heading to enter edit mode.
 5.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
     * **N/A removes the question from the score** rather than counting it as a failure, so use it where the question did not apply to this conversation. The difference is large: see [How Scoring Works](../explanation/how-scoring-works.md) for a worked example.
 6.  Select **Save Changes**.
@@ -270,11 +272,11 @@ This is quicker than retyping the question, and it keeps the agent's feedback ti
 
 Add specific, time-stamped feedback to make coaching clear and concrete.
 
-1.  Select **View Comments** on the interaction to open the panel.
+1.  Select **View Comments** on the interaction to open the panel. It replaces the Smart Detector panel rather than sitting alongside it, and the button that opened it now reads **Smart Detector**. Select that to go back to the analysis tabs.
 2.  Add your comment. Remember the best practices:
     * **Be specific:** "At 1:45, you missed the required closing statement."
     * **Be constructive:** "Try to summarise the solution before ending the call next time."
-    * **Tag the agent:** type `@` and pick them from the list. Without the tag the comment stays visible to team leads only.
+    * **Tag the agent:** type `@` and select **@agent** from the list. The agent is not listed by name, only as **@agent**. Without the tag the comment stays visible to team leads only.
 3.  The agent can read and respond to your comments in their Agent Portal, where your organisation has the Coaching Portal enabled. Without it, there is no Agent Portal to notify, so tagging the agent is not available and every comment stays visible to team leads only.
 4.  Select **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you select **Resolve** on it.
 5.  Select **Reply** on a comment to answer in the same thread, rather than starting a new one. The agent's replies appear here too.
@@ -301,7 +303,7 @@ Comments cannot be edited or deleted once sent. Read yours back before selecting
 
 Marking an interaction reviewed is what tells the rest of Vela you are done with it.
 
-* Select **Mark as Reviewed** to record that you have finished assessing this interaction. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
+* Select **Mark as Reviewed** to record that you have finished assessing this interaction. The button becomes a green **Reviewed** pill, and hovering it shows who reviewed it and a **Put Back in Review** button to undo it. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
 * If follow-up is needed, add coaching comments for the agent.
 
 :::note Reviewing can be what releases the interaction to the agent
@@ -319,7 +321,7 @@ You can tag without opening an interaction. The **Tags** column on the Interacti
 ![The Tags line of the Call Details panel, with an existing tag beside the Add a tag icon](../../img/screenshots/calls/call-details-tags.png)
 
 1. Select the tag icon to open **Edit Tags**.
-2. On **Select a Tag**, pick one from the list. To make a new one, switch to **Create a Tag**, type the name, and give it a colour. Both are required.
+2. On **Select a Tag**, pick one from the list. To make a new one, switch to **Create a Tag**, type the name, and give it a colour. Both are required, and a colour already used by another tag is refused, so an organisation can hold at most 30 tags, one per colour.
 3. Select **Add Tag**, or **Discard** to abandon it.
 
 ![The Calls list with the Tags column, showing the tag icon on every row](../../img/screenshots/calls/interactions-tags-column.png)

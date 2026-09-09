@@ -7,8 +7,8 @@ type: how-to
 ---
 
 import Hotspots from '@site/src/components/Hotspots';
-import questionFormTop from '@site/img/screenshots/smart-question1.png';
-import questionFormBottom from '@site/img/screenshots/smart-questions2.png';
+import questionFormTop from '@site/img/screenshots/smart_questions/question-form-top.png';
+import questionFormBottom from '@site/img/screenshots/smart_questions/question-form-bottom.png';
 
 # Set Up Smart Questions
 

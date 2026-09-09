@@ -23,7 +23,7 @@ Recordings and transcripts you upload are encrypted in transit and at rest, and 
 You need:
 
 - **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. Check which tab you are on before preparing the file, because the tabs take different formats. See [Supported Formats](#supported-formats) for every limit.
-- **The agent who handled the interaction.** Choosing the agent fills in their team and department for you. All three are required, so an agent recorded with **No Team** or **No Department** leaves those fields empty and the Upload button stays disabled.
+- **The agent who handled the interaction.** This applies to the **Single Upload** call tab and the **Upload** chat tab. Bulk uploads take the agent, team, and department from the file instead, covered under each format below. Choosing the agent fills in their team and department for you. On the call tab, all three are required, so an agent recorded with **No Team** or **No Department** leaves those fields empty and the Upload button stays disabled. On the chat tab, selecting **Upload** with no agent chosen is refused with a message, but a chosen agent with no team or department is not checked before the file is sent, and the upload is rejected afterwards with `Invalid team` or `Team not found for this organisation`.
 - **Access level:** Organisational, Departmental, or Team, covering the agent. See [Access Level](./reference/glossary.md#access-level).
 - **Duration left in your organisation's monthly allocation.** What happens when it runs out depends on the **Duration Usage Setting** an administrator chose: analysis either halts or continues at additional rates. See [Organisation Configuration](./settings-config/organisation-configuration.md).
 
@@ -139,9 +139,9 @@ Upload five to ten files before committing a large historical dataset. Confirmin
 
 <Hotspots
   src={chatUpload}
-  alt="The Upload tab of the chat Uploads page, with the Upload and Bulk Upload tabs above the Agent, Tags, and Interaction ID fields, the CSV drag-and-drop area, and the Upload button"
+  alt="The Upload tab of the chat Uploads page, with the Upload and Bulk Upload tabs above the Agent, Team, Department, Tags, and Interaction ID fields, the CSV drag-and-drop area, and the Upload button"
   points={[
-    { x: 23.5, y: 24.1, title: 'Agent', body: 'The agent who handled the chat, and the only required field. + Create an agent adds one without leaving the page.' },
+    { x: 23.5, y: 24.1, title: 'Agent', body: 'The agent who handled the chat. Choosing them fills in Team and Department. Selecting Upload only checks that an agent is chosen, so an agent recorded with no team or department still uploads, and fails afterwards. + Create an agent adds one without leaving the page.' },
     { x: 27.1, y: 38.9, title: 'Tags', body: 'Labels such as complaint, sales, or billing, so you can filter and report on the chat afterwards. Optional.' },
     { x: 31.3, y: 50.7, title: 'Interaction ID', body: 'Your own reference for the conversation, carried through to the interaction. Optional.' },
     { x: 56.3, y: 77.6, title: 'The upload area', body: 'Drag the CSV in, or select browse your device. The dotted example link above it downloads a sample CSV with the exact layout.' },
@@ -219,13 +219,13 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 |------|---------|------------|
 | Single audio upload | WAV, MP3 | 1 GB |
 | Bulk upload (archive) | WAV or MP3 + metadata.csv, in a ZIP | 3 GB |
-| Single chat upload | CSV | Not stated on the page |
+| Single chat upload | CSV | 3 GB |
 | Bulk chat upload | JSON, in the layout shown above | 1 MB |
 
 Audio files above their limit are rejected before the upload starts, with the message `file too big!`.
 
 :::note Chat file size
-The **Bulk Upload** tab states a 1 MB maximum. The single **Upload** tab states none, so treat 1 MB as the guide for both.
+A single chat CSV is enforced at 3 GB. The **Bulk Upload** tab advises keeping each JSON file to 1 MB, and one file at a time.
 
 Split large exports into several files rather than uploading one big one. A failed upload then costs you one small file rather than the whole export.
 :::
@@ -235,15 +235,6 @@ Split large exports into several files rather than uploading one big one. A fail
 ## Processing
 
 Once uploaded, Vela queues files for processing. Transcription, speaker identification, sentiment analysis, keyword detection, intent classification, and automatic scorecard evaluation all happen during processing, one after another.
-
-```mermaid
-flowchart LR
-    A("Uploaded<br/>the file reaches Vela") --> B("Queued")
-    B --> C("Transcribed<br/>speech to text,<br/>speakers separated")
-    C --> D("Analysed<br/>sentiment, topics, intents,<br/>keywords, pain points")
-    D --> E("Scored<br/>against the scorecards<br/>covering that agent")
-    E --> F("Listed and notified<br/>the interaction appears under<br/>Calls or Chats")
-```
 
 An interaction reaches the **Calls** or **Chats** list once all of that has finished, not when you upload it. An upload you cannot find yet is normally still working through it rather than lost.
 
@@ -257,7 +248,7 @@ Wait for the notification telling you the analysis is ready, then open **Interac
 
 An interaction that is not in the list yet has not finished processing. That is the normal state straight after an upload, so give it time before treating it as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
 
-A bulk upload also shows a results screen naming any rows it could not process. Read that before assuming the whole batch succeeded, because a row rejected there is never processed at all.
+A bulk upload does not show a results screen. Vela emails a count of what uploaded, what was inferred, and what failed, but names no individual rows, so check the batch by comparing what appears in the list against the files you sent. A row rejected during processing is never processed at all.
 
 ---
 
@@ -285,11 +276,13 @@ A bulk upload checks the `metadata.csv` before it processes anything. If it retu
 | `Agent 'X' cannot be created without a team` | The CSV names a new agent with no team | Add that agent's `team` and `department` to the row |
 | `Department name 'X' exceeds the maximum length of 30 characters` | A new department or team name is too long. The same limit applies to both | Shorten the name to 30 characters or fewer |
 | `Team name 'X' contains invalid characters` | The name uses a character outside the allowed set | Use letters, numbers, spaces, hyphens, underscores, or ampersands only |
-| `You are trying to create a new department but you don't have permissions to do that` | Creating a department needs organisational access, and creating a team needs departmental or organisational access | Ask an administrator to create it first, or choose the skip option during import |
+| `You are trying to create a new department but you don't have permissions to do that` | Creating a department needs organisational access, and creating a team needs departmental or organisational access | Ask an administrator to create it first |
 
 A bulk upload can create departments and teams that the CSV names but Vela does not have yet, within your own access level. Creating a department needs organisational access. Creating a team needs departmental or organisational access.
 
-New department and team names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands. A name containing a slash, apostrophe, or full stop is rejected.
+New department and team names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands. A name containing a slash, apostrophe, or full stop is rejected. Reporting that error does not always stop the department being created, so after an upload that ends in one of the errors above, check **Settings → Organisations → Departments and Teams** for a department or team that should not be there, and remove it before uploading again.
+
+A ZIP with no `metadata.csv` at its root, or one directory deep, uploads with no error and no agent, team, or department attached to any interaction. Confirm your `metadata.csv` is present and correctly placed before relying on the upload succeeding.
 
 ---
 

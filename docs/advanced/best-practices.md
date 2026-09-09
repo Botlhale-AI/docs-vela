@@ -23,22 +23,13 @@ What to do at each stage of running QA in Vela. Start from the section you need.
 
 ## Setting Up
 
-Build in this order. Each step needs the one before it.
-
-```mermaid
-flowchart LR
-    D("Departments") --> T("Teams")
-    T --> U("Users and agents")
-    U --> S("Scorecard")
-    S --> M("Smart Searches")
-    M --> UP("First upload")
-```
+Build in this order: Departments, then Teams, then Users and agents, then the Scorecard, then Smart Searches, then your first upload. Each step needs the one before it.
 
 | Step | Do this | Because |
 | :--- | :--- | :--- |
 | **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
 | **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only |
-| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five **Active** searches unless it sets another number, and at the limit **New Smart Search** greys out. Set one to **Inactive** to free a place and keep it |
+| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five searches unless it sets another number, whatever their status, and at the limit **New Smart Search** greys out. Delete one you no longer need to free a place |
 
 :::caution Historical Search is set once
 To cover interactions already in Vela, turn on **Historical Search** as you create the search. The option appears only while you create it, so a search built without it can never be given it later.
@@ -132,8 +123,8 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 2. **Build the CSV from the downloaded template.** Column name mismatches cause most bulk failures.
 3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. Vela drops values it cannot match, and the interaction is then linked to no agent.
 4. **Upload outside busy hours**, and keep the page open until the batch finishes.
-5. **Keep the source audio** until the results screen is clean, then archive it under your organisation's retention policy.
-6. **Read the results screen the same day.** A failure is easier to explain today than in two weeks.
+5. **Keep the source audio** until you have checked every file in the batch appears in the Interactions list, then archive it under your organisation's retention policy.
+6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but names no rows, so compare the list against your batch yourself while the source files are still to hand. A failure is easier to explain today than in two weeks.
 
 ---
 

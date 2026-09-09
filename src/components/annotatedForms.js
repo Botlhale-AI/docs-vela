@@ -1,10 +1,10 @@
 import React from 'react';
 import Hotspots from './Hotspots';
 
-import scorecardScopeImg from '@site/img/screenshots/scorecared1.png';
-import scorecardQuestionImg from '@site/img/screenshots/scorecard2.png';
-import searchTopImg from '@site/img/screenshots/smart1.png';
-import searchBottomImg from '@site/img/screenshots/smart2.png';
+import scorecardScopeImg from '@site/img/screenshots/agents_scorecard/scorecard-scope.png';
+import scorecardQuestionImg from '@site/img/screenshots/agents_scorecard/scorecard-question.png';
+import searchTopImg from '@site/img/screenshots/smart_search/search-form-top.png';
+import searchBottomImg from '@site/img/screenshots/smart_search/search-form-bottom.png';
 import singleUploadImg from '@site/img/screenshots/data_upload/upload2.png';
 
 /*
@@ -75,7 +75,7 @@ export function SmartSearchFormBottom() {
         { x: 15, y: 59, title: 'Historical Search', body: 'Runs the search against interactions uploaded before you created it. Set at creation, and cannot be added later.' },
         { x: 15, y: 68, title: 'Notifications', body: 'Alerts you each time a new match is detected. This one you can change later.' },
         { x: 15, y: 78, title: 'Knowledge Base', body: 'Judges matches against one of your own documents rather than general knowledge.' },
-        { x: 83, y: 88, title: 'Create Smart Search', body: 'Saves the search. It starts matching new interactions straight away.' },
+        { x: 83, y: 88, title: 'Create Smart Search', body: 'Saves the search. It starts matching new interactions straight away if Search Status is Active, above.' },
       ]}
     />
   );
@@ -89,8 +89,8 @@ export function SingleCallUploadForm() {
       points={[
         { x: 61.5, y: 20.7, title: 'Single Upload and Bulk Upload', body: 'Single Upload takes one recording. Bulk Upload takes many at once, as a ZIP archive.' },
         { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call, and the only required field. The list is filtered by your access level, Team and Department fill in from your choice, and + Create an agent adds one without leaving the page.' },
-        { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound. Optional.' },
-        { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional, and worth setting, since you can filter and report on them afterwards.' },
+        { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound, and optional. Leaving it blank means the call is left out of anything filtered or reported by direction.' },
+        { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional, and shared across your organisation, so a tag you create here appears in everyone else\'s filters too.' },
         { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select browse your device. WAV or MP3, up to 1 GB.' },
       ]}
     />

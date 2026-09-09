@@ -147,11 +147,11 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 
 **Problem:** **New Smart Search** is greyed out and cannot be selected.
 
-**Cause:** Your organisation has reached the number of **Active** searches its plan allows, which is five unless your plan sets another number.
+**Cause:** Your organisation has reached the number of searches its plan allows, which is five unless your plan sets another number. The limit counts every search regardless of status, so Inactive searches still use a place.
 
 **Solution:**
 1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
-2. Set a search you are not using to **Inactive**. Only Active searches count towards the limit, so deactivating one frees a place immediately and keeps the search for later. Deleting works too, and you lose the definition.
+2. Delete a search you no longer need. This is the only way to free a place. Setting a search to **Inactive** stops it matching but does not free a place.
 3. If you need more, ask your Account Manager about upgrading your plan for a higher limit.
 
 ---

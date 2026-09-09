@@ -140,6 +140,8 @@ Both numbers are there on purpose. The zero is the verdict: this interaction fai
 
 Read the bracketed number alongside the zero. An agent whose scores are all zeros is not necessarily an agent who is failing at everything.
 
+This is the notation on a single interaction. The **Agents → Performance** table averages many interactions together and reads it differently: see [Monitor Agent Performance](../features/monitor-agent-performance.md#a-find-the-agent) for what a bracketed figure means there.
+
 The same applies to the compliance and quality subtotals. Each can be auto-failed on its own, and each has its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
 
 ## Compliance and quality are two views of one scorecard

@@ -149,7 +149,7 @@ The package name is shown at the bottom of the page. Select **show package detai
 | :--- | :--- |
 | **Package Name** | The package your organisation is on. |
 | **Monthly Allocated Duration (minutes)** | The analysis minutes allocated each month. |
-| **Smart Search Limit** | How many Smart Searches your organisation can have Active at once. Inactive searches are kept without using a place. |
+| **Smart Search Limit** | How many Smart Searches your organisation can have, whatever their status. Setting a search to Inactive does not free a place, only deleting it does. |
 | **Agent Scorecard Limit** | The number of scorecard questions your organisation can hold, counted across every scorecard. Smart Questions are counted separately and do not use the allowance. |
 | **Pain Points Limit** | The number of [pain points](../reference/glossary.md#pain-point) your organisation can hold. |
 

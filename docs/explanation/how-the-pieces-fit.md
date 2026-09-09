@@ -30,9 +30,9 @@ The test is what the answer describes. If it describes **what the agent did**, i
 
 ```mermaid
 flowchart LR
-    A("1. Interactions<br/>nothing else works<br/>without them") --> B("2. Scorecard<br/>decide Historical Search<br/>before you save")
-    B --> C("3. Smart Search<br/>the piece that is<br/>cheap to change")
-    C --> D("4. Reports<br/>built from what<br/>the first three produce")
+    A("Interactions<br/>nothing else works<br/>without them") --> B("Scorecard<br/>decide Historical Search<br/>before you save")
+    B --> C("Smart Search<br/>the piece that is<br/>cheap to change")
+    C --> D("Reports<br/>built from what<br/>the first three produce")
 ```
 
 **Interactions first.** A scorecard with nothing to score and a Smart Search with nothing to match both look broken when they are merely empty. Get a batch of real calls or chats in before you judge anything you have built.

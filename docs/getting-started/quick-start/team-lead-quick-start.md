@@ -31,7 +31,7 @@ A hands-on walkthrough for team leads and managers new to Vela. If you have not 
 
 ### What You Need
 
-- **Active Vela account**: Your administrator should have created your account
+- **Active Vela account**: An account your administrator created for you
 - **Login credentials**: Email verification link or SSO access
 - **A current browser**: Chrome, Edge, Firefox, or Safari
 - **A call recording** in WAV or MP3 format, to upload during Step 3
@@ -104,7 +104,7 @@ An empty list, or the message "You are not part of the selected organization", m
 
 **Your Dashboard gives you an overview of performance within your access level.** That might be your whole organisation, a department, or a single team.  
 
-If no calls or chats have been uploaded in your organisation yet, performance data is not available. In that case, skip ahead to **Step 3**, and you can return to this step once data is available.  
+The Dashboard fills in once your organisation has uploaded and processed calls or chats. If nothing has been uploaded yet, skip ahead to **Step 3** and return to this step once there is data to see.  
 
 Four controls shape everything you see. They are the **Interactions** type, the **Date range**, **Filter**, and **Customise**. The metrics themselves sit in groups you can collapse, such as Alert Metrics and Customer Sentiment, and each card states whether it applies to calls, chats, or all interactions. The rest of this step covers each control in turn.
 
@@ -113,7 +113,7 @@ Four controls shape everything you see. They are the **Interactions** type, the 
 
 ### Essential Controls
 
-**Date range**: open the control labelled **Select Date Range**.
+**Date range**: select the pencil icon beside the date display, at the top of the Dashboard, to open **Select Date Range**.
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
 - Custom range: pick a start and an end date, then select **Save**
 - **Try it now:** Set the date range to "Today" to see current performance
@@ -124,7 +124,7 @@ Four controls shape everything you see. They are the **Interactions** type, the 
 
 ### Key Metrics to Monitor
 
-Your dashboard displays a set of performance indicators. When you are starting out, these three are a good place to begin:
+Your dashboard displays a set of metrics. When you are starting out, these three are a good place to begin:
 
 1. **Average Agent Score (%)**: a quick read on overall performance
 2. **Total Number of Alerts**: issues raised by your Smart Searches that need attention
@@ -150,7 +150,7 @@ Select **Customise** to choose which metrics appear and how each is charted, the
   ]}
 />
 
-The selected metrics show what is on your dashboard now. To add one, scroll to the two controls below the list: pick the metric, then pick its view. **Add Metric** confirms it, and **Cancel** beside it clears the pair.
+The selected metrics show what is on your dashboard now. To add one, select **Add New Metric** below the list. Two controls appear, to pick the metric and its view. **Add Metric** confirms it, and **Cancel** clears the pair and closes them again.
 
 **Try it now:** Add **Top 10 Pain Points in Interactions (Detected)** to your dashboard to monitor common customer issues.
 
@@ -166,16 +166,16 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 ### Uploading a Single Call
 
-<SingleCallUploadForm />
-
 1. Navigate to **Interactions → Calls**
 2. Select **Upload**, then the **Single Upload** tab
 3. Fill in the upload form. Only the **Agent** is required.
 4. Add your audio file, then select **Upload**
 
+<SingleCallUploadForm />
+
 ### Processing Time
 
-While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call, the audio quality, and current server load, and longer calls take longer. Vela emails you when the analysis is complete.
+While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call and the audio quality, and longer calls take longer. Vela emails you when the analysis is complete, using the address and frequency set on the Notifications tab shown below.
 
 ![The Notifications tab, with the platform and email lists and the frequency setting](../../../img/screenshots/settings/notification.png)
 
@@ -201,7 +201,7 @@ After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so they receive a notification. Type `@` and pick them from the list that appears. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal to notify them in, and the `@agent` option does not appear.
+3. **Tag the agent** with @ so they receive a notification. Type `@` and select **@agent** from the list that appears. The agent themselves is not in that list, only the **@agent** option. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal to notify them in, and the `@agent` option does not appear.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
@@ -211,7 +211,7 @@ You cannot tag an agent in a reply to an existing comment. If you need to bring 
 ![The Comments panel with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../../img/screenshots/settings/@agent.png)
 
 :::note Example comment
-Great job handling this difficult customer, @Samke! I liked how you stayed calm when the customer raised their voice, took ownership immediately, and offered a clear solution with a timeline.
+Great job handling this difficult customer, @agent! I liked how you stayed calm when the customer raised their voice, took ownership immediately, and offered a clear solution with a timeline.
 :::
 
 :::tip Comments Best Practices

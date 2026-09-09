@@ -22,7 +22,7 @@ Smart Search is available on plans that include it. Where it is unavailable, ask
 
 - **Your access level sets how far a search can reach.** Organisational access can scope a search to the whole organisation, chosen departments, or chosen teams. Departmental access reaches its own department and the teams in it, and team access reaches one team. See [Access Level](./reference/glossary.md#access-level).
 - **Phrases need nothing set up first, but filters do.** An intent, keyword, topic, or pain point has to already exist in your organisation's lists before you can filter on it. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
-- **Your plan limits the number of searches that can be Active at once**, so prioritise the searches that matter most. Inactive searches are saved without counting towards your limit. See [Search Management](#search-management).
+- **Your plan limits how many searches you can have**, so prioritise the searches that matter most. See [Search Management](#search-management) for what frees a place once you reach it.
 
 New to this? Select **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
 
@@ -141,7 +141,7 @@ A team lead suspects agents are promising refund timelines the business cannot m
 1. **Create the search.** Title it `Refund Promises`. Description: `Flags interactions where the agent commits to a refund or a refund timeline`. Because Vela reads the description when matching, that sentence does as much work as the phrases.
 2. **Add example phrases**: `you'll get your refund by`, `I'll process the refund today`, `the money will be back in your account`.
 3. **Set the scope** to the department handling billing, and the status to **Active**.
-4. **Enable Historical Search** for a specific date range covering last month, so there is something to look at immediately rather than waiting for new calls.
+4. **Turn on Historical Search** for a specific date range covering last month, so there is something to look at immediately rather than waiting for new calls.
 5. **Leave Notifications off** for now. Watch the first batch of matches before deciding whether every one deserves an alert.
 6. **Read the results.** Twenty matches, and **When in Call Matches Occur** shows most of them late in the conversation, at the point agents are closing the call.
 7. **Refine.** Four matches are agents correctly reading the standard refund policy. Tighten the description to say you are looking for a specific date or timeline being promised, not the policy being explained.
@@ -334,7 +334,7 @@ Use **Sort By** to order your searches by **Results** (their match count), highe
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
 | **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
-| **New Smart Search is greyed out** | Your organisation has reached the number of Active searches its plan allows | Set a search you are not using to Inactive, which frees a place and keeps the search. Deleting one works too. For a higher limit, ask your Account Manager about upgrading your plan |
+| **New Smart Search is greyed out** | Your organisation has reached the number of searches its plan allows | Delete a search you no longer need to free a place. Setting one to Inactive does not free a place, it only stops it matching. For a higher limit, ask your Account Manager about upgrading your plan |
 | **A linked search stopped matching** | Its main search was set to Inactive, so there is nothing for it to run against | Set the main search back to Active, or unlink the search |
 
 ---
@@ -349,10 +349,10 @@ Set a search to **Inactive** when it is no longer being acted upon. Alerts nobod
 
 Open a search from the Smart Search list to change its title, description, status, **Apply to** scope, example phrases, **Show results when** setting, and linked Knowledge Base document. **Historical Search cannot be added afterwards**, so a search that needs to cover past interactions has to be created with it enabled.
 
-The same view has a **Delete Search** control for searches you no longer need. Setting a search to **Inactive** is enough to free a place under your plan's limit, which counts Active searches only, so delete a search when you want the definition gone rather than to make room.
+The same view has a **Delete Search** control for searches you no longer need.
 
-:::note Your plan limits how many searches can be Active
-When you reach the limit, **New Smart Search** is greyed out. Set a search you are not using to **Inactive** to free a place while keeping it, or ask your Account Manager about upgrading your plan for a higher limit. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
+:::note Your plan limits how many searches you can have, Active or Inactive
+The limit counts every search that is not a template, whatever its status. Setting a search to **Inactive** stops it matching, but does not free a place, so it does not clear the way for a new one. **Delete Search** is the only way to do that. When you reach the limit, **New Smart Search** is greyed out. Delete a search you no longer need, or ask your Account Manager about upgrading your plan for a higher limit. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
 :::
 
 To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.

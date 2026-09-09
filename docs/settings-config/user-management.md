@@ -29,7 +29,7 @@ What you see is also capped by your own access level. Organisational access show
   points={[
     { x: 27.1, y: 42.8, title: 'Show Deleted Users', body: 'Adds deactivated accounts to the list, shown faded. The button then reads Hide Deleted Users.' },
     { x: 70.5, y: 38.8, title: 'Search', body: 'Matches on name, email address, department, and team. Matching text is highlighted in the results.' },
-    { x: 90.3, y: 44.8, title: 'Add User', body: 'Creates a user account.' },
+    { x: 90.3, y: 44.8, title: 'Add User', body: 'Opens the form to create a user. The Access options offered stop at your own access level, and department or team appear only where Access is not organisational.' },
     { x: 96.3, y: 44.8, title: 'Filter', body: 'Opens the Filter By modal. The fields it offers depend on your own access level.' },
   ]}
 />

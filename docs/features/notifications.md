@@ -67,18 +67,18 @@ On the **Reports** tab there is also a download control beside the eye, so you c
 
 ## 2. What Triggers a Notification
 
-Not everything lands in the same place, which is the usual reason a notification you expected seems to be missing:
+Not everything lands in the same place, which is the usual reason a notification you expected seems to be missing. Vela does not label these categories individually in the interface: an in-app alert reads **Alert Detected** whatever raised it. The categories below describe what triggers each notification and where to find it, not literal text on screen:
 
-| Notification Type | When You Receive It | Where It Appears |
+| What triggers it | When you receive it | Where it appears |
 | :--- | :--- | :--- |
-| **Smart Search alert** | A processed interaction matches one of your Smart Searches | **Alerts** tab |
-| **Smart Question alert** | A Smart Question returns the outcome you set it to alert on, under **Receive notifications when** | **Alerts** tab |
-| **Comment** | Someone comments on an interaction your preferences cover | **Comments** tab |
-| **Report ready** | A scheduled or one-time report has finished generating | **Reports** tab |
-| **Access request** | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
-| **Call processed** | A call has finished transcription and analysis | **Email only.** There is no in-app notification for this |
-| **Course assigned** | A training course has been assigned to you | **Agent Portal**, not the main platform |
-| **Award presented** | An award has been presented to you | **Agent Portal**, not the main platform |
+| A Smart Search match | A processed interaction matches one of your Smart Searches | **Alerts** tab |
+| A Smart Question alert | A Smart Question returns the outcome you set it to alert on, under **Receive notifications when** | **Alerts** tab |
+| A comment | Someone comments on an interaction your preferences cover | **Comments** tab |
+| A finished report | A scheduled or one-time report has finished generating | **Reports** tab |
+| A redaction decision | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
+| A processed call | A call has finished transcription and analysis, subject **Call analysis complete** | **Email only.** There is no in-app notification for this |
+| A course assignment | A training course has been assigned to you | **Agent Portal**, not the main platform |
+| An award | An award has been presented to you | **Agent Portal**, not the main platform |
 
 The last three only appear where they are relevant to your role. Email delivery depends on your own preferences in **Settings → Notifications**.
 

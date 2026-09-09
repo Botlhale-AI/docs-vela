@@ -19,7 +19,7 @@ A few words used throughout the documentation:
 - **Interaction**: a single call or chat.
 - **Agent Scorecard**: the questions every interaction is scored against.
 - **Smart Search**: an automated monitor that flags interactions matching criteria you set.
-- **Scope**: how widely something applies, from the whole organisation down to a single department or team.
+- **Scope**: which parts of the organisation a Smart Search, Smart Question, Scorecard, or Knowledge Base document applies to, from the whole organisation down to a single department or team.
 
 Full definitions are in the [Glossary](../reference/glossary.md).
 :::
@@ -30,28 +30,13 @@ Vela runs in your browser, with nothing to install. See [System Requirements](./
 
 ## What Vela Does
 
-Every interaction follows the same path, from upload to report.
-
-```mermaid
-flowchart LR
-    A("Upload
-    your calls and chats") --> B("Transcribe
-    in 11 languages")
-    B --> C("Analyse and score
-    against your scorecard")
-    C --> D("Review
-    and coach your agents")
-    D --> E("Report
-    on the trends")
-```
-
-Vela handles transcription, analysis, and scoring. Reviewing and reporting are yours.
+Every interaction follows the same path, from upload to report. Vela handles the transcribing, analysing, and scoring on its own. Reviewing an interaction and acting on a report are for you to judge.
 
 1. **Upload**: add calls as WAV or MP3, and chats as CSV or, in bulk, as JSON. See [Upload Your Data](../data-upload.md).
 2. **Transcribe**: calls are transcribed across the 11 spoken official South African languages. Chats are already text.
 3. **Analyse and score**: every interaction is analysed for sentiment and scored against your [Agent Scorecard](../reference/scorecard-fields.md). Sensitive details such as ID numbers and payment information are masked at this stage, where your administrator has configured redaction. On plans that include it, [Smart Search](../smart-search-guide.md) flags the interactions that match your criteria.
 4. **Review**: open an interaction to read the transcript alongside Vela's analysis, override any score, and leave coaching feedback.
-5. **Report**: [Dashboards and Reports](../features/custom-reporting.md) turn the results into trends you can share.
+5. **Report**: [generate reports](../features/custom-reporting.md) to turn the results into trends you can share.
 
 Steps 2 and 3 run in the background after you upload, so you do not wait on the page. Vela emails you when an interaction's analysis is ready.
 
@@ -69,7 +54,7 @@ Transcription covers the 11 spoken official South African languages. These are A
 
 ### Coach and develop agents
 
-If your organisation has the Coaching Portal enabled, you can see where an agent is struggling in a specific category and build a course that targets it. Vela assigns the course to whoever scores in that category within the range you set. You then track whether they finish it, and set up awards that Vela presents automatically to high scorers the same way, with a certificate. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
+Where your organisation has the Coaching Portal enabled, a low score in a category is what you act on: assign a course that targets it, and recognise agents who score well with an award. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
 
 ### Spot patterns across your conversations
 

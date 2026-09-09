@@ -115,6 +115,12 @@ The lowest-scoring agents move to the top of the table, so the people who need a
 
 ![The Performance Overview tab in List View, with the Name, Team, Department, Interactions, Compliance Score, Quality Score, and Score columns](../../img/screenshots/performance/overview.png)
 
+:::note Reading a score with a bracketed figure beside it
+On this table, a score reading `X% (Y%)` is not the same notation as the `0.0% (Y%)` you see on an individual interaction. Here, the first figure is the average with every auto-failed interaction counted as zero, and the bracketed figure is the plain average with no adjustment. Sorting on **Score** sorts on the first, adjusted figure.
+
+The **Export** CSV states the same two numbers in the opposite order, `X% (Fail Score: Y%)`, with the plain average leading and the adjusted figure named and bracketed. Read the label rather than the position when comparing a screen figure against an exported one.
+:::
+
 #### Choose a View
 
 The same agents can be shown two ways. The control sits at the top left, above the table, and it names the view it switches you to. In the list it reads **Board View**. Select it and it reads **List View**.

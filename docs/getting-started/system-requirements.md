@@ -37,19 +37,19 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 
 **Allow these domains:**
 
-- `*.botlhale.ai`, `*.botlhale.tech`, and `*.botlhale.xyz`: the Vela application, its real-time server, and the API. All three are needed, as the API moved to `botlhale.tech` while other services remain on the older domains.
-- `*.amazonaws.com`: AWS S3, used to upload recordings and play back audio. Uploads and playback fail if this is blocked.
+- `*.botlhale.ai`, `*.botlhale.tech`, and `*.botlhale.xyz`: Vela is served across all three, so allow every one of them.
+- `*.amazonaws.com`: AWS S3. Vela fetches audio playback, report downloads, and CSV templates from time-limited S3 links, so blocking this domain breaks those rather than the upload itself. An upload goes to Vela's own servers and is unaffected.
 
 ---
 
 ## File Format Requirements
 
-The format you need depends on what you are uploading and whether it is one file or many. The sections below give the full specification for each:
+The format you need depends on what you are uploading and whether it is one file or many. The sections below give the full specification for each.
 
 ```mermaid
 flowchart LR
-    Q("What are you uploading?") --> C{"Calls"}
-    Q --> H{"Chats"}
+    Q("What are you uploading?") --> C("Calls")
+    Q --> H("Chats")
     Q --> A("Agents")
     C -- One --> C1("WAV or MP3<br/>up to 1 GB")
     C -- Many --> C2("ZIP holding the audio<br/>plus metadata.csv<br/>up to 3 GB")
@@ -58,7 +58,7 @@ flowchart LR
     A --> A1("CSV<br/>name, email,<br/>department, team")
 ```
 
-Each tab takes its own format, so check which one you are on before preparing the file. The chat tabs reject anything else outright. The bulk call tab also takes RAR and 7z, which Vela cannot read, so send it a ZIP. See [Upload Your Data](../data-upload.md).
+Three separate screens take these formats: the calls upload page (**Single Upload** and **Bulk Upload** tabs), the chats upload page (**Upload** and **Bulk Upload** tabs), and the **Add Agent** modal's **Batch Upload** tab. Check which one you are on before preparing the file. The chat tabs reject anything else outright. The bulk call tab also takes RAR and 7z, which Vela cannot read, so send it a ZIP. See [Upload Your Data](../data-upload.md).
 
 ### Audio Files (Calls)
 
@@ -87,7 +87,7 @@ Files larger than 1 GB are rejected before the upload begins.
 - **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
 - **Encoding:** UTF-8
 - **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, select the **example** link on the upload page to download a sample CSV.
-- **Maximum size:** 1 MB per file, as stated on the **Bulk Upload** tab, and one file at a time. The single **Upload** tab states no limit, so use 1 MB as the guide for both. Split a large export into several files rather than uploading one big one.
+- **Maximum size:** 3 GB for a single chat CSV. The **Bulk Upload** tab advises keeping each JSON file to 1 MB and one file at a time, so split a large export into several files rather than uploading one big one.
 
 **JSON Structure Example:**
 ```json
@@ -124,7 +124,7 @@ Use bulk upload to import many call recordings at once.
 | Specification | Requirement | Notes |
 |--------------|-------------|-------|
 | **Format** | ZIP (`.zip`) | Standard ZIP compression |
-| **Maximum size** | 3 GB | Larger batches may time out |
+| **Maximum size** | 3 GB | Rejected before the upload begins if the ZIP is larger |
 | **Contents** | Audio files plus `metadata.csv` | Every file named in the CSV must be present |
 | **Metadata format** | CSV (`.csv`) | UTF-8 encoding required |
 
@@ -147,9 +147,11 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 ```
 
 **Validation rules:**
-- Email addresses must be unique across Vela
-- Team and department names should match existing entries, or use the create option
-- No empty required fields
+- Email addresses must be unique across Vela, and are required only where your organisation uses Voice Profiles or Coaching
+- `name`, `department`, and `team` cannot be empty
+- Team and department names must match existing entries, unless you chose to create unmatched ones on upload
+
+The upload confirming receipt does not mean every row was added. A row with a name that already exists in your organisation is dropped silently. See [Administrator Setup](./quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv).
 
 ---
 
@@ -185,8 +187,10 @@ Passwords must meet a minimum length and mix of characters. For the full list, a
 | An interaction's scorecard | The Scorecard tab, download icon | CSV |
 | Smart Search insights | A search's results, **Download Detailed Insights** | PDF |
 | A list of interactions | Interactions, **Export** | CSV |
+| Agent performance | Agents → Performance, **Export** | CSV |
+| The agent list | Agents → Agent Details, **Export** | CSV |
 
-Downloads open in a new tab, so allow pop-ups for the Vela domain.
+Downloading a report as DOCX opens in a new tab, so allow pop-ups for the Vela domain if that download does nothing when selected. The other downloads in this table save directly, without a pop-up.
 
 ---
 
@@ -207,7 +211,7 @@ Transcription accuracy is highest when:
 This section covers the security controls you manage inside Vela. For how your data is hosted, encrypted, backed up, and the standards Vela meets, see [Security and Compliance](../security-compliance.md).
 
 ### Redaction
-Vela can automatically mask sensitive information in transcripts, so calls and chats are redacted for everyone by default. An administrator configures which details to mask and grants **View Redactions** to the accounts that need it. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
+Vela can automatically mask sensitive information in transcripts. Once an administrator has configured which details to mask, calls and chats are redacted for everyone by default, and the administrator grants **View Redactions** to the accounts that need to see them unmasked. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
 
 ### Access Level
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).
@@ -228,6 +232,14 @@ If Vela does not load, an upload fails, or audio does not play, see [General Iss
 
 ---
 
+## Next Steps
+
+- [Administrator Setup](./quick-start/administrator-setup.md): set Vela up before anyone else uses it
+- [Team Lead Quick Start](./quick-start/team-lead-quick-start.md): review interactions, coach agents, and monitor performance
+- [Upload Your Data](../data-upload.md): the upload steps for the formats listed above
+
+---
+
 ## Need Help?
 
 **Contact Support:** support@botlhale.ai
@@ -237,11 +249,3 @@ If Vela does not load, an upload fails, or audio does not play, see [General Iss
 - Operating system details
 - Description of the issue and steps to reproduce
 - Screenshots or error messages (if available)
-
----
-
-## Next Steps
-
-- [Administrator Setup](./quick-start/administrator-setup.md): set Vela up before anyone else uses it
-- [Team Lead Quick Start](./quick-start/team-lead-quick-start.md): review interactions, coach agents, and monitor performance
-- [Upload Your Data](../data-upload.md): the upload steps for the formats listed above
