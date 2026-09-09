@@ -128,7 +128,7 @@ Automatic masking of sensitive information in transcripts. Administrators choose
 
 **NRP** covers nationality, religion, and political group. Settings shows the abbreviation on its own, so it is the one entity type whose name does not say what it masks.
 
-The masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
+Once an administrator has configured redaction, the masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
 
 ## Review Status
 

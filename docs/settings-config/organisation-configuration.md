@@ -137,7 +137,7 @@ Select the categories of sensitive information Vela masks in call and chat trans
 
 ![The Redactable Entities grid, with Current Package and the Save button below it](../../img/screenshots/settings/redaction.png)
 
-Redaction applies to every user by default, administrators included. For how to view the unmasked version, see [Access Requests](./access-requests-audits.md).
+Once you select at least one entity here, redaction applies to every user by default, administrators included. For how to view the unmasked version, see [Access Requests](./access-requests-audits.md).
 
 ---
 

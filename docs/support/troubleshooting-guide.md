@@ -249,7 +249,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 
 **Problem:** A transcript still shows masked text after **View Redactions** was granted.
 
-**Cause:** Masking is what everyone sees by default, administrators included. The unmasked version is revealed on demand rather than shown automatically.
+**Cause:** Once redaction is configured, masking is what everyone sees by default, administrators included. The unmasked version is revealed on demand rather than shown automatically.
 
 **Solution:**
 1. Open the interaction and select **Review Redacted Info** to reveal the unmasked content.
@@ -264,7 +264,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 
 **Solution:**
 1. Check which entity types are enabled in **Settings**, and add the missing one. See [Organisation Configuration](../settings-config/organisation-configuration.md).
-2. Adding a type applies to interactions processed afterwards. Interactions already processed keep the masking they were given.
+2. Enabling a type takes effect immediately, on every interaction, old and new alike. You do not need to wait for anything to reprocess, and reopening the interaction is enough to see it masked.
 3. Report anything that should have been caught by an enabled type to **support@botlhale.ai**, with the interaction and the entity type, so the detection can be improved.
 
 :::caution Treat an exposure as an incident
@@ -327,7 +327,7 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 **Cause:** The view is returning more data than it needs to. A wide date range across a whole organisation is the usual reason, rather than the browser or the device.
 
 **Solution:**
-1. Narrow the date range, and use **View By** or **Filter** to cover less of the organisation. For example, use "This Week" instead of a multi-month range.
+1. Narrow the date range, and use **Filter** to cover less of the organisation. For example, use "This Week" instead of a multi-month range.
 2. Where a single interaction is slow to open, check its length. A long recording carries a long transcript and takes longer to display.
 3. Where every view is slow but other sites are fine, clear the cache and try a second supported, up-to-date browser to confirm it is Vela rather than the machine.
 4. Where the same narrow view is still slow, contact support with the page, the date range, and the scope you had set.

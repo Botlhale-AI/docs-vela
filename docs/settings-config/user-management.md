@@ -114,7 +114,7 @@ These three settings decide what a user can do and how much they can see.
 | **Access** | organisational, departmental, or team | The user's access level: how much of the organisation's data they see. Shown in the **View** column. |
 | **View Redactions** | `Yes` or `No` | Whether the user can reveal masked information themselves. |
 
-Transcripts are masked for everyone by default, administrators included. **View Redactions** decides how a user gets to the unmasked version. With `Yes`, they reveal it themselves through **Review Redacted Info**. With `No`, they raise a request for each interaction and wait for an administrator to approve it. See [Access Requests](./access-requests-audits.md).
+Once an administrator has configured redaction, masked details are hidden from everyone by default, administrators included. **View Redactions** decides how a user gets to the unmasked version. With `Yes`, they reveal it themselves through **Review Redacted Info**. With `No`, they raise a request for each interaction and wait for an administrator to approve it. See [Access Requests](./access-requests-audits.md).
 
 Administrators hold this permission by default. The **View Redactions** column reads `Yes` for every administrator, and the field disappears from the edit modal when you set the role to `admin`.
 
