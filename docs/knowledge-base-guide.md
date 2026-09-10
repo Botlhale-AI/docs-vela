@@ -28,7 +28,7 @@ The Knowledge Base stores your organisation's procedures, policies, scripts, and
 You can link a Knowledge Base document to:
 
 - an **Agent Scorecard question**, so the AI judges that question against your written procedure rather than generic wording. This shapes the automatic score.
-- a **Smart Search**, so the AI weighs your document when deciding whether an interaction matches. This sharpens what the search flags, it does not change the score.
+- a **Smart Search**, so the AI weighs your document when deciding whether an interaction matches. This sharpens what the search flags but does not change the score.
 - a **Smart Question**, so the AI uses your document when answering the question.
 
 In every case you link the document the same way: in that item's configuration, turn on the Knowledge Base option and select the document.
@@ -57,11 +57,11 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
 ### Step 2: Upload Your Document
 
-1. Drag a PDF onto the upload area, or select the area to browse for one. Knowledge Base accepts PDF files.
+1. Drag one or more PDFs onto the upload area, or select the area to browse for them. Knowledge Base accepts PDF files, and takes several at once.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
-2. Add a **Description** (optional). Say what it covers and which teams or situations it applies to, so you can identify the document later when linking it.
-3. Set the document's scope under **Apply documents to**, choosing the organisation, a department, or a team. The scope controls which users can see and use the document. Set it to match the teams whose interactions the document is relevant to.
+2. Each file you add gets a card of its own. Add a **Description** (optional) on each, saying what it covers and which teams or situations it applies to, so you can identify the document later when linking it. Select the cross on a card to drop that file before uploading.
+3. Set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to.
 4. Select **Upload Files**.
 
 ### Step 3: Link the Document
@@ -125,7 +125,9 @@ Each document is assigned a scope that determines which users can access it. Und
 |-----------|-------------------|
 | **Entire Organisation** | All users across the organisation |
 | **Specific Departments** (or **Entire Department**, if your own access is departmental) | Users belonging to the department or departments you selected |
-| **Specific Teams** (or **Entire Team**, if your own access is team) | Users belonging to the team or teams you selected |
+| **Specific Teams** | Users belonging to the teams you selected |
+
+With team access, **Apply documents to** does not appear at all. Your documents are scoped to your own team automatically, so there is nothing to set.
 
 Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to **Entire Organisation**. A script specific to one team's product line should be scoped to that team.
 
@@ -139,7 +141,7 @@ Update documents when procedures change. AI scoring based on an outdated procedu
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-Before deleting a document, check what still points at it. A scorecard question, Smart Search, or Smart Question that referenced a deleted document falls back to judging against general wording rather than your procedure, and the score it produces changes without anyone editing the question. Relink those items to the new version rather than leaving them pointing at nothing.
+Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question, with **Document is linked to a scorecard question and cannot be deleted**, so repoint or remove those questions first. A document linked only to a Smart Search or a Smart Question can be deleted, which leaves that search or question referencing a document that is no longer there. Repoint those to the replacement document rather than leaving the link dangling. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
 
@@ -155,7 +157,7 @@ Confirm that the document has been explicitly linked to the item that should use
 
 Check the scope on the document with the **expand** icon on its row, which lists the departments or teams it covers. Users outside that scope do not see it.
 
-Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope and deleting the original. Relink anything that pointed at the old copy.
+Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, repointing anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question cannot be deleted until you repoint those questions.
 
 ---
 
