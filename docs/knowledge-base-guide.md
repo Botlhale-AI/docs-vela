@@ -31,7 +31,7 @@ You can link a Knowledge Base document to:
 - a **Smart Search**, so the AI weighs your document when deciding whether an interaction matches. This sharpens what the search flags but does not change the score.
 - a **Smart Question**, so the AI uses your document when answering the question.
 
-In every case you link the document the same way: in that item's configuration, turn on the Knowledge Base option and select the document.
+You link it the same way each time. In the item's own form, turn the Knowledge Base setting on and pick the document. The setting reads **Apply Knowledge Base** on a scorecard question or a Smart Question, and **Use a knowledge base document to enhance this smart search** on a Smart Search.
 
 ```mermaid
 flowchart LR
