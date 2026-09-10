@@ -261,7 +261,7 @@ A summary of the search across the period:
 
 - The search's **name**, **description**, date created, and **status** (Active or Inactive).
 - A **Summary**, showing the **Period Covered** and the **Total Interactions** that matched the search.
-- **Main Insights Highlighted**: an AI-generated summary of the interactions matched by the search. If there is not enough data in the selected period to generate meaningful insights, Vela displays **There are no insights available for this search in the selected time period**. This indicates that there is not enough data, not that something has gone wrong. Where there is enough, it opens with a short overview, then a **Call Reasons** explanation of why the interactions matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF.
+- **Main Insights Highlighted**: an AI-generated summary of the matched interactions. It opens with a short overview, then a **Call Reasons** explanation of why they matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Where too few interactions matched in the period to summarise, Vela shows **There are no insights available for this search in the selected time period** instead. That is expected on a new or narrow search rather than a fault, and widening the period usually fills it.
 
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
 
@@ -361,7 +361,7 @@ To apply a working search to another team or department, create a new search wit
 
 ## Check Your Work
 
-A saved search appears in the Smart Search list immediately. Matches do not, and an empty result is the normal first state rather than a mistake.
+A saved search appears in the Smart Search list immediately. Matches do not, so an empty result is the normal first state.
 
 Unless you turned on **Historical Search**, the search only monitors interactions processed from the moment you saved it, so it stays at zero results until new interactions arrive.
 
