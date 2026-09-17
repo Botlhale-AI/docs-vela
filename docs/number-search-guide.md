@@ -8,7 +8,7 @@ type: how-to
 
 # Search by Phone Number
 
-Number Search answers a question the Interactions list cannot: what has this customer been through? Give it a phone number and it gathers every call involving that number, then writes a read across the whole history rather than one conversation at a time.
+Number Search answers a question the Interactions list cannot. What has this customer been through? Give it a phone number, and it finds every call involving that number. It then gives you a read across the whole history, instead of one conversation at a time.
 
 Use it before calling a customer back, or when a complaint arrives and you need the context behind it.
 
@@ -49,7 +49,7 @@ The results page holds two sections, both of which open and close:
 
 | Section | What it holds |
 | :--- | :--- |
-| **Number Search Details** | The number, **Total Interactions**, **Period Covered**, and the AI's read of the history |
+| **Number Search Details** | The number, **Period Covered**, **Total Interactions**, and the AI's read of the history |
 | **Returned Interactions** | The calls themselves, in the same table as the Interactions list |
 
 ![The Number Search results page, with the Number Search Details and Returned Interactions sections closed below the search field and the All time date control](../img/screenshots/smart_detector/number_search3.png)
@@ -62,7 +62,17 @@ Open **Number Search Details** for three pieces of analysis across the whole his
 | **Pain Points** | Up to five recurring frustrations, unresolved issues, or bad experiences, drawn only from what the calls support |
 | **Key Insights** | Up to five patterns or facts worth knowing before the next call |
 
+![The Number Search Details section open, with the searched number masked, Period Covered, Total Interactions, a Summary, and the start of Pain Points](../img/screenshots/number_search/number-search.png)
+
+![The rest of Pain Points, the Key Insights list, and the Download Report link at the bottom of Number Search Details](../img/screenshots/number_search/number-search2.png)
+
 Open **Returned Interactions** to reach the calls behind that read, and open any one of them to read it in full.
+
+![The Returned Interactions section open, with the calls in the same table as the Interactions list](../img/screenshots/number_search/number-search3.png)
+
+:::note Same period, two controls
+**Returned Interactions** shows its own **Date range** control, in the calls table's own toolbar. It is synced to **Period Covered** next to the search field, so narrowing one narrows the other.
+:::
 
 The search field stays on the results page, so you can look up another number without going back.
 
@@ -72,7 +82,11 @@ The analysis is written from each call's topic, summary, and alerts rather than 
 
 ## 3. Narrow to a Period
 
-Set a date range to limit the history to a period, which is useful when an older pattern is drowning out a recent one. **Period Covered** updates to match.
+Select the pencil on the date control to open **Select Date Range**, which is useful when an older pattern is drowning out a recent one. **Period Covered** updates to match, and so does the **Date range** inside **Returned Interactions**.
+
+![The Select Date Range dialog, with From and To fields, a calendar, and Today, Yesterday, This Week, Last Week, This Month, and Last Month presets](../img/screenshots/number_search/date-control.png)
+
+Set **From** and **To** directly, or select one of the presets, then **Save**. **Close** discards the change.
 
 Select **Clear date filter** to go back to the full history.
 
@@ -81,6 +95,8 @@ Select **Clear date filter** to go back to the full history.
 ## 4. Take It With You
 
 Select **Download Report** to save the results as a PDF, including the summary, pain points, key insights, and the interactions behind them.
+
+![The Download Report link, at the bottom of Number Search Details](../img/screenshots/number_search/download-report.png)
 
 This is the version to bring to a call or attach to an escalation, since it holds the reasoning rather than a link someone else may not be able to open.
 
