@@ -11,14 +11,14 @@ import topicsPage from '@site/img/screenshots/smart_detector/topics-page1.png';
 
 # Manage Smart Search Terms
 
-Your Smart Search terms are the four lists of things Vela looks for in your interactions. They are **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list has two sources. Vela adds what it finds on its own, and you add the terms your organisation cares about. This page covers how to read those lists and how to add your own terms.
+Your Smart Search terms define what Vela looks for in your interactions. They are organised into four categories: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list combines terms Vela identifies automatically with terms you add based on your organisation's priorities. This section explains how to review the lists and add your own terms.
 
 These terms feed the rest of Vela. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and when you [generate reports](./features/custom-reporting.md).
 
 ```mermaid
 flowchart LR
-    D("Detected<br/>Vela finds these<br/>on its own") --> L("The four lists:<br/>Topics, Intents,<br/>Keywords, Pain Points")
-    C("Created<br/>you add these<br/>manually") --> L
+    D("<b>Detected</b><br/>Vela finds these<br/>on its own") --> L("The four lists:<br/>Topics, Intents,<br/>Keywords, Pain Points")
+    C("<b>Created</b><br/>you add these<br/>manually") --> L
     L --> S("Criteria you can<br/>build a Smart Search on")
     L --> M("Metrics on your<br/>Dashboard and in Reports")
     S --> A("Alerts on the interactions<br/>that match")
@@ -27,7 +27,7 @@ flowchart LR
 A term you create is not a search. It is an ingredient a search can use, and a figure the Dashboard can count.
 
 :::info Plan availability
-On plans that do not include Smart Search, only **Topics** is available. Intents, Keywords, and Pain Points do not appear.
+Only **Topics** is available on [Lite](./reference/glossary.md#lite). Intents, Keywords, and Pain Points need Smart Search. To change your plan, contact your organisation's administrator.
 :::
 
 ---
@@ -37,14 +37,14 @@ On plans that do not include Smart Search, only **Topics** is available. Intents
 You need:
 
 - **Your organisation's own wording.** The terms worth adding are the ones your business uses and the ones your customers say, so have them to hand rather than inventing them at the keyboard.
-- **To know which lists your plan offers.** On plans without Smart Search, only **Topics** is available.
+- **To know which lists your plan offers.** Only **Topics** is available on [Lite](./reference/glossary.md#lite).
 - **Nothing set up first.** These lists exist from day one, and Vela fills the detected side on its own as interactions are analysed.
 
 ---
 
 ## 1. Opening a List
 
-These lists are not in the left sidebar. Select **Smart Detector** in the sidebar to open its landing page, then choose **Topics**, **Intents**, **Keywords**, or **Pain Points** from the entries below the feature cards.
+Select **Smart Detector** in the sidebar to open its landing page, then choose **Topics**, **Intents**, **Keywords**, or **Pain Points** from the entries below the feature cards.
 
 ![The Topics, Intents, Keywords, and Pain Points entries on the Smart Detector landing page, below the feature cards](../img/screenshots/smart_detector/smart-detector-landing.png)
 
@@ -65,7 +65,7 @@ Each page is split into two sections you expand and collapse.
   ]}
 />
 
-**Keywords works differently.** Vela does not detect keywords on its own, so the Keywords page has only a **Created Search Keywords** section. A keyword matches only when you have added it.
+**Keywords works differently.** Vela does not detect keywords automatically, so the Keywords page has only a **Created Search Keywords** section. A keyword matches only when you have added it.
 
 Both tables show the term, **Date Created**, and **Last Detected**.
 
@@ -101,14 +101,14 @@ Open the **Created Search** section and select the button at the top right. Its 
 | **Keywords** | The keyword. |
 | **Pain Points** | The pain point, and a **Description**. Both are required. |
 
-Select the confirm button in the modal to save, or **Close** to abandon it. The term appears in the Created section straight away.
+Confirm your action in the modal to save, or **Close** to abandon it. The term appears in the Created section straight away.
 
 ![The Add New Pain Point modal, with the Pain Point and Description fields. It is the only one of the four lists with a second field](../img/screenshots/smart_detector/add-pain-point.png)
 
 Each term needs text, and must be different from every term already in the list. Vela reports either problem rather than saving.
 
 :::tip Write terms the way people say them
-A keyword is matched against what was actually said. Terms taken from an internal process document often never appear in a conversation. Prefer the customer's wording.
+A keyword is matched against what was actually said. Terms taken from an internal process document often never appear in a conversation. Use the words and phrases your customers naturally use when describing their needs.
 :::
 
 ---
