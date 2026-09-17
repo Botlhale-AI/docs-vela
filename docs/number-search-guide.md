@@ -37,10 +37,6 @@ You need:
 
 Before you search, the page reads **Enter a phone number to view all interactions associated with it**. That is the resting state rather than an empty result.
 
-:::note Number Search has no sidebar entry
-Like the other tools on the Smart Detector home page, you reach it through that page rather than the left sidebar.
-:::
-
 ---
 
 ## 2. Read the History

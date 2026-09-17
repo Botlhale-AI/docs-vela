@@ -130,7 +130,7 @@ The main search must cover at least the same scope as this one. An organisation-
 
 ### Use a Knowledge Base Document
 
-Turn on **Knowledge Base** and select a document to have Vela use its content as reference when matching your phrases. This helps the search judge interactions against your own procedures rather than generic wording. The document must be within the search's scope. See [Knowledge Base](./knowledge-base-guide.md).
+Turn on **Knowledge Base** and select a document to have Vela use its content as reference when matching your phrases. This helps the search analyse interactions against your own procedures rather than generic wording. The document must be within the search's scope. See [Knowledge Base](./knowledge-base-guide.md).
 
 ---
 

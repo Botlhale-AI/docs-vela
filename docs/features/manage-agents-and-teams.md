@@ -105,7 +105,7 @@ The **Voice Profile Status** column shows where each agent stands, and carries t
 | **Waiting** | Invited, no sample provided yet | Resend the invite if it has been a while |
 | *(a toggle)* | A sample has been provided | Switch the profile off to stop Vela using it, and on again to resume |
 
-The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers on its own.
+The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers automatically.
 
 Where a sample exists, the column shows a toggle rather than a word. **Export** names the same two states in writing, as **Active** and **Inactive**, so use the export when you want the status of a whole list at once rather than reading toggles row by row.
 

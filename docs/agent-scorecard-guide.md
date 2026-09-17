@@ -91,9 +91,9 @@ Write those positively too, then set **Expected Outcome** to **No**. The questio
 Keep the two kinds apart when you read the Results tab. A high failure rate on a scored question is a performance problem. A high failure rate on one of these is a finding.
 :::
 
-For questions the AI cannot judge from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it manually. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
+For questions the AI cannot answer from the transcript alone, set **Search Type** to **Manual** so a reviewer answers it manually. The question then sits at N/A on every interaction until someone opens it and sets an outcome, so use it only where you have the review capacity.
 
-Where the answer depends on your own procedure rather than general knowledge, turn on **Apply Knowledge Base** instead, and the AI judges the question against a document you have uploaded. See [Build Your Knowledge Base](./knowledge-base-guide.md).
+Where the answer depends on your own procedure rather than general knowledge, turn on **Apply Knowledge Base** instead, and the AI analyses the question against a document you have uploaded. See [Build Your Knowledge Base](./knowledge-base-guide.md).
 
 ---
 

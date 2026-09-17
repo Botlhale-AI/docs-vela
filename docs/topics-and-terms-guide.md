@@ -17,7 +17,7 @@ These terms feed the rest of Vela. They appear as criteria when you build a [Sma
 
 ```mermaid
 flowchart LR
-    D("<b>Detected</b><br/>Vela finds these<br/>on its own") --> L("The four lists:<br/>Topics, Intents,<br/>Keywords, Pain Points")
+    D("<b>Detected</b><br/>Vela finds these<br/>automatically") --> L("The four lists:<br/>Topics, Intents,<br/>Keywords, Pain Points")
     C("<b>Created</b><br/>you add these<br/>manually") --> L
     L --> S("Criteria you can<br/>build a Smart Search on")
     L --> M("Metrics on your<br/>Dashboard and in Reports")
@@ -27,7 +27,7 @@ flowchart LR
 A term you create is not a search. It is an ingredient a search can use, and a figure the Dashboard can count.
 
 :::info Plan availability
-Only **Topics** is available on [Lite](./reference/glossary.md#lite). Intents, Keywords, and Pain Points need Smart Search. To change your plan, contact your organisation's administrator.
+Only **Topics** is available on [Lite](./reference/glossary.md#lite). Intents, Keywords, and Pain Points need Smart Search. Where they are unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -38,7 +38,7 @@ You need:
 
 - **Your organisation's own wording.** The terms worth adding are the ones your business uses and the ones your customers say, so have them to hand rather than inventing them at the keyboard.
 - **To know which lists your plan offers.** Only **Topics** is available on [Lite](./reference/glossary.md#lite).
-- **Nothing set up first.** These lists exist from day one, and Vela fills the detected side on its own as interactions are analysed.
+- **Nothing set up first.** These lists exist from day one, and Vela fills the detected side automatically as interactions are analysed.
 
 ---
 
@@ -59,7 +59,7 @@ Each page is split into two sections you expand and collapse.
   alt="The Topics page: Search and Sort at the top right, the Last Detected date range below them, the collapsed Detected Topics section, and the open Created Search Topics section with its New Topic button and its table of Topic, Date Created, Last Detected, and Actions"
   points={[
     { x: 72.9, y: 22.7, title: 'The Last Detected date range', body: 'Filters both sections on Last Detected.' },
-    { x: 36.5, y: 41.9, title: 'Detected', body: 'Terms Vela found on its own while analysing your interactions. Read-only, and collapsed when you arrive.' },
+    { x: 36.5, y: 41.9, title: 'Detected', body: 'Terms Vela found automatically while analysing your interactions. Read-only, and collapsed when you arrive.' },
     { x: 41.7, y: 58.4, title: 'Created Search', body: 'Terms your organisation added manually, and the only ones you can edit and delete. Open when you arrive.' },
     { x: 83.4, y: 83.1, title: 'Actions', body: 'Edit and delete, on the Created Search table only.' },
   ]}

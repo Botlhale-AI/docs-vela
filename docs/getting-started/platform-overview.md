@@ -30,7 +30,7 @@ Vela runs in your browser, with nothing to install. See [System Requirements](./
 
 ## What Vela Does
 
-Every interaction follows the same path, from upload to report. Vela handles the transcribing, analysing, and scoring on its own. Reviewing an interaction and acting on a report are for you to judge.
+Every interaction follows the same path, from upload to report. Vela handles the transcribing, analysing, and scoring automatically. Reviewing an interaction and acting on a report are for you to judge.
 
 1. **Upload**: add calls as WAV or MP3, and chats as CSV or, in bulk, as JSON. See [Upload Your Data](../data-upload.md).
 2. **Transcribe**: calls are transcribed across the 11 spoken official South African languages. Chats are already text.

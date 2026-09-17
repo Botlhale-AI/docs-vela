@@ -78,7 +78,7 @@ Dashboard and report metrics still label the second group **(Organisational)**, 
 
 This lets you separate what the AI found from what you told it to look for.
 
-Keywords have one source. Vela does not detect them on its own, so a keyword matches only where your team has added it.
+Keywords have one source. Vela does not detect them automatically, so a keyword matches only where your team has added it.
 
 To read either list, or to add your own terms, see [Manage Smart Search Terms](../topics-and-terms-guide.md).
 
@@ -104,7 +104,7 @@ A single customer conversation, either a **call** (voice) or a **chat** (text). 
 
 ## Keyword
 
-A specific term your organisation tracks across interactions. Unlike topics, intents, and pain points, the AI never detects keywords on its own, so a keyword exists only after someone adds it under **Smart Detector → Keywords**.
+A specific term your organisation tracks across interactions. Unlike topics, intents, and pain points, the AI never detects keywords automatically, so a keyword exists only after someone adds it under **Smart Detector → Keywords**.
 
 Once added, a keyword can be used as a Smart Search filter, and it appears in the keyword metrics on your Dashboard and in reports. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
 

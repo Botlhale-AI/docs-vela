@@ -77,10 +77,10 @@ Whether the AI can use N/A comes down to the question's **Always Applicable** se
 
 The default costs something either way. Without a cue in the wording, a question left Off is scored No on the calls it does not fit, which lands the agent where switching Always Applicable on would have left them anyway. The wording is what earns the N/A.
 
-For questions the AI cannot judge from the transcript, two settings help:
+For questions the AI cannot answer from the transcript, two settings help:
 
 - **Search Type: Manual** hands the question to a reviewer. It stays N/A until they answer.
-- **Apply Knowledge Base** judges the question against one of your own documents rather than general knowledge, which is what questions like "did the agent complete full verification?" need. See [Knowledge Base](../knowledge-base-guide.md).
+- **Apply Knowledge Base** analyses the question against one of your own documents rather than general knowledge, which is what questions like "did the agent complete full verification?" need. See [Knowledge Base](../knowledge-base-guide.md).
 
 ## Expected Outcome exists because questions are not always positive
 
@@ -124,7 +124,7 @@ This applies backwards across your whole history, and it moves the **Initial** s
 Change weights deliberately, record when you did it, and compare periods either side of the change rather than reading the whole history as one measurement.
 :::
 
-The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are judged against the new setting, so answers that read as passes can become failures.
+The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are compared against the new setting, so answers that read as passes can become failures.
 
 **Rerun Scorecard** covers one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against the questions applying now. An interaction that already has a score keeps that score when you use this specific button, so it is not a route to picking up questions added since. Reassigning the agent on an already-scored interaction does pick them up, silently, which is the exception noted above.
 
@@ -184,7 +184,7 @@ The reason for keeping both is accountability rather than nostalgia. A score a h
 
 Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before deciding it was wrong. Where the reasoning holds up and the answer still feels harsh, reword the question. That fixes it once, whereas overriding the same item every week fixes it never.
 
-## What the AI judges well, and what it does not
+## What the AI analyses well, and what it does not
 
 Being clear about this protects you from over-trusting the number.
 

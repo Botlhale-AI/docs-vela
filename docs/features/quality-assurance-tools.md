@@ -220,7 +220,7 @@ Use this to correct a genuine misassignment, such as a recording uploaded under 
 
 Your manual scorecard and comments are the core of the quality process, turning the analysis into coaching the agent can act on.
 
-The Scorecard tab has a **View** control with two settings. **Automatic** is Vela's own assessment of the interaction, judged against a Knowledge Base document on any question set to use one. **Manual** is yours. Where the two differ, your outcome is the one that counts, and both stay visible so an agent can see which is which.
+The Scorecard tab has a **View** control with two settings. **Automatic** is Vela's own assessment of the interaction, analysed against a Knowledge Base document on any question set to use one. **Manual** is yours. Where the two differ, your outcome is the one that counts, and both stay visible so an agent can see which is which.
 
 ### A. Complete a Manual Scorecard
 

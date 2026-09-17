@@ -36,7 +36,7 @@ You link it the same way each time. In the item's own form, turn the Knowledge B
 ```mermaid
 flowchart LR
     U("Upload a PDF<br/>on its own it changes<br/>nothing") --> L{"Link it to"}
-    L --> S("<b>Scorecard question</b><br/>judged against your procedure<br/>→ changes the score")
+    L --> S("<b>Scorecard question</b><br/>analysed against your procedure<br/>→ changes the score")
     L --> M("<b>Smart Search</b><br/>weighed when matching<br/>→ changes what is flagged")
     L --> Q("<b>Smart Question</b><br/>used when answering<br/>→ changes the answer")
 ```
@@ -75,7 +75,7 @@ Uploading a document makes it available in the Knowledge Base, but Vela only use
 
 ![The Knowledge Base option at the foot of the Smart Search form, reading "Use a knowledge base document to enhance this smart search"](../img/screenshots/smart_search/knowledge_base.png)
 
-To use the document when **scoring**, link it to an Agent Scorecard question instead, in the same way, under **Smart Detector → Agents Scorecard**. The AI then judges that question against the document rather than generic wording.
+To use the document when **scoring**, link it to an Agent Scorecard question instead, in the same way, under **Smart Detector → Agents Scorecard**. The AI then analyses that question against the document rather than generic wording.
 
 :::tip Picking the document on the question form
 Setting **Apply Knowledge Base** to **Yes** on a scorecard question opens a **Knowledge Base Document** box on the spot. It has a search field for finding one of your existing documents, and a preview so you can check you picked the right one.
