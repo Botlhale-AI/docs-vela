@@ -84,7 +84,7 @@ The analysis is written from each call's topic, summary, and alerts rather than 
 
 Select the pencil on the date control to open **Select Date Range**, which is useful when an older pattern is drowning out a recent one. **Period Covered** updates to match, and so does the **Date range** inside **Returned Interactions**.
 
-![The Select Date Range dialog, with From and To fields, a calendar, and Today, Yesterday, This Week, Last Week, This Month, and Last Month presets](../img/screenshots/number_search/date-control.png)
+![The Select Date Range window, with From and To fields, a calendar, and Today, Yesterday, This Week, Last Week, This Month, and Last Month presets](../img/screenshots/number_search/date-control.png)
 
 Set **From** and **To** directly, or select one of the presets, then **Save**. **Close** discards the change.
 
