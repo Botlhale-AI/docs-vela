@@ -7,7 +7,7 @@ type: how-to
 ---
 
 # Build Your Knowledge Base
-The Knowledge Base holds your own documents, so the AI can judge interactions against your procedures and product information instead of generic wording.
+The Knowledge Base holds your organisation documents, so the AI can analyse interactions against your procedures and product information instead of generic wording.
 
 ---
 
@@ -16,7 +16,7 @@ The Knowledge Base holds your own documents, so the AI can judge interactions ag
 You need:
 
 - **Your document as a PDF.** The Knowledge Base accepts PDF only. Convert a Word or Google document before you start.
-- **To know which teams the document applies to.** You set a scope on upload, and it decides who can see and use the document. Getting this wrong is the usual reason a colleague cannot find a document you uploaded, and scope is fixed once the document is in, so decide it before you upload rather than after.
+- **To know which teams the document applies to.** Choose your document's scope carefully. Once uploaded, it cannot be changed, and selecting the wrong scope may prevent colleagues from finding the document.
 - **Somewhere to link it.** A document on its own does nothing. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
 
 ---
@@ -27,7 +27,7 @@ The Knowledge Base stores your organisation's procedures, policies, scripts, and
 
 You can link a Knowledge Base document to:
 
-- an **Agent Scorecard question**, so the AI judges that question against your written procedure rather than generic wording. This shapes the automatic score.
+- an **Agent Scorecard question**, so the AI analyses that question against your written procedure rather than generic wording. This shapes the automatic score.
 - a **Smart Search**, so the AI weighs your document when deciding whether an interaction matches. This sharpens what the search flags but does not change the score.
 - a **Smart Question**, so the AI uses your document when answering the question.
 
@@ -36,9 +36,9 @@ You link it the same way each time. In the item's own form, turn the Knowledge B
 ```mermaid
 flowchart LR
     U("Upload a PDF<br/>on its own it changes<br/>nothing") --> L{"Link it to"}
-    L --> S("Scorecard question<br/>judged against your procedure<br/>→ changes the score")
-    L --> M("Smart Search<br/>weighed when matching<br/>→ changes what is flagged")
-    L --> Q("Smart Question<br/>used when answering<br/>→ changes the answer")
+    L --> S("<b>Scorecard question</b><br/>judged against your procedure<br/>→ changes the score")
+    L --> M("<b>Smart Search</b><br/>weighed when matching<br/>→ changes what is flagged")
+    L --> Q("<b>Smart Question</b><br/>used when answering<br/>→ changes the answer")
 ```
 
 Uploading is only half of it. A document nobody has linked is the most common reason the Knowledge Base appears to have no effect.
@@ -57,10 +57,10 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
 ### Step 2: Upload Your Document
 
-1. Drag one or more PDFs onto the upload area, or select the area to browse for them. Knowledge Base accepts PDF files, and takes several at once.
+1. Drag one or more PDFs onto the upload area, or select the area to browse for them. Knowledge Base accepts PDF files.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
-2. Each file you add gets a card of its own. Add a **Description** (optional) on each, saying what it covers and which teams or situations it applies to, so you can identify the document later when linking it. Select the cross on a card to drop that file before uploading.
+2. Each file you add gets a card of its own. Add a **Description** (optional) on each, saying what it covers and which teams or situations it applies to, so you can identify the document later when linking it. Select the cross on a card to remove that file before uploading.
 3. Set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to.
 4. Select **Upload Files**.
 
@@ -91,11 +91,11 @@ The table below the upload area is where you manage what is already there:
 
 | Control | What it does |
 | :--- | :--- |
-| The tick box on a row | Selects the document. **Select all** at the head of the column takes every row |
+| The tick box on a row | Selects the document. **Select all** at the head of the column ticks every row |
 | **Download selected documents** | Downloads everything you have ticked in one go |
 | The **eye** icon | Opens the document to read it without downloading |
 | **Download document** | Downloads that one document |
-| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to |
+| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has no expand icon. Check its **Scope** column instead, which already reads **Entire Organisation** |
 | **Edit filename** | Renames the document in Vela |
 | **Delete** | Removes the document from the Knowledge Base, after a confirmation |
 
@@ -141,7 +141,7 @@ Update documents when procedures change. AI scoring based on an outdated procedu
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question, with **Document is linked to a scorecard question and cannot be deleted**, so repoint or remove those questions first. A document linked only to a Smart Search or a Smart Question can be deleted, which leaves that search or question referencing a document that is no longer there. Repoint those to the replacement document rather than leaving the link dangling. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
+Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question, with **Document is linked to a scorecard question and cannot be deleted**. To delete it, relink the question to another document or remove the question first. A document linked only to a Smart Search or a Smart Question can be deleted, which leaves that search or question referencing a document that is no longer there. Relink those to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
 
@@ -151,13 +151,13 @@ Review the documents in your Knowledge Base at least quarterly and whenever a si
 
 **The Knowledge Base document does not appear to be affecting AI scoring.**
 
-Confirm that the document has been explicitly linked to the item that should use it, whether that is a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document to the Knowledge Base does not apply it anywhere on its own. You create the link yourself in that item's configuration.
+Confirm that the document has been explicitly linked to the item that should use it, whether that is a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document is only the first step. To use it, link it to the relevant item in its settings.
 
 **Uploaded document is not visible to certain team leads or agents.**
 
-Check the scope on the document with the **expand** icon on its row, which lists the departments or teams it covers. Users outside that scope do not see it.
+Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon on its row to see which ones. A document scoped to **Entire Organisation** has no expand icon. Check its **Scope** column instead, which already reads **Entire Organisation**. Only users within the scope shown can see the document.
 
-Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, repointing anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question cannot be deleted until you repoint those questions.
+Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, relinking anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question cannot be deleted until you relink those questions.
 
 ---
 
@@ -165,7 +165,7 @@ Scope is fixed at upload. The Document Library lets you rename and delete a docu
 
 The document appears in the **Document Library** with its name, description, upload date, and scope. That confirms the upload, not that Vela is using it.
 
-To confirm it is actually in use, open the scorecard question, Smart Search, or Smart Question you linked it to and check that **Apply Knowledge Base** is on and your document is the one selected. A document that is uploaded but linked to nothing changes no scores and flags no interactions.
+To confirm it is actually in use, open the scorecard question, Smart Search, or Smart Question you linked it to and check that **Apply Knowledge Base** is on and your document is the one selected.
 
 ---
 
