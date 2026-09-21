@@ -70,22 +70,22 @@ The Coaching Portal is an add-on with its own documentation. Creating courses, t
 <!-- ### Knowledge Base
 We've added the ability to upload your knowledge base and a well-defined description for your documents into Vela. This feature is available as an add-on and allows Vela to analyse calls more effectively and assess agent performance based on your specific business context.
 
-### Scorecard Results
+#### Scorecard Results
 View the results of the agent scorecard at a question level. Find this on the new Results tab on the Agent Scorecard page in the Smart Detector.
 
-### Smart Search Insights
+#### Smart Search Insights
 Vela now provides explanations for smart search results, giving you deeper context and understanding behind the data.
 
-### Filtered Historical Smart Searches & Scorecards
+#### Filtered Historical Smart Searches & Scorecards
 Apply newly created smart searches and scorecard questions to a selected subset of historical interactions, giving you greater flexibility and precision when reviewing past performance.
 
-### Interactions Section
+#### Interactions Section
 Chats are now available in Vela! The Calls page has been moved into the new Interactions section, which now includes both Calls and Chats for improved data segmentation.
 
-### Data Upload APIs
+#### Data Upload APIs
 The chats API allows clients to send their chat text data to Botlhale for processing on Vela. The call API allows clients to send their call voice data to Botlhale for processing on Vela.
 
-### Interactions Metadata
+#### Interactions Metadata
 Include rich interaction metadata when sending and loading your interactions to Vela (manually via the platform's Upload functionality, or automatically via APIs). -->
 
 ### Improvements
@@ -119,32 +119,6 @@ We have resolved an issue that caused dashboard configurations to reset on reloa
 
 ### Users Table
 We've updated the users page for a better user experience! Now, only the table scrolls horizontally, keeping the rest of the page static for improved navigation and readability. -->
-
-### What's Next?
-
-#### Enhanced Coaching Features
-Work on the Coaching Portal continues.
-
-#### Improving Smart Detector
-Work on [Smart Detector](./smart-detector-overview.md) continues.
-
-#### Voice ID Notifications
-- We'll automatically send emails to agents who have not submitted a sample for Voice ID. Voice profiles are set up today in [Manage Agents and Teams](./features/manage-agents-and-teams.md#4-set-up-voice-profiles).
-
-#### Vela Redesign
-We're continuing to redesign Vela's UI for an even better user experience with:
-- Modern design system
-- Improved accessibility
-
-#### Advanced Analytics
-We're adding more analytics and reporting features to help you better understand your team's performance and customer interactions.
-
-We're constantly working to make Vela better. Stay tuned for more updates, and as always, we'd love to hear your feedback at product@botlhale.ai.
-
-Thank you for being a valued part of our community!
-
-Warm regards,  
-The Vela Team
 
 ---
 

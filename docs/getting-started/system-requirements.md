@@ -187,7 +187,7 @@ Passwords must meet a minimum length and mix of characters. For the full list, a
 | An interaction's scorecard | The Scorecard tab, download icon | CSV |
 | Smart Search insights | A search's results, **Download Detailed Insights** | PDF |
 | A list of interactions | Interactions, **Export** | CSV |
-| Agent performance | Agents → Performance, **Export** | CSV |
+| Agent performance | Agents → Performance, **Export** | PDF or CSV |
 | The agent list | Agents → Agent Details, **Export** | CSV |
 
 Downloading a report as DOCX opens in a new tab, so allow pop-ups for the Vela domain if that download does nothing when selected. The other downloads in this table save directly, without a pop-up.

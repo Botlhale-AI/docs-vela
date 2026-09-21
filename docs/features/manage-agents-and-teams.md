@@ -20,7 +20,7 @@ You need:
 
 - **Access level:** Organisational, Departmental, or Team, covering the agents and teams you are changing. You can move an agent into any team your access level covers. See [Access Level](../reference/glossary.md#access-level).
 - **The department a team belongs to.** A team is created inside a department, so the department has to exist first. See [Administrator Setup](../getting-started/quick-start/administrator-setup.md).
-- **The agent's name and email address.** Both are required when you add someone manually.
+- **The agent's name, and an email address where your organisation uses voice profiles or the Coaching Portal.** The table under [Add an Agent](#2-add-an-agent) says which applies to you.
 
 :::note Agents are not users
 An agent is a person whose interactions are analysed. A user is anyone who has access to Vela, including administrators. Adding one does not create the other, and a bulk CSV import creates agents only. See [Agent](../reference/glossary.md#agent) and [User](../reference/glossary.md#user).

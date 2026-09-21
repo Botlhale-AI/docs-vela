@@ -79,7 +79,7 @@ The AI reads a transcript. A question works when its answer is visible there.
 
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
 * **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
-* **Keep weights relative to each other.** There is no external scale. A question weighted 10 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
+* **Keep weights relative to each other.** There is no external scale. A question weighted 5 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
 
@@ -172,7 +172,7 @@ Adding a question is safe. It applies to interactions processed after the change
 
 The questions appear on the **View** tab as soon as you save, but a score needs an interaction to score.
 
-If you left it off, the scorecard applies from now on, so the **Results** tab remains empty until new interactions are processed.
+If you left **Historical Search** off, the scorecard applies from now on, so the **Results** tab remains empty until new interactions are processed.
 
 You are finished when you open a processed interaction, go to its **Scorecard** tab, and see your questions with an outcome on each. An interaction showing no scorecard usually means the scope does not cover that agent's team, or the **Interactions** setting excludes calls or chats like this one. See [Scorecard and Scoring Issues](./support/smart-detector-issues.md#scorecard-and-scoring-issues).
 

@@ -52,8 +52,10 @@ One symptom is worth naming, because it looks like normal behaviour:
 **Solution:**
 - `Please fill in all fields.` Enter both an email address and a password before selecting **Sign In**.
 - `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it.
+- `You are registered as an agent. Please log in on the agent coaching portal.` The address belongs to an agent account. Agents sign in to the Agent Portal, reached with **Go to Agent Portal Login** on this page.
+- `Too many login attempts. Your account has been blocked. Please contact support for assistance` Ten wrong passwords in a row block the account, and every attempt after that, right or wrong, reads `Your account has been blocked. Please contact support for assistance`. A successful sign-in resets the count. Contact **support@botlhale.ai** to lift the block.
 - `We have sent you an email. Please verify your email address.` The account exists but has not been confirmed. Open the invitation email and select **Confirm Account** before signing in.
-- `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link. {/* UNVERIFIED: this exact string was not found in vela or vela-data source. The other four messages on this page are confirmed verbatim. This one may originate from an upstream auth service. Needs a live screen or engineering to confirm the exact wording. */}
+- `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link. {/* UNVERIFIED: this exact string was not found in vela or vela-data source. The other messages in this entry are confirmed verbatim against app/api/login/route.js and the NextAuth route on vela origin/main. This one may originate from an upstream auth service. Needs a live screen or engineering to confirm the exact wording. */}
 - `An unexpected error occurred. Please try again later.` The request to Vela failed rather than being refused. Try again in a moment, and contact support if it continues.
 
 If the page fails to load at all, that is a different problem. See [Browser Issues](#browser-issues).
@@ -170,7 +172,7 @@ A single call that appears to upload but never shows up in the Interactions list
 **Solution:**
 1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
-3. Turn **Show unsupported calls** on, at the top left of the list. Vela marks some calls unsupported and leaves them out of the list by default, so a missing call may be present but hidden. {/* UNVERIFIED: the cause historically documented here, an unsupported language, could not be confirmed against current source. Needs engineering to confirm what currently sets a call unsupported. */}
+3. Turn **Show unsupported calls** on, at the top left of the list. Vela marks some calls unsupported and leaves them out of the list by default, so a missing call may be present but hidden. {/* VERIFIED 2026-09-21 against vela-data app/api/notifications/route.js: the flag was set by a language check, which is now hard-coded (let isEnglish = true), so the branch that sets supported = false is unreachable and no call processed on the current build is marked unsupported. Calls processed under earlier releases keep the flag, which is why the toggle still matters. */}
 4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
 
 :::note Two people upload the same call and wait different lengths of time

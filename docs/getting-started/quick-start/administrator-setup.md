@@ -18,7 +18,7 @@ Before anyone else can use Vela, an administrator configures authentication, dep
 
 ---
 
-## What You'll Complete
+## What This Sets Up
 
 - ✅ Choose how users sign in
 - ✅ Create your organisational structure (departments and teams)
@@ -276,13 +276,13 @@ A scorecard outcome on that interaction confirms your questions reach the test a
 
 ---
 
-## You're Ready
+## Setup Complete
 
 Once all eight steps are complete, your platform is ready for use.
 
 **Hand-off checklist:**
 - ✅ Point team leads to the [Team Lead Quick Start](./team-lead-quick-start.md) guide
-- ✅ Where your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, direct agents to it for their own portal, and set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences)
+- ✅ Where your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, direct agents to it for their own portal, and set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences)
 
 ---
 
@@ -290,7 +290,7 @@ Once all eight steps are complete, your platform is ready for use.
 
 For general platform issues, such as uploads, playback, or the app not loading, see [General Issues](../../support/troubleshooting-guide.md). The items below are specific to setup.
 
-**Users can't sign in via SSO**  
+**Users cannot sign in via SSO**  
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.
 
 **Bulk agent import errors**  

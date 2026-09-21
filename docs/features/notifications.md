@@ -37,7 +37,7 @@ Select **Notifications** in the left sidebar. Three tabs sit at the top right of
     { x: 74.5, y: 23.9, title: 'Search', body: 'Narrows the list by wording, matching both the heading and the body of a notification. Matches are highlighted.' },
     { x: 41.7, y: 31.2, title: 'A notification', body: 'Each shows a heading, how long ago it arrived, and a line of detail.' },
     { x: 84.9, y: 31.2, title: 'The dismiss cross', body: 'Takes the notification off the list for good. Nothing it pointed at is lost, and you still reach that through Interactions, Smart Detector, or Reports.' },
-    { x: 84.9, y: 39.2, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports.' },
+    { x: 84.9, y: 39.2, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports. On a Smart Question alert it does not open the interaction, so reach that from the Interactions list or from the Results tab of the Smart Question.' },
   ]}
 />
 
@@ -59,7 +59,7 @@ Every notification, on all three tabs, carries the same **Search**, **eye**, and
 
 Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
 
-{/* DEV: The eye icon does not reliably open the interaction behind a Smart Question alert — confirmed against the live product. Repro seen: it links to /interactions/calls/undefined, i.e. the call ID is missing rather than wrong, so the Smart Question alert record itself is likely not carrying a call ID through to the notification. The text above states the intended behaviour (opens what the notification is about) rather than this confirmed gap. Please fix, or tell docs to restate this as a real limitation. Workaround in the meantime: open the interaction from the Interactions list, or from the Results tab of the Smart Question itself. */}
+{/* The eye icon on a Smart Question alert links to /interactions/calls/undefined, confirmed against the live product: the alert record carries no call ID through to the notification. Documented above and in Troubleshooting as a limitation, with the workaround, until it is fixed. Remove both once it is. */}
 
 On the **Reports** tab there is also a download control beside the eye, so you can take a finished report straight from the notification without going to the Reports list. A report whose file is no longer available reads **No report available** in place of the link.
 
@@ -125,7 +125,7 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 Comments are how feedback reaches your agents, and the **@** mention is what makes a comment a notification.
 
-Type **@** in the comment box and pick the agent. Vela then notifies them in their Agent Portal, where they can read it and reply. An untagged comment stays visible to team leads and never reaches the agent.
+Type **@** in the comment box and select **@agent**, the only option offered. Vela then notifies the agent in their Agent Portal, where they can read it and reply. An untagged comment stays visible to team leads and never reaches the agent.
 
 :::note Tagging the agent needs the Coaching Portal
 The **@agent** option only appears in the comment box, and the reminder text above it only shows, where your organisation has the Coaching Portal enabled. Without it, an agent has no Agent Portal to notify, so there is no way to tag them and every comment stays visible to team leads only.
@@ -198,6 +198,7 @@ Testing an alert end to end takes one interaction. Upload an interaction you kno
 | Reports not arriving | Confirm **New Reports** is ticked in **Settings → Notifications**, then check the schedule and that its date range contains data |
 | Email missing, but notifications appear in Vela | Check the **Email Notifications** list in **Settings → Notifications**. On a daily frequency the email arrives at the time you set rather than as the event happens |
 | A notification dismissed by mistake | Dismissing is final. Open the interaction, comment, or report directly instead |
+| The eye icon on a Smart Question alert opens nothing | The link carries no interaction. Open it from **Interactions**, or from the **Results** tab of the Smart Question, where selecting a count lists the matching interactions |
 
 ---
 

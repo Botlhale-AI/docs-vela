@@ -17,7 +17,7 @@ A hands-on walkthrough for team leads and managers new to Vela. If you have not 
 
 ---
 
-## What You'll Learn
+## What This Covers
 
 - ✅ Sign in and navigate Vela
 - ✅ Check today's team performance at a glance
@@ -84,7 +84,7 @@ When you change your password under **Settings → Security**, or reset a forgot
 
 Signing in with Google or Microsoft? You do not set a Vela password. Your identity provider manages it.
 
-### What You'll See After Login
+### After You Sign In
 
 Signing in takes you to the **Dashboard** for the organisation you were invited to, where you monitor performance. The left sidebar shows your main navigation areas.
 
@@ -228,9 +228,9 @@ Override an item when the AI missed context, a required phrase was said in diffe
 
 ---
 
-## You're Ready to Go
+## Ready to Go
 
-You've completed the Team Lead Quick Start. You can now:
+You have completed the Team Lead Quick Start. You can now:
 
 - ✅ Monitor team performance on the Dashboard
 - ✅ Upload and review individual calls
@@ -246,7 +246,7 @@ You've completed the Team Lead Quick Start. You can now:
 | :--- | :--- | :--- |
 | The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email telling you the analysis is ready. Check **Settings → Notifications** if you are not receiving them |
 | The interaction has no scorecard | No scorecard question is scoped to this agent's team | Ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
-| Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and pick the agent from the `@` list |
+| Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and select **@agent** from the `@` list |
 
 For uploads, playback, and other platform problems, see [General Issues](../../support/troubleshooting-guide.md).
 

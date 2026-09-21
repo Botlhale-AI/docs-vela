@@ -191,8 +191,8 @@ Both commands run on every push through [.github/workflows/docs.yml](./.github/w
 | :--- | :--- | :--- |
 | Broken links and anchors | `onBrokenLinks` and `onBrokenAnchors`, plus the linter | Fails |
 | Frontmatter: title, type, one H1 matching the title | Linter | Fails |
-| House style: dashes, banned words, UK spelling, present tense | Linter | Fails |
-| Images: alt text, spacing, resolution, no orphans | Linter | Fails |
+| House style: dashes, banned words, UK spelling, present tense, scaffold headings | Linter | Fails |
+| Images: alt text, spacing, no orphans | Linter | Fails |
 | Links to draft pages | Linter | Fails |
 | Link text that is another page's title | Linter | Fails |
 | Sidebar label matches the page title | Linter | Fails |

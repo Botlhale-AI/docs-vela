@@ -27,6 +27,8 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // Dates come from git, so CI checks out full history. See .github/workflows/docs.yml.
+          showLastUpdateTime: true,
           // editUrl: '/',
         },
 

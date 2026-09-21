@@ -110,8 +110,10 @@ Overrides that all move the same way point at scorecard wording that needs fixin
 
 Coaching is an add-on with its own documentation. Two decisions there affect the QA work on this page:
 
-- **Build a course around the gap**, and set the category and the score range within it that assigns the course. Courses reach agents by score in a category rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses).
-- **Decide what agents see before you invite them**, because changing it later changes what they have already seen. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences).
+- **Build a course around the gap**, and set the category and the score range within it that assigns the course. Courses reach agents by score in a category rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses).
+- **Decide what agents see before you invite them**, because changing it later changes what they have already seen. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences).
+
+{/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
 
 ---
 
@@ -121,7 +123,7 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 1. **Test five to ten files first.** Checking the format, agent names, teams, and departments on a small batch takes minutes. Finding a systematic error after thousands of files means uploading them again.
 2. **Build the CSV from the downloaded template.** Column name mismatches cause most bulk failures.
-3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. Vela drops values it cannot match, and the interaction is then linked to no agent.
+3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. A name Vela cannot match becomes a new agent in the team the row names, so a misspelling creates a duplicate record rather than an error, and the interaction lands under it.
 4. **Upload outside busy hours**, and keep the page open until the batch finishes.
 5. **Keep the source audio** until you have checked every file in the batch appears in the Interactions list, then archive it under your organisation's retention policy.
 6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but names no rows, so compare the list against your batch yourself while the source files are still to hand. A failure is easier to explain today than in two weeks.

@@ -242,8 +242,10 @@ flowchart LR
 :::note Vela assigns courses by score
 You create a course, set its category and the score range within it, and choose the scope it applies to. Vela evaluates agents on the cycle configured in **Coaching → Preferences** and assigns each agent the courses their score in that category qualifies them for, so courses reach people by score rather than by name.
 
-The trigger range is your lever. Set it to match the gap you found, and the agents who have that gap pick the course up on the next evaluation.
+The **Training Initiation Score Range** is your lever. Set it to match the gap you found, and the agents who have that gap pick the course up on the next evaluation.
 :::
+
+{/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
 
 **Coaching** appears in the sidebar only if your organisation has the Coaching Portal enabled. Creating courses, tracking completion, and managing awards are covered in the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz).
 
@@ -255,7 +257,7 @@ The Dashboard and the Performance table both show the date range you selected. R
 
 Then open two or three of the interactions behind that figure. Reading them tells you whether the score matches the conversations. Where the two agree, you have your answer. Where they differ, trust the conversations and check whether a scorecard question is firing when it should not.
 
-Finish by recording what you decided, whether that is a comment on a specific interaction, a course whose trigger range covers the gap, or a note to look again next week.
+Finish by recording what you decided, whether that is a comment on a specific interaction, a course whose **Training Initiation Score Range** covers the gap, or a note to look again next week.
 
 ---
 

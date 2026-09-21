@@ -28,16 +28,6 @@ New to this? Select **View example** on the Smart Search page to browse the read
 
 ---
 
-## What You Can Achieve
-
-Smart Search gives you automated monitoring across three areas:
-
-- **Issue detection**: catch problems early and respond before they escalate
-- **Compliance and quality monitoring**: confirm that agents are following required procedures and scripts
-- **Opportunity identification**: spot training needs and surface examples of excellent service
-
----
-
 ## How Matching Works
 
 Vela matches on meaning, not on whether the phrase was said verbatim. When you add an example phrase, Vela flags interactions that say something very similar or express the same thing. Capitalisation, punctuation, and small differences in phrasing do not affect a match.
@@ -249,7 +239,7 @@ If a search is producing more matches than your team can act on, edit it to use 
 
 ### Understanding the Results View
 
-Select **View**, in the **Results** column of the Smart Search list, to open a search's results. At the top, set the **Date range**, or use the **Quick** picks (**1h**, **6h**, **12h**, **24h**) to jump to a recent window. Everything below updates to the period you choose.
+Select **View**, in the **Results** column of the Smart Search list, to open a search's results.
 
 The results view has three collapsible sections.
 
@@ -266,6 +256,8 @@ A summary of the search across the period:
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
 
 #### Interaction Analytics
+
+{/* VERIFIED against the live product, in details_2.png. This panel is absent from vela origin/main and present on origin/dev from 2026-05-25, so a source check alone reads it as unreleased. The capture is the higher authority. Recheck the screen, not the branch, before removing anything here. */}
 
 Charts that break down the matched interactions:
 

@@ -135,6 +135,14 @@ for (const file of files) {
   }
 
   // --- House style -------------------------------------------------------
+  // Template scaffolding left by the generated first draft. These headings
+  // carry no information, and the coaching linter has failed them since its
+  // first run. "Next Steps" is fine; "What's Next" is not.
+  const SCAFFOLD = ["Why this matters", "What You Can Achieve", "What's Next", "Was This Guide Helpful", "Pro Tip"];
+  for (const s of SCAFFOLD)
+    if (headingSource.toLowerCase().includes(s.toLowerCase()))
+      err(rel, `scaffolding heading "${s}": say what the section is about instead`);
+
   const body = prose(raw);
   if (/[—–]/.test(body)) err(rel, "contains an em or en dash");
 

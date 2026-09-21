@@ -25,6 +25,10 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          # showLastUpdateTime reads each page's date from git log. A shallow
+          # checkout gives every page the same date, so fetch the whole history.
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4

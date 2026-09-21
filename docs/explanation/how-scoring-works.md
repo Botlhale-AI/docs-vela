@@ -30,7 +30,7 @@ Each scorecard question carries a weight. For a given interaction, Vela adds up 
 
 Three consequences follow, and they surprise people:
 
-**Weight is relative, not absolute.** A question weighted 10 among questions weighted 1 dominates the score. There is no scale to calibrate against, only the balance between your own questions.
+**Weight is relative, not absolute.** A question weighted 5 among questions weighted 1 dominates the score. There is no scale to calibrate against, only the balance between your own questions.
 
 **Questions marked N/A disappear entirely.** They are removed from both totals, not counted as failures. An interaction where half the scorecard did not apply is scored on the half that did, and is directly comparable to one where everything applied.
 
@@ -72,10 +72,10 @@ Not every question fits every call. "Was the transfer handled correctly?" means 
 
 Whether the AI can use N/A comes down to the question's **Always Applicable** setting:
 
-- **Off** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
-- **On**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
+- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
+- **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
-The default costs something either way. Without a cue in the wording, a question left Off is scored No on the calls it does not fit, which lands the agent where switching Always Applicable on would have left them anyway. The wording is what earns the N/A.
+The default costs something either way. Without a cue in the wording, a question left at No is scored No on the calls it does not fit, which lands the agent where setting Always Applicable to Yes would have left them anyway. The wording is what earns the N/A.
 
 For questions the AI cannot answer from the transcript, two settings help:
 

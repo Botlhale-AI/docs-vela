@@ -27,6 +27,8 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | **Apply To** | Inbound Calls / Outbound Calls / All Calls | All Calls | Which call directions the question applies to |
 | **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. Smart Search calls the same setting Active / Inactive |
 
+{/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
+
 ## Scorecard Fields
 
 These sit above the question list and are set once for the whole scorecard. Every question in it inherits them.

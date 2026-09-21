@@ -14,7 +14,7 @@ import chatUpload from '@site/img/screenshots/chats/upload.png';
 # Upload Your Data
 Upload your call and chat data to start analysing customer interactions and improving team performance.
 
-Recordings and transcripts you upload are encrypted in transit and at rest, and sensitive details in transcripts are masked. See [Security and Compliance](./security-compliance.md).
+Recordings and transcripts you upload are encrypted in transit and at rest, and sensitive details in transcripts are masked where your administrator has configured redaction. See [Security and Compliance](./security-compliance.md).
 
 ---
 

@@ -70,11 +70,11 @@ A: Vela has no import or template feature, so there is nothing to load yourself.
 
 ## Dashboard & Performance
 
-**Q: Why don't I see any data on my Dashboard?**  
+**Q: Why is my Dashboard empty?**  
 A: If no calls or chats have been uploaded yet, performance data does not appear. Upload interactions to start seeing metrics.
 
 **Q: Can I customise my Dashboard?**  
-A: Yes. Select the **Customise** button on the Dashboard to add, remove, or rearrange the metrics displayed.
+A: Yes. Select the **Customise** button on the Dashboard to add or remove the metrics displayed, and to choose how each is charted.
 
 **Q: Why is an agent's score lower or higher than I expected?**  
 A: Vela's AI produces the first score, based on your organisation's scorecard criteria. If the AI missed important context, you can override individual scorecard items. Your manual score takes precedence over the AI's assessment. See [Review and Score Interactions](../features/quality-assurance-tools.md).
@@ -92,8 +92,10 @@ A: Yes. Agents log in to their own Agent Portal, where they can view their inter
 **Q: How do agents receive coaching feedback?**  
 A: When a team lead adds a comment and tags the agent using the @ mention, the agent receives an in-app notification and can read and respond to the comment in their Agent Portal.
 
+{/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
+
 **Q: How does training work for agents?**  
-A: Courses are assigned by score, not by name. You build a course around one scorecard category, set the **Training Initiation Score Range** within it that qualifies an agent, and Vela assigns the course on the next evaluation cycle. Agents work through what they receive in the Agent Portal. Coaching is an add-on, so it appears in the navigation only where it is enabled. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses).
+A: Courses are assigned by score, not by name. You build a course around one scorecard category, set the **Training Initiation Score Range** within it that qualifies an agent, and Vela assigns the course on the next evaluation cycle. Agents work through what they receive in the Agent Portal. Coaching is an add-on, so it appears in the navigation only where it is enabled. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses).
 
 ---
 

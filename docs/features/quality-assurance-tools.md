@@ -307,7 +307,7 @@ Marking an interaction reviewed is what tells the rest of Vela you are done with
 * If follow-up is needed, add coaching comments for the agent.
 
 :::note Reviewing can be what releases the interaction to the agent
-Organisations using the Coaching Portal choose, under **Coaching → Preferences → Agent View Permissions**, whether agents see all their interactions or only the reviewed ones. Where it is set to reviewed only, an agent sees nothing of a conversation until someone marks it as reviewed, so an unreviewed backlog is invisible coaching. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/Preferences) for the setting itself.
+Organisations using the Coaching Portal choose, under **Coaching → Preferences → Agent View Permissions**, whether agents see all their interactions or only the reviewed ones. Where it is set to reviewed only, an agent sees nothing of a conversation until someone marks it as reviewed, so an unreviewed backlog is invisible coaching. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences) for the setting itself.
 :::
 
 ![The Detailed View header, with Review Redacted Info and Mark as Reviewed](../../img/screenshots/calls/mark_reviewed.png)
@@ -340,14 +340,12 @@ Tags belong to the organisation rather than to you, so one you create is availab
 
 #### Managing the Tag List
 
-**Manage Tags**, on the **Edit Tags** modal, opens the organisation's tag list in a new browser tab. From there you can add a tag with **New Tag**, change a tag's name or colour with **Edit Tag**, and remove one with **Delete Tag**.
-
 Both editing and deleting reach further than the list, so treat them as organisation-wide changes rather than tidying:
 
 | Action | What happens to interactions already tagged |
 | :--- | :--- |
-| **Delete Tag** | The tag is stripped from every interaction carrying it, in one go. There is no undo, and no warning that says how many are affected |
-| **Edit Tag** | The list shows the new name, but interactions keep the name they were tagged with. The filter offers only the new name, which now matches nothing, so those interactions can no longer be found by tag |
+| **Delete** | The tag is stripped from every interaction carrying it, in one go. There is no undo, and no warning that says how many are affected |
+| **Edit** | The list shows the new name, but interactions keep the name they were tagged with. The filter offers only the new name, which now matches nothing, so those interactions can no longer be found by tag |
 
 Renaming therefore loses you the interactions rather than relabelling them. The **Tags** filter builds its options from the organisation's list. After a rename it offers the new name, which matches nothing, and the old name that would match is no longer there to select.
 
@@ -361,13 +359,13 @@ To change a tag's wording safely, create the tag you want, apply it to the inter
 
 ![The New Tag modal, with the name field above the colour swatches and the Create Tag button](../../img/screenshots/calls/new-tag-window.png)
 
-Deleting a tag takes it off every interaction carrying it, and the page does not tell you how many that is. Vela refuses duplicate names, so renaming a tag to something clearer is the safer move when the wording is the problem.
+Deleting a tag takes it off every interaction carrying it, and the page does not tell you how many that is. Vela refuses duplicate names, so the replacement tag needs a name the old one is not using until the old one has been deleted.
 
 ### C. Plan Next Steps
 
 One weak interaction is not a pattern. Before acting, read the agent's recent scorecards and comments together and look for the same category scoring low more than once.
 
-Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course scoped to that category, with a **Training Initiation Score Range** that covers the gap. Vela assigns courses on its evaluation cycle, so you set the category and range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/Courses) for building the course.
+Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course scoped to that category, with a **Training Initiation Score Range** that covers the gap. Vela assigns courses on its evaluation cycle, so you set the category and range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses) for building the course.
 
 A course is not a substitute for the conversation. Arrange time with the agent to go through the feedback and what you expect to change.
 

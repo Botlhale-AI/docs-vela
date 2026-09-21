@@ -131,7 +131,7 @@ With team access, **Apply documents to** does not appear at all. Your documents 
 
 Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to **Entire Organisation**. A script specific to one team's product line should be scoped to that team.
 
-The Document Library's **Scope** column, covered below, shows the same setting in shorter form and in lower case: `organisation`, `departments`, or `teams`.
+The Document Library's **Scope** column, covered above, shows the same setting in shorter form and in lower case: `organisation`, `departments`, or `teams`.
 
 ---
 
