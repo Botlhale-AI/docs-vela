@@ -35,8 +35,6 @@ You need:
 
 ![The Number Search page, with the phone number field and the Search button below the heading](../img/screenshots/smart_detector/number_search2.png)
 
-Before you search, the page reads **Enter a phone number to view all interactions associated with it**. That is the resting state rather than an empty result.
-
 ---
 
 ## 2. Read the History
@@ -92,9 +90,7 @@ Select **Clear date filter** to go back to the full history.
 
 Select **Download Report** to save the results as a PDF, including the summary, pain points, key insights, and the interactions behind them.
 
-![The Download Report link, at the bottom of Number Search Details](../img/screenshots/number_search/download-report.png)
-
-This is the version to bring to a call or attach to an escalation, since it holds the reasoning rather than a link someone else may not be able to open.
+Use the downloaded PDF when sharing externally. This is the version to bring to a call or attach to an escalation, as it captures the reasoning behind the result and can be accessed without relying on a link or permissions.
 
 ---
 
@@ -102,7 +98,7 @@ This is the version to bring to a call or attach to an escalation, since it hold
 
 A search that returns nothing when you expected results is almost always the number format rather than an absence of calls. Open a call you know involves that customer, read the **Number** on its **Call Details** panel, and search for exactly that.
 
-Where the number is right and the count is still zero, those interactions most likely came in through Vela rather than the API. Number Search reads the number from the upload, so sending them through the API is what brings them into range.
+Where the number is right and the count is still zero, those interactions most likely came in through Vela rather than the API. Number Search matches the phone number exactly as it was sent in the upload, so an interaction only appears here when it was captured in the same format your organisation uses. If the format differs, or the interaction was entered through Vela instead of the API, it does not match the search.
 
 ---
 
