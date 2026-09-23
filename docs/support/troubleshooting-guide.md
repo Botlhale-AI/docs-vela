@@ -51,7 +51,7 @@ One symptom is worth naming, because it looks like normal behaviour:
 
 **Solution:**
 - `Please fill in all fields.` Enter both an email address and a password before selecting **Sign In**.
-- `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it.
+- `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it. See [Resetting a Forgotten Password](../settings-config/account-security.md#resetting-a-forgotten-password).
 - `You are registered as an agent. Please log in on the agent coaching portal.` The address belongs to an agent account. Agents sign in to the Agent Portal, reached with **Go to Agent Portal Login** on this page.
 - `Too many login attempts. Your account has been blocked. Please contact support for assistance` Ten wrong passwords in a row block the account, and every attempt after that, right or wrong, reads `Your account has been blocked. Please contact support for assistance`. A successful sign-in resets the count. Contact **support@botlhale.ai** to lift the block.
 - `We have sent you an email. Please verify your email address.` The account exists but has not been confirmed. Open the invitation email and select **Confirm Account** before signing in.

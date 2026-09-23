@@ -80,6 +80,28 @@ Your new password must meet all of these:
 
 ---
 
+## Resetting a Forgotten Password
+
+Where you cannot sign in because you have forgotten your password, reset it from the sign-in page rather than asking your administrator for a new invitation.
+
+1. On the sign-in page, select **Forgot your password?**. It opens **Reset Your Password**.
+2. Enter your email address and select **Reset Password**. Vela emails you a link headed **Reset Your Password**.
+
+   ![The Reset Your Password page, with the Email field and the Reset Password button](../../img/screenshots/settings/forgot-password.png)
+
+3. Open the link in the email. It takes you to **Set New Password**.
+4. Enter your new password under **New Password** and again under **Confirm Password**. The rules above apply.
+
+   ![The Set New Password page, with New Password and Confirm Password above the Reset Password button](../../img/screenshots/settings/reset-password.png)
+
+5. Select **Reset Password**. The page confirms **Password reset successful**.
+
+{/* Wording verified against app/(auth)/forgot_password/page.jsx, app/(auth)/reset_password/page.jsx, ForgotPasswordForm.jsx, and ResetPasswordForm.jsx on vela origin/main. Both pages use lib/password.js, the same validatePassword as the Security tab above, so the requirements listed there apply here too. */}
+
+This applies to password sign-in only. Where you sign in with Google or Microsoft, reset it with your provider.
+
+---
+
 ## Choose Light or Dark Mode
 
 Vela opens in **Dark Mode**. To change it, use the switch at the right of the top navigation bar. A message confirms the change each time you use it.

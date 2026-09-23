@@ -43,7 +43,7 @@ Your administrator assigned you an access level, and it decides how much of the 
 :::tip First-Time Setup
 Your administrator's invitation email contains a **Confirm Account** button and a password. **Use the button first.** Vela refuses the sign-in until your address is verified. Trying anyway sends you a fresh confirmation email, so check your inbox again rather than asking for a new invitation. If the button does not work, the email also gives you the link to paste into your browser.
 
-Once verified, sign in with the password from the email. If it is not accepted, use **Forgot your password?** on the sign-in page to set your own.
+Once verified, sign in with the password from the email. If it is not accepted, use **Forgot your password?** on the sign-in page to set your own. See [Resetting a Forgotten Password](../../settings-config/account-security.md#resetting-a-forgotten-password).
 
 Once you are in, set your own password under **Settings → Security**.
 :::
