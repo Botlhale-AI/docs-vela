@@ -74,10 +74,8 @@ Not every question fits every call. "Was the transfer handled correctly?" only m
 
 Whether the AI can use N/A comes down to the question's **Always Applicable** setting:
 
-- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply.
+- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply, the same result as setting Always Applicable to Yes.
 - **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
-
-The wording is what makes N/A possible. With Always Applicable at No, a question that says when it applies can be marked N/A. A question without that wording is usually scored No on calls it does not fit, the same result as setting Always Applicable to Yes.
 
 For questions the AI cannot answer from the transcript, two settings help:
 
@@ -155,29 +153,18 @@ The same applies to the compliance and quality subtotals. Each can be auto-faile
 
 There are not two scorecards. Each question is either marked as a compliance item or it is not, and Vela calculates the same weighted percentage twice: once across the compliance questions, once across the rest.
 
-One set of answers therefore produces six figures in the Call Details panel, which is the usual reason that panel looks more complicated than it is:
-
-```mermaid
-flowchart LR
-    Q("The answers on<br/>this interaction") --> S1("Agent Score<br/>every applicable question")
-    Q --> S2("Compliance Score<br/>questions marked Compliance")
-    Q --> S3("Quality Score<br/>every other question")
-    S1 --> I("Each is reported twice:<br/>Initial, from the AI alone<br/>Current, after any overrides<br/><br/>and each carries its own Auto-Fail,<br/>so any of them can read 0.0%<br/>while the others do not")
-    S2 --> I
-    S3 --> I
-```
-
+One set of answers therefore produces six figures in the Call Details panel:
 
 <Hotspots
   src={scoresBlock}
   alt="The Scores block from the Call Details panel: Agent Score and Initial Score, Compliance Score and Initial Compliance Score, Quality Score and Initial Quality Score, each shown as a percentage or a dash"
   points={[
-    { x: 27, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question.' },
+    { x: 27, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means the score is 0% or there is no score.' },
     { x: 75, y: 36, title: 'Initial Score', body: "The Agent Score as the AI first produced it, before any reviewer override. Keeping it lets a human-adjusted score be told apart from the AI's own." },
     { x: 31, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance. A dash means either no question on this interaction is marked Compliance, or the score is 0%. Check the Scorecard tab to tell which.' },
-    { x: 91, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score as the AI first produced it.' },
+    { x: 91, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score as the AI first produced it, without any changes from a reviewer.' },
     { x: 29, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },
-    { x: 90, y: 81, title: 'Initial Quality Score', body: 'The Quality Score as the AI first produced it.' },
+    { x: 90, y: 81, title: 'Initial Quality Score', body: 'The Quality Score as the AI first produced it, without any changes from a reviewer.' },
   ]}
 />
 
@@ -189,7 +176,7 @@ When a reviewer changes an outcome, their answer replaces the AI's for that ques
 
 Both are kept for accountability. A score a human has adjusted is a different kind of claim from one the AI produced alone, and an agent disputing a score is entitled to see which is which. It also lets you audit your own reviewers: if overrides consistently move scores in one direction, the problem is more likely the scorecard than the AI.
 
-Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before deciding it was wrong. Where the reasoning holds up and the answer still feels harsh, reword the question. Rewording fixes it for every future call. Overriding fixes one call at a time.
+Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before changing it. Where the reasoning holds up and the answer still feels harsh, reword the question. That fixes it once, instead of overriding the same answer every week.
 
 ## What the AI analyses well, and what it does not
 
@@ -201,13 +188,13 @@ Being clear about this protects you from over-trusting the number.
 
 This is why scorecard questions work best when they describe something observable. *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and a question like that produces scores that feel arbitrary to the people receiving them.
 
-Audio quality sets a ceiling on all of it. If the transcript is wrong, everything downstream inherits the error.
+Audio quality affects everything that follows. Poor audio causes errors in the transcript, and every score and analysis built from that transcript carries those errors.
 
 ## Why Smart Questions are not scored
 
 Plenty of things worth knowing about a conversation say nothing about the agent's performance. Whether a customer mentioned a competitor. Whether a particular product came up. Whether a known system fault was the cause.
 
-Folding these into a scorecard would distort it, because the agent cannot influence the answer. Smart Questions exist so you can ask them without contaminating anyone's score. The answers are recorded and reportable, and they never touch the scoring calculation.
+Folding these into a scorecard would distort it, because the agent cannot influence the answer. Smart Questions exist so you can ask them without affecting agent scores. The answers are recorded and reportable, and they never touch the scoring calculation.
 
 If you are unsure where a question belongs, ask what the answer describes. If it describes the **conversation**, it is a Smart Question. If it describes **what the agent did**, it belongs on the scorecard.
 
@@ -224,7 +211,7 @@ Scope is not the only filter. A question is applied to an interaction when four 
 
 A scorecard set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
-Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no question covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
+Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction that no scorecard question applies to gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
 ## The thresholds are yours
 
@@ -232,7 +219,7 @@ Vela produces a percentage. It does not decide what counts as good.
 
 Your administrator sets the Red, Amber, and Green boundaries. Everything that looks like a judgement in the interface, such as an agent flagged as underperforming, traces back to those numbers rather than to any platform default.
 
-Set them against your own standards and history rather than an external benchmark. A score of 70% means whatever your scorecard makes it mean, and comparing that figure with another organisation's is comparing two different measurements that both happen to be percentages.
+Set them against your own standards and history rather than an external benchmark.
 
 ---
 
