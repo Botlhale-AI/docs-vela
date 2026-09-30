@@ -92,7 +92,7 @@ A setting on a scorecard question that records whether **Yes** or **No** is the 
 
 ## Historical Search
 
-An option available when you create a Smart Search or Smart Question. By default a new search only applies to interactions processed after you create it. Turning on Historical Search also runs it against interactions already in Vela.
+An option available when you create a Smart Search, Smart Question, or scorecard question. By default a new search only applies to interactions processed after you create it. Turning on Historical Search also runs it against interactions already in Vela.
 
 ## Intent
 

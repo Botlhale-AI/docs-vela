@@ -20,9 +20,9 @@ This page explains the thinking behind Vela's scoring, so you can interpret the 
 
 Traditional QA reviews a handful of calls per agent per month. The sample is too small for an agent's score to reliably reflect their performance. Instead, it may be influenced more by which calls happened to be selected.
 
-Vela scores every interaction it processes. That changes what the number means. An average across hundreds of interactions is stable in a way a five-call sample never is, and an outlier stops being alarming because you can see the distribution it sits in.
+Vela scores every interaction it processes. That changes what the number means. An average across hundreds of interactions is far more reliable than one from five calls, and a single unusual call no longer skews the picture, because you can see it alongside all the others.
 
-It also changes where your effort goes. The scarce resource is attention, not coverage. That is what Smart Searches and alerts are for. They pick out which of the scored interactions need a person to look at them.
+It also changes where your effort goes. Vela covers every call, so your time goes on deciding which ones need a closer look. Smart Searches and alerts help you find them.
 
 ## The score is a weighted percentage
 
@@ -30,11 +30,11 @@ Each scorecard question has a weight you give it to reflect how much it matters.
 
 Three key consequences follow:
 
-**Weight is relative, not absolute.** A question weighted 5 among questions weighted 1 dominates the score. There is no scale to calibrate against, only the balance between your own questions.
+**Weight is relative, not absolute.** A question weighted 5 among questions weighted 1 dominates the score. There is no fixed scale. What matters is how each weight compares with the others on your scorecard.
 
 **Questions marked N/A disappear entirely.** They are removed from both totals, not counted as failures. An interaction where half the scorecard did not apply is scored on the half that did, and is directly comparable to one where everything applied.
 
-**Adding a question changes every future score.** The denominator moves. Scores before and after a scorecard change are not strictly comparable, so keep your own note of when you changed it. Vela does not record scorecard changes for you.
+**Adding a question changes every future score**, because it adds to the total weight each score is measured against. Scores before and after a scorecard change are not strictly comparable, so note the date of each change yourself. Vela keeps no log of scorecard changes.
 
 Every question on an interaction takes one of four paths, and between them they explain why one call scores 75% and another reads zero:
 
@@ -70,19 +70,19 @@ The calculator below runs the same arithmetic on a scorecard you control. Change
 
 ## When a question does not apply
 
-Not every question fits every call. "Was the transfer handled correctly?" means nothing on a call with no transfer. A question marked **N/A** drops out of the score, as above, so it neither helps nor hurts the agent.
+Not every question fits every call. "Was the transfer handled correctly?" only makes sense on a call that had a transfer. A question marked **N/A** drops out of the score, as above, so it neither helps nor hurts the agent.
 
 Whether the AI can use N/A comes down to the question's **Always Applicable** setting:
 
-- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
+- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply.
 - **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
-Leaving Always Applicable at No does not produce N/A on its own. If the question does not say when it applies, it is still likely to be scored No on calls it does not fit, which is the same result as setting Always Applicable to Yes. The wording is what earns the N/A.
+The wording is what makes N/A possible. With Always Applicable at No, a question that says when it applies can be marked N/A. A question without that wording is usually scored No on calls it does not fit, the same result as setting Always Applicable to Yes.
 
 For questions the AI cannot answer from the transcript, two settings help:
 
 - **Search Type: Manual** hands the question to a reviewer. It stays N/A until a reviewer scores it manually.
-- **Apply Knowledge Base** analyses the question against one of your own documents rather than general knowledge, which is what questions like "did the agent complete full verification?" need. See [Knowledge Base](../knowledge-base-guide.md).
+- **Apply Knowledge Base** checks the question against one of your own documents rather than general knowledge. Use it for questions that depend on your own procedures, such as "did the agent complete full verification?" See [Knowledge Base](../knowledge-base-guide.md).
 
 ## Expected Outcome exists because questions are not always positive
 
@@ -90,47 +90,48 @@ Most scorecard questions are phrased so that "yes" is good: *Did the agent verif
 
 Rather than force every question into positive phrasing, each question records which answer is the desired one. Vela compares the actual answer against that setting.
 
-This is worth understanding because a mis-set Expected Outcome inverts a question silently. The scorecard looks correct, the AI answers correctly, and the score is wrong in a way that is hard to spot from the number alone.
+Check this setting carefully. If Expected Outcome is set the wrong way round, the question scores backwards, with no warning. The scorecard looks right and the AI answers correctly, yet the score is wrong. After you create a question, open a few scored interactions and confirm its passes and fails look right.
 
 ## Changing a scorecard after interactions are scored
 
-Two different things happen here, and the difference matters. Some of what makes up a score is saved with the interaction and never changes again. The rest is taken from your scorecard as it stands today, every time someone opens that interaction:
+What happens to interactions that are already scored depends on what you change:
 
-```mermaid
-flowchart LR
-    subgraph F["Saved with the interaction, and never changes"]
-        A("Which questions<br/>it was scored against")
-        B("The answer to each one:<br/>Yes, No, or N/A")
-    end
-    subgraph L["Taken from your scorecard as it is today"]
-        C("Weight")
-        D("Auto-Fail")
-        E("Compliance")
-        G("Expected Outcome")
-    end
-    F --> S("The score<br/>on screen")
-    L --> S
-```
+| What you change | What happens to interactions already scored |
+| :--- | :--- |
+| **Add a question** | Older interactions keep their current scores. To score them against the new question too, turn on **Historical Search** when you create it. See [Scoring older interactions against a new question](#scoring-older-interactions-against-a-new-question) |
+| **Delete a question** | Older interactions keep the question and its result, so their scores stay the same. New interactions are scored without it |
+| **Change Expected Outcome** | The AI's past answers keep their result, so a pass stays a pass. Answers a reviewer has changed are checked against the new setting, so a reviewer's pass can become a fail |
+| **Change a weight, Auto-Fail, or Compliance** | Some scores switch to the new setting straight away. Others keep the old setting until the interaction is scored again. See below |
 
-So an old interaction keeps its answers for good, but the score built from those answers is worked out fresh each time, using whatever the scorecard says now.
+{/* Source: vela origin/main lib/helpers.js (calculateTotalScore reads the stored match for AI answers, and query.positive only for editedMatch), interactions/calls/[id]/callDetails.jsx (Agent Score is the stored total_agent_score, the rest recalculated), api/smart_detector/agents_checklist PUT (edits the question only). vela-data origin/main api/notifications/route.js (match set against positive at processing) and api/checklists/route.js (Historical Search appends to existing calls and re-saves metrics). Not yet confirmed on a live screen. */}
 
-**Which questions an interaction was scored against is fixed when it is processed, with one exception.** A question you add later does not appear on an older interaction, and one you delete stays on it, with the outcome it was given. Deleting a question retires it from future scoring rather than erasing it from the past.
+### Changing a weight, Auto-Fail, or Compliance
 
-The exception is **reassigning the agent** on an interaction. Doing so reruns the scorecard against your questions as they stand today, silently, whether or not the interaction already had a score. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
+Some scores are worked out each time you open an interaction, using your current settings. Others are saved when the interaction is scored, and keep the settings from that time.
 
-**The settings on those questions are taken from your scorecard as it is today.** An interaction's score is worked out when you open it, not stored as a number at processing time. Change a question's **weight**, **Auto-Fail**, or **Compliance** setting, and every interaction already scored against that question is scored differently from that moment on. The recorded answers do not move. The arithmetic applied to them does.
+- **Use the new settings straight away:** the **Compliance Score**, **Quality Score**, and the three **Initial** scores in the Call Details panel, and whether that panel shows the interaction as auto-failed.
+- **Keep the old settings:** the **Agent Score** in the Call Details panel, the score on the Interactions list, the Dashboard, and **Agents → Performance**.
 
-:::warning Editing these settings rewrites history
-A change to a question's weight, Auto-Fail, or Compliance setting applies backwards across your whole history, and it moves the **Initial** scores too, so the AI's original assessment is re-weighted along with yours. A trend that looked flat can change shape because of an edit made today.
+A saved score switches to the new settings when that interaction is scored again. That happens in three cases: a reviewer changes an answer on it, its agent is reassigned, or a new question created with Historical Search runs on it.
 
-Change these settings deliberately, record when you did it, and compare periods either side of the change rather than reading the whole history as one measurement.
+:::warning Past scores mix old and new settings
+After you change one of these settings, the Dashboard and **Agents → Performance** keep using the old settings for past interactions. On a single interaction, the **Agent Score** uses the old settings while the **Compliance Score** and **Quality Score** beside it use the new ones, so the three can disagree.
+
+Make these changes on purpose, note the date of each change, and compare the period before the change with the period after it, rather than reading your whole history as one measurement.
 :::
 
-The same applies to **Expected Outcome**. Change it after interactions have been scored, and their recorded answers are compared against the new setting, so answers that read as passes can become failures.
+### Scoring older interactions against a new question
 
-**Rerun Scorecard** covers one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against your questions as they stand today. An interaction that already has a score keeps that score when you use this specific button, so it is not a route to picking up questions added since. Reassigning the agent on an already-scored interaction does pick them up, silently, which is the exception noted above.
+When you create a question on the **Create** tab, tick **Upon creation, run these questions on historical calls**, then choose **All historical calls** or a **Specific date range**. Vela adds the new question to each of those interactions and updates its scores. Each interaction stays a single record.
 
-Reassigning the agent is for correcting a misassignment, not a way to rescore. Otherwise, to apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation. The alternative is to leave older interactions as they are and measure the new question only from the date you added it.
+Historical Search is available only while you create the question. For a question already saved without it, choose one of these:
+
+- Leave older interactions as they are, and measure the new question from the date you added it.
+- Upload the recordings again. This creates a second copy of each interaction.
+
+**Reassigning the agent** on an interaction also reruns the scorecard with your questions as they are today, without telling you. Use it only to correct an interaction assigned to the wrong agent. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
+
+The **Rerun Scorecard** button is for a different situation: an interaction with no scorecard at all, such as one processed before your scorecard existed. An interaction that already has a score keeps it.
 
 ## Auto-fail shows as zero, with the earned score kept beside it
 
@@ -138,9 +139,9 @@ A question marked Auto-Fail represents something that should invalidate an inter
 
 An auto-failed interaction reads **0.0%**, with the score the agent earned on everything else in brackets after it. A call showing `0.0% (20.5%)` was auto-failed and scored 20.5% on the rest of the scorecard. A question you mark **N/A** cannot auto-fail an interaction, since it drops out of the scorecard entirely.
 
-Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, and it is the reason the earned score is not thrown away. Two auto-failed calls, one that scored 30% on everything else and one that scored 90%, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
+Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, which is why Vela keeps it. Two auto-failed calls, one that scored 30% on everything else and one that scored 90%, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
 
-Read the bracketed number alongside the zero. An agent whose scores are all zeros is not necessarily an agent who is failing at everything.
+Read the bracketed number alongside the zero. An agent with a row of zeros may be doing well on everything except one critical step.
 
 This is the notation on a single interaction. The **Agents → Performance** table averages many interactions together and reads it differently: see [Monitor Agent Performance](../features/monitor-agent-performance.md#a-find-the-agent) for what a bracketed figure means there.
 
@@ -182,9 +183,9 @@ The split exists because the two behave differently in practice. Compliance is u
 
 When a reviewer changes an outcome, their answer replaces the AI's for that question and the score is recalculated. Nothing is lost in the process. The interaction keeps Vela's original **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, and the scorecard download records both the initial and the current outcome for every question.
 
-The reason for keeping both is accountability rather than nostalgia. A score a human has adjusted is a different kind of claim from one the AI produced alone, and an agent disputing a score is entitled to see which is which. It also lets you audit your own reviewers: if overrides consistently move scores in one direction, the problem is more likely the scorecard than the AI.
+Both are kept for accountability. A score a human has adjusted is a different kind of claim from one the AI produced alone, and an agent disputing a score is entitled to see which is which. It also lets you audit your own reviewers: if overrides consistently move scores in one direction, the problem is more likely the scorecard than the AI.
 
-Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before deciding it was wrong. Where the reasoning holds up and the answer still feels harsh, reword the question. That fixes it once, whereas overriding the same item every week fixes it never.
+Override on evidence rather than instinct. Every question the AI answered carries its reasoning, shown by the information icon beside the score on the Scorecard tab, so you can read what it based the answer on before deciding it was wrong. Where the reasoning holds up and the answer still feels harsh, reword the question. Rewording fixes it for every future call. Overriding fixes one call at a time.
 
 ## What the AI analyses well, and what it does not
 
@@ -227,7 +228,7 @@ Vela produces a percentage. It does not decide what counts as good.
 
 Your administrator sets the Red, Amber, and Green boundaries. Everything that looks like a judgement in the interface, such as an agent flagged as underperforming, traces back to those numbers rather than to any platform default.
 
-Set them against your own standards and history rather than an external benchmark. A score of 70% means whatever your scorecard makes it mean, and comparing that figure with another organisation's is comparing two different measurements that happen to share a unit.
+Set them against your own standards and history rather than an external benchmark. A score of 70% means whatever your scorecard makes it mean, and comparing that figure with another organisation's is comparing two different measurements that both happen to be percentages.
 
 ---
 

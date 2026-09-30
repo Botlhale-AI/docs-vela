@@ -62,15 +62,16 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 **Problem:** A newly added scorecard question does not appear on interactions that were already scored.
 
-**Cause:** Which questions an interaction was scored against is fixed when it is processed. A question added afterwards is not applied to it.
+**Cause:** Which questions an interaction was scored against is fixed when it is processed. A question added afterwards is not applied to it unless it was created with **Historical Search** on.
 
 **Solution:**
 1. Accept the gap and start the new measurement from the date you added the question. This is usually the right choice.
-2. If an older interaction must be scored against it, upload the recording again so it is processed from scratch. That leaves two interactions for one conversation, so delete the earlier copy if you do not want duplicates.
-3. For a large number of interactions, contact **support@botlhale.ai**.
+2. If you have not yet created the question, create it with **Historical Search** on. Vela adds it to the existing interactions in its scope and date range and recalculates their scores, without creating duplicates. A question already saved without it cannot be given it later.
+3. Otherwise, if an older interaction must be scored against it, upload the recording again so it is processed from scratch. That leaves two interactions for one conversation, so delete the earlier copy if you do not want duplicates.
+4. For a large number of interactions, contact **support@botlhale.ai**.
 
 :::note Editing a question is different from adding one
-Editing an existing question's **weight**, **Auto-Fail**, **Compliance**, or **Expected Outcome** does apply backwards. Interactions already scored against that question are re-scored from the current settings the next time you open them, including their **Initial** scores. See [How Scoring Works](../explanation/how-scoring-works.md).
+Editing an existing question's **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel recalculates the **Compliance Score**, **Quality Score**, and **Initial** scores from the new settings, while the **Agent Score**, the Dashboard, and **Agents → Performance** keep the old figures until the interaction is scored again. Changing **Expected Outcome** does not alter past AI answers. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 :::
 
 The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.

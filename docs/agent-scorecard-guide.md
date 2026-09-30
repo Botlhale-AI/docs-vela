@@ -156,15 +156,16 @@ Editing and deleting behave differently, and the difference matters:
 | | What happens to interactions already scored |
 | :--- | :--- |
 | **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so historical interactions keep its outcome and their scores do not change, in the interface and in exports alike |
-| **Editing its weight, Auto-Fail, Compliance, or Expected Outcome** | They are scored again from the current settings, including their **Initial** figures |
+| **Editing its weight, Auto-Fail, or Compliance** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and **Agents → Performance** keep the old figures until each interaction is scored again |
+| **Editing its Expected Outcome** | Past AI answers keep the result they were given. Only answers a reviewer has changed are compared against the new setting |
 
-:::warning Editing a weight changes past scores
-Scores are worked out from your scorecard as it stands today, so a change reaches backwards across your whole history. A trend that looked flat can change shape because of an edit made this morning.
+:::warning Editing a weight splits your history
+After an edit, older interactions carry figures worked out two ways, and on one interaction the **Agent Score** can disagree with the **Compliance Score** and **Quality Score** beside it.
 
-Change weights deliberately, note when you did it, and compare periods either side of the change rather than reading the history as one measurement. To stop using a question, delete it rather than setting its weight to zero. See [How Scoring Works](./explanation/how-scoring-works.md).
+Change weights deliberately, note when you did it, and compare periods either side of the change rather than reading the history as one measurement. To stop using a question, delete it rather than setting its weight to zero. See [How Scoring Works](./explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 :::
 
-Adding a question is safe. It applies to interactions processed after the change, and older interactions keep the scorecard they were scored against.
+Adding a question applies to interactions processed after the change, and older interactions keep the scorecard they were scored against, unless you turn on **Historical Search** as you create it. Then Vela adds the new question to older interactions in its scope and date range and recalculates their scores.
 
 ---
 
@@ -181,7 +182,7 @@ You are finished when you open a processed interaction, go to its **Scorecard** 
 ## Related
 
 - [Scorecard Fields](./reference/scorecard-fields.md): every field on a question, with its values and default
-- [How Scoring Works](./explanation/how-scoring-works.md): weights, N/A, auto-fail, and why editing rewrites historical figures
+- [How Scoring Works](./explanation/how-scoring-works.md): weights, N/A, auto-fail, and what editing does to past scores
 - [Review and Score Interactions](./features/quality-assurance-tools.md): reviewing and overriding what the scorecard produces
 - [Set Up Smart Questions](./smart-questions-guide.md): asking about a conversation without scoring the agent
 - [Administrator Setup](./getting-started/quick-start/administrator-setup.md): the scorecard as part of first-time configuration
