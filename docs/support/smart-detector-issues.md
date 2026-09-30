@@ -71,7 +71,7 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 4. For a large number of interactions, contact **support@botlhale.ai**.
 
 :::note Editing a question is different from adding one
-Editing an existing question's **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel recalculates the **Compliance Score**, **Quality Score**, and **Initial** scores from the new settings, while the **Agent Score**, the Dashboard, and **Agents → Performance** keep the old figures until the interaction is scored again. Changing **Expected Outcome** does not alter past AI answers. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
+Editing an existing question's **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel recalculates the **Compliance Score**, **Quality Score**, and **Initial** scores from the new settings, while the **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old figures until the interaction is scored again. Changing **Expected Outcome** does not alter past AI answers. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 :::
 
 The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, is a separate case. It appears only when an interaction has no automatic scorecard yet, for example because none covered it when it was processed. It does not re-score an interaction that already has a score, and it is not available to agents.

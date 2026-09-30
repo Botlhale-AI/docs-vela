@@ -103,19 +103,23 @@ What happens to interactions that are already scored depends on what you change:
 | **Change Expected Outcome** | The AI's past answers keep their result, so a pass stays a pass. Answers a reviewer has changed are checked against the new setting, so a reviewer's pass can become a fail |
 | **Change a weight, Auto-Fail, or Compliance** | Some scores switch to the new setting straight away. Others keep the old setting until the interaction is scored again. See below |
 
-{/* Source: vela origin/main lib/helpers.js (calculateTotalScore reads the stored match for AI answers, and query.positive only for editedMatch), interactions/calls/[id]/callDetails.jsx (Agent Score is the stored total_agent_score, the rest recalculated), api/smart_detector/agents_checklist PUT (edits the question only). vela-data origin/main api/notifications/route.js (match set against positive at processing) and api/checklists/route.js (Historical Search appends to existing calls and re-saves metrics). Not yet confirmed on a live screen. */}
+{/* Source: vela origin/main lib/helpers.js (calculateTotalScore reads the stored match for AI answers, and query.positive only for editedMatch), interactions/calls/[id]/callDetails.jsx (Agent Score is the stored total_agent_score, the rest recalculated), api/smart_detector/agents_checklist PUT (edits the question only). vela-data origin/main api/notifications/route.js (match set against positive at processing) and api/checklists/route.js (Historical Search appends to existing calls and re-saves metrics). Confirmed on screen 2026-09-30 (test_call_18.wav): after a weight change, Agent Score read 11.1% (stored, old settings) while Initial Score read 7.7% and Compliance Score 33.3% (live, new settings). A reviewer edit then rescored it: Agent Score 38.5%, matching 5 of 13 under the new settings. Agents Performance Details (Agent C, same date range) showed Overall 38.5%, Compliance 0.0%, Quality 50.0%, matching the rescored interaction; its code (agents/performance/[id]/page.jsx) recalculates from current question settings. Dashboard and the Performance list table read stored figures in code; not checked on screen. */}
 
 ### Changing a weight, Auto-Fail, or Compliance
 
-Some scores are worked out each time you open an interaction, using your current settings. Others are saved when the interaction is scored, and keep the settings from that time.
+Some scores are worked out each time you open the screen that shows them, using your current settings. Others are saved when the interaction is scored, and keep the settings from that time.
 
-- **Use the new settings straight away:** the **Compliance Score**, **Quality Score**, and the three **Initial** scores in the Call Details panel, and whether that panel shows the interaction as auto-failed.
-- **Keep the old settings:** the **Agent Score** in the Call Details panel, the score on the Interactions list, the Dashboard, and **Agents → Performance**.
+- **Use the new settings straight away:**
+  - In the Call Details panel: the **Compliance Score**, **Quality Score**, the three **Initial** scores, and whether the interaction shows as auto-failed.
+  - The **Agent Scorecard** table on an agent's **Agents → Performance → Details** page.
+- **Keep the old settings:**
+  - In the Call Details panel: the **Agent Score**.
+  - The score on the Interactions list, the Dashboard, and the table on **Agents → Performance**.
 
 A saved score switches to the new settings when that interaction is scored again. That happens in three cases: a reviewer changes an answer on it, its agent is reassigned, or a new question created with Historical Search runs on it.
 
 :::warning Past scores mix old and new settings
-After you change one of these settings, the Dashboard and **Agents → Performance** keep using the old settings for past interactions. On a single interaction, the **Agent Score** uses the old settings while the **Compliance Score** and **Quality Score** beside it use the new ones, so the three can disagree.
+After you change one of these settings, the Dashboard and the table on **Agents → Performance** keep using the old settings for past interactions. On a single interaction, the **Agent Score** uses the old settings while the **Compliance Score** and **Quality Score** beside it use the new ones, so the three can disagree. An agent's **Details** page also uses the new settings, so it can disagree with the **Agents → Performance** table you opened it from.
 
 Make these changes on purpose, note the date of each change, and compare the period before the change with the period after it, rather than reading your whole history as one measurement.
 :::
@@ -170,9 +174,9 @@ flowchart LR
   points={[
     { x: 27, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question.' },
     { x: 75, y: 36, title: 'Initial Score', body: "The Agent Score as the AI first produced it, before any reviewer override. Keeping it lets a human-adjusted score be told apart from the AI's own." },
-    { x: 31, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance. A dash means no question on this interaction was marked Compliance, so there is nothing to score.' },
+    { x: 31, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance. A dash means either no question on this interaction is marked Compliance, or the score is 0%. Check the Scorecard tab to tell which.' },
     { x: 91, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score as the AI first produced it.' },
-    { x: 29, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance.' },
+    { x: 29, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },
     { x: 90, y: 81, title: 'Initial Quality Score', body: 'The Quality Score as the AI first produced it.' },
   ]}
 />

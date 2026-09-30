@@ -156,7 +156,7 @@ Editing and deleting behave differently, and the difference matters:
 | | What happens to interactions already scored |
 | :--- | :--- |
 | **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so historical interactions keep its outcome and their scores do not change, in the interface and in exports alike |
-| **Editing its weight, Auto-Fail, or Compliance** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and **Agents → Performance** keep the old figures until each interaction is scored again |
+| **Editing its weight, Auto-Fail, or Compliance** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old figures until each interaction is scored again |
 | **Editing its Expected Outcome** | Past AI answers keep the result they were given. Only answers a reviewer has changed are compared against the new setting |
 
 :::warning Editing a weight splits your history
