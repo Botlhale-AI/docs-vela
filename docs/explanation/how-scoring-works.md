@@ -12,13 +12,13 @@ import scoresBlock from '@site/img/screenshots/calls/call-details-scores.png';
 
 # How Scoring Works
 
-This page explains the thinking behind Vela's scoring, so you can interpret the numbers and decide how much weight to put on them. It does not give instructions. For those, see [Review and Score Interactions](../features/quality-assurance-tools.md) and [Scorecard Fields](../reference/scorecard-fields.md).
+This page explains the thinking behind Vela's scoring, so you can interpret the numbers and decide how much weight to put on them. For step-by-step instructions, see [Review and Score Interactions](../features/quality-assurance-tools.md) and [Scorecard Fields](../reference/scorecard-fields.md).
 
 ---
 
-## Every interaction is scored, not a sample
+## Every interaction is scored
 
-Traditional QA reviews a handful of calls per agent per month. The sample is small enough that an agent's score says more about which calls happened to be chosen than about their work.
+Traditional QA reviews a handful of calls per agent per month. The sample is too small for an agent's score to reliably reflect their performance. Instead, it may be influenced more by which calls happened to be selected.
 
 Vela scores every interaction it processes. That changes what the number means. An average across hundreds of interactions is stable in a way a five-call sample never is, and an outlier stops being alarming because you can see the distribution it sits in.
 
@@ -26,9 +26,9 @@ It also changes where your effort goes. The scarce resource is attention, not co
 
 ## The score is a weighted percentage
 
-Each scorecard question carries a weight. For a given interaction, Vela adds up the weights of every applicable question to get a total, then adds up the weights of the questions the agent satisfied. The score is the second divided by the first, as a percentage.
+Each scorecard question has a weight you give it to reflect how much it matters. For each interaction, Vela adds up the weights of all the applicable questions, then the weights of the questions the agent met. The agent's score is the weight they earned, expressed as a percentage of the total applicable weight.
 
-Three consequences follow, and they surprise people:
+Three key consequences follow:
 
 **Weight is relative, not absolute.** A question weighted 5 among questions weighted 1 dominates the score. There is no scale to calibrate against, only the balance between your own questions.
 
@@ -51,18 +51,20 @@ flowchart LR
 
 The sections that follow take each path in turn. A short example makes the arithmetic concrete. Take a four-question scorecard:
 
-| Question | Weight | Outcome |
-| :--- | :--- | :--- |
-| Verified the customer's identity | 3 | Pass |
-| Explained the fee | 2 | Fail |
-| Offered the callback option | 3 | Pass |
-| Handled the transfer correctly | 2 | N/A |
+| Question | Weight | Outcome | Applicable weight | Weight earned |
+| :--- | :--- | :--- | :--- | :--- |
+| Verified the customer's identity | 3 | Pass | 3 | 3 |
+| Explained the fee | 2 | Fail | 2 | 0 |
+| Offered the callback option | 3 | Pass | 3 | 3 |
+| Handled the transfer correctly | 2 | N/A | Drops out | Drops out |
+| **Total** | | | **8** | **6** |
+| **Score** | | | | **6 ÷ 8 = 75%** |
 
-The transfer question is N/A, so it drops out, leaving three questions worth 8 points between them. The agent passed two of those, worth 6 points, so the score is 6 out of 8, or **75%**. Had the transfer question been scored No instead, it would stay in the total, and the same call would score 6 out of 10, or 60%. That gap is why marking applicability correctly matters.
+The transfer question is N/A, so it drops out, leaving three questions with a combined weight of 8. The agent passed two of those, worth 6, so the score is 6 out of 8, or **75%**. Had the transfer question been marked Fail instead of N/A, it would stay in the total, and the same call would score 6 out of 10, or 60%. That gap is why marking applicability correctly matters.
 
 ## Try it yourself
 
-The calculator below runs the same arithmetic on a scorecard you control. Change a weight, an answer, or an Auto-Fail setting and watch the three scores move. It starts on the four-question example above.
+The calculator below runs the same arithmetic on a scorecard you control. Change a weight, an answer, or an Auto-Fail setting and watch the three scores move: Agent Score, Quality Score, and Compliance Score, which are explained [further down](#compliance-and-quality-are-two-views-of-one-scorecard). It starts on the four-question example above.
 
 <ScorecardCalculator />
 
@@ -75,11 +77,11 @@ Whether the AI can use N/A comes down to the question's **Always Applicable** se
 - **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that cue, a question that did not apply is often scored No instead.
 - **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
-The default costs something either way. Without a cue in the wording, a question left at No is scored No on the calls it does not fit, which lands the agent where setting Always Applicable to Yes would have left them anyway. The wording is what earns the N/A.
+Leaving Always Applicable at No does not produce N/A on its own. If the question does not say when it applies, it is still likely to be scored No on calls it does not fit, which is the same result as setting Always Applicable to Yes. The wording is what earns the N/A.
 
 For questions the AI cannot answer from the transcript, two settings help:
 
-- **Search Type: Manual** hands the question to a reviewer. It stays N/A until they answer.
+- **Search Type: Manual** hands the question to a reviewer. It stays N/A until a reviewer scores it manually.
 - **Apply Knowledge Base** analyses the question against one of your own documents rather than general knowledge, which is what questions like "did the agent complete full verification?" need. See [Knowledge Base](../knowledge-base-guide.md).
 
 ## Expected Outcome exists because questions are not always positive
@@ -110,25 +112,25 @@ flowchart LR
     L --> S
 ```
 
-So an old interaction keeps its answers for good, but the sum built from those answers is worked out fresh each time, using whatever the scorecard says now.
+So an old interaction keeps its answers for good, but the score built from those answers is worked out fresh each time, using whatever the scorecard says now.
 
 **Which questions an interaction was scored against is fixed when it is processed, with one exception.** A question you add later does not appear on an older interaction, and one you delete stays on it, with the outcome it was given. Deleting a question retires it from future scoring rather than erasing it from the past.
 
 The exception is **reassigning the agent** on an interaction. Doing so reruns the scorecard against your questions as they stand today, silently, whether or not the interaction already had a score. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
 
-**The settings on those questions are taken from your scorecard as it is today.** An interaction's score is worked out when you open it, not stored as a number at processing time. Change a question's **weight**, **Auto-Fail**, or **Compliance** setting, and every interaction already scored against that question is scored differently from that moment on. The stored answers do not move. The arithmetic applied to them does.
+**The settings on those questions are taken from your scorecard as it is today.** An interaction's score is worked out when you open it, not stored as a number at processing time. Change a question's **weight**, **Auto-Fail**, or **Compliance** setting, and every interaction already scored against that question is scored differently from that moment on. The recorded answers do not move. The arithmetic applied to them does.
 
-:::warning Editing a weight rewrites history
-This applies backwards across your whole history, and it moves the **Initial** scores too, so the AI's original assessment is re-weighted along with yours. A trend that looked flat can change shape because of an edit made today.
+:::warning Editing these settings rewrites history
+A change to a question's weight, Auto-Fail, or Compliance setting applies backwards across your whole history, and it moves the **Initial** scores too, so the AI's original assessment is re-weighted along with yours. A trend that looked flat can change shape because of an edit made today.
 
-Change weights deliberately, record when you did it, and compare periods either side of the change rather than reading the whole history as one measurement.
+Change these settings deliberately, record when you did it, and compare periods either side of the change rather than reading the whole history as one measurement.
 :::
 
-The same applies to **Expected Outcome**. Change it after interactions have been scored, and their stored answers are compared against the new setting, so answers that read as passes can become failures.
+The same applies to **Expected Outcome**. Change it after interactions have been scored, and their recorded answers are compared against the new setting, so answers that read as passes can become failures.
 
-**Rerun Scorecard** covers one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against the questions applying now. An interaction that already has a score keeps that score when you use this specific button, so it is not a route to picking up questions added since. Reassigning the agent on an already-scored interaction does pick them up, silently, which is the exception noted above.
+**Rerun Scorecard** covers one case the above does not. It appears on an interaction that has no automatic scorecard at all, for example one processed before you created yours, and scores it against your questions as they stand today. An interaction that already has a score keeps that score when you use this specific button, so it is not a route to picking up questions added since. Reassigning the agent on an already-scored interaction does pick them up, silently, which is the exception noted above.
 
-To apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation, so weigh it against starting the new measurement from the change instead.
+Reassigning the agent is for correcting a misassignment, not a way to rescore. Otherwise, to apply a newly added question to older interactions, the interaction has to be processed again, which means uploading the recording a second time. That leaves you with two interactions for one conversation. The alternative is to leave older interactions as they are and measure the new question only from the date you added it.
 
 ## Auto-fail shows as zero, with the earned score kept beside it
 
@@ -213,9 +215,9 @@ Scope is not the only filter. A question is applied to an interaction when four 
 - The scorecard's **scope** covers the agent.
 - The question's **Search Status** is **Enabled**.
 - Its **Apply To** matches the call's direction.
-- The set's **Interactions** setting includes the interaction's type, call or chat.
+- The scorecard's **Interactions** setting includes the interaction's type, call or chat.
 
-A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
+A scorecard set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
 Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction with no question covering it gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
