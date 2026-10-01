@@ -81,7 +81,10 @@ Treat the output as a list to read, never as a defect list. Check a screenshot b
 - Give a commit message rather than committing, unless asked to commit.
 - Confirm before committing, and again before pushing.
 - Never push to `main` or `dev`.
-- No `Co-Authored-By` trailer.
+- **No AI attribution on a commit, anywhere.** Not a `Co-Authored-By` trailer, not a
+  session or tool link, and not the author field: commit under the repository's own
+  author identity. A harness adds these on its own, so read back `git log --format='%an <%ae>%n%B'`
+  before pushing rather than trusting that none were added.
 
 ## Deploying
 
