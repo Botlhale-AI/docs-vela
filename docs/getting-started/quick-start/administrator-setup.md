@@ -64,7 +64,7 @@ Users can sign in with their existing Google or Microsoft account. The **Sign in
 
 The only requirement is that the person already exists in Vela. Add them first (Step 3), using the same email address as their Google or Microsoft account. If someone signs in with an email that has not been added to Vela, sign-in is refused.
 
-Users who sign in through SSO manage their password with Google or Microsoft. The **Security** tab in Vela changes only their Vela password.
+An SSO user's sign-in password is held by Google or Microsoft. The **Security** tab still appears for them, but it changes only their Vela password, which they never sign in with.
 
 </TabItem>
 <TabItem value="password" label="Email and Password">

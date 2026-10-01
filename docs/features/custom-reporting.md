@@ -102,7 +102,7 @@ Metrics are organised into groups, listed alphabetically:
 
 Your plan decides which metrics are offered. On the [Lite](../reference/glossary.md#lite) edition, alert, keyword, intent, and pain point metrics are not offered. The list shows every call and chat metric whichever interaction type you chose, so a call-only metric in a chats report has no data and is dropped when the report is built. The list also uses shorter names than the Dashboard cards. See [Metrics](../reference/metrics.md).
 
-A group appears once at least one of its metrics survives both, so you may see fewer than eight.
+A group appears only where at least one of its metrics is offered on your plan, so you may see fewer than eight.
 
 ![Selected metrics grouped under Customer Sentiment, Interactions And Volume, and Keywords, Intents, & Language, with Add New Metric below](../../img/screenshots/report/report_metrics.png)
 
@@ -187,7 +187,7 @@ To rename a report, select the pencil icon beside its name, type the new one, an
 
 How you check depends on which you built. A one-time report takes a few minutes to build, and Vela emails you when it is ready. A schedule produces its first report on its next run, so what you confirm today is that the schedule itself is set correctly.
 
-For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file either had no data in the period, or its summary could not be written. Create the report again to retry.
+For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file either had no data in the period, or its summary could not be written. Create the report again to tell the two apart: a metric missing from the second file as well had no data.
 
 For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the date and time you intended. That confirms the schedule is set. To confirm it delivers, wait for that first run and check the report arrives as expected.
 

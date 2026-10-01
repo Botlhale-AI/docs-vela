@@ -19,7 +19,7 @@ Track how your agents are performing, find where they need help, and turn that i
 You need:
 
 - **Interactions that have finished processing.** Performance figures are calculated from analysed interactions, so a new organisation with nothing uploaded shows no data rather than zeros.
-- **An Agent Scorecard covering these agents' teams.** Every score on this page comes from it: the scores, the categories behind them, and each agent's strengths and weaknesses. Without one, the score figures stay empty. Alerts and sentiment still show. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
+- **An Agent Scorecard covering these agents' teams.** The scores, the categories behind them, and each agent's strengths and weaknesses all come from it. Without one, those figures stay empty, though alerts and sentiment still show. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 - **Access level:** Organisational, Departmental, or Team, covering the agents you are monitoring. See [Access Level](../reference/glossary.md#access-level).
 
 ---
@@ -159,7 +159,7 @@ If the table is missing entirely, this agent has no scorecard scores in that dat
 
 A category between the two bounds appears in neither list. This page works the lists out from your scorecard settings as they are today, and counts auto-failed interactions as zero. The Performance table uses the scores saved when each interaction was scored, and leaves Auto-Fail out of **Strength** and **Weakness**, so the two can differ. Use this page for the current picture.
 
-Categories come from the **Category** field on each scorecard question, so how you group your questions decides what can appear here. If every category appears under **Work On This**, the agent scores below your Lower Bound in all of them. See [Score Boundaries](../reference/glossary.md#score-boundaries). See [How Scoring Works](../explanation/how-scoring-works.md).
+Categories come from the **Category** field on each scorecard question, so how you group your questions decides what can appear here. If every category appears under **Work On This**, the agent scores below your Lower Bound in all of them. See [Score Boundaries](../reference/glossary.md#score-boundaries) and [How Scoring Works](../explanation/how-scoring-works.md).
 
 ![Take A Bow and Work On This below the scorecard table, beside Total Interactions and the Total Score](../../img/screenshots/performance/agent-performance2.png)
 

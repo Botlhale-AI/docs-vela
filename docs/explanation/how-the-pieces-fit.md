@@ -67,7 +67,7 @@ Most of Vela can be changed back. These three cannot be fully reversed, so make 
 | **Editing a scorecard question's weight, Auto-Fail, Compliance, or Expected Outcome** | Changing the setting back does not restore scores that were saved under it in the meantime. A weight, Auto-Fail, or Compliance change reaches past interactions unevenly: some figures move at once, while the **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old settings until each interaction is scored again. An Expected Outcome change leaves past AI answers as they were. See [How Scoring Works](./how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored) |
 | **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tagging the agent only works in a new comment, and not in a reply |
 
-You can add a scorecard question at any time. It adds to the total that future scores are measured against, so note the date. Unless you create it with **Historical Search** on, it applies only to interactions processed afterwards, so a question added today does not appear on last week's calls.
+You can add a scorecard question at any time. It adds to the total that future scores are measured against, so interactions either side of it are not scored out of the same total. Note the date you added it, or the step in the average reads as a change in performance. Unless you create it with **Historical Search** on, it applies only to interactions processed afterwards, so a question added today does not appear on last week's calls.
 
 ---
 

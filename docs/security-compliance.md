@@ -54,7 +54,7 @@ These are the controls your own administrators configure and use.
 
 ### Signing In
 
-* Vela supports Google and Microsoft sign-in. Where an organisation uses either, passwords are held by that identity provider and the **Security** tab is hidden in Vela.
+* Vela supports Google and Microsoft sign-in. Where an organisation uses either, the sign-in password is held by that identity provider rather than by Vela.
 * Passwords set in Vela must be at least 8 characters and include a letter, a number, and a special character. See [Password Requirements](./settings-config/account-security.md#password-requirements). They are stored hashed, never in plain text.
 * Sessions expire after 24 hours without activity, after which you sign in again.
 

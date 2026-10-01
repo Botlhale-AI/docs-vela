@@ -155,7 +155,7 @@ A single call that appears to upload but never shows up in the Interactions list
 **Cause:** The upload connection is too slow or drops during a long transfer. A ZIP over 3 GB cannot cause this, because Vela rejects it as soon as you add it, with `file too big!`.
 
 **Solution:**
-1. Split large batches into smaller ZIP archives.
+1. Split large batches into smaller ZIP archives, so each transfer is short enough to finish before the connection drops.
 2. Upload during off-peak hours (evenings or weekends) when server load is lower.
 3. Use a wired internet connection rather than Wi-Fi for large uploads, as a stable connection matters more than raw speed over a long transfer.
 4. Do not navigate away from the upload page while a bulk upload is in progress.

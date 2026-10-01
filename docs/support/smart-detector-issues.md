@@ -51,7 +51,7 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 **Problem:** An interaction has no score, or nothing appears on its **Scorecard** tab.
 
-**Cause:** No scorecard question applied to this interaction when it was processed. Either no question's scope includes the agent's team or department, no question's **Interactions** setting includes this channel, or the questions were created after the interaction was processed.
+**Cause:** No scorecard question applied to this interaction when it was processed. Either no question's scope covers the agent's team or department, no question's **Interactions** setting covers this channel, or the questions came later.
 
 **Solution:**
 1. Ask your administrator to open **Smart Detector → Agents Scorecard** and confirm that questions exist with **Search Status** set to Enabled.

@@ -500,7 +500,7 @@ The reply covers the limits this documentation refers to elsewhere:
 | Field | What it tells you |
 | :--- | :--- |
 | `active` | Whether the organisation is activated. Uploads against an inactive organisation do not process |
-| `monthlyAllocatedDuration` and `currentDurationUse` | The allocation and how much of it is used, in minutes. The published reference says seconds, but Vela counts minutes, and **Settings** shows the same figures as minutes |
+| `monthlyAllocatedDuration` and `currentDurationUse` | The allocation and how much of it is used, both in minutes. The published reference says seconds, but **Settings** shows the same figures in minutes |
 | `stopWhenAllocationExceeded` | Whether processing halts once the allocation runs out |
 | `scorecardLimit`, `smartSearchLimit`, `painPointsLimit` | The caps your plan sets |
 | `coachingEnabled` | Whether the Coaching add-on is on |

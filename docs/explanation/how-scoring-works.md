@@ -131,7 +131,7 @@ Historical Search is available only while you create the question. For a questio
 - Leave older interactions as they are, and measure the new question from the date you added it.
 - Upload the recordings again. This creates a second copy of each interaction.
 
-**Reassigning the agent** on an interaction also sends it back to the AI to be scored again with your questions as they are today. Every answer is replaced, so any reviewer overrides on it are lost. Use it only to correct an interaction assigned to the wrong agent. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
+**Reassigning the agent** on an interaction also sends it back to the AI, which answers your questions as they stand today. Every answer is replaced, so reviewer overrides are lost. Use it only to correct an interaction assigned to the wrong agent. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
 
 The **Rerun Scorecard** button is for a different situation. It appears only on an interaction with no scorecard at all, such as one processed before your scorecard existed.
 
@@ -219,7 +219,7 @@ Vela produces a percentage. It does not decide what counts as good.
 
 Your administrator sets the **Lower Bound** and **Upper Bound**, which divide scores into Red, Amber, and Green. They start at 50 and 80. Every colour on a score, and every category listed as a strength or weakness, comes from these two numbers. See [Organisation Configuration](../settings-config/organisation-configuration.md).
 
-Set them against your own standards and history rather than an external benchmark.
+Set them against your own standards and history. A boundary borrowed from another contact centre was drawn against different questions, so the same percentage does not mean the same thing there as it does here.
 
 ---
 
