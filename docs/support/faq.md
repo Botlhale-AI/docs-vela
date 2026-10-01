@@ -90,7 +90,7 @@ A: It means the AI detected that the customer's tone was mostly negative, showin
 A: Yes. Agents log in to their own Agent Portal, where they can view their interactions, read transcripts, see their scores, and review coaching comments left by their team lead.
 
 **Q: How do agents receive coaching feedback?**  
-A: When a team lead adds a comment and tags the agent using the @ mention, the agent receives an in-app notification and can read and respond to the comment in their Agent Portal.
+A: When a team lead adds a comment and tags the agent using the @ mention, the comment is shared with the agent. They read and respond to it on that interaction in their Agent Portal. They are not notified, so they find it by opening the interaction.
 
 {/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
 

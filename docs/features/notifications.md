@@ -125,12 +125,14 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 ## 5. Comments and @ Mentions
 
-Comments are how feedback reaches your agents, and the **@** mention is what makes a comment a notification.
+Comments are how feedback reaches your agents, and the **@** mention is what shares a comment with them.
 
-Type **@** in the comment box and select **@agent**, the only option offered. Vela then notifies the agent in their Agent Portal, where they can read it and reply. An untagged comment stays visible to team leads and never reaches the agent.
+Type **@** in the comment box and select **@agent**, the only option offered. The comment then appears on that interaction in the agent's Agent Portal, where they can read it and reply. The agent is not notified, so they find it by opening the interaction. An untagged comment stays visible to team leads and never reaches the agent.
+
+{/* VERIFIED 2026-10-01 on origin/main, origin/vela-fly, and origin/dev-hold: app/(pages)/interactions/calls/[id]/comments.js sets agent: true for @agent but creates no notification for the agent. The "New mention" notification matches profile names, and @agent stores the string "agent". Org-comment recipients exclude role "agent". Like and resolve notifications reach a comment's author only where notifications.platform.own_comments is set, which addUser never sets for an agent. Never seen on an agent account (user, 2026-10-01). */}
 
 :::note Tagging the agent needs the Coaching Portal
-The **@agent** option only appears in the comment box, and the reminder text above it only shows, where your organisation has the Coaching Portal enabled. Without it, an agent has no Agent Portal to notify, so there is no way to tag them and every comment stays visible to team leads only.
+The **@agent** option only appears in the comment box, and the reminder text above it only shows, where your organisation has the Coaching Portal enabled. Without it, an agent has no Agent Portal, so there is no way to tag them and every comment stays visible to team leads only.
 :::
 
 ![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)

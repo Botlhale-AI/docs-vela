@@ -62,7 +62,7 @@ The Coaching Portal for agents brings:
     ships, and link the Coaching Portal page for it. */}
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
-- **Notifications**: Instant notifications for courses, awards, and warnings. See [Manage Notifications](./features/notifications.md).
+- **Notifications**: Instant notifications for courses and awards. See [Manage Notifications](./features/notifications.md).
 
 The Coaching Portal is an add-on with its own documentation. Creating courses, tracking completion, and managing awards are covered in the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz). On this side, [Turn What You Find into Coaching](./features/monitor-agent-performance.md#4-turn-what-you-find-into-coaching) covers the step before that: finding the gap a course should target.
 

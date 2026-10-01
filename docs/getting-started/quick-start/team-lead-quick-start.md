@@ -189,7 +189,7 @@ Four parts do most of the work when you review:
 - **Summary**: a plain-language recap of what happened and how it was resolved.
 - **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
-- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it, so the interaction leaves the Smart Search's Returned Interactions list.
+- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it. A resolved Smart Search alert drops out of that search's Returned Interactions list.
 
 The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 
@@ -199,7 +199,7 @@ After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so they receive a notification. Type `@` and select **@agent** from the list that appears. The agent themselves is not in that list, only the **@agent** option. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal to notify them in, and the `@agent` option does not appear.
+3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent is not notified, and sees it when they open the interaction in their Agent Portal. The agent themselves is not in that list, only the **@agent** option. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
@@ -234,7 +234,7 @@ You have completed the Team Lead Quick Start. You can now:
 - ✅ Upload and review individual calls
 - ✅ Provide coaching feedback to agents via comments
 
-**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, they have been notified. Select **Mark as Reviewed** to record that you are finished with it, which is what your team's review coverage is measured on.
+**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, the comment is now on that interaction in their Agent Portal. Select **Mark as Reviewed** to record that you are finished with it, which is what your team's review coverage is measured on.
 
 ---
 

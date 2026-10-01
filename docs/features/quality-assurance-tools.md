@@ -285,7 +285,7 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
     * **Be specific:** "At 1:45, you missed the required closing statement."
     * **Be constructive:** "Try to summarise the solution before ending the call next time."
     * **Tag the agent:** type `@` and select **@agent** from the list. The agent is not listed by name, only as **@agent**. Without the tag the comment stays visible to team leads only.
-3.  The agent can read and respond to your comments in their Agent Portal, where your organisation has the Coaching Portal enabled. Without it, there is no Agent Portal to notify, so tagging the agent is not available and every comment stays visible to team leads only.
+3.  The agent can read and respond to a tagged comment in their Agent Portal, where your organisation has the Coaching Portal enabled. They are not notified, so tell them where to look if it is urgent. Without the Coaching Portal there is no Agent Portal, so tagging the agent is not available and every comment stays visible to team leads only.
 4.  Select **Mark as Resolved** on a comment or reply once the point has been dealt with. It then reads **Resolved by** your name. This closes that comment only, so an alert on the same interaction stays open until you select **Resolve** on it.
 5.  Select **Reply** on a comment to answer in the same thread, rather than starting a new one. The agent's replies appear here too.
 6.  Select **Like** to acknowledge a comment without writing one. The control then reads **1 Like**, then **2 Likes**, and so on.
@@ -293,7 +293,7 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
 :::warning You cannot tag an agent in a reply
 **@** mentions work in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
 
-This matters because tagging is what notifies the agent. Replying to their response does not reach them, however clearly it answers their question. Where a reply carries something the agent has to see, post it as a new comment and tag them there.
+This matters because tagging is what shares a comment with the agent. A reply in a thread you tagged is shared with them too, so answering their response there reaches them. A reply in an untagged thread does not. Where it carries something the agent has to see, post it as a new comment and tag them there.
 
 :::
 
@@ -384,10 +384,10 @@ A course is not a substitute for the conversation. Arrange time with the agent t
 Your scoring, your comment, and the reviewed flag all live on the interaction itself, so that is the only place to check them. Open it again and confirm three things:
 
 - **The Scorecard tab shows an outcome on every applicable question**, with your overrides in place and the score recalculated. The AI's original answers remain beside yours as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score**.
-- **Your comment is on the interaction**, and the agent is tagged if you meant to notify them. A comment cannot be edited or deleted afterwards, so read it back rather than reposting.
+- **Your comment is on the interaction**, and the agent is tagged if you meant them to see it. A comment cannot be edited or deleted afterwards, so read it back rather than reposting.
 - **The interaction is marked as reviewed.** Your team's review coverage counts the interactions you mark, so marking is what makes the work visible.
 
-If you meant to notify the agent and the tag is missing, add a second comment with the tag rather than editing the first, which cannot be changed.
+If you meant the agent to see it and the tag is missing, add a second comment with the tag rather than editing the first, which cannot be changed.
 
 ---
 

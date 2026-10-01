@@ -227,7 +227,7 @@ Monitoring is only worth the time if it ends in coaching. This section covers ho
 
 ### B. Act on What You Find
 
-1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so they are notified. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
+1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so the comments are shared with them. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
 2.  **Set up a course** in the Coaching section, scoped to that category, with a **Training Initiation Score Range** that covers the gap.
 3.  **Track results** by monitoring the agent's score trend over the following weeks.
 
