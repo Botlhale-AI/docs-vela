@@ -78,6 +78,7 @@ Not everything lands in the same place, which is the usual reason a notification
 | A redaction decision | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
 | A processed call | A call you uploaded on its own has finished analysis, subject **Call analysis complete** | **Email only**, to the address you signed in with, whatever your preferences. There is no in-app notification for this |
 | A processed batch | A bulk upload has finished analysis | **Email only**, a summary to users with **New Alerts Detected** ticked under email notifications, sent straight away whatever the frequency |
+| A rescored interaction | You reassigned the agent on an interaction, and the AI has finished scoring it again, subject **Checklist Scoring is complete** | **Email only**, to the address you signed in with. There is no in-app notification for this |
 | A course assignment | A training course has been assigned to you | **Agent Portal**, not the main platform |
 | An award | An award has been presented to you | **Agent Portal**, not the main platform |
 

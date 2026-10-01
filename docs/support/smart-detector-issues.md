@@ -80,7 +80,7 @@ The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, 
 
 **Problem:** An interaction's score changed after nothing was edited on the scorecard.
 
-**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) sends the interaction back to the AI to be scored again against your questions as they stand today, whether or not it already had a score. Every answer is replaced, including reviewer overrides. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed until the completion email arrives.
+**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) sends the interaction back to the AI to be scored again against your questions as they stand today, whether or not it already had a score. Every answer is replaced, including reviewer overrides. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed until the completion email arrives, headed **Checklist Scoring is complete**.
 
 **Solution:**
 1. Check whether the interaction was recently reassigned to a different agent, in **Call Details**.

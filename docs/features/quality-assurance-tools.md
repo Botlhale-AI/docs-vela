@@ -212,6 +212,14 @@ Selecting a new agent sends the interaction back to the AI to be scored again, u
 This is a different control from **Reassign** on **Agents → Agent Details**, which moves an agent between teams in bulk and does not touch scoring. See [Manage Agents and Teams](./manage-agents-and-teams.md#5-move-agents-between-teams).
 :::
 
+The email that lands when the rescoring finishes is headed **Checklist Scoring is complete**, not *scorecard*, so a search of your inbox for "scorecard" does not find it. It names the interaction by **Call ID** only, with no agent name or filename, and its **View** button opens that interaction.
+
+![The Checklist Scoring is complete email, headed Success above a Call ID and a View button](../../img/screenshots/notifications/checklist-scoring-complete.png)
+
+{/* Verified on screen 2026-10-01: email received after reassigning the agent on an already-scored call. Kept in its own light styling because it is an email rather than a Vela screen, so the Dark Mode rule does not apply. "Checklist Scoring" is the product's wording, not ours: the email template still carries the pre-rename term. Do not "correct" it to Scorecard. */}
+
+The email reads **Success!** and says nothing about the answers it replaced, so it is not a prompt to check anything. Treat it as the signal that the new score is ready to look at.
+
 Use this to correct a genuine misassignment, such as a recording uploaded under the wrong name. Check the score afterwards rather than assuming only the agent name changed, and expect to redo any overrides.
 
 ---
