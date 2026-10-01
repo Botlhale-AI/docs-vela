@@ -51,18 +51,18 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 **Problem:** An interaction has no score, or nothing appears on its **Scorecard** tab.
 
-**Cause:** No scorecard question is scoped to the team or department this agent belongs to, so there was nothing to score the interaction against.
+**Cause:** No scorecard question applied to this interaction when it was processed. Either no question's scope includes the agent's team or department, no question's **Interactions** setting includes this channel, or the questions were created after the interaction was processed.
 
 **Solution:**
 1. Ask your administrator to open **Smart Detector → Agents Scorecard** and confirm that questions exist with **Search Status** set to Enabled.
-2. Check the scope of the scorecard. It must cover the department or team the agent belongs to, and its **Interactions** setting must match the channel: a scorecard set to Chats never scores a call.
-3. Once a scorecard is active, newly processed calls are scored automatically. It does not reach back over calls already processed unless it was created with Historical Search on. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
+2. Check each question's scope. It must cover the department or team the agent belongs to, and its **Interactions** setting must match the channel: a question set to Chats never scores a call.
+3. A new question scores newly processed interactions automatically. It reaches interactions already processed only if it was created with **Historical Search** on. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 
 ---
 
 **Problem:** A newly added scorecard question does not appear on interactions that were already scored.
 
-**Cause:** Which questions an interaction was scored against is fixed when it is processed. A question added afterwards is not applied to it unless it was created with **Historical Search** on.
+**Cause:** The questions an interaction is scored against are set when it is processed. A question added afterwards reaches it only if the question was created with **Historical Search** on, or if the interaction is later reassigned to a different agent, which rescores it against your current questions.
 
 **Solution:**
 1. Accept the gap and start the new measurement from the date you added the question. This is usually the right choice.
@@ -80,12 +80,12 @@ The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, 
 
 **Problem:** An interaction's score changed after nothing was edited on the scorecard.
 
-**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) reruns the scorecard against your questions as they stand today, whether or not the interaction already had a score. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed.
+**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) sends the interaction back to the AI to be scored again against your questions as they stand today, whether or not it already had a score. Every answer is replaced, including reviewer overrides. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed until the completion email arrives.
 
 **Solution:**
 1. Check whether the interaction was recently reassigned to a different agent, in **Call Details**.
-2. If so, the new score reflects your current scorecard rather than the one in force when it was first processed. Compare it against **Initial Score** for what the AI originally produced.
-3. Reassign only to correct a genuine misassignment, and check the score afterwards.
+2. If so, the new score reflects your current scorecard and fresh AI answers. **Initial Score** now shows the new AI answers too, and any reviewer overrides were cleared.
+3. Reassign only to correct a genuine misassignment, then check the score and set any overrides again.
 
 ---
 
@@ -148,11 +148,11 @@ Open the Smart Search and confirm its **Notifications** setting is on. You can c
 
 **Problem:** **New Smart Search** is greyed out and cannot be selected.
 
-**Cause:** Your organisation has reached the number of searches its plan allows, which is five unless your plan sets another number. The limit counts every search regardless of status, so Inactive searches still use a place.
+**Cause:** Your organisation has reached the number of active searches its plan allows, which is five unless your plan sets another number. Only searches set to **Active** count towards the limit.
 
 **Solution:**
-1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**.
-2. Delete a search you no longer need. This is the only way to free a place. Setting a search to **Inactive** stops it matching but does not free a place.
+1. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies.
+2. Set a search you no longer need to **Inactive**, or delete it. Either one frees a place.
 3. If you need more, ask your Account Manager about upgrading your plan for a higher limit.
 
 ---

@@ -8,7 +8,7 @@ type: explanation
 
 # How the Pieces Fit Together
 
-Each guide explains one feature. This page explains how they relate, and why the order you set them up in matters more than it looks. For what Vela does at all, start with [Platform Overview](../getting-started/platform-overview.md).
+Each guide explains one feature. This page explains how they relate, and why the order you set them up in matters. To understand what Vela does and how it works, start with the [Platform Overview](../getting-started/platform-overview.md).
 
 ---
 
@@ -18,9 +18,9 @@ The two get confused, because both watch every interaction and both raise things
 
 **The Agent Scorecard measures what the agent did.** Did they verify identity, give the disclosure, confirm the payment date. The answers become a score, and the score belongs to the agent.
 
-**Smart Search finds what was said.** A customer asking for a supervisor, a competitor being mentioned, a phrase your compliance team wants to hear about. It raises an alert against the interaction, and it changes nobody's score.
+**Smart Search finds what was said.** A customer asking for a supervisor, a competitor being mentioned, a phrase your compliance team wants to hear about. It raises an alert against the interaction, and it does not affect agent scores.
 
-If you find yourself wanting to score something the agent cannot influence, you want neither of these. You want a [Smart Question](../smart-questions-guide.md), which records an answer without touching anyone's score.
+If you find yourself wanting to score something the agent cannot influence, you want neither of these. You want a [Smart Question](../smart-questions-guide.md), which records an answer without affecting agent scores.
 
 The test is what the answer describes. If it describes **what the agent did**, it belongs on the scorecard. If it describes **the conversation**, it is a Smart Search or a Smart Question.
 
@@ -30,18 +30,18 @@ The test is what the answer describes. If it describes **what the agent did**, i
 
 ```mermaid
 flowchart LR
-    A("Interactions<br/>nothing else works<br/>without them") --> B("Scorecard<br/>decide Historical Search<br/>before you save")
-    B --> C("Smart Search<br/>the piece that is<br/>cheap to change")
-    C --> D("Reports<br/>built from what<br/>the first three produce")
+    A("<b>Interactions</b><br/>upload calls and chats<br/>for analysis") --> B("<b>Scorecard</b><br/>decide Historical Search<br/>as you create each question")
+    B --> C("<b>Smart Search</b><br/>refine it as you<br/>see the results")
+    C --> D("<b>Reports</b><br/>reflect what the first<br/>three stages produce")
 ```
 
-**Interactions first.** A scorecard with nothing to score and a Smart Search with nothing to match both look broken when they are merely empty. Get a batch of real calls or chats in before you judge anything you have built.
+**Interactions first.** A scorecard with no interactions to score and a Smart Search with no interactions to match both look broken when they are merely empty. Get a batch of real calls or chats in before you judge anything you have built.
 
-**The scorecard second, because one of its decisions cannot be revisited.** **Historical Search** runs the scorecard against interactions already in Vela, and it is only available when you create the scorecard. Leave it off and the interactions you have already uploaded are never scored, and the only way to change that is to upload them again. Decide before you save, not after.
+**The scorecard second, because one of its settings exists only while you create a question.** Turn on **Historical Search** as you create a question to score the interactions already in Vela against it. A question saved without it applies only to interactions processed afterwards. Interactions uploaded before you had any scorecard can still be scored one at a time with **Rerun Scorecard**. Decide on Historical Search before you save.
 
-**Smart Search third, because it is the one piece you expect to get wrong.** Phrases are cheap to edit and the results tell you quickly whether you chose well. Building it after you have interactions means you can turn on its own Historical Search and see real matches immediately, rather than guessing and waiting.
+**Smart Search third, because you refine it as you see what your interactions contain.** Phrases are quick to edit, and the results show you whether you chose well. Building it after you have interactions means you can turn on its own Historical Search and see real matches immediately, rather than guessing and waiting.
 
-**Reports last.** A report is a view of what the first three produce. Schedule it once you trust what goes into it.
+**Reports come last.** They reflect the outputs of the first three stages, so schedule them once you are confident in the underlying data.
 
 ---
 
@@ -49,25 +49,25 @@ flowchart LR
 
 A new Smart Search returning a count is not yet evidence. Open several of the interactions it matched and read them.
 
-Phrases catch words, not intent. A search for escalation language matches an agent saying "let me speak to my manager" as readily as a customer demanding one, and you cannot tell which from the count alone. Reading a handful tells you whether the number means what you think.
+Phrases catch words, not intent. A search for escalation language matches an agent saying "let me speak to my manager" as readily as a customer demanding one, and you cannot tell which from the count alone. Reviewing a sample of matched interactions helps confirm whether the results reflect what you intended to find.
 
-This is worth doing once per search, when you create it. After that the phrase list is either right or you have a specific reason to change it.
+Do this once when you create each search. If the results consistently match your intended use, you can trust the phrase list unless you have a specific reason to change it.
 
-The same caution applies in reverse. A search returning nothing is usually a phrase list written the way an internal process document describes the situation, rather than the way people actually speak.
+The same principle applies when a search returns no results. An empty result may mean the phrase list reflects how an internal process describes an issue, rather than how customers or agents actually talk about it. Review the language people use in real interactions, and adjust the phrases to match.
 
 ---
 
 ## What cannot be undone later
 
-Most of Vela is editable. Three things are not, and each one is a decision to make deliberately rather than discover:
+Most of Vela can be changed back. These three cannot be fully reversed, so make each one deliberately:
 
 | Decision | Why it is one-way |
 | :--- | :--- |
-| **Historical Search**, on a scorecard, Smart Search, or Smart Question | Only available at creation. Adding it later is not possible, and re-uploading is the only alternative |
-| **Editing a scorecard question's weight, Auto-Fail, Compliance, or Expected Outcome** | A weight, Auto-Fail, or Compliance change reaches past interactions unevenly: some figures move at once, while the **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old settings until each interaction is scored again. An Expected Outcome change leaves past AI answers as they were. See [How Scoring Works](./how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored) |
-| **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tagging the agent also only works in a new comment, never in a reply |
+| **Historical Search**, on a scorecard question, Smart Search, or Smart Question | Available only while you create it. For one saved without it, re-uploading the recordings is the only way to reach older interactions |
+| **Editing a scorecard question's weight, Auto-Fail, Compliance, or Expected Outcome** | Changing the setting back does not restore scores that were saved under it in the meantime. A weight, Auto-Fail, or Compliance change reaches past interactions unevenly: some figures move at once, while the **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old settings until each interaction is scored again. An Expected Outcome change leaves past AI answers as they were. See [How Scoring Works](./how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored) |
+| **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tagging the agent only works in a new comment, and not in a reply |
 
-Adding a scorecard question later is safe, but it only applies to interactions processed after the change unless you create it with **Historical Search** on. Without it, older interactions keep the scorecard they were scored against, so a question added today does not appear on last week's calls.
+You can add a scorecard question at any time. It adds to the total that future scores are measured against, so note the date. Unless you create it with **Historical Search** on, it applies only to interactions processed afterwards, so a question added today does not appear on last week's calls.
 
 ---
 

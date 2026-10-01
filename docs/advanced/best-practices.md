@@ -28,8 +28,8 @@ Build in this order: Departments, then Teams, then Users and agents, then the Sc
 | Step | Do this | Because |
 | :--- | :--- | :--- |
 | **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
-| **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only |
-| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five searches unless it sets another number, whatever their status, and at the limit **New Smart Search** greys out. Delete one you no longer need to free a place |
+| **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only, unless you turn on **Historical Search** as you create them |
+| **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five active searches unless it sets another number, and at the limit **New Smart Search** greys out. Set a search you no longer need to **Inactive**, or delete it, to free a place |
 
 :::caution Historical Search is set once
 To cover interactions already in Vela, turn on **Historical Search** as you create the search. The option appears only while you create it, so a search built without it can never be given it later.

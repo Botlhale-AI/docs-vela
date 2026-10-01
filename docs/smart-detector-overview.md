@@ -13,7 +13,7 @@ Smart Detector is where you set up automatic monitoring and evaluation. It bring
 
 ## The Smart Detector Home Page
 
-Selecting **Smart Detector** in the left sidebar opens a home page with a card for each tool, rather than jumping straight into one of them. The sidebar lists the same tools, so you can go directly to any of them once you know which you want.
+Selecting **Smart Detector** in the left sidebar opens a home page with a card for each tool, rather than jumping straight into one of them. The sidebar lists **Agents Scorecard**, **Knowledge Base**, **Smart Search**, and **Smart Questions**, so you can go straight to those once you know which you want. Number Search and the term lists open from the home page.
 
 Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords**, and **Pain Points**. These are the term lists your searches and analysis match against. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
 
@@ -30,7 +30,7 @@ Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords
 
 The home page also has a **Number Search** card. It gathers every interaction involving a phone number and writes a read across the whole history, which is the view to take into a call-back or a complaint. See [Search by Phone Number](./number-search-guide.md).
 
-Smart Search and Smart Questions appear in the sidebar on the plans that include them. Where one is absent, your Account Manager can tell you what it would take to add.
+Smart Search, Smart Questions, Number Search, and the **Intents**, **Keywords**, and **Pain Points** buttons are absent on the [Lite](./reference/glossary.md#lite) edition. Where one is absent, ask your Account Manager about upgrading your plan.
 
 ---
 

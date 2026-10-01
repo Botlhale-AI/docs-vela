@@ -8,7 +8,7 @@ type: how-to
 
 # Search by Phone Number
 
-Number Search answers a question the Interactions list cannot. What has this customer been through? Give it a phone number, and it finds every call involving that number. It then gives you a read across the whole history, instead of one conversation at a time.
+Number Search answers a question the Interactions list cannot. What has this customer been through? Give it a phone number, and it finds the calls involving that number within your access level. It then gives you a read across the customer's recent calls, instead of one conversation at a time.
 
 Use it before calling a customer back, or when a complaint arrives and you need the context behind it.
 
@@ -48,7 +48,7 @@ The results page holds two sections, both of which open and close:
 
 ![The Number Search results page, with the Number Search Details and Returned Interactions sections closed below the search field and the All time date control](../img/screenshots/smart_detector/number_search3.png)
 
-Open **Number Search Details** for three pieces of analysis across the whole history:
+Open **Number Search Details** for three pieces of analysis across the customer's recent calls:
 
 | Part | What it gives you |
 | :--- | :--- |
@@ -70,7 +70,7 @@ Open **Returned Interactions** to reach the calls behind that read, and open any
 
 The search field stays on the results page, so you can look up another number without going back.
 
-The analysis is written from each call's topic, summary, and alerts rather than from full transcripts. It is a starting point for the conversation, not a substitute for reading the calls that matter.
+The analysis is written from the 50 most recent calls in the period, using each call's topic, summary, and alerts rather than full transcripts. **Total Interactions** counts every call. Narrow the period to analyse older calls. Number Search shows only calls within your access level, so a team lead sees their own team's calls. It is a starting point for the conversation, not a substitute for reading the calls that matter.
 
 ---
 
@@ -88,7 +88,7 @@ Select **Clear date filter** to go back to the full history.
 
 ## 4. Take It With You
 
-Select **Download Report** to save the results as a PDF, including the summary, pain points, key insights, and the interactions behind them.
+Select **Download Report** to save the results as a PDF, with the number, the period, the interaction count, the summary, pain points, and key insights. The PDF does not list the interactions themselves.
 
 Use the downloaded PDF when sharing externally. This is the version to bring to a call or attach to an escalation, as it captures the reasoning behind the result and can be accessed without relying on a link or permissions.
 

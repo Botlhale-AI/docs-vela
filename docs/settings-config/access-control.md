@@ -24,7 +24,7 @@ The tabs are listed below in the order they appear on the page.
 | **Account** | View | View | View | Personal details and current organisation. Read-only. |
 | **Organisations** | Edit, with organisational access. View otherwise. | View | No access | Organisation profile, duration allocation, score boundaries, redaction, and package limits. |
 | **Notifications** | Edit | Edit | No access | Choose which in-app and email notifications you receive. |
-| **Security** | Edit | Edit | Edit | Change your password. Hidden for SSO users. |
+| **Security** | Edit | Edit | Edit | Change your Vela password. |
 | **Users** | Edit, within your access level | View, within your access level | No access | Add and edit accounts, and manage departments and teams. |
 | **Requests** | Edit | No access | No access | Approve or decline requests to view redacted information. |
 
@@ -33,7 +33,7 @@ The tabs are listed below in the order they appear on the page.
 Everything in the Edit and View columns applies to your own account and your own access level, not to the organisation as a whole.
 
 :::note Agents use the Agent Portal
-Agents sign in to the separate Agent Portal, not the main platform. Its Settings page has two tabs, **account** and **security**, and Security is hidden for SSO users there too. Agents never see the other tabs.
+Agents sign in to the separate Agent Portal, not the main platform. Its Settings page has two tabs, **account** and **security**. Agents never see the other tabs.
 :::
 
 ---
@@ -58,14 +58,14 @@ The User role covers day-to-day work, meaning reviewing interactions, coaching a
 
 * **Users:** See the user list and the Org Table within their access level, but no controls that add, edit, or deactivate an account.
 * **Organisation settings:** Open the **This Org** sub-tab and read every setting on it, including the score boundaries and package limits. Nothing on it can be saved.
-* **Redaction:** By default, raise a request per interaction with **Request Redacted Access**. A request covers that one interaction only. An administrator can grant **View Redactions** on the account, after which the user reveals masked information themselves through **Review Redacted Info**.
+* **Redaction:** By default, raise a request per interaction with **Request Redacted Access**. An approved request covers that one interaction for 24 hours. After that, the user raises a new request. An administrator can grant **View Redactions** on the account, after which the user reveals masked information themselves through **Review Redacted Info**. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx and chats/[id]/page.jsx compare profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant may still see Request Redacted Access. Raised as a product bug. Needs a live check. */}
 * **Requests:** Cannot see the **Requests** tab, so cannot approve anything, including their own request.
 
 ### Agent
 
 Agents do not use the main platform. They sign in to the **Agent Portal** and work entirely within it.
 
-* **Account and password:** The Agent Portal has its own **account** and **security** tabs. Security is hidden for SSO users.
+* **Account and password:** The Agent Portal has its own **account** and **security** tabs.
 * **No configuration:** No access to organisation settings, users, teams, or quality thresholds.
 * **Performance:** Scores, courses, and coaching are all viewed in the Agent Portal.
 

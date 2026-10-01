@@ -76,11 +76,12 @@ Not everything lands in the same place, which is the usual reason a notification
 | A comment | Someone comments on an interaction your preferences cover | **Comments** tab |
 | A finished report | A scheduled or one-time report has finished generating | **Reports** tab |
 | A redaction decision | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
-| A processed call | A call has finished transcription and analysis, subject **Call analysis complete** | **Email only.** There is no in-app notification for this |
+| A processed call | A call you uploaded on its own has finished analysis, subject **Call analysis complete** | **Email only**, to the address you signed in with, whatever your preferences. There is no in-app notification for this |
+| A processed batch | A bulk upload has finished analysis | **Email only**, a summary to users with **New Alerts Detected** ticked under email notifications, sent straight away whatever the frequency |
 | A course assignment | A training course has been assigned to you | **Agent Portal**, not the main platform |
 | An award | An award has been presented to you | **Agent Portal**, not the main platform |
 
-The last three only appear where they are relevant to your role. Email delivery depends on your own preferences in **Settings → Notifications**.
+Course assignments and awards appear only for agents. For the rest, email delivery depends on your own preferences in **Settings → Notifications**, except where the table says otherwise.
 
 ---
 
@@ -93,7 +94,7 @@ A practical routine for each alert:
 1. Open the matched interaction from the alert.
 2. Review the full context. The transcript and AI analysis show whether the match is a genuine issue.
 3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction, tagging the agent with **@** so it reaches them. A false match needs nothing further.
-4. Select **Resolve** on the alert either way, so your list holds only what you still have to look at.
+4. Select **Resolve** on the alert in the interaction's **Alerts** table either way. Then select the cross on the notification to clear it from your list, so it holds only what you still have to look at.
 
 :::tip Use alerts as your review queue
 Rather than sampling interactions at random, work your alerts first. They are the conversations your own searches have identified as worth looking at.

@@ -9,7 +9,7 @@ type: reference
 The **Account** tab shows your personal profile information, and the **Security** tab lets you change your password. Your display mode is set from the top navigation bar rather than from Settings, and it is covered here too.
 
 :::info ACCESS
-The Account tab is visible to **all users**, regardless of role or scope. The Security tab is visible to all users **except** those signing in through SSO.
+The Account and Security tabs are visible to **all users**, regardless of role or scope.
 :::
 
 ---
@@ -50,7 +50,7 @@ If you belong to more than one organisation, you can change which one you are wo
 The Security tab is dedicated to protecting your account by allowing you to update your password.
 
 :::note SSO Users
-If your organisation uses Single Sign-On (Google or Microsoft), the Security tab is not shown. Your password is managed by your identity provider, not Vela.
+If you sign in with Google or Microsoft, you manage that password with your provider. The Security tab changes only your Vela password, used when you sign in with an email and password. {/* Verified on vela-fly: settings/page.jsx hides Security when session.provider is google or azure-ad, but the NextAuth session callback never sets provider, so the tab shows for everyone. */}
 :::
 
 ### Open the Change Password Form

@@ -105,7 +105,7 @@ Confirm your action in the modal to save, or **Close** to abandon it. The term a
 
 ![The Add New Pain Point modal, with the Pain Point and Description fields. It is the only one of the four lists with a second field](../img/screenshots/smart_detector/add-pain-point.png)
 
-Each term needs text, and must be different from every term already in the list. Vela reports either problem rather than saving.
+Each term needs text. On **Pain Points**, Vela also refuses a name already in the list. On **Topics**, **Intents**, and **Keywords**, check the list first: adding a term that already exists shows a success message but adds no new row.
 
 :::tip Write terms the way people say them
 A keyword is matched against what was actually said. Terms taken from an internal process document often never appear in a conversation. Use the words and phrases your customers naturally use when describing their needs.
@@ -130,11 +130,11 @@ Deleting a term does not change interactions that have already been analysed. It
 
 ## Check Your Work
 
-A term you added appears in the **Created Search** section straight away, dated today, so it stays visible on the day you create it whatever the date range is set to.
+A term you added appears in the **Created Search** section straight away, dated today, so it is visible today with the default date range.
 
-Detection comes later. The term is matched against interactions processed from that point on, so **Last Detected** stays on its creation date until it is actually found in a conversation. An unchanged Last Detected after a week of interactions usually means the wording does not match how people speak, rather than that anything is broken.
+For a term you created, **Last Detected** shows the date you added it and stays on that date. To see your created terms on a later day, widen the date range back to the day you added them.
 
-Your term is properly in use when it appears as an option when you build a [Smart Search](./smart-search-guide.md), and when its **Last Detected** date starts moving.
+Your term is in use when it appears as an option when you build a [Smart Search](./smart-search-guide.md).
 
 ---
 

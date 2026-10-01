@@ -161,11 +161,13 @@ The test: if this page were the only one a customer ever read, would it make sen
 
 ## 7. Deliberate deviations
 
-Two departures from strict Diátaxis, both decisions rather than oversights.
+Three departures from strict Diátaxis, all decisions rather than oversights.
 
 **The Metrics reference includes interpretation.** Diátaxis says reference must be neutral. We include short "what to look for" notes because our readers are QA managers, not engineers. Knowing that Talk to Listen Ratio measures agent talking time against customer talking time is accurate and not much use alone. The interpretation is what they came for.
 
 **The tutorials present two sign-in methods.** Diátaxis says tutorials must not offer choices. We keep SSO and email/password because the reader is not choosing. Their organisation already chose, and they need to recognise which applies.
+
+**Release notes speak in the first person.** They are Botlhale announcing a change to a customer, not a page describing a feature, so "we" is right there. The linter exempts `docs/release-notes.md` by name. See [STYLE_GUIDE.md](./STYLE_GUIDE.md) section 5.
 
 Anything else that mixes types is a defect, not a deviation.
 

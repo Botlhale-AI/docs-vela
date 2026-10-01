@@ -168,16 +168,14 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 1. Navigate to **Interactions → Calls**
 2. Select **Upload**, then the **Single Upload** tab
-3. Fill in the upload form. Only the **Agent** is required.
+3. Fill in the upload form. Choose the **Agent**, and Vela fills in their team and department. All three must be filled before **Upload** turns on.
 4. Add your audio file, then select **Upload**
 
 <SingleCallUploadForm />
 
 ### Processing Time
 
-While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call and the audio quality, and longer calls take longer. Vela emails you when the analysis is complete, using the address and frequency set on the Notifications tab shown below.
-
-![The Notifications tab, with the platform and email lists and the frequency setting](../../../img/screenshots/settings/notification.png)
+While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call and the audio quality, and longer calls take longer. Vela emails the address you sign in with when the analysis is complete.
 
 ### Reviewing the Analysis
 
@@ -244,8 +242,8 @@ You have completed the Team Lead Quick Start. You can now:
 
 | What you see | Why | What to do |
 | :--- | :--- | :--- |
-| The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email telling you the analysis is ready. Check **Settings → Notifications** if you are not receiving them |
-| The interaction has no scorecard | No scorecard question is scoped to this agent's team | Ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
+| The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email to the address you sign in with. If nothing arrives, check your spam folder, then open **Interactions → Calls** to see whether the call has finished |
+| The interaction has no scorecard | No scorecard question covers this agent's team or department, or the call was uploaded before the scorecard was created | Select **Rerun Scorecard** on the interaction. If it still has no scorecard, ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
 | Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and select **@agent** from the `@` list |
 
 For uploads, playback, and other platform problems, see [General Issues](../../support/troubleshooting-guide.md).

@@ -22,7 +22,7 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased |
 | **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets an outcome |
 | **Always Applicable** | Yes / No | No | Whether the question can be marked N/A. When No, the AI may answer N/A on interactions the question does not apply to. When Yes, only Yes or No are offered, so the question is always scored |
-| **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score earned on the other questions in brackets beside it |
+| **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score the interaction would have had without the auto-fail in brackets beside it |
 | **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance items are scored separately |
 | **Apply To** | Inbound Calls / Outbound Calls / All Calls | All Calls | Which call directions the question applies to |
 | **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. Smart Search calls the same setting Active / Inactive |
@@ -31,13 +31,13 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 
 ## Scorecard Fields
 
-These sit above the question list and are set once for the whole scorecard. Every question in it inherits them.
+These sit above the question list on the **Create** tab. Every question you add in one go gets them. After you save, each question keeps its own scope and **Interactions** setting, and you can change them on that question.
 
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
-| **Scorecard Scope** | Entire Organisation / Specific Departments / Specific Teams | Widest your access allows | Which parts of the organisation the scorecard applies to. The form labels the selection below it **Apply these questions to** |
-| **Interactions** | All / Calls / Chats | All | Which interaction types the scorecard runs against. Not to be confused with **Apply To** above, which is per question and chooses the direction rather than the type |
-| **Historical Search** | On / Off | Off | Whether the scorecard also runs against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range**. This is set at creation and cannot be added by editing afterwards |
+| **Scorecard Scope** | Entire Organisation / Specific Departments / Specific Teams | Widest your access allows | Which parts of the organisation the questions apply to. The form labels the selection below it **Apply these questions to** |
+| **Interactions** | All / Calls / Chats | All | Which interaction types the questions run against. Not to be confused with **Apply To** above, which is per question and chooses the direction rather than the type |
+| **Historical Search** | On / Off | Off | Whether the questions you are creating also run against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range**. This is set at creation and cannot be added by editing afterwards |
 
 ## AI Context
 
@@ -56,7 +56,7 @@ Each applicable question contributes its **weight** to the total possible score.
 
 Questions marked **N/A** are excluded from both the earned and possible totals, so marking something not applicable does not penalise the agent.
 
-**Auto-Fail replaces the score with zero, and keeps the earned figure beside it.** If an Auto-Fail question fails, the interaction reads 0.0%, followed in brackets by the weighted result of all the other questions. You can see both that a critical requirement was missed and how the interaction performed otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
+**Auto-Fail replaces the score with zero, and keeps the earned figure beside it.** If an Auto-Fail question fails, the interaction reads 0.0%, followed in brackets by the score it would have had without the auto-fail, with the failed question still counted and earning nothing. You can see both that a critical requirement was missed and how the interaction performed otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
 
 The overall score is reported alongside two subtotals, each with its own auto-fail flag:
 

@@ -64,7 +64,7 @@ Users can sign in with their existing Google or Microsoft account. The **Sign in
 
 The only requirement is that the person already exists in Vela. Add them first (Step 3), using the same email address as their Google or Microsoft account. If someone signs in with an email that has not been added to Vela, sign-in is refused.
 
-Users who sign in through SSO manage their password with Google or Microsoft, so the **Security** tab is hidden for them in Vela.
+Users who sign in through SSO manage their password with Google or Microsoft. The **Security** tab in Vela changes only their Vela password.
 
 </TabItem>
 <TabItem value="password" label="Email and Password">
@@ -206,7 +206,7 @@ Write each question so that the AI, and human reviewers, can give a clear yes or
 ## Step 5: Create Smart Searches
 
 :::info Plan availability
-**Smart Search** appears under **Smart Detector** on the plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
+**Smart Search** appears under **Smart Detector** on every edition except [Lite](../../reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
 :::
 
 A Smart Search automatically monitors every processed interaction and flags one when the phrases or conditions you define are detected in it. Set these up before calls are uploaded so monitoring begins immediately.
@@ -230,7 +230,7 @@ The form is one page. These two views are it scrolled, so they overlap in the mi
 
 Each field is covered in full in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
 
-Repeat for each compliance or quality check your organisation needs to monitor, within the number of searches your plan allows. Most plans include five. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
+Repeat for each compliance or quality check your organisation needs to monitor, within the number of active searches your plan allows, which is five unless your plan sets a different number. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
 
 :::note Smart Questions ask, rather than flag
 A Smart Search flags interactions that match your criteria. A **Smart Question** asks a yes or no question of every interaction for reporting, without affecting anyone's score, which suits anything it would be unfair to judge an agent on. On plans that include it, see [Set Up Smart Questions](../../smart-questions-guide.md).
@@ -268,7 +268,7 @@ Once redaction is configured, masked details are hidden from everyone by default
 Before you hand Vela over, upload one test interaction and confirm it processes from start to finish. This proves authentication, the scorecard, and redaction are working together.
 
 1. Upload a single test call in **Interactions → Calls** (see [Upload Your Data](../../data-upload.md))
-2. Wait for processing to finish. Vela emails you when the analysis is ready
+2. Wait for processing to finish. Vela emails the address you sign in with when the analysis is ready
 3. Open the processed interaction and confirm it has a transcript, a scorecard outcome, and, if you configured redaction, masked details
 4. If an organisation-wide Smart Search should have matched, check that it appears in that search's results
 
@@ -302,7 +302,7 @@ Confirm that scorecard questions exist with a scope covering the relevant team o
 An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and select **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
 
 **Smart Search not matching expected interactions**  
-Check that the search status is set to **Active** and that the scope covers the relevant team or department. If you want historical calls matched, enable the **Historical Search** option when creating the search.
+Check that the search status is set to **Active** and that the scope covers the relevant team or department. Historical Search can only be switched on when a search is created. To match past calls, delete the search and create it again with **Historical Search** on.
 
 ---
 

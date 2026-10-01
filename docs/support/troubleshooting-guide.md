@@ -51,12 +51,12 @@ One symptom is worth naming, because it looks like normal behaviour:
 
 **Solution:**
 - `Please fill in all fields.` Enter both an email address and a password before selecting **Sign In**.
-- `Invalid credentials. Please try again.` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it. See [Resetting a Forgotten Password](../settings-config/account-security.md#resetting-a-forgotten-password).
+- `Invalid credentials` The email or password does not match an account. Check for a typo, or select **Forgot your password?** to reset it. See [Resetting a Forgotten Password](../settings-config/account-security.md#resetting-a-forgotten-password).
 - `You are registered as an agent. Please log in on the agent coaching portal.` The address belongs to an agent account. Agents sign in to the Agent Portal, reached with **Go to Agent Portal Login** on this page.
 - `Too many login attempts. Your account has been blocked. Please contact support for assistance` Ten wrong passwords in a row block the account, and every attempt after that, right or wrong, reads `Your account has been blocked. Please contact support for assistance`. A successful sign-in resets the count. Contact **support@botlhale.ai** to lift the block.
 - `We have sent you an email. Please verify your email address.` The account exists but has not been confirmed. Open the invitation email and select **Confirm Account** before signing in.
 - `We have sent you an email. Please reset your password before logging in.` The account needs its password reset before it can sign in. Check the email for the reset link. {/* UNVERIFIED: this exact string was not found in vela or vela-data source. The other messages in this entry are confirmed verbatim against app/api/login/route.js and the NextAuth route on vela origin/main. This one may originate from an upstream auth service. Needs a live screen or engineering to confirm the exact wording. */}
-- `An unexpected error occurred. Please try again later.` The request to Vela failed rather than being refused. Try again in a moment, and contact support if it continues.
+- `Something went wrong` or `An unexpected error occurred. Please try again later.` Vela could not complete the request. Try again in a moment, and contact support if it continues.
 
 If the page fails to load at all, that is a different problem. See [Browser Issues](#browser-issues).
 
@@ -96,12 +96,11 @@ Check your password against the rules in [Password Requirements](../settings-con
 
 **Problem:** Session expires unexpectedly and you are logged out during work.
 
-**Cause:** A session lasts 24 hours from when you sign in, in any browser mode. What reads as unexpected is usually that limit being reached, or something clearing your cookies before it is.
+**Cause:** Vela signs you out after 24 hours without activity. Each time you use Vela, the 24 hours start again. Being signed out while you are working usually means something cleared your cookies.
 
 **Solution:**
-1. Sign in again. Being signed out after 24 hours is expected rather than a fault.
-2. Avoid clearing browser data, or a setting that clears cookies automatically, while a session is active.
-3. If your organisation enforces a shorter session limit through an SSO provider, that ends the session sooner than 24 hours. Contact your IT administrator.
+1. Sign in again.
+2. Avoid clearing browser data, or a setting that clears cookies automatically, while you are signed in.
 
 ---
 
@@ -135,7 +134,7 @@ A single call that appears to upload but never shows up in the Interactions list
 2. Ensure the CSV is saved with UTF-8 encoding. In Microsoft Excel, use "Save As" and select "CSV UTF-8 (comma delimited)".
 3. Verify that every filename listed in the `filename` column (including the file extension) is present in the ZIP archive.
 4. Confirm that `agent_name` values correspond to agent names in Vela. Matching is case-insensitive, but it matches on the agent's **name**. A username or email such as `john.smith` does not match `John Smith`.
-5. Confirm that `department` and `team` values correspond to existing records in Vela. These are also matched case-insensitively.
+5. Check the spelling of `department` and `team` values. These are also matched case-insensitively. A name Vela does not recognise creates a new agent, team, or department within your access level, so a typo puts calls under a new record rather than failing.
 
 ---
 
@@ -145,18 +144,18 @@ A single call that appears to upload but never shows up in the Interactions list
 
 **Solution:**
 1. Check which calls from the batch appear in the Interactions list, and identify which are missing.
-2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device.
-3. Check the metadata row for each missing file, particularly that `agent_name`, `team`, and `department` correspond to records that exist in Vela.
+2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device, with a lower-case `.wav` or `.mp3` extension. A file ending in `.WAV` or `.MP3` is skipped.
+3. Check the metadata row for each missing file. A misspelt `agent_name`, `team`, or `department` puts the call under a newly created record, so look for it under an agent you did not expect in **Agents → Agent Details**.
 4. Correct the issues and re-upload only the affected files.
 
 ---
 
 **Problem:** Bulk upload times out before completing.
 
-**Cause:** The ZIP archive exceeds the 3 GB limit, or the upload connection is too slow.
+**Cause:** The upload connection is too slow or drops during a long transfer. A ZIP over 3 GB cannot cause this, because Vela rejects it as soon as you add it, with `file too big!`.
 
 **Solution:**
-1. Split large batches into smaller ZIP archives, each under 3 GB.
+1. Split large batches into smaller ZIP archives.
 2. Upload during off-peak hours (evenings or weekends) when server load is lower.
 3. Use a wired internet connection rather than Wi-Fi for large uploads, as a stable connection matters more than raw speed over a long transfer.
 4. Do not navigate away from the upload page while a bulk upload is in progress.
@@ -170,7 +169,7 @@ A single call that appears to upload but never shows up in the Interactions list
 **Cause:** Processing time varies depending on call length, audio quality, number of speakers, and server load, so the call may still be queued or processing. Metadata that places it outside your current filter view produces the same symptom.
 
 **Solution:**
-1. Allow time for processing to finish before assuming a failure. Vela emails you when it is complete, if you have email notifications enabled.
+1. Allow time for processing to finish before assuming a failure. A single upload emails the address you sign in with when it is complete. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
 3. Turn **Show unsupported calls** on, at the top left of the list. Vela marks some calls unsupported and leaves them out of the list by default, so a missing call may be present but hidden. {/* VERIFIED 2026-09-21 against vela-data app/api/notifications/route.js: the flag was set by a language check, which is now hard-coded (let isEnglish = true), so the branch that sets supported = false is unreachable and no call processed on the current build is marked unsupported. Calls processed under earlier releases keep the flag, which is why the toggle still matters. */}
 4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
@@ -225,14 +224,14 @@ A Dashboard that loads slowly or leaves charts not rendering is the same issue a
 
 **Problem:** Names, numbers, or other details in a transcript are replaced with placeholders.
 
-**Cause:** Your organisation has redaction enabled, and your account does not have **View Redactions**. Vela masks the entity types your administrator has configured.
+**Cause:** Your organisation has redaction turned on, so transcripts show placeholders for everyone, administrators included, until someone with access reveals them. Vela masks the entity types your administrator has configured.
 
 **Solution:**
 1. Open the interaction and request access to the unmasked version. Your request goes to an administrator.
-2. An administrator approves or declines the request, and you are notified of the outcome.
+2. An administrator approves or declines the request, and you are notified of the outcome. An approval lasts 24 hours for that interaction.
 3. If you need standing access rather than per-interaction access, ask an administrator to enable **View Redactions** on your account in **Settings → Users**.
 
-Administrators can reveal unmasked content on demand and do not need to request access.
+Administrators reveal unmasked content with **Review Redacted Info** and do not need to request access.
 
 See [Access Requests](../settings-config/access-requests-audits.md).
 
@@ -257,6 +256,7 @@ See [Access Requests](../settings-config/access-requests-audits.md).
 1. Open the interaction and select **Review Redacted Info** to reveal the unmasked content.
 2. Where the control is absent, reload the page or reopen the interaction. Redaction access is read fresh each time the interaction loads, not from your sign-in session, so signing out and back in makes no difference.
 3. Confirm the permission was set on your account in **Settings → Users**, rather than granted for one interaction only.
+4. If the control is still absent, request access for the interaction and contact **support@botlhale.ai**.
 
 ---
 
@@ -286,7 +286,7 @@ Personal information appearing where it should not is a data protection matter, 
 2. Check your system audio output: ensure the correct device is selected and the volume is not muted.
 3. If the issue only affects one specific call, the original file may be corrupted. Try playing a different call to determine whether the problem affects every call or only that file.
 4. Try a different supported browser to rule out a browser-specific issue.
-5. If no audio plays on any call, and everyone at your organisation is affected, ask your IT department to confirm that `*.amazonaws.com` is reachable. Vela streams recordings from Amazon S3, so a firewall that blocks it leaves the rest of Vela working while audio fails.
+5. If no audio plays on any call, and everyone at your organisation is affected, ask your IT department to confirm the storage domains under [Firewall and Proxy](../getting-started/system-requirements.md#firewall-and-proxy) are reachable. Vela streams recordings from file storage, so a firewall that blocks those domains leaves the rest of Vela working while audio fails.
 
 ---
 

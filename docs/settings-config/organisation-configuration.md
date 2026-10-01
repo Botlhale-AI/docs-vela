@@ -149,9 +149,11 @@ The package name is shown at the bottom of the page. Select **show package detai
 | :--- | :--- |
 | **Package Name** | The package your organisation is on. |
 | **Monthly Allocated Duration (minutes)** | The analysis minutes allocated each month. |
-| **Smart Search Limit** | How many Smart Searches your organisation can have, whatever their status. Setting a search to Inactive does not free a place, only deleting it does. |
-| **Agent Scorecard Limit** | The number of scorecard questions your organisation can hold, counted across every scorecard. Smart Questions are counted separately and do not use the allowance. |
+| **Smart Search Limit** | How many active Smart Searches your organisation can have. Setting a search to Inactive frees a place. |
+| **Agent Scorecard Limit** | The number of enabled scorecard questions your organisation can hold. Disabling a question frees a place. Smart Questions are counted separately and do not use the allowance. |
 | **Pain Points Limit** | The number of [pain points](../reference/glossary.md#pain-point) your organisation can hold. |
+
+A 0 means your package has no custom limit, so the standard limit of five applies.
 
 ![The Current Package table with its five rows, the hide package details link, and the Save button below it](../../img/screenshots/settings/current_package.png)
 
@@ -159,7 +161,7 @@ The label beside the heading names the package type, for example **Custom**. **h
 
 Your edition also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
 
-To change your package, contact **support@botlhale.ai**. It is set outside Settings.
+To change your package, contact your Account Manager. It is set outside Settings.
 
 ---
 

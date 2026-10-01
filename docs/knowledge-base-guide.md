@@ -95,7 +95,7 @@ The table below the upload area is where you manage what is already there:
 | **Download selected documents** | Downloads everything you have ticked in one go |
 | The **eye** icon | Opens the document to read it without downloading |
 | **Download document** | Downloads that one document |
-| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has no expand icon. Check its **Scope** column instead, which already reads **Entire Organisation** |
+| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has no expand icon. Check its **Scope** column instead, which reads `organisation` |
 | **Edit filename** | Renames the document in Vela |
 | **Delete** | Removes the document from the Knowledge Base, after a confirmation |
 
@@ -141,7 +141,7 @@ Update documents when procedures change. AI scoring based on an outdated procedu
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question, with **Document is linked to a scorecard question and cannot be deleted**. To delete it, relink the question to another document or remove the question first. A document linked only to a Smart Search or a Smart Question can be deleted, which leaves that search or question referencing a document that is no longer there. Relink those to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
+Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. The message reads **Document is linked to a scorecard question and cannot be deleted**, even when the link is a Smart Question. To delete it, relink those questions to another document or delete them first. A document linked only to a Smart Search can be deleted, which leaves that search referencing a document that is no longer there. Relink it to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
 
@@ -155,9 +155,9 @@ Confirm that the document has been explicitly linked to the item that should use
 
 **Uploaded document is not visible to certain team leads or agents.**
 
-Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon on its row to see which ones. A document scoped to **Entire Organisation** has no expand icon. Check its **Scope** column instead, which already reads **Entire Organisation**. Only users within the scope shown can see the document.
+Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon on its row to see which ones. A document scoped to **Entire Organisation** has no expand icon. Check its **Scope** column instead, which reads `organisation`. Only users within the scope shown can see the document.
 
-Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, relinking anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question cannot be deleted until you relink those questions.
+Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, relinking anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question or Smart Question cannot be deleted until you relink those questions.
 
 ---
 

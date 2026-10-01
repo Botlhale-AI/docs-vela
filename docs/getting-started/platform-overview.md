@@ -34,17 +34,17 @@ Every interaction follows the same path, from upload to report. Vela handles the
 
 1. **Upload**: add calls as WAV or MP3, and chats as CSV or, in bulk, as JSON. See [Upload Your Data](../data-upload.md).
 2. **Transcribe**: calls are transcribed across the 11 spoken official South African languages. Chats are already text.
-3. **Analyse and score**: every interaction is analysed for sentiment and scored against your [Agent Scorecard](../reference/scorecard-fields.md). Sensitive details such as ID numbers and payment information are masked at this stage, where your administrator has configured redaction. On plans that include it, [Smart Search](../smart-search-guide.md) flags the interactions that match your criteria.
+3. **Analyse and score**: every interaction is analysed for sentiment and scored against your [Agent Scorecard](../reference/scorecard-fields.md). Sensitive details such as ID numbers and payment information are masked at this stage, where your administrator has configured redaction. Except on [Lite](../reference/glossary.md#lite), [Smart Search](../smart-search-guide.md) flags the interactions that match your criteria.
 4. **Review**: open an interaction to read the transcript alongside Vela's analysis, override any score, and leave coaching feedback.
 5. **Report**: [generate reports](../features/custom-reporting.md) to turn the results into trends you can share.
 
-Steps 2 and 3 run in the background after you upload, so you do not wait on the page. Vela emails you when an interaction's analysis is ready.
+Steps 2 and 3 run in the background after you upload, so you do not wait on the page. For a single upload, Vela emails you when the analysis is ready.
 
 ![The Vela Dashboard, with the Alert Metrics group showing the total number of alerts and its trend](../../img/screenshots/dashboard/dashboard06.png)
 
 ### Review and score every interaction
 
-Every uploaded interaction is scored against your organisation's [Agent Scorecard](../reference/scorecard-fields.md). Calls are transcribed first. Chats are already text. Applying the same scorecard to every interaction keeps scoring consistent across the team.
+Every uploaded interaction is scored against your organisation's [Agent Scorecard](../reference/scorecard-fields.md). Calls are transcribed first. Chats are already text. Applying the same questions to every interaction in scope keeps scoring consistent across the team.
 
 Calls and chats go through the same core analysis. Both are analysed for sentiment and scored against your scorecard. A few metrics apply to only one channel, since call audio can be measured in ways text chats cannot. See [Metrics](../reference/metrics.md) for the full list.
 

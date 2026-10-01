@@ -131,21 +131,21 @@ Historical Search is available only while you create the question. For a questio
 - Leave older interactions as they are, and measure the new question from the date you added it.
 - Upload the recordings again. This creates a second copy of each interaction.
 
-**Reassigning the agent** on an interaction also reruns the scorecard with your questions as they are today, without telling you. Use it only to correct an interaction assigned to the wrong agent. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
+**Reassigning the agent** on an interaction also sends it back to the AI to be scored again with your questions as they are today. Every answer is replaced, so any reviewer overrides on it are lost. Use it only to correct an interaction assigned to the wrong agent. See [Review and Score Interactions](../features/quality-assurance-tools.md#d-reassign-the-agent).
 
-The **Rerun Scorecard** button is for a different situation: an interaction with no scorecard at all, such as one processed before your scorecard existed. An interaction that already has a score keeps it.
+The **Rerun Scorecard** button is for a different situation. It appears only on an interaction with no scorecard at all, such as one processed before your scorecard existed.
 
 ## Auto-fail shows as zero, with the earned score kept beside it
 
 A question marked Auto-Fail represents something that should invalidate an interaction on its own, such as a regulatory disclosure that was never given. Failing one auto-fails the whole interaction.
 
-An auto-failed interaction reads **0.0%**, with the score the agent earned on everything else in brackets after it. A call showing `0.0% (20.5%)` was auto-failed and scored 20.5% on the rest of the scorecard. A question you mark **N/A** cannot auto-fail an interaction, since it drops out of the scorecard entirely.
+An auto-failed interaction reads **0.0%**, with the score the agent would have had without the auto-fail in brackets after it. The failed question still counts in that figure, earning nothing. A call showing `0.0% (20.5%)` was auto-failed, and would otherwise have scored 20.5%. A question you mark **N/A** cannot auto-fail an interaction, since it drops out of the scorecard entirely.
 
-Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, which is why Vela keeps it. Two auto-failed calls, one that scored 30% on everything else and one that scored 90%, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
+Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, which is why Vela keeps it. Two auto-failed calls, one reading `0.0% (30%)` and one reading `0.0% (90%)`, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
 
 Read the bracketed number alongside the zero. An agent with a row of zeros may be doing well on everything except one critical step.
 
-This is the notation on a single interaction. The **Agents → Performance** table averages many interactions together and reads it differently: see [Monitor Agent Performance](../features/monitor-agent-performance.md#a-find-the-agent) for what a bracketed figure means there.
+This is the notation on a single interaction. The **Agents → Performance** table uses the same rule across many interactions together: see [Monitor Agent Performance](../features/monitor-agent-performance.md#a-find-the-agent) for what a bracketed figure means there.
 
 The same applies to the compliance and quality subtotals. Each can be auto-failed on its own, and each has its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
 
@@ -204,12 +204,12 @@ A scorecard applies to an organisation, a department, or a team. An interaction 
 
 Scope is not the only filter. A question is applied to an interaction when four things line up:
 
-- The scorecard's **scope** covers the agent.
+- The question's **scope** covers the agent.
 - The question's **Search Status** is **Enabled**.
 - Its **Apply To** matches the call's direction.
-- The scorecard's **Interactions** setting includes the interaction's type, call or chat.
+- The question's **Interactions** setting includes the interaction's type, call or chat.
 
-A scorecard set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
+A question set to Chats never scores a call, however well its scope fits. See [Scorecard Fields](../reference/scorecard-fields.md).
 
 Two implications follow. Teams under different scorecards are not directly comparable, because they were measured against different criteria. And an interaction that no scorecard question applies to gets no score at all, which is the usual explanation when processed calls appear with nothing in the score column.
 
@@ -217,7 +217,7 @@ Two implications follow. Teams under different scorecards are not directly compa
 
 Vela produces a percentage. It does not decide what counts as good.
 
-Your administrator sets the Red, Amber, and Green boundaries. Everything that looks like a judgement in the interface, such as an agent flagged as underperforming, traces back to those numbers rather than to any platform default.
+Your administrator sets the **Lower Bound** and **Upper Bound**, which divide scores into Red, Amber, and Green. They start at 50 and 80. Every colour on a score, and every category listed as a strength or weakness, comes from these two numbers. See [Organisation Configuration](../settings-config/organisation-configuration.md).
 
 Set them against your own standards and history rather than an external benchmark.
 

@@ -13,7 +13,7 @@ import { SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/
 Smart Search automatically monitors every processed interaction for keywords, phrases, and patterns you define. Each time a processed call or chat matches one of your searches, an alert is raised and linked directly to that interaction. This lets you focus your QA effort on the conversations that matter most rather than reviewing interactions at random.
 
 :::info Plan availability
-Smart Search is available on plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan.
+Smart Search is absent on the [Lite](./reference/glossary.md#lite) edition. Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -305,7 +305,7 @@ Review match frequency over time to understand whether an issue is increasing, s
 
 On the Smart Search list, **View By** sets how much of the organisation the list covers. See [Smart Detector](./smart-detector-overview.md#what-the-tools-share).
 
-Use **Sort By** to order your searches by **Results** (their match count), highest first. This shows which searches are triggering most often. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
+Use **Sort By** to order your searches by **Results**, highest first. **Results** counts unresolved alerts on interactions recorded since the start of this month, so it falls as you resolve alerts, and matches from earlier months do not count. This shows which searches are triggering most often this month. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
 
 ### Action Planning
 
@@ -326,7 +326,7 @@ Use **Sort By** to order your searches by **Results** (their match count), highe
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
 | **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
-| **New Smart Search is greyed out** | Your organisation has reached the number of searches its plan allows | Delete a search you no longer need to free a place. Setting one to Inactive does not free a place, it only stops it matching. For a higher limit, ask your Account Manager about upgrading your plan |
+| **New Smart Search is greyed out** | Your organisation has reached the number of active searches its plan allows | Set a search you no longer need to **Inactive**, or delete it, to free a place. For a higher limit, ask your Account Manager about upgrading your plan |
 | **A linked search stopped matching** | Its main search was set to Inactive, so there is nothing for it to run against | Set the main search back to Active, or unlink the search |
 
 ---
@@ -343,8 +343,8 @@ Open a search from the Smart Search list to change its title, description, statu
 
 The same view has a **Delete Search** control for searches you no longer need.
 
-:::note Your plan limits how many searches you can have, Active or Inactive
-The limit counts every search that is not a template, whatever its status. Setting a search to **Inactive** stops it matching, but does not free a place, so it does not clear the way for a new one. **Delete Search** is the only way to do that. When you reach the limit, **New Smart Search** is greyed out. Delete a search you no longer need, or ask your Account Manager about upgrading your plan for a higher limit. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**.
+:::note Your plan limits how many active searches you can have
+The limit counts searches set to **Active**. When you reach it, **New Smart Search** is greyed out. To free a place, set a search you no longer need to **Inactive**, or select **Delete Search**. For a higher limit, ask your Account Manager about upgrading your plan. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies.
 :::
 
 To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.
@@ -357,7 +357,7 @@ A saved search appears in the Smart Search list immediately. Matches do not, so 
 
 Unless you turned on **Historical Search**, the search only monitors interactions processed from the moment you saved it, so it stays at zero results until new interactions arrive.
 
-You are finished when the search shows a results count above zero and, opening one of those matches, the interaction genuinely contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
+You are finished when the search's results view shows matches for the period you chose and, opening one of those matches, the interaction genuinely contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
 
 If it stays at zero once new interactions have been processed, work through [Troubleshooting Common Issues](#troubleshooting-common-issues) above, starting with the search's status and scope.
 

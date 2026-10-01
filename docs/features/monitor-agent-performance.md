@@ -19,7 +19,7 @@ Track how your agents are performing, find where they need help, and turn that i
 You need:
 
 - **Interactions that have finished processing.** Performance figures are calculated from analysed interactions, so a new organisation with nothing uploaded shows no data rather than zeros.
-- **An Agent Scorecard covering these agents' teams.** Every figure on this page comes from it. That means the scores, the categories behind them, and each agent's strengths and weaknesses. Without one, the pages stay empty. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
+- **An Agent Scorecard covering these agents' teams.** Every score on this page comes from it: the scores, the categories behind them, and each agent's strengths and weaknesses. Without one, the score figures stay empty. Alerts and sentiment still show. See [Build an Agent Scorecard](../agent-scorecard-guide.md).
 - **Access level:** Organisational, Departmental, or Team, covering the agents you are monitoring. See [Access Level](../reference/glossary.md#access-level).
 
 ---
@@ -98,7 +98,7 @@ The modal has two kinds of field:
 
 Select **Apply** to filter, or **Clear All Fields** to reset. The modal scrolls, so the last three ranges sit out of sight until you scroll.
 
-**Strengths** and **Weaknesses** list your scorecard categories, so ticking **Compliance** under Weaknesses finds the agents whose weakest category is compliance.
+**Strengths** list the categories where an agent scores at or above your Upper Bound, and **Weaknesses** list the categories below your Lower Bound. An agent can have several of each. Ticking **Compliance** under Weaknesses finds every agent who scores below the Lower Bound on compliance. See [Score Boundaries](../reference/glossary.md#score-boundaries).
 
 ![The Filter By modal, showing the department, team, strength, and weakness filters](../../img/screenshots/performance/performance-7.png)
 
@@ -116,7 +116,7 @@ The lowest-scoring agents move to the top of the table, so the people who need a
 ![The Performance Overview tab in List View, with the Name, Team, Department, Interactions, Compliance Score, Quality Score, and Score columns](../../img/screenshots/performance/overview.png)
 
 :::note Reading a score with a bracketed figure beside it
-On this table, a score reading `X% (Y%)` is not the same notation as the `0.0% (Y%)` you see on an individual interaction. Here, the first figure is the average with every auto-failed interaction counted as zero, and the bracketed figure is the plain average with no adjustment. Sorting on **Score** sorts on the first, adjusted figure.
+A score reading `X% (Y%)` follows the same rule as on an individual interaction. The first figure counts every auto-failed interaction as zero. The bracketed figure leaves Auto-Fail out. Both are worked out across all the agent's interactions together, weighted by points. **Sort By**, **Rank**, and the **Score** filter all use the first figure.
 
 The **Export** CSV states the same two numbers in the opposite order, `X% (Fail Score: Y%)`, with the plain average leading and the adjusted figure named and bracketed. Read the label rather than the position when comparing a screen figure against an exported one.
 :::
@@ -154,10 +154,12 @@ If the table is missing entirely, this agent has no scorecard scores in that dat
 **Below the table**, three summaries pick out what matters:
 
 * **Total Interactions**: how many interactions the score is based on. A small number means a shaky average.
-* **Take A Bow**: the categories the agent scores well in. This is what the Performance table calls their **Strength**.
-* **Work On This**: the categories to coach. This is their **Weakness**.
+* **Take A Bow**: the categories where the agent scores at or above your Upper Bound.
+* **Work On This**: the categories where the agent scores below your Lower Bound. These are the ones to coach.
 
-Categories come from the **Category** field on each scorecard question, so how you group your questions decides what can appear here. If every category appears under **Work On This**, the scores are too close together for Vela to separate them, and the scorecard needs sharper questions. See [How Scoring Works](../explanation/how-scoring-works.md).
+A category between the two bounds appears in neither list. This page works the lists out from your scorecard settings as they are today, and counts auto-failed interactions as zero. The Performance table uses the scores saved when each interaction was scored, and leaves Auto-Fail out of **Strength** and **Weakness**, so the two can differ. Use this page for the current picture.
+
+Categories come from the **Category** field on each scorecard question, so how you group your questions decides what can appear here. If every category appears under **Work On This**, the agent scores below your Lower Bound in all of them. See [Score Boundaries](../reference/glossary.md#score-boundaries). See [How Scoring Works](../explanation/how-scoring-works.md).
 
 ![Take A Bow and Work On This below the scorecard table, beside Total Interactions and the Total Score](../../img/screenshots/performance/agent-performance2.png)
 

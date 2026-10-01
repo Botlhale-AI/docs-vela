@@ -392,7 +392,7 @@ The most common mistake is putting reference material inside a tutorial. If a qu
 
 ### Deliberate deviations
 
-We depart from strict Diátaxis in two places, on purpose. Both are decisions, not oversights.
+We depart from strict Diátaxis in three places, on purpose. All three are decisions, not oversights.
 
 **1. The Metrics reference includes "What to look for" notes.**
 
@@ -414,7 +414,7 @@ Anything else that mixes types is a defect, not a deviation.
 
 ## 6. Formatting
 
-- **Headings**: Title Case, matching the existing pages. Keep it consistent within a page. Explanation pages are the exception: they may use sentence-case headings that state the point, such as "Every interaction is scored, not a sample", because a reader skimming the argument gets more from a claim than from a label.
+- **Headings**: Title Case, matching the existing pages. Keep it consistent within a page. Explanation pages are the exception: they may use sentence-case headings that state the point, such as "Every interaction is scored" or "The thresholds are yours", because a reader skimming the argument gets more from a claim than from a label.
 - **Closing sections**: use `## Related` for links to other pages and `## Need Help?` for the support address. A page that hands the reader to a specific next task may use `## Next Steps` instead of Related. Do not invent further variants.
 - **Numbering H2s**: number them (`## 1. Open the Report Builder`) when the sections are a sequence the reader works through in order. Leave them unnumbered when the sections are independent and a reader may start at any of them. Both forms are in use, so match the page you are editing rather than converting it.
 - One H1, at the top of the body. Docusaurus renders that as the page heading instead of adding its own, so a second H1 never appears.

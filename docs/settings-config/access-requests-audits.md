@@ -68,7 +68,7 @@ Requests you have already processed, kept as a record. Each request is a card ra
 The Requests tab keeps access to redacted information controlled and recorded:
 
 * **Redaction:** Vela masks the entities an Administrator selects in the organisation's redaction settings, such as Credit Card, Phone Number, ID Number, and Email.
-* **Controlled access:** A user without **View Redactions** sees unredacted content only after an Administrator approves their request.
+* **Controlled access:** A user without **View Redactions** sees unredacted content only after an Administrator approves their request. An approval lasts 24 hours for that one interaction. After that, the user raises a new request.
 * **A record of each request:** The **Completed** tab keeps every processed request, showing who asked, which call it was for, and who approved or declined it.
 
 ---

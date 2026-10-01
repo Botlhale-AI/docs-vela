@@ -108,6 +108,10 @@ call_002.wav,Mary Jones,Support Team,Customer Service,outbound,follow_up;resolut
 
 `agent_name`, `team`, and `department` are matched case-insensitively, so `John Smith` and `john smith` both work. They match on the **name** as recorded in Vela, so a username or email such as `john.smith` does not match.
 
+If a name matches no existing agent, team, or department, Vela creates a new one with that name, within your access level, and puts the calls under it. A misspelt name therefore creates a duplicate rather than failing. After a bulk upload, check **Agents → Agent Details** for agents you did not expect.
+
+File names inside the ZIP must end in lower-case `.wav` or `.mp3`. Vela skips a file ending in `.WAV` or `.MP3` without a message, so rename those files before you zip them.
+
 :::tip Start from the template
 Download the `metadata.csv` template from the upload page and build your file from it. Mismatched column names are the most common cause of bulk upload failures.
 :::
@@ -118,7 +122,7 @@ Download the `metadata.csv` template from the upload page and build your file fr
 2. Select the **Bulk Upload** tab
 3. Upload your ZIP file
 4. Wait for the upload to finish. Processing then runs in the background, so you can leave the page
-5. Vela emails you when the analysis is ready, and the calls appear under **Interactions → Calls**
+5. The calls appear under **Interactions → Calls** as each one finishes. Vela emails a summary of the batch to users who have **New Alerts Detected** ticked under email notifications in **Settings → Notifications**. Tick it if you want the summary yourself
 
 ![The Bulk Upload tab, with the Add Metadata button and the .zip upload area](../img/screenshots/calls/bulk.png)
 
@@ -238,17 +242,17 @@ Once uploaded, Vela queues files for processing. Transcription, speaker identifi
 
 An interaction reaches the **Calls** or **Chats** list once all of that has finished, not when you upload it. An upload you cannot find yet is normally still working through it rather than lost.
 
-Processing time depends on file length, audio quality, and current server load. Vela emails you when processing is complete.
+Processing time depends on file length, audio quality, and current server load. For a single upload, Vela emails the address you sign in with when processing is complete. For a bulk upload, the summary email goes to users who have **New Alerts Detected** ticked under email notifications.
 
 ---
 
 ## Check Your Work
 
-Wait for the notification telling you the analysis is ready, then open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed.
+Wait for the email telling you the analysis is ready, then open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed.
 
-An interaction that is not in the list yet has not finished processing. That is the normal state straight after an upload, so give it time before treating it as a failure, and see [Troubleshooting](#troubleshooting) below if it stays that way.
+An interaction appears in the list once processing finishes. Straight after an upload, a missing interaction is normally still processing, so give it time. If it has still not appeared after the summary email, check that email's failed count, and ask an administrator whether the monthly allocation has run out. See [Troubleshooting](#troubleshooting) below.
 
-A bulk upload does not show a results screen. Vela emails a count of what uploaded, what was inferred, and what failed, but names no individual rows, so check the batch by comparing what appears in the list against the files you sent. A row rejected during processing is never processed at all.
+A bulk upload does not show a results screen. The summary email gives counts: how many files uploaded, were analysed, failed, were in an unsupported language, and were skipped because the monthly allocation ran out. It names no individual files, so check the batch by comparing what appears in the list against the files you sent.
 
 ---
 

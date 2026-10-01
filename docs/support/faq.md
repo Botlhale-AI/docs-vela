@@ -33,10 +33,10 @@ A: Vela supports the 11 spoken official South African languages. These are Afrik
 A: Audio files must be in `.wav` or `.mp3` format. A metadata CSV file is required for bulk uploads but is not needed when uploading a single call.
 
 **Q: What is the difference between a single upload and a bulk upload?**  
-A: A single upload lets you upload one audio file at a time using a short form (agent, direction, tags, and the file). A bulk upload lets you upload many files at once in a ZIP archive, along with a metadata CSV that assigns each file to an agent, team, department, and direction.
+A: A single upload lets you upload one audio file at a time using a short form (agent, team, department, and the file, with optional direction and tags). A bulk upload lets you upload many files at once in a ZIP archive, along with a metadata CSV that assigns each file to an agent, team, department, and direction.
 
 **Q: How do I know when my bulk upload has finished processing?**  
-A: Vela emails you when processing is complete. You can also monitor progress from the Interactions page. Processed calls appear in the list as they complete.
+A: Watch **Interactions → Calls**, where calls appear as they finish. A single upload also emails the address you sign in with. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications.
 
 **Q: How long does it take for calls to process?**  
 A: Processing is queued, so the wait depends on what is ahead of your call rather than on who uploaded it. Two people uploading the same recording minutes apart can finish an hour apart. Call length and audio quality also matter. Avoid navigating away from the page during a large bulk upload.
@@ -58,7 +58,7 @@ A: The access token expired. Access tokens are short-lived and refresh tokens ar
 A: The organisation has used its monthly duration, or has none set. A new organisation that has not been activated returns the same error. Check `currentDurationUse` against `monthlyAllocatedDuration`, or ask your Account Manager to activate it.
 
 **Q: Can I create departments, teams, or agents through the API?**  
-A: Agents, yes. Sending `agent_name` with a `team` that already exists creates the agent. Teams and departments have to exist in Vela first, because an upload never creates one.
+A: Agents, yes. Sending `agent_name` with a `team` that already exists creates the agent. Teams and departments have to exist in Vela first, because an API upload never creates one.
 
 **Q: My calls arrive but the date is wrong. What do I send?**  
 A: `date_of_call` in the format `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds. Times are read as **Africa/Johannesburg**. A value Vela cannot read falls back to the upload time, which is why every call ends up dated the day you sent it.

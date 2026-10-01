@@ -38,7 +38,9 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 **Allow these domains:**
 
 - `*.botlhale.ai`, `*.botlhale.tech`, and `*.botlhale.xyz`: Vela is served across all three, so allow every one of them.
-- `*.amazonaws.com`: AWS S3. Vela fetches audio playback, report downloads, and CSV templates from time-limited S3 links, so blocking this domain breaks those rather than the upload itself. An upload goes to Vela's own servers and is unaffected.
+- `*.botlhale.io` and `*.aliyuncs.com`: file storage. Vela fetches audio playback, report downloads, and the CSV template from these, so blocking them breaks those rather than the upload itself. An upload goes to Vela's own servers and is unaffected.
+
+{/* Storage hosts taken from the live Content-Security-Policy headers of vela.botlhale.ai, .tech, and .xyz on 2026-10-01, and from the vela-fly branch (Tigris on botlhale.io, Alibaba OSS on aliyuncs.com). The previous entry, *.amazonaws.com, matched only vela origin/main. Confirm with a browser network tab when convenient. */}
 
 ---
 
@@ -217,7 +219,7 @@ Vela can automatically mask sensitive information in transcripts. Once an admini
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).
 
 ### Sessions
-A session expires after 24 hours, after which you sign in again. See [Security and Compliance](../security-compliance.md).
+Vela signs you out after 24 hours without activity, after which you sign in again. See [Security and Compliance](../security-compliance.md).
 
 ### User Device Security
 - Keep browsers up to date

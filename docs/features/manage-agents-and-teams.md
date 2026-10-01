@@ -77,15 +77,15 @@ Adding an agent can therefore email them straight away. Check the name and addre
 
 ---
 
-## 3. Edit, Remove, or Restore an Agent
+## 3. Edit or Remove an Agent
 
-The **Actions** column holds all three.
+The **Actions** column holds both.
 
-**Edit** opens the agent's record for their name, email, and voice profile. It does not move them to another team. That field is fixed here. To change an agent's team, use **Reassign**, covered below.
+**Edit** lets you change the agent's name and email. Their team shows but cannot be changed here. To move them, use **Reassign**, covered below.
 
-**Delete Agent** retires the agent rather than erasing them, so their past interactions and scores keep counting towards the team's historical figures.
+**Delete Agent** removes the agent from the list. Their past interactions and scores keep counting towards the team's historical figures. A deleted agent cannot be restored, or added again under the same name or email, from this screen. To bring one back, contact **support@botlhale.ai**.
 
-**Reactivate** brings a removed agent back. Use it rather than adding them again, which would create a second record and split their history.
+{/* Verified on vela and vela-fly: agent_details/page.jsx fetches active agents only and table.jsx never sets showDeactivated, so the Reactivate button cannot be reached; api/agents/route.js rejects a new agent whose name or email matches any existing agent, deleted ones included. Needs a live screen to confirm before re-adding a restore step. */}
 
 ---
 

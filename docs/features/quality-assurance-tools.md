@@ -207,12 +207,12 @@ Chats carry the same analysis as calls. Vela reports average response time on th
 The agent's name in the **Call Details** panel has an **Edit** control beside it, which reassigns the interaction to a different agent.
 
 :::warning Reassigning silently reruns the scorecard
-Selecting a new agent reruns the interaction against your scorecard as it stands today, whether or not the interaction already had a score. A question added since it was first scored is picked up, and a question deleted since drops its stored outcome. The confirmation message only tells you the agent was assigned, so check the score yourself. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
+Selecting a new agent sends the interaction back to the AI to be scored again, using today's questions for the new agent's team. Every answer is replaced, including any outcome a reviewer changed, so reviewer overrides are lost. A question added since it was first scored is picked up, and a question deleted since drops its outcome. The rescoring runs in the background, and Vela emails you when it is complete. The confirmation message only says the agent was assigned, so check the score once the email arrives, and set your overrides again. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 
 This is a different control from **Reassign** on **Agents → Agent Details**, which moves an agent between teams in bulk and does not touch scoring. See [Manage Agents and Teams](./manage-agents-and-teams.md#5-move-agents-between-teams).
 :::
 
-Use this to correct a genuine misassignment, such as a recording uploaded under the wrong name. Check the score afterwards rather than assuming only the agent name changed.
+Use this to correct a genuine misassignment, such as a recording uploaded under the wrong name. Check the score afterwards rather than assuming only the agent name changed, and expect to redo any overrides.
 
 ---
 
@@ -220,7 +220,7 @@ Use this to correct a genuine misassignment, such as a recording uploaded under 
 
 Your manual scorecard and comments are the core of the quality process, turning the analysis into coaching the agent can act on.
 
-The Scorecard tab has a **View** control with two settings. **Automatic** is Vela's own assessment of the interaction, analysed against a Knowledge Base document on any question set to use one. **Manual** is yours. Where the two differ, your outcome is the one that counts, and both stay visible so an agent can see which is which.
+The Scorecard tab has a **View** control that splits the questions by their **Search Type**. **Automatic** shows the questions the AI answers, analysed against a Knowledge Base document on any question set to use one. **Manual** shows the questions a reviewer answers. You can change an outcome in either view, and your outcome then replaces the AI's. The AI's original answers stay visible as the **Initial** scores, so an agent can see which is which.
 
 ### A. Complete a Manual Scorecard
 
@@ -229,7 +229,7 @@ Vela's assessment gives you a base score. You make the final judgement.
 ![The Scorecard tab on Manual view, with a question's outcome open on Yes, No and N/A](../../img/screenshots/calls/manual_scorecard.png)
 
 1.  On the Detailed View, open the **Scorecard** tab in the Smart Detector panel.
-2.  Switch **View** between **Automatic** and **Manual** to find the item you want to change.
+2.  Switch **View** between **Automatic** (questions the AI answers) and **Manual** (questions a reviewer answers) to find the item you want to change.
 3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript: the AI having missed context is the case for overriding, and the AI being right is the case for leaving the score and coaching instead.
 4.  Select the pencil icon in the **Outcome** column heading to enter edit mode.
 5.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
@@ -241,7 +241,7 @@ Vela's assessment gives you a base score. You make the final judgement.
 The information icon appears only on items Vela answered itself. Once you override an item, the icon goes from that row, because the reasoning explained the AI's answer rather than yours. Read it before you override, and put anything worth keeping into a comment. The scorecard download still carries the reasoning for every item you left as it was.
 :::
 
-The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones, so Vela's original assessment stays visible next to your override.
+The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones. They show the AI's original answers, scored with today's question settings, so you can compare them with your changes. A score of exactly 0% shows as a dash (-).
 
 :::tip If you are overriding the same question every week
 A question you keep correcting in the same direction is usually a question that needs rewording, not an AI that keeps getting it wrong. Take it back to whoever maintains the scorecard rather than fixing it one interaction at a time. See [How Scoring Works](../explanation/how-scoring-works.md).
@@ -257,10 +257,10 @@ The table then carries two totals, and they are not the same figure:
 
 | Row | What it counts |
 | :--- | :--- |
-| **Total in Selection** | Only the categories you filtered to |
-| **Total Score** | Every question on the interaction, whatever the filter |
+| **Total in Selection** | Points possible and points earned for the categories you filtered to |
+| **Total Score** | Points possible and points earned for every question on the interaction, in both views, whatever the filter |
 
-**Total Score** is the agent's score for the interaction. **Total in Selection** is there to help you read the categories in front of you, so **Total Score** is the figure to use when you discuss the result with an agent.
+Both rows are points, not a percentage, and neither applies Auto-Fail. Use **Agent Score** in **Call Details** when you discuss the result with an agent.
 
 #### Comment Straight from a Question
 
@@ -375,7 +375,7 @@ A course is not a substitute for the conversation. Arrange time with the agent t
 
 Your scoring, your comment, and the reviewed flag all live on the interaction itself, so that is the only place to check them. Open it again and confirm three things:
 
-- **The Scorecard tab shows an outcome on every applicable question**, with your overrides in place and the score recalculated. Vela's original figures remain beside yours as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score**.
+- **The Scorecard tab shows an outcome on every applicable question**, with your overrides in place and the score recalculated. The AI's original answers remain beside yours as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score**.
 - **Your comment is on the interaction**, and the agent is tagged if you meant to notify them. A comment cannot be edited or deleted afterwards, so read it back rather than reposting.
 - **The interaction is marked as reviewed.** Your team's review coverage counts the interactions you mark, so marking is what makes the work visible.
 

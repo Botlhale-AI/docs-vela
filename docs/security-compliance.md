@@ -8,7 +8,7 @@ type: reference
 
 # Security and Compliance
 
-Vela runs on AWS, encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside Vela.
+Vela encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside Vela.
 
 {/*
 Keep this comment below the intro paragraph. Docusaurus takes the category card
@@ -18,7 +18,7 @@ becomes the card description.
 Sources.
 
 "In the Product" is verified against the vela source and the live platform:
-the SSO check that hides the Security tab, the 24-hour session maxAge, the
+the 24-hour session length, the
 password rules, and the redaction defaults. TLS was confirmed against the live
 platform, which negotiates 1.3 and accepts 1.2.
 
@@ -37,6 +37,13 @@ and they move between releases:
 
 Ask for the date of the policy version each claim came from, and stamp it on
 the page. A reader cannot tell how current "in progress" is.
+
+UNVERIFIED (2026-10-01): the page previously named AWS as the host. Live DNS
+now resolves vela.botlhale.xyz, .io, and .tech to vela-jnb.fly.dev (Fly.io,
+Johannesburg), and the vela-fly branch stores audio in Tigris and older files
+in Alibaba OSS. AWS-specific claims (VPC, SOC 2 via AWS, the AWS-partner
+audit, availability zones) were removed until DevOps confirms the current
+provider, region, and which audit and certifications still apply.
 */}
 
 ---
@@ -49,7 +56,7 @@ These are the controls your own administrators configure and use.
 
 * Vela supports Google and Microsoft sign-in. Where an organisation uses either, passwords are held by that identity provider and the **Security** tab is hidden in Vela.
 * Passwords set in Vela must be at least 8 characters and include a letter, a number, and a special character. See [Password Requirements](./settings-config/account-security.md#password-requirements). They are stored hashed, never in plain text.
-* Sessions expire after 24 hours, after which you sign in again.
+* Sessions expire after 24 hours without activity, after which you sign in again.
 
 ### Controlling What People See
 
@@ -63,17 +70,17 @@ An administrator chooses which categories to mask, from credit card and bank acc
 
 ![The categories an administrator can choose to mask, on the organisation settings page](../img/screenshots/settings/redaction.png)
 
-Getting to the unmasked version is a deliberate, recorded act:
+Getting to the unmasked version is a deliberate act:
 
-* Administrators, and users granted **View Redactions**, reveal it themselves.
+* Administrators, and users granted **View Redactions**, reveal it themselves. This is not recorded. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx compares profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant still see Request Redacted Access. Raised as a product bug. Needs a live check before the docs change. */}
 * Everyone else raises a request for that one interaction, which an administrator approves or declines. This works the same way for a call or a chat.
-* Every processed request is kept, showing who asked, which interaction it was for, and who decided. See [Access Requests](./settings-config/access-requests-audits.md).
+* Every request is recorded, showing who asked, which interaction it was for, and who decided. See [Access Requests](./settings-config/access-requests-audits.md).
 
 ---
 
 ## Hosting
 
-Vela runs entirely on Amazon Web Services (AWS). The production environment that holds the platform and your data sits in a logically isolated Virtual Private Cloud (VPC), with access restricted to operations support staff.
+The production environment that holds the platform and your data is isolated, with access restricted to operations support staff. For the hosting provider and the region that holds your organisation's data, contact your Account Manager.
 
 ---
 
@@ -82,14 +89,11 @@ Vela runs entirely on Amazon Web Services (AWS). The production environment that
 * **In transit:** traffic between your browser and Vela is encrypted with TLS 1.2 or above.
 * **At rest:** stored data is encrypted with AES-256.
 
-AWS has no access to unencrypted customer data.
-
 ---
 
 ## Compliance
 
-* An AWS-certified partner audits Vela's infrastructure against the AWS Well-Architected Framework. The audit also covers POPIA and GDPR compliance.
-* Customer data is stored on AWS, which is SOC 2 Type 2 certified.
+* An independent party audits Vela's infrastructure, including POPIA and GDPR compliance.
 * ISO 27001 certification is in progress.
 
 ---
@@ -102,7 +106,7 @@ Security, performance, and availability are monitored around the clock. Automate
 
 ## Backups and Recovery
 
-Customer data is backed up regularly and held redundantly across multiple AWS availability zones, encrypted in transit and at rest.
+Customer data is backed up regularly and held redundantly, encrypted in transit and at rest.
 
 Vela's recovery targets are:
 
@@ -113,7 +117,7 @@ Vela's recovery targets are:
 
 ## Data Residency
 
-Your recordings and transcripts are stored in AWS data centres. The region is set per deployment. For the region holding your organisation's data, contact your Account Manager.
+The region that stores your recordings and transcripts is set per deployment. For the region holding your organisation's data, contact your Account Manager.
 
 ---
 

@@ -15,7 +15,7 @@ import questionFormBottom from '@site/img/screenshots/smart_questions/question-f
 Smart Questions let you ask a question against your interactions and see the answers, without those answers affecting anyone's score.
 
 :::info Plan availability
-**Smart Questions** appears under **Smart Detector** in the left sidebar on the plans that include it. Where it is unavailable, ask your Account Manager about upgrading your plan.
+**Smart Questions** appears under **Smart Detector** in the left sidebar on every edition except [Lite](./reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -55,7 +55,7 @@ If the answer says something about **the conversation** rather than **the agent'
 3. Configure the settings described below.
 4. Select **Create Smart Questions** to save.
 
-The form is one page, scrolled. The scope, interactions, and Historical Search settings at the top cover the **whole set**. Everything from **Question** down is set **per question**, so one set can hold questions that differ from each other. Each section below covers one field in full.
+The form is one page, scrolled. The scope, interactions, and Historical Search settings at the top apply to **every question you add** on this form. After you save, each question keeps its own scope and interactions, and you can change them on that question's edit form. Everything from **Question** down is set **per question**, so one set can hold questions that differ from each other. Each section below covers one field in full.
 
 <Hotspots
   src={questionFormTop}
@@ -63,7 +63,7 @@ The form is one page, scrolled. The scope, interactions, and Historical Search s
   points={[
     { x: 66.7, y: 21.6, title: 'The Create tab', body: 'Everything here builds a new set of questions. View lists the sets you already have.' },
     { x: 31.8, y: 33.5, title: 'Smart Question Scope', body: 'Which parts of the organisation the questions apply to. A question is answered on interactions handled by agents in scope.' },
-    { x: 44.8, y: 51.9, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set.' },
+    { x: 44.8, y: 51.9, title: 'Interactions', body: 'All, Calls, or Chats. Every question you add here gets this setting. You can change it later on each question.' },
     { x: 43.3, y: 67.8, title: 'Historical Search', body: 'Runs the questions against interactions already in Vela. Set at creation, and cannot be added later.' },
   ]}
 />
@@ -96,7 +96,7 @@ Choosing **Specific Departments** or **Specific Teams** opens a second selector 
 
 ### Interactions
 
-Under **Interactions**, answer "Which interactions would you like these questions to apply to?" with **All**, **Calls**, or **Chats**. The choice covers the whole set, so every question in it runs against the same interaction types.
+Under **Interactions**, answer "Which interactions would you like these questions to apply to?" with **All**, **Calls**, or **Chats**. Every question you add on this form gets this choice. After you save, you can change it on each question.
 
 This is not the same control as **Apply To** further down the form. Interactions chooses the *type*, calls or chats. Apply To chooses the *direction*, inbound or outbound.
 

@@ -59,7 +59,7 @@ function ScoreCard({ label, result, hint }) {
       <>
         <span className={styles.scoreValue}>0.0%</span>
         <span className={styles.scoreNote}>
-          auto-failed. Earned {result.raw.toFixed(1)}% on the rest
+          auto-failed. {result.raw.toFixed(1)}% without the auto-fail
         </span>
       </>
     );

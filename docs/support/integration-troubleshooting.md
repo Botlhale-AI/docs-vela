@@ -79,12 +79,12 @@ Find your symptom, then read the matching entry below.
 
 **Problem:** Calls arrive in Vela, but every one is dated the day it was uploaded.
 
-**Cause:** `date_of_call` could not be read, so Vela fell back to the upload time. The usual reason is a format that is close but not exact, such as `15/01/2025 14:30` in place of `15/01/2025, 14:30:00`.
+**Cause:** `date_of_call` could not be read, so Vela fell back to the upload time. The usual reason is an ISO date such as `2025-01-15` or `2025-01-15T14:30:00Z`. A day-first date such as `15/01/2025 14:30` is read correctly. A year-first date such as `2025/01/15` is not refused but stored as the wrong date, so check the dates as well as the upload times.
 
 **Solution:**
 1. Send `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds, for example `15/01/2025, 14:30:00`.
 2. Times are read as **Africa/Johannesburg**. Convert before sending where your system records another timezone, or every interaction lands at the wrong hour.
-3. Set `validate_metadata` while you are building. Vela then returns a **400** naming the field it could not use, instead of accepting the upload and filling in a default.
+3. Set `validate_metadata` while you are building. Vela then returns a **400** for a date it cannot read, instead of accepting the upload and filling in a default. It does not catch a year-first or month-first date, because those parse as valid, wrong dates.
 
 ---
 
@@ -95,7 +95,7 @@ Find your symptom, then read the matching entry below.
 **Solution:**
 1. Check the values against the records in Vela. `agent_name` matches case-insensitively on the name as it appears on the agent record, not a username such as `john.smith`.
 2. Create the team first. An upload never creates one, and an unmatched team also stops a new agent being created from `agent_name`.
-3. Set `validate_metadata` so unmatched values are refused with `Team not found`, `Department not found`, or `Could not find agent with the provided metadata` rather than silently dropped.
+3. For chats, set `validate_metadata` so unmatched values are refused with `Team not found`, `Department not found`, or `Could not find agent with the provided metadata` rather than silently dropped. For calls, check the first uploads by eye as in the next step. {/* UNVERIFIED: these Calls errors were removed from the newer vela-data branches (c6ba3ce); see api-documentation.md. */}
 4. Check the first few interactions of any new integration under **Interactions**, and confirm the agent, team, direction, and tags landed as you intended.
 
 ---

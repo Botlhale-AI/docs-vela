@@ -60,7 +60,7 @@ Each question is one yes/no judgement about the interaction.
 Select **Add Question** for each further question, then **Create** to save. The questions are active as soon as the scorecard is created.
 
 :::warning Your plan caps how many questions you can have
-The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Agent Scorecard Limit**. When you reach it, the **Create** tab is greyed out. Delete a question you no longer need to make room, or ask your Account Manager about upgrading your plan for a higher limit. Only your own questions count towards it, whether enabled or disabled, so only the example questions on **View examples** are free.
+The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Agent Scorecard Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies. Only your enabled questions count towards it. When you reach it, the **Create** tab is greyed out. To make room, disable or delete a question you no longer need, or ask your Account Manager about upgrading your plan for a higher limit.
 :::
 
 Every field, including those this page does not cover, is listed in [Scorecard Fields](./reference/scorecard-fields.md). For how the three scores are worked out, and why compliance is reported separately, see [How Scoring Works](./explanation/how-scoring-works.md).

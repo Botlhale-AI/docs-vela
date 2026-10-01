@@ -19,7 +19,7 @@ You need:
 
 - **Processed interactions inside the period you are reporting on.** Vela builds the report from the interactions it finds in that period, so a period with none produces no results. Where a scheduled run finds nothing, Vela emails you to say so rather than sending an empty report.
 - **Access level:** Organisational, Departmental, or Team, covering the teams you want in the report. See [Access Level](../reference/glossary.md#access-level).
-- **To know which metrics your plan offers.** Plans without Smart Search carry the quality assurance groups only. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
+- **To know which metrics your plan offers.** On the [Lite](../reference/glossary.md#lite) edition, alert, keyword, intent, and pain point metrics are not offered. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
 
 ---
 
@@ -83,6 +83,8 @@ Select **Add New Metric**, pick a metric, and pick a chart type for it. Repeat t
 
 Chart types are **Card**, **Line**, **Bar**, **Pie**, **Doughnut**, and **Table**. A **Card** shows the single figure on its own, with no axes. The types offered depend on the metric, so one metric's list can be shorter than this.
 
+{/* UNVERIFIED: on vela-fly, a scheduled report containing a Card metric appears to fail without an email (scheduleReports/route.js reads data.data, which card data does not have), and fails again on every run. Needs engineering to confirm. */}
+
 ![The Add New Metric section with a metric's chart-type list open, Card at the top above Pie and Doughnut](../../img/screenshots/report/report-card-metric.png)
 
 Metrics are organised into groups, listed alphabetically:
@@ -98,7 +100,7 @@ Metrics are organised into groups, listed alphabetically:
 | **Team Workload** | Total Number of Agents, Agent Distribution in Interactions |
 | **Topics & Pain Points** | Top 10 Topics, Top 10 Pain Points in Interactions (Detected) |
 
-Two things narrow what you see. Metrics that apply only to calls or only to chats are hidden when they do not fit the interaction type you chose. Your plan matters too: on plans without Smart Search, the groups are limited to quality assurance metrics, so alert, keyword, intent, and pain point metrics do not appear.
+Your plan decides which metrics are offered. On the [Lite](../reference/glossary.md#lite) edition, alert, keyword, intent, and pain point metrics are not offered. The list shows every call and chat metric whichever interaction type you chose, so a call-only metric in a chats report has no data and is dropped when the report is built. The list also uses shorter names than the Dashboard cards. See [Metrics](../reference/metrics.md).
 
 A group appears once at least one of its metrics survives both, so you may see fewer than eight.
 
@@ -119,7 +121,7 @@ For a large team, or when you are comparing exact numbers rather than reading a 
 <Tabs groupId="report-type">
 <TabItem value="onetime" label="One-time report">
 
-Select **Create**, at the foot of the form below **Add New Metric**. The report generates immediately and opens in the Reports list.
+Select **Create**, at the foot of the form below **Add New Metric**. Vela starts building the report in the background and takes you to the Reports list. When the report is ready, Vela emails you a link and it appears under **Created Reports**.
 
 ![The foot of the one-time report form, with Add New Metric above the Create button](../../img/screenshots/report/report_create3.png)
 
@@ -163,7 +165,7 @@ To change a report's frequency, metrics, or filters, delete the schedule and cre
 
 ### B. Who Is Told When a Report Is Ready
 
-A finished report is not emailed as a file. Vela notifies people in your organisation with a link to the report, each according to their own **Settings → Notifications** preferences: in Vela, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
+A finished report is not emailed as a file. Vela always emails you, as the person who created it, a link to the report. Everyone else in your organisation is told according to their own **Settings → Notifications** preferences: in Vela, by email, or not at all. Those whose email frequency is **Daily** receive it in that day's email rather than straight away.
 
 If a scheduled run finds no interactions in its date range, Vela emails you to say the report could not be generated, and the schedule continues to its next run.
 
@@ -173,7 +175,7 @@ If a scheduled run finds no interactions in its date range, Vela emails you to s
 
 Go to **Reports** and stay on the **View** tab. It holds two tabs of its own, **Created Reports** and **Scheduled Reports**, with **Search**, **Sort By**, and **Filter** above them. **Created Reports** lists each report by **Name**, **Created By**, and **Date**.
 
-Select the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected.
+Select the download icon on a report's row and choose **PDF** or **DOCX**. The file holds the metrics and charts you selected, each with a short summary written by AI.
 
 To rename a report, select the pencil icon beside its name, type the new one, and confirm. Reports are named automatically when they are generated, so renaming is worth doing on anything you intend to keep or send on.
 
@@ -183,9 +185,9 @@ To rename a report, select the pencil icon beside its name, type the new one, an
 
 ## Check Your Work
 
-How you check depends on which you built. A one-time report is ready straight away, so you can open it now. A schedule produces its first report on its next run, so what you confirm today is that the schedule itself is set correctly.
+How you check depends on which you built. A one-time report takes a few minutes to build, and Vela emails you when it is ready. A schedule produces its first report on its next run, so what you confirm today is that the schedule itself is set correctly.
 
-For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file had no data in the period.
+For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file either had no data in the period, or its summary could not be written. Create the report again to retry.
 
 For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the date and time you intended. That confirms the schedule is set. To confirm it delivers, wait for that first run and check the report arrives as expected.
 

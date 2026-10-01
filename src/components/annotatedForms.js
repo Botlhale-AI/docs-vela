@@ -20,7 +20,7 @@ export function ScorecardScopeForm() {
       alt="The top of the Agents Scorecard Create tab, with the Create tab selected and the Scorecard Scope, Interactions, and Historical Search settings above the question list"
       points={[
         { x: 29.2, y: 34.3, title: 'Scorecard Scope', body: 'Which parts of the organisation the scorecard applies to. An interaction is scored against the scorecards covering the agent who handled it.' },
-        { x: 44.9, y: 52.2, title: 'Interactions', body: 'All, Calls, or Chats. This covers the whole set, so one scorecard cannot mix call-only and chat-only questions.' },
+        { x: 44.9, y: 52.2, title: 'Interactions', body: 'All, Calls, or Chats. Every question you add here gets this setting. You can change it later on each question.' },
         { x: 42.8, y: 68.3, title: 'Historical Search', body: 'Runs the scorecard against interactions already in Vela. Choose All historical calls or a Specific date range. It cannot be added later.' },
       ]}
     />
@@ -88,7 +88,7 @@ export function SingleCallUploadForm() {
       alt="The Single Upload tab of the call Uploads page, with the Single Upload and Bulk Upload tabs above the Agent, Direction, and Tags fields, the drag-and-drop area, and the Upload button"
       points={[
         { x: 61.5, y: 20.7, title: 'Single Upload and Bulk Upload', body: 'Single Upload takes one recording. Bulk Upload takes many at once, as a ZIP archive.' },
-        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call, and the only required field. The list is filtered by your access level, Team and Department fill in from your choice, and + Create an agent adds one without leaving the page.' },
+        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call. The list is filtered by your access level, and Team and Department fill in from your choice. Agent, Team, and Department must all be filled before Upload turns on. + Create an agent adds one without leaving the page.' },
         { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound, and optional. Leaving it blank means the call is left out of anything filtered or reported by direction.' },
         { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional, and shared across your organisation, so a tag you create here appears in everyone else\'s filters too.' },
         { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select browse your device. WAV or MP3, up to 1 GB.' },

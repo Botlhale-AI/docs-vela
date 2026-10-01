@@ -196,7 +196,7 @@ Four of these are worth a second look:
 - **`agent_name` and `team` work together.** An unmatched team is dropped, and that also stops a new agent being created. Check the spelling before sending a batch.
 - **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs there instead, so send direction as `direction` rather than as a tag.
 - **`contact` is what [Search by Phone Number](../number-search-guide.md) matches on.** Keep the format consistent across your integration, or the same customer looks like several.
-- **`date_of_call` fails quietly.** A value Vela cannot parse falls back to the upload time, so every call ends up dated when you sent it rather than when it happened.
+- **`date_of_call` must be day first.** Vela reads any day-first date, with or without the comma and seconds. A year-first date is stored as the wrong date with no error, and a month-first date is read day first. An ISO date such as `2025-01-15` cannot be read, so it falls back to the upload time. `validate_metadata` catches only the last case, because the others parse as valid dates.
 
 Check a date string against the format before you send a batch:
 
@@ -293,6 +293,8 @@ request.post({
 | 400 | `Team not found` | Raised when `validate_metadata` is set and `team` did not match. |
 | 400 | `Department not found` | Raised when `validate_metadata` is set and `department` did not match. |
 | 400 | `Invalid date of call. Correct format is DD/MM/YYYY, HH:mm:ss` | `date_of_call` could not be parsed, and `validate_metadata` was set. |
+
+{/* UNVERIFIED: the agent, team, and department rows above exist on vela-data origin/main (call/upload/route.js ~190-196) but were removed from origin/dev-hold and the Fly branch by c6ba3ce (#121, 2026-08-20). api.botlhale.tech still served from Alibaba on 2026-10-01; the Fly hosts run the newer code. Once production moves, Calls uploads with validate_metadata no longer return these, and unmatched values are dropped silently. The Chats table keeps all three on every branch. Needs someone with API credentials to confirm against production. */}
 | 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` was something else, and `validate_metadata` was set. |
 | 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string, and `validate_metadata` was set. |
 | 400 | `Invalid contact. Contact must be a string or number` | `contact` was another type, and `validate_metadata` was set. |
@@ -498,7 +500,7 @@ The reply covers the limits this documentation refers to elsewhere:
 | Field | What it tells you |
 | :--- | :--- |
 | `active` | Whether the organisation is activated. Uploads against an inactive organisation do not process |
-| `monthlyAllocatedDuration` and `currentDurationUse` | The allocation in seconds, and how much has been used |
+| `monthlyAllocatedDuration` and `currentDurationUse` | The allocation and how much of it is used, in minutes. The published reference says seconds, but Vela counts minutes, and **Settings** shows the same figures as minutes |
 | `stopWhenAllocationExceeded` | Whether processing halts once the allocation runs out |
 | `scorecardLimit`, `smartSearchLimit`, `painPointsLimit` | The caps your plan sets |
 | `coachingEnabled` | Whether the Coaching add-on is on |
