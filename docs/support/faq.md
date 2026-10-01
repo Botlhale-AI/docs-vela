@@ -39,7 +39,7 @@ A: A single upload lets you upload one audio file at a time using a short form (
 A: Watch **Interactions → Calls**, where calls appear as they finish. A single upload also emails the address you sign in with. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications.
 
 **Q: How long does it take for calls to process?**  
-A: Processing is queued, so the wait depends on what is ahead of your call rather than on who uploaded it. Two people uploading the same recording minutes apart can finish an hour apart. Call length and audio quality also matter. Avoid navigating away from the page during a large bulk upload.
+A: Processing is queued, so the wait depends on what is ahead of your call rather than on who uploaded it. Two people uploading the same recording minutes apart can finish an hour apart. Call length and audio quality also matter. Avoid navigating away from the page during a large bulk upload, because your browser is still sending the file and leaving the page stops the upload.
 
 **Q: My upload failed. What should I check?**  
 A: For single uploads, verify the file is a valid WAV or MP3 that plays on your device, and is under 1 GB. For bulk uploads, check that your CSV column names match the template exactly, all files listed in the CSV are present in the ZIP, and the ZIP is under the 3 GB limit. Files above the limit are rejected before the upload starts.

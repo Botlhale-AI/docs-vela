@@ -189,7 +189,7 @@ Four parts do most of the work when you review:
 - **Summary**: a plain-language recap of what happened and how it was resolved.
 - **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
-- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it.
+- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it, so the interaction leaves the Smart Search's Returned Interactions list.
 
 The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 

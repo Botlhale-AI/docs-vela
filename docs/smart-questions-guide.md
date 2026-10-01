@@ -200,7 +200,7 @@ Your set appears on the **View** tab straight away. Answers do not.
 
 A question with **Historical Search** off only applies to interactions processed after you created it, so the **Results** tab remains empty until new interactions arrive.
 
-You are finished when the **Results** tab shows Yes, No, and N/A counts against your question and **Calls Analysed** is above zero. If it stays at zero after new interactions have been processed, check that Search Status is **Enabled** and that the scope covers the teams those interactions belong to.
+You are finished when the **Results** tab shows Yes, No, and N/A counts against your question and **Calls Analysed** is above zero. If it stays at zero after new interactions have been processed, check that the scope covers the teams those interactions belong to, and that Search Status is **Enabled**. A Disabled question answers nothing.
 
 ---
 

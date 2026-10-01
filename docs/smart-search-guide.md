@@ -188,7 +188,7 @@ Whether that alert reaches you in-app, by email, or both depends on your prefere
 
 ### Alert Management
 
-Work through alerts regularly rather than letting them accumulate. See [Manage Notifications](./features/notifications.md) for the review routine and where alerts appear.
+Work through alerts regularly rather than letting them accumulate. An unresolved alert stays in the search's **Returned Interactions** list and its **Results** count, so a backlog hides the new ones. See [Manage Notifications](./features/notifications.md) for the review routine and where alerts appear.
 
 Resolving is what closes the loop. Open the interaction, find the alert in the **Smart Detector** section, and read it in context. Select **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
 

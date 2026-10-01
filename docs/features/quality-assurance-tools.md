@@ -170,7 +170,7 @@ On the **Alerts** tab, a call has two columns that take you straight to the mome
 
 Where no timestamp was recorded for a match, the columns read `-`.
 
-Select **Resolve** once you have acted on the alert. The row then reads **Resolved**.
+Select **Resolve** once you have acted on the alert, so it counts in **Total Number of Resolved Alerts** on the Dashboard. The row then reads **Resolved**.
 
 A tab with nothing to show says so, for example `No alerts detected in call` or `No pain points detected in call`. Vela analysed the interaction and found nothing of that kind in it.
 

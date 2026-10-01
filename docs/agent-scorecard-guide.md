@@ -80,7 +80,7 @@ The AI reads a transcript. A question works when its answer is visible there.
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
 * **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
 * **Keep weights relative to each other.** There is no external scale. A question weighted 5 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
-* **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given.
+* **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given. One failed Auto-Fail question makes the whole interaction read 0.0%, whatever else went well.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
 
 :::tip Questions that look for something rather than score it

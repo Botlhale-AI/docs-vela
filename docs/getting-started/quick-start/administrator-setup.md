@@ -253,7 +253,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 
 ## Step 7: Configure Redaction
 
-Vela can automatically mask sensitive information in transcripts, such as ID numbers and payment details. Configure this before real interactions are uploaded.
+Vela can automatically mask sensitive information in transcripts, such as ID numbers and payment details. Configure this before real interactions are uploaded, because masking is applied as each interaction is analysed.
 
 In **Settings → Organisations → This Org**, choose which entity types Vela should redact.
 

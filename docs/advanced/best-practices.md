@@ -50,7 +50,7 @@ Seven rules cover the rest:
 1. **Ask whether the right thing happened**, and set **Expected Outcome** to **Yes**. Scoring is more accurate this way, even where your internal scorecard is written in the negative.
 2. **Name the action.** "Verify identity" is in the transcript. "Professional" is a judgement that moves between reviewers.
 3. **Say when a question applies**, so the AI answers N/A on the calls it does not cover.
-4. **Group questions into categories**, such as Opening, Compliance, Handling, and Closing.
+4. **Group questions into categories**, such as Opening, Compliance, Handling, and Closing. **Take A Bow** and **Work On This** on an agent's Details page report by category, so grouping shows a pattern rather than one question's result.
 5. **Weight categories against each other.** There is no outside scale, so what counts is the balance across your own questions.
 6. **Use Auto-Fail only where one failure fails the whole interaction**, such as a missed regulatory disclosure.
 7. **Build a separate scorecard for each set of procedures.** Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
@@ -124,7 +124,7 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 1. **Test five to ten files first.** Checking the format, agent names, teams, and departments on a small batch takes minutes. Finding a systematic error after thousands of files means uploading them again.
 2. **Build the CSV from the downloaded template.** Column name mismatches cause most bulk failures.
 3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. A name Vela cannot match becomes a new agent in the team the row names, so a misspelling creates a duplicate record rather than an error, and the interaction lands under it.
-4. **Upload outside busy hours**, and keep the page open until the batch finishes.
+4. **Upload outside busy hours**, and keep the page open until the upload finishes. Your browser sends the ZIP in pieces, so leaving the page stops the upload. Processing then continues in the background.
 5. **Keep the source audio** until you have checked every file in the batch appears in the Interactions list, then archive it under your organisation's retention policy.
 6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but names no rows, so compare the list against your batch yourself while the source files are still to hand. A failure is easier to explain today than in two weeks.
 

@@ -85,7 +85,7 @@ The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, 
 **Solution:**
 1. Check whether the interaction was recently reassigned to a different agent, in **Call Details**.
 2. If so, the new score reflects your current scorecard and fresh AI answers. **Initial Score** now shows the new AI answers too, and any reviewer overrides were cleared.
-3. Reassign only to correct a genuine misassignment, then check the score and set any overrides again.
+3. Reassign only to correct a genuine misassignment, because it replaces every answer. Then check the score and set any overrides again.
 
 ---
 

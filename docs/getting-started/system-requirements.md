@@ -128,7 +128,7 @@ Use bulk upload to import many call recordings at once.
 | **Format** | ZIP (`.zip`) | Standard ZIP compression |
 | **Maximum size** | 3 GB | Rejected before the upload begins if the ZIP is larger |
 | **Contents** | Audio files plus `metadata.csv` | Every file named in the CSV must be present |
-| **Metadata format** | CSV (`.csv`) | UTF-8 encoding required |
+| **Metadata format** | CSV (`.csv`) | In Excel, save as **CSV (Comma delimited)**. The **CSV UTF-8** option adds a hidden character that stops Vela finding the `filename` column |
 
 For the `metadata.csv` column definitions and a worked example, see [Upload Your Data](../data-upload.md).
 
@@ -223,8 +223,8 @@ Vela signs you out after 24 hours without activity, after which you sign in agai
 
 ### User Device Security
 - Keep browsers up to date
-- Lock devices when unattended
-- Log out when using a shared computer
+- Lock devices when unattended, because Vela keeps you signed in until 24 hours pass without activity
+- Log out when using a shared computer, because closing the browser does not sign you out
 
 ---
 

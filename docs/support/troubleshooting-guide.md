@@ -127,11 +127,11 @@ A single call that appears to upload but never shows up in the Interactions list
 
 **Problem:** Bulk upload fails or returns errors on the metadata CSV.
 
-**Cause:** Column names in the CSV do not match the expected template, the CSV is not UTF-8 encoded, or some files listed in the CSV are missing from the ZIP.
+**Cause:** Column names in the CSV do not match the expected template, the CSV was saved in Excel's **CSV UTF-8** format, or some files listed in the CSV are missing from the ZIP.
 
 **Solution:**
-1. Download the metadata CSV template from the upload page and use it as your starting point. Do not rename or reorder the columns.
-2. Ensure the CSV is saved with UTF-8 encoding. In Microsoft Excel, use "Save As" and select "CSV UTF-8 (comma delimited)".
+1. Download the metadata CSV template from the upload page and use it as your starting point. Keep the column headings exactly as they are. Vela finds each column by its heading, so a renamed column is not read.
+2. In Microsoft Excel, use **Save As** and choose **CSV (Comma delimited)**, not **CSV UTF-8 (Comma delimited)**. The UTF-8 option adds a hidden character before the first heading, so Vela cannot find the `filename` column and rejects the file with `CSV file does not contain 'filename' header`. {/* Verified 2026-10-01 by running vela-data's csv-parser 3.2.0 (unchunk/route.js, dev-hold): a byte-order mark makes the first header read as \uFEFFfilename, so headers.includes('filename') fails. Not yet confirmed with a live upload. */}
 3. Verify that every filename listed in the `filename` column (including the file extension) is present in the ZIP archive.
 4. Confirm that `agent_name` values correspond to agent names in Vela. Matching is case-insensitive, but it matches on the agent's **name**. A username or email such as `john.smith` does not match `John Smith`.
 5. Check the spelling of `department` and `team` values. These are also matched case-insensitively. A name Vela does not recognise creates a new agent, team, or department within your access level, so a typo puts calls under a new record rather than failing.
@@ -158,7 +158,7 @@ A single call that appears to upload but never shows up in the Interactions list
 1. Split large batches into smaller ZIP archives, so each transfer is short enough to finish before the connection drops.
 2. Upload during off-peak hours (evenings or weekends) when server load is lower.
 3. Use a wired internet connection rather than Wi-Fi for large uploads, as a stable connection matters more than raw speed over a long transfer.
-4. Do not navigate away from the upload page while a bulk upload is in progress.
+4. Do not navigate away from the upload page while a bulk upload is in progress. Your browser sends the ZIP in small pieces and asks Vela to rebuild it only after the last one, so leaving the page stops the upload.
 
 ---
 

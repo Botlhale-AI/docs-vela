@@ -95,7 +95,7 @@ A practical routine for each alert:
 1. Open the matched interaction from the alert.
 2. Review the full context. The transcript and AI analysis show whether the match is a genuine issue.
 3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction, tagging the agent with **@** so it reaches them. A false match needs nothing further.
-4. Select **Resolve** on the alert in the interaction's **Alerts** table either way. Then select the cross on the notification to clear it from your list, so it holds only what you still have to look at.
+4. Select **Resolve** on the alert in the interaction's **Alerts** table either way, so the interaction leaves the Smart Search's Returned Interactions list. Then select the cross on the notification to clear it from your list, so it holds only what you still have to look at.
 
 :::tip Use alerts as your review queue
 Rather than sampling interactions at random, work your alerts first. They are the conversations your own searches have identified as worth looking at.

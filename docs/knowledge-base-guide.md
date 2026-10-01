@@ -139,11 +139,11 @@ The Document Library's **Scope** column, covered above, shows the same setting i
 
 Update documents when procedures change. AI scoring based on an outdated procedure document produces results that conflict with your current standards, which undermines both the scoring accuracy and agent confidence in the feedback they receive.
 
-When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
+When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect, so you can tell the versions apart when you link one. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
 Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. The message reads **Document is linked to a scorecard question and cannot be deleted**, even when the link is a Smart Question. To delete it, relink those questions to another document or delete them first. A document linked only to a Smart Search can be deleted, which leaves that search referencing a document that is no longer there. Relink it to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
 
-Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs.
+Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs, so scoring does not rest on an outdated procedure.
 
 ---
 

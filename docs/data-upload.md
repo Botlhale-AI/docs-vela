@@ -52,7 +52,7 @@ Bulk upload brings in many recordings at once from a single ZIP archive. Use it 
 
 **Step 1: Prepare your audio files**
 
-Confirm every file is WAV or MP3, then compress them into a single ZIP archive. Keep the archive under the 3 GB limit, and split larger sets into several batches.
+Confirm every file is WAV or MP3, then compress them into a single ZIP archive. Keep the archive under the 3 GB limit, and split larger sets into several batches. Vela rejects a larger ZIP as soon as you add it.
 
 Use ZIP, not RAR or 7z. The upload area takes those too, so the file uploads in full before Vela reads it and finds it cannot.
 
@@ -274,7 +274,7 @@ A bulk upload checks the `metadata.csv` before it processes anything. If it retu
 
 | Error message | Cause | Fix |
 | :--- | :--- | :--- |
-| `CSV file does not contain 'filename' header` | The CSV has no `filename` column | Add a `filename` column. The template already has the right headers |
+| `CSV file does not contain 'filename' header` | The CSV has no `filename` column, or it was saved in Excel's **CSV UTF-8** format, which adds a hidden character before the first heading | Add a `filename` column, or save the file again as **CSV (Comma delimited)**. The template already has the right headers |
 | `Mismatch between .wav/.mp3 files and CSV entries` | A `filename` in the CSV is not in the ZIP, or a file in the ZIP is not listed | Make every `filename` match a file in the ZIP exactly, including the extension |
 | `Invalid direction value in CSV` | A `direction` value is not `inbound`, `outbound`, or blank | Use `inbound`, `outbound`, or leave it blank |
 | `Agent 'X' cannot be created without a team` | The CSV names a new agent with no team | Add that agent's `team` and `department` to the row |
