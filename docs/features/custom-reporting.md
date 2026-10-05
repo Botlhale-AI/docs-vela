@@ -19,7 +19,7 @@ You need:
 
 - **Processed interactions inside the period you are reporting on.** Vela builds the report from the interactions it finds in that period, so a period with none produces no results. Where a scheduled run finds nothing, Vela emails you to say so rather than sending an empty report.
 - **Access level:** Organisational, Departmental, or Team, covering the teams you want in the report. See [Access Level](../reference/glossary.md#access-level).
-- **To know which metrics your plan offers.** On the [Lite](../reference/glossary.md#lite) edition, alert, keyword, intent, and pain point metrics are not offered. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
+- **To know which metrics your plan offers.** On the [Lite](../reference/glossary.md#lite) version, alert, keyword, intent, and pain point metrics are not offered. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
 
 ---
 
@@ -100,7 +100,7 @@ Metrics are organised into groups, listed alphabetically:
 | **Team Workload** | Total Number of Agents, Agent Distribution in Interactions |
 | **Topics & Pain Points** | Top 10 Topics, Top 10 Pain Points in Interactions (Detected) |
 
-Your plan decides which metrics are offered. On the [Lite](../reference/glossary.md#lite) edition, alert, keyword, intent, and pain point metrics are not offered. The list shows every call and chat metric, whichever interaction type you chose. A call-only metric in a chats report has no data, so it is dropped when the report is built. The list also uses shorter names than the Dashboard cards. See [Metrics](../reference/metrics.md).
+Your plan decides which metrics are offered. On the [Lite](../reference/glossary.md#lite) version, alert, keyword, intent, and pain point metrics are not offered. The list shows every call and chat metric, whichever interaction type you chose. A call-only metric in a chats report has no data, so it is dropped when the report is built. The list also uses shorter names than the Dashboard cards. See [Metrics](../reference/metrics.md).
 
 A group appears only where at least one of its metrics is offered on your plan, so you may see fewer than eight.
 

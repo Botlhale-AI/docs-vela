@@ -170,7 +170,7 @@ Keywords only count where your team has added them. See [Manage Smart Search Ter
 
 A metric you expect can be absent for three reasons. Tell them apart before raising it:
 
-- **Your plan does not include it.** On the [Lite](./glossary.md#lite) edition, the alert, keyword, intent, and pain point metrics are not offered at all.
+- **Your plan does not include it.** On the [Lite](./glossary.md#lite) version, the alert, keyword, intent, and pain point metrics are not offered at all.
 - **It does not fit what you are looking at.** A metric that applies only to calls has no data in a chats report, and the reverse, so it is dropped when the report is built.
 - **Nothing has produced the data yet.** Reviewed metrics stay empty until someone marks an interaction reviewed, and keyword metrics stay empty until your team adds keywords.
 

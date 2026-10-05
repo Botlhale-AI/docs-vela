@@ -206,7 +206,7 @@ Write each question so that the AI, and human reviewers, can give a clear yes or
 ## Step 5: Create Smart Searches
 
 :::info Plan availability
-**Smart Search** appears under **Smart Detector** on every edition except [Lite](../../reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
+**Smart Search** appears under **Smart Detector** on every version except [Lite](../../reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan, and continue with the remaining steps in the meantime.
 :::
 
 A Smart Search automatically monitors every processed interaction and flags one when the phrases or conditions you define are detected in it. Set these up before calls are uploaded so monitoring begins immediately.

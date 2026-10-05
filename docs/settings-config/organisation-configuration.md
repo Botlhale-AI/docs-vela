@@ -159,7 +159,7 @@ A 0 means your package has no custom limit, so the standard limit of five applie
 
 The label beside the heading names the package type, for example **Custom**. **hide package details** closes the table again.
 
-Your edition also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
+Your version also decides which features appear at all. On a [Lite](../reference/glossary.md#lite) version, Smart Search and Smart Questions are unavailable, and the Dashboard and report metrics are reduced.
 
 To change your package, contact your Account Manager. It is set outside Settings.
 

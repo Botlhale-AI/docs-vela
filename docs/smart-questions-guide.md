@@ -15,7 +15,7 @@ import questionFormBottom from '@site/img/screenshots/smart_questions/question-f
 Smart Questions let you ask a question against your interactions and see the answers, without those answers affecting anyone's score.
 
 :::info Plan availability
-**Smart Questions** appears under **Smart Detector** in the left sidebar on every edition except [Lite](./reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan.
+**Smart Questions** appears under **Smart Detector** in the left sidebar on every version except [Lite](./reference/glossary.md#lite). Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---

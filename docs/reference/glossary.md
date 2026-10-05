@@ -17,18 +17,20 @@ Definitions of the terms used in Vela and in this documentation.
 How much of the organisation a user can see. An administrator sets this per user. There are three levels:
 
 - **Organisational**: all departments and teams
-- **Departmental**: their department only
+- **Departmental**: their department and every team under it
 - **Team**: their immediate team only
+
+The diagram shows what a user with Departmental access in Department A sees. The highlighted boxes are visible to them, and the others are not.
 
 ```mermaid
 flowchart TD
-    O("Organisational<br/>sees everything below") --> D1("Department A")
+    O("Organisation") --> D1("Department A")
     O --> D2("Department B")
     D1 --> T1("Team 1")
     D1 --> T2("Team 2")
     D2 --> T3("Team 3")
-    DA("Departmental<br/>a user in Department A") -.-> D1
-    TA("Team<br/>a user in Team 1") -.-> T1
+    classDef visible fill:#cfe8ff,stroke:#1f6fb2,stroke-width:2px,color:#000
+    class D1,T1,T2 visible
 ```
 
 A user sees the node they are attached to and everything beneath it, and nothing to the side. This is why two team leads looking at the same Dashboard on the same day can see different numbers.
@@ -57,7 +59,7 @@ Alerts appear in the **Alerts** tab under Notifications, and the **Total Number 
 
 ## Auto-Fail
 
-A setting on a scorecard question. When it is on, failing that question flags the whole interaction as auto-failed. The flag is recorded next to the score rather than replacing it, so you can see both that a critical requirement was missed and how the interaction scored otherwise.
+A setting on a scorecard question. When it is on, failing that question flags the whole interaction as auto-failed. The interaction then reads 0.0%, and the auto-fail is recorded next to the score, with the score it would otherwise have had in brackets. You can see both that a critical requirement was missed and how the interaction scored otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
 
 ## Compliance Item
 
@@ -74,7 +76,7 @@ Two sources for topics, intents, and pain points:
 - **Detected**: found automatically by the AI in your interactions
 - **Created Search**: added manually by your team, under each page's own **Created Search Topics**, **Created Search Intents**, or **Created Search Pain Points** heading
 
-Dashboard and report metrics still label the second group **(Organisational)**, so the two names describe the same source on two different screens.
+Dashboard and report metrics label Created Search items **(Organisational)** instead, so the two names describe the same source on two different screens.
 
 This lets you separate what the AI found from what you told it to look for.
 
@@ -114,9 +116,9 @@ A store of your organisation's documents, such as policies, scripts, and procedu
 
 ## Lite
 
-A Vela edition with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics drop everything that depends on them. That means alerts, keywords, intents, and pain points are gone. Interaction volume, duration, review progress, team workload, language, customer sentiment, topics, and agent scores are all still included.
+A Vela version with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics drop everything that depends on them. That means alerts, keywords, intents, and pain points are gone. Interaction volume, duration, review progress, team workload, language, customer sentiment, topics, and agent scores are all still included.
 
-If a feature this documentation describes is missing from your sidebar, your edition is the first thing to check. Your Account Manager can tell you which one your organisation has.
+If a feature this documentation describes is missing from your sidebar, your version is the first thing to check. Your Account Manager can tell you which one your organisation has.
 
 ## Pain Point
 
@@ -126,7 +128,7 @@ A sign of customer frustration identified by the AI, such as repeated explanatio
 
 Automatic masking of sensitive information in transcripts. Administrators choose which types to mask. These are Credit Card, IBAN Code, Person, Location, Crypto, Phone Number, Email, NRP, IP Address, Date & Time, URL, ID Number, Medical License, and Organisation.
 
-**NRP** covers nationality, religion, and political group. Settings shows the abbreviation on its own, so it is the one entity type whose name does not say what it masks.
+**NRP** covers nationality, religion, and political group. Settings shows only the abbreviation.
 
 Once an administrator has configured redaction, the masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
 

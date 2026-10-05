@@ -13,7 +13,7 @@ import { SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/
 Smart Search automatically monitors every processed interaction for keywords, phrases, and patterns you define. Each time a processed call or chat matches one of your searches, an alert is raised and linked directly to that interaction. This lets you focus your QA effort on the conversations that matter most rather than reviewing interactions at random.
 
 :::info Plan availability
-Smart Search is absent on the [Lite](./reference/glossary.md#lite) edition. Where it is unavailable, ask your Account Manager about upgrading your plan.
+Smart Search is absent on the [Lite](./reference/glossary.md#lite) version. Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
 
 ---

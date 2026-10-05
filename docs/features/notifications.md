@@ -41,7 +41,7 @@ Select **Notifications** in the left sidebar. Three tabs sit at the top right of
   ]}
 />
 
-The **Alerts** tab appears on every edition except [Lite](../reference/glossary.md#lite), where the page opens on **Comments** instead.
+The **Alerts** tab appears on every version except [Lite](../reference/glossary.md#lite), where the page opens on **Comments** instead.
 
 Unread notifications are also indicated in the top navigation bar, so you can see at a glance whether anything new has arrived.
 
@@ -161,7 +161,7 @@ Two lists, **Platform Notifications** and **Email Notifications**, offer the sam
 | **New Reports** | A report has finished generating |
 | **New Alerts Detected** | A Smart Search matched an interaction, or a Smart Question returned the outcome it alerts on. One setting covers both |
 
-**New Alerts Detected** appears in both lists on every edition except [Lite](../reference/glossary.md#lite).
+**New Alerts Detected** appears in both lists on every version except [Lite](../reference/glossary.md#lite).
 
 The three comment settings widen as you go up the list. **Comments Mentioning You** is the narrowest and **Comments** the broadest, so tick that one only if you want every comment in the organisation.
 

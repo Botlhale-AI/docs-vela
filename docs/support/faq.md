@@ -18,7 +18,7 @@ A: Vela is a platform that helps call centres analyse conversations, track perfo
 A: Vela is designed for call centre teams, meaning agents, team leads, and administrators. Team leads and administrators work in the main platform, where what they see depends on their role and access level. Agents sign in to a separate Agent Portal. See [Roles and Access Levels](../settings-config/access-control.md).
 
 **Q: A feature in the documentation is missing from my sidebar. Why?**  
-A: Your organisation's edition decides which features appear. On a [Lite](../reference/glossary.md#lite) edition, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which edition you have.
+A: Your organisation's version decides which features appear. On a [Lite](../reference/glossary.md#lite) version, Smart Search and Smart Questions are unavailable, so the **Alerts** tab and the Alerts column do not appear and some Dashboard and report metrics are hidden. Your Account Manager can confirm which version you have.
 
 **Q: What languages does Vela support for transcription?**  
 A: Vela supports the 11 spoken official South African languages. These are Afrikaans, English, isiNdebele, isiXhosa, isiZulu, Sesotho (Southern Sotho), Sepedi (Northern Sotho), Setswana, siSwati, Tshivenda, and Xitsonga. The Vela interface is in English.

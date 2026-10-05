@@ -30,7 +30,7 @@ Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords
 
 The home page also has a **Number Search** card. It gathers every interaction involving a phone number and writes a read across the whole history, which is the view to take into a call-back or a complaint. See [Search by Phone Number](./number-search-guide.md).
 
-Smart Search, Smart Questions, Number Search, and the **Intents**, **Keywords**, and **Pain Points** buttons are absent on the [Lite](./reference/glossary.md#lite) edition. Where one is absent, ask your Account Manager about upgrading your plan.
+Smart Search, Smart Questions, Number Search, and the **Intents**, **Keywords**, and **Pain Points** buttons are absent on the [Lite](./reference/glossary.md#lite) version. Where one is absent, ask your Account Manager about upgrading your plan.
 
 ---
 

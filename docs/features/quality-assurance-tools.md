@@ -92,7 +92,7 @@ Not every column is shown by default. Select the settings icon next to **Upload*
 
 Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
 
-Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
+Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every version except [Lite](../reference/glossary.md#lite).
 :::
 
 :::note The list hides unsupported calls by default
