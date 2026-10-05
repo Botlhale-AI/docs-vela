@@ -113,7 +113,7 @@ Upload documents that define how agents should behave in specific situations. Th
 - Product or service information that agents are expected to communicate accurately
 - Objection-handling frameworks and approved responses
 
-The test is whether a document describes an observable agent action. The AI reads these to assess what agents said and did, so material written for another purpose, such as background reading or marketing copy, leaves scoring accuracy where it was.
+The test is whether a document describes an observable agent action. The AI reads these to assess what agents said and did. Material written for another purpose, such as background reading or marketing copy, does not improve scoring.
 
 ---
 
@@ -137,7 +137,7 @@ The Document Library's **Scope** column, covered above, shows the same setting i
 
 ## Keeping the Knowledge Base Current
 
-Update documents when procedures change. AI scoring based on an outdated procedure document produces results that conflict with your current standards, which undermines both the scoring accuracy and agent confidence in the feedback they receive.
+Update documents when procedures change. An outdated procedure document makes the AI score against old standards. The results then conflict with your current procedures, and agents stop trusting the feedback.
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect, so you can tell the versions apart when you link one. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
@@ -157,7 +157,7 @@ Confirm that the document has been explicitly linked to the item that should use
 
 Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon on its row to see which ones. A document scoped to **Entire Organisation** has no expand icon. Check its **Scope** column instead, which reads `organisation`. Only users within the scope shown can see the document.
 
-Scope is fixed at upload. The Document Library lets you rename and delete a document, so widening access means uploading it again with the wider scope, relinking anything that used the old copy, and then deleting the old one. A document still linked to a scorecard question or Smart Question cannot be deleted until you relink those questions.
+Scope is fixed at upload. The Document Library lets you rename and delete a document, but not change its scope. To widen access, upload it again with the wider scope, relink anything that used the old copy, then delete the old one. A document still linked to a scorecard question or Smart Question cannot be deleted until you relink those questions.
 
 ---
 

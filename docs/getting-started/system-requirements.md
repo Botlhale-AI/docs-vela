@@ -213,7 +213,7 @@ Transcription accuracy is highest when:
 This section covers the security controls you manage inside Vela. For how your data is hosted, encrypted, backed up, and the standards Vela meets, see [Security and Compliance](../security-compliance.md).
 
 ### Redaction
-Vela can automatically mask sensitive information in transcripts. Once an administrator has configured which details to mask, calls and chats are redacted for everyone by default, and the administrator grants **View Redactions** to the accounts that need to see them unmasked. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
+Vela can automatically mask sensitive information in transcripts. Once an administrator has chosen which details to mask, calls and chats are masked for everyone by default. The administrator then grants **View Redactions** to the accounts that need to see them unmasked. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
 
 ### Access Level
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).

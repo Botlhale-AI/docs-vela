@@ -74,7 +74,7 @@ Select **Add User** to open the modal. It is available to administrators only.
 | **Team** | Shown when Access is Team. Only teams in the selected department are listed. |
 | **Role** | **Admin** or **User**. |
 
-Every field is required, so the modal reports an error if one is missing. Select **Add User** to finish, or **Close** to abandon the form. Vela emails the new user an invitation containing a generated password and a link to confirm their address. The email recommends they change the password after signing in.
+Every field is required, so the modal reports an error if one is missing. Select **Add User** to finish, or **Close** to abandon the form. Vela emails the new user an invitation containing a generated password and a link to confirm their address. Before their first sign-in, a user who signs in with email and password sets their own password with **Forgot your password?** on the sign-in page. Let them know this when you add them. Users who sign in with Google or Microsoft go straight to their provider and need no password.
 
 :::note You cannot grant more than you hold
 The Access options offered are limited to your own access level. An administrator with departmental access can create departmental and team users, but not organisational ones. An administrator with team access can only create team users.
@@ -174,7 +174,7 @@ Open the menu next to the department or team and select **Edit**.
 
 ## 4. Importing Agents in Bulk
 
-Agents are separate from users. They have their interactions analysed, they sign in to the Agent Portal rather than to Vela itself where your organisation uses it, and they are the only records you can import from a CSV. That import lives under **Agents → Agent Details**, not here.
+Agents are separate from users. Vela analyses their interactions. They are also the only records you can import from a CSV, under **Agents → Agent Details** rather than here. Where your organisation uses the Coaching Portal, agents sign in to the Agent Portal, not to Vela itself.
 
 For the columns, the template, and how unmatched departments and teams are handled, see [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv). For the distinction between an agent and a user, see the [Glossary](../reference/glossary.md#user).
 

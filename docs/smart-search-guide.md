@@ -347,7 +347,7 @@ The same view has a **Delete Search** control for searches you no longer need.
 The limit counts searches set to **Active**. When you reach it, **New Smart Search** is greyed out. To free a place, set a search you no longer need to **Inactive**, or select **Delete Search**. For a higher limit, ask your Account Manager about upgrading your plan. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies.
 :::
 
-To apply a working search to another team or department, create a new search with the same phrases and a different scope. Editing the scope of the existing one is possible, but it moves the monitoring rather than extending it, and the search does not go back over the new scope's earlier interactions.
+To use a working search for another team or department, create a new search with the same phrases and the new scope. Do not edit the scope of the existing search instead. Editing replaces the old scope rather than adding to it, so the original team stops being monitored. The edited search also checks only new interactions, not earlier ones in the new scope.
 
 ---
 
@@ -357,7 +357,7 @@ A saved search appears in the Smart Search list immediately. Matches do not, so 
 
 Unless you turned on **Historical Search**, the search only monitors interactions processed from the moment you saved it, so it stays at zero results until new interactions arrive.
 
-You are finished when the search's results view shows matches for the period you chose and, opening one of those matches, the interaction genuinely contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
+You are finished when the search's results view shows matches for the period you chose. Open one of those matches and confirm the interaction really contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
 
 If it stays at zero once new interactions have been processed, work through [Troubleshooting Common Issues](#troubleshooting-common-issues) above, starting with the search's status and scope.
 

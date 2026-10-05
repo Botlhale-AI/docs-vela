@@ -230,7 +230,7 @@ The form is one page. These two views are it scrolled, so they overlap in the mi
 
 Each field is covered in full in [Set Up Smart Search](../../smart-search-guide.md#step-2-define-your-search-criteria).
 
-Repeat for each compliance or quality check your organisation needs to monitor, within the number of active searches your plan allows, which is five unless your plan sets a different number. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
+Repeat for each compliance or quality check your organisation needs to monitor. Your plan limits how many searches can be active at once, which is five unless your plan sets a different number. When you reach the limit, **New Smart Search** is greyed out, so create the searches that matter most first. See [Search Management](../../smart-search-guide.md#search-management).
 
 :::note Smart Questions ask, rather than flag
 A Smart Search flags interactions that match your criteria. A **Smart Question** asks a yes or no question of every interaction for reporting, without affecting anyone's score, which suits anything it would be unfair to judge an agent on. On plans that include it, see [Set Up Smart Questions](../../smart-questions-guide.md).

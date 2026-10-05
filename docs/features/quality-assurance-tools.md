@@ -92,13 +92,13 @@ Not every column is shown by default. Select the settings icon next to **Upload*
 
 Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
 
+Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
+:::
+
 :::note The list hides unsupported calls by default
 A call whose language Vela could not transcribe is marked unsupported, and the Interactions list leaves those out unless you turn **Show unsupported calls** on. The toggle sits at the top left of the list.
 
 This is the first thing to check when a call you uploaded is not where you expect it.
-:::
-
-Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every edition except [Lite](../reference/glossary.md#lite).
 :::
 
 ### E. Filter Interactions Directly
@@ -150,7 +150,7 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 :::tip Vela explains itself on four of these tabs
 **Scorecard**, **Smart Questions**, **Alerts**, and **Pain Points** each record why the AI answered, matched, or flagged as it did. Read that explanation before you act on anything that looks wrong: it usually separates a one-off misreading from a question or search that needs rewording.
 
-On **Scorecard** and **Smart Questions** the explanation sits behind the information icon, and it goes from the row once you override the answer, because it explained the AI's answer rather than yours.
+On **Scorecard** and **Smart Questions** the explanation sits behind the information icon. It disappears once you override the answer, because it explained the AI's answer, not yours.
 :::
 
 ![The Scorecard tab, with each question, its outcome, and the information icon showing Vela's reasoning](../../img/screenshots/calls/detailed-scorecard.png)
@@ -176,7 +176,7 @@ A tab with nothing to show says so, for example `No alerts detected in call` or 
 
 <Hotspots
   src={detailedView}
-  alt="The Detailed View of a call: the breadcrumb and the Review Redacted Info and Mark as Reviewed buttons across the top, the Audio player and the Smart Detector analysis tabs down the left, and the Call Details panel on the right"
+  alt="The Detailed View of a call: the trail at the top and the Review Redacted Info and Mark as Reviewed buttons across the top, the Audio player and the Smart Detector analysis tabs down the left, and the Call Details panel on the right"
   points={[
     { x: 74.5, y: 17.7, title: 'Review Redacted Info and Mark as Reviewed', body: 'Where you have View Redactions, this button reads Review Redacted Info and reveals masked content, then Close Redacted Info to mask it again. Without that permission it reads Request Redacted Access instead, and opens a request to an administrator. Mark as Reviewed records that the interaction is dealt with. See Access Requests.' },
     { x: 46.9, y: 25.3, title: 'Audio', body: 'The player for the recording. A chat has no Audio card, and shows the transcript alone.' },
@@ -238,7 +238,7 @@ Vela's assessment gives you a base score. You make the final judgement.
 
 1.  On the Detailed View, open the **Scorecard** tab in the Smart Detector panel.
 2.  Switch **View** between **Automatic** (questions the AI answers) and **Manual** (questions a reviewer answers) to find the item you want to change.
-3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript: the AI having missed context is the case for overriding, and the AI being right is the case for leaving the score and coaching instead.
+3.  Read why Vela answered as it did before you change anything. Hover over the information icon beside an item's score to see its reasoning for that question. Check that reasoning against the transcript. If the AI missed context, override the answer. If the AI was right, leave the score and coach the agent instead.
 4.  Select the pencil icon in the **Outcome** column heading to enter edit mode.
 5.  Set the **Outcome** for each item to **Yes**, **No**, or **N/A**, using your judgement.
     * **N/A removes the question from the score** rather than counting it as a failure, so use it where the question did not apply to this conversation. The difference is large: see [How Scoring Works](../explanation/how-scoring-works.md) for a worked example.
@@ -293,7 +293,7 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
 :::warning You cannot tag an agent in a reply
 **@** mentions work in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
 
-This matters because tagging is what shares a comment with the agent. A reply in a thread you tagged is shared with them too, so answering their response there reaches them. A reply in an untagged thread does not. Where it carries something the agent has to see, post it as a new comment and tag them there.
+This matters because tagging is what shares a comment with the agent. A reply in a thread you tagged is shared with them too, so answering their response there reaches them. A reply in an untagged thread does not. Where a reply carries something the agent has to see, post it as a new comment and tag them there.
 
 :::
 
@@ -311,7 +311,7 @@ Comments cannot be edited or deleted once sent. Read yours back before selecting
 
 Marking an interaction reviewed is what tells the rest of Vela you are done with it.
 
-* Select **Mark as Reviewed** to record that you have finished assessing this interaction. The button becomes a green **Reviewed** pill, and hovering it shows who reviewed it and a **Put Back in Review** button to undo it. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
+* Select **Mark as Reviewed** to record that you have finished assessing this interaction. The button becomes a green **Reviewed** label, and hovering it shows who reviewed it and a **Put Back in Review** button to undo it. This drives the **Reviewed** filter on the Interactions list and the reviewed-interaction metrics on your Dashboard, so your team can see review coverage at a glance. See [Reviewed Interactions](../reference/metrics.md#reviewed-interactions).
 * If follow-up is needed, add coaching comments for the agent.
 
 :::note Reviewing can be what releases the interaction to the agent
@@ -373,7 +373,7 @@ Deleting a tag takes it off every interaction carrying it, and the page does not
 
 One weak interaction is not a pattern. Before acting, read the agent's recent scorecards and comments together and look for the same category scoring low more than once.
 
-Where you find one, select **Coaching** in the left sidebar, which appears only if your organisation has the Coaching Portal enabled, and create a course scoped to that category, with a **Training Initiation Score Range** that covers the gap. Vela assigns courses on its evaluation cycle, so you set the category and range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses) for building the course.
+Where you find one, select **Coaching** in the left sidebar and create a course for that category, with a **Training Initiation Score Range** that covers the gap. **Coaching** appears only if your organisation has the Coaching Portal enabled. Vela assigns courses on its evaluation cycle, so you set the category and range rather than picking the agent. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses) for building the course.
 
 A course is not a substitute for the conversation. Arrange time with the agent to go through the feedback and what you expect to change.
 

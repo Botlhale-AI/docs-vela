@@ -242,7 +242,7 @@ flowchart LR
 ```
 
 :::note Vela assigns courses by score
-You create a course, set its category and the score range within it, and choose the scope it applies to. Vela evaluates agents on the cycle configured in **Coaching → Preferences** and assigns each agent the courses their score in that category qualifies them for, so courses reach people by score rather than by name.
+You create a course and set its category, its score range, and its scope. On each cycle set in **Coaching → Preferences**, Vela checks every agent in that scope. An agent whose score in the course's category falls inside the range receives the course. Courses reach people by score, not by name.
 
 The **Training Initiation Score Range** is your lever. Set it to match the gap you found, and the agents who have that gap pick the course up on the next evaluation.
 :::

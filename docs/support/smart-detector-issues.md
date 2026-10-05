@@ -62,7 +62,7 @@ See [Complete a Manual Scorecard](../features/quality-assurance-tools.md#a-compl
 
 **Problem:** A newly added scorecard question does not appear on interactions that were already scored.
 
-**Cause:** The questions an interaction is scored against are set when it is processed. A question added afterwards reaches it only if the question was created with **Historical Search** on, or if the interaction is later reassigned to a different agent, which rescores it against your current questions.
+**Cause:** The questions an interaction is scored against are set when it is processed. A question added afterwards reaches it in only two cases. The question was created with **Historical Search** on, or the interaction is later reassigned to a different agent, which rescores it against your current questions.
 
 **Solution:**
 1. Accept the gap and start the new measurement from the date you added the question. This is usually the right choice.
@@ -80,7 +80,7 @@ The **Rerun Scorecard** button, on the **Scorecard** tab in **Automatic** view, 
 
 **Problem:** An interaction's score changed after nothing was edited on the scorecard.
 
-**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) sends the interaction back to the AI to be scored again against your questions as they stand today, whether or not it already had a score. Every answer is replaced, including reviewer overrides. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed until the completion email arrives, headed **Checklist Scoring is complete**.
+**Cause:** Reassigning the agent on an interaction (the **Edit** control beside the agent's name in **Call Details**) sends the interaction back to the AI. It is scored again against your questions as they stand today, even if it already had a score. Every answer is replaced, including reviewer overrides. This is different from **Rerun Scorecard** above, which only runs on an interaction with no score at all. The confirmation message only mentions the agent, so the score change can pass unnoticed until the completion email arrives, headed **Checklist Scoring is complete**.
 
 **Solution:**
 1. Check whether the interaction was recently reassigned to a different agent, in **Call Details**.

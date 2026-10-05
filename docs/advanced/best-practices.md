@@ -123,10 +123,10 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 
 1. **Test five to ten files first.** Checking the format, agent names, teams, and departments on a small batch takes minutes. Finding a systematic error after thousands of files means uploading them again.
 2. **Build the CSV from the downloaded template.** Column name mismatches cause most bulk failures.
-3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. A name Vela cannot match becomes a new agent in the team the row names, so a misspelling creates a duplicate record rather than an error, and the interaction lands under it.
+3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. If Vela cannot match the name, it creates a new agent in that row's team. A misspelt name therefore creates a duplicate agent, without any error, and the interaction is filed under the duplicate.
 4. **Upload outside busy hours**, and keep the page open until the upload finishes. Your browser sends the ZIP in pieces, so leaving the page stops the upload. Processing then continues in the background.
 5. **Keep the source audio** until you have checked every file in the batch appears in the Interactions list, then archive it under your organisation's retention policy.
-6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but names no rows, so compare the list against your batch yourself while the source files are still to hand. A failure is easier to explain today than in two weeks.
+6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but does not say which rows. Compare the list against your batch yourself while you still have the source files. A failure is easier to explain today than in two weeks.
 
 ---
 

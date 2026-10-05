@@ -27,6 +27,8 @@ Every factual statement needs a source. In order of authority:
 3. **Source** in `vela` and `vela-data`, for behaviour a screen cannot show: error strings, validation, what a field does.
 4. **Support email and recollection.** Context only. These describe one moment and go stale.
 
+**Check both `origin/main` and `origin/vela-fly` in `vela`.** The live web app is `vela-fly`. Deploys are manual, and `main` is older: the two are mostly the same code, but `vela-fly` carries newer features and fixes, such as Number Search and the first sign-in password reset. Where they differ, the live app follows `vela-fly`. For `vela-data`, check `origin/main` and `origin/dev-hold`. Read source with `git show origin/<branch>:<path>`, never the working tree.
+
 Where two disagree, keep the higher authority, and say in the page that they differ and which won.
 
 **Source has been wrong about the screen repeatedly.** A documented Sort control whose handler is empty. Metric names that live in the database and appear in no source file. Toolbars present in the product and absent from the checkout. When a claim is about what a user sees, only a screen settles it.
@@ -73,7 +75,7 @@ Treat the output as a list to read, never as a defect list. Check a screenshot b
 - **POPIA.** Mask personal information in screenshots with solid bars, never blur. Blur can be reversed. Never reshoot to expose what was masked.
 - **Internal-only controls** — **Support**, **Switch to Silent Upload**, **Create Organisation** — are painted out of captures and never documented.
 - **Editions** are named only to explain why something is missing, and always linked to the [Lite](./docs/reference/glossary.md#lite) glossary entry rather than described again. Do not list what a plan includes, and do not name a price.
-- **Unreleased features** are not documented from a working branch. Check `origin/main` before writing a page. Where something is coming, put it in the commented draft in `docs/release-notes.md`.
+- **Unreleased features** are not documented from a working branch. Check `origin/main` and `origin/vela-fly` before writing a page. Where something is coming, put it in the commented draft in `docs/release-notes.md`.
 - Accuracy beats positive phrasing. State a real limit plainly, then give the next available action.
 
 ## Git

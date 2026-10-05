@@ -56,7 +56,7 @@ Each applicable question contributes its **weight** to the total possible score.
 
 Questions marked **N/A** are excluded from both the earned and possible totals, so marking something not applicable does not penalise the agent.
 
-**Auto-Fail replaces the score with zero, and keeps the earned figure beside it.** If an Auto-Fail question fails, the interaction reads 0.0%, followed in brackets by the score it would have had without the auto-fail, with the failed question still counted and earning nothing. You can see both that a critical requirement was missed and how the interaction performed otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
+**Auto-Fail replaces the score with zero, and keeps the earned figure beside it.** If an Auto-Fail question fails, the interaction reads 0.0%. The figure in brackets after it is the score without the auto-fail rule, with the failed question still counted at zero. You can see both that a critical requirement was missed and how the interaction performed otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
 
 The overall score is reported alongside two subtotals, each with its own auto-fail flag:
 
@@ -79,7 +79,7 @@ Open a question from the Agents Scorecard list to change its wording, category, 
 
 Deleting a question retires it from future scoring. Interactions already scored against it keep it in their total, and their scores do not change. See [How Scoring Works](../explanation/how-scoring-works.md).
 
-**Editing a question is not the same.** A change to its **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel works out the **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings straight away, while the **Agent Score**, the Interactions list, the Dashboard, and the table on **Agents → Performance** keep the old figures until that interaction is scored again. A change to **Expected Outcome** does not alter past AI answers, only answers a reviewer has changed. Delete a question you want to stop using rather than setting its weight to zero. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
+**Editing a question is not the same.** A change to its **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel works out the **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings straight away. The **Agent Score**, the Interactions list, the Dashboard, and the table on **Agents → Performance** keep the old figures until that interaction is scored again. A change to **Expected Outcome** affects only answers a reviewer has changed, not past AI answers. Delete a question you want to stop using rather than setting its weight to zero. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 
 The question also stays on the **Scorecard** tab of those interactions, with its outcome, so a reviewer can still see what the score was made of. This means a scorecard you no longer use can appear on an older interaction. That is the record of how it was scored at the time, not a sign the question is still live. Check the Agents Scorecard list for what is actually being applied now.
 

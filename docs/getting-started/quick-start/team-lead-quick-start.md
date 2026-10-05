@@ -41,11 +41,11 @@ A hands-on walkthrough for team leads and managers new to Vela. If you have not 
 Your administrator assigned you an access level, and it decides how much of the organisation you see, whether that is everything, your department, or your immediate team. Every dashboard, list, and filter in this guide is bounded by it, so if a team lead beside you sees more than you do, this is why. See [Access Level](../../reference/glossary.md#access-level).
 
 :::tip First-Time Setup
-Your administrator's invitation email contains a **Confirm Account** button and a password. **Use the button first.** Vela refuses the sign-in until your address is verified. Trying anyway sends you a fresh confirmation email, so check your inbox again rather than asking for a new invitation. If the button does not work, the email also gives you the link to paste into your browser.
+Your administrator's invitation email contains a **Confirm Account** button and a password. If you sign in with Google or Microsoft, you need neither, so sign in with your provider. If you sign in with email and password, you set your own password before your first sign-in, rather than using the one in the email. If you sign in with the emailed password first, Vela shows `We have sent you an email. Please reset your password before logging in.` and you set your password the same way.
 
-Once verified, sign in with the password from the email. If it is not accepted, use **Forgot your password?** on the sign-in page to set your own. See [Resetting a Forgotten Password](../../settings-config/account-security.md#resetting-a-forgotten-password).
+On the sign-in page, select **Forgot your password?**, enter your email address, and follow the link in the **Reset Your Password** email. Setting the password also confirms your address. Then sign in with your new password. See [Resetting a Forgotten Password](../../settings-config/account-security.md#resetting-a-forgotten-password).
 
-Once you are in, set your own password under **Settings → Security**.
+{/* VERIFIED 2026-10-05 on origin/vela-fly: addUser in app/(pages)/settings/settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). No email is sent on that path. Only app/api/reset/route.js clears the flag, and it also sets email_confirmed. */}
 :::
 
 ---
@@ -71,7 +71,7 @@ Once you are in, set your own password under **Settings → Security**.
 - Enter your password
 - Select **Sign In**
 
-Signing in for the first time? Confirm your account from the invitation email first. See **First-Time Setup** under [Before You Begin](#before-you-begin).
+Signing in for the first time? Set your own password with **Forgot your password?** first. See **First-Time Setup** under [Before You Begin](#before-you-begin).
 
 </TabItem>
 </Tabs>
@@ -140,7 +140,7 @@ Select **Customise** to choose which metrics appear and how each is charted, the
 
 <Hotspots
   src={customiseModal}
-  alt="The Customise Dashboard modal: the Alert Metrics and Customer Sentiment group headings with their counts, each metric as a pill carrying a chart-type icon and a cross, the scrollbar down the right, and Save Changes and Close at the foot"
+  alt="The Customise Dashboard modal: the Alert Metrics and Customer Sentiment group headings with their counts, each metric with a chart-type icon and a cross, the scrollbar down the right, and Save Changes and Close at the foot"
   points={[
     { x: 37.6, y: 16.5, title: 'The group heading', body: 'Names the group and how many metrics it holds.' },
     { x: 26, y: 27, title: 'The icon on each metric', body: 'The chart type it is drawn as. The same metric appears once per chart type available to it.' },
@@ -199,7 +199,7 @@ After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent is not notified, and sees it when they open the interaction in their Agent Portal. The agent themselves is not in that list, only the **@agent** option. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
+3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent's own name is not in that list, only the **@agent** option. The agent is not notified, and sees the comment when they open the interaction in their Agent Portal. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
 :::note Mentions only work in new comments
@@ -234,7 +234,7 @@ You have completed the Team Lead Quick Start. You can now:
 - ✅ Upload and review individual calls
 - ✅ Provide coaching feedback to agents via comments
 
-**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, the comment is now on that interaction in their Agent Portal. Select **Mark as Reviewed** to record that you are finished with it, which is what your team's review coverage is measured on.
+**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, the comment is now on that interaction in their Agent Portal. Select **Mark as Reviewed** to record that you are finished with it. Your team's review coverage counts the interactions marked this way.
 
 ---
 

@@ -58,13 +58,13 @@ Where your organisation has the Coaching Portal enabled, a low score in a catego
 
 ### Spot patterns across your conversations
 
-Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and you can [generate reports](../features/custom-reporting.md) that turn all this into something you can hand to a manager. Between them they surface patterns a manual review would never catch.
+Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and you can [generate reports](../features/custom-reporting.md) that turn all this into something you can hand to a manager. Together they show patterns a manual review would never catch.
 
 ---
 
 ## Scoring Against Your Own Standards
 
-Vela does not score against a generic idea of good service. You give it your own policies, scripts, and procedures through the [Knowledge Base](../knowledge-base-guide.md), and when a document is linked to a Smart Search or a [scorecard question](../reference/scorecard-fields.md), the AI evaluates against those.
+Vela does not score against a generic idea of good service. You give it your own policies, scripts, and procedures through the [Knowledge Base](../knowledge-base-guide.md). When a document is linked to a Smart Search or a [scorecard question](../reference/scorecard-fields.md), the AI evaluates against that document.
 
 The AI produces a first assessment, not a final verdict. A reviewer can change any outcome, and Vela keeps its original scores alongside the reviewed ones. The AI gives you the coverage. The reviewer keeps the final say. For how the score is worked out, and what the AI can and cannot judge reliably, see [How Scoring Works](../explanation/how-scoring-works.md).
 

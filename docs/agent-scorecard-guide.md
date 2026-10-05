@@ -78,7 +78,7 @@ Keep the list short and meaningful. Categories are what **Take A Bow** and **Wor
 The AI reads a transcript. A question works when its answer is visible there.
 
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
-* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on the calls where no dispute came up, so the question drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so a call the question never applied to costs the agent a No.
+* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on calls where no dispute came up. The question then drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so the agent gets a No on calls where the question never applied.
 * **Keep weights relative to each other.** There is no external scale. A question weighted 5 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given. One failed Auto-Fail question makes the whole interaction read 0.0%, whatever else went well.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
@@ -165,7 +165,7 @@ After an edit, older interactions carry figures worked out two ways, and on one 
 Change weights deliberately, note when you did it, and compare periods either side of the change rather than reading the history as one measurement. To stop using a question, delete it rather than setting its weight to zero. See [How Scoring Works](./explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 :::
 
-Adding a question applies to interactions processed after the change, and older interactions keep the scorecard they were scored against, unless you turn on **Historical Search** as you create it. Then Vela adds the new question to older interactions in its scope and date range and recalculates their scores.
+A new question applies to interactions processed after you add it. Older interactions keep the scorecard they were scored against, unless you turn on **Historical Search** as you create the question. Then Vela adds the new question to older interactions in its scope and date range and recalculates their scores.
 
 ---
 

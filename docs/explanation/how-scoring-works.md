@@ -74,7 +74,7 @@ Not every question fits every call. "Was the transfer handled correctly?" only m
 
 Whether the AI can use N/A comes down to the question's **Always Applicable** setting:
 
-- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply, the same result as setting Always Applicable to Yes.
+- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply. That is the same result as setting Always Applicable to Yes.
 - **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No.
 
 For questions the AI cannot answer from the transcript, two settings help:
@@ -160,7 +160,7 @@ One set of answers therefore produces six figures in the Call Details panel:
   alt="The Scores block from the Call Details panel: Agent Score and Initial Score, Compliance Score and Initial Compliance Score, Quality Score and Initial Quality Score, each shown as a percentage or a dash"
   points={[
     { x: 43, y: 31, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means the score is 0% or there is no score.' },
-    { x: 49, y: 31, title: 'Initial Score', body: "The Agent Score from the AI's own answers, before any reviewer override, which is what lets a human-adjusted score be told apart from the AI's own. It is worked out with your current settings, so only the answers are the AI's. A dash means the score is 0% or there is no score." },
+    { x: 49, y: 31, title: 'Initial Score', body: "The Agent Score worked out from the AI's own answers, before any reviewer override. It uses your current settings, so only the answers are the AI's. A dash means the score is 0% or there is no score." },
     { x: 43, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance Question. A dash means either no question on this interaction is marked Compliance Question, or the score is 0%. Check the Scorecard tab to tell which.' },
     { x: 49, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
     { x: 43, y: 85, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance Question. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },

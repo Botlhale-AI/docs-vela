@@ -8,7 +8,7 @@ type: how-to
 # Manage Agents and Teams
 Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins your organisation, moving someone between teams, and removing someone who leaves.
 
-Keep these records accurate as your teams change. Every insight Vela produces is grouped by the department and team on an agent's record, so an agent left in the wrong team is still scored, and their results land in another team lead's figures. Nothing appears broken, which is what makes it worth checking: the numbers stay plausible while being wrong.
+Keep these records accurate as your teams change. Vela groups every result by the department and team on an agent's record. An agent left in the wrong team is still scored, but their results land in another team lead's figures. Nothing looks broken, which is why it is worth checking. The numbers look reasonable but are wrong.
 
 Check an agent's team whenever they join, move, or leave, and again after any bulk import. Insights are only as accurate as the assignments behind them.
 

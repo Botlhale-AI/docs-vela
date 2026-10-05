@@ -30,6 +30,8 @@ flowchart LR
     PE --> CO("Completed<br/>approved or declined,<br/>with a record of who did both")
 ```
 
+{/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx compares profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant still see Request Redacted Access, and the Yes branch above holds for administrators only. Same note as security-compliance.md. Raised as a product bug. Needs a live check before the docs change. */}
+
 The **Requests** tab is divided into two sub-sections to manage the workflow of access requests.
 
 ### A. Pending Requests
