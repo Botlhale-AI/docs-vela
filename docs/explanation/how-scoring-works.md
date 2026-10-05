@@ -159,12 +159,12 @@ One set of answers therefore produces six figures in the Call Details panel:
   src={scoresBlock}
   alt="The Scores block from the Call Details panel: Agent Score and Initial Score, Compliance Score and Initial Compliance Score, Quality Score and Initial Quality Score, each shown as a percentage or a dash"
   points={[
-    { x: 27, y: 36, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means the score is 0% or there is no score.' },
-    { x: 75, y: 36, title: 'Initial Score', body: "The Agent Score from the AI's own answers, before any reviewer override, which is what lets a human-adjusted score be told apart from the AI's own. It is worked out with your current settings, so only the answers are the AI's. A dash means the score is 0% or there is no score." },
-    { x: 31, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance Question. A dash means either no question on this interaction is marked Compliance Question, or the score is 0%. Check the Scorecard tab to tell which.' },
-    { x: 91, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
-    { x: 29, y: 81, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance Question. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },
-    { x: 90, y: 81, title: 'Initial Quality Score', body: 'The Quality Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
+    { x: 43, y: 31, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means the score is 0% or there is no score.' },
+    { x: 49, y: 31, title: 'Initial Score', body: "The Agent Score from the AI's own answers, before any reviewer override, which is what lets a human-adjusted score be told apart from the AI's own. It is worked out with your current settings, so only the answers are the AI's. A dash means the score is 0% or there is no score." },
+    { x: 43, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance Question. A dash means either no question on this interaction is marked Compliance Question, or the score is 0%. Check the Scorecard tab to tell which.' },
+    { x: 49, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
+    { x: 43, y: 85, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance Question. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },
+    { x: 49, y: 85, title: 'Initial Quality Score', body: 'The Quality Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
   ]}
 />
 
