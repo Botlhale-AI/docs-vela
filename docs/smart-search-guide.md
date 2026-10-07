@@ -73,10 +73,10 @@ The form is one page. The two views below are it scrolled, so they overlap at Li
 
 <SmartSearchFormBottom />
 
-Two of the fields carry detail worth reading before you save:
+Three of the fields carry detail worth reading before you save:
 
-- **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams, and team access picks Entire Team. A "Specific" choice opens a second selector for the departments or teams.
-- **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. The intents, keywords, topics, and pain points come from your organisation's lists, whether Vela detected them or your team added them. If a term is not available, add it to the list under [Manage Smart Search Terms](./topics-and-terms-guide.md) first. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
+- **Search Scope** offers what your access level allows. Organisational access can pick Entire Organisation, Specific Departments, or Specific Teams. Departmental access picks Entire Department or Specific Teams. A "Specific" choice opens a second selector for the departments or teams. Team access has no choice to make: the form shows **Applying search to:** and your team.
+- **Search Filter** matches on intents, keywords, topics, pain points, or agents, each set to include or exclude. The intents, topics, and pain points come from your organisation's lists, whether Vela detected them or your team added them. Keywords are only the ones your team added, because Vela does not detect keywords. If a term is not available, add it to the list under [Manage Smart Search Terms](./topics-and-terms-guide.md) first. See also [Smart Search Criteria](./reference/smart-search-criteria.md).
 - **Historical Search** offers All historical calls or a Specific date range. Pick the range unless you want your whole archive reprocessed.
 
 You can build more advanced searches by combining conditions, linking searches, and attaching a Knowledge Base document. See [More Search Options](#more-search-options).
@@ -105,7 +105,7 @@ Beyond phrases, a Smart Search has a few optional ways to focus what it matches.
 
 ### Combine Several Conditions
 
-A search can use more than one criterion at once, for example a set of phrases together with an intent or a pain point. When a search has more than one condition, set **Show results when** to decide how they combine:
+A search can use more than one criterion at once, for example a set of phrases together with an intent or a pain point. With phrases and one Search Filter row, an interaction has to match both. Once you add a second Search Filter row, **Show results when** appears, and you set it to decide how the conditions combine:
 
 - **All of the filters are matched**: an interaction matches only when every condition matches.
 - **Some of the filters are matched**: an interaction matches when at least one condition matches.
@@ -132,7 +132,7 @@ A team lead suspects agents are promising refund timelines the business cannot m
 2. **Add example phrases**: `you'll get your refund by`, `I'll process the refund today`, `the money will be back in your account`.
 3. **Set the scope** to the department handling billing, and the status to **Active**.
 4. **Turn on Historical Search** for a specific date range covering last month, so there is something to look at immediately rather than waiting for new calls.
-5. **Leave Notifications off** for now. Watch the first batch of matches before deciding whether every one deserves an alert.
+5. **Leave Notifications off** for now. Watch the first batch of matches before deciding whether every one deserves a notification.
 6. **Read the results.** Twenty matches, and **When in Call Matches Occur** shows most of them late in the conversation, at the point agents are closing the call.
 7. **Refine.** Four matches are agents correctly reading the standard refund policy. Tighten the description to say you are looking for a specific date or timeline being promised, not the policy being explained.
 8. **Act.** Coach the two agents responsible, and resolve the alerts as you work through them.
@@ -243,14 +243,18 @@ Select **View**, in the **Results** column of the Smart Search list, to open a s
 
 The results view has three collapsible sections.
 
-**Set the period first.** The date range sits at the top of the page, with **Quick** picks for **1h**, **6h**, **12h**, and **24h** beside it. Everything in Smart Search Details and Interaction Analytics is recalculated for the period you choose.
+**Set the period first.** The date range sits at the top of the page, with **Quick** picks for **1h**, **6h**, **12h**, and **24h** beside it. Everything in Smart Search Details and Interaction Analytics is recalculated for the period you choose. Until you choose one, the period is the start of this month to today.
+
+{/* UNVERIFIED: the 12h Quick pick. vela origin/vela-fly results/page.jsx accepts only 1, 6, and 24 hours (ALLOWED_RELATIVE_HOURS), so 12h falls back to the date parameter rounded to whole days, while relative-filter.jsx still offers it. Raised with engineering. Confirm on screen before documenting the 12h behaviour. */}
+
+Smart Search Details and Interaction Analytics count only matches whose alert is still unresolved, so resolving alerts lowers their figures as well as the list. They are worked out from at most the 2,000 most recent matches in the period.
 
 #### Smart Search Details
 
 A summary of the search across the period:
 
 - The search's **name**, **description**, date created, and **status** (Active or Inactive).
-- A **Summary**, showing the **Period Covered** and the **Total Interactions** that matched the search.
+- A **Summary**, showing the **Period Covered** and the **Total Interactions** with unresolved alerts from the search.
 - **Main Insights Highlighted**: an AI-generated summary of the matched interactions. It opens with a short overview, then a **Call Reasons** explanation of why they matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Where too few interactions matched in the period to summarise, Vela shows **There are no insights available for this search in the selected time period** instead. That is expected on a new or narrow search rather than a fault, and widening the period usually fills it.
 
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
@@ -259,7 +263,7 @@ A summary of the search across the period:
 
 {/* VERIFIED against the live product, in details_2.png. This panel is absent from vela origin/main and present on origin/dev from 2026-05-25, so a source check alone reads it as unreleased. The capture is the higher authority. Recheck the screen, not the branch, before removing anything here. */}
 
-Charts that break down the matched interactions:
+Charts that break down the matched interactions with unresolved alerts:
 
 - **Sentiment Distribution**: the split of Negative, Neutral, and Positive interactions.
 - **When in Call Matches Occur**: whether matches fall Early (0 to 2 min), Mid (2 to 5 min), or Late (5+ min) in the conversation.
@@ -277,10 +281,10 @@ Only unresolved matches appear here, so resolving an alert removes it from the l
 
 The controls above the list let you **Search**, **Filter**, **Sort By**, and **Export** results.
 
-:::warning Returned Interactions has its own date range
-The list carries a second date control, separate from the one at the top of the page. The two are set independently, so **Total Interactions** in the Summary can count a different period from the list below it.
+:::warning Two date controls, one period once set
+The list carries a second date control, in its own toolbar. Once you set a date in either control, both use it. They differ only before anyone sets a date: the Summary covers this month so far, while the list shows every unresolved match, however old.
 
-When the count and the list disagree, check both dates before concluding anything is missing.
+So on first opening the page, **Total Interactions** can be lower than the list below it. Set a date in either control and the two agree.
 :::
 
 ![The Returned Interactions panel, listing the calls with unresolved alerts for the search, with their handle time, topic, alert count, and scores](../img/screenshots/smart_search/details_3.png)
@@ -324,6 +328,7 @@ Use **Sort By** to order your searches by **Results**, highest first. **Results*
 |-------------|----------|-------------|
 | **Too many false positives** | Description or examples too broad | Tighten the description and use more specific examples. Review the false-positive matches to see what is triggering them |
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
+| **Missing matches on interactions with no team** | An interaction filed under Unspecified, for example one with no agent assigned, is checked only by organisation-wide searches. Department and team searches skip it without an error | Assign the agent to a team before uploading, or use an organisation-wide search |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
 | **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
 | **New Smart Search is greyed out** | Your organisation has reached the number of active searches its plan allows | Set a search you no longer need to **Inactive**, or delete it, to free a place. For a higher limit, ask your Account Manager about upgrading your plan |
@@ -344,7 +349,7 @@ Open a search from the Smart Search list to change its title, description, statu
 The same view has a **Delete Search** control for searches you no longer need.
 
 :::note Your plan limits how many active searches you can have
-The limit counts searches set to **Active**. When you reach it, **New Smart Search** is greyed out. To free a place, set a search you no longer need to **Inactive**, or select **Delete Search**. For a higher limit, ask your Account Manager about upgrading your plan. Your allowance is under **Settings → Organisations**, where **show package details** lists the **Smart Search Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies.
+The limit counts searches set to **Active**. When you reach it, **New Smart Search** is greyed out. To free a place, set a search you no longer need to **Inactive**, or select **Delete Search**. For a higher limit, ask your Account Manager about upgrading your plan. Your allowance is under **Settings → Organisations → This Org**, where **show package details** lists the **Smart Search Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies.
 :::
 
 To use a working search for another team or department, create a new search with the same phrases and the new scope. Do not edit the scope of the existing search instead. Editing replaces the old scope rather than adding to it, so the original team stops being monitored. The edited search also checks only new interactions, not earlier ones in the new scope.

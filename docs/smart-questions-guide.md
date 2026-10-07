@@ -77,7 +77,7 @@ The form is one page, scrolled. The scope, interactions, and Historical Search s
     { x: 28.1, y: 44.1, title: 'Search Status', body: 'Enabled runs the question. Disabled keeps it without answering anything.' },
     { x: 46.9, y: 44.1, title: 'Search Type', body: 'Automatic lets the AI answer. Manual leaves it for a reviewer.' },
     { x: 65.7, y: 44.1, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls. A chat is treated as inbound.' },
-    { x: 84.4, y: 44.1, title: 'Notifications', body: 'Alerts you when the question is answered on a new interaction.' },
+    { x: 84.4, y: 44.1, title: 'Notifications', body: 'Notifies you when a new interaction gets the answer you choose, Yes or No.' },
     { x: 30.2, y: 55.6, title: 'Always Applicable', body: 'No lets the AI answer N/A where the question does not fit. Yes forces a Yes or No.' },
     { x: 32.3, y: 63.6, title: 'Apply Knowledge Base', body: 'Answers the question against one of your own documents rather than general knowledge.' },
     { x: 73, y: 88.6, title: 'Create Smart Questions', body: 'Saves the set. Answers appear as new interactions are processed.' },
@@ -90,7 +90,7 @@ Under **Smart Question Scope**, use **Apply these questions to** to choose how f
 
 * Organisational access: **Entire Organisation**, **Specific Departments**, or **Specific Teams**.
 * Departmental access: **Entire Department** or **Specific Teams**.
-* Team access: **Entire Team**, the only option offered.
+* Team access: no choice to make. The form shows **Applying questions to:** and your team's name.
 
 Choosing **Specific Departments** or **Specific Teams** opens a second selector for picking which ones.
 
@@ -131,9 +131,9 @@ Set to **Enabled** to run the question against incoming interactions, or **Disab
 
 ### Notifications
 
-Set to **Enabled** to receive a notification when the question is answered on a new interaction, or **Disabled** to review answers in the results view only.
+Set to **Enabled** to be notified about new interactions, or **Disabled** to review answers in the results view only.
 
-When Notifications is **Enabled**, use **Receive notifications when** to choose whether you are alerted when the answer is **Yes** or **No**.
+When Notifications is **Enabled**, use **Receive notifications when** to choose the answer that notifies you, **Yes** or **No**. A new interaction with the other answer raises no notification.
 
 ### Always Applicable
 

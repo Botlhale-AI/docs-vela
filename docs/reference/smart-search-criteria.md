@@ -18,27 +18,29 @@ A search can use any of these, and can combine several in one search.
 
 | Criteria | What it matches |
 | :--- | :--- |
-| **Words** | Example phrases you provide. Vela matches by meaning, so an interaction matches when it says something very similar or means the same thing. This is the default. |
+| **Example Phrases** | Phrases you type into the form. Vela matches by meaning, so an interaction matches when it says something very similar or means the same thing. |
 | **Intents** | The customer's identified purpose for the interaction, for example Sales, Complaint, or Support. |
 | **Keywords** | Specific tracked terms. |
 | **Topics** | Conversation themes identified across interactions. |
 | **Pain points** | Customer frustration indicators identified by the AI. |
 | **Agents** | Specific agents. |
 
-**Words** are matched by meaning, as described above. The other criteria (intents, keywords, topics, pain points, and agents) match the labels Vela has already detected on an interaction, so they match those values exactly rather than by meaning.
+**Example Phrases** are matched by meaning, as described above. The other criteria (intents, keywords, topics, pain points, and agents) are added as **Search Filter** rows. They match the labels already on an interaction, so they match those values exactly rather than by meaning.
 
-The intents, keywords, topics, and pain points offered here come from your organisation's lists, whether Vela detected them or your team added them. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
+The intents, topics, and pain points offered here come from your organisation's lists, whether Vela detected them or your team added them. Keywords are only the ones your team added, because Vela does not detect keywords. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
 
 ## Match Settings
 
-Each criterion has an **includes / excludes** setting:
+The settings below belong to **Search Filter** rows. **Example Phrases** have none of them: an interaction either matches the phrases or it does not.
+
+Each Search Filter row has an **includes / excludes** setting:
 
 | Setting | Behaviour |
 | :--- | :--- |
 | **includes** | Matches when the criteria are found |
 | **excludes** | Matches when the criteria are **not** found |
 
-Most criteria also have an **all of / some of** setting:
+Most Search Filter types also have an **all of / some of** setting:
 
 | Setting | Behaviour |
 | :--- | :--- |
@@ -47,14 +49,14 @@ Most criteria also have an **all of / some of** setting:
 
 This setting is not available for **Topics** or **Agents**.
 
-When a search uses more than one criterion, a **Show results when** setting controls how they combine:
+Once a search has two or more Search Filter rows, a **Show results when** setting appears. It controls how the conditions combine:
 
 | Setting | Behaviour |
 | :--- | :--- |
-| **All conditions are met** | An interaction matches only when every criterion matches |
-| **Some of the conditions are met** | An interaction matches when at least one criterion matches |
+| **All conditions are met** | An interaction matches only when every condition matches |
+| **Some of the conditions are met** | An interaction matches when at least one condition matches |
 
-With a single criterion, **Show results when** has no effect.
+With phrases and a single Search Filter row, the setting does not appear, and an interaction has to match both.
 
 The edit form labels the same two options **All of the filters are matched** and **Some of the filters are matched**. They behave identically, so recognise either.
 

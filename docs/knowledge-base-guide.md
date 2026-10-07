@@ -61,7 +61,7 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
 2. Each file you add gets a card of its own. Add a **Description** (optional) on each, saying what it covers and which teams or situations it applies to, so you can identify the document later when linking it. Select the cross on a card to remove that file before uploading.
-3. Set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to.
+3. With organisational or departmental access, set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to. With team access there is nothing to set, and the documents are scoped to your team. See [Access Control](#access-control).
 4. Select **Upload Files**.
 
 ### Step 3: Link the Document
@@ -92,12 +92,13 @@ The table below the upload area is where you manage what is already there:
 | Control | What it does |
 | :--- | :--- |
 | The tick box on a row | Selects the document. **Select all** at the head of the column ticks every row |
-| **Download selected documents** | Downloads everything you have ticked in one go |
+| **Download**, above the table | Appears once a row is ticked. Downloads everything you have ticked in one go |
+| **Delete**, above the table | Appears once a row is ticked. Deletes everything you have ticked, after a confirmation. See [Keeping the Knowledge Base Current](#keeping-the-knowledge-base-current) before using it on a linked document |
 | The **eye** icon | Opens the document to read it without downloading |
 | **Download document** | Downloads that one document |
 | The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has no expand icon. Check its **Scope** column instead, which reads `organisation` |
 | **Edit filename** | Renames the document in Vela |
-| **Delete** | Removes the document from the Knowledge Base, after a confirmation |
+| **Delete**, on a row | Removes that one document from the Knowledge Base, after a confirmation |
 
 Renaming updates the document everywhere it is listed. Anything already linked to it stays linked, so a clearer name is safe to give at any time.
 
@@ -127,7 +128,7 @@ Each document is assigned a scope that determines which users can access it. Und
 | **Specific Departments** (or **Entire Department**, if your own access is departmental) | Users belonging to the department or departments you selected |
 | **Specific Teams** | Users belonging to the teams you selected |
 
-With team access, **Apply documents to** does not appear at all. Your documents are scoped to your own team automatically, so there is nothing to set.
+With team access, **Apply documents to** does not appear at all. Your documents are scoped to your own team automatically, so there is nothing to set. The form shows a line reading "Applying search to:" with your team's name, even though this is the Knowledge Base.
 
 Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to **Entire Organisation**. A script specific to one team's product line should be scoped to that team.
 
@@ -141,7 +142,7 @@ Update documents when procedures change. An outdated procedure document makes th
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect, so you can tell the versions apart when you link one. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. The message reads **Document is linked to a scorecard question and cannot be deleted**, even when the link is a Smart Question. To delete it, relink those questions to another document or delete them first. A document linked only to a Smart Search can be deleted, which leaves that search referencing a document that is no longer there. Relink it to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
+Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. Deleting it from its own row shows **Document is linked to a scorecard question and cannot be deleted**, even when the link is a Smart Question. The **Delete** above the table, for ticked rows, shows only **Failed to delete some documents**. It still deletes the unlinked documents in your selection and keeps the linked ones, without saying which, so check the list afterwards. To delete a linked document, relink those questions to another document or delete them first. A document linked only to a Smart Search can be deleted, which leaves that search referencing a document that is no longer there. Relink it to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs, so scoring does not rest on an outdated procedure.
 
@@ -165,7 +166,7 @@ Scope is fixed at upload. The Document Library lets you rename and delete a docu
 
 The document appears in the **Document Library** with its name, description, upload date, and scope. That confirms the upload, not that Vela is using it.
 
-To confirm it is actually in use, open the scorecard question, Smart Search, or Smart Question you linked it to and check that **Apply Knowledge Base** is on and your document is the one selected.
+To confirm it is actually in use, open the scorecard question, Smart Search, or Smart Question you linked it to. Check that the Knowledge Base setting is on and your document is the one selected. It reads **Apply Knowledge Base** on a scorecard question or a Smart Question, and **Use a knowledge base document to enhance this smart search** on a Smart Search.
 
 ---
 
