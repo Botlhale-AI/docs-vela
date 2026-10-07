@@ -8,7 +8,7 @@ type: reference
 
 # Scorecard Fields
 
-Every field on an Agent Scorecard question. For how to build and use a scorecard, see [Review and Score Interactions](../features/quality-assurance-tools.md).
+Every field on an Agent Scorecard question. To build a scorecard, see [Build an Agent Scorecard](../agent-scorecard-guide.md). To use one on an interaction, see [Review and Score Interactions](../features/quality-assurance-tools.md).
 
 ---
 
@@ -25,7 +25,7 @@ Every field on an Agent Scorecard question. For how to build and use a scorecard
 | **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score the interaction would have had without the auto-fail in brackets beside it |
 | **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance items are scored separately |
 | **Apply To** | Inbound Calls / Outbound Calls / All Calls | All Calls | Which call directions the question applies to |
-| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. Smart Search calls the same setting Active / Inactive |
+| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. The form says Enabled / Disabled. The question list and its filter show Active / Inactive |
 
 {/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -69,7 +69,7 @@ Scores are also broken down by category, which is what produces an agent's stren
 
 A reviewer can change any outcome after the AI has scored it. The edited outcome takes precedence over the AI's for that question, and the score is recalculated.
 
-Vela's original assessment stays on the record. The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones. The scorecard download, **Download Scorecard as CSV**, lists **Initial Outcome** and **Current Outcome** for every question, with the reason Vela gave.
+Vela's original assessment stays on the record. The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** beside the current ones. The scorecard download, **Download Scorecard as CSV**, lists **Initial Outcome** and **Current Outcome** for every question, with the reason Vela gave wherever nobody overrode the answer.
 
 On the Scorecard tab, an information icon beside a question's score shows that reason on screen. It appears only on questions Vela answered itself, so it disappears from a question once a reviewer overrides it.
 

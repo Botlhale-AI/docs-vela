@@ -76,7 +76,7 @@ Two sources for topics, intents, and pain points:
 - **Detected**: found automatically by the AI in your interactions
 - **Created Search**: added manually by your team, under each page's own **Created Search Topics**, **Created Search Intents**, or **Created Search Pain Points** heading
 
-Dashboard and report metrics label Created Search items **(Organisational)** instead, so the two names describe the same source on two different screens.
+Dashboard and report metrics label Created Search items **(Organisational)** instead, so the two names describe the same source on two different screens. {/* UNVERIFIED: the (Organisational) and (Detected) topic metrics may return the same data. See the marker in metrics.md, Topics & Pain Points. */}
 
 This lets you separate what the AI found from what you told it to look for.
 

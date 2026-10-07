@@ -27,6 +27,7 @@ Find your symptom, then read the matching entry below.
 | The agent, team, or department missing | The value did not match a record in Vela |
 | Chat response time missing | `sender` was not sent in lower case |
 | Requests no longer connect | The API base URL changed |
+| Generating a refresh token fails | Three active refresh tokens already |
 
 ---
 
@@ -84,7 +85,7 @@ Find your symptom, then read the matching entry below.
 **Solution:**
 1. Send `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds, for example `15/01/2025, 14:30:00`.
 2. Times are read as **Africa/Johannesburg**. Convert before sending where your system records another timezone, or every interaction lands at the wrong hour.
-3. Set `validate_metadata` while you are building. Vela then returns a **400** for a date it cannot read, instead of accepting the upload and filling in a default. It does not catch a year-first or month-first date, because those parse as valid, wrong dates.
+3. Check the dates on the first uploads by eye, under **Interactions**. Setting `validate_metadata` is meant to return a **400** for a date Vela cannot read, but whether call uploads honour it is not confirmed, so do not rely on it alone. Even where it applies, it does not catch a year-first date, or a month-first date with a day of 12 or less, because those parse as valid, wrong dates. {/* UNVERIFIED: validate_metadata handling for Calls; see api-documentation.md. */}
 
 ---
 
@@ -94,7 +95,7 @@ Find your symptom, then read the matching entry below.
 
 **Solution:**
 1. Check the values against the records in Vela. `agent_name` matches case-insensitively on the name as it appears on the agent record, not a username such as `john.smith`.
-2. Create the team first. An upload never creates one, and an unmatched team also stops a new agent being created from `agent_name`.
+2. Create the team first. An API upload never creates one, and an unmatched team also stops a new agent being created from `agent_name`.
 3. For chats, set `validate_metadata` so unmatched values are refused with `Team not found`, `Department not found`, or `Could not find agent with the provided metadata` rather than silently dropped. For calls, check the first uploads by eye as in the next step. {/* UNVERIFIED: these Calls errors were removed from the newer vela-data branches (c6ba3ce); see api-documentation.md. */}
 4. Check the first few interactions of any new integration under **Interactions**, and confirm the agent, team, direction, and tags landed as you intended.
 

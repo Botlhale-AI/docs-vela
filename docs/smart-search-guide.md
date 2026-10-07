@@ -182,7 +182,7 @@ Put "did the agent say it" checks on the [Agent Scorecard](./reference/scorecard
 
 ### Notifications
 
-Each search has its own **Notifications** setting. You can turn it on when you create the search, and change it later by editing the search. When it is on, every new match for that search raises an alert.
+Each search has its own **Notifications** setting. You can turn it on when you create the search, and change it later by editing the search. When it is on, every new match for that search raises a notification. The alert itself appears on the interaction either way.
 
 Whether that alert reaches you in-app, by email, or both depends on your preferences in **Settings → Notifications**. Matches always appear in the results view, whether notifications are on or off.
 

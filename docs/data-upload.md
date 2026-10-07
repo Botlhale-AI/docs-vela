@@ -23,7 +23,7 @@ Recordings and transcripts you upload are encrypted in transit and at rest, and 
 You need:
 
 - **A file in a format Vela accepts.** Calls are WAV or MP3. A single chat is CSV and a bulk chat upload is JSON. A bulk call upload is a ZIP holding the audio files and a `metadata.csv`. Check which tab you are on before preparing the file, because the tabs take different formats. See [Supported Formats](#supported-formats) for every limit.
-- **The agent who handled the interaction.** This applies to the **Single Upload** call tab and the **Upload** chat tab. Bulk uploads take the agent, team, and department from the file instead, covered under each format below. Choosing the agent fills in their team and department for you. On the call tab, all three are required, so an agent recorded with **No Team** or **No Department** leaves those fields empty and the Upload button stays disabled. On the chat tab, selecting **Upload** with no agent chosen is refused with a message. An agent with no team or department is not caught at that point. The file is sent, and the upload is rejected afterwards with `Invalid team` or `Team not found for this organisation`.
+- **The agent who handled the interaction.** This applies to the **Single Upload** call tab and the **Upload** chat tab. Bulk uploads take the agent, team, and department from the file instead, covered under each format below. Choosing the agent fills in their team and department for you. On the call tab, all three are required, and the call is always filed under the agent's own team and department, whatever the form shows. An agent recorded with **No Team** or **No Department** leaves those fields empty. Choosing a team on the form turns **Upload** on, but the call is still filed with no team, so give the agent a team first. See [Manage Agents and Teams](./features/manage-agents-and-teams.md). On the chat tab, selecting **Upload** with no agent chosen is refused with a message. An agent with no team or department is not caught at that point. The file is sent, and the upload is rejected afterwards with `Invalid team` or `Team not found for this organisation`.
 - **Access level:** Organisational, Departmental, or Team, covering the agent. See [Access Level](./reference/glossary.md#access-level).
 - **Duration left in your organisation's monthly allocation.** What happens when it runs out depends on the **Duration Usage Setting** an administrator chose: analysis either halts or continues at additional rates. See [Organisation Configuration](./settings-config/organisation-configuration.md).
 
@@ -40,7 +40,7 @@ Use Vela to upload files directly. Best for getting started and for ad-hoc uploa
 1. Select **Interactions → Calls** in the left sidebar
 2. Select **Upload**
 3. Select the **Single Upload** tab
-4. Fill in the form: the **Agent** is required, **Direction** and **Tags** are not
+4. Fill in the form: the **Agent** is required, **Direction** and **Tags** are not. **Team** and **Department** fill in from the agent's record, and the call is filed under those even if you change them
 5. Select your audio file (WAV or MP3) or drag and drop it into the upload area
 6. Select **Upload**
 
@@ -110,7 +110,7 @@ call_002.wav,Mary Jones,Support Team,Customer Service,outbound,follow_up;resolut
 
 If a name matches no existing agent, team, or department, Vela creates a new one with that name, within your access level, and puts the calls under it. A misspelt name therefore creates a duplicate rather than failing. After a bulk upload, check **Agents → Agent Details** for agents you did not expect.
 
-File names inside the ZIP must end in lower-case `.wav` or `.mp3`. Vela skips a file ending in `.WAV` or `.MP3` without a message, so rename those files before you zip them.
+File names inside the ZIP must end in lower-case `.wav` or `.mp3`, so rename any `.WAV` or `.MP3` files before you zip them. Where `metadata.csv` names such a file, the whole upload fails with `Mismatch between .wav/.mp3 files and CSV entries`. Where it does not, Vela skips the file without a message.
 
 :::tip Start from the template
 Download the `metadata.csv` template from the upload page and build your file from it. Mismatched column names are the most common cause of bulk upload failures.
@@ -122,7 +122,7 @@ Download the `metadata.csv` template from the upload page and build your file fr
 2. Select the **Bulk Upload** tab
 3. Upload your ZIP file
 4. Wait for the upload to finish. Processing then runs in the background, so you can leave the page
-5. The calls appear under **Interactions → Calls** as each one finishes. Vela emails a summary of the batch to users who have **New Alerts Detected** ticked under email notifications in **Settings → Notifications**. Tick it if you want the summary yourself
+5. The calls appear under **Interactions → Calls** as each one finishes. Vela emails a summary of the batch to users who have **New Alerts Detected** ticked under email notifications in **Settings → Notifications**. Tick it if you want the summary yourself. On the [Lite](./reference/glossary.md#lite) version that setting does not appear, so check the Calls list instead
 
 ![The Bulk Upload tab, with the Add Metadata button and the .zip upload area](../img/screenshots/calls/bulk.png)
 
@@ -224,7 +224,7 @@ See the [API Reference](./advanced/api-documentation.md) for full request format
 | Single audio upload | WAV, MP3 | 1 GB |
 | Bulk upload (archive) | WAV or MP3 + metadata.csv, in a ZIP | 3 GB |
 | Single chat upload | CSV | 3 GB |
-| Bulk chat upload | JSON, in the layout shown above | 1 MB |
+| Bulk chat upload | JSON, in the layout shown above | 1 MB advised (3 GB enforced) |
 
 Audio files above their limit are rejected before the upload starts, with the message `file too big!`.
 
@@ -242,17 +242,19 @@ Once uploaded, Vela queues files for processing. Transcription, speaker identifi
 
 An interaction reaches the **Calls** or **Chats** list once all of that has finished, not when you upload it. An upload you cannot find yet is normally still working through it rather than lost.
 
-Processing time depends on file length, audio quality, and current server load. For a single upload, Vela emails the address you sign in with when processing is complete. For a bulk upload, the summary email goes to users who have **New Alerts Detected** ticked under email notifications.
+Processing time depends on file length, audio quality, and current server load. For a single upload, Vela emails the address you sign in with when processing is complete. For a bulk upload, the summary email goes to users who have **New Alerts Detected** ticked under email notifications, a setting the [Lite](./reference/glossary.md#lite) version does not have.
+
+A single call is dated by the audio file's last-modified time, and a call in a bulk upload by the time stored for that file in the ZIP. A recording copied or saved again before upload therefore carries that later date.
 
 ---
 
 ## Check Your Work
 
-Wait for the email telling you the analysis is ready, then open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed.
+Open **Interactions → Calls** or **Interactions → Chats** and check that your files are listed. Where you receive the email saying the analysis is ready, check after it arrives.
 
 An interaction appears in the list once processing finishes. Straight after an upload, a missing interaction is normally still processing, so give it time. If it has still not appeared after the summary email, check that email's failed count, and ask an administrator whether the monthly allocation has run out. See [Troubleshooting](#troubleshooting) below.
 
-A bulk upload does not show a results screen. The summary email gives counts: how many files uploaded, were analysed, failed, were in an unsupported language, and were skipped because the monthly allocation ran out. It names no individual files, so check the batch by comparing what appears in the list against the files you sent.
+A bulk upload does not show a results screen. The summary email gives counts: how many files uploaded, were analysed, failed, and were skipped because the monthly allocation ran out. It names no individual files, so check the batch by comparing what appears in the list against the files you sent.
 
 ---
 
@@ -261,7 +263,7 @@ A bulk upload does not show a results screen. The summary email gives counts: ho
 | Problem | Likely cause | Solution |
 | :--- | :--- | :--- |
 | Upload fails | Unsupported format or file too large | Use WAV or MP3. Keep a single call under 1 GB and a ZIP under 3 GB |
-| A bulk upload uploads, then processes nothing | The archive is RAR or 7z rather than ZIP | Recreate it as a ZIP and upload again |
+| `Bad archive` once a bulk upload finishes | The archive is RAR or 7z rather than ZIP | Recreate it as a ZIP and upload again |
 | `Unknown compression method: 9`, `: 12`, or `: 14` | The ZIP was made with Deflate64, BZip2, or LZMA | Recreate it with Deflate or Store. See [Prepare your audio files](#bulk-call-upload) |
 | Chat upload fails | The file format does not match the tab. **Upload** takes CSV, **Bulk Upload** takes JSON | Check which tab you are on, then supply that format |
 | Bulk chat upload fails | The JSON is broken, or does not match the layout Vela expects | Check the file against the layout in [Chat Upload](#chat-upload), and confirm every message has `message`, `time`, and `sender` |
@@ -275,16 +277,17 @@ A bulk upload checks the `metadata.csv` before it processes anything. If it retu
 | Error message | Cause | Fix |
 | :--- | :--- | :--- |
 | `CSV file does not contain 'filename' header` | The CSV has no `filename` column, or it was saved in Excel's **CSV UTF-8** format, which adds a hidden character before the first heading | Add a `filename` column, or save the file again as **CSV (Comma delimited)**. The template already has the right headers |
-| `Mismatch between .wav/.mp3 files and CSV entries` | A `filename` in the CSV is not in the ZIP, or a file in the ZIP is not listed | Make every `filename` match a file in the ZIP exactly, including the extension |
+| `Mismatch between .wav/.mp3 files and CSV entries` | A `filename` in the CSV is not in the ZIP, a file in the ZIP is not listed, or a file ends in upper-case `.WAV` or `.MP3` | Make every `filename` match a file in the ZIP exactly, and use lower-case `.wav` or `.mp3` extensions |
 | `Invalid direction value in CSV` | A `direction` value is not `inbound`, `outbound`, or blank | Use `inbound`, `outbound`, or leave it blank |
 | `Agent 'X' cannot be created without a team` | The CSV names a new agent with no team | Add that agent's `team` and `department` to the row |
+| `Team X cannot be without a department.` | The CSV names a new team with no department | Add the `department` to that row |
 | `Department name 'X' exceeds the maximum length of 30 characters` | A new department or team name is too long. The same limit applies to both | Shorten the name to 30 characters or fewer |
 | `Team name 'X' contains invalid characters` | The name uses a character outside the allowed set | Use letters, numbers, spaces, hyphens, underscores, or ampersands only |
 | `You are trying to create a new department but you don't have permissions to do that` | Creating a department needs organisational access, and creating a team needs departmental or organisational access | Ask an administrator to create it first |
 
 A bulk upload can create departments and teams that the CSV names but Vela does not have yet, within your own access level. Creating a department needs organisational access. Creating a team needs departmental or organisational access.
 
-New department and team names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands. A name containing a slash, apostrophe, or full stop is rejected. The error does not always stop the department being created. After an upload that ends in one of the errors above, check **Settings → Organisations → Departments and Teams** for a department or team that should not be there. Remove it before uploading again.
+New department and team names must be 30 characters or fewer, and use only letters, numbers, spaces, hyphens, underscores, and ampersands. A name containing a slash, apostrophe, or full stop is rejected. The error does not always stop the department being created. After an upload that ends in one of the errors above, check **Settings → Users → Org Table** for a department or team that should not be there. Remove it before uploading again.
 
 A ZIP with no `metadata.csv` at its root, or one directory deep, uploads with no error and no agent, team, or department attached to any interaction. Confirm your `metadata.csv` is present and correctly placed before relying on the upload succeeding.
 

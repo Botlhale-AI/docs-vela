@@ -57,7 +57,7 @@ A Smart Search checks every processed interaction, so compliance terms are worth
 The Dashboard shows how your teams and agents are scoring over the period you select. It reports the figures and does not judge them, so read them against the standard your organisation expects.
 
 1.  Go to the **Dashboard**.
-2.  Check **Distribution of Total Scores** to see how scores are spread, and how many agents sit in the red band below the Lower Bound your administrator set. See [Score Boundaries](../reference/glossary.md#score-boundaries).
+2.  Check **Distribution of Calls by Total RAG Scores** to see how many calls sit in the red band below the Lower Bound your administrator set. It counts calls, not agents. See [Score Boundaries](../reference/glossary.md#score-boundaries).
 3.  Check **Sentiment Distribution in Interactions**, in the **Customer Sentiment** group, for a rising negative share, and **Total Number of Alerts** for a high volume of Smart Search matches. Either can point to a problem across the team rather than one agent.
 
 ![The Quality & Performance group, with average score per agent beside the red, amber and green call distribution](../../img/screenshots/dashboard/use_dashboard1.png)
@@ -80,7 +80,7 @@ Go to **Interactions**, then **Calls** or **Chats**. The list itself tells you e
 
 ![The Chats list, with the Chat ID, Date, Agent, Contact, Handle Time, Response Time, Topic, and Alerts columns](../../img/screenshots/chats/table.png)
 
-The two lists work the same way, with columns suited to the channel. Chats carry **Contact** and **Response Time** where calls carry **Silent Time**, because the rest needs call audio.
+The two lists work the same way, with columns suited to the channel. Chats carry **Response Time** where calls carry **Silent Time**, because silent time needs call audio. Both lists can show **Contact**. {/* Calls Contact column: vela origin/vela-fly interactions/calls/page.jsx headings (commit 1b6e9b92, add number search), not on origin/main. Confirm on screen at the next reshoot. */}
 
 * **Handle and silent time:** the length of the conversation and any significant silent gaps.
 * **Agent, compliance, and quality scores:** the scores Vela assigned to the interaction. The compliance and quality scores split the scorecard into its compliance items and everything else. See [Quality & Performance](../reference/metrics.md#quality--performance).
@@ -90,15 +90,13 @@ The two lists work the same way, with columns suited to the channel. Chats carry
 :::tip Choose your columns
 Not every column is shown by default. Select the settings icon next to **Upload** on the Interactions list to choose which appear. The full set is:
 
-Call ID, Date, Date Uploaded, Agent, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
+Call ID, Date, Date Uploaded, Agent, Contact, Handle Time, Silent Time, Topic, Alerts, Compliance Score, Quality Score, Agent Score, Department, Team, and Tags.
 
 Your choice is remembered per browser, so each machine keeps its own. The Alerts column appears on every version except [Lite](../reference/glossary.md#lite).
 :::
 
 :::note The list hides unsupported calls by default
-A call whose language Vela could not transcribe is marked unsupported, and the Interactions list leaves those out unless you turn **Show unsupported calls** on. The toggle sits at the top left of the list.
-
-This is the first thing to check when a call you uploaded is not where you expect it.
+Earlier releases of Vela marked a call unsupported when they could not transcribe its language, and the Interactions list leaves those out unless you turn **Show unsupported calls** on. The toggle sits at the top left of the list. Calls processed now are not marked this way, so the toggle matters only for older calls.
 :::
 
 ### E. Filter Interactions Directly
@@ -145,9 +143,11 @@ Vela has already analysed the interaction by the time you open it. Its findings 
 | **Sentiment** | The positive, neutral, and negative split for the conversation, shown for the agent and the customer separately. | A high negative share on the customer's side, and whether the agent's own tone held steady. Use the transcript timestamps to find where it turned. |
 | **Scorecard** | How Vela scored the interaction against your Agent Scorecard, question by question. | Any item you would have judged differently. Hover over the information icon beside a score to read why Vela answered as it did. This is the tab where you override an item, in [Score and Provide Feedback](#3-score-and-provide-feedback) below. |
 | **Pain Points** | Signs of customer frustration, each with the AI's justification for flagging it. | Whether each frustration was acknowledged when it was raised, rather than left unanswered. Read the justification where a flag looks wrong. |
-| **Smart Questions** | The answers to any questions your organisation asks of every interaction for reporting. These carry no score. | Answers that change how you would coach, even though they do not move the score. The information icon here shows Vela's reasoning too, and the download icon saves the answers as CSV (**Download Smart Questions as CSV**). This tab appears on plans that include [Smart Questions](../smart-questions-guide.md). |
+| **Smart Questions** | The answers to any questions your organisation asks of every interaction for reporting. These carry no score. | Answers that change how you would coach, even though they do not move the score. The information icon here shows Vela's reasoning too, and the download icon saves the answers as CSV (**Download Smart Questions as CSV**). This tab appears where your version includes [Smart Questions](../smart-questions-guide.md). |
 
 :::tip Vela explains itself on four of these tabs
+On the [Lite](../reference/glossary.md#lite) version, only **Summary**, **Sentiment**, and **Scorecard** appear.
+
 **Scorecard**, **Smart Questions**, **Alerts**, and **Pain Points** each record why the AI answered, matched, or flagged as it did. Read that explanation before you act on anything that looks wrong: it usually separates a one-off misreading from a question or search that needs rewording.
 
 On **Scorecard** and **Smart Questions** the explanation sits behind the information icon. It disappears once you override the answer, because it explained the AI's answer, not yours.
@@ -255,7 +255,7 @@ The **Call Details** panel keeps **Initial Score**, **Initial Compliance Score**
 A question you keep correcting in the same direction is usually a question that needs rewording, not an AI that keeps getting it wrong. Take it back to whoever maintains the scorecard rather than fixing it one interaction at a time. See [How Scoring Works](../explanation/how-scoring-works.md).
 :::
 
-For the same record question by question, use the download icon on the Scorecard tab (**Download Scorecard as CSV**). The file lists each question with its **Initial Outcome**, **Current Outcome**, weight, score, and the reason Vela gave, which is what you need when an agent disputes a score.
+For the same record question by question, use the download icon on the Scorecard tab (**Download Scorecard as CSV**). The file lists each question with its **Initial Outcome**, **Current Outcome**, weight, score, and the reason Vela gave for each question nobody overrode, which is what you need when an agent disputes a score.
 
 #### Narrow a Long Scorecard
 
@@ -291,7 +291,7 @@ Add specific, time-stamped feedback to make coaching clear and concrete.
 6.  Select **Like** to acknowledge a comment without writing one. The control then reads **1 Like**, then **2 Likes**, and so on.
 
 :::warning You cannot tag an agent in a reply
-**@** mentions work in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
+Tagging the agent works in new comments only. The panel says so above the list: *"Agent mentions are only available in new comments, not replies."*
 
 This matters because tagging is what shares a comment with the agent. A reply in a thread you tagged is shared with them too, so answering their response there reaches them. A reply in an untagged thread does not. Where a reply carries something the agent has to see, post it as a new comment and tag them there.
 

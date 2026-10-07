@@ -54,11 +54,11 @@ Transcription covers the 11 spoken official South African languages. These are A
 
 ### Coach and develop agents
 
-Where your organisation has the Coaching Portal enabled, a low score in a category is what you act on: assign a course that targets it, and recognise agents who score well with an award. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
+Where your organisation has the Coaching Portal enabled, the scores also decide which courses agents are assigned and which awards they receive, on each evaluation cycle. Creating courses, managing awards, and tracking progress are covered in the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz), which documents both your side and the agent's.
 
 ### Spot patterns across your conversations
 
-Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects the topics and pain points you define, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and you can [generate reports](../features/custom-reporting.md) that turn all this into something you can hand to a manager. Together they show patterns a manual review would never catch.
+Individual scores are only part of it. Across all your interactions, Vela analyses sentiment automatically, detects topics and pain points, including ones your team adds, and tracks how each moves over time. [Smart Search](../smart-search-guide.md) flags individual interactions worth a closer look, and you can [generate reports](../features/custom-reporting.md) that turn all this into something you can hand to a manager. Together they show patterns a manual review would never catch.
 
 ---
 
@@ -72,7 +72,7 @@ The AI produces a first assessment, not a final verdict. A reviewer can change a
 
 ## Who Uses Vela
 
-These are the jobs people do in Vela. Separately, each account carries a **Role** (Admin, User, or Agent) and an **access level** that together decide what someone can do and how much they can see. See [Role](../reference/glossary.md#role).
+These are the jobs people do in Vela. Separately, each account carries a **Role** (Admin, User, or Agent) and, except for agents, an **access level**. Together they decide what someone can do and how much they can see. See [Role](../reference/glossary.md#role).
 
 ### Team leads and QA managers
 Monitor agent and team performance, review interactions, set up automated monitoring, and generate reports. **Main areas:** Dashboard, Interactions, Smart Detector, Reports.

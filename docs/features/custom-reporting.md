@@ -197,7 +197,7 @@ For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the da
 
 - [Metrics](../reference/metrics.md): what each metric in a report measures
 - [Monitor Agent Performance](./monitor-agent-performance.md): the same analytics on your Dashboard, day to day
-- [Manage Notifications](./notifications.md): how you are told when a report finishes generating
+- [Manage Notifications](./notifications.md): how colleagues are told when a report finishes generating
 
 ## Need Help?
 

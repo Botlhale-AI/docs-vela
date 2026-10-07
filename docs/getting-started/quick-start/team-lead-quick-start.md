@@ -1,7 +1,7 @@
 ---
 id: team-lead-quick-start
 title: Team Lead Quick Start
-description: "Your first week in Vela as a team lead, in the order that works."
+description: "Your first session in Vela as a team lead: sign in, read the Dashboard, and review and comment on an interaction."
 sidebar_position: 0
 type: tutorial
 ---
@@ -32,7 +32,7 @@ A hands-on walkthrough for team leads and managers new to Vela. If you have not 
 ### What You Need
 
 - **Active Vela account**: An account your administrator created for you
-- **Login credentials**: Email verification link or SSO access
+- **Login credentials**: Your work email address, or a Google or Microsoft account for SSO
 - **A current browser**: Chrome, Edge, Firefox, or Safari
 - **A call recording** in WAV or MP3 format, to upload during Step 3
 
@@ -45,14 +45,14 @@ Your administrator's invitation email contains a **Confirm Account** button and 
 
 On the sign-in page, select **Forgot your password?**, enter your email address, and follow the link in the **Reset Your Password** email. Setting the password also confirms your address. Then sign in with your new password. See [Resetting a Forgotten Password](../../settings-config/account-security.md#resetting-a-forgotten-password).
 
-{/* VERIFIED 2026-10-05 on origin/vela-fly: addUser in app/(pages)/settings/settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). No email is sent on that path. Only app/api/reset/route.js clears the flag, and it also sets email_confirmed. */}
+{/* VERIFIED 2026-10-05 on origin/vela-fly: addUser in app/(pages)/settings/settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). For a user whose address is not yet confirmed, app/api/login/route.js also sends a "Confirm Your Email Address" email before the sign-in is refused (corrected 2026-10-07). Only app/api/reset/route.js clears the flag, and it also sets email_confirmed. */}
 :::
 
 ---
 
 ## Step 1: Sign In to Vela
 
-### Accessing Vela
+### A. Access Vela
 
 1. **Navigate to your Vela login page** (provided by your administrator)
 2. **Choose your authentication method:**
@@ -78,13 +78,13 @@ Signing in for the first time? Set your own password with **Forgot your password
 
 ![The Sign In page, with the email and password fields above the Sign in with Google and Sign in with Microsoft buttons](../../../img/screenshots/settings/login-options.png)
 
-### Password Requirements
+### B. Password Requirements
 
 When you change your password under **Settings → Security**, or reset a forgotten one, it has to meet Vela's password rules. See [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
 Signing in with Google or Microsoft? You do not set a Vela password. Your identity provider manages it.
 
-### After You Sign In
+### C. After You Sign In
 
 Signing in takes you to the **Dashboard** for the organisation you were invited to, where you monitor performance. The left sidebar shows your main navigation areas.
 
@@ -100,7 +100,7 @@ An empty list, or the message "You are not part of the selected organization", m
 
 ## Step 2: Understand Your Dashboard
 
-### Dashboard Overview
+### A. Dashboard Overview
 
 **Your Dashboard gives you an overview of performance within your access level.** That might be your whole organisation, a department, or a single team.  
 
@@ -111,7 +111,7 @@ Four controls shape everything you see. They are the **Interactions** type, the 
 ![The Select Date Range modal, with its presets and the two-month calendar](../../../img/screenshots/dashboard/calendar.png)
 ![A Dashboard metric group, showing the alert count and its trend](../../../img/screenshots/dashboard/dashboard06.png)
 
-### Essential Controls
+### B. Essential Controls
 
 **Date range**: select the pencil icon beside the date display, at the top of the Dashboard, to open **Select Date Range**.
 - Quick options: Today, Yesterday, This Week, Last Week, This Month, Last Month
@@ -122,7 +122,7 @@ Four controls shape everything you see. They are the **Interactions** type, the 
 
 **Interactions**: show **All** interactions, **Calls** only, or **Chats** only.
 
-### Key Metrics to Monitor
+### C. Key Metrics to Monitor
 
 Your dashboard displays a set of metrics. When you are starting out, these three are a good place to begin:
 
@@ -130,9 +130,11 @@ Your dashboard displays a set of metrics. When you are starting out, these three
 2. **Total Number of Alerts**: issues raised by your Smart Searches that need attention
 3. **Sentiment Distribution in Interactions**: how sentiment breaks down across the date range
 
+Alerts come from Smart Search, which the [Lite](../../reference/glossary.md#lite) version does not include, so on Lite the Alert Metrics group and **Total Number of Alerts** do not appear.
+
 Every available metric is defined in [Metrics](../../reference/metrics.md), including what to look for in each metric.
 
-### Customising Your Dashboard
+### D. Customise Your Dashboard
 
 Select **Customise** to choose which metrics appear and how each is charted, then **Save Changes**.
 
@@ -152,7 +154,7 @@ Select **Customise** to choose which metrics appear and how each is charted, the
 
 The selected metrics show what is on your dashboard now. To add one, select **Add New Metric** below the list. Two controls appear, to pick the metric and its view. **Add Metric** confirms it, and **Cancel** clears the pair and closes them again.
 
-**Try it now:** Add **Top 10 Pain Points in Interactions (Detected)** to your dashboard to monitor common customer issues.
+**Try it now:** Add **Top 10 Topics in Interactions (Detected)** to your dashboard to see what your customers raise most often.
 
 ---
 
@@ -164,7 +166,7 @@ Upload a call and review the analysis to see how Vela analyses an interaction.
 This walkthrough uses a call. Text chats follow the same flow under **Interactions → Chats**, where a single chat is uploaded as CSV and a bulk upload as JSON. The analysis is the same, except chats report response time instead of talk-to-listen ratio and silent time.
 :::
 
-### Uploading a Single Call
+### A. Upload a Single Call
 
 1. Navigate to **Interactions → Calls**
 2. Select **Upload**, then the **Single Upload** tab
@@ -173,11 +175,11 @@ This walkthrough uses a call. Text chats follow the same flow under **Interactio
 
 <SingleCallUploadForm />
 
-### Processing Time
+### B. Processing Time
 
 While the file uploads, a progress bar shows how far along it is. Once the upload finishes, Vela processes the call in the background, so you do not need to wait on the page. Processing time depends on the length of the call and the audio quality, and longer calls take longer. Vela emails the address you sign in with when the analysis is complete.
 
-### Reviewing the Analysis
+### C. Review the Analysis
 
 Select your processed interaction to open it. The full transcript sits alongside Vela's analysis.
 
@@ -189,20 +191,20 @@ Four parts do most of the work when you review:
 - **Summary**: a plain-language recap of what happened and how it was resolved.
 - **Sentiment**: the positive, neutral, and negative split for the conversation, shown for the agent and the customer separately.
 - **Scorecard**: the AI's outcome on each question in your organisation's [Agent Scorecard](../../reference/scorecard-fields.md). You can override any outcome, covered below.
-- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it. A resolved Smart Search alert drops out of that search's Returned Interactions list.
+- **Alerts**: anything a Smart Search or the AI flagged, shown in the **Smart Detector** section. Select **Resolve** on each alert once you have acted on it. A resolved Smart Search alert drops out of that search's Returned Interactions list. Smart Search is not part of the [Lite](../../reference/glossary.md#lite) version.
 
 The interaction view also shows timestamps on every line, detected keywords, the customer's intent, and pain points. For what each field means, see [Review and Score Interactions](../../features/quality-assurance-tools.md).
 
-### Adding Your Feedback
+### D. Add Your Feedback
 
 After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent's own name is not in that list, only the **@agent** option. The agent is not notified, and sees the comment when they open the interaction in their Agent Portal. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
+3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent's own name is not in that list, only the **@agent** option. The agent is not notified, and sees the comment when they open the interaction in their Agent Portal. Where your organisation shows agents reviewed interactions only, they can open it once you mark it as reviewed. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
-:::note Mentions only work in new comments
+:::note Tagging the agent only works in new comments
 You cannot tag an agent in a reply to an existing comment. If you need to bring an agent into a thread, add a new comment rather than replying.
 :::
 
@@ -218,9 +220,9 @@ Great job handling this difficult customer, @agent! I liked how you stayed calm 
 - **Balance positive and constructive**: Acknowledge strengths, suggest improvements
 :::
 
-### Override a Scorecard Item
+### E. Override a Scorecard Item
 
-The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. Vela's original scores stay on the record as **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** in the Call Details panel, next to the scores your override produced.
+The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. The Call Details panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** next to the scores your override produced. They show the AI's original answers, scored with today's question settings.
 
 Override an item when the AI missed context, a required phrase was said in different words, or the situation needed human judgement. For the full step-by-step, see [Review and Score Interactions](../../features/quality-assurance-tools.md#a-complete-a-manual-scorecard).
 
@@ -234,7 +236,7 @@ You have completed the Team Lead Quick Start. You can now:
 - ✅ Upload and review individual calls
 - ✅ Provide coaching feedback to agents via comments
 
-**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. If you tagged the agent, the comment is now on that interaction in their Agent Portal. Select **Mark as Reviewed** to record that you are finished with it. Your team's review coverage counts the interactions marked this way.
+**Check your work landed.** Open the interaction you reviewed and confirm it shows a transcript, a scorecard outcome, and your comment. Select **Mark as Reviewed** to record that you are finished with it. Your team's review coverage counts the interactions marked this way. If you tagged the agent, the comment is on that interaction in their Agent Portal. Where your organisation shows agents reviewed interactions only, it appears there once you have marked the interaction as reviewed.
 
 ---
 
@@ -244,7 +246,7 @@ You have completed the Team Lead Quick Start. You can now:
 | :--- | :--- | :--- |
 | The call is still processing | Transcription and analysis run in the background, and longer calls take longer | Wait for the email to the address you sign in with. If nothing arrives, check your spam folder, then open **Interactions → Calls** to see whether the call has finished |
 | The interaction has no scorecard | No scorecard question covers this agent's team or department, or the call was uploaded before the scorecard was created | Select **Rerun Scorecard** on the interaction. If it still has no scorecard, ask your administrator to check the scope on the questions. See [Build an Agent Scorecard](../../agent-scorecard-guide.md) |
-| Your comment did not reach the agent | The agent was not tagged, or the comment was a reply | Only new comments can tag an agent. Add a new comment and select **@agent** from the `@` list |
+| Your comment did not reach the agent | Neither the comment nor the thread it replies to tagged the agent, or agents see reviewed interactions only and this one is not yet marked as reviewed | Only new comments can tag an agent. Add a new comment and select **@agent** from the `@` list. Then select **Mark as Reviewed** on the interaction |
 
 For uploads, playback, and other platform problems, see [General Issues](../../support/troubleshooting-guide.md).
 
@@ -255,7 +257,7 @@ For uploads, playback, and other platform problems, see [General Issues](../../s
 - [Set up monitoring](../../smart-search-guide.md): create a Smart Search to flag interactions automatically
 - Bring in your historical call data with a bulk upload (see [Upload Your Data](../../data-upload.md))
 - [Generate Reports](../../features/custom-reporting.md): schedule a recurring report for weekly management updates
-- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and the order to set them up in
+- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and which decisions are hard to undo
 
 ---
 

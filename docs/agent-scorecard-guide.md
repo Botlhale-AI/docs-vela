@@ -46,7 +46,7 @@ The settings above the question list apply to the whole scorecard. Every questio
 <ScorecardScopeForm />
 
 :::warning Historical Search cannot be added later
-Leave it off and the interactions already in Vela are never scored against these questions, and the only way to change that is to upload those recordings again.
+Leave it off and the interactions already in Vela are not scored against these questions. An interaction that has never been scored can still be scored with **Rerun Scorecard**. For one already scored, either upload the recording again, which creates a second copy of the interaction, or reassign its agent, which rescores it against today's questions but replaces any reviewer overrides. See [Scoring older interactions against a new question](./explanation/how-scoring-works.md#scoring-older-interactions-against-a-new-question).
 :::
 
 ---
@@ -73,12 +73,12 @@ Every field, including those this page does not cover, is listed in [Scorecard F
 Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page. Grouping related questions under one category is what lets those reports show a real pattern, rather than a single question's result.
 :::
 
-### Writing Questions the AI Can Answer
+### A. Writing Questions the AI Can Answer
 
 The AI reads a transcript. A question works when its answer is visible there.
 
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
-* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on calls where no dispute came up. The question then drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so the agent gets a No on calls where the question never applied.
+* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on calls where no dispute came up. The question then drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so the agent gets a No on calls where the question never applied. Interactions scored before this rule was enforced can still show N/A on such a question. {/* UNVERIFIED: see the marker in how-scoring-works.md, When a question does not apply. */}
 * **Keep weights relative to each other.** There is no external scale. A question weighted 5 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given. One failed Auto-Fail question makes the whole interaction read 0.0%, whatever else went well.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
@@ -122,7 +122,7 @@ Reading **Passed**, **Failed**, and **N/A** together matters more than any one o
 
 A low **Calls Analysed** count against an old question points at scope or the **Interactions** setting instead: the question may not be reaching the interactions you expected. See [Check Your Work](#check-your-work).
 
-### The Controls Above the Table
+### A. The Controls Above the Table
 
 ![The controls above the Results table, with View By, Search, Export, Sort By, Filter, and Filter Calls, beside the View, Create, Results, and View examples tabs](../img/screenshots/agents_scorecard/results.png)
 
@@ -156,7 +156,7 @@ Editing and deleting behave differently, and the difference matters:
 | | What happens to interactions already scored |
 | :--- | :--- |
 | **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so historical interactions keep its outcome and their scores do not change, in the interface and in exports alike |
-| **Editing its weight, Auto-Fail, or Compliance** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old figures until each interaction is scored again |
+| **Editing its weight, Auto-Fail, or Compliance Question** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old figures until each interaction is scored again |
 | **Editing its Expected Outcome** | Past AI answers keep the result they were given. Only answers a reviewer has changed are compared against the new setting |
 
 :::warning Editing a weight splits your history

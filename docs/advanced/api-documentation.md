@@ -196,7 +196,7 @@ Four of these are worth a second look:
 - **`agent_name` and `team` work together.** An unmatched team is dropped, and that also stops a new agent being created. Check the spelling before sending a batch.
 - **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs there instead, so send direction as `direction` rather than as a tag.
 - **`contact` is what [Search by Phone Number](../number-search-guide.md) matches on.** Keep the format consistent across your integration, or the same customer looks like several.
-- **`date_of_call` must be day first.** Vela reads any day-first date, with or without the comma and seconds. A year-first date is stored as the wrong date with no error, and a month-first date is read day first. An ISO date such as `2025-01-15` cannot be read, so it falls back to the upload time. `validate_metadata` catches only the last case, because the others parse as valid dates.
+- **`date_of_call` must be day first.** Vela reads any day-first date, with or without the comma and seconds. A year-first date is stored as the wrong date with no error, and a month-first date with a day of 12 or less is read day first. A month-first date with a day above 12 cannot be read. An ISO date such as `2025-01-15` cannot be read, so it falls back to the upload time. `validate_metadata` catches only the dates that cannot be read, because the others parse as valid dates.
 
 Check a date string against the format before you send a batch:
 

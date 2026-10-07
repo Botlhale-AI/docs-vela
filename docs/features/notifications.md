@@ -74,7 +74,7 @@ Not everything lands in the same place, which is the usual reason a notification
 | A Smart Search match | A processed interaction matches one of your Smart Searches | **Alerts** tab |
 | A Smart Question alert | A Smart Question returns the outcome you set it to alert on, under **Receive notifications when** | **Alerts** tab |
 | A comment | Someone comments on an interaction your preferences cover | **Comments** tab |
-| A finished report | A scheduled or one-time report has finished generating | **Reports** tab |
+| A finished report | A scheduled or one-time report has finished generating | **Reports** tab, for a report someone else created. Your own reports always arrive by **email** instead |
 | A redaction decision | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
 | A processed call | A call you uploaded on its own has finished analysis, subject **Call analysis complete** | **Email only**, to the address you signed in with, whatever your preferences. There is no in-app notification for this |
 | A processed batch | A bulk upload has finished analysis | **Email only**, a summary to users with **New Alerts Detected** ticked under email notifications, sent straight away whatever the frequency |
@@ -105,7 +105,7 @@ Rather than sampling interactions at random, work your alerts first. They are th
 
 ## 4. Control What Reaches You
 
-Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether it raises alerts at all, covered here. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on only reaches you if your own **New Alerts Detected** is also ticked.
+Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether its alerts raise notifications at all, covered here. The alert itself appears on the interaction either way. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on only reaches you if your own **New Alerts Detected** is also ticked.
 
 Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
 
@@ -127,7 +127,7 @@ For more on building searches, see [Smart Search](../smart-search-guide.md).
 
 Comments are how feedback reaches your agents, and the **@** mention is what shares a comment with them.
 
-Type **@** in the comment box and select **@agent**, the only option offered. The comment then appears on that interaction in the agent's Agent Portal, where they can read it and reply. The agent is not notified, so they find it by opening the interaction. An untagged comment stays visible to team leads and never reaches the agent.
+Type **@** in the comment box. The list offers **@agent** and the colleagues who can see the interaction, by name. A colleague you name gets a mention notification. Select **@agent** to share the comment with the agent. The comment then appears on that interaction in the agent's Agent Portal, where they can read it and reply. The agent is not notified, so they find it by opening the interaction. An untagged comment stays visible to team leads and never reaches the agent.
 
 {/* VERIFIED 2026-10-01 on origin/main, origin/vela-fly, and origin/dev-hold: app/(pages)/interactions/calls/[id]/comments.js sets agent: true for @agent but creates no notification for the agent. The "New mention" notification matches profile names, and @agent stores the string "agent". Org-comment recipients exclude role "agent". Like and resolve notifications reach a comment's author only where notifications.platform.own_comments is set, which addUser never sets for an agent. Never seen on an agent account (user, 2026-10-01). */}
 
@@ -137,7 +137,7 @@ The **@agent** option, and the reminder text above the comment box, appear only 
 
 ![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)
 
-Mentions work in new comments rather than replies, as the panel itself notes. A reply therefore carries no tag and raises no notification, so anything the agent has to see belongs in a new comment with a tag on it.
+Tagging the agent works in new comments only, as the panel itself notes. A reply in a thread that already tagged the agent is shared with them too. Replies still notify colleagues: a reply raises **New reply** for those who follow comments, and a mention for anyone named in it. Anything the agent has to see in a new thread belongs in a new comment tagged **@agent**.
 
 For writing and resolving comments, see [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
 
@@ -158,12 +158,12 @@ Two lists, **Platform Notifications** and **Email Notifications**, offer the sam
 | **Comments** | Any comment added anywhere in your organisation |
 | **Activity On Your Comments** | Replies and activity on comments you wrote |
 | **Comments Mentioning You** | Comments where someone tagged you with **@** |
-| **New Reports** | A report has finished generating |
+| **New Reports** | A report someone else created has finished generating. Your own reports always arrive by email |
 | **New Alerts Detected** | A Smart Search matched an interaction, or a Smart Question returned the outcome it alerts on. One setting covers both |
 
 **New Alerts Detected** appears in both lists on every version except [Lite](../reference/glossary.md#lite).
 
-The three comment settings widen as you go up the list. **Comments Mentioning You** is the narrowest and **Comments** the broadest, so tick that one only if you want every comment in the organisation.
+**Comments** covers every comment in the organisation, so tick it only if you want all of them. Likes and resolves on your own comments reach you only through **Activity On Your Comments**.
 
 Select **Save** to apply your changes. Leaving the tab without saving discards them.
 
@@ -199,7 +199,7 @@ Testing an alert end to end takes one interaction. Upload an interaction you kno
 | Too many notifications | **Comments** sends you every comment in the organisation, so untick it in **Settings → Notifications** if that is the source. For alerts, tighten the search's phrases or turn its **Notifications** off |
 | Alerts not arriving | Two settings have to agree. Confirm **New Alerts Detected** is ticked in **Settings → Notifications**, and that the Smart Search has **Notifications** on with a scope covering the relevant teams |
 | Comments not arriving | Check which comment settings you have ticked in **Settings → Notifications**. **Comments Mentioning You** covers only comments that tag you with **@** |
-| Reports not arriving | Confirm **New Reports** is ticked in **Settings → Notifications**, then check the schedule and that its date range contains data |
+| Reports not arriving | Your own reports arrive by email, never on the **Reports** tab, so check your inbox and spam folder. For colleagues' reports, confirm **New Reports** is ticked in **Settings → Notifications**. Then check the schedule and that its date range contains data |
 | Email missing, but notifications appear in Vela | Check the **Email Notifications** list in **Settings → Notifications**. On a daily frequency the email arrives at the time you set rather than as the event happens |
 | A notification dismissed by mistake | Dismissing is final. Open the interaction, comment, or report directly instead |
 | The eye icon on a Smart Question alert opens nothing | The link carries no interaction. Open it from **Interactions**, or from the **Results** tab of the Smart Question, where selecting a count lists the matching interactions |

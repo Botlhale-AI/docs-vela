@@ -47,11 +47,22 @@ function scoreSet(questions) {
 
 function ScoreCard({ label, result, hint }) {
   let body;
+  // Call Details shows a dash for a score that is 0% or missing, so the
+  // calculator does the same (vela-fly callDetails.jsx 433-501).
   if (!result.hasScore) {
     body = (
       <>
-        <span className={styles.scoreValueMuted}>No score</span>
+        <span className={styles.scoreValueMuted}>-</span>
         <span className={styles.scoreNote}>{hint}</span>
+      </>
+    );
+  } else if (result.raw === 0) {
+    body = (
+      <>
+        <span className={styles.scoreValueMuted}>-</span>
+        <span className={styles.scoreNote}>
+          0%{result.autoFailed ? ', and auto-failed' : ''}. Call Details shows a dash
+        </span>
       </>
     );
   } else if (result.autoFailed) {
@@ -137,7 +148,7 @@ export default function ScorecardCalculator() {
         <ScoreCard
           label="Compliance Score"
           result={compliance}
-          hint="No question is marked Compliance"
+          hint="No question is marked Compliance Question"
         />
       </div>
 
@@ -164,7 +175,7 @@ export default function ScorecardCalculator() {
               <th>Weight</th>
               <th>Expected Outcome</th>
               <th>Answer</th>
-              <th>Compliance</th>
+              <th>Compliance Question</th>
               <th>Auto-Fail</th>
               <th aria-label="Remove" />
             </tr>

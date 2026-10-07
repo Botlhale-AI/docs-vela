@@ -41,13 +41,13 @@ The group headings are the same on both screens, so find the group first and the
 | **Average Agent Scores (%)** | The same mean, broken down per agent and listed highest first |
 | **Average Agent Compliance Score** | The mean score across scorecard items marked as compliance items |
 | **Average Agent Quality Score** | The mean score across scorecard items not marked as compliance |
-| **Distribution of Total Scores** | How many calls fall into each score range, from 0-10% up to 90-100% |
-| **Agent Compliance Scores Distribution** | The same spread, for compliance items only |
+| **Distribution of Total Scores** | How many calls fall into each score range, from 0-10% up to 90-100%. It counts calls, not agents. **Customise** lists it as **Interaction Distribution by Agent Score** |
+| **Distribution of Compliance Scores** | The same ranges, counting compliance items only |
 | **Distribution of Quality Scores** | The same ranges, counting quality items only |
+| **Agent Compliance Scores Distribution** | Despite the name, the mean compliance score for each agent, listed highest first. Its card is titled **Average Agent Compliance Scores (%)** |
 | **Average Team Scores (%)** | The mean score for each team, listed highest first |
 | **Average Team Compliance Scores (%)** | The mean compliance score for each team |
 | **Average Team Quality Scores (%)** | The mean quality score for each team |
-| **Interaction Distribution by Agent Score** | How many interactions fall into each score band |
 | **Distribution of Calls by Total RAG Scores** | Calls grouped into Red, Amber, and Green, using your organisation's boundaries |
 
 An administrator sets the score boundaries. See [Organisation Configuration](../settings-config/organisation-configuration.md). For how these figures are calculated, and what changing a weight does to them, see [How Scoring Works](../explanation/how-scoring-works.md).
@@ -94,12 +94,11 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 | :--- | :--- |
 | **Total Number of Interactions** | How many interactions a human has marked as reviewed |
 | **Percentage of Interactions Reviewed** | Reviewed interactions as a proportion of the total |
-| **Reviewed Interactions Distribution** | Reviewed against not yet reviewed, as a proportion |
-| **Interactions Distribution by Review Status** | Reviewed versus not yet reviewed |
-| **Reviewed Agent Scores Distribution** | Score spread across reviewed interactions only |
+| **Reviewed Interactions Distribution** | Reviewed against not yet reviewed, as a proportion. **Customise** lists it as **Interactions Distribution by Review Status** |
+| **Reviewed Agent Scores Distribution** | The mean score for each agent across reviewed interactions only, listed highest first. Its card is titled **Average Agent Scores (%)**, the same as the card for all interactions, so check which group it sits in |
 | **Reviewed Compliance Scores Distribution** | Compliance score spread, reviewed interactions only |
 | **Reviewed Quality Scores Distribution** | Quality score spread, reviewed interactions only |
-| **Reviewed Team Scores Distribution** | Team score spread, reviewed interactions only |
+| **Reviewed Team Scores Distribution** | The mean score for each team across reviewed interactions only. Its card is titled **Average Team Scores (%)**, the same as the card for all interactions |
 
 Reviewed metrics count only what a person has marked with **Mark as Reviewed**, so they stay at zero until your team starts using it. See [Review and Score Interactions](../features/quality-assurance-tools.md).
 
@@ -132,7 +131,9 @@ Reviewed metrics count only what a person has marked with **Mark as Reviewed**, 
 | **Total Number of Pain Points** | Number of distinct pain points detected in the period |
 | **Pain Point Distribution in Interactions** | Proportion of interactions by pain point |
 
-The AI finds detected topics. Your team creates organisational ones. See the [Glossary](./glossary.md), and [Manage Smart Search Terms](../topics-and-terms-guide.md) for how to add your own.
+The AI finds detected topics. Your team creates organisational ones.
+
+{/* UNVERIFIED: in vela origin/vela-fly and origin/main (dashboard.js 364-382 and 658-720, reports/generate.js 372-390), the (Organisational) and (Detected) topic metrics call the same getTopAndBottomTopics on one $topic field, and every card is titled "Top 10 topics in interactions (detected)", so the two may return the same data. Plain Top 10 Topics and Bottom 10 Topics have no handler. Needs engineering to confirm which is intended, and a screen. Found 2026-10-07. */} See the [Glossary](./glossary.md), and [Manage Smart Search Terms](../topics-and-terms-guide.md) for how to add your own.
 
 ---
 

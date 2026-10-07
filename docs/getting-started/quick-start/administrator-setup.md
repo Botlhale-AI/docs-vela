@@ -1,7 +1,7 @@
 ---
 id: administrator-setup
 title: Administrator Setup
-description: "Set up your organisation, departments, teams, and users for the first time."
+description: "Set up sign-in, departments, teams, users, the Agent Scorecard, Smart Searches, the Knowledge Base, and redaction for the first time."
 sidebar_position: 0
 type: tutorial
 ---
@@ -35,7 +35,7 @@ Before anyone else can use Vela, an administrator configures authentication, dep
 
 You need:
 
-- **An administrator account.** Your Vela organisation is provisioned by the Botlhale team, and your account must have the Admin role.
+- **An administrator account with Organisational access.** Your Vela organisation is provisioned by the Botlhale team. Your account needs the Admin role, and Organisational access to create departments and save the redaction settings. See [Roles and Access Levels](../../settings-config/access-control.md).
 - **The email addresses of the people who will use Vela.** For SSO, these must match their Google or Microsoft accounts.
 
 ---
@@ -71,7 +71,7 @@ An SSO user's sign-in password is held by Google or Microsoft. The **Security** 
 
 If SSO is not available, users sign in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
-Vela emails each new user a password and a verification link. They must open the link before they can sign in. The emailed password stays in place until the user changes it, so tell them to set their own under **Settings → Security**.
+Vela emails each new user an invitation with a generated password. That password does not sign them in. Before their first sign-in, each user sets their own password with **Forgot your password?** on the sign-in page, which also confirms their email address. Tell them this when you add them, and point them to **First-Time Setup** in the [Team Lead Quick Start](./team-lead-quick-start.md#before-you-begin).
 
 </TabItem>
 </Tabs>
@@ -84,7 +84,7 @@ Vela emails each new user a password and a verification link. They must open the
 
 Create departments and teams before you add users. Users are assigned to teams, and teams belong to departments.
 
-### Create Departments First
+### Step 2A: Create Departments First
 
 1. Navigate to **Settings → Users → Org Table**
 2. Select **Create**
@@ -92,7 +92,7 @@ Create departments and teams before you add users. Users are assigned to teams, 
 4. Enter the department name (for example, "Customer Service" or "Sales")
 5. Save and repeat for each department
 
-### Then Create Teams
+### Step 2B: Then Create Teams
 
 1. From the same **Org Table** view, select **Create**
 2. Select **Team**
@@ -154,7 +154,7 @@ For onboarding many agents at once:
 ![The Add an Agent modal on the Batch Upload tab, with the create and skip options](../../../img/screenshots/settings/agent-bulk.png)
 
 :::caution The upload confirms receipt, not success
-The message you see means Vela accepted the file, not that every row was added. A row is silently dropped where the agent's name already exists, the email is missing or malformed and required, or a department or team is outside your access level. Where your organisation uses Coaching, an email lists what was added and what was skipped. Without Coaching, nothing tells you which rows were dropped, so check the Agent Details table against your CSV afterwards.
+The message you see means Vela accepted the file, not that every row was added. A row is silently dropped where the agent's name already exists, the email is missing or malformed and required, or a department or team is outside your access level. Where your organisation uses Coaching, an email lists what was added and what was skipped, but only when at least one row was added. A file where every row is dropped sends no email. Without Coaching, nothing tells you which rows were dropped, so check the Agent Details table against your CSV afterwards.
 :::
 
 :::note What each agent receives
@@ -165,13 +165,13 @@ Adding an agent, singly or in bulk, emails them an invitation to the Agent Porta
 
 1. Navigate to **Settings → Users**
 2. Select **Add User**
-3. Enter their name, email, **Access** level, and role. Department and team appear only when Access is not organisational, and are required in that case.
+3. Enter their name, email, **Access** level, and role. **Department** appears for Departmental or Team access, and **Team** only for Team access. Each is required when it appears.
 
 ![The Add User modal, with Name and Email Address above the Access levels and the Admin and User roles](../../../img/screenshots/settings/users_add.png)
 
-### Setting Roles and Access
+### Step 3C: Set Roles and Access
 
-Each user needs a **Role**, Administrator or User, and an **Access** level that decides how much of the organisation they see. See [Roles and Access Levels](../../settings-config/access-control.md) for what each combination can do.
+Each user needs a **Role**, **Admin** or **User**, and an **Access** level that decides how much of the organisation they see. See [Roles and Access Levels](../../settings-config/access-control.md) for what each combination can do.
 
 ---
 
@@ -246,6 +246,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 2. On the **PDF Upload** tab, drag and drop your PDF files, or select the upload area to browse for them
 3. Set **Apply documents to** (organisation, department, or team), and optionally add a description
 4. Select **Upload Files**
+5. Link each document to the scorecard question or Smart Search from Steps 4 and 5 that should use it. Open the item, turn on **Apply Knowledge Base** on a scorecard question, or **Use a knowledge base document to enhance this smart search** on a Smart Search, choose the document, and save. A document nobody has linked does nothing.
 
 ![The Knowledge Base PDF Upload tab, with Apply documents to set to Entire Organisation, an uploaded PDF with its description box, and Upload Files](../../../img/screenshots/settings/knowledge_base.png)
 
@@ -259,7 +260,7 @@ In **Settings → Organisations → This Org**, choose which entity types Vela s
 
 ![The Redactable Entities checkboxes in Settings, listing Credit Card, IBAN Code, Person, and the other entity types, with Save below](../../../img/screenshots/settings/redaction.png)
 
-Once redaction is configured, masked details are hidden from everyone by default, administrators included. Administrators, and any user you grant **View Redactions**, can reveal the unmasked version on a transcript with **Review Redacted Info**. Everyone else sees only the masked version. They can request access to a specific interaction, which you approve in **Settings → Requests**, or you can grant **View Redactions** on the account in **Settings → Users**. See [Access Requests](../../settings-config/access-requests-audits.md) for the full workflow.
+Once redaction is configured, masked details are hidden from everyone by default, administrators included. Administrators can reveal the unmasked version on a transcript with **Review Redacted Info**. Everyone else sees only the masked version, and requests access to a specific interaction, which you approve in **Settings → Requests**. You can also grant **View Redactions** on an account in **Settings → Users**. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx and chats/[id]/page.jsx compare profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant may still see Request Redacted Access. Same marker as access-control.md. Needs a live check. */} See [Access Requests](../../settings-config/access-requests-audits.md) for the full workflow.
 
 ---
 
@@ -294,7 +295,7 @@ For general platform issues, such as uploads, playback, or the app not loading, 
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.
 
 **Bulk agent import errors**  
-Check that the CSV has all four columns (name, email, department, team), and that `name`, `department`, and `team` are not empty. `email` is required only where your organisation uses Voice Profiles or Coaching. Team and department names must match those created in Step 2, unless you use the create option during import. A success message means Vela accepted the file, not that every row was added: check the Agent Details table against your CSV, or the confirmation email where Coaching is enabled.
+Check that the CSV has all four columns (name, email, department, team), and that `name`, `department`, and `team` are not empty. `email` is required only where your organisation uses Voice Profiles or Coaching. Team and department names must match those created in Step 2, unless you use the create option during import. A success message means Vela accepted the file, not that every row was added: check the Agent Details table against your CSV, or the confirmation email where Coaching is enabled and at least one row was added.
 
 **Interactions are not being scored**  
 Confirm that scorecard questions exist with a scope covering the relevant team or department. Each question carries its own scope, so that is what decides which interactions it is applied to.
@@ -308,7 +309,7 @@ Check that the search status is set to **Active** and that the scope covers the 
 
 ## Next Steps
 
-- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and the order to set them up in
+- [How the Pieces Fit Together](../../explanation/how-the-pieces-fit.md): how these features relate, and which decisions are hard to undo
 - [Build an Agent Scorecard](../../agent-scorecard-guide.md): every question setting, and editing a scorecard once it is live
 - [Best Practices](../../advanced/best-practices.md): advanced configuration guidance
 - [Build Your Knowledge Base](../../knowledge-base-guide.md): uploading, scoping, and linking documents

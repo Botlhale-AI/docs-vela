@@ -11,7 +11,7 @@ import topicsPage from '@site/img/screenshots/smart_detector/topics-page1.png';
 
 # Manage Smart Search Terms
 
-Your Smart Search terms define what Vela looks for in your interactions. They are organised into four categories: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list combines terms Vela identifies automatically with terms you add based on your organisation's priorities. This section explains how to review the lists and add your own terms.
+Your Smart Search terms define what Vela looks for in your interactions. They are organised into four categories: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list except **Keywords** combines terms Vela identifies automatically with terms you add based on your organisation's priorities. Keywords holds only the terms you add. This section explains how to review the lists and add your own terms.
 
 These terms feed the rest of Vela. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and when you [generate reports](./features/custom-reporting.md).
 

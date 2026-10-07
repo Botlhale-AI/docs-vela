@@ -36,7 +36,7 @@ A: Audio files must be in `.wav` or `.mp3` format. A metadata CSV file is requir
 A: A single upload lets you upload one audio file at a time using a short form (agent, team, department, and the file, with optional direction and tags). A bulk upload lets you upload many files at once in a ZIP archive, along with a metadata CSV that assigns each file to an agent, team, department, and direction.
 
 **Q: How do I know when my bulk upload has finished processing?**  
-A: Watch **Interactions → Calls**, where calls appear as they finish. A single upload also emails the address you sign in with. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications.
+A: Watch **Interactions → Calls**, where calls appear as they finish. A single upload also emails the address you sign in with. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications. That setting is not on the [Lite](../reference/glossary.md#lite) version, so there watch the list.
 
 **Q: How long does it take for calls to process?**  
 A: Processing is queued, so the wait depends on what is ahead of your call rather than on who uploaded it. Two people uploading the same recording minutes apart can finish an hour apart. Call length and audio quality also matter. Avoid navigating away from the page during a large bulk upload, because your browser is still sending the file and leaving the page stops the upload.

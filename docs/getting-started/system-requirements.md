@@ -87,7 +87,7 @@ Files larger than 1 GB are rejected before the upload begins.
 
 **Required Format:**
 - **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
-- **Encoding:** UTF-8
+- **Encoding:** UTF-8 for a JSON file. For a single-chat CSV saved from Excel, choose **CSV (Comma delimited)**. The **CSV UTF-8** option adds a hidden character that stops Vela reading the first column.
 - **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, select the **example** link on the upload page to download a sample CSV.
 - **Maximum size:** 3 GB for a single chat CSV. The **Bulk Upload** tab advises keeping each JSON file to 1 MB and one file at a time, so split a large export into several files rather than uploading one big one.
 
@@ -139,7 +139,7 @@ Used to add many agents at once, covered in [Administrator Setup](./quick-start/
 | Specification | Requirement |
 |---|---|
 | **File type** | CSV (`.csv`) |
-| **Encoding** | UTF-8 |
+| **Encoding** | In Excel, save as **CSV (Comma delimited)**. The **CSV UTF-8** option adds a hidden character that stops Vela finding the `name` column |
 | **Required columns** | `name`, `email`, `department`, `team` |
 
 ```csv
@@ -153,7 +153,7 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 - `name`, `department`, and `team` cannot be empty
 - Team and department names must match existing entries, unless you chose to create unmatched ones on upload
 
-The upload confirming receipt does not mean every row was added. A row with a name that already exists in your organisation is dropped silently. See [Administrator Setup](./quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv).
+The upload confirming receipt does not mean every row was added. Some rows are dropped silently, for example one whose name already exists in your organisation. For every cause, see [Administrator Setup](./quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv).
 
 ---
 
@@ -213,7 +213,7 @@ Transcription accuracy is highest when:
 This section covers the security controls you manage inside Vela. For how your data is hosted, encrypted, backed up, and the standards Vela meets, see [Security and Compliance](../security-compliance.md).
 
 ### Redaction
-Vela can automatically mask sensitive information in transcripts. Once an administrator has chosen which details to mask, calls and chats are masked for everyone by default. The administrator then grants **View Redactions** to the accounts that need to see them unmasked. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
+Vela can automatically mask sensitive information in transcripts. Once an administrator has chosen which details to mask, calls and chats are masked for everyone by default. Administrators can reveal the unmasked version on demand, and other users request access to a specific interaction. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
 
 ### Access Level
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).

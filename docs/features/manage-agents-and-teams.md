@@ -35,10 +35,10 @@ Go to **Agents → Agent Details** in the left sidebar. The table lists everyone
 | Control | What it does |
 | :--- | :--- |
 | **Add Agent** | Opens the Add an Agent modal, covered below |
-| **Search** | Narrows the list by name |
+| **Search** | Narrows the list by name or email |
 | **Sort By** | Orders the list on any column |
-| **Filter** | Opens **Filter By**, which filters the list by a specific department, team, and **Status**. Select **Apply** to use it |
-| **Export** | Downloads the list, including each agent's department, team, and status |
+| **Filter** | Opens **Filter By**, which filters the list by department, team, and **Status**. **Department** appears with Organisational access, **Team** with Organisational or Departmental access, and **Status** only where your organisation uses voice profiles. Select **Apply** to use it |
+| **Export** | Downloads the agents on the current page, up to 50, as searched and filtered, with each agent's department and team, plus status where your organisation uses voice profiles. For a longer list, export each page in turn |
 
 Unassigned agents read **No Department** or **No Team** rather than sitting blank, so sorting on either column brings the gaps together. The **Actions** column at the end of each row holds the edit and delete controls. Past one page, pagination sits below the table: **Previous** and **Next**, with **Page 1 of 2** between them.
 
@@ -53,7 +53,7 @@ Select **Add Agent** to open **Add an Agent** modal. It has two tabs, **Single U
 On **Single Upload**:
 
 1. Enter the **Name**, and the **Email** where it is required.
-2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the modal.
+2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the modal. It appears for an administrator with Organisational or Departmental access.
 3. Select **Save Changes**, or **Discard** to abandon it.
 
 ![The Add an Agent modal on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
@@ -63,6 +63,8 @@ Name and team are always required. Whether you also need the email, and what the
 | Your organisation has | Email address | What the agent receives |
 | :--- | :--- | :--- |
 | Neither voice profiles nor the Coaching Portal | Optional | Nothing |
+
+{/* UNVERIFIED: on vela origin/vela-fly and origin/main, app/api/agents/route.js (87-101, 240-261) looks up an existing agent by email with no active filter, and an empty email is sent as "". A second agent added without an email is therefore refused with: An agent with the email "" already exists in your organization. On the Create New Team path the team is created before that check, so an empty team is left behind. Raised as a product bug 2026-10-07. Needs a live check before the docs state a limit. */}
 | The Coaching Portal | Required | **Invitation to Vela**, which sets up the sign-in they use for the Agent Portal |
 | Voice profiles | Required | **Vela Voice Agent ID Invite**, asking them to record a sample |
 | Both | Required | Both emails, sent separately |
@@ -107,7 +109,7 @@ The **Voice Profile Status** column shows where each agent stands, and carries t
 
 The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers automatically.
 
-Where a sample exists, the column shows a toggle rather than a word. **Export** names the same two states in writing, as **Active** and **Inactive**, so use the export when you want the status of a whole list at once rather than reading toggles row by row.
+Where a sample exists, the column shows a toggle rather than a word. **Export** names the same two states in writing, as **Active** and **Inactive**, so use the export to read the status of a page of agents at once rather than reading toggles row by row.
 
 ---
 
@@ -124,7 +126,7 @@ Where a sample exists, the column shows a toggle rather than a word. **Export** 
 ![Create new team opened from within Reassign, so the destination can be made without leaving the move](../../img/screenshots/agent_details/create-new-team-on-reassign.png)
 
 :::note Teams themselves are managed in Settings
-Only reassignment is on this screen. Teams are created, renamed, and moved between departments on the **Org Table**, under **Settings → Users**. See [Departments and Teams](../settings-config/user-management.md#3-departments-and-teams).
+This screen can create a team in passing, while adding or reassigning an agent. Teams are renamed and moved between departments on the **Org Table**, under **Settings → Users**. See [Departments and Teams](../settings-config/user-management.md#3-departments-and-teams).
 :::
 
 ---

@@ -88,9 +88,9 @@ export function SingleCallUploadForm() {
       alt="The Single Upload tab of the call Uploads page, with the Single Upload and Bulk Upload tabs above the Agent, Direction, and Tags fields, the drag-and-drop area, and the Upload button"
       points={[
         { x: 61.5, y: 20.7, title: 'Single Upload and Bulk Upload', body: 'Single Upload takes one recording. Bulk Upload takes many at once, as a ZIP archive.' },
-        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call. The list is filtered by your access level, and Team and Department fill in from your choice. Agent, Team, and Department must all be filled before Upload turns on. + Create an agent adds one without leaving the page.' },
+        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call. The list is filtered by your access level, and Team and Department fill in from your choice. Agent, Team, and Department must all be filled before Upload turns on. The call is always filed under the agent\'s own team and department, whatever the form shows. + Create an agent adds one without leaving the page.' },
         { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound, and optional. Leaving it blank means the call is left out of anything filtered or reported by direction.' },
-        { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional, and shared across your organisation, so a tag you create here appears in everyone else\'s filters too.' },
+        { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional. Choose from your organisation\'s existing tags.' },
         { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select browse your device. WAV or MP3, up to 1 GB.' },
       ]}
     />

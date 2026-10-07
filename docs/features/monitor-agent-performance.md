@@ -54,7 +54,7 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 | Metric | What it tells you | When to act |
 | :--- | :--- | :--- |
 | **Average Agent Score (%)** | The overall quality performance for your scope. See [How Scoring Works](../explanation/how-scoring-works.md). | It stays below your team's standard. |
-| **Distribution of Total Scores** | How scores are spread across the team. | Agents cluster in the lower ranges, which points at the team rather than a person. |
+| **Distribution of Total Scores** | How many calls fall into each score range. | Calls cluster in the lower ranges, which points at the team rather than a person. |
 | **Total Number of Alerts** and **Total Number of Resolved Alerts** | How many Smart Search matches were raised, and how many of them have been resolved. | The gap between them widens week on week. |
 | **Sentiment Distribution in Interactions** | The proportion of positive, neutral, and negative customer emotion. | **Negative** spikes suddenly, which usually means a service or system problem. |
 | **Agent Talk to Listen Ratio** | Agent talking time relative to customer talking time. | It stays high, so the agent is talking more than listening. |
@@ -87,7 +87,7 @@ Four controls sit above the list:
 | **Search** | Narrows the list by agent name |
 | **Sort By** | Orders the list on Name, Team, Department, Interactions, Compliance Score, Quality Score, Score, Strength, Weakness, or Rank |
 | **Filter** | Opens **Filter By**, covered below |
-| **Export** | Downloads the list as a PDF or a CSV |
+| **Export** | Downloads the list as a PDF or a CSV, or, with **mail**, emails each agent in the list their own performance report. Search does not narrow it: it covers every agent in the current filter and date range |
 
 #### Filter By
 
@@ -137,7 +137,7 @@ In List View the row scrolls sideways for the columns that do not fit. Sorting a
 
 ### B. Read One Agent's Detail
 
-Open **Agents → Performance → Details** for an agent. In List View, select **View** at the end of their row. In Board View, select the card itself. The header shows their rank, name, team, and the date range you are looking at. **Export** downloads the page, and **Mail** sends it to the agent.
+Open **Agents → Performance → Details** for an agent. In List View, select **View** at the end of their row. In Board View, select the card itself. The header shows their rank, name, team, and the date range you are looking at. **Export** downloads the page, and **Mail** sends it to the agent. **Mail** appears only when the agent has an email address on record.
 
 **The Agent Scorecard table** sits directly below that header, under a centred **Agent Scorecard** caption. It lists one row per scorecard category and ends in a **Total Score** row. Its six columns put the agent beside their team, so you can see whether a low category is theirs alone or shared:
 
@@ -171,7 +171,7 @@ Voice profiles improve speaker separation in transcripts, which in turn improves
 
 One weak agent and a weak team need different responses, so this is worth a minute before you act.
 
-The quickest check is on the Dashboard: **Distribution of Total Scores** shows how scores are spread, so you can see whether this agent sits apart from their colleagues or with them.
+The quickest check is on the Dashboard: **Average Agent Scores (%)** lists each agent's mean score, highest first, so you can see whether this agent sits apart from their colleagues or with them.
 
 For a fuller answer, use the three tabs beside **Overview**. On **Teams** and **Departments** the counts come as a grid.
 
@@ -210,7 +210,7 @@ A category that is dark across a whole row, or long on the Agents chart, points 
 
 Two ways to get figures out of Vela, depending on who is asking:
 
-* **Export** on **Agents → Performance** downloads the list you are looking at, as a PDF or a CSV. Quickest for a one-off.
+* **Export** on **Agents → Performance** downloads the list as a PDF or a CSV. It covers every agent in the current filter and date range, even if you searched for one. Quickest for a one-off.
 * A **report** covers a date range with the metrics you choose, and can run daily, weekly, or monthly so managers receive it without asking. See [Generate Reports](./custom-reporting.md).
 
 ---
@@ -227,7 +227,7 @@ Monitoring is only worth the time if it ends in coaching. This section covers ho
 
 ### B. Act on What You Find
 
-1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so the comments are shared with them. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
+1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so the comments are shared with them, where your organisation has the Coaching Portal. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
 2.  **Set up a course** in the Coaching section, scoped to that category, with a **Training Initiation Score Range** that covers the gap.
 3.  **Track results** by monitoring the agent's score trend over the following weeks.
 

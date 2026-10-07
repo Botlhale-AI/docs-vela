@@ -144,7 +144,7 @@ A single call that appears to upload but never shows up in the Interactions list
 
 **Solution:**
 1. Check which calls from the batch appear in the Interactions list, and identify which are missing.
-2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device, with a lower-case `.wav` or `.mp3` extension. A file ending in `.WAV` or `.MP3` is skipped.
+2. Confirm each missing audio file is a valid WAV or MP3 that plays on your device, with a lower-case `.wav` or `.mp3` extension. A file ending in `.WAV` or `.MP3` is skipped where `metadata.csv` does not name it. Where it does, the whole upload fails with a `Mismatch between .wav/.mp3 files and CSV entries` error instead.
 3. Check the metadata row for each missing file. A misspelt `agent_name`, `team`, or `department` puts the call under a newly created record, so look for it under an agent you did not expect in **Agents → Agent Details**.
 4. Correct the issues and re-upload only the affected files.
 
@@ -169,7 +169,7 @@ A single call that appears to upload but never shows up in the Interactions list
 **Cause:** Processing time varies depending on call length, audio quality, number of speakers, and server load, so the call may still be queued or processing. Metadata that places it outside your current filter view produces the same symptom.
 
 **Solution:**
-1. Allow time for processing to finish before assuming a failure. A single upload emails the address you sign in with when it is complete. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications.
+1. Allow time for processing to finish before assuming a failure. A single upload emails the address you sign in with when it is complete. A bulk upload sends a summary to users who have **New Alerts Detected** ticked under email notifications. On the [Lite](../reference/glossary.md#lite) version that setting does not appear, so check the Interactions list instead.
 2. Check that the Interactions list filters (date range, scope, agent) are not excluding the call you are looking for.
 3. Turn **Show unsupported calls** on, at the top left of the list. Vela marks some calls unsupported and leaves them out of the list by default, so a missing call may be present but hidden. {/* VERIFIED 2026-09-21 against vela-data app/api/notifications/route.js: the flag was set by a language check, which is now hard-coded (let isEnglish = true), so the branch that sets supported = false is unreachable and no call processed on the current build is marked unsupported. Calls processed under earlier releases keep the flag, which is why the toggle still matters. */}
 4. If a call has still not appeared after an unusually long time, and no notification has arrived, contact support with the filename and upload time.
@@ -320,7 +320,7 @@ This is a characteristic of the source recording, so Vela cannot improve on it. 
 1. Disable browser extensions and reload. Ad blockers and script blockers are the usual cause, so turn them off one at a time to find which.
 2. Confirm your browser is one Vela supports, and that JavaScript is on. See [System Requirements](../getting-started/system-requirements.md).
 3. Clear the cache and cookies, then reload.
-4. Where everyone at your organisation is affected at once, it is a network rule rather than a browser. Ask your IT department to confirm the domains under [Firewall and Proxy](../getting-started/system-requirements.md#firewall-and-proxy) are reachable. Vela loads call audio, images, and the metadata CSV template from Amazon S3, so blocking it breaks playback and downloads as well as the application.
+4. Where everyone at your organisation is affected at once, it is a network rule rather than a browser. Ask your IT department to confirm the domains under [Firewall and Proxy](../getting-started/system-requirements.md#firewall-and-proxy) are reachable. Call audio, images, and the metadata CSV template load from the storage domains on that list, so blocking them breaks playback and downloads.
 
 ---
 
