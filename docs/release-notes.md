@@ -9,11 +9,13 @@ type: reference
 
 What has changed in each release of Vela, newest first.
 
-<!-- DRAFT: the next release. Everything below is on the dev branch and not yet on main,
+<!-- DRAFT: the next release. Everything below is on the dev branch and not yet on vela-fly (the live app),
      so it is commented out until it ships. Uncomment the section when the release lands,
      and open a documentation task for each item marked "needs a page".
 
 ## Version 2.2
+
+- Coaching evaluation cycle: courses assigned automatically to agents whose score falls in a course's range, awards presented with a certificate, and agents notified of new courses and awards. (Moved here from 2.1 on 2026-10-07: lib/coachingCycle.js is on dev-hold, #842, and not yet on vela-fly.)
 
 ### New Features
 
@@ -42,7 +44,7 @@ Filter interactions by pain point and by dominant language, filter on the Agent 
 - Interactions show a comment count, and comments and replies are counted separately.
 - Knowledge Base documents added by URL can be refreshed, rebuilding their embeddings.
 - Users can leave an organisation themselves.
-- Unread notification indicators appear in the navigation bar and the drawer.
+- Unread notification indicators appear in the drawer. (The navigation bar badge has already shipped.)
 - Course reminders are sent, and packages carry a coaching courses limit.
 
 -->
@@ -55,14 +57,13 @@ Version 2.1 brings new features and improvements.
 
 #### Agent Coaching Portal
 The Coaching Portal for agents brings:
-- **Courses Management**: Assign and track training courses with progress monitoring
-- **Awards System**: Recognise and reward high performers with digital awards
+- **Courses Management**: Build training courses and track progress
+- **Awards System**: Define awards to recognise high performers
 {/* Cautions is on the dev branch and absent from origin/main, so the line that
     announced "Warnings Management" here was removed. Restore it when Cautions
     ships, and link the Coaching Portal page for it. */}
 - **Agent Dashboard**: Personalised dashboard showing performance, courses, and achievements
 - **Interactive Learning**: Course completion with quizzes and assessments
-- **Notifications**: Instant notifications for courses and awards. See [Manage Notifications](./features/notifications.md).
 
 The Coaching Portal is an add-on with its own documentation. Creating courses, tracking completion, and managing awards are covered in the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz). On this side, [Turn What You Find into Coaching](./features/monitor-agent-performance.md#4-turn-what-you-find-into-coaching) covers the step before that: finding the gap a course should target.
 
@@ -132,7 +133,7 @@ The pages that cover what shipped in this release:
 * [Review and Score Interactions](./features/quality-assurance-tools.md): the Interactions lists for calls and chats, and how to comment to coach.
 * [Smart Detector](./smart-detector-overview.md): the section Smart Search, Smart Questions, and the Agent Scorecard sit under.
 * [Upload Your Data](./data-upload.md): loading calls and chats, manually or through the API.
-* [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz): courses, awards, warnings, and the agent's own view of them. A separate site, because Coaching is an add-on.
+* [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz): courses, awards, progress, and the agent's own view of them. A separate site, because Coaching is an add-on.
 
 ---
 

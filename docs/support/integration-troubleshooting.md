@@ -23,11 +23,13 @@ Find your symptom, then read the matching entry below.
 | A success response, and nothing under **Interactions** | The wrong organisation ID, or the development environment |
 | **400** `Allocation exceeded` | No allocation set, or the monthly duration used up |
 | **401** on an integration that used to work | The access token expired |
+| Generating a refresh token fails | Three active refresh tokens already |
 | Every call dated the day you uploaded it | `date_of_call` could not be read |
 | The agent, team, or department missing | The value did not match a record in Vela |
 | Chat response time missing | `sender` was not sent in lower case |
+| Some chats never appear in the Chats list | Every message in the chat has the same time |
+| The same interaction appears twice | The recording was sent more than once |
 | Requests no longer connect | The API base URL changed |
-| Generating a refresh token fails | Three active refresh tokens already |
 
 ---
 
@@ -80,12 +82,12 @@ Find your symptom, then read the matching entry below.
 
 **Problem:** Calls arrive in Vela, but every one is dated the day it was uploaded.
 
-**Cause:** `date_of_call` could not be read, so Vela fell back to the upload time. The usual reason is an ISO date such as `2025-01-15` or `2025-01-15T14:30:00Z`. A day-first date such as `15/01/2025 14:30` is read correctly. A year-first date such as `2025/01/15` is not refused but stored as the wrong date, so check the dates as well as the upload times.
+**Cause:** `date_of_call` could not be read, so Vela fell back to the upload time. The usual reason is an ISO date such as `2025-01-15` or `2025-01-15T14:30:00Z`. A day-first date such as `15/01/2025 14:30` is read correctly.
 
 **Solution:**
 1. Send `DD/MM/YYYY, HH:mm:ss`, with the comma and the seconds, for example `15/01/2025, 14:30:00`.
 2. Times are read as **Africa/Johannesburg**. Convert before sending where your system records another timezone, or every interaction lands at the wrong hour.
-3. Check the dates on the first uploads by eye, under **Interactions**. Setting `validate_metadata` is meant to return a **400** for a date Vela cannot read, but whether call uploads honour it is not confirmed, so do not rely on it alone. Even where it applies, it does not catch a year-first date, or a month-first date with a day of 12 or less, because those parse as valid, wrong dates. {/* UNVERIFIED: validate_metadata handling for Calls; see api-documentation.md. */}
+3. Check the dates on the first uploads by eye, under **Interactions**. Setting `validate_metadata` returns a **400** for a date Vela cannot read. A year-first date, or a month-first date with a day of 12 or less, parses as a valid date and passes, so it can still land on the wrong day. {/* Source: vela-data origin/main app/api/call/upload/route.js:130-150 and origin/dev-hold :159-178 both return 400 "Invalid date of call..." under validate_metadata, and c6ba3ce removed only the agent, team, and department errors. UNVERIFIED that this route serves the public Calls endpoint: see the sourcing note at the top of api-documentation.md. Needs someone with API credentials to confirm. */}
 
 ---
 
@@ -96,7 +98,7 @@ Find your symptom, then read the matching entry below.
 **Solution:**
 1. Check the values against the records in Vela. `agent_name` matches case-insensitively on the name as it appears on the agent record, not a username such as `john.smith`.
 2. Create the team first. An API upload never creates one, and an unmatched team also stops a new agent being created from `agent_name`.
-3. For chats, set `validate_metadata` so unmatched values are refused with `Team not found`, `Department not found`, or `Could not find agent with the provided metadata` rather than silently dropped. For calls, check the first uploads by eye as in the next step. {/* UNVERIFIED: these Calls errors were removed from the newer vela-data branches (c6ba3ce); see api-documentation.md. */}
+3. For chats, set `validate_metadata` so unmatched values are refused with `Team not found`, `Department not found`, or `Could not find agent with the provided metadata` rather than dropped. For calls, check the first uploads by eye as in the next step. {/* UNVERIFIED: these Calls errors were removed from the newer vela-data branches (c6ba3ce); see api-documentation.md. */}
 4. Check the first few interactions of any new integration under **Interactions**, and confirm the agent, team, direction, and tags landed as you intended.
 
 ---
@@ -109,6 +111,31 @@ Find your symptom, then read the matching entry below.
 1. Send `sender` in lower case. A capitalised `Agent` still stores the message and shows it in the transcript, so the upload looks correct, while Vela leaves that reply out of the response time measure.
 2. Check that customer messages are sent as `user`, since response time is measured from each `user` message to the reply that follows it.
 3. Re-upload the affected chats once the casing is corrected. Response time is calculated when the chat is processed.
+
+---
+
+**Problem:** Chats are sent and accepted, but some never appear in the **Chats** list.
+
+**Cause:** Every message in those chats has the same time. Vela measures a chat from its first message to its last, and lists chats with a length above zero.
+
+**Solution:**
+1. Send each message with the time it was actually sent, in `DD/MM/YYYY, HH:mm:ss`.
+2. Check your export: some systems stamp every message with the time the chat closed.
+3. Send the affected chats again once the times are corrected.
+
+{/* ENGINEERING (known issue, documented as it behaves): vela-data origin/dev-hold lib/inference/chats.js:1264 sets chat.duration = (end - start) / 1000 from the first and last message times, and the Chats list (vela origin/vela-fly app/(pages)/interactions/chats/page.jsx:114, also chats/[id]/page.jsx:80) shows only duration > 0. A chat whose messages all share one time is processed and stored but never listed, with no error. Seen in client support, 2026. Intended behaviour needs the product owner: either list it, or reject it at upload with a message. */}
+
+---
+
+**Problem:** The same call or chat appears twice under **Interactions**.
+
+**Cause:** Vela files every upload as a new interaction, so a recording sent twice is analysed twice. This happens most often with an integration that collects recordings on a schedule and sends overlapping batches.
+
+**Solution:**
+1. Keep a record in your integration of which recordings it has already sent, and send each one once.
+2. Where the integration collects on a schedule, make each run start where the last one ended.
+
+{/* Source: no duplicate check on vela-data origin/dev-hold app/api/call/upload, app/api/chats/upload, or app/api/unchunk; every upload creates a new interaction. Seen in client support, 2026 (an integration polling on a schedule sent overlapping batches). */}
 
 ---
 
