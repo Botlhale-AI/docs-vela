@@ -9,20 +9,20 @@ type: reference
 # Metrics
 The metrics available on your Dashboard and in Reports. Use this page to look up what a metric means. To build a dashboard or a report, see [Monitor Agent Performance](../features/monitor-agent-performance.md) and [Generate Reports](../features/custom-reporting.md).
 
-The sections below are the groups Vela itself uses, so a group heading here matches the heading you see when you select **Customise** on the Dashboard or **Add New Metric** in a report. The Dashboard and the report form order the groups differently, so use the headings rather than the position.
+The sections below are the groups Vela itself uses, so a group heading here matches the heading you see when you select **Customise** on the Dashboard or **Add New Metric** in a report.
 
 ![The Alert Metrics group on the Dashboard, with the Total Number Of Alerts and Resolved Alerts Distribution cards](../../img/screenshots/dashboard/dashboard06.png)
 
 Each card carries the metric name at the top, and the note beneath it says which interactions the figure covers.
 
 :::note Availability varies
-The exact metrics available to you depend on your organisation's configuration and your plan. If a metric does not appear in your list, it may not apply to your setup.
+The exact metrics available to you depend on your organisation's configuration and your plan. If a metric does not appear in your list, see [If a Metric Is Missing](#if-a-metric-is-missing).
 :::
 
 :::note Two names for the same metric
-This page uses the names on your Dashboard cards. **Customise** names several of them differently: **Total Number of Agents** is **No. Agents** there, and **Average Team Scores (%)** is **Team Scores Distribution**.
+{/* ENGINEERING (product request, 2026-10-08 reviewer feedback): Customise and Reports name several metrics differently from their Dashboard card (No. Agents / Total Number of Agents, Team Scores Distribution / Average Team Scores (%), Interactions Distribution by Review Status / Reviewed Interactions Distribution, and the Reviewed ... Distribution metrics whose cards read Average ... (%)). The names are database-sourced. Reviewer asks for one name per metric across Dashboard, Customise and Reports, so this note can be removed. */}
 
-The group headings are the same on both screens, so find the group first and the metric is in it.
+Some metrics are named differently in **Customise** and Reports from their Dashboard card. Where they differ, the metric's row gives both names.
 :::
 
 ![The Customise Dashboard modal, listing metrics under their group headings with the shorter names](../../img/screenshots/dashboard/dashboard05.png)
@@ -33,19 +33,21 @@ The group headings are the same on both screens, so find the group first and the
 
 ## Quality & Performance
 
-![The Quality and Performance group, with the Average Agent Scores and Distribution Of Calls By Total RAG Scores cards](../../img/screenshots/dashboard/use_dashboard1.png)
+![Two Quality and Performance cards: Average Agent Scores, listing each agent's mean score highest first, and Distribution Of Calls By Total RAG Scores, counting calls in the Red, Amber and Green bands](../../img/screenshots/dashboard/quality-performance.png)
+
+{/* Replaced 2026-10-08 (reviewer feedback): the old use_dashboard1.png showed test data, including a row "6." for an agent saved with a blank name. New capture from FeatureTesting (the same two cards), cropped. Khaya and Khaya Madlala are the user's own accounts and are shown unmasked by their choice (2026-10-08). */}
 
 | Metric | What it measures |
 | :--- | :--- |
 | **Average Agent Score (%)** | The mean overall score across evaluated interactions, as one figure |
 | **Average Agent Scores (%)** | The same mean, broken down per agent and listed highest first |
-| **Average Agent Compliance Score** | The mean score across scorecard items marked as compliance items |
-| **Average Agent Quality Score** | The mean score across scorecard items not marked as compliance |
+| **Average Agent Compliance Score** | The mean score across scorecard questions marked as **Compliance Question** |
+| **Average Agent Quality Score** | The mean score across scorecard questions not marked as **Compliance Question** |
 | **Distribution of Total Scores** | How many calls fall into each score range, from 0-10% up to 90-100%. It counts calls, not agents. **Customise** lists it as **Interaction Distribution by Agent Score** |
-| **Distribution of Compliance Scores** | The same ranges, counting compliance items only |
-| **Distribution of Quality Scores** | The same ranges, counting quality items only |
-| **Agent Compliance Scores Distribution** | Despite the name, the mean compliance score for each agent, listed highest first. Its card is titled **Average Agent Compliance Scores (%)** |
-| **Average Team Scores (%)** | The mean score for each team, listed highest first |
+| **Distribution of Compliance Scores** | How many calls fall into each compliance score range, from 0-10% up to 90-100%, counting Compliance Questions only |
+| **Distribution of Quality Scores** | How many calls fall into each quality score range, from 0-10% up to 90-100%, counting questions not marked as Compliance Question |
+| **Agent Compliance Scores Distribution** | The mean compliance score for each agent, listed highest first. Its card is titled **Average Agent Compliance Scores (%)** |
+| **Average Team Scores (%)** | The mean score for each team, listed highest first. **Customise** lists it as **Team Scores Distribution** |
 | **Average Team Compliance Scores (%)** | The mean compliance score for each team |
 | **Average Team Quality Scores (%)** | The mean quality score for each team |
 | **Distribution of Calls by Total RAG Scores** | Calls grouped into Red, Amber, and Green, using your organisation's boundaries |
@@ -60,9 +62,9 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Total Number of Calls** | Number of call interactions in the selected period |
-| **Total Number of Chats** | Number of chat interactions in the selected period |
-| **Total Call Duration** | Combined length of all calls in the period |
+| **Total Number of Calls** | Number of call interactions in the selected date range |
+| **Total Number of Chats** | Number of chat interactions in the selected date range |
+| **Total Call Duration** | Combined length of all calls in the selected date range |
 | **Average Call Handle Time (s)** | Average length of a call |
 | **Average Silent Time (%)** | Average silence within interactions |
 | **Average Chat Response Time (s)** | Average time an agent takes to respond in a chat |
@@ -80,11 +82,11 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Total Number of Agents** | Number of agents with interactions in the period |
+| **Total Number of Agents** | Number of agents with interactions in the selected date range. **Customise** lists it as **No. Agents** |
 | **Agent Distribution in Interactions** | How interactions are spread across agents |
 | **Interactions Distribution by Reviewer** | Which team members are completing reviews |
 
-**What to look for:** an uneven Agent Distribution can mean workload is unbalanced, or that some agents joined part-way through the period.
+**What to look for:** an uneven Agent Distribution can mean workload is unbalanced, or that some agents joined part-way through the date range.
 
 ---
 
@@ -96,13 +98,13 @@ An administrator sets the score boundaries. See [Organisation Configuration](../
 | **Percentage of Interactions Reviewed** | Reviewed interactions as a proportion of the total |
 | **Reviewed Interactions Distribution** | Reviewed against not yet reviewed, as a proportion. **Customise** lists it as **Interactions Distribution by Review Status** |
 | **Reviewed Agent Scores Distribution** | The mean score for each agent across reviewed interactions only, listed highest first. Its card is titled **Average Agent Scores (%)**, the same as the card for all interactions, so check which group it sits in |
-| **Reviewed Compliance Scores Distribution** | Compliance score spread, reviewed interactions only |
-| **Reviewed Quality Scores Distribution** | Quality score spread, reviewed interactions only |
+| **Reviewed Compliance Scores Distribution** | The mean compliance score for each agent across reviewed interactions only. Its card is titled **Average Agent Compliance Scores (%)** |
+| **Reviewed Quality Scores Distribution** | The mean quality score for each agent across reviewed interactions only. Its card is titled **Average Agent Quality Scores (%)** |
 | **Reviewed Team Scores Distribution** | The mean score for each team across reviewed interactions only. Its card is titled **Average Team Scores (%)**, the same as the card for all interactions |
 
 Reviewed metrics count only what a person has marked with **Mark as Reviewed**, so they stay at zero until your team starts using it. See [Review and Score Interactions](../features/quality-assurance-tools.md).
 
-**What to look for:** a large gap between reviewed and unreviewed score distributions can mean reviewers are picking interactions unevenly, for example by only reviewing flagged calls.
+**What to look for:** a large gap between the reviewed scores and the same scores for all interactions can mean reviewers are picking interactions unevenly, for example by only reviewing flagged calls.
 
 ---
 
@@ -126,14 +128,16 @@ Reviewed metrics count only what a person has marked with **Mark as Reviewed**, 
 | **Top 10 Topics (Organisational)** | Most frequent topics from your own configured list |
 | **Bottom 10 Topics in Interactions (Detected)** | Least frequent AI-identified topics |
 | **Bottom 10 Topics (Organisational)** | Least frequent topics from your configured list |
-| **Top 10 Pain Points in Interactions (Detected)** | The most frequently occurring customer pain points |
-| **Bottom 10 Pain Points in Interactions (Detected)** | The least frequently occurring pain points |
-| **Total Number of Pain Points** | Number of distinct pain points detected in the period |
+| **Top 10 Pain Points in Interactions (Detected)** | The most frequent customer pain points identified by the AI |
+| **Bottom 10 Pain Points in Interactions (Detected)** | The least frequent customer pain points identified by the AI |
+| **Total Number of Pain Points** | Number of distinct pain points detected in the selected date range |
 | **Pain Point Distribution in Interactions** | Proportion of interactions by pain point |
 
 The AI finds detected topics. Your team creates organisational ones.
 
-{/* UNVERIFIED: in vela origin/vela-fly and origin/main (dashboard.js 364-382 and 658-720, reports/generate.js 372-390), the (Organisational) and (Detected) topic metrics call the same getTopAndBottomTopics on one $topic field, and every card is titled "Top 10 topics in interactions (detected)", so the two may return the same data. Plain Top 10 Topics and Bottom 10 Topics have no handler. Needs engineering to confirm which is intended, and a screen. Found 2026-10-07. */} See the [Glossary](./glossary.md), and [Manage Smart Search Terms](../topics-and-terms-guide.md) for how to add your own.
+{/* ENGINEERING (known bug, documented as intended): in Reports, Bottom 10 Pain Points in Interactions (Detected) shows the top 10, because vela origin/vela-fly reports/generate.js:397-400 passes "top". The Dashboard is correct. */}
+
+{/* ENGINEERING (known bug, documented as intended): in vela origin/vela-fly and origin/main (dashboard.js 364-382 and 658-720, reports/generate.js 372-390), the (Organisational) and (Detected) topic metrics call the same getTopAndBottomTopics on one $topic field, and every card is titled "Top 10 topics in <interactions> (detected)" or "Bottom 10 topics in <interactions> (detected)" (dashboard.js:701, 712), so the two may return the same data. Plain Top 10 Topics and Bottom 10 Topics have no handler. Needs engineering to confirm which is intended, and a screen. Found 2026-10-07. */} See the [Glossary](./glossary.md), and [Manage Smart Search Terms](../topics-and-terms-guide.md) for how to add your own.
 
 ---
 
@@ -141,10 +145,10 @@ The AI finds detected topics. Your team creates organisational ones.
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Total Number of Keywords** | Number of distinct keywords detected in the period |
+| **Total Number of Keywords** | Number of distinct keywords detected in the selected date range |
 | **Keyword Distribution** | Proportion of interactions by keyword |
 | **Intent Distribution in Interactions** | Proportion of interactions by customer intent |
-| **Total Number of Languages** | Number of distinct languages detected in the period |
+| **Total Number of Languages** | Number of distinct languages detected in the selected date range |
 | **Language Distribution in Interactions** | Proportion of interactions by language |
 
 Keywords only count where your team has added them. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
@@ -157,10 +161,10 @@ Keywords only count where your team has added them. See [Manage Smart Search Ter
 
 | Metric | What it measures |
 | :--- | :--- |
-| **Total Number of Alerts** | Number of Smart Search matches raised in the period |
-| **Total Number of Resolved Alerts** | How many of the alerts raised in the period have been marked resolved |
+| **Total Number of Alerts** | Number of Smart Search matches raised in the selected date range |
+| **Total Number of Resolved Alerts** | How many of the alerts raised in the selected date range have been marked resolved |
 | **Alert Distribution in Interactions** | Which Smart Searches raised the alerts, and how many each accounts for |
-| **Resolved Alerts Distribution** | Resolved against unresolved alerts in the period |
+| **Resolved Alerts Distribution** | Resolved against unresolved alerts in the selected date range |
 | **Distribution of Interactions by Number of Alerts** | How interactions are spread across the number of alerts they raised |
 
 **What to look for:** a growing unresolved count means alerts are arriving faster than the team can work through them. Either the searches are too broad, or there is not enough review time. See [Smart Search](../smart-search-guide.md).

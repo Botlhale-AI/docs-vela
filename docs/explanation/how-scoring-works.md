@@ -14,6 +14,14 @@ import scoresBlock from '@site/img/screenshots/calls/call-details-scores.png';
 
 This page explains the thinking behind Vela's scoring, so you can interpret the numbers and decide how much weight to put on them. For step-by-step instructions, see [Review and Score Interactions](../features/quality-assurance-tools.md) and [Scorecard Fields](../reference/scorecard-fields.md).
 
+:::tip In short
+By the end you will have seen that a score is the weight the agent earned as a percentage of the total applicable weight, and the three rules that decide how to read it.
+
+1. A question marked **N/A** [drops out of the score](#when-a-question-does-not-apply), so it neither helps nor hurts the agent.
+2. An auto-failed interaction [reads **0.0%**](#auto-fail-shows-as-zero-with-the-earned-score-kept-beside-it), with the score it would otherwise have had in brackets.
+3. After you change a weight, **Auto-Fail**, or **Compliance Question**, [past scores mix old and new settings](#changing-a-weight-auto-fail-or-compliance-question), so compare the period before the change with the period after.
+:::
+
 ---
 
 ## Every interaction is scored
@@ -34,7 +42,7 @@ Three key consequences follow:
 
 **Questions marked N/A disappear entirely.** They are removed from both totals, not counted as failures. An interaction where half the scorecard did not apply is scored on the half that did, and is directly comparable to one where everything applied.
 
-**Adding a question changes every future score**, because it adds to the total weight each score is measured against. Scores before and after a scorecard change are not strictly comparable, so note the date of each change yourself. Vela has no scorecard history to read back, so nothing in the product tells you what a setting was before you changed it.
+**Adding a question changes every future score**, because it adds to the total weight each score is measured against. Scores before and after a scorecard change are not strictly comparable, so keep your own record of each change: the date, the question, and the setting before and after.
 
 Every question on an interaction takes one of four paths, and between them they explain why one call scores 75% and another reads zero:
 
@@ -74,8 +82,8 @@ Not every question fits every call. "Was the transfer handled correctly?" only m
 
 Whether the AI can use N/A comes down to the question's **Always Applicable** setting:
 
-- **No** (the default): the AI may answer Yes, No, or N/A. For it to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply. That is the same result as setting Always Applicable to Yes.
-- **Yes**: only Yes or No are available. Use it for behaviour expected on every call. On a call where the question does not apply, the agent gets a No. Interactions scored before this rule was enforced can still show N/A on such a question. {/* UNVERIFIED: enforced only on vela-data origin/dev-hold (lib/inference/checklistAnswer.js, #167, 2026-08-23). On origin/main it is a prompt hint and an AI "n/a" still drops the question out. Depends on which vela-data branch is live. Same claim in agent-scorecard-guide.md, scorecard-fields.md, and annotatedForms.js. */}
+- **No** (the default): for a question that applies only sometimes, such as handling a complaint. The AI may answer Yes, No, or N/A, and an N/A question drops out of the score. For the AI to choose N/A, the question has to say when it applies, for example *"If the call was transferred, did the agent introduce the receiving department?"* Without that wording, the AI often answers No on calls where the question does not apply. That is the same result as setting Always Applicable to Yes.
+- **Yes**: for a question that applies to every interaction, such as a greeting. Only Yes or No are available, so on an interaction where the question does not apply, the agent gets a No. {/* ENGINEERING (known bug, documented as intended): enforced only on vela-data origin/dev-hold (lib/inference/checklistAnswer.js, #167, 2026-08-23). On origin/main it is a prompt hint and an AI "n/a" still drops the question out. Depends on which vela-data branch is live. Same claim in agent-scorecard-guide.md, scorecard-fields.md, and annotatedForms.js. */}
 
 For questions the AI cannot answer from the transcript, two settings help:
 
@@ -110,14 +118,15 @@ Some scores are worked out each time you open the screen that shows them, using 
 - **Use the new settings straight away:**
   - In the Call Details panel: the **Compliance Score**, **Quality Score**, the three **Initial** scores, and whether the interaction shows as auto-failed.
   - The **Agent Scorecard** table on an agent's **Agents → Performance → Details** page.
+  - Where your organisation uses Coaching, the **Coaching Dashboard**, and the scores each evaluation cycle checks against a course's range.
 - **Keep the old settings:**
   - In the Call Details panel: the **Agent Score**.
-  - The score on the Interactions list, the Dashboard, and the table on **Agents → Performance**.
+  - The score on the Interactions list, the Vela **Dashboard**, and the table on **Agents → Performance**.
 
 A saved score switches to the new settings when that interaction is scored again. That happens in three cases: a reviewer changes an answer on it, its agent is reassigned, or a new question created with Historical Search runs on it.
 
 :::warning Past scores mix old and new settings
-After you change one of these settings, the Dashboard and the table on **Agents → Performance** keep using the old settings for past interactions. On a single interaction, the **Agent Score** uses the old settings while the **Compliance Score** and **Quality Score** beside it use the new ones, so the three can disagree. An agent's **Details** page also uses the new settings, so it can disagree with the **Agents → Performance** table you opened it from.
+After you change one of these settings, the two groups above can disagree for the same interactions and dates, even within one interaction's Call Details panel.
 
 Make these changes on purpose, note the date of each change, and compare the period before the change with the period after it, rather than reading your whole history as one measurement.
 :::
@@ -143,15 +152,13 @@ An auto-failed interaction reads **0.0%**, with the score the agent would have h
 
 Both numbers are there on purpose. The zero is the verdict: this interaction failed, whatever else went well. The bracketed figure is the detail you coach on, which is why Vela keeps it. Two auto-failed calls, one reading `0.0% (30%)` and one reading `0.0% (90%)`, need very different conversations. The first agent is struggling broadly. The second did good work and missed one critical step, which is usually a memory or process problem rather than a capability one.
 
-Read the bracketed number alongside the zero. An agent with a row of zeros may be doing well on everything except one critical step.
-
 This is the notation on a single interaction. The **Agents → Performance** table uses the same rule across many interactions together: see [Monitor Agent Performance](../features/monitor-agent-performance.md#a-find-the-agent) for what a bracketed figure means there.
 
 The same applies to the compliance and quality subtotals. Each can be auto-failed on its own, and each has its own pair of figures, which is why **Compliance Score** and **Quality Score** in the Call Details panel can read zero independently of one another.
 
 ## Compliance and quality are two views of one scorecard
 
-There are not two scorecards. Each question is either marked as a compliance item or it is not, and Vela calculates the same weighted percentage twice: once across the compliance questions, once across the rest.
+There are not two scorecards. Each question is either marked as a **Compliance Question** or it is not, and Vela calculates the same weighted percentage twice: once across the compliance questions, once across the rest.
 
 One set of answers therefore produces six figures in the Call Details panel:
 
@@ -159,14 +166,16 @@ One set of answers therefore produces six figures in the Call Details panel:
   src={scoresBlock}
   alt="The Scores block from the Call Details panel: Agent Score and Initial Score, Compliance Score and Initial Compliance Score, Quality Score and Initial Quality Score, each shown as a percentage or a dash"
   points={[
-    { x: 43, y: 31, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means the score is 0% or there is no score.' },
-    { x: 49, y: 31, title: 'Initial Score', body: "The Agent Score worked out from the AI's own answers, before any reviewer override. It uses your current settings, so only the answers are the AI's. A dash means the score is 0% or there is no score." },
-    { x: 43, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance Question. A dash means either no question on this interaction is marked Compliance Question, or the score is 0%. Check the Scorecard tab to tell which.' },
-    { x: 49, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
-    { x: 43, y: 85, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance Question. As with Compliance Score, a dash means either there are no such questions or the score is 0%.' },
-    { x: 49, y: 85, title: 'Initial Quality Score', body: 'The Quality Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means the score is 0% or there is no score.' },
+    { x: 43, y: 31, title: 'Agent Score', body: 'The weighted percentage across every applicable question. It is saved when the interaction is scored, so after a scorecard change it can differ from the scores below it. A dash means there is no score.' },
+    { x: 49, y: 31, title: 'Initial Score', body: "The Agent Score worked out from the AI's own answers, without any changes from a reviewer. It uses your current settings, so only the answers are the AI's. A dash means there is no score." },
+    { x: 43, y: 58, title: 'Compliance Score', body: 'The same calculation run over only the questions marked Compliance Question. A dash means no question on this interaction is marked Compliance Question, or every one is N/A.' },
+    { x: 49, y: 58, title: 'Initial Compliance Score', body: 'The Compliance Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means there is no score.' },
+    { x: 43, y: 85, title: 'Quality Score', body: 'The same calculation over every question not marked Compliance Question. A dash means there are no such questions, or every one is N/A.' },
+    { x: 49, y: 85, title: 'Initial Quality Score', body: 'The Quality Score from the AI\'s own answers, without any changes from a reviewer, and worked out with your current settings. A dash means there is no score.' },
   ]}
 />
+
+{/* ENGINEERING (known bug, documented as intended): vela origin/vela-fly app/(pages)/interactions/calls/[id]/callDetails.jsx:431-503 renders each of the six scores only when truthy (score ? <AgentScore/> : "-"), so a score of exactly 0% reads as a dash, the same as no score. Intended: 0% reads 0.0%. Same decision as the coaching N/A-at-0% scores (2026-10-08). The Scorecard Calculator shows the intended 0.0%. */}
 
 The split exists because the two behave differently in practice. Compliance is usually binary and non-negotiable, and a dip matters immediately. Quality is a gradient you improve over months. Averaging them into a single figure hides both signals, since a compliance failure can be masked by strong quality work.
 
@@ -219,7 +228,7 @@ Vela produces a percentage. It does not decide what counts as good.
 
 Your administrator sets the **Lower Bound** and **Upper Bound**, which divide scores into Red, Amber, and Green. They start at 50 and 80. Every colour on a score, and every category listed as a strength or weakness, comes from these two numbers. See [Organisation Configuration](../settings-config/organisation-configuration.md).
 
-Set them against your own standards and history. A boundary borrowed from another contact centre was drawn against different questions, so the same percentage does not mean the same thing there as it does here.
+Set them against your own standards and history, so the colours reflect what good looks like on your own scorecard.
 
 ---
 

@@ -58,6 +58,8 @@ Once a search has two or more Search Filter rows, a **Show results when** settin
 
 With phrases and a single Search Filter row, the setting does not appear, and an interaction has to match both.
 
+{/* ENGINEERING (known bug, documented as intended): on vela-data origin/main (app/api/notifications/route.js:331-338) a phrase non-match is not counted, so a filter match alone raises the alert. Fixed on origin/dev-hold by 597551b (lib/inference/query.js:208-211). Documented as on dev-hold, user decision 2026-10-08. */}
+
 The edit form labels the same two options **All of the filters are matched** and **Some of the filters are matched**. They behave identically, so recognise either.
 
 ## Search Settings
@@ -66,7 +68,7 @@ The edit form labels the same two options **All of the filters are matched** and
 | :--- | :--- | :--- |
 | **Title** | Free text | The search name |
 | **Description** | Free text | The purpose of the search. Vela also reads it when matching, so it shapes results |
-| **Scope** | Organisation / Department / Team | Which interactions the search applies to |
+| **Search Scope** | Entire Organisation, Entire Department, Specific Departments, or Specific Teams, as your access level allows | Which interactions the search applies to |
 | **Notifications** | On / Off | Whether a match notifies you, in-app or by email as set in Settings → Notifications |
 | **Historical Search** | On / Off | Whether the search also runs against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range** |
 | **Link to Search** | Off, or a main search | The search is only checked on interactions a chosen main search has already matched. The main search must cover at least the same scope, so an organisation-wide search can be the main search for any team |

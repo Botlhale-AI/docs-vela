@@ -35,7 +35,7 @@ flowchart TD
 
 A user sees the node they are attached to and everything beneath it, and nothing to the side. This is why two team leads looking at the same Dashboard on the same day can see different numbers.
 
-Access level is separate from [Role](#role), which controls what actions they can take. A user with the Admin role and Team access can manage users, but only sees their own team's data.
+Access level is separate from [Role](#role), which controls what actions they can take. A user with the Admin role and Team access can manage users within their team, but only sees their own team's data, and cannot change organisation settings or create departments or teams.
 
 Agents do not have an access level. They only ever see their own interactions. See [Roles and Access Levels](../settings-config/access-control.md).
 
@@ -49,21 +49,21 @@ See also [User](#user).
 
 The set of questions Vela evaluates every interaction against. Each question has a category and a weight, and the results combine into the agent's score.
 
-In the Smart Detector sidebar this appears as "Agents Scorecard" (plural). This documentation uses the singular "Agent Scorecard" for the feature, and the plural in navigation steps, so that what you select matches what you read. See [Scorecard Fields](./scorecard-fields.md).
+The Smart Detector sidebar labels it **Agents Scorecard**. See [Scorecard Fields](./scorecard-fields.md).
 
 ## Alert
 
-A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). Each alert links back to the interaction and to the search that raised it. Select **Resolve** on an alert once you have reviewed it. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
+A match raised when a processed interaction triggers one of your [Smart Searches](#smart-search). A [Smart Question](#smart-question) set to alert on an answer also raises one. Each alert links back to the interaction and to the Smart Search or Smart Question that raised it. Once you have reviewed a Smart Search alert, select **Resolve** on its row in the interaction's **Alerts** tab. This is separate from **Mark as Resolved** on a comment and **Mark as Reviewed** on the interaction.
 
-Alerts appear in the **Alerts** tab under Notifications, and the **Total Number of Alerts** metric counts them.
+Alerts appear in the **Alerts** tab under Notifications. The **Total Number of Alerts** metric counts Smart Search matches.
 
 ## Auto-Fail
 
 A setting on a scorecard question. When it is on, failing that question flags the whole interaction as auto-failed. The interaction then reads 0.0%, and the auto-fail is recorded next to the score, with the score it would otherwise have had in brackets. You can see both that a critical requirement was missed and how the interaction scored otherwise. See [How Scoring Works](../explanation/how-scoring-works.md).
 
-## Compliance Item
+## Compliance Question
 
-A scorecard question marked as a compliance check rather than a quality one. Vela scores compliance items separately, which produces the **Average Agent Compliance Score** alongside the quality score.
+A scorecard question with the **Compliance Question** setting on, marking it as a compliance check rather than a quality one. Vela scores these questions separately, which produces the **Average Agent Compliance Score** alongside the quality score.
 
 ## Department
 
@@ -76,9 +76,9 @@ Two sources for topics, intents, and pain points:
 - **Detected**: found automatically by the AI in your interactions
 - **Created Search**: added manually by your team, under each page's own **Created Search Topics**, **Created Search Intents**, or **Created Search Pain Points** heading
 
-Dashboard and report metrics label Created Search items **(Organisational)** instead, so the two names describe the same source on two different screens. {/* UNVERIFIED: the (Organisational) and (Detected) topic metrics may return the same data. See the marker in metrics.md, Topics & Pain Points. */}
+On the Dashboard and in Reports, topic metrics call your created topics **(Organisational)**. {/* ENGINEERING (known bug, documented as intended): the (Organisational) and (Detected) topic metrics may return the same data. See the marker in metrics.md, Topics & Pain Points. */}
 
-This lets you separate what the AI found from what you told it to look for.
+The two sources let you separate what the AI found from what you told it to look for.
 
 Keywords have one source. Vela does not detect them automatically, so a keyword matches only where your team has added it.
 
@@ -112,11 +112,11 @@ Once added, a keyword can be used as a Smart Search filter, and it appears in th
 
 ## Knowledge Base
 
-A store of your organisation's documents, such as policies, scripts, and procedures. You upload them as PDF files. When you link a Knowledge Base document to a Smart Search or a scorecard question, the AI uses its content as reference when it evaluates interactions. See [Knowledge Base](../knowledge-base-guide.md).
+A store of your organisation's documents, such as policies, scripts, and procedures. You upload them as PDF files. When you link a Knowledge Base document to a Smart Search, a Smart Question, or a scorecard question, the AI uses its content as reference when it evaluates interactions. See [Knowledge Base](../knowledge-base-guide.md).
 
 ## Lite
 
-A Vela version with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics drop everything that depends on them. That means alerts, keywords, intents, and pain points are gone. Interaction volume, duration, review progress, team workload, language, customer sentiment, topics, and agent scores are all still included.
+A Vela version with a reduced feature set. Smart Search and Smart Questions are unavailable on Lite, so the **Alerts** tab under Notifications and the **Alerts** column on the Interactions list do not appear. Dashboard and report metrics drop everything that depends on them. That means alerts, keywords, intents, and pain points are gone.
 
 If a feature this documentation describes is missing from your sidebar, your version is the first thing to check. Your Account Manager can tell you which one your organisation has.
 
@@ -130,7 +130,7 @@ Automatic masking of sensitive information in transcripts. Administrators choose
 
 **NRP** covers nationality, religion, and political group. Settings shows only the abbreviation.
 
-Once an administrator has configured redaction, the masked version is what everyone sees by default, administrators included. Administrators, and users granted **View Redactions** (as a standing permission or for one specific interaction), can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. See [Access Requests](../settings-config/access-requests-audits.md).
+Once an administrator has configured redaction, the masked version is what everyone sees by default, administrators included. Administrators, users granted **View Redactions**, and users with an approved request for one interaction can reveal the unmasked version on demand with **Review Redacted Info**. Other users can request access to a specific interaction, which an administrator approves or declines. {/* UNVERIFIED: the standing View Redactions grant is never read on vela origin/vela-fly (calls/[id]/page.jsx 198-205, chats/[id]/page.jsx 196) or origin/main (193-196): profile.organisations entries are objects, so the comparison never matches. Per-interaction access through an approved request works (call.redactedAccess). Same marker as access-control.md. Raised as a product bug. */} See [Access Requests](../settings-config/access-requests-audits.md).
 
 ## Review Status
 
@@ -146,7 +146,7 @@ What kind of user someone is, and which actions they can take. There are three r
 
 When you add a user you choose **Admin** or **User**. The Agent role belongs to agent records, which are created separately and do not sign in to the main platform. See [Agent](#agent).
 
-Role is separate from [Access Level](#access-level), which controls how much data they see. The two combine: an Admin with Team access has full admin actions, but only over their own team.
+Role is separate from [Access Level](#access-level), which controls how much data they see. The two combine: an Admin with Team access manages users within their own team, but cannot change organisation settings or create departments or teams. See [Roles and Access Levels](../settings-config/access-control.md).
 
 Agents are the exception. They have no access level, because they only ever see their own interactions.
 
@@ -172,7 +172,7 @@ This is the main difference from the Agent Scorecard. See [Smart Questions](../s
 
 An automated monitor that flags interactions matching criteria you define, such as words, intents, keywords, topics, pain points, or specific agents. Each match raises an [Alert](#alert).
 
-A filter such as an intent, keyword, topic, or pain point can be set to **includes** or **excludes**. Neither can flag a required phrase the agent never said, because there is nothing in the transcript to match. Put those checks on the [Agent Scorecard](#agent-scorecard) instead. See [Smart Search](../smart-search-guide.md).
+A filter such as an intent, keyword, topic, or pain point can be set to **includes** or **excludes**. A Smart Search cannot flag a required phrase the agent never said, because there is nothing in the transcript to match. Put those checks on the [Agent Scorecard](#agent-scorecard) instead. See [Smart Search](../smart-search-guide.md).
 
 ## Tag
 
@@ -190,13 +190,13 @@ The smallest organisational grouping. Teams belong to departments. You assign ag
 
 ## Topic
 
-A theme identified across conversations. The AI can detect topics, or your organisation can create them. The Top 10 and Bottom 10 Topics metrics report on them.
+A theme identified across conversations. The AI can detect topics, or your organisation can create them. The Top 10 and Bottom 10 topic metrics, such as **Top 10 Topics in Interactions (Detected)**, report on them. See [Metrics](./metrics.md).
 
 ## User
 
 Anyone who has access to Vela, including administrators. Users have a [Role](#role) and an [Access Level](#access-level).
 
-See also [Agent](#agent). Agents are the exception: where your organisation uses the Agent Portal they sign in there rather than to Vela itself. Bulk CSV import creates agents, not users.
+Agents are not users. Where your organisation uses the Agent Portal, agents sign in there rather than to Vela itself. Bulk CSV import creates agents, not users. See also [Agent](#agent).
 
 ---
 

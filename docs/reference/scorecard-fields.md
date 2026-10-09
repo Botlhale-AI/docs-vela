@@ -17,27 +17,25 @@ Every field on an Agent Scorecard question. To build a scorecard, see [Build an 
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
 | **Question** | Free text | None | The behaviour being assessed, phrased so it can be answered yes or no |
-| **Category** | Free text | None | A grouping label used to organise questions and to report strengths and weaknesses. Where your organisation has the Coaching add-on, this is also the category a course or award's score range is measured against. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) |
+| **Category** | Chosen from your organisation's list, or a new name you add | None | A grouping label used to organise questions and to report strengths and weaknesses. Where your organisation has the Coaching add-on, this is also the category a course or award's score range is measured against. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz) |
 | **Weight** | Number, 1 to 5 | 1 | How much this question contributes to the overall score, relative to other questions |
-| **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased, because a question set the wrong way round scores backwards with no warning |
-| **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets an outcome |
-| **Always Applicable** | Yes / No | No | Whether the question can be marked N/A. When No, the AI may answer N/A on interactions the question does not apply to. When Yes, only Yes or No are offered, so the question is always scored |
+| **Expected Outcome** | Yes / No | Yes | Which answer is the desired one. Set it to match how the question is phrased |
+| **Search Type** | Automatic / Manual | Automatic | Whether the AI answers the question (Automatic) or a reviewer answers it manually (Manual). A manual question stays N/A until someone sets a new outcome |
+| **Always Applicable** | Yes / No | No | Choose **Yes** for a question that applies to every interaction, such as a greeting. Choose **No** for one that applies only sometimes, such as handling a complaint. Vela then leaves it out of the score when it does not apply |
 | **Auto-Fail** | On / Off | Off | When on, failing this question auto-fails the whole interaction. It then reads 0.0%, with the score the interaction would have had without the auto-fail in brackets beside it |
-| **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance items are scored separately |
+| **Compliance Question** | On / Off | Off | Marks this as a compliance check rather than a quality one. Compliance Questions also get their own Compliance Score, alongside the overall score |
 | **Apply To** | Inbound Calls / Outbound Calls / All Calls | All Calls | Which call directions the question applies to |
-| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. The form says Enabled / Disabled. The question list and its filter show Active / Inactive |
+| **Search Status** | Enabled / Disabled | Enabled | Whether the question is evaluated against incoming interactions. The question list shows it as Active / Inactive |
 
 {/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
 
 ## Scorecard Fields
 
-These sit above the question list on the **Create** tab. Every question you add in one go gets them. After you save, each question keeps its own scope and **Interactions** setting, and you can change them on that question.
-
 | Field | Values | Default | What it does |
 | :--- | :--- | :--- | :--- |
 | **Scorecard Scope** | Entire Organisation / Specific Departments / Specific Teams | Widest your access allows | Which parts of the organisation the questions apply to. The form labels the selection below it **Apply these questions to** |
 | **Interactions** | All / Calls / Chats | All | Which interaction types the questions run against. Not to be confused with **Apply To** above, which is per question and chooses the direction rather than the type |
-| **Historical Search** | On / Off | Off | Whether the questions you are creating also run against interactions already in Vela. When on, choose **All historical calls** or a **Specific date range**. This is set at creation and cannot be added by editing afterwards |
+| **Historical Search** | On / Off | Off | Whether the questions you are creating also run against previously uploaded interactions. When on, choose **All historical calls** or a **Specific date range**. This is set at creation and cannot be added by editing afterwards |
 
 ## AI Context
 
@@ -60,7 +58,7 @@ Questions marked **N/A** are excluded from both the earned and possible totals, 
 
 The overall score is reported alongside two subtotals, each with its own auto-fail flag:
 
-- **Compliance score**: from questions marked as compliance items
+- **Compliance score**: from questions marked as **Compliance Question**
 - **Quality score**: from all remaining questions
 
 Scores are also broken down by category, which is what produces an agent's strengths and weaknesses.
@@ -75,13 +73,11 @@ On the Scorecard tab, an information icon beside a question's score shows that r
 
 ## Editing and Deleting Questions
 
-Open a question from the Agents Scorecard list to change its wording, category, weight, scope, and settings, or to delete it. **Historical Search cannot be added afterwards**, so a question that needs to cover past interactions has to be created with it enabled.
+Open a question from the Agents Scorecard list to change its wording, category, weight, scope, and settings, or to delete it. Historical Search cannot be added afterwards, so a question that needs to cover past interactions has to be created with it enabled.
 
-Deleting a question retires it from future scoring. Interactions already scored against it keep it in their total, and their scores do not change. See [How Scoring Works](../explanation/how-scoring-works.md).
+Deleting a question retires it from future scoring. Interactions already scored against it keep it on their **Scorecard** tab, with its outcome, and their scores do not change. Check the Agents Scorecard list for the questions being applied now. See [How Scoring Works](../explanation/how-scoring-works.md).
 
-**Editing a question is not the same.** A change to its **weight**, **Auto-Fail**, or **Compliance** setting reaches interactions already scored, but unevenly. The Call Details panel works out the **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings straight away. The **Agent Score**, the Interactions list, the Dashboard, and the table on **Agents → Performance** keep the old figures until that interaction is scored again. A change to **Expected Outcome** affects only answers a reviewer has changed, not past AI answers. Delete a question you want to stop using rather than setting its weight to zero. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
-
-The question also stays on the **Scorecard** tab of those interactions, with its outcome, so a reviewer can still see what the score was made of. This means a scorecard you no longer use can appear on an older interaction. That is the record of how it was scored at the time, not a sign the question is still live. Check the Agents Scorecard list for what is actually being applied now.
+Editing a question is not the same. A change to its weight, **Auto-Fail**, or **Compliance Question** setting reaches some figures straight away and others only when the interaction is next scored. A change to **Expected Outcome** affects only answers a reviewer has changed, not past AI answers. Delete a question you want to stop using rather than setting its weight to zero. See [How Scoring Works](../explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 
 ## Related
 

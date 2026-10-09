@@ -44,11 +44,11 @@ Four tools under **Smart Detector** decide what Vela does with each interaction:
 - **Agent Scorecard** scores the agent, against the questions that cover the agent's team. See [How Scoring Works](./how-scoring-works.md).
 - **Smart Search** flags an interaction that matches criteria you define, and raises an alert. See [Set Up Smart Search](../smart-search-guide.md).
 - **Smart Questions** record an answer about the conversation without scoring anyone. See [Set Up Smart Questions](../smart-questions-guide.md).
-- **Knowledge Base** does nothing on its own. Linked to a scorecard question, a Smart Search, or a Smart Question, it gives the AI your own document to judge against. See [Build Your Knowledge Base](../knowledge-base-guide.md).
+- **Knowledge Base** gives the AI your own document to judge against, once you link the document to a scorecard question, a Smart Search, or a Smart Question. See [Build Your Knowledge Base](../knowledge-base-guide.md).
 
-Each has a [scope](../reference/glossary.md#scope), the organisation, a department, or a team, which decides the interactions it applies to.
+Each has a [scope](../reference/glossary.md#scope) that decides which interactions it applies to. A scope is the organisation, a department, or a team.
 
-The term lists sit beside them. The AI detects **topics**, **intents**, and **pain points** in your interactions, and your team can add its own. **Keywords** exist only once someone adds them. The terms feed their own Dashboard metrics, and a Smart Search can use any of them as criteria. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
+Your Smart Search terms sit beside these four tools. The AI detects **topics**, **intents**, and **pain points** in your interactions, and your team can add its own. **Keywords** exist only once someone adds them. The terms feed their own Dashboard metrics, and a Smart Search can use any of them as criteria. See [Manage Smart Search Terms](../topics-and-terms-guide.md).
 
 Build the scorecard and your Smart Searches before your first upload, in the order given in [Best Practices: Setting Up](../advanced/best-practices.md#setting-up).
 
@@ -115,8 +115,8 @@ Most of Vela can be changed back. These three cannot be fully reversed, so make 
 | Decision | Why it is one-way |
 | :--- | :--- |
 | **Historical Search**, on a scorecard question, Smart Search, or Smart Question | Available only while you create it. To reach older interactions afterwards, delete a Smart Search or Smart Question and create it again with Historical Search on. For a scorecard question, see [Scoring older interactions against a new question](./how-scoring-works.md#scoring-older-interactions-against-a-new-question) |
-| **Editing a scorecard question's weight, Auto-Fail, Compliance Question, or Expected Outcome** | Changing the setting back does not restore scores that were saved under it in the meantime. A weight, Auto-Fail, or Compliance Question change reaches past interactions unevenly: some figures move at once, while the **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old settings until each interaction is scored again. An Expected Outcome change leaves past AI answers as they were. See [How Scoring Works](./how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored) |
-| **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tagging the agent only works in a new comment, and not in a reply |
+| **Editing a scorecard question's weight, Auto-Fail, Compliance Question, or Expected Outcome** | Changing the setting back does not restore scores that were saved under it in the meantime. A weight, Auto-Fail, or Compliance Question change reaches some figures at once and others when each interaction is next scored. An Expected Outcome change leaves past AI answers as they were. See [How Scoring Works](./how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored) |
+| **Posting a comment** | Comments cannot be edited or deleted. Where your organisation uses the Coaching Portal, tag the agent in a new comment, because a reply cannot carry the tag |
 
 You can add a scorecard question at any time. It adds to the total that future scores are measured against, so interactions either side of it are not scored out of the same total. Note the date you added it, or the step in the average reads as a change in performance. Unless you create it with **Historical Search** on, it applies only to interactions processed afterwards, so a question added today does not appear on last week's calls.
 
