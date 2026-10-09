@@ -12,6 +12,14 @@ import { ScorecardScopeForm, ScorecardQuestionForm } from '@site/src/components/
 
 The Agent Scorecard is the set of questions Vela scores every interaction against. Without one, interactions are transcribed and analysed but carry no score, so every figure that depends on scoring stays empty. That covers agent scores, the compliance and quality split, categories, and the strengths and weaknesses on an agent's Details page.
 
+:::tip In short
+By the end you will have a scorecard of yes/no questions that Vela scores interactions against.
+
+1. Under **Smart Detector → Agents Scorecard**, on the **Create** tab, [set what the scorecard covers](#2-set-what-the-scorecard-covers), deciding **Historical Search** before you save.
+2. [Write the questions](#3-write-the-questions), selecting **Add Question** for each further one, then **Create**.
+3. [Read the results](#4-read-the-results) on the **Results** tab to find the questions that are not working.
+:::
+
 :::note The sidebar says "Agents Scorecard"
 The sidebar and the trail at the top of the page name it in the plural. This documentation uses the singular "Agent Scorecard" for the feature itself.
 :::
@@ -24,7 +32,7 @@ You need:
 
 - **Access level:** Organisational, Departmental, or Team, covering the teams the scorecard should apply to. See [Access Level](./reference/glossary.md#access-level).
 - **The behaviours you want to measure**, written down before you start. A scorecard built at the keyboard tends to grow questions that overlap.
-- **To decide about Historical Search**, covered in step 2. Set it before you save, because it cannot be changed once the scorecard is created.
+- **A decision about Historical Search**, covered in step 2. Set it before you save, because it cannot be changed once the scorecard is created.
 
 ---
 
@@ -46,7 +54,7 @@ The settings above the question list apply to the whole scorecard. Every questio
 <ScorecardScopeForm />
 
 :::warning Historical Search cannot be added later
-Leave it off and the interactions already in Vela are not scored against these questions. An interaction that has never been scored can still be scored with **Rerun Scorecard**. For one already scored, either upload the recording again, which creates a second copy of the interaction, or reassign its agent, which rescores it against today's questions but replaces any reviewer overrides. See [Scoring older interactions against a new question](./explanation/how-scoring-works.md#scoring-older-interactions-against-a-new-question).
+Leave it off and these questions apply to interactions processed from now on. For the options afterwards, see [Scoring older interactions against a new question](./explanation/how-scoring-works.md#scoring-older-interactions-against-a-new-question).
 :::
 
 ---
@@ -63,6 +71,8 @@ Select **Add Question** for each further question, then **Create** to save. The 
 The limit is five unless your plan sets a different one. Check your allowance under **Settings → Organisations → This Org**, where **show package details** lists the **Agent Scorecard Limit**. A 0 means your plan has no custom limit, so the standard limit of five applies. Only your enabled questions count towards it. When you reach it, the **Create** tab is greyed out. To make room, disable or delete a question you no longer need, or ask your Account Manager about upgrading your plan for a higher limit.
 :::
 
+{/* ENGINEERING (known bug, documented as intended): show package details reads org.package?.checklistLimit ?? 0 (vela origin/vela-fly app/(pages)/settings/thisOrg.jsx:69), so a plan with no custom limit shows 0 while the standard limit of five applies. Intended: it shows the limit in force. */}
+
 Every field, including those this page does not cover, is listed in [Scorecard Fields](./reference/scorecard-fields.md). For how the three scores are worked out, and why compliance is reported separately, see [How Scoring Works](./explanation/how-scoring-works.md).
 
 :::note Adding a category
@@ -73,12 +83,12 @@ Every field, including those this page does not cover, is listed in [Scorecard F
 Keep the list short and meaningful. Categories are what **Take A Bow** and **Work On This** report on an agent's Details page. Grouping related questions under one category is what lets those reports show a real pattern, rather than a single question's result.
 :::
 
-### A. Writing Questions the AI Can Answer
+### Writing Questions the AI Can Answer
 
 The AI reads a transcript. A question works when its answer is visible there.
 
 * **Describe something observable.** *Did the agent state the cancellation notice period?* has an answer in the transcript. *Was the agent empathetic?* does not, and produces scores that feel arbitrary to the people receiving them.
-* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on calls where no dispute came up. The question then drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so the agent gets a No on calls where the question never applied. Interactions scored before this rule was enforced can still show N/A on such a question. {/* UNVERIFIED: see the marker in how-scoring-works.md, When a question does not apply. */}
+* **Say when the question applies**, if it does not apply to every conversation. *If the customer disputed the charge, did the agent explain the dispute process?* lets the AI answer N/A on calls where no dispute came up. The question then drops out of the score instead of counting as a failure. This only works while **Always Applicable** is **No**, which is the default. Set it to **Yes** and the AI has to answer Yes or No, so the agent gets a No on calls where the question never applied. {/* ENGINEERING (known bug, documented as intended): see the note in how-scoring-works.md, When a question does not apply. */}
 * **Keep weights relative to each other.** There is no external scale. A question weighted 5 among questions weighted 1 dominates the score, and what matters is the balance between your own questions.
 * **Use Auto-Fail sparingly.** It is for something that invalidates an interaction on its own, such as a regulatory disclosure that was never given. One failed Auto-Fail question makes the whole interaction read 0.0%, whatever else went well.
 * **Phrase the question positively.** *Did the agent verify the customer's identity?* scores more accurately than *Did the agent fail to verify the customer's identity?* Ask whether the right thing happened, and set **Expected Outcome** to **Yes**.
@@ -122,7 +132,7 @@ Reading **Passed**, **Failed**, and **N/A** together matters more than any one o
 
 A low **Calls Analysed** count against an old question points at scope or the **Interactions** setting instead: the question may not be reaching the interactions you expected. See [Check Your Work](#check-your-work).
 
-### A. The Controls Above the Table
+### The Controls Above the Table
 
 ![The controls above the Results table, with View By, Search, Export, Sort By, Filter, and Filter Calls, beside the View, Create, Results, and View examples tabs](../img/screenshots/agents_scorecard/results.png)
 
@@ -137,11 +147,9 @@ A low **Calls Analysed** count against an old question points at scope or the **
 | **Filter Calls** | Narrows which **interactions** the figures are counted from |
 | **Export** | Downloads the table |
 
-**Filter** and **Filter Calls** do different jobs. Filter changes the rows you see. Filter Calls leaves the rows alone and changes the numbers in them, because it changes which interactions were counted.
+**Filter** changes the rows you see. **Filter Calls** changes the numbers in them, and covers chats as well as calls.
 
-**Filter Calls** covers chats as well as calls, despite the name. The figures behind it are counted from every interaction that matches, so a scorecard applied to both channels is reporting on both here.
-
-Under **Filter**, narrow by category, weight, the passed, failed, and N/A counts, scope, direction, search type, Auto-Fail, and search status as **Active** or **Inactive**, or by the date a question was created. Select **Apply** to use it. **Clear dates** resets the date range on its own, and clearing the filter confirms with **Filters cleared successfully**.
+Under **Filter**, narrow by category, weight, the passed, failed, and N/A counts, scope, direction, search type, Auto-Fail, and search status as **Enabled** or **Disabled**, or by the date a question was created. Select **Apply** to use it. **Clear dates** resets the date range on its own, and **clear all fields** resets the filter, confirming with **Filters cleared successfully**.
 
 A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
 
@@ -155,13 +163,11 @@ Editing and deleting behave differently, and the difference matters:
 
 | | What happens to interactions already scored |
 | :--- | :--- |
-| **Deleting a question** | Nothing. Deleting hides the question from the list rather than removing it, so historical interactions keep its outcome and their scores do not change, in the interface and in exports alike |
-| **Editing its weight, Auto-Fail, or Compliance Question** | Unevenly. The Call Details panel recalculates their **Compliance Score**, **Quality Score**, and **Initial** figures from the new settings. Their **Agent Score**, the Dashboard, and the table on **Agents → Performance** keep the old figures until each interaction is scored again |
+| **Deleting a question** | Nothing. Historical interactions keep its outcome, and their scores do not change, in the interface and in exports alike |
+| **Editing its weight, Auto-Fail, or Compliance Question** | The Call Details panel updates their **Compliance Score**, **Quality Score**, and **Initial** figures straight away. Their **Agent Score**, the Dashboard, and the table on **Agents → Performance** take the new settings when each interaction is next scored |
 | **Editing its Expected Outcome** | Past AI answers keep the result they were given. Only answers a reviewer has changed are compared against the new setting |
 
 :::warning Editing a weight splits your history
-After an edit, older interactions carry figures worked out two ways, and on one interaction the **Agent Score** can disagree with the **Compliance Score** and **Quality Score** beside it.
-
 Change weights deliberately, note when you did it, and compare periods either side of the change rather than reading the history as one measurement. To stop using a question, delete it rather than setting its weight to zero. See [How Scoring Works](./explanation/how-scoring-works.md#changing-a-scorecard-after-interactions-are-scored).
 :::
 

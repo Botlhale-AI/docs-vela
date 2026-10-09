@@ -12,6 +12,14 @@ import { SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/
 
 Smart Search automatically monitors every processed interaction for keywords, phrases, and patterns you define. Each time a processed call or chat matches one of your searches, an alert is raised and linked directly to that interaction. This lets you focus your QA effort on the conversations that matter most rather than reviewing interactions at random.
 
+:::tip In short
+By the end you will have a Smart Search running on your interactions, and the steps to read and refine what it matches.
+
+1. Open **Smart Detector → Smart Search** and [select **New Smart Search**](#step-1-access-smart-search).
+2. [Write a clear **Description**](#step-2-define-your-search-criteria) and a few **Example Phrases**, set the **Search Scope** and **Historical Search**, then select **Create Smart Search**.
+3. Select **View** to [read the matches and sharpen the search](#step-3-review-and-refine-results). For each alert you act on, select **Resolve** on its row in the interaction's **Alerts** tab.
+:::
+
 :::info Plan availability
 Smart Search is absent on the [Lite](./reference/glossary.md#lite) version. Where it is unavailable, ask your Account Manager about upgrading your plan.
 :::
@@ -21,8 +29,8 @@ Smart Search is absent on the [Lite](./reference/glossary.md#lite) version. Wher
 ## Before You Begin
 
 - **Your access level sets how far a search can reach.** Organisational access can scope a search to the whole organisation, chosen departments, or chosen teams. Departmental access reaches its own department and the teams in it, and team access reaches one team. See [Access Level](./reference/glossary.md#access-level).
-- **Phrases need nothing set up first, but filters do.** An intent, keyword, topic, or pain point has to already exist in your organisation's lists before you can filter on it. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
-- **Your plan limits how many searches you can have**, so prioritise the searches that matter most. See [Search Management](#search-management) for what frees a place once you reach it.
+- **Set up any filter terms first.** You type example phrases straight into the form, but an intent, keyword, topic, or pain point has to already exist in your organisation's lists before you can filter on it. See [Manage Smart Search Terms](./topics-and-terms-guide.md).
+- **Your plan limits the number of searches that can be Active at once**, so prioritise the searches that matter most. Inactive searches are saved without counting towards your limit. See [Search Management](#search-management).
 
 New to this? Select **View example** on the Smart Search page to browse the ready-made example searches supplied with Vela, with their names and descriptions, before writing your own.
 
@@ -67,7 +75,7 @@ flowchart LR
 
 ### Step 2: Define Your Search Criteria
 
-The form is one page. The two views below are it scrolled, so they overlap at Link To Search and Example Phrases.
+The form is one page. The two views below show its top and bottom, and they overlap at Link To Search and Example Phrases.
 
 <SmartSearchFormTop />
 
@@ -91,7 +99,7 @@ Once interactions are processed, matches appear automatically in the search resu
 2. Select **View** next to your search to open its results. For what each panel on that page shows, see [Understanding the Results View](#understanding-the-results-view).
 3. Open a matched interaction from **Returned Interactions**. Each row links to the call or chat that triggered the match.
 4. Read the transcript alongside Vela's analysis to judge whether the match is genuine.
-5. Select **Resolve** on the alert once you have acted on it, which drops the interaction out of Returned Interactions. See [Alert Management](#alert-management).
+5. Once you have acted on the alert, select **Resolve** on its row in the interaction's **Alerts** tab. The interaction drops out of Returned Interactions. See [Alert Management](#alert-management).
 
 ![The Alerts tab on a matched interaction, listing each alert with its View, Listen, and Resolve controls](../img/screenshots/calls/detailed-alerts.png)
 
@@ -107,8 +115,12 @@ Beyond phrases, a Smart Search has a few optional ways to focus what it matches.
 
 A search can use more than one criterion at once, for example a set of phrases together with an intent or a pain point. With phrases and one Search Filter row, an interaction has to match both. Once you add a second Search Filter row, **Show results when** appears, and you set it to decide how the conditions combine:
 
-- **All of the filters are matched**: an interaction matches only when every condition matches.
-- **Some of the filters are matched**: an interaction matches when at least one condition matches.
+- **All conditions are met**: an interaction matches only when every condition matches.
+- **Some of the conditions are met**: an interaction matches when at least one condition matches.
+
+When you edit a search, the same options read **All of the filters are matched** and **Some of the filters are matched**.
+
+{/* ENGINEERING (known bug, documented as intended): on vela-data origin/main (app/api/notifications/route.js:331-338) a phrase non-match is not counted, so a filter match alone raises the alert even under All. Fixed on origin/dev-hold by 597551b (lib/inference/query.js:208-211, hasWordsClause). Documented as on dev-hold, user decision 2026-10-08. Labels: createForm.jsx:926-931 vs [id]/editForm.jsx:993-998 on vela-fly. */}
 
 For every criterion and its include, exclude, and all of / some of settings, see [Smart Search Criteria](./reference/smart-search-criteria.md).
 
@@ -184,13 +196,13 @@ Put "did the agent say it" checks on the [Agent Scorecard](./reference/scorecard
 
 Each search has its own **Notifications** setting. You can turn it on when you create the search, and change it later by editing the search. When it is on, every new match for that search raises a notification. The alert itself appears on the interaction either way.
 
-Whether that alert reaches you in-app, by email, or both depends on your preferences in **Settings → Notifications**. Matches always appear in the results view, whether notifications are on or off.
+Whether that notification reaches you in-app, by email, or both depends on your preferences in **Settings → Notifications**. Matches always appear in the results view, whether notifications are on or off.
 
 ### Alert Management
 
 Work through alerts regularly rather than letting them accumulate. An unresolved alert stays in the search's **Returned Interactions** list and its **Results** count, so a backlog hides the new ones. See [Manage Notifications](./features/notifications.md) for the review routine and where alerts appear.
 
-Resolving is what closes the loop. Open the interaction, find the alert in the **Smart Detector** section, and read it in context. Select **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
+Resolving is what closes the loop. Open the interaction, find the alert on the **Alerts** tab of the **Smart Detector** panel, and read it in context. Select **Resolve** on that row. It changes to **Resolved**, and the interaction drops out of the search's **Returned Interactions** list, which shows unresolved matches only.
 
 Three controls close three different things, and they sit close together on the detailed view. Pick by what you want to close:
 
@@ -207,7 +219,7 @@ Three controls close three different things, and they sit close together on the 
     <tr>
       <td>One alert</td>
       <td><strong>Resolve</strong></td>
-      <td>The <strong>Smart Detector</strong> section, on the alert's row</td>
+      <td>The <strong>Alerts</strong> tab of the <strong>Smart Detector</strong> panel, on the alert's row</td>
       <td><strong>Resolved</strong></td>
     </tr>
     <tr style={{backgroundColor: 'var(--ifm-table-background)'}}>
@@ -227,7 +239,7 @@ Three controls close three different things, and they sit close together on the 
 
 These three are independent of each other. Marking the interaction reviewed leaves its alerts open, and resolving a comment leaves the alert that prompted it open, so close the alert itself with **Resolve**.
 
-To clear several alerts at once, open a single search's results and select through to its returned interactions. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. Those controls belong to one search's list, so the main Interactions list and a combined view of two or more searches do not carry them.
+To clear several alerts at once, open a single search's results view and go to its **Returned Interactions** list. That list gives you a checkbox on each row and **Select All** above them, and choosing any row reveals **Resolve Selected**. {/* ENGINEERING (known bug, documented as intended): on the live screen the Returned Interactions list on a search's results view shows no row checkboxes, no Select All, and no Resolve Selected, so alerts cannot be resolved in bulk (reported by the user 2026-10-09). Cause on vela origin/vela-fly: app/(pages)/smart_detector/smart_search/results/page.jsx:516 renders <CallsPageUI searchParams={searchParams} /> without the query prop, while app/(pages)/interactions/calls/table.jsx renders SelectAll (:502-503) and the row SelectCall (:536) only when query && query.length < 2. Intended: pass the search as query so the list offers row selection and Resolve Selected. Workaround until fixed: resolve each alert from the interaction's Alerts tab. */}
 
 An unresolved alert stays visible until you act on it. Resolving it without taking action removes that reminder.
 
@@ -243,7 +255,7 @@ Select **View**, in the **Results** column of the Smart Search list, to open a s
 
 The results view has three collapsible sections.
 
-**Set the period first.** The date range sits at the top of the page, with **Quick** picks for **1h**, **6h**, **12h**, and **24h** beside it. Everything in Smart Search Details and Interaction Analytics is recalculated for the period you choose. Until you choose one, the period is the start of this month to today.
+**Set the date range first.** The date range sits at the top of the page, with **Quick** picks for **1h**, **6h**, **12h**, and **24h** beside it. Everything in Smart Search Details and Interaction Analytics is recalculated for the period you choose. Until you choose one, the period is the start of this month to today.
 
 {/* UNVERIFIED: the 12h Quick pick. vela origin/vela-fly results/page.jsx accepts only 1, 6, and 24 hours (ALLOWED_RELATIVE_HOURS), so 12h falls back to the date parameter rounded to whole days, while relative-filter.jsx still offers it. Raised with engineering. Confirm on screen before documenting the 12h behaviour. */}
 
@@ -255,7 +267,7 @@ A summary of the search across the period:
 
 - The search's **name**, **description**, date created, and **status** (Active or Inactive).
 - A **Summary**, showing the **Period Covered** and the **Total Interactions** with unresolved alerts from the search.
-- **Main Insights Highlighted**: an AI-generated summary of the matched interactions. It opens with a short overview, then a **Call Reasons** explanation of why they matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. Where too few interactions matched in the period to summarise, Vela shows **There are no insights available for this search in the selected time period** instead. That is expected on a new or narrow search rather than a fault, and widening the period usually fills it.
+- **Main Insights Highlighted**: an AI-generated summary of the interactions the search matched. It opens with a short overview, then a **Call Reasons** explanation of why they matched, then a bulleted list of the main patterns, each with the percentage of matches it applies to (for example, "Agent-Triggered Comparisons (83%)"). Use **Download Detailed Insights** to save it as a PDF. If there is not enough data in the selected period to generate insights, Vela shows **There are no insights available for this search in the selected time period**. This means there is not enough data yet, not that something has gone wrong. Widening the period usually fills it.
 
 ![The Smart Search Details panel on the Results page, with Period Covered, Total Interactions, and the Main Insights Highlighted write-up above Download Detailed Insights](../img/screenshots/smart_search/details.png)
 
@@ -277,15 +289,15 @@ Charts that break down the matched interactions with unresolved alerts:
 
 The list of matched calls and chats. Open any one to see its full transcript and AI analysis (summary, sentiment, scorecard, keywords, and more) in context. That per-interaction analysis lives on the interaction itself, not in the summaries above.
 
-Only unresolved matches appear here, so resolving an alert removes it from the list. The heading above it says what you are looking at, for example **Showing 4 interactions with unresolved alerts related to Compliance Violation Risk**.
+Only unresolved matches appear here. The heading above the list says what you are looking at, for example **Showing 4 interactions with unresolved alerts related to Compliance Violation Risk**.
 
 The controls above the list let you **Search**, **Filter**, **Sort By**, and **Export** results.
 
-:::warning Two date controls, one period once set
-The list carries a second date control, in its own toolbar. Once you set a date in either control, both use it. They differ only before anyone sets a date: the Summary covers this month so far, while the list shows every unresolved match, however old.
-
-So on first opening the page, **Total Interactions** can be lower than the list below it. Set a date in either control and the two agree.
+:::warning Two date controls, one period
+The list carries a second date control, in its own toolbar. Set a date in either control and both use it, so the Summary and the list cover the same period.
 :::
+
+{/* ENGINEERING (known bug, documented as intended): before anyone sets a date, Smart Search Details and Interaction Analytics cover this month so far, while Returned Interactions lists every unresolved match however old, so the two counts can differ. Intended: one period across the whole results view from the start. Moved from visible text 2026-10-09. */}
 
 ![The Returned Interactions panel, listing the calls with unresolved alerts for the search, with their handle time, topic, alert count, and scores](../img/screenshots/smart_search/details_3.png)
 
@@ -305,11 +317,11 @@ Selecting the match count in **Results** opens the **Interactions → Calls** li
 
 ### Trend Analysis
 
-Review match frequency over time to understand whether an issue is increasing, stable, or improving. Compare periods around known events, such as a training programme, a process change, or a new product launch, to see whether they changed the pattern.
+Widen the date range on a search's results view and read **Daily Flagged Interactions** to see whether an issue is increasing, stable, or improving. Compare periods around known events, such as a training programme, a process change, or a new product launch, to see whether they changed the pattern.
 
 On the Smart Search list, **View By** sets how much of the organisation the list covers. See [Smart Detector](./smart-detector-overview.md#what-the-tools-share).
 
-Use **Sort By** to order your searches by **Results**, highest first. **Results** counts unresolved alerts on interactions recorded since the start of this month, so it falls as you resolve alerts, and matches from earlier months do not count. This shows which searches are triggering most often this month. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
+Use **Sort By** to order your searches by **Results**, highest first. **Results** counts unresolved alerts on interactions recorded this month, so it shows which searches are triggering most often this month. A high count is worth a closer look. It may point to a widespread issue, or to a search that is too broad and needs tighter phrases.
 
 ### Action Planning
 
@@ -328,9 +340,9 @@ Use **Sort By** to order your searches by **Results**, highest first. **Results*
 |-------------|----------|-------------|
 | **Too many false positives** | Description or examples too broad | Tighten the description and use more specific examples. Review the false-positive matches to see what is triggering them |
 | **Missing expected matches** | Description or examples too vague | Add another clear example or clarify the description. Check whether the search scope covers the relevant teams |
-| **Missing matches on interactions with no team** | An interaction filed under Unspecified, for example one with no agent assigned, is checked only by organisation-wide searches. Department and team searches skip it without an error | Assign the agent to a team before uploading, or use an organisation-wide search |
+| **Missing matches on interactions with no team** | An interaction filed under Unspecified, for example one with no agent assigned, is checked by organisation-wide searches only | Assign the agent to a team before uploading, or use an organisation-wide search |
 | **No matches at all** | Search not active, scope too narrow, or Historical Search not enabled | Verify the search status is Active. Confirm the scope covers the correct teams. Recreate the search with Historical Search enabled if past calls should be included |
-| **Notifications not arriving** | Notifications not ticked on the search | Edit the search and tick **Notifications** |
+| **Notifications not arriving** | Notifications not ticked on the search, or **New Alerts Detected** not ticked in your **Settings → Notifications** | Edit the search and tick **Notifications**, then tick **New Alerts Detected** in **Settings → Notifications** |
 | **New Smart Search is greyed out** | Your organisation has reached the number of active searches its plan allows | Set a search you no longer need to **Inactive**, or delete it, to free a place. For a higher limit, ask your Account Manager about upgrading your plan |
 | **A linked search stopped matching** | Its main search was set to Inactive, so there is nothing for it to run against | Set the main search back to Active, or unlink the search |
 
@@ -344,7 +356,7 @@ Set a search to **Inactive** when it is no longer being acted upon. Alerts nobod
 
 ### Edit or Delete a Search
 
-Open a search from the Smart Search list to change its title, description, status, **Apply to** scope, example phrases, **Show results when** setting, and linked Knowledge Base document. **Historical Search cannot be added afterwards**, so a search that needs to cover past interactions has to be created with it enabled.
+Select a search's name in the Smart Search list to change its title, description, status, **Apply to** scope, example phrases, **Show results when** setting, and linked Knowledge Base document. **Historical Search cannot be added afterwards**, so a search that needs to cover past interactions has to be created with it enabled.
 
 The same view has a **Delete Search** control for searches you no longer need.
 
@@ -362,7 +374,7 @@ A saved search appears in the Smart Search list immediately. Matches do not, so 
 
 Unless you turned on **Historical Search**, the search only monitors interactions processed from the moment you saved it, so it stays at zero results until new interactions arrive.
 
-You are finished when the search's results view shows matches for the period you chose. Open one of those matches and confirm the interaction really contains what you meant to catch. Check that before trusting the count: a search that matches everything is as useless as one that never matches, and the fix for both is the phrase list rather than the scope.
+You are finished when the search's results view shows matches for the period you chose. Open one of those matches and confirm the interaction really contains what you meant to catch before you trust the count.
 
 If it stays at zero once new interactions have been processed, work through [Troubleshooting Common Issues](#troubleshooting-common-issues) above, starting with the search's status and scope.
 

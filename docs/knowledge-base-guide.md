@@ -9,6 +9,14 @@ type: how-to
 # Build Your Knowledge Base
 The Knowledge Base holds your organisation documents, so the AI can analyse interactions against your procedures and product information instead of generic wording.
 
+:::tip In short
+By the end you will have a PDF in the Knowledge Base, linked to the scorecard question, Smart Search, or Smart Question that should use it.
+
+1. [Upload your document](#step-2-upload-your-document) under **Smart Detector → Knowledge Base**, choose its scope under **Apply documents to** where your access level shows it, then select **Upload Files**.
+2. [Link the document](#step-3-link-the-document) by turning on the Knowledge Base setting in the item's own form.
+3. [Keep the Knowledge Base current](#keeping-the-knowledge-base-current) by uploading the new version when a procedure changes, then linking it in place of the old one.
+:::
+
 ---
 
 ## Before You Begin
@@ -16,14 +24,14 @@ The Knowledge Base holds your organisation documents, so the AI can analyse inte
 You need:
 
 - **Your document as a PDF.** The Knowledge Base accepts PDF only. Convert a Word or Google document before you start.
-- **To know which teams the document applies to.** Choose your document's scope carefully. Once uploaded, it cannot be changed, and selecting the wrong scope may prevent colleagues from finding the document.
-- **Somewhere to link it.** A document on its own does nothing. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
+- **To know which teams the document applies to.** Choose your document's scope carefully. Scope is set at upload and stays with the document, so include every team whose colleagues need to find it.
+- **Somewhere to link it.** Vela uses a document once you link it. Have the scorecard question, Smart Search, or Smart Question in mind that should use it, and turn on the Knowledge Base option there once the document is uploaded.
 
 ---
 
 ## What the Knowledge Base Does in Vela
 
-The Knowledge Base stores your organisation's procedures, policies, scripts, and product information as uploaded documents. On its own, a document does nothing. You link it to the feature that should use it, and Vela's AI then reads that document as reference when it evaluates an interaction.
+The Knowledge Base stores your organisation's procedures, policies, scripts, and product information as uploaded documents. You link each document to the feature that should use it, and Vela's AI then reads that document as reference when it evaluates an interaction.
 
 You can link a Knowledge Base document to:
 
@@ -40,8 +48,6 @@ flowchart LR
     L --> M("<b>Smart Search</b><br/>weighed when matching<br/>→ changes what is flagged")
     L --> Q("<b>Smart Question</b><br/>used when answering<br/>→ changes the answer")
 ```
-
-Uploading is only half of it. A document nobody has linked is the most common reason the Knowledge Base appears to have no effect.
 
 Administrators and team leads manage the Knowledge Base. Agents do not upload or manage documents.
 
@@ -61,7 +67,7 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 
    Until you choose a file, the page shows only the upload area and the Document Library. The description, scope, and upload button appear once a file is waiting.
 2. Each file you add gets a card of its own. Add a **Description** (optional) on each, saying what it covers and which teams or situations it applies to, so you can identify the document later when linking it. Select the cross on a card to remove that file before uploading.
-3. With organisational or departmental access, set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to. With team access there is nothing to set, and the documents are scoped to your team. See [Access Control](#access-control).
+3. With organisational or departmental access, set the scope under **Apply documents to**, choosing the organisation, a department, or a team. It applies to every file in the batch, and controls which users can see and use the documents. Set it to match the teams whose interactions they are relevant to. With team access, the documents are scoped to your team automatically. See [Access Control](#access-control).
 4. Select **Upload Files**.
 
 ### Step 3: Link the Document
@@ -69,9 +75,9 @@ In the left sidebar, select **Smart Detector**, then **Knowledge Base**.
 Uploading a document makes it available in the Knowledge Base, but Vela only uses it once you link it to a scorecard question, a Smart Search, or a Smart Question. The steps are the same for each. Linking to a Smart Search is shown here:
 
 1. Navigate to **Smart Detector → Smart Search**.
-2. Open or create the Smart Search you want to link the document to.
-3. In the Smart Search configuration, turn on the Knowledge Base option and select your document.
-4. Save the Smart Search.
+2. Select **New Smart Search**, or select the name of the search you want to link the document to.
+3. At the foot of the form, turn on **Use a knowledge base document to enhance this smart search** and select your document.
+4. Select **Create Smart Search** on a new search, or **Save Changes** on an existing one.
 
 ![The Knowledge Base option at the foot of the Smart Search form, reading "Use a knowledge base document to enhance this smart search"](../img/screenshots/smart_search/knowledge_base.png)
 
@@ -96,8 +102,8 @@ The table below the upload area is where you manage what is already there:
 | **Delete**, above the table | Appears once a row is ticked. Deletes everything you have ticked, after a confirmation. See [Keeping the Knowledge Base Current](#keeping-the-knowledge-base-current) before using it on a linked document |
 | The **eye** icon | Opens the document to read it without downloading |
 | **Download document** | Downloads that one document |
-| The **expand** icon | Opens a summary of that document's scope, listing the departments or teams it applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has no expand icon. Check its **Scope** column instead, which reads `organisation` |
-| **Edit filename** | Renames the document in Vela |
+| The **expand** icon, beside the scope in the **Scope** column | Opens **Document Scope**, listing the departments or teams the document applies to. Shown only on documents scoped to specific departments or teams. An organisation-wide document has none, and its **Scope** column reads `organisation` |
+| The **pencil** icon, beside the file name (**Edit filename**) | Renames the document in Vela |
 | **Delete**, on a row | Removes that one document from the Knowledge Base, after a confirmation |
 
 Renaming updates the document everywhere it is listed. Anything already linked to it stays linked, so a clearer name is safe to give at any time.
@@ -128,7 +134,7 @@ Each document is assigned a scope that determines which users can access it. Und
 | **Specific Departments** (or **Entire Department**, if your own access is departmental) | Users belonging to the department or departments you selected |
 | **Specific Teams** | Users belonging to the teams you selected |
 
-With team access, **Apply documents to** does not appear at all. Your documents are scoped to your own team automatically, so there is nothing to set. The form shows a line reading "Applying search to:" with your team's name, even though this is the Knowledge Base.
+With team access, your documents are scoped to your own team automatically, and the form shows your team's name in place of **Apply documents to**. {/* ENGINEERING (known bug, documented as intended): the team-access line reads "Applying search to:" on the Knowledge Base upload form (batchUpload.jsx:458@vela-fly). Intended: "Applying documents to:". Converted from visible text 2026-10-08. */}
 
 Set the scope to match the teams whose calls the document is relevant to. A compliance procedure that applies to the whole organisation should be scoped to **Entire Organisation**. A script specific to one team's product line should be scoped to that team.
 
@@ -142,7 +148,7 @@ Update documents when procedures change. An outdated procedure document makes th
 
 When a procedure is updated, upload the new version with a description that reflects the change and the date it took effect, so you can tell the versions apart when you link one. If the old version is no longer applicable, remove it from the Knowledge Base to prevent confusion.
 
-Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. Deleting it from its own row shows **Document is linked to a scorecard question and cannot be deleted**, even when the link is a Smart Question. The **Delete** above the table, for ticked rows, shows only **Failed to delete some documents**. It still deletes the unlinked documents in your selection and keeps the linked ones, without saying which, so check the list afterwards. To delete a linked document, relink those questions to another document or delete them first. A document linked only to a Smart Search can be deleted, which leaves that search referencing a document that is no longer there. Relink it to the replacement document rather than leaving the link inactive. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */}
+Before deleting a document, check what still points at it. Vela blocks the deletion of a document linked to a scorecard question or a Smart Question. Deleting it from its own row shows **Document is linked to a scorecard question and cannot be deleted**. {/* ENGINEERING (known bug, documented as intended): the message names a scorecard question for a Smart Question link too. Intended: the message names the kind of link. Converted from visible text 2026-10-08. */} Deleting ticked rows with **Delete** above the table removes the unlinked ones, keeps the linked ones, and shows **Failed to delete some documents**. To delete a linked document, relink those questions to another document or remove the questions first. A document linked only to a Smart Search can be deleted, so relink that search to the replacement document first. {/* UNVERIFIED: the exact match/answer behaviour of a Smart Search or Smart Question whose linked document has been deleted (general-wording fallback vs stale-embedding reuse) is not confirmed from vela or vela-data source. The KB delete route removes the document record and S3 file but does not appear to clear embeddings. Needs engineering or a live test to confirm. */} {/* ENGINEERING (known bug, documented as intended): vela origin/vela-fly knowledge_base/table.jsx:104-138, on the bulk-delete error the catch branch never calls onDelete (router.refresh() in main.jsx:51-55) and does not clear the selection, so the list keeps showing the deleted documents until the page is reloaded. Intended: the list refreshes after a partial delete. Found 2026-10-08. */}
 
 Review the documents in your Knowledge Base at least quarterly and whenever a significant policy or process change occurs, so scoring does not rest on an outdated procedure.
 
@@ -152,13 +158,13 @@ Review the documents in your Knowledge Base at least quarterly and whenever a si
 
 **The Knowledge Base document does not appear to be affecting AI scoring.**
 
-Confirm that the document has been explicitly linked to the item that should use it, whether that is a scorecard question, a Smart Search, or a Smart Question. To affect the score, it must be linked to a scorecard question. Uploading a document is only the first step. To use it, link it to the relevant item in its settings.
+Uploading a document is only the first step. To use it, link it in the settings of the item that should use it, whether that is a scorecard question, a Smart Search, or a Smart Question. Only a link to a scorecard question affects the score. See [Step 3: Link the Document](#step-3-link-the-document).
 
 **Uploaded document is not visible to certain team leads or agents.**
 
-Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon on its row to see which ones. A document scoped to **Entire Organisation** has no expand icon. Check its **Scope** column instead, which reads `organisation`. Only users within the scope shown can see the document.
+Check the document's scope. For one scoped to specific departments or teams, select the **expand** icon beside the scope in its **Scope** column to see which ones. A document scoped to **Entire Organisation** has no expand icon, and its **Scope** column reads `organisation`. Only users within the scope shown can see the document.
 
-Scope is fixed at upload. The Document Library lets you rename and delete a document, but not change its scope. To widen access, upload it again with the wider scope, relink anything that used the old copy, then delete the old one. A document still linked to a scorecard question or Smart Question cannot be deleted until you relink those questions.
+Scope is fixed at upload. The Document Library lets you rename and delete a document, but not change its scope. To widen access, upload it again with the wider scope, relink anything that used the old copy, then delete the old one. To delete a document still linked to a scorecard question or Smart Question, relink those questions to another document or remove the questions first.
 
 ---
 
@@ -176,7 +182,7 @@ To confirm it is actually in use, open the scorecard question, Smart Search, or 
 - [Review and Score Interactions](./features/quality-assurance-tools.md): review and score the interactions your documents help assess
 - [Monitor Agent Performance](./features/monitor-agent-performance.md): track how an agent's scores move over time
 - [Administrator Setup](./getting-started/quick-start/administrator-setup.md): build the Knowledge Base as part of initial configuration
-- [Security and Compliance](./security-compliance.md): where the documents you upload are held, and how they are encrypted
+- [Security and Compliance](./security-compliance.md): how the documents you upload are encrypted, and who to ask about where they are held
 
 ## Need Help?
 

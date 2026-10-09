@@ -11,7 +11,7 @@ import topicsPage from '@site/img/screenshots/smart_detector/topics-page1.png';
 
 # Manage Smart Search Terms
 
-Your Smart Search terms define what Vela looks for in your interactions. They are organised into four categories: **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list except **Keywords** combines terms Vela identifies automatically with terms you add based on your organisation's priorities. Keywords holds only the terms you add. This section explains how to review the lists and add your own terms.
+Your Smart Search terms define what Vela looks for in your interactions. They are organised into four categories, called **Topics**, **Intents**, **Keywords**, and **Pain Points**. Each list except **Keywords** combines terms Vela identifies automatically with terms you add based on your organisation's priorities. Keywords holds only the terms you add. This page explains how to review the lists and add your own terms.
 
 These terms feed the rest of Vela. They appear as criteria when you build a [Smart Search](./smart-search-guide.md), and as metrics on your Dashboard and when you [generate reports](./features/custom-reporting.md).
 
@@ -27,7 +27,7 @@ flowchart LR
 A term you create is not a search. It is an ingredient a search can use, and a figure the Dashboard can count.
 
 :::info Plan availability
-Only **Topics** is available on [Lite](./reference/glossary.md#lite). Intents, Keywords, and Pain Points need Smart Search. Where they are unavailable, ask your Account Manager about upgrading your plan.
+Intents, Keywords, and Pain Points are absent on the [Lite](./reference/glossary.md#lite) version, which offers **Topics** only. Where they are absent, ask your Account Manager about upgrading your plan.
 :::
 
 ---
@@ -37,7 +37,7 @@ Only **Topics** is available on [Lite](./reference/glossary.md#lite). Intents, K
 You need:
 
 - **Your organisation's own wording.** The terms worth adding are the ones your business uses and the ones your customers say, so have them to hand rather than inventing them at the keyboard.
-- **To know which lists your plan offers.** Only **Topics** is available on [Lite](./reference/glossary.md#lite).
+- **To know which lists your plan offers.** Only **Topics** is available on the [Lite](./reference/glossary.md#lite) version.
 - **Nothing set up first.** These lists exist from day one, and Vela fills the detected side automatically as interactions are analysed.
 
 ---
@@ -70,12 +70,12 @@ Each page is split into two sections you expand and collapse.
 Both tables show the term, **Date Created**, and **Last Detected**.
 
 :::warning The date range defaults to today
-The date control above the two sections filters both of them on **Last Detected**, and it starts on today's date. A term that was not detected today is hidden until you widen the range, so a list can look empty when it is not.
+The date control above the two sections filters both of them on **Last Detected**, and it starts on today's date, so the lists show the terms detected today. To see terms detected earlier, widen the range.
+
+{/* ENGINEERING (known bug, documented as intended): once a date range is applied, the Detected section is also filtered on first-detected date. topics/page.jsx:93-107 @vela-fly passes startDate/endDate to filterAndSortTopics, which keeps only terms whose dateCreated (detectionInfo.firstDetectedAt) falls between new Date(startDate) and new Date(endDate) (topics/topics.js:42-50; same in intents/intents.js:44-50 and pain_points/painPoints.js:47-52). new Date(endDate) is midnight, so the end day is excluded on that check. Intended: the Last Detected filter only, end date included, as topicsClient.jsx:64-70 already applies it (isBetween(start, end, "day", "[]")). Replaces the 2026-10-07 UNVERIFIED marker. Source is clear, but no screen has confirmed it. */}
 
 Select the date control, pick a start and end date, and select **Apply**. The heading above the sections tells you which range is in effect.
 :::
-
-Terms you created but that have never been detected are dated from when you added them, so they stay visible on the day you create them.
 
 ---
 
@@ -101,14 +101,14 @@ Open the **Created Search** section and select the button at the top right. Its 
 | **Keywords** | The keyword. |
 | **Pain Points** | The pain point, and a **Description**. Both are required. |
 
-Confirm your action in the modal to save, or **Close** to abandon it. The term appears in the Created section straight away.
+To save, confirm in the modal by selecting **Add Topic**, **Add Intent**, **Add Keyword**, or **Add Pain Point**. Select **Close** to cancel. The term appears in the Created section straight away.
 
 ![The Add New Pain Point modal, with the Pain Point and Description fields. It is the only one of the four lists with a second field](../img/screenshots/smart_detector/add-pain-point.png)
 
-Each term needs text. On **Pain Points**, Vela also refuses a name already in the list. On **Topics**, **Intents**, and **Keywords**, check the list first: adding a term that already exists shows a success message but adds no new row.
+Each term needs text, and must be different from the terms already in the list. A repeated term shows a message such as `Topic already exists.` {/* ENGINEERING (known bug, documented as intended): on Topics, Intents, and Keywords the duplicate check never fires. topics/create.jsx:31, intents/create.jsx:30, keywords/create.jsx:30 @vela-fly call includes(<typed string>) on the created rows, which are objects (topicsClient.jsx:163 passes createdTopics), so the check is always false. addNewTopic (smart_detector/smart_detector.js:10-47) then upserts the existing SearchTerms row, setting source "created" and resetting firstDetectedAt/lastDetectedAt to now, and returns "Successfully added a new topic." Intended: "Topic already exists." / "Intent already exists." / "Keyword already exists.", as Pain Points does (pain_points/create.jsx:47-52). */}
 
 :::tip Write terms the way people say them
-A keyword is matched against what was actually said. Terms taken from an internal process document often never appear in a conversation. Use the words and phrases your customers naturally use when describing their needs.
+A keyword is matched word for word. On a chat it is matched against the original message. On a call it is matched against the English translation wherever the speech was translated, so add keywords in English for calls in other languages. Terms taken from an internal process document often never appear in a conversation. Use the words and phrases your customers naturally use when describing their needs.
 :::
 
 ---
@@ -117,10 +117,10 @@ A keyword is matched against what was actually said. Terms taken from an interna
 
 In the **Created Search** section, each row has an **Actions** column.
 
-* **Edit**: the row becomes editable in place. Change the text and confirm, or cancel to leave it as it was. On Pain Points you can edit the description as well as the name.
+* **Edit**: the row becomes editable in place. Change the text and select the tick to confirm, or the cross to leave it as it was. On Pain Points you can edit the description as well as the name.
 * **Delete**: Vela asks you to confirm before removing the term.
 
-Detected terms have no Actions column. Vela maintains the detected list, so it is read-only. Your own list is where you add, edit, and remove terms, and a detected term you want to keep working with is added there as your own.
+Detected terms are read-only, with no Actions column. To work with a detected term, add it to your own list.
 
 ![A Created Search Topics row being edited in place, with the confirm tick and cancel cross replacing the usual actions](../img/screenshots/smart_detector/topic-edit.png)
 
@@ -130,9 +130,7 @@ Deleting a term does not change interactions that have already been analysed. It
 
 ## Check Your Work
 
-A term you added appears in the **Created Search** section straight away, dated today, so it is visible today with the default date range.
-
-For a term you created, **Last Detected** shows the date you added it and stays on that date. To see your created terms on a later day, widen the date range back to the day you added them.
+A term you added appears in the **Created Search** section straight away. Its **Last Detected** date stays on the day you added it, so on a later day, widen the date range back to that day to see it.
 
 Your term is in use when it appears as an option when you build a [Smart Search](./smart-search-guide.md).
 

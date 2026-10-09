@@ -28,7 +28,7 @@ Below the cards sit four more buttons, named **Topics**, **Intents**, **Keywords
 - **Agent Scorecard**: the evaluation criteria Vela scores every interaction against.
 - **Knowledge Base**: your own policies and procedures, used as the reference point when Vela evaluates agents.
 
-The home page also has a **Number Search** card. It gathers every interaction involving a phone number and writes a read across the whole history, which is the view to take into a call-back or a complaint. See [Search by Phone Number](./number-search-guide.md).
+The home page also has a **Number Search** card. It gathers the calls involving a phone number, within your access level, and writes an analysis of the customer's recent history, which is the view to take into a call-back or a complaint. See [Search by Phone Number](./number-search-guide.md).
 
 Smart Search, Smart Questions, Number Search, and the **Intents**, **Keywords**, and **Pain Points** buttons are absent on the [Lite](./reference/glossary.md#lite) version. Where one is absent, ask your Account Manager about upgrading your plan.
 
@@ -36,9 +36,9 @@ Smart Search, Smart Questions, Number Search, and the **Intents**, **Keywords**,
 
 ## What the Tools Share
 
-**View By** sits above the list or results on most Smart Detector screens. It sets how much of the organisation the figures cover, for example **Entire Organisation**, and it is bounded by your own access level, so it never shows you more than you are allowed to see.
+**View By** sits above the lists and results on the Agents Scorecard, Smart Search, Smart Questions, and Knowledge Base screens. It sets how much of the organisation the figures cover, for example **Entire Organisation**, and it is bounded by your own access level, so it never shows you more than you are allowed to see.
 
-It is worth checking before you read a count. A figure scoped to one team and a figure scoped to the organisation answer different questions, and nothing on the number itself says which you are looking at.
+Check it before you read a count. A figure scoped to one team and a figure scoped to the organisation answer different questions, and **View By** shows which one you are looking at.
 
 Most of these screens also carry **Search**, **Sort By**, and **Filter** above their lists, and a date range where the figures depend on a period.
 
