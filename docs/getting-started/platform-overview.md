@@ -9,7 +9,7 @@ type: explanation
 # Platform Overview
 Vela is a call centre analytics platform. It transcribes your calls, reads your chats, and scores both against your organisation's criteria. Traditional QA reviews a sample. Vela works through every interaction you upload, so you see all of your team's work, not the handful of calls someone had time to check.
 
-Vela analyses interactions after they are completed and uploaded. It works on finished calls and chats, not on calls while they are in progress.
+Vela analyses calls and chats once they are finished and uploaded, not while they are in progress.
 
 This page explains what Vela does and who uses it. When you are ready to start, jump to [Next Steps](#next-steps).
 
@@ -24,7 +24,7 @@ A few words used throughout the documentation:
 Full definitions are in the [Glossary](../reference/glossary.md).
 :::
 
-Vela runs in your browser, with nothing to install. See [System Requirements](./system-requirements.md) for supported browsers and file formats, and [Security and Compliance](../security-compliance.md) for where your recordings and transcripts are held and how they are encrypted.
+Vela runs in your browser, with nothing to install. See [System Requirements](./system-requirements.md) for supported browsers and file formats, and [Security and Compliance](../security-compliance.md) for how your recordings and transcripts are encrypted, and who to ask about where they are held.
 
 ---
 
@@ -44,9 +44,7 @@ Steps 2 and 3 run in the background after you upload, so you do not wait on the 
 
 ### Review and score every interaction
 
-Every uploaded interaction is scored against your organisation's [Agent Scorecard](../reference/scorecard-fields.md). Calls are transcribed first. Chats are already text. Applying the same questions to every interaction in scope keeps scoring consistent across the team.
-
-Calls and chats go through the same core analysis. Both are analysed for sentiment and scored against your scorecard. A few metrics apply to only one channel, since call audio can be measured in ways text chats cannot. See [Metrics](../reference/metrics.md) for the full list.
+Every uploaded interaction, call or chat, is analysed for sentiment and scored against your organisation's [Agent Scorecard](../reference/scorecard-fields.md). Applying the same questions to every interaction in scope keeps scoring consistent across the team. A few metrics apply to only one channel, since call audio can be measured in ways text chats cannot. See [Metrics](../reference/metrics.md) for the full list.
 
 ![An interaction open in the Detailed View, with the audio player and Smart Detector analysis on the left and the Call Details panel on the right](../../img/screenshots/calls/calls-3.png)
 

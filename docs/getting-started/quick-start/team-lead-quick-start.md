@@ -13,7 +13,7 @@ import customiseModal from '@site/img/screenshots/dashboard/dashboard05.png';
 import { SingleCallUploadForm } from '@site/src/components/annotatedForms';
 
 # Team Lead Quick Start
-A hands-on walkthrough for team leads and managers new to Vela. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
+A hands-on walkthrough for team leads and managers new to Vela. If you want the big picture first, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes. By the end you will have checked your dashboard, uploaded and reviewed an interaction, and left coaching feedback. Setting up automated monitoring comes next. See [Smart Search](../../smart-search-guide.md).
 
 ---
 
@@ -91,7 +91,7 @@ Signing in takes you to the **Dashboard** for the organisation you were invited 
 If you belong to more than one organisation, Vela keeps you in the one you last worked in. To move between them, use **Settings → Organisations → My Orgs**.
 
 :::note If Vela asks you to choose an organisation
-This happens when your account has no active organisation, usually because it was created without one or the one you were working in has been deactivated. Pick yours from the **Organisation** list and confirm. Vela stores the choice, so later sign-ins go straight to the Dashboard.
+Pick yours from the **Organisation** list and confirm. Vela stores the choice, so later sign-ins go straight to the Dashboard.
 
 An empty list, or the message "You are not part of the selected organization", means your account has not been added to an organisation yet. Ask your administrator.
 :::
@@ -152,7 +152,7 @@ Select **Customise** to choose which metrics appear and how each is charted, the
   ]}
 />
 
-The selected metrics show what is on your dashboard now. To add one, select **Add New Metric** below the list. Two controls appear, to pick the metric and its view. **Add Metric** confirms it, and **Cancel** clears the pair and closes them again.
+The list in the modal shows what is on your dashboard now. To add a metric, select **Add New Metric** below the list, pick the metric and its view in the two controls that appear, and select **Add Metric**. **Cancel** clears both controls and closes them. Then select **Save Changes**.
 
 **Try it now:** Add **Top 10 Topics in Interactions (Detected)** to your dashboard to see what your customers raise most often.
 
@@ -201,11 +201,11 @@ After reviewing the analysis, add your own observations:
 
 1. Select **View Comments** on the interaction to open the panel.
 2. Write specific feedback with clear next steps in the comment box.
-3. **Tag the agent** with @ so the comment is shared with them. Type `@` and select **@agent** from the list that appears. The agent's own name is not in that list, only the **@agent** option. The agent is not notified, and sees the comment when they open the interaction in their Agent Portal. Where your organisation shows agents reviewed interactions only, they can open it once you mark it as reviewed. An untagged comment stays visible to team leads only. Tagging the agent needs the Coaching Portal enabled on your organisation. Without it there is no Agent Portal, and the `@agent` option does not appear.
+3. **Tag the agent** so the comment is shared with them. Type `@` and select **@agent** from the list. The list also offers your colleagues by name, but not the agent's own name. The agent is not notified, and sees the comment when they open the interaction in their Agent Portal. An untagged comment stays visible to team leads only. Tagging needs the Coaching Portal enabled on your organisation.
 4. Select **Send** to post it. A comment cannot be edited or deleted afterwards, so read it back first.
 
-:::note Tagging the agent only works in new comments
-You cannot tag an agent in a reply to an existing comment. If you need to bring an agent into a thread, add a new comment rather than replying.
+:::note Tag the agent in a new comment
+Agent mentions work in new comments. To bring an agent into a thread, add a new comment and tag them there.
 :::
 
 ![The Comments panel with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../../img/screenshots/settings/@agent.png)
@@ -220,11 +220,11 @@ Great job handling this difficult customer, @agent! I liked how you stayed calm 
 - **Balance positive and constructive**: Acknowledge strengths, suggest improvements
 :::
 
-### E. Override a Scorecard Item
+### E. Override a Scorecard Answer
 
-The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. The Call Details panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** next to the scores your override produced. They show the AI's original answers, scored with today's question settings.
+The scorecard shows the AI's outcome on each question. If you disagree with one, override it with your own Yes, No, or N/A, and the score recalculates. The Call Details panel keeps **Initial Score**, **Initial Compliance Score**, and **Initial Quality Score** next to the scores your override produced. They show the AI's original answers, scored with your current question settings.
 
-Override an item when the AI missed context, a required phrase was said in different words, or the situation needed human judgement. For the full step-by-step, see [Review and Score Interactions](../../features/quality-assurance-tools.md#a-complete-a-manual-scorecard).
+Override an answer when the AI missed context, a required phrase was said in different words, or the situation needed human judgement. For the full step-by-step, see [Review and Score Interactions](../../features/quality-assurance-tools.md#a-score-or-override-the-scorecard).
 
 ---
 

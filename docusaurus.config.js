@@ -52,6 +52,11 @@ const config = {
       require.resolve('@docusaurus/plugin-client-redirects'),
       {
         redirects: [
+          // Template pages from the original Docusaurus scaffold, still in the live sitemap
+          {
+            from: ['/blog', '/blog/archive', '/blog/authors', '/blog/first-blog-post', '/blog/long-blog-post', '/blog/mdx-blog-post', '/blog/welcome', '/blog/tags', '/blog/tags/docusaurus', '/blog/tags/facebook', '/blog/tags/hello', '/blog/tags/hola', '/markdown-page'],
+            to: '/',
+          },
           // Flat pages that moved into sections
           { from: '/docs/Calls', to: '/docs/features/quality-assurance-tools' },
           { from: '/docs/chats', to: '/docs/features/quality-assurance-tools' },

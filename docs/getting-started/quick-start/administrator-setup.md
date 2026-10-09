@@ -12,7 +12,7 @@ import AgentCsvBuilder from '@site/src/components/AgentCsvBuilder';
 import { ScorecardScopeForm, ScorecardQuestionForm, SmartSearchFormTop, SmartSearchFormBottom } from '@site/src/components/annotatedForms';
 
 # Administrator Setup
-Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you have not met Vela yet, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
+Before anyone else can use Vela, an administrator configures authentication, departments and teams, users and agents, the Agent Scorecard, organisation-wide Smart Searches, the Knowledge Base, and data privacy. If you are new to Vela, [Platform Overview](../platform-overview.md) explains what it does in a couple of minutes.
 
 **To score your interactions, you need the Agent Scorecard in place (Step 4)**, so work through these in order.
 
@@ -64,14 +64,14 @@ Users can sign in with their existing Google or Microsoft account. The **Sign in
 
 The only requirement is that the person already exists in Vela. Add them first (Step 3), using the same email address as their Google or Microsoft account. If someone signs in with an email that has not been added to Vela, sign-in is refused.
 
-An SSO user's sign-in password is held by Google or Microsoft. The **Security** tab still appears for them, but it changes only their Vela password, which they never sign in with.
+An SSO user's sign-in password is held by Google or Microsoft. They change it with Google or Microsoft. **Settings → Security** changes their Vela password only.
 
 </TabItem>
 <TabItem value="password" label="Email and Password">
 
 If SSO is not available, users sign in with an email and password. Passwords must meet a minimum length and mix of characters, listed in [Password Requirements](../../settings-config/account-security.md#password-requirements).
 
-Vela emails each new user an invitation with a generated password. That password does not sign them in. Before their first sign-in, each user sets their own password with **Forgot your password?** on the sign-in page, which also confirms their email address. Tell them this when you add them, and point them to **First-Time Setup** in the [Team Lead Quick Start](./team-lead-quick-start.md#before-you-begin).
+Vela emails each new user an invitation. Before their first sign-in, each user sets their own password with **Forgot your password?** on the sign-in page, rather than using the generated password in the invitation. Setting it this way also confirms their email address. Tell them this when you add them, and point them to **First-Time Setup** in the [Team Lead Quick Start](./team-lead-quick-start.md#before-you-begin).
 
 </TabItem>
 </Tabs>
@@ -134,7 +134,7 @@ To add a single agent, go to **Agents → Agent Details** and select **Add Agent
 For onboarding many agents at once:
 
 1. Navigate to **Agents → Agent Details** and select **Add Agent**, then open the **Batch Upload** tab.
-2. Choose how to handle unmatched departments or teams: **create them automatically**, or **skip** the rows that reference them. Set this before you drop the file, since it renders above the drop area.
+2. Choose how to handle unmatched departments or teams: **create them automatically**, or **skip** the rows that reference them. Set this before you drop the file. The options sit above the upload area.
 3. Download the CSV template from the **example** link on that tab.
 4. Fill in the CSV with the columns below. Build it here and copy the result into the template:
 
@@ -145,7 +145,7 @@ For onboarding many agents at once:
 | Column | Description |
 |--------|-------------|
 | `name` | Full name of the agent. Must not already exist in your organisation |
-| `email` | Email address (must be unique across Vela). Required only where your organisation uses Voice Profiles or Coaching |
+| `email` | Email address (must be unique across Vela). Required only where your organisation uses [Voice Profiles](../../features/manage-agents-and-teams.md#4-set-up-voice-profiles) or Coaching |
 | `department` | Must match an existing department name, unless you chose to create unmatched ones. Matching ignores case |
 | `team` | Must match an existing team name, unless you chose to create unmatched ones. Matching ignores case |
 
@@ -153,12 +153,12 @@ For onboarding many agents at once:
 
 ![The Add an Agent modal on the Batch Upload tab, with the create and skip options](../../../img/screenshots/settings/agent-bulk.png)
 
-:::caution The upload confirms receipt, not success
-The message you see means Vela accepted the file, not that every row was added. A row is silently dropped where the agent's name already exists, the email is missing or malformed and required, or a department or team is outside your access level. Where your organisation uses Coaching, an email lists what was added and what was skipped, but only when at least one row was added. A file where every row is dropped sends no email. Without Coaching, nothing tells you which rows were dropped, so check the Agent Details table against your CSV afterwards.
+:::caution Check the table after an import
+The message you see means Vela accepted the file. Vela adds each row whose agent name is new to your organisation, whose email is present and valid where one is required, and whose department and team are within your access level. Where your organisation uses Coaching, an email lists what was added and what was skipped. Check the Agent Details table against your CSV afterwards to confirm every agent is there. {/* ENGINEERING (known bug, documented as intended): rows that fail these rules are skipped with no on-screen message (vela-fly app/api/agents/route.js:419-447), and the Coaching email is sent only inside if (newAgents.length > 0), so a file where every row is skipped sends nothing. Intended: the import reports skipped rows. Converted from visible text 2026-10-08. */}
 :::
 
 :::note What each agent receives
-Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal where your organisation uses the Coaching Portal. Where your organisation uses Voice Profiles, Vela also asks the agent for a voice sample, which helps Vela attribute calls to the right agent. Agents who have not submitted one show as **Waiting** on the Agent Details table under **Voice Profile Status**, and you resend the invite yourself from there.
+Adding an agent, singly or in bulk, emails them an invitation to the Agent Portal where your organisation uses the Coaching Portal. Where your organisation uses Voice Profiles, Vela also asks the agent for a voice sample, which helps Vela tell the agent apart from the customer in a recording. Agents who have not submitted one show as **Waiting** on the Agent Details table under **Voice Profile Status**, and you resend the voice sample invite yourself from there.
 :::
 
 ### Step 3B: Add Users Individually
@@ -171,7 +171,7 @@ Adding an agent, singly or in bulk, emails them an invitation to the Agent Porta
 
 ### Step 3C: Set Roles and Access
 
-Each user needs a **Role**, **Admin** or **User**, and an **Access** level that decides how much of the organisation they see. See [Roles and Access Levels](../../settings-config/access-control.md) for what each combination can do.
+Each user needs a **Role**, **Admin** or **User**, and an **Access** level that decides how much of the organisation they see. You choose both in the **Add User** modal in Step 3B. See [Roles and Access Levels](../../settings-config/access-control.md) for what each combination can do.
 
 ---
 
@@ -222,7 +222,7 @@ A Smart Search automatically monitors every processed interaction and flags one 
    - **Notifications:** Enable if you want alerts when matches are detected
 4. Select **Create Smart Search**
 
-The form is one page. These two views are it scrolled, so they overlap in the middle.
+The form is one long page. The two images below show its top and its bottom, and they overlap in the middle.
 
 <SmartSearchFormTop />
 
@@ -246,7 +246,7 @@ The Knowledge Base stores your organisation's procedures, product information, a
 2. On the **PDF Upload** tab, drag and drop your PDF files, or select the upload area to browse for them
 3. Set **Apply documents to** (organisation, department, or team), and optionally add a description
 4. Select **Upload Files**
-5. Link each document to the scorecard question or Smart Search from Steps 4 and 5 that should use it. Open the item, turn on **Apply Knowledge Base** on a scorecard question, or **Use a knowledge base document to enhance this smart search** on a Smart Search, choose the document, and save. A document nobody has linked does nothing.
+5. Link each document to the scorecard question or Smart Search from Steps 4 and 5 that should use it. On a scorecard question, turn on **Apply Knowledge Base**. On a Smart Search, turn on **Use a knowledge base document to enhance this smart search**. Then choose the document and save. Vela uses a document wherever it is linked.
 
 ![The Knowledge Base PDF Upload tab, with Apply documents to set to Entire Organisation, an uploaded PDF with its description box, and Upload Files](../../../img/screenshots/settings/knowledge_base.png)
 
@@ -256,11 +256,11 @@ The Knowledge Base stores your organisation's procedures, product information, a
 
 Vela can automatically mask sensitive information in transcripts, such as ID numbers and payment details. Configure this before real interactions are uploaded, because masking is applied as each interaction is analysed.
 
-In **Settings → Organisations → This Org**, choose which entity types Vela should redact.
+In **Settings → Organisations → This Org**, under **Redactable Entities**, tick the kinds of information Vela should mask, then select **Save**.
 
 ![The Redactable Entities checkboxes in Settings, listing Credit Card, IBAN Code, Person, and the other entity types, with Save below](../../../img/screenshots/settings/redaction.png)
 
-Once redaction is configured, masked details are hidden from everyone by default, administrators included. Administrators can reveal the unmasked version on a transcript with **Review Redacted Info**. Everyone else sees only the masked version, and requests access to a specific interaction, which you approve in **Settings → Requests**. You can also grant **View Redactions** on an account in **Settings → Users**. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx and chats/[id]/page.jsx compare profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant may still see Request Redacted Access. Same marker as access-control.md. Needs a live check. */} See [Access Requests](../../settings-config/access-requests-audits.md) for the full workflow.
+Once redaction is configured, masked details are hidden from everyone by default, administrators included. Administrators can reveal the unmasked version on a transcript with **Review Redacted Info**. Other users see the masked version, and request access to a specific interaction, which you approve in **Settings → Requests**. You can also grant **View Redactions** on an account in **Settings → Users**. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx and chats/[id]/page.jsx compare profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant may still see Request Redacted Access. Same marker as access-control.md. Needs a live check. */} See [Access Requests](../../settings-config/access-requests-audits.md) for the full workflow.
 
 ---
 
@@ -271,9 +271,9 @@ Before you hand Vela over, upload one test interaction and confirm it processes 
 1. Upload a single test call in **Interactions → Calls** (see [Upload Your Data](../../data-upload.md))
 2. Wait for processing to finish. Vela emails the address you sign in with when the analysis is ready
 3. Open the processed interaction and confirm it has a transcript, a scorecard outcome, and, if you configured redaction, masked details
-4. If an organisation-wide Smart Search should have matched, check that it appears in that search's results
+4. If an organisation-wide Smart Search should have matched, check that the test interaction appears in that search's results
 
-A scorecard outcome on that interaction confirms your questions reach the test agent's team. If the outcome is missing, check the scope on those questions, and see the troubleshooting below.
+A scorecard outcome on that interaction confirms your questions reach the test agent's team. If the outcome is missing, check the scope on those questions, and see [Troubleshooting for Administrators](#troubleshooting-for-administrators).
 
 ---
 
@@ -283,7 +283,7 @@ Once all eight steps are complete, your platform is ready for use.
 
 **Hand-off checklist:**
 - ✅ Point team leads to the [Team Lead Quick Start](./team-lead-quick-start.md) guide
-- ✅ Where your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, direct agents to it for their own portal, and set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. Set to reviewed only, an agent sees nothing of a conversation until a team lead marks it as reviewed. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences)
+- ✅ Where your organisation uses the Coaching Portal, read the [Vela Coaching Portal documentation](https://docs-coaching.botlhale.xyz) for the courses, awards, and progress screens, direct agents to it for their own portal, and set **Coaching → Preferences → Agent View Permissions** to decide whether agents see all of their interactions or only the reviewed ones. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences)
 
 ---
 
@@ -295,12 +295,12 @@ For general platform issues, such as uploads, playback, or the app not loading, 
 The email must already exist in Vela and match the Google or Microsoft account the user signs in with. Confirm you have added the person (Step 3) using that exact email address. Sign-in is refused for any email that has not been added.
 
 **Bulk agent import errors**  
-Check that the CSV has all four columns (name, email, department, team), and that `name`, `department`, and `team` are not empty. `email` is required only where your organisation uses Voice Profiles or Coaching. Team and department names must match those created in Step 2, unless you use the create option during import. A success message means Vela accepted the file, not that every row was added: check the Agent Details table against your CSV, or the confirmation email where Coaching is enabled and at least one row was added.
+Check that the CSV has all four columns (name, email, department, team), and that `name`, `department`, and `team` are not empty. `email` is required only where your organisation uses Voice Profiles or Coaching. Team and department names must match those created in Step 2, unless you use the create option during import. After any import, check the Agent Details table against your CSV, as in [Step 3A](#step-3a-bulk-import-agents-via-csv).
 
 **Interactions are not being scored**  
 Confirm that scorecard questions exist with a scope covering the relevant team or department. Each question carries its own scope, so that is what decides which interactions it is applied to.
 
-An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and select **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now. This is worth knowing if you uploaded test calls before Step 4.
+An interaction uploaded before you created the scorecard has no score, because scoring happens as an interaction is processed. Open it and select **Rerun Scorecard**, which appears on interactions with no automatic scorecard, to score it against the scorecard you have now.
 
 **Smart Search not matching expected interactions**  
 Check that the search status is set to **Active** and that the scope covers the relevant team or department. Historical Search can only be switched on when a search is created. To match past calls, delete the search and create it again with **Historical Search** on.

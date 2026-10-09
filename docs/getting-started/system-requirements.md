@@ -23,8 +23,6 @@ Vela is a web-based platform. Use a current version of one of the following brow
 - **Mozilla Firefox**
 - **Safari**
 
-Keep your browser up to date. Older versions may not support the features Vela relies on.
-
 Vela is built for desktop and laptop browsers. It is not built for phones or small screens.
 
 ---
@@ -38,7 +36,7 @@ Vela is a web application. If your organisation uses a restrictive firewall or p
 **Allow these domains:**
 
 - `*.botlhale.ai`, `*.botlhale.tech`, and `*.botlhale.xyz`: Vela is served across all three, so allow every one of them.
-- `*.botlhale.io` and `*.aliyuncs.com`: file storage. Vela fetches audio playback, report downloads, and the CSV template from these, so blocking them breaks those rather than the upload itself. An upload goes to Vela's own servers and is unaffected.
+- `*.botlhale.io` and `*.aliyuncs.com`: file storage. Audio playback, report downloads, and the CSV template come from these. Blocking them stops those three. Uploads still work.
 
 {/* Storage hosts taken from the live Content-Security-Policy headers of vela.botlhale.ai, .tech, and .xyz on 2026-10-01, and from the vela-fly branch (Tigris on botlhale.io, Alibaba OSS on aliyuncs.com). The previous entry, *.amazonaws.com, matched only vela origin/main. Confirm with a browser network tab when convenient. */}
 
@@ -60,7 +58,7 @@ flowchart LR
     A --> A1("CSV<br/>name, email,<br/>department, team")
 ```
 
-Three separate screens take these formats: the calls upload page (**Single Upload** and **Bulk Upload** tabs), the chats upload page (**Upload** and **Bulk Upload** tabs), and the **Add Agent** modal's **Batch Upload** tab. Check which one you are on before preparing the file. The chat tabs reject anything else outright. The bulk call tab also takes RAR and 7z, which Vela cannot read, so send it a ZIP. See [Upload Your Data](../data-upload.md).
+Three separate screens take these formats: the calls upload page (**Single Upload** and **Bulk Upload** tabs), the chats upload page (**Upload** and **Bulk Upload** tabs), and the **Add Agent** modal's **Batch Upload** tab. Check which one you are on before preparing the file. Each chat tab accepts only its own format, and the bulk call tab takes a ZIP. See [Upload Your Data](../data-upload.md).
 
 ### Audio Files (Calls)
 
@@ -86,7 +84,7 @@ Files larger than 1 GB are rejected before the upload begins.
 ### Chat Conversations
 
 **Required Format:**
-- **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload. Each tab accepts only its own format.
+- **File type:** CSV (`.csv`) for a single chat, JSON (`.json`) for a bulk upload.
 - **Encoding:** UTF-8 for a JSON file. For a single-chat CSV saved from Excel, choose **CSV (Comma delimited)**. The **CSV UTF-8** option adds a hidden character that stops Vela reading the first column.
 - **Structure:** For bulk uploads, the Vela JSON schema (see the example below, and [Upload Your Data](../data-upload.md)). For a single chat, select the **example** link on the upload page to download a sample CSV.
 - **Maximum size:** 3 GB for a single chat CSV. The **Bulk Upload** tab advises keeping each JSON file to 1 MB and one file at a time, so split a large export into several files rather than uploading one big one.
@@ -116,7 +114,7 @@ Files larger than 1 GB are rejected before the upload begins.
 **Required fields:** every message must have `message`, `time`, and `sender`. `language` is optional.
 
 :::warning Use the exact `sender` values
-For the customer's messages, use `user`, not `customer`. Use `agent` or `bot` for the other side. Response-time metrics are calculated from `user` messages, so any other value for the customer leaves those figures wrong. The file still uploads, so the problem is silent rather than a visible error.
+For the customer's messages, use `user`, not `customer`. Use `agent` or `bot` for the other side. Response-time metrics are calculated from `user` messages, so check that every customer message uses `user` before you upload. {/* ENGINEERING (known bug, documented as intended): sender is never validated on upload. vela-data reads only "user", "agent" and "bot" when timing responses (dev-hold lib/inference/chats.js:664-666, main app/api/chats/upload/route.js:393-395), so a file using "customer" uploads and reports wrong response times with no error. Intended: the upload rejects any other sender value. */}
 :::
 
 ### Bulk Upload (ZIP)
@@ -149,11 +147,11 @@ Mary Johnson,mary.johnson@company.com,Customer Service,Support Team
 ```
 
 **Validation rules:**
-- Email addresses must be unique across Vela, and are required only where your organisation uses Voice Profiles or Coaching
+- Email addresses must be unique across Vela, and are required only where your organisation uses [Voice Profiles](../features/manage-agents-and-teams.md#4-set-up-voice-profiles) or Coaching
 - `name`, `department`, and `team` cannot be empty
 - Team and department names must match existing entries, unless you chose to create unmatched ones on upload
 
-The upload confirming receipt does not mean every row was added. Some rows are dropped silently, for example one whose name already exists in your organisation. For every cause, see [Administrator Setup](./quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv).
+The upload confirms Vela received the file. Vela adds each row whose agent name is new to your organisation, so check the table on **Agents → Agent Details** against your CSV afterwards. For every rule, see [Administrator Setup](./quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv).
 
 ---
 
@@ -192,7 +190,7 @@ Passwords must meet a minimum length and mix of characters. For the full list, a
 | Agent performance | Agents → Performance, **Export** | PDF or CSV |
 | The agent list | Agents → Agent Details, **Export** | CSV |
 
-Downloading a report as DOCX opens in a new tab, so allow pop-ups for the Vela domain if that download does nothing when selected. The other downloads in this table save directly, without a pop-up.
+Downloading a report as DOCX opens in a new tab, so allow pop-ups for the Vela domain if that download does nothing when selected.
 
 ---
 
@@ -213,7 +211,7 @@ Transcription accuracy is highest when:
 This section covers the security controls you manage inside Vela. For how your data is hosted, encrypted, backed up, and the standards Vela meets, see [Security and Compliance](../security-compliance.md).
 
 ### Redaction
-Vela can automatically mask sensitive information in transcripts. Once an administrator has chosen which details to mask, calls and chats are masked for everyone by default. Administrators can reveal the unmasked version on demand, and other users request access to a specific interaction. For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
+Vela can automatically mask sensitive information in transcripts. Once an administrator has chosen which details to mask, calls and chats are masked for everyone by default. Administrators, and users granted **View Redactions**, can reveal the unmasked version on demand. Other users request access to a specific interaction. {/* UNVERIFIED: the View Redactions grant. See security-compliance.md. */} For the full workflow, see [Access Requests](../settings-config/access-requests-audits.md).
 
 ### Access Level
 A user's access level, organisational, departmental, or team, controls what data they can see. See [Roles and Access Levels](../settings-config/access-control.md).
@@ -223,7 +221,7 @@ Vela signs you out after 24 hours without activity, after which you sign in agai
 
 ### User Device Security
 - Keep browsers up to date
-- Lock devices when unattended, because Vela keeps you signed in until 24 hours pass without activity
+- Lock devices when unattended
 - Log out when using a shared computer, because closing the browser does not sign you out
 
 ---

@@ -41,8 +41,8 @@ export function ScorecardQuestionForm() {
         { x: 42.2, y: 47.3, title: 'Search Type', body: 'Whether the AI answers it, or a reviewer does it manually. A manual question stays N/A until someone sets an outcome.' },
         { x: 57.8, y: 47.3, title: 'Apply To', body: 'Inbound calls, outbound calls, or all calls.' },
         { x: 71.4, y: 47.3, title: 'Auto-Fail', body: 'Failing this question takes the whole interaction to 0.0%, with the score earned on the other questions shown in brackets beside it.' },
-        { x: 91.7, y: 47.3, title: 'Compliance Question', body: 'Counts this question towards the Compliance Score instead of the Quality Score. Every question counts towards the Overall Score either way.' },
-        { x: 30.2, y: 58.8, title: 'Always Applicable', body: 'Whether the AI may answer N/A, or only Yes and No. Set to Yes, a question that did not apply costs the agent a No.' },
+        { x: 91.7, y: 47.3, title: 'Compliance Question', body: 'Counts this question towards the Compliance Score instead of the Quality Score. Every question counts towards the Agent Score either way.' },
+        { x: 30.2, y: 58.8, title: 'Always Applicable', body: 'Choose Yes for a question that applies to every interaction, such as a greeting. Choose No for one that applies only sometimes, so Vela leaves it out of the score when it does not apply.' },
       ]}
     />
   );
@@ -58,7 +58,7 @@ export function SmartSearchFormTop() {
         { x: 52, y: 33.5, title: 'Search Status', body: 'Active starts the search matching once you save. Inactive saves the definition without running it.' },
         { x: 15, y: 45, title: 'Description', body: 'What the search looks for. Vela reads this when matching, so it shapes the results.' },
         { x: 15, y: 61.5, title: 'Search Scope', body: 'How far the search reaches. The options depend on your own access level.' },
-        { x: 15, y: 79, title: 'Link To Search', body: 'Ties this search to another, so a match needs both. Covered under More Search Options.' },
+        { x: 15, y: 79, title: 'Link To Search', body: 'Ties this search to another, so a match needs both. Covered under More Search Options in Set Up Smart Search.' },
       ]}
     />
   );
@@ -88,10 +88,10 @@ export function SingleCallUploadForm() {
       alt="The Single Upload tab of the call Uploads page, with the Single Upload and Bulk Upload tabs above the Agent, Direction, and Tags fields, the drag-and-drop area, and the Upload button"
       points={[
         { x: 61.5, y: 20.7, title: 'Single Upload and Bulk Upload', body: 'Single Upload takes one recording. Bulk Upload takes many at once, as a ZIP archive.' },
-        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call. The list is filtered by your access level, and Team and Department fill in from your choice. Agent, Team, and Department must all be filled before Upload turns on. The call is always filed under the agent\'s own team and department, whatever the form shows. + Create an agent adds one without leaving the page.' },
-        { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound, and optional. Leaving it blank means the call is left out of anything filtered or reported by direction.' },
+        { x: 17.2, y: 34.4, title: 'Agent', body: 'The agent who handled the call. The list is filtered by your access level, and choosing one adds Team and Department fields, filled in from your choice. Agent, Team, and Department must all be filled before Upload turns on. Vela files the call under the agent\'s own team and department. + Create an agent adds one without leaving the page.' },
+        { x: 20.8, y: 44.6, title: 'Direction', body: 'Inbound or outbound, and optional. Set it so the call is included in anything filtered or reported by direction.' },
         { x: 17.7, y: 52.8, title: 'Tags', body: 'Labels such as complaint, sales, or billing. Optional. Choose from your organisation\'s existing tags.' },
-        { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select browse your device. WAV or MP3, up to 1 GB.' },
+        { x: 54.7, y: 69.9, title: 'The upload area', body: 'Drag the recording in, or select the browse your device link. WAV or MP3, up to 1 GB.' },
       ]}
     />
   );
