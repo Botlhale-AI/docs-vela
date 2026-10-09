@@ -8,9 +8,15 @@ type: how-to
 # Manage Agents and Teams
 Agents are the people whose interactions Vela analyses. This page covers keeping those records right after the initial setup: adding someone who joins your organisation, moving someone between teams, and removing someone who leaves.
 
-Keep these records accurate as your teams change. Vela groups every result by the department and team on an agent's record. An agent left in the wrong team is still scored, but their results land in another team lead's figures. Nothing looks broken, which is why it is worth checking. The numbers look reasonable but are wrong.
+Vela groups every result by the department and team on an agent's record, so an agent left in the wrong team is scored into another team lead's figures. Check an agent's team whenever they join, move, or leave, and again after any bulk import.
 
-Check an agent's team whenever they join, move, or leave, and again after any bulk import. Insights are only as accurate as the assignments behind them.
+:::tip In short
+By the end you will have each agent recorded under the team that handles their interactions.
+
+1. [Add an agent](#2-add-an-agent) with **Add Agent** on **Agents → Agent Details**.
+2. [Move agents between teams](#5-move-agents-between-teams) with **Reassign**, or through **support@botlhale.ai** where your organisation uses the Coaching Portal.
+3. [Remove an agent](#3-edit-or-remove-an-agent) with **Delete Agent** in the **Actions** column.
+:::
 
 ---
 
@@ -48,13 +54,13 @@ Unassigned agents read **No Department** or **No Team** rather than sitting blan
 
 ## 2. Add an Agent
 
-Select **Add Agent** to open **Add an Agent** modal. It has two tabs, **Single Upload** for one person and **Batch Upload** for a CSV of many.
+Select **Add Agent** to open the **Add an Agent** modal. It has two tabs, **Single Upload** for one person and **Batch Upload** for a CSV of many.
 
 On **Single Upload**:
 
-1. Enter the **Name**, and the **Email** where it is required.
+1. Enter the **Name**, and the **Email** where your organisation requires it. The table below says when.
 2. Choose the **Team**. If it does not exist yet, **Create New Team** beside the field makes one without leaving the modal. It appears for an administrator with Organisational or Departmental access.
-3. Select **Save Changes**, or **Discard** to abandon it.
+3. Check the name and address, because saving can email the agent straight away. Then select **Save Changes**, or **Discard** to abandon it.
 
 ![The Add an Agent modal on the Single Upload tab, with the Name, Email, and Team fields and the Create New Team link](../../img/screenshots/agent_details/add-agent-single.png)
 
@@ -63,13 +69,11 @@ Name and team are always required. Whether you also need the email, and what the
 | Your organisation has | Email address | What the agent receives |
 | :--- | :--- | :--- |
 | Neither voice profiles nor the Coaching Portal | Optional | Nothing |
-
-{/* UNVERIFIED: on vela origin/vela-fly and origin/main, app/api/agents/route.js (87-101, 240-261) looks up an existing agent by email with no active filter, and an empty email is sent as "". A second agent added without an email is therefore refused with: An agent with the email "" already exists in your organization. On the Create New Team path the team is created before that check, so an empty team is left behind. Raised as a product bug 2026-10-07. Needs a live check before the docs state a limit. */}
 | The Coaching Portal | Required | **Invitation to Vela**, which sets up the sign-in they use for the Agent Portal |
 | Voice profiles | Required | **Vela Voice Agent ID Invite**, asking them to record a sample |
 | Both | Required | Both emails, sent separately |
 
-Adding an agent can therefore email them straight away. Check the name and address before saving rather than after.
+{/* ENGINEERING (known bug, documented as intended): on vela origin/vela-fly and origin/main, app/api/agents/route.js (87-101, 240-261) looks up an existing agent by email with no active filter, and an empty email is sent as "". A second agent added without an email is therefore refused with: An agent with the email "" already exists in your organization. On the Create New Team path the team is created before that check, so an empty team is left behind. Raised as a product bug 2026-10-07. */}
 
 :::tip Adding many agents at once
 **Batch Upload**, the second tab, takes a CSV and creates the departments and teams it names as it goes. That is the route for an initial import. See [Importing Agents in Bulk](../settings-config/user-management.md#4-importing-agents-in-bulk).
@@ -83,11 +87,13 @@ Adding an agent can therefore email them straight away. Check the name and addre
 
 The **Actions** column holds both.
 
-**Edit** lets you change the agent's name and email. Their team shows but cannot be changed here. To move them, use **Reassign**, covered below.
+**Edit** lets you change the agent's name and email. Their team shows but cannot be changed here. To move them, use **Reassign**, covered below. Where your organisation uses the Coaching Portal, contact **support@botlhale.ai** to change an agent's name, email, team, or department, so their Agent Portal account changes with it.
 
-**Delete Agent** removes the agent from the list. Their past interactions and scores keep counting towards the team's historical figures. A deleted agent cannot be restored, or added again under the same name or email, from this screen. To bring one back, contact **support@botlhale.ai**.
+{/* ENGINEERING (known bug, documented as intended): Edit (vela origin/vela-fly app/api/agents/[id]/route.js PUT) updates only the Agent record, not the agent's Profile or User. An email change locks a password agent out of the Agent Portal: login/route.js@vela-fly:122-131 looks up the Agent by the sign-in email and returns "Invalid credentials". Reassign (agent_details/teams/teams.js reassignAgents) updates Agent.team and Agent.department only, not the Profile, which the Agent Portal and the coaching cycle read. Intended: one edit updates the portal account too. Same note in docs-coaching-portal agents/your-account.md. Found 2026-10-08. */}
 
-{/* Verified on vela and vela-fly: agent_details/page.jsx fetches active agents only and table.jsx never sets showDeactivated, so the Reactivate button cannot be reached; api/agents/route.js rejects a new agent whose name or email matches any existing agent, deleted ones included. Needs a live screen to confirm before re-adding a restore step. */}
+**Delete Agent** removes the agent from the list. Their past interactions and scores keep counting towards the team's historical figures. To bring back a deleted agent, or to add someone under a deleted agent's name or email, contact **support@botlhale.ai**.
+
+{/* ENGINEERING (known bug, documented as intended): Reactivate is built but cannot be reached. agents/agent_details/table.jsx@vela-fly:40 declares showDeactivated and :444 renders "Reactivate", but setShowDeactivated is never called, and agent_details/page.jsx fetches active agents only. api/agents/route.js turns down a new agent whose name or email matches any existing agent, deleted ones included. Intended: a Reactivate the user can reach. Same note in docs-coaching-portal support/troubleshooting-guide.md. */}
 
 ---
 
@@ -103,19 +109,19 @@ The **Voice Profile Status** column shows where each agent stands, and carries t
 
 | Status | What it means | What to do |
 | :--- | :--- | :--- |
-| **Not Uploaded** | No voice sample yet | Send the agent an invite to record one |
-| **Waiting** | Invited, no sample provided yet | Resend the invite if it has been a while |
+| **Not Uploaded** | No voice sample yet | Select **Send Invite**, the icon beside the status, to ask the agent to record one |
+| **Waiting** | Invited, no sample provided yet | Select **Resend Invite** beside the status if it has been a while |
 | *(a toggle)* | A sample has been provided | Switch the profile off to stop Vela using it, and on again to resume |
 
 The agent records their own sample from the invitation, so this is a request rather than something you complete for them. Chase **Waiting** rows. Until the agent records a sample, Vela separates the speakers automatically.
 
-Where a sample exists, the column shows a toggle rather than a word. **Export** names the same two states in writing, as **Active** and **Inactive**, so use the export to read the status of a page of agents at once rather than reading toggles row by row.
+Where a sample exists, the column shows a toggle. **Export** writes it as **Active** or **Inactive**, so you can read a page of agents at once.
 
 ---
 
 ## 5. Move Agents Between Teams
 
-**Reassign** moves several agents at once, rather than opening each agent in turn.
+**Reassign** moves several agents at once, rather than opening each agent in turn. Where your organisation uses the Coaching Portal, contact **support@botlhale.ai** instead, so each agent's Agent Portal account moves with them.
 
 1. Tick the agents you want to move. **Reassign** appears above the table once at least one is ticked.
 2. Select **Reassign**, then choose the department and team to move them into. **Create new team** makes the destination on the spot if it does not exist yet.
@@ -133,11 +139,11 @@ This screen can create a team in passing, while adding or reassigning an agent. 
 
 ## Check Your Work
 
-Open **Agents → Agent Details** and find the agent you changed. Both should name the department and team you chose. Where either reads **No Department** or **No Team**, the assignment did not take.
+Open **Agents → Agent Details** and find the agent you changed. The agent's **Department** and **Team** columns should name what you chose. Where either reads **No Department** or **No Team**, assign it again with **Reassign**.
 
 Changes apply from now on rather than backwards. An agent you moved keeps their existing interactions under the team that handled them, so their new team's figures build up from today rather than jumping.
 
-For voice profiles, the status is the check. **Not Uploaded** and **Waiting** both mean Vela is still separating speakers without help from a profile, whatever invitations have been sent.
+For voice profiles, the status is the check. **Not Uploaded** and **Waiting** both mean Vela is still separating the speakers automatically. The profile is in use once the row shows a toggle that is switched on.
 
 ---
 

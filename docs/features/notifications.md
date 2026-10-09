@@ -11,6 +11,14 @@ import notificationsPage from '@site/img/screenshots/notifications/notifications
 # Manage Notifications
 Vela notifies you when something needs your attention. That might be a Smart Search or Smart Question alert, a comment on an interaction, or a report that has finished generating. Not all of them arrive in the same place. Some are email only, and some belong to the Agent Portal. This page covers what triggers a notification, where each notification arrives, and how to control what reaches you.
 
+:::tip In short
+By the end you will have worked through your notifications and chosen what reaches you, and how.
+
+1. Select **Notifications** in the left sidebar and [open its **Comments** or **Reports** tab](#1-find-your-notifications), or **Alerts** on every version except [Lite](../reference/glossary.md#lite).
+2. [Open the interaction behind each alert](#3-work-through-your-alerts) and act on it. For a Smart Search alert, select **Resolve** on its row in the interaction's **Alerts** tab.
+3. [Tick what you want](#6-set-your-preferences) in **Settings → Notifications** and select **Save**.
+:::
+
 ---
 
 ## Before You Begin
@@ -37,7 +45,7 @@ Select **Notifications** in the left sidebar. Three tabs sit at the top right of
     { x: 74.5, y: 23.9, title: 'Search', body: 'Narrows the list by wording, matching both the heading and the body of a notification. Matches are highlighted.' },
     { x: 41.7, y: 31.2, title: 'A notification', body: 'Each shows a heading, how long ago it arrived, and a line of detail.' },
     { x: 84.9, y: 31.2, title: 'The dismiss cross', body: 'Takes the notification off the list for good. Nothing it pointed at is lost, and you still reach that through Interactions, Smart Detector, or Reports.' },
-    { x: 84.9, y: 39.2, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports. On a Smart Question alert it does not open the interaction, so reach that from the Interactions list or from the Results tab of the Smart Question.' },
+    { x: 84.9, y: 39.2, title: 'The eye icon', body: 'Opens what the notification is about: the interaction on Alerts and Comments, the report itself on Reports.' },
   ]}
 />
 
@@ -55,11 +63,11 @@ Once a notification is dismissed it leaves the list for good. There is no read o
 
 ### B. Work a Notification
 
-Every notification, on all three tabs, carries the same **Search**, **eye**, and **×** controls shown above.
+All three tabs have the same **Search** box, and every notification on them carries the same **eye** and **×** controls shown above.
 
 Past one page, pagination sits at the foot of the list: **Previous** and **Next**, with **Page 1 of 2** between them.
 
-{/* The eye icon on a Smart Question alert links to /interactions/calls/undefined, confirmed against the live product: the alert record carries no call ID through to the notification. Documented above and in Troubleshooting as a limitation, with the workaround, until it is fixed. Remove both once it is. */}
+{/* ENGINEERING (known bug, documented as intended): on vela origin/vela-fly and origin/main, app/(pages)/notifications/Issues.jsx:60 links every alert to /interactions/calls/${issue.ref.call}. A Smart Question alert's ref is the Call itself (vela-data origin/dev-hold lib/inference/engine.js createSmartQuestionNotifications, refModel "Call"), so ref.call is undefined and the eye icon opens /interactions/calls/undefined, confirmed on the live product. Workaround until fixed: open the interaction from Interactions, or from the Smart Questions Results tab. Raised as a product bug. Converted from a visible limitation 2026-10-08. */}
 
 On the **Reports** tab there is also a download control beside the eye, so you can take a finished report straight from the notification without going to the Reports list. A report whose file is no longer available reads **No report available** in place of the link.
 
@@ -67,7 +75,7 @@ On the **Reports** tab there is also a download control beside the eye, so you c
 
 ## 2. What Triggers a Notification
 
-Not everything lands in the same place, which is the usual reason a notification you expected seems to be missing. Vela does not label these categories individually in the interface: an in-app alert reads **Alert Detected** whatever raised it. The categories below describe what triggers each notification and where to find it, not literal text on screen:
+Each kind of notification arrives in its own place, so check the right one before treating a notification as missing. Every in-app alert reads **Alert Detected**, whatever raised it.
 
 | What triggers it | When you receive it | Where it appears |
 | :--- | :--- | :--- |
@@ -77,8 +85,8 @@ Not everything lands in the same place, which is the usual reason a notification
 | A finished report | A scheduled or one-time report has finished generating | **Reports** tab, for a report someone else created. Your own reports always arrive by **email** instead |
 | A redaction decision | A request to view redacted information has been approved or declined | **Email**, to the person who raised it and to the administrators who process these requests. The outcome also shows on the request itself, under **Settings → Requests → Completed** |
 | A processed call | A call you uploaded on its own has finished analysis, subject **Call analysis complete** | **Email only**, to the address you signed in with, whatever your preferences. There is no in-app notification for this |
-| A processed batch | A bulk upload has finished analysis | **Email only**, a summary to users with **New Alerts Detected** ticked under email notifications, sent straight away whatever the frequency |
-| A rescored interaction | You reassigned the agent on an interaction, and the AI has finished scoring it again, subject **Checklist Scoring is complete** | **Email only**, to the address you signed in with. There is no in-app notification for this |
+| A processed batch | A bulk upload has finished analysis | **Email only**, a summary to users with **New Alerts Detected** ticked under email notifications, and to every user on the [Lite](../reference/glossary.md#lite) version, sent straight away whatever the frequency |
+| A rescored interaction | You reassigned the agent on an interaction, and the AI has finished scoring it again, subject **Checklist Search Complete** | **Email only**, to the address you signed in with. There is no in-app notification for this |
 | A course assignment | A training course has been assigned to you | **Agent Portal**, not the main platform |
 | An award | An award has been presented to you | **Agent Portal**, not the main platform |
 
@@ -94,8 +102,8 @@ A practical routine for each alert:
 
 1. Open the matched interaction from the alert.
 2. Review the full context. The transcript and AI analysis show whether the match is a genuine issue.
-3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction, tagging the agent with **@** so it reaches them. A false match needs nothing further.
-4. Select **Resolve** on the alert in the interaction's **Alerts** table either way, so the interaction leaves the Smart Search's Returned Interactions list. Then select the cross on the notification to clear it from your list, so it holds only what you still have to look at.
+3. Decide what it needs. A genuine issue usually warrants a coaching comment on the interaction. Where your organisation has the Coaching Portal, tag it **@agent** so it reaches the agent. A false match needs nothing further.
+4. For a Smart Search alert, select **Resolve** on its row in the interaction's **Alerts** tab either way, so the interaction leaves the Smart Search's Returned Interactions list. Then, for any alert, select the cross on the notification to clear it from your list, so it holds only what you still have to look at.
 
 :::tip Use alerts as your review queue
 Rather than sampling interactions at random, work your alerts first. They are the conversations your own searches have identified as worth looking at.
@@ -105,11 +113,9 @@ Rather than sampling interactions at random, work your alerts first. They are th
 
 ## 4. Control What Reaches You
 
-Two separate switches decide whether an alert reaches you, and both have to be on. The search decides whether its alerts raise notifications at all, covered here. The alert itself appears on the interaction either way. Your account decides whether alerts reach you, covered in [Set Your Preferences](#6-set-your-preferences). A search with notifications on only reaches you if your own **New Alerts Detected** is also ticked.
+Two switches decide whether an alert reaches you, and both have to be on. The search's own **Notifications** setting, covered here, decides whether its alerts raise notifications at all. Your **New Alerts Detected** preference, covered in [Set Your Preferences](#6-set-your-preferences), decides whether they reach you. Matches appear on the interaction and in the Smart Search results view either way.
 
 Each Smart Search has a **Notifications** setting. Turn it on when you create the search, or change it later by editing the search.
-
-Matches still appear in the Smart Search results view whether or not notifications are on. The setting only controls whether Vela notifies you about them.
 
 :::tip Turning down the volume
 A search generating more alerts than your team can act on has two fixes. Tighten its phrases so it matches less, or turn its Notifications off and review the matches in the results view instead.
@@ -132,12 +138,12 @@ Type **@** in the comment box. The list offers **@agent** and the colleagues who
 {/* VERIFIED 2026-10-01 on origin/main, origin/vela-fly, and origin/dev-hold: app/(pages)/interactions/calls/[id]/comments.js sets agent: true for @agent but creates no notification for the agent. The "New mention" notification matches profile names, and @agent stores the string "agent". Org-comment recipients exclude role "agent". Like and resolve notifications reach a comment's author only where notifications.platform.own_comments is set, which addUser never sets for an agent. Never seen on an agent account (user, 2026-10-01). */}
 
 :::note Tagging the agent needs the Coaching Portal
-The **@agent** option, and the reminder text above the comment box, appear only where your organisation has the Coaching Portal enabled. Without it, an agent has no Agent Portal, so there is no way to tag them and every comment stays visible to team leads only.
+The **@agent** option appears where your organisation has the Coaching Portal enabled, because a tagged comment reaches the agent in their Agent Portal. Without it, every comment stays visible to team leads only.
 :::
 
 ![The Comments panel open on an interaction, with @agent typed in the comment box, the mention suggestion below it, and the Send button](../../img/screenshots/settings/@agent.png)
 
-Tagging the agent works in new comments only, as the panel itself notes. A reply in a thread that already tagged the agent is shared with them too. Replies still notify colleagues: a reply raises **New reply** for those who follow comments, and a mention for anyone named in it. Anything the agent has to see in a new thread belongs in a new comment tagged **@agent**.
+Tagging the agent works in new comments only, as the panel itself notes. A reply in a thread that already tagged the agent is shared with them too. A reply raises **New reply** for colleagues with **Comments** ticked, and for the author of the comment replied to where they have **Activity On Your Comments** ticked. Anyone named in a reply gets a mention.
 
 For writing and resolving comments, see [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
 
@@ -163,7 +169,7 @@ Two lists, **Platform Notifications** and **Email Notifications**, offer the sam
 
 **New Alerts Detected** appears in both lists on every version except [Lite](../reference/glossary.md#lite).
 
-**Comments** covers every comment in the organisation, so tick it only if you want all of them. Likes and resolves on your own comments reach you only through **Activity On Your Comments**.
+Likes and resolves on your own comments reach you only through **Activity On Your Comments**.
 
 Select **Save** to apply your changes. Leaving the tab without saving discards them.
 
@@ -201,8 +207,7 @@ Testing an alert end to end takes one interaction. Upload an interaction you kno
 | Comments not arriving | Check which comment settings you have ticked in **Settings → Notifications**. **Comments Mentioning You** covers only comments that tag you with **@** |
 | Reports not arriving | Your own reports arrive by email, never on the **Reports** tab, so check your inbox and spam folder. For colleagues' reports, confirm **New Reports** is ticked in **Settings → Notifications**. Then check the schedule and that its date range contains data |
 | Email missing, but notifications appear in Vela | Check the **Email Notifications** list in **Settings → Notifications**. On a daily frequency the email arrives at the time you set rather than as the event happens |
-| A notification dismissed by mistake | Dismissing is final. Open the interaction, comment, or report directly instead |
-| The eye icon on a Smart Question alert opens nothing | The link carries no interaction. Open it from **Interactions**, or from the **Results** tab of the Smart Question, where selecting a count lists the matching interactions |
+| A notification dismissed by mistake | Dismissing is final. Open the interaction or report directly instead, from **Interactions**, **Smart Detector**, or **Reports** |
 
 ---
 

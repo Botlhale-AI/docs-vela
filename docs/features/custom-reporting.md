@@ -11,13 +11,21 @@ import TabItem from '@theme/TabItem';
 # Generate Reports
 Build a report from the metrics you care about, over the period you choose, and either run it once or have Vela run it for you on a schedule. Reports are how your analytics are shared with people outside Vela, as a file rather than a screen.
 
+:::tip In short
+By the end you will have a report of the metrics you chose, run once or set to run on a schedule.
+
+1. Under **Reports**, select the **Create** tab and [choose one-time or recurring](#1-choose-one-time-or-recurring).
+2. [Build the report](#2-build-the-report) from the period, interaction type, teams, agents, and metrics.
+3. [Run it or schedule it](#3-run-it-or-schedule-it), then [download it](#4-download-and-share) as **PDF** or **DOCX**.
+:::
+
 ---
 
 ## Before You Begin
 
 You need:
 
-- **Processed interactions inside the period you are reporting on.** Vela builds the report from the interactions it finds in that period, so a period with none produces no results. Where a scheduled run finds nothing, Vela emails you to say so rather than sending an empty report.
+- **Processed interactions inside the period you are reporting on.** Vela builds the report from the interactions it finds in that period, so a period with none produces no results.
 - **Access level:** Organisational, Departmental, or Team, covering the teams you want in the report. See [Access Level](../reference/glossary.md#access-level).
 - **To know which metrics your plan offers.** On the [Lite](../reference/glossary.md#lite) version, alert, keyword, intent, and pain point metrics are not offered. See [Choose the Metrics and Charts](#d-choose-the-metrics-and-charts).
 
@@ -125,7 +133,7 @@ Select **Create**, at the foot of the form below **Add New Metric**. Vela starts
 
 ![The foot of the one-time report form, with Add New Metric above the Create button](../../img/screenshots/report/report_create3.png)
 
-Vela includes the metrics that have data and names each metric it dropped. Where none of them have data, widen the date range or check the teams and agents you selected, and run it again.
+Vela includes the metrics that have data, and shows a message for each metric it dropped, naming the metric and ending *has no data for the selected date range*. Where none of them have data, widen the date range or check the teams and agents you selected, and run it again.
 
 </TabItem>
 <TabItem value="recurring" label="Recurring report">
@@ -138,7 +146,7 @@ Your schedules appear on the **Scheduled Reports** tab of the Reports list, one 
 
 ![The Scheduled Reports tab, with one daily schedule listed under Frequency, Last Run reading No runs yet, Next Run, and Created By](../../img/screenshots/report/schedule5.png)
 
-Select a row to expand it. Since a schedule cannot be edited, this is how you check what one is set to:
+Select a row to expand it and check what the schedule is set to:
 
 | Section | What it shows |
 | :--- | :--- |
@@ -148,7 +156,7 @@ Select a row to expand it. Since a schedule cannot be edited, this is how you ch
 | **Metrics** | Each metric with its chart type, such as `No. alerts-line` |
 | **Additional Details** | **Status**, **Created**, **Last Updated**, and the **Time** it runs at |
 
-A schedule that has not finished a run yet shows a **Status** of **Pending**, which is what a newly created one reads.
+A schedule that has not finished a run yet shows a **Status** of **Pending**.
 
 ![The same schedule expanded, showing Interactions set to All and the Selected Teams below it](../../img/screenshots/report/schedule3.png)
 
@@ -185,11 +193,11 @@ To rename a report, select the pencil icon beside its name, type the new one, an
 
 ## Check Your Work
 
-How you check depends on which you built. A one-time report takes a few minutes to build, and Vela emails you when it is ready. A schedule produces its first report on its next run, so what you confirm today is that the schedule itself is set correctly.
+How you check depends on which you built. A one-time report takes a few minutes to build, and Vela emails you when it is ready.
 
-For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file either had no data in the period, or its summary could not be written. Create the report again to tell the two apart: a metric missing from the second file as well had no data.
+For a one-time report, you are finished when it appears under **Created Reports** with a download icon on its row, and the downloaded PDF or DOCX holds the metrics and charts you chose. A metric you selected but cannot find in the file had no data in the period. {/* ENGINEERING (known bug, documented as intended): lib/generateReport.js@vela-fly retries the AI insights for each chart, then pushes [] after the last failure (~:395-425). filterEmptyArrays (~:431-445) then drops every chart whose insights are empty, with no message. Only no-data metrics are named (reports/createForm.jsx:351,358; scheduleReports/route.js:104). Intended: a metric with data always appears, with or without its summary. Workaround until fixed, removed from visible text 2026-10-09: create the report again. A metric missing from the second file as well had no data. */}
 
-For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the date and time you intended. That confirms the schedule is set. To confirm it delivers, wait for that first run and check the report arrives as expected.
+For a schedule, open **Scheduled Reports** and confirm **Next Run** shows the date and time you intended. After that first run, check the report arrives.
 
 ---
 

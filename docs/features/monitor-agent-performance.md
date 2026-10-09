@@ -12,6 +12,14 @@ import teamGrid from '@site/img/screenshots/performance/team_tab.png';
 # Monitor Agent Performance
 Track how your agents are performing, find where they need help, and turn that into coaching. Use the **Dashboard** for trends across a team, and the **Agents** section for detail on one person.
 
+:::tip In short
+By the end you will have found which agents need help and on which categories, and turned that into coaching.
+
+1. On the **Dashboard**, [set the date range and read the key metrics](#1-start-on-the-dashboard).
+2. Open **Agents → Performance** and [read the agent's **Work On This** categories](#2-find-out-who-and-on-what) in **Details**.
+3. [Leave coaching comments](#4-turn-what-you-find-into-coaching), or set up a course where your organisation has the Coaching Portal, then track the score trend.
+:::
+
 ---
 
 ## Before You Begin
@@ -54,12 +62,12 @@ These tell you the most in the least time. Each is defined in full in [Metrics](
 | Metric | What it tells you | When to act |
 | :--- | :--- | :--- |
 | **Average Agent Score (%)** | The overall quality performance for your scope. See [How Scoring Works](../explanation/how-scoring-works.md). | It stays below your team's standard. |
-| **Distribution of Total Scores** | How many calls fall into each score range. | Calls cluster in the lower ranges, which points at the team rather than a person. |
+| **Distribution of Total Scores** | How many calls fall into each score range. | Calls cluster in the lower ranges. Check **Average Agent Scores (%)**, the card listing each agent's mean score, to see whether that is several agents or one. |
 | **Total Number of Alerts** and **Total Number of Resolved Alerts** | How many Smart Search matches were raised, and how many of them have been resolved. | The gap between them widens week on week. |
 | **Sentiment Distribution in Interactions** | The proportion of positive, neutral, and negative customer emotion. | **Negative** spikes suddenly, which usually means a service or system problem. |
 | **Agent Talk to Listen Ratio** | Agent talking time relative to customer talking time. | It stays high, so the agent is talking more than listening. |
 
-![The Quality & Performance group, with Average Agent Scores beside the distribution of calls by RAG score](../../img/screenshots/dashboard/use_dashboard1.png)
+![Two Quality and Performance cards: Average Agent Scores, listing each agent's mean score highest first, and Distribution Of Calls By Total RAG Scores, counting calls in the Red, Amber and Green bands](../../img/screenshots/dashboard/quality-performance.png)
 
 ---
 
@@ -87,7 +95,7 @@ Four controls sit above the list:
 | **Search** | Narrows the list by agent name |
 | **Sort By** | Orders the list on Name, Team, Department, Interactions, Compliance Score, Quality Score, Score, Strength, Weakness, or Rank |
 | **Filter** | Opens **Filter By**, covered below |
-| **Export** | Downloads the list as a PDF or a CSV, or, with **mail**, emails each agent in the list their own performance report. Search does not narrow it: it covers every agent in the current filter and date range |
+| **Export** | Downloads the list as a PDF or a CSV, or, with **Mail**, emails each agent in the list their own performance report. It covers every agent in the current filter and date range, so narrow it with **Filter** rather than **Search** |
 
 #### Filter By
 
@@ -98,7 +106,7 @@ The modal has two kinds of field:
 
 Select **Apply** to filter, or **Clear All Fields** to reset. The modal scrolls, so the last three ranges sit out of sight until you scroll.
 
-**Strengths** list the categories where an agent scores at or above your Upper Bound, and **Weaknesses** list the categories below your Lower Bound. An agent can have several of each. Ticking **Compliance** under Weaknesses finds every agent who scores below the Lower Bound on compliance. See [Score Boundaries](../reference/glossary.md#score-boundaries).
+**Strengths** list the categories where an agent scores at or above your Upper Bound, and **Weaknesses** list the categories below your Lower Bound. An agent can have several of each. If you have a category named Compliance, ticking it under Weaknesses finds every agent who scores below the Lower Bound in it. See [Score Boundaries](../reference/glossary.md#score-boundaries).
 
 ![The Filter By modal, showing the department, team, strength, and weakness filters](../../img/screenshots/performance/performance-7.png)
 
@@ -116,10 +124,10 @@ The lowest-scoring agents move to the top of the table, so the people who need a
 ![The Performance Overview tab in List View, with the Name, Team, Department, Interactions, Compliance Score, Quality Score, and Score columns](../../img/screenshots/performance/overview.png)
 
 :::note Reading a score with a bracketed figure beside it
-A score reading `X% (Y%)` follows the same rule as on an individual interaction. The first figure counts every auto-failed interaction as zero. The bracketed figure leaves Auto-Fail out. Both are worked out across all the agent's interactions together, weighted by points. **Sort By**, **Rank**, and the **Score** filter all use the first figure.
-
-The **Export** CSV states the same two numbers in the opposite order, `X% (Fail Score: Y%)`, with the plain average leading and the adjusted figure named and bracketed. Read the label rather than the position when comparing a screen figure against an exported one.
+A score reading `X% (Y%)` follows the same rule as on an individual interaction. The first figure counts every auto-failed interaction as zero. The bracketed figure leaves Auto-Fail out. **Sort By**, **Rank**, and the **Score** filter all use the first figure. In the **Export** CSV, the auto-fail figure is the one labelled **Fail Score**.
 :::
+
+{/* ENGINEERING (known bug, documented as intended): vela origin/vela-fly app/(pages)/agents/performance/exportAsCsv.jsx:49-55 writes the score as `Y% (Fail Score: X%)`, the figure without Auto-Fail first, the reverse of the screen's `X% (Y%)`. Intended: the export uses the screen's order. Moved from visible text 2026-10-09. */}
 
 #### Choose a View
 
@@ -157,7 +165,9 @@ If the table is missing entirely, this agent has no scorecard scores in that dat
 * **Take A Bow**: the categories where the agent scores at or above your Upper Bound.
 * **Work On This**: the categories where the agent scores below your Lower Bound. These are the ones to coach.
 
-A category between the two bounds appears in neither list. This page works the lists out from your scorecard settings as they are today, and counts auto-failed interactions as zero. The Performance table uses the scores saved when each interaction was scored, and leaves Auto-Fail out of **Strength** and **Weakness**, so the two can differ. Use this page for the current picture.
+A category between the two bounds appears in neither list. These two lists use your current scorecard settings and count an auto-failed interaction as zero, so they can differ from **Strength** and **Weakness** on the Performance table. For the current picture, go by this page.
+
+{/* ENGINEERING (known inconsistency, documented as it behaves; the intended behaviour needs the product owner): Details (agents/performance/[id]/page.jsx@vela-fly) works Take A Bow and Work On This out from today's scorecard settings and counts auto-failed interactions as zero. The Performance table's Strength and Weakness use the scores saved when each interaction was scored and leave Auto-Fail out, so the two can differ. Moved from visible text 2026-10-09. */}
 
 Categories come from the **Category** field on each scorecard question, so how you group your questions decides what can appear here. If every category appears under **Work On This**, the agent scores below your Lower Bound in all of them. See [Score Boundaries](../reference/glossary.md#score-boundaries) and [How Scoring Works](../explanation/how-scoring-works.md).
 
@@ -183,7 +193,7 @@ For a fuller answer, use the three tabs beside **Overview**. On **Teams** and **
     { x: 42.7, y: 27.2, title: 'Date range', body: 'The period the counts cover. Select the pencil to change it.' },
     { x: 29.2, y: 36.2, title: 'Strengths and Areas to Improve', body: 'Switch between the categories agents do well and the ones they struggle with. The grid turns green for strengths, red for areas to improve.' },
     { x: 36.5, y: 46.1, title: 'Category columns', body: 'Your scorecard categories run across the top.' },
-    { x: 36, y: 60.5, title: 'A cell', body: 'Counts how many agents that category applies to for that team. The darker the shading, the more agents.' },
+    { x: 36, y: 60.5, title: 'A cell', body: 'Counts how many agents in that team have that category as a strength, or as an area to improve. The darker the shading, the more agents.' },
     { x: 17.2, y: 71.1, title: 'Team rows', body: 'Your teams run down the side, one row each. On the Departments tab these are departments instead.' },
   ]}
 />
@@ -202,7 +212,7 @@ The **Agents** tab charts every agent together, one bar per scorecard category. 
 
 ![The Agents tab on Strengths, a bar chart with one bar per scorecard category](../../img/screenshots/performance/agent_tab.png)
 
-A category that is dark across a whole row, or long on the Agents chart, points to a training gap rather than an individual one. That is the case for a course rather than a one-to-one.
+On **Areas to Improve**, a category that is dark down its whole column, or long on the Agents chart, is a gap many agents share. Where your organisation has the Coaching Portal, that suits a course more than coaching one agent at a time.
 
 ---
 
@@ -210,7 +220,7 @@ A category that is dark across a whole row, or long on the Agents chart, points 
 
 Two ways to get figures out of Vela, depending on who is asking:
 
-* **Export** on **Agents → Performance** downloads the list as a PDF or a CSV. It covers every agent in the current filter and date range, even if you searched for one. Quickest for a one-off.
+* **Export** on **Agents → Performance** downloads the list as a PDF or a CSV. It covers every agent in the current filter and date range, so use **Filter** to narrow it. Quickest for a one-off.
 * A **report** covers a date range with the metrics you choose, and can run daily, weekly, or monthly so managers receive it without asking. See [Generate Reports](./custom-reporting.md).
 
 ---
@@ -227,8 +237,8 @@ Monitoring is only worth the time if it ends in coaching. This section covers ho
 
 ### B. Act on What You Find
 
-1.  **Leave coaching comments** on the interactions that show the issue, tagging the agent so the comments are shared with them, where your organisation has the Coaching Portal. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
-2.  **Set up a course** in the Coaching section, scoped to that category, with a **Training Initiation Score Range** that covers the gap.
+1.  **Leave coaching comments** on the interactions that show the issue. Where your organisation has the Coaching Portal, tag the agent so the comments are shared with them. See [Review and Score Interactions](./quality-assurance-tools.md#b-comment-to-coach).
+2.  **Set up a course** in the Coaching section, for that category, with a **Training Initiation Score Range** that covers the gap.
 3.  **Track results** by monitoring the agent's score trend over the following weeks.
 
 This is a loop rather than a sequence. Tracking the result is what tells you whether the coaching worked, and it puts you back at the Dashboard looking for the next gap:
@@ -242,9 +252,7 @@ flowchart LR
 ```
 
 :::note Vela assigns courses by score
-You create a course and set its category, its score range, and its scope. On each cycle set in **Coaching → Preferences**, Vela checks every agent in that scope. An agent whose score in the course's category falls inside the range receives the course. Courses reach people by score, not by name.
-
-The **Training Initiation Score Range** is your lever. Set it to match the gap you found, and the agents who have that gap pick the course up on the next evaluation.
+On each cycle set in **Coaching → Preferences**, Vela gives a course to every agent in its scope whose score in the course's category falls inside its **Training Initiation Score Range**. Set the range to match the gap you found.
 :::
 
 {/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
