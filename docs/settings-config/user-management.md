@@ -9,7 +9,7 @@ import Hotspots from '@site/src/components/Hotspots';
 import usersTable from '@site/img/screenshots/settings/users-table.png';
 
 # User and Team Management
-The **Users** tab has two sub-tabs. **Users** lists every account in your organisation and holds the controls for adding, editing, and deactivating them. **Org Table** shows the departments and teams those accounts sit in.
+The **Users** tab in **Settings** has two sub-tabs. **Users** lists every account in your organisation and holds the controls for adding, editing, and deactivating them. **Org Table** shows the departments and teams those accounts sit in.
 
 :::warning What you can do here depends on your role
 The **Users** tab is hidden from the Agent role. Administrators get the **Add User** control and the **Actions** column. Users with the User role see the same lists but none of the controls that change an account.
@@ -87,6 +87,8 @@ The Add User modal has no **View Redactions** field. New users start without it,
 ### D. Editing a User
 
 Select the pencil icon in the **Actions** column. The modal is titled **Edit** followed by the user's name, and holds **Access**, **Department**, **Team**, **Role**, and **View Redactions**. Select **Apply** to save.
+
+{/* Checked 2026-10-08: agents added with Coaching enabled are not listed here. addUser (vela origin/vela-fly settings/settings.jsx:200, 257) adds a profile to Organisation.users only when role !== "agent", and this list reads Organisation.users (user.jsx:26-37). Agent team and department changes are covered in manage-agents-and-teams.md. */}
 
 Changing the department clears the team selection, because the team list is filtered to the department you choose.
 
@@ -174,7 +176,7 @@ Open the menu next to the department or team and select **Edit**.
 
 ## 4. Importing Agents in Bulk
 
-Agents are separate from users. Vela analyses their interactions. They are also the only records you can import from a CSV, under **Agents → Agent Details** rather than here. Where your organisation uses the Coaching Portal, agents sign in to the Agent Portal, not to Vela itself.
+Agents are separate from users. They are the people whose interactions Vela analyses. They are also the only records you can import from a CSV, under **Agents → Agent Details** rather than here. Where your organisation uses the Coaching Portal, agents sign in to the Agent Portal, not to Vela itself.
 
 For the columns, the template, and how unmatched departments and teams are handled, see [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-3a-bulk-import-agents-via-csv). For the distinction between an agent and a user, see the [Glossary](../reference/glossary.md#user).
 

@@ -10,6 +10,8 @@ type: reference
 
 Vela encrypts your data in transit and at rest, and is independently audited for POPIA and GDPR compliance. This page covers hosting, encryption, the standards Vela meets, how your data is backed up and recovered, and the security controls you operate yourself inside Vela.
 
+{/* UNVERIFIED: the independent POPIA/GDPR audit, AES-256 at rest, production isolation, and the backup, RPO, and RTO figures on this page come from the same AWS-era DR policy and security statement as the AWS claims removed below. The provider has since changed (see the UNVERIFIED (2026-10-01) paragraph in the comment below). Needs DevOps to confirm each one for the current provider. Found 2026-10-07. */}
+
 {/*
 Keep this comment below the intro paragraph. Docusaurus takes the category card
 description from the first content block, so a comment at the top of the file
@@ -112,6 +114,8 @@ Vela's recovery targets are:
 
 * **Recovery Point Objective (RPO): 24 hours.** The most data, measured in time, that a major incident could cost you.
 * **Recovery Time Objective (RTO): 4 business hours.** The target time to restore service after a major incident.
+
+{/* UNVERIFIED: backup and RPO/RTO figures are from the AWS-era DR policy. See the marker at the top of the page. */}
 
 ---
 

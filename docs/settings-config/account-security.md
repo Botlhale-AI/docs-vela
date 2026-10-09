@@ -9,7 +9,7 @@ type: reference
 The **Account** tab shows your personal profile information, and the **Security** tab lets you change your password. Your display mode is set from the top navigation bar rather than from Settings, and it is covered here too.
 
 :::info ACCESS
-The Account and Security tabs are visible to **all users**, regardless of role or scope.
+The Account and Security tabs are visible to **all users**, regardless of role or access level.
 :::
 
 ---
@@ -20,7 +20,7 @@ The Account tab displays your personal information and current organisational co
 
 ### Viewing Account Details
 
-This section allows you to quickly verify your credentials and current status.
+Use it to check the name, email address, organisation, and, with team access, the team Vela holds for you.
 
 * **Name:** Your full name as recorded in Vela.
 * **Email:** The primary email address associated with your Vela account.
@@ -112,7 +112,7 @@ The switch shows the mode it takes you to rather than the one you are in: a moon
 
 ![The same Dashboard in Light Mode, the display switch in the same place now showing a moon](../../img/screenshots/settings/light_mode.png)
 
-Your choice is stored against your account rather than in the browser, so it follows you to any machine you sign in on.
+Your choice is saved to your account and to the browser you made it in. A browser where you have changed the mode before keeps its own setting. A browser where you have never used the switch follows your account.
 
 {/* Both captures are deliberate. This is the one section that needs a Light Mode screenshot, because the subject is the difference between the two modes. Every other capture in the documentation is Dark Mode. See STYLE_GUIDE.md section 8. */}
 

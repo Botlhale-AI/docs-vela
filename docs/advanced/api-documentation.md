@@ -85,7 +85,7 @@ Authorization: Bearer <access_token>
 ```
 
 :::caution Build the refresh in from the start
-Access tokens are short-lived. Refresh tokens last far longer. An integration that fetches one access token and keeps using it works until that token expires, then returns **401** on every request. That is the failure most often mistaken for a broken endpoint, and `expires` on the token tells you when it is due.
+Access tokens are short-lived. Refresh tokens last far longer. An integration that fetches one access token and keeps using it works until that token expires, then returns **401** on every request. That is the failure most often mistaken for a broken endpoint, and `expires` in the `/auth/generate` reply tells you when it is due.
 
 Refresh on a schedule, or whenever a request returns **401**, and treat the refresh token as the credential worth protecting.
 :::
@@ -137,7 +137,7 @@ https://api.botlhale.tech/asr/async/upload/vela
 **Description:**
 This endpoint accepts a call recording for processing by Vela. It validates the organisation's allocation and returns upload credentials for securely transferring the audio file.
 
-Uploading a call takes two requests, and the audio never goes to this endpoint. The first call returns a URL and a set of form fields. You post the audio to that URL:
+Uploading a call takes two requests, and the audio never goes to this endpoint. The first request returns a URL and a set of form fields. You post the audio to that URL:
 
 ```mermaid
 sequenceDiagram
@@ -179,7 +179,7 @@ Every `metadata` field is optional.
 | `email` | The agent, matched on their email address | |
 | `agent` | The same as `email` | An alternative name for the field |
 | `agent_name` | The agent, matched on their name | Case-insensitive, and the name as it appears in Vela rather than a username. Creates the agent where none matches, provided `team` exists |
-| `team` | The team the call belongs to | Has to exist in Vela already. An upload never creates one |
+| `team` | The team the call belongs to | Has to exist in Vela already, and, where you also send `department`, belong to that department. Otherwise it is dropped. For what `validate_metadata` returns, see **Error Responses** below. An upload never creates a team |
 | `department` | The department the call is attributed to | |
 | `direction` | Whether the call was inbound or outbound | `inbound` or `outbound` |
 | `tags` | Your own labels for the call | An array of strings, for example `["complaint", "billing"]` |
@@ -194,9 +194,9 @@ Every `metadata` field is optional.
 Four of these are worth a second look:
 
 - **`agent_name` and `team` work together.** An unmatched team is dropped, and that also stops a new agent being created. Check the spelling before sending a batch.
-- **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs there instead, so send direction as `direction` rather than as a tag.
+- **`tags` is the place for your own identifiers**, such as a queue name, a campaign, or a ticket reference. Anything with a field of its own belongs in that field instead, so send direction as `direction` rather than as a tag.
 - **`contact` is what [Search by Phone Number](../number-search-guide.md) matches on.** Keep the format consistent across your integration, or the same customer looks like several.
-- **`date_of_call` must be day first.** Vela reads any day-first date, with or without the comma and seconds. A year-first date is stored as the wrong date with no error, and a month-first date with a day of 12 or less is read day first. A month-first date with a day above 12 cannot be read. An ISO date such as `2025-01-15` cannot be read, so it falls back to the upload time. `validate_metadata` catches only the dates that cannot be read, because the others parse as valid dates.
+- **`date_of_call` must be day first.** Vela reads any day-first date, with or without the comma and seconds. A year-first date with slashes, such as `2025/01/15`, is stored as the wrong date with no error, and a month-first date with a day of 12 or less is read day first, swapping day and month. A month-first date with a day above 12 cannot be read. A year-first date with dashes, such as the ISO `2025-01-15`, cannot be read, so it falls back to the upload time. `validate_metadata` catches only the dates that cannot be read, because the others parse as valid dates.
 
 Check a date string against the format before you send a batch:
 
@@ -287,18 +287,18 @@ request.post({
 | Status | Message | Cause |
 | :--- | :--- | :--- |
 | 404 | `Organisation not found` | `org_id` does not match an organisation. |
-| 400 | `Missing fileName` | The request did not name the file being uploaded. |
+| 400 | `Missing fileName` | An internal error, not something your request controls. Report it to support with the time of the upload. |
 | 400 | `Allocation exceeded` | The organisation has used its monthly duration, or has no allocation set. A newly created organisation that has not been activated returns this. |
 | 400 | `Could not find agent with the provided metadata` | Raised when `validate_metadata` is set and no agent matched. |
 | 400 | `Team not found` | Raised when `validate_metadata` is set and `team` did not match. |
 | 400 | `Department not found` | Raised when `validate_metadata` is set and `department` did not match. |
 | 400 | `Invalid date of call. Correct format is DD/MM/YYYY, HH:mm:ss` | `date_of_call` could not be parsed, and `validate_metadata` was set. |
-
-{/* UNVERIFIED: the agent, team, and department rows above exist on vela-data origin/main (call/upload/route.js ~190-196) but were removed from origin/dev-hold and the Fly branch by c6ba3ce (#121, 2026-08-20). api.botlhale.tech still served from Alibaba on 2026-10-01; the Fly hosts run the newer code. Once production moves, Calls uploads with validate_metadata no longer return these, and unmatched values are dropped silently. The Chats table keeps all three on every branch. Needs someone with API credentials to confirm against production. */}
 | 400 | `Invalid interaction direction. Options are outbound or inbound` | `direction` was something else, and `validate_metadata` was set. |
 | 400 | `Invalid interaction tags. Tags must be an array.` | `tags` was sent as a string, and `validate_metadata` was set. |
 | 400 | `Invalid contact. Contact must be a string or number` | `contact` was another type, and `validate_metadata` was set. |
 | 400 | `Invalid notify email` | `notifyEmail` is not a valid address, and `validate_metadata` was set. |
+
+{/* UNVERIFIED: the agent, team, and department rows above exist on vela-data origin/main (call/upload/route.js ~190-196) but were removed from origin/dev-hold and the Fly branch by c6ba3ce (#121, 2026-08-20). api.botlhale.tech still served from Alibaba on 2026-10-01; the Fly hosts run the newer code. Once production moves, Calls uploads with validate_metadata no longer return these, and unmatched values are dropped silently. The Chats table keeps all three on every branch. Needs someone with API credentials to confirm against production. */}
 
 The wider platform's status codes, including **401** for an expired token and **429** for rate limiting, are listed under [Error Codes](https://api-docs.botlhale.ai/) in the published reference.
 
@@ -333,11 +333,11 @@ Every `metadata` field is optional.
 | `email` | string | The agent, matched on their email address | |
 | `agent` | string | The same as `email` | The chat is left unassigned where no agent matches |
 | `agent_name` | string | The agent, matched on their name | Case-insensitive, and the name as it appears in Vela rather than a username. Sent with `team`, it creates the agent where none matches |
-| `team` | string | The team the chat is attributed to | |
+| `team` | string | The team the chat is attributed to | Where you also send `department`, the team must belong to it. Otherwise it is dropped, and with `validate_metadata` set the upload returns `Team not found` |
 | `department` | string | The department the chat is attributed to | |
 | `direction` | string | Whether the chat was inbound or outbound | `inbound` or `outbound`. Defaults to `inbound` |
 | `tags` | array | Your own labels for the chat | An array of strings |
-| `contact` | string or number | The customer's phone number | Stored exactly as sent. See the note under Calls above |
+| `contact` | string or number | The customer's phone number | Stored exactly as sent. [Search by Phone Number](../number-search-guide.md) searches calls only, so a chat's `contact` does not appear there |
 | `date` | string | When the chat took place | `DD/MM/YYYY, HH:mm`, read as **Africa/Johannesburg**. Seconds are accepted. Defaults to the upload time |
 | `language` | string | The language of every message in the chat | Overrides `language` on the individual messages. Leave it out where each message carries its own |
 | `interaction_id` | string | Your own reference | Stored as the chat's filename |
@@ -366,7 +366,7 @@ The wider Botlhale reference shows `Agent` capitalised for this field. Lower cas
 <ResponseTimeDemo />
 
 :::info Chat allocation
-Chats are counted against a separate monthly chat allocation, not the duration allocation used for calls. Once the organisation reaches that allocation, the endpoint returns an error.
+Chats are counted against a separate monthly chat allocation, not the duration allocation used for calls. Once the organisation reaches that allocation, the endpoint returns **400** `Monthly chats allocation exceeded`.
 :::
 
 **Response Format**
@@ -455,7 +455,7 @@ Pulls analysed calls back out of Vela, for reporting in your own tools rather th
 GET https://api.botlhale.tech/calls/export/vela
 ```
 
-Everything is a query parameter, and only `org_id` is required:
+Send the same `Authorization: Bearer <token>` header. Everything else is a query parameter, and only `org_id` is required:
 
 | Parameter | Description |
 | :--- | :--- |
@@ -501,8 +501,8 @@ The reply covers the limits this documentation refers to elsewhere:
 | :--- | :--- |
 | `active` | Whether the organisation is activated. Uploads against an inactive organisation do not process |
 | `monthlyAllocatedDuration` and `currentDurationUse` | The allocation and how much of it is used, both in minutes. The published reference says seconds, but **Settings** shows the same figures in minutes |
-| `stopWhenAllocationExceeded` | Whether processing halts once the allocation runs out |
-| `scorecardLimit`, `smartSearchLimit`, `painPointsLimit` | The caps your plan sets |
+| `stopWhenAllocationExceeded` | Whether processing halts once the allocation runs out. It does not apply to API call uploads, which are refused with `Allocation exceeded` once the allocation is reached, whatever this is set to |
+| `scorecardLimit`, `smartSearchLimit`, `painPointsLimit` | The caps your package sets |
 | `coachingEnabled` | Whether the Coaching add-on is on |
 | `numberOfActiveAgents`, `numberOfTeams`, `numberOfDepartments` | The size of your structure |
 | `users` | Each user's name, email, role, access level, team, department, and whether they can view redactions |
@@ -516,8 +516,8 @@ Checking `currentDurationUse` against `monthlyAllocatedDuration` before a large 
 ## Related
 
 - [Upload Your Data](../data-upload.md): upload through Vela instead of the API
-- [System Requirements](../getting-started/system-requirements.md): the formats and size limits these endpoints accept
-- [Security and Compliance](../security-compliance.md): where the recordings and transcripts you send are held, and how they are encrypted
+- [System Requirements](../getting-started/system-requirements.md): the file formats Vela analyses, and the limits on the upload screens
+- [Security and Compliance](../security-compliance.md): how the recordings and transcripts you send are encrypted, and who to ask about where they are held
 
 ## Need Help?
 

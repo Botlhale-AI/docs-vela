@@ -30,7 +30,7 @@ The tabs are listed below in the order they appear on the page.
 
 ![The Settings tab bar as an administrator sees it, with Account, Organisations, Notifications, Security, Users, and Requests](../../img/screenshots/settings/settings-tabs.png)
 
-Everything in the Edit and View columns applies to your own account and your own access level, not to the organisation as a whole.
+Every Edit and View in the table applies to your own account and your own access level, not to the organisation as a whole.
 
 :::note Agents use the Agent Portal
 Agents sign in to the separate Agent Portal, not the main platform. Its Settings page has two tabs, **account** and **security**. Agents never see the other tabs.
@@ -57,7 +57,7 @@ Removing an account is a deactivation, not a deletion. The control is a bin icon
 The User role covers day-to-day work, meaning reviewing interactions, coaching agents, and reporting. Team leads and QA managers are normally given this role.
 
 * **Users:** See the user list and the Org Table within their access level, but no controls that add, edit, or deactivate an account.
-* **Organisation settings:** Open the **This Org** sub-tab and read every setting on it, including the score boundaries and package limits. Nothing on it can be saved.
+* **Organisation settings:** Open **Organisations → This Org** and read every setting on it, including the score boundaries and package limits. Nothing on it can be saved.
 * **Redaction:** By default, raise a request per interaction with **Request Redacted Access**. An approved request covers that one interaction for 24 hours. After that, the user raises a new request. An administrator can grant **View Redactions** on the account, after which the user reveals masked information themselves through **Review Redacted Info**. {/* UNVERIFIED: in vela-fly source the View Redactions grant is never read (calls/[id]/page.jsx and chats/[id]/page.jsx compare profile.organisations entries, which are objects, with the organisation id), so non-admins with the grant may still see Request Redacted Access. Raised as a product bug. Needs a live check. */}
 * **Requests:** Cannot see the **Requests** tab, so cannot approve anything, including their own request.
 

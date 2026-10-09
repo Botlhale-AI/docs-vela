@@ -9,8 +9,8 @@ type: reference
 
 The **Organisations → This Org** sub-tab holds the settings that apply to your whole organisation. Those are the profile, the monthly duration allocation, the score boundaries, agent report scheduling, redaction, and the package limits.
 
-:::warning Administrators only
-The **Organisations** tab is hidden from the Agent role. Everyone else can open **This Org** and read the settings, but only an Administrator whose access level is **organisational** can change them. An administrator scoped to a department or a team has read access only.
+:::warning Only organisational administrators can change these
+The **Organisations** tab is hidden from the Agent role. Everyone else can open **This Org** and read the settings, but only an Administrator whose access level is **organisational** can change them. An administrator scoped to a department or a team has read access only. {/* ENGINEERING (known bug, documented as intended): in vela origin/vela-fly and origin/main, the Agent Performance Sharing controls and Save in settings/thisOrg.jsx (~120-200, 489-560) have no allowEdit check, and updateOrgSettings checks no role, so other accounts may be able to save that schedule. Raised as a product bug 2026-10-07. Do not document it as a capability. */}
 :::
 
 The **My Orgs** sub-tab is covered in [Account and Security Settings](./account-security.md).
@@ -67,6 +67,8 @@ Choose what happens when the organisation reaches its monthly allocated duration
 | **Halt call analysis** | Call processing stops once the allocation is reached. |
 | **Continue with call analysis at additional rates** | Call processing continues past the allocation and the extra usage is billed at an additional rate. |
 
+Calls sent through the API need allocation remaining. **Continue with call analysis at additional rates** covers processing, not API uploads. {/* From vela-data app/api/call/upload/route.js (main:46, dev-hold:72-76), which checks the allocation with no stopWhenAllocationExceeded check. Whether that route is the one the live API calls is itself UNVERIFIED (see api-documentation.md, comment near the top). Found 2026-10-07. */}
+
 ---
 
 ## 3. Agent Score Boundaries
@@ -97,6 +99,8 @@ For where these bands are applied, see [Metrics](../reference/metrics.md).
 ---
 
 ## 4. Agent Performance Sharing
+
+Where your organisation has the Coaching Portal enabled, this section shows its heading only, with no controls. See the [Coaching Portal documentation](https://docs-coaching.botlhale.xyz).
 
 Select **Share agent performance reports** to send agents their own performance reports on a schedule. When the checkbox is selected, choose one interval.
 

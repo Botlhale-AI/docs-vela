@@ -23,16 +23,17 @@ What to do at each stage of running QA in Vela. Start from the section you need.
 
 ## Setting Up
 
-Build in this order: Departments, then Teams, then Users and agents, then the Scorecard, then Smart Searches, then your first upload. Each step needs the one before it.
+Build in this order: Departments, then Teams, then Users and agents, then the Scorecard, then Smart Searches, the Knowledge Base, and redaction, then your first upload. Teams need departments, and agents and users with team access need teams. Everything else belongs before the first upload so that it applies to your interactions from the start.
 
 | Step | Do this | Because |
 | :--- | :--- | :--- |
-| **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Team leads see only their own teams. A team called "Other" makes its data meaningless |
-| **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only, unless you turn on **Historical Search** as you create them |
+| **Departments and teams** | Mirror your real reporting lines, and give every team a real name | Each user sees the part of the organisation their access level covers, often a single team. A team called "Other" makes its data meaningless |
+| **Scorecard** | Build it before the first upload | Interactions are scored as they arrive. Questions added later apply to new interactions only, unless you turn on **Historical Search** as you create them. By default you can have five enabled questions, unless your plan sets another number, so spend them on what matters most |
 | **Smart Searches** | Build your compliance searches before the first upload, and spend your allowance on those first | A search matches interactions that arrive after it. Your plan allows five active searches unless it sets another number, and at the limit **New Smart Search** greys out. Set a search you no longer need to **Inactive**, or delete it, to free a place |
+| **Redaction** | Choose what to mask before the first upload | Real interactions hold personal information. Configure masking first so it is never on show unmasked. See [Administrator Setup](../getting-started/quick-start/administrator-setup.md#step-7-configure-redaction) |
 
 :::caution Historical Search is set once
-To cover interactions already in Vela, turn on **Historical Search** as you create the search. The option appears only while you create it, so a search built without it can never be given it later.
+To cover interactions already in Vela, turn on **Historical Search** as you create the search or scorecard question. The option appears only while you create it, so one built without it can never be given it later.
 :::
 
 ### Writing Scorecard Questions
@@ -51,9 +52,9 @@ Seven rules cover the rest:
 2. **Name the action.** "Verify identity" is in the transcript. "Professional" is a judgement that moves between reviewers.
 3. **Say when a question applies**, so the AI answers N/A on the calls it does not cover.
 4. **Group questions into categories**, such as Opening, Compliance, Handling, and Closing. **Take A Bow** and **Work On This** on an agent's Details page report by category, so grouping shows a pattern rather than one question's result.
-5. **Weight categories against each other.** There is no outside scale, so what counts is the balance across your own questions.
+5. **Weight questions against each other.** **Weight** is set per question, with no outside scale, so what counts is the balance across your own questions.
 6. **Use Auto-Fail only where one failure fails the whole interaction**, such as a missed regulatory disclosure.
-7. **Build a separate scorecard for each set of procedures.** Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
+7. **Build a separate scorecard for each set of procedures, within your question limit.** Use scope and **Apply To** so each team or call direction gets its own questions. Inbound support and outbound sales need different questions, and one scorecard covering both produces scores nobody can act on.
 
 
 ---
@@ -62,10 +63,10 @@ Seven rules cover the rest:
 
 ### Every day
 
-1. **Start with your unresolved alerts.** Vela has already flagged these against your own searches, so they are a better use of the first hour than sampling the call list.
-2. **Sort Smart Searches by Results, descending.** The top search is triggering most, which usually points at a problem across the team rather than one agent.
+1. **Sort Smart Searches by Results, descending.** Results counts this month's unresolved matches, and resolving an alert lowers it, so read it before you start. Begin with the search at the top, and open a few of its matches to see whether they show a real problem or a search that matches too broadly.
+2. **Then work through your unresolved alerts.** Vela has already flagged these against your own searches, so they are a better use of the first hour than sampling the call list.
 3. **Check the Dashboard for movement.** Look for falling scores and for **Sentiment Distribution in Interactions** turning negative.
-4. **Close the loop on every interaction you open.** Comment, tag the agent with an @ mention, mark as reviewed.
+4. **Close the loop on every interaction you open.** Comment, tag the agent with **@agent** where your organisation has the Coaching Portal, and mark as reviewed.
 
 Step 4 is the one to protect when the day gets busy. An interaction marked reviewed with no comment is a QA record with no coaching in it, and the agent learns nothing from the time you spent.
 
@@ -88,10 +89,10 @@ Read three or four weeks before acting. One week up or down is usually normal mo
 | :--- | :--- |
 | "When the customer asked about cancellation, the notice period was left out. The procedure requires you to confirm it." | "You weren't very clear" |
 | Comment within a day of the call | Comment at the end of the month |
-| Tag the agent with an @ mention | Leaving the comment untagged |
+| Tag the agent with **@agent** | Leaving the comment untagged |
 | Recognise a call that went well | Commenting only on failures |
 
-An untagged comment raises no notification, so the agent may never read it.
+Without the **@agent** tag, a comment stays with team leads and never reaches the agent. With it, the agent sees the comment in their Agent Portal, but is not notified, so tell them to look.
 
 Two rules decide whether coaching lands:
 
@@ -110,7 +111,7 @@ Overrides that all move the same way point at scorecard wording that needs fixin
 
 Coaching is an add-on with its own documentation. Two decisions there affect the QA work on this page:
 
-- **Build a course around the gap**, and set the category and the score range within it that assigns the course. Courses reach agents by score in a category rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses).
+- **Build a course around the gap**, and set the category, and the score range in that category, that assigns the course. Courses reach agents by score in a category rather than by name. See [Create and Assign Courses](https://docs-coaching.botlhale.xyz/docs/team-leads/create-and-assign-courses).
 - **Decide what agents see before you invite them**, because changing it later changes what they have already seen. See [Set Coaching Preferences](https://docs-coaching.botlhale.xyz/docs/team-leads/coaching-preferences).
 
 {/* UNVERIFIED: the per-Category measurement. No implementation exists on vela origin/main. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall score and never reads the award's or course's Category. Full note under Category in docs-coaching-portal's glossary.md. Needs the product owner to decide which is intended. */}
@@ -126,7 +127,7 @@ The steps are in [Upload Your Data](../data-upload.md). This is what makes a lar
 3. **Match `agent_name`, `team`, and `department` to records that already exist.** Use the agent's name as it appears on their record, rather than a username such as `john.smith`. If Vela cannot match the name, it creates a new agent in that row's team. A misspelt name therefore creates a duplicate agent, without any error, and the interaction is filed under the duplicate.
 4. **Upload outside busy hours**, and keep the page open until the upload finishes. Your browser sends the ZIP in pieces, so leaving the page stops the upload. Processing then continues in the background.
 5. **Keep the source audio** until you have checked every file in the batch appears in the Interactions list, then archive it under your organisation's retention policy.
-6. **Check the batch the same day.** Vela emails a count of what uploaded, inferred, and failed, but does not say which rows. Compare the list against your batch yourself while you still have the source files. A failure is easier to explain today than in two weeks.
+6. **Check the batch the same day.** Vela emails a count of the files that uploaded, were analysed, failed, and were skipped, but does not say which ones. Compare the **Interactions** list against your batch while you still have the source files. A failure is easier to explain today than in two weeks.
 
 ---
 
